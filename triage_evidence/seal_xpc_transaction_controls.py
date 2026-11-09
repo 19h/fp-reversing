@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+"""Preservation, provenance and scoped quality gates; no native target effects."""
+import ast,json,re
+from pathlib import Path
+from recover_xpc_transaction_controls import *
+from validate_xpc_transaction_controls import verify,sdk_checks,proofs,models,alterations
+BASE=ROOT.parent
+REPORTS=[P+'_report.md','obfuscated_routines_report.md','mach_ports_report.md',
+ 'foundational_triage_report.md','interface_abi_report.md','interface_investigation_status.md']
+CHANGED=set(REPORTS[1:]+['triage_evidence/validate_rpc502_sidecar_delivery.py'])
+SCRIPTS=['recover_'+P+'.py','validate_'+P+'.py','seal_'+P+'.py','verify_'+P+'_publication.py']
+def main():
+ prior=ROOT/(P+'_prior_manifest.json');assert sha(prior)=='559113782934923f08858791f00a0a2c6c12dbce38f38aacebec3bbb3606e9a5'
+ m=json.loads(prior.read_text());assert len(m['files'])==7027;unchanged=0;changed=[]
+ for row in m['files']:
+  q=BASE/row['path'];assert q.is_file();digest=sha(q)
+  if row['path']in CHANGED:
+   assert digest!=row['sha256'];changed.append({'path':row['path'],'prior_sha256':row['sha256'],'sha256':digest})
+  else:assert digest==row['sha256']and q.stat().st_size==row['size_bytes'],row['path'];unchanged+=1
+ assert unchanged==7021 and{r['path']for r in changed}==CHANGED
+ for row in m['inputs_preserved']:assert sha(BASE/row['path'])==row['sha256']and(BASE/row['path']).stat().st_size==row['size_bytes']
+ assert sha('/Users/___/Downloads/zut/annotated-strace-rax-user.txt')=='78578ddda9f769b2ecdf22e71235e1c2012433e017acb89d92b308e9e7ae439e'
+ s=json.loads((ROOT/(P+'_source.json')).read_text());c=json.loads((ROOT/(P+'_checks.json')).read_text())
+ assert s==build()and verify(s)==c['instruction_assertions']and c['source_recapture_match']and c['all_checks_pass']
+ assert c['source_sha256']==sha(ROOT/(P+'_source.json'))
+ assert c['SDK_checks']==sdk_checks()and c['proofs']==proofs()and c['alterations']==alterations(s)and c['models']==models()
+ for obj,script in[(s,SCRIPTS[0]),(c,SCRIPTS[1])]:
+  assert obj['generator_sha256']==sha(ROOT/script)and all(obj[k]is False for k in FLAGS)
+  for n,digest in obj.get('dependencies',{}).items():assert sha(ROOT/n)==digest
+ counts=c['verified_counts'];assert counts=={**s['verified_source_counts'],'instruction_assertions':89,
+  'SDK_assertions':16,'SDK_compilations':1,'scalar_queries_unsat':4,'enable_cases':2304,
+  'track_cases':36,'clean_cases':12,'syscall_cases':35,'initializer_flag_cases':8,'rejected_evidence_alterations':8}
+ for row in s['cache_files']+s['SDK_headers']+[c['solver']]:assert sha(row['path'])==row['sha256']
+ assert sha(c['SDK_checks']['compiler_path'])==c['SDK_checks']['compiler_sha256']
+ assert sha(s['kernel']['path'])==s['kernel']['sha256']
+ assert sha(c['SDK_checks']['SIG_IGN_source']['path'])==c['SDK_checks']['SIG_IGN_source']['sha256']
+ for name in SCRIPTS+['validate_rpc502_sidecar_delivery.py']:ast.parse((ROOT/name).read_text(),filename=name)
+ report=(BASE/REPORTS[0]).read_text();assert report.isascii()and all('| TC'+str(j)+' |'in report for j in range(1,8))and all('QG'+str(j)+':'in report for j in range(1,8))
+ links=0
+ for name in REPORTS:
+  for raw in re.findall(r'\[[^\]]*\]\(([^)]+)\)',(BASE/name).read_text()):
+   raw=raw.strip('<>')
+   if raw.startswith('#')or re.match(r'^[a-zA-Z][\w+.-]*://',raw):continue
+   q=Path(raw.split('#',1)[0]);q=q if q.is_absolute()else BASE/q
+   if q.name not in[P+'_delivery.json',P+'_quality_gates.json']:assert q.exists(),(name,raw)
+   links+=1
+ d={'generator_sha256':sha(__file__),'prior_manifest_sha256':sha(prior),'prior_artifacts_checked':7027,
+  'prior_artifacts_unchanged':unchanged,'allowed_changes':changed,'original_inputs_preserved':len(m['inputs_preserved']),
+  'Python_syntax_checks':5,'local_links_checked':links,'all_checks_pass':True,'goal_status':'active','full_goal_complete':False}
+ (ROOT/(P+'_delivery.json')).write_text(json.dumps(d,indent=2)+'\n')
+ quality={'generator_sha256':sha(__file__),'verified_counts':counts,'static_scope':c['static_scope'],
+  'report_sha256':{n:sha(BASE/n)for n in REPORTS},
+  'evidence_sha256':{n:sha(ROOT/n)for n in[P+'_source.json',P+'_checks.json']+SCRIPTS},
+  'goal_status':'active',**{k:False for k in FLAGS}}
+ for j in range(1,8):quality['QG'+str(j)]={'status':'pass_for_increment','evidence':'Report QG'+str(j)+' and TC1-TC7;20 bodies/2216 instructions,89 instruction assertions,16 SDK assertions,9 import/1 BSD/20 relative jump bindings,4 scalar proofs,2304 enable/36 track/12 clean/35 syscall/8 initializer cases,8 rejected alterations; native flags/registration/permission/mutation/process effects/pairing/port identity/delivery and daemon-kext exchange unknown'}
+ (ROOT/(P+'_quality_gates.json')).write_text(json.dumps(quality,indent=2)+'\n')
+ print(json.dumps({'prior_artifacts_unchanged':unchanged,'allowed_existing_changes':len(changed),'all_scoped_gates_pass':True,'goal_status':'active'}),flush=True)
+if __name__=='__main__':main()
