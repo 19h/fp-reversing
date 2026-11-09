@@ -1,0 +1,86 @@
+{
+  "generator_sha256": "e75631d44130739fba4817a5e11a872b8919522ce57c2751d917f50178f0514f",
+  "static_scope": "Selected post-extension setup,64-round consumption of two private word streams and a fixed image-word bank,20 frame-state stores and the next signed continuation gate. Static source/control/address ABI;other byte-access bounds/value equations,complete algorithm,caller publication and native daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 6,
+    "source_instructions": 13404,
+    "source_bytes": 53616,
+    "pointer_records": 7,
+    "branch_bindings": 7,
+    "data_ranges": 3,
+    "data_bytes": 1280,
+    "bank_selector_cases": 256,
+    "SP_writes": 0,
+    "ADRP_decodes_checked": 2,
+    "comparison_role_corrections": 4,
+    "prior_ranges_recaptured": 17,
+    "prior_bytes_recaptured": 18884,
+    "queries_unsat": 34,
+    "queries_sat": 4,
+    "predecessor_queries_replayed": 16,
+    "source_nonbranch_sites_translated": 13400,
+    "rounds": 64,
+    "grid_word_read_operations": 128,
+    "image_word_read_operations": 128,
+    "state_update_stores": 20,
+    "source_cut_count": 1,
+    "new_byte_read_sites": 624,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_word_rounds_report.md": "331a697c4ef3dea1445ab0540144e8e209909bdba53770e2b07e31cd4a1decd2",
+    "obfuscated_routines_report.md": "8f3e51c43317e174411a3c7a379277882db1bc1839ec830975408ae4214e18c4",
+    "mach_ports_report.md": "65063233f66c377bc73df5452b62d72d6c032ca67500dec33219a4a59110b48d",
+    "foundational_triage_report.md": "1a68ed9a45d634f06f9bfaa9877633760d392cdc1580377f75326b782a2c5bea",
+    "interface_abi_report.md": "eb572e1b6264d25fda27169f799944f2f2f06098d50dce5b9b1261d803a3191d",
+    "interface_investigation_status.md": "bc1ba914cd62514e1385e97640f06c4e377626b77af0774ea8ae5d2345cb019e",
+    "daemon_mode_one_lookup_roles_report.md": "4e27cecc3aa851dd338c1b4c7b1ec2972c7afc183b030b8a2d229b78fb706147"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_word_rounds_source.json": "41e17e34ed2dfe9e1dd385e5790009c98fd4f825e49d6d11ac2f0cf53bc30eb2",
+    "daemon_mode_one_word_rounds_checks.json": "f7f9fbc5f616d908949a2605ece4fa8146dea8573458821bfd0bcad59305a038",
+    "recover_daemon_mode_one_word_rounds.py": "ebcd98f4861c6837928de14902ad11dd2515cd49221340d7953001061a9b7e0a",
+    "validate_daemon_mode_one_word_rounds.py": "19e2e774288c0bc8021b776177d3406169aada4e5604ed27135112f63fe3bbe1",
+    "seal_daemon_mode_one_word_rounds.py": "e75631d44130739fba4817a5e11a872b8919522ce57c2751d917f50178f0514f",
+    "verify_daemon_mode_one_word_rounds_publication.py": "d9579f794b75d7b2062faeb54751b2f8966fb431db3c66a1824c51718da5a1a9",
+    "daemon_word_round_tools.py": "6ff8b6f9f0dac5e9218a433c5536c4cc3f641298fc182e2ecc8cfab6217253a7"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WR1-WR8;All13400 captured nonbranch sites translated,64-round coverage of128 grid and128 image words,20 frame-state stores and selected signed gate;34 UNSAT and four SAT results including16 predecessor replays. Other byte-access bounds/value equations,publication and native exchange remain unknown."
+  }
+}
