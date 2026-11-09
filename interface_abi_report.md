@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: [Paired state-bank and spill ABI](daemon_mode_one_source_passes_report.md) maps first bankW0..W3,second bankW8/W13/W11/W23,spillsF748/F720/F728/F730,SRC F458,localF+d00 and next selector3d26.6 ranges/419 instructions,413 modeled sites,26 UNSAT,two algebraic certificates/eight word equalities,four altered-recurrence controls and six integrity controls pass;budget preservation ends at the handoff.
+
 Current extension: [Mode1 B48,adapter/core and conditional return ABI](daemon_mode_one_adapter_report.md) maps R=K10cb8,DOUT=Kbe28,seven written request fields,adapterd03348/corecf0194,actual size32 predicate,raw result and continuation epochs. Eleven source ranges retain662 instructions;281 selected SSA sites,35 UNSAT,one alignment counterexample,2816 bank cases and six controls pass. Remaining semantic coverage is explicit.
 
 Current extension: [First-key lookup and found-span helper ABI](daemon_outer_first_key_report.md) maps keyd719dce3/decoded5c241ab2,OUT K1de8,return12d9,header cursor6468/AE10,staged span58a0/F7C and helper729920 OBJ/local32/field-address inputs.41 new plus58 replayed UNSAT,one interpretation check and six controls pass;native owner/transport and whole-parser continuity remain unproved.

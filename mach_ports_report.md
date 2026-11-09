@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current extension: [Mode1 source-pass and frame handoff](daemon_mode_one_source_passes_report.md) adds no Mach emission or port identity. Two private source loops read the same32 B twice and hand equal state banks to original selector3d26 under stable-source premises. The retained fixed-frame writes preserve the separate budget word;later consumer/transport/return behavior remains unproved.
+
 Current extension: [Mode1 protected-call and return-frame boundary](daemon_mode_one_adapter_report.md) adds no new Mach emission or port identity. Recovered calls are a private adapter/core,internal fill and stack-probe/guard facilities. Result reload uses an original register base;continuation reload uses adjusted SP,so its identity requires a zero-delta join. Native delivery and daemon-kext exchange remain unknown.
 
 Current extension: [First-key local control and helper interface](daemon_outer_first_key_report.md) adds no Mach emission or port identity. It connects C0 publication to a private lookup and separates exact-miss option routing from found-span/mode1 helper dispatch. Staged pointer/extent and raw-result stores are local interfaces;native external ingress,rights and daemon-kext exchange remain unknown.

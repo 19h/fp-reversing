@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: [Equivalent32-byte source passes](daemon_mode_one_source_passes_report.md) classifies loopsb035ac/d9f0f4 as two source-equivalent four-u32 byte mixers with identical seeds,ordered input and compact recurrence. The first bank remains in registers and the second is spilled;their later use and standard algorithm identity remain unknown.
+
 Current extension: [Mode1 private request and protected adapter](daemon_mode_one_adapter_report.md) classifies helper729920 as a48 B request wrapper into adapterd03348/corecf0194. Aligned request fields decode mode4923 and a32 B size predicate;the immediate raw-result path and conditional zero-delta return are recovered. The processing algorithm remains unknown.
 
 Current extension: [First-key lookup,option bridge and found-span modes](daemon_outer_first_key_report.md) classifies the post-C0 keyd719dce3 caller,actual return/phase tree,missing-key route to the option accessor,found-span grammar,mode0 errors and exact mode1 helper entry0x100729920. Private helper application meaning and native owner/transport remain unknown.

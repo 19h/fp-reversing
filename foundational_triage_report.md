@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current extension: [Twin-pass data/control and source-role correction](daemon_mode_one_source_passes_report.md) proves32 ordered reads per pass,same seeds/shared four-word recurrence,exact reduction257,register-bank liveness and fixed-frame budget preservation. Ten Capstone5.0.7 comparison-input write roles are corrected only after raw SUBS-to-zero checks. Stable source/owner and later consumer assumptions remain explicit.
+
 Current extension: [Mode1 request codecs and stack epochs](daemon_mode_one_adapter_report.md) separates object sourceOBJ+18/countOBJ+58 from the staged first-key span,proves the aligned48 B record/mode/size contract,and recovers budget bias144 B,reservation16..256 B and delta=16*low16 difference. Immediate rejection conditionally restores delta0;full32 B processing and budget history remain unproved.
 
 Current extension: [First-key data/control and mode context](daemon_outer_first_key_report.md) derives the actual C0/key/output/return phases,conditional missing-key option/N19 route,found record BUF/SIZE,encoded-header offsets,span stages and complete mode partition. Mode0 always errors on this found-span branch;MODE1 enters a deeper helper whose later flow is unknown. FK1-FK10 bound frame/owner/native assumptions.

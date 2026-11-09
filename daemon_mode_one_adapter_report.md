@@ -162,3 +162,7 @@ QG5: Actual request padding remains unknown;aligned and arbitrary-address domain
 QG6:Original source,27 pointers,nine selected branch matches,three call bindings,2816 bank cases,twenty structural assertions and38 recaptures support the scoped claims.35 queries return UNSAT;one SAT alignment check is separate. Six altered-ledger controls reject changes. The timed-out monolithic diagnostic is excluded;coverage is281 selected sites,not all662 source instructions.
 
 QG7: The impact-ranked follow-ups remain bounded to semantic,owner,frame and return interfaces. No new Mach emission,native execution,transport success or full-goal completion is claimed.
+
+## Source-pass follow-up
+
+The [source-pass report](daemon_mode_one_source_passes_report.md) now follows the selected32 B processing path through two equivalent four-word byte mixers and their handoff. Both passes read SRC[0..31],share exact seeds/recurrence and produce equal banks under stable-source premises. First-bank registers remain live;second-bank words are spilled separately. The retained fixed-frame stores do not overlap the budget word. Later consumers and complete normal-path delta/return remain unproved.

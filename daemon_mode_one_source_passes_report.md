@@ -98,6 +98,8 @@ The identity `257*0xff00ff01 =2^40+1` and z<2^32 bound the reciprocal error. Exa
 
 No native input,packet or target execution is generated. The separate SAT check only establishes a nonempty abstract byte/index/remainder domain. [MP9,MP10]
 
+The loop-invariant register sets are checked against the retained instruction effects. Capstone 5.0.7 reports comparison input operands as GPR writes at ten CMP aliases in these spans. The extractor retains those reported roles and checks the raw SUBS encoding with Rd31/S1/sub1 before removing the spurious GPR writes. Architectural flags remain writes. The existing SSA comparison models do not modify compared GPRs. This correction is bounded to those ten original instructions;it is not a broad claim about unrelated decoder output. [MP1,MP3,MP7]
+
 ## Source-proof composition and equality of the two banks [MP6-MP10]
 
 The source uses different masked identities in the two loops. Ten small source-slice certificates justify the rotation,addition/XOR and masking simplifications. Each cut in the complete round model is computed from a snapshot of the actual live source registers at that slice's start;it does not substitute a desired canonical output or assume the final equality. Byte injection and reduction are separately proved before the remaining state recurrence is compared. [MP7]

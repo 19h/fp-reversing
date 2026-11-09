@@ -120,6 +120,7 @@ def main():
     if exists(BASE/'daemon_outer_record_ingress_report.md'):reports.add(BASE/'daemon_outer_record_ingress_report.md')
     if exists(BASE/'daemon_outer_first_key_report.md'):reports.add(BASE/'daemon_outer_first_key_report.md')
     if exists(BASE/'daemon_mode_one_adapter_report.md'):reports.add(BASE/'daemon_mode_one_adapter_report.md')
+    if exists(BASE/'daemon_mode_one_source_passes_report.md'):reports.add(BASE/'daemon_mode_one_source_passes_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1454,6 +1455,10 @@ def main():
         mode_one_quality=json.loads(read(ROOT/'daemon_mode_one_adapter_quality_gates.json'))
         manifest['validation']['daemon_mode_one_adapter_increment_checks']=mode_one_quality['verified_counts']
         manifest['validation']['daemon_mode_one_adapter_static_scope']=mode_one_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_source_passes_quality_gates.json'):
+        source_pass_quality=json.loads(read(ROOT/'daemon_mode_one_source_passes_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_source_passes_increment_checks']=source_pass_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_source_passes_static_scope']=source_pass_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
