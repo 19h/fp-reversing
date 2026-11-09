@@ -1,0 +1,279 @@
+/usr/sbin/notifyd [arm64e]:
+    -fixups:
+        segment         section          address             type   target
+        __DATA_CONST    __const          0x100010010    auth-rebase  0x10000076C (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010018    auth-rebase  0x10000077C (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010020         rebase  0x10000BF2B
+        __DATA_CONST    __const          0x100010040         rebase  0x10000CEE4
+        __DATA_CONST    __const          0x100010050      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x100010060    auth-rebase  0x10000B358 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010068         rebase  0x100010030
+        __DATA_CONST    __const          0x100010080         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010090      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x1000100A0    auth-rebase  0x100006410 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x1000100A8         rebase  0x100010070
+        __DATA_CONST    __const          0x1000100C0         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x1000100D0      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x1000100E0    auth-rebase  0x100006430 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x1000100E8         rebase  0x1000100B0
+        __DATA_CONST    __const          0x100010100         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010110      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x100010120    auth-rebase  0x1000064C4 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010128         rebase  0x1000100F0
+        __DATA_CONST    __const          0x100010140         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010150      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x100010160    auth-rebase  0x100006554 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010168         rebase  0x100010130
+        __DATA_CONST    __const          0x100010180         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x1000101A0         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x1000101C0         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x1000101E0    auth-rebase  0x100006D28 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x1000101E8    auth-rebase  0x100006D38 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x1000101F0         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x100010210         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x100010230         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x100010250         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x100010270         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010280         rebase  0x100010348
+        __DATA_CONST    __const          0x100010298         rebase  0x10000D3BB
+        __DATA_CONST    __const          0x1000102A8      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x1000102B8    auth-rebase  0x1000072E0 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x1000102C0         rebase  0x100010288
+        __DATA_CONST    __const          0x1000102D8         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x1000102F8         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010318         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010338         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010348    auth-rebase  0x100008AF0 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010398    auth-rebase  0x100008B24 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000103C0    auth-rebase  0x100008B64 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010438    auth-rebase  0x100008C24 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010460    auth-rebase  0x100008C88 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010488    auth-rebase  0x100008CC8 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000104B0    auth-rebase  0x100008D08 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000104D0    auth-rebase  0x100008DFC (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010548    auth-rebase  0x100008E34 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010570    auth-rebase  0x100008F98 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010598    auth-rebase  0x100009138 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000105C0    auth-rebase  0x10000928C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000105E8    auth-rebase  0x1000093C4 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010610    auth-rebase  0x100009520 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010638    auth-rebase  0x100009698 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010660    auth-rebase  0x1000097B8 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010688    auth-rebase  0x100009A3C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000106B0    auth-rebase  0x100009B3C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000106D8    auth-rebase  0x100009C3C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010700    auth-rebase  0x100009D64 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010728    auth-rebase  0x100009E68 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010750    auth-rebase  0x100009F9C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010778    auth-rebase  0x10000A0D0 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000107A0    auth-rebase  0x10000A1DC (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000107C8    auth-rebase  0x10000A2F8 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000107F0    auth-rebase  0x10000A4D8 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010818    auth-rebase  0x10000A578 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010840    auth-rebase  0x10000A63C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010868    auth-rebase  0x10000A720 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010890    auth-rebase  0x10000A8E4 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000108B8    auth-rebase  0x10000A994 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000108E0    auth-rebase  0x10000AA4C (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010908    auth-rebase  0x10000ABC8 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010930    auth-rebase  0x10000ACC8 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010958    auth-rebase  0x10000AE00 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010980    auth-rebase  0x10000AEB0 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000109A8    auth-rebase  0x10000AFB0 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000109D0    auth-rebase  0x10000B174 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x1000109F8    auth-rebase  0x10000B214 (div=0x0000 ad=0 key=IA)
+        __DATA_CONST    __const          0x100010A28    auth-rebase  0x10000076C (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010A30    auth-rebase  0x10000077C (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010A38         rebase  0x10000BF20
+        __DATA_CONST    __const          0x100010A58         rebase  0x10000CED4
+        __DATA_CONST    __const          0x100010A68      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x100010A78    auth-rebase  0x100006104 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010A80         rebase  0x100010A48
+        __DATA_CONST    __const          0x100010A88         rebase  0x10000CB8F
+        __DATA_CONST    __const          0x100010A90         rebase  0x10000CB96
+        __DATA_CONST    __const          0x100010A98         rebase  0x10000CB9D
+        __DATA_CONST    __const          0x100010AA0         rebase  0x10000CBA4
+        __DATA_CONST    __const          0x100010AA8         rebase  0x10000CBAB
+        __DATA_CONST    __const          0x100010AB0         rebase  0x10000CBB2
+        __DATA_CONST    __const          0x100010AB8         rebase  0x10000CBB9
+        __DATA_CONST    __const          0x100010AC0         rebase  0x10000CBC0
+        __DATA_CONST    __const          0x100010AD8         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010AE8      auth-bind  libSystem/__NSConcreteGlobalBlock (div=0x6AE1 ad=1 key=DA)
+        __DATA_CONST    __const          0x100010AF8    auth-rebase  0x100007690 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __const          0x100010B00         rebase  0x100010AC8
+        __DATA_CONST    __const          0x100010B18         rebase  0x10000DAFA
+        __DATA_CONST    __const          0x100010B38         rebase  0x10000DAFA
+        __DATA_CONST    __auth_got       0x100010B48      auth-bind  libbsm/_audit_token_to_au32 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B50      auth-bind  libbsm/_audit_token_to_egid (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B58      auth-bind  libbsm/_audit_token_to_euid (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B60      auth-bind  libbsm/_audit_token_to_pid (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B68      auth-bind  libSystem/__Block_object_assign (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B70      auth-bind  libSystem/__Block_object_dispose (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B78      auth-bind  libSystem/___assert_rtn (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B80      auth-bind  libSystem/___error (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B88      auth-bind  libSystem/___memset_chk (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B90      auth-bind  libSystem/___stack_chk_fail (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010B98      auth-bind  libSystem/___strlcat_chk (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BA0      auth-bind  libSystem/__os_assert_log (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BA8      auth-bind  libSystem/__os_crash (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BB0      auth-bind  libSystem/_asprintf (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BB8      auth-bind  libSystem/_atoi (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BC0      auth-bind  libSystem/_atoll (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BC8      auth-bind  libSystem/_auditon (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BD0      auth-bind  libSystem/_bootstrap_check_in (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BD8      auth-bind  libSystem/_bzero (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BE0      auth-bind  libSystem/_close$NOCANCEL (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BE8      auth-bind  libSystem/_dispatch_activate (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BF0      auth-bind  libSystem/_dispatch_after (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010BF8      auth-bind  libSystem/_dispatch_assert_queue$V2 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C00      auth-bind  libSystem/_dispatch_async (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C08      auth-bind  libSystem/_dispatch_mach_connect (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C10      auth-bind  libSystem/_dispatch_mach_create_f (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C18      auth-bind  libSystem/_dispatch_mach_mig_demux (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C20      auth-bind  libSystem/_dispatch_mach_msg_get_msg (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C28      auth-bind  libSystem/_dispatch_main (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C30      auth-bind  libSystem/_dispatch_once (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C38      auth-bind  libSystem/_dispatch_release (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C40      auth-bind  libSystem/_dispatch_resume (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C48      auth-bind  libSystem/_dispatch_set_context (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C50      auth-bind  libSystem/_dispatch_set_qos_class_fallback (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C58      auth-bind  libSystem/_dispatch_source_cancel (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C60      auth-bind  libSystem/_dispatch_source_create (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C68      auth-bind  libSystem/_dispatch_source_get_data (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C70      auth-bind  libSystem/_dispatch_source_merge_data (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C78      auth-bind  libSystem/_dispatch_source_set_cancel_handler (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C80      auth-bind  libSystem/_dispatch_source_set_cancel_handler_f (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C88      auth-bind  libSystem/_dispatch_source_set_event_handler (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C90      auth-bind  libSystem/_dispatch_source_set_event_handler_f (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010C98      auth-bind  libSystem/_dispatch_source_set_timer (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CA0      auth-bind  libSystem/_dispatch_source_testcancel (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CA8      auth-bind  libSystem/_dispatch_suspend (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CB0      auth-bind  libSystem/_dispatch_time (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CB8      auth-bind  libSystem/_dispatch_walltime (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CC0      auth-bind  libSystem/_dispatch_workloop_create_inactive (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CC8      auth-bind  libSystem/_exit (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CD0      auth-bind  libSystem/_fclose (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CD8      auth-bind  libSystem/_fcntl$NOCANCEL (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CE0      auth-bind  libSystem/_fdopen (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CE8      auth-bind  libSystem/_fflush (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CF0      auth-bind  libSystem/_fgetc (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010CF8      auth-bind  libSystem/_fgets (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D00      auth-bind  libSystem/_fileport_makefd (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D08      auth-bind  libSystem/_fopen (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D10      auth-bind  libSystem/_fprintf (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D18      auth-bind  libSystem/_fputc (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D20      auth-bind  libSystem/_free (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D28      auth-bind  libSystem/_fstat (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D30      auth-bind  libSystem/_ftruncate (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D38      auth-bind  libSystem/_fwrite (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D40      auth-bind  libSystem/_getgroups (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D48      auth-bind  libSystem/_getpagesize (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D50      auth-bind  libSystem/_getpid (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D58      auth-bind  libSystem/_getpwuid (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D60      auth-bind  libSystem/_initgroups (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D68      auth-bind  libSystem/_kill (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D70      auth-bind  libSystem/_localtime (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D78      auth-bind  libSystem/_lstat (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D80      auth-bind  libSystem/_mach_absolute_time (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D88      auth-bind  libSystem/_mach_msg (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D90      auth-bind  libSystem/_mach_msg_destroy (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010D98      auth-bind  libSystem/_mach_port_construct (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DA0      auth-bind  libSystem/_mach_port_deallocate (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DA8      auth-bind  libSystem/_mach_port_destruct (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DB0      auth-bind  libSystem/_mach_port_insert_right (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DB8      auth-bind  libSystem/_mach_port_request_notification (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DC0      auth-bind  libSystem/_mach_port_set_attributes (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DC8      auth-bind  libSystem/_malloc_type_calloc (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DD0      auth-bind  libSystem/_malloc_type_malloc (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DD8      auth-bind  libSystem/_malloc_type_realloc (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DE0      auth-bind  libSystem/_memchr (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DE8      auth-bind  libSystem/_memcpy (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DF0      auth-bind  libSystem/_mig_deallocate (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010DF8      auth-bind  libSystem/_mmap (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E00      auth-bind  libSystem/_notify_set_options (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E08      auth-bind  libSystem/_open$NOCANCEL (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E10      auth-bind  libSystem/_os_fault_with_payload (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E18      auth-bind  libSystem/_os_map_64_delete (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E20      auth-bind  libSystem/_os_map_64_find (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E28      auth-bind  libSystem/_os_map_64_init (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E30      auth-bind  libSystem/_os_map_64_insert (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E38      auth-bind  libSystem/_os_set_32_ptr_count (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E40      auth-bind  libSystem/_os_set_32_ptr_delete (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E48      auth-bind  libSystem/_os_set_32_ptr_find (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E50      auth-bind  libSystem/_os_set_32_ptr_init (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E58      auth-bind  libSystem/_os_set_32_ptr_insert (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E60      auth-bind  libSystem/_os_set_64_ptr_count (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E68      auth-bind  libSystem/_os_set_64_ptr_delete (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E70      auth-bind  libSystem/_os_set_64_ptr_find (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E78      auth-bind  libSystem/_os_set_64_ptr_foreach (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E80      auth-bind  libSystem/_os_set_64_ptr_init (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E88      auth-bind  libSystem/_os_set_64_ptr_insert (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E90      auth-bind  libSystem/_os_set_str_ptr_count (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010E98      auth-bind  libSystem/_os_set_str_ptr_delete (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EA0      auth-bind  libSystem/_os_set_str_ptr_find (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EA8      auth-bind  libSystem/_os_set_str_ptr_foreach (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EB0      auth-bind  libSystem/_os_set_str_ptr_init (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EB8      auth-bind  libSystem/_os_set_str_ptr_insert (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EC0      auth-bind  libSystem/_os_trace_set_mode (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EC8      auth-bind  libSystem/_os_variant_has_internal_diagnostics (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010ED0      auth-bind  libSystem/_pthread_setugid_np (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010ED8      auth-bind  libSystem/_reallocf (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EE0      auth-bind  libSystem/_realpath$DARWIN_EXTSN (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EE8      auth-bind  libSystem/_sandbox_check_by_audit_token (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EF0      auth-bind  libSystem/_sandbox_init (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010EF8      auth-bind  libSystem/_setrlimit (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F00      auth-bind  libSystem/_shm_open (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F08      auth-bind  libSystem/_signal (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F10      auth-bind  libSystem/_snprintf (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F18      auth-bind  libSystem/_stat (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F20      auth-bind  libSystem/_strcasecmp (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F28      auth-bind  libSystem/_strchr (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F30      auth-bind  libSystem/_strcmp (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F38      auth-bind  libSystem/_strdup (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F40      auth-bind  libSystem/_strerror (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F48      auth-bind  libSystem/_strftime (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F50      auth-bind  libSystem/_strlcat (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F58      auth-bind  libSystem/_strlen (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F60      auth-bind  libSystem/_strncasecmp (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F68      auth-bind  libSystem/_strncmp (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F70      auth-bind  libSystem/_strncpy (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F78      auth-bind  libSystem/_strtol (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F80      auth-bind  libSystem/_syscall (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F88      auth-bind  libSystem/_terminate_with_reason (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F90      auth-bind  libSystem/_time (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010F98      auth-bind  libSystem/_unlink (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FA0      auth-bind  libSystem/_vasprintf (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FA8      auth-bind  libSystem/_vfprintf (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FB0      auth-bind  libSystem/_write$NOCANCEL (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FB8      auth-bind  libSystem/_xpc_bool_get_value (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FC0      auth-bind  libSystem/_xpc_copy_entitlement_for_token (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FC8      auth-bind  libSystem/_xpc_dictionary_create (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FD0      auth-bind  libSystem/_xpc_dictionary_get_string (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FD8      auth-bind  libSystem/_xpc_dictionary_set_string (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FE0      auth-bind  libSystem/_xpc_dictionary_set_uint64 (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FE8      auth-bind  libSystem/_xpc_event_publisher_activate (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FF0      auth-bind  libSystem/_xpc_event_publisher_create (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100010FF8      auth-bind  libSystem/_xpc_event_publisher_fire_noboost (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011000      auth-bind  libSystem/_xpc_event_publisher_get_subscriber_asid (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011008      auth-bind  libSystem/_xpc_event_publisher_set_error_handler (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011010      auth-bind  libSystem/_xpc_event_publisher_set_handler (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011018      auth-bind  libSystem/_xpc_event_publisher_set_throttling (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011020      auth-bind  libSystem/_xpc_get_service_identifier_for_token (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011028      auth-bind  libSystem/_xpc_get_type (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __auth_got       0x100011030      auth-bind  libSystem/_xpc_release (div=0x0000 ad=1 key=IA)
+        __DATA_CONST    __got            0x100011038           bind  libSystem/_NDR_record
+        __DATA_CONST    __got            0x100011040           bind  libSystem/_SANDBOX_CHECK_NO_REPORT
+        __DATA_CONST    __got            0x100011048           bind  libSystem/__NSConcreteStackBlock
+        __DATA_CONST    __got            0x100011050           bind  libSystem/___stack_chk_guard
+        __DATA_CONST    __got            0x100011058           bind  libSystem/___stderrp
+        __DATA_CONST    __got            0x100011060           bind  libSystem/__dispatch_source_type_data_or
+        __DATA_CONST    __got            0x100011068           bind  libSystem/__dispatch_source_type_memorypressure
+        __DATA_CONST    __got            0x100011070           bind  libSystem/__dispatch_source_type_proc
+        __DATA_CONST    __got            0x100011078           bind  libSystem/__dispatch_source_type_signal
+        __DATA_CONST    __got            0x100011080           bind  libSystem/__dispatch_source_type_timer
+        __DATA_CONST    __got            0x100011088           bind  libSystem/__dispatch_source_type_vnode
+        __DATA_CONST    __got            0x100011090           bind  libSystem/__xpc_type_dictionary
+        __DATA_CONST    __got            0x100011098           bind  libSystem/_bootstrap_port
+        __DATA_CONST    __got            0x1000110A0           bind  libSystem/_gL1CacheEnabled
+        __DATA_CONST    __got            0x1000110A8           bind  libSystem/_mach_task_self_
+        __DATA          __data           0x100014000         rebase  0x1000104D0
