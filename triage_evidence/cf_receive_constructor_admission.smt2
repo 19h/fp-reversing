@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun status () (_ BitVec 32))
+(declare-fun types () (_ BitVec 32))
+(define-fun z () Bool (ite (= status #x00000000) (= (bvand types #x00070000) #x00000000) true))
+(assert (not (= (not z) (and (= status #x00000000) (not (= (bvand types #x00070000) #x00000000))))))
+(check-sat)

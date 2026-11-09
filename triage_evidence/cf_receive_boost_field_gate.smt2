@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun old () (_ BitVec 64))
+(declare-fun new () (_ BitVec 64))
+(define-fun z () Bool (ite (= old #x0000000000000000) (= new #x0000000000000000) true))
+(assert (not (= (not z) (and (= old #x0000000000000000) (not (= new #x0000000000000000))))))
+(check-sat)

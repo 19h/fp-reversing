@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun inline () (_ BitVec 32))
+(assert (and (bvuge inline #x00000018) (bvule inline #x00000bbc) (= (bvand inline #x00000003) #x00000000)))
+(define-fun delivered () (_ BitVec 32) (bvadd inline #x00000044))
+(define-fun audit_end () (_ BitVec 32) (bvadd inline #x00000034))
+(assert (not (and (bvule delivered #x00000c00) (bvule audit_end delivered))))
+(check-sat)

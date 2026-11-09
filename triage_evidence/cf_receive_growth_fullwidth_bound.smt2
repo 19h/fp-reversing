@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun size () (_ BitVec 32))
+(define-fun sum32 () (_ BitVec 32) (bvadd size #x00000044))
+(define-fun cap () (_ BitVec 64) (bvand (bvadd ((_ zero_extend 32) sum32) #x0000000000000003) #x00000001fffffffc))
+(assert (not (and (bvule cap #x0000000100000000) (= (bvand cap #x0000000000000003) #x0000000000000000))))
+(check-sat)

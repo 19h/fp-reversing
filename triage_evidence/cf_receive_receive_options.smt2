@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun timeout () (_ BitVec 32))
+(define-fun options () (_ BitVec 32) (ite (= timeout #xffffffff) #x07000806 #x07000906))
+(assert (not (and (= (bvand options #x0f000806) #x07000806)
+ (= (bvand options #x00000001) #x00000000)
+ (= (bvand options #x00000100) (ite (= timeout #xffffffff) #x00000000 #x00000100)))))
+(check-sat)
