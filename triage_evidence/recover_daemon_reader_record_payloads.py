@@ -29,6 +29,14 @@ def build():
  for n in['word','tag']:
   f=hdr['fragments'][n];raw=bytes.fromhex(f['bytes']);assert IMAGE.read(int(f['start'],16),len(raw))==raw;refs.append({'file':'daemon_header_codec_source.json','fragment':n,'bytes_checked':len(raw),'sha256':h(raw)})
  assert fs['setup']==json.loads((ROOT/'daemon_reader_record_headers_source.json').read_text())['fragments']['write_prepare']
+ n19=json.loads((ROOT/'daemon_reader_record_headers_source.json').read_text())
+ for name in['after_identifier','after_tag','after_extent']:
+  f=n19['fragments'][name];raw=bytes.fromhex(f['bytes']);assert IMAGE.read(int(f['start'],16),len(raw))==raw
+  refs.append({'file':'daemon_reader_record_headers_source.json','fragment':name,'bytes_checked':len(raw),'sha256':h(raw)})
+  written=set()
+  for ins in dc.disasm(raw,int(f['start'],16)):written.update(ins.reg_name(q)for q in ins.regs_access()[1])
+  assert not{p+str(j)for p in('x','w')for j in[8,9,10,11,12,13,15,28,30]}&written
+  if name=='after_extent':assert not{'x20','w20'}&written
  keys={8,9,10,11,12,13,15,28,30};live=[]
  for n in['router','upper','check64','check32','checkspan','length64','length32','call64']:
   assert not{p+str(j)for j in keys|{20}for p in('x','w')}&set(writes[n]);live.append({'fragment':n,'preserved_registers':sorted(keys|{20})})
@@ -41,7 +49,7 @@ def build():
  span_fixed={0,1,2,3,4,5,8,9,10,11,12,13,14,15,22,24,25,26,27,28,30}
  assert not{p+str(j)for p in('x','w')for j in span_fixed}&set(writes['span_loop'])
  ptr=[{'index':hex(ix),'slot':hex(TABLE+8*ix),'raw_bytes':IMAGE.read(TABLE+8*ix,8).hex(),'fixup':FIXUPS[TABLE+8*ix]}for ix in sorted(indices)]
- deps=['daemon_reader_record_headers_source.json','daemon_reader_record_headers_checks.json','daemon_typed_scalar_source.json','daemon_typed_scalar_checks.json','daemon_header_codec_source.json','daemon_header_codec_checks.json','validate_daemon_reader_record_headers.py','validate_daemon_typed_scalar.py','daemon_receive_fixups.txt']
+ deps=['daemon_reader_record_headers_source.json','daemon_reader_record_headers_checks.json','daemon_reader_value_consumers_source.json','daemon_reader_value_consumers_checks.json','daemon_typed_scalar_source.json','daemon_typed_scalar_checks.json','daemon_header_codec_source.json','daemon_header_codec_checks.json','validate_daemon_reader_record_headers.py','validate_daemon_typed_scalar.py','daemon_receive_fixups.txt']
  counts={'source_fragments':len(fs),'branch_terminated_ranges':len(BLOCKS),'explicit_source_cuts':len(CUTS),'source_instruction_instances':sum(len(f['instructions'])for f in fs.values()),'source_bytes':sum(len(bytes.fromhex(f['bytes']))for f in fs.values()),'pointer_records':len(ptr),'branch_slot_modifier_matches':len(edges),'prior_source_ranges_recaptured':len(refs),'source_SP_writes':0}
  return {'generator_sha256':sha(__file__),'static_scope':SCOPE,'daemon_path':str(SOURCE),'daemon_sha256':sha(SOURCE),'dependencies':{n:sha(ROOT/n)for n in deps},'fragments':fs,'branch_edges':edges,'pointer_records':ptr,'original_fixup_checks':verify_original_fixups({int(r['slot'],16)for r in ptr}),'register_write_sets':writes,'key_liveness':live,'count_X8_preservation_gap':{'start':hex(gap_start),'end':hex(gap_end),'bytes':gap.hex(),'sha256':h(gap)},'span_loop_preserved_registers':sorted(span_fixed),'prior_source_recaptures':refs,'verified_source_counts':counts,**{k:False for k in FLAGS}}
 if __name__=='__main__':

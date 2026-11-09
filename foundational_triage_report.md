@@ -1239,3 +1239,8 @@ Established conditional source epoch K=F=E-0x10dd0 through reader entry and buil
 ## Reader allocation-origin refinement
 
 [Reader allocation origins and context admission](daemon_reader_container_origins_report.md): a private caller derives modec4dd and parent+8 output;the original malloc binding requests16 B,initializes a two-u64 pair and publishes it for empty decoded input. N19 scalar/span defaults are identified. Comparison context is incoming X10 saved before a separate112 B allocation;shared value cells and a saved head are initialized. Fourteen ranges/249 instructions,18 fixups/15 slot matches,256 bank inputs,234 translated PCs,15 UNSAT queries,one SAT provenance counterexample and six changed-ledger controls pass. Native owners/upstream modes,complete object types,non-NULL head production and daemon-kext pairing remain unknown.
+
+
+## Reader record/header refinement
+
+[N19 admission, record allocation and header reconstruction](daemon_reader_record_headers_report.md): admitted cursor/total extent now bind N0/N24;nonnull buffer and10 B remaining guard the first header read. A u32-domain read-key identity and offset no-wrap/progress lemmas are proved. The ordinary path requests a32 B node and (P+10) B buffer and supplies shared header writers with value-preserving field encodings. Fifteen ranges/1110 instructions,24 fixups/21 slot matches,512 bank cases,1093 translated PCs,22 new and66 replayed UNSAT queries,one SAT domain counterexample and six controls pass. Payload completion,insertion/back edge,native owners/PAC and daemon-kext pairing remain unproved.
