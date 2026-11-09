@@ -1,0 +1,11 @@
+(set-logic QF_BV)
+(declare-fun m () (_ BitVec 32))
+(define-fun native () (_ BitVec 32)
+ (ite (bvslt m #x00000003)
+  (ite (bvsgt m #x00000000) #x693d4f62 #x693d4f68)
+  (ite (= m #x00000003) #x693d4f65 #x693d4f68)))
+(define-fun reduced () (_ BitVec 32)
+ (ite (or (= m #x00000001) (= m #x00000002)) #x693d4f62
+  (ite (= m #x00000003) #x693d4f65 #x693d4f68)))
+(assert (not (= native reduced)))
+(check-sat)
