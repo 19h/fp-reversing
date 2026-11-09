@@ -1380,3 +1380,8 @@ The core probe call supplies W9=0x10d50 and X17=authenticated slot1010b1e28,then
 ## N19 typed payload, recoding and append continuation
 
 The [typed-payload and append report](daemon_reader_record_payloads_report.md) closes selected N19 payload routes after header completion: exact reader tagsd0ee/c31c/1742 select4 B/8 B/span;the span loop recodes source-address-masked bytes for the destination. Raw lookup results distinguish append from replacement staging. Empty/nonempty append contracts now supply the actual cursor=record_end back edge. Thirty-one ranges/cuts retain820 instructions,36 fixups/41 slot matches,1520 translated PCs,51 new and72 replayed UNSAT queries,one abstract SAT mask counterexample and six integrity controls. Full lookup/replacement/cleanup,u64 reader transformation,native owners/PAC and daemon-kext pairing remain unproved.
+
+
+## N19 first-match lookup, replacement and retirement
+
+The [lookup/replacement report](daemon_reader_record_replacement_report.md) joins the decoded candidate through N19's output cell to OLD,proves the singleton/head/tail/middle source paths and independent word-cell splice,and establishes both normal-return release branches into the saved-end reader loop. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank inputs,1249 translated PCs,39 new and32 replayed UNSAT queries,one abstract SAT mutation counterexample and six integrity controls pass. Candidate/frame validity,finite stable chains,coherent/disjoint owners,bank roots and normal callee/PAC completion remain premises. The u64 reader transform,native ownership/synchronization,exceptional cleanup and daemon-kext exchange remain unproved.

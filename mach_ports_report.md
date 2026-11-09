@@ -1203,3 +1203,8 @@ The SP audit locates the retained CFMachPortGetPort accessor within the same sha
 ## N19 record reconstruction and endpoint boundary
 
 The [typed-payload and append report](daemon_reader_record_payloads_report.md) establishes local scalar/span writers,context lookup handoff,ordered append stores and the selected cursor back edge. These local pointer/record contracts establish no new Mach name,right,emission site or successful daemon-kext transport pairing. The original trace's transport/UserClient distinction and endpoint evidence limits remain in force.
+
+
+## N19 lookup and retirement versus endpoint evidence
+
+The [lookup/replacement report](daemon_reader_record_replacement_report.md) establishes local identifier search,matched-node replacement,conditional release calls and the ordinary replacement cursor back edge. Its node pointers,scratch outputs and raw local statuses establish no new Mach name,right,emission site,peer identity or successful daemon-kext exchange. The earlier endpoint and failed-UserClient-open evidence boundaries remain in force.

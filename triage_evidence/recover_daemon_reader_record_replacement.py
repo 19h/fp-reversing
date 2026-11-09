@@ -31,11 +31,13 @@ def build():
  origin=json.loads(read(ROOT/'daemon_constructor_bank_origins_source.json'));roots=[]
  for off in[0x870,0x868]:
   p=origin['field_projections'][hex(off)]
+  assert int(p['expected_value'],16)=={0x870:0x100e99700,0x868:0x100f4e190}[off]
   for ins in p['instructions']:
    decoded=next(CS.disasm(IMAGE.read(int(ins['ea'],16),4),int(ins['ea'],16)));assert decoded.mnemonic==ins['mnemonic']and decoded.op_str==ins['operands']
   roots.append({'file':'daemon_constructor_bank_origins_source.json','field_offset':hex(off),'expected_value':p['expected_value'],'writer':p['writer'],'scope':'Prior initializer projection,not a new native reaching-definition proof.'})
  owner=json.loads(read(ROOT/'daemon_builder_owner_join_source.json'))
  for q in owner['child1_bank_root_fields']:
+  assert int(q['value'],16)=={0x600:0x100e99a00,0x5f8:0x100f4e390}[int(q['field_offset'],16)]
   i=q['original_instruction'];assert IMAGE.read(int(i['ea'],16),4).hex()==i['bytes']
   roots.append({'file':'daemon_builder_owner_join_source.json','field_offset':q['field_offset'],'value':q['value'],'site':i['ea'],'scope':'Retained initializer writer evidence;later epoch/reaching definition remains a premise.'})
  ptr=[{'index':hex(ix),'slot':hex(TABLE+8*ix),'raw_bytes':IMAGE.read(TABLE+8*ix,8).hex(),'fixup':FIXUPS[TABLE+8*ix]}for ix in sorted(indices)]

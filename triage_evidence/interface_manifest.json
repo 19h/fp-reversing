@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-09T07:11:14.436057+00:00",
+  "created_utc": "2026-11-09T07:40:20.185163+00:00",
   "goal_status": "active",
   "inputs_preserved": [
     {
@@ -21,9 +21,9 @@
   "logical_storage_policy": "Canonical JSON paths may resolve read-only to .json.zst; sizes and SHA256 are decoded logical content. Historical Markdown paths are checked logically, not claimed physically present.",
   "scope_note": "Owned reports/scripts and direct evidence; external dump.md preserved/excluded. Current case sets are scoped by their contract files; earlier exploratory snapshots are historical.",
   "validation": {
-    "reports": 306,
-    "local_markdown_links": 5732,
-    "direct_json_files": 2190,
+    "reports": 307,
+    "local_markdown_links": 5750,
+    "direct_json_files": 2195,
     "unavailable_external_primary_references": [
       {
         "report": "kernel_root_port_construct_report.md",
@@ -10166,7 +10166,26 @@
       "SSA_definitions": 1648,
       "rejected_alterations": 6
     },
-    "daemon_reader_record_payloads_static_scope": "Conditional N19 full u16 payload type/extent partition, scalar writer interfaces, span count and address-dependent recoding, post-payload lookup handoff, conditional append and cursor back edge. Full replacement/cleanup, native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+    "daemon_reader_record_payloads_static_scope": "Conditional N19 full u16 payload type/extent partition, scalar writer interfaces, span count and address-dependent recoding, post-payload lookup handoff, conditional append and cursor back edge. Full replacement/cleanup, native owners/PAC/endpoints and daemon-kext pairing remain unproved.",
+    "daemon_reader_record_replacement_increment_checks": {
+      "source_fragments": 27,
+      "source_instruction_instances": 1278,
+      "source_bytes": 5112,
+      "normal_free_call_boundaries": 2,
+      "bank_inputs_checked": 512,
+      "pointer_records": 35,
+      "branch_slot_modifier_matches": 37,
+      "prior_source_ranges_recaptured": 8,
+      "source_SP_writes": 0,
+      "new_queries_unsat": 39,
+      "reused_queries_unsat": 32,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 1249,
+      "translated_instruction_instances": 1821,
+      "SSA_definitions": 1707,
+      "rejected_alterations": 6
+    },
+    "daemon_reader_record_replacement_static_scope": "Conditional N19 first-match lookup and output/status contract,position-preserving replacement,normal-return retirement calls and saved-end reader-loop back edge. Finite stable valid owners,frame epochs,bank roots and call/PAC completion remain premises;u64 reader/native transport and complete parser remain unproved."
   },
   "files": [
     {
@@ -10786,8 +10805,13 @@
     },
     {
       "path": "daemon_reader_record_payloads_report.md",
-      "size_bytes": 19171,
-      "sha256": "2b5f04e668b81992766f1376d205e8ab1e91a8484ef675536dbf111bad62a53f"
+      "size_bytes": 19791,
+      "sha256": "dc3ae995db501ae8b571c4ddbcaf75a24aedd97ad9b6946092a6f585e1c12d2b"
+    },
+    {
+      "path": "daemon_reader_record_replacement_report.md",
+      "size_bytes": 21003,
+      "sha256": "423a1a0a8146d5cb127a62ebb4ff09b657a4d6127ed7fea9d167e617d041cca3"
     },
     {
       "path": "daemon_reader_stack_epoch_report.md",
@@ -11006,8 +11030,8 @@
     },
     {
       "path": "foundational_triage_report.md",
-      "size_bytes": 240591,
-      "sha256": "86c69b4c16cd70314c334901cf692592cf2d1216ff496f40fc43fd6bf32ed33c"
+      "size_bytes": 241415,
+      "sha256": "9da97c1091c5d980d1d4fcaa8bc41afad7a46e424e4f24dbe64ecd9db6746f42"
     },
     {
       "path": "host_special_registration_report.md",
@@ -11021,13 +11045,13 @@
     },
     {
       "path": "interface_abi_report.md",
-      "size_bytes": 224808,
-      "sha256": "720f0f74906f65ef2be0270a63de18397d42c2b520a973a0ccfcb0c2e730cc62"
+      "size_bytes": 225632,
+      "sha256": "fa1fa29970f0f89498fca23f844fe474967bbdb40ce3ce5cf1fe4b30e652ba65"
     },
     {
       "path": "interface_investigation_status.md",
-      "size_bytes": 278641,
-      "sha256": "1c5cd4f249e4dc15fda353b9df83de59eabb24cfaaa71c8b6f83f05442361a9c"
+      "size_bytes": 279527,
+      "sha256": "f7fec308519daa4a08ab6f4037452b9315a96e31b92b5e0f1d90d7e96ba8dd94"
     },
     {
       "path": "iokit_async_contract_report.md",
@@ -11481,8 +11505,8 @@
     },
     {
       "path": "mach_ports_report.md",
-      "size_bytes": 195760,
-      "sha256": "2dfb638eed8bd786f2f5275cf5c9ba4202c1fe88af0f8011d11cf8d074e89192"
+      "size_bytes": 196266,
+      "sha256": "4d210366dadefa20d3ed9ddd104dc50cfdeb926d22036db4431e8142ec36d8e6"
     },
     {
       "path": "managed_adapter_dispatch_report.md",
@@ -11516,8 +11540,8 @@
     },
     {
       "path": "obfuscated_routines_report.md",
-      "size_bytes": 218939,
-      "sha256": "87b46a401006b9e22a7421df19bf4ec425a6d30c5c23b9ba8921295f139a334d"
+      "size_bytes": 219763,
+      "sha256": "b65aa9cf71eda6184d25e9a964e8e77389a177c720d82fa95071dcdaf836ccda"
     },
     {
       "path": "platform_iorpc_report.md",
@@ -25250,6 +25274,31 @@
       "sha256": "6f8139be6fa48c727d23fa9e865bb1d60748cbb82806e85081c86d964be31e22"
     },
     {
+      "path": "triage_evidence/daemon_reader_record_replacement_checks.json",
+      "size_bytes": 2094497,
+      "sha256": "055c74fc949d9c5d55bf1b6f0052912b7bb5d2c840419829d9de8bbab17a5749"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_record_replacement_delivery.json",
+      "size_bytes": 2294,
+      "sha256": "0601ee959fd952387b81bef8f01e5a2d57cb93e50db203e0d4462039fde34c38"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_record_replacement_prior_manifest.json",
+      "size_bytes": 1880584,
+      "sha256": "a3d80da61055a1d079a4151c763faf2972b42624bfe57d93f3ae8ad25dbd7174"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_record_replacement_quality_gates.json",
+      "size_bytes": 8388,
+      "sha256": "63d9452ac3e15c39dec1e22b47c4b16a42d86c766b5fcf6efb7fc97cd74e1b79"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_record_replacement_source.json",
+      "size_bytes": 223055,
+      "sha256": "8f767fcbe68c953fa786347c30d16f2c154d23f54b2574964808973c91637f25"
+    },
+    {
       "path": "triage_evidence/daemon_reader_stack_epoch_checks.json",
       "size_bytes": 43476,
       "sha256": "5cc61320284f115ec0d42292b34d8effeb62a2893467263261be0f49a0554e5c"
@@ -38385,6 +38434,11 @@
       "sha256": "1a93e8c3d55b042e0173c24f883948b1115a55bfc8598a4bd8fb9252aa271f10"
     },
     {
+      "path": "triage_evidence/recover_daemon_reader_record_replacement.py",
+      "size_bytes": 7119,
+      "sha256": "b2e278633548ea1cb277eced897558bec3bf8713a8fe8b0da049c371cea93203"
+    },
+    {
       "path": "triage_evidence/recover_daemon_reader_stack_epoch.py",
       "size_bytes": 8755,
       "sha256": "56f5d3ed968806ab064f3081fc56c95e6ed8525dd8d8a2b8340fa06cf7325939"
@@ -42480,6 +42534,11 @@
       "sha256": "ab15b19fc807a7ce76309d1682e56ffcf69b675d5fd232e8e3c3142a1685febb"
     },
     {
+      "path": "triage_evidence/seal_daemon_reader_record_replacement.py",
+      "size_bytes": 5506,
+      "sha256": "90d0927f3d79974b0437d84e4179897db51ffa04bda75fb53c4ceee1272dd2b0"
+    },
+    {
       "path": "triage_evidence/seal_daemon_reader_stack_epoch.py",
       "size_bytes": 5439,
       "sha256": "5610e38ef66af36fbdbe72129d29ec7811c704d1857bc79853ce4e4f90bd0c75"
@@ -44165,6 +44224,11 @@
       "sha256": "bb397e7d79338779fac8b5baf2754e84278aa40dcea205d5a1c53a4060732c00"
     },
     {
+      "path": "triage_evidence/validate_daemon_reader_record_replacement.py",
+      "size_bytes": 24983,
+      "sha256": "a0892b6784963c77c2783e71feee1f54b2ae3aae0e3b8f80f03306d328487022"
+    },
+    {
       "path": "triage_evidence/validate_daemon_reader_stack_epoch.py",
       "size_bytes": 7038,
       "sha256": "f6b87f2a48b71bef2c726679f5ec46d2ae12e90cb0997308462b1f50d953aa7d"
@@ -45291,8 +45355,8 @@
     },
     {
       "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
-      "size_bytes": 135702,
-      "sha256": "c84937cbc84ff578d6c6e233473f1a69ec765f0afb1a7e350697da83d92b8c59"
+      "size_bytes": 136291,
+      "sha256": "fd5ed5e0f1b8e1f6f42f6ece17477bed51344cad291d4bb2ac45e2be9090b761"
     },
     {
       "path": "triage_evidence/validate_rpc502_startup.py",
@@ -45793,6 +45857,11 @@
       "path": "triage_evidence/verify_daemon_reader_record_payloads_publication.py",
       "size_bytes": 5168,
       "sha256": "04818dc5b30d0adfffacaa149fec47a9faa6d9ff53adf03440fe220e6f4634a3"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_record_replacement_publication.py",
+      "size_bytes": 5171,
+      "sha256": "fabd062797c8d9d063604c1270eff19b3b1506df97d8c09214dc947fcd817d0a"
     },
     {
       "path": "triage_evidence/verify_daemon_reader_stack_epoch_publication.py",

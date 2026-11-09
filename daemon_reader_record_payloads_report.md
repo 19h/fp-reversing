@@ -197,3 +197,8 @@ QG5: Pass for bounded claims. Caller-specific scalar encodings, mask deltas, arb
 QG6: Pass. Original source recaptures, full non-BRAA coverage, original fixups/liveness, 51 new and 72 replayed UNSAT queries support the claims. The SAT query is abstract and creates no native witness. Memory supplies guidance, not a semantic premise.
 
 QG7: Pass for the finite high/medium/low continuation list. No complete-parser or full-goal achievement is claimed.
+
+
+## Subsequent lookup and matched-replacement evidence
+
+The [N19 lookup/replacement report](daemon_reader_record_replacement_report.md) closes the ordinary-path lookup and matched-replacement frontiers under explicit source/owner/callee assumptions. It joins the matched candidate to OLD,repairs all four list positions,models buffer/node release interfaces and proves the normal replacement saved-end back edge. It supersedes the earlier open lookup/replacement item for this selected normal path. Exceptional cleanup,native lifetime/synchronization,the u64 reader transform and cross-layer pairing remain unresolved.
