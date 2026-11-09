@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+"""Bounded source-instruction bit-vector lift for record/tag/payload headers.
+
+Only listed pure instructions and fixed memory cells are supported. The tag
+slice uses low16 projections: every operation there is low-bit preserving.
+O(I) DAG construction/space; solver complexity is separate. No target executes.
+"""
+import z3
+from capstone import Cs,CS_ARCH_ARM64,CS_MODE_LITTLE_ENDIAN
+from capstone.arm64 import ARM64_OP_REG,ARM64_OP_IMM,ARM64_SFT_LSL,ARM64_SFT_LSR
+def resize(v,n):
+ if isinstance(v,int):return z3.BitVecVal(v,n)
+ return z3.ZeroExt(n-v.size(),v)if v.size()<n else z3.Extract(n-1,0,v)if v.size()>n else v
+class Lift:
+ def __init__(self,c,narrow=False):self.c=c;self.narrow=narrow;self.regs={};self.memory={};self.stores=[];self.count=0
+ def width(self,name):return 16 if self.narrow else 32 if name.startswith('w')else 64
+ def key(self,name):return'x'+name[1:]if name.startswith('w')else name
+ def read(self,name):
+  w=self.width(name)
+  if name in['wzr','xzr']:return z3.BitVecVal(0,w)
+  assert self.key(name)in self.regs,('undefined symbolic register',name);return resize(self.regs[self.key(name)],w)
+ def write(self,name,v):
+  if name in['wzr','xzr']:return
+  assert not self.narrow or name.startswith('w');v=resize(v,self.width(name));self.regs[self.key(name)]=v if self.narrow else resize(v,64)
+ def seed(self,name,v):self.regs[self.key(name)]=resize(v,16 if self.narrow else 64)
+ def operand(self,i,o,n):
+  v=resize(self.read(i.reg_name(o.reg)),n)if o.type==ARM64_OP_REG else resize(o.imm,n)if o.type==ARM64_OP_IMM else None;assert v is not None
+  if o.shift.type:
+   assert o.shift.type in[ARM64_SFT_LSL,ARM64_SFT_LSR];v=v<<o.shift.value if o.shift.type==ARM64_SFT_LSL else z3.LShR(v,o.shift.value)
+  return v
+ def address(self,i,o):
+  v=resize(self.read(i.reg_name(o.mem.base)),64)+o.mem.disp
+  if o.mem.index:
+   x=resize(self.read(i.reg_name(o.mem.index)),64);v=v+(x<<o.shift.value)
+  return z3.simplify(v)
+ def load(self,a,n):
+  assert z3.is_bv_value(a),('nonconstant symbolic load',a);key=(a.as_long(),n);assert key in self.memory,('undefined symbolic cell',key);return self.memory[key]
+ def store(self,a,n,v,pc):
+  v=resize(v,n*8);self.stores.append({'pc':pc,'address':a,'size_bytes':n,'value':v})
+  if z3.is_bv_value(a):self.memory[(a.as_long(),n)]=v
+ def run(self,label):
+  row=next(s for s in self.c['spans']if s['label']==label);raw=bytes.fromhex(row['bytes_hex']);cs=Cs(CS_ARCH_ARM64,CS_MODE_LITTLE_ENDIAN);cs.detail=True;ins=list(cs.disasm(raw,int(row['start'],16)));assert sum(i.size for i in ins)==len(raw)
+  for i in ins:
+   m=i.mnemonic;ops=i.operands;self.count+=1
+   if m in['ldr','ldrh']:
+    dest=i.reg_name(ops[0].reg);n=2 if m=='ldrh'else self.width(dest)//8;self.write(dest,self.load(self.address(i,ops[1]),n));continue
+   if m in['str','strb']:
+    src=i.reg_name(ops[0].reg);n=1 if m=='strb'else self.width(src)//8;self.store(self.address(i,ops[1]),n,self.read(src),i.address);continue
+   if m in['ldp','stp']:
+    a=self.address(i,ops[2]);n=self.width(i.reg_name(ops[0].reg))//8
+    for j in range(2):
+     reg=i.reg_name(ops[j].reg);at=z3.simplify(a+j*n)
+     if m=='ldp':self.write(reg,self.load(at,n))
+     else:self.store(at,n,self.read(reg),i.address)
+    continue
+   dest=i.reg_name(ops[0].reg);n=self.width(dest)
+   if m=='mov':v=self.operand(i,ops[1],n)
+   elif m=='movk':
+    shift=ops[1].shift.value;mask=(0xffff<<shift)&((1<<n)-1);v=(self.read(dest)&~mask)|resize(ops[1].imm<<shift,n)
+   elif m in['add','sub','and','orr','eor','madd']:
+    a=self.operand(i,ops[1],n);b=self.operand(i,ops[2],n)
+    v=a+b if m=='add'else a-b if m=='sub'else a&b if m=='and'else a|b if m=='orr'else a^b if m=='eor'else a*b+self.operand(i,ops[3],n)
+   elif m in['lsl','lsr']:
+    a=self.operand(i,ops[1],n);shift=ops[2].imm;v=a<<shift if m=='lsl'else z3.LShR(a,shift)
+   else:raise AssertionError(('unsupported symbolic instruction',hex(i.address),m,i.op_str))
+   self.write(dest,z3.simplify(v))
+  return self
+def queries(c):
+ q=z3.BitVec('inner_record_address32',32);kg=(((0xc5fb06fa|(q<<1))-q+0x1d027c83)^0xac756b1b)*0xcfc386d7;kd=((2*(q&0xbf13e450)-q+0x40ec1baf)^0x0e64f3c9)*0xcfc386d7;k=z3.BitVec('shared_inner_key32',32);t=z3.BitVec('tag16',16);x=z3.BitVec('value64',64);cursor=z3.BitVec('byte_cursor32',32);count=z3.BitVec('entry_count32',32)
+ tag=Lift(c,True);tag.seed('w0',t*0x7e23+0x64ca);tag.run('tag_symbolic');tagquery=(tag.read('w0')^0x8151)!=t
+ payload=Lift(c);payload.seed('x1',x+0x442b0f63903f796e);payload.seed('sp',0x7000000000);payload.run('payload_symbolic');assert len(payload.stores)==8;assert all(z3.is_bv_value(s['address'])and s['address'].as_long()==0x7000000010+j for j,s in enumerate(payload.stores));payloadquery=z3.Concat(*[s['value']for s in payload.stores])!=x
+ Q=0x7100001000;A=0x7100002000;B=0x7100003000;header=Lift(c)
+ for name,v in[('x0',Q),('x20',A),('x15',B),('w22',0x2bf),('w14',k),('w3',cursor),('w16',z3.ZeroExt(16,z3.BitVecVal(0x6609,16)-z3.Extract(15,0,k))+k)]:header.seed(name,v)
+ header.memory={(Q+10,2):(t^0x8151)+z3.Extract(15,0,k),(A+156,4):cursor,(A+144,8):z3.BitVecVal(B,64)};header.run('header_symbolic');bytes4=[s for s in header.stores if s['size_bytes']==1];assert len(bytes4)==4;wanted=[z3.Extract(15,8,t),z3.Extract(7,0,t),z3.BitVecVal(0,8),z3.BitVecVal(8,8)];bad=[]
+ for j,s in enumerate(bytes4):bad.extend([s['address']!=z3.BitVecVal(B,64)+z3.ZeroExt(32,cursor+j),s['value']!=wanted[j]])
+ bad.append(header.memory[(A+156,4)]!=cursor+4)
+ tail=Lift(c)
+ for name,v in[('x20',A),('x23',Q),('w19',8)]:tail.seed(name,v)
+ tail.memory={(A+152,4):count,(A+156,4):cursor+4};tail.run('counter_symbolic')
+ countword=z3.Extract(15,0,z3.ZeroExt(16,z3.BitVecVal(0x6609,16)-z3.Extract(15,0,k))+k-0x6601)
+ rows=[('inner_key32',kg!=kd),('selector_and_length',z3.Or((((k+0xc83b1be7)-k+0x37c4e63d)^k)^k!=0x224,countword!=8)),('tag_roundtrip16',tagquery),('payload_big_endian64',payloadquery),('header_four_bytes',z3.Or(*bad)),('counter_updates32',z3.Or(tail.memory[(A+152,4)]!=count+1,tail.memory[(A+156,4)]!=cursor+12))]
+ return rows,{'tag_instructions':tag.count,'payload_instructions':payload.count,'header_instructions':header.count,'counter_instructions':tail.count}
