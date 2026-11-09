@@ -1,0 +1,6 @@
+(set-option :timeout 60000)
+(declare-fun i () (_ BitVec 32))
+(define-fun t () (_ BitVec 32) (bvsub i #x00000025))
+(define-fun carry () Bool (bvugt (bvadd ((_ zero_extend 1) t) #b000000000000000000000000000100100) #b011111111111111111111111111111111))
+(assert (not (= carry (and (bvuge i #x00000001) (bvule i #x00000024)))))
+(check-sat)

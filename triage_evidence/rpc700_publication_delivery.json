@@ -1,0 +1,44 @@
+{
+  "generator_sha256": "369fd282b44d2dd1630825eb2678de6abdd116b769e2295d88abb4bb21180d10",
+  "prior_manifest_sha256": "c7d2c3194770294507c57b62369d9cf61b6c08c6f1c278f3eface9df025e4bc9",
+  "prior_artifacts_checked": 6731,
+  "prior_artifacts_unchanged": 6725,
+  "allowed_changes": [
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "a6cfc3ed20db75e73d3ff887c0bca7a3d7a0168788794009e74ef51d6d2368c1",
+      "sha256": "9b4a44a73d9385e31d1b01135a2de7004eafcfda8666110639eaa9d7ce5e7134"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "28d571ce08e0b2d31577db45f6410f6e2c5e09e5f6ffa1fe6318101016f91fba",
+      "sha256": "aae3843493e7445bc5250ee2fcfdc532ee21c396c55e519145c05c62ea78404d"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "abf59008c4b87bfa387b0541b556a87bf277892e7643a8cc72c26306f6b86fff",
+      "sha256": "fcb1866a5e6567bebf1090396d69899859f435c30679791b0877e737d4960d11"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "8f23f2403bcde0de4410671dcd98dc0c2ed73f21d59a46e8c6db62ec8ac6a016",
+      "sha256": "b1f643e183f4cbebb8ecf0e8151c51556826693c646927eb9fe5580693b92caa"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "6b62ec7524cb669ea1875bc731cde05dc61152a246b7a2711a78bedea2ec7940",
+      "sha256": "2f576fee48deda6e49e645c6ae2960519fb47d046f1fd49c36cf93822a599819"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "ba9f54f4a59e7de7d65121680a6c7ddf8ab84dfa998e8dbe686b7a9781bea6a7",
+      "sha256": "241347e9d0749f66316d61771d82d750ecd764e6e064ddcba5b25db1fee4ba46"
+    }
+  ],
+  "original_inputs_preserved": 3,
+  "Python_syntax_checks": 5,
+  "local_links_checked": 2130,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "full_goal_complete": false
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "Prior-artifact/input readback;writes only this increment's new record.\n\nO(total prior artifact bytes) work,O(manifest bytes) retained space.\n",
+  "generator_sha256": "a2378d01e0a25af66c275eabefc3a81ff23496d33ac6912533c9a5ac90825ed7",
+  "baseline_manifest_path": "rpc700_namespace_prior_manifest.json",
+  "baseline_manifest_sha256": "b24882aa9e523046ff85f8c3888f0b9397d40167f655bcebe89195977f96fc14",
+  "prior_artifacts_checked": 1166,
+  "unchanged_prior_artifacts": 1160,
+  "allowed_existing_changes": [
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "44a86dd0dc977332359bba2f5ad6d248c146301e81e6c99469a39fdf7e53f1c0",
+      "current_sha256": "fc0bf752fd77b1b317e857c9f49dd781c632b11695d445ed7589d95421bf5b49"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "2f2e3dd250d0959ad58d9463ff1ac2cd09e681038e09c5a65bdae3c0a3696d8e",
+      "current_sha256": "2c2ca6f2d1ecc6246c824dca350e0b6aa32f7c22061153dd628d32bcf856f4bf"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "1cf321def7b960dc7b60ab22dbd039ebcef6df1c540225ffa9bb4b5dd1c3bffd",
+      "current_sha256": "83854a1df803b1be936b49976764c78e5ed23c885fff5ac1632b6d2ec8cee0f8"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "d71fb258058b40625dcb5a9183c196660495b017ef0ff318675e553c39cb8f79",
+      "current_sha256": "14b887c01e03fe12e26f58b89cd5a7ccc458362d528884afc42908061477d04a"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "5626fde0a451de4f303f995e801347c5db6fd2f6c898833fa70347df24ee5472",
+      "current_sha256": "4c84adc3567b5f069d222b23344c6bf7912aa52da9d5d245a48599c268fea8ff"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "ae8cfc8cc8804baf06eee181d6e25dbbcb46514b370e0d6403561349bdf7e1df",
+      "current_sha256": "287f6265d4b28cd940c029566034fbfcad4e7148f18a8a293a7cb09f39423b66"
+    }
+  ],
+  "original_inputs_preserved": [
+    {
+      "path": "analysis.md",
+      "size_bytes": 20416,
+      "sha256": "f6421fe1c9652a27b0afb7c2827fd568728941263a3664b79bdd236c46c63ce6"
+    },
+    {
+      "path": "com.apple.driver.FairPlayIOKit.c",
+      "size_bytes": 10208257,
+      "sha256": "dfb28b99b293db95a78a5d2dd20f6fcf1a95f1a53245b99a090370e7a3327f08"
+    },
+    {
+      "path": "com.apple.driver.FairPlayIOKit_calls.txt",
+      "size_bytes": 20991,
+      "sha256": "3aafca153c8a9a9ac192cb738d0073dc1e6b2ff1ab9215b8a7a8706a6ae9a857"
+    }
+  ],
+  "all_checks_pass": true,
+  "full_goal_complete": false
+}

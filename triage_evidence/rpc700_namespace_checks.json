@@ -1,0 +1,34 @@
+{
+  "scope": "Fresh source/import/GOT/header/proof/plist readback for RPC700 leads.\n\nNo native target, IPC, IOKit, loader, synchronization or IDB operation.\nO(total pinned source bytes + imports + GOT + instructions) verification;\ntwo timeout-bounded local solvers and compile-only SDK assertions.\n",
+  "generator_sha256": "b63398d8fe8132b062b2e8ad961af7fb863204285b1d81bc241b04eb1d0e73c4",
+  "dependencies": {
+    "bootpolicy_cache_reader.py": "1c5f82b3c8e048a81cba73a486998f41c0a09f8494c79009924d5a8a77614cc9",
+    "kernel_native_reader.py": "a911002cc5c7de17a2eeadaf31fe232a7df100d19cbaa519669249fffaf5c9c0",
+    "recover_rpc700_namespace.py": "83cd5dce68196e8b9fb84b62a6cef6befa3fba3dd310a6a419896e094da54ff9",
+    "resolve_kernel_collection_interfaces.py": "fb1d89ac03f606dd8b4210bcd6cea2ed6a4828d16673b61f4c9c395b5055c242",
+    "rpc700_host_constants.c": "eb333b7df67d49091e83ba73d1eaa941646a17d55a05d1f6c484043d4eb3d95c",
+    "rpc700_host_special_ports.h": "48f306d2f44ae006e1628b9218b220bd495bf01c56211138d6d73ce1a7a37476",
+    "rpc700_namespace_contracts.json": "0da275bb64057fb17bb2e77a983acba8f44eaa04710936b5ce3565a70a6132b4",
+    "rpc700_namespace_copy_sentinels.smt2": "bf1d77b3ebcad5b65ab84acc16441d4071f3ca4e138206ea54c1f0fabd8ed7f0",
+    "rpc700_namespace_index_range.smt2": "85a7ee1df464af6b0d6380ffefccbf5f51980e5d5030d0fbe4ffc884eadd218c"
+  },
+  "verified_counts": {
+    "kernel_functions": 3,
+    "exact_kernel_symbol_bindings": 2,
+    "proofs_unsat": 2,
+    "SDK_compile_exit": 0,
+    "plists": 3,
+    "candidate_import_records": 5174,
+    "rejected_header_shapes": 50,
+    "candidate_slices": 2,
+    "known_MIG_positive_controls": 1,
+    "framework_GOT_records": 298,
+    "cache_files_hashed": 4
+  },
+  "receiver_identified": false,
+  "native_target_executed": false,
+  "native_port_objects_observed": false,
+  "SDK_label_is_native_registration_proof": false,
+  "all_checks_pass": true,
+  "full_goal_complete": false
+}

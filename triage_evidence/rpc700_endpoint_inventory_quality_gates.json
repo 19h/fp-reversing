@@ -1,0 +1,90 @@
+{
+  "scope": "Whole selected cache image/GOT metadata and v5 slide-chain inventory; selected shared-stub shape/raw flag8 executable mappings; all representable direct B/BL source ranges to three fixed targets and complete matched callers. Indirect/dynamic/other-image references and hardware PAC remain outside this scope.",
+  "generator_sha256": "420fb41e4249a166a9dbd6560347d276bf817fb86c5736b9e88ca21c8ec99f70",
+  "verified_counts": {
+    "cache_images": 4113,
+    "declared_GOT_words": 1815207,
+    "slide_maps": 14,
+    "slide_chain_entries": 30802349,
+    "API_chain_matches": 5,
+    "host_getter_chain_matches": 1,
+    "host_setter_chain_matches": 0,
+    "raw_flag8_executable_maps": 36,
+    "stub_candidate_start_sites": 2477972,
+    "getter_stubs": 1,
+    "branch_words_scanned": 65480381,
+    "branch_matches": 3,
+    "complete_functions": 7,
+    "instructions": 513,
+    "function_bytes": 2052,
+    "domain_queries": 2,
+    "selected_Apple_job_queries": 880,
+    "successful_job_queries": 880,
+    "endpoints": 2038,
+    "host_associations": 18,
+    "instruction_assertions": 14,
+    "SDK_assertions": 11,
+    "SDK_compilations": 1,
+    "scalar_queries_unsat": 1,
+    "rejected_evidence_alterations": 8
+  },
+  "static_scope": "Whole selected cache image/GOT metadata and v5 slide-chain inventory; selected shared-stub shape/raw flag8 executable mappings; all representable direct B/BL source ranges to three fixed targets and complete matched callers. Indirect/dynamic/other-image references and hardware PAC remain outside this scope.",
+  "native_observation_scope": "Frozen 2 domain listings and 880 listed com.apple. job queries in system and gui/501, at recorded times; 2038 endpoint records and 18 printed host associations. Non-atomic, time-bound metadata; no kernel-slot occupancy, receiver identity or FairPlay request proof.",
+  "native_inspection_executed": true,
+  "native_launchd_interrogation_executed": true,
+  "report_sha256": {
+    "rpc700_endpoint_inventory_report.md": "36d960289c5a287781f3061b1823480f62a959b39a06caa77185b59cdd53d3cc",
+    "obfuscated_routines_report.md": "78c2f93a24708df4dd16ee50b877fb8ae5586de769fdd524463b8226b287627f",
+    "mach_ports_report.md": "0b48786880a2261b9d02188e08776ab051bf440c12237b9afda37806089de665",
+    "foundational_triage_report.md": "6a68ba4084f5f1d0aa1482e7f02ba3a34b990d616efe28f799abd7cd7c553ca7",
+    "interface_abi_report.md": "87e04d8cd35dbaa008c0ab0b97ffc6016e86de06d12d4bce3094e7e934438dbe",
+    "interface_investigation_status.md": "e5a8871b0bd41aa7445fa5d964b4d03b55f39335bc7642d09aa82616d8e43ae6"
+  },
+  "evidence_sha256": {
+    "rpc700_endpoint_inventory_source.json": "d0a16793340566ff991d75476069bc714637c143d8475351292729d3116ffb4d",
+    "rpc700_endpoint_inventory_checks.json": "26083a5d6c24528aa1e6a560e471e69afaac26c4f8c6f3a37a6908ed3c22f0ec",
+    "rpc700_endpoint_inventory_observations.json": "ebce2ae30091aa3257e6bce11a115e0f277ff1adbd9e33a5690b01d33d8f3b9e",
+    "recover_rpc700_endpoint_inventory.py": "ad922686979841d8e0348892d466dec61c45906363bcd68f6d010f011dc6b880",
+    "validate_rpc700_endpoint_inventory.py": "1f3ee4ec67327904266e946ff0f2a0923f5f2de8cdee28cc271d2c9ccbef4950",
+    "seal_rpc700_endpoint_inventory.py": "420fb41e4249a166a9dbd6560347d276bf817fb86c5736b9e88ca21c8ec99f70",
+    "verify_rpc700_endpoint_inventory_publication.py": "751d712a5fcb15d092003294604d93a114c8a5087a0765669be3c914b3acff4d"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "registration_modified": false,
+  "kernel_port_object_identity_proved": false,
+  "RPC700_receiver_identified": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and EI1-EI7;4113 image headers,30802349 v5 entries,65480381 branch words,7 complete bodies/513 instructions,14 instruction assertions,11 SDK assertions,one branch-domain proof,8 rejected alterations; frozen880 job queries/2038 endpoints/18 printed host associations; native slot34 and RPC700 receiver unknown"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "scope": "Four-root plist declaration census and frozen read-only native launchd/sysctl observations. Native inspection occurs; no FairPlay request, target execution/emulation or registration mutation. Slot34 occupancy, RPC700 receiver and native target success remain unknown.",
+  "generator_sha256": "369fd282b44d2dd1630825eb2678de6abdd116b769e2295d88abb4bb21180d10",
+  "verified_counts": {
+    "plists": 931,
+    "native_parser_fallbacks": 1,
+    "host_special_declarations": 19,
+    "distinct_declared_slots": 18,
+    "slot34_declarations_in_scope": 0,
+    "observed_jobs": 3,
+    "observed_endpoints": 10,
+    "observed_host_special_endpoints": 2,
+    "rejected_alterations": 8
+  },
+  "static_scope": {
+    "plist_roots": 4,
+    "nonrecursive": true,
+    "live_snapshots_refreshed_in_validator": false,
+    "kernel_slot_occupancy_unknown": true,
+    "RPC700_receiver_unknown": true,
+    "native_target_protocol_success_unknown": true
+  },
+  "report_sha256": {
+    "rpc700_publication_report.md": "817660b434ed6821fb7d61a57123452f0044c8c5bd2606df02b7757ba643191f",
+    "obfuscated_routines_report.md": "2f576fee48deda6e49e645c6ae2960519fb47d046f1fd49c36cf93822a599819",
+    "mach_ports_report.md": "b1f643e183f4cbebb8ecf0e8151c51556826693c646927eb9fe5580693b92caa",
+    "foundational_triage_report.md": "9b4a44a73d9385e31d1b01135a2de7004eafcfda8666110639eaa9d7ce5e7134",
+    "interface_abi_report.md": "aae3843493e7445bc5250ee2fcfdc532ee21c396c55e519145c05c62ea78404d",
+    "interface_investigation_status.md": "fcb1866a5e6567bebf1090396d69899859f435c30679791b0877e737d4960d11"
+  },
+  "evidence_sha256": {
+    "rpc700_publication_source.json": "4b31b5be3e56a46ab63afd056cd98e32af05cd598eb58d95372c3eff449e4739",
+    "rpc700_publication_observations.json": "c226b747809cb3e7dada79e44e25e9cd0fae0b69152db5317bcf63b158cd540b",
+    "rpc700_publication_checks.json": "fb56c398b5e03f1a6035a4fc5cf6a4bbca2c933ef2e76434a551e89abda008ce",
+    "recover_rpc700_publication.py": "32bed135b89e8482d45bec897c6f00aeb135185ca02cde8d2c74e33419e4e410",
+    "validate_rpc700_publication.py": "ee4bcaa5e4d1b4e164d3eb43862e8c0d67ee219afe1c159ce15ddb336ed5e259",
+    "seal_rpc700_publication.py": "369fd282b44d2dd1630825eb2678de6abdd116b769e2295d88abb4bb21180d10",
+    "verify_rpc700_publication_publication.py": "c7fe516d2a50a85d9e377a856db1d801f488ab3629dbc63f5f6835b8a527e048"
+  },
+  "goal_status": "active",
+  "FairPlay_requests_sent": false,
+  "target_instructions_executed": false,
+  "target_instructions_emulated": false,
+  "registration_modified": false,
+  "receiver_identified": false,
+  "kernel_port_object_identity_proved": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RP1-RP8;931 plists,one native-parser fallback,19 declarations/18 indices,three observed jobs/ten endpoints/two host associations,eight rejected alterations; slot34 occupancy and receiver unknown"
+  }
+}
