@@ -1,0 +1,83 @@
+{
+  "generator_sha256": "b37aa7f399d0b26556a093f119019bff615b6435ff0c28cafefc98301078ca96",
+  "static_scope": "Selected protected-core word mix:five compact unary maps,size-word input,register contract and predecessor composition. Static only;whole operation,caller output,native PAC and daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 277,
+    "source_bytes": 1108,
+    "new_instructions": 209,
+    "pointer_records": 2,
+    "branch_slot_modifier_matches": 2,
+    "SP_writes": 0,
+    "new_store_instructions": 0,
+    "prior_ranges_recaptured": 14,
+    "prior_bytes_recaptured": 3832,
+    "distinct_nonbranch_sites_translated": 275,
+    "new_nonbranch_sites_translated": 208,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 39,
+    "queries_sat": 1,
+    "replayed_queries_unsat": 12,
+    "unary_maps": 5,
+    "universal_unary_source_certificates": 7,
+    "proved_live_cuts": 7,
+    "compact_register_outputs": 15,
+    "scratch_cells_preserved": 816,
+    "rejected_alterations": 4
+  },
+  "report_sha256": {
+    "daemon_mode_one_word_mix_report.md": "ffb04d4378c315edf06ab4c66b7dfb9077b390dcee2c1ef40febc62eefc3fab9",
+    "obfuscated_routines_report.md": "cd878b4195b92ffdb86855950661eafe2aa471c361f65ec881ffafba8b095221",
+    "mach_ports_report.md": "05b7f3b1e5f638c8a2782181c7a406d30e454820a5365e52f433d0f72973fcb2",
+    "foundational_triage_report.md": "cc219bece22fb8ae796275ab2f50581cc588ce15db06d88401518e098db3113e",
+    "interface_abi_report.md": "2b490e3756f50170f6691970a4665908513f99980b4a3b5298ebea1686a82322",
+    "interface_investigation_status.md": "e87474c834a7260f1729d3db565c7fb3df5bdfaac4dea76ae77f19e1746d7bf0",
+    "daemon_mode_one_bank_combine_report.md": "ade75fb75c30cbe1f4c204c86791b8ca4285de93ce0e2bcb42b9b73380d09956"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_word_mix_source.json": "89ba968ffac293294bf0c27bdbd62a82b6635250db008a87b0d3c18699763965",
+    "daemon_mode_one_word_mix_checks.json": "0ef6dfe9a22f1ec3ed1e22f25ea903689aad439811f85eefa586fccac31384ea",
+    "recover_daemon_mode_one_word_mix.py": "9546de2a3a236b4db7eef1789e150064f1d27d4264fc1f4f34aed2387c3af47f",
+    "validate_daemon_mode_one_word_mix.py": "118bf3085302535c8a590064abae9c90ddef9f84a014f52977c500404e144e3b",
+    "seal_daemon_mode_one_word_mix.py": "b37aa7f399d0b26556a093f119019bff615b6435ff0c28cafefc98301078ca96",
+    "verify_daemon_mode_one_word_mix_publication.py": "677ec1f014d1f72ae2f4c2da2aa81c81cde9fe382b020598b1b91a45395df6a7"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WM1-WM8;275 captured nonbranch sites,39 UNSAT,one abstract SAT domain,five unary maps,seven source identities and live cuts,15 compact outputs and predecessor/size-word composition. Whole output,hardware PAC and native exchange remain unknown."
+  }
+}
