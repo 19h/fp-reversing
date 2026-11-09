@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current increment: [Encoded nibble-sum and carry tables](daemon_mode_one_carry_table_report.md) establishes that0x100c18e20 builds a second256-entry table,paired with the prior table to encode base16 sum and carry under one relabeling. All124 new nonbranch sites are translated;19 UNSAT certificates and256 paired identities pass. The544 meaningful scratch bytes are disjoint. Next routine0x100c9589c,caller output and native daemon-kext exchange remain unknown. The full objective remains active.
+
 Current increment: [Inverse tables and encoded cyclic16 operation](daemon_mode_one_inverse_tables_report.md) establishes an inverse/reset pair,equal seeded shuffles and a256-entry table that encodes addition modulo16 under relabeling. All998 captured nonbranch sites are modeled;172 new plus45 replayed UNSAT,two algebraic bank certificates,15 selector equalities and finite group checks pass. The local budget/spills are preserved through the writer;next consumer0x100c18e20,whole return and native daemon-kext exchange remain unknown. The full objective remains active.
 
 Publication maintenance: [Username-path history scrub and evidence closure](username_path_scrub_report.md) records the completed one-time historical migration. Future increments scrub newly written/committed paths;the historical rewrite is not repeated. Live IDA databases are excluded from current publication.

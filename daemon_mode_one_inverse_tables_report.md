@@ -1,5 +1,7 @@
 # Mode1 inverse tables and an encoded cyclic-group operation
 
+Follow-up: [Encoded nibble-sum and carry tables](daemon_mode_one_carry_table_report.md) establishes that0x100c18e20 builds a second256-entry table,paired with the prior table to encode base16 sum and carry under one relabeling. All124 new nonbranch sites are translated;19 UNSAT certificates and256 paired identities pass. The544 meaningful scratch bytes are disjoint. Next routine0x100c9589c,caller output and native daemon-kext exchange remain unknown.
+
 The selected mode1 protected-core path constructs an encoded Cayley table for the cyclic group of order16. Its logical operation is addition modulo16 under a source-derived relabeling. The result follows from source-linked inverse construction,two equivalent seeded shuffles,a fixed-data operation,and a256-entry table writer. It identifies these local routines without assigning a standard FairPlay cipher or a native protocol result. [IT1-IT10]
 
 This replaces the partial checkpoint. All998 distinct nonbranch instruction sites in the captured ranges are translated. Validation passes172 new plus45 replayed UNSAT queries,two separate SAT domain checks,two refreshed algebraic bank certificates,15 selector equalities,30 source swap certificates,256 fixed-operation isomorphism pairs and4096 associativity triples. Full source inputs,code,data and fixup hashes are retained. [IT1-IT8]

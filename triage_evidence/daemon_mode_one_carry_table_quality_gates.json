@@ -1,0 +1,83 @@
+{
+  "generator_sha256": "f0efa500023131d29b4e4151d55ce041e145027b6ef4e520b8cadd5d8f84014f",
+  "static_scope": "Selected mode1 local nibble-sum/carry table construction. Static source and finite algebra only; caller output,whole return,native PAC and daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 245,
+    "source_bytes": 980,
+    "new_routine_instructions": 125,
+    "new_routine_bytes": 500,
+    "pointer_records": 3,
+    "branch_slot_modifier_matches": 2,
+    "data_bytes": 944,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 1,
+    "prior_source_ranges_recaptured": 10,
+    "prior_source_bytes_recaptured": 4208,
+    "new_routine_nonbranch_sites_translated": 124,
+    "untranslated_new_routine_sites": 0,
+    "queries_unsat": 19,
+    "queries_sat": 1,
+    "replayed_queries_unsat": 6,
+    "fixed_data_cases": 256,
+    "decoder_cases": 256,
+    "sum_and_carry_pairs": 256,
+    "meaningful_scratch_bytes": 544,
+    "rejected_alterations": 4
+  },
+  "report_sha256": {
+    "daemon_mode_one_carry_table_report.md": "a62143afece48ba765d71f00c56668e39f6def2e29baed7f1ead2ffe846447d3",
+    "obfuscated_routines_report.md": "b1740066e63ea0be0c8aa11d225d5b969865339e31ef4ea0f74087a33fb82e30",
+    "mach_ports_report.md": "51ad2183e1b3612822d7440cb832640b6d87513fa964e9d6f279e77abcb735e9",
+    "foundational_triage_report.md": "e21179eb06c229d3c270993829d791bf63cc411544815949ee41e981ab3782de",
+    "interface_abi_report.md": "48676a23cf3e5bf37af277d7a14a2e32631a0845fc31f13b7339642d6d6b9412",
+    "interface_investigation_status.md": "8504adf826f8d06d8abe8ccc0d0e6961aa4bbfce8ad437231b4bad82f019affe",
+    "daemon_mode_one_inverse_tables_report.md": "48c2627e2bbcf0ecb01627a086ef25c9313dd569db46bc2cc2e84ddf8566bf0b"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_carry_table_source.json": "47b64b226fe360bbcc1e04319a2a621e5332803e83095528d4eaee5ceaaffede",
+    "daemon_mode_one_carry_table_checks.json": "8c1bdb51015bfc5ea4aa3f182189fdbafb1970ac5dfba3528411922b91136258",
+    "recover_daemon_mode_one_carry_table.py": "eaa92e5e0d50a5ef544a7f2dfa8e930b9784b86d5f0a002813084b3183a6472a",
+    "validate_daemon_mode_one_carry_table.py": "b6c88e9943c7455628d4d04cb25635bed6567007590d97ed309af375b456dcb6",
+    "seal_daemon_mode_one_carry_table.py": "f0efa500023131d29b4e4151d55ce041e145027b6ef4e520b8cadd5d8f84014f",
+    "verify_daemon_mode_one_carry_table_publication.py": "65b39b62de930ec350aea2465710d4a399a92fdcadca8a3c30ec9d1cfd67fa07"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and CT1-CT8;124 new nonbranch sites,19 UNSAT,one abstract SAT domain,256 sum/carry pairs,source widths and memory/branch provenance. Whole output,hardware PAC and native exchange remain unknown."
+  }
+}

@@ -123,6 +123,7 @@ def main():
     if exists(BASE/'daemon_mode_one_source_passes_report.md'):reports.add(BASE/'daemon_mode_one_source_passes_report.md')
     if exists(BASE/'daemon_mode_one_scatter_report.md'):reports.add(BASE/'daemon_mode_one_scatter_report.md')
     if exists(BASE/'daemon_mode_one_inverse_tables_report.md'):reports.add(BASE/'daemon_mode_one_inverse_tables_report.md')
+    if exists(BASE/'daemon_mode_one_carry_table_report.md'):reports.add(BASE/'daemon_mode_one_carry_table_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1474,6 +1475,10 @@ def main():
         inverse_tables_quality=json.loads(read(ROOT/'daemon_mode_one_inverse_tables_quality_gates.json'))
         manifest['validation']['daemon_mode_one_inverse_tables_increment_checks']=inverse_tables_quality['verified_counts']
         manifest['validation']['daemon_mode_one_inverse_tables_static_scope']=inverse_tables_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_carry_table_quality_gates.json'):
+        carry_quality=json.loads(read(ROOT/'daemon_mode_one_carry_table_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_carry_table_increment_checks']=carry_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_carry_table_static_scope']=carry_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
