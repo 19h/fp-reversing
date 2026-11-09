@@ -1,0 +1,94 @@
+{
+  "generator_sha256": "7574aa52da22f89cc845ff7dcb33449d7e8e1fbfbd0c28e43a4046d0c85883f0",
+  "static_scope": "Conditional second selected-record permutation and paired256-entry sum/carry tables:source-linked scratch interfaces,image codec roots,state-independent family selection and base16 arithmetic under separate input/output relabelings. P=Q,an associative one-alphabet group law,whole/native reachability,owners,successful publication,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 461,
+    "source_bytes": 1844,
+    "pointer_records": 7,
+    "data_ranges": 3,
+    "data_bytes": 1440,
+    "ADRP_decodes_checked": 2,
+    "family_cases_checked": 256,
+    "branch_bindings": 5,
+    "SP_writes": 0,
+    "comparison_role_corrections": 2,
+    "prior_ranges_recaptured": 11,
+    "prior_bytes_recaptured": 4668,
+    "queries_unsat": 227,
+    "queries_sat": 6,
+    "predecessor_queries_replayed": 126,
+    "source_nonbranch_sites_translated": 458,
+    "second_selector_abstractions": 15,
+    "second_address_certificates": 16,
+    "second_finite_address_cases": 145,
+    "second_source_swaps": 15,
+    "finite_second_transpositions": 135,
+    "table_address_certificates": 8,
+    "table_finite_address_cases": 608,
+    "image_kernel_cases": 512,
+    "paired_arithmetic_identities": 512,
+    "fixed_kernel_associativity_triples": 4096,
+    "scratch_cells_written": 528,
+    "scratch_cells_touched": 544,
+    "scratch_byte_store_operations": 542,
+    "total_byte_reads": 2590,
+    "state_u32_reads": 512,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_adder_report.md": "d46237821c2980b35adf72fcde7bd4464bf9b6323e9747d39ac1d6c0ff5a8234",
+    "obfuscated_routines_report.md": "09aaea6a82a19e1a34008faf3355c18becf8f37692f5585060ff23a11d5660bf",
+    "mach_ports_report.md": "a61c6d4fb43ad380071456a188b06ac3c97817b8d11b1553fe2967429ad11ccc",
+    "foundational_triage_report.md": "a5f2994f38c968283d306f13f1e47e963e2964ba34556fc539be5a0dde3ea1b6",
+    "interface_abi_report.md": "1ad5db0f8ba113e23ab281f494f56835fd186d268ff64c31987dfff304102940",
+    "interface_investigation_status.md": "17349474892731df903222d578dfe645e3cb1ca568a55c2fa5c730d5de50f156",
+    "daemon_mode_one_record_permutation_report.md": "3bceb4a4e302bab56a85f877ad13ca89177068daf3f43a27932242d748c86c23"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_adder_source.json": "f9b03d3937a835441dd447ce3d12487364e5d43f79e7facafb72ec1caa2359ae",
+    "daemon_mode_one_record_adder_checks.json": "34f304b48a63b181cc9ea0d65c18f785a6bbf16994ed016e7b31cb89acbf2694",
+    "recover_daemon_mode_one_record_adder.py": "fa267407de3bbeea0de18eba5e2065fa49f204d13f52e5af5622dfaeaf308b6b",
+    "validate_daemon_mode_one_record_adder.py": "938dff552b9c054b9f81a095af3029028457335005a348844f8cba5cfda13fea",
+    "seal_daemon_mode_one_record_adder.py": "7574aa52da22f89cc845ff7dcb33449d7e8e1fbfbd0c28e43a4046d0c85883f0",
+    "verify_daemon_mode_one_record_adder_publication.py": "ffa8e2198b784d61ed77adecab925ff85cfeca4d2496297ea05b72f7df2ce9d6"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RA1-RA8;458 current sites translated,a second forward permutation and two256-entry tables,512 fixed-image sum/carry identities under distinct input/output codebooks,544 disjoint cells and state-independent family selection;227 UNSAT and six SAT results including126 predecessor replays. P=Q,one-alphabet associativity,native owners/reachability,successful publication,budget history and daemon-kext pairing remain unproved."
+  }
+}
