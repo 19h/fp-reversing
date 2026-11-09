@@ -1,0 +1,85 @@
+{
+  "scope": "Selected nonnull LEN32 protected-core branch:two ordered32-byte source passes,four-word state banks,shared compact recurrence and conditionally equal final banks and exact reduction257,state preservation and second-bank spill/handoff. Algorithm identity,later consumers/output,budget/return,native owners/PAC and daemon-kext exchange remain unproved.",
+  "generator_sha256": "b9b16a4b31492c553d4949a275bc8b12a174787fc84b3422c4cbcf9b73a137e2",
+  "verified_counts": {
+    "source_ranges": 6,
+    "source_instructions": 419,
+    "source_bytes": 1676,
+    "pointer_records": 8,
+    "branch_slot_modifier_matches": 9,
+    "prior_ranges_recaptured": 11,
+    "prior_bytes_recaptured": 2648,
+    "source_SP_writes": 0,
+    "comparison_operand_role_corrections": 10,
+    "loop_store_instructions": 0,
+    "source_store_sites": 12,
+    "source_store_bytes": 72,
+    "distinct_frame_store_bytes": 68,
+    "new_queries_unsat": 26,
+    "reused_queries_unsat": 0,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 413,
+    "translated_instruction_instances": 460,
+    "SSA_definitions": 438,
+    "algebraic_round_certificates": 2,
+    "algebraic_output_equalities": 8,
+    "semantic_negative_controls": 4,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Selected nonnull LEN32 protected-core branch:two ordered32-byte source passes,four-word state banks,shared compact recurrence and conditionally equal final banks and exact reduction257,state preservation and second-bank spill/handoff. Algorithm identity,later consumers/output,budget/return,native owners/PAC and daemon-kext exchange remain unproved.",
+  "report_sha256": {
+    "daemon_mode_one_source_passes_report.md": "aa851fecbe5d916d1ebfe7f5e186208a40ddaebdc22c50d0334bc4f734f13848",
+    "obfuscated_routines_report.md": "ccda98c866e5b761fa4e9241ecc87320809643f6d69e541ad73d4e1e06afaf28",
+    "mach_ports_report.md": "869eaa38ca1377bd24cf7e2146c52d9c55411ec2d3cc401ecd83771eeaa19f99",
+    "foundational_triage_report.md": "c89cf978ea2211167afd7c2104e71ada23c6286fa896c66c43718bead355f02d",
+    "interface_abi_report.md": "fe2e2575b48d6719a40c1996b65f5227a6e285276c827830e5dfad188c4f3531",
+    "interface_investigation_status.md": "47104bf912c230c4f085834ba12d71133d57f921186880d56fcc08709c1ebdc5",
+    "daemon_mode_one_adapter_report.md": "8347711d87ae6baa6b47feb90a207ef312c2782485f1ab72e0f3bbe0c3afec5b"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_source_passes_source.json": "d1804815f19074eb71331758e35ad425d3099ec0f96edb5cbd7a9a08d072bb7c",
+    "daemon_mode_one_source_passes_checks.json": "aecfc5ab88cbab676797a1ddf108c02575e9dc31654a72d55ce6539cc12c0b37",
+    "recover_daemon_mode_one_source_passes.py": "50397cf3a4f1869f962ee5ab8e8ead702efbc0ab2a61bdded7aac583eb5865d8",
+    "validate_daemon_mode_one_source_passes.py": "6106d9b100f81179b7a65eaf78864d24325ce6f8d1da00eb7510d16799eefa5a",
+    "seal_daemon_mode_one_source_passes.py": "b9b16a4b31492c553d4949a275bc8b12a174787fc84b3422c4cbcf9b73a137e2",
+    "verify_daemon_mode_one_source_passes_publication.py": "72bbc5db55baec4d8560dbf1b2ab9f305605e72b5113498993bae12fc014ed19"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and MP1-MP10;two ordered32-byte source passes,identical seeds/shared compact recurrence,exact reduction257,bank liveness/spills and retained-budget preservation.6 ranges/419 instructions,413 modeled sites/460 instances/438 definitions;26 UNSAT,one domain SAT,two exact algebra certificates/eight word equalities,four recurrence-candidate rejection checks and six integrity controls. Ten comparison roles are corrected from raw SUBS-to-zero encodings. Timed-out queries are excluded. Later consumers/algorithm purpose/complete budget/native return and daemon-kext exchange remain unproved."
+  }
+}
