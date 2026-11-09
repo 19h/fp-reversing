@@ -149,3 +149,6 @@ QG5: The actual span-derived mode,outer versus nested extent,borrowed versus cop
 QG6: Original bytes/fixups,source-pinned new/replayed certificates,altered-ledger checks and unchanged trace are checked. No inherited IDA knowledge is substituted for source proof.
 
 QG7: Impact-labeled continuation questions are bounded by named evidence. Native ownership/PAC/caller/context identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved.
+
+
+[Keyed option and context default](daemon_reader_option_default_report.md): encoded keyf24be74b/decoded7976211a in OBJ+0 publishes a typed u32 value to F at K53ac. Exact success preserves V; exact miss writes M-1d45dafb; every other accessor result selects error. Selected N19 admission is (success AND V=0) OR (miss AND M=1d45dafb), rather than universal header equality. Two context-dependent predecessors derive caller selector935, and the actual status tree derives default phase2122. Eighteen ranges/326 instructions,26 fixups/28 slot matches,308 modeled PCs,22 new and107 replayed UNSAT certificates,one SAT scope counterexample,six controls and an exact byte-memory join pass. Native caller/owner/PAC/context identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved.

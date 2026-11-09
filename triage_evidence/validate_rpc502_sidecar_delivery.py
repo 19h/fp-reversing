@@ -116,6 +116,10 @@ def main():
     if exists(BASE/'daemon_reader_u64_codec_report.md'):reports.add(BASE/'daemon_reader_u64_codec_report.md')
     if exists(BASE/'daemon_reader_outer_lifecycle_report.md'):reports.add(BASE/'daemon_reader_outer_lifecycle_report.md')
     if exists(BASE/'daemon_reader_nested_input_report.md'):reports.add(BASE/'daemon_reader_nested_input_report.md')
+    if exists(BASE/'daemon_reader_option_default_report.md'):reports.add(BASE/'daemon_reader_option_default_report.md')
+    if exists(BASE/'daemon_outer_record_ingress_report.md'):reports.add(BASE/'daemon_outer_record_ingress_report.md')
+    if exists(BASE/'daemon_outer_first_key_report.md'):reports.add(BASE/'daemon_outer_first_key_report.md')
+    if exists(BASE/'daemon_mode_one_adapter_report.md'):reports.add(BASE/'daemon_mode_one_adapter_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1434,6 +1438,22 @@ def main():
         nested_input_quality=json.loads(read(ROOT/'daemon_reader_nested_input_quality_gates.json'))
         manifest['validation']['daemon_reader_nested_input_increment_checks']=nested_input_quality['verified_counts']
         manifest['validation']['daemon_reader_nested_input_static_scope']=nested_input_quality['static_scope']
+    if exists(ROOT/'daemon_reader_option_default_quality_gates.json'):
+        option_default_quality=json.loads(read(ROOT/'daemon_reader_option_default_quality_gates.json'))
+        manifest['validation']['daemon_reader_option_default_increment_checks']=option_default_quality['verified_counts']
+        manifest['validation']['daemon_reader_option_default_static_scope']=option_default_quality['static_scope']
+    if exists(ROOT/'daemon_outer_record_ingress_quality_gates.json'):
+        outer_ingress_quality=json.loads(read(ROOT/'daemon_outer_record_ingress_quality_gates.json'))
+        manifest['validation']['daemon_outer_record_ingress_increment_checks']=outer_ingress_quality['verified_counts']
+        manifest['validation']['daemon_outer_record_ingress_static_scope']=outer_ingress_quality['static_scope']
+    if exists(ROOT/'daemon_outer_first_key_quality_gates.json'):
+        first_key_quality=json.loads(read(ROOT/'daemon_outer_first_key_quality_gates.json'))
+        manifest['validation']['daemon_outer_first_key_increment_checks']=first_key_quality['verified_counts']
+        manifest['validation']['daemon_outer_first_key_static_scope']=first_key_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_adapter_quality_gates.json'):
+        mode_one_quality=json.loads(read(ROOT/'daemon_mode_one_adapter_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_adapter_increment_checks']=mode_one_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_adapter_static_scope']=mode_one_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

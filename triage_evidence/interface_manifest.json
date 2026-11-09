@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-09T10:30:47.003797+00:00",
+  "created_utc": "2026-11-09T11:52:30.194841+00:00",
   "goal_status": "active",
   "inputs_preserved": [
     {
@@ -21,9 +21,9 @@
   "logical_storage_policy": "Canonical JSON paths may resolve read-only to .json.zst; sizes and SHA256 are decoded logical content. Historical Markdown paths are checked logically, not claimed physically present.",
   "scope_note": "Owned reports/scripts and direct evidence; external dump.md preserved/excluded. Current case sets are scoped by their contract files; earlier exploratory snapshots are historical.",
   "validation": {
-    "reports": 310,
-    "local_markdown_links": 5809,
-    "direct_json_files": 2210,
+    "reports": 314,
+    "local_markdown_links": 5889,
+    "direct_json_files": 2230,
     "unavailable_external_primary_references": [
       {
         "report": "kernel_root_port_construct_report.md",
@@ -10250,7 +10250,89 @@
       "SSA_definitions": 1060,
       "rejected_alterations": 6
     },
-    "daemon_reader_nested_input_static_scope": "Selected outer context-word discriminator, first-child key7615e796 lookup, matched-record buffer/header/extent/type interfaces, borrowed span BUF+10 and encoded length into N19, and conditional default-context admission. No continuous native caller, owner/PAC, complete non-span accessor, external delivery or daemon-kext pairing proof."
+    "daemon_reader_nested_input_static_scope": "Selected outer context-word discriminator, first-child key7615e796 lookup, matched-record buffer/header/extent/type interfaces, borrowed span BUF+10 and encoded length into N19, and conditional default-context admission. No continuous native caller, owner/PAC, complete non-span accessor, external delivery or daemon-kext pairing proof.",
+    "daemon_reader_option_default_increment_checks": {
+      "source_fragments": 18,
+      "source_instruction_instances": 326,
+      "source_bytes": 1304,
+      "branch_terminated_ranges": 18,
+      "pointer_records": 26,
+      "branch_slot_modifier_matches": 28,
+      "prior_ranges_recaptured": 66,
+      "prior_bytes_recaptured": 11672,
+      "literal_OUT_address_candidates": 1,
+      "source_SP_writes": 0,
+      "new_queries_unsat": 22,
+      "reused_queries_unsat": 107,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 308,
+      "translated_instruction_instances": 325,
+      "SSA_definitions": 297,
+      "rejected_alterations": 6
+    },
+    "daemon_reader_option_default_static_scope": "Selected first-child keyed u32 accessor writes the N19 discriminator, exact success preserves that value, exact missing-key marker computes a context-word default, and every other raw status selects error. N19 admission is selected option/default zero, not a universal context-header equality. Native caller/owner/PAC/peer, complete parser/cleanup and daemon-kext pairing remain unproved.",
+    "daemon_outer_record_ingress_increment_checks": {
+      "source_fragments": 27,
+      "source_instruction_instances": 675,
+      "source_bytes": 2700,
+      "branch_terminated_ranges": 27,
+      "pointer_records": 35,
+      "branch_slot_modifier_matches": 41,
+      "bank_inputs_checked": 256,
+      "prior_ranges_recaptured": 88,
+      "prior_bytes_recaptured": 13064,
+      "source_SP_writes": 0,
+      "new_queries_unsat": 37,
+      "reused_queries_unsat": 3,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 647,
+      "translated_instruction_instances": 690,
+      "SSA_definitions": 651,
+      "rejected_alterations": 6
+    },
+    "daemon_outer_record_ingress_static_scope": "Selected outer INPUT/encoded-length/OBJ+0 route to shared plain-wire parser: ten-byte header, exact u32/u64/span type and extent gates, scalar constructor XOR operands, borrowed span, cursor loop, zero-ID span termination and local output. This is a source component contract; native ingress/owners,complete constructor/parser/cleanup and daemon-kext pairing remain unproved.",
+    "daemon_outer_first_key_increment_checks": {
+      "source_fragments": 35,
+      "source_instruction_instances": 671,
+      "source_bytes": 2684,
+      "branch_terminated_ranges": 35,
+      "preparation_instructions": 386,
+      "preparation_bytes": 1544,
+      "pointer_records": 53,
+      "branch_slot_modifier_matches": 53,
+      "prior_ranges_recaptured": 120,
+      "prior_bytes_recaptured": 23184,
+      "source_SP_writes": 0,
+      "new_queries_unsat": 41,
+      "reused_queries_unsat": 58,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 1021,
+      "translated_instruction_instances": 1432,
+      "SSA_definitions": 1282,
+      "rejected_alterations": 6
+    },
+    "daemon_outer_first_key_static_scope": "Selected C0 publication -> first-match keyd719dce3 -> exact missing-key option/default bridge or fitted span/type/mode1 helper frontier. Mode0 and other modes,error/recognized-scalar statuses and private pointer/extent/return interfaces are distinguished. Native owner/caller/PAC,whole-parser memory continuity and daemon-kext exchange remain unproved.",
+    "daemon_mode_one_adapter_increment_checks": {
+      "source_ranges": 11,
+      "source_instructions": 662,
+      "source_bytes": 2648,
+      "bank_roles": 11,
+      "bank_inputs_checked": 2816,
+      "pointer_records": 27,
+      "branch_slot_modifier_matches": 9,
+      "resolved_call_sites": 3,
+      "structural_instruction_assertions": 20,
+      "prior_ranges_recaptured": 38,
+      "prior_bytes_recaptured": 10368,
+      "new_queries_unsat": 35,
+      "reused_queries_unsat": 0,
+      "counterexamples_sat": 1,
+      "selected_translated_instruction_sites": 281,
+      "translated_instruction_instances": 281,
+      "SSA_definitions": 254,
+      "rejected_alterations": 6
+    },
+    "daemon_mode_one_adapter_static_scope": "Mode1 object/local32 -> private48 B request -> adapterd03348/corecf0194;aligned address cookie,decoded mode4923,size32 predicate,budget/stack delta and immediate-rejection return. The32 B processing body,complete budget history,native owner/PAC/transport and daemon-kext exchange remain unproved."
   },
   "files": [
     {
@@ -10794,6 +10876,11 @@
       "sha256": "85066b726078b0425ff94e82fe1a0518730ac0538f30e490edd738cbc6fd5195"
     },
     {
+      "path": "daemon_mode_one_adapter_report.md",
+      "size_bytes": 17821,
+      "sha256": "fbab3b4af9878c35331ef703d173f012dd25cf7e0271d6e515bffd7df09208a2"
+    },
+    {
       "path": "daemon_object_clock_report.md",
       "size_bytes": 18246,
       "sha256": "505179e866cac85e2272f75100362deb4502771013193d8c57902570ec6740b2"
@@ -10817,6 +10904,16 @@
       "path": "daemon_operation_heads_report.md",
       "size_bytes": 17028,
       "sha256": "9432e2bb3535f68b6686c14c1ae24c358f36777d599c7aed18c96135dff028f9"
+    },
+    {
+      "path": "daemon_outer_first_key_report.md",
+      "size_bytes": 18508,
+      "sha256": "ed19b121b112b66c4a607568d23415bab0d108198469c27d278ed2276b57cafb"
+    },
+    {
+      "path": "daemon_outer_record_ingress_report.md",
+      "size_bytes": 17910,
+      "sha256": "276c5d5b1103ab4e62e7da7472de7ec9e6cdadbe598590b8450aa199434a4af3"
     },
     {
       "path": "daemon_output_base_report.md",
@@ -10865,8 +10962,13 @@
     },
     {
       "path": "daemon_reader_nested_input_report.md",
-      "size_bytes": 18264,
-      "sha256": "73614884dda58ccf7b4f3f0295f0e5c0eae3e9e9f9d02217125420eff3107d84"
+      "size_bytes": 19074,
+      "sha256": "e8c81e17f55c8534734d0c2abc131fed4fe6726ee1690b8fcc1af0cd211b6e1f"
+    },
+    {
+      "path": "daemon_reader_option_default_report.md",
+      "size_bytes": 17122,
+      "sha256": "716e2a4fae1c25237b6c3a73a9c1134d8439826b41278c04ce6b8281506123b8"
     },
     {
       "path": "daemon_reader_outer_lifecycle_report.md",
@@ -11110,8 +11212,8 @@
     },
     {
       "path": "foundational_triage_report.md",
-      "size_bytes": 243643,
-      "sha256": "94f9243b280f59f330215e309f1ce8441967a531107486d6a5f16ff56892df9e"
+      "size_bytes": 245732,
+      "sha256": "81196fab7104aaf8b466f05cd11df0fcf44a2031ac860e41657c9bef11ca86b9"
     },
     {
       "path": "host_special_registration_report.md",
@@ -11125,13 +11227,13 @@
     },
     {
       "path": "interface_abi_report.md",
-      "size_bytes": 227860,
-      "sha256": "3de64421a75f1c463ab295cd16f78e3d330214aad1f3886d27734e5a69b07efc"
+      "size_bytes": 229904,
+      "sha256": "f4c51eca6851da84b0eff4f6faee53902f7a1cb8d2d31823ac6b66d689a9f80a"
     },
     {
       "path": "interface_investigation_status.md",
-      "size_bytes": 281848,
-      "sha256": "d9f41eb5023604d466a0c7eda3da136a019149ce3fa558a6abd00ab30d37c875"
+      "size_bytes": 284685,
+      "sha256": "2f57084d21b417d1b662cf01ccda7acce2d1a9d6556facad15c002582f0b4145"
     },
     {
       "path": "iokit_async_contract_report.md",
@@ -11585,8 +11687,8 @@
     },
     {
       "path": "mach_ports_report.md",
-      "size_bytes": 198186,
-      "sha256": "74edcff5962804567b68ea29cd2a32618b47d954b309f64ac8c4eae4f81bcfc8"
+      "size_bytes": 200292,
+      "sha256": "2c495e18434850a4e7e56b90a39f09d9c7f60fe7814c0ddbf04fdb0b1c68784b"
     },
     {
       "path": "managed_adapter_dispatch_report.md",
@@ -11620,8 +11722,8 @@
     },
     {
       "path": "obfuscated_routines_report.md",
-      "size_bytes": 221991,
-      "sha256": "1a821faf6db2cf304a78d2c5f5b1f11a6fa77cb3405790a86729076a279a8e37"
+      "size_bytes": 223998,
+      "sha256": "516071b980b81352cb23c724eda2058940999bf2519a8ca441141ff7172af3b9"
     },
     {
       "path": "platform_iorpc_report.md",
@@ -22914,6 +23016,31 @@
       "sha256": "e545d1080d53482daddb9eb027374d89c1e483a0ae83438c5c8e585800e83d7c"
     },
     {
+      "path": "triage_evidence/daemon_mode_one_adapter_checks.json",
+      "size_bytes": 346378,
+      "sha256": "cd8d579ab5c82ffb581cbd252f3d6c6035548bdde47f81edaf6da2b06b581d17"
+    },
+    {
+      "path": "triage_evidence/daemon_mode_one_adapter_delivery.json",
+      "size_bytes": 2287,
+      "sha256": "d0ce41468acd9d2b22f37d305bce30ecc35a8df89397185fe202ef06053d4fa8"
+    },
+    {
+      "path": "triage_evidence/daemon_mode_one_adapter_prior_manifest.json",
+      "size_bytes": 1901899,
+      "sha256": "366e4e296c7f7851af70cd5a26350d1b7f95afda308b6d4c27629dc1be9143a2"
+    },
+    {
+      "path": "triage_evidence/daemon_mode_one_adapter_quality_gates.json",
+      "size_bytes": 7377,
+      "sha256": "234dca958987123b198e3d03a7ec86a95b7a415048044899affcdc08e851192e"
+    },
+    {
+      "path": "triage_evidence/daemon_mode_one_adapter_source.json",
+      "size_bytes": 176786,
+      "sha256": "e2e004736001cc52b38027876eabb1209ff6b8682ce41b13b0e865a219f63f81"
+    },
+    {
       "path": "triage_evidence/daemon_object_clock_all_int32_second_status_gate.smt2",
       "size_bytes": 956,
       "sha256": "082dc23188501dfb8bad90a6d2be7460878e6c5883847d089617f6dd5f949c23"
@@ -24289,6 +24416,56 @@
       "sha256": "d7dab59bd5b460cd12803797ec33e922ca5f2908ef426c7ebe9210a9c5f1bbb0"
     },
     {
+      "path": "triage_evidence/daemon_outer_first_key_checks.json",
+      "size_bytes": 1345739,
+      "sha256": "44e8c06c8e0ac58ab189f9cf351e801bc1f6897ec3fb1afe01a156d1af903344"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_first_key_delivery.json",
+      "size_bytes": 2292,
+      "sha256": "15da5bb58e81af1b36b817ee277024b58847a8feccf8c6e24abe41a39d53f8a9"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_first_key_prior_manifest.json",
+      "size_bytes": 1898881,
+      "sha256": "75501fe09072b5b48b2e3d6ce176c126973852aefb9daa9ad299fb05e10f977a"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_first_key_quality_gates.json",
+      "size_bytes": 7128,
+      "sha256": "4d54e85a7fbd4706b16fe82d0a9192dae96585404d273df0d8fc9537243b107d"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_first_key_source.json",
+      "size_bytes": 242114,
+      "sha256": "ff16a90989223064207e4e6351df8734fb90a58e5265154f6acce2b6a56b362b"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_record_ingress_checks.json",
+      "size_bytes": 1400580,
+      "sha256": "5d4136b5951af31d108aed52e3bd06cc57540995e315ffcb09830c5eace7226f"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_record_ingress_delivery.json",
+      "size_bytes": 2293,
+      "sha256": "8de7a7448670b4787e79dba08beb1c3b7cfadcfd9c3592a77fd98aa9cc1358b0"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_record_ingress_prior_manifest.json",
+      "size_bytes": 1895823,
+      "sha256": "9ccb37994293e6567823e2f33b93395fb78a003e355baa04489e4221dcb29a9d"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_record_ingress_quality_gates.json",
+      "size_bytes": 7071,
+      "sha256": "69bcf7ef97fea9c7231e34482ac43e2f14b6a10b013684ebd24eb22cbb482ecd"
+    },
+    {
+      "path": "triage_evidence/daemon_outer_record_ingress_source.json",
+      "size_bytes": 151310,
+      "sha256": "50a60bc3f00c025d3fb3654f51304267bfdeda4f31e9f02e77fb05e5f1e07fc6"
+    },
+    {
       "path": "triage_evidence/daemon_output_base_all_other_u32_tags_default.smt2",
       "size_bytes": 8027,
       "sha256": "9e3236b2f1ce3f745e0c52172165da497f38fbd5ee467f342c6183dbb80a1151"
@@ -25327,6 +25504,31 @@
       "path": "triage_evidence/daemon_reader_nested_input_source.json",
       "size_bytes": 181981,
       "sha256": "af31e579d1cb4c77816b752ce524793c4a621b6b054480c332561004a51ab0ba"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_option_default_checks.json",
+      "size_bytes": 1300059,
+      "sha256": "78546ed64efee93508e525301a3e9f5c5e329059898a9c7a67c4d721ca598207"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_option_default_delivery.json",
+      "size_bytes": 2291,
+      "sha256": "188197520133eac5b8a456c737e9725a219d8acf2e354bf49e936f2eed4a341f"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_option_default_prior_manifest.json",
+      "size_bytes": 1892730,
+      "sha256": "caaf4c1cb33d4c2c7d2c133a86eda6e452d409fe32c463ee0559bad557a87110"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_option_default_quality_gates.json",
+      "size_bytes": 8051,
+      "sha256": "9fa15e97d51b75011a7042a4c7278e5660dc898e23c1b5a8e2ccfc0dbcb0459c"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_option_default_source.json",
+      "size_bytes": 86562,
+      "sha256": "01aebd656438e679edc7424fe9da6a68e0cc011e95163c1f7747e35a30ad28d2"
     },
     {
       "path": "triage_evidence/daemon_reader_outer_lifecycle_checks.json",
@@ -38514,6 +38716,11 @@
       "sha256": "fdfd8b0c4bd570ef91c0135ce0abeae31d3e1a6d5e0239b487558e8316bf1d3c"
     },
     {
+      "path": "triage_evidence/recover_daemon_mode_one_adapter.py",
+      "size_bytes": 7335,
+      "sha256": "fed1ec1ad3904c93f94fbbeffa4a7b3ed18aa571646dc4914b0e80461da93c26"
+    },
+    {
       "path": "triage_evidence/recover_daemon_object_clock.py",
       "size_bytes": 7899,
       "sha256": "5229ac88b39b8e48cb091219c30af1971f2ff598b5516a2752a3572b35505cb9"
@@ -38532,6 +38739,16 @@
       "path": "triage_evidence/recover_daemon_object_initialization.py",
       "size_bytes": 6318,
       "sha256": "45c7b5343f37e380fb5b6012823db197dd8a7d0e463a2e1673b79ad0901857a1"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_outer_first_key.py",
+      "size_bytes": 6389,
+      "sha256": "bfe00326e150f96aeac1dce51055908cb5920142c24dc3b9d7a543a8fa59fc5a"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_outer_record_ingress.py",
+      "size_bytes": 5904,
+      "sha256": "b4e2352d38b780291d17336b227617b64542a8f2c36452e2729edab6eaa7de0a"
     },
     {
       "path": "triage_evidence/recover_daemon_output_base.py",
@@ -38582,6 +38799,11 @@
       "path": "triage_evidence/recover_daemon_reader_nested_input.py",
       "size_bytes": 6532,
       "sha256": "da4bcad3ad74ec820ece537c67fc9452031c57b1f61ef9602b35b6122de35664"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_reader_option_default.py",
+      "size_bytes": 5161,
+      "sha256": "90a66aba0c1db9dc2e619bf9027312ccc57244f4f22f819aee0dc3b5be174073"
     },
     {
       "path": "triage_evidence/recover_daemon_reader_outer_lifecycle.py",
@@ -42659,9 +42881,24 @@
       "sha256": "de15c2412e8dfc39d2f3657ca4a0d51a2d2df3d0d8b73ed65af4fc457a26b2d0"
     },
     {
+      "path": "triage_evidence/seal_daemon_mode_one_adapter.py",
+      "size_bytes": 5268,
+      "sha256": "6d36d2009fa3fc0fbee011d5f470c5ab90dc00bf90b88eca482352b7a1e6752a"
+    },
+    {
       "path": "triage_evidence/seal_daemon_operation_heads.py",
       "size_bytes": 6893,
       "sha256": "77dddd25e6bd6ae2b37c68d86ba67552a47cd1e33ea9c28fa406277bfa262872"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_outer_first_key.py",
+      "size_bytes": 5233,
+      "sha256": "72e76d377f7f9b7beb351857c28ef33d06fa035fd208eba4f37ddeafdeb75fd7"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_outer_record_ingress.py",
+      "size_bytes": 5185,
+      "sha256": "d4085bd5739ebc422929cf441c12425caff195a4a7c5aab771f55e2a4cb5c03a"
     },
     {
       "path": "triage_evidence/seal_daemon_output_base.py",
@@ -42697,6 +42934,11 @@
       "path": "triage_evidence/seal_daemon_reader_nested_input.py",
       "size_bytes": 5426,
       "sha256": "d61856ff3412761aeff1e88e7befe8d5f9345fcac039fa9f314fdff3011eb91d"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_option_default.py",
+      "size_bytes": 5366,
+      "sha256": "4e3d54d8fe15b68b44566f6783ce5a3ddcacafcf4efae405efdb9c4f541fcaef"
     },
     {
       "path": "triage_evidence/seal_daemon_reader_outer_lifecycle.py",
@@ -44259,6 +44501,11 @@
       "sha256": "209a9c89fad2a39bcc0205bedf09d57d7e35f4284974cbaded2110856892c401"
     },
     {
+      "path": "triage_evidence/validate_daemon_mode_one_adapter.py",
+      "size_bytes": 14463,
+      "sha256": "2730b367eeab3303f414c114b5639d34d41c6aada576f12b32f90ee3b980431a"
+    },
+    {
       "path": "triage_evidence/validate_daemon_object_clock.py",
       "size_bytes": 13473,
       "sha256": "533c0e0f04c0759ea42d07944203ef61bce938001f7b699f8a57c13aaed3df9d"
@@ -44322,6 +44569,16 @@
       "path": "triage_evidence/validate_daemon_operation_heads.py",
       "size_bytes": 10097,
       "sha256": "71d5321fba4000a77fb051f055aadfcf80287fd385c399bc59777f4cb653cc4f"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_outer_first_key.py",
+      "size_bytes": 21615,
+      "sha256": "ff933bf07abc5e6d36596e920b5942e3179ea185880fcdfcd180d89da02e414c"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_outer_record_ingress.py",
+      "size_bytes": 19134,
+      "sha256": "861c1cfa746b8c3f794a748ba63d1c1906650d6aa810948879a08dfca5bf51ac"
     },
     {
       "path": "triage_evidence/validate_daemon_output_base.py",
@@ -44402,6 +44659,11 @@
       "path": "triage_evidence/validate_daemon_reader_nested_input.py",
       "size_bytes": 17583,
       "sha256": "6f40c604706a104b15ee96d6f9c260c9a2206199bb7cd4e58792df00c40114cc"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_reader_option_default.py",
+      "size_bytes": 15253,
+      "sha256": "2f60aa0a8974c9626ed448af027b2cf097362cf0f2acf2f21b2e7d89d3031145"
     },
     {
       "path": "triage_evidence/validate_daemon_reader_outer_lifecycle.py",
@@ -45555,8 +45817,8 @@
     },
     {
       "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
-      "size_bytes": 137854,
-      "sha256": "c50fba9a5393152983f3daab64592475315dc930038d815bc98fb27e41889cb0"
+      "size_bytes": 139874,
+      "sha256": "a7167bd7fc6ad51ce0764bbc1314978704ac44da2559733a8d786b45e23e66b3"
     },
     {
       "path": "triage_evidence/validate_rpc502_startup.py",
@@ -46014,9 +46276,24 @@
       "sha256": "e513a4d55dc0e4b117c8c5f37a523dd5c504d48cc95809c2fa08d81f2db1a798"
     },
     {
+      "path": "triage_evidence/verify_daemon_mode_one_adapter_publication.py",
+      "size_bytes": 5419,
+      "sha256": "dad78a762149149c660995c52ee0178ec21c57a272a9c63e83c8febe8268e171"
+    },
+    {
       "path": "triage_evidence/verify_daemon_operation_heads_publication.py",
       "size_bytes": 3239,
       "sha256": "571622f25b6c834c35e87b623da986700ed30ceeb8254c9f5a71499c9c4df242"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_outer_first_key_publication.py",
+      "size_bytes": 5418,
+      "sha256": "2dde2c4d9af6013f6c2ff39dd45a38dc0a187c89d3f3e231304d406341d2ac2c"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_outer_record_ingress_publication.py",
+      "size_bytes": 5423,
+      "sha256": "f9ddb8d4af7db92a101d9362d92047cd6a3fbb6e6ebe08d62590f7f9b96b35f8"
     },
     {
       "path": "triage_evidence/verify_daemon_output_base_publication.py",
@@ -46052,6 +46329,11 @@
       "path": "triage_evidence/verify_daemon_reader_nested_input_publication.py",
       "size_bytes": 5422,
       "sha256": "f9f9ccc1efcfb7028e8f850d5dbc453b94d80836d60237b35997bfef5e8dc0bc"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_option_default_publication.py",
+      "size_bytes": 5424,
+      "sha256": "a5d6bfe0c091b2c584ef74a92bff85973dba3a8aa518013abe0aab4d31a54209"
     },
     {
       "path": "triage_evidence/verify_daemon_reader_outer_lifecycle_publication.py",
