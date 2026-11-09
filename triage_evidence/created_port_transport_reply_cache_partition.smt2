@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun s () (_ BitVec 32))
+(define-fun k () (_ BitVec 32) (bvsub s #x10000002))
+(define-fun put () Bool (and (bvule k #x0000000e) (not (= (bvand (bvshl #x00000001 k) #x00004003) #x00000000))))
+(assert (not (= put (or (= s #x10000002) (= s #x10000003) (= s #x10000010)))))
+(check-sat)
