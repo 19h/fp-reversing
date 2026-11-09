@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: [Selected-record byte passes and scratch handoff](daemon_mode_one_record_passes_report.md) proves two ordered COUNT-byte passes, unsigned loop controls, exact modulo257 reduction, retained accumulator banks, the encoded fourth-word handoff and sixteen sparse bytes in a961 B scratch view. All703 nonbranch sites translate;82 UNSAT and eight SAT results pass, including57 predecessor replays. Native owners, whole reachability, algorithm identity, successful output, budget history and daemon-kext pairing remain unknown.
+
 Current extension: [C0 record scan and selected-record ABI](daemon_mode_one_record_scan_report.md) proves the address-keyed BE32 header predicate, equality-driven next-link traversal, LOCAL fallback and selected buffer/u32-field gates. All691 captured nonbranch sites translate;53 UNSAT and four SAT results pass, including six predecessor replays. Native reachability, record ownership, successful output, budget history and daemon-kext pairing remain unknown.
 
 Current extension: [Internal phase latch and C0/LOCAL handoff](daemon_mode_one_phase_handoff_report.md) establishes sixteen repack stores,32 bijective word encodings in a296 B workspace,a distinct re-entry mixer with F460=86,and conditional request-field/raw-error suffixes. All880 captured nonbranch sites translate;122 UNSAT and nine SAT results pass. Later set-bit-visit reachability,successful publication,budget history and native daemon-kext pairing remain unknown.

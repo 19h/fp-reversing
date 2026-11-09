@@ -1,0 +1,77 @@
+{
+  "generator_sha256": "41beed4c804bb13edacb08c84a6e3e405fbbff3239694719d84e40d068572368",
+  "static_scope": "Conditional selected-record processing:two ordered COUNT-byte passes,exact unsigned loop controls and modulo257 reduction,retained accumulator banks,common16-cell scratch initialization and saved-state epochs. Source/ABI results only;native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 8,
+    "source_instructions": 711,
+    "source_bytes": 2844,
+    "pointer_records": 9,
+    "branch_bindings": 11,
+    "SP_writes": 0,
+    "comparison_role_corrections": 9,
+    "prior_ranges_recaptured": 19,
+    "prior_bytes_recaptured": 6344,
+    "queries_unsat": 82,
+    "queries_sat": 8,
+    "predecessor_queries_replayed": 57,
+    "source_nonbranch_sites_translated": 703,
+    "ordered_record_passes": 2,
+    "distinct_scatter_stores": 16,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_passes_report.md": "319f2b4ca0cde8138dbdfc0da96d90146f1a43a11125db97b2a19c4cbc50f6a2",
+    "obfuscated_routines_report.md": "c3b444bf2fa6c29e5dd3a411adb0c9c041ada0a43d92020500d95de3948c6524",
+    "mach_ports_report.md": "f94fbea8dd0b864535bd302a6f18569fd5c0ec346202a6d8bce0427d15a8033b",
+    "foundational_triage_report.md": "365104fd42e692e39f1d1c9ccecd634887e3f26199fa86190057a905eae50749",
+    "interface_abi_report.md": "bc112c95e111ed9d51f8133941c415393a33a5b8dc81507a7931410d912c4675",
+    "interface_investigation_status.md": "1d99216c2536030fcf33f27f7606128ed4f905d879f9acc108f75828b7544bde",
+    "daemon_mode_one_record_scan_report.md": "69fa9f6c09f2ebd7007b00fd8110e61d70007f0dd6591d2dddb8acec50078120"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_passes_source.json": "f31ead352e77dddb679c69f81736359241b5e93a6cfbf12dc0fe3be01e1c6cca",
+    "daemon_mode_one_record_passes_checks.json": "90a449a92d301c5b1809c76cb39e61e2185c5d0017c72d8e124fadb76a19ec9b",
+    "recover_daemon_mode_one_record_passes.py": "496efd1a65b380988e962b52dd9306d095bc8876f89227baa78bd367c61a2971",
+    "validate_daemon_mode_one_record_passes.py": "f5b78329fd2bf8d95d46ba2ef8138d7f707868987bc54718b240d03880ad0d5c",
+    "seal_daemon_mode_one_record_passes.py": "41beed4c804bb13edacb08c84a6e3e405fbbff3239694719d84e40d068572368",
+    "verify_daemon_mode_one_record_passes_publication.py": "ce51bf7be219cbab04a831185d1e86e95326dc0ada4b1c62c9b0bb97428f7764"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RP1-RP8;703 nonbranch sites translated,two ordered COUNT-byte passes,unsigned wrap-aware controls,modulo257 reduction,accumulator-bank preservation and16 exact sparse scratch writes;82 UNSAT and eight SAT results including57 predecessor replays. Native owners,whole reachability,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  }
+}

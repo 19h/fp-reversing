@@ -137,6 +137,7 @@ def main():
     if exists(BASE/'daemon_mode_one_word_rounds_report.md'):reports.add(BASE/'daemon_mode_one_word_rounds_report.md')
     if exists(BASE/'daemon_mode_one_phase_handoff_report.md'):reports.add(BASE/'daemon_mode_one_phase_handoff_report.md')
     if exists(BASE/'daemon_mode_one_record_scan_report.md'):reports.add(BASE/'daemon_mode_one_record_scan_report.md')
+    if exists(BASE/'daemon_mode_one_record_passes_report.md'):reports.add(BASE/'daemon_mode_one_record_passes_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1544,6 +1545,10 @@ def main():
         scan_quality=json.loads(read(ROOT/'daemon_mode_one_record_scan_quality_gates.json'))
         manifest['validation']['daemon_mode_one_record_scan_increment_checks']=scan_quality['verified_counts']
         manifest['validation']['daemon_mode_one_record_scan_static_scope']=scan_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_record_passes_quality_gates.json'):
+        passes_quality=json.loads(read(ROOT/'daemon_mode_one_record_passes_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_record_passes_increment_checks']=passes_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_record_passes_static_scope']=passes_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
