@@ -1,0 +1,77 @@
+{
+  "generator_sha256": "df2836ec13c44d5461fe431b484efddf04305b8e892a4d0962c4e72013ca2036",
+  "static_scope": "Conditional nonnull C0-pointee scan: address-keyed BE32 header,request-cookie predicate,next-link traversal,LOCAL fallback and selected-record buffer/u32-field gates. Source proofs only;native reachability,ownership,successful output,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 8,
+    "source_instructions": 697,
+    "source_bytes": 2788,
+    "pointer_records": 10,
+    "branch_bindings": 11,
+    "SP_writes": 0,
+    "comparison_role_corrections": 6,
+    "prior_ranges_recaptured": 22,
+    "prior_bytes_recaptured": 6204,
+    "queries_unsat": 53,
+    "queries_sat": 4,
+    "predecessor_queries_replayed": 6,
+    "source_nonbranch_sites_translated": 691,
+    "codec_seed_lemmas": 4,
+    "codec_round_lemmas": 28,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_scan_report.md": "aa6bd2488dff9531a0cd34d690109f19f8d8ecf57963987b5e1f82eb8bdb84a8",
+    "obfuscated_routines_report.md": "57a3d037b30000419659f70cd062777d833b409fc0735a699ccfc8718fb52295",
+    "mach_ports_report.md": "dbe6a23886b1b3c8cd7fdbafd392c34fbf112483cc6d60539b53afc770d14fb8",
+    "foundational_triage_report.md": "9a9b7544cbff9e1ad7c1b2fa789cb835a67c93dfc669624595c82386e9dd44b4",
+    "interface_abi_report.md": "720d658c8714ecf738405aaa027b7c7acdb5f9885a7ec50de257fde017d9ca0e",
+    "interface_investigation_status.md": "33769b04b149d49635db86d12a89e20b570f99d192f30d0e3ee8307d57b45514",
+    "daemon_mode_one_phase_handoff_report.md": "2447ff313e88d15979b3ab83f7e697542fd012efaa7def777d7ca57a95ba4ee1"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_scan_source.json": "d2f5a5131f8749f11670e67eb9f90d9aa7ae13e3ccdb50e54b26c819465406f6",
+    "daemon_mode_one_record_scan_checks.json": "a32263a1dd5bc2c204cb88de46995c46eca8838c72f15efe8a097558748cf99d",
+    "recover_daemon_mode_one_record_scan.py": "bd928f494724f0a3d84d0745f9d01e0db1667b5d3e53f3123b993d198e33d3f7",
+    "validate_daemon_mode_one_record_scan.py": "8d3ad202305fb84a7363c1b78750e0d3200be18f7fd025bb70fcbffc9c2becfa",
+    "seal_daemon_mode_one_record_scan.py": "df2836ec13c44d5461fe431b484efddf04305b8e892a4d0962c4e72013ca2036",
+    "verify_daemon_mode_one_record_scan_publication.py": "435fd3455553610bacac7fc7fa80a0125895b2f0b027e714455fd42ea993b715"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RS1-RS8;691 nonbranch sites translated,four seed and28 round lemmas,BE32 header predicate,list traversal,LOCAL fallback and selected-record field gates;53 UNSAT and four SAT results including six predecessor replays. Native reachability,owners,successful output,budget history and daemon-kext pairing remain unknown."
+  }
+}
