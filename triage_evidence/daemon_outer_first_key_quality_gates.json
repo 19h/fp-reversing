@@ -1,0 +1,80 @@
+{
+  "scope": "Selected C0 publication -> first-match keyd719dce3 -> exact missing-key option/default bridge or fitted span/type/mode1 helper frontier. Mode0 and other modes,error/recognized-scalar statuses and private pointer/extent/return interfaces are distinguished. Native owner/caller/PAC,whole-parser memory continuity and daemon-kext exchange remain unproved.",
+  "generator_sha256": "72e76d377f7f9b7beb351857c28ef33d06fa035fd208eba4f37ddeafdeb75fd7",
+  "verified_counts": {
+    "source_fragments": 35,
+    "source_instruction_instances": 671,
+    "source_bytes": 2684,
+    "branch_terminated_ranges": 35,
+    "preparation_instructions": 386,
+    "preparation_bytes": 1544,
+    "pointer_records": 53,
+    "branch_slot_modifier_matches": 53,
+    "prior_ranges_recaptured": 120,
+    "prior_bytes_recaptured": 23184,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 41,
+    "reused_queries_unsat": 58,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 1021,
+    "translated_instruction_instances": 1432,
+    "SSA_definitions": 1282,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Selected C0 publication -> first-match keyd719dce3 -> exact missing-key option/default bridge or fitted span/type/mode1 helper frontier. Mode0 and other modes,error/recognized-scalar statuses and private pointer/extent/return interfaces are distinguished. Native owner/caller/PAC,whole-parser memory continuity and daemon-kext exchange remain unproved.",
+  "report_sha256": {
+    "daemon_outer_first_key_report.md": "e3c8380b5ca50b696a320acdef3f0878070cbec17f7c648eca6572bad640cc2b",
+    "obfuscated_routines_report.md": "427520316a2b95545bffb547d892beea9d0145defb7383d89cd5d041768d46a1",
+    "mach_ports_report.md": "1586a526d3f1f385f23d73cfc87e2328c1ec00f451ece675a80889ecbbe0b5f2",
+    "foundational_triage_report.md": "66ea5e1d85814bc82ac99038d798723b243d8096dc462052e67032a0ed2e9f12",
+    "interface_abi_report.md": "88f7708e1d644c6e9ca467448522df1895cf55a0eb136c6e0634b6f820199d5c",
+    "interface_investigation_status.md": "a4212201053984b7127c7b2edac17ce5892b14e54169d549a9ca435748b20b45",
+    "daemon_outer_record_ingress_report.md": "276c5d5b1103ab4e62e7da7472de7ec9e6cdadbe598590b8450aa199434a4af3"
+  },
+  "evidence_sha256": {
+    "daemon_outer_first_key_source.json": "ff16a90989223064207e4e6351df8734fb90a58e5265154f6acce2b6a56b362b",
+    "daemon_outer_first_key_checks.json": "44e8c06c8e0ac58ab189f9cf351e801bc1f6897ec3fb1afe01a156d1af903344",
+    "recover_daemon_outer_first_key.py": "bfe00326e150f96aeac1dce51055908cb5920142c24dc3b9d7a543a8fa59fc5a",
+    "validate_daemon_outer_first_key.py": "ff933bf07abc5e6d36596e920b5942e3179ea185880fcdfcd180d89da02e414c",
+    "seal_daemon_outer_first_key.py": "72e76d377f7f9b7beb351857c28ef33d06fa035fd208eba4f37ddeafdeb75fd7",
+    "verify_daemon_outer_first_key_publication.py": "2dde2c4d9af6013f6c2ff39dd45a38dc0a187c89d3f3e231304d406341d2ac2c"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and FK1-FK10;first-child publication,actual first-key lookup/caller/return/result phases,missing-key option bridge,found-span/type/bounds/mode contract and deeper helper interface.35 ranges/671 instructions plus386 preparation;1021 modeled PCs,1432 instances,1282 definitions;41 new and58 replayed UNSAT,one interpretation check,six integrity controls. Native owner/caller/PAC,whole-parser memory continuity,deeper helper/cleanup and daemon-kext exchange remain unproved."
+  }
+}

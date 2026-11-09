@@ -1,0 +1,78 @@
+{
+  "scope": "Conditional N19 first-match lookup and output/status contract,position-preserving replacement,normal-return retirement calls and saved-end reader-loop back edge. Finite stable valid owners,frame epochs,bank roots and call/PAC completion remain premises;u64 reader/native transport and complete parser remain unproved.",
+  "generator_sha256": "90d0927f3d79974b0437d84e4179897db51ffa04bda75fb53c4ceee1272dd2b0",
+  "verified_counts": {
+    "source_fragments": 27,
+    "source_instruction_instances": 1278,
+    "source_bytes": 5112,
+    "normal_free_call_boundaries": 2,
+    "bank_inputs_checked": 512,
+    "pointer_records": 35,
+    "branch_slot_modifier_matches": 37,
+    "prior_source_ranges_recaptured": 8,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 39,
+    "reused_queries_unsat": 32,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 1249,
+    "translated_instruction_instances": 1821,
+    "SSA_definitions": 1707,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Conditional N19 first-match lookup and output/status contract,position-preserving replacement,normal-return retirement calls and saved-end reader-loop back edge. Finite stable valid owners,frame epochs,bank roots and call/PAC completion remain premises;u64 reader/native transport and complete parser remain unproved.",
+  "report_sha256": {
+    "daemon_reader_record_replacement_report.md": "423a1a0a8146d5cb127a62ebb4ff09b657a4d6127ed7fea9d167e617d041cca3",
+    "obfuscated_routines_report.md": "b65aa9cf71eda6184d25e9a964e8e77389a177c720d82fa95071dcdaf836ccda",
+    "mach_ports_report.md": "4d210366dadefa20d3ed9ddd104dc50cfdeb926d22036db4431e8142ec36d8e6",
+    "foundational_triage_report.md": "9da97c1091c5d980d1d4fcaa8bc41afad7a46e424e4f24dbe64ecd9db6746f42",
+    "interface_abi_report.md": "fa1fa29970f0f89498fca23f844fe474967bbdb40ce3ce5cf1fe4b30e652ba65",
+    "interface_investigation_status.md": "f7fec308519daa4a08ab6f4037452b9315a96e31b92b5e0f1d90d7e96ba8dd94",
+    "daemon_reader_record_payloads_report.md": "dc3ae995db501ae8b571c4ddbcaf75a24aedd97ad9b6946092a6f585e1c12d2b"
+  },
+  "evidence_sha256": {
+    "daemon_reader_record_replacement_source.json": "8f767fcbe68c953fa786347c30d16f2c154d23f54b2574964808973c91637f25",
+    "daemon_reader_record_replacement_checks.json": "055c74fc949d9c5d55bf1b6f0052912b7bb5d2c840419829d9de8bbab17a5749",
+    "recover_daemon_reader_record_replacement.py": "b2e278633548ea1cb277eced897558bec3bf8713a8fe8b0da049c371cea93203",
+    "validate_daemon_reader_record_replacement.py": "a0892b6784963c77c2783e71feee1f54b2ae3aae0e3b8f80f03306d328487022",
+    "seal_daemon_reader_record_replacement.py": "90d0927f3d79974b0437d84e4179897db51ffa04bda75fb53c4ceee1272dd2b0",
+    "verify_daemon_reader_record_replacement_publication.py": "fabd062797c8d9d063604c1270eff19b3b1506df97d8c09214dc947fcd817d0a"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and LR1-LR10;complete conditional first-match lookup,actual preparer literal-key join,matched candidate publication,N19 four-position source splice and independent word-cell model,normal-return buffer/node release interfaces,and actual saved-end replacement back edge. Twenty-seven ranges/1278 instructions,35 fixups/37 slot matches,512 bank cases,1249 translated PCs,1821 instances,1707 SSA definitions. Thirty-nine new and32 replayed UNSAT queries,one abstract SAT mutation counterexample,six integrity controls. Native owners/synchronization/callee/PAC/endpoints,exceptional cleanup,u64 reader semantics and full parser/daemon-kext exchange remain unproved."
+  }
+}

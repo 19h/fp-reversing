@@ -1,0 +1,79 @@
+{
+  "scope": "Selected outer INPUT/encoded-length/OBJ+0 route to shared plain-wire parser: ten-byte header, exact u32/u64/span type and extent gates, scalar constructor XOR operands, borrowed span, cursor loop, zero-ID span termination and local output. This is a source component contract; native ingress/owners,complete constructor/parser/cleanup and daemon-kext pairing remain unproved.",
+  "generator_sha256": "d4085bd5739ebc422929cf441c12425caff195a4a7c5aab771f55e2a4cb5c03a",
+  "verified_counts": {
+    "source_fragments": 27,
+    "source_instruction_instances": 675,
+    "source_bytes": 2700,
+    "branch_terminated_ranges": 27,
+    "pointer_records": 35,
+    "branch_slot_modifier_matches": 41,
+    "bank_inputs_checked": 256,
+    "prior_ranges_recaptured": 88,
+    "prior_bytes_recaptured": 13064,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 37,
+    "reused_queries_unsat": 3,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 647,
+    "translated_instruction_instances": 690,
+    "SSA_definitions": 651,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Selected outer INPUT/encoded-length/OBJ+0 route to shared plain-wire parser: ten-byte header, exact u32/u64/span type and extent gates, scalar constructor XOR operands, borrowed span, cursor loop, zero-ID span termination and local output. This is a source component contract; native ingress/owners,complete constructor/parser/cleanup and daemon-kext pairing remain unproved.",
+  "report_sha256": {
+    "daemon_outer_record_ingress_report.md": "7eff7de4c89d0bd8f547b956f628e71baf7507f7252c96214011f7ebbc2395fe",
+    "obfuscated_routines_report.md": "1323537a3dc59e4b2f0fbc455f0974bb6e58a4782970c5b9b63c4812801f86ba",
+    "mach_ports_report.md": "433044ef675e1e22adcd5afdb6f5c8289a485ac3130d696f224b624dcbfde0bc",
+    "foundational_triage_report.md": "94d56185c310e0ab139e04f72cda199365765eb1b7a087258f086f3dc3212493",
+    "interface_abi_report.md": "c654766f63f30dfff9ae13b51a70113bf91b0d2caffab9857e08632b08d035cb",
+    "interface_investigation_status.md": "39b29b6882856b2f3fb008f6f7ecc869fdf782f68798f37f3b78e45b59f6ce83",
+    "daemon_reader_option_default_report.md": "716e2a4fae1c25237b6c3a73a9c1134d8439826b41278c04ce6b8281506123b8"
+  },
+  "evidence_sha256": {
+    "daemon_outer_record_ingress_source.json": "50a60bc3f00c025d3fb3654f51304267bfdeda4f31e9f02e77fb05e5f1e07fc6",
+    "daemon_outer_record_ingress_checks.json": "5d4136b5951af31d108aed52e3bd06cc57540995e315ffcb09830c5eace7226f",
+    "recover_daemon_outer_record_ingress.py": "b4e2352d38b780291d17336b227617b64542a8f2c36452e2729edab6eaa7de0a",
+    "validate_daemon_outer_record_ingress.py": "861c1cfa746b8c3f794a748ba63d1c1906650d6aa810948879a08dfca5bf51ac",
+    "seal_daemon_outer_record_ingress.py": "d4085bd5739ebc422929cf441c12425caff195a4a7c5aab771f55e2a4cb5c03a",
+    "verify_daemon_outer_record_ingress_publication.py": "f9ddb8d4af7db92a101d9362d92047cd6a3fbb6e6ebe08d62590f7f9b96b35f8"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and OI1-OI10;plain-wire header,complete three-type forest,scalar XOR operands,borrowed span,generic constructor,cursor and zero-ID termination,local first-child publication and error frontier.27 source ranges/675 instructions,647 modeled PCs/690 instances/651 definitions,37 new plus3 replayed UNSAT,one interpretation counterexample,six integrity controls. Frame/owner/native/PAC,complete constructor/parser/cleanup and daemon-kext pairing remain unproved."
+  }
+}

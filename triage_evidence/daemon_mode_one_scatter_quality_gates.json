@@ -1,0 +1,84 @@
+{
+  "generator_sha256": "f5d7c73bd3a02cc7a5356ae03e850da6fb9a7556102131205b790db4d34930da",
+  "static_scope": "Selected LEN32 mode1 core continuation:16-byte scattered initialization and 15 state-dependent in-place swaps of those initialized cells. This is a static permutation contract; algorithm identity, downstream uses, complete return/budget history and native daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 451,
+    "source_bytes": 1804,
+    "pointer_records": 3,
+    "branch_slot_modifier_matches": 4,
+    "prior_ranges_recaptured": 6,
+    "prior_bytes_recaptured": 1676,
+    "SP_writes": 0,
+    "permutation_byte_store_sites": 30,
+    "comparison_operand_role_corrections": 2,
+    "queries_unsat": 66,
+    "domain_checks_sat": 1,
+    "distinct_translated_instruction_sites": 448,
+    "translated_instruction_instances": 527,
+    "SSA_definitions": 517,
+    "selector_abstractions": 14,
+    "address_reduction_certificates": 15,
+    "finite_address_cases": 145,
+    "source_swaps": 15,
+    "transposition_cases": 135,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_scatter_report.md": "5472ae2196c97709ac211d391dd9add41353e245780cee917f7fb4e16296aeb1",
+    "obfuscated_routines_report.md": "5986612e57e09af3b8c8b463ba4c9c7b8c008b5ac7fb825a15f48212e9e2af6b",
+    "mach_ports_report.md": "34bed5e7d5aafcf915644d4d4f5de9af0a1ea9a94c3aa49e3eab25a7504ae0bd",
+    "foundational_triage_report.md": "61452f1964bf987c2a3563776b1d2bf282c0696e4c3583d2c0ba0a3a613ee8b7",
+    "interface_abi_report.md": "40ca7f8deff5a04871573b31002e48866b117ac50fe9b9d9944982e265007d32",
+    "interface_investigation_status.md": "c8e4ff6bc7aa60606fc149ce378748ec5e2e9d181b8279c9b2c15e5a7fa6e554",
+    "daemon_mode_one_source_passes_report.md": "33792a5a5295c517d645ca72470e2f67c605405365a8603577e0603b36c087e4",
+    "username_path_scrub_report.md": "968848bb90612ea3bae9c3154e756aecdadbc5ee48de2ece74972590961339ea"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_scatter_source.json": "18f1c6fa04cca61a9d9303f6319f314b4e5b00aa87ff534a7193d5e769e90cd7",
+    "daemon_mode_one_scatter_checks.json": "e31decb55e6862571062463a9ab7e752760022fa6a4f61a095a4d6c42d435b89",
+    "recover_daemon_mode_one_scatter.py": "51c5eb69ac5ac2648e5990ec7d9ed35d889fd0764a44fcdc5f1c8886562b2529",
+    "validate_daemon_mode_one_scatter.py": "7f2baa49fb2362e546577fe67327fa1d9cc581b1e65050f88102cbaea48e6be7",
+    "seal_daemon_mode_one_scatter.py": "f5d7c73bd3a02cc7a5356ae03e850da6fb9a7556102131205b790db4d34930da",
+    "verify_daemon_mode_one_scatter_publication.py": "8ae154c397d174ad148808d692a75fca6f59b7865a90371269ad5d7ebb3ce6e4"
+  },
+  "privacy_history_audit_sha256": "1fb3dcb432e588f793f6c48e50fd96592d02636e509fb208deb004327f73105b",
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SC1-SC10;fresh post-redaction source recapture,66 UNSAT queries,145 address cases,135 transpositions and coherent-memory theorem. Prior metadata changes are bounded by the separately audited username-path rewrite;older scientific checks are not all replayed."
+  }
+}

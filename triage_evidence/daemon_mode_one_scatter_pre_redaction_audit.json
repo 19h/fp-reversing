@@ -1,0 +1,16 @@
+{
+  "manifest_sha256": "7cba141a5796467cc93e95bccc2edab925979857b5ba4a2b115e54b751cdcd28",
+  "artifacts_rehashed": 7398,
+  "reports_checked": 316,
+  "compressed_logical_artifacts": 0,
+  "direct_JSON_parsed": 2240,
+  "local_links_checked": 5921,
+  "unavailable_external_primary_references": 1,
+  "prior_artifacts_preserved": 7388,
+  "prior_artifacts_unchanged": 7381,
+  "allowed_existing_changes": 7,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "validation_epoch": "Before the one-time username-path history rewrite",
+  "scientific_scope": "Original-byte static scatter/permutation increment only;native target operation remains unproved."
+}

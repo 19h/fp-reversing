@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: [Mode1 scattered16-byte permutation](daemon_mode_one_scatter_report.md) proves initialization of all bytesd0..df at16 distinct frame cells,followed by15 state-dependent forward swaps. Three ranges/451 instructions,66 UNSAT,145 address cases,135 transpositions and a coherent-memory theorem support the invariant. The second-bank spills and budget remain preserved through this region;next continuationdd165c and native daemon-kext effects remain unknown.
+
 Current extension: [Equivalent32-byte source passes](daemon_mode_one_source_passes_report.md) classifies loopsb035ac/d9f0f4 as two source-equivalent four-u32 byte mixers with identical seeds,ordered input and compact recurrence. The first bank remains in registers and the second is spilled;their later use and standard algorithm identity remain unknown.
 
 Current extension: [Mode1 private request and protected adapter](daemon_mode_one_adapter_report.md) classifies helper729920 as a48 B request wrapper into adapterd03348/corecf0194. Aligned request fields decode mode4923 and a32 B size predicate;the immediate raw-result path and conditional zero-delta return are recovered. The processing algorithm remains unknown.

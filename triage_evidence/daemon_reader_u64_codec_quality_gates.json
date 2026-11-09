@@ -1,0 +1,82 @@
+{
+  "scope": "Conditional complete eight-byte address-mask reader and merge,actual key-origin/liveness join,N19 raw64 staging/composition with the established writer,and source allocation-to-container/publication provenance. No native pointer/lifetime/PAC/endpoint/transport or complete parser proof.",
+  "generator_sha256": "1886009004338f473d7dda185cd3e850d8cadbb1afef83285dc30c201c8b1dbf",
+  "verified_counts": {
+    "source_fragments": 21,
+    "source_instruction_instances": 2031,
+    "source_bytes": 8124,
+    "pointer_records": 20,
+    "branch_slot_modifier_matches": 19,
+    "branch_terminated_ranges": 16,
+    "explicit_source_cuts": 5,
+    "prior_source_ranges_recaptured": 2,
+    "reader_byte_loads": 8,
+    "reader_seed_parts": 8,
+    "reader_round_parts": 56,
+    "key_liveness_ranges": 5,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 83,
+    "reused_queries_unsat": 73,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 1945,
+    "translated_instruction_instances": 2898,
+    "SSA_definitions": 2813,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Conditional complete eight-byte address-mask reader and merge,actual key-origin/liveness join,N19 raw64 staging/composition with the established writer,and source allocation-to-container/publication provenance. No native pointer/lifetime/PAC/endpoint/transport or complete parser proof.",
+  "report_sha256": {
+    "daemon_reader_u64_codec_report.md": "1a872e58b6582002a742c4d1d0ee6c60db6fedad27618cbdc84d49dce18c5afc",
+    "obfuscated_routines_report.md": "89562b7c3b0f098f2929a09771b4b3abaf951bf35a99a3d0cfe0daf88eed008a",
+    "mach_ports_report.md": "48fcfdbc3b2da13a3ff77a1f53b38b1d49c34b40064ab5fc1519d4a9d84e0448",
+    "foundational_triage_report.md": "edab4d157bd63babd0d3473ee8bf85a98dd51b357ef10c6f19df5f12864c54ca",
+    "interface_abi_report.md": "a8367272bac330647f276845ae70b9d2b70e5a666e412baba4a148abe287e0b7",
+    "interface_investigation_status.md": "da878795231df6c477ab85335cd5778fefbd58f1e2781f6f3362805f5510c596",
+    "daemon_reader_record_replacement_report.md": "94cf2212139dfc75e707694fb321b183e106c06f5cc76474666f72c7e52a5d53"
+  },
+  "evidence_sha256": {
+    "daemon_reader_u64_codec_source.json": "d038763aac0b94f67723280c691df2078a3eb1b5aabb6de3d2b8c9486a08e48b",
+    "daemon_reader_u64_codec_checks.json": "f52e7c0f17c4be1c83cf3babae0a913a186283b8dc282a97756eb92d065abf9c",
+    "recover_daemon_reader_u64_codec.py": "fef76f3848917ab944b61af327bbb7536bf145486b549e37bac488f6004452fb",
+    "validate_daemon_reader_u64_codec.py": "92f8af9c7b99ae55dd01e5f1c9c477724183386d5b401e46d553b708d691aca7",
+    "seal_daemon_reader_u64_codec.py": "1886009004338f473d7dda185cd3e850d8cadbb1afef83285dc30c201c8b1dbf",
+    "verify_daemon_reader_u64_codec_publication.py": "54367673df767283f568f0df4b2b8b1e53ebfbbc86c7c35145269a839b1894c7"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and UC1-UC10;complete eight-byte reader seed/round/merge,actual literal/residual key and cursor joins,N19 raw64 staging and writer inverse,allocation-to-list-container provenance,separate comparison-context producer,and exhaustion/zero-ID-span pointer publication. Twenty-one ranges/cuts,2031 instructions,20 fixups/19 slot matches,1945 translated PCs,2898 instances,2813 SSA definitions. Eighty-three new and73 replayed UNSAT queries,one abstract SAT representation counterexample,six integrity controls. Native owners/freshness/synchronization/callee/PAC/endpoints,exceptional cleanup and complete parser/daemon-kext exchange remain unproved."
+  }
+}

@@ -16,7 +16,7 @@ import struct
 import uuid
 
 ROOT = Path(__file__).resolve().parent
-CACHE = Path('/Users/___/Downloads/fpx/img4_dump/kernelcache.macho')
+CACHE = Path.home() / 'Downloads/fpx/img4_dump/kernelcache.macho'
 KEXT = ROOT.parent / 'com.apple.driver.FairPlayIOKit'
 SPECIAL = {'_host_get_special_port', '_host_priv_self', '_ipc_port_release_send',
            '_mach_msg_rpc_from_kernel_proper', '_mig_get_reply_port',

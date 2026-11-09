@@ -121,6 +121,7 @@ def main():
     if exists(BASE/'daemon_outer_first_key_report.md'):reports.add(BASE/'daemon_outer_first_key_report.md')
     if exists(BASE/'daemon_mode_one_adapter_report.md'):reports.add(BASE/'daemon_mode_one_adapter_report.md')
     if exists(BASE/'daemon_mode_one_source_passes_report.md'):reports.add(BASE/'daemon_mode_one_source_passes_report.md')
+    if exists(BASE/'daemon_mode_one_scatter_report.md'):reports.add(BASE/'daemon_mode_one_scatter_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -316,6 +317,10 @@ def main():
             name=raw.split('#',1)[0]
             target=Path(name) if name.startswith('/') else path.parent/name
             if not exists(target):
+                alias=re.sub(r'^/(?:Users|home)/_+(?=/|$)',lambda _:str(Path.home()),str(target))
+                if alias!=str(target)and exists(Path(alias)):
+                    links+=1
+                    continue
                 # Preserve this historical primary-source citation after the SDK update.
                 sdk=json.loads(read(ROOT/'kernel_root_port_construct_source.json'))['SDK_context']
                 assert path.name=='kernel_root_port_construct_report.md' and name==sdk['path'],(path,name)
@@ -327,11 +332,11 @@ def main():
                     'status':'historical_external_reference_unavailable','installed_comparison_path':str(installed),
                     'installed_comparison_sha256':current_sha,'equivalence_established':False})
             links+=1
-    evidence=sorted({canonical(p)for p in ROOT.iterdir()if p.is_file()and canonical(p).name!='interface_manifest.json'})
+    evidence=sorted({canonical(p)for p in ROOT.iterdir()if p.is_file()and canonical(p).name!='interface_manifest.json'and p.suffix.lower()not in{'.i64','.idb','.id0','.id1','.id2','.nam','.til'}})
     json_count=0
     for path in evidence:
         if path.suffix=='.json':json.loads(read(path));json_count+=1
-    owned=reports|{p for p in BASE.glob('fairplay_*.py')}|set(evidence)
+    owned=reports|{p for p in BASE.glob('fairplay_*.py')}|set(evidence)|{BASE/'.gitignore'}
     manifest={'created_utc':datetime.now(timezone.utc).isoformat(),'goal_status':'active',
        'inputs_preserved':old['inputs_preserved'],
        'logical_storage_policy':'Canonical JSON paths may resolve read-only to .json.zst; sizes and SHA256 are decoded logical content. Historical Markdown paths are checked logically, not claimed physically present.',
@@ -340,6 +345,7 @@ def main():
                      'unavailable_external_primary_references':unavailable_external,
                      'sidecar_increment_checks':quality['verified_counts']},
        'files':[entry(p) for p in sorted(owned)]}
+    if 'privacy_migration'in old:manifest['privacy_migration']=old['privacy_migration']
     if exists(ROOT/'rpc502_mapping_quality_gates.json'):
         mapping_quality=json.loads(read(ROOT/'rpc502_mapping_quality_gates.json'))
         manifest['validation']['mapping_increment_checks']=mapping_quality['verified_counts']
@@ -1459,6 +1465,10 @@ def main():
         source_pass_quality=json.loads(read(ROOT/'daemon_mode_one_source_passes_quality_gates.json'))
         manifest['validation']['daemon_mode_one_source_passes_increment_checks']=source_pass_quality['verified_counts']
         manifest['validation']['daemon_mode_one_source_passes_static_scope']=source_pass_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_scatter_quality_gates.json'):
+        scatter_quality=json.loads(read(ROOT/'daemon_mode_one_scatter_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_scatter_increment_checks']=scatter_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_scatter_static_scope']=scatter_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

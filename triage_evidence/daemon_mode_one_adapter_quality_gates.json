@@ -1,0 +1,80 @@
+{
+  "scope": "Mode1 object/local32 -> private48 B request -> adapterd03348/corecf0194;aligned address cookie,decoded mode4923,size32 predicate,budget/stack delta and immediate-rejection return. The32 B processing body,complete budget history,native owner/PAC/transport and daemon-kext exchange remain unproved.",
+  "generator_sha256": "6d36d2009fa3fc0fbee011d5f470c5ab90dc00bf90b88eca482352b7a1e6752a",
+  "verified_counts": {
+    "source_ranges": 11,
+    "source_instructions": 662,
+    "source_bytes": 2648,
+    "bank_roles": 11,
+    "bank_inputs_checked": 2816,
+    "pointer_records": 27,
+    "branch_slot_modifier_matches": 9,
+    "resolved_call_sites": 3,
+    "structural_instruction_assertions": 20,
+    "prior_ranges_recaptured": 38,
+    "prior_bytes_recaptured": 10368,
+    "new_queries_unsat": 35,
+    "reused_queries_unsat": 0,
+    "counterexamples_sat": 1,
+    "selected_translated_instruction_sites": 281,
+    "translated_instruction_instances": 281,
+    "SSA_definitions": 254,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Mode1 object/local32 -> private48 B request -> adapterd03348/corecf0194;aligned address cookie,decoded mode4923,size32 predicate,budget/stack delta and immediate-rejection return. The32 B processing body,complete budget history,native owner/PAC/transport and daemon-kext exchange remain unproved.",
+  "report_sha256": {
+    "daemon_mode_one_adapter_report.md": "fbab3b4af9878c35331ef703d173f012dd25cf7e0271d6e515bffd7df09208a2",
+    "obfuscated_routines_report.md": "516071b980b81352cb23c724eda2058940999bf2519a8ca441141ff7172af3b9",
+    "mach_ports_report.md": "2c495e18434850a4e7e56b90a39f09d9c7f60fe7814c0ddbf04fdb0b1c68784b",
+    "foundational_triage_report.md": "81196fab7104aaf8b466f05cd11df0fcf44a2031ac860e41657c9bef11ca86b9",
+    "interface_abi_report.md": "f4c51eca6851da84b0eff4f6faee53902f7a1cb8d2d31823ac6b66d689a9f80a",
+    "interface_investigation_status.md": "2f57084d21b417d1b662cf01ccda7acce2d1a9d6556facad15c002582f0b4145",
+    "daemon_outer_first_key_report.md": "ed19b121b112b66c4a607568d23415bab0d108198469c27d278ed2276b57cafb"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_adapter_source.json": "e2e004736001cc52b38027876eabb1209ff6b8682ce41b13b0e865a219f63f81",
+    "daemon_mode_one_adapter_checks.json": "cd8d579ab5c82ffb581cbd252f3d6c6035548bdde47f81edaf6da2b06b581d17",
+    "recover_daemon_mode_one_adapter.py": "fed1ec1ad3904c93f94fbbeffa4a7b3ed18aa571646dc4914b0e80461da93c26",
+    "validate_daemon_mode_one_adapter.py": "2730b367eeab3303f414c114b5639d34d41c6aada576f12b32f90ee3b980431a",
+    "seal_daemon_mode_one_adapter.py": "6d36d2009fa3fc0fbee011d5f470c5ab90dc00bf90b88eca482352b7a1e6752a",
+    "verify_daemon_mode_one_adapter_publication.py": "dad78a762149149c660995c52ee0178ec21c57a272a9c63e83c8febe8268e171"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and MA1-MA10;B48 request,aligned cookie and mode/size decoding,protected adapter/core bindings,budget/stack equations,immediate raw result and conditional zero-delta caller return.11 ranges/662 instructions;281 selected SSA sites/254 definitions;35 UNSAT,one alignment interpretation counterexample,2816 bank cases,twenty structural assertions,six integrity controls. Remaining controller/prologue/epilogue semantics and32 B processing are not universally translated;native owner/PAC and daemon-kext exchange remain unproved."
+  }
+}

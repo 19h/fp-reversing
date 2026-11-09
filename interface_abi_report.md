@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: [Mode1 scattered16-byte permutation](daemon_mode_one_scatter_report.md) proves initialization of all bytesd0..df at16 distinct frame cells,followed by15 state-dependent forward swaps. Three ranges/451 instructions,66 UNSAT,145 address cases,135 transpositions and a coherent-memory theorem support the invariant. The second-bank spills and budget remain preserved through this region;next continuationdd165c and native daemon-kext effects remain unknown.
+
 Current extension: [Paired state-bank and spill ABI](daemon_mode_one_source_passes_report.md) maps first bankW0..W3,second bankW8/W13/W11/W23,spillsF748/F720/F728/F730,SRC F458,localF+d00 and next selector3d26.6 ranges/419 instructions,413 modeled sites,26 UNSAT,two algebraic certificates/eight word equalities,four altered-recurrence controls and six integrity controls pass;budget preservation ends at the handoff.
 
 Current extension: [Mode1 B48,adapter/core and conditional return ABI](daemon_mode_one_adapter_report.md) maps R=K10cb8,DOUT=Kbe28,seven written request fields,adapterd03348/corecf0194,actual size32 predicate,raw result and continuation epochs. Eleven source ranges retain662 instructions;281 selected SSA sites,35 UNSAT,one alignment counterexample,2816 bank cases and six controls pass. Remaining semantic coverage is explicit.

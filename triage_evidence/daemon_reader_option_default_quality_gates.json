@@ -1,0 +1,79 @@
+{
+  "scope": "Selected first-child keyed u32 accessor writes the N19 discriminator, exact success preserves that value, exact missing-key marker computes a context-word default, and every other raw status selects error. N19 admission is selected option/default zero, not a universal context-header equality. Native caller/owner/PAC/peer, complete parser/cleanup and daemon-kext pairing remain unproved.",
+  "generator_sha256": "4e3d54d8fe15b68b44566f6783ce5a3ddcacafcf4efae405efdb9c4f541fcaef",
+  "verified_counts": {
+    "source_fragments": 18,
+    "source_instruction_instances": 326,
+    "source_bytes": 1304,
+    "branch_terminated_ranges": 18,
+    "pointer_records": 26,
+    "branch_slot_modifier_matches": 28,
+    "prior_ranges_recaptured": 66,
+    "prior_bytes_recaptured": 11672,
+    "literal_OUT_address_candidates": 1,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 22,
+    "reused_queries_unsat": 107,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 308,
+    "translated_instruction_instances": 325,
+    "SSA_definitions": 297,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Selected first-child keyed u32 accessor writes the N19 discriminator, exact success preserves that value, exact missing-key marker computes a context-word default, and every other raw status selects error. N19 admission is selected option/default zero, not a universal context-header equality. Native caller/owner/PAC/peer, complete parser/cleanup and daemon-kext pairing remain unproved.",
+  "report_sha256": {
+    "daemon_reader_option_default_report.md": "4319501b9172848387bfb2e511124a1cfc4b130da432dd9e71f921c4d1ad176a",
+    "obfuscated_routines_report.md": "3a4b5271ab82b7c3b04896e615f262fc34c4318abccf43f988d3a1d6487d4088",
+    "mach_ports_report.md": "1c400eba14ecd88f3f26963aab0cec7400efbadb672304a86cef9fc433dfd192",
+    "foundational_triage_report.md": "22f4ea75f3068b671daf44d3f3ad7cd0556fc35b86eaec0edfdc0d7b3c1819d1",
+    "interface_abi_report.md": "1f44904215b70531e11076b8146602b3b0ba26efc937f000c5ae596b95b2b7ee",
+    "interface_investigation_status.md": "343a1bcba7587c3e84e4e1b3a1d14fa10c7a9ad112fdf7b723eaeca908605c6e",
+    "daemon_reader_nested_input_report.md": "e8c81e17f55c8534734d0c2abc131fed4fe6726ee1690b8fcc1af0cd211b6e1f"
+  },
+  "evidence_sha256": {
+    "daemon_reader_option_default_source.json": "01aebd656438e679edc7424fe9da6a68e0cc011e95163c1f7747e35a30ad28d2",
+    "daemon_reader_option_default_checks.json": "78546ed64efee93508e525301a3e9f5c5e329059898a9c7a67c4d721ca598207",
+    "recover_daemon_reader_option_default.py": "90a66aba0c1db9dc2e619bf9027312ccc57244f4f22f819aee0dc3b5be174073",
+    "validate_daemon_reader_option_default.py": "2f60aa0a8974c9626ed448af027b2cf097362cf0f2acf2f21b2e7d89d3031145",
+    "seal_daemon_reader_option_default.py": "4e3d54d8fe15b68b44566f6783ce5a3ddcacafcf4efae405efdb9c4f541fcaef",
+    "verify_daemon_reader_option_default_publication.py": "a5d6bfe0c091b2c584ef74a92bff85973dba3a8aa518013abe0aab4d31a54209"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and OD1-OD10; actual keyed u32 option/F output interface, two caller-phase producers, complete raw-status success/miss/error partition, preserved explicit value versus context default, exact byte-memory join and selected N19 admission. Eighteen ranges/326 instructions;308 modeled PCs,325 instances,297 definitions;22 new and107 replayed UNSAT certificates,one abstract scope counterexample,six integrity controls. Header equality is limited to the fallback arm. Native caller/owner/PAC/context/peer identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  }
+}

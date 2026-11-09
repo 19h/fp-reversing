@@ -1,5 +1,7 @@
 # Mode-1 source passes: identical four-word recurrences and state handoff
 
+Follow-up: [Mode1 scattered16-byte permutation](daemon_mode_one_scatter_report.md) proves initialization of all bytesd0..df at16 distinct frame cells,followed by15 state-dependent forward swaps. Three ranges/451 instructions,66 UNSAT,145 address cases,135 transpositions and a coherent-memory theorem support the invariant. The second-bank spills and budget remain preserved through this region;next continuationdd165c and native daemon-kext effects remain unknown.
+
 The protected core's selected nonnull32 B source path reads the same32 source bytes twice. Both passes start from the same four u32 words and reduce to the same compact recurrence. Each pass reads offsets0..31 in order,with no loop stores,calls or SP updates. Consequently,their final four-word banks are equal under stable-source and valid-owner premises. The first bank remains in registers;the second is spilled to four frame cells. No public output or cryptographic algorithm identity is established. [MP1-MP10]
 
 This advances the [mode-1 adapter report](daemon_mode_one_adapter_report.md) beyond its processing frontier. The source is the object-inline address OBJ+0x18 read from private request+0x10. The count is u32[OBJ+0x58],whose selected predicate is32 B. It is not identified with the first-key span staged at the outer frame's0x58a0/0xf7c. Later consumers of the paired banks,the request key/collection/local-output roles,budget history and native daemon-kext exchange remain unknown. [MP2-MP10]

@@ -1,0 +1,78 @@
+{
+  "scope": "Conditional 128 B outer allocation, selected context-field transfer, N19 parent/output and control predicate, raw-result staging/publication, cleanup pointer-cell epoch and local cursor restoration. No continuous parser/initializer, native ownership/PAC, complete cleanup, external publication or daemon-kext pairing proof.",
+  "generator_sha256": "cf1090d6a9f1d750901191f2691ba8833fe9301556476bc449fe4e0d17995870",
+  "verified_counts": {
+    "source_fragments": 13,
+    "source_instruction_instances": 313,
+    "source_bytes": 1252,
+    "branch_terminated_ranges": 12,
+    "explicit_prefixes": 1,
+    "pointer_records": 22,
+    "branch_slot_modifier_matches": 20,
+    "bank_inputs_checked": 512,
+    "candidate_frame_writers": 18,
+    "source_SP_writes": 0,
+    "queries_unsat": 19,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 299,
+    "translated_instruction_instances": 299,
+    "SSA_definitions": 254,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Conditional 128 B outer allocation, selected context-field transfer, N19 parent/output and control predicate, raw-result staging/publication, cleanup pointer-cell epoch and local cursor restoration. No continuous parser/initializer, native ownership/PAC, complete cleanup, external publication or daemon-kext pairing proof.",
+  "report_sha256": {
+    "daemon_reader_outer_lifecycle_report.md": "05817b5db14c1bf079626ed9569c35d275be740905770f8676d0f629f21c5f6a",
+    "obfuscated_routines_report.md": "58e23b83378de125cc7e0e4d127f58b7bb3ca369f4b05f1374379c34f434c059",
+    "mach_ports_report.md": "e24f0955e12ecfb4d6ec76467d435e8907e9e31fc2da79792e98e5d1e2e65700",
+    "foundational_triage_report.md": "81c49258653ee6d6c710299ac570f9e106f1764debd025887cec61b5bd87bed4",
+    "interface_abi_report.md": "091bbe6892f1fbac5644dbd849f09a5bcbfb656a7ac278db2ba56275ddca0411",
+    "interface_investigation_status.md": "4fa42732d1ab31d451b26542cc90ca3d54043310e5da675ea3f36075a3b44f20",
+    "daemon_reader_u64_codec_report.md": "25ee3c82619e7a259dfd49a90bb188394742ee061d8934c9d450e44a047eb8e5"
+  },
+  "evidence_sha256": {
+    "daemon_reader_outer_lifecycle_source.json": "7875eade2e91316f453668bf1ea59f9b836bb32408c1753f30808fa453c9a05f",
+    "daemon_reader_outer_lifecycle_checks.json": "24492aa0c27f5f3c9f56bc8241df8f9a41a27a3b1cac828efe40d17ab8022e16",
+    "recover_daemon_reader_outer_lifecycle.py": "f79b6c9bf90c12b1394ba93af0bd7f580e695bedc3c40b1cd9cb0a409198fe24",
+    "validate_daemon_reader_outer_lifecycle.py": "61690e7a202556523891d72c596330a2a8bcd309e5528fa63614af3ffd8f605a",
+    "seal_daemon_reader_outer_lifecycle.py": "cf1090d6a9f1d750901191f2691ba8833fe9301556476bc449fe4e0d17995870",
+    "verify_daemon_reader_outer_lifecycle_publication.py": "a54b30c792e86a8fe68393a55daa4b2ee5e863dc0dac13e5fe20bd8f97efacbe"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and OL1-OL10; conditional128 B outer allocation, context field transfer, exact composed N19 admission, parent+8 output, raw-result staging, local object publication, cleanup pointer-cell epoch and32 B local-cursor restoration. Thirteen ranges,313 instructions,299 translated sites,19 UNSAT components,one SAT interpretation counterexample,six altered-ledger controls. Native owners, PAC, continuous parser/initializer, complete cleanup, external delivery and daemon-kext pairing remain unproved."
+  }
+}

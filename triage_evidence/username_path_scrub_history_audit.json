@@ -1,0 +1,16 @@
+{
+  "scope": "All physically stored Git objects,including unreachable objects;raw,decoded Zstandard,UTF16,escaped,percent,hex and anchored Base64 path representations. Author names/emails and non-path identifiers are outside the requested path scrub.",
+  "objects": {
+    "blob": 6640,
+    "tree": 129,
+    "commit": 77
+  },
+  "stored_objects_scanned": 6846,
+  "compressed_objects_decoded": 2183,
+  "logical_bytes_scanned": 12401173691,
+  "offending_objects": [],
+  "all_checks_pass": true,
+  "username_recorded": false,
+  "positive_controls": 3,
+  "negative_controls": 1
+}

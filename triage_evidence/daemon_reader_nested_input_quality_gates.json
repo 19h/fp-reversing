@@ -1,0 +1,82 @@
+{
+  "scope": "Selected outer context-word discriminator, first-child key7615e796 lookup, matched-record buffer/header/extent/type interfaces, borrowed span BUF+10 and encoded length into N19, and conditional default-context admission. No continuous native caller, owner/PAC, complete non-span accessor, external delivery or daemon-kext pairing proof.",
+  "generator_sha256": "d61856ff3412761aeff1e88e7befe8d5f9345fcac039fa9f314fdff3011eb91d",
+  "verified_counts": {
+    "source_fragments": 25,
+    "source_instruction_instances": 452,
+    "source_bytes": 1808,
+    "branch_terminated_ranges": 23,
+    "explicit_prefixes": 2,
+    "preparation_instructions": 386,
+    "preparation_bytes": 1544,
+    "pointer_records": 38,
+    "branch_slot_modifier_matches": 36,
+    "prior_ranges_recaptured": 32,
+    "prior_bytes_recaptured": 7924,
+    "candidate_frame_writers": 12,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 27,
+    "reused_queries_unsat": 58,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 814,
+    "translated_instruction_instances": 1208,
+    "SSA_definitions": 1060,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Selected outer context-word discriminator, first-child key7615e796 lookup, matched-record buffer/header/extent/type interfaces, borrowed span BUF+10 and encoded length into N19, and conditional default-context admission. No continuous native caller, owner/PAC, complete non-span accessor, external delivery or daemon-kext pairing proof.",
+  "report_sha256": {
+    "daemon_reader_nested_input_report.md": "73614884dda58ccf7b4f3f0295f0e5c0eae3e9e9f9d02217125420eff3107d84",
+    "obfuscated_routines_report.md": "1a821faf6db2cf304a78d2c5f5b1f11a6fa77cb3405790a86729076a279a8e37",
+    "mach_ports_report.md": "74edcff5962804567b68ea29cd2a32618b47d954b309f64ac8c4eae4f81bcfc8",
+    "foundational_triage_report.md": "94f9243b280f59f330215e309f1ce8441967a531107486d6a5f16ff56892df9e",
+    "interface_abi_report.md": "3de64421a75f1c463ab295cd16f78e3d330214aad1f3886d27734e5a69b07efc",
+    "interface_investigation_status.md": "d9f41eb5023604d466a0c7eda3da136a019149ce3fa558a6abd00ab30d37c875",
+    "daemon_reader_outer_lifecycle_report.md": "7957f0fa009c0cad1173eb183e03ec426df43ad4348810f9e485112a785dfdbe"
+  },
+  "evidence_sha256": {
+    "daemon_reader_nested_input_source.json": "af31e579d1cb4c77816b752ce524793c4a621b6b054480c332561004a51ab0ba",
+    "daemon_reader_nested_input_checks.json": "7983fece8f75dbd51d24381a208ce639211ef66a11637e52a3393a9449016f2d",
+    "recover_daemon_reader_nested_input.py": "da4bcad3ad74ec820ece537c67fc9452031c57b1f61ef9602b35b6122de35664",
+    "validate_daemon_reader_nested_input.py": "6f40c604706a104b15ee96d6f9c260c9a2206199bb7cd4e58792df00c40114cc",
+    "seal_daemon_reader_nested_input.py": "d61856ff3412761aeff1e88e7befe8d5f9345fcac039fa9f314fdff3011eb91d",
+    "verify_daemon_reader_nested_input_publication.py": "f9f9ccc1efcfb7028e8f850d5dbc453b94d80836d60237b35997bfef5e8dc0bc"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and NI1-NI10; conditional context-word discriminator, first-child key7615e796 lookup, matched buffer/header/extent/type interfaces, borrowed BUF+10/P span into N19, actual phase4b1d and conditional default-context correspondence. Twenty-five ranges/452 instructions plus386 preparation instructions;814 modeled PCs,1208 instances,1060 definitions;27 new and58 replayed UNSAT certificates,one interpretation counterexample,six integrity controls. Native caller/context/owner/PAC identity, complete parser/cleanup,external delivery and daemon-kext pairing remain unproved."
+  }
+}

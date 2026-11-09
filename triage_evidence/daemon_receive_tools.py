@@ -10,7 +10,7 @@ from verify_interface_contracts import Image
 from resolve_kernel_collection_interfaces import commands
 
 ROOT=Path(__file__).resolve().parent
-SOURCE=Path('/Users/___/Downloads/zut/fairplayd.arm64e')
+SOURCE = Path.home() / 'Downloads/zut/fairplayd.arm64e'
 assert hashlib.sha256(SOURCE.read_bytes()).hexdigest()=='4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e'
 IMAGE=Image(SOURCE)
 FIXUPS={}

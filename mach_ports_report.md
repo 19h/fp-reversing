@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current extension: [Mode1 scattered16-byte permutation](daemon_mode_one_scatter_report.md) proves initialization of all bytesd0..df at16 distinct frame cells,followed by15 state-dependent forward swaps. Three ranges/451 instructions,66 UNSAT,145 address cases,135 transpositions and a coherent-memory theorem support the invariant. The second-bank spills and budget remain preserved through this region;next continuationdd165c and native daemon-kext effects remain unknown.
+
 Current extension: [Mode1 source-pass and frame handoff](daemon_mode_one_source_passes_report.md) adds no Mach emission or port identity. Two private source loops read the same32 B twice and hand equal state banks to original selector3d26 under stable-source premises. The retained fixed-frame writes preserve the separate budget word;later consumer/transport/return behavior remains unproved.
 
 Current extension: [Mode1 protected-call and return-frame boundary](daemon_mode_one_adapter_report.md) adds no new Mach emission or port identity. Recovered calls are a private adapter/core,internal fill and stack-probe/guard facilities. Result reload uses an original register base;continuation reload uses adjusted SP,so its identity requires a zero-delta join. Native delivery and daemon-kext exchange remain unknown.
