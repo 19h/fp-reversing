@@ -1,0 +1,83 @@
+{
+  "generator_sha256": "64ebc40f73fb43ec6ef52f699f125855637fc166098386b11c3c07dc6e182bb6",
+  "static_scope": "Selected mode1 post-table size gate,two additional32-byte source reads and shared initializer. Static source/SMT only;no whole-operation,output,native PAC or daemon-kext exchange proof.",
+  "verified_counts": {
+    "source_ranges": 12,
+    "source_instructions": 620,
+    "source_bytes": 2480,
+    "new_routine_instructions": 535,
+    "pointer_records": 9,
+    "branch_slot_modifier_matches": 11,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 10,
+    "loop_store_instructions": 0,
+    "prior_ranges_recaptured": 27,
+    "prior_bytes_recaptured": 9836,
+    "distinct_nonbranch_sites_translated": 611,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 23,
+    "queries_sat": 2,
+    "replayed_queries_unsat": 3,
+    "new_source_reads": 64,
+    "distinct_source_offsets": 32,
+    "literal_words": 32,
+    "initializer_store_count": 35,
+    "scratch_cells_preserved": 816,
+    "rejected_alterations": 4
+  },
+  "report_sha256": {
+    "daemon_mode_one_post_table_passes_report.md": "7f21e703342bd534d67e8c942e0ca4321ca18e5be705ee74d01b1a030c4aa956",
+    "obfuscated_routines_report.md": "9a96acb70df3b3abb5ef3d98f2ae53a8077db1dc576267a61a32f0e5f8151151",
+    "mach_ports_report.md": "3d339e220c0e54536492ad1c6f1f0a7d4169b84c60412d9542f2e708f8510852",
+    "foundational_triage_report.md": "52ca53ebeb0ea2d18fb0ae3891349d032810e8c39ce5d92910cdab2bbaf6c640",
+    "interface_abi_report.md": "a0c9cb325a3afc6f04ba671071cddca645bd34e29ea21b49591ae93fd6a3a9c2",
+    "interface_investigation_status.md": "20f7fb63759f4c99a69142a4b8fa417cc7d2fab10fb375b693f3dba47e548097",
+    "daemon_mode_one_digit_maps_report.md": "9e258587a242944870e2154a97b5ea5d90eb00760b74c0d29779af93dea810e5"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_post_table_passes_source.json": "d0d5cdab573aaf5cd01b97ff437b6e0c6608e3199003d5cecc9971735c74b343",
+    "daemon_mode_one_post_table_passes_checks.json": "f85b83799282f053fa09a537f7a290e4e5986e3c4793baf07f367571f69eb461",
+    "recover_daemon_mode_one_post_table_passes.py": "c012eb04b89c7ed7df7bb33384cde1dfa918d383afdf16d9621220c9eef1167e",
+    "validate_daemon_mode_one_post_table_passes.py": "98578674ca78f94b661131bd4fcaecb3a34b2be6591580d4fa6d90538cb96898",
+    "seal_daemon_mode_one_post_table_passes.py": "64ebc40f73fb43ec6ef52f699f125855637fc166098386b11c3c07dc6e182bb6",
+    "verify_daemon_mode_one_post_table_passes_publication.py": "4882db8df28cc8d7f67f2e86745c07b896a0df3f98a5542d1d878d5ab3bf74fa"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and PT1-PT8;611 captured nonbranch sites,23 UNSAT,two distinct SAT results,64 source reads,35 initializer stores and explicit size/source/state epochs. Whole output,hardware PAC and native exchange remain unknown."
+  }
+}
