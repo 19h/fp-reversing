@@ -1,5 +1,7 @@
 # Mode1 scratch initialization and state-dependent 16-byte permutation
 
+Follow-up: [Inverse tables and encoded cyclic16 operation](daemon_mode_one_inverse_tables_report.md) establishes an inverse/reset pair,equal seeded shuffles and a256-entry table that encodes addition modulo16 under relabeling. All998 captured nonbranch sites are modeled;172 new plus45 replayed UNSAT,two algebraic bank certificates,15 selector equalities and finite group checks pass. The local budget/spills are preserved through the writer;next consumer0x100c18e20,whole return and native daemon-kext exchange remain unknown.
+
 Publication provenance: [username-path scrub](username_path_scrub_report.md) separates archived metadata transformations from fresh post-redaction source certificates. The no-IDB-mutation statement below concerns live research databases;historical metadata redaction is documented separately.
 
 The selected mode1 protected-core path builds a permutation of the sixteen byte values `0xd0` through `0xdf`. Routine `0x100d4fde0` initializes sixteen distinct cells in a 963 B frame region. Routine `0x100ca047c` performs fifteen forward, state-dependent transpositions among those cells. Every swap selects a position at or after its fixed position. This establishes the structure of an in-place forward Fisher-Yates permutation; uniformity, randomness, coverage of all permutations and the surrounding cryptographic algorithm remain unknown. [SC1-SC10]

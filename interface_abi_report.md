@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: [Inverse tables and encoded cyclic16 operation](daemon_mode_one_inverse_tables_report.md) establishes an inverse/reset pair,equal seeded shuffles and a256-entry table that encodes addition modulo16 under relabeling. All998 captured nonbranch sites are modeled;172 new plus45 replayed UNSAT,two algebraic bank certificates,15 selector equalities and finite group checks pass. The local budget/spills are preserved through the writer;next consumer0x100c18e20,whole return and native daemon-kext exchange remain unknown.
+
 Current extension: [Mode1 scattered16-byte permutation](daemon_mode_one_scatter_report.md) proves initialization of all bytesd0..df at16 distinct frame cells,followed by15 state-dependent forward swaps. Three ranges/451 instructions,66 UNSAT,145 address cases,135 transpositions and a coherent-memory theorem support the invariant. The second-bank spills and budget remain preserved through this region;next continuationdd165c and native daemon-kext effects remain unknown.
 
 Current extension: [Paired state-bank and spill ABI](daemon_mode_one_source_passes_report.md) maps first bankW0..W3,second bankW8/W13/W11/W23,spillsF748/F720/F728/F730,SRC F458,localF+d00 and next selector3d26.6 ranges/419 instructions,413 modeled sites,26 UNSAT,two algebraic certificates/eight word equalities,four altered-recurrence controls and six integrity controls pass;budget preservation ends at the handoff.

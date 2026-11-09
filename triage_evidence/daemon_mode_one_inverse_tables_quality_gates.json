@@ -1,0 +1,90 @@
+{
+  "generator_sha256": "66ac15fa21386bed7e407439cd6cba3ff3f7ac41545cd27e4e6fcf0fb66ed1de",
+  "static_scope": "Selected LEN32 mode1 continuation:inverse and reset tables,second-bank shuffle,fixed cyclic16 operation and local256-entry table construction. Source certificates do not establish native owners/PAC,whole return,budget history or daemon-kext exchange.",
+  "verified_counts": {
+    "source_ranges": 10,
+    "source_instructions": 1052,
+    "source_bytes": 4208,
+    "distinct_source_instruction_sites": 1003,
+    "pointer_records": 9,
+    "branch_slot_modifier_matches": 9,
+    "data_ranges": 3,
+    "data_bytes": 1456,
+    "bank_inputs_checked": 256,
+    "prior_ranges_recaptured": 9,
+    "prior_bytes_recaptured": 3480,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 4,
+    "second_shuffle_byte_store_sites": 30,
+    "untranslated_instruction_sites": 0,
+    "queries_unsat": 217,
+    "new_queries_unsat": 172,
+    "replayed_queries_unsat": 45,
+    "domain_checks_sat": 2,
+    "paired_selector_equalities": 15,
+    "source_swap_certificates": 30,
+    "prior_algebraic_certificates": 2,
+    "distinct_translated_instruction_sites": 998,
+    "translated_instruction_instances": 1209,
+    "SSA_definitions": 1200,
+    "rejected_alterations": 6,
+    "group_isomorphism_pairs": 256,
+    "group_associativity_triples": 4096
+  },
+  "report_sha256": {
+    "daemon_mode_one_inverse_tables_report.md": "1fc941dc547592e4e532738dcad497851ea07c92cc082207af73b87a61b74948",
+    "obfuscated_routines_report.md": "d83254fdf8e8aa1b64da7d9b95a464d7eeab692f25766df5ccc795e5748b09b4",
+    "mach_ports_report.md": "74b8949a62d18ff976b5fedc42c083ace09ea51f5b0e3e1ee1c6d83647607ee1",
+    "foundational_triage_report.md": "1882cef8d366e203f40443ad22ae3bcbc164790e14b62e6edf4bf99ca9a044e9",
+    "interface_abi_report.md": "5b0a46a8088ab2841035ba61a5c5ca88f90dc41e0d45cfae7cdc491d064b87c0",
+    "interface_investigation_status.md": "b57cf06642401fe1bfb9e8bd754a50f1949bf2acf10be53293836ace955ebd65",
+    "daemon_mode_one_scatter_report.md": "3d34a33e846aa4863c1da5e1f57550f89ccc77d6c12c0d318987994f78effd79"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_inverse_tables_source.json": "2358e0dfc5dbaf011ca5b8bed4fb54e2c46a82c78f980bfd88df985dada08af4",
+    "daemon_mode_one_inverse_tables_checks.json": "2751c09cc437723c3f26296eeb07d59ed424a86b7cfb4d8aad2eac8593f6ff6b",
+    "recover_daemon_mode_one_inverse_tables.py": "1c9c1a99c4188c22af115b4821262bc8449714fb5ab14a3d45bbd3948e2d3172",
+    "validate_daemon_mode_one_inverse_tables.py": "5a8a8b38067bd4ac2df3b44a60135b20edce1ae72938b483c8d9c7a826b95c68",
+    "daemon_mode_one_shuffle_models.py": "bc695aae92a7d0a5e6ca1d8dc8a1ea5a3d68f94a0dca0542e9036df61b24227f",
+    "seal_daemon_mode_one_inverse_tables.py": "66ac15fa21386bed7e407439cd6cba3ff3f7ac41545cd27e4e6fcf0fb66ed1de",
+    "verify_daemon_mode_one_inverse_tables_publication.py": "738b2e0fdd5d1bdc214340f973d96c39fdafb681b812a7005b88e29df42e1199"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and IT1-IT10;complete local inverse/reset/paired-shuffle/table source chain,998 nonbranch sites,172 new plus45 replayed UNSAT,two algebraic bank certificates,256 cyclic isomorphism pairs and4096 associativity triples. Native effects,whole return and daemon-kext pairing remain unknown."
+  }
+}

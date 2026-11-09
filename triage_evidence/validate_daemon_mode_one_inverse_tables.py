@@ -9,6 +9,7 @@ from validate_daemon_existing_scalar_reader import DECL,z,neq,prefix
 SOLVER=shutil.which('z3');assert SOLVER
 EXTRA=''.join(f'(declare-fun {n} () (_ BitVec 32))\n'for n in ['IDX','JDX','ARG','CWORD0','CWORD1']+['A'+str(j)for j in range(4)]+['SEL'+str(j)for j in range(14)])+'(declare-fun CELL0 () (_ BitVec 64))\n(declare-fun CELL1 () (_ BitVec 64))\n'
 EXTRA+=''.join(f'(declare-fun {n}_S{j} () (_ BitVec 32))\n'for n in['first','second']for j in range(15))
+EXTRA+='(declare-fun NIB () (_ BitVec 32))\n'
 A=[(84784+757*j)%963 for j in range(16)];B=[(12869+757*j)%963 for j in range(16)];C=[(534442+757*j)%963 for j in range(256)]
 def frame(o):return f'(bvadd K {bv(o)})'
 def at(i):return f'(bvadd TABLE {bv(i*8)})'
@@ -45,7 +46,7 @@ def fresh(label,r=None,loads=None):
 SECOND_DIVS={
  1:(0x100dbfc94,0x100dbfc9c,'w8',15,0,0,'w17',{17:15}),
  2:(0x100dbfcd4,0x100dbfcf0,'w13',14,0x92492493,34,'w17',{}),
- 3:(0x100dbfcf8,0x100dbfd14,'w9',13,0x4ec4ec4f,34,'w1',{}),
+ 3:(0x100dbfd04,0x100dbfd14,'w9',13,0x4ec4ec4f,34,'w1',{1:0x4ec4ec4f}),
  4:(0x100dbfda0,0x100dbfdb8,'w0',12,0xaaaaaaab,35,'w0',{}),
  5:(0x100dbfe14,0x100dbfe24,'w2',11,0xba2e8ba3,35,'w0',{0:0xba2e8ba3}),
  6:(0x100dbfde4,0x100dbfdfc,'w13',10,0xcccccccd,35,'w1',{}),
@@ -111,7 +112,9 @@ def algebra(s):
 def certificates(s):
  proofs=[];tr={};extra_sem={};fs=s['fragments'];math=algebra(s)
  def solve(n,body,cc=(),result='unsat',integer=False,extra='',note=''):
-  q='(set-option :timeout 15000)\n(set-logic '+('QF_LIA'if integer else'QF_BV')+')\n'+('(declare-fun XI () Int)\n'if integer else DECL+EXTRA)+extra+''.join('(assert '+c+')\n'for c in cc)+body+'\n(check-sat)\n';p=subprocess.run([SOLVER,'-in'],input=q,text=True,capture_output=True,timeout=20);assert p.returncode==0 and not p.stderr and p.stdout.strip()==result,(n,p.stdout,p.stderr);proofs.append({'name':n,'query':q,'result':result,'scope':note or SCOPE});print(n,result,flush=True)
+  q='(set-option :timeout 15000)\n(set-logic '+('QF_LIA'if integer else'QF_BV')+')\n'+('(declare-fun XI () Int)\n'if integer else DECL+EXTRA)+extra+body+'\n'+''.join('(assert '+c+')\n'for c in cc)+'(check-sat)\n';p=subprocess.run([SOLVER,'-in'],input=q,text=True,capture_output=True,timeout=20);
+  if p.returncode or p.stderr or p.stdout.strip()!=result:__import__('pathlib').Path('/tmp/fp-current-failed-query.smt2').write_text(q)
+  assert p.returncode==0 and not p.stderr and p.stdout.strip()==result,(n,p.stdout,p.stderr);proofs.append({'name':n,'query':q,'result':result,'scope':note or SCOPE});print(n,result,flush=True)
  def cert(n,g,terms,cc=()):solve(n,prefix(g)+'(assert (or '+' '.join(terms)+'))',cc)
  def part(n,label=None,r=None,loads=None,a=None,end=None):
   label=label or n;f=fs[n];a=a or int(f['start'],16);end=end or(int(f['instructions'][-1]['ea'],16)if f['instructions'][-1]['mnemonic']=='braa'else int(f['end'],16));ii=[i for i in f['instructions']if a<=int(i['ea'],16)<end];ll=dict(loads or{});dd=[]
@@ -139,6 +142,64 @@ def certificates(s):
  for d,m,shift,limit in[(963,0x440dd2cf,40,4294967295),(963,0x2207,23,65535),(963,0x440dd3,32,100000),(944,0x456c7a,32,500000)]:
   solve(f'exact_reciprocal_{d}_{shift}_{limit}',f'(assert (distinct (div (* XI {m}) {1<<shift}) (div XI {d})))',['(<= 0 XI)',f'(<= XI {limit})'],integer=True)
  extra_sem['basic_control']={'inverse_rounds':16,'reset_rounds':16,'generation_rounds':256,'first_table_encoding':'E(j)=d4 XOR j','inverse_relation':'B[pi(j)]=E(j),where A[j]=E(pi(j))','reset_relation':'A[j]=E(j)','native_claim':False}
+ from daemon_mode_one_shuffle_models import run_models
+ models,ledger,finite=run_models(s,fresh,cert,part,solve,tr,(SECOND_DIVS,SECOND_SELECTORS,SECOND_ADDRESSES,SECOND_SWAPS))
+ extra_sem['shuffle_address_cases']=finite
+ extra_sem['shuffle_swap_ledger']=ledger
+ extra_sem['paired_selector_certificates']=models['coupling_certificate']
+ from daemon_mode_one_shuffle_models import run_table
+ table_model,table_constraints,table_cuts,table_key=run_table(s,fresh,cert,tr,models,math)
+ extra_sem['table_live_cuts']=table_cuts
+ sg=models['second']['engine']
+ cert('second_shuffle_reads_original_second_bank_spills',sg,[neq(rd(sg,pc)['address'],frame(off))for pc,off in[(0x100dbfc54,0x720),(0x100dbfc90,0x748),(0x100dbfcd0,0x728),(0x100dbfd00,0x730)]],models['second']['constraints'])
+ cert('table_frame_inputs_and_global_word_reads',table_model,[neq(rd(table_model,pc)['address'],address)for pc,address in[(0x100c072ac,frame(0x580)),(0x100c072b0,'CELL0'),(0x100c072b4,frame(0x438)),(0x100c072b8,'CELL1'),(0x100c072cc,frame(0x578)),(0x100c072e0,frame(0x570)),(0x100c07380,frame(0x740))]],table_constraints)
+ g=table_model;out=st(g,0x100c0735c)
+ cert('table_inverse_inputs_output_lookup_scatter_and_control',g,[
+  neq(rd(g,0x100c0727c)['address'],f'(bvadd {frame(0xd00)} {z(lut(B,"(bvand IDX #x0000000f)"))})'),
+  neq(rd(g,0x100c07290)['address'],f'(bvadd {frame(0xd00)} {z(lut(B,"(bvlshr IDX #x00000004)"))})'),
+  neq(rd(g,0x100c07340)['address'],f'(bvadd {frame(0xd00)} {z(lut(A,"NIB"))})'),
+  neq(out['address'],f'(bvadd {frame(0xd00)} {z(lut(C,"IDX"))})'),neq(out['value'],'B3'),
+  neq(g.get('w3'),'(bvadd IDX #x00000001)'),neq(g.get('w22'),'(bvadd IDX #xd781bef8)'),
+  neq(g.get('x21'),frame(0xd00)),neq(g.get('x23'),bv(0x100f715a0)),
+  neq(rd(g,0x100c07384)['address'],f'(ite (= IDX #x000000ff) {at(0xc7f3)} {at(0x8d87)})')],table_constraints)
+ assert len(g.stores)==1 and len(set(A))==len(set(B))==16 and len(set(C))==256
+ assert not(set(A)&set(B)or set(A)&set(C)or set(B)&set(C))
+ protected=[*range(0x720,0x724),*range(0x728,0x72c),*range(0x730,0x734),*range(0x748,0x74c),*range(0x1210,0x1218),*range(0x438,0x440),*range(0x570,0x588),*range(0x738,0x748)]
+ assert not{0xd00+n for n in A+B+C}&set(protected)
+ solve('A_B_C_regions_and_protected_cells_are_disjoint','(assert (or '+' '.join('(= '+frame(0xd00+n)+' '+frame(p)+')'for n in A+B+C for p in protected)+'))')
+ extra_sem['composition']={'encoding':'E(j)=d4 XOR j','first_permutation':'A[j]=E(pi(j))','inverse':'B[pi(j)]=E(j)','second_permutation':'same pi for equal four-word seeds,by15 source selector comparisons and matching transpositions','generated_C':'C[x+16*y]=E(pi(F(pi_inverse(x),pi_inverse(y))))','fixed_operation':'F(L(a),L(b))=L((a+b) mod16),verified256 pairs','group_transfer':'R=pi composed with L is bijective,and decoded_C(R(a),R(b))=R((a+b) mod16)','identity':'pi(9)','generator':'pi(3)','scope':'Local source theorem under recorded frame,source-byte,seed-equality,fixup and immutable-bank premises;native execution and whole return remain unproved.'}
+ extra_sem['memory_regions']={'A_cells':16,'B_cells':16,'C_cells':256,'all_pairwise_disjoint':True,'new_path_dynamic_byte_writes':318,'protected_frame_offsets':protected,'budget_preserved_through':'0x100c07394'}
+ for label,descriptors,fragment in [('first',DIVS,'first_shuffle'),('second',SECOND_DIVS,'second_shuffle')]:
+  for j,(a,end,src,d,m,shift,out,constants)in descriptors.items():
+   regs={int(src[1:]):z('VALUE'),**{k:bv(v)for k,v in constants.items()}}
+   g=part(fragment,label+'_division_shape_'+str(j),regs,a=a,end=end)
+   value='(bvlshr VALUE #x00000001)'if j==2 else'VALUE'
+   if m:
+    qq=f'((_ extract 31 0) (bvlshr (bvmul {z(value)} {bv(m)}) {bv(shift)}))'
+    if j==9:qq=f'(bvlshr (bvadd {qq} (bvlshr (bvsub VALUE {qq}) #x00000001)) #x00000002)'
+   else:qq=f'(bvudiv VALUE {bv(d,32)})'
+   cert(label+'_exact_division_shape_'+str(j),g,[neq(g.get(out),f'(bvsub VALUE (bvmul {qq} {bv(d,32)}))')])
+ # Re-run the prior exact quotient/range certificates;they justify the fresh
+ # bounded remainders rather than merely assuming a selector's range.
+ prior=json.loads(read(ROOT/'daemon_mode_one_scatter_checks.json'))
+ from recover_daemon_mode_one_scatter import build as scatter_source
+ assert json.loads(read(ROOT/'daemon_mode_one_scatter_source.json'))==scatter_source()
+ inherited={'handoff_initializes_scatter_and_preserves_first_bank','scatter_does_not_change_word3','scatter_round_exact_address_byte_and_control','coherent_two_read_two_write_swap_including_alias','scratch_cells_disjoint_from_second_bank_and_budget'}
+ for proof in prior['proofs']:
+  if not(proof['name'].startswith(('exact_','restricted_'))or proof['name']in inherited):continue
+  q=proof['query'];run=subprocess.run([SOLVER,'-in'],input=q,text=True,capture_output=True,timeout=20);assert run.returncode==0 and not run.stderr and run.stdout.strip()==proof['result']
+  proofs.append({**proof,'name':'replayed_'+proof['name'],'replayed_query':True,'replay_source_artifact':'daemon_mode_one_scatter_checks.json'});print('replayed_'+proof['name'],proof['result'],flush=True)
+ # Refresh the source-equivalent32-byte mixers without assigning their old
+ # pre-redaction metadata hashes to current content.
+ from recover_daemon_mode_one_source_passes import build as pass_source
+ from validate_daemon_mode_one_source_passes import certificates as pass_certificates
+ old_source=json.loads(read(ROOT/'daemon_mode_one_source_passes_source.json'));fresh_source=pass_source()
+ semantic_fields=['fragments','branch_edges','pointer_records','frame_store_ledger','loop_invariant_registers','register_write_sets','comparison_role_corrections','verified_source_counts']
+ assert all(old_source[k]==fresh_source[k]for k in semantic_fields)
+ old_checks=json.loads(read(ROOT/'daemon_mode_one_source_passes_checks.json'));old_proofs,old_translations,normal_forms=pass_certificates(old_source)
+ assert old_proofs==old_checks['proofs']and json.loads(json.dumps(normal_forms))==old_checks['algebraic_normal_forms']
+ for proof in old_proofs:proofs.append({**proof,'name':'replayed_passes_'+proof['name'],'replayed_query':True,'replay_source_artifact':'daemon_mode_one_source_passes_checks.json'})
+ extra_sem['paired_word_seed_basis']={'semantic_fields_verified_against_fresh_source':semantic_fields,'queries_replayed':len(old_proofs),'algebraic_bank_certificates':2,'equal_word_banks_conditional_on':'same stable32 source bytes and the recorded owner/frame/path premises','historical_metadata_epoch':'Original nested hashes retain the pre-redaction epoch;semantic fields and queries are independently refreshed here.'}
  return proofs,tr,{**math,**extra_sem}
 def verify(s):return s==build()
 def alterations(s):
@@ -148,8 +209,9 @@ def alterations(s):
  return out
 def main():
  s=json.loads(read(ROOT/(P+'_source.json')));assert verify(s);pp,tr,sem=certificates(s);aa=alterations(s);sites={pc for q in tr.values()for pc in q['source_sites']}
- expected={i['ea']for f in s['fragments'].values()for i in f['instructions']if i['mnemonic']!='braa'}
- counts={**s['verified_source_counts'],'untranslated_instruction_sites':len(expected-sites),'queries_unsat':sum(q['result']=='unsat'for q in pp),'distinct_translated_instruction_sites':len(sites),'translated_instruction_instances':sum(len(q['source_sites'])for q in tr.values()),'SSA_definitions':sum(q['SSA_definitions']for q in tr.values()),'rejected_alterations':len(aa),'group_isomorphism_pairs':sem['isomorphism_pairs'],'group_associativity_triples':sem['associativity_triples']}
- c={'generator_sha256':sha(__file__),'static_scope':SCOPE,'dependencies':{P+'_source.json':sha(ROOT/(P+'_source.json')),'validate_daemon_mode_one_scatter.py':sha(ROOT/'validate_daemon_mode_one_scatter.py'),'validate_daemon_list_output.py':sha(ROOT/'validate_daemon_list_output.py')},'proofs':pp,'translations':tr,'semantics':sem,'alterations':aa,'verified_counts':counts,'solver':{'executable':'z3','sha256':sha(SOLVER)},'all_implemented_checks_pass':True,'all_checks_pass':False,'validation_stage':'checkpoint_partial','complete_semantic_chain_proved':False,'complete_operation_proved':False,**{k:False for k in FLAGS}}
+ expected={i['ea']for f in s['fragments'].values()for i in f['instructions']if i['mnemonic']!='braa'};assert sites==expected
+ assert len(sem['paired_selector_certificates'])==15 and len(sem['shuffle_swap_ledger'])==30
+ counts={**s['verified_source_counts'],'untranslated_instruction_sites':len(expected-sites),'queries_unsat':sum(q['result']=='unsat'for q in pp),'new_queries_unsat':sum(q['result']=='unsat'and not q.get('replayed_query',False)for q in pp),'replayed_queries_unsat':sum(q['result']=='unsat'and q.get('replayed_query',False)for q in pp),'domain_checks_sat':sum(q['result']=='sat'for q in pp),'paired_selector_equalities':15,'source_swap_certificates':30,'prior_algebraic_certificates':2,'distinct_translated_instruction_sites':len(sites),'translated_instruction_instances':sum(len(q['source_sites'])for q in tr.values()),'SSA_definitions':sum(q['SSA_definitions']for q in tr.values()),'rejected_alterations':len(aa),'group_isomorphism_pairs':sem['isomorphism_pairs'],'group_associativity_triples':sem['associativity_triples']}
+ c={'generator_sha256':sha(__file__),'static_scope':SCOPE,'dependencies':{P+'_source.json':sha(ROOT/(P+'_source.json')),'validate_daemon_mode_one_scatter.py':sha(ROOT/'validate_daemon_mode_one_scatter.py'),'validate_daemon_list_output.py':sha(ROOT/'validate_daemon_list_output.py'),**{n:sha(ROOT/n)for n in['daemon_mode_one_shuffle_models.py','validate_daemon_mode_one_source_passes.py','recover_daemon_mode_one_source_passes.py','daemon_mode_one_source_passes_checks.json','daemon_mode_one_source_passes_source.json','daemon_mode_one_scatter_checks.json','daemon_mode_one_scatter_source.json']}},'proofs':pp,'translations':tr,'semantics':sem,'alterations':aa,'verified_counts':counts,'solver':{'executable':'z3','sha256':sha(SOLVER)},'all_implemented_checks_pass':True,'all_checks_pass':True,'validation_stage':'source_certificates_complete','complete_semantic_chain_proved':True,'complete_operation_proved':False,**{k:False for k in FLAGS}}
  (ROOT/(P+'_checks.json')).write_text(json.dumps(c,indent=2)+'\n');print(json.dumps(counts),flush=True)
 if __name__=='__main__':main()

@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current extension: [Inverse tables and encoded cyclic16 operation](daemon_mode_one_inverse_tables_report.md) establishes an inverse/reset pair,equal seeded shuffles and a256-entry table that encodes addition modulo16 under relabeling. All998 captured nonbranch sites are modeled;172 new plus45 replayed UNSAT,two algebraic bank certificates,15 selector equalities and finite group checks pass. The local budget/spills are preserved through the writer;next consumer0x100c18e20,whole return and native daemon-kext exchange remain unknown.
+
 Current extension: [Mode1 scattered16-byte permutation](daemon_mode_one_scatter_report.md) proves initialization of all bytesd0..df at16 distinct frame cells,followed by15 state-dependent forward swaps. Three ranges/451 instructions,66 UNSAT,145 address cases,135 transpositions and a coherent-memory theorem support the invariant. The second-bank spills and budget remain preserved through this region;next continuationdd165c and native daemon-kext effects remain unknown.
 
 Current extension: [Twin-pass data/control and source-role correction](daemon_mode_one_source_passes_report.md) proves32 ordered reads per pass,same seeds/shared four-word recurrence,exact reduction257,register-bank liveness and fixed-frame budget preservation. Ten Capstone5.0.7 comparison-input write roles are corrected only after raw SUBS-to-zero checks. Stable source/owner and later consumer assumptions remain explicit.
