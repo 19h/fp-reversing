@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: [Encoded XOR and natural digit maps](daemon_mode_one_digit_maps_report.md) establishes a third256-entry XOR table plus explicit forward/inverse maps for the sum/carry/XOR labeling. All164 new and124 incoming nonbranch sites are translated;36 UNSAT certificates,256 XOR pairs and32 map cases pass. The old inverse cells are overwritten only after the new inverse map is saved. Next routine0x100daee68,caller output and native daemon-kext exchange remain unknown.
+
 Current extension: [Encoded nibble-sum and carry tables](daemon_mode_one_carry_table_report.md) establishes that0x100c18e20 builds a second256-entry table,paired with the prior table to encode base16 sum and carry under one relabeling. All124 new nonbranch sites are translated;19 UNSAT certificates and256 paired identities pass. The544 meaningful scratch bytes are disjoint. Next routine0x100c9589c,caller output and native daemon-kext exchange remain unknown.
 
 Current extension: [Inverse tables and encoded cyclic16 operation](daemon_mode_one_inverse_tables_report.md) establishes an inverse/reset pair,equal seeded shuffles and a256-entry table that encodes addition modulo16 under relabeling. All998 captured nonbranch sites are modeled;172 new plus45 replayed UNSAT,two algebraic bank certificates,15 selector equalities and finite group checks pass. The local budget/spills are preserved through the writer;next consumer0x100c18e20,whole return and native daemon-kext exchange remain unknown.

@@ -1,5 +1,7 @@
 # Mode1 encoded nibble-sum and carry tables
 
+Follow-up: [Encoded XOR and natural digit maps](daemon_mode_one_digit_maps_report.md) establishes a third256-entry XOR table plus explicit forward/inverse maps for the sum/carry/XOR labeling. All164 new and124 incoming nonbranch sites are translated;36 UNSAT certificates,256 XOR pairs and32 map cases pass. The old inverse cells are overwritten only after the new inverse map is saved. Next routine0x100daee68,caller output and native daemon-kext exchange remain unknown.
+
 The routine at0x100c18e20 constructs a second256-entry table. Paired with the preceding table at0x100c07254,it implements the sum and carry of adding two base16 digits under a shared relabeling. The new table uses a different byte encoding. This establishes local arithmetic structure in the protected core;caller-visible output,whole return and a successful daemon/kext exchange remain unknown. [CT1-CT8]
 
 The previous report called0x100c18e20 the next consumer without assigning its behavior. Its captured source instead reads the inverse and forward16-entry tables and writes another table. It does not read the preceding256-entry sum table. The carry data also identifies a natural digit labeling that refines the earlier cyclic-group labeling. [CT2-CT6]

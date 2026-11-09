@@ -1,0 +1,87 @@
+{
+  "generator_sha256": "a3f7b8af0d47c4eb5fa3252f3e989b65d550cc7516d296a04ee5e1654fa0770c",
+  "static_scope": "Selected mode1 encoded XOR table and forward/inverse natural-digit maps. Source and finite algebra only;whole operation,caller output,native PAC and daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 292,
+    "source_bytes": 1168,
+    "new_routine_instructions": 167,
+    "new_routine_bytes": 668,
+    "pointer_records": 6,
+    "branch_slot_modifier_matches": 6,
+    "data_bytes": 944,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 4,
+    "prior_source_ranges_recaptured": 4,
+    "prior_source_bytes_recaptured": 980,
+    "distinct_nonbranch_sites_translated": 288,
+    "new_nonbranch_sites_translated": 164,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 36,
+    "queries_sat": 3,
+    "replayed_queries_unsat": 19,
+    "xor_pairs_checked": 256,
+    "sum_carry_pairs_rechecked": 256,
+    "packed_encoding_pairs": 256,
+    "decoder_cases": 16,
+    "relabel_cases": 16,
+    "meaningful_scratch_bytes": 816,
+    "dynamic_byte_writes": 288,
+    "rejected_alterations": 4
+  },
+  "report_sha256": {
+    "daemon_mode_one_digit_maps_report.md": "3b1d9e8655b68a5e33d131becbe2c833be76713436874173cbf9a71d8cebc6ce",
+    "obfuscated_routines_report.md": "26ae132b0f491a4719901bc8e9886f597f8da4399cfb51da50d0969576b544bb",
+    "mach_ports_report.md": "feb8f86c9dd94704a1dcd9017e784de1e4e33099110b916c67cc09a1fc934a15",
+    "foundational_triage_report.md": "0d331e56826bd30b36b5e227f97dc95455ff1b41a33101eeed0d622f8a69259c",
+    "interface_abi_report.md": "571a2dcbc892e4a83d3ae43be74f9c04beb7f249aab8acd7d154c2c728fc1511",
+    "interface_investigation_status.md": "57ed2aab3c2dc83ae6e61874485c171afac48d462739e920d8809d4b85cacf88",
+    "daemon_mode_one_carry_table_report.md": "cdbba2fa4c81d29ab48f0576d8063bd434f3889e2f180ec0d06faf6d8317a4bf"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_digit_maps_source.json": "5c22936b251bfc99e7dd2d472065488b3d2ea7ee42bed2cda819ff5cd8ade80d",
+    "daemon_mode_one_digit_maps_checks.json": "bd99cfe65f220202a3028d9b1f6b156aa5b402e6b3c3e6c0511b125e782052bf",
+    "recover_daemon_mode_one_digit_maps.py": "7388496b6140ff6a8b5e2b1c91002177856246f60c6ead63840e3a5d231186b1",
+    "validate_daemon_mode_one_digit_maps.py": "3e2a2c9313e8d75105830a025982a59b3f7ddbb28154d3975c1084f25ea9931d",
+    "seal_daemon_mode_one_digit_maps.py": "a3f7b8af0d47c4eb5fa3252f3e989b65d550cc7516d296a04ee5e1654fa0770c",
+    "verify_daemon_mode_one_digit_maps_publication.py": "37ce02c7ca97011baa7a64c3bfc97a37d86f6e4cc4edb50a98f8279d0dd9f5c4"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and DM1-DM8;164 new and124 incoming nonbranch sites,36 UNSAT,three abstract SAT domains,256 XOR pairs,32 map cases and explicit B lifecycle. Whole output,hardware PAC and native exchange remain unknown."
+  }
+}
