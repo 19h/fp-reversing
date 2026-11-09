@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun o () (_ BitVec 64))
+(define-fun result () (_ BitVec 64) (bvand o #xfffffffffffffbbf))
+(assert (not (and (= (bvand result #x0000000000000440) #x0000000000000000)
+ (= (bvor result (bvand o #x0000000000000440)) o))))
+(check-sat)
