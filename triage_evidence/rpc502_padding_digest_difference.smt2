@@ -1,0 +1,15 @@
+(set-option :timeout 60000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun reference_word32 () (_ BitVec 32))
+(declare-fun candidate_word32 () (_ BitVec 32))
+(assert
+ (let ((?x197 (bvadd (bvxor reference_word32 (bvor (bvand (_ bv13073 32) (_ bv65535 32)) (bvshl (_ bv42361 32) (_ bv16 32)))) (bvor (bvand (_ bv52463 32) (_ bv65535 32)) (bvshl (_ bv23174 32) (_ bv16 32))))))
+(let ((?x184 (bvadd (bvxor reference_word32 (bvor (bvand (_ bv44226 32) (_ bv65535 32)) (bvshl (_ bv26247 32) (_ bv16 32)))) (bvor (bvand (_ bv21310 32) (_ bv65535 32)) (bvshl (_ bv39288 32) (_ bv16 32))))))
+(let ((?x172 (bvadd (bvxor reference_word32 (bvor (bvand (_ bv40779 32) (_ bv65535 32)) (bvshl (_ bv50174 32) (_ bv16 32)))) (bvor (bvand (_ bv24757 32) (_ bv65535 32)) (bvshl (_ bv15361 32) (_ bv16 32))))))
+(let ((?x121 (bvand (bvadd (_ bv18985 32) (bvor (bvand (_ bv42386 32) (_ bv65535 32)) (bvshl (_ bv37469 32) (_ bv16 32)))) (bvor (bvand (_ bv13821 32) (_ bv65535 32)) (bvshl (_ bv28066 32) (_ bv16 32))))))
+(let ((?x134 (bvadd (bvxor candidate_word32 (bvor (bvand (_ bv32117 32) (_ bv65535 32)) (bvshl (_ bv29576 32) (_ bv16 32)))) (bvadd ?x121 (bvor (bvand (_ bv23762 32) (_ bv65535 32)) (bvshl (_ bv35959 32) (_ bv16 32)))))))
+(let ((?x146 (bvadd (bvxor candidate_word32 (bvor (bvand (_ bv1823 32) (_ bv65535 32)) (bvshl (_ bv21257 32) (_ bv16 32)))) (bvor (bvand (_ bv63713 32) (_ bv65535 32)) (bvshl (_ bv44278 32) (_ bv16 32))))))
+(let ((?x158 (bvadd (bvxor candidate_word32 (bvor (bvand (_ bv31474 32) (_ bv65535 32)) (bvshl (_ bv8321 32) (_ bv16 32)))) (bvor (bvand (_ bv34062 32) (_ bv65535 32)) (bvshl (_ bv57214 32) (_ bv16 32))))))
+(and (distinct (bvsub (bvxor (bvxor ?x158 ?x146) ?x134) (bvxor (bvxor ?x172 ?x184) ?x197)) (bvsub (bvxor candidate_word32 (_ bv152 32)) (bvxor reference_word32 (_ bv152 32)))) true)))))))))
+(check-sat)

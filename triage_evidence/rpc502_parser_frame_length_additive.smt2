@@ -1,0 +1,15 @@
+(set-option :timeout 30000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun length32 () (_ BitVec 32))
+(assert
+ (let ((?x170 (bvadd length32 (_ bv2735625293 32))))
+(let ((?x165 (bvor (bvand (_ bv6814 32) (_ bv65535 32)) (bvshl (_ bv11852 32) (_ bv16 32)))))
+(let ((?x158 (bvor (bvand (_ bv41715 32) (_ bv65535 32)) (bvshl (_ bv47317 32) (_ bv16 32)))))
+(let ((?x10 (bvxor length32 (_ bv2336081489 32))))
+(let ((?x146 (bvadd (bvxor ?x10 (bvor (bvand (_ bv33277 32) (_ bv65535 32)) (bvshl (_ bv61118 32) (_ bv16 32)))) (bvor (bvand (_ bv32259 32) (_ bv65535 32)) (bvshl (_ bv4417 32) (_ bv16 32))))))
+(let ((?x134 (bvadd (bvxor ?x10 (bvor (bvand (_ bv6817 32) (_ bv65535 32)) (bvshl (_ bv8873 32) (_ bv16 32)))) (bvor (bvand (_ bv58719 32) (_ bv65535 32)) (bvshl (_ bv56662 32) (_ bv16 32))))))
+(let ((?x160 (bvxor (bvxor ?x134 ?x146) (bvadd (bvxor ?x10 (bvor (bvand (_ bv23821 32) (_ bv65535 32)) (bvshl (_ bv18218 32) (_ bv16 32)))) ?x158))))
+(let ((?x166 (bvadd ?x160 ?x165)))
+(and (distinct ?x166 ?x170) true))))))))))
+(check-sat)

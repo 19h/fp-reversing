@@ -1,0 +1,16 @@
+(set-option :timeout 60000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun decoded_state_word32 () (_ BitVec 32))
+(assert
+ (let (($x165 (and (distinct ((_ extract 7 0) (bvxor (bvxor decoded_state_word32 (_ bv4109970935 32)) (_ bv111 32))) (bvxor ((_ extract 7 0) decoded_state_word32) (_ bv152 8))) true)))
+(let ((?x142 (bvxor (bvlshr (bvxor decoded_state_word32 (_ bv4109970935 32)) (_ bv8 32)) (_ bv45 32))))
+(let ((?x146 (bvsub (bvsub ?x142 (bvand (bvshl ?x142 (_ bv1 32)) (_ bv48 32))) (_ bv104 32))))
+(let ((?x133 (bvxor (bvlshr (bvxor decoded_state_word32 (_ bv4109970935 32)) (_ bv16 32)) (_ bv4294967289 32))))
+(let ((?x138 (bvsub (bvsub ?x133 (bvand (bvshl ?x133 (_ bv1 32)) (_ bv48 32))) (_ bv104 32))))
+(let ((?x117 (bvxor decoded_state_word32 (_ bv4109970935 32))))
+(let ((?x119 (bvlshr ?x117 (_ bv24 32))))
+(let ((?x121 (bvxor ?x119 (_ bv4294967284 32))))
+(let ((?x130 (bvsub (bvsub ?x121 (bvshl (bvxor (bvand ?x121 (_ bv26 32)) (bvand ?x119 (_ bv2 32))) (_ bv1 32))) (_ bv104 32))))
+(or (and (distinct ((_ extract 7 0) ?x130) (bvxor ((_ extract 31 24) decoded_state_word32) (_ bv152 8))) true) (and (distinct ((_ extract 7 0) ?x138) (bvxor ((_ extract 23 16) decoded_state_word32) (_ bv152 8))) true) (and (distinct ((_ extract 7 0) ?x146) (bvxor ((_ extract 15 8) decoded_state_word32) (_ bv152 8))) true) $x165)))))))))))
+(check-sat)

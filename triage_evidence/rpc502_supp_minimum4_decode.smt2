@@ -1,0 +1,17 @@
+(set-option :timeout 30000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun extent32 () (_ BitVec 32))
+(assert
+ (let ((?x182 (bvor (bvand (_ bv29978 32) (_ bv65535 32)) (bvshl (_ bv36621 32) (_ bv16 32)))))
+(let ((?x144 (bvadd (_ bv18907 32) (_ bv4294960053 32))))
+(let ((?x145 (bvxor ?x144 (bvor (bvand (_ bv57162 32) (_ bv65535 32)) (bvshl (_ bv6303 32) (_ bv16 32))))))
+(let ((?x136 (bvxor extent32 (_ bv3367826219 32))))
+(let ((?x183 (bvadd (bvxor ?x136 (bvadd ?x145 (bvor (bvand (_ bv15272 32) (_ bv65535 32)) (bvshl (_ bv63920 32) (_ bv16 32))))) ?x182)))
+(let ((?x168 (bvor (bvand (_ bv34431 32) (_ bv65535 32)) (bvshl (_ bv50784 32) (_ bv16 32)))))
+(let ((?x157 (bvadd (bvxor ?x136 (bvor (bvand (_ bv76 32) (_ bv65535 32)) (bvshl (_ bv33233 32) (_ bv16 32)))) (bvor (bvand (_ bv23512 32) (_ bv65535 32)) (bvshl (_ bv7308 32) (_ bv16 32))))))
+(let ((?x170 (bvxor ?x157 (bvadd (bvxor ?x136 (bvor (bvand (_ bv56805 32) (_ bv65535 32)) (bvshl (_ bv23357 32) (_ bv16 32)))) ?x168))))
+(let ((?x184 (bvxor ?x170 ?x183)))
+(let ((?x190 (bvadd ?x184 (bvor (bvand (_ bv22351 32) (_ bv65535 32)) (bvshl (_ bv43550 32) (_ bv16 32))))))
+(and (distinct ?x190 extent32) true))))))))))))
+(check-sat)

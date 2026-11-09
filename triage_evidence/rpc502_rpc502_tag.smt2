@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun x () (_ BitVec 32))
+(define-fun p () (_ BitVec 32) (bvmul (bvxor x #xeaae0ac9) #x7398180b))
+(assert (or (not (= (bvxor (bvxor p #x00006cf4) p) #x00006cf4))
+ (not (= (bvxor (bvxor p #xbc84919b) p) #xbc84919b))))
+(check-sat)

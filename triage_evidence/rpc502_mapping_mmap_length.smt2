@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun size () (_ BitVec 64))
+(define-fun encoded () (_ BitVec 64) (bvxor size #xb3800b93c8bcf32b))
+(define-fun c () (_ BitVec 32) (bvand (bvadd #x00005287 #xbc7a4d60) #x4385fad8))
+(define-fun control () (_ BitVec 64)
+ (bvadd ((_ zero_extend 32) (bvadd #x00005287 #xffffd527)) #xb3800b93c8bc30bd ((_ zero_extend 32) c)))
+(assert (not (= (bvxor control encoded) size)))
+(check-sat)

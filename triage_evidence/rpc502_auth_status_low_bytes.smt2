@@ -1,0 +1,17 @@
+(set-option :timeout 60000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun prior_status32 () (_ BitVec 32))
+(declare-fun saved_word32 () (_ BitVec 32))
+(assert
+ (let (($x120 (and (= (bvand saved_word32 (_ bv255 32)) (_ bv0 32)) (= (bvand prior_status32 (_ bv255 32)) (_ bv81 32)))))
+(let ((?x59 (bvor (bvand (_ bv40330 32) (_ bv65535 32)) (bvshl (_ bv29890 32) (_ bv16 32)))))
+(let ((?x64 (bvor (bvand (_ bv50769 32) (_ bv65535 32)) (bvshl (_ bv35645 32) (_ bv16 32)))))
+(let ((?x22 (bvnot saved_word32)))
+(let ((?x23 (bvand (bvxor prior_status32 (bvor (bvand (_ bv14452 32) (_ bv65535 32)) (bvshl (_ bv46374 32) (_ bv16 32)))) ?x22)))
+(let ((?x30 (bvor (bvand saved_word32 (bvor (bvand (_ bv474 32) (_ bv65535 32)) (bvshl (_ bv49636 32) (_ bv16 32)))) ?x23)))
+(let ((?x45 (bvand (bvxor (bvashr ?x30 (_ bv4 32)) (bvor (bvand (_ bv16413 32) (_ bv65535 32)) (bvshl (_ bv64542 32) (_ bv16 32)))) (bvxor ?x30 (bvor (bvand (_ bv56795 32) (_ bv65535 32)) (bvshl (_ bv60445 32) (_ bv16 32)))))))
+(let ((?x51 (bvxor (bvxor (bvand (bvashr ?x30 (_ bv4 32)) (_ bv1 32)) (bvand ?x45 (_ bv3 32))) (_ bv1 32))))
+(let ((?x66 (ite (= (_ bv3 32) (bvand ?x51 (bvlshr ?x45 (_ bv2 32)))) ?x64 ?x59)))
+(and (distinct ?x66 (ite $x120 (_ bv2336081489 32) (_ bv1958911370 32))) true)))))))))))
+(check-sat)

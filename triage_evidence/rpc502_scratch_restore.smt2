@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun s () (_ BitVec 64))
+(define-fun restored () (_ BitVec 64) (bvadd (bvsub s #x00000000000000e0) #x00000000000000e0))
+(define-fun adjustment () (_ BitVec 32)
+ (bvshl (bvand (bvsub ((_ extract 31 0) restored) ((_ extract 31 0) s)) #x0000ffff) #x00000004))
+(assert (not (= adjustment #x00000000)))
+(check-sat)

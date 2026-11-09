@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rb_descriptor_extent32 () (_ BitVec 32))
+(declare-fun rb_copy_extent64 () (_ BitVec 64))
+(assert
+ (let ((?x14 (bvand (bvadd ((_ zero_extend 32) rb_descriptor_extent32) (_ bv16383 64)) (_ bv18446744073709535232 64))))
+(let ((?x25 ((_ zero_extend 32) rb_descriptor_extent32)))
+(let (($x63 (bvuge rb_copy_extent64 ?x25)))
+(let ((?x94 (concat (_ bv0 32) rb_descriptor_extent32)))
+(let ((?x95 (bvadd (_ bv16383 64) ?x94)))
+(let ((?x105 ((_ extract 63 14) ?x95)))
+(let ((?x113 (concat ?x105 (_ bv0 14))))
+(let (($x104 (or (not (bvuge rb_copy_extent64 ?x113)) (= (bvsub rb_copy_extent64 ?x113) (_ bv0 64)))))
+(let (($x57 (and (distinct (and (not (not $x63)) $x104) (and $x63 (bvule rb_copy_extent64 ?x14))) true)))
+(or (and (distinct ?x113 ?x14) true) $x57)))))))))))
+(check-sat)

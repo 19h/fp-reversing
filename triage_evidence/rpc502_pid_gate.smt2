@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun pid () (_ BitVec 32))
+(define-fun b () (_ BitVec 32)
+ (bvlshr (bvnot (bvor (bvsub pid #x00000000) (bvsub #x00000000 pid))) #x0000001f))
+(define-fun ix () (_ BitVec 32) (bvxor #x000028fc (bvmul b #x00007330)))
+(assert (not (= ix (ite (= pid #x00000000) #x00005bcc #x000028fc))))
+(check-sat)

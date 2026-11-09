@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun p () (_ BitVec 64))
+(define-fun callee () (_ BitVec 64)
+ (bvmul (bvxor (bvadd (bvsub (bvor p #x5df58a7def5ba5e7) p)
+ (bvand p #xa20a758210a45a18)) #xf3c6b5a52cf276c6) #x0000000044a8b7e9))
+(assert (not (= callee (bvmul (bvxor p #xae333fd8c3a9d321) #x0000000044a8b7e9))))
+(check-sat)

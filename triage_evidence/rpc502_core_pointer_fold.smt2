@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun x () (_ BitVec 64))
+(assert (not (= (bvxor (bvadd (bvsub (bvor x #x39048b9ddf8693f2)
+ (bvor x #xc6fb746220796c0d)) #xc6fb746220796c0d) #x839101713528993b)
+ (bvxor x #xba958aeceaae0ac9))))
+(check-sat)

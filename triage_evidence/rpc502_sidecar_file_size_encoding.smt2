@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun size () (_ BitVec 64))
+(define-fun w25 () (_ BitVec 32) (bvor (bvadd #x0000699b #xffff9bda) #x0000c080))
+(define-fun mask () (_ BitVec 64) (bvadd ((_ zero_extend 32) w25) #x6700172791792061))
+(define-fun native () (_ BitVec 64)
+ (bvadd (bvsub size (bvand mask (bvshl size #x0000000000000001))) #xb3800b93c8bcf32b))
+(assert (not (= native (bvxor size #xb3800b93c8bcf32b))))
+(check-sat)

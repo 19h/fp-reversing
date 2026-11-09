@@ -1,0 +1,10 @@
+(set-logic QF_BV)
+(declare-fun c () (_ BitVec 32))
+(define-fun nz () (_ BitVec 32) (ite (= c #x00000000) #x00000000 #x00000001))
+(define-fun low () (_ BitVec 32)
+ (ite (= c #x00000000) #x00000000
+  (ite (bvsgt (bvor c (bvneg c)) #xffffffff) #x00000001 #x00000000)))
+(define-fun result () (_ BitVec 32)
+ (ite (= (bvand c (bvxor low #xffffffef)) #x00000000) #x00000000 nz))
+(assert (not (= result (ite (= (bvand c #xffffffef) #x00000000) #x00000000 #x00000001))))
+(check-sat)

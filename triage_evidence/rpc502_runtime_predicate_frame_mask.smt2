@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun p () (_ BitVec 64))
+(assert (= (bvand p #x0000000000000007) #x0000000000000000))
+(define-fun caller () (_ BitVec 64)
+ (bvmul (bvxor (bvadd (bvsub (bvshl (bvand p #x2368d6bcd1b79518) #x0000000000000001) p)
+ #x5c9729432e486ae1) #xf2a4169bede1b9c0) #x0000000044a8b7e9))
+(assert (not (= caller (bvmul (bvxor p #xae333fd8c3a9d321) #x0000000044a8b7e9))))
+(check-sat)

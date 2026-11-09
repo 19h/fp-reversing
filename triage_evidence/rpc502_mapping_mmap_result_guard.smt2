@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun pointer () (_ BitVec 64))
+(define-fun result () (_ BitVec 32)
+ (bvxor #x00005287 (bvmul (ite (= (bvadd pointer #x0000000000000001) #x0000000000000000) #x00000001 #x00000000) #x0000000d)))
+(assert (not (= result (ite (= pointer #xffffffffffffffff) #x0000528a #x00005287))))
+(check-sat)

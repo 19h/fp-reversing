@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun flag () (_ BitVec 32))
+(define-fun a () (_ BitVec 32) (bvand #x00000001 (bvnot flag)))
+(define-fun result () (_ BitVec 32)
+ (bvxor #x0000251d (bvsub (bvshl a #x00000006) (bvshl a #x00000002))))
+(assert (not (= result (ite (= (bvand flag #x00000001) #x00000001) #x0000251d #x00002521))))
+(check-sat)

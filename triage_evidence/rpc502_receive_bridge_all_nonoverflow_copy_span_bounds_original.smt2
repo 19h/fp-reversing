@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rb_pool_upper64 () (_ BitVec 64))
+(declare-fun rb_copy_pointer64 () (_ BitVec 64))
+(declare-fun rb_pool_lower64 () (_ BitVec 64))
+(assert
+ (let (($x49 (bvule rb_pool_lower64 rb_copy_pointer64)))
+(let (($x52 (not (and $x49 (bvule (bvadd rb_copy_pointer64 (_ bv48 64)) rb_pool_upper64)))))
+(let (($x41 (or (not (bvuge rb_pool_lower64 rb_copy_pointer64)) (= (bvsub rb_pool_lower64 rb_copy_pointer64) (_ bv0 64)))))
+(let (($x51 (ite $x41 (bvuge (bvadd (_ bv48 64) rb_copy_pointer64) rb_pool_lower64) false)))
+(let (($x58 (ite $x51 (= (bvsub (bvadd (_ bv48 64) rb_copy_pointer64) rb_pool_upper64) (_ bv0 64)) false)))
+(let (($x59 (ite $x51 (bvuge (bvadd (_ bv48 64) rb_copy_pointer64) rb_pool_upper64) true)))
+(let (($x43 (bvule rb_copy_pointer64 (_ bv18446744073709551567 64))))
+(and $x43 (and (distinct (and $x59 (not $x58)) $x52) true))))))))))
+(check-sat)

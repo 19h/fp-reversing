@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun delta () (_ BitVec 32))
+(define-fun g () (_ BitVec 32) (bvadd #x1cea168a delta))
+(assert (not (= ((_ zero_extend 32) (bvadd g #xe315e976))
+               ((_ zero_extend 32) delta))))
+(check-sat)
