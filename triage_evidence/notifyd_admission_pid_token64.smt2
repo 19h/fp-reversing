@@ -1,0 +1,7 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun pid () (_ BitVec 32))
+(declare-fun token () (_ BitVec 32))
+(define-fun source () (_ BitVec 64) (bvor ((_ zero_extend 32) token) (bvshl ((_ zero_extend 32) pid) #x0000000000000020)))
+(assert (distinct source (concat pid token)))
+(check-sat)

@@ -1,0 +1,7 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun id () (_ BitVec 32))
+(define-fun source () Bool (bvuge (bvsub id #x00000409) #xffffffdf))
+(define-fun compact () Bool (and (bvuge id #x000003e8) (bvult id #x00000409)))
+(assert (distinct source compact))
+(check-sat)

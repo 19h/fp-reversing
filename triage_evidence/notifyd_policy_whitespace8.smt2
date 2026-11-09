@@ -1,0 +1,8 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun char () (_ BitVec 8))
+(define-fun shifted () (_ BitVec 64) (bvshl #x0000000000000001 ((_ zero_extend 56) (bvand char #x3f))))
+(define-fun source () Bool (and (bvule char #x20) (distinct (bvand shifted #x0000000100000201) #x0000000000000000)))
+(define-fun compact () Bool (or (= char #x00) (= char #x09) (= char #x20)))
+(assert (distinct source compact))
+(check-sat)

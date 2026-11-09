@@ -1,0 +1,7 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun suffix () (_ BitVec 64))
+(assert (bvule suffix #x00000000000001df))
+(define-fun result () (_ BitVec 64) (bvadd suffix #x0000000000000034))
+(assert (distinct (bvule result #x0000000000000100) (bvule suffix #x00000000000000cc)))
+(check-sat)

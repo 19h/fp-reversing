@@ -1,0 +1,8 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun flags () (_ BitVec 32))
+(declare-fun event () (_ BitVec 32))
+(define-fun source () (_ BitVec 64) (bvand ((_ zero_extend 32) (bvand flags event)) #x00000000000003ff))
+(define-fun compact () (_ BitVec 64) ((_ zero_extend 54) ((_ extract 9 0) (bvand flags event))))
+(assert (distinct source compact))
+(check-sat)

@@ -1,0 +1,6 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun refs () (_ BitVec 32))
+(define-fun release_zero () Bool (ite (= refs #x00000000) true (= (bvsub refs #x00000001) #x00000000)))
+(assert (distinct release_zero (or (= refs #x00000000) (= refs #x00000001))))
+(check-sat)

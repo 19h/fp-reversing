@@ -1,0 +1,8 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun flags () (_ BitVec 32))
+(define-fun pending () Bool (= ((_ extract 28 28) flags) #b1))
+(define-fun set () (_ BitVec 32) (bvor flags #x10000000))
+(define-fun clear () (_ BitVec 32) (bvand set #xefffffff))
+(assert (or (distinct (= ((_ extract 28 28) set) #b1) true) (distinct clear (bvand flags #xefffffff)) (distinct pending (distinct (bvand flags #x10000000) #x00000000))))
+(check-sat)

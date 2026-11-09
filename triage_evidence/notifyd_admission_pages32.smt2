@@ -1,0 +1,6 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun pages () (_ BitVec 32))
+(define-fun source () (_ BitVec 32) (bvshl (bvmul pages #x00001000) #x00000002))
+(assert (distinct source (bvmul pages #x00004000)))
+(check-sat)

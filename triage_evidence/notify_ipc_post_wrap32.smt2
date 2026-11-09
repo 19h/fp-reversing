@@ -1,0 +1,6 @@
+(set-option :timeout 30000)
+(set-logic QF_BV)
+(declare-fun counter () (_ BitVec 32))
+(define-fun after_full_wrap () (_ BitVec 32) ((_ extract 31 0) (bvadd ((_ zero_extend 32) counter) #x0000000100000000)))
+(assert (distinct counter after_full_wrap))
+(check-sat)
