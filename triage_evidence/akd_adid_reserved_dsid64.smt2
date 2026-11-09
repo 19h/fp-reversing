@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun dsid () (_ BitVec 64))
+(define-fun index () (_ BitVec 64) (bvadd dsid #x0000000000000008))
+(define-fun bits () (_ BitVec 32) (bvlshr #x0000007d ((_ zero_extend 27) ((_ extract 4 0) index))))
+(define-fun accept () Bool (and (bvule index #x0000000000000006) (= (bvand bits #x00000001) #x00000001)))
+(assert (distinct accept (or (= dsid #xfffffffffffffff8) (= dsid #xfffffffffffffffa) (= dsid #xfffffffffffffffb) (= dsid #xfffffffffffffffc) (= dsid #xfffffffffffffffd) (= dsid #xfffffffffffffffe))))
+(check-sat)
