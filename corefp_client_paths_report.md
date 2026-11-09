@@ -1,0 +1,167 @@
+# CoreFP: FPSD certificate request and ADID XPC/Mach client
+
+Two distinct request1200 paths are now resolved locally. The64-byte client uses the name returned by the recovered `com.apple.fpsd` lookup and sends a756-byte embedded FPPineBoard certificate. The56-byte client belongs to a separate constructor that targets `com.apple.adid`,prefers synchronous XPC with a28-byte `data` field,and uses Mach fallback with bootstrap/retry on MACH_SEND_INVALID_DEST. Identical numerical request IDs do not identify the same endpoint or payload ABI.
+
+The main path reaches its larger request even after modeled failure of the metadata query described in the [lookup/protocol report](corefp_lookup_report.md). These are original-byte/static and bounded private-execution findings. Effective native image/port pairing,receiver admission,successful processing and rights lifetime remain unknown. The broad daemon/kext/deeper-interface objective remains active and incomplete.
+
+## Identity,assumptions and provenance
+
+CoreFP offsets use preferred base0 in arm64e slice SHA-256`8bf6f7a563cc804522cbd7b3f6a063c479cd2abc6e0b2d996f1eac1eda6cf28c`,UUID`9061ddc3-93b4-3824-914f-9cc97d708d58`. The [preceding export report](corefp_exports_report.md) pins its universal-file identity. Synthetic names such as0x5017/0x6ad1 and private addresses are fixture values;they are not runtime endpoints. Analyst tools read files,parse metadata and compile layouts;no native target,loader,framework,IPC or synchronization API was executed.
+
+| Assumption | Dependent claims | Stress test / current boundary |
+| --- | --- | --- |
+| P1: original images and declarations define the reference objects | Every offset,byte,string and provider identity | Fresh hashes,source-function/instruction readbacks,selected chain members,plist/provider metadata and independent static-tool output agree. Native selection remains unknown. |
+| P2: the stated private caller inputs are the intended local experiment | FPSD acquisition-to-request path | Decoded parent operation0xc1f7,two non-NULL private referents and controlled32-bit record fields are explicit. Fifteen cases retain source visits. Upstream public-export reachability and native application context remain open. |
+| P3: warm-once,lock,allocator,cleanup and PAC fixtures supply their declared behavior | Continued paths and failure outcomes | Initial opaque boundaries are retained;NULL/success/cleanup cases are separate. Native initialization,OOM,authentication,reference retirement and concurrency remain untested. |
+| P4: local argument widths and observed byte roles are sufficient descriptions | Secondary selector and28-byte packet | Full64-bit selector proof,three selector values and two X1 values reach packet construction. X1's semantic type is unknown;address-shaped fixture values do not establish that real callers pass pointers. Full response schema remains open. |
+| P5: opaque XPC objects and API-result fixtures model the selected branches | XPC errors,retries,Mach fallback and event handler | Error-object identity,non-error,interrupted and NULL variants are explicit. The original+4 import addend is compensated before comparison. Native object/type behavior and exceptional APIs remain unknown. |
+| P6: decoded embedded certificate bytes establish an argument,not trust | Certificate extraction/staging | Original760-byte XOR source,all copy indices,offline DER extent/parser,and two transmitted payloads agree. Authentication,trust/time policy,private-key possession and protocol acceptance were not tested. |
+| P7: launchd metadata declares a provider independently of a live job | ADID architectural touch point | Exact plist/executable hashes,slices and UUID are retained. Running job,actual bootstrap/XPC port identity,peer policy and receiver implementation remain unknown. |
+
+Evidence: [contracts](triage_evidence/corefp_client_paths_contracts.json),[15 FPSD cases](triage_evidence/corefp_client_flow_profiles.json),[36 secondary/callback cases](triage_evidence/corefp_secondary_client_profiles.json),[certificate DER](triage_evidence/corefp_fppineboard_certificate.der),[certificate source/parser metadata](triage_evidence/corefp_fppineboard_certificate.json),[CoreADI provider declaration](triage_evidence/corefp_adid_environment.json),[checks](triage_evidence/corefp_client_paths_checks.json) and [quality gates](triage_evidence/corefp_client_paths_quality_gates.json).
+
+## FPSD: lookup result to certificate request [P1-P3,P6]
+
+```text
+protected caller0x8e81c8, decoded operation0xc1f7
+  -> original lookup0x1cdb24 -> com.apple.fpsd -> cached name
+  -> [metadata error can return while lookup still completes]
+  ->760-byte allocation -> XOR copy ->756-byte DER staging
+  -> free temporary allocation
+  -> parent call0x8ea14c -> builder0x8ae0
+  -> mach_msg0x8ba8, request1200,send64,receive capacity220
+```
+
+Seven metadata-flag values and four controlled values of the parent record's32-bit field at+24 reach the same first760-byte allocation at`0x249368`. These finite prefix observations do not establish equivalence of later behavior for every flag/value. A NULL allocation follows original code back to the fixture and stores internal record marker`0x45e2a20f`;it is not promoted to a native OOM result.
+
+With bounded successful allocation and explicit owned cleanup,two cases reach the larger request:one starts from the cached name;the other executes primary bootstrap lookup,receives modeled name0x5017,observes metadata transport error`0x10000003`,and then reaches request1200. The original parent call selects target`0x8ae0` using modifier`0x563e`,matching original pointer slot`0x1d04218`.
+
+| Request field / interface | Observed original value or origin |
+| --- | --- |
+| Destination | Header+8 equals the u32 lookup result,0x5017 in these fixtures |
+| Header ID / byte extent |1200 /64 bytes;receive capacity220 bytes |
+| Body+24 | Descriptor count1 |
+| OOL descriptor+28/+40 | Private stack address /756-byte extent |
+| Descriptor flags at+36 |`0x01000100`:deallocate0,virtual-copy1,type1 |
+| NDR+44 | Explicit8-byte data-import fixture |
+| Words+52/+56/+60 |2,2,756;the complete application semantics of the first two words remain unknown |
+
+The temporary760-byte object is freed at`0x8e9fa8`. At emission,the OOL source is a separate private stack address containing exactly the756 DER bytes. This establishes local staging and address separation in the two cases. Actual kernel copyin,post-return stack lifetime and successful response ownership remain open. The caller's pre-library header-size word is not treated as the final native message size;the API receives the explicit send length64.
+
+## Embedded FPPineBoard certificate [P1,P2,P6]
+
+| Source / extent | Established bytes |
+| --- | --- |
+| Original encoded source |`0x185c226`,760 bytes |
+| Original copy loop | Load`0x249434`,byte XOR`0xba`,store`0x24943c`;760 visits cover indices0..759 |
+| Decoded prefix | Raw bytes`01 00 00 07`;semantic role unknown |
+| Remaining object |756-byte DER;ASN.1 outer length752 plus4 header bytes |
+| Transmitted payload | Exactly decoded object bytes4..759 |
+
+Later inspection of the allocated object shows DER at offset0 and its last four bytes duplicated in the remaining allocation tail. The transmitted extent is756 bytes. The evidence retains the initial container,temporary snapshot and stack payload;it does not assign the prefix a length or version meaning.
+
+Offline parsing establishes subject`FPPineBoard.4CAF170210AF0001AF000001`,issuer`Apple FairPlay AAA Certification Authority`,serial`4CAF170210AF0001AF000001`,RSA public-key size1024 bits and signature identifier`sha1WithRSAEncryption`. Literal validity times are2017-02-10T21:38:24Z through2022-02-11T21:38:24Z. These are metadata,not a native acceptance/rejection decision. DER SHA-256 is`a0caace76b0db1214f92e89225458e5040d3b92837c03270274ea1a1b359e2de`.
+
+This certificate is distinct from the891-byte StoreAgentStub argument recovered at the AMS/CoreFP boundary. Their relationship and complete native use are not inferred from a shared issuer string.
+
+## ADID constructor,selector and mutable state [P1,P3-P5]
+
+Constructor entry`0x15cc6f4..0x15d1580` uses a separate table at`0x1d16370` and different state constants. Its first argument is tested over64 bits:the accepted values are exactly-8,-6,-5,-4,-3,-2. The zero-extended32-bit pattern`0x00000000fffffff8` is rejected despite sharing low32 bits with-8. Rejection returns W0=`0xffff5037` in the private cases. X1's semantic type and the successful constructor's complete result/ownership contract remain unknown.
+
+Before validating that selector,the routine rewrites two64-bit protected cells. Let`G1=[0x1d441a8]`,`G2=[0x1d44158]`,`C=0xa90ac839`,`K=0x5f0913a0d6d70483`;all arithmetic modulo2^64:
+
+```text
+r  = oldG1 XOR (entrySP-0x88) XOR oldG2
+G1 = (r+K)*C
+G2 = (r XOR K)*C
+```
+
+Every constructor fixture checks the first post-store state,including rejected selectors and changed64-bit states/stack offsets. Thus rejection does not imply absence of protected-state side effects. The fields' semantic purpose and synchronization remain unknown.
+
+| Source boundary | Recovered construction stage |
+| --- | --- |
+|`0x15cc8e4` | First malloc,24 bytes |
+|`0x15cc9dc` | Second malloc,4096 bytes |
+|`0x15ce9d8` | `xpc_dictionary_create_empty` |
+|`0x15cea8c` | `xpc_dictionary_set_data`,key`data`,28 bytes |
+|`0x15ceae8` | Queue creation,label`com.apple.adid`,NULL attributes |
+|`0x15ceb94` | XPC Mach-service connection request,name`com.apple.adid`,that queue,flags0 |
+|`0x15cec70` | Event-handler installation,then modeled activation |
+|`0x15ced04` | First synchronous XPC send with the populated dictionary |
+
+First-allocation NULL,second-allocation NULL and connection NULL cases return`0xffff5035`;the second-allocation failure releases the first24-byte allocation in the cleanup model. These remain conditional private results. The dictionary-NULL fixture reaches `xpc_dictionary_set_data` with NULL;no native API consequence is inferred.
+
+## ADID28-byte outgoing payload [P1,P4,P5]
+
+Observed integer fields are in big-endian byte order:
+
+| Offset | Width | Observed value / origin |
+| --- | --- | --- |
+|0 |32 bits |1 |
+|4 |32 bits |`0x632b8d6e` |
+|8 |32 bits |1 |
+|12 |64 bits | Original signed selector |
+|20 |64 bits | Original X1 value;semantic role unknown |
+
+The source cases vary selectors-8/-6/-2 and two X1 values. Names such as protocol version,operation identifier,count,account identifier or address are not assigned to the unexplained fields. The32-bit constants and64-bit origins describe the observed wire construction;the full encoder and successful response grammar remain open.
+
+## ADID error retries and Mach fallback [P1,P3-P5]
+
+```text
+XPC com.apple.adid, dictionary data[28]
+  -> non-error type: xpc_dictionary_get_data("data") boundary
+  -> modeled error type: legacy cached-name Mach attempt
+       -> MACH_SEND_INVALID_DEST
+          -> bootstrap_look_up(com.apple.adid)
+          -> replace cached name -> retry Mach request
+```
+
+The exact connection-interrupted object selects five synchronous attempts at`0x15ced04`,`0x15ceecc`,`0x15cf02c`,`0x15cf14c`,`0x15cf28c` before the observed fallback. The original import at`0x1d1c028` has addend+4;source`0x15cee24` subtracts4 before object-identity comparison. The fixture supplies the opaque symbol object's address. A generic error object reaches fallback after one attempt. Mixed replies and native retry timing remain unverified.
+
+The NULL-reply fixture reaches `xpc_get_type(NULL)`;its subsequent non-error classification is an explicit model and does not establish native NULL-object behavior. Successful/non-error object cases stop at data extraction`0x15cf394` with key`data`;response parsing and successful object publication remain open.
+
+| Legacy interface | Established source/private contract |
+| --- | --- |
+| Parent first call |`0x15d008c` -> builder`0x1590824` |
+| Emission |`0x15908c8`,ID1200,send56,receive capacity64 bytes |
+| Payload | One OOL descriptor containing the same28 bytes previously stored in XPC |
+| Cached name |`0x1d49068`,in the original zero-fill DATA tail;native value unknown |
+| Recovery condition | Full32-bit predicate simplifies exactly to`MACH_SEND_INVALID_DEST=0x10000003` |
+| Lookup |`0x15d0174`,namespace from `_bootstrap_port`,name`com.apple.adid`,output at the cache cell |
+| Retry parent call |`0x15d022c` -> same builder/emission with the newly supplied name |
+
+Cold private mapping uses name0 for the first attempt. Warm fixtures use0x6a90;after modeled invalid destination and successful lookup,the retry uses0x6ad1. No deallocation appears in the observed replacement prefix;complete reference accounting remains unknown. Bootstrap error5 yields`0xffff5027`;a different modeled transport error`0x10000004` yields`0xffff5028` without lookup. Those finite results do not assign native error contracts to every failure.
+
+## Installed XPC event handler and provider context [P1,P3,P5,P7]
+
+The installed block at`0x1d16350` has invoke target`0x15a4c14`. Its original body passes the event argument to `xpc_copy_description` at`0x15a4d8c`,then tail-calls exact `_free` at`0x15a4df4` with that returned pointer. Two callback-entry cases retain the first opaque boundary and normal modeled cleanup. The tail edge is recorded directly rather than inferred from LR,which retains the callback's caller return address. Additional protected-state mutations occur;native callback scheduling,lifetime and concurrency remain open.
+
+The original `/System/Library/LaunchDaemons/com.apple.adid.plist` declares Mach service`com.apple.adid`,program`/System/Library/PrivateFrameworks/CoreADI.framework/adid`,user/group`_fpsd`,adaptive spawning and pressured-exit support. It does not establish a running job. Provider universal SHA-256 is`58eeb13dade3e1867641345b38961344fe53e6319928a1503bdb3315681fe929`;selected arm64e SHA-256 is`ad149b360cbd98c1cb6d1ce820125e944bcaaf1758c2633d2588e159cfc15fcf`,UUID`4d24325f-3529-39b1-bbf8-64bbcf406049`. Three original slices and static fixup output are retained for receiver-side continuation. This increment does not recover that executable's receiver implementation.
+
+## Validation and continuation
+
+The increment passes6220 assertions across51 private cases,5866 distinct retained instruction records,three exhaustive256-input banks,20 selected pointers and two full-domain SMT obligations. The760-byte encoded source,756-byte DER/parser output,provider metadata/static-tool output and arm64e28-byte layout compile are independently reread. Original supplied inputs and IDBs remain preserved. QG1-QG7 pass for these stated claims;the full objective remains incomplete.
+
+```text
+/Users/___/Downloads/zut/.venv/bin/python triage_evidence/recover_corefp_client_paths.py
+/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_client_flow.py
+/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_secondary_client.py
+/Users/___/Downloads/zut/.venv/bin/python triage_evidence/validate_corefp_client_paths_delivery.py
+```
+
+Static extraction/readback is O(B+F+R+V+256K),with image bytes B,fixups F,retained ranges R,source visits V and bank identities K;space O(B+F+R+V). Private cases retain the30000-hook bound. Solver cost is separate,with30 s per-query caps. Byte counts and32/64-bit modular arithmetic are explicit;no native performance result is inferred.
+
+| Impact | Further discriminating evidence |
+| --- | --- |
+| High | Recover CoreADI adid's actual XPC handler,peer admission,`data` decoder,response grammar and legacy receiver compatibility. Match effective native selection before combining snapshots. |
+| High | Follow the FPSD1200 server application handler,certificate policy,returned OOL/port objects and full acquisition-to-close ownership. The local send boundary does not establish successful processing. |
+| High | Recover actual callers of the signed-selector constructor and assign X1/packet-field semantics from their provenance. |
+| Medium | Complete cached-name replacement/dead-name reference accounting,bootstrap failures,all transport statuses and retry cancellation. |
+| Medium | Follow metadata flag consumers and both certificate sources into their exact protocol roles and effective authentication policy. |
+| Medium | Establish once/lock lifecycle and synchronization of protected cells shared with event-handler paths;private ordering is not a concurrency proof. |
+
+No source-analysis blocker is asserted. The broader daemon,kext and deeper-facility investigation remains active.
+
+## Provider-side continuation
+
+The [ADID receiver report](adid_receiver_report.md) recovers the provider's peer setup, event callback, audit/data adapter, 48-byte private record and initialized-context dependency. Its local `adi-client` classifier lists 50 values; original cases reach the 28-byte client request after that gate. Six unlisted-client response pairs connect provider `data = ff ff 4f f2` to CoreFP return `0xffff4ff2`. This is source/private ABI correspondence. Native pairing, successful operation semantics, X1's meaning and legacy Mach compatibility remain unknown.
