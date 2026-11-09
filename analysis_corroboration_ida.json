@@ -1,0 +1,727 @@
+{
+  "build_lookup": [
+    {
+      "disasm": "BTI             c",
+      "ea": "0xfffffe000a509114"
+    },
+    {
+      "disasm": "PACIBSP",
+      "ea": "0xfffffe000a509118"
+    },
+    {
+      "disasm": "STP             X28, X27, [SP,#-0x10+var_50]!",
+      "ea": "0xfffffe000a50911c"
+    },
+    {
+      "disasm": "STP             X26, X25, [SP,#0x50+var_40]",
+      "ea": "0xfffffe000a509120"
+    },
+    {
+      "disasm": "STP             X24, X23, [SP,#0x50+var_30]",
+      "ea": "0xfffffe000a509124"
+    },
+    {
+      "disasm": "STP             X22, X21, [SP,#0x50+var_20]",
+      "ea": "0xfffffe000a509128"
+    },
+    {
+      "disasm": "STP             X20, X19, [SP,#0x50+var_10]",
+      "ea": "0xfffffe000a50912c"
+    },
+    {
+      "disasm": "STP             X29, X30, [SP,#0x50+var_s0]",
+      "ea": "0xfffffe000a509130"
+    },
+    {
+      "disasm": "ADD             X29, SP, #0x50",
+      "ea": "0xfffffe000a509134"
+    },
+    {
+      "disasm": "SUB             SP, SP, #0x250",
+      "ea": "0xfffffe000a509138"
+    },
+    {
+      "disasm": "MOV             X22, X4",
+      "ea": "0xfffffe000a50913c"
+    },
+    {
+      "disasm": "MOV             X21, X3",
+      "ea": "0xfffffe000a509140"
+    },
+    {
+      "disasm": "MOV             X20, X2",
+      "ea": "0xfffffe000a509144"
+    },
+    {
+      "disasm": "MOV             X23, X1",
+      "ea": "0xfffffe000a509148"
+    },
+    {
+      "disasm": "MOV             X24, X0",
+      "ea": "0xfffffe000a50914c"
+    },
+    {
+      "disasm": "ADRP            X8, #___stack_chk_guard_ptr@PAGE",
+      "ea": "0xfffffe000a509150"
+    },
+    {
+      "disasm": "LDR             X8, [X8,#___stack_chk_guard_ptr@PAGEOFF]; <dynamic>",
+      "ea": "0xfffffe000a509154"
+    },
+    {
+      "disasm": "LDR             X8, [X8]; <dynamic>",
+      "ea": "0xfffffe000a509158"
+    },
+    {
+      "disasm": "STUR            X8, [X29,#var_68]",
+      "ea": "0xfffffe000a50915c"
+    },
+    {
+      "disasm": "STR             XZR, [SP,#0x2A0+vpp]",
+      "ea": "0xfffffe000a509160"
+    },
+    {
+      "disasm": "BL              _vfs_context_current",
+      "ea": "0xfffffe000a509164"
+    },
+    {
+      "disasm": "MOV             X19, X0",
+      "ea": "0xfffffe000a509168"
+    },
+    {
+      "disasm": "MOV             W0, #0xFFFFFFFF",
+      "ea": "0xfffffe000a50916c"
+    },
+    {
+      "disasm": "CBZ             X23, loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a509170"
+    },
+    {
+      "disasm": "CBZ             X24, loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a509174"
+    },
+    {
+      "disasm": "CBZ             X20, loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a509178"
+    },
+    {
+      "disasm": "CBZ             W22, loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a50917c"
+    },
+    {
+      "disasm": "CMP             W21, #0x64 ; 'd'",
+      "ea": "0xfffffe000a509180"
+    },
+    {
+      "disasm": "B.HI            loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a509184"
+    },
+    {
+      "disasm": "CMP             W22, #0x10",
+      "ea": "0xfffffe000a509188"
+    },
+    {
+      "disasm": "B.HI            loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a50918c"
+    },
+    {
+      "disasm": "STR             WZR, [SP,#0x2A0+var_264]",
+      "ea": "0xfffffe000a509190"
+    },
+    {
+      "disasm": "ADD             X4, SP, #0x2A0+vpp; vpp",
+      "ea": "0xfffffe000a509194"
+    },
+    {
+      "disasm": "MOV             X0, X24; path",
+      "ea": "0xfffffe000a509198"
+    },
+    {
+      "disasm": "MOV             W1, #1; fmode",
+      "ea": "0xfffffe000a50919c"
+    },
+    {
+      "disasm": "MOV             W2, #0; cmode",
+      "ea": "0xfffffe000a5091a0"
+    },
+    {
+      "disasm": "MOV             W3, #0; flags",
+      "ea": "0xfffffe000a5091a4"
+    },
+    {
+      "disasm": "MOV             X5, X19; ctx",
+      "ea": "0xfffffe000a5091a8"
+    },
+    {
+      "disasm": "BL              _vnode_open",
+      "ea": "0xfffffe000a5091ac"
+    },
+    {
+      "disasm": "CBZ             W0, loc_FFFFFE000A5091BC",
+      "ea": "0xfffffe000a5091b0"
+    },
+    {
+      "disasm": "MOV             W0, #0xFFFFFFFC",
+      "ea": "0xfffffe000a5091b4"
+    },
+    {
+      "disasm": "B               loc_FFFFFE000A509238",
+      "ea": "0xfffffe000a5091b8"
+    },
+    {
+      "disasm": "ADD             X8, SP, #0x2A0+vap",
+      "ea": "0xfffffe000a5091bc"
+    },
+    {
+      "disasm": "STR             XZR, [X8,#0x1C0]",
+      "ea": "0xfffffe000a5091c0"
+    },
+    {
+      "disasm": "MOVI            V0.2D, #0",
+      "ea": "0xfffffe000a5091c4"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x1A0]",
+      "ea": "0xfffffe000a5091c8"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x180]",
+      "ea": "0xfffffe000a5091cc"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x160]",
+      "ea": "0xfffffe000a5091d0"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x140]",
+      "ea": "0xfffffe000a5091d4"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x120]",
+      "ea": "0xfffffe000a5091d8"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x100]",
+      "ea": "0xfffffe000a5091dc"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0xE0]",
+      "ea": "0xfffffe000a5091e0"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0xC0]",
+      "ea": "0xfffffe000a5091e4"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0xA0]",
+      "ea": "0xfffffe000a5091e8"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x80]",
+      "ea": "0xfffffe000a5091ec"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x60]",
+      "ea": "0xfffffe000a5091f0"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [X8,#0x40]",
+      "ea": "0xfffffe000a5091f4"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [SP,#0x2A0+vap]",
+      "ea": "0xfffffe000a5091f8"
+    },
+    {
+      "disasm": "MOV             W8, #0x10",
+      "ea": "0xfffffe000a5091fc"
+    },
+    {
+      "disasm": "STR             X8, [SP,#0x2A0+vap.va_active]",
+      "ea": "0xfffffe000a509200"
+    },
+    {
+      "disasm": "LDR             X0, [SP,#0x2A0+vpp]; vp",
+      "ea": "0xfffffe000a509204"
+    },
+    {
+      "disasm": "STP             Q0, Q0, [SP,#0x2A0+vap.va_total_size]",
+      "ea": "0xfffffe000a509208"
+    },
+    {
+      "disasm": "ADD             X1, SP, #0x2A0+vap; vap",
+      "ea": "0xfffffe000a50920c"
+    },
+    {
+      "disasm": "MOV             X2, X19; ctx",
+      "ea": "0xfffffe000a509210"
+    },
+    {
+      "disasm": "BL              _vnode_getattr",
+      "ea": "0xfffffe000a509214"
+    },
+    {
+      "disasm": "CBNZ            W0, loc_FFFFFE000A509224",
+      "ea": "0xfffffe000a509218"
+    },
+    {
+      "disasm": "LDRB            W8, [SP,#0x2A0+vap]",
+      "ea": "0xfffffe000a50921c"
+    },
+    {
+      "disasm": "TBNZ            W8, #4, loc_FFFFFE000A509270",
+      "ea": "0xfffffe000a509220"
+    },
+    {
+      "disasm": "LDR             X0, [SP,#0x2A0+vpp]; vp",
+      "ea": "0xfffffe000a509224"
+    },
+    {
+      "disasm": "MOV             W1, #1; flags",
+      "ea": "0xfffffe000a509228"
+    },
+    {
+      "disasm": "MOV             X2, X19; ctx",
+      "ea": "0xfffffe000a50922c"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a509230"
+    },
+    {
+      "disasm": "MOV             W0, #5",
+      "ea": "0xfffffe000a509234"
+    },
+    {
+      "disasm": "LDUR            X8, [X29,#var_68]",
+      "ea": "0xfffffe000a509238"
+    },
+    {
+      "disasm": "ADRP            X9, #___stack_chk_guard_ptr@PAGE",
+      "ea": "0xfffffe000a50923c"
+    },
+    {
+      "disasm": "LDR             X9, [X9,#___stack_chk_guard_ptr@PAGEOFF]; <dynamic>",
+      "ea": "0xfffffe000a509240"
+    },
+    {
+      "disasm": "LDR             X9, [X9]; <dynamic>",
+      "ea": "0xfffffe000a509244"
+    },
+    {
+      "disasm": "CMP             X9, X8",
+      "ea": "0xfffffe000a509248"
+    },
+    {
+      "disasm": "B.NE            loc_FFFFFE000A509634",
+      "ea": "0xfffffe000a50924c"
+    },
+    {
+      "disasm": "ADD             SP, SP, #0x250",
+      "ea": "0xfffffe000a509250"
+    },
+    {
+      "disasm": "LDP             X29, X30, [SP,#0x50+var_s0]",
+      "ea": "0xfffffe000a509254"
+    },
+    {
+      "disasm": "LDP             X20, X19, [SP,#0x50+var_10]",
+      "ea": "0xfffffe000a509258"
+    },
+    {
+      "disasm": "LDP             X22, X21, [SP,#0x50+var_20]",
+      "ea": "0xfffffe000a50925c"
+    },
+    {
+      "disasm": "LDP             X24, X23, [SP,#0x50+var_30]",
+      "ea": "0xfffffe000a509260"
+    },
+    {
+      "disasm": "LDP             X26, X25, [SP,#0x50+var_40]",
+      "ea": "0xfffffe000a509264"
+    },
+    {
+      "disasm": "LDP             X28, X27, [SP+0x50+var_50],#0x60",
+      "ea": "0xfffffe000a509268"
+    },
+    {
+      "disasm": "RETAB",
+      "ea": "0xfffffe000a50926c"
+    },
+    {
+      "disasm": "LDR             X26, [SP,#0x2A0+vap.va_data_size]",
+      "ea": "0xfffffe000a509270"
+    },
+    {
+      "disasm": "MOV             X8, #0xFFFFFFFFF9BFFFFF",
+      "ea": "0xfffffe000a509274"
+    },
+    {
+      "disasm": "MOV             X9, #0xFFFFFFFFF9C0002A",
+      "ea": "0xfffffe000a509278"
+    },
+    {
+      "disasm": "MOV             X9, #0xFFFFFFFFF9C0002A",
+      "ea": "0xfffffe000a50927c"
+    },
+    {
+      "disasm": "ADD             X8, X26, X8",
+      "ea": "0xfffffe000a509280"
+    },
+    {
+      "disasm": "CMP             X8, X9",
+      "ea": "0xfffffe000a509284"
+    },
+    {
+      "disasm": "B.HI            loc_FFFFFE000A5092A4",
+      "ea": "0xfffffe000a509288"
+    },
+    {
+      "disasm": "LDR             X0, [SP,#0x2A0+vpp]; vp",
+      "ea": "0xfffffe000a50928c"
+    },
+    {
+      "disasm": "MOV             W1, #1; flags",
+      "ea": "0xfffffe000a509290"
+    }
+  ],
+  "class_init": [
+    {
+      "disasm": "BTI             c",
+      "ea": "0xfffffe000a5039a4"
+    },
+    {
+      "disasm": "PACIBSP",
+      "ea": "0xfffffe000a5039a8"
+    },
+    {
+      "disasm": "STP             X29, X30, [SP,#-0x10+var_s0]!",
+      "ea": "0xfffffe000a5039ac"
+    },
+    {
+      "disasm": "MOV             X29, SP",
+      "ea": "0xfffffe000a5039b0"
+    },
+    {
+      "disasm": "ADRL            X0, FPMemoryDescriptor::gMetaClass; this",
+      "ea": "0xfffffe000a5039b4"
+    },
+    {
+      "disasm": "ADRL            X0, FPMemoryDescriptor::gMetaClass; this",
+      "ea": "0xfffffe000a5039b8"
+    },
+    {
+      "disasm": "ADRL            X1, aFpmemorydescri; \"FPMemoryDescriptor\"",
+      "ea": "0xfffffe000a5039bc"
+    },
+    {
+      "disasm": "ADRL            X1, aFpmemorydescri; \"FPMemoryDescriptor\"",
+      "ea": "0xfffffe000a5039c0"
+    },
+    {
+      "disasm": "ADRP            X2, #__ZN8OSObject10gMetaClassE_ptr@PAGE",
+      "ea": "0xfffffe000a5039c4"
+    },
+    {
+      "disasm": "LDR             X2, [X2,#__ZN8OSObject10gMetaClassE_ptr@PAGEOFF]; superclass",
+      "ea": "0xfffffe000a5039c8"
+    },
+    {
+      "disasm": "MOV             W3, #0x30 ; '0'; classSize",
+      "ea": "0xfffffe000a5039cc"
+    },
+    {
+      "disasm": "BL              OSMetaClass::OSMetaClass(char const*,OSMetaClass const*,uint)",
+      "ea": "0xfffffe000a5039d0"
+    },
+    {
+      "disasm": "ADRL            X16, `vtable for'FPMemoryDescriptor::MetaClass",
+      "ea": "0xfffffe000a5039d4"
+    },
+    {
+      "disasm": "ADRL            X16, `vtable for'FPMemoryDescriptor::MetaClass",
+      "ea": "0xfffffe000a5039d8"
+    },
+    {
+      "disasm": "ADD             X16, X16, #(off_FFFFFE000846A750 - 0xFFFFFE000846A740)",
+      "ea": "0xfffffe000a5039dc"
+    },
+    {
+      "disasm": "MOV             X17, X0",
+      "ea": "0xfffffe000a5039e0"
+    },
+    {
+      "disasm": "MOVK            X17, #0xCDA1,LSL#48",
+      "ea": "0xfffffe000a5039e4"
+    },
+    {
+      "disasm": "PACDA           X16, X17",
+      "ea": "0xfffffe000a5039e8"
+    },
+    {
+      "disasm": "STR             X16, [X0]",
+      "ea": "0xfffffe000a5039ec"
+    },
+    {
+      "disasm": "LDP             X29, X30, [SP+var_s0],#0x10",
+      "ea": "0xfffffe000a5039f0"
+    },
+    {
+      "disasm": "RETAB",
+      "ea": "0xfffffe000a5039f4"
+    }
+  ],
+  "dispatch": [
+    {
+      "adjustment": 0,
+      "count0": 0,
+      "count1": 4,
+      "entry": "0xfffffe000a503d28",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient5uOxAgEPj_vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b380",
+      "selector": 1
+    },
+    {
+      "adjustment": 0,
+      "count0": 32,
+      "count1": 32,
+      "entry": "0xfffffe000a503d5c",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient15initKextSessionEP24ovHBHGCR5ZAwSmgzDIbVv2OxS1__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b3b0",
+      "selector": 6
+    },
+    {
+      "adjustment": 0,
+      "count0": 608,
+      "count1": 608,
+      "entry": "0xfffffe000a503d90",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient25DSSessionDongleProcessKeyEP20KDDSSessionDongleIO_S1__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b3e0",
+      "selector": 16
+    },
+    {
+      "adjustment": 0,
+      "count0": 3096,
+      "count1": 3096,
+      "entry": "0xfffffe000a503dc4",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient20ProcessEncryptedDataEP13RwYEgOMUTKuzQS1__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b410",
+      "selector": 18
+    },
+    {
+      "adjustment": 0,
+      "count0": 3088,
+      "count1": 3088,
+      "entry": "0xfffffe000a504000",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient20GetReEncryptionVaultEP22KDReEncryptionVaultIO_S1__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b6e0",
+      "selector": 19
+    },
+    {
+      "adjustment": 0,
+      "count0": 32,
+      "count1": 32,
+      "entry": "0xfffffe000a504fa0",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient18ucDecryptOneSampleEPK7lvIKvKEPS0_",
+      "object": 0,
+      "record": "0xfffffe000846b440",
+      "selector": 20
+    },
+    {
+      "adjustment": 0,
+      "count0": 552,
+      "count1": 552,
+      "entry": "0xfffffe000a50500c",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient14ucRunVersionedEPK7kJAimpkPS0_",
+      "object": 0,
+      "record": "0xfffffe000846b470",
+      "selector": 21
+    },
+    {
+      "adjustment": 0,
+      "count0": 0,
+      "count1": 4,
+      "entry": "0xfffffe000a5050c8",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient12ucGetVersionEPj",
+      "object": 0,
+      "record": "0xfffffe000846b4a0",
+      "selector": 22
+    },
+    {
+      "adjustment": 0,
+      "count0": 0,
+      "count1": 4,
+      "entry": "0xfffffe000a505120",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient25ucGetProtocolCapabilitiesEPj",
+      "object": 0,
+      "record": "0xfffffe000846b4d0",
+      "selector": 23
+    },
+    {
+      "adjustment": 0,
+      "count0": 16,
+      "count1": 16,
+      "entry": "0xfffffe000a504034",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient15ucSendFPMessageEPK22FPUserFPMessageParams_PS0_",
+      "object": 0,
+      "record": "0xfffffe000846b710",
+      "selector": 26
+    },
+    {
+      "adjustment": 0,
+      "count0": 1028,
+      "count1": 1028,
+      "entry": "0xfffffe000a503df8",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient14ucGenerateSeedEPK32ProvInfoIOKitUserGenerateSeedIO_PS0__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b500",
+      "selector": 30
+    },
+    {
+      "adjustment": 0,
+      "count0": 4294967295,
+      "count1": 4294967295,
+      "entry": "0xfffffe000a503e60",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient20ucExchangeWithHooverEPKhPhmPm_vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b560",
+      "selector": 31
+    },
+    {
+      "adjustment": 0,
+      "count0": 124,
+      "count1": 16,
+      "entry": "0xfffffe000a503e94",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient25ucGetEncryptedSeedSegmentEP46ProvInfoIOKitUserGetEncryptedSeedSegmentInput_Ph_vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b590",
+      "selector": 32
+    },
+    {
+      "adjustment": 0,
+      "count0": 2052,
+      "count1": 2052,
+      "entry": "0xfffffe000a503e2c",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient21ucGenerateInFieldSeedEPK39ProvInfoIOKitUserGenerateInFieldSeedIO_PS0__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b530",
+      "selector": 33
+    },
+    {
+      "adjustment": 0,
+      "count0": 2008,
+      "count1": 2008,
+      "entry": "0xfffffe000a503ec8",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient15ucEncryptSUInfoEPK36ProvInfoIOKitUserEncryptSUInfoInput_PS0__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b5c0",
+      "selector": 34
+    },
+    {
+      "adjustment": 0,
+      "count0": 140,
+      "count1": 140,
+      "entry": "0xfffffe000a503efc",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient23ucEncryptWithWrappedKeyEPK44ProvInfoIOKitUserEncryptWithWrappedKeyInput_PS0__vfpthunk_",
+      "object": 0,
+      "record": "0xfffffe000846b5f0",
+      "selector": 35
+    },
+    {
+      "adjustment": 0,
+      "count0": 32,
+      "count1": 32,
+      "entry": "0xfffffe000a50a590",
+      "flags": 3,
+      "name": "__ZN40com_apple_driver_FairPlayIOKitUserClient17ucSendFPDIMessageEPK20FPDIUserFPMessageIO_PS0_",
+      "object": 0,
+      "record": "0xfffffe000846b740",
+      "selector": 40
+    }
+  ],
+  "imports": [
+    {
+      "address": "0xfffffe000cccf700",
+      "name": "_host_get_special_port",
+      "xrefs": []
+    },
+    {
+      "address": "0xfffffe000cccf708",
+      "name": "_host_priv_self",
+      "xrefs": []
+    },
+    {
+      "address": "0xfffffe000cccf718",
+      "name": "_ipc_port_release_send",
+      "xrefs": []
+    }
+  ],
+  "identity": {
+    "database_hash": "a90cf8ec0d88",
+    "input": "/Users/___/dev/dylex/extracted/com.apple.driver.FairPlayIOKit",
+    "input_sha256": "2ec5e76ffc0a1873d284cbc50846b63f3576df2e5af98738df81faae33954a2c",
+    "idb": "/Users/___/dev/dylex/extracted/com.apple.driver.FairPlayIOKit.i64",
+    "method": "Read-only IDAPython queries; database not modified."
+  },
+  "record_region": {
+    "start": "0xfffffe000846b380",
+    "end_exclusive": "0xfffffe000846b770",
+    "record_size_bytes": 48,
+    "record_count": 21
+  },
+  "unrouted_records": [
+    {
+      "record": "0xfffffe000846b620",
+      "method": "LQ1N1WLcw",
+      "entry": "0xfffffe000a503f30",
+      "flags": 3,
+      "count0": 48,
+      "count1": 48
+    },
+    {
+      "record": "0xfffffe000846b650",
+      "method": "decryptOneSampleWithCTR",
+      "entry": "0xfffffe000a503f64",
+      "flags": 3,
+      "count0": 64,
+      "count1": 64
+    },
+    {
+      "record": "0xfffffe000846b680",
+      "method": "decryptSliceData",
+      "entry": "0xfffffe000a503f98",
+      "flags": 3,
+      "count0": 64,
+      "count1": 64
+    },
+    {
+      "record": "0xfffffe000846b6b0",
+      "method": "decryptSliceDataWithCTR",
+      "entry": "0xfffffe000a503fcc",
+      "flags": 3,
+      "count0": 72,
+      "count1": 72
+    }
+  ]
+}

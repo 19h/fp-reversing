@@ -1,0 +1,144 @@
+{
+  "build_lookup_native_calls": [
+    {
+      "disasm": "BL              _vfs_context_current",
+      "ea": "0xfffffe000a509164"
+    },
+    {
+      "disasm": "BL              _vnode_open",
+      "ea": "0xfffffe000a5091ac"
+    },
+    {
+      "disasm": "BL              _vnode_getattr",
+      "ea": "0xfffffe000a509214"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a509230"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a509298"
+    },
+    {
+      "disasm": "BL              _vfs_context_ucred",
+      "ea": "0xfffffe000a5092bc"
+    },
+    {
+      "disasm": "BL              _vfs_context_proc",
+      "ea": "0xfffffe000a5092c8"
+    },
+    {
+      "disasm": "BL              _vn_rdwr",
+      "ea": "0xfffffe000a5092f4"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a50932c"
+    },
+    {
+      "disasm": "BL              _vfs_context_ucred",
+      "ea": "0xfffffe000a50933c"
+    },
+    {
+      "disasm": "BL              _vfs_context_proc",
+      "ea": "0xfffffe000a509348"
+    },
+    {
+      "disasm": "BL              _vn_rdwr",
+      "ea": "0xfffffe000a509374"
+    },
+    {
+      "disasm": "BL              _vfs_context_ucred",
+      "ea": "0xfffffe000a5093b0"
+    },
+    {
+      "disasm": "BL              _vfs_context_proc",
+      "ea": "0xfffffe000a5093bc"
+    },
+    {
+      "disasm": "BL              _vn_rdwr",
+      "ea": "0xfffffe000a5093e8"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a50942c"
+    },
+    {
+      "disasm": "BL              _vfs_context_ucred",
+      "ea": "0xfffffe000a50943c"
+    },
+    {
+      "disasm": "BL              _vfs_context_proc",
+      "ea": "0xfffffe000a509448"
+    },
+    {
+      "disasm": "BL              _vn_rdwr",
+      "ea": "0xfffffe000a509474"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a509490"
+    },
+    {
+      "disasm": "BL              _vfs_context_ucred",
+      "ea": "0xfffffe000a5094dc"
+    },
+    {
+      "disasm": "BL              _vfs_context_proc",
+      "ea": "0xfffffe000a5094e8"
+    },
+    {
+      "disasm": "BL              _vn_rdwr",
+      "ea": "0xfffffe000a509514"
+    },
+    {
+      "disasm": "BL              _vfs_context_ucred",
+      "ea": "0xfffffe000a509530"
+    },
+    {
+      "disasm": "BL              _vfs_context_proc",
+      "ea": "0xfffffe000a50953c"
+    },
+    {
+      "disasm": "BL              _vn_rdwr",
+      "ea": "0xfffffe000a509568"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a5095e8"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a50960c"
+    },
+    {
+      "disasm": "BL              ___stack_chk_fail",
+      "ea": "0xfffffe000a509634"
+    },
+    {
+      "disasm": "BL              _vnode_close",
+      "ea": "0xfffffe000a509650"
+    }
+  ],
+  "file_comparison": [
+    {
+      "ea": "0xfffffe000a509114",
+      "equal": true,
+      "file_offset": "0x45944",
+      "size": 1348
+    },
+    {
+      "ea": "0xfffffe000846b380",
+      "equal": true,
+      "file_offset": "0x1e4af8",
+      "size": 1328
+    },
+    {
+      "ea": "0xfffffe000a503cd0",
+      "equal": true,
+      "file_offset": "0x40500",
+      "size": 88
+    }
+  ]
+}
