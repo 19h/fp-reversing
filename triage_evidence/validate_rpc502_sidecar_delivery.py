@@ -130,6 +130,7 @@ def main():
     if exists(BASE/'daemon_mode_one_word_mix_report.md'):reports.add(BASE/'daemon_mode_one_word_mix_report.md')
     if exists(BASE/'daemon_mode_one_state_materialization_report.md'):reports.add(BASE/'daemon_mode_one_state_materialization_report.md')
     if exists(BASE/'daemon_mode_one_source_absorption_report.md'):reports.add(BASE/'daemon_mode_one_source_absorption_report.md')
+    if exists(BASE/'daemon_mode_one_plane_consumer_report.md'):reports.add(BASE/'daemon_mode_one_plane_consumer_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1509,6 +1510,10 @@ def main():
         absorption_quality=json.loads(read(ROOT/'daemon_mode_one_source_absorption_quality_gates.json'))
         manifest['validation']['daemon_mode_one_source_absorption_increment_checks']=absorption_quality['verified_counts']
         manifest['validation']['daemon_mode_one_source_absorption_static_scope']=absorption_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_plane_consumer_quality_gates.json'):
+        plane_quality=json.loads(read(ROOT/'daemon_mode_one_plane_consumer_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_plane_consumer_increment_checks']=plane_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_plane_consumer_static_scope']=plane_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

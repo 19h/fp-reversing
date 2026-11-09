@@ -1,0 +1,86 @@
+{
+  "generator_sha256": "9b71c1e4f7c7982e36780be9713c8f6d18d30cdb6ffba3d3b7b27c70a68d7eb7",
+  "static_scope": "Selected mode1 four-round consumer of both64-byte state planes,local scattered u32 stores,eight-word state handoff and exact biased-view/address reduction. Static only;compact full transform,caller publication and native daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 1486,
+    "source_bytes": 5944,
+    "pointer_records": 3,
+    "branch_slot_modifier_matches": 4,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 1,
+    "prior_ranges_recaptured": 9,
+    "prior_bytes_recaptured": 3332,
+    "loop_byte_load_sites": 32,
+    "loop_store_sites": 56,
+    "distinct_nonbranch_sites_translated": 1483,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 22,
+    "queries_sat": 1,
+    "replayed_queries_unsat": 3,
+    "source_certified_address_cuts": 3,
+    "rounds": 4,
+    "plane_byte_reads": 128,
+    "word_store_operations": 64,
+    "distinct_output_bytes": 256,
+    "carried_state_words": 8,
+    "state_output_dependency_certificates": 24,
+    "scratch_bytes_preserved": 963,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_plane_consumer_report.md": "cbf98303b672d1d15c4eee7dacabe8d707ed7d6e963fb00c80ccbacb36aca925",
+    "obfuscated_routines_report.md": "27dcc3fe6ff1cc1e99eb5c121b24824ce93017b7ce5f1a7c074cd9e911516078",
+    "mach_ports_report.md": "e796ba7f5ae20364c527430ae9810f22e3b55de512f778c1ae4fa1b72f3b88d2",
+    "foundational_triage_report.md": "217c0e701008a683334fb7531ba6e3f8f21101428517ee22c3209c3f4ce4044e",
+    "interface_abi_report.md": "3463a5b05aee8030e62a6e527af85323ac36493c78e1ba7fe5163afc8499d11a",
+    "interface_investigation_status.md": "b622065284677be4e155cf144e948736df34972a80c36cf76b14b0f3ed8c5f9a",
+    "daemon_mode_one_source_absorption_report.md": "7292d89cf071d283ecb570c0c72062e795fd04aff4754fa5e77702fad1755c64"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_plane_consumer_source.json": "598e1c9df275c1b895df347afafb8159b5a12f5e23924b21db0b1a377d1a6446",
+    "daemon_mode_one_plane_consumer_checks.json": "c38049dd42a4b28d96e39e3328c68758202928ddeb5d338cd8b12cc7ede6cd3a",
+    "recover_daemon_mode_one_plane_consumer.py": "df393b6aa711ec4384c7e554f50e51a13bd4dfc0565fe207913be8fb97e990c2",
+    "validate_daemon_mode_one_plane_consumer.py": "4a058a5a855acf85a3e6e6029ba2f697de81971509c77d8278a0acd2d3d82ac8",
+    "seal_daemon_mode_one_plane_consumer.py": "9b71c1e4f7c7982e36780be9713c8f6d18d30cdb6ffba3d3b7b27c70a68d7eb7",
+    "verify_daemon_mode_one_plane_consumer_publication.py": "e651d50a5ae575d1a93de457e44c849234715d1a17ae5f483ccc8d02528db55e"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and PC1-PC8;1483 captured nonbranch sites,22 UNSAT,one abstract SAT domain,three source-certified address cuts,four rounds,128 plane reads,64 distinct word stores,24 state/output dependency records and coherent frame forwarding. Compact transform,caller publication,hardware PAC and native exchange remain unknown."
+  }
+}
