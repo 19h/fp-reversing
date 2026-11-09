@@ -1,0 +1,86 @@
+{
+  "generator_sha256": "3bd5ac6fc37e91b892ea605f805ee4ecde4a64b3475dbb2fbdb6244f592fd255",
+  "static_scope": "All69 word-extension byte-access addresses bounded to the963-byte private scratch domain by source-linked normalization,checked local range transfers,four reciprocal lemmas and two universal divisor identities. Table values,complete recurrence,algorithm identity,caller publication and native exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 2026,
+    "source_bytes": 8104,
+    "pointer_records": 2,
+    "branch_slot_modifier_matches": 3,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 2,
+    "prior_ranges_recaptured": 4,
+    "prior_bytes_recaptured": 5944,
+    "loop_byte_load_sites": 69,
+    "loop_store_sites": 21,
+    "source_nonbranch_sites_covered_by_parent_replay": 2024,
+    "queries_unsat": 268,
+    "queries_sat": 4,
+    "parent_queries_replayed": 13,
+    "canonical_nodes": 4394,
+    "source_SSA_bindings": 1963,
+    "normalization_rewrite_instances": 6143,
+    "range_transfers_checked": 237,
+    "byte_accesses_bounded": 69,
+    "direct_digit_map_sites_classified": 19,
+    "reciprocal_families": 4,
+    "universal_divisor_identities": 2,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_lookup_bounds_report.md": "0391b38dfc2b384302bd90e45b6038a82a7071f7c01efc2ae72be41e3c8d94d8",
+    "obfuscated_routines_report.md": "22e0e7f5e48b522c8939ad043ec91d7f9eaa9f335fc0c40b1904e98aad6662fc",
+    "mach_ports_report.md": "f6426ef9e61065fce64dddf958fbd9ff424d655f99fdfccd874789e1eae220f7",
+    "foundational_triage_report.md": "470fd2c46c2748df20de4783f107fd53785c001e524ba2f208cc5d49933405e3",
+    "interface_abi_report.md": "fb7f7f0095e4c659f33b972ca9ad6b11b2707383ac3ee96644bc34e8c2ac3e34",
+    "interface_investigation_status.md": "3f35116316deb7355f2ffacfcecb56473830756ddd9012362e814f5f2e7e9838",
+    "daemon_mode_one_word_schedule_report.md": "519abe0a5df67ce0a314a6624d92c05e6cdce70862d713c82eeff414eb2eb7ea"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_lookup_bounds_source.json": "81653fb0f89afa41fa2d10dcff3d0fef3db3f99268e2cdb31da6d77664420807",
+    "daemon_mode_one_lookup_bounds_checks.json": "bdd8698ef01af58ed6de79f589116b02d3919f66a5ac3e370b04f7411ea3b063",
+    "recover_daemon_mode_one_lookup_bounds.py": "bcd0f5832c7207bbcaababbada491b276d84eb218e4eca53e8c01a4ce389c704",
+    "validate_daemon_mode_one_lookup_bounds.py": "d69020ef4f3bb9747d93b4183069107a606388614c943dd35392e5e8092894ad",
+    "seal_daemon_mode_one_lookup_bounds.py": "3bd5ac6fc37e91b892ea605f805ee4ecde4a64b3475dbb2fbdb6244f592fd255",
+    "verify_daemon_mode_one_lookup_bounds_publication.py": "fe13bfae17474402dbd58479f38aeec391cb497d208b8508fbf564af4f516f4c",
+    "daemon_word_lookup_algebra.py": "8647c08f4657a6eedd570cd9b0f4c102e781871ca5918c8833efa09a633c6e4d"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and LB1-LB8;2024 parent nonbranch sites freshly replayed,268 UNSAT,four SAT controls/domains,237 checked range transfers,four reciprocal identities,two universal divisor identities and all69 byte-address bounds. Nineteen digit-map positions are resolved;table values,recurrence,publication and native exchange remain unknown."
+  }
+}

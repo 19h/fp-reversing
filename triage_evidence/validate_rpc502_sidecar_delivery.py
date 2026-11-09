@@ -132,6 +132,7 @@ def main():
     if exists(BASE/'daemon_mode_one_source_absorption_report.md'):reports.add(BASE/'daemon_mode_one_source_absorption_report.md')
     if exists(BASE/'daemon_mode_one_plane_consumer_report.md'):reports.add(BASE/'daemon_mode_one_plane_consumer_report.md')
     if exists(BASE/'daemon_mode_one_word_schedule_report.md'):reports.add(BASE/'daemon_mode_one_word_schedule_report.md')
+    if exists(BASE/'daemon_mode_one_lookup_bounds_report.md'):reports.add(BASE/'daemon_mode_one_lookup_bounds_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1519,6 +1520,10 @@ def main():
         schedule_quality=json.loads(read(ROOT/'daemon_mode_one_word_schedule_quality_gates.json'))
         manifest['validation']['daemon_mode_one_word_schedule_increment_checks']=schedule_quality['verified_counts']
         manifest['validation']['daemon_mode_one_word_schedule_static_scope']=schedule_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_lookup_bounds_quality_gates.json'):
+        lookup_quality=json.loads(read(ROOT/'daemon_mode_one_lookup_bounds_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_lookup_bounds_increment_checks']=lookup_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_lookup_bounds_static_scope']=lookup_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
