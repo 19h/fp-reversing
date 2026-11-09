@@ -1,0 +1,88 @@
+{
+  "generator_sha256": "fab0a1ba8b2354b6e9c615aedea738cad8033377510578900db764db40ba5e4b",
+  "static_scope": "Selected mode1 register-to-frame and128-byte scattered-state materialization. Static source and layout/control proofs only;compact whole expansion,caller output,native PAC and daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 1643,
+    "source_bytes": 6572,
+    "new_instructions": 1465,
+    "pointer_records": 3,
+    "branch_slot_modifier_matches": 3,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 2,
+    "new_byte_store_sites": 128,
+    "new_word_store_sites": 32,
+    "prior_ranges_recaptured": 21,
+    "prior_bytes_recaptured": 6108,
+    "distinct_nonbranch_sites_translated": 1640,
+    "new_nonbranch_sites_translated": 1463,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 68,
+    "queries_sat": 1,
+    "replayed_queries_unsat": 39,
+    "source_proved_computed_indices": 3,
+    "new_byte_cells": 128,
+    "byte_dependency_certificates": 128,
+    "new_word_stores": 32,
+    "unique_new_bytes_written": 256,
+    "retired_raw_A_cells": 16,
+    "live_arithmetic_cells_preserved": 800,
+    "identified_live_scratch_cells_after": 928,
+    "rejected_alterations": 4
+  },
+  "report_sha256": {
+    "daemon_mode_one_state_materialization_report.md": "b1da9029232d4ccc5f6ece03d52c0224f688369d40bf183c2e22130936f44eb7",
+    "obfuscated_routines_report.md": "2a22f17d75f0af1da055fa97c64e3b2f9b4aaa5a46809cfa7fdad1d0a334beba",
+    "mach_ports_report.md": "5ad865f0c20f31290d0fa46d81b853360e68e06f59212f1fa04746536f2a23a0",
+    "foundational_triage_report.md": "ce6b7a2546b0b4d6961460f01483987c384452cfca6aa6350e2a3f45c82c49d7",
+    "interface_abi_report.md": "f7ae0c79bbce105c0b39508c987dda7860adfde881ccbd07b6e33b3f0930f8e1",
+    "interface_investigation_status.md": "2e0402585c2978b0af5ab3a2b6b5529f54114ac3193d8ba8c5370ceb7c764776",
+    "daemon_mode_one_word_mix_report.md": "648aeb2f7644250a9ccc5fe043c4f2c8a6a2c782e528f0e4a82ce47eec1e71e0"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_state_materialization_source.json": "67c7b124a2e280469827d5cd6a0a7dc098efba12655c97d18b7515af7e399c83",
+    "daemon_mode_one_state_materialization_checks.json": "fdb63dedb3c00338119d3e0d67a2f4c8bbbecea16ed5effd0afacef451b976c0",
+    "recover_daemon_mode_one_state_materialization.py": "3bc6cfdcf14333db59224224caccac2a5efd0ed7b305f1737a1a270c8ad5582b",
+    "validate_daemon_mode_one_state_materialization.py": "760da47025f27ade2a0c60945bf70f8ed324f5564a83194e3786e6d0895c7212",
+    "seal_daemon_mode_one_state_materialization.py": "fab0a1ba8b2354b6e9c615aedea738cad8033377510578900db764db40ba5e4b",
+    "verify_daemon_mode_one_state_materialization_publication.py": "d449358bcc638e3baf5587ca2116af4845646730eee24394d67ecc3c95282064"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SM1-SM8;1640 captured nonbranch sites,68 UNSAT,one abstract SAT domain,three computed-index identities,20 compact spill equations,128 byte dependency checks and exact frame/table epochs. Whole output,hardware PAC and native exchange remain unknown."
+  }
+}

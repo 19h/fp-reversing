@@ -128,6 +128,7 @@ def main():
     if exists(BASE/'daemon_mode_one_post_table_passes_report.md'):reports.add(BASE/'daemon_mode_one_post_table_passes_report.md')
     if exists(BASE/'daemon_mode_one_bank_combine_report.md'):reports.add(BASE/'daemon_mode_one_bank_combine_report.md')
     if exists(BASE/'daemon_mode_one_word_mix_report.md'):reports.add(BASE/'daemon_mode_one_word_mix_report.md')
+    if exists(BASE/'daemon_mode_one_state_materialization_report.md'):reports.add(BASE/'daemon_mode_one_state_materialization_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1499,6 +1500,10 @@ def main():
         word_quality=json.loads(read(ROOT/'daemon_mode_one_word_mix_quality_gates.json'))
         manifest['validation']['daemon_mode_one_word_mix_increment_checks']=word_quality['verified_counts']
         manifest['validation']['daemon_mode_one_word_mix_static_scope']=word_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_state_materialization_quality_gates.json'):
+        state_quality=json.loads(read(ROOT/'daemon_mode_one_state_materialization_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_state_materialization_increment_checks']=state_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_state_materialization_static_scope']=state_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
