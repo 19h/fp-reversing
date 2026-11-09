@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun result () (_ BitVec 32))
+(define-fun z_after_cmp1 () Bool (= result #x00000001))
+(define-fun z_after_ccmp4 () Bool (ite (not z_after_cmp1) (= result #x00000004) true))
+(define-fun value () (_ BitVec 64) (ite z_after_ccmp4 #x0000000000000000 #x000000000000ffff))
+(assert (not (= (= value #x0000000000000000) (or (= result #x00000001) (= result #x00000004)))))
+(check-sat)

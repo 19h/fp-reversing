@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun status () (_ BitVec 64))
+(define-fun s () (_ BitVec 32) ((_ extract 31 0) status))
+(define-fun encoded () (_ BitVec 32) (bvadd (bvsub (bvadd #x000060cc s) (bvand (bvshl s #x00000001) #x167b8ca2)) #x8b3d6585))
+(assert (not (= encoded (bvxor s #x8b3dc651))))
+(check-sat)

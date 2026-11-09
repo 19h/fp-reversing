@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun basic () (_ BitVec 32))
+(define-fun flags () (_ BitVec 32) (ite (not (= basic #x00000000)) #x00000007 (bvadd #x00000000 #x00000001)))
+(assert (not (= flags (ite (= basic #x00000000) #x00000001 #x00000007))))
+(check-sat)

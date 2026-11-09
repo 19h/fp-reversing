@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun raw () (_ BitVec 64))
+(define-fun loaded () (_ BitVec 32)
+ (concat ((_ extract 31 24) raw) (concat ((_ extract 23 16) raw) (concat ((_ extract 15 8) raw) ((_ extract 7 0) raw)))))
+(assert (not (= (= loaded #x00000001) (= ((_ extract 31 0) raw) #x00000001))))
+(check-sat)
