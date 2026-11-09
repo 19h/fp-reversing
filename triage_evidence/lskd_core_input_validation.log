@@ -1,0 +1,10 @@
+{"fresh_cases_completed": 1}
+{"fresh_cases_completed": 13}
+{"fresh_cases_completed": 25}
+{"fresh_cases_completed": 37}
+{"fresh_cases_completed": 49}
+{"fresh_cases_completed": 61}
+{"fresh_cases_completed": 73}
+{"fresh_cases_completed": 85}
+{"fresh_cases_completed": 97}
+{"all_checks_pass": true, "verified_counts": {"bounded_kext_source_spans": 3, "original_native_function_readbacks": 4, "exhaustive_bank_rules": 4, "bank_byte_input_checks": 1024, "cleanup_view_metadata_bytes_checked": 64, "source_proof_pairs_unsat": 7, "fresh_cases": 98, "source_instruction_visits": 1351240, "source_instruction_byte_checks": 5404960, "source_write_epochs": 126272, "source_read_epochs": 116588, "discarded_stack_probe_reads": 196, "byte_reconstructed_cases": 98, "preceding_complete_prefixes_equal": 43, "cases_without_work_region_value_reads": 98, "cases_without_input_or_output_buffer_access": 98, "source_saved_bank_cells_checked": 588, "register_only_model_returns": 344, "rejection_callee_saved_GP_registers_restored": 814, "rejection_cleanup_models_checked": 148, "original_rejection_returns": 74, "equal_stack_guard_epilogues": 74, "selected_paths_stopped_before_data_allocation": 24}, "source_lift_counts": {"source_guard_encoded_rejection_seed": 2, "source_guard_selector_phase": 1, "source_rejection_callee_saved_status": 1, "source_rejection_status_decode": 3, "source_selected_allocation_length": 1, "source_selected_saved_arguments": 2, "source_aligned_cleanup_arguments": 2, "source_rejection_frame_reclaim": 2, "source_rejection_GP_restore": 6}}

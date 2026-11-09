@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun writers_arg5 () (_ BitVec 64))
+(declare-fun writers_arg4 () (_ BitVec 64))
+(declare-fun writers_arg3 () (_ BitVec 64))
+(declare-fun writers_arg2 () (_ BitVec 64))
+(declare-fun writers_arg1 () (_ BitVec 64))
+(declare-fun writers_arg0 () (_ BitVec 64))
+(assert
+ (let (($x21 (and (distinct writers_arg5 writers_arg5) true)))
+(let (($x20 (and (distinct writers_arg4 writers_arg4) true)))
+(let (($x18 (and (distinct writers_arg2 writers_arg2) true)))
+(let (($x16 (and (distinct writers_arg0 writers_arg0) true)))
+(or $x16 (and (distinct writers_arg1 writers_arg1) true) $x18 (and (distinct writers_arg3 writers_arg3) true) $x20 $x21))))))
+(check-sat)

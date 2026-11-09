@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun payload_length16 () (_ BitVec 16))
+(declare-fun payload_pointer64 () (_ BitVec 64))
+(assert
+ (let (($x66 (= payload_length16 (_ bv8 16))))
+(let (($x20 (not (= payload_pointer64 (_ bv0 64)))))
+(let (($x67 (and $x20 $x66)))
+(let ((?x74 (bvnot ((_ extract 3 3) (bvmul (_ bv824 32) (ite $x67 (_ bv1 32) (_ bv0 32)))))))
+(let ((?x72 (bvmul (_ bv824 32) (ite $x67 (_ bv1 32) (_ bv0 32)))))
+(let ((?x43 ((_ extract 5 4) ?x72)))
+(let ((?x53 (bvnot ((_ extract 6 6) ?x72))))
+(let ((?x71 ((_ extract 7 7) ?x72)))
+(let ((?x64 (bvnot ((_ extract 8 8) ?x72))))
+(let ((?x59 ((_ extract 31 9) ?x72)))
+(let ((?x83 (concat ?x59 ?x64 ?x71 ?x53 ?x43 ?x74 (_ bv0 3))))
+(not (= ?x83 (ite $x67 (_ bv624 32) (_ bv328 32))))))))))))))))
+(check-sat)

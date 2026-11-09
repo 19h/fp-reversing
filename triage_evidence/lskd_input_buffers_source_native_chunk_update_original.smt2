@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun native_random_remaining32 () (_ BitVec 32))
+(declare-fun native_destination64 () (_ BitVec 64))
+(assert
+ (let ((?x124 ((_ zero_extend 32) native_random_remaining32)))
+(let (($x113 (bvult ?x124 (_ bv256 64))))
+(let ((?x100 (ite $x113 ?x124 (_ bv256 64))))
+(let ((?x160 (bvsub ?x124 ?x100)))
+(let ((?x161 (concat (_ bv0 32) native_random_remaining32)))
+(let (($x180 (or (not (= ((_ extract 31 9) native_random_remaining32) (_ bv0 23))) (bvule (_ bv256 9) ((_ extract 8 0) native_random_remaining32)))))
+(let ((?x182 (ite $x180 (_ bv256 64) ?x161)))
+(let (($x162 (and (distinct (bvadd native_destination64 ?x182) (bvadd native_destination64 ?x100)) true)))
+(let (($x167 (or $x162 (and (distinct ?x160 ?x160) true) (and (distinct (= ?x160 (_ bv0 64)) (bvule native_random_remaining32 (_ bv256 32))) true) (not (bvult ?x160 ?x124)))))
+(and (and (distinct native_random_remaining32 (_ bv0 32)) true) $x167)))))))))))
+(check-sat)

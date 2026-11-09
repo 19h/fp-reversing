@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun input_sized_region64 () (_ BitVec 64))
+(assert
+ (let ((?x46 (bvnot ((_ extract 4 1) (bvmul (_ bv54 32) (ite (= input_sized_region64 (_ bv0 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x32 (bvmul (_ bv54 32) (ite (= input_sized_region64 (_ bv0 64)) (_ bv1 32) (_ bv0 32)))))
+(let ((?x35 ((_ extract 5 5) ?x32)))
+(let ((?x44 (bvnot ((_ extract 7 6) ?x32))))
+(let ((?x37 ((_ extract 10 8) ?x32)))
+(let ((?x41 ((_ extract 11 11) ?x32)))
+(let ((?x42 (bvnot ?x41)))
+(let ((?x39 ((_ extract 31 12) ?x32)))
+(let ((?x56 (concat ?x39 ?x42 ?x37 ?x44 ?x35 ?x46 (_ bv0 1))))
+(and (and (distinct input_sized_region64 (_ bv0 64)) true) (and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x56)) (_ bv2270 32)) true))))))))))))
+(check-sat)

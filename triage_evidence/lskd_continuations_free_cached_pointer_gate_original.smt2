@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun cached_RW_pointer64 () (_ BitVec 64))
+(assert
+ (let (($x126 (= cached_RW_pointer64 (_ bv0 64))))
+(let ((?x184 (ite $x126 (_ bv1327 32) (_ bv1429 32))))
+(let ((?x276 (bvnot (bvmul (_ bv10 4) (ite $x126 (_ bv0 4) (_ bv1 4))))))
+(let ((?x248 (bvmul (_ bv186 32) (ite $x126 (_ bv0 32) (_ bv1 32)))))
+(let ((?x249 ((_ extract 4 4) ?x248)))
+(let ((?x262 (bvnot ((_ extract 5 5) ?x248))))
+(let ((?x251 ((_ extract 7 6) ?x248)))
+(let ((?x260 (bvnot ((_ extract 8 8) ?x248))))
+(let ((?x253 ((_ extract 9 9) ?x248)))
+(let ((?x258 (bvnot ((_ extract 10 10) ?x248))))
+(let ((?x255 ((_ extract 31 11) ?x248)))
+(let ((?x277 (concat ?x255 ?x258 ?x253 ?x260 ?x251 ?x262 ?x249 ?x276)))
+(and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x277)) ?x184) true))))))))))))))
+(check-sat)

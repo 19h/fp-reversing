@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun request_pointer64 () (_ BitVec 64))
+(declare-fun auxiliary_begin64 () (_ BitVec 64))
+(declare-fun workspace_end64 () (_ BitVec 64))
+(declare-fun workspace_begin64 () (_ BitVec 64))
+(assert
+ (let (($x156 (and (distinct request_pointer64 request_pointer64) true)))
+(let ((?x115 (bvadd auxiliary_begin64 (_ bv4096 64))))
+(let (($x161 (and (distinct ?x115 ?x115) true)))
+(let (($x147 (and (distinct workspace_end64 workspace_end64) true)))
+(let (($x177 (and (distinct (bvadd (_ bv192 64) auxiliary_begin64) (bvadd auxiliary_begin64 (_ bv192 64))) true)))
+(let (($x175 (and (distinct (bvadd (_ bv320 64) workspace_begin64) (bvadd workspace_begin64 (_ bv320 64))) true)))
+(let (($x148 (and (distinct workspace_begin64 workspace_begin64) true)))
+(or (and (distinct ((_ extract 31 0) ((_ zero_extend 32) (_ bv958 32))) (_ bv958 32)) true) $x148 $x175 $x177 $x147 $x161 $x156)))))))))
+(check-sat)

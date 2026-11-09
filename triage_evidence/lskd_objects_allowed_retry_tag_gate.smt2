@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun objects_retry_tag32 () (_ BitVec 32))
+(assert
+ (let (($x159 (= objects_retry_tag32 (_ bv0 32))))
+(let ((?x136 (ite $x159 (_ bv629 32) (_ bv720 32))))
+(let ((?x180 (ite $x159 (_ bv1 1) (_ bv0 1))))
+(let ((?x174 (bvmul (_ bv165 32) (concat (_ bv0 31) (ite $x159 (_ bv0 1) (_ bv1 1))))))
+(let ((?x107 ((_ extract 1 1) ?x174)))
+(let ((?x206 (bvnot ((_ extract 2 2) ?x174))))
+(let ((?x192 ((_ extract 3 3) ?x174)))
+(let ((?x93 (bvnot ((_ extract 6 4) ?x174))))
+(let ((?x205 ((_ extract 8 7) ?x174)))
+(let ((?x143 (bvnot ((_ extract 9 9) ?x174))))
+(let ((?x203 ((_ extract 31 10) ?x174)))
+(let ((?x118 (concat ?x203 ?x143 ?x205 ?x93 ?x192 ?x206 ?x107 ?x180)))
+(not (= ?x118 ?x136)))))))))))))))
+(check-sat)

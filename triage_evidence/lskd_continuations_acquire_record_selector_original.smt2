@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun continuation_record64 () (_ BitVec 64))
+(declare-fun continuation_encoded_selector32 () (_ BitVec 32))
+(assert
+ (let ((?x20 (bvsub continuation_encoded_selector32 ((_ extract 31 0) (bvmul (bvxor continuation_record64 (_ bv493214416 64)) (_ bv3915734861 64))))))
+(let ((?x49 ((_ extract 0 0) continuation_record64)))
+(let ((?x48 ((_ extract 2 2) continuation_record64)))
+(let ((?x43 ((_ extract 22 21) continuation_record64)))
+(let ((?x42 ((_ extract 24 24) continuation_record64)))
+(let ((?x41 ((_ extract 29 28) continuation_record64)))
+(let ((?x51 (concat (_ bv1 1) ?x41 (_ bv7 3) ?x42 (_ bv1 1) ?x43 (_ bv1 1) ((_ extract 19 17) continuation_record64) (_ bv1 1) ((_ extract 15 13) continuation_record64) (_ bv3 2) ((_ extract 10 9) continuation_record64) (_ bv1 1) ((_ extract 7 5) continuation_record64) (_ bv3 2) ?x48 (_ bv1 1) ?x49 (_ bv0 1))))
+(let ((?x37 (bvadd (_ bv2976835302 32) (bvmul (_ bv4294967295 32) ((_ extract 31 0) continuation_record64)) ?x51)))
+(let ((?x89 (concat ((_ extract 31 31) ?x37) (bvnot ((_ extract 30 30) ?x37)) ((_ extract 29 29) ?x37) (bvnot ((_ extract 28 28) ?x37)) ((_ extract 27 26) ?x37) (bvnot ((_ extract 25 20) ?x37)) ((_ extract 19 19) ?x37) (bvnot ((_ extract 18 18) ?x37)) ((_ extract 17 16) ?x37) (bvnot ((_ extract 15 14) ?x37)) ((_ extract 13 10) ?x37) (bvnot ((_ extract 9 6) ?x37)) ((_ extract 5 4) ?x37) (bvnot ((_ extract 3 3) ?x37)) ((_ extract 2 2) ?x37) (bvnot ((_ extract 1 1) ?x37)) ?x49)))
+(let ((?x27 (bvmul (_ bv379232435 32) ?x89)))
+(let ((?x50 (bvadd continuation_encoded_selector32 ?x27)))
+(and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x50)) ?x20) true)))))))))))))
+(check-sat)

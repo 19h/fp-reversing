@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun readback_byte3 () (_ BitVec 8))
+(declare-fun readback_byte2 () (_ BitVec 8))
+(declare-fun readback_byte1 () (_ BitVec 8))
+(declare-fun readback_byte0 () (_ BitVec 8))
+(assert
+ (let ((?x68 (concat (concat (concat readback_byte0 readback_byte1) readback_byte2) readback_byte3)))
+(let ((?x111 (concat (bvnot ((_ extract 7 6) readback_byte0)) ((_ extract 5 5) readback_byte0) (bvnot ((_ extract 4 3) readback_byte0)) ((_ extract 2 1) readback_byte0) (bvnot ((_ extract 0 0) readback_byte0)) ((_ extract 7 7) readback_byte1) (bvnot ((_ extract 6 0) readback_byte1)) (bvnot readback_byte2) (bvnot ((_ extract 7 7) readback_byte3)) ((_ extract 6 6) readback_byte3) (bvnot ((_ extract 5 1) readback_byte3)) ((_ extract 0 0) readback_byte3))))
+(let ((?x108 ((_ extract 5 1) readback_byte3)))
+(let ((?x103 ((_ extract 7 7) readback_byte3)))
+(let ((?x101 ((_ extract 6 0) readback_byte1)))
+(let ((?x95 ((_ extract 0 0) readback_byte0)))
+(let ((?x91 ((_ extract 4 3) readback_byte0)))
+(let ((?x137 (concat ((_ extract 6 6) readback_byte0) (_ bv0 1) ?x91 (_ bv0 2) ?x95 (_ bv0 1) ?x101 readback_byte2 ?x103 (_ bv0 1) ?x108 (_ bv0 2))))
+(and (distinct ((_ extract 31 0) ((_ zero_extend 32) (bvadd (_ bv645922882 32) ?x137 ?x111))) ?x68) true))))))))))
+(check-sat)

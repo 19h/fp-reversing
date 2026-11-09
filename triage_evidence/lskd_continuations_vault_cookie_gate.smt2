@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun continuation_encoded_value64 () (_ BitVec 64))
+(assert
+ (let (($x325 (= continuation_encoded_value64 (_ bv16572239843071017348 64))))
+(let ((?x324 (ite $x325 (_ bv1900 32) (_ bv1837 32))))
+(let ((?x358 (ite $x325 (_ bv0 1) (_ bv1 1))))
+(let ((?x328 (bvmul (_ bv65 32) (ite $x325 (_ bv1 32) (_ bv0 32)))))
+(let ((?x330 ((_ extract 1 1) ?x328)))
+(let ((?x346 (bvnot ((_ extract 3 2) ?x328))))
+(let ((?x335 ((_ extract 4 4) ?x328)))
+(let ((?x344 (bvnot ((_ extract 5 5) ?x328))))
+(let ((?x337 ((_ extract 7 6) ?x328)))
+(let ((?x342 (bvnot ((_ extract 10 8) ?x328))))
+(let ((?x339 ((_ extract 31 11) ?x328)))
+(let ((?x359 (concat ?x339 ?x342 ?x337 ?x344 ?x335 ?x346 ?x330 ?x358)))
+(not (= ?x359 ?x324)))))))))))))))
+(check-sat)

@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun readback_record_address64 () (_ BitVec 64))
+(assert
+ (let ((?x42 ((_ extract 8 7) readback_record_address64)))
+(let ((?x41 ((_ extract 12 12) readback_record_address64)))
+(let ((?x40 ((_ extract 14 14) readback_record_address64)))
+(let ((?x39 ((_ extract 17 16) readback_record_address64)))
+(let ((?x38 ((_ extract 22 22) readback_record_address64)))
+(let ((?x45 (concat ((_ extract 30 28) readback_record_address64) (_ bv31 5) ?x38 (_ bv15 4) ?x39 (_ bv1 1) ?x40 (_ bv1 1) ?x41 (_ bv7 3) ?x42 (_ bv1 1) ((_ extract 5 4) readback_record_address64) (_ bv30 5))))
+(let ((?x17 (bvadd (_ bv1883460017 32) (bvmul (_ bv4294967295 32) ((_ extract 31 0) readback_record_address64)) ?x45)))
+(let ((?x84 ((_ extract 2 0) readback_record_address64)))
+(let ((?x86 (bvmul (_ bv7 3) ?x84)))
+(let (($x381 (and (= ?x86 (bvadd (_ bv1 3) (bvnot ?x84))) (= (bvnot ((_ extract 3 3) ?x17)) ((_ extract 3 3) readback_record_address64)) (= ((_ extract 4 4) ?x17) ((_ extract 4 4) readback_record_address64)) (= (bvnot ((_ extract 5 5) ?x17)) (bvnot ((_ extract 5 5) readback_record_address64))) (= ((_ extract 6 6) ?x17) (bvnot ((_ extract 6 6) readback_record_address64))) (= (bvnot ((_ extract 8 7) ?x17)) (bvnot ?x42)) (= (bvnot ((_ extract 11 9) ?x17)) ((_ extract 11 9) readback_record_address64)) (= ((_ extract 12 12) ?x17) ?x41) (= (bvnot ((_ extract 13 13) ?x17)) ((_ extract 13 13) readback_record_address64)) (= ((_ extract 14 14) ?x17) ?x40) (= (bvnot ((_ extract 15 15) ?x17)) ((_ extract 15 15) readback_record_address64)) (= (bvnot ((_ extract 17 16) ?x17)) (bvnot ?x39)) (= ((_ extract 18 18) ?x17) (bvnot ((_ extract 18 18) readback_record_address64))) (= (bvnot ((_ extract 21 19) ?x17)) ((_ extract 21 19) readback_record_address64)) (= ((_ extract 22 22) ?x17) ?x38) (= (bvnot ((_ extract 24 23) ?x17)) ((_ extract 24 23) readback_record_address64)) (= ((_ extract 27 25) ?x17) (bvnot ((_ extract 27 25) readback_record_address64))) (= ((_ extract 28 28) ?x17) ((_ extract 28 28) readback_record_address64)) (= (bvnot ((_ extract 29 29) ?x17)) (bvnot ((_ extract 29 29) readback_record_address64))) (= ((_ extract 30 30) ?x17) ((_ extract 30 30) readback_record_address64)) (= ((_ extract 31 31) ?x17) (bvnot ((_ extract 31 31) readback_record_address64))))))
+(not $x381))))))))))))
+(check-sat)

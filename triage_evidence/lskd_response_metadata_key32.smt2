@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun metadata_record64 () (_ BitVec 64))
+(assert
+ (let ((?x216 ((_ extract 11 11) metadata_record64)))
+(let ((?x214 ((_ extract 13 13) metadata_record64)))
+(let ((?x263 (concat ((_ extract 30 30) metadata_record64) (_ bv0 2) ((_ extract 27 25) metadata_record64) (_ bv0 2) ((_ extract 22 21) metadata_record64) (_ bv0 1) ((_ extract 19 18) metadata_record64) (_ bv0 4) ?x214 (_ bv0 1) ?x216 (_ bv0 1) ((_ extract 9 8) metadata_record64) (_ bv0 6) ((_ extract 1 1) metadata_record64) (_ bv0 2))))
+(let ((?x237 ((_ extract 31 0) metadata_record64)))
+(let ((?x272 (bvadd (_ bv3463195394 32) ?x237 (bvmul (_ bv4294967295 32) ?x263))))
+(let ((?x278 (bvnot ((_ extract 31 31) ?x272))))
+(let ((?x205 (concat (_ bv0 1) ((_ extract 29 29) metadata_record64) (_ bv0 1) ((_ extract 27 27) metadata_record64) (_ bv0 1) ((_ extract 25 22) metadata_record64) (_ bv0 1) ((_ extract 20 15) metadata_record64) (_ bv0 1) ?x214 (_ bv0 1) ?x216 (_ bv0 2) ((_ extract 8 8) metadata_record64) (_ bv0 1) ((_ extract 6 4) metadata_record64) (_ bv0 1) ((_ extract 2 1) metadata_record64) (_ bv0 2))))
+(let ((?x215 (bvmul (_ bv4294967295 32) ?x237)))
+(let ((?x194 (bvadd (_ bv1411405449 32) ?x215 ?x205)))
+(let ((?x244 ((_ extract 0 0) metadata_record64)))
+(let (($x245 (= ?x244 (bvadd (_ bv1 1) (bvnot ?x244)))))
+(let (($x558 (and $x245 (= (bvnot ((_ extract 1 1) ?x194)) ((_ extract 1 1) ?x272)) (= (bvnot ((_ extract 2 2) ?x194)) (bvnot ((_ extract 2 2) ?x272))) (= ((_ extract 3 3) ?x194) (bvnot ((_ extract 3 3) ?x272))) (= (bvnot ((_ extract 5 4) ?x194)) (bvnot ((_ extract 5 4) ?x272))) (= ((_ extract 6 6) ?x194) ((_ extract 6 6) ?x272)) (= (bvnot ((_ extract 7 7) ?x194)) ((_ extract 7 7) ?x272)) (= ((_ extract 8 8) ?x194) (bvnot ((_ extract 8 8) ?x272))) (= ((_ extract 9 9) ?x194) ((_ extract 9 9) ?x272)) (= ((_ extract 10 10) ?x194) (bvnot ((_ extract 10 10) ?x272))) (= (bvnot ((_ extract 11 11) ?x194)) ((_ extract 11 11) ?x272)) (= ((_ extract 14 12) ?x194) (bvnot ((_ extract 14 12) ?x272))) (= ((_ extract 15 15) ?x194) ((_ extract 15 15) ?x272)) (= (bvnot ((_ extract 17 16) ?x194)) (bvnot ((_ extract 17 16) ?x272))) (= ((_ extract 19 18) ?x194) (bvnot ((_ extract 19 18) ?x272))) (= ((_ extract 21 20) ?x194) ((_ extract 21 20) ?x272)) (= (bvnot ((_ extract 22 22) ?x194)) ((_ extract 22 22) ?x272)) (= (bvnot ((_ extract 24 23) ?x194)) (bvnot ((_ extract 24 23) ?x272))) (= ((_ extract 25 25) ?x194) (bvnot ((_ extract 25 25) ?x272))) (= (bvnot ((_ extract 26 26) ?x194)) (bvnot ((_ extract 26 26) ?x272))) (= (bvnot ((_ extract 28 27) ?x194)) ((_ extract 28 27) ?x272)) (= (bvnot ((_ extract 29 29) ?x194)) (bvnot ((_ extract 29 29) ?x272))) (= ((_ extract 30 30) ?x194) ((_ extract 30 30) ?x272)) (= ((_ extract 31 31) ?x194) ?x278))))
+(not $x558))))))))))))))
+(check-sat)

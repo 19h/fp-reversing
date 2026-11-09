@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun response_reference64 () (_ BitVec 64))
+(declare-fun auxiliary64 () (_ BitVec 64))
+(declare-fun workspace64 () (_ BitVec 64))
+(assert
+ (let (($x129 (and (distinct response_reference64 response_reference64) true)))
+(let (($x152 (and (distinct (bvadd (_ bv4096 64) auxiliary64) (bvadd auxiliary64 (_ bv4096 64))) true)))
+(let (($x125 (and (distinct auxiliary64 auxiliary64) true)))
+(let ((?x13 (bvadd workspace64 (_ bv16384 64))))
+(let (($x115 (and (distinct ?x13 ?x13) true)))
+(let ((?x11 (bvadd workspace64 (_ bv64 64))))
+(let (($x53 (and (distinct ?x11 ?x11) true)))
+(or (and (distinct ((_ extract 31 0) ((_ zero_extend 32) (_ bv1379 32))) (_ bv1379 32)) true) $x53 (and (distinct (bvadd (_ bv128 64) workspace64) (bvadd workspace64 (_ bv128 64))) true) $x115 $x125 $x152 $x129)))))))))
+(check-sat)

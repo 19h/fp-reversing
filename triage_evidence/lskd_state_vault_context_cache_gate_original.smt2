@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun state_context_cache64 () (_ BitVec 64))
+(assert
+ (let (($x31 (= state_context_cache64 (_ bv0 64))))
+(let ((?x25 (ite $x31 (_ bv1008 32) (_ bv998 32))))
+(let ((?x47 (bvnot ((_ extract 2 1) (bvmul (_ bv22 32) (ite $x31 (_ bv1 32) (_ bv0 32)))))))
+(let ((?x34 (ite $x31 (_ bv1 32) (_ bv0 32))))
+(let ((?x36 (bvmul (_ bv22 32) ?x34)))
+(let ((?x40 ((_ extract 4 3) ?x36)))
+(let ((?x45 (bvnot ((_ extract 9 5) ?x36))))
+(let ((?x42 ((_ extract 31 10) ?x36)))
+(let ((?x57 (concat ?x42 ?x45 ?x40 ?x47 (_ bv0 1))))
+(and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x57)) ?x25) true)))))))))))
+(check-sat)

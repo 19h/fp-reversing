@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun core_entry_x27 () (_ BitVec 64))
+(declare-fun core_entry_x28 () (_ BitVec 64))
+(declare-fun core_entry_x25 () (_ BitVec 64))
+(declare-fun core_entry_x26 () (_ BitVec 64))
+(declare-fun core_entry_x23 () (_ BitVec 64))
+(declare-fun core_entry_x24 () (_ BitVec 64))
+(declare-fun core_entry_x21 () (_ BitVec 64))
+(declare-fun core_entry_x22 () (_ BitVec 64))
+(declare-fun core_entry_x19 () (_ BitVec 64))
+(declare-fun core_entry_x20 () (_ BitVec 64))
+(declare-fun core_entry_x30 () (_ BitVec 64))
+(declare-fun core_entry_x29 () (_ BitVec 64))
+(assert
+ (or (and (distinct core_entry_x29 core_entry_x29) true) (and (distinct core_entry_x30 core_entry_x30) true) (and (distinct core_entry_x20 core_entry_x20) true) (and (distinct core_entry_x19 core_entry_x19) true) (and (distinct core_entry_x22 core_entry_x22) true) (and (distinct core_entry_x21 core_entry_x21) true) (and (distinct core_entry_x24 core_entry_x24) true) (and (distinct core_entry_x23 core_entry_x23) true) (and (distinct core_entry_x26 core_entry_x26) true) (and (distinct core_entry_x25 core_entry_x25) true) (and (distinct core_entry_x28 core_entry_x28) true) (and (distinct core_entry_x27 core_entry_x27) true)))
+(check-sat)

@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun objects_slot_word64 () (_ BitVec 64))
+(assert
+ (let (($x61 (= objects_slot_word64 (_ bv0 64))))
+(let ((?x134 (ite $x61 (_ bv1301 32) (_ bv1282 32))))
+(let ((?x265 (ite $x61 (_ bv1 1) (_ bv0 1))))
+(let ((?x258 (bvnot ((_ extract 1 1) (bvmul (_ bv23 32) (ite $x61 (_ bv1 32) (_ bv0 32)))))))
+(let ((?x108 (ite $x61 (_ bv1 32) (_ bv0 32))))
+(let ((?x234 (bvmul (_ bv23 32) ?x108)))
+(let ((?x247 ((_ extract 7 2) ?x234)))
+(let ((?x256 (bvnot ((_ extract 8 8) ?x234))))
+(let ((?x249 ((_ extract 9 9) ?x234)))
+(let ((?x254 (bvnot ((_ extract 10 10) ?x234))))
+(let ((?x251 ((_ extract 31 11) ?x234)))
+(let ((?x266 (concat ?x251 ?x254 ?x249 ?x256 ?x247 ?x258 ?x265)))
+(or (and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x266)) ?x134) true) (and (distinct ((_ extract 31 0) ((_ zero_extend 32) (_ bv1282 32))) (_ bv1282 32)) true) (and (distinct ((_ extract 31 0) ((_ zero_extend 32) (_ bv2220 32))) (_ bv2220 32)) true)))))))))))))))
+(check-sat)
