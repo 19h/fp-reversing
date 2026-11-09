@@ -1208,3 +1208,11 @@ The [typed-payload and append report](daemon_reader_record_payloads_report.md) e
 ## N19 lookup and retirement versus endpoint evidence
 
 The [lookup/replacement report](daemon_reader_record_replacement_report.md) establishes local identifier search,matched-node replacement,conditional release calls and the ordinary replacement cursor back edge. Its node pointers,scratch outputs and raw local statuses establish no new Mach name,right,emission site,peer identity or successful daemon-kext exchange. The earlier endpoint and failed-UserClient-open evidence boundaries remain in force.
+
+
+## Reconstructed-container result and transport boundary
+
+The [u64/container report](daemon_reader_u64_codec_report.md) identifies the local result as the allocated16 B head/tail container pointer,with decoded record values preserved through caller-specific codecs. This is distinct from a flattened byte-buffer result and establishes no new Mach name,right,emission site,peer identity or successful daemon-kext delivery. Later serialization and build-matched transport lineage remain separate interfaces.
+
+
+[N19 outer object and lifecycle](daemon_reader_outer_lifecycle_report.md): the selected producer requests128 B and saves OBJ at K1ae8; N19 receives OBJ+8 and its exact composed admission is F==0. A selected context prefix copies eight fields, including an inverted flag lowbit. Exact raw success publishes OBJ through OUT at K1d60; failure forwards a local pointer-cell address to shared cleanup. The local cursor reserves/restores32 B. Thirteen ranges/313 instructions,22 fixups/20 slot matches,512 bank cases,299 translated sites,19 UNSAT queries,one SAT interpretation counterexample and six controls pass. Complete initialization/cleanup, upstream F, native owners/PAC/external delivery and daemon-kext pairing remain unproved.

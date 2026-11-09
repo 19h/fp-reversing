@@ -113,6 +113,8 @@ def main():
     if exists(BASE/'daemon_reader_record_headers_report.md'):reports.add(BASE/'daemon_reader_record_headers_report.md')
     if exists(BASE/'daemon_reader_record_payloads_report.md'):reports.add(BASE/'daemon_reader_record_payloads_report.md')
     if exists(BASE/'daemon_reader_record_replacement_report.md'):reports.add(BASE/'daemon_reader_record_replacement_report.md')
+    if exists(BASE/'daemon_reader_u64_codec_report.md'):reports.add(BASE/'daemon_reader_u64_codec_report.md')
+    if exists(BASE/'daemon_reader_outer_lifecycle_report.md'):reports.add(BASE/'daemon_reader_outer_lifecycle_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1419,6 +1421,14 @@ def main():
         reader_record_replacement_quality=json.loads(read(ROOT/'daemon_reader_record_replacement_quality_gates.json'))
         manifest['validation']['daemon_reader_record_replacement_increment_checks']=reader_record_replacement_quality['verified_counts']
         manifest['validation']['daemon_reader_record_replacement_static_scope']=reader_record_replacement_quality['static_scope']
+    if exists(ROOT/'daemon_reader_u64_codec_quality_gates.json'):
+        reader_u64_codec_quality=json.loads(read(ROOT/'daemon_reader_u64_codec_quality_gates.json'))
+        manifest['validation']['daemon_reader_u64_codec_increment_checks']=reader_u64_codec_quality['verified_counts']
+        manifest['validation']['daemon_reader_u64_codec_static_scope']=reader_u64_codec_quality['static_scope']
+    if exists(ROOT/'daemon_reader_outer_lifecycle_quality_gates.json'):
+        outer_lifecycle_quality=json.loads(read(ROOT/'daemon_reader_outer_lifecycle_quality_gates.json'))
+        manifest['validation']['daemon_reader_outer_lifecycle_increment_checks']=outer_lifecycle_quality['verified_counts']
+        manifest['validation']['daemon_reader_outer_lifecycle_static_scope']=outer_lifecycle_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

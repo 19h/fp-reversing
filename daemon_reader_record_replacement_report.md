@@ -195,3 +195,8 @@ QG5: Pass for bounded claims. Logical artifacts, eager-read validity, raw status
 QG6: Pass. Fresh original source/fixups/banks, full non-control instruction coverage, literal-key joins,39 new and32 replayed UNSAT queries support the claims. The SAT mutation is abstract; memory supplies guidance rather than a semantic premise.
 
 QG7: Pass for the finite high/medium/low continuation list. The full cross-layer goal remains active and is not marked complete.
+
+
+## Subsequent u64 and container-role closure
+
+The [complete u64/container report](daemon_reader_u64_codec_report.md) resolves the earlier u64 reader-transform gap and composes it with N19's writer. It also identifies the lookup/insertion CTX role as the16 B allocation saved at6368 and forwarded through8760,while the comparison-context role is separately saved at5e50. The earlier complete-global-CTX-type uncertainty must not be used to conflate those source roles. Ordered reconstruction from the zeroed new container and the established append/replacement contracts is stated conditionally;native freshness,owner/synchronization/callee effects,exceptional cleanup and cross-layer delivery remain unproved.
