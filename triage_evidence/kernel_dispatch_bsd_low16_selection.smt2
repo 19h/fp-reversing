@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun code () (_ BitVec 64))
+(define-fun low () (_ BitVec 64) (bvand code #x000000000000ffff))
+(define-fun idx () (_ BitVec 64) (ite (bvult low #x000000000000022e) low #x000000000000003f))
+(define-fun offset () (_ BitVec 64) (bvshl (bvadd idx (bvshl idx #x0000000000000001)) #x0000000000000003))
+(assert (not (and (bvult idx #x000000000000022e) (= offset (bvmul idx #x0000000000000018)))) )
+(check-sat)

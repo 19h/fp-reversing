@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun name () (_ BitVec 32))
+(define-fun idx () (_ BitVec 64) ((_ zero_extend 32) (bvlshr name #x00000008)))
+(define-fun off () (_ BitVec 64) (bvshl (bvadd idx (bvshl idx #x0000000000000001)) #x0000000000000003))
+(assert (not (and (= off (bvmul idx #x0000000000000018))
+ (bvule (bvadd off #x0000000000000018) #x0000000018000000))))
+(check-sat)

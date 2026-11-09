@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rs_descriptor_count32 () (_ BitVec 32))
+(declare-fun rs_message_size32 () (_ BitVec 32))
+(declare-fun rs_reply_pointer64 () (_ BitVec 64))
+(declare-fun rs_header_pointer64 () (_ BitVec 64))
+(assert
+ (let ((?x82 (concat ((_ extract 27 0) rs_descriptor_count32) (_ bv0 4))))
+(let ((?x169 (bvadd (_ bv36 32) ?x82)))
+(let (($x185 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x169)) (bvadd (bvmul rs_descriptor_count32 (_ bv16 32)) (_ bv36 32))) true)))
+(let ((?x174 (bvadd rs_reply_pointer64 ((_ zero_extend 32) (bvsub rs_message_size32 (_ bv32 32))))))
+(let ((?x183 (bvadd (_ bv4294967264 32) rs_message_size32)))
+(let ((?x179 (concat (_ bv0 32) ?x183)))
+(let (($x78 (and (distinct (bvadd rs_header_pointer64 (concat (_ bv0 32) rs_message_size32)) (bvadd rs_header_pointer64 ((_ zero_extend 32) rs_message_size32))) true)))
+(or $x78 (and (distinct (bvadd rs_reply_pointer64 ?x179) ?x174) true) $x185)))))))))
+(check-sat)

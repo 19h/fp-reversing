@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun qs_aux_size32 () (_ BitVec 32))
+(declare-fun qs_trailer_size32 () (_ BitVec 32))
+(declare-fun qs_user_message_size32 () (_ BitVec 32))
+(declare-fun qs_receiver_limit32 () (_ BitVec 32))
+(assert
+ (let ((?x476 ((_ extract 15 0) qs_aux_size32)))
+(let ((?x459 ((_ zero_extend 16) ?x476)))
+(let ((?x533 (bvadd qs_user_message_size32 qs_trailer_size32)))
+(let ((?x522 (concat (_ bv0 32) (bvadd qs_trailer_size32 qs_user_message_size32 (concat (_ bv0 16) ?x476)))))
+(let ((?x491 ((_ extract 31 0) ((_ zero_extend 32) qs_receiver_limit32))))
+(let (($x535 (and (distinct (bvuge ?x491 ((_ extract 31 0) ?x522)) (bvuge qs_receiver_limit32 (bvadd ?x533 ?x459))) true)))
+(let ((?x488 ((_ extract 31 0) (concat (_ bv0 32) (bvadd qs_trailer_size32 qs_user_message_size32)))))
+(let (($x531 (and (distinct (not (bvuge ?x491 ((_ extract 31 0) ((_ zero_extend 32) ?x488)))) (bvult qs_receiver_limit32 ?x533)) true)))
+(or $x531 $x535))))))))))
+(check-sat)

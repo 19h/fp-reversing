@@ -1,0 +1,13 @@
+(set-logic QF_BV)
+(declare-fun s () (_ BitVec 32))
+(declare-fun c () (_ BitVec 32))
+(assert (bvule s #xffffffbb))
+(assert (bvuge c s))
+(define-fun n () (_ BitVec 64) ((_ zero_extend 32) s))
+(define-fun cap () (_ BitVec 64) ((_ zero_extend 32) c))
+(define-fun out () (_ BitVec 64)
+ (ite (bvult cap (bvadd n #x0000000000000008)) n
+  (ite (bvuge c (bvadd s #x00000044))
+   ((_ zero_extend 32) (bvadd s #x00000044)) (bvadd n #x0000000000000008))))
+(assert (or (bvult out n) (bvugt out cap)))
+(check-sat)

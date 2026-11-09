@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun old () (_ BitVec 32))
+(define-fun actual_ok () Bool (bvugt (bvadd old #xf0000001) #xf0000001))
+(assert (not (= actual_ok (and (bvugt old #x00000000) (bvult old #x0fffffff)))))
+(check-sat)

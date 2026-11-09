@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun p () (_ BitVec 64))
+(assert (not (= (bvuge (bvadd p #x0000000000000001) #x0000000000000002)
+ (and (not (= p #x0000000000000000)) (not (= p #xffffffffffffffff))))))
+(check-sat)

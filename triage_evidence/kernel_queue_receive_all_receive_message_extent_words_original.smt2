@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun qr_aux_extent16 () (_ BitVec 16))
+(declare-fun qr_trailer_extent32 () (_ BitVec 32))
+(declare-fun qr_message_extent32 () (_ BitVec 32))
+(declare-fun qr_receiver_limit32 () (_ BitVec 32))
+(assert
+ (let ((?x48 ((_ zero_extend 16) qr_aux_extent16)))
+(let ((?x73 (bvadd qr_message_extent32 qr_trailer_extent32)))
+(let ((?x87 (concat (_ bv0 16) qr_aux_extent16)))
+(let ((?x84 ((_ extract 31 0) (concat (_ bv0 32) (bvadd qr_message_extent32 qr_trailer_extent32 ?x87)))))
+(let ((?x69 ((_ extract 31 0) ((_ zero_extend 32) qr_receiver_limit32))))
+(let (($x96 (and (distinct (bvuge ?x69 ?x84) (bvuge qr_receiver_limit32 (bvadd ?x73 ?x48))) true)))
+(let (($x102 (and (distinct (not (bvuge ?x69 ((_ extract 31 0) ((_ zero_extend 32) ((_ extract 31 0) (concat (_ bv0 32) ?x73)))))) (bvult qr_receiver_limit32 ?x73)) true)))
+(or $x102 $x96)))))))))
+(check-sat)

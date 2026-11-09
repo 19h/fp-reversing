@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun flags () (_ BitVec 32))
+(define-fun native () (_ BitVec 32) (bvor (bvand flags #xffff8fff) #x00001000))
+(assert (not (and (= (bvand native #x00007000) #x00001000)
+ (= (bvand native #xffff8fff) (bvand flags #xffff8fff)))))
+(check-sat)

@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun bits () (_ BitVec 32))
+(declare-fun right () (_ BitVec 32))
+(assert (bvule right #x00000004))
+(define-fun native () Bool (not (= (bvand (bvlshr bits right) #x00010000) #x00000000)))
+(define-fun expected () Bool (not (= (bvand bits (bvshl #x00010000 right)) #x00000000)))
+(assert (not (= native expected)))
+(check-sat)

@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun name () (_ BitVec 32))
+(declare-fun bits () (_ BitVec 32))
+(define-fun actual () Bool (= (bvor (bvand bits #xfc000000) #x03000000) (bvshl name #x00000018)))
+(define-fun low () (_ BitVec 32) (bvand name #x000000ff))
+(define-fun gen () (_ BitVec 32) (bvor (bvlshr (bvand bits #xfc000000) #x00000018) #x00000003))
+(assert (not (= actual (= low gen))))
+(check-sat)

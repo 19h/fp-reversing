@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rd_split_prefix32 () (_ BitVec 32))
+(declare-fun rd_total_copy32 () (_ BitVec 32))
+(declare-fun rd_user_address64 () (_ BitVec 64))
+(declare-fun rd_split_body64 () (_ BitVec 64))
+(declare-fun rd_kernel_source64 () (_ BitVec 64))
+(assert
+ (let ((?x917 (bvadd rd_total_copy32 (bvmul (_ bv4294967295 32) rd_split_prefix32))))
+(let ((?x919 (concat (_ bv0 32) ?x917)))
+(let (($x673 (and (distinct ?x919 ((_ zero_extend 32) (bvsub rd_total_copy32 rd_split_prefix32))) true)))
+(let (($x877 (and (distinct (bvadd rd_user_address64 (concat (_ bv0 32) rd_split_prefix32)) (bvadd rd_user_address64 ((_ zero_extend 32) rd_split_prefix32))) true)))
+(let ((?x873 ((_ zero_extend 32) rd_split_prefix32)))
+(let ((?x911 (concat (_ bv0 32) rd_split_prefix32)))
+(let (($x872 (and (distinct rd_user_address64 rd_user_address64) true)))
+(let (($x871 (and (distinct rd_kernel_source64 rd_kernel_source64) true)))
+(or $x871 $x872 (and (distinct ?x911 ?x873) true) (and (distinct rd_split_body64 rd_split_body64) true) $x877 $x673))))))))))
+(check-sat)

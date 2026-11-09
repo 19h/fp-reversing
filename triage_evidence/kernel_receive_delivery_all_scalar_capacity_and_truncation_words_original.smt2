@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rd_capacity32 () (_ BitVec 32))
+(declare-fun rd_user_inline32 () (_ BitVec 32))
+(declare-fun rd_requested_trailer32 () (_ BitVec 32))
+(assert
+ (let ((?x39 ((_ extract 31 0) (concat (_ bv0 32) (bvadd rd_capacity32 (bvmul (_ bv4294967295 32) rd_user_inline32))))))
+(let (($x895 (and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x39)) (bvsub rd_capacity32 rd_user_inline32)) true)))
+(let ((?x738 (bvadd rd_user_inline32 rd_requested_trailer32)))
+(let (($x902 (bvule ?x738 rd_capacity32)))
+(let ((?x672 ((_ extract 31 0) ((_ zero_extend 32) rd_capacity32))))
+(let ((?x747 ((_ extract 31 0) ((_ zero_extend 32) ?x738))))
+(let (($x901 (and (distinct (or (not (bvuge ?x747 ?x672)) (= (bvsub ?x747 ?x672) (_ bv0 32))) $x902) true)))
+(let ((?x868 (concat (_ bv0 32) rd_capacity32)))
+(let ((?x867 ((_ extract 31 0) ?x868)))
+(let (($x899 (and (distinct (not (bvuge ?x867 ((_ extract 31 0) ((_ zero_extend 32) rd_user_inline32)))) (bvult rd_capacity32 rd_user_inline32)) true)))
+(or $x899 $x901 $x895 (and (distinct ?x867 rd_capacity32) true)))))))))))))
+(check-sat)
