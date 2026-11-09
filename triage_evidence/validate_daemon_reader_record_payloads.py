@@ -7,6 +7,8 @@ from validate_daemon_existing_scalar_reader import DECL,bv,z,neq,prefix,split
 from validate_daemon_typed_scalar import WordCuts,parts,initial,KEYS
 SOLVER='/opt/homebrew/bin/z3';PH='(concat ((_ extract 63 32) Z30) #x00006cf4)';QBASE=0x1376253dadee7b93;PRE64=0x80915f9a168f26e3;WIRE64=0xfa039b7ca50c772e
 EXTRA=''.join(f'(declare-fun {n} () (_ BitVec {w}))\n'for n,w in [('T',16),('NODE',64),('REC',64),('SPAN',64),('RAW64',64),('VAL32',32),('CTX',64),('HRAW',32),('STATUS',32),('COUNT',64),('B',64),('U4',64),('U5',64),('U6',64),('U7',64),('SBYTE',8),('TAIL',64),('TAIL2',64),('OLD',64),('PREV',64),('NEXT',64),('END',64),('CUR',64)])
+from verify_daemon_reader_record_payloads_publication import sha,read,exists,size
+
 class Engine(SSA):
  def run(self,f,end):
   for i in f['instructions']:
@@ -83,7 +85,7 @@ def certificates(s):
  # Exact selected type tree, independent of pointer/native validity.
  accepted='(ite (bvslt T #xd0ee) (and (= T #xc31c) (= PL #x00000008)) (ite (bvslt T #x1742) (and (= T #xd0ee) (= PL #x00000004)) (= T #x1742)))';expect='(or (and (= T #xc31c) (= PL #x00000008)) (and (= T #xd0ee) (= PL #x00000004)) (= T #x1742))';add('complete_selected_payload_type_extent_partition',[],[neq(accepted,expect)])
  # Actual loop constants are produced by the shared setup and span setup.
- old=json.loads((ROOT/'daemon_typed_scalar_source.json').read_text());keyvals={q['register']:int(q['value_u64'],16)for q in old['constant_groups']}
+ old=json.loads(read(ROOT/'daemon_typed_scalar_source.json'));keyvals={q['register']:int(q['value_u64'],16)for q in old['constant_groups']}
  vals={**keyvals,0:0x37fd,5:(1<<64)-2,24:0x222c5d3364e5d59f,25:0xd01363b70a8233c0,26:0x9dd3a2cc9b1a2a60,27:0x2fec9c48f57dcc3f,28:0x88522387e22d1fb6,30:0x9930ca1cc503b34d,1:0x32313c4bb0aaf774,3:0x66e761da27aa8445,4:0x194d99c05485ecf1}
  # X20 is scratch at loop entry; the round5 constant is defined inside the loop.
  vals.pop(20)
@@ -112,7 +114,7 @@ def certificates(s):
  add('span_mask_delta_and_decoded_byte_preservation',[],[neq('(bvxor SBYTE B0 B1 #x78 #x78 B1)','(bvxor SBYTE B0)')],note='At the same source and destination addresses,the source seventh-round uniform7878 delta cancels literal78. The result is source_byte XOR m(source_address) XOR m(destination_address). Re-decoding at the destination preserves the clear byte.')
  solve('raw_copy_without_readdressing_is_not_equivalent','(assert (distinct (bvxor SBYTE B0 B1) SBYTE))','sat','Abstract byte-mask counterexample only;no target input,fault fixture or request is constructed.')
  # Replay the generic eight-byte helper lemmas against the byte-identical prior source.
- prior=json.loads((ROOT/'daemon_typed_scalar_checks.json').read_text());selected=[q for q in prior['proofs']if re.fullmatch(r'byte[0-7]_(seed|round[1-7]|selection)',q['name'])];assert len(selected)==72
+ prior=json.loads(read(ROOT/'daemon_typed_scalar_checks.json'));selected=[q for q in prior['proofs']if re.fullmatch(r'byte[0-7]_(seed|round[1-7]|selection)',q['name'])];assert len(selected)==72
  for q0 in selected:
   v=subprocess.run([SOLVER,'-in'],input=q0['query'],text=True,capture_output=True,timeout=20);assert v.returncode==0 and not v.stderr and v.stdout.strip()=='unsat';pp.append({**q0,'name':'reused_'+q0['name'],'reused_codec_lemma':True,'prior_checks_sha256':sha(ROOT/'daemon_typed_scalar_checks.json')})
  ii,seeds,eors,sels,stores=parts(old);rr=initial(old,old['fragments']['u64_writer']['start']);rr.update({14:frame(0x5440),1:frame(0xa628),16:bv(PRE64),0:bv(0x1351)})
@@ -131,9 +133,9 @@ def alterations(s):
  return out
 
 def main():
- s=json.loads((ROOT/(P+'_source.json')).read_text());assert verify(s);pp,tr,ctx=certificates(s);aa=alterations(s)
+ s=json.loads(read(ROOT/(P+'_source.json')));assert verify(s);pp,tr,ctx=certificates(s);aa=alterations(s)
  expected={i['ea']for f in s['fragments'].values()for i in f['instructions']if i['mnemonic']!='braa'};sites={pc for g in tr.values()for pc in g['source_sites']};assert expected<=sites,(len(expected),len(sites),expected-sites)
  counts={**s['verified_source_counts'],'new_queries_unsat':sum(q['result']=='unsat'and not q.get('reused_codec_lemma')for q in pp),'reused_codec_queries_unsat':sum(q.get('reused_codec_lemma',False)for q in pp),'counterexamples_sat':sum(q['result']=='sat'for q in pp),'distinct_translated_instruction_sites':len(sites),'translated_instruction_instances':sum(len(g['source_sites'])for g in tr.values()),'SSA_definitions':sum(g['SSA_definitions']for g in tr.values()),'rejected_alterations':len(aa)}
- c={'generator_sha256':sha(__file__),'static_scope':SCOPE,'dependencies':{P+'_source.json':sha(ROOT/(P+'_source.json')),'validate_daemon_reader_record_headers.py':sha(ROOT/'validate_daemon_reader_record_headers.py')},'proofs':pp,'translations':tr,'alterations':aa,'verified_counts':counts,'solver':{'path':SOLVER,'sha256':sha(SOLVER)},'complete_insertion_proved':False,'selected_append_back_edge_proved':True,'complete_parser_proved':False,'source_recapture_match':True,'all_checks_pass':True,**{k:False for k in FLAGS}}
+ c={'generator_sha256':sha(__file__),'static_scope':SCOPE,'dependencies':{P+'_source.json':sha(ROOT/(P+'_source.json')),'validate_daemon_reader_record_headers.py':sha(ROOT/'validate_daemon_reader_record_headers.py'),'verify_daemon_reader_record_payloads_publication.py':sha(ROOT/'verify_daemon_reader_record_payloads_publication.py')},'proofs':pp,'translations':tr,'alterations':aa,'verified_counts':counts,'solver':{'path':SOLVER,'sha256':sha(SOLVER)},'complete_insertion_proved':False,'selected_append_back_edge_proved':True,'complete_parser_proved':False,'source_recapture_match':True,'all_checks_pass':True,**{k:False for k in FLAGS}}
  (ROOT/(P+'_checks.json')).write_text(json.dumps(c,indent=2)+'\n');print(json.dumps(counts),flush=True)
 if __name__=='__main__':main()

@@ -25,6 +25,8 @@ Original thin daemon: `/Users/___/Downloads/zut/fairplayd.arm64e`, SHA-256 `4ffe
 | Solver certificate | 51 new UNSAT queries, 72 replayed u64 seed/round/selection UNSAT queries; one abstract SAT mask counterexample |
 | Integrity controls | Six changed-source/ledger controls rejected by fresh-source comparison; these are evidence checks, not native behavioral tests |
 
+During final publication, an external workspace migration replaced historical JSON files with `.json.zst` archives. This increment's tools read either storage form without restoring or overwriting the migrated files. Manifest sizes and SHA-256 values identify decoded logical content; the independent audit reports compressed resolution separately. Historical Markdown JSON paths are checked through that logical resolver and are not all physically present as literal paths. Python 3.15 supplies the standard-library Zstandard reader used here.
+
 No captured new range writes SP. Named loads remain explicit frame/owner/cache premises; complete alias analysis or native initialization does not follow from instruction coverage.
 
 ## Selected type and scalar interfaces
