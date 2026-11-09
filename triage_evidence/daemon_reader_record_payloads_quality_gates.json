@@ -1,0 +1,78 @@
+{
+  "scope": "Conditional N19 full u16 payload type/extent partition, scalar writer interfaces, span count and address-dependent recoding, post-payload lookup handoff, conditional append and cursor back edge. Full replacement/cleanup, native owners/PAC/endpoints and daemon-kext pairing remain unproved.",
+  "generator_sha256": "ab15b19fc807a7ce76309d1682e56ffcf69b675d5fd232e8e3c3142a1685febb",
+  "verified_counts": {
+    "source_fragments": 31,
+    "branch_terminated_ranges": 27,
+    "explicit_source_cuts": 4,
+    "source_instruction_instances": 820,
+    "source_bytes": 3280,
+    "pointer_records": 36,
+    "branch_slot_modifier_matches": 41,
+    "prior_source_ranges_recaptured": 6,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 51,
+    "reused_codec_queries_unsat": 72,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 1520,
+    "translated_instruction_instances": 1709,
+    "SSA_definitions": 1648,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Conditional N19 full u16 payload type/extent partition, scalar writer interfaces, span count and address-dependent recoding, post-payload lookup handoff, conditional append and cursor back edge. Full replacement/cleanup, native owners/PAC/endpoints and daemon-kext pairing remain unproved.",
+  "report_sha256": {
+    "daemon_reader_record_payloads_report.md": "2b5f04e668b81992766f1376d205e8ab1e91a8484ef675536dbf111bad62a53f",
+    "obfuscated_routines_report.md": "87b46a401006b9e22a7421df19bf4ec425a6d30c5c23b9ba8921295f139a334d",
+    "mach_ports_report.md": "2dfb638eed8bd786f2f5275cf5c9ba4202c1fe88af0f8011d11cf8d074e89192",
+    "foundational_triage_report.md": "86c69b4c16cd70314c334901cf692592cf2d1216ff496f40fc43fd6bf32ed33c",
+    "interface_abi_report.md": "720f0f74906f65ef2be0270a63de18397d42c2b520a973a0ccfcb0c2e730cc62",
+    "interface_investigation_status.md": "1c5cd4f249e4dc15fda353b9df83de59eabb24cfaaa71c8b6f83f05442361a9c",
+    "daemon_reader_record_headers_report.md": "6b69bead872b112d403af0eee2d0188ec063cef9bdc30a0ed0a493becd347cee"
+  },
+  "evidence_sha256": {
+    "daemon_reader_record_payloads_source.json": "6f8139be6fa48c727d23fa9e865bb1d60748cbb82806e85081c86d964be31e22",
+    "daemon_reader_record_payloads_checks.json": "1a26b51cdd06fd425b75d90e895ccb8747eaae41832c7609630b35991dd65a43",
+    "recover_daemon_reader_record_payloads.py": "1a93e8c3d55b042e0173c24f883948b1115a55bfc8598a4bd8fb9252aa271f10",
+    "validate_daemon_reader_record_payloads.py": "bb397e7d79338779fac8b5baf2754e84278aa40dcea205d5a1c53a4060732c00",
+    "seal_daemon_reader_record_payloads.py": "ab15b19fc807a7ce76309d1682e56ffcf69b675d5fd232e8e3c3142a1685febb",
+    "verify_daemon_reader_record_payloads_publication.py": "04818dc5b30d0adfffacaa149fec47a9faa6d9ff53adf03440fe220e6f4634a3"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RP1-RP10;exact typed payload partition,scalar writer caller joins,additive span count,canonical source/destination mask proofs,lookup status handoff,ordered append stores and actual append cursor back edge. Thirty-one source ranges/cuts and820 instructions;36 fixups/41 slot matches,1520 translated PCs,1709 instances,1648 SSA definitions. Fifty-one new and72 replayed UNSAT queries,one abstract SAT mask counterexample,six changed-ledger controls. Full lookup/replacement/cleanup,u64 reader transform,native owners/PAC/endpoints and daemon-kext pairing remain unproved."
+  }
+}

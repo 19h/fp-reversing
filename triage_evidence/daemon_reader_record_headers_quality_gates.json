@@ -1,0 +1,78 @@
+{
+  "scope": "Conditional N19 cursor/header admission,read-key/cache provenance,32 B node and extent+10 buffer allocation contracts,and shared header-writer joins. No payload completion/list insertion/back-edge/native cleanup/owner/PAC/daemon-kext pairing proof.",
+  "generator_sha256": "8dc2d46ba19280aeb3c17686ec9d15523ec5e375b0fbebb5eca44c88989a98d5",
+  "verified_counts": {
+    "source_fragments": 15,
+    "source_instruction_instances": 1110,
+    "source_bytes": 4440,
+    "allocation_call_boundaries": 2,
+    "bank_inputs_checked": 512,
+    "pointer_records": 24,
+    "branch_slot_modifier_matches": 21,
+    "prior_source_ranges_recaptured": 4,
+    "source_SP_writes": 0,
+    "new_queries_unsat": 22,
+    "reused_codec_queries_unsat": 66,
+    "counterexamples_sat": 1,
+    "distinct_translated_instruction_sites": 1093,
+    "translated_instruction_instances": 1126,
+    "SSA_definitions": 1037,
+    "rejected_alterations": 6
+  },
+  "static_scope": "Conditional N19 cursor/header admission,read-key/cache provenance,32 B node and extent+10 buffer allocation contracts,and shared header-writer joins. No payload completion/list insertion/back-edge/native cleanup/owner/PAC/daemon-kext pairing proof.",
+  "report_sha256": {
+    "daemon_reader_record_headers_report.md": "ab2ebcd2423ce6418df4303a57464673036cba71810f8cfa1e1440982bd573c7",
+    "obfuscated_routines_report.md": "e93dd95c2e3285522310c9e62d2f249cc54421a5266fbd7a27c842b9102261c8",
+    "mach_ports_report.md": "57a41e6eca842e2fe26c64c2deb66c284efcd3df103dabe5c530be885dc5a8aa",
+    "foundational_triage_report.md": "127c9fbaa3c9872dd80271577cba39a62cb6e27330163bc797129b5b6c92abbc",
+    "interface_abi_report.md": "e8ef0f5988c85a18c0ffac7b395aee7091b8a0a825b6fcbecb9ecd0c112e3eac",
+    "interface_investigation_status.md": "a0814fb304d75a4fa385638ae2af94fde7afcf1e9443cb31d3db0c96a3680a9b",
+    "daemon_reader_container_origins_report.md": "1e765f3c14328516def03e30b60ee6ab1f485a3adad37875b0101db3ed4d86b6"
+  },
+  "evidence_sha256": {
+    "daemon_reader_record_headers_source.json": "219b35e3e985e72ca5079a96fd09ca377baf88fd8b0d5f15149f27c3fbfcd637",
+    "daemon_reader_record_headers_checks.json": "e273a59130a74335da0df000a681159007fd46ce9f5b14148111b2e11b9656d5",
+    "recover_daemon_reader_record_headers.py": "5a14d4f0b8c1b9c5fd0ba0978a4962aae4f07c4c170d699688e24edf05d028ca",
+    "validate_daemon_reader_record_headers.py": "c2ffaa61c74bffffd1ff47aba515f5acf38f381085a458996ab4fa149e8d38bb",
+    "seal_daemon_reader_record_headers.py": "8dc2d46ba19280aeb3c17686ec9d15523ec5e375b0fbebb5eca44c88989a98d5",
+    "verify_daemon_reader_record_headers_publication.py": "8c14e7aca9f18d249ecee0755ba5c32000ba362e4297ebb19849efd7b1e59b90"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RH1-RH8;N19 cursor/extent producers,nonnull buffer/10 B admission,bounded read-key and no-wrap/progress geometry,32 B node and P+10 buffer allocation contracts,and shared header-field writer joins. Fifteen ranges/1110 instructions;24 original fixups/21 slot matches,512 bank cases,1093 distinct translated PCs,1126 instances and1037 SSA definitions. Twenty-two new UNSAT and66 replayed generic codec queries,one SAT domain counterexample and six changed-ledger controls. Payload completion,insertion/back edge,cleanup,native frame/owner/PAC/endpoints and daemon-kext pairing remain unproved."
+  }
+}

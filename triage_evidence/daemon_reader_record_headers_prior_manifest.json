@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-05T18:21:17.240705+00:00",
+  "created_utc": "2026-11-06T06:06:25.847835+00:00",
   "goal_status": "active",
   "inputs_preserved": [
     {
@@ -20,9 +20,9 @@
   ],
   "scope_note": "Owned reports/scripts and direct evidence; external dump.md preserved/excluded. Current case sets are scoped by their contract files; earlier exploratory snapshots are historical.",
   "validation": {
-    "reports": 269,
-    "local_markdown_links": 5017,
-    "direct_json_files": 2002,
+    "reports": 304,
+    "local_markdown_links": 5694,
+    "direct_json_files": 2180,
     "sidecar_increment_checks": {
       "native_ranges": 14,
       "proofs_unsat": 4,
@@ -9298,7 +9298,825 @@
       "compaction_model_cases": 2555,
       "prefix_model_cases": 10
     },
-    "kernel_args_environment_static_scope": "KernelArgs observed loads and sentinel scans; nested ProcessConfig/header production; selected conditional DYLD_ pruning and pointer compaction; normal-arm64e bounded semantic models. x1 ADDPT semantics, effective native inputs, AMFI decisions and later mutation remain unknown."
+    "kernel_args_environment_static_scope": "KernelArgs observed loads and sentinel scans; nested ProcessConfig/header production; selected conditional DYLD_ pruning and pointer compaction; normal-arm64e bounded semantic models. x1 ADDPT semantics, effective native inputs, AMFI decisions and later mutation remain unknown.",
+    "rpc700_endpoint_inventory_increment_checks": {
+      "cache_images": 4113,
+      "declared_GOT_words": 1815207,
+      "slide_maps": 14,
+      "slide_chain_entries": 30802349,
+      "API_chain_matches": 5,
+      "host_getter_chain_matches": 1,
+      "host_setter_chain_matches": 0,
+      "raw_flag8_executable_maps": 36,
+      "stub_candidate_start_sites": 2477972,
+      "getter_stubs": 1,
+      "branch_words_scanned": 65480381,
+      "branch_matches": 3,
+      "complete_functions": 7,
+      "instructions": 513,
+      "function_bytes": 2052,
+      "domain_queries": 2,
+      "selected_Apple_job_queries": 880,
+      "successful_job_queries": 880,
+      "endpoints": 2038,
+      "host_associations": 18,
+      "instruction_assertions": 14,
+      "SDK_assertions": 11,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 1,
+      "rejected_evidence_alterations": 8
+    },
+    "rpc700_endpoint_inventory_static_scope": "Whole selected cache image/GOT metadata and v5 slide-chain inventory; selected shared-stub shape/raw flag8 executable mappings; all representable direct B/BL source ranges to three fixed targets and complete matched callers. Indirect/dynamic/other-image references and hardware PAC remain outside this scope.",
+    "rpc700_endpoint_inventory_native_observation_scope": "Frozen 2 domain listings and 880 listed com.apple. job queries in system and gui/501, at recorded times; 2038 endpoint records and 18 printed host associations. Non-atomic, time-bound metadata; no kernel-slot occupancy, receiver identity or FairPlay request proof.",
+    "daemon_xpc_listener_increment_checks": {
+      "complete_functions": 4,
+      "fragments": 11,
+      "instructions": 1623,
+      "function_and_fragment_bytes": 6492,
+      "bank_cases": 29,
+      "bank_inputs_checked": 7424,
+      "resolved_calls": 15,
+      "branch_bindings": 9,
+      "biased_bank_origins": 10,
+      "block_descriptors": 2,
+      "imports": 13,
+      "selected_pointer_records": 42,
+      "compiler_starts_compared": 1005,
+      "fixup_catalog_memberships_compared": 61737,
+      "IDA_ranges_matched": 6,
+      "IDA_bytes_matched": 2820,
+      "instruction_assertions": 60,
+      "SDK_assertions": 21,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 3,
+      "classifier_model_cases": 8,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_listener_static_scope": "Conditional original main listener creation/install; complete compiler spans for peer/event callbacks, message stack adapter and fill helper; selected error/dictionary/cancel/forward continuations; protected entry record/selector and audit acquisition prefix. Native startup/peer/authorization, full application control/alias flow and payload/reply semantics remain unknown.",
+    "daemon_xpc_payload_increment_checks": {
+      "fragments": 21,
+      "instructions": 884,
+      "fragment_bytes": 3536,
+      "bank_cases": 8,
+      "bank_inputs_checked": 2048,
+      "resolved_calls": 4,
+      "branch_bindings": 31,
+      "imports": 5,
+      "selected_pointer_records": 34,
+      "fixup_catalog_memberships_compared": 61737,
+      "instruction_assertions": 68,
+      "SDK_assertions": 8,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 6,
+      "copy_model_cases": 133,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_payload_static_scope": "Original XPC dictionary type/data gate, full-size allocation, low32 reverse copy, XOR length storage, separate 16 B allocation and first 10 B record/BE32 extent gate. Native peer, authorization, payload meaning, later iteration/dispatch/reply/cleanup and daemon-kext processing remain unknown.",
+    "daemon_xpc_records_increment_checks": {
+      "fragments": 25,
+      "instructions": 777,
+      "fragment_bytes": 3108,
+      "bank_cases": 2,
+      "bank_inputs_checked": 512,
+      "resolved_calls": 2,
+      "branch_bindings": 33,
+      "imports": 1,
+      "selected_pointer_records": 30,
+      "fixup_catalog_memberships_compared": 61737,
+      "instruction_assertions": 61,
+      "SDK_assertions": 15,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 8,
+      "discriminator_model_cases": 65536,
+      "variable_tag_model_cases": 4,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_records_static_scope": "Initial fitted record: header fields, all 16-bit discriminator patterns, three value branches, local argument layout, selected constructor allocations and result/saved-continuation frontiers. Later serialization, container insertion/iteration, dispatch/reply/cleanup and native daemon-kext behavior remain unknown.",
+    "daemon_xpc_iteration_increment_checks": {
+      "fragments": 33,
+      "instructions": 1441,
+      "fragment_bytes": 5764,
+      "bank_cases": 0,
+      "bank_inputs_checked": 0,
+      "resolved_calls": 0,
+      "branch_bindings": 43,
+      "imports": 0,
+      "selected_pointer_records": 40,
+      "fixup_catalog_memberships_compared": 61737,
+      "instruction_assertions": 59,
+      "SDK_assertions": 9,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 5,
+      "loop_model_cases": 12870,
+      "lookup_model_cases": 511,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_iteration_static_scope": "Conditional record-loop advance and outer result/status selection; fixed encoded lookup query, Q/node traversal, four address-dependent candidate bytes, 32-bit comparison, output and return continuations. Full mask/packing-to-wire correspondence, later value extraction/dispatch, lifecycle, native authorization and daemon-kext interaction remain unknown.",
+    "daemon_xpc_core_bridge_increment_checks": {
+      "fragments": 14,
+      "instructions": 968,
+      "fragment_bytes": 3872,
+      "bank_cases": 7,
+      "bank_inputs_checked": 1792,
+      "resolved_calls": 6,
+      "branch_bindings": 9,
+      "imports": 1,
+      "complete_compiler_functions": 1,
+      "prior_source_ranges_checked": 49,
+      "prior_source_bytes_checked": 19016,
+      "compiler_starts_compared": 1005,
+      "selected_pointer_records": 14,
+      "fixup_catalog_memberships_compared": 61737,
+      "instruction_assertions": 50,
+      "SDK_assertions": 17,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 10,
+      "consumer_boundary_cases": 11,
+      "audit_copy_paths": 2,
+      "audit_copy_entries": 43,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_core_bridge_static_scope": "Conditional local consumer partition, two audit-copy paths, 72 B XPC fallback record, aligned protected tag/operation constructor, adapter/core targets and special synchronization/allocation requests. Retained A70 policy paths keep prior framework/setup assumptions. Full getter/wire-value correspondence, native authorization, replies and daemon-kext exchange remain unknown.",
+    "daemon_xpc_reply_lifecycle_increment_checks": {
+      "fragments": 21,
+      "instructions": 543,
+      "fragment_bytes": 2172,
+      "bank_cases": 12,
+      "bank_inputs_checked": 3072,
+      "resolved_calls": 10,
+      "branch_bindings": 29,
+      "imports": 8,
+      "conditional_guard_transfers": 1,
+      "selected_pointer_records": 34,
+      "fixup_catalog_memberships_compared": 61737,
+      "instruction_assertions": 57,
+      "SDK_assertions": 11,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 4,
+      "reply_model_cases": 16,
+      "cleanup_chain_model_cases": 511,
+      "status_model_cases": 5,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_reply_lifecycle_static_scope": "Conditional post-A70 reply creation, data/status setters, saved-peer send and reply release; returned/input-buffer frees, finite-chain node/Q destruction, owner clearing and guarded frame epilogue. Native transport names/delivery, actual output schema/ownership, libxpc copy/retention implementation, authorization and complete daemon-kext exchange remain unknown.",
+    "xpc_reply_transport_increment_checks": {
+      "complete_functions": 24,
+      "instructions": 2454,
+      "function_bytes": 9816,
+      "stub_bindings": 14,
+      "data_pointer_bindings": 4,
+      "daemon_fragments_recaptured": 21,
+      "daemon_bytes_recaptured": 2172,
+      "daemon_call_bindings_rechecked": 10,
+      "SDK_headers": 4,
+      "instruction_assertions": 104,
+      "SDK_assertions": 18,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 3,
+      "port_model_cases": 5120,
+      "copy_boundary_cases": 8,
+      "context_model_cases": 4,
+      "rejected_evidence_alterations": 8
+    },
+    "xpc_reply_transport_static_scope": "Conditional cache reply-context transfer/consumption, full-width data-copy call paths and retained dictionary value, Mach header remote/local/disposition/ID, dispatch queue versus direct-send routes and original Mach2 vector/SVC handoff. Native daemon/cache pairing, actual port names/rights/ownership, scheduling, delivery, authorization and successful daemon-kext exchange remain unknown.",
+    "xpc_receive_context_increment_checks": {
+      "complete_functions": 22,
+      "instructions": 2431,
+      "function_bytes": 9724,
+      "stub_bindings": 12,
+      "prior_cache_ranges_recaptured": 24,
+      "prior_cache_bytes_recaptured": 9816,
+      "daemon_ranges_recaptured": 15,
+      "daemon_bytes_recaptured": 6492,
+      "daemon_call_bindings_rechecked": 15,
+      "text_words_scanned": 72021,
+      "direct_unpack_callers": 3,
+      "SDK_headers": 4,
+      "instruction_assertions": 105,
+      "SDK_assertions": 14,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 4,
+      "header_cases": 2560,
+      "context_cases": 16,
+      "policy_cases": 64,
+      "rounding_cases": 12,
+      "getter_cases": 4,
+      "rejected_evidence_alterations": 8
+    },
+    "xpc_receive_context_static_scope": "Conditional ordinary Mach event/unpack/received-context construction, header predicate and ownership transfer, trailer-to-dictionary/connection audit copies, raw getters and kind2 PID/PIDversion plus configured requirement gates; event block delivery and source cleanup. Full field deserialization, actual kernel trailer provenance, native callback/policy/namespace/right/lifetime/delivery and daemon-kext success remain unknown.",
+    "xpc_resource_lifecycle_increment_checks": {
+      "complete_functions": 24,
+      "instructions": 1026,
+      "function_bytes": 4104,
+      "stub_bindings": 20,
+      "dispose_type_bindings": 4,
+      "class_range_bound_pointers": 2,
+      "prior_cache_ranges_recaptured": 46,
+      "prior_cache_bytes_recaptured": 19540,
+      "daemon_fragments_recaptured": 21,
+      "daemon_bytes_recaptured": 2172,
+      "daemon_call_bindings_rechecked": 10,
+      "selector_stubs": 1,
+      "SDK_headers": 4,
+      "instruction_assertions": 103,
+      "SDK_assertions": 11,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 4,
+      "lifecycle_cases": 40,
+      "finite_node_cases": 1093,
+      "counter_boundary_cases": 8,
+      "dictionary_flag_cases": 256,
+      "rejected_evidence_alterations": 8
+    },
+    "xpc_resource_lifecycle_static_scope": "Conditional dictionary/node/data/payload disposal, two-counter release and dealloc-selector frontier, exact dispose table bindings, serializer sent/uncommitted cleanup, voucher/transaction transfer and begin/end counter/dirty/exit requests. Native ObjC IMP lookup, concurrency, reference/right balance, image pairing, actual delivery/policy and daemon-kext success remain unknown.",
+    "xpc_transaction_controls_increment_checks": {
+      "cache_functions": 17,
+      "kernel_functions": 3,
+      "complete_functions": 20,
+      "instructions": 2216,
+      "function_bytes": 8864,
+      "stub_bindings": 9,
+      "control_strings": 7,
+      "Boolean_atoms": 2,
+      "BSD_bindings": 1,
+      "kernel_jump_entries": 20,
+      "direct_control_callers": 3,
+      "text_words_scanned": 72021,
+      "daemon_imports_checked": 243,
+      "prior_registered_cache_ranges_recaptured": 18,
+      "prior_resource_ranges_recaptured": 24,
+      "prior_resource_bytes_recaptured": 4104,
+      "SDK_headers": 5,
+      "instruction_assertions": 89,
+      "SDK_assertions": 16,
+      "SDK_compilations": 1,
+      "scalar_queries_unsat": 4,
+      "enable_cases": 2304,
+      "track_cases": 36,
+      "clean_cases": 12,
+      "syscall_cases": 35,
+      "initializer_flag_cases": 8,
+      "rejected_evidence_alterations": 8
+    },
+    "xpc_transaction_controls_static_scope": "Conditional XPC transaction enable/track/clean-exit flag producers, selected initializer priority, signal/dirty tracking requests, interface2/routine715 Boolean request and proc_info336/callnum8/flavor1/2 kernel route. Native flags/registration/permission/process effects, actual port identity/IPC delivery, image pairing and successful daemon-kext exchange remain unknown.",
+    "daemon_xpc_error_outputs_increment_checks": {
+      "fragments": 14,
+      "instructions": 239,
+      "fragment_bytes": 956,
+      "branch_bindings": 3,
+      "selected_pointer_records": 6,
+      "fixup_catalog_memberships_compared": 61737,
+      "prior_source_ranges_checked": 35,
+      "prior_source_bytes_checked": 6044,
+      "historical_cases_inspected": 80,
+      "historical_boundaries_checked": 64,
+      "historical_instruction_visits_recaptured": 291680,
+      "historical_unique_instructions_recaptured": 2689,
+      "instruction_assertions": 81,
+      "SDK_assertions": 11,
+      "SDK_compilations": 1,
+      "component_queries_unsat": 5,
+      "terminal_component_cases": 36,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_xpc_error_outputs_static_scope": "Original terminal A70 marker/nonmarker partition, caller-owned output cells, result-before-canary ordering and conditional XPC status/no-data join. Output-cell consumption across the caller SP adjustment requires delta zero; the full budget write history is unproved. Historical allocation-failure cases are retained private models, not new source executions or native XPC reachability. Successful output writers/ownership, native policy/return/PAC/port identities/delivery and daemon-kext exchange remain unknown.",
+    "daemon_output_publication_increment_checks": {
+      "fragments": 11,
+      "instructions": 369,
+      "fragment_bytes": 1476,
+      "branch_bindings": 5,
+      "resolved_fill_calls": 2,
+      "bank_cases": 2,
+      "bank_inputs_checked": 512,
+      "selected_pointer_records": 8,
+      "fixup_catalog_memberships_compared": 61737,
+      "prior_source_ranges_checked": 49,
+      "prior_source_bytes_checked": 7692,
+      "literal_census_patterns": 4,
+      "literal_census_hits": 13,
+      "text_words_per_pattern": 3712490,
+      "instruction_assertions": 67,
+      "publication_instructions_translated": 46,
+      "publication_SSA_definitions": 44,
+      "component_queries_unsat": 6,
+      "publication_boundary_cases": 32,
+      "gate_cases": 5,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_output_publication_static_scope": "Conditional A70 output publication, exact u32-XOR-to-u64 extent codec, success/error shared result staging, helper output-cell transfers and bounded literal-opcode locator census. Full allocation/serialization and logical helper-return continuity, budget/delta stability, native admission/return/PAC/heap ownership/port identity/delivery and daemon-kext exchange remain unproved.",
+    "daemon_list_output_increment_checks": {
+      "fragments": 19,
+      "instructions": 814,
+      "fragment_bytes": 3256,
+      "branch_bindings": 30,
+      "bank_inputs_checked": 256,
+      "selected_pointer_records": 45,
+      "phase_continuation_candidates": 23,
+      "matching_phase_candidates": 1,
+      "fixup_catalog_memberships_compared": 61737,
+      "prior_source_ranges_checked": 59,
+      "prior_source_bytes_checked": 5020,
+      "IDA_ranges_compared": 2,
+      "IDA_bytes_compared": 168,
+      "instruction_assertions": 31,
+      "translated_source_sites": 820,
+      "unique_translated_source_sites": 667,
+      "SSA_definitions": 786,
+      "component_queries_unsat": 9,
+      "byte_value_observations": 3,
+      "size_boundary_cases": 37,
+      "padding_count_cases": 16,
+      "padding_iteration_cases": 136,
+      "sum_boundary_cases": 6,
+      "rejected_evidence_alterations": 8
+    },
+    "daemon_list_output_static_scope": "Conditional phase1593 list-sized output allocator, checked u32 sum, per-node byte-XOR transfer/loop interfaces, padding/size arithmetic, trailing record and output publication/parent continuation. Full buffer coverage assumes a stable finite acyclic list and valid disjoint owners. Actual incoming phase production, producer-side encoding inverse, heap/list ownership, adapter delta and native return/PAC/port identity/delivery/daemon-kext exchange remain unproved. IDA is read only and corroborates two byte ranges; its fragment bounds are not whole semantic-function bounds.",
+    "daemon_record_stream_increment_checks": {
+      "fragments": 15,
+      "instructions": 663,
+      "fragment_bytes": 2652,
+      "branch_bindings": 12,
+      "import_bindings": 2,
+      "pointer_records": 14,
+      "prior_source_ranges": 104,
+      "prior_source_bytes": 56252,
+      "historical_send_profiles": 12,
+      "excluded_profiles": 4,
+      "instruction_and_profile_assertions": 147,
+      "component_queries_unsat": 9,
+      "translated_source_sites": 32,
+      "SSA_definitions": 27,
+      "rejected_alterations": 8,
+      "grammar_length_domain_cases": 1024
+    },
+    "daemon_record_stream_static_scope": "Original-image stop-record prefix and historical private Arcade serializer-to-XPC byte lineage. Shared grammar is not a native transport join. No new target execution/emulation, host IPC, request, PAC authentication or IDB mutation.",
+    "daemon_payload_codec_increment_checks": {
+      "fragments": 19,
+      "instructions": 1455,
+      "fragment_bytes": 5820,
+      "preserved_key_fragments": 11,
+      "pointer_records": 6,
+      "prior_ranges": 34,
+      "prior_bytes": 5908,
+      "retained_profiles": 12,
+      "key_to_payload_episodes": 24,
+      "decoded_retired_buffers": 24,
+      "payload_write_spans": 24,
+      "payload_stores": 3619,
+      "component_queries_unsat": 14,
+      "common_rounds": 7,
+      "rejected_alterations": 8,
+      "translated_instruction_instances": 413
+    },
+    "daemon_payload_codec_static_scope": "Conditional address-indexed record-payload byte encoding/decoding, seven common rotate/add/XOR rounds, source node layout/list append and retained private Arcade encoded-buffer-to-XPC comparison. No native pairing, PAC, ownership, phase-production or full constructor proof.",
+    "daemon_header_codec_increment_checks": {
+      "fragments": 12,
+      "instructions": 967,
+      "fragment_bytes": 3868,
+      "constant_groups": 18,
+      "pointer_records": 12,
+      "prior_ranges": 19,
+      "prior_bytes": 5820,
+      "retained_profiles": 12,
+      "constructed_headers": 60,
+      "header_byte_stores": 600,
+      "scalar_payload_byte_stores": 144,
+      "word_entry_events": 156,
+      "tag_entry_events": 60,
+      "component_queries_unsat": 72,
+      "byte_seeds": 6,
+      "byte_round_lemmas": 42,
+      "byte_selection_lemmas": 6,
+      "translated_instruction_instances": 687,
+      "SSA_definitions": 679,
+      "rejected_alterations": 8
+    },
+    "daemon_header_codec_static_scope": "Conditional encoded BE32 writer, two-byte discriminator writer, three header-field call contracts and u32 scalar-payload call contract; compositional common address-mask proof and retained private store-PC/offset evidence. Native phase, ownership, admission, PAC and endpoint joins remain unproved.",
+    "daemon_constructor_inputs_increment_checks": {
+      "fragments": 16,
+      "instructions": 795,
+      "fragment_bytes": 3180,
+      "pointer_records": 21,
+      "bank_inputs_checked": 512,
+      "prior_ranges": 31,
+      "prior_bytes": 9688,
+      "retained_profiles": 12,
+      "constructor_episodes": 60,
+      "allocation_pairs": 60,
+      "u32_root_occurrences": 36,
+      "span_root_occurrences": 24,
+      "component_queries_unsat": 16,
+      "translated_instruction_instances": 844,
+      "SSA_definitions": 792,
+      "rejected_alterations": 9
+    },
+    "daemon_constructor_inputs_static_scope": "Conditional constructor input snapshot, selected-phase extent guard, allocation/header-length join and span count/source provenance. Retained private occurrence supports source linkage; native phase, API/owner/admission/transport and full constructor return remain unproved.",
+    "daemon_constructor_lookup_increment_checks": {
+      "fragments": 29,
+      "instructions": 1286,
+      "fragment_bytes": 5144,
+      "pointer_records": 34,
+      "bank_inputs_checked": 512,
+      "prior_ranges": 28,
+      "prior_bytes": 7048,
+      "retained_profiles": 12,
+      "lookup_episodes": 60,
+      "candidate_comparisons": 48,
+      "other_lookup_episodes": 12,
+      "other_candidate_comparisons": 24,
+      "replacement_occurrences": 0,
+      "component_queries_unsat": 48,
+      "decoder_seed_lemmas": 4,
+      "decoder_round_lemmas": 28,
+      "translated_instruction_instances": 1320,
+      "SSA_definitions": 1296,
+      "rejected_alterations": 8
+    },
+    "daemon_constructor_lookup_static_scope": "Conditional first-identifier lookup, address-mask word decoder, miss append and source-only matched-node replacement/retirement/return. Historical private profiles exercise misses only. Native phase/owners/bank roots/PAC/authorization/transport and complete type admission remain unproved.",
+    "daemon_typed_scalar_increment_checks": {
+      "fragments": 15,
+      "instructions": 1519,
+      "fragment_bytes": 6076,
+      "constant_groups": 10,
+      "liveness_intervals": 17,
+      "pointer_records": 14,
+      "prior_ranges": 28,
+      "prior_bytes": 7048,
+      "retained_profiles": 12,
+      "u32_routes": 36,
+      "span_routes": 24,
+      "u64_routes_observed": 0,
+      "component_queries_unsat": 90,
+      "translated_instruction_instances": 1815,
+      "SSA_definitions": 1780,
+      "rejected_alterations": 10
+    },
+    "daemon_typed_scalar_static_scope": "Selected-phase full u16 constructor discriminator partition and scalar extent gates; source-only BE64 writer, address-mask components and saved-value/return join. Frozen profiles exercise u32/span only. Native phase, owner, allocator, PAC, failure cleanup and daemon-kext transport remain unproved.",
+    "daemon_constructor_failure_increment_checks": {
+      "fragments": 12,
+      "instructions": 366,
+      "fragment_bytes": 1464,
+      "pointer_records": 15,
+      "bank_inputs_checked": 512,
+      "prior_ranges": 44,
+      "prior_bytes": 11220,
+      "liveness_intervals": 4,
+      "retained_profiles": 12,
+      "node_results_nonnull": 60,
+      "buffer_results_nonnull": 60,
+      "cleanup_entries_observed": 0,
+      "metadata_labels_corrected": 1,
+      "component_queries_unsat": 14,
+      "translated_instruction_instances": 260,
+      "SSA_definitions": 239,
+      "rejected_alterations": 9
+    },
+    "daemon_constructor_failure_static_scope": "Conditional constructor early rejection, candidate-buffer/node retirement, full-X6 marker preservation and saved continuation return. Static owner-read boundary and allocator slot-label erratum are explicit. Frozen successful profiles observe no failure cleanup. Native allocator effects, phase/owners/PAC and daemon-kext transport remain unproved.",
+    "daemon_constructor_bank_origins_increment_checks": {
+      "fragments": 2,
+      "instructions": 1535,
+      "fragment_bytes": 6140,
+      "fields": 14,
+      "newly_tracked_fields": 4,
+      "projection_instruction_instances": 216,
+      "pointer_records": 13,
+      "bank_inputs_checked": 768,
+      "retained_setup_profiles": 8,
+      "field_instances": 112,
+      "field_reads_checked": 112,
+      "frozen_daemon_instruction_instances_checked": 12624,
+      "constructor_consumer_loads": 26,
+      "setup_store_instructions": 129,
+      "literal_store_candidates": 151,
+      "prior_ranges": 57,
+      "prior_bytes": 9788,
+      "component_queries_unsat": 28,
+      "translated_instruction_instances": 462,
+      "SSA_definitions": 309,
+      "rejected_alterations": 10
+    },
+    "daemon_constructor_bank_origins_static_scope": "Fourteen shared-frame initializer field origins, all-state local register projections, eight frozen setup epochs and26 constructor consumer loads. Four bank fields extend prior ten-field tracking. Compatibility of offsets/values does not prove later reaching definitions, native phase/loader/owners/PAC or daemon-kext transport.",
+    "daemon_constructor_callers_increment_checks": {
+      "fragments": 32,
+      "instructions": 559,
+      "fragment_bytes": 2236,
+      "pointer_records": 48,
+      "branch_edges": 32,
+      "branch_slot_modifiers_checked": 50,
+      "modifier_candidates": 8,
+      "modifier_collision_targets": 8,
+      "retained_profiles": 12,
+      "array_episodes": 24,
+      "array_record_filters": 48,
+      "array_selected_constructors": 24,
+      "other_constructor_entries": 36,
+      "u64_root_observations": 0,
+      "generic_root_observations": 0,
+      "prior_ranges": 43,
+      "prior_bytes": 10720,
+      "component_queries_unsat": 29,
+      "translated_instruction_instances": 527,
+      "SSA_definitions": 501,
+      "rejected_alterations": 10,
+      "rejected_semantic_interpretations": 1
+    },
+    "daemon_constructor_callers_static_scope": "Conditional 40 B descriptor-array entry/filter/type/value/counter/return contracts, u32/span/u64 and generic constructor roots, bounded modifier census and frozen private occurrence separation. Native owners, phases, endpoint identity/PAC and public status meanings remain unproved.",
+    "daemon_collection_retirement_increment_checks": {
+      "fragments": 31,
+      "instructions": 518,
+      "fragment_bytes": 2072,
+      "pointer_records": 39,
+      "branch_edges": 31,
+      "branch_slot_modifiers_checked": 45,
+      "bank_inputs_checked": 1024,
+      "liveness_intervals": 3,
+      "retained_profiles": 12,
+      "frozen_drain_episodes": 12,
+      "frozen_retired_nodes": 24,
+      "frozen_retired_buffers": 24,
+      "frozen_retired_containers": 12,
+      "frozen_private_retired_bytes": 3408,
+      "frozen_outer_cleanup_entries": 0,
+      "frozen_generic_error_entries": 0,
+      "prior_ranges": 44,
+      "prior_bytes": 3700,
+      "component_queries_unsat": 35,
+      "translated_instruction_instances": 483,
+      "SSA_definitions": 451,
+      "rejected_alterations": 10,
+      "allocator_calls_metadata_checked": 4
+    },
+    "daemon_collection_retirement_static_scope": "Conditional collection/node/buffer retirement, two-child wrapper disposal and nil-output/u32-status joins, with separate frozen successful-finish and temporary-collection drain evidence. Native owner graphs, allocator/PAC behavior and daemon-kext endpoint pairing remain unknown.",
+    "daemon_builder_owner_join_increment_checks": {
+      "fragments": 17,
+      "instructions": 573,
+      "fragment_bytes": 2292,
+      "pointer_records": 29,
+      "branch_edges": 17,
+      "branch_slot_modifiers_checked": 26,
+      "call_sites": 5,
+      "bank_inputs_checked": 1280,
+      "literal_pointer_store_candidates": 3,
+      "literal_census_window_bytes": 156,
+      "retained_profiles": 12,
+      "recorded_builder_allocations": 12,
+      "recorded_child_allocations": 24,
+      "recorded_child1_root_field_instances": 16,
+      "native_graphs_observed": 0,
+      "outer_cleanup_entries_observed": 0,
+      "prior_ranges": 63,
+      "prior_bytes": 4308,
+      "prose_compositions_corrected": 1,
+      "component_queries_unsat": 28,
+      "translated_instruction_instances": 551,
+      "SSA_definitions": 501,
+      "rejected_alterations": 10,
+      "rejected_semantic_interpretations": 2,
+      "compositional_memory_queries": 6,
+      "excluded_queries": 2
+    },
+    "daemon_builder_owner_join_static_scope": "Selected 128 B builder and two16 B collection producers, descriptor qualifier/owner joins, actual X8 pointer-cell epoch across cleanup, and explicit prior prose-composition erratum. Frozen allocation/liveness evidence is separate; native owners/PAC/IPC pairing and opaque preparation remain unknown.",
+    "daemon_scalar_field_population_increment_checks": {
+      "primary_fragments": 14,
+      "primary_instructions": 275,
+      "primary_bytes": 1100,
+      "helper_instructions": 5497,
+      "helper_bytes": 21988,
+      "helper_projection_ranges": 4,
+      "helper_projection_instructions": 22,
+      "helper_direct_SP_accesses": 44,
+      "helper_semantic_incoming_GPRs": 0,
+      "helper_initial_X0_uses": 1,
+      "helper_output_width_bits": 64,
+      "pointer_records": 23,
+      "branch_slot_modifiers_checked": 21,
+      "bank_inputs_checked": 256,
+      "retained_profiles": 12,
+      "lookup_miss_population_episodes": 12,
+      "typed_scalar_constructions": 12,
+      "found_value_entries_observed": 0,
+      "wire_field_instances": 12,
+      "IDA_knowledge_queries": 3,
+      "IDA_semantic_facts_used": 0,
+      "prior_ranges": 78,
+      "prior_bytes": 9672,
+      "component_queries_unsat": 21,
+      "translated_instruction_instances": 282,
+      "SSA_definitions": 255,
+      "rejected_alterations": 10,
+      "byte_memory_joins": 1
+    },
+    "daemon_scalar_field_population_static_scope": "Selected C1 keyed lookup/miss-to-generated-u32 insertion, found-header reader frontier, full5497-instruction helper structural/argument/counter ABI and frozen field lineage. Helper value algorithm,complete found-value interpretation,native state/owners/PAC and daemon-kext pairing remain unknown.",
+    "daemon_helper_result_residue_increment_checks": {
+      "source_ranges": 8,
+      "source_instructions": 510,
+      "source_bytes": 2040,
+      "X5_liveness_intervals": 7,
+      "X5_clobbers_in_intervals": 0,
+      "scalar_projection_instructions": 6,
+      "original_pointer_records_recaptured": 44,
+      "prior_ranges_recaptured": 35,
+      "prior_bytes_recaptured": 26356,
+      "frozen_profiles": 12,
+      "recovered_result_bits": 36,
+      "unresolved_result_bits": 28,
+      "queries_unsat": 6,
+      "interpretation_counterexamples_sat": 2,
+      "rejected_alterations": 2,
+      "scalar_instructions_translated": 6
+    },
+    "daemon_helper_result_residue_static_scope": "Selected source X5 liveness from helper tail to frozen malloc-entry snapshot, source output relation and low36 recovery. No full generator algorithm, native execution, memory noninterference or daemon-kext pairing.",
+    "daemon_existing_scalar_reader_increment_checks": {
+      "source_fragments": 19,
+      "source_instructions": 1335,
+      "source_bytes": 5340,
+      "pointer_records": 21,
+      "branch_slot_modifier_matches": 28,
+      "prior_ranges_recaptured": 47,
+      "prior_bytes_recaptured": 6332,
+      "frozen_profiles": 12,
+      "found_value_entries_observed": 0,
+      "register_liveness_checks": 23,
+      "queries_unsat": 36,
+      "tag_seed_lemmas": 2,
+      "tag_round_lemmas": 14,
+      "translated_instruction_instances": 1556,
+      "distinct_nonbranch_source_sites_covered": 1316,
+      "SSA_definitions": 1487,
+      "rejected_alterations": 5
+    },
+    "daemon_existing_scalar_reader_static_scope": "Conditional existing-record header/type/extent/u32 output contract and source codecs; no new target execution, native owner/PAC/peer proof or whole interface completion.",
+    "daemon_reader_context_footprint_increment_checks": {
+      "source_ranges": 2,
+      "source_instructions": 392,
+      "source_bytes": 1568,
+      "preparation_instructions": 386,
+      "preparation_translated_nonbranch_instructions": 385,
+      "loads": 29,
+      "frame_loads": 28,
+      "table_loads": 1,
+      "u64_frame_loads": 22,
+      "u16_frame_loads": 6,
+      "frame_read_bytes": 188,
+      "table_read_bytes": 8,
+      "stores": 50,
+      "u64_stores": 44,
+      "u32_stores": 6,
+      "frame_write_bytes": 376,
+      "frame_read_upper_bound_bytes": 44616,
+      "frame_write_lower_bound_bytes": 2024,
+      "frame_write_upper_bound_bytes": 2492,
+      "nuisance_loads": 25,
+      "critical_store_fields": 6,
+      "projected_terminal_registers": 24,
+      "word_input_census_instructions": 484,
+      "word_input_census_bytes": 1936,
+      "word_input_GPRs": 22,
+      "compiler_container_extent_bytes": 2175420,
+      "prefix_stack_reservation_bytes": 64,
+      "retained_found_entries": 0,
+      "affine_cache_candidates": 50,
+      "affine_candidate_probe_assignments": 2,
+      "nuisance_cache_stores": 44,
+      "abstract_nuisance_input_bits": 1312,
+      "queries_unsat": 56,
+      "counterexamples_sat": 1,
+      "affine_cache_relations_proved": 50,
+      "nuisance_values_inverted": 25,
+      "distinct_preparation_sites_translated": 385,
+      "two_run_instruction_instances": 770,
+      "SSA_definitions_per_run": 335,
+      "rejected_alterations": 5
+    },
+    "daemon_reader_context_footprint_static_scope": "Selected cursor0 decoder preparation: fixed read/write footprint,all50 affine cache relations,25 abstract input inverses and selected-output noninterference. No whole-call noninterference,native frame owner/initialization/PAC/peer or daemon-kext proof.",
+    "daemon_reader_stack_epoch_increment_checks": {
+      "profiles": 12,
+      "unique_path_intervals": 149,
+      "unique_path_instruction_sites": 11885,
+      "prefix_instructions": 18,
+      "path_plus_prefix_unique_sites": 11901,
+      "profile_interval_instances": 6367,
+      "profile_instruction_instances": 966122,
+      "internal_helper_calls": 108,
+      "import_calls": 180,
+      "extension_ranges": 36,
+      "extension_instruction_instances": 2422,
+      "extension_unique_instruction_sites": 1549,
+      "extension_SP_writes": 0,
+      "core_saved_bytes": 128,
+      "core_local_bytes": 68944,
+      "core_total_reservation_bytes": 69072,
+      "helper_local_bytes": 192,
+      "minimum_SP_below_entry_bytes": 69264,
+      "reader_frame_read_bound_bytes": 44616,
+      "reader_frame_bound_headroom_bytes": 24328,
+      "queries_unsat": 21,
+      "counterexamples_sat": 1,
+      "source_SP_updates_per_profile": 20,
+      "milestone_equalities_per_profile": 11,
+      "rejected_alterations": 5
+    },
+    "daemon_reader_stack_epoch_static_scope": "Conditional shared-core F=E-0x10dd0 through keyed-reader entry and builder finish on12 frozen paths;source-only no-SP-write extension and scratch bounds. No fresh runtime replay,native mapping/initialization/PAC/callee/endpoint proof.",
+    "daemon_context_input_producers_increment_checks": {
+      "text_bytes": 14849960,
+      "aligned_text_words": 3712490,
+      "candidate_writers": 25,
+      "covered_context_inputs": 25,
+      "u64_candidate_writers": 19,
+      "u16_candidate_writers": 6,
+      "candidate_windows": 25,
+      "candidate_window_instruction_instances": 90,
+      "candidate_stage_entries": 20,
+      "candidate_stage_instruction_instances": 504,
+      "tag_return_stages": 6,
+      "tag_dispatch_prefix_instructions": 4,
+      "word_dispatch_prefix_instructions": 2,
+      "common_word_call_instructions": 7,
+      "carried_target_liveness_instructions": 688,
+      "pointer_records": 14,
+      "candidate_writer_PCs_on_retained_path": 0,
+      "IDA_knowledge_queries": 2,
+      "IDA_semantic_facts_used": 0,
+      "queries_unsat": 34,
+      "counterexamples_sat": 1,
+      "translated_instruction_instances": 201,
+      "SSA_definitions": 149,
+      "rejected_alterations": 6
+    },
+    "daemon_context_input_producers_static_scope": "Twenty-five original-text SP-affine producer candidates,source-window address/width checks and six shared tag-to-word return interfaces. No all-alias producer exhaustiveness,current-frame reaching-definition or native initialization/endpoint proof.",
+    "daemon_reader_extent_families_increment_checks": {
+      "families": 5,
+      "source_fragments": 19,
+      "source_instruction_instances": 406,
+      "source_bytes": 1624,
+      "preparation_instructions": 386,
+      "pointer_records": 31,
+      "branch_slot_modifier_matches": 32,
+      "source_SP_writes": 0,
+      "queries_unsat": 23,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 772,
+      "translated_instruction_instances": 779,
+      "SSA_definitions": 689,
+      "rejected_alterations": 6
+    },
+    "daemon_reader_extent_families_static_scope": "Five conditional normalized extent gates,composed fixed bridges,signed-low16 tag prefixes and first failure effects. No full accessor semantics,all-alias/current-frame initialization,native PAC/endpoint or successful daemon-kext exchange proof.",
+    "daemon_reader_typed_dispatch_increment_checks": {
+      "families": 5,
+      "source_fragments": 54,
+      "source_instruction_instances": 1000,
+      "source_bytes": 4000,
+      "preparation_instructions": 386,
+      "pointer_records": 50,
+      "branch_slot_modifier_matches": 63,
+      "source_SP_writes": 0,
+      "queries_unsat": 46,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 1331,
+      "translated_instruction_instances": 1412,
+      "SSA_definitions": 1276,
+      "rejected_alterations": 6
+    },
+    "daemon_reader_typed_dispatch_static_scope": "Five conditional exact-tag dispatch forests,six exact extent gates,five u32 payload caller/return interfaces,N19 u64 entry/span pointer and alternate-tag first effects. No complete accessor publication,native initialization/admission/PAC/ownership/endpoint or daemon-kext exchange proof.",
+    "daemon_reader_value_consumers_increment_checks": {
+      "families": 5,
+      "source_fragments": 16,
+      "source_instruction_instances": 1200,
+      "source_bytes": 4800,
+      "span_context_fragments": 6,
+      "span_context_instructions": 118,
+      "preparation_instructions": 386,
+      "pointer_records": 25,
+      "branch_slot_modifier_matches": 26,
+      "eight_byte_helper_instructions": 885,
+      "source_SP_writes": 0,
+      "queries_unsat": 22,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 1681,
+      "translated_instruction_instances": 1801,
+      "SSA_definitions": 1698,
+      "rejected_alterations": 6
+    },
+    "daemon_reader_value_consumers_static_scope": "Five scalar return/staging contracts,two converged caller flows and flag-selected equality predicates,N19 preceding-word producer/common variant prefix/special pointer publication,and eight-byte reader footprint/return ABI. No complete eight-byte transform,ordinary result publication,native ownership/cache/admission/PAC/endpoint or daemon-kext pairing proof.",
+    "daemon_reader_container_origins_increment_checks": {
+      "source_fragments": 14,
+      "source_instruction_instances": 249,
+      "source_bytes": 996,
+      "partial_prefixes": 1,
+      "allocation_call_boundaries": 2,
+      "bank_inputs_checked": 256,
+      "pointer_records": 18,
+      "branch_slot_modifier_matches": 15,
+      "writer_candidates": 5,
+      "source_SP_writes": 0,
+      "queries_unsat": 15,
+      "counterexamples_sat": 1,
+      "distinct_translated_instruction_sites": 234,
+      "translated_instruction_instances": 242,
+      "SSA_definitions": 216,
+      "rejected_alterations": 6
+    },
+    "daemon_reader_container_origins_static_scope": "Conditional16 B pair allocation/default state/empty output and separate112 B allocation prefix;shared reader-context admission and register provenance. Normal allocation return/save semantics and file-backed banks are premises. No complete container/112 B object type,native owners/callers/PAC/endpoint or daemon-kext pairing proof."
   },
   "files": [
     {
@@ -9622,6 +10440,11 @@
       "sha256": "befa3db344a4285320a75cd681407b7fe867e1a32352b877e5572a1a722e093d"
     },
     {
+      "path": "daemon_builder_owner_join_report.md",
+      "size_bytes": 23885,
+      "sha256": "7b291303ffb2f78db294f8c2c9fd9f9115dc95ad41c31ea7e944c744a7dbef13"
+    },
+    {
       "path": "daemon_cache36_report.md",
       "size_bytes": 17848,
       "sha256": "767afb44810fc832496fb687da35d8b41da003bcd3d73e3a9cb2201aa42653da"
@@ -9652,9 +10475,44 @@
       "sha256": "e797bdc67dd0392f93496d980c652971f8a854e086eeffa4675f7791f1c7f4aa"
     },
     {
+      "path": "daemon_collection_retirement_report.md",
+      "size_bytes": 26214,
+      "sha256": "2d2918548deab851083b7b20316db09f620657c529ecac5318bf85e1bf6e88d7"
+    },
+    {
       "path": "daemon_compression_frame_report.md",
       "size_bytes": 18356,
       "sha256": "9c6651306b4885ddf65283d1eb688b31a95e50508ed9bdb2548c319932c9eb0d"
+    },
+    {
+      "path": "daemon_constructor_bank_origins_report.md",
+      "size_bytes": 19146,
+      "sha256": "314cfba863efb29221d0f876bc7ffa2d51a83efce85ac1f9eb783cae1a30d289"
+    },
+    {
+      "path": "daemon_constructor_callers_report.md",
+      "size_bytes": 27385,
+      "sha256": "798c56e921cc136afef93d81bab45e91b7ec53b0dbede334e46fab24e676903c"
+    },
+    {
+      "path": "daemon_constructor_failure_report.md",
+      "size_bytes": 16744,
+      "sha256": "44028a089b117d5d94a1c671d148441fbaa2c58b24477dd60bcca7bf09ab280b"
+    },
+    {
+      "path": "daemon_constructor_inputs_report.md",
+      "size_bytes": 18429,
+      "sha256": "6de5b257cb3b5860d57ea1ea340f8046515ac3676dcc1be6ff930dcc21ec918c"
+    },
+    {
+      "path": "daemon_constructor_lookup_report.md",
+      "size_bytes": 15251,
+      "sha256": "a38287eec86239bbfe196316e9cb3260ea51b015f7ec4efd07b444a9cf4cb7ea"
+    },
+    {
+      "path": "daemon_context_input_producers_report.md",
+      "size_bytes": 15908,
+      "sha256": "4bc577d16e5f17ef38b711b89f443bf5907d431ad8973b00e30223d3b2f08cf6"
     },
     {
       "path": "daemon_context_lock_report.md",
@@ -9727,6 +10585,11 @@
       "sha256": "2be5bf5ed4055c156c973a2f37e6901151c317a917fa91f9a8381bc7461f4389"
     },
     {
+      "path": "daemon_existing_scalar_reader_report.md",
+      "size_bytes": 17765,
+      "sha256": "96451a39eac4ccf549f3c4f4882ce207714b9a9e4f8a4f811415de5f745866f6"
+    },
+    {
       "path": "daemon_frame_entry_report.md",
       "size_bytes": 15610,
       "sha256": "4b47002907a3034a11fa4b8b25a4cf8cbd3d9a5a0578304973119384b76bdec1"
@@ -9735,6 +10598,16 @@
       "path": "daemon_global_state_report.md",
       "size_bytes": 16124,
       "sha256": "8f6e9cecdb0d1d98b145c7a08c0f0d6923b36964ea40a2b442c0b5e5374123e5"
+    },
+    {
+      "path": "daemon_header_codec_report.md",
+      "size_bytes": 17093,
+      "sha256": "240c107b392baa634198c2c2bd65cacbce45d42f93ed11040e17977c6bbdd979"
+    },
+    {
+      "path": "daemon_helper_result_residue_report.md",
+      "size_bytes": 10702,
+      "sha256": "e5e9ba582fde0c5fe65b20026a0e21908b9e38e36370d6ff17443d1b3cdb5661"
     },
     {
       "path": "daemon_identity_cache_report.md",
@@ -9770,6 +10643,11 @@
       "path": "daemon_iokit_sync_report.md",
       "size_bytes": 17712,
       "sha256": "850067f4a22e9983e7d7568412fe146776bfc60533345f088839fd47ed8320be"
+    },
+    {
+      "path": "daemon_list_output_report.md",
+      "size_bytes": 15309,
+      "sha256": "6f2c821c3b1e7a69f57ad610fd549ffb60de82ea38fa17dadeecddfd30557001"
     },
     {
       "path": "daemon_mig_handover_report.md",
@@ -9812,6 +10690,16 @@
       "sha256": "637cad999e122e03006cd0510bc77508d550d79a322a53f826314a49f3dc795a"
     },
     {
+      "path": "daemon_output_publication_report.md",
+      "size_bytes": 15302,
+      "sha256": "ba9f0ea1828b62f19fc9d3244b53be7e772370cf7ea1a00e2ddbb980ced83d42"
+    },
+    {
+      "path": "daemon_payload_codec_report.md",
+      "size_bytes": 18329,
+      "sha256": "b3825b71607bc9b4e76d4aeeebbb3684cc4bc76b29e1cea6dcc5fd085d3b4fda"
+    },
+    {
       "path": "daemon_prng_output_report.md",
       "size_bytes": 17717,
       "sha256": "189b06a3cf692aa8d33caf4e39d5275e3d547514329189204e33e75380f5100f"
@@ -9825,6 +10713,36 @@
       "path": "daemon_query_state_report.md",
       "size_bytes": 18110,
       "sha256": "8ae919aa2dc8d81dca1c6215fc018c15adfaf0f48c616f82bfa2cadb38609c45"
+    },
+    {
+      "path": "daemon_reader_container_origins_report.md",
+      "size_bytes": 16643,
+      "sha256": "4a0e7df810ccec71e89c568c6833b5ae3d39be5727c758e1adc13a3bf7f7aa9c"
+    },
+    {
+      "path": "daemon_reader_context_footprint_report.md",
+      "size_bytes": 18331,
+      "sha256": "cbe76ce734652216cb7f26c4448c708d1739b9bba7202313b4b2eafc34dafe35"
+    },
+    {
+      "path": "daemon_reader_extent_families_report.md",
+      "size_bytes": 17201,
+      "sha256": "146dfe4a02d581ca635e7caa450d844961330cd56c4a5dd8b15103c5d3deb120"
+    },
+    {
+      "path": "daemon_reader_stack_epoch_report.md",
+      "size_bytes": 16757,
+      "sha256": "a9e8ed8a7440ef3a87109e9eec28c677302bdc7f9bc2e15742eb2b28cc7b17a9"
+    },
+    {
+      "path": "daemon_reader_typed_dispatch_report.md",
+      "size_bytes": 18115,
+      "sha256": "cfabb35f1652db52e99681e5aa4d923b3ca5719d39c155c59e3c1c4dacb5eff2"
+    },
+    {
+      "path": "daemon_reader_value_consumers_report.md",
+      "size_bytes": 17188,
+      "sha256": "73bdc341b9fe7c3e7b5e3612bd04cea4137036158e013ebefd52115fadd3e4e0"
     },
     {
       "path": "daemon_receive_interface_report.md",
@@ -9867,6 +10785,11 @@
       "sha256": "b4d7e63ad260256ae1ad1155caeb825cf4ebfe67cecda883d8012195e210c4a6"
     },
     {
+      "path": "daemon_record_stream_report.md",
+      "size_bytes": 16027,
+      "sha256": "5084a23ea2117c41074a3b5f3e9154b691918a36c5e512ad80cfe2e84f964332"
+    },
+    {
       "path": "daemon_registration_report.md",
       "size_bytes": 20461,
       "sha256": "f1266f4b9e05f847bb07cc9f0acf38f14c8ac356c9a280e3bbc9d1e26c11c787"
@@ -9895,6 +10818,11 @@
       "path": "daemon_rwlock_lifecycle_report.md",
       "size_bytes": 15119,
       "sha256": "37005862c2133b5959cf52c76d518db97b3aaba89d5bf2029d56293ffd0c2c22"
+    },
+    {
+      "path": "daemon_scalar_field_population_report.md",
+      "size_bytes": 22456,
+      "sha256": "1f3234d3dc272d268e62b4f1b757a3c33a1846143528159df533f694690346ec"
     },
     {
       "path": "daemon_secondary_result_report.md",
@@ -9927,9 +10855,49 @@
       "sha256": "4df2d0a4e0a53abf841293e680165c778b5271b98ba5e2df87b34035e2052752"
     },
     {
+      "path": "daemon_typed_scalar_report.md",
+      "size_bytes": 16941,
+      "sha256": "a85b7cf911b3d3aea506b551c83996f6609af788200d31ac89786dd67d2179c8"
+    },
+    {
       "path": "daemon_vm_cleanup_report.md",
       "size_bytes": 20299,
       "sha256": "215a2eb00c58615b08d1b2b7679d6af539f9e06b4fff34c2c5b9291d1a6dc7d1"
+    },
+    {
+      "path": "daemon_xpc_core_bridge_report.md",
+      "size_bytes": 16117,
+      "sha256": "6aa8e88f669800e1a11b43e4e839898d9ca074c0114dc5bbf623237c7d866768"
+    },
+    {
+      "path": "daemon_xpc_error_outputs_report.md",
+      "size_bytes": 14939,
+      "sha256": "a6e3f163b318eec5d14b25954556c0e88941ac9e08532642c8778f1324ae1df5"
+    },
+    {
+      "path": "daemon_xpc_iteration_report.md",
+      "size_bytes": 17830,
+      "sha256": "f983cafb8d8dd766f78d47672f9919658deb6efe46a5124f920abcef8b1b2d38"
+    },
+    {
+      "path": "daemon_xpc_listener_report.md",
+      "size_bytes": 20149,
+      "sha256": "7e58d79c470bf4cc8550fc177c3f809c7dfd8515f55a5dd30aaef87847e29445"
+    },
+    {
+      "path": "daemon_xpc_payload_report.md",
+      "size_bytes": 15687,
+      "sha256": "9fcc367e1b6fba3752c373588cae6861a0a246b933f82dd0e3847fbfd8e67a9f"
+    },
+    {
+      "path": "daemon_xpc_records_report.md",
+      "size_bytes": 15639,
+      "sha256": "ddf6eec07c797946a3a0eca5991c907000ad8a5c575d68845821b36d8b5f2540"
+    },
+    {
+      "path": "daemon_xpc_reply_lifecycle_report.md",
+      "size_bytes": 16051,
+      "sha256": "de2156be5115fc08d075301be6d54ff3b9e97c8a29c6ac929578dd58ad78e0ca"
     },
     {
       "path": "dispatch_voucher_hooks_report.md",
@@ -9978,8 +10946,8 @@
     },
     {
       "path": "foundational_triage_report.md",
-      "size_bytes": 214303,
-      "sha256": "737327d5a2d6c5f3c12f1ba0e9f17ee98dde79fa7cb5935ba1d45f1100c8d65e"
+      "size_bytes": 239077,
+      "sha256": "56694090360f394e1f12458b672733d078d137335cddc16bef5bb0dd62a76cb8"
     },
     {
       "path": "host_special_registration_report.md",
@@ -9993,13 +10961,13 @@
     },
     {
       "path": "interface_abi_report.md",
-      "size_bytes": 198129,
-      "sha256": "dcb00ed35ce8ec80ef59b180e219707c8b6ac9afc3ee268dd2799d678eafbf62"
+      "size_bytes": 223294,
+      "sha256": "81e2bc640e75bfe51cc06292dc23c9039eb7c107c42dd6bb567ce12cf8c27eb3"
     },
     {
       "path": "interface_investigation_status.md",
-      "size_bytes": 236271,
-      "sha256": "57b7058a10edba743417e034911ce0636bca3e9cec20632b429fd3ffc59fb6ea"
+      "size_bytes": 276028,
+      "sha256": "c23996967f6e6a95829f02a5fc998b21469ad5f4d3a0fdf690c881b99f207ed6"
     },
     {
       "path": "iokit_async_contract_report.md",
@@ -10453,8 +11421,8 @@
     },
     {
       "path": "mach_ports_report.md",
-      "size_bytes": 173693,
-      "sha256": "cbaeac74104b5cf95b5b896cdf5ffa0c9f7135e0b15a64802dede3f006ce1550"
+      "size_bytes": 194542,
+      "sha256": "3e6a16ec6391ff13769c860e603f47786e86523433bf521dab04a3252b8e18a0"
     },
     {
       "path": "managed_adapter_dispatch_report.md",
@@ -10488,8 +11456,8 @@
     },
     {
       "path": "obfuscated_routines_report.md",
-      "size_bytes": 193674,
-      "sha256": "9082c17ad5141545a0763f8f2f84de42cbdb31946188ced92e41883b9cbea77d"
+      "size_bytes": 217425,
+      "sha256": "e8ab4175fd0bff6c58367bb09f625ea80e127870dcd31e375132da9c8aea41ba"
     },
     {
       "path": "platform_iorpc_report.md",
@@ -10605,6 +11573,11 @@
       "path": "rpc502_vm_handoff_report.md",
       "size_bytes": 16248,
       "sha256": "265028d40b5a2006b939879b6e74e38ee27d6d8036b8b40a6a20dd99b158f17a"
+    },
+    {
+      "path": "rpc700_endpoint_inventory_report.md",
+      "size_bytes": 16949,
+      "sha256": "36d960289c5a287781f3061b1823480f62a959b39a06caa77185b59cdd53d3cc"
     },
     {
       "path": "rpc700_namespace_report.md",
@@ -14737,6 +15710,31 @@
       "sha256": "820395bb7eccacab5763937c45d024ef3f3f1b778e8005284349931c332f9c4b"
     },
     {
+      "path": "triage_evidence/daemon_builder_owner_join_checks.json",
+      "size_bytes": 303556,
+      "sha256": "d82476d13c4c65a78757da391542b591786cd17dc5462721e2a11f226ce9e504"
+    },
+    {
+      "path": "triage_evidence/daemon_builder_owner_join_delivery.json",
+      "size_bytes": 2117,
+      "sha256": "fc3d8dd98877c3f4921daee11fa7d1f10598643a433180d8db24575006adaa50"
+    },
+    {
+      "path": "triage_evidence/daemon_builder_owner_join_prior_manifest.json",
+      "size_bytes": 1839338,
+      "sha256": "33bffc6511ef66a22f8da40c4e414273dbd47abaedd290f66ae21b25230a4f0b"
+    },
+    {
+      "path": "triage_evidence/daemon_builder_owner_join_quality_gates.json",
+      "size_bytes": 8259,
+      "sha256": "9ba5c97cfbaef31f8e2910e8fd7975576c160d9b4fd5268f34e1852c4776f2ba"
+    },
+    {
+      "path": "triage_evidence/daemon_builder_owner_join_source.json",
+      "size_bytes": 206880,
+      "sha256": "da0b6cfe6ac27b7be43955148896fbcbec73006bfae63af232b6cb5934fa358d"
+    },
+    {
       "path": "triage_evidence/daemon_cache36_all_W0_nonzero_conversion_gate.smt2",
       "size_bytes": 800,
       "sha256": "13894234870e5bec9f18603513e8c41492a682486fa7bd917e3066a948ca6605"
@@ -15692,6 +16690,31 @@
       "sha256": "b6598e9630cc59201a3d452a78dede948e532a62bda63e2fa6798bfff0ad115f"
     },
     {
+      "path": "triage_evidence/daemon_collection_retirement_checks.json",
+      "size_bytes": 198131,
+      "sha256": "115361bbc8428d3ac9541295431e2b2246a8b0fb59760a0f1320eb817bcaceef"
+    },
+    {
+      "path": "triage_evidence/daemon_collection_retirement_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "467ad0e812a9d387228bd23b8d8658f8af06b6139c1ab6d230b96d59bb193bf9"
+    },
+    {
+      "path": "triage_evidence/daemon_collection_retirement_prior_manifest.json",
+      "size_bytes": 1836180,
+      "sha256": "50307422213a8ae9c11e919d5b1cd7aa08179047fd8202b9da28e669bfa31795"
+    },
+    {
+      "path": "triage_evidence/daemon_collection_retirement_quality_gates.json",
+      "size_bytes": 7189,
+      "sha256": "bc9e85fe796834b9abfbebdb8744ffbb83e535638ae70abf07e5ab9aff1af1d5"
+    },
+    {
+      "path": "triage_evidence/daemon_collection_retirement_source.json",
+      "size_bytes": 247519,
+      "sha256": "82fa17b42fdacc0d3ae16356c4061f3b41a1c65af6fdbfcc44e502dc26bcc7d2"
+    },
+    {
       "path": "triage_evidence/daemon_compression_frame_all_low6_first_copy_count_and_loop_route.smt2",
       "size_bytes": 93,
       "sha256": "1d41c212a441a28347c40a99d8a7a0cbc37849b6ab2366a234b3e6b2f1563a54"
@@ -15857,6 +16880,131 @@
       "sha256": "71a760e300dce6ecd280c242ae59e11ba748115ff0eb8393e9f9bb2d8d11e629"
     },
     {
+      "path": "triage_evidence/daemon_constructor_bank_origins_checks.json",
+      "size_bytes": 493023,
+      "sha256": "f77a6546701cd5ce28243133724c659f058975c7645cb21e1028fa2dcb5eef21"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_bank_origins_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "d35f186be13c2b78f18d8f13833c0d5ade289303b5a8d9455cebc95576083095"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_bank_origins_prior_manifest.json",
+      "size_bytes": 1829919,
+      "sha256": "69deb5b202d5a4b747eff2c3f09c4e6801a2768fb41321babda2d069d3db005d"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_bank_origins_quality_gates.json",
+      "size_bytes": 6459,
+      "sha256": "2583b3609a5e2acc512ded58ecb4f2c8690e93ad53188a5a7b72eed8c6773250"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_bank_origins_source.json",
+      "size_bytes": 397397,
+      "sha256": "4ebe0b93959096ac0bdb12bbb12bdc6b007a7d4bbf89d771d7627995e13c8a8e"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_callers_checks.json",
+      "size_bytes": 173879,
+      "sha256": "b9e7a3b1d62dbe381983ebd8de9f94d57e4d5f1b797932fa2f91b7f098068989"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_callers_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "58c1133d5954e2196dc9083bbfd6396f31049975a0219cb3ec2c48f01c151303"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_callers_prior_manifest.json",
+      "size_bytes": 1833093,
+      "sha256": "d6f2b4d1f7027d76fbdfcdd2b60987e12a1c67114b7ae6b93761714d50b500dc"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_callers_quality_gates.json",
+      "size_bytes": 7155,
+      "sha256": "fe975e8d4f4f279c5271be0f76fe5647172c2cb3763e88681ab8efc34986b163"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_callers_source.json",
+      "size_bytes": 854210,
+      "sha256": "84620d6042ae986698b6de4e5d4be0f2569ef45fd5bf6301f65d0de0d2ccb2e3"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_failure_checks.json",
+      "size_bytes": 80904,
+      "sha256": "494b75783c15bf879133597946ce6ec6f31401aa4f9ca1b3654aebea85f38d1c"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_failure_delivery.json",
+      "size_bytes": 2114,
+      "sha256": "ebf6c026152354fea0aecd77ca8e0910bfd7faacc0ea6660779cb9c1151d1ac7"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_failure_prior_manifest.json",
+      "size_bytes": 1826959,
+      "sha256": "e650f2b4035e432490ba8afcacfc9846e97b6d85c6ed1ef41f07253e27f89b30"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_failure_quality_gates.json",
+      "size_bytes": 6622,
+      "sha256": "40d47c8b821d7d092ca3890ec3bbfb29c30ac30719e1e453e343f0be6d0514b0"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_failure_source.json",
+      "size_bytes": 89061,
+      "sha256": "967c3c7cddcea26ad0845869d7f410108354b09c046d7e452d2cd804a7408f3d"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_inputs_checks.json",
+      "size_bytes": 155161,
+      "sha256": "c6b53c2067eb2c922757a3344e5eca4322aa883b7c3e8238eac12fca28924748"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_inputs_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "ff62f4a8525878023200a104b1f867d66adc1e36ead53f1bc2c198ad9d65ad9f"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_inputs_prior_manifest.json",
+      "size_bytes": 1818405,
+      "sha256": "090f1e278f17a94ecf9ada79b28acb9be19186c088090e6b2e1c7cff1f6cfb25"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_inputs_quality_gates.json",
+      "size_bytes": 5887,
+      "sha256": "75ae2db7038c06d993c55386ee0860816e22f9535151e646f2e86412d581e707"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_inputs_source.json",
+      "size_bytes": 280576,
+      "sha256": "3943aff488c56282b581af21a5e084fa823389a5890a4b7f4b231c81ed4b68f9"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_lookup_checks.json",
+      "size_bytes": 495474,
+      "sha256": "2f7b8761cc3e6b71b1a165703ba93a876f723f5a01417ed878881931ac65ad59"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_lookup_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "987066d29011363b7aa456a01089c41603175c32cd3be32562aabfcef803e7d8"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_lookup_prior_manifest.json",
+      "size_bytes": 1821237,
+      "sha256": "2119b0b17f311b3b97c46f75d6f80fd5ba55b6570573e06c96418621e631c140"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_lookup_quality_gates.json",
+      "size_bytes": 6240,
+      "sha256": "00224c63d9f7d7fad3dbfb5344d54d354d44aeb1cb84229273ece79f283af453"
+    },
+    {
+      "path": "triage_evidence/daemon_constructor_lookup_source.json",
+      "size_bytes": 523039,
+      "sha256": "af4f5a80e0210b8565cb0fb45d5c4ae44d214d3a204c77171c2624ebe0dc4867"
+    },
+    {
       "path": "triage_evidence/daemon_consumer_gate_all_u64_payload_boundary_and_nonnull.smt2",
       "size_bytes": 93,
       "sha256": "1d41c212a441a28347c40a99d8a7a0cbc37849b6ab2366a234b3e6b2f1563a54"
@@ -15925,6 +17073,31 @@
       "path": "triage_evidence/daemon_context_entropy_live_ida.json",
       "size_bytes": 4435,
       "sha256": "dd99de7e34140d78595f12369dc890a86e2348f357f223ca6eae707e4ad7a6b2"
+    },
+    {
+      "path": "triage_evidence/daemon_context_input_producers_checks.json",
+      "size_bytes": 138806,
+      "sha256": "55854e234e792e6fb439fd867c7d74ec30ba10cf631b71874776f0a359918419"
+    },
+    {
+      "path": "triage_evidence/daemon_context_input_producers_delivery.json",
+      "size_bytes": 2120,
+      "sha256": "3bf9b1756cd6e398b8ac32ae4919b1d5d62a95d257cb28c61df980e4fd533b67"
+    },
+    {
+      "path": "triage_evidence/daemon_context_input_producers_prior_manifest.json",
+      "size_bytes": 1858794,
+      "sha256": "3988cec4d74a41915869552d21620e973b4d93c2e97c0f7269f07bfed4190662"
+    },
+    {
+      "path": "triage_evidence/daemon_context_input_producers_quality_gates.json",
+      "size_bytes": 7330,
+      "sha256": "e35960ada81e8968f49a467c6556befdeb7f64ef076d8e3b13d39152edfece26"
+    },
+    {
+      "path": "triage_evidence/daemon_context_input_producers_source.json",
+      "size_bytes": 141977,
+      "sha256": "51f200c6fcdd53b7aefcea149657bcd57ff0d43021255552f3409f7a374eceec"
     },
     {
       "path": "triage_evidence/daemon_context_lock_all_entry_fields_and_addresses.smt2",
@@ -18782,6 +19955,31 @@
       "sha256": "1d0ff3ba455720a75f58a88072abae4076acb5d4b9e2f08ee2248069b1685a97"
     },
     {
+      "path": "triage_evidence/daemon_existing_scalar_reader_checks.json",
+      "size_bytes": 425339,
+      "sha256": "6a6f56e6fec5adf08c16bbb4d1e8902f60e699d17da8953125c51fcf6d50d06b"
+    },
+    {
+      "path": "triage_evidence/daemon_existing_scalar_reader_delivery.json",
+      "size_bytes": 2119,
+      "sha256": "2a2b0f4e2d356be344cf36e068768439e72ceba09cad06a9d58839d17a9cdb9b"
+    },
+    {
+      "path": "triage_evidence/daemon_existing_scalar_reader_prior_manifest.json",
+      "size_bytes": 1848887,
+      "sha256": "87be1cff0ba8a675887fc65e97865aae3e5e14ef59713b63f688948328dc7412"
+    },
+    {
+      "path": "triage_evidence/daemon_existing_scalar_reader_quality_gates.json",
+      "size_bytes": 6527,
+      "sha256": "da6882ec8aa080f750a63af558fbe2a39aa3605a8e56d2e6ea64643f9b19a17d"
+    },
+    {
+      "path": "triage_evidence/daemon_existing_scalar_reader_source.json",
+      "size_bytes": 227290,
+      "sha256": "2f1d159453fc6b0995b2f7feb97b4aaf1eccc94e12c27dbadc5b7e89aab02ae3"
+    },
+    {
       "path": "triage_evidence/daemon_fields720_all_bits_OID_length_pointer_copy.smt2",
       "size_bytes": 93,
       "sha256": "1d41c212a441a28347c40a99d8a7a0cbc37849b6ab2366a234b3e6b2f1563a54"
@@ -19575,6 +20773,56 @@
       "path": "triage_evidence/daemon_handoff720_selected_control7A3A_original.smt2",
       "size_bytes": 288,
       "sha256": "32c53cd6ffed0f7c7e87bcf560ec133314651cc934151a120197a9be3260431d"
+    },
+    {
+      "path": "triage_evidence/daemon_header_codec_checks.json",
+      "size_bytes": 622020,
+      "sha256": "0c1b3533f4300ae6331d98f24678317038daf4bb00694a85d3d41dc7b025b086"
+    },
+    {
+      "path": "triage_evidence/daemon_header_codec_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "455f87d366c59f0b27ad79f77b3d4be8bfd1cf773bd4836bb0fa08a7696a0249"
+    },
+    {
+      "path": "triage_evidence/daemon_header_codec_prior_manifest.json",
+      "size_bytes": 1815502,
+      "sha256": "75d6e2bd738880487153eabdf655a644fbb047ab4e3ef2780581dbc7627b2444"
+    },
+    {
+      "path": "triage_evidence/daemon_header_codec_quality_gates.json",
+      "size_bytes": 5556,
+      "sha256": "7d90f0876ff5df381e4490e1c1cd85331e676696a1051b8344b1ed5e5e36858b"
+    },
+    {
+      "path": "triage_evidence/daemon_header_codec_source.json",
+      "size_bytes": 398319,
+      "sha256": "365007b25face97d712ac16a05b8a85f8d8ccc4eff60fc3627364cd091d97494"
+    },
+    {
+      "path": "triage_evidence/daemon_helper_result_residue_checks.json",
+      "size_bytes": 11723,
+      "sha256": "45180123129581d057683835be9752cfa3ad2305d49ad814b9620d0eafd4cd8a"
+    },
+    {
+      "path": "triage_evidence/daemon_helper_result_residue_delivery.json",
+      "size_bytes": 2119,
+      "sha256": "ae58a85a1a11a3b31fcb977440a27adf772f0b00e906b9e39e833fd826b15fe8"
+    },
+    {
+      "path": "triage_evidence/daemon_helper_result_residue_prior_manifest.json",
+      "size_bytes": 1846012,
+      "sha256": "a3a229fe71a5fbd0ac0835bdf9ad4c3a772ed56ab61d1cecd7fec8ead2c87d53"
+    },
+    {
+      "path": "triage_evidence/daemon_helper_result_residue_quality_gates.json",
+      "size_bytes": 6127,
+      "sha256": "3fb86bf2ad37b9a667fcde29d1db7a876a08d99b847069d723791fa85ea9fe82"
+    },
+    {
+      "path": "triage_evidence/daemon_helper_result_residue_source.json",
+      "size_bytes": 185304,
+      "sha256": "001bf029d30342ad1dd4b5b3e25ed633c4ab6468b62fa5897b381784e7111405"
     },
     {
       "path": "triage_evidence/daemon_identity_cache_all_low8_input_byte_XOR98.smt2",
@@ -21115,6 +22363,36 @@
       "path": "triage_evidence/daemon_iokit_sync_write_lock_postreturn_index_original.smt2",
       "size_bytes": 179,
       "sha256": "ca459e415b639b44f5549e573773cd1a99a90aae02f3f66e8751e0997e1f314f"
+    },
+    {
+      "path": "triage_evidence/daemon_list_output_checks.json",
+      "size_bytes": 188165,
+      "sha256": "c47ee626413f9c0b5fc3463cab042feae1ee90bd8b1a65987c820cb06acc9319"
+    },
+    {
+      "path": "triage_evidence/daemon_list_output_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "6eef733f2b650547ec9569d1c38cea45efea6eb83cb18cde386cb77c9cc4926d"
+    },
+    {
+      "path": "triage_evidence/daemon_list_output_ida.json",
+      "size_bytes": 7006,
+      "sha256": "a0412cc07de735ebdd459b361b07059092c320ca08f8049b53425e651d5c7ab5"
+    },
+    {
+      "path": "triage_evidence/daemon_list_output_prior_manifest.json",
+      "size_bytes": 1806390,
+      "sha256": "a91983bfda74bfb922af6aefe621555425d65a91154d25a75ed781ac65da964b"
+    },
+    {
+      "path": "triage_evidence/daemon_list_output_quality_gates.json",
+      "size_bytes": 7028,
+      "sha256": "afb3cd7737edebbb0c02c971dcff14b137abf3d2513c9b4aca5d238e8b6174d8"
+    },
+    {
+      "path": "triage_evidence/daemon_list_output_source.json",
+      "size_bytes": 180879,
+      "sha256": "faf5c3deacebaaa24ef64bf930f343ac6997c40a4777a5ebe9b9111e1d9c6322"
     },
     {
       "path": "triage_evidence/daemon_mig_handover_A70_anynull_raw_result_and_entry_SP.smt2",
@@ -23042,6 +24320,56 @@
       "sha256": "bbe055af41a42df24b0821e522a633f2218ebd82f6b620432d6b0e660e8c35a5"
     },
     {
+      "path": "triage_evidence/daemon_output_publication_checks.json",
+      "size_bytes": 37401,
+      "sha256": "933cc15ed2363adfa6eab0300e2eb8622d4d06221882c9fec0b4de5d49200986"
+    },
+    {
+      "path": "triage_evidence/daemon_output_publication_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "c6b9f20035b0787a27acb80a5b488101e981b52820f10b729bfbf4e9edfe6794"
+    },
+    {
+      "path": "triage_evidence/daemon_output_publication_prior_manifest.json",
+      "size_bytes": 1803216,
+      "sha256": "52d1c430fe967b1159ca01c8f41f5b2204204b4689fdba45bc747df9b0cdf71d"
+    },
+    {
+      "path": "triage_evidence/daemon_output_publication_quality_gates.json",
+      "size_bytes": 6031,
+      "sha256": "c3215b24d86938be20aa75c349dd3d9ef9484174a92e87d94707bc358425f5f2"
+    },
+    {
+      "path": "triage_evidence/daemon_output_publication_source.json",
+      "size_bytes": 103675,
+      "sha256": "f6f5b8da77c755ad477d57cb419057b726efc63b8dffe5e7af6b602669c33139"
+    },
+    {
+      "path": "triage_evidence/daemon_payload_codec_checks.json",
+      "size_bytes": 134992,
+      "sha256": "e72fdbbaac30cc648712a7ac0e6eb401e28f85f2d63ae5eb8dab52a4ec1ab22e"
+    },
+    {
+      "path": "triage_evidence/daemon_payload_codec_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "7bda8515d8762db99f9a60b7b583c0b3d5233982c04cf1c18c5a09633284dae0"
+    },
+    {
+      "path": "triage_evidence/daemon_payload_codec_prior_manifest.json",
+      "size_bytes": 1812726,
+      "sha256": "1c7cb24b0db8c916e9bf170757b97af49915dfa6ea7cb0d89986a681bcf987b2"
+    },
+    {
+      "path": "triage_evidence/daemon_payload_codec_quality_gates.json",
+      "size_bytes": 5414,
+      "sha256": "3fd9109b473ed52235e1f03c9092a2183905eba2147833fcf2606df33c76ca61"
+    },
+    {
+      "path": "triage_evidence/daemon_payload_codec_source.json",
+      "size_bytes": 451868,
+      "sha256": "82a4a884a0b313b48cecab8cea6fdeb64282635a5ab9350a83cc8e2038323e8b"
+    },
+    {
       "path": "triage_evidence/daemon_prior_proof_manifests.json",
       "size_bytes": 121515,
       "sha256": "77f78f1fee28f4ba91a1840cda19d6b932fc2909c1d4c8922177b6a7278179cc"
@@ -23737,6 +25065,156 @@
       "sha256": "4e064942fdc9eda76fa4d6c5ee565fa2d16335f2742bac397f69208bef74506e"
     },
     {
+      "path": "triage_evidence/daemon_reader_container_origins_checks.json",
+      "size_bytes": 392866,
+      "sha256": "86cf1a325861918751be9365fc70b5efbe82564fcef625b67c1e8b531fbad06e"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_container_origins_delivery.json",
+      "size_bytes": 2118,
+      "sha256": "4343a0e1a32248c845ecafd8b74974c0ce91c58fdb87e3a023719d393b67da17"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_container_origins_prior_manifest.json",
+      "size_bytes": 1870812,
+      "sha256": "90a87fdc3dec7a8e0e87e875f81aa68446b7472edc868dcc455098bef864d45b"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_container_origins_quality_gates.json",
+      "size_bytes": 8544,
+      "sha256": "b9012b614e7a51e7b90bbe552ee96d07a3a017974072e46d0c7ea610a68e7525"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_container_origins_source.json",
+      "size_bytes": 60255,
+      "sha256": "a27d026ffbc174903e0dcc027b4908c1315066ae2ce0ca82770e87a63c0ee4e2"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_context_footprint_checks.json",
+      "size_bytes": 1831867,
+      "sha256": "49f7303a9bd846c78e9fd99734bbde187379e0401eccc25dda09bf142bd6eaaa"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_context_footprint_delivery.json",
+      "size_bytes": 2118,
+      "sha256": "786baeea0dfddc26dc6a24c2baa1ad45d4ca20b7847feb5f6508fb5841e383fb"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_context_footprint_prior_manifest.json",
+      "size_bytes": 1851754,
+      "sha256": "6c3d78f082d763711912e555e97ee5780460ac17a18fbd34fce01a4a8f5b9215"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_context_footprint_quality_gates.json",
+      "size_bytes": 8022,
+      "sha256": "598c4e5eefbe52354fa9c1bac7f80053b2366141c7cb721bee13451a3a203f3a"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_context_footprint_source.json",
+      "size_bytes": 158964,
+      "sha256": "8108152e60263571faacb2eaa6d945910572ca63a17f0d8e69b6a2a5157e50a4"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_extent_families_checks.json",
+      "size_bytes": 839360,
+      "sha256": "f5272a4d13692ad98b342facb5a50c2fc7cc4f40a51171c91499cc407f27a934"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_extent_families_delivery.json",
+      "size_bytes": 2119,
+      "sha256": "c0ae8effc7b5b175718733a38e0ce43563ca7417d33056c7388b7d41e38ddad3"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_extent_families_prior_manifest.json",
+      "size_bytes": 1862060,
+      "sha256": "d2af6c4f382f665ab380aa7368686d39bfe333cd7bce3439375f240fffb79404"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_extent_families_quality_gates.json",
+      "size_bytes": 7252,
+      "sha256": "05e207b4c578b2690822ec5bd2e76d506946709d3f1e29a80e9e02d8eaabd1a0"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_extent_families_source.json",
+      "size_bytes": 172407,
+      "sha256": "3f9fef26eff0bf9ca58d8c4d9b85c1d4dfca22f45d46880fbf93b6658714a4fc"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_stack_epoch_checks.json",
+      "size_bytes": 43476,
+      "sha256": "5cc61320284f115ec0d42292b34d8effeb62a2893467263261be0f49a0554e5c"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_stack_epoch_delivery.json",
+      "size_bytes": 2120,
+      "sha256": "c17e6355f4af58ea66b44ecb56afddea467ab76d44f79a5109344d2982aa5bf2"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_stack_epoch_prior_manifest.json",
+      "size_bytes": 1855552,
+      "sha256": "6a253be5566fdcb70a5d7586f0ce6599fb1a0856abccf056e7820e5a6678c415"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_stack_epoch_quality_gates.json",
+      "size_bytes": 7792,
+      "sha256": "17340c5132679dfa000b6a662a150d1f0b6003c2ebe3a8e43ec802487f3f44fe"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_stack_epoch_source.json",
+      "size_bytes": 4899008,
+      "sha256": "ed690bce9826df292d2153e8ea02f55b184ea163e54f11936defaad5a7d11c89"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_typed_dispatch_checks.json",
+      "size_bytes": 2084659,
+      "sha256": "195a28b1d6b0717f11180b1ac15de85581ece550b8f3db8db225d2a7fe2133a9"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_typed_dispatch_delivery.json",
+      "size_bytes": 2118,
+      "sha256": "5a7dcaef247a50767b87823497f6116b5c1aa012600bab27591de4764af98a85"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_typed_dispatch_prior_manifest.json",
+      "size_bytes": 1864885,
+      "sha256": "2f454a15051e30d64a3f7681e8d25474c567173763f1e5282e50fb491e0c5a54"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_typed_dispatch_quality_gates.json",
+      "size_bytes": 7621,
+      "sha256": "3e2cb2acb17a17a571899165060ae6e8fe08dc95693b31cfc0c21567869ee557"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_typed_dispatch_source.json",
+      "size_bytes": 267035,
+      "sha256": "767e3b1a003838ecd97d4040bef60de2577c487a383488f37ae9d1d4eb94b7d5"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_value_consumers_checks.json",
+      "size_bytes": 622285,
+      "sha256": "162e1ff2a166135e1d807043fe9bfa0467c4171fb54a27a261f3d35b84afe7f3"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_value_consumers_delivery.json",
+      "size_bytes": 2117,
+      "sha256": "ed40152300e325a38a97ee6dcaf504d1d59ff3ad2153ada54b1dff3881d596a7"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_value_consumers_prior_manifest.json",
+      "size_bytes": 1867747,
+      "sha256": "ca6eb83c2c430b3c81356c8b6f7b775107e19d8d20562e6cf20ad751beaf0b6e"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_value_consumers_quality_gates.json",
+      "size_bytes": 8426,
+      "sha256": "73d60225967a7c38229bbb853e3241d7a2e301fa9254124d036ca12f871d43a8"
+    },
+    {
+      "path": "triage_evidence/daemon_reader_value_consumers_source.json",
+      "size_bytes": 282765,
+      "sha256": "43076d57ba6e1fcbffa28b6709ac6b70818646ea32ae5efe2b1cb2f745855aa9"
+    },
+    {
       "path": "triage_evidence/daemon_receive_callback_decompilation.json",
       "size_bytes": 1851,
       "sha256": "6476878cb5b955b781c81f64c2e9af4b795d8372e34e5dcf09026c2017599961"
@@ -24285,6 +25763,31 @@
       "path": "triage_evidence/daemon_record720_valid720_owner_covers_all_accesses_original.smt2",
       "size_bytes": 13028,
       "sha256": "8575ab04ccecd100fc2d79cf9aeb81db675618bbb852d45331d303c7a0272170"
+    },
+    {
+      "path": "triage_evidence/daemon_record_stream_checks.json",
+      "size_bytes": 15662,
+      "sha256": "12b6b043086c15af952455eb90d8491a6b4374406efc797405b6f3fdcd997c0c"
+    },
+    {
+      "path": "triage_evidence/daemon_record_stream_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "9137cd600da990b9698cdb4cb37ee175da0fad19738042325e91e82cd30fd61f"
+    },
+    {
+      "path": "triage_evidence/daemon_record_stream_prior_manifest.json",
+      "size_bytes": 1809975,
+      "sha256": "fb27897d0bbb505c9c5aa5ffb1a295c7e0989d26a04995763f0307c65d9c307b"
+    },
+    {
+      "path": "triage_evidence/daemon_record_stream_quality_gates.json",
+      "size_bytes": 5308,
+      "sha256": "ea93e3e39b80eb3a7c3bb07f51733a62a5979ad788dab80c9f25e52fe3f8e704"
+    },
+    {
+      "path": "triage_evidence/daemon_record_stream_source.json",
+      "size_bytes": 171073,
+      "sha256": "94bdb1e023f4c2e2d3c96ebe8a3bdc5db012db1de028d70a785b74214211202c"
     },
     {
       "path": "triage_evidence/daemon_registration_adapter_frame_delta.smt2",
@@ -25355,6 +26858,31 @@
       "path": "triage_evidence/daemon_rwlock_lifecycle_symbolic.py",
       "size_bytes": 7484,
       "sha256": "59d645311d779a40448a4b656aa1a0191ac3481bd4f8c743ddf63b678b12a105"
+    },
+    {
+      "path": "triage_evidence/daemon_scalar_field_population_checks.json",
+      "size_bytes": 124538,
+      "sha256": "ea8080443419906007c888275da7f82a50950895d5a13424af9b31e5acf71087"
+    },
+    {
+      "path": "triage_evidence/daemon_scalar_field_population_delivery.json",
+      "size_bytes": 2114,
+      "sha256": "9387ca334463491b6e806ca87c9b494cfedc1acbbd81cb779759602b2a3f394c"
+    },
+    {
+      "path": "triage_evidence/daemon_scalar_field_population_prior_manifest.json",
+      "size_bytes": 1842612,
+      "sha256": "36598de339198ca97df3e90d9e4d27e5d2df71df43f985dc1f372d56ac0ea36e"
+    },
+    {
+      "path": "triage_evidence/daemon_scalar_field_population_quality_gates.json",
+      "size_bytes": 8281,
+      "sha256": "c6d5f59ddda0a97a993cb49fe8ac4e0a1860d73ffcb04e83f5e74bc97fef600d"
+    },
+    {
+      "path": "triage_evidence/daemon_scalar_field_population_source.json",
+      "size_bytes": 998807,
+      "sha256": "e3e34bb79529d3415fc25e48e79c2fa8eb5ad4fdf014a22c2e8a2b7f5676366c"
     },
     {
       "path": "triage_evidence/daemon_secondary_result_all_256_next_token_bits_0.smt2",
@@ -26682,6 +28210,31 @@
       "sha256": "598e672eb40f970ca2640046308e5d0d6c547adf085ab68c2cfc6a619f35d940"
     },
     {
+      "path": "triage_evidence/daemon_typed_scalar_checks.json",
+      "size_bytes": 438385,
+      "sha256": "b2d58e597f3fbdfc529bd5eb1cc57b615398ead263c1b4af5b23fb434309b597"
+    },
+    {
+      "path": "triage_evidence/daemon_typed_scalar_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "c9b97250462a9b5df40370cb2a64ab1f4a32e8df84c1048c6957d3865d5afcf3"
+    },
+    {
+      "path": "triage_evidence/daemon_typed_scalar_prior_manifest.json",
+      "size_bytes": 1824196,
+      "sha256": "1d5b9d26f96acb2b9e3fdae3266e8a84c6c9d1d7bdea0cfac2e60e6b054fdbc4"
+    },
+    {
+      "path": "triage_evidence/daemon_typed_scalar_quality_gates.json",
+      "size_bytes": 6215,
+      "sha256": "0e703ce4450a80ae321ac0e1ac36522a64c41a6b9689046617a8c8089180df34"
+    },
+    {
+      "path": "triage_evidence/daemon_typed_scalar_source.json",
+      "size_bytes": 593830,
+      "sha256": "475b0ca1474f7723990beed47bfaa40dc351ebda34c6a373a6079831cd969580"
+    },
+    {
       "path": "triage_evidence/daemon_vm_cleanup_all_MIG_request_field_bits.smt2",
       "size_bytes": 93,
       "sha256": "1d41c212a441a28347c40a99d8a7a0cbc37849b6ab2366a234b3e6b2f1563a54"
@@ -26850,6 +28403,186 @@
       "path": "triage_evidence/daemon_vm_cleanup_sdk.ll",
       "size_bytes": 1668,
       "sha256": "b13a6246bce10b60cb6f2702748fc68f6239aec8480a83453478d1a2868546a6"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_core_bridge_checks.json",
+      "size_bytes": 28621,
+      "sha256": "2c6b2ad747a22abdeafbfbab323a20316bece98204d2cc4b6781bae31aa0a975"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_core_bridge_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "ac03a0360e714ab6ac890e9c059d76969cdc8ff5905e2e26b70f98be1753e40b"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_core_bridge_prior_manifest.json",
+      "size_bytes": 1781318,
+      "sha256": "48b71bad17af02266beb0602d840a378edbc6fc8192f81c6d708f22759c59dab"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_core_bridge_quality_gates.json",
+      "size_bytes": 6130,
+      "sha256": "d3ffda8b2ca92ba9f31e1119506f138a8d4b10b227edf3dcfe67491fa9bad199"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_core_bridge_source.json",
+      "size_bytes": 194614,
+      "sha256": "7bf4980e915054523520c44981ee31e8ef041b29dc9e1cce7ca93e0566b670e1"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_error_outputs_checks.json",
+      "size_bytes": 42409,
+      "sha256": "2e1c2d5f84a2c243579d1c80f2b5c78b3bf182c6f39e9d53de7ce9e174bf1aa7"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_error_outputs_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "8c13557d4d5d12d0daf32ab7587e41d01c3dd2d0e59aa83ddcfb22e54bd57a49"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_error_outputs_prior_manifest.json",
+      "size_bytes": 1799979,
+      "sha256": "b761e93a26e2e1955250314753be6c0ce5a5b45488a5884bf216ef1add298dd0"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_error_outputs_quality_gates.json",
+      "size_bytes": 6366,
+      "sha256": "258f13872b2352e9ef4db6fb3bde38e82497b8bef1d348bd7abb22819cf3743e"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_error_outputs_source.json",
+      "size_bytes": 308313,
+      "sha256": "4d8ace06d261903177038abbe6fa6dc6b2f71c324f89b9fa0ac824cffea65705"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_iteration_checks.json",
+      "size_bytes": 15105,
+      "sha256": "733f6941d48eb753b9cf71e7885e34af69ed381888c03bdca409d7c82c8ac7e3"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_iteration_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "55ddc9459c4581c4f93c744151ea18f0ad191e71b69188ff6a7f4c17cc6a7e41"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_iteration_prior_manifest.json",
+      "size_bytes": 1778439,
+      "sha256": "5709f98848b638dcc30c9c58c152d6c4a46ce60ea80303deed3bdd4fc11b8305"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_iteration_quality_gates.json",
+      "size_bytes": 5682,
+      "sha256": "60dc94ca9abd688e7c8d4620dfdf129a2a95768e5ecb6b276add50218a570b40"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_iteration_source.json",
+      "size_bytes": 238373,
+      "sha256": "ade0f02d6d213a14268804fada6e7f76123c14b4afaffe814216256174dc032c"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_listener_checks.json",
+      "size_bytes": 17684,
+      "sha256": "ae1c3ee111fda79a9d41e02bfbf82f3fa3d6349c2bbe7764885352b9f6ecc6fc"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_listener_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "22bfa463537c293466cf343849d7bc845836db7f3fca3f2f41c6f47544fd80d0"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_listener_ida.json",
+      "size_bytes": 10747,
+      "sha256": "6f54b43d0a61c6c9d21c52865b80c4874f512243f3a77eab122fa7c3dc0b11d0"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_listener_prior_manifest.json",
+      "size_bytes": 1769592,
+      "sha256": "3421b171180b1ca0915435a270876d4a0e36927553373236d6d4ef00d8003280"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_listener_quality_gates.json",
+      "size_bytes": 5951,
+      "sha256": "b9f09ce40352d6d3c36298350780c2b2feef39b5761977aa6baae0880a11a1c6"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_listener_source.json",
+      "size_bytes": 409725,
+      "sha256": "60039b2757358e1e375c3275a1204c2b7492f967b41de6adf6ea0a1e689b24bb"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_payload_checks.json",
+      "size_bytes": 32143,
+      "sha256": "56b76b74a4e81afd2cc1a78ec009529b0e7da043ce39b7e9724567fb8733b687"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_payload_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "75f619e3f4c70f3aef3662dcc8746c2ff675f6e0940a46a632b22118bb213ab1"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_payload_prior_manifest.json",
+      "size_bytes": 1772850,
+      "sha256": "1d13e54c5a2337c19edbe16afe0cb6072059220a729bec20e905c4a373038cbd"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_payload_quality_gates.json",
+      "size_bytes": 5261,
+      "sha256": "ba03b38ffa3e31db651e1de72878a1c37a5a297f71f3a64e97b683aef46083d2"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_payload_source.json",
+      "size_bytes": 197568,
+      "sha256": "6a79ed4f409ffb90f699d7784479c53d1b0316bf496d2f7d547d85fcbd359613"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_records_checks.json",
+      "size_bytes": 19545,
+      "sha256": "dbf0ce6ad12ac1ca0b25ccb715e5fe7d7c09d7393c0ed27ff1ea4570a8683cd6"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_records_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "7524d311f9f8eb8f4ffd85449e7c977c989dbd11f6eb54df5ea47a8f120f3163"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_records_prior_manifest.json",
+      "size_bytes": 1775610,
+      "sha256": "1df0fe901cd9b6213b15dfd4d3b4846c0db158907761886a40e9d3ff1ff99ca6"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_records_quality_gates.json",
+      "size_bytes": 5594,
+      "sha256": "7737f60249e8000462f13e048f1975cd30987a11681d0c6d89b6064ce2c257d3"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_records_source.json",
+      "size_bytes": 150641,
+      "sha256": "70760e9dcc6f06960eab8ec182526210c9acedfe6785b5799debb4bbac0d4e89"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_reply_lifecycle_checks.json",
+      "size_bytes": 19791,
+      "sha256": "4cd9eecc2b8c6e887ecf0a616a821c63b58f2933fabc10d03471a34f3f10b13e"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_reply_lifecycle_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "a87347027e45a9afbae80d94d1bc082d7d309219d172d6dd9180696c99b77817"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_reply_lifecycle_prior_manifest.json",
+      "size_bytes": 1784441,
+      "sha256": "2b4535fff2441b254d3557c3056fb267a218b089d475e25d6ebffa5a020c9766"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_reply_lifecycle_quality_gates.json",
+      "size_bytes": 5819,
+      "sha256": "c3d2ba4ae62acf7f1a3dac650ad9b10f97e43e5622d7f1a86484e2ab2c289d94"
+    },
+    {
+      "path": "triage_evidence/daemon_xpc_reply_lifecycle_source.json",
+      "size_bytes": 177936,
+      "sha256": "d0d852aed3d4ec31bfb4077208526affcc3d0ecd13c1bad15254ee721291d693"
     },
     {
       "path": "triage_evidence/dispatch_algebra.json",
@@ -36252,6 +37985,11 @@
       "sha256": "b79f04b2a395d0c3b413e3476cc5fc93eaa77d8d00553d5be2941e10fd63fab2"
     },
     {
+      "path": "triage_evidence/recover_daemon_builder_owner_join.py",
+      "size_bytes": 10819,
+      "sha256": "07c663a7a981c671b8d33681b232b74f898f93391bbdc4504190d3dff2a9b08d"
+    },
+    {
       "path": "triage_evidence/recover_daemon_cache36.py",
       "size_bytes": 6613,
       "sha256": "44c202485361ef81350317df7b28060e1854cff56deaf5f158824a9956889bfc"
@@ -36282,9 +38020,44 @@
       "sha256": "89a21721e147daecd17a1410af119cc0602d3d0d82e7b4400ec66c9579de58a2"
     },
     {
+      "path": "triage_evidence/recover_daemon_collection_retirement.py",
+      "size_bytes": 10445,
+      "sha256": "ff58b4b0a12f483c75085c768d41ecd3f7c7934361c24af5c500be70ecdc5182"
+    },
+    {
       "path": "triage_evidence/recover_daemon_compression_frame.py",
       "size_bytes": 6274,
       "sha256": "41805b265e643b4532de4162a4cfedd321855566fbdf2b8cdb85cde6a0f342fa"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_constructor_bank_origins.py",
+      "size_bytes": 12250,
+      "sha256": "7bea7efc4605a953323d133c01d9266abf2891536f540902152471bb69cce73d"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_constructor_callers.py",
+      "size_bytes": 9453,
+      "sha256": "5325deebe49823022bc769154ca6865de22356c82f734cf7fcb56363c7eb7812"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_constructor_failure.py",
+      "size_bytes": 6996,
+      "sha256": "9d0fb80609b5df55aeeb1f0ee5af4f4899b685daf335d8fc73e5e90bf0a698d3"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_constructor_inputs.py",
+      "size_bytes": 6994,
+      "sha256": "503fe706195499e109f5630b9e48c1be68e3506ab65896dcf9797a0823c5488b"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_constructor_lookup.py",
+      "size_bytes": 7048,
+      "sha256": "3d679fed171238bfddf060adf887f8745c8c0291b3f174d25eadfdd345e40d1a"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_context_input_producers.py",
+      "size_bytes": 25267,
+      "sha256": "dbf8a6aa4f8b84cfa6ce794a1dbdbfa72511ab23cedfdc55ff993ce1b3958e1e"
     },
     {
       "path": "triage_evidence/recover_daemon_context_lock.py",
@@ -36357,6 +38130,11 @@
       "sha256": "315512d883297b0b03b272ad57b7ca1b58ad3d3be9b8897f3ade8cb705e94b2c"
     },
     {
+      "path": "triage_evidence/recover_daemon_existing_scalar_reader.py",
+      "size_bytes": 6485,
+      "sha256": "ddfc23f61fe1c184a96cb77d031a922cde709a07fc0ae5d1f8b243b93cd554dd"
+    },
+    {
       "path": "triage_evidence/recover_daemon_frame_entry.py",
       "size_bytes": 5294,
       "sha256": "c82cf0d04077edb92157bdd74cdb0ac1edff30e69411679c60cae11a99e1f393"
@@ -36365,6 +38143,16 @@
       "path": "triage_evidence/recover_daemon_global_state.py",
       "size_bytes": 4786,
       "sha256": "6429f1359e2aa2b083e2855257b258a09845e858ea9a13ff01a6e10bfee8cf2f"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_header_codec.py",
+      "size_bytes": 6292,
+      "sha256": "cb466f9d75283b379e211f1358610d9411d5d63cfa6a8c36067e60cb7cd30a5e"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_helper_result_residue.py",
+      "size_bytes": 7072,
+      "sha256": "9b7c661e8130dbcc7b80636dd6c26819cbdc771bf1f1095e77febe6e5b21ff6b"
     },
     {
       "path": "triage_evidence/recover_daemon_identity_cache.py",
@@ -36402,6 +38190,11 @@
       "sha256": "bd9182bd9376cc47eed52c939440fd19d55804ae745576efc60221cecc2da701"
     },
     {
+      "path": "triage_evidence/recover_daemon_list_output.py",
+      "size_bytes": 8731,
+      "sha256": "d34f3e6bd377401b0a8941edc07256bb0d6f2f0d32e91f474d08c8cef572e733"
+    },
+    {
       "path": "triage_evidence/recover_daemon_mode471c_lifecycle.py",
       "size_bytes": 6366,
       "sha256": "fdfd8b0c4bd570ef91c0135ce0abeae31d3e1a6d5e0239b487558e8316bf1d3c"
@@ -36432,6 +38225,16 @@
       "sha256": "427a0dd0a667524ec7514f6d5ab5495852287f09e5fcce58067b314354eabb34"
     },
     {
+      "path": "triage_evidence/recover_daemon_output_publication.py",
+      "size_bytes": 7447,
+      "sha256": "98bada05e3f3245053a658695e5a8fcc345bf9f25e560ba646d26a4444eed024"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_payload_codec.py",
+      "size_bytes": 10767,
+      "sha256": "a1cb6505b5afe0b1a46c19aff70eeee1bb3fe410f944a96cfe7d6ef3fcb735e6"
+    },
+    {
       "path": "triage_evidence/recover_daemon_prng_output.py",
       "size_bytes": 6291,
       "sha256": "ff44faac575f1068a814111c343074ba467f37ddf509adba59cfa1bc0ff525cd"
@@ -36447,6 +38250,36 @@
       "sha256": "1260f130a7ce14d668b2facecb33ff18f2293f8ee77d08480ac4b5cdeb27eee0"
     },
     {
+      "path": "triage_evidence/recover_daemon_reader_container_origins.py",
+      "size_bytes": 5260,
+      "sha256": "958e85f6882253f5a9167a5c080a207b3cdc6631c43bec6515ba3fc5cb4abb2b"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_reader_context_footprint.py",
+      "size_bytes": 10443,
+      "sha256": "96260f3f368cc22abf59510f2c177e0b7451b0c6d23701b9184232d2d5398c10"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_reader_extent_families.py",
+      "size_bytes": 6019,
+      "sha256": "b2ebdd13d3f953e02b13d41a334a9c0b303de60d9cf69deb23d2e86a8a1f52f8"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_reader_stack_epoch.py",
+      "size_bytes": 8755,
+      "sha256": "56f5d3ed968806ab064f3081fc56c95e6ed8525dd8d8a2b8340fa06cf7325939"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_reader_typed_dispatch.py",
+      "size_bytes": 14702,
+      "sha256": "f2cecb6fab0806abfdfaf7c4c70dd0e9f0af66749697f4f37d94a1e8e3d9a84f"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_reader_value_consumers.py",
+      "size_bytes": 6033,
+      "sha256": "e39d308f16b7e37e8490b79b62b5154ff9f00aad18f12fff54c446fc1ad0ff4d"
+    },
+    {
       "path": "triage_evidence/recover_daemon_receive.py",
       "size_bytes": 11023,
       "sha256": "488f4a1f6edab51d279deda02a2862f508e6cff3729292c02dec13915149675b"
@@ -36455,6 +38288,11 @@
       "path": "triage_evidence/recover_daemon_record40_consumer.py",
       "size_bytes": 6494,
       "sha256": "36972597d41872f4a7c5b94a079de8ae33ec86d080b028e7115b65f8d6c6a031"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_record_stream.py",
+      "size_bytes": 9850,
+      "sha256": "6a45ea36dc9f3a0d3916c73e9f9c018c8668aeb87cce33327ade86171b95c4bc"
     },
     {
       "path": "triage_evidence/recover_daemon_registration.py",
@@ -36487,6 +38325,11 @@
       "sha256": "5bb71400b7f30165ab580e9614eb109e9bacb6fd3e6a0322d6501061bc44c063"
     },
     {
+      "path": "triage_evidence/recover_daemon_scalar_field_population.py",
+      "size_bytes": 19531,
+      "sha256": "ed07fad0610cf910823dda408f9e65edd80b87713527ea49132f6aa3c5c8e990"
+    },
+    {
       "path": "triage_evidence/recover_daemon_secondary_result.py",
       "size_bytes": 5965,
       "sha256": "6ffd5c7c4226a9c9a8581270a73d3b8033ec0e1b86add7a15d1c95d034c3d83f"
@@ -36512,9 +38355,49 @@
       "sha256": "f9cf6ca20b8e593602d50b04dfd738677d51d39c3e9d6e79260117ab100be516"
     },
     {
+      "path": "triage_evidence/recover_daemon_typed_scalar.py",
+      "size_bytes": 8054,
+      "sha256": "2386f687a14074b5f093b240a771493e015f82f461b892375d3e00171d8d8d73"
+    },
+    {
       "path": "triage_evidence/recover_daemon_vm_cleanup.py",
       "size_bytes": 5717,
       "sha256": "9c1c56370834686db8a2ad38244dff9b5d0c3ef64557b9e1aabf29e4afc70ab5"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_core_bridge.py",
+      "size_bytes": 8665,
+      "sha256": "770eb11eef9b7b186c2f86ded5924146045e2397997e6c2bfb4e040eae5865b4"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_error_outputs.py",
+      "size_bytes": 7488,
+      "sha256": "e07178b71ffd839de8a99f6c6d48bd98bd7655a89f480c79c251eef225a89ef8"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_iteration.py",
+      "size_bytes": 7769,
+      "sha256": "c1bad5ad9063b9f291857b1efcebd78165417324f031846bfbd8215013529a1b"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_listener.py",
+      "size_bytes": 11742,
+      "sha256": "f4c663dbf96bd8c431ac2a4931e9e7fa87c5185103be44d5ca4001dd73303f98"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_payload.py",
+      "size_bytes": 7615,
+      "sha256": "6eb48e97141d5ed8e5a00bbc77f136703ff05cb26dda971c7def6165894cfe5b"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_records.py",
+      "size_bytes": 6792,
+      "sha256": "aaf376df156f86ed447c36f92e7f0d578ae0ba9bbb2366236c4bbbcab38c9fc9"
+    },
+    {
+      "path": "triage_evidence/recover_daemon_xpc_reply_lifecycle.py",
+      "size_bytes": 8102,
+      "sha256": "570e6bf484e723068bc31bca45cf88d8bb020d0e31b3b14e019b0d764de8fc9c"
     },
     {
       "path": "triage_evidence/recover_dispatch_voucher_hooks.py",
@@ -37147,6 +39030,11 @@
       "sha256": "30544d88515f876a381a9e1912396c1a9148e7185ee93e578d86ff542dcb51b2"
     },
     {
+      "path": "triage_evidence/recover_rpc700_endpoint_inventory.py",
+      "size_bytes": 9973,
+      "sha256": "ad922686979841d8e0348892d466dec61c45906363bcd68f6d010f011dc6b880"
+    },
+    {
       "path": "triage_evidence/recover_rpc700_namespace.py",
       "size_bytes": 11777,
       "sha256": "83cd5dce68196e8b9fb84b62a6cef6befa3fba3dd310a6a419896e094da54ff9"
@@ -37205,6 +39093,26 @@
       "path": "triage_evidence/recover_workloop_gate_attachment.py",
       "size_bytes": 3565,
       "sha256": "f8b7638a525ca86b480049092c3bfd986f5ee4fc3bf180e5607cda3e18f7c1b6"
+    },
+    {
+      "path": "triage_evidence/recover_xpc_receive_context.py",
+      "size_bytes": 6340,
+      "sha256": "2a20a49240a4bed5276a94a7b462b7d70a91c08699577656122e043a49180579"
+    },
+    {
+      "path": "triage_evidence/recover_xpc_reply_transport.py",
+      "size_bytes": 6065,
+      "sha256": "92bf58b582e84d1b48ba9c5a056f2251b15d2d70473f632c2f5b2e090e5f9190"
+    },
+    {
+      "path": "triage_evidence/recover_xpc_resource_lifecycle.py",
+      "size_bytes": 6882,
+      "sha256": "79844bf09a34891c002864cdbfe5178b2ff3daae5292671194dc81b4b7b8752c"
+    },
+    {
+      "path": "triage_evidence/recover_xpc_transaction_controls.py",
+      "size_bytes": 8074,
+      "sha256": "8eba4422f066852f37e01e70ba9af823854e60b763f70629ca80a67b6fdc0832"
     },
     {
       "path": "triage_evidence/reference_edges.json",
@@ -39462,6 +41370,36 @@
       "sha256": "7f9509c5e6675f13620951ce7bfc3d702ac79df6d1281d531457845ef6874e72"
     },
     {
+      "path": "triage_evidence/rpc700_endpoint_inventory_checks.json",
+      "size_bytes": 7747,
+      "sha256": "26083a5d6c24528aa1e6a560e471e69afaac26c4f8c6f3a37a6908ed3c22f0ec"
+    },
+    {
+      "path": "triage_evidence/rpc700_endpoint_inventory_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "48454b70db64ae48512edde5c6dfe44b26713de26c4c9d3ab7804227287519be"
+    },
+    {
+      "path": "triage_evidence/rpc700_endpoint_inventory_observations.json",
+      "size_bytes": 1571068,
+      "sha256": "ebce2ae30091aa3257e6bce11a115e0f277ff1adbd9e33a5690b01d33d8f3b9e"
+    },
+    {
+      "path": "triage_evidence/rpc700_endpoint_inventory_prior_manifest.json",
+      "size_bytes": 1765878,
+      "sha256": "93e2f846760d776c0676da0bc84aa1cb69a459958ab78baa7c8ef82ebd07a5bc"
+    },
+    {
+      "path": "triage_evidence/rpc700_endpoint_inventory_quality_gates.json",
+      "size_bytes": 6470,
+      "sha256": "2fea4d93f2271ac052dbccb87bf87f80573dd3ef5d760ca7059b6314c14d1a0e"
+    },
+    {
+      "path": "triage_evidence/rpc700_endpoint_inventory_source.json",
+      "size_bytes": 70629530,
+      "sha256": "d0a16793340566ff991d75476069bc714637c143d8475351292729d3116ffb4d"
+    },
+    {
       "path": "triage_evidence/rpc700_host_constants.c",
       "size_bytes": 256,
       "sha256": "eb333b7df67d49091e83ba73d1eaa941646a17d55a05d1f6c484043d4eb3d95c"
@@ -40277,6 +42215,11 @@
       "sha256": "ae55059390eb9bc3dd5eb0de73518a54e6206e30bb4d553800e8b19d749aeeb0"
     },
     {
+      "path": "triage_evidence/seal_daemon_builder_owner_join.py",
+      "size_bytes": 6892,
+      "sha256": "56089063d5ee673bf19725ef7ee587ae31bfba897f533f39ad947e4245f466a0"
+    },
+    {
       "path": "triage_evidence/seal_daemon_cf_descriptor_bridge.py",
       "size_bytes": 6324,
       "sha256": "5b2f84a18ccbd8d64dfa3504398497e2ccebd7be123e06b757c9c7658262a7ce"
@@ -40290,6 +42233,41 @@
       "path": "triage_evidence/seal_daemon_client_object.py",
       "size_bytes": 6500,
       "sha256": "e689495b9e1224e7500cc003b2070f43fa9a7856cbd8a1ba4049d132a749b0d1"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_collection_retirement.py",
+      "size_bytes": 5875,
+      "sha256": "95dc48d68dea01d8fb8ee4d7c432af8e213a954684f061ab3d678e9c3ec3ed11"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_constructor_bank_origins.py",
+      "size_bytes": 5530,
+      "sha256": "293cb6a795ab3459bd5747f514ba50de303f80aa054ecd28ed9432020aee858d"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_constructor_callers.py",
+      "size_bytes": 5857,
+      "sha256": "7a9fa4ba212c00c640197c5c7ffac3c898c2872ea6b6e59cf766db6b37151e5b"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_constructor_failure.py",
+      "size_bytes": 5224,
+      "sha256": "d7c363b880771278a1c52c4912c7cfcb4719d668c828f286d860c6bfe5ca32fe"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_constructor_inputs.py",
+      "size_bytes": 4976,
+      "sha256": "4c7281703b06df9e05832769757d929b325d51e7dd4bd7b91f3e64d0fafa7324"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_constructor_lookup.py",
+      "size_bytes": 5095,
+      "sha256": "6f386075b2ae25562c98e024edc04643a20e8231b5c875663db0c3d9fb50b984"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_context_input_producers.py",
+      "size_bytes": 5342,
+      "sha256": "cf45f5e3bc54bb3d40cc0809ba6dd6947482cb9eb3f3f85bc174a848b384a684"
     },
     {
       "path": "triage_evidence/seal_daemon_core_dispatch.py",
@@ -40312,6 +42290,26 @@
       "sha256": "05b8017961aea54e12bc87a1f214b38c772d1dc0959421be2711439a684d45fd"
     },
     {
+      "path": "triage_evidence/seal_daemon_existing_scalar_reader.py",
+      "size_bytes": 4927,
+      "sha256": "d5e7975a427b2b00e6bf4c38ff5d97306d5bad2e72122888c013ff8fa9922397"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_header_codec.py",
+      "size_bytes": 4987,
+      "sha256": "1ad427ec33c4f78b42fa85d2313ab573c83d0744dab431dfb8910a110a8e62de"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_helper_result_residue.py",
+      "size_bytes": 4842,
+      "sha256": "e84f1d8c0051e7569893e3f6545726fecd7f0f15089da0ced8f0e0ce0881c899"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_list_output.py",
+      "size_bytes": 5274,
+      "sha256": "c645fdb54df3e55f6345c419f39c19806e62e32ef6b9602794a7177aea64679f"
+    },
+    {
       "path": "triage_evidence/seal_daemon_mig_handover.py",
       "size_bytes": 6858,
       "sha256": "de15c2412e8dfc39d2f3657ca4a0d51a2d2df3d0d8b73ed65af4fc457a26b2d0"
@@ -40325,6 +42323,46 @@
       "path": "triage_evidence/seal_daemon_output_base.py",
       "size_bytes": 6905,
       "sha256": "5823e7655075727dc6657c11e4315d60057f9dab8985ddc6850048ab45a2cb5b"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_output_publication.py",
+      "size_bytes": 5124,
+      "sha256": "149d1118740c4576873157872ff28249159eb0ba5b2fd417c65e45b838274749"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_payload_codec.py",
+      "size_bytes": 5113,
+      "sha256": "e4a66dc4c98934e621f9f3ed50799661326a340fc6bed77bc52fc6e3e817ac6b"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_container_origins.py",
+      "size_bytes": 5223,
+      "sha256": "b41f7a7aac91f645d12faf1563a19a44f93c0b9b52bad33335872499d75abf3b"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_context_footprint.py",
+      "size_bytes": 5736,
+      "sha256": "8749eb546df994199f1caa4f4258b28e10dfc498f26b0d1b198032285af9ee73"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_extent_families.py",
+      "size_bytes": 5019,
+      "sha256": "4b73c57aed07393ba84c228eb7da1c099f0b268baf72e26c33148d3f7eb61150"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_stack_epoch.py",
+      "size_bytes": 5439,
+      "sha256": "5610e38ef66af36fbdbe72129d29ec7811c704d1857bc79853ce4e4f90bd0c75"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_typed_dispatch.py",
+      "size_bytes": 5058,
+      "sha256": "a84bc459eae9aee6f805baa0bf9f4d6ce23bac308364ebfdd187c8f1b0eaceb9"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_reader_value_consumers.py",
+      "size_bytes": 5233,
+      "sha256": "693250d4d15d97b42ba8384250e65fc90b7f330407965fd123c5455e196a8ef2"
     },
     {
       "path": "triage_evidence/seal_daemon_record40_consumer.py",
@@ -40362,6 +42400,11 @@
       "sha256": "c850f6de81207a3c404c514927828c18119b2ec1f7061c2f5bb535dce853b5b8"
     },
     {
+      "path": "triage_evidence/seal_daemon_record_stream.py",
+      "size_bytes": 4991,
+      "sha256": "7a3ff2864ca4df0efab63161643ee228bccdadc8abb52601e37963c729792f81"
+    },
+    {
       "path": "triage_evidence/seal_daemon_request_application.py",
       "size_bytes": 5892,
       "sha256": "52b68b898d6c7c27b0374fcfc4f6c9218b4db00e584f54d398828e0d48433b7f"
@@ -40370,6 +42413,11 @@
       "path": "triage_evidence/seal_daemon_request_consumption.py",
       "size_bytes": 5639,
       "sha256": "f1d979b58de0141c5384a6588220233b41b4ab4dd91f836e9ea05fcf107f5431"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_scalar_field_population.py",
+      "size_bytes": 6933,
+      "sha256": "018df75c0aed827e5dfec07a6ad784423f9e9fe6280996b42163b4425e5825dd"
     },
     {
       "path": "triage_evidence/seal_daemon_secondary_result.py",
@@ -40392,9 +42440,49 @@
       "sha256": "709c728de75da1f07d930ae1d9e5959b024b2b0b519ec0f070c52f740c3c8482"
     },
     {
+      "path": "triage_evidence/seal_daemon_typed_scalar.py",
+      "size_bytes": 4992,
+      "sha256": "ffb22ff434148cdbf6df62d59af0d8c95130f5d08c1205c0af8c001240a75c3b"
+    },
+    {
       "path": "triage_evidence/seal_daemon_vm_cleanup.py",
       "size_bytes": 6749,
       "sha256": "e9d14432a99776c10abaa856cf3b009551f137d8f98f1bbc4d46d7454194beea"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_core_bridge.py",
+      "size_bytes": 4942,
+      "sha256": "55dd0346cc2504591b9d386cba45e541fa85666f9cc9e5ba7bd53620c972dae7"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_error_outputs.py",
+      "size_bytes": 5277,
+      "sha256": "df437742eb36ec98ad10ba1af8c293a3ce3513fa97cf52c3bb33999cb4920fc8"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_iteration.py",
+      "size_bytes": 4877,
+      "sha256": "31900802222f875a01f17a7268ce4685b3034c7d2950ee34da6df8978f0a8852"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_listener.py",
+      "size_bytes": 4861,
+      "sha256": "d66aea17ac65ca7a944c24925de46d90deac92fb817b7a427ad0baa7cea5a1fc"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_payload.py",
+      "size_bytes": 4819,
+      "sha256": "e3875cfedd9a0f8a16114b1c0be58b3d99bed6bdcc9533e41c9d97bf490145b4"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_records.py",
+      "size_bytes": 4902,
+      "sha256": "8d56bbb0f25f486040859151d7783e41ce6989465bf614cfd867ad04c5781169"
+    },
+    {
+      "path": "triage_evidence/seal_daemon_xpc_reply_lifecycle.py",
+      "size_bytes": 4918,
+      "sha256": "3f1a670128b5581567adbe46e9b58dcccf22032c24f0e316257cbf05b55de6c7"
     },
     {
       "path": "triage_evidence/seal_dispatch_voucher_hooks.py",
@@ -40772,6 +42860,11 @@
       "sha256": "39c8a5bcd370d748975cd4dd5b70a8c37fdc1f27a6d4a027d3532860c665608d"
     },
     {
+      "path": "triage_evidence/seal_rpc700_endpoint_inventory.py",
+      "size_bytes": 5201,
+      "sha256": "420fb41e4249a166a9dbd6560347d276bf817fb86c5736b9e88ca21c8ec99f70"
+    },
+    {
       "path": "triage_evidence/seal_rpc700_publication.py",
       "size_bytes": 4644,
       "sha256": "369fd282b44d2dd1630825eb2678de6abdd116b769e2295d88abb4bb21180d10"
@@ -40790,6 +42883,26 @@
       "path": "triage_evidence/seal_workloop_gate_attachment.py",
       "size_bytes": 6590,
       "sha256": "0a454f713fa1c6a37b9e06954d89c1ca401d42a568c7538f7d408b41111ad07f"
+    },
+    {
+      "path": "triage_evidence/seal_xpc_receive_context.py",
+      "size_bytes": 4675,
+      "sha256": "b026d3696c54891809df94f0dd1ce92193dfe60bca56aa9fca69763464a8438b"
+    },
+    {
+      "path": "triage_evidence/seal_xpc_reply_transport.py",
+      "size_bytes": 4613,
+      "sha256": "fb72ab405b3ace09ee2700e2bb565af03c330a91666ed8e7531c6a70e94d804d"
+    },
+    {
+      "path": "triage_evidence/seal_xpc_resource_lifecycle.py",
+      "size_bytes": 4721,
+      "sha256": "dfa074b515b2ce651957522f9708823823a4e6ad4a93fc77f8ebf2e0cf648c2f"
+    },
+    {
+      "path": "triage_evidence/seal_xpc_transaction_controls.py",
+      "size_bytes": 4908,
+      "sha256": "a56a9f764943814e85a5f670e26abefb897b2a2ee617babeed08ec48ad12007f"
     },
     {
       "path": "triage_evidence/selector26_core_rpc_native.json",
@@ -41282,6 +43395,11 @@
       "sha256": "ce85d4a8ba0b9f0be89c5ffda158dd8e40d79a6fbbf7f7eab0de9b92d62cd5ee"
     },
     {
+      "path": "triage_evidence/validate_daemon_builder_owner_join.py",
+      "size_bytes": 104258,
+      "sha256": "2cf2a5181d565aa1b1effbcbeb253102f6251164de305bab9ea589d99a7082ed"
+    },
+    {
       "path": "triage_evidence/validate_daemon_cache36.py",
       "size_bytes": 10309,
       "sha256": "795718ba3ba50c84ac4a4424310be108bee16b3800364241f20f229151863f8a"
@@ -41362,6 +43480,11 @@
       "sha256": "e36f0e6f98dd63f9a172c4b4c0404eb560d17cf1c6c11ffc78a35e6b12ead110"
     },
     {
+      "path": "triage_evidence/validate_daemon_collection_retirement.py",
+      "size_bytes": 24541,
+      "sha256": "f9119a0646d4a35cd268cc658a79a34ddbb4e35fb9f2f9fc136315443dbf969f"
+    },
+    {
       "path": "triage_evidence/validate_daemon_compression_frame.py",
       "size_bytes": 8544,
       "sha256": "805e250a2708ff654fc2185e12f03dda9a0ca1a86577b19c6a765f52ae79c159"
@@ -41375,6 +43498,36 @@
       "path": "triage_evidence/validate_daemon_compression_frame_preservation.py",
       "size_bytes": 1836,
       "sha256": "90d05183935eb51c997890ed9749e730bdf2f453a2633f205f09bbd75818c18a"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_constructor_bank_origins.py",
+      "size_bytes": 13963,
+      "sha256": "5fb740dbed71d7acbc33f696a6fbdb3b566d108077271fe9bb7134b3fb736f99"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_constructor_callers.py",
+      "size_bytes": 25888,
+      "sha256": "6f5ae0492fdf322349d0deb8fbfd6a2818b0c165f7c300ce30426086116b7942"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_constructor_failure.py",
+      "size_bytes": 14043,
+      "sha256": "67b638aebe1a65fcf64c82f786705868c2c8e35b13249b407d08204bcdac159b"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_constructor_inputs.py",
+      "size_bytes": 15581,
+      "sha256": "efd0bbda1ae7c3b2faa44a560bff6d6b492d08f678cb15d2a44b191bc1f9c35a"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_constructor_lookup.py",
+      "size_bytes": 21617,
+      "sha256": "a14a3930d0afbe7c258a7de5868673ada0d34bd1dbb538614be48cec7becd765"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_context_input_producers.py",
+      "size_bytes": 8017,
+      "sha256": "3f7f6c167375b2092427f86d5450e0ea9513963af9dc28f8efb734a55db3e890"
     },
     {
       "path": "triage_evidence/validate_daemon_context_lock.py",
@@ -41557,6 +43710,11 @@
       "sha256": "17d38a55441cb9ae8c5fa34099a85457eff35eb8b6bcfd2e4d062482358c1dec"
     },
     {
+      "path": "triage_evidence/validate_daemon_existing_scalar_reader.py",
+      "size_bytes": 20292,
+      "sha256": "16c49187159a97fa0fce353646ddbe4a290da0fc09cac7cd5996f0f90769668c"
+    },
+    {
       "path": "triage_evidence/validate_daemon_frame_entry.py",
       "size_bytes": 9483,
       "sha256": "df3c6300a19a394162145da81fdcc44426eb561e4adeb2976324a6175741c92d"
@@ -41585,6 +43743,16 @@
       "path": "triage_evidence/validate_daemon_global_state_preservation.py",
       "size_bytes": 1822,
       "sha256": "027451f8c9d9c029e648cf7556d730709fb4fbffc5b3d51a95eba3e7f9ef0ea1"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_header_codec.py",
+      "size_bytes": 14423,
+      "sha256": "56f63f36e85f33397da3d19b9d7202b20a42e9eac442ce6897dd255da12d1847"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_helper_result_residue.py",
+      "size_bytes": 5481,
+      "sha256": "07177c51d7f9c253ce843a2fdad5bdd2bd05cf22db71ac464c289aab02bb21a2"
     },
     {
       "path": "triage_evidence/validate_daemon_identity_cache.py",
@@ -41692,6 +43860,11 @@
       "sha256": "60d155afa4825c3ab1f22364d3bd1ea1572c47f83fc6e101a845351d5e304d09"
     },
     {
+      "path": "triage_evidence/validate_daemon_list_output.py",
+      "size_bytes": 24107,
+      "sha256": "5276dc737a9e66ef6276b209f7e612d2125d82becbbe8721aafde084c0c883e9"
+    },
+    {
       "path": "triage_evidence/validate_daemon_mig_handover.py",
       "size_bytes": 12140,
       "sha256": "d8814591280eb68062f4c396ff6773dd69716c755d917285bd43e408fd3e059a"
@@ -41782,6 +43955,16 @@
       "sha256": "051124b76cca0dd46c2635760fca0c684d72b46aa07d9eebc2df2c1c8fd72e7e"
     },
     {
+      "path": "triage_evidence/validate_daemon_output_publication.py",
+      "size_bytes": 13905,
+      "sha256": "0fe919a32531076216babd0d114e6bec110b086c2eb92e7bbec29d8869d47113"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_payload_codec.py",
+      "size_bytes": 14440,
+      "sha256": "fe4bc7042c3fa8d5303fb9659ce7f2cf2d542e3f3c592341d59815eaccd9da55"
+    },
+    {
       "path": "triage_evidence/validate_daemon_prng_output.py",
       "size_bytes": 9691,
       "sha256": "b945987d153137bdf8bf1ec1d42a1d09b1f5283f30fbe3ddbd88e947fde0b33a"
@@ -41827,6 +44010,36 @@
       "sha256": "6c5c50aa372758e36ca0d43589ed8b8cc3b35ad8ac45f1a3b18eae091326b6d4"
     },
     {
+      "path": "triage_evidence/validate_daemon_reader_container_origins.py",
+      "size_bytes": 14234,
+      "sha256": "7540fef3f4a7a10806c6da7af99bb256325e40d78863591e9a34651b62453b0e"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_reader_context_footprint.py",
+      "size_bytes": 7799,
+      "sha256": "ac590119bca742849a44e8f7ca107b343deb051a400a622dd2d219c9fb9287b6"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_reader_extent_families.py",
+      "size_bytes": 11093,
+      "sha256": "160947ec44b1cab29bc0c206f30ceb8e55a18d3023041e043da89909bfdcb726"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_reader_stack_epoch.py",
+      "size_bytes": 7038,
+      "sha256": "f6b87f2a48b71bef2c726679f5ec46d2ae12e90cb0997308462b1f50d953aa7d"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_reader_typed_dispatch.py",
+      "size_bytes": 12021,
+      "sha256": "88b8de2ef87cbc44ac14c0edb1a02104ce9b3f02211dfcce837ee912da7c2abf"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_reader_value_consumers.py",
+      "size_bytes": 15248,
+      "sha256": "ab8ae28b87ae43d5e14afdfa516abc19b8f86054cd7e9597a0f9c2eda15dc054"
+    },
+    {
       "path": "triage_evidence/validate_daemon_record40_consumer.py",
       "size_bytes": 6412,
       "sha256": "2c60fbdd5d7e7d36bd0453ef6e39fc72449eacd37db938533848ddd86f3ed672"
@@ -41860,6 +44073,11 @@
       "path": "triage_evidence/validate_daemon_record720_spill.py",
       "size_bytes": 9042,
       "sha256": "fec3c6bdeaec885cdcf69c231074835c2e14d38a7279bf3158f86cb2ea97d813"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_record_stream.py",
+      "size_bytes": 9180,
+      "sha256": "1c7e371543797ea1d29013eb11df54aab2b83e4d342dc0f0b6f05a0334f29b30"
     },
     {
       "path": "triage_evidence/validate_daemon_registration_delivery.py",
@@ -41905,6 +44123,11 @@
       "path": "triage_evidence/validate_daemon_rwlock_lifecycle_preservation.py",
       "size_bytes": 1931,
       "sha256": "980ddf010d4390108ee87505e5f1b902313388a8e323b57f1258d460ebbae16d"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_scalar_field_population.py",
+      "size_bytes": 20423,
+      "sha256": "3dbf1e4790abf445df40d092ce7fbddb8b11d5a6266a386ec4fc6c2daced8371"
     },
     {
       "path": "triage_evidence/validate_daemon_secondary_result.py",
@@ -41957,9 +44180,49 @@
       "sha256": "11345d22c19e0db2d09199fc83f0f049a2191a84eb198954738c2512f8276742"
     },
     {
+      "path": "triage_evidence/validate_daemon_typed_scalar.py",
+      "size_bytes": 18906,
+      "sha256": "0e1b388b7ec01be003195609519f326ec24a028577e1a4aa75a2ca33249dcb4b"
+    },
+    {
       "path": "triage_evidence/validate_daemon_vm_cleanup.py",
       "size_bytes": 9444,
       "sha256": "6ba893a79dcab40a35f461656183248abe0dc4c75e88c8f918f219e5f867cfbd"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_core_bridge.py",
+      "size_bytes": 15364,
+      "sha256": "b30ff8d7445170c55a4e5dea90953b01ab056e42b358733431ac83c80bd9422c"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_error_outputs.py",
+      "size_bytes": 12763,
+      "sha256": "21155bc588824ef3ae057ef7c6950a94de5e2cbcc81bacb064760452c2efd2f8"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_iteration.py",
+      "size_bytes": 11675,
+      "sha256": "512f25e24ec6eb84081cda77d9a371fa7567c70b9396a9939a4822cd0c118e29"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_listener.py",
+      "size_bytes": 14118,
+      "sha256": "babf3f9493e609de8131fc6b1fae16d61e342ec906f84934fdaf6cf0d7e01d5a"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_payload.py",
+      "size_bytes": 11808,
+      "sha256": "4daed530a7dcd9cf1739b167262353d72f4d368c9c6c6e86cca69aa75073c116"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_records.py",
+      "size_bytes": 14070,
+      "sha256": "fe056e9cfbb9ca15c158be061cc9d333c328661ca2ef656566831ef8c71d2d58"
+    },
+    {
+      "path": "triage_evidence/validate_daemon_xpc_reply_lifecycle.py",
+      "size_bytes": 13503,
+      "sha256": "7773fef727f20b59a7f5dc198c187040361d8e14b383761fb8eaea891751b664"
     },
     {
       "path": "triage_evidence/validate_dispatch_voucher_hooks.py",
@@ -42888,8 +45151,8 @@
     },
     {
       "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
-      "size_bytes": 118356,
-      "sha256": "248c809c134d555d0acf50f747d33ab86aa35cb2bb1a8754b83fcf81b15545e4"
+      "size_bytes": 137288,
+      "sha256": "83c24df318280b8ccb59d05e9bb0d9a75507a035eea7d4c067ea95f4799dfbd8"
     },
     {
       "path": "triage_evidence/validate_rpc502_startup.py",
@@ -42930,6 +45193,11 @@
       "path": "triage_evidence/validate_rpc502_vm_handoff.py",
       "size_bytes": 9416,
       "sha256": "4d4172e524a8520036653cfdb9567ea29d828f191ac36f48030dfc534b84d5c9"
+    },
+    {
+      "path": "triage_evidence/validate_rpc700_endpoint_inventory.py",
+      "size_bytes": 14991,
+      "sha256": "1f3ee4ec67327904266e946ff0f2a0923f5f2de8cdee28cc271d2c9ccbef4950"
     },
     {
       "path": "triage_evidence/validate_rpc700_namespace.py",
@@ -43060,6 +45328,26 @@
       "path": "triage_evidence/validate_workloop_gate_attachment.py",
       "size_bytes": 10061,
       "sha256": "767d39a0e2918325156bb916c371c66746490e04864b3dc4f7de24149ac8d830"
+    },
+    {
+      "path": "triage_evidence/validate_xpc_receive_context.py",
+      "size_bytes": 15253,
+      "sha256": "fb499d6ead1e0f3c38378e10b5c385073381f9cfde9f74f9a9f6d011223f179c"
+    },
+    {
+      "path": "triage_evidence/validate_xpc_reply_transport.py",
+      "size_bytes": 13882,
+      "sha256": "4b1f4a6c2dce6f028b4fcf2a02e536c5e57839616f67a5f3d9ce3060672848ec"
+    },
+    {
+      "path": "triage_evidence/validate_xpc_resource_lifecycle.py",
+      "size_bytes": 15084,
+      "sha256": "c55aa9923e367def1a55ed418a31c513e067351043d8ca8dc5ee96eae901dedc"
+    },
+    {
+      "path": "triage_evidence/validate_xpc_transaction_controls.py",
+      "size_bytes": 13770,
+      "sha256": "e8137c7a2f31ee82a9dac3d6bc9b38e7756187e1de393ddd9e3812fa0bbc38ec"
     },
     {
       "path": "triage_evidence/validation.json",
@@ -43222,6 +45510,11 @@
       "sha256": "47f93362aa74f314d3dce87c2de479b5074d11bc4dc68e4e754297b335647d97"
     },
     {
+      "path": "triage_evidence/verify_daemon_builder_owner_join_publication.py",
+      "size_bytes": 3121,
+      "sha256": "9fa2feb5a67d906c24c07094390d308d1a7c6ae49eff4bf055ebc8f50afee890"
+    },
+    {
       "path": "triage_evidence/verify_daemon_cf_descriptor_bridge_publication.py",
       "size_bytes": 3197,
       "sha256": "ba1959375ef3d4984a8d722488f162ce4ba942366e8ec282998a7a7b948bdfa2"
@@ -43235,6 +45528,41 @@
       "path": "triage_evidence/verify_daemon_client_object_publication.py",
       "size_bytes": 3292,
       "sha256": "a393373f573a0c55959c68d014c5ce4723b64d026834c05dd7fd2929451df8c3"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_collection_retirement_publication.py",
+      "size_bytes": 3124,
+      "sha256": "819657a141eb1b9a5838b5638fb8a8aee3937882e39706b85372da71c3b68bbf"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_constructor_bank_origins_publication.py",
+      "size_bytes": 3127,
+      "sha256": "5d8a19dd2a50fe00d96eb46a159c47da0c3d13f4ef7a2d4252f3fe94734e16c0"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_constructor_callers_publication.py",
+      "size_bytes": 3122,
+      "sha256": "6f4290397bd61bf9af1aefb34c989979bbc2aeecace308495cf9b205d012bb0c"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_constructor_failure_publication.py",
+      "size_bytes": 3122,
+      "sha256": "8dc77accf8a7f5565643d9cf1a82fa7bc1434b52575c27848f99d7c295e50690"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_constructor_inputs_publication.py",
+      "size_bytes": 3121,
+      "sha256": "8767cbc25501a64d91ffcc8f2c07d98ed13ec9b1293d67c0db319c7d38959991"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_constructor_lookup_publication.py",
+      "size_bytes": 3121,
+      "sha256": "63a0ca7a1c9fa98688ef212251301d4819d4bf1333aaa27cf46e4d5b8aedf535"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_context_input_producers_publication.py",
+      "size_bytes": 3126,
+      "sha256": "69b5a11393881f4f334d985d750f919b7015d73019bc086d7a691cae8a54f10e"
     },
     {
       "path": "triage_evidence/verify_daemon_core_dispatch_publication.py",
@@ -43257,6 +45585,26 @@
       "sha256": "57aa0f5f1da98eb284d12b96e238e6bb76fbdc08a368fefec70a1ef249217224"
     },
     {
+      "path": "triage_evidence/verify_daemon_existing_scalar_reader_publication.py",
+      "size_bytes": 3125,
+      "sha256": "2ddcbf54c03f1c7b70a2453fa1ac7d8cf8f14b569508427d1148a6a6753e3001"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_header_codec_publication.py",
+      "size_bytes": 3115,
+      "sha256": "6c1ebd4a2ea67184067bd00c1bc0b568a005bb2c75156081cb2d33dc3385bb5a"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_helper_result_residue_publication.py",
+      "size_bytes": 3124,
+      "sha256": "f8d7b1a4f6dd4a437da862a1c97959126b3911b5c39c1eb6287c5b2ba0cbc825"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_list_output_publication.py",
+      "size_bytes": 3114,
+      "sha256": "b7e8808f781545cddae3501deb583b6171e456b8e0075049e092a6b0e3af6ce6"
+    },
+    {
       "path": "triage_evidence/verify_daemon_mig_handover_publication.py",
       "size_bytes": 3200,
       "sha256": "e513a4d55dc0e4b117c8c5f37a523dd5c504d48cc95809c2fa08d81f2db1a798"
@@ -43272,9 +45620,54 @@
       "sha256": "7de003b54597e23c8da49a116bc82c2f4469d95ccd50c491b067b428e748439e"
     },
     {
+      "path": "triage_evidence/verify_daemon_output_publication_publication.py",
+      "size_bytes": 3121,
+      "sha256": "db20dd99f98ba3dd93b17105ee8bdaf64919bf7206ed1fa0bc6898ac0b940a76"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_payload_codec_publication.py",
+      "size_bytes": 3116,
+      "sha256": "f2912d1511b9e2baa81fc8359ecd366813c58d4d4a0bb2c06872c07276c048df"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_container_origins_publication.py",
+      "size_bytes": 3127,
+      "sha256": "1f7daf07753db934645554a81c47d07ff3d3c4e80f0751df1f9de95b01dd3a07"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_context_footprint_publication.py",
+      "size_bytes": 3127,
+      "sha256": "1dbdecb8c02d86901e278cdfe26a8926449acdb0eeced0e1e88c5c14dc8ca21f"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_extent_families_publication.py",
+      "size_bytes": 3125,
+      "sha256": "2db548445d9d4a13fbea95d1bb634e0d01e7a1201afb979d443fb01810be584f"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_stack_epoch_publication.py",
+      "size_bytes": 3121,
+      "sha256": "435f6f5b1c1e0dc65bd7c7db29d61531ba830bc5dfd5156ba79bea1f1bea226e"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_typed_dispatch_publication.py",
+      "size_bytes": 3124,
+      "sha256": "03b3457abe79205bc468b1c1ffd1ed17102415d62b4e8ff48fac60621daf01cd"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_reader_value_consumers_publication.py",
+      "size_bytes": 3125,
+      "sha256": "77407b34c2c613f928242c09fff218830dcb285ebd725bd09d52ea509fd3252c"
+    },
+    {
       "path": "triage_evidence/verify_daemon_record40_consumer_publication.py",
       "size_bytes": 3301,
       "sha256": "1ebff48a4a00b849084d5cb38561a65d57d9be5c6ab58c528aadb6bf90f396bd"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_record_stream_publication.py",
+      "size_bytes": 3116,
+      "sha256": "860e2aa3963492135247fa3e4c3d7f2511bc6933bd3ddd0a776b3d5ba156d6dd"
     },
     {
       "path": "triage_evidence/verify_daemon_request_application_publication.py",
@@ -43285,6 +45678,11 @@
       "path": "triage_evidence/verify_daemon_request_consumption_publication.py",
       "size_bytes": 3186,
       "sha256": "0dfea298e25558f6f9ab3091a33e10d5f63b0517ebd59e04a6fe42ee366b6130"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_scalar_field_population_publication.py",
+      "size_bytes": 3126,
+      "sha256": "778eda6156aeaf562c10ebda0573ab448a0733f814ac4e66f5b88f8f96340bbe"
     },
     {
       "path": "triage_evidence/verify_daemon_secondary_result_publication.py",
@@ -43307,9 +45705,49 @@
       "sha256": "7c8f38b0240e707f7bb41e81c45e967c5107423fa16b9dc970c9b12b7a00da33"
     },
     {
+      "path": "triage_evidence/verify_daemon_typed_scalar_publication.py",
+      "size_bytes": 3115,
+      "sha256": "3a9133e7e1e5ec5fee8cbbb09c3a84fb2103af43e0857ee3f5e4d6a3e6dd2c62"
+    },
+    {
       "path": "triage_evidence/verify_daemon_vm_cleanup_publication.py",
       "size_bytes": 3422,
       "sha256": "5ffdd230d8c360a0c5200f326917614f6abd4486d620f2a239cc2e7ffecc82be"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_core_bridge_publication.py",
+      "size_bytes": 3118,
+      "sha256": "14a8c14ae447e9ac213429a25cd9713580b3dbca87be0a70c1207ac5db730212"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_error_outputs_publication.py",
+      "size_bytes": 3120,
+      "sha256": "dac04e71c3349af8685ab417f65ea152db655e5465e49df2f946e5fe89945927"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_iteration_publication.py",
+      "size_bytes": 3116,
+      "sha256": "5581836b7468248fabdf03ad2a2fd86e79cfb1f98b0aeeab34874915d21608be"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_listener_publication.py",
+      "size_bytes": 3115,
+      "sha256": "4617d198b9cc5592565b7972da32e15aeccc1127200b733c4b01a995b59e7b31"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_payload_publication.py",
+      "size_bytes": 3114,
+      "sha256": "65e4b20842dd1ad77367dd5c1138191175fe65a29260130ba2a93d8671d79293"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_records_publication.py",
+      "size_bytes": 3114,
+      "sha256": "a3dceed52a7932bf9f77e147040c6a12872becdf7e9e3adf89bbad121bfd5898"
+    },
+    {
+      "path": "triage_evidence/verify_daemon_xpc_reply_lifecycle_publication.py",
+      "size_bytes": 3122,
+      "sha256": "49f434ee649ae6667d14efbc7d99efed3d89e55d0bf7fc6af6dd791903923e55"
     },
     {
       "path": "triage_evidence/verify_dispatch_voucher_hooks_publication.py",
@@ -43692,6 +46130,11 @@
       "sha256": "f437e95ba177014e3d4aa24d10eae75d86a2696e97aafd662b0a0f0461ccbac1"
     },
     {
+      "path": "triage_evidence/verify_rpc700_endpoint_inventory_publication.py",
+      "size_bytes": 3242,
+      "sha256": "751d712a5fcb15d092003294604d93a114c8a5087a0765669be3c914b3acff4d"
+    },
+    {
       "path": "triage_evidence/verify_rpc700_publication_publication.py",
       "size_bytes": 3032,
       "sha256": "c7fe516d2a50a85d9e377a856db1d801f488ab3629dbc63f5f6835b8a527e048"
@@ -43710,6 +46153,26 @@
       "path": "triage_evidence/verify_workloop_gate_attachment_publication.py",
       "size_bytes": 3184,
       "sha256": "22d7be6f57589f2c14a2222b9019e235e1200bde6d106a1821c056f56973d797"
+    },
+    {
+      "path": "triage_evidence/verify_xpc_receive_context_publication.py",
+      "size_bytes": 3115,
+      "sha256": "e8093d381829a431ce3028959c920a7e76ff918a6ccb69aaf4995be5d4e5cc02"
+    },
+    {
+      "path": "triage_evidence/verify_xpc_reply_transport_publication.py",
+      "size_bytes": 3115,
+      "sha256": "bfd043e95d915b07042c409e42b89dc6cc9a36cd2e420125a6bdd19b6f474f8d"
+    },
+    {
+      "path": "triage_evidence/verify_xpc_resource_lifecycle_publication.py",
+      "size_bytes": 3118,
+      "sha256": "f0074f7d124c4ab4669650f540638d02e1139c1db8cd546edc984c36d29521ec"
+    },
+    {
+      "path": "triage_evidence/verify_xpc_transaction_controls_publication.py",
+      "size_bytes": 3120,
+      "sha256": "f0432f7b629db5b8a3641f40c0efddfa494ae6b9a32283b665cd4ec0adf7885c"
     },
     {
       "path": "triage_evidence/workloop_gate_attachment_checks.json",
@@ -43887,6 +46350,106 @@
       "sha256": "25e61323f40fa0d5dc3da5b01f8eb2e1dc78f5338b41a7a43e7d86ad04cae039"
     },
     {
+      "path": "triage_evidence/xpc_receive_context_checks.json",
+      "size_bytes": 398257,
+      "sha256": "16fddce5ad251f63a8eb4604e64a057f9738d1566f9a0a77c5b5452ac0a54c46"
+    },
+    {
+      "path": "triage_evidence/xpc_receive_context_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "2666039935c05aa3779a16aa09e1a333c813821bb3de040b9f5bed4abf5d1e5e"
+    },
+    {
+      "path": "triage_evidence/xpc_receive_context_prior_manifest.json",
+      "size_bytes": 1790416,
+      "sha256": "2f2eaa595f2d38a78dad10d67a57750241e9c4d9bd710a956480b2cc38685f82"
+    },
+    {
+      "path": "triage_evidence/xpc_receive_context_quality_gates.json",
+      "size_bytes": 5567,
+      "sha256": "9ff9a10fbc58ce78a1415c0c9e5f46f2ee194969a9fc078b6bc890c3014ab73f"
+    },
+    {
+      "path": "triage_evidence/xpc_receive_context_source.json",
+      "size_bytes": 352282,
+      "sha256": "498b61a86e50753e8b613d05f81d407fed38ed68408bf5bb4b8b1a7433bf352f"
+    },
+    {
+      "path": "triage_evidence/xpc_reply_transport_checks.json",
+      "size_bytes": 1122879,
+      "sha256": "cd0dde17c8f492245e404d38550629fa7c4b8a188232d5e4ac6bf13240e02348"
+    },
+    {
+      "path": "triage_evidence/xpc_reply_transport_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "b15893e8f4027ac3a27ec7a4a54504733cc32e7e03593752a4f723c840928979"
+    },
+    {
+      "path": "triage_evidence/xpc_reply_transport_prior_manifest.json",
+      "size_bytes": 1787482,
+      "sha256": "22a1447f6d115a7ff3f5a38bfbbe5a00053680578f864f6cf1a76bc95d34c6e9"
+    },
+    {
+      "path": "triage_evidence/xpc_reply_transport_quality_gates.json",
+      "size_bytes": 5276,
+      "sha256": "358c74d0229344a4a7884475fb09cba42e6fe804d523f5116a8214f14f47ab03"
+    },
+    {
+      "path": "triage_evidence/xpc_reply_transport_source.json",
+      "size_bytes": 353983,
+      "sha256": "4c755d971c836c6b3d949d27e3ed60527105a84b6f35130a051ad91b65c22cd7"
+    },
+    {
+      "path": "triage_evidence/xpc_resource_lifecycle_checks.json",
+      "size_bytes": 453128,
+      "sha256": "6b9a8c3836a91aca2969d53ca803f994f999e6a9204b7aee80b795dfa7d88582"
+    },
+    {
+      "path": "triage_evidence/xpc_resource_lifecycle_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "b10b32427de56196467d24b09e193763aadf58634441751219c97ce6da9d0d54"
+    },
+    {
+      "path": "triage_evidence/xpc_resource_lifecycle_prior_manifest.json",
+      "size_bytes": 1793545,
+      "sha256": "4e74574998828a75cc12e12bcfb6f735a2d9ea66bcd2ba53a56e86afd50d3e6d"
+    },
+    {
+      "path": "triage_evidence/xpc_resource_lifecycle_quality_gates.json",
+      "size_bytes": 5804,
+      "sha256": "bd5e61f95ca1fd5a3cbfd4c969f5c6366d583d6457aff44939b031945ff0c742"
+    },
+    {
+      "path": "triage_evidence/xpc_resource_lifecycle_source.json",
+      "size_bytes": 198113,
+      "sha256": "12098e398cf0200227b427af5d07f82f0db76104d115dd6aede4547fb2207989"
+    },
+    {
+      "path": "triage_evidence/xpc_transaction_controls_checks.json",
+      "size_bytes": 678449,
+      "sha256": "36fb4c7d3b0ed5e96f01d84d84faef93073a5f00548bddf676f9e8f027b67a54"
+    },
+    {
+      "path": "triage_evidence/xpc_transaction_controls_delivery.json",
+      "size_bytes": 1875,
+      "sha256": "ed198769762a839cc0cc3e873d8310b836002b0f8a403e3b411a74d7c1d3be1e"
+    },
+    {
+      "path": "triage_evidence/xpc_transaction_controls_prior_manifest.json",
+      "size_bytes": 1796695,
+      "sha256": "559113782934923f08858791f00a0a2c6c12dbce38f38aacebec3bbb3606e9a5"
+    },
+    {
+      "path": "triage_evidence/xpc_transaction_controls_quality_gates.json",
+      "size_bytes": 6121,
+      "sha256": "9dd33c0edd72104b9b5d27492cf34a190f6dd14ed5ab117d3f2dad94bba20b49"
+    },
+    {
+      "path": "triage_evidence/xpc_transaction_controls_source.json",
+      "size_bytes": 382815,
+      "sha256": "af2509e125958a46de2156d7c0d99a63b367d8fc5c37217b62e340e5fc557d80"
+    },
+    {
       "path": "triage_evidence/zut_idb_identity.json",
       "size_bytes": 3030,
       "sha256": "ca477ee8620f82df45cad08ed822161f7d38cacbdfd28d2c14b97012db042f9e"
@@ -43920,6 +46483,26 @@
       "path": "workloop_gate_attachment_report.md",
       "size_bytes": 17160,
       "sha256": "c18e7a2fa8ded207b1bf382dc3d1f5985820747e9935318107fb4513aa151424"
+    },
+    {
+      "path": "xpc_receive_context_report.md",
+      "size_bytes": 19842,
+      "sha256": "eafa11d3b81405df469fd0064d79c0f2c679de62a6b79a52f1c8b02ae220fe67"
+    },
+    {
+      "path": "xpc_reply_transport_report.md",
+      "size_bytes": 18409,
+      "sha256": "da9338bc9d8e0a929efecf1360d0b0a707f1406a0c28b3f775b3ff43f6f2ec4e"
+    },
+    {
+      "path": "xpc_resource_lifecycle_report.md",
+      "size_bytes": 18643,
+      "sha256": "18d6b96758b0c82f6e68f473450176513f64bcb0e0aacb98a396fe998a3640fb"
+    },
+    {
+      "path": "xpc_transaction_controls_report.md",
+      "size_bytes": 16467,
+      "sha256": "cad00afa7d6434554d3c3ecaac857c73d6932faed8e1208327f3af83a5aabb4f"
     },
     {
       "path": "zut_trace_report.md",

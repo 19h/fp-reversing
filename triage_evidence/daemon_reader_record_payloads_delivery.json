@@ -1,0 +1,50 @@
+{
+  "preservation_basis": "Decoded logical artifact bytes;canonical JSON may reside in .json.zst after external migration. Seven owned logical-content updates remain explicit.",
+  "generator_sha256": "ab15b19fc807a7ce76309d1682e56ffcf69b675d5fd232e8e3c3142a1685febb",
+  "prior_manifest_sha256": "a399c5cc4f218ca8e57f505703007f1156975d8dde8dc262cf5f06d34e5c98a4",
+  "prior_artifacts_checked": 7288,
+  "prior_artifacts_unchanged": 7281,
+  "allowed_changes": [
+    {
+      "path": "daemon_reader_record_headers_report.md",
+      "prior_sha256": "ab2ebcd2423ce6418df4303a57464673036cba71810f8cfa1e1440982bd573c7",
+      "sha256": "6b69bead872b112d403af0eee2d0188ec063cef9bdc30a0ed0a493becd347cee"
+    },
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "127c9fbaa3c9872dd80271577cba39a62cb6e27330163bc797129b5b6c92abbc",
+      "sha256": "86c69b4c16cd70314c334901cf692592cf2d1216ff496f40fc43fd6bf32ed33c"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "e8ef0f5988c85a18c0ffac7b395aee7091b8a0a825b6fcbecb9ecd0c112e3eac",
+      "sha256": "720f0f74906f65ef2be0270a63de18397d42c2b520a973a0ccfcb0c2e730cc62"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "a0814fb304d75a4fa385638ae2af94fde7afcf1e9443cb31d3db0c96a3680a9b",
+      "sha256": "1c5cd4f249e4dc15fda353b9df83de59eabb24cfaaa71c8b6f83f05442361a9c"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "57a41e6eca842e2fe26c64c2deb66c284efcd3df103dabe5c530be885dc5a8aa",
+      "sha256": "2dfb638eed8bd786f2f5275cf5c9ba4202c1fe88af0f8011d11cf8d074e89192"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "e93dd95c2e3285522310c9e62d2f249cc54421a5266fbd7a27c842b9102261c8",
+      "sha256": "87b46a401006b9e22a7421df19bf4ec425a6d30c5c23b9ba8921295f139a334d"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "70a205e59c8cb86dabab4fd9315aae478c08f6d84c16d02fd9f5987b3d07684d",
+      "sha256": "c84937cbc84ff578d6c6e233473f1a69ec765f0afb1a7e350697da83d92b8c59"
+    }
+  ],
+  "original_inputs_preserved": 3,
+  "Python_syntax_checks": 5,
+  "local_links_checked": 2560,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "full_goal_complete": false
+}
