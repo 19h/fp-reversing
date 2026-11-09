@@ -1,0 +1,84 @@
+{
+  "generator_sha256": "467251cf006ad0b74e56667c677a8c2baadb6413a262fb5e6dc5c36218787c46",
+  "static_scope": "Source-pinned mode1 LEN32 input absorption into two scattered state planes and the following private-frame handoff. Static only;other lengths,compact whole operation,caller output and native daemon-kext exchange remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 414,
+    "source_bytes": 1656,
+    "pointer_records": 4,
+    "branch_slot_modifier_matches": 4,
+    "SP_writes": 0,
+    "comparison_operand_role_corrections": 4,
+    "prior_ranges_recaptured": 4,
+    "prior_bytes_recaptured": 6572,
+    "operation_data_bytes": 944,
+    "distinct_nonbranch_sites_translated": 411,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 17,
+    "queries_sat": 1,
+    "replayed_queries_unsat": 5,
+    "selected_loop_iterations": 32,
+    "image_lookup_cases": 16,
+    "image_decode_cases": 256,
+    "source_bytes_read": 32,
+    "state_bytes_written": 64,
+    "live_arithmetic_cells_preserved": 800,
+    "materialized_word_reloads": 3,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_source_absorption_report.md": "180548c67132f217e2b614bca42f924150ad9e1a55b12093d37c95bc7368f4fc",
+    "obfuscated_routines_report.md": "0543b9fbedd58f806e7ce3ec49662d16984513b60178b347ac3e2fffcf0e6c66",
+    "mach_ports_report.md": "704c1135d03c88ef95b0c14ecd86fe6bdf87bb4c13babe9eb0c9d59377161f16",
+    "foundational_triage_report.md": "f839a8aee34e83c8422ad32942d57923c3b4316312c825f3e9592a12a9b26ad8",
+    "interface_abi_report.md": "d9eeb3b22482d27e839408f70bc86997fed0bfe351eedd1628a17f0ca118594c",
+    "interface_investigation_status.md": "eeb0743e7ade49929b1f36fc6d5222b5745a0c062871964e7cf3103143a953e6",
+    "daemon_mode_one_state_materialization_report.md": "41451f5095d9f4025cf8e6bacee649159a504024f5bdea845743b9ed8f55b3e0"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_source_absorption_source.json": "0244fe2010493806fcb13b3adb2ea63052c72a04dfcaebce58522a30fdb26f9f",
+    "daemon_mode_one_source_absorption_checks.json": "69d04270675a2449def37d3220432fc9269ac80f179b2dfdbfa1dc8e788946f1",
+    "recover_daemon_mode_one_source_absorption.py": "e9d5a3b57d2b0c59c19bb8b3743278eb2bc331a1e003051a92b5a97415d9d0a9",
+    "validate_daemon_mode_one_source_absorption.py": "556d273ee0ffd68d95e455f67d218badf255eefa054866223311cbcb467e5396",
+    "seal_daemon_mode_one_source_absorption.py": "467251cf006ad0b74e56667c677a8c2baadb6413a262fb5e6dc5c36218787c46",
+    "verify_daemon_mode_one_source_absorption_publication.py": "c167cfba30efb2c7acd31bb4bf752ab4c5be9f86244372f53476b24c7abb567a"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SA1-SA8;411 captured nonbranch sites,17 UNSAT,one abstract SAT domain,32 selected loop iterations,16 image lookup cases,256 decoder cases,64 state writes and three materialized-word reloads. Other lengths,whole output,hardware PAC and native exchange remain unknown."
+  }
+}
