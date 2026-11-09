@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun result () (_ BitVec 64))
+(declare-fun count () (_ BitVec 64))
+(define-fun eq () (_ BitVec 32) (ite (= result count) #x00000001 #x00000000))
+(define-fun index () (_ BitVec 32) (bvxor (bvmul eq (bvxor #x000024fe #x0000278d)) #x00002447))
+(assert (distinct (= index #x00002734) (= result count)))
+(check-sat)

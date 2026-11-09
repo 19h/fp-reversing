@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun raw () (_ BitVec 64))
+(define-fun decoded () (_ BitVec 64)
+ (bvsub (bvadd raw #xf048dd51c8511450) (bvand #xe091baa390a228a0 (bvshl raw #x0000000000000001))))
+(assert (distinct decoded (bvxor raw #xf048dd51c8511450)))
+(check-sat)

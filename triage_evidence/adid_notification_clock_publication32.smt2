@@ -1,0 +1,8 @@
+(set-logic QF_LIA)
+(set-option :timeout 30000)
+(declare-fun seconds () Int)
+(assert (and (<= 0 seconds) (<= seconds 4294967295)))
+(define-fun published () Int (div (mod seconds 4294967296) 30))
+(define-fun lookup () Int (mod (div seconds 30) 4294967296))
+(assert (distinct published lookup))
+(check-sat)

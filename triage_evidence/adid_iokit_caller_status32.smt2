@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun r () (_ BitVec 32))
+(define-fun original () (_ BitVec 32) (bvadd (bvxor r #x43fff6ef) #xbc592da0 (bvand (bvshl r #x00000001) #x87ffedde)))
+(assert (distinct original (bvadd r #x0059248f)))
+(check-sat)

@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun a () (_ BitVec 32))
+(define-fun primary () (_ BitVec 32) (bvmul (bvxor (bvadd (bvsub (bvor #x6ffa0856 (bvshl a #x00000001)) a) #xc802fbd5) #x3f0a57fd) #x255e728d))
+(define-fun avp () (_ BitVec 32) (bvmul (bvxor (bvsub (bvand #x3214ed72 (bvnot a)) (bvor #x3214ed73 (bvnot a))) #xb15299df) #x0a42990d))
+(assert (or (distinct primary (bvmul (bvxor a #x08f753d6) #x255e728d)) (distinct avp (bvmul (bvand (bvxor a #x834674ac) #xfffffffe) #x0a42990d)) (and (= (bvand a #x00000001) #x00000000) (distinct avp (bvmul (bvxor a #x834674ac) #x0a42990d)))))
+(check-sat)

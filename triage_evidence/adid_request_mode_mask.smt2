@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun mode () (_ BitVec 16))
+(define-fun missing () (_ BitVec 32) (bvand #x000001b6 (bvnot ((_ zero_extend 16) mode))))
+(assert (distinct (= missing #x00000000) (= (bvand mode #x01b6) #x01b6)))
+(check-sat)

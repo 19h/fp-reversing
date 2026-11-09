@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun p () (_ BitVec 64))
+(define-fun primary () (_ BitVec 64) (bvadd p #x7e1f59740c8f6451))
+(define-fun avp () (_ BitVec 64) (bvadd p #x68a91db5735d89de))
+(assert (or (distinct (bvadd primary #x81e0a68bf3709baf) p) (distinct (bvadd avp #x9756e24a8ca27622) p) (distinct (= primary #x7e1f59740c8f6451) (= p #x0000000000000000)) (distinct (= avp #x68a91db5735d89de) (= p #x0000000000000000))))
+(check-sat)

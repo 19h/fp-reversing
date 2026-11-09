@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun descriptor () (_ BitVec 32))
+(assert (distinct (bvslt descriptor #x00000000) (= ((_ extract 31 31) descriptor) #b1)))
+(check-sat)

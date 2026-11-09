@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun value () (_ BitVec 8))
+(define-fun a () (_ BitVec 8) ((_ extract 7 0) (bvsub #x00001106 #x000003e7)))
+(define-fun b () (_ BitVec 8) ((_ extract 7 0) (bvsub (bvor (bvadd #x000008f6 #x0000030d) #x00000158) #x0000003c)))
+(define-fun c () (_ BitVec 8) ((_ extract 7 0) (bvadd (bvxor (bvshl #x00000583 #x00000001) #x000003dc) #x00000045)))
+(assert (or (distinct a #x1f) (distinct b #x1f) (distinct c #x1f) (distinct (= value a) (= value b)) (distinct (distinct value c) (not (= value a)))))
+(check-sat)

@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun s () (_ BitVec 64))
+(define-fun j () (_ BitVec 64) (bvadd (bvxor s #xda8ca8cae5dfbd2d) #xda8ca8cae5dfbd30))
+(define-fun selected () Bool (and (bvule j #x0000000000000007) (distinct (bvand (bvshl #x0000000000000001 j) #x00000000000000eb) #x0000000000000000)))
+(assert (distinct selected (or (= s #xfffffffffffffff8) (= s #xfffffffffffffffa) (= s #xfffffffffffffffb) (= s #xfffffffffffffffc) (= s #xfffffffffffffffd) (= s #xfffffffffffffffe))))
+(check-sat)

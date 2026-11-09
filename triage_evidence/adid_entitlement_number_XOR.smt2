@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun value () (_ BitVec 32))
+(define-fun folded () (_ BitVec 32) (bvsub (bvadd value #x3f4f8085) (bvand (bvshl value #x00000001) #x7e9f010a)))
+(assert (distinct folded (bvxor value #x3f4f8085)))
+(check-sat)

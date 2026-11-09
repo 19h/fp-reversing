@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun a () (_ BitVec 32))
+(define-fun x () (_ BitVec 32) (bvadd (bvor a #x9c6cff35) (bvsub #x639300ca (bvor a #x639300ca))))
+(define-fun key () (_ BitVec 32) (bvmul (bvxor x #x1f2a8b99) #x0a42990d))
+(assert (distinct key (bvmul (bvxor a #x834674ac) #x0a42990d)))
+(check-sat)

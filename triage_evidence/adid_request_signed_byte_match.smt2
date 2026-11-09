@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun reference () (_ BitVec 8))
+(declare-fun input () (_ BitVec 8))
+(define-fun decoded () (_ BitVec 32) (bvxor ((_ sign_extend 24) reference) #x00000004))
+(define-fun diff () (_ BitVec 32) (bvsub decoded ((_ sign_extend 24) input)))
+(assert (distinct (= diff #x00000000) (= (bvxor reference #x04) input)))
+(check-sat)

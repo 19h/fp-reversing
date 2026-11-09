@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun summed () (_ BitVec 64))
+(define-fun sign () (_ BitVec 32) ((_ zero_extend 31) ((_ extract 63 63) summed)))
+(define-fun logical () (_ BitVec 32) (bvadd ((_ extract 31 0) (bvlshr summed #x0000000000000004)) sign))
+(define-fun arithmetic () (_ BitVec 32) (bvadd ((_ extract 31 0) (bvashr summed #x0000000000000004)) sign))
+(assert (distinct logical arithmetic))
+(check-sat)

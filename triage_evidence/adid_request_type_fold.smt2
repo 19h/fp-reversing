@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun diff () (_ BitVec 32))
+(define-fun result () (_ BitVec 32) (bvadd (bvxor diff #xfbf9d5cf) (bvand (bvshl diff #x00000001) #xf7f3ab9e)))
+(assert (distinct (= result #xfbf9d5cf) (= diff #x00000000)))
+(check-sat)

@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun size () (_ BitVec 64))
+(define-fun published () (_ BitVec 32) (bvadd ((_ extract 31 0) size) #x0046d726))
+(assert (distinct (= published #x0046d7b6) (= ((_ extract 31 0) size) #x00000090)))
+(check-sat)

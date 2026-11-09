@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun p () (_ BitVec 64))
+(define-fun key () (_ BitVec 32) (bvxor (bvmul ((_ extract 31 0) p) #xb15198a9) #x2a379458))
+(define-fun low () (_ BitVec 8) (bvxor (bvmul ((_ extract 7 0) p) #xa9) #x58))
+(assert (or (distinct ((_ extract 7 0) key) low) (and (= (bvand p #x0000000000000007) #x0000000000000000) (distinct (bvand key #x00000007) #x00000000))))
+(check-sat)

@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun input () (_ BitVec 32))
+(define-fun matched () Bool (and (= ((_ extract 7 0) input) (bvxor #x6a #x04)) (= ((_ extract 15 8) input) (bvxor #x62 #x04)) (= ((_ extract 23 16) input) (bvxor #x77 #x04)) (= ((_ extract 31 24) input) (bvxor #x04 #x04))))
+(assert (distinct matched (= input #x0073666e)))
+(check-sat)

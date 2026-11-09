@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun status () (_ BitVec 32))
+(define-fun index () (_ BitVec 32) (bvxor (bvsub #x00000d5b #x000008ee) (ite (= status #x0059248f) #x0000239c #x00000000)))
+(assert (or (distinct (= index #x000027f1) (= status #x0059248f)) (distinct (= index #x0000046d) (distinct status #x0059248f))))
+(check-sat)

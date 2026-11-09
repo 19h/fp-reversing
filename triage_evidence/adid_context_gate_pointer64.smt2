@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun p () (_ BitVec 64))
+(define-fun a () (_ BitVec 64) (bvadd p #x58ce03d8d8c95487))
+(define-fun b () (_ BitVec 64) (bvadd p #x6fac17cb61e34e69))
+(assert (or (distinct (bvadd a #xa731fc272736ab79) p) (distinct (bvadd b #x9053e8349e1cb197) p) (distinct (bvadd b #x9053e8349e1cb19f) (bvadd p #x0000000000000008))))
+(check-sat)
