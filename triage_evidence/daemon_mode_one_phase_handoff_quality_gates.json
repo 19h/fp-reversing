@@ -1,0 +1,87 @@
+{
+  "generator_sha256": "382a1bcbb4948a11cc0f4d157a0639ba0c17c6dc874fc60869958440c1eb85f8",
+  "static_scope": "Post-round equality gate,16-word repacking,internal phase-bit re-entry,32-word finalization workspace and C0/LOCAL-dependent private-request suffixes. Conditional source/ABI results;later phase-one reachability,record codec/output semantics,complete budget history and native daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 11,
+    "source_instructions": 889,
+    "source_bytes": 3556,
+    "pointer_records": 17,
+    "branch_bindings": 14,
+    "data_ranges": 2,
+    "data_bytes": 512,
+    "ADRP_decodes_checked": 2,
+    "unscaled_immediates_checked": 2,
+    "SP_writes": 0,
+    "comparison_role_corrections": 4,
+    "prior_ranges_recaptured": 22,
+    "prior_bytes_recaptured": 58724,
+    "queries_unsat": 122,
+    "queries_sat": 9,
+    "predecessor_queries_replayed": 60,
+    "source_nonbranch_sites_translated": 880,
+    "repack_word_stores": 16,
+    "workspace_word_codecs_proved": 32,
+    "workspace_bytes": 296,
+    "workspace_store_operations": 65,
+    "positive_multiplier_word_codecs": 31,
+    "negative_multiplier_word_codecs": 1,
+    "combiner_cuts_bound": 2,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_phase_handoff_report.md": "ef79b042fc8c3881a8b1a1fba68ddbc916aacdd7f406cdbcba8bff14ead63d9e",
+    "obfuscated_routines_report.md": "bd86dec8e771146c030781100b90e027ff66ca8fca9ac5e90f4c9f1f300eeee3",
+    "mach_ports_report.md": "48ff93233da098057fec2a3ac144a129b99a6838b45377827dbed4cd4ffb1a45",
+    "foundational_triage_report.md": "40833accb64e2ebd865db663e4f97cf8ca7e26582b5ffe4b137be45f533728ba",
+    "interface_abi_report.md": "fbe3a948eadba7e650cd6c3b460b8fd96c198a293ae4f6606142168d887dcdfd",
+    "interface_investigation_status.md": "da92d58eec64efaaafd000f6787f692d83025013909f0d0f41ef7aca21da08ed",
+    "daemon_mode_one_word_rounds_report.md": "d7b6c9b1509825be592575c148a7cea26e2dc980ce47b9d87eee8409cd7130c1"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_phase_handoff_source.json": "48103bd43c73adc0ab7b39503e5ec111400d0bafb35b552f0580e62fca07da69",
+    "daemon_mode_one_phase_handoff_checks.json": "e378cbe6e2f0018140670e75c7dfa9d34fee4d3b0fa5e10559e9c7194763e6db",
+    "recover_daemon_mode_one_phase_handoff.py": "3f30d23709226ea4635f919b10bb6149ad5ab095c48e8f1de72b93340c70313a",
+    "validate_daemon_mode_one_phase_handoff.py": "d4700781cf25013b216fa7d6995c350621a81f7af641e78596c65d2b0c353cf5",
+    "seal_daemon_mode_one_phase_handoff.py": "382a1bcbb4948a11cc0f4d157a0639ba0c17c6dc874fc60869958440c1eb85f8",
+    "verify_daemon_mode_one_phase_handoff_publication.py": "dc0bb7e101b0ad758afa2eb9fd9a1c5443eeddd4654cf3a8f41811100f649183",
+    "daemon_mode_one_handoff_tools.py": "7b3b1fc9f6b7dd974ded914e4cef07c3a922da1249c2a89c2acd0958afd526a7"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and PH1-PH8;All880 captured nonbranch sites translated,16 compact repack values,32 word encodings,a296-byte workspace,distinct re-entry mixer and C0/LOCAL raw-result suffixes;122 UNSAT and nine SAT results including60 predecessor replays. Later phase-one reachability,successful publication,budget history and native exchange remain unknown."
+  }
+}

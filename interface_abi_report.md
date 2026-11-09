@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: [Internal phase latch and C0/LOCAL handoff](daemon_mode_one_phase_handoff_report.md) establishes sixteen repack stores,32 bijective word encodings in a296 B workspace,a distinct re-entry mixer with F460=86,and conditional request-field/raw-error suffixes. All880 captured nonbranch sites translate;122 UNSAT and nine SAT results pass. Later set-bit-visit reachability,successful publication,budget history and native daemon-kext pairing remain unknown.
+
 Current extension: [Post-extension 64-round word consumer](daemon_mode_one_word_rounds_report.md) proves 128 distinct private-grid and 128 distinct image-bank word reads,20 frame-state stores and the selected signed continuation to0x100cec684. All13400 captured nonbranch sites translate;34 UNSAT and four SAT results pass. The word view and963 scratch bytes remain unwritten. Other byte-access bounds/value equations,caller publication and native daemon-kext pairing remain unknown.
 
 Current extension: [All 69 word-extension lookup families](daemon_mode_one_lookup_roles_report.md) classifies 16 B, 8 U, 23 C, 14 D and 8 Q sites, covering 3312 reads over 48 iterations within an 800-cell table union. Source-ordered codomain induction passes with 378 checked transfers, 23 universal unary proofs, 743 UNSAT and 10 SAT results. Concrete values, the compact word recurrence, caller publication and native daemon-kext pairing remain unknown.
