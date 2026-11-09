@@ -1,0 +1,10 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+; Equal source mixes are proved in corefp_version_address_mix.smt2.
+(declare-fun encmix () (_ BitVec 32))
+(declare-fun decmix () (_ BitVec 32))
+(assert (= encmix decmix))
+(define-fun stored () (_ BitVec 32) (bvxor (bvmul encmix #xcae5b081) #x00003231))
+(define-fun decoded () (_ BitVec 32) (bvxor stored (bvmul decmix #xcae5b081)))
+(assert (distinct decoded #x00003231))
+(check-sat)

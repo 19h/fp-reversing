@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun ptr () (_ BitVec 64))
+(define-fun c () (_ BitVec 32) (ite (= ptr #x0000000000000000) #x00000000 #x00000001))
+(define-fun index () (_ BitVec 32) (bvxor #x00003231 (bvor c (bvshl c #x00000003))))
+(assert (distinct index (ite (= ptr #x0000000000000000) #x00003231 #x00003238)))
+(check-sat)

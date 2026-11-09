@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun p () (_ BitVec 32))
+(define-fun encmix () (_ BitVec 32) (bvxor (bvadd (bvsub (bvor #xeeb345b4 (bvshl p #x00000001)) p) #x08a65d26) #xc773bcad))
+(define-fun decmix () (_ BitVec 32) (bvxor (bvadd (bvsub (bvor p #x640e7db3) p) (bvand p #x9bf1824c)) #x542463c4))
+(assert (or (distinct encmix (bvxor p #x302a1e77)) (distinct decmix (bvxor p #x302a1e77))))
+(check-sat)

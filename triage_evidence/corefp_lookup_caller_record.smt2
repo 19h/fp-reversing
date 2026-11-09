@@ -1,0 +1,11 @@
+(set-logic QF_BV)
+(set-option :timeout 30000)
+(declare-fun p () (_ BitVec 64))
+(define-fun mixed () (_ BitVec 64) (bvxor (bvadd (bvsub (bvor p #x08ae71402ff5057c) p) (bvand p #xf7518ebfd00afa83)) #x8c1900eef68afb44))
+; Non-NULL required pointer inputs select CSET eq=0 in this local branch.
+(define-fun inputop () (_ BitVec 32) #x0000c1f7)
+(define-fun base () (_ BitVec 32) (bvsub inputop #x000081d5))
+(define-fun guardindex () (_ BitVec 32) (bvxor inputop (bvmul (bvand #x00000001 (bvnot base)) #x000003fd)))
+(define-fun childtag () (_ BitVec 32) (bvadd (bvor base #x00000744) #x000072c1))
+(assert (or (distinct mixed (bvxor p #x84b771aed97ffe38)) (distinct guardindex #x0000c20a) (distinct childtag #x0000ba27)))
+(check-sat)
