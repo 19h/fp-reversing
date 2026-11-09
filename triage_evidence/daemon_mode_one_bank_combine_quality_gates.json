@@ -1,0 +1,80 @@
+{
+  "generator_sha256": "de4cf68c0d07a2c48d402df78199a9a76b40d4160c1f2636578c99a08d2c7c1b",
+  "static_scope": "Selected protected-core two-bank combination:universal u32 circuit/addition identities,compact bank outputs and private control. No whole operation,caller output,native PAC or daemon-kext exchange proof.",
+  "verified_counts": {
+    "source_ranges": 2,
+    "source_instructions": 338,
+    "source_bytes": 1352,
+    "new_instructions": 162,
+    "pointer_records": 2,
+    "branch_slot_modifier_matches": 2,
+    "SP_writes": 0,
+    "prior_ranges_recaptured": 12,
+    "prior_bytes_recaptured": 2480,
+    "distinct_nonbranch_sites_translated": 336,
+    "new_nonbranch_sites_translated": 161,
+    "untranslated_source_sites": 0,
+    "queries_unsat": 18,
+    "queries_sat": 1,
+    "universal_circuit_identities": 2,
+    "proved_live_cuts": 2,
+    "compact_register_outputs": 14,
+    "scratch_cells_preserved": 816,
+    "rejected_alterations": 4
+  },
+  "report_sha256": {
+    "daemon_mode_one_bank_combine_report.md": "15e32e10261732f00fe96ca24a28dadae7f1dfeb0d9313650c1247d61607a9cf",
+    "obfuscated_routines_report.md": "9dbfed6d5baa55f4a06e462f3c0c795cdb27591079139242851cc7657ae68a33",
+    "mach_ports_report.md": "da4bcc887419ba72f5fc52936b426d89cb892cb3786c5917ea8ccb3a0b79e5da",
+    "foundational_triage_report.md": "fdc1665ffbdc41941d3da77ec541352d16ea209bcacbb1d5efebb9a17b1d38b7",
+    "interface_abi_report.md": "f8a9c8dbb407d622ed7ccf21fadac25edd178e4bfd9654b45b15edec7a9f6902",
+    "interface_investigation_status.md": "088072ac1cb66f29b67cfde58d2cc450dc89152415564eb7b31f768039faadff",
+    "daemon_mode_one_post_table_passes_report.md": "9cbed24bd7a9447341f620865ca8ec3b25909d0d94f9e200b821e885c4732e56"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_bank_combine_source.json": "cea49de0c7ffc73c96f9d1a0ffa21e1cf31c7a50943bd9a659bd194c634b67b0",
+    "daemon_mode_one_bank_combine_checks.json": "3ff6df4019d73bf2ba86fe126ebd49b2e4959087651b3086e6b9a32c231b0c97",
+    "recover_daemon_mode_one_bank_combine.py": "12f80961d1b214faf056537775937fa04c927d15d214979aafc92acc2b7fb9be",
+    "validate_daemon_mode_one_bank_combine.py": "647470b914e476b82b3345c4160f1340cf294bcf3a2c29f47d0096a0a09e82f8",
+    "seal_daemon_mode_one_bank_combine.py": "de4cf68c0d07a2c48d402df78199a9a76b40d4160c1f2636578c99a08d2c7c1b",
+    "verify_daemon_mode_one_bank_combine_publication.py": "228ff5f55158eb7a6247a66ca2847ca91a5f4bf94b7f98bc35fd6eef4cac92b8"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and BC1-BC8;336 captured nonbranch sites,18 UNSAT,one abstract SAT domain,two universal source identities,two justified live cuts and14 compact register outputs. Whole output,hardware PAC and native exchange remain unknown."
+  }
+}
