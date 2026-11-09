@@ -1,0 +1,1219 @@
+# FairPlayIOKit: obfuscated routine roles and supporting evidence
+
+Current extension: [List-sized output allocator and byte transform](daemon_list_output_report.md) classifies the phase1593 component at0x1006bc13c: checked u32 length accumulation, malloc0x1006c318c, per-node reverse byte-XOR transfer, a10 B trailing record, zero padding and output publication. The compatible phase is unique within23 checked original continuation entries; its actual upstream producer and the source encoding's inverse remain unproved.
+
+Current extension: [A70 successful-result publication](daemon_output_publication_report.md) identifies 0x100582808 as an output-pair publisher: unchanged u64 pointer, zero-extended u32-XOR extent, then raw marker0x8b3dc651. Gate0x10059c7d0 restores a48 B local cursor and partitions marker/nonmarker results. Block0x1004de1d4 is common result staging shared with allocation failures. Actual allocation, full helper continuity and native execution remain unproved.
+
+Current extension: [A70 terminal output and result roles](daemon_xpc_error_outputs_report.md) identifies the marker/nonmarker gate at 0x1007fb760, two u64 clears at 0x10057a774/0x10057a77c and u32 protected-result publication at 0x100528ddc. Marker preservation does not establish successful output production. Result/output writes precede the canary check; post-return SP-relative cell equality additionally requires delta zero.
+
+Current extension: [Transaction flag producers and process/control interfaces](xpc_transaction_controls_report.md) recovers enable/track/clean-exit/interrupt APIs, selected initializer flag priority, Boolean operation715 request and user/kernel proc_info routing. Local flags and requests remain distinct from native registration, permission, process effects and delivery.
+
+Current extension: [XPC resource disposal and transaction roles](xpc_resource_lifecycle_report.md) binds dictionary/node/data/payload disposal, four original dispose-table slots, two-counter release, serializer sent-event cleanup and transaction begin/end. The earlier flag helper is __xpc_transaction_end; native reference balance, ObjC lookup, dirty/exit effects and delivery remain unknown.
+
+Current extension: [XPC incoming context and audit roles](xpc_receive_context_report.md) joins ordinary Mach-event/unpack routines to the temporary context, request-dictionary fields, audit getters, peer PID/version and configured map128/callback gates. Conditional block publication/invocation and failure cleanup are recovered; actual credentials, policy, rights and delivery remain unknown.
+
+Current extension: [XPC reply-context and transport roles](xpc_reply_transport_report.md) binds the cache context move/port extraction, copied data and retained value, conditional header/dispatch paths and original Mach2/SVC handoff. The recovered daemon emitter is linked conditionally to this implementation; native cache pairing, namespace/rights, delivery and output ownership remain unknown.
+
+Current extension: [XPC reply and local cleanup roles](daemon_xpc_reply_lifecycle_report.md) resolves reply creation, conditional data attachment, signed status conversion, saved-peer send/reply release, output/request-buffer frees, node/Q destruction and guarded frame return. Native operation outcome, allocator/alias contracts and complete transport remain unknown.
+
+Current extension: [XPC consumer and shared-core bridge](daemon_xpc_core_bridge_report.md) supplies phase 0x4f79 for the formerly conditional A70E6EB4 constructor, resolves the adapter/core calls and identifies its 72 B borrowed record. A separate branch requests acquisition control 0x593d with a header-derived token. Getter semantics, native synchronization and final policy remain unknown.
+
+Current extension: [Record iteration and linked lookup roles](daemon_xpc_iteration_report.md) resolves the saved-end loop back edge, result/status selection, encoded query setup, node traversal, candidate word comparison and output/return continuations. The full 540-instruction address-dependent decoder is retained; wire-key correspondence and later value extraction remain unknown.
+
+Current extension: [XPC record discriminator and constructor roles](daemon_xpc_records_report.md) resolves the three exact BE16 discriminators, BE32/BE64 value conversions, variable H-zero result branch, local argument layout and two constructor allocations. Further packing, container insertion/iteration, dispatch and native processing remain unknown.
+
+Current extension: [XPC data and initial parser roles](daemon_xpc_payload_report.md) resolves the dictionary getter at `0x100ad12bc`, full-length allocation at `0x100ba9a70`, low32 reverse-copy loops and the first 10 B record extent gate. The separate 16 B allocation and later parsing frontier are recorded. Native admission, command meanings and IOKit linkage remain unknown.
+
+Current extension: [Registered-port and bootstrap consumer roles](registered_port_consumers_report.md) binds original initializer registration/order, libxpc role detection, registered lookup, bootstrap-pipe creation, exported atfork preparation and FairPlay's biased bootstrap import. Twenty-seven complete bodies contain 2671 instructions, with two daemon fragments and an exhaustive selector bank. Native branch and port identity remain unknown.
+
+Current extension: [Spawn port-action and frame-origin roles](spawn_port_actions_report.md) identifies the +0xc8 action array, seven original setters, two-pass kernel preparation, separate application/cleanup receivers and task-relative registered cells. The finite origin locator exposes 19 frame-argument calls and three pointer escapes. Twenty-six bodies contain 7541 instructions; complete native ownership and Conclave consumption remain unknown.
+
+Current extension: [Spawn descriptor and receiver roles](spawn_conclave_abi_report.md) joins work-record initialization, attribute preparation, spawnp binding, optional filtering, BSD244 ingress and cleanup. Named MAC-policy getter/setter exports distinguish nested MAC records from the outer Conclave pair. The bounded direct-load census establishes no native Conclave effect; 22 bodies and 6938 instructions are checked.
+
+Current extension: [Exclaves notification roles and unsupported boundary](exclaves_notification_contract_report.md) identifies job+0x570 as a copied Conclave identifier, links typed properties to endpoint flags/register/deregister, and separates the local spawn-attribute setter. The captured trap88 handler is exactly BTI/MOV46/RET.40 complete bodies/7688 instructions are checked; native support and FairPlay attribution remain unknown.
+
+Current extension: [Job factories and callback roles](job_factory_lineage_report.md) distinguishes UUID child creation from ordinary plist import, checks 128 callback slots across 16 installations, and recovers bounded roles for the six previously unclassified callbacks. Typed MachServices parsing reaches the endpoint-wrapper slot; socket construction supplies the owner used by the activation-count producer. Native job identity and complete event semantics remain unknown.
+
+Prior extension: [Endpoint/job lifecycle callbacks](endpoint_job_lifecycle_report.md) connects the selected factory table, fixed endpoint callback/cookie, demand gate, activation-count deactivation, pending-reason consumption, rearm/remove paths and spawnp frontier in both slices. Eight callback slots are mapped; that increment left six roles unknown, now addressed above.51 bodies/7950 instructions are captured. Native callback/relaunch and complete lifetime remain unknown.
+
+Current extension: [Jetsam-coalition service gate](coalition_service_gate_report.md) resolves the previous unnamed receiver metadata condition through original named task accessors, coalition creation/adoption, typed callbacks and diagnostic names. Task+0x608 is the jetsam-coalition slot; byte+0x28 bit0 corresponds to privilege, separate from role.16 complete bodies/2633 instructions are captured. Public naming references are pinned; exact source/build equivalence and native membership remain unknown.
+
+Current extension: [Receive-name reuse and guard restoration](receive_name_guard_report.md) links private kernel snapshot/reverse-lookup/entry-reuse/publication roles and the service-label context producer/consumer. Qualified state4->6 transition and conditional strict-guard restoration explain the lower mechanism behind launchd's assertion.36 bodies/4186 instructions are captured; private analytical labels remain distinct from original nlist names. Actual runtime identity, admission and guard state remain unknown.
+
+Current extension: [Notification69 return-path roles](port_destroyed_return_report.md) recovers both launchd slices' setup, validator, PID-gated handler, name/kind lookup, DATA_ADD event, explicit cancellation, later free, endpoint-reset and guard-assertion roles. Trap-77/MIG3213 and the original kernel backup store/emission connect these roles across levels.51 complete bodies/3179 instructions are checked; analytical private names remain distinct from original symbols. Native delivery, guard state, name identity and relaunch are unknown.
+
+Current increment: [Async lookup and completion roles](iokit_async_contract_report.md). Original MIG2866 reaches the async argument builder; FairPlay inherits an adapter and unconditional-null old async lookup. Under the stated legacy/nonnull-wake-port guards this produces Unsupported. Named completion wrappers reach original sender `0xfffffe000c5695cc`; its message53/type150 is separate from the immediate reply. Native FairPlay async use remains unproved.
+
+Prior increment: [Filter cache and Sandbox callback roles](iokit_filter_policy_report.md). Original allocation metadata names anonymous task-cache records IOUCFilterPolicy, separately from IOUserClientOwner. Original Sandbox symbols identify iofilter_resolver/applier/release and iofilter_free; registration, open lookup/cache, method evaluation and cleanup are statically joined. Runtime registration and policy decisions remain unknown.
+
+Prior increment: [Structure adapter, factory and descriptor roles](iokit_structure_arguments_report.md). Anonymous adapter `0xfffffe000c565154` validates exact method-record sizes and marshals the legacy structure call. Original provider import resolves IOMemoryDescriptor::withAddressRange, separating its exact target from the supplied FPMemoryDescriptor qualification. The selector26 handler writes12 of16 output bytes; native tail value remains unknown.
+
+Prior increment: [Connection converter and guarded selector-routing roles](iokit_connection_lifecycle_report.md). Original open export supplies type0x27; method2865 and close2816 recover that same type through shared anonymous converter `0xfffffe000be35448`. The guarded legacy route reaches inherited externalMethod and the original sparse selector router. FairPlay clientClose calls terminate(options0), ignores its result and returns0. The historical trace still has no successful connection.
+
+Prior increment: [Original IOKit open status roles and initializer chain](kernel_iokit_open_report.md). Original MIG2862 binds anonymous stub `0xfffffe000be38c4c` to open implementation `0xfffffe000c56e604`. Chained entries resolve the inherited constructor, five-argument IOUserClient adapter, FairPlay override and base initializer. Early routine errors and application-result outputs differ; historical failure cause remains unknown.
+
+Prior increment: [static kernel membership-removal roles](kernel_membership_removal_report.md). Original trap and MIG records bind the anonymous extraction core to both -23 and RPC 3227. The core uses pair admission, membership unlink, object unlock and returned-link free. Right deallocation/mod_refs have different dispatch frontiers; inferred internal roles remain separate from recovered symbols. Fourteen kernel and ten cache bodies are freshly captured without executing target instructions.
+
+Prior increment: [original first-service helper and CF source1 lifecycle](daemon_service_cf_lifecycle_report.md). Shared helper0x10044011c now executes with the recovered typed record and original bootstrap/wrapper/source/publication chain. The actual stored object reaches signal callback0x10044f23c and original CFMachPortInvalidate; original source1 removal reaches the extract-member library wrapper. Eight combined epochs preserve encoded status, object/source/dictionary identities and original callback return. Whole-main/all-five-service reachability and incoming service-message delivery remain unknown.
+
+Prior increment: [CF Mach-port ownership and deferred cleanup](cf_mach_port_retirement_report.md). Original public Create/WithPort, validity, invalidation, destructor and record/cancel bodies establish separate lifetime stages. New Create sets receive/send ownership bits; wrapped names retain clear bits unless a cached object already owns them. Both cancel/destruction orders and all 256 cleanup flag bytes agree with a separate compact semantic model. The daemon's actual header+0x18 object is not yet joined to these constructor epochs.
+
+Prior increment: [shared-state daemon/CF descriptor callback](daemon_cf_descriptor_bridge_report.md). Original initializer 0x100437c18 writes the 100-record arena/header; original setup 0x10009689c creates/registers the actual CF descriptor/source. Original callback 0x10044f23c calls captured CF lookup/rearm/invalidate/GetMain/Stop and returns directly to original CF 0x1847b7e04. Nine logical CF binds and thirteen daemon ranges are checked. Typed initializer/setup entries remain explicit joins; populated records, whole-main reachability, native lifetime and successful daemon/kext processing remain unknown.
+
+Current increment: [public run-loop context, TSD and Stop/wake](cf_public_runloop_report.md). Original exported Specific/InMode/Run wrappers now reach WithOptions, indexed depth/current-mode publication, internal RUN and actual cleanup. GetCurrent reads original TSD slot10 from a declared warm table. Five declared callback effects execute original Stop/Wake/SVC in this actual published CF context; the daemon body remains modeled. Twenty-one CF/three daemon epochs check88292 visits/73383936 B,11 SDK assertions and eight alterations. The70-slot TSD round trips and256-input Boolean slice are separate.
+
+Prior increment: [original source0 scheduler and descriptor callout](cf_source0_scheduler_report.md). Original RUN BL0x1847571b8 now executes DoSources0(0x184758504), CollectSources0(0x1847586e4), DoSource0(0x1847587d4) and the source0 callout wrapper0x184758904 before original descriptor Perform. Version/validity/timestamp gates, STLR signal clearing, saved Perform/info and normal pool-wrapper cleanup are source-pinned. Runtime type46 decoding executes from a declared source header; original hash enumeration surrounds a declared bucket backend.
+
+Sixteen CF/three separate daemon epochs check73267 visits/57655296 B,11 SDK assertions and eight rejected alterations;14 isolated comparator cases add170 separately counted visits. Actual array/multi-source sort, outer public wrapper/lock ownership, native effects and same-epoch daemon body remain unknown.
+
+Prior increment: [CF descriptor/source factory and callback ABI](cf_descriptor_source_factory_report.md). Original CF descriptor wrapper/source APIs now resolve to actual create/enable/source blocks, saved source0 schedule/cancel/Perform, copied dispatch read/write handlers and pselect helpers. The actual Perform BLRAAZ at0x1847b7e00 targets daemon0x10044f23c with descriptor, mask and context.info; source version0 and info/perform are read from original created storage. Separate daemon epochs verify matching producer/consumer ABI.
+
+Sixteen CF cases plus three daemon epochs check66071 original visits/57655296 B final private RAM. All65536 modes are checked in the four-instruction permission slice, separately262144 visits; read fallback, native dispatch-type identity, valid cached-source order reuse and stale/EIO callback suppression are explicit. Lower dispatch/POSIX/storage/hash/once/PAC/SVC effects and direct handler/Perform entries remain declared; whole startup and native scheduling/ownership remain unknown.
+
+The [descriptor source/lifecycle report](daemon_descriptor_source_report.md) resolves original kqueue/signal/CF source setup, callback0x10044f23c, signal/process dispatch and selected shutdown call sites. It ties named CFRunLoopStop to the original current-mode/stop-byte/wake body. Exact initializer slot tails and descriptor encoding have independent byte/SMT evidence; whole-startup/native lifetime remains unknown.
+
+The [CF source/wake caller report](cf_source_wake_callers_report.md) separates original signal timestamp, local bag-copy/apply helper and original callback-to-wake roles. A full CF text scan retains26 direct wake sites/25 routines and7 helper sites/5 file-descriptor routines. Raw daemon binds include five descriptor interfaces; their obfuscated daemon caller paths remain unknown.
+
+The [original kernel wake-ingress report](kernel_wake_send_ingress_report.md) establishes address-based roles for original -47 handling, task-associated readonly validation, send/disposition/reference conversion, metadata stores, policy and enqueue. It also captures exact CF autorelease-pool wrappers. Private original execution reaches wake then service receive and the unchanged daemon suffix; native initialization, identity, ownership and authentication remain unknown.
+
+The [original wake send-wrapper report](cf_wake_send_wrapper_report.md) composes original CF WakeUp with exact mach_msg/overwrite/dispatch-aux/retry/raw-trap bodies. The original send loop consumes interrupted raw results before returning eventual success/timeout to CF. Installed callback and opaque TLS auxiliary context remain distinct from header voucher rights. Native kernel entry and caller identity remain unknown.
+
+The [run-loop factory and wake-emitter report](cf_runloop_wake_port_report.md) identifies exact original nlist routines for run-loop creation, WakeUp and unsent-message checking. It establishes factory fields, the indexed suppression gate and complete original 24-byte outgoing header stores. Five CF/four kernel cases retain explicit runtime/send/PAC contracts; native caller identity and lower send behavior remain unknown.
+
+The [timer arm/expiration report](kernel_timer_expiration_delivery_report.md) establishes original Mach -93 handling, registered expiration callback, complete internal header stores, send-wrapper call and queue-send path. Five kernel/four CF cases execute the selected paths under explicit counter/scheduler/tag/preflight contracts; native timer dispatch and authentication remain unknown.
+
+The [timer creation report](kernel_timer_port_create_report.md) identifies original dynamic-zone startup, timer-create handler, kernel send-reference helper and registered callback by original specification/call/field evidence. Two startup/four kernel/four CF cases execute checked construction paths; the captured callback body remains unexecuted.
+
+The [original root-port construction report](kernel_root_port_construct_report.md) establishes unnamed original kernel construct/allocation/namespace-publication/guard routines beneath Mach trap24. Original bytes bind selected options to receive/send rights, queue context and stored guard/strict bits. Six kernel/four CF cases pass independent replay; absent internal nlist names and native enforcement remain unknown.
+
+The [control-port dispatch report](cf_control_port_dispatch_report.md) identifies original dispatch-root perform, CF timer handling/rearming and mode-emptiness bodies by exact nlist and bytes. Nine finite private cases establish empty-work branches, timer-flag set/clear composition and unchanged daemon suffixes. Nonempty root/timer work and native callback delivery remain unknown.
+
+The [mode-construction report](cf_mode_construction_report.md) establishes original CF mode lookup/construction/publication, dispatch queue initialization, fork-state transition and the six-instruction timer callback. Exact library nlist names and original fields provide routine identities; they do not establish additional semantics for unrelated obfuscated FairPlay routines. Fifteen private cases and four fresh kernel replays pass independent checks.
+
+The [original kernel port-set report](kernel_portset_delivery_report.md) identifies original allocation/namespace, membership, waitqueue-link, ready-promotion and ready-selection routines beneath Mach traps16/22. Source recapture covers163 kernel functions /21506 instructions plus28 cache bodies/ten stubs. Eight private kernel paths produce port-set object/name/link state; four paired CF consumers use the checked membership and receive contracts. Native source/runtime identity and lower allocation/PAC effects remain unknown.
+
+The [original source-scheduling report](cf_source_scheduling_report.md) adds the261-instruction CFRunLoopAddSource body, exact two-instruction getPort callback reading CFMachPort+0x14, original collection wrappers and libkernel type/member wrappers. Twenty-eight complete cache bodies plus ten stubs /2309 instructions are pinned. Original scheduling creates association arguments consumed by the original lookup wrappers; lower backends, object construction and native identity remain explicit.
+
+The [original run-loop composition report](cf_runloop_handoff_report.md) adds the complete677-instruction ___CFRunLoopRun body and original ObjC null-release/shared-return code. Eighteen complete cache bodies plus eight stubs /1722 captured instructions support original receive-to-source-to-daemon control flow. The exact TSD destructor binding is _os_release. Runtime helper/source registration and native identity remain explicit unknowns.
+
+The [original dispatch voucher-hook report](dispatch_voucher_hooks_report.md) identifies an original libSystem -> libdispatch -> voucher-table installation route, exact nlist/table bindings and five callbacks. Twelve complete cache functions plus five stubs /663 instructions are captured. Executed original installer/adopt/revert code normalizes zero-name receive headers; the named clear routine instead preserves those zero-name packets. Static parent execution, effective runtime history, nonzero-right/TSD behavior and hardware PAC remain unknown.
+
+The [CF receive/voucher report](cf_receive_voucher_report.md) recovers the exact CF receive body, original libkernel revert/adopt wrappers and four-instruction voucher-table initializer, plus three exact import stubs /133 captured instructions. Five original kernel roles pin receive bit11 and header construction. Four kernel, eight receive/voucher and four downstream cases independently replay18450 original visits. Valid null-callback table cases leave bytes intact; native runtime table selection and nonnull callbacks remain unknown.
+
+The [original CF-to-daemon composition report](cf_daemon_request_report.md) executes three complete CF source/bridge/perform bodies /313 captured instructions with the actual daemon callback. Four produced requests /7038 original visits include two continuous RPC502 application/libbsm paths and two RPC700 returns through CF. Nine lower CF helper boundaries and three original runtime-pointer chains are captured. Runtime/helper epochs, stack/malloc, selected library pairing and logical PAC remain explicit.
+
+The [continuous produced-request application report](daemon_request_application_report.md) joins original callback/MIG execution to the actual application wrapper, NUL scan, private120-byte argument record, encoded32-byte operation record, three original audit-copy calls and selected installed-cache libbsm body. Two cases /5934 original visits reach the PID-zero continuation and stop before pthread identity. Fifty-three daemon ranges /3808 instructions and the35-instruction exact library export are captured; stack-check preservation, malloc, library pairing and logical PAC remain explicit.
+
+The [exact produced-request daemon-consumption report](daemon_request_consumption_report.md) executes the original callback, demultiplexer and MIG502 stub on the exact kernel-produced user/OOL buffers. Two extended-trailer cases reach the original application entry with complete argument/audit-copy oracles; two minimal trailers give status-309 before destruction; four RPC700 cases return without dispatch. Thirty-six reviewed ranges /1287 instructions support2478 freshly replayed daemon visits; these are ranges, not complete-function counts. Native framework/endpoint/PAC behavior remains unknown.
+
+The [produced-request delivery report](kernel_request_delivery_report.md) composes original descriptor validation, common type3 VM copyout, consuming cleanup, user descriptor/header/trailer packing and receive return with the actual constructor-produced copy object. Four source-loan and eight delivery cases add 20916 independently replayed visits. Captured source now includes 148 complete bodies /20412 instructions; raw VM/user-copy/retirement and logical PAC remain explicit contracts.
+
+The [original request VM-copy factory report](kernel_request_copyin_report.md) replaces the constructor whole-call VM-copy model with original adapter/stub, exact exported _vm_map_copyin and common factory execution. Four continuous cases source-construct type3 headers/backing references, return to the actual caller and reach the original RPC queue. Nine additional complete bodies /2741 instructions are captured. Raw allocation, lower map byte-copy and inherited primitives/PAC remain explicit contracts.
+
+The [queued-request receiver report](kernel_request_receive_report.md) composes the original constructor-produced request with receive-right lookup, fast dequeue, receive-results and header namespace publication. Four original loan constructors and ten receiver cases add 17816 independently replayed visits. No function-count increase is claimed: the new evidence joins existing complete bodies without replacing the packet. Receiver context/loan publication, keyed hashes, raw retirement and logical PAC remain explicit premises.
+
+The [original constructor-to-kernel RPC request report](kernel_rpc_request_report.md) adds thirteen complete helper bodies and joins the original kext caller to host lookup, kmsg preparation, null-voucher handling, right copyin, queue insertion and special-reply linkage. Four continuous executions retain complete caller CPU/RAM state across the transport boundary. Preflight/tag/hash, raw backing, VM and logical PAC remain explicit contracts; native delivery is unknown.
+
+The [special IPC-space and kernel reply lifetime report](kernel_special_reply_report.md) recovers nineteen additional routines, including startup/creator/cache bodies, special-space bootstrap, actual kind0x0b kernel reply creation/binding, destination/send-turnstile linkage and cleanup. Exact nlist records identify `_get_bsdtask_info` and `_proc_pid`. One hundred ten complete functions / 14746 instructions support three startup and35 lifetime components /12252 original visits and three scalar proofs. Raw storage/retirement, logical PAC and uninterrupted transport remain explicit gaps.
+
+The [original reply namespace report](kernel_reply_namespace_report.md) recovers eleven additional routines for send-reference creation, reply-state query, free-chain admission, entry allocation/generation, publication, cached seed extraction and generic right translation. Exact nlist records identify space ticket lock/unlock. Ninety-one complete functions / 12562 instructions support 68 components / 11226 original visits and four scalar proofs. Whole name/entry/publication models are replaced for an ordinary type1 reply object; native kernel-special-reply kind11 and authentic transport remain unresolved.
+
+The [original receive frontend/copyout report](kernel_receive_copyout_report.md) recovers 23 additional routines for send-once creation, actual namespace lookup/retain and ticket locking, receive-results, loan return, header/right conversion and packing. Exact nlist records identify `_copyout` and `_bzero`; original zeroing executes, while user-copy/protection and raw deallocation remain modeled. Eighty complete functions / 11463 instructions support 28 components / 13714 original visits and four scalar proofs. Complex FairPlay RPC delivery remains unknown.
+
+The [original receive-continuation report](kernel_receive_continuation_report.md) recovers nine additional block/invocation/trampoline/callback/cleanup routines. Fifty-seven complete captured functions / 7485 instructions support 44 components / 13137 original visits and four scalar proofs. Original receive setup installs callback0xfffffe000bcc89bc with discriminator0xd507 and block code stores the pair; explicit invocation-fragment registers and a declared saved stack reach original callback/status handling. Full scheduler selection/invocation, hardware authentication and actual copyout remain unknown.
+
+The [original wait/enqueue producer report](kernel_waitq_enqueue_report.md) adds fourteen anonymous initialization, receive/wait, priority and inheritor routines. Forty-eight complete functions / 5827 instructions support 32 producer plus eight sender components / 14669 original visits and four scalar proofs. Source builds type3 port/type2 turnstile state, default limit5, singleton membership and pre-block thread states; three abort families omit membership. Raw allocation, loan publication and separate CPU/call contexts remain explicit. The earlier priority-word threshold is corrected to65536; native blocking and FairPlay delivery remain unknown.
+
+The [original waitq/identified-receiver report](kernel_waitq_receiver_report.md) adds eleven anonymous routines plus exact `_lck_spin_assert`. Thirty-four complete functions / 4147 instructions support 11 source-notification components / 14101 original visits and three scalar proofs. Original code selects/unlinks membership, stages and extracts a temporary CPU list, transfers one extra preemption hold and executes a bounded scheduler fast path. Whole selection/release models are removed. Native backend initialization, blocked-thread scheduling, copyout and authentic FairPlay reception remain unknown.
+
+The [original queue and receiver report](kernel_kmsg_queue_report.md) identifies nine anonymous queue/port/owner/lock/list/size routines. Twenty-two complete functions / 2930 instructions support 16 source-notification components / 12012 visits and three scalar proofs. Original code reserves capacity, validates type-22 ports, acquires/releases locks, publishes receiver state or circular links and returns caller status. Whole queue/port-lock/allocator result models are removed; lower receiver selection/release, authentication/preflight and retirement remain declared.
+
+The [cache-gate and adaptive-policy report](kernel_cache_gate_report.md) identifies six anonymous setup/policy/cursor/lock routines, with 25 retained/new functions / 3944 instructions. Original registration metadata names free/reserved-page counters; a 15490987-word collection scan resolves 12 bounded gate-memory sites. Twenty CPU components / 7898 visits verify both PID-1-associated gate-clear branches, unsigned pressure comparison, adaptive quotas, hysteresis, cursor modulo and original uncontended lock helpers. Native callback scheduling, process/page provenance and authentication remain unknown.
+
+The [original zone-refill report](kernel_zone_refill_report.md) identifies the anonymous magazine-refill, partial-page-fill and bitmap-selection routines. Nineteen retained/new functions / 3511 instructions support 12 exact held-state continuations / 4273 visits. Original inventory exchange, 33 selected bitmap returns, current publication, zero checks and saved constructor returns replace whole-refill/fill/selection return models. Actual symbols, native storage/locking and unexecuted callback/bitmap modes remain unknown.
+
+The [fixed-zone startup report](kernel_zone_startup_report.md) identifies the original zone-specification callback, creator and per-CPU cache initializer. Seventy original callback records and complete source bodies connect ipc kmsgs ID 24, ipc ports ID 22 and ipc port sets ID 23 to their fixed zone records. Ten CPU components / 1953 visits verify original startup fields and three consumer handoffs. Exact source symbols remain unknown; raw storage/locks/magazines, bootstrap epochs and logical PAC remain explicit premises.
+
+The [original kmsg allocation report](kernel_kmsg_allocation_report.md) executes the anonymous message constructor, populated per-CPU zone-cache path and original vector zero check. Thirteen complete functions / 2071 instructions support 36 fresh CPU components / 7960 visits and three policy proofs. Original fields produce all four classes under distinct constructor inputs; seven actual 44-byte notification paths produce inline class0 without whole-kmsg/zone/zero-check result models. Startup/cache epochs and heap/transport/authentication/retirement limits remain explicit under KA1-KA8.
+
+The [notification send report](kernel_notification_send_report.md) executes original send-only preparation, right/header copyin, trailer construction and common send control on an exact source-produced ID70 packet. Ten complete functions / 1503 instructions support 52 fresh CPU cases / 17201 visits and three scalar proofs. The original notification caller resumes and returns in every case. Allocation/copy/hash/tag/lock/queue/destructor effects remain explicit; native delivery, authentication and retirement remain unknown under NS1-NS8.
+
+The [send-reference lifecycle report](kernel_send_right_lifecycle_report.md) establishes original host-slot lookup, anonymous copy-send, no-senders request extraction, selected send-once cleanup and final-reference frontiers. Eight complete functions / 455 instructions support 22 fresh CPU components / 1445 visits and three all-u32 guard proofs. The actual FairPlay release body returns to its caller after an explicit acquired-port object import. Native registration, transport, retirement and authentication remain unknown under SR1-SR8.
+
+The [original kext/VM bridge](kext_vm_copyout_bridge_report.md) joins the selected `_fcHfFIGhsx` constructor to original copyout/discard through original adapters and authenticated-slot traversal interpreted logically. Eight fresh CPU components / 5636 source visits establish actual return into the caller, successful child-buffer installation and error cleanup through the destination-release frontier. Primitive transport/allocation/VM effects remain declared; wiring, native PAC and authentic daemon continuity remain unknown under KB1-KB8.
+
+The [fallback/rollback report](kernel_range_fallback_report.md) establishes original fast-result0x2e dispatch, generic marked interval/NULL-token output and direct-store copyout. Original reservation abort returns bits, unlinks an all-free bitmap record, coalesces the pool and requests zero/free. Seventy-six captured functions /13296 instructions support19 independent CPU cases /4124 visits. The abort input is an exact pre-validation prefix; a live validation-error trigger and native lifecycle remain unknown under FR1-FR8.
+
+The [original range-allocator report](kernel_range_resolver_report.md) replaces the whole lower-result model with original size-class/cache/bitmap allocation, pool-record construction and interval search. A16-byte address/record output joins the non-NULL insertion-token path. The secondary array is a forward-candidate prefix, not occupancy;20 original tagged lookups verify that distinction. Seventy-two captured functions /12376 instructions support25 independent CPU cases /7786 visits. Native bounds, entropy, zone extent, payload and transport remain unknown under RA1-RA8.
+
+The [map/store producer report](kernel_map_store_init_report.md) binds original _vm_map_create/_vm_map_create_external aliases to a shared constructor, root publication and optional auxiliary-store initialization. Original packed-store search/update/movement/parent maintenance and entry release now complete two type2 copyouts. Seven real-resolver lookups replace the position model for the constructed singleton store. Sixty-nine captured functions /11322 instructions support17 independent CPU cases /3043 visits; native provenance, payload and transport remain unknown under MS1-MS8.
+
+The [type2 copyout report](kernel_type2_copyout_report.md) joins the exact produced singleton object to original extent guards, destination-class/range adapter, entry/map validators, clone/reuse branches and map-insertion prefix. Sixty-four captured functions /11047 instructions support14 fresh CPU cases /3098 visits. Original output publication, unlink, exclusive state and mapped-size accounting precede the held packed-store search. Lower resolver and initialized destination store remain unknown under TC1-TC8.
+
+The [VM entry-copy report](kernel_vm_entry_copy_report.md) identifies original anonymous eligibility/64-byte clone, flag adjustment, NULL-associated-object helper, copy-list append/unlink and reader/cursor release roles. Fifty complete functions /8224 instructions support seven fresh CPU cases /3998 visits. Exact saved flags0x100 reject; separate flags0x110 produce and publish a one-entry type2 copy. Original discard control flow follows exact produced-memory transfers. Structural NULL-object semantics, native payload/ownership boundaries and EC1-EC8 are explicit.
+
+The [quantum binding report](aes_quantum_binding_report.md) extends original public performAES through source inner-job lease/backlink publication, adapter binding and descriptor performOperation ranges. Thirteen independent cases / 6226 source visits distinguish prepare from cache operations, selected descriptor-role reversal, conditional configuration-error cleanup and separate genIOVMSegments consumers. Already-enabled state and API/record outcomes remain premises; configuration/device bodies and native effects are unexecuted.
+
+The [hardware-job/adapter report](aes_hardware_job_report.md) resolves both job adapter origins to original IODMACommand::withSpecification and OutputLittle64 bindings. Ten independent CPU cases / 16660 visits execute a separate inner pool/gate, 32 64-byte job constructors, 64 120-byte DMA metaclass constructions and legacy-to-40-byte options packing. Deeper initializer and allocation/reference/lock outcomes remain models. Native mapper/DMA readiness, candidate identity and hardware completion remain unknown.
+
+The [synchronous AES wait report](aes_synchronous_wait_report.md) joins original gate/event-source/workloop methods to exact kernel sleep/wakeup boundaries using the same carrier event. Twelve independent CPU cases / 1572 visits preserve the refreshed source-constructed carrier state and three exact saved-context resumptions. Zero declared sleep result permits source status read, pool return and public status; nonzero stops at an assertion frontier. Native event registration, hardware status and scheduling remain unknown.
+
+The [carrier initialization report](aes_carrier_initialization_report.md) connects exact IOAESAcceleratorCommand type metadata and constructors to the typed allocation wrapper/lower backend ABI. Sixteen independent CPU cases / 7078 visits replace the earlier base-constructor model in a refreshed 32-carrier seed component. Original construction writes base word+8=1 and derived vptr, preserving +0x78; zero status bytes come from the declared zeroed-allocation backend. A complete 8210-instruction literal-offset census has three status reads and one stack store. Authentic later status writers remain unknown.
+
+The [AES completion contract report](aes_completion_contract_report.md) separates candidate no-argument `_completeAES()` at `0xfffffe0009d5153c` from common `_completeAES(carrier)` at `0xfffffe000abfd598`. Original driver source saves the common carrier from an inner hardware job, returns that job, then calls inherited completeAESQuantum. Five conditional CPU cases establish separate admission/status channels, same-carrier partial requeue and callback(context,u32-status) after outer-pool return. Authentic status generation and native hardware/constructor continuation remain unknown.
+
+The [provider-to-driver report](aes_provider_queue_report.md) executes original performAES, _queueLocked and _startCommand under explicit nominal-class/metadata/descriptor premises. Source hardware/common-start fragments establish the alignment operand and 32768-byte quantum limits; original action binding is repeated for the candidate vptr. Four full prefixes carry one source-leased command through packing, enqueue and dequeue to the included AppleS8000AES quantum entry. Full driver execution, actual kext metadata and runtime class remain unknown under PQ1-PQ8.
+
+The [AES command-pool report](aes_command_pool_report.md) extends the provider-start role through its original 32-carrier seeding loop. Original pool/gated get/return methods establish a third gate owned by the pool and a circular list with head insertion/removal. Thirty-eight source components / 11953 original visits verify 32 distinct allocation identities, source-derived command vptr stores and ordered leases. Allocation, base construction and class bookkeeping are explicit models; native object/reference/hardware meaning remains unknown under CP1-CP8.
+
+The [two-gate attachment report](workloop_gate_attachment_report.md) correlates unnamed 0xfffffe000c57b280 with IOStatistics::registerEventSource through original diagnostic references, while retaining the absence of an exact symbol. Its original inactive-bit-0 branch supplies the NULL auxiliary result previously modeled. A workloop init fragment installs _maintRequest as its internal gate default action, distinct from the AES provider gate. Original maintenance/getNext/setNext/setWorkLoop/disable bodies now establish normal attachment and removal roles. Native object/reference/lock/hardware effects remain unknown under WA1-WA8.
+
+The [AES command-gate report](aes_command_gate_report.md) identifies the producer of provider+0xf0: original start resolves virtual _queueLocked, converts its pointer from slot-qualified authentication to the generic action domain and stores it separately from the gate default action. Original IOCommandGate/IOEventSource init publishes owner+0x18, NULL default+0x20 and enabled+0x28. Nine private components / 538 original visits verify owner forwarding; runtime provider/action identity, queue/hardware effects and complete initialization remain unknown under CG1-CG8.
+
+The [startup-to-hardware report](kext_startup_hardware_bridge_report.md) joins original cmam7f state to fcHfFIGhsx, the 104 B FPAESParameters allocation and _performHWAESOnGlobalBuffer. Seven ranges / 2015 instructions and nine exact original slots bind discovery, descriptor preparation and the nominal IOAESAccelerator method. One startup composition plus four exact source-produced forks execute 6881903 original visits. Four modeled failures return 0xffff5bea before RPC; their output copy uses retained startup stack bytes, not a generated token. Native hardware success, bridge-warm completion and context publication remain unknown under HB1-HB8.
+
+The [provider-start initializer report](kext_provider_initialize_report.md) connects cmam7f/tag1414EE04 to original table construction, ready-flag publication and return0, with separate allocation-failure and cached paths. It establishes the missing512-byte table/base/mask producers and36 original consumer components; one full-u64 proof bounds this consumer to first256 bytes. Table generation is still semantically incomplete; cached table reuse does not mean lock/resource idempotence. Exact original nominal vtable slots bind the post-success caller to IOService::registerService.
+
+The [constructor reply-state report](kext_constructor_reply_state_report.md) connects nested helpers0xfffffe000a627d54/0xfffffe000a5b4314 to original zero-return arc4random, complete624-word MT19937 seed expansion and calendar-time consumers. A full-u32 proof recovers the obfuscated recurrence; three warm runs verify1872 words. Exact KBCryptShared704 and KBCrypt1088 allocations precede the unresolved address-table load. Full helper meaning, generator output and publication remain unknown under RS1-RS8.
+
+The [original fcHfFIGhsx constructor prefix](kext_constructor_request_report.md) now reaches RPC502/700 packing from its actual entry in25 independently replayed private cases/96101 visits. Source requests the frame,4096-byte arena,172-byte reply buffer and152-byte FPAppSecurityInfo; W20=0xC96 is derived rather than injected. Two full-word proofs recover page-rounded staging allocation and exact remainder fill. KBCrypt publication, output-token generation and native effects remain unknown under CR1-CR8.
+
+The [original KBCrypt retirement report](kext_context_retirement_report.md) follows `_oh70aLVr` from entry through successful private lookup, child cleanup, doubly linked-list removal,1088-byte overwrite, typed KBCrypt release request and return0. The original owner-free view names site.KBCrypt, size0x440. Twenty-eight independent replays /1016058 visits verify26 zero-return closes, two misses and two page-error/close compositions. An all-u32 proof supports the overwrite-byte reference. Optional+0x188 cleanup, native reference balance, synchronization and constructor publication remain unknown under CR1-CR8.
+
+The [page-token and context-consumer report](kext_page_context_report.md) follows original `_EQlZPp` execution through operation 0x94f8574b, shared token lookup, owner+0x2e8 and security-record gates to a mapped-metadata address frontier. Five proofs recover the key/bias/node-token and offset contracts; 83 independent CPU cases / 376547 visits include 25 metadata frontiers. The record token, offset, source/destination roles now have source-produced internal records and list traversal evidence. Native startup/publication, complete metadata format, decryption and page/close synchronization remain unknown under PC1-PC8.
+
+The [FPAppSecurityInfo allocation/type report](kext_security_record_report.md) recovers an original type name and requested 152-byte record extent. Allocation at 0xfffffe000a60ab2c and close's typed release use distinct views with identical static FPAppSecurityInfo descriptions. Forty-two independent CPU cases / 1636 visits verify lower heap/zone routing, conditional caller publication and six byte-copy compositions. This refines the record's role and capacity request; continuous constructor/page/close identity and native allocator effects remain unknown under SR1-SR8.
+
+The [mapped-region close suffix](kext_mapped_cleanup_report.md) establishes a conditional cleanup role inside `_oh70aLVr`: owner+0x2e8 supplies a child whose +0x48/+0x50 region is unwired and passed to vm_deallocate, whose optional +0x58/+0x60 region is passed to vm_deallocate, and which is passed to IOFreeTypeImpl. Six exhaustive banks, six scalar proofs and 60 independent CPU replays / 11862 visits support the component role. Successful native lookup, continuous constructor publication and complete close remain unknown under MC1-MC8.
+
+The [RPC502 receive bridge](rpc502_receive_bridge_report.md) executes original VM-copy validation, OOL descriptor conversion and packing, then original daemon MIG guards/marshalling on the exact private packet. The 112 kernel and 112 daemon cases verify 88-to-80-byte conversion, reconstructed flags and application arguments. Eighteen proof pairs pass. A conditional kernel-buffer factory preserves extent; actual runtime copy type remains unknown.
+
+The [receive completion and private copyout report](kernel_receive_delivery_report.md) establishes original BCDCC7C/BCC4E98/BCCA164/BCC62D0 result/header/destination-name/packing roles. The matching receiver-space path reads the u32 name from port+0x34 before header narrowing; count consumption and later copyout errors are separate channels. All 240 fresh cases/161,608 visits and 15 proof pairs pass, with explicit caller/copyout/helper models.
+
+The [common receive/dequeue report](kernel_queue_receive_report.md) establishes BCC83B4/BCC8514 as source-correlated receive-wrapper/selector roles, with actual unlinking, large-message preservation, receiver publication and receive accounting. Source-produced queue/handoff state reaches original receive/readers in 373 cases/49,588 visits. Twenty-one proof pairs pass. Public status lives at thread+0x3A0; the selected internal value10 in X0 is a distinct channel.
+
+The [queue admission and handoff report](kernel_queue_send_report.md) refines BCC7C34 to a source-correlated queue-send/post role and BCC2BC4 to circular insertion with backward QoS propagation. An insertion return of zero still retains the message in the queue. Original queue/insertion/size-helper instructions replace the prior opaque queue callback in 146 continuous caller cases; 18 proof pairs pass. Scheduler/locking effects remain explicit models.
+
+The [generated-reply caller](kernel_reply_send_report.md) establishes source-correlated send, trailer initialization, PACGA-based integrity folding, queue-request and cleanup roles. The caller at 0xFFFFFE000BCC7040 consumes the dispatcher-returned message; opaque helper effects remain modeled. Fourteen proof pairs and 138 independent replays pass. Cleanup clears the caller status before return, separating send status from function result.
+
+The [kernel VM MIG receiver](kernel_vm_mig_report.md) identifies registered stub 0xFFFFFE000BD8B18C for message4801, its five-pointer ABI, header checks, conversion/VM/release calls and reply result stores. It calls the same VM leaf as the fast-trap path. The original initializer matches a 358-entry dispatch model; 173 independent replay cases and ten proof pairs pass. ID4824 is an in-range NULL entry. Native admission, continuous wire delivery and reply emission remain unproved.
+
+The [VM cleanup and transport report](daemon_vm_cleanup_report.md) follows the daemon return channel to the source free request at 0x100541BEC and its output-clearing join. Four retained contexts are independent of all VM-return/NZCV bits under fixed source-consistent cuts. Available-cache vm_deallocate uses trap -12 or a message-4801 fallback; the original kernel handler exposes a lower aligned start/end ABI. Eleven proof pairs, 96 daemon/30 cache profiles and 2,048 arithmetic cases pass; native runtime identity and receive-side message linkage remain unknown.
+
+The [allocation and borrowed-span continuation](daemon_client_object_report.md) identifies the original 28-of-32-byte initializer at 0x1005596C4, the 16-byte zero initializer at 0x1008C3890, B+0/B+8 pointer/length roles, and the guarded byte-reader entry. Failure cleanup uses the first object's +0/+8 as VM address/encoded-size inputs to vm_deallocate at 0x1004776C0. Sixteen proof pairs and 80 source profiles establish these bounded contracts; final field meanings, state consumers and native admission remain unknown.
+
+The [Boolean client-bit collector](daemon_boolean_chain_report.md) recovers entry 0x1004586D8 with a 24-byte token/status/selector/state record and selector 0xB3D4. It sequentially queries FairPlay-CoreML-Client and FairPlay-Classic-Client through the 40-byte Boolean adapter, contributing bits 0x1 and 0x2. Classic bit 0x2 overlaps the earlier private-fpsd writer. Ten proof pairs and 32 fresh profiles establish the bounded status/state contract; final admission remains unknown.
+
+The [fairplay-client String parser](daemon_secondary_string_report.md) calls strtol(base 10), tests a non-NULL end pointer and NUL end byte, then stores low32(long) and selects marker 0x32. The recovered local decision has no digit-progress, errno or signed32-range test. Seven source proof pairs, 32 fresh profiles and 256 isolated byte-gate CPU cases pass. Host-libc reference vectors are separate from target runtime observations; final admission remains unknown.
+
+The [fairplay-client result consumer](daemon_secondary_result_report.md) distinguishes CFNumber and CFString using 64-bit type IDs. The Number path requests signed32 conversion, returns marker 0x31/0x32 from conversion status, and on 0x32 ORs frame-state bit 0x8 before invoking a further private bridge. That bridge reuses the Boolean adapter with key FairPlay-CoreML-Client. Thirteen proof pairs and 60 fresh profiles cover these bounded interfaces; String parsing and final admission remain unknown.
+
+The [two-adapter entitlement flow](daemon_entitlement_flow_report.md) joins both first-result destinations to audit PID extraction and private adapter 0x100013F0C. The first Boolean-true case ORs frame-state bit 0x2 before rejoining. The second adapter decodes selector 0xAB91 and reaches a Security query for fairplay-client at 0x1002382E8. Eighteen source proof pairs and 52 fresh profiles cover the bounded flow; second-query result semantics and final admission remain unknown.
+
+The [entitlement result consumer](daemon_entitlement_result_report.md) now identifies CFBooleanGetTypeID at 0x10030ACB0 through slot 0x1010A0670, resolving a previous CA54 candidate. The source compares full 64-bit type IDs, stores the Boolean byte at 0x10052BCCC, and writes marker 0x5C for both Boolean values; recovered NULL/error/type-mismatch paths write 0x5B. Five proof pairs and 28 independent profiles support the conditional interface recovery.
+
+The [record40 entitlement-query adapter](daemon_record40_consumer_report.md) connects entry 0x10046EF4C and selector 0x8BB2 to `com.apple.private.fpsd.client`, CFString construction, SecTask creation from a copied 32-byte token, and an entitlement-query frontier at 0x1002B7728. Eleven source proof pairs and 24 fresh replay profiles cover the bounded path. Marker 0x5B also appears on modeled constructor-NULL returns and does not establish entitlement presence or authorization.
+
+The [post-copy handover report](daemon_mig_handover_report.md) follows AD952088 to private entry 0x1004D4268 with a 128-byte record, and A70E6EB4 to 0x10046EF4C with a distinct 40-byte record. The original helper 0x10046F89C copies the same 32 input bytes through three A70 destinations. Fourteen proof pairs, 24 continuous CPU cases and 68 isolated builder/consumer cases establish these bounded roles; private-callee effects and native joins remain unresolved.
+
+The [MIG constructors and operation-head report](daemon_operation_heads_report.md) links requests 1000/1200 to operation 0xAD952088, 1001/1201 to 0x8F7506EE, and 1002/1202 to 0x8799A4F1. The heads distinguish a stored-CF-object port query, a full-u64 NULL gate and two 32-byte copy requests. A further 0xA70E6EB4 constructor lies inside the known auxiliary routine with a conditional incoming phase. Twenty-eight composed/local proof pairs, forty continuous CPU cases and retained alignment counterexamples support these bounded roles.
+
+The [shared-core operation dispatcher](daemon_core_dispatch_report.md) distinguishes six singleton operations, one inclusive interval and their default complement for tag6CF4 under the captured setup state. Five handler entries first consume borrowed-record bytes; registration41471 and subscription61471 reach distinct logging queries. Fourteen proof pairs and132 fresh continuous A64 cases establish the bounded routing. Higher-level roles of four input-head handlers and later emitter/native joins remain unknown.
+
+The [spill/restore and descriptor-reader report](daemon_record720_spill_report.md) identifies a fourteen-field internal save protocol and a matching seven-register/seven-stack-word restoration. The missing SP+0x2E8 word has no established pointer use in the checked suffix. A 240-instruction symbolic successor reaches a read of descriptor 0x1010B5EF0+72, whose earlier arena-pointer publication is source-established.
+
+The [certificate-field and startup-state report](daemon_record720_fields_report.md) recovers direct TBS/OID/issuer/subject setters, the version-byte representation, serial limit/codec, and the name workspace. The allocation route reaches CASAL at 0x100503D18 and consumes the existing readiness byte. The FairPlay issuer literal and incomplete successors remain distinct from the retained Key Services policy path.
+
+The [allocation-to-root-fingerprint report](daemon_record720_fingerprint_report.md) connects the private control 0x7A3A allocation route to the already recovered root callback 0x10040F7A4 and encoded SHA-1 writers. The digest uses a caller-frame workspace through callback X0+0x60; inspected error paths free the 720-byte owner without digest writes into it. Callback zero return, parser success, registry publication and native reachability remain distinct.
+
+The [release/reader/callback report](daemon_record720_release_report.md) establishes control `0xBBB3` in wrapper `0x100435B9C` as an owner-release route: inspect P+0x2C0, optionally request subordinate free, then request `_free(P)` at `0x1001C6100`. It also recovers the pointer/count/index interface of `0x10044DD40`, the first-byte gate at `0x100315ABC`, and a source-attested BLRAAZ callback to `0x10040F7A4`. Twenty-two source obligations and 768 independently replayed cases support these bounded roles. Native callers, a complete reader format, callback semantics and registry publication remain unknown.
+
+The [720-byte record handoff report](daemon_record720_handoff_report.md) identifies cursor adapter `0x100536E98`, private-record dispatcher `0x100523894` and control `0x7A3A` handler `0x10062A624`. Seventeen source obligations cover the input fields, shared address-derived key, record codec, cursor arithmetic and status gates. The 384 declared cases retain an imported-data boundary and two unresolved successor adapters. The overall roles of `0x10044DD40` and `0x100435B9C`, registry publication and native transport linkage remain unknown.
+
+The [720-byte candidate report](daemon_record720_report.md) establishes conditional `_malloc(720)` at daemon `0x100BAE048` and partial initializer `0x100B0B6FC`. For incoming phase0x471C, the non-NULL return flows through SP+0x3118 into 75 stores defining161 bytes, including64 zero bytes at owner+0x238. Seven source obligations and64 fresh isolated A64 cases pass. Analyst role: partial record initializer; complete type, native caller and registry entry+8 publication remain unknown. This candidate does not replace the earlier872-byte object contract.
+
+The [cache-publication report](daemon_cache_publication_report.md) identifies the cleanup sequence, a two-group 32-byte cache writer at A3CE28, a separate two-group consumer at AC1C7C, the eight-round address/word-table byte codec at BE097C and the encoded-prefix copy at D59B88. Their checked composition recovers the original identity digest into a new SHA-1 prefix. Eleven source obligations, 576 fresh cases and six controlled owner-relocation forks pass. Bulk-transform standard identities and native caller/driver joins remain unknown under CP1-CP16.
+
+The [digest-completion report](daemon_digest_completion_report.md) identifies A1BF1C as a reverse 92-byte context-overwrite loop and 9A2E90 as a reverse XOR0x98 output-copy loop. The size decoder preserves the full u32 count; B56660/A53630 restore the scratch cursor and saved registers and store a completion byte. Twenty-four source obligations and 396 fresh cases pass. SHA-1 value compositions reach canonical 20-byte destination values; native caller/cache/driver joins remain unknown under GC1-GC12.
+
+The [digest-output/root report](daemon_digest_output_report.md) identifies four word serializers: B57120/B30004 emit LE bytes for selector low byte1, while BE71BC/8B6060 emit BE bytes for2; each output byte is XOR0x98. Source proofs cover byte values/addresses, loop handovers, all-u32 selector routing, zero-size gates and bounded SP+0x3050 root interfaces. Twenty-two obligations,64 complete serializers,512 selector decisions and six core/output value compositions pass. Native root/caller continuity, cache publication and driver joins remain unknown under DO1-DO12.
+
+The [selector2 SHA-1 core report](daemon_sha1_core_report.md) establishes input BE32 decoding at968C04, 80-word expansion atBA8BA4, four20-round families atA0DD8C/D30E74/ACC478/D30C74, and five encoded state accumulations at908450/BDF3BC. The 320-byte scratch is the schedule; words use XOR0x8B3DC651 and state uses XOR0xF4F92DF7. Forty-four source obligations, including26 certified algebraic lemmas, and48 complete source compositions support these roles under SC1-SC12. Identity-path completion, cache publication and native caller/driver joins remain unknown.
+
+The [compression-frame report](daemon_compression_frame_report.md) recovers the long first-block copy loop, shared ambient-frame captures, 320-byte scratch reservation and compact selector dispatch: byte1 -> 9E0CC4, byte2 -> A361B0, every other byte -> BDF3BC. It corroborates saved continuation F+0x2DE0 and its D737 epilogue, plus the conditional next-full-block predicate N>=L+64. Twelve proof pairs and 716 fresh isolated cases support these source-local roles under CF1-CF12; full core/output/cache and native continuity remain unknown.
+
+The [paired digest-convention report](daemon_digest_conventions_report.md) distinguishes raw-count AEE3A4 from encoded-count A0AAD0, and pointer-cell finalizer C03B20 from inline BB2284. Source proofs establish the common modulo-u32 threshold and first-padding byte/gate. Retained identity paths use the encoded/inline pair, with a distinct 32-byte output reservation and no completed digest/cache bytes at the retained frontier. A conditional wrapped return reaches malloc(1028); owner and purpose remain unknown under DC1-DC12.
+
+The [digest routing/continuation report](daemon_digest_routes_report.md) recovers conditional roles for B5C580 (128-byte cursor reservation and100-byte encoded context setup),BAE14C (saved arguments),AEE3A4 (continuation/frame capture),andBB2278 (saved-target branch). Caller modes032B/0371 both produce W12=61B9;source normalizes internal phase471C and compares W2+(W10&63),modulo32,with64. Fifteen source proof pairs and128 isolated A64 fragments delimit these roles. Native predecessor reachability and identity/cache association remain unknown under DR1-DR12.
+
+The [identity UTF-8/SHA-1 preparation report](daemon_identity_cache_report.md) recovers BAB014 (length/capacity/allocation), ACCC38 (temporary-buffer zero fill), B90F60 (UTF-8 conversion), 915390 (encoded SHA-1 context initialization), 91545C (low32 byte-count representation), and BD9B00/440BE4 (short-path stack record/helper). Longer inputs enter compression directly. Twelve source proof pairs, 768 conditional continuations and exact input/padding comparisons bound these roles. Digest completion, 36-byte cache contents and native caller provenance remain unknown under IC1-IC14.
+
+The [cold-cache hardware-property report](daemon_cache36_report.md) assigns source block roles to BAB1A4/C993B4/A42410/B2C128 (four MobileGestalt queries), 9BA800 (signed64 chip conversion), 9B4254 (chip formatting) and AD6F88 (five-object formatting). It corroborates the four obfuscated property keys with original CFStrings and independently recomputed pinned-key hashes. Eleven proof pairs and 432 freshly recomputed continuations delimit the result. Cache contents, actual native callers and driver-request association remain unknown under C36-1 through C36-13.
+
+The [clock/value-lookup report](daemon_object_clock_report.md) adds conditional roles for9B2A54 (object tail and cursor restore),9D92D0 (query gate),963C9C/95E930/8BB504/839154 (generic32-byte value-table scan),and8F2434 (entry+8 result). It separates this value from the earlier entry+10 head. Twenty-five source proof pairs and96 private continuations/1,843,436 visits cover the new increment. Matching cases reach a separate malloc36 cache request;872-byte object publication and native callers remain unknown under OC1-OC14.
+
+The [object-initialization report](daemon_object_initialization_report.md) recovers conditional roles for6534BC/A19BB8 (cursor reservation and48-byte address/cache mixer),94C688 (fields and malloc48),BD718C (imported data reads),B8E770 (shared nonzero sampler),B06DF0/DAB9A4 (48-byte buffer fill),and95784C (raw length field+CC). Four private continuations cover8,578,857 source visits;22 proof pairs and independent byte/state checks delimit the semantics. Actual native AEE caller,registry publication and daemon/kext transport linkage remain unknown under OI1-OI12.
+
+The [creation-predecessor report](daemon_creation_predecessors_report.md) derives phase621B through original instructions from saved mode471C,a nonzero u64 presence value,and decoded classifier D=raw XOR8B3DC651 in2..200. It resolves marker address1010C8254 and conditional4/4/8-byte registry reset stores. Twenty-three source proof pairs,819 private A64 cases/105,796 visits and704 fresh IDB bytes pass. The prior allocation report is corrected: retained removal uses W22=0817/callbackB353A4;40C7 is a proof fixture. Native AEE caller and object publication remain unknown; CP1-CP12 apply.
+
+The [marker/allocation report](daemon_object_creation_report.md) recovers a conditional predecessor for the 872-byte allocator at C116B0: incoming W8=621B supplies internal phase471C and a byte-marker dispatch. Marker zero reaches a lazy lock check with distinct callback B280C8; marker one reaches malloc(872). Full-byte testing preserves marker aliases20/21 and the separate E0 target. Fifteen source proof pairs,1,294 private A64 cases/100,000 visits,160 fixups and456 fresh IDB bytes pass. Native caller,marker owner,initialization,publication and object identity remain unknown; CR1-CR12 apply.
+
+The [object-removal/destruction report](daemon_object_consumers_report.md) establishes mode471C as a conditional keyed removal path: head/interior unlink,optional buffer310/D8 free,872-byte source-generated overwrite,object free,key clear and counter decrement. The overwrite reduces to an address-seeded byte formula. Twenty-seven completed source cases,108 independent A64 replays/3,010,164 visits,17 source proof pairs and512 exhaustive original-block cases pass. Native object constructors/types and transport callers remain unknown; OC1-OC14 apply.
+
+The [registry/head-unlink report](daemon_registry_lookup_report.md) extends mode471C into two distinct scans:16-byte key records selected by low32(query), then32-byte payload records compared by full64 key. Raw header equality permits sourceA264E0 to replace the payload head with object+360, followed by reads of object fields310/D8. Sixty-four source cases,256 independent A64 replays/490,896 visits,21 proof pairs and1,472 fresh IDB bytes pass. The intermediate query word is XOR-transformed before SP+3630; two earlier report narratives are corrected while source artifacts remain frozen. Native publishers,complete object cleanup and transport linkage remain unknown; RK1-RK14 apply.
+
+The [mode471C lifecycle report](daemon_mode471c_lifecycle_report.md) extends the source-produced caller into lazy lock creation/reuse, acquisition593D, common body and cleanupA293. It establishes a partial stack-slot epoch overwrite, separate creator/body statuses, a tested global and conditional16-byte key/32-byte payload strides. All28 zero-field paths return then free the eight-byte input before an unresolved caller-frame dereference. Ten proof pairs,112 independent A64 replays/188,192 visits and110 fixups pass. Native publishers, populated lookup behavior and incoming phases remain unknown; ML1-ML14 apply.
+
+The [mode471C record/cursor report](daemon_descriptor_producers_report.md) resolves caller `0x10039C894` -> adapter `0x100ABCA64` -> entry `0x100A59BB4` under declared entry context, with no fixture PC transitions. It establishes a 24-byte accessed record, returning NULL result, an eight-byte word transform and a new creator destination `0x1010C67C0`. The installed stack-probe implementation supplies its special register ABI. Twenty-three proof pairs, 64 independent A64 replays and 32 additional helper cases pass. Reader B remains unreached; the shared compiler interval does not establish its incoming phase. See DP1-DP18.
+
+The [descriptor-reader report](daemon_descriptor_readers_report.md) establishes conditional roles for `0x10021ECF4` (lock capture, acquisition, configured-count gate and zero-count cleanup) and `0x100A636EC` (buffer-presence/phase-parity gate). Four exhaustive byte-bank identities select G=`0x1010C8218` and the known acquisition/cleanup adapters. Eighteen source proof pairs, 96 independent reader replays and 4,608 isolated guard cases pass. Incoming native phases remain unknown; the nonzero W23-dependent successor remains unresolved. See DR1-DR17; source role recovery does not establish native reachability.
+
+The [rwlock lifecycle report](daemon_rwlock_lifecycle_report.md) establishes selected creator0x10043A240,its 200-byte malloc and pthread initializer,and full-pointer publication at0x1002097DC. Caller0x1002DAB28 supplies two destination cells and consumes only the second result before conditionally writing state09. Source statuses0/12/16/other are distinguished by32 proof pairs. The fallback object's file-initial bytes match the SDK static initializer;native runtime initialization and ownership remain unknown. See RL1-RL12.
+
+The [initialization caller/consumer report](daemon_iokit_callers_report.md) establishes two conditional local adapters at0x100313428 and0x100AFED54 around entry0x1004601D0. Their records decode to phase5784 at unique caller phases665D/4468, and both consume the source-written result+4 through a decoded-zero comparison. A 23-site literal census has four discriminator-colliding targets; it does not establish a complete caller graph. Forty composed source sequences,12 proof pairs and92 current IDB rows pass. Caller-root producers and high-level ownership remain unknown; see CB1-CB12.
+
+The [IOKit error-normalization report](daemon_iokit_errors_report.md) establishes0x100422A60 as a shared status normalizer for MainPort,MatchingServices and Open error callers. Its decoded map sends signed1..99 to-42600-status,preserves-49998..-42001,and otherwise emits-42600;the raw word uses XOR0x8B3DC651. The map is idempotent and has the7998-code negative interval as its exact image.29 source proof pairs,972 byte-audited cases and579 current IDB rows support DE1-DE12. All68 former error frontiers now complete selected source cleanup and publication. Earlier summaries retain their original entry premises and stop boundaries.
+
+The [daemon synchronization and return report](daemon_iokit_sync_report.md) assigns source-derived roles to acquisition adapter0x10043E280,cleanup adapter0x1004423F8,shared once callback0x10040EBD4,and original single-RET leaf0x10044FC34. The two adapters decode differently arranged local records and conditionally call pthread write-lock/unlock. The callback updates controller words and passes &fallback to the leaf;native lock creation by this callback is unknown. Selected full entry resolves F50 and outer input+4 publication.15 source proof pairs,684 byte-audited profiles and161 live IDB rows support DS1-DS12.
+
+The [class-matching report](daemon_iokit_class_report.md) identifies the selected initialization branch as a constructor/enumerator for `com_apple_driver_FairPlayIOKit` class-family matching. Source decodes31 B,with exact-name output iff low8(W28)=0x7A,and resolves the original data-pointer rebase.664 composed plus512 decoder cases and15 source proof pairs pass. Kext metaclass-name/superclass argument correspondence is source-verified;native publication remains unknown. See IC1-IC14.
+
+The [IOKit object-flow report](daemon_iokit_objects_report.md) establishes matching/Next/Open and the distinct service/iterator release sites through632 fresh cases and19 source proof pairs. It also proves two conditional state-pointer publications at0x100290410 and0x100634B70;complete predecessors and actual capability-field consumers remain unknown. IDB xref access labels are retained as partial hints,not global-store proofs. See OI1-OI14.
+
+The [version-fallback report](daemon_query_fallback_report.md) establishes a conditional version-classifier role for0x10043BD18 under decoded control0x6D25. Its accessed20 B record has16 B prepared input and a4 B result at+0x10.16 source proof pairs corroborate the marker threshold and returning cache update. Other record controls and bit0x08 semantics remain unknown; see QF1-QF12.
+
+The [query-state report](daemon_query_state_report.md) establishes the initial record-unpack/cache role of daemon helper0x100013AC0 and its normal/zero-capability continuations. Seven exhaustive banks resolve controller/state roots, helper dispatch and fallback0x10043BD18; the latter remains unexecuted with unknown semantics.264 fresh cases and11 source proof pairs pass under QS1-QS12.
+
+The [daemon query/census report](daemon_iokit_census_report.md) establishes conditional version/capability forwarding roles for provider `uOxAg` and `Q5TC6`, via selectors22/23 and offsets0x8C0/0x8C8.256 fresh local daemon cases test independent query outcomes;13 source proofs pass. Each query requires status0 and full returned size64=4, otherwise source clears its word; query23 still follows query22 rejection. A24-site syntactic census retains discriminator collisions and does not establish a selector18 caller. See DC1-DC12.
+
+The [data-region and entropy report](lskd_input_buffers_report.md) extends exact `_zgcqcxw1qve0CY` through input-length/output-capacity-sized allocation returns to kernel_read_random(output-sized region,28).48 fresh cases preserve24 selected prefixes;15 source proof pairs pass. Original corecrypto startup constructs the six PRNG callbacks registered by `_register_and_init_prng`; source refresh/generate bindings resolve to `_cckprng_refresh`/`_cckprng_generate`. Native backend state, input-content processing and actual transport remain unknown. See IB1-IB13.
+
+The [core input-successor report](lskd_core_input_report.md) extends exact `_zgcqcxw1qve0CY`: rejected input shape enters typed/aligned cleanup and returns0xFFFF5966 (-42650); selected shape prepares IOMallocData(length32). Seventy-four original private rejection returns and24 allocation frontiers pass under register-only heap models. Ten source proof pairs include separate UserClient status/count publication. Native heap effects, input-content processing and complete transport remain unknown. See CI1-CI11.
+
+The [LSKD continuation report](lskd_continuations_report.md) resolves0xfffffe000a54e220 as an RW acquisition adapter in selector0x2D2,0xfffffe000a551f38 as its release adapter in0x1D3, and0xfffffe000a5529a8 as a cached-free/clear adapter in0x52F. Their common cached cell is0xfffffe000ccc78a8. Exact imports resolve IORWLockWrite/Unlock/Free. Vault/allowed context comparisons are proved zero-context tests after address-dependent encoding. 355 fresh cases,20 source proof pairs and six exhaustive banks pass. Native synchronization and allocation/lifetime remain unknown; see CT1-CT12. Earlier summaries retain their increment-specific evidence boundaries.
+
+The [response readback and cleanup report](lskd_readback_report.md) establishes `_NxUj27MuIpS68FLnG` as the operation getter wrapper, `_kfszHrZ3N4HMtvfB5Bws` as the u32 getter wrapper, and `_npoKianhz5eqeqJHjqa9` as the cleanup wrapper. Exact unnamed receivers distinguish BE32 decoding from raw eight-byte copying. Twelve original query methods return0x13180000 under allocator/free register models;343 fresh cases,343 unchanged earlier prefixes and15 source proof pairs support the increment. The raw stream free is0xfffffe000a517dd0 -> `_IOFreeTypeImpl`, not0xfffffe000a54e220. See LR1-LR10 in that report; downstream helpers and native effects remain unknown.
+
+The [value/publication report](lskd_values_report.md) establishes the common bridge's exact nonnull/eight-byte gate, all-word BE64 conversion and raw status at record+8. The span bridge normalizes status at+0x0c; its handler requires37 bytes before preparing a41-byte kernel random request. The query source-appends tag0x65/value0x13180000 and publishes the candidate in thirteen private executions. 343 fresh cases and fourteen source-derived proof pairs pass. Native effects, later record helpers and final query-method cleanup remain unknown. See LV1-LV12.
+
+The [handler/access report](lskd_handlers_report.md) connects all twelve selected prefixes to their first internal interfaces. Eight prepare a common tag0x72 lookup bridge; operation0x1b5c uses a tag0x66 span bridge. Original lookup returns an aliased packet pointer and16-bit length. The wT74ohNhs04Oy path source-initializes the response header; start resolves to the exact kernel random import. 271 fresh cases and25 source-derived proofs pass. Complete handlers, post-search value decoding, native lifetime and subsequent transport remain unknown. See LH1-LH12.
+
+The [LSKD operation-selection report](lskd_consumer_report.md) resolves fourteen source decision nodes and twelve selected operation values for the source-produced selector0x3be context. Nineteen source-derived proofs establish the complete u32 partition, inter-node phase/table preservation and shared-frame pointer preparation. Eight original direct callers now have construction-to-selection evidence, including the previously static-only R2nPsUOYx6h span caller. 175 fresh cases stop before all selected fragments; handler semantics and native processing remain unknown. See LC1-LC10.
+
+The [media descriptor report](sample_descriptor_report.md) establishes the concrete `IOGeneralMemoryDescriptor` factory and a partial record contract for `0xfffffe000a5c22b8`: address-mixed selector +0x28, object/limit operands +0x08/+0x30, and nullness-controlled signed index after a returning bounds helper. Its later business role remains unknown. Exact read/write method bodies are identified through their unnamed entry thunks. See M1-M8.
+
+The [dispatch-context and record-role report](kext_aes_dispatch_report.md) maps eleven authenticated-call sites under explicit source-derived frame values. The target at `0xfffffe000a5a962c` is a call-free address-keyed classifier writing +0x24; the target at `0xfffffe000a6674d0` decodes record selector/tag fields before table dispatch. A core block at `0xfffffe000a6080ac` selects the cleanup adapter, which calls AES cleanup. Native reaching state and full dispatcher behavior remain unproved. See R1-R8.
+
+The [AES handoff report](kext_aes_handoff_report.md) establishes complete register/stack mappings for four wrappers and identifies one indirect `cleanupKernelAESHW` call at `0xfffffe000a6227b4` inside the adapter at `0xfffffe000a62259c`. Three exhaustive byte-bank identities resolve that target independently of the decompiled call. The provider command layout and queued completion route are source-established; key-data contents, native reachability and the other five candidate sites remain unknown. See H1-H9.
+
+The [buffer descriptor lifecycle report](kext_buffer_report.md) binds the initializer virtual calls to `prepare(0)` and `getBytesNoCopy()`, and cleanup to `complete(0)` plus descriptor/provider release. The obfuscated global at `0xfffffe000ccc7848` is the cached getter result. Five original vptr installers, nine nominal slots, 4111 fresh getter cases and 19 fresh cleanup cases support these roles; native object construction and ownership remain unknown. See D1-D8.
+
+The [cold initialization analysis](kext_cold_init_report.md) follows `_oh70aLVr` through a declared 104-byte `site.FPAESParameters` allocation, 31 source-initialized bytes and IOAESAccelerator discovery. The source passes `{0,1}` to the matching kernel waiter, requesting 1 ns. Eight fresh cases verify the partial heap ABI and provider-absent cleanup; two complete modeled failures return `0xffff5bea` with close flag and registry pointer still zero. The nonnull branch statically requests an 81920-byte buffer; runtime alignment, provider success and complete initialization remain unknown. See A1-A8.
+
+The [kext close-wrapper record analysis](kext_close_report.md) recovers low32 token marshalling,an address-keyed `0xc18` dispatch record and a byte output in `_oh70aLVr`. Four declared flag1/null-global-pointer cases reject before reading the token field and explicitly return `0xffff5b36`;a flag0 case stops at typed allocation. Five fresh prefixes,five scoped proofs,four byte-bank identities and256 fresh daemon IDB bytes are checked. Real initialization,successful finalization,extra-tag association and native port lifetime remain unknown;see K1-K8.
+
+The [RPC700 namespace and receiver-candidate analysis](rpc700_namespace_report.md) verifies the matching kernel getter's1..36 index domain and conditional null/status0 result. The installed SDK names slot34 `HOST_MANAGEDAPPDISTD_PORT`;that label does not identify a receiver. Two managed-app arm64e slices,5174 imports,50 rejected common-MIG header patterns and298 framework GOT records provide bounded negative evidence. RPC700 receiver,alternate-mode reachability and native port identity remain unknown;see N1-N8.
+
+The [RPC502 cleanup-argument analysis](rpc502_cleanup_report.md) identifies a shared helper at `0x100444704`:the supplemental caller stores mode0 for close-only;the primary caller stores mode1 for unmap-then-close. Five local proofs establish the address-keyed codec and alignment domain. Twenty-four original/fresh helper fixtures verify full64-bit extent forwarding and descriptor=-1 after modeled close failure. Native lifetime,ownership transfer and actual IPC remain unknown;see C1-C8.
+
+The [RPC502 ownership and error-delivery analysis](rpc502_ownership_report.md) reconciles all29 resource calls per complete worker case. Both declared descriptors close and the primary mapping unmaps;the supplemental mapping remains live at return. Eight original callback fixtures and eight fresh replays compose the observed error into a36-byte ID602 reply,with incoming-message destruction requested after clearing its reply-right field. Native resource effects,complete ownership transfer and successful processing remain unknown. See assumptions O1-O8.
+
+The current [exported-block report](rpc502_padding_report.md) identifies header,FF-padding,separator,DigestInfo-prefix and digest-tail readers after the public operation. Seven local proofs recover mismatch folds and the recorded byte-difference/status behavior. Six source windows across two fresh whole-worker replays separate four matching certificate stages from two failing file stages. Complete acceptance and native trust remain unknown.
+
+| Original site | New established role | Scope |
+| --- | --- | --- |
+|1009d8fd0/fd4 |Encoded00/01 header reads |Actual256-/128-byte blocks;fixed source seed |
+|100a75bf8 |Fixed FF-region reader/fold |218,90 or74 bytes in retained contexts |
+|1009329b4 |Separator byte reader |Actual calculated region boundary |
+|100656dbc/dc4 |Exported prefix versus original ROM byte pairs |15-byte SHA-1 /19-byte SHA-256 DigestInfo prefixes |
+|100882dd0/dd4 |Forward digest byte comparison |Full20-byte matches /first-byte mismatches |
+|100a46c04..cc0 |Decoded signed-byte difference |Full32-bit local identity;actual operands are bytes |
+
+The current [late signed-data report](rpc502_late_report.md) links carrier+8 to the hashed prefix extent,+28 to signature width,and+40 to a status-sensitive signature pointer after the certificate. Original prefix SHA-256 outputs,an80-byte source-built public-operation view and zero/nonzero1024-bit public outputs have independent oracles and fresh whole-worker checks. Width rejection and later failure shareffff5bd9;complete trust/padding and accepted transport remain unknown.
+
+| Original site | New supported local role | Scope |
+| --- | --- | --- |
+|100647ad8 /100647ba4 |Raw signed-prefix read /encoded private-prefix write |Version5,A=0/1/4;complete prefix codec unknown |
+|100882f08 |32-byte digest output writer |Output XOR98 matches SHA-256 of exact wire prefix |
+|100a21958..100a21ac4 |Signature-width equality |Allu32 count/C under seed1daa;modular extent aliases remain separate |
+|100a8b838..100a8b880 |Status-sensitive trailer offset and pointer construction |Full scalar proof plus actual signature-span reads |
+|100657488 ->100abebe4 |Source-built public-operation call |Selected80-byte prefix,real leaf key/input/output/status/extent fields |
+|100b8d3e8 ->100450a5c |Public output export in this path |128 encoded bytes checked against independent zero/nonzero public exponentiation |
+
+The current [RSA arithmetic report](rpc502_rsa_report.md) identifies original100539ea0 as Montgomery square and10094593c as Montgomery product. All224 complete calls and726075 selected rows match independent arithmetic;four fresh workers pass. Actual parent key fields are certificate+210/+320 hex,with biased signed counts and XORada56e3c limbs. The [AAA continuation report](rpc502_policy_report.md) establishes later carrier consumers at100747f70(+28),100747f7c(+40),100747f84(+8),two successful local certificate stages and a subsequentffff5bd9 result. Complete field/trust/native transaction semantics remain unknown.
+
+| Original entry/site | New established local role | Evidence boundary |
+| --- | --- | --- |
+|100539ea0 /10053dcac |40-byte square argument /actual adapter call |196 complete retained calls;partial analyst interface |
+|10094593c /100948020 |48-byte general Montgomery product /actual adapter call |28 complete retained calls;different mode codec from square |
+|1005fc0d0 /10097fbc8 |Two selected limb multiply/carry/store row entries |Independent rows plus complete output oracles;surrounding code separately guarded |
+|10097531c,X11+210/+320 hex |Actual parent modulus/exponent integer headers |Active keys match original DER;complete object unknown |
+|100747f70/f7c/f84 |Late carrier parameter/auxiliary/extent field reads |Three original AAA-family workers;native effects unknown |
+
+The [RPC502 issuer/verification report](rpc502_auth_report.md) assigns source roles to the issuer byte comparison, biased successor-bound check, two local status reductions and signature/digest record readers. The supplied-length comparison admits `/C=US` as a prefix of the fixed Key Services name; empty issuers take a comparison-free path. All admitted synthetic cases still fail later verification. The same outer result `0xffff5bdb` therefore has distinct original causes. A bounded41-record certificate inventory also joins preserved AMS/CoreFP certificates mathematically to the daemon's FairPlay AAA CA; runtime identity selection remains unknown.
+
+| Source block | Established local role | Evidence limit |
+| --- | --- | --- |
+| 100a46fc0..100a47004 | Rendered issuer versus XOR81 expected-name byte comparison | Local supplied-length policy;escaping/caller-empty predicate incomplete |
+| 10064b420..10064b484 | Unsigned64 successor bound,biased extent502230ca | All64-bit arithmetic proof;not arbitrary native memory safety |
+| 10076d170 / 10069caec | Earlier issuer rejection value / saved local status | Reused numeric status is not a unique routine/error name |
+| 100975320..100975334 | Signature/digest record-tail consumer | Partial5ac view;complete key-field/prototype recovery open |
+| 100950fd8..100951038 | Raw-low-byte a2 status classifier under seeds1/1 | Other inherited seeds excluded |
+| 100896930..1008969a4 | Saved-low-byte0 and prior-low-byte51 conjunction | Full-word equality interpretation disproved |
+
+The [RPC502 startup report](rpc502_startup_report.md) establishes the original registered callback `0x10045053c` as the missing predecessor for the retained readiness/allocator path. The actual readiness setter is `0x10046c750`; the byte is consumed at `0x100a03424`. Cold execution returns `0xffff5bd4`; the same worker after the original callback returns obtains arena pointers and completes with `0xffff5bdb`, whose semantic name remains unknown. Source constructors also recover Apple Root CA and Apple Key Services Certification Authority bytes and their independent RSA/SHA-1 signature relationships. No native authentication or protected-operation success is established.
+
+| Source block | Established local role | Evidence limit |
+| --- | --- | --- |
+| 10045053c, registered at1004414e8 | Original startup callback; actual return precedes worker fixture | Callback execution is separate from complete process startup |
+| 10032a4e8 / 10032a520 | Allocate90000 bytes / publish arena pointer | Source-known arena is partial; full allocator type unknown |
+| 10046c750 / 100a03424 | Publish readiness1 / compare byte with1 | Publication precedes completed initialization |
+| 100a5c3cc..100a5c3fc | Full64 NULL-candidate dispatch and encoded error constant | Materializing74c29d85 alone is not an error branch |
+| 100346714 / 1003f0e5c / 10030980c | Allocate, XOR-copy and shift two embedded certificate records | Constructor bytes and parser callbacks proved; target trust roles unknown |
+| 1005fc0d0..1005fc150 | Original integer multiply/accumulate continuation | Complete operand representation and mathematical routine identity unknown |
+
+The [ADID notification/cache report](adid_notification_report.md) assigns local roles to provider block`0x100218fbc..0x1002191a8` and client OTP/cache blocks. Full64 proofs match three notification classes between client and provider;provider post site`0x100219198` remains conditional on explicit local frame/record/status fixtures. Original client calls establish a two-record cache,distinct unsigned32 publication versus signed64 lookup time arithmetic,registration/exit behavior and a shared copy loop. Synthetic length-growth controls expose nominal capacity crossings and two guarded unowned-free arguments;native accepted lengths and a native defect remain unknown.
+
+The [akd ADID-client report](akd_adid_client_report.md) gives ten provider commands original named client roles: routing get/set,OTP,provisioning query/start/end/session destruction,synchronization,erasure and login code. Eleven original ObjC-to-C bindings include local disposal;two additional complete C entries give twelve producers for fourteen provider commands. The named routing setter supplies contextual IDMS routing-info meaning to the previously established nested+`0x98` update;the request-driven constructor's blob is SPIM. Exact request/reply schemas,session32 versus DSID64,full64 identifier gates and an original31-byte `vmtohostmsg` producer-to-Avp100 path are retained. The two extra entries have no proved incoming caller;native success and Avp-to-primary-kext coupling remain unknown.
+
+The [ADID Avp-packet report](adid_avp_packet_report.md) establishes compact byte/typed-field codecs and complete retained144-/320-byte record framing. Original source initializes the caller count at`0x10016839c`;comparison`0x10024e1d4` selects response parsing for low32(size)==144 and a source-built320-byte follow-up for the tested shorter results. All147690 assertions pass across32 retained callbacks plus one byte audit,six proofs and nine fresh runs. Opaque state computation,field meanings,valid hardware responses and actual Avp/primary-kext coupling remain unknown.
+
+| Original source block | Established local role | Scope limit |
+| --- | --- | --- |
+| `0x10024b53c` / `0x10024bb90` | Reverse/forward physical byte stores,both XOR`0xe8` | Local byte arithmetic;separate allocation/representation epochs |
+| `0x10025fc38` / `0x10025fd24` | Outgoing/parser-input XOR-copy stores | Retained extents and direction;complete alias/lifetime contract unknown |
+| `0x100260c9c..0x100260e40` | BE32 length/key,extent check and three-tag dispatch | Local parser blocks within compiler range;not complete accepted protocol |
+| `0x100260f28` / `0x100262090` | Scalar32 additive encoding / scalar64 XOR encoding | Raw key/application meanings unknown |
+| `0x10016839c` / `0x10024e1d4` | Encoded-zero count initialization / low32 returned-count gate | size64 and count32 remain distinct |
+| `0x100058a1c` | Both144-byte and subsequent320-byte Avp method100 calls | Second response and native driver implementation unknown |
+
+The [ADID command-dispatch report](adid_command_dispatch_report.md) corrects the single-magic-word interpretation: request+4 selects fourteen commands through107 original decision instructions. Full-domain proofs establish the exact selection set. Complete original callbacks now reach source-created96-/176-byte records,per-EUID unlink,scalar-times32 allocation and Avp method100 without internal frame/PC overrides. These are source roles under declared peer/context/API fixtures;complete operation semantics and native pairing remain unknown. All51507 checks pass across79 cases and12 fresh replays.
+
+| Source location | Corroborated role | Remaining semantic boundary |
+| --- | --- | --- |
+| `0x10016cd58` | Encoded32-bit command dispatcher;fourteen exact raw words | Selection does not establish accepted body/authorization |
+| `0x10016ac30` / `0x10019c578` | Request-tail producer / request-driven96-/176-byte constructor | Valid inner blob and normal publication unknown |
+| `0x100123c74` | Per-audit-EUID record unlink API emission | Payload0 occurs for modeled success and failure;native effects unknown |
+| `0x100266b78` / `0x100266b7c` | Wrapped32-bit scalar*32 allocation call / explicit post-call BRK | Full command meaning and native consequence unknown |
+| `0x10002c130` / `0x100058654` | Source-built40-byte caller from full request | Complete record/protected-operation semantics unknown |
+| `0x100058a1c` | Avp selector100 with shared144-byte buffer | Driver implementation and accepted response unknown |
+
+The [ADID state-producer report](adid_state_producer_report.md) extends the local byte model through its address-derived state word and preceding eight-word swaps. Under the inspected constants and8-byte alignment,the swap indices reduce to zero and the words rotate right once. A compact codec/inverse matches original code across32 fresh aligned address classes;three unaligned cases falsify the unrestricted rotation model. Complete native object semantics remain unknown.
+
+The [ADID context-gate report](adid_context_gate_report.md) reduces the inspected64-byte vector loop to a reversible per-byte multiply/XOR state transform and proves its inverse. A complete mutation ledger distinguishes original state stores,model API boundaries and explicit edits. Exact tag/pointer predicates,early-edit overwrite and late inconsistent-state reads refine the context failure;no complete protected algorithm or valid native context is assigned.
+
+The [ADID protected-dispatch report](adid_driver_dispatch_report.md) connects three original record constructors/call sites to `0x1000590ac`, then to the initialization helper and immediate byte consumers. Original request-frame stores produce the encoded output pointers. Exhaustive local byte tables also distinguish a record helper, gethostuuid and ftruncate touch points; one extra-register host-UUID candidate remains unproved. The execution cases declare entry/state overrides and a skipped gate interval, so complete request feasibility is still unknown.
+
+The [ADID caller report](adid_iokit_caller_report.md) corroborates original helper-record construction in `0x1000590ac` and `0x100058654`, a new Avp selector-100 caller, a separate byte/tag post-context gate, and two-stage Avp/primary initialization. Fifteen constant-modifier candidates yield seven observed bindings; eight remain unknown. An odd-address counterexample corrects one constructor-key reduction to an aligned corollary.
+
+The [ADID IOKit report](adid_iokit_report.md) establishes local roles for query-selected initialization at `0x1000208fc`, separate Avp connection/output acquisition at `0x10002af70`, once/query callback `0x100001250`, record constructor `0x100049804` and two selector-26 transports. Exact input codecs, class strings, distinct caches and output stores support these roles under H1-H9. Native callers, record-key semantics and successful protected algorithms remain unknown.
+
+The [ADID context/identity continuation](adid_context_report.md) adds local codec and helper roles: header folding at `0x10016a800`, 64-bit argument encoding at `0x1001af170`, a six-selector mask at `0x1001ca3fc`, setup-marker CF parsing/key lookup at `0x100106248`/`0x1001063ac`, signed32 UID extraction at `0x100106510`, encoded final status production at `0x10019be08`, and BE error stores at `0x1002028a8` onward. These are source/private observations under C1-C8; full protected-function, upstream-helper and successful operation semantics remain unknown.
+
+The latest [ADID request report](adid_request_report.md) extends the separate CoreADI provider analysis through common persistence, filesystem-type discrimination, lock/retry/release and an emitted payload error. Its role assignments are bounded source/private observations under report assumptions R1-R7; complete protected-function and successful selector semantics remain unknown.
+
+The strongest recoverable roles are the provisioning operations, the UserClient-to-provider adapters, the LSKD request/response helpers, two protected dispatch mechanisms, the NVRAM worker bridge, and the two Mach RPC stubs. Many other exposed methods are constant-error stubs in this build. Most unnamed internal routines remain semantically unknown; their evidence is retained individually rather than assigned speculative cryptographic names.
+
+## Scope, assumptions, and provenance
+
+`C:n` means line n of `com.apple.driver.FairPlayIOKit.c`; `G:n` means line n of `com.apple.driver.FairPlayIOKit_calls.txt`. Native addresses are unslid addresses in the supplied image. Binary SHA-256: `2ec5e76ffc0a1873d284cbc50846b63f3576df2e5af98738df81faae33954a2c`; UUID: `227f9df7-645d-39b8-b74a-685303d16b4b`. The source export SHA-256 is `dfb28b99b293db95a78a5d2dd20f6fcf1a95f1a53245b99a090370e7a3327f08`. Current IDB: `a90cf8ec0d88`.
+
+| Assumption | Dependent conclusions | Falsification / stress test |
+| --- | --- | --- |
+| O1: addresses refer to this exact binary/IDB | Every mapping below | Hash, UUID, source address inventory, and selected backing-file/IDB byte comparisons agree. Another build invalidates address-specific mappings. |
+| O2: a retained symbol, diagnostic, or caller establishes an interface role, not the complete algorithm | Provisioning and app/media role labels | Inspect actual checks, provider selection, input/output use, and native calls. A contradictory native implementation overrides a name. |
+| O3: supplied pseudocode can omit paths and infer incorrect prototypes | All C-derived statements | `_buildLookupTbl` is a demonstrated omitted-path case. Native guards, stubs, dispatch tables, and RPC instructions were checked independently. Unresolved tails/prototypes remain unknown. |
+| O4: local frame arithmetic is 32-bit modulo arithmetic | Normalized operation tags | ARM W-register arithmetic and lifted expressions are used. The exact cancellation identities are documented and cross-checked on 100005 deterministic values. This is not a proof of whole-program reachability or PAC validity. |
+| O5: structural field-setting/getting patterns identify a request/response API | Proposed LSKD helper names | Caller field IDs, widths, output pointers, serialization code, execution ordering, and cleanup support the labels. Internal format/ownership and transport are not fully recovered. |
+
+Evidence levels used here: **native** = inspected instructions/data; **interface** = independently aligned caller/signature/diagnostic behavior; **inference** = a structural interpretation with its limit stated; **unknown** = not established. Pre-existing `DEOBF` comments and synthetic tool diagnostics are not treated as independent proof. No native driver execution was performed and no emulation result is used to establish semantics.
+
+The complete [routine catalog](triage_evidence/routine_catalog.json) contains all 4359 IDB function entries, including native chunks, incoming direct transfers, outgoing transfers, data-table references, source line ranges, strings, globals, and retained branch annotations. The [source candidate inventory](triage_evidence/obfuscated_inventory.json) contains 4092 mechanically selected obfuscated/unnamed candidates; that heuristic can include ordinary names and does not certify original symbol stripping. The [source index](triage_evidence/function_index.json) retains all 4340 exported bodies. The 19 remaining IDB entries are listed as removed/empty in the C export; additional executable-section ranges have no IDB function ownership at all.
+
+## Provider operations with established interface roles
+
+| Routine / entry address | Role | Evidence and boundary |
+| --- | --- | --- |
+| `Dqyxc6zf2Sv`, `0xfffffe000a506388` | Generate provisioning seed | C:11177: `generateSeed` diagnostics, seed versions 1-3, non-null inputs, product comparison, `IOAESAccelerator`, GID/UID-named AES operations. Full derivation/key provenance unknown. |
+| `Fd7DxKaV3`, `0xfffffe000a5069fc` | Generate in-field seed | C:11553: `generateInFieldSeed`, version `0x82`, 1024-byte buffer operations and two AES calls. Exact meaning of the logged `randomV` is not established by its name. |
+| `KLzN`, `0xfffffe000a506dbc` | Exchange with Hoover | C:11800: matches `AppleSTDP2700`, builds `OSData`, calls provider virtual method, bounds response length against caller capacity, copies response. Diagnostic names `IOAVService::createAUPPacket`. This is a driver interface, not an established daemon connection. |
+| `LDdKLPm0`, `0xfffffe000a507044` | Obtain encrypted seed segment | C:12083: accepts versions 1,2,3,`0x82`; offset set `{0,16,32}` bytes; product check; `PIKDecryptWithFixedSharedKey`; AES provider operations; 16-byte segment transfer. In-field information length is checked. |
+| `fDkV4Su`, `0xfffffe000a5079a0` | `encryptSUInfo` operation | C:12614: non-null buffer, length >=16 bytes and divisible by16; AES provider; operation parameter `_PUCryptoOperation_`. Expansion of SU is unknown from this image. |
+| `J8i0aN2gZ6hA3nG`, `0xfffffe000a507cc0` | `encryptWithWrappedKey` operation | C:12832: one length exactly36 bytes and the other32 or64 bytes; provider AES and output extraction. Exact wrapped-key format unknown. |
+| `uej58Beal`, `0xfffffe000a505198` | FP-message mapping/copy adapter | C:8937 and provider slot `0xA20`: maps caller address in stored task, allocates kernel buffer, copies in, invokes `_PRnut72j9`, copies back, completes/releases descriptors. |
+| `n4HesG39n`, `0xfffffe000a50a584` | FPDI provider stub | C:16214 returns `0xFFFF5BD1`. Selector40 still maps/copies buffers in its UserClient wrapper; the named provider operation itself is a constant-error stub. |
+
+The exact 17 selector-to-provider routes are in [userclient_provider_routes.json](triage_evidence/userclient_provider_routes.json). Important distinctions:
+
+| User-facing operation | Provider route | Lower core association |
+| --- | --- | --- |
+| Selector1 `uOxAg` | `wT74ohNhs04Oy`, slot `0x8E8` | LSKD response field query, not the provider `uOxAg()` |
+| Selector6 `initKextSession` | `R2nPsUOYx6h`, slot `0x8F0` | LSKD session-message interface |
+| Selector18 `ProcessEncryptedData` | `WkhY6wTBlbHrpaT0`, slot `0x928` | `_zgcqcxw1qve0CY` |
+| Selector20 `ucDecryptOneSample` | `yt8uPOVu`, slot `0x8A0` | `_RUD5XlDtQjk`, core2 tag `0x5A29762C` |
+| Selector21 `ucRunVersioned` | `qtQQt`, slot `0x8B8` | `_UeFdbi` |
+| Selector22 `ucGetVersion` | provider `uOxAg()`, slot `0x8C0` | `_V2F1SYee` |
+| Selector23 `ucGetProtocolCapabilities` | `Q5TC6`, slot `0x8C8` | `_QIWEiU` |
+| Selector26 `ucSendFPMessage` | `uej58Beal`, slot `0xA20` | `_PRnut72j9` |
+
+These are static local vtable resolutions. They do not certify external callers of provider methods in other kexts.
+
+## LSKD helpers: recovered structural roles
+
+The common sequence is a request/response-object pattern. It is not evidence of an identical lock-acquisition bracket. The proposed names below are reporting labels; no IDB symbols were renamed.
+
+| Original helper / address | Proposed structural label | Grounding |
+| --- | --- | --- |
+| `_mzRQjC7QF6ZQbBAmA`, `0xfffffe000a50c048`; entry `sub_FFFFFE000A54E4F0` | Create/initialize operation request | LSKD lifecycle/provider wrappers initialize a null request, pass its output reference, and vary operation constants; C:9089,9187,9315,9746,9898,10178,10443. Original typed construction, 160-byte clearing, fields, 128-byte inline storage and output publication are now recovered in the [LSKD construction report](lskd_request_report.md). Typed heap return/clobbers remain modeled; the dynamic path stops before IOMallocData. See LR1-LR10. |
+| `_zzLw2eOVu9pOHqpiNw1K4ki`, `0xfffffe000a50c2b0` | Set 64-bit field | Callers supply field `0x72` with opaque context; lower helper A52FD18 serializes eight bytes; C:17518,47751. This need not be an ordinary host pointer on the wire. |
+| `_JmmzRQjC7QF6ZQbBA`, `0xfffffe000a50bdfc` | Append byte-span field | Source appends BE16(low16(tag)), BE16(low16(length)), and raw source bytes through generic selector0x224; null source is rejected even for zero length. See [field report](lskd_fields_report.md), LF1-LF10. |
+| `_Hpu7ZBOFQYIwvPDYn9`, `0xfffffe000a50df34` | Append 32-bit scalar field | Original bridge A54DAF8 stages BE32(value), then calls common insertion helper A55E8B0; source packet is BE16(tag16), BE16(4), BE32(value32). See [field report](lskd_fields_report.md), LF1-LF10. |
+| `_TdtbU9WbbSyE1sdsj`, `0xfffffe000a50c508` | Prepare execution workspace / dispatch / cleanup | Source writes a 52-byte partial header in a requested 16384-byte workspace, forwards request/output pointers to A55F5E4, and translates status after typed/aligned free preparation. Null-output source returns and model limits are checked in the [workspace report](lskd_execute_report.md), LE1-LE10. |
+| `_V9Z6DQ1D8vW2ehH1G1m`, `0xfffffe000a50b14c` | Read 64-bit response field | Callers supply `unsigned long long *` or 8-byte result locations and IDs `0x88`, `0x8C`; C:9746,10178,16983. |
+| `_kfszHrZ3N4HMtvfB5Bws`, `0xfffffe000a50e170` | Read 32-bit response field | Callers use IDs `0x65` and `0x69` and 32-bit outputs; C:9315,9898,10178,18310. |
+| `_NxUj27MuIpS68FLnG`, `0xfffffe000a50e8a8` | Read response type/version-like value | `wT74ohNhs04Oy` compares output to `0x1B5B` before reading field `0x65`; C:9315,18482. Whether this value is a type, version, or protocol signature is unknown. |
+| `_npoKianhz5eqeqJHjqa9`, `0xfffffe000a50d088` | Release/cleanup temporary object | Called conditionally on both request and response objects on common exit paths, C:17872 and the provider wrappers. Exact allocation/reference-count semantics unknown. |
+
+All 42 recovered provider/lifecycle helper uses, with source lines and argument expressions, are in [context_helper_uses.json](triage_evidence/context_helper_uses.json).
+
+```text
+opaque context / parameters
+  -> create operation request
+  -> set typed fields
+  -> execute(request, &response)
+  -> read typed response fields
+  -> cleanup request and response on common exit paths
+```
+
+Concrete request/result observations:
+
+| Provider routine | Recovered field/data flow | Limit |
+| --- | --- | --- |
+| `wT74ohNhs04Oy`, A50550C | Execute request; check type/version-like output `0x1B5B`; read32 field `0x65`; return it | Exact field meaning unknown. |
+| `eJ7hqOh8Z`, A505848 | Set64 `0x72` from opaque context; execute; read64 `0x88` into caller output | Result meaning unknown. |
+| `KDGetReEncryptionVault`, A505958 | Set64 `0x72`; set bytes `0x8B` from an8-byte output-pointer representation; execute; read32 `0x69` into output length | Pointer transport/interpretation and actual vault format unknown. |
+| `sxvHysrIgQq2V`, A505AC8 | Null parameter rejected; clears params+`0xF0`; sets64 `0x72`; registers8-byte fields `0x6B`,`0x6C`,`0x89`,`0x8A` referring to parameter regions; executes; reads32 `0x69` and64 `0x8C`; writes final64 value at params+`0xF0` | Pseudocode contains frame-pointer reconstruction artifacts. These are observed offsets/roles, not recovered struct field names. |
+| `ZURJElCowjwysX`, A505DE0 | Requires input version1; set64 `0x72` from input+8; set32 `0x7E` from input+16; execute; cleanup | Name/type associates this with AVD permission; detailed policy unknown. |
+
+## Two protected dispatch mechanisms
+
+Both contain address-dependent frame encoding, mutable global state, byte lookup tables, indexed authenticated transfers, and shared internal dispatch. Those facts do not establish a human-written bytecode VM. They establish protected control/data dispatch.
+
+| Mechanism | State / tables | Frame and status conventions |
+| --- | --- | --- |
+| Core1 / LSKD-oriented | State near `0xfffffe000ccc2c60`; transfer table base `0xfffffe000846c420`; auxiliary pointer table `0xfffffe00084716e0`; common multiplier `0xEA5EBDEB` | Execution wrapper supplies `0x4000` bytes and alignment `0x40` to exact matching-KC `_IOMallocAligned` / `_IOMallocAligned_external`; static binding only (LR10). Status decoding frequently subtracts `0x5E561849`. |
+| Core2 / app/message-oriented | State near `0xfffffe000ccc32f8`; transfer table base `0xfffffe0008472f20`; auxiliary pointer table `0xfffffe0008471f00`; common multiplier `0x4D08A3FB` | Similar frame allocation-like call; common dispatcher A606728; encoded operation at frame+`0x10`, result at+`0x14`, secondary state at+`0x18`, marshalled arguments at+`0x28`, arena at+`0x30`. Status often XORs `0x31AE0066`. |
+
+`0x4000` bytes =16384 bytes; `0x40` bytes =64 bytes. Matching original-KC symbols now resolve `0xfffffe000c4b9a08` to `_IOMallocAligned` / `_IOMallocAligned_external`, `0xfffffe000c4b9a24` to `_IOFreeAligned`, `0xfffffe000c4ba154` to `_IOMallocTypeImpl`, and `0xfffffe000c4ba368` to `_IOFreeTypeImpl`. The [LSKD construction report](lskd_request_report.md) pins the original pointer slots and execution-wrapper call sites. These are exact KC symbol bindings; loaded-IDB mapping and native completion of the wrapper remain unproved. See LR10.
+
+The helpers A561058 and A687ECC are **unsigned ordering guards in the original code**: trap if the first address exceeds the second; otherwise return the first. They do not zero a buffer or allocate it (C:84263,233506).
+
+### Recovered local operation tags
+
+For core2, let `p` be the low32 bits of the frame address, `x = 0xEF54FF65*(p XOR 0x97099BC0) mod 2^32`, and `K=0x3E784FF5`. A wrapper stores `x XOR tag` at+`0x10` and `K-x` at+`0x18`. Dispatcher A606728 decodes:
+
+```text
+operation = (x XOR tag) XOR x = tag
+secondary = (K - x) - 0x10AB009B*(p XOR 0x97099BC0) = K  (mod 2^32)
+```
+
+The second identity holds because `0x10AB009B = -0xEF54FF65 mod 2^32`. This removes frame-address dependence locally without executing the protected program.
+
+| Wrapper | Tag | Static association | Normalized continuation |
+| --- | --- | --- | --- |
+| `_cmam7f` | `0x1414EE04` | provider-start operation | Calls A62784C, then success/failure continuations A606F78/A60BC0C |
+| `_uzZm1ih0` | `0xEAB485F6` | provider-stop operation | A607B2C |
+| `_fcHfFIGhsx` | `0xD11612F2` | app-origin context construction interface | Non-null argument record -> A607684; null -> A6076CC |
+| `_fd9eLZ4` | `0x511BAFD6` | operation on an opaque context supplied by cX9AmMyY | Non-null record -> A60775C |
+| `_bRyEnFcB` | `0xDF8CDD16` | provider LQ1N1WLcw(context,input,output,length) | Non-null record -> A606DE0 |
+| `_EQlZPp` | `0x94F8574B` | provider bvqhJ(context,64-bit argument,input,output) | Non-null record -> A606D24 |
+| `_RUD5XlDtQjk` | `0x5A29762C` | sample operation with task/buffers | Non-null record -> A608108 |
+| `_egYabpIOCbFA` | `0x6CD79A35` | task-associated provider operation | Non-null record -> A606C5C |
+
+The “argument record” is the marshalled call record, not the user payload pointer. Several null-record branches converge on A60EC64, which writes an encoded result and returns. A tag `0x85150332` is also recognized in the dispatcher but no named wrapper association was established. `_UeFdbi` uses a separate dispatch entry A5A5470; it is not assigned one of the above tags.
+
+Core1 execute wrapper `_TdtbU9WbbSyE1sdsj` similarly normalizes its local tag to `0x563`; non-null output-reference routes through index `0x57F` at slot `0xfffffe000846f018` to A5247AC. The null-output partition uses index `0x563` at slot `0xfffffe000846ef38` to A510628. This establishes a local dispatch partition, not complete execution semantics.
+
+Reproduction: `python3 fairplay_dispatch_algebra.py`. [dispatch_algebra.json](triage_evidence/dispatch_algebra.json), [dispatch_tags.json](triage_evidence/dispatch_tags.json), and [normalized_dispatch_blocks.json](triage_evidence/normalized_dispatch_blocks.json) retain calculations and native targets. The finite regression is separate from the algebraic proof; neither establishes dynamic reachability, successful allocation, pointer authentication, or all indirect targets.
+
+## Constant-error implementations and aliases
+
+The following provider methods have unconditional constant-error bodies in this build (C:9637-10798 and16214). They must not be described as implemented cryptographic algorithms merely because their signatures carry media types.
+
+| Return value | Provider methods |
+| --- | --- |
+| `0xFFFF58A1` | `glmABVgh`, `KDDSSessionDongleProcessKey`, `CrBz3MJei`, `rt7FG4pJ0q63hCQQkT1L`, `esdDlAoG91SwMkqi`, `sxFZW6XTFuWAV`, `C3eOYyXKaxVgNh`, `tbzvC93d1UX`, `A9CZ9IMiccR`, `QhTZbNevkpVdqc`, `mLw5VuDhN`, `qxgojK250D3f3rg6A`, `eSVxEIB93IEf9E0EPqaE`, `NipN1PBN5sHeH8yJj`, `JdXxwmAkLAtadeajbfk`, `T1KvBcaVndEJZ3Y`, `BV4KsXjEaFOgYNqXhL`, `Kn3BJ3l0WFEYM1`, `fmAQebwT` |
+| `0xFFFF5BD1` | `NevkpVdqcbi8`, `bA46lJbE9`, `n4HesG39n` |
+
+All22 constant-error provider bodies were independently checked against backing-file instructions; each consists only of BTI/MOV/MOVK/RET instructions. The exact readback is in [provider_stub_native.json](triage_evidence/provider_stub_native.json); representative IDB readbacks are also in [native_detail.json](triage_evidence/native_detail.json). Error-code names beyond their raw values are unknown. Separately, four unrouted UserClient bodies write `0xFFFFFFD9` to an output status field and return transport status0: `LQ1N1WLcw`, `decryptSliceDataWithCTR`, `decryptOneSampleWithCTR`, and `decryptSliceData` (C:8049-8104).
+
+The provider compatibility aliases `OPqktfVJi`, `TtFcxN6vAci`, and `H08LTMOhY3h8` forward through local provider slots `0x8E8`, `0x8F0`, and `0x928`, respectively. They therefore associate with the LSKD query/session/data interfaces even though the names are opaque. Native table entries are in [native_detail.json](triage_evidence/native_detail.json).
+
+The symbol previously transcribed as `_Prn3ccdCvCjGlvZGIjqWqiZK` has the actual near-match `_Prn3cCdCvCjGlvZGIJqWqiZK` at A52ED28 (C:47232). Its visible entry partitions on `a2==6 && a6<9` then transfers indirectly. Purpose beyond that partition is unknown. `_Rh0FYVn9ULY2gWmEr4NwbNV` at A552C44 partitions on `a5>8 || a7==0` after frame setup; no algorithm name is assigned.
+
+## Additional roles and bounded findings
+
+| Impact | Finding | Evidence / bound |
+| --- | --- | --- |
+| High | A named provider API can be a stub while its UserClient adapter still performs memory work | FPDI and dongle routes above. This affects interpretation of the exposed surface, not proof of a vulnerability. |
+| High | Function ownership is incomplete across the protected code | Native scan finds732 unowned executable-section ranges totaling291116 bytes. Those ranges are not necessarily all reachable instructions; they cannot be omitted from further control-flow reasoning. |
+| Medium | `_PIKDecryptWithFixedSharedKey` is an obfuscated entry with substantial unowned native continuation | Entry A59C3C4, source C:129192; source body ends at an indirect branch, whereas native code continues to A5A1C40. Full AES/key-unwrapping semantics are unknown. |
+| Medium | Protected routines consult time/environment | Ten exported internal bodies contain `kern.monotonicclock`; per-routine strings and references are in the catalog. Presence does not by itself establish anti-debugging or expiry policy. |
+| Medium | NVRAM worker helpers have recoverable concrete roles | A5A1CF8 reads a little-endian32 value; A5A1E98 updates one; A5A1DB4 launches/waits; A5A1F94 accesses `com.apple.System.fp-state` under `IODeviceTree:/options`. See architectural report. |
+
+## Quality gates
+
+QG1: factual analysis only. QG2: O1-O5 state assumptions and probes. QG3: the entire supplied function corpus is indexed and all IDB functions are catalogued; semantic recovery is explicitly partial. QG4: address/byte widths, modular arithmetic, and complexity are reproducible. QG5: decompiler contradictions and unowned ranges are retained rather than assumed resolved. QG6: local primary artifacts and native evidence are cited. QG7: additional findings are bounded by impact and evidence. No claim of exhaustive deobfuscation is made.
+
+
+## Supplement: reusable zut reconstruction artifacts (2026-11-01)
+
+[The zut trace report](zut_trace_report.md) inventories the existing `fp-harness` observations, checkpoints, strict lifter/SMT workflow, and target-loop proof artifacts. The daemon image's executable section and all other `__TEXT` sections match the loaded daemon IDB, permitting bounded code correlation. The target-loop artifact provides local frozen-state semantic recovery, not a complete routine or native protocol proof; its historical checks were inspected, not rerun.
+
+Four older annotations in `/Users/___/Downloads/zut/evidence.json` and `trace.txt` incorrectly render `B.NE` as `bcc` at daemon addresses `0x100004540`, `0x10000454c`, `0x100004558`, and `0x100004568`. Target bytes and live IDA confirm the equality-based conditions. The original artifacts were preserved; [the audit](triage_evidence/zut_trace_decoded.json) records words and corrected condition names. The separate Python `fpd` harness uses synthetic import/object models and fixed-tag PAC handling, so its paths require explicit model boundaries. These daemon findings do not establish additional obfuscated kext routine semantics.
+
+
+## Current native interface recovery (2026-11-01)
+
+[interface_abi_report.md](interface_abi_report.md) supplies the native `_PRnut72j9(kernel_buffer, extent, per_client_state)` boundary at call site `0xfffffe000a5052fc`, correcting the apparent no-argument/void source view. The adapter writes data back before returning core status. The matching collection also identifies its external scratch/type allocators as `_IOMallocAligned` and `_IOMallocTypeImpl`.
+
+[kernel_port_resolution_report.md](kernel_port_resolution_report.md) adds exact collection symbols for415 previously external pointer values, native bank/table proofs for the host lookup and both RPC callers, and conditional17/34 and502/700 selection. These bounded reductions do not replace the full routine catalog with speculative algorithm labels. The dispatcher frame, UserClient state, and per-operation objects retain separate unresolved type/identity obligations.
+
+## Roles corroborated by named text-pager clients (2026-11-01)
+
+[text_pager_interface_report.md](text_pager_interface_report.md) adds original collection call sites and exact virtual-slot bindings. `_fcHfFIGhsx` constructs an app/text context through a 40-byte argument record, publishing a zero-extended u32 token through its nominal pointer-typed output. CPU type/subtype and origin are forwarded separately from mode1. `_EQlZPp` is the protected page-decrypt entry called by `AppleFairplayTextCrypter::decryptPage`, with `(token, offset, source, destination)` after provider adaptation. `_oh70aLVr` is reached by the text session's close path via provider+0x8b0; complete internal finalization and port release remain unknown. The source-exported apparent no-argument forms are not authoritative ABI declarations. `_fd9eLZ4`, at provider+0x888, is a distinct entry and is not the observed text-session close target. These are caller-bound roles, not recovered algorithms or complete object definitions.
+
+## Shared daemon callback and inherited continuations (2026-11-01)
+
+[daemon_receive_interface_report.md](daemon_receive_interface_report.md) recovers callback0x100425f78 across widely separated inherited-register continuation fragments. Its initial1000..1002 branch is one stage of five-family routing, not a complete standalone fpsd demultiplexer. The final local behavior includes `_malloc`, family-specific generated demux calls, `_mach_msg_destroy`, `_mach_msg`, and `_free` with exact original-slot provenance. Compact semantics, ID boundaries, status branches and ownership are reported without treating each IDA fragment as a separate human-written routine. Original IDB names/comments were left unchanged.
+
+## Protected request preparation and VM adapters (2026-11-01)
+
+[kext_port_vm_report.md](kext_port_vm_report.md) resolves the ordinary constructor's `_strlen`, copy, VM-copyin/copyout/discard, allocation/free and page-wiring calls using original bytes and exact collection symbols. The request copies filename-plus-NUL into `ipc_kernel_map` staging and passes a VM-copy object to RPC502/700. Its extent is the zero-extended wrapped u32 length plus one. A guarded post-RPC rejection route invokes `_ipc_port_release_send` at `0xfffffe000a615f2c`. These caller-bound roles do not establish complete allocation bounds, successful wiring, normal publication/close behavior or total reference balance.
+
+## Deeper stripped kernel helpers versus protected kext routines (2026-11-01)
+
+[kernel_rpc_transport_report.md](kernel_rpc_transport_report.md) resolves the protected RPC client's deeper transport boundary using 15 original kernel ranges bounded by LC_FUNCTION_STARTS. Exact exported MIG helper names are separated from stripped helpers whose roles are source-correlated and supported by native field/call behavior. The recovered functions implement current-thread reply-port binding, request preparation, rights copyin, return conversion and descriptor pointer signing/stripping. No stripped helper has been relabeled as an exact collection symbol, and no IDB naming mutation was performed.
+
+## Further source-correlated kernel copyout helpers (2026-11-01)
+
+[kernel_user_copyout_report.md](kernel_user_copyout_report.md) separates normal and pseudo-receive helpers and recovers native user header/descriptor packing, OOL VM-copy validation/mapping and null-task trailer initialization. Ten compiler-bounded original ranges and refreshed daemon stub instructions support those roles. Stripped descriptive names remain source-correlated, and partial helper contracts are not complete protected FairPlay application semantics.
+
+## RPC502 private-record wrapper and protected operation (2026-11-01)
+
+[daemon_rpc502_report.md](daemon_rpc502_report.md) establishes caller-bound roles for0x100422d48 (filename scan/private-record wrapper),0x10065ffd8 (protected adapter),0x10061a2d0 (shared protected core) and0x10046f89c (source-to-destination copy helper on the aligned32-byte path). Operation tag0xbc84919b reaches an audit-PID extraction/predicate and thread/QoS calls. These are compact recovered semantics with original fixups and full-domain checks, without renaming IDB objects or treating continuation fragments as separate routines. Business error naming, full context construction and lifecycle remain unknown.
+
+## Encoded comparison and environment continuation (2026-11-01)
+
+[rpc502_environment_report.md](rpc502_environment_report.md) recovers compact semantics for helper `0x10041a5e0`: a frame-pointer-derived mask decodes two u64 operands, selects unsigned-greater-than or equality from a decoded control bit, then writes an encoded continuation index. Its CSR caller selects equality with zero. The surrounding continuation reduces the CSR configuration to `((config & 0xffffffef) != 0)` after getter success, with a separate value 2 on getter failure. These are comparison/control-flow roles, not identified cryptographic algorithms.
+
+Original-byte provenance also resolves a guarded binary global and two addend-encoded imported BootPolicy data references. Their runtime contents, full global layout and downstream security-mode policy remain unknown. Full-domain arithmetic proofs and ten finite synthetic profiles have separate evidence scopes; the latter bypass PAC and model selected imports without native target execution.
+
+## Caller-bound BootPolicy mode classification (2026-11-01)
+
+[bootpolicy_backend_report.md](bootpolicy_backend_report.md) reduces continuations `0x100461da8`, `0x1005750d4`, `0x1004cdba4`, `0x1003c33f8` and `0x10051e440` to a three-way numeric mode partition before common continuation `0x1005bbb20`. Modes1/2 select marker0x693d4f62, mode3 selects0x693d4f65, and all other u32 patterns select0x693d4f68; API failure uses the last marker. Full-domain SMT and original branch slots cover the partition, without assigning enum names or final acceptance semantics. The common continuation combines this marker, CSR indicator and mutable state. Exact local-cache/kernel names for the external BootPolicy backend are separately proven from original export/nlist records; they are not speculative names for protected FairPlay fragments.
+
+## CoreKE export identities and support-runtime roles (2026-11-01)
+
+[rpc502_runtime_report.md](rpc502_runtime_report.md) matches daemon dlsym requests to original standalone CoreKE exports. In the selected arm64e slice, `_IWvA5fm4IwMS88oQXDANCS` at image-relative0x11b4 captures W0/W1/X2 into a 24-byte internal record; `_JY0DfiUyFiVcNw89R4t` at0x1418 captures X0 into a 16-byte record. Their business operations, full schemas and returned-word meanings remain unknown. The daemon's first reached call is at0x100de9c6c; CoreKE code is not executed by the private fixture.
+
+## Filename and file-boundary helper roles (2026-11-01)
+
+[rpc502_sidecar_report.md](rpc502_sidecar_report.md) recovers further local protected-block roles from original bytes and distinct finite/proof evidence. These roles do not assign complete human-written function boundaries or mutate IDB names.
+
+| Native range / site | Established role under recovered control state |
+| --- | --- |
+| `0x1005bbb20` / write `0x1005bbb68` | Add BootPolicy marker delta and CSR indicator to mutable u32 global0x1010b9630 |
+| `0x1005d1354`..`0x1005d136c` | Convert that global into a zero-extended byte scan start |
+| `0x10074cbc8`..`0x10074cc18` | Encode current filename byte as XOR0x98, retain slash position, increment counter |
+| `sub_10078E168` | Decode/copy encoded prefix using XOR0x98 through encoded NUL |
+| `0x1009ab630`..`0x1009ab664` | Subtract0x11 per encoded literal byte; append /SC_Info/ and .sinf in current paths |
+| `sub_10083EC3C` | Copy original filename tail, including NUL, in current path |
+| `0x100aaf954` / `0x100c211dc` | Exact original imported calls to fstat / errno accessor after signed open-result routing |
+
+The former synthetic prefix anomaly now has byte provenance. Native split-halving prerequisites, global writers/reset/lifecycle and complete helper semantics remain unknown; original-byte agreement and current live-IDB readbacks do not establish native execution or a memory defect.
+
+## Mapping/copy/parser and cleanup helper roles (2026-11-01)
+
+[rpc502_mapping_report.md](rpc502_mapping_report.md) adds original-byte roles at `0x100ca39f8` (selected fstat status-marker guard), `0x100c85e40` (exact mmap import), `0x100dacb54` (mapping-result publication), `0x10095b5c8` (exact malloc import), `0x1005d0314`/`0x10059ccd0` (bulk/remainder descending byte copy), and `0x1009b6eac` (selected BE32 reader with XOR0x8b3dc651 result). Original bindings also resolve munmap, close, free and the late QoS setter at their exact emission sites. Seven full-domain arithmetic queries and finite private byte/frame cases support different claims; the first parsed word's semantic identity and complete protected-routine contracts remain unknown.
+
+The support subsystem also exposes an affine byte decoder for `kern.hv_vmm_present`, two once initializers constructing pthread rwlocks, and a distinct 56-byte encoded comparator with compact recovered predicates. These are caller-bound roles supported by original bytes, exact imports, byte-bank identities and scoped proofs. They are not speculative crypto labels for the kext's obfuscated routines.
+
+## Daemon registration helper and startup continuations (2026-11-01)
+
+[daemon_registration_report.md](daemon_registration_report.md) establishes compact roles for additional unnamed/flattened daemon code. Entry0x10044011c and inherited-register continuations0x1003ad1a8,0x1003172bc,0x1003151e8 and0x1001ce87c form a check-in/CF-registration helper, rather than five independent source routines. It checks in a decoded name, forwards the returned receive name to the common CF wrapper, creates a source, adds it to the main run loop in default mode, releases the local source and publishes the CF port object. Source failure invalidates/releases that object. A40-byte private record carries destination/name/status/control fields.
+
+Routine0x100537b90 decodes and registers exactly five names in sequence; its only child-status read follows the fifth call. Main continuation0x100083778 reaches it through stack adapter0x100539234. Original control-word arithmetic and aligned-pointer proofs connect those callers, and three private main-continuation cases establish the last-status gate, including an earlier failure followed by final success. Nineteen original spans,27 exhaustive banks, eight proofs, eleven fresh IDA matches and14 page-hashed fixtures with706 assertions retain the evidence. Descriptive roles are analyst interpretations, not original symbols, and IDBs remain unchanged.
+
+The later [arcade handshake recovery](created_port_report.md) resolves protected continuation0x1005757cc as the new-port stage of incoming41471 application0x100006944. It queries the created name,makes a send right,and invokes kernel registration51471 before main/default-mode publication at0x1010c4d10. Kernel consumer0xfffffe000bce1a64 uses the resulting endpoint for subscription-validation61471. Kernel lookup0xfffffe000bd92600,stub0xfffffe000bd92510 and application0xfffffe000bce1864 establish the type43 registration contract. These are descriptive roles,not recovered stripped symbols; full lifecycle,policy callback and subscription application semantics remain open.
+
+## Subscription serialization and CoreFP XPC roles
+
+[arcade_subscription_report.md](arcade_subscription_report.md) follows application0x1000057c0 through a40-byte argument record and an80-byte path record. Protected continuation0x10051e4e0 initializes decision1,copies the path through `__strcpy_chk` with1024-byte size,then compares the anonymous service name. Continuation0x1007ccfd4 measures the path and encodes its original pointer/inclusive length. Compiler-bounded helper0x100444dfc is a5497-instruction branchless mutable-byte-state transformation; its algorithm identity is unknown. Initializer0x1003b41fc allocates/fills its58/101-byte buffers. A fresh original initializer establishes those prerequisites under explicit private API/PAC models.
+
+The caller reaches CoreFP bundle registration0x10040fcf8,connection creation0x10040fdb0 and synchronous XPC emission0x10077e614. Twelve complete serialized messages contain nested9777/50db records and a NUL-terminated path under dictionary key `data`. Three arithmetic proofs and nine fresh IDA windows support local mappings; full CoreFP reply/decision,callback and allocation-failure/Foundation paths remain open.
+
+## Companion service and daemon reply continuation
+
+The [service report](arcade_service_report.md) recovers the installed companion's main0x100003380 ->`xpc_main(callback0x1000034fc)`,peer callback0x1000034fc -> requirement setter0x10000369c -> zero-status block installation/resume,and event invoke0x1000030d0. These addresses belong to a different image from the daemon despite overlapping VAs. Its original parser accepts the exact daemon-produced160-byte packet far enough to obtain a peer audit token and pass `kSecGuestAttributeAudit` to `SecCodeCopyGuestWithAttributes` at0x10000d53c. Final guest/receipt semantics remain unknown.
+
+The [daemon reply report](arcade_reply_report.md) identifies dictionary/status-presence/int64 gates and continuation0x100834928's low32 status codec. Three arithmetic proofs retain the service gate and conditional daemon codec;16 reply cases include ±2^32 taking the zero-low32 data branch. All stop before NSString path-prefix conversion executes; final61471 decision is not established. Ten service cases include NULL reply cleanup and conditional status-only errors,without native transport/authentication evidence.
+
+The subsequent [policy report](arcade_policy_report.md) resolves the service's post-audit role:SecRequirementCreateWithString0x10000d5e8 uses the receipt-entitlement literal,and SecCodeCheckValidity0x10000d68c checks the peer-derived code reference. Original Objective-C lists recover53 method mappings across seven receipt/ASN.1 classes,including receipt factory0x1000011e8 and signature verifier0x100001e68. Service helper0x100000dc8 delegates the full target path to NSFileManager's developer check;the false branch reaches the receipt factory with `_MASReceipt/receipt`. A source-produced96-byte response under explicit success models completes daemon decision0 write0x1004d7b0c and stub61571 size/status writes. Four proofs and source-pinned cases retain these scoped roles without renaming IDB functions or claiming native validation.
+
+## Receipt decoder and downstream repair roles
+
+The [receipt report](arcade_receipt_report.md) retains all20 original FP_ISPurchaseReceipt methods,138 call edges and70 original stubs. Decoder0x10000186c uses private SecCms Create/Update/Finish/Destroy,with distinct output/lifetime contracts;the installed reference exposes conditional stale-output and retired-context cleanup conflicts. Method0x100001e68 performs the documented local certificate/trust control flow and result1/4 predicate;its name alone does not prove complete CMS content/signature verification. Nine private cases preserve actual definedness and guarded-stop boundaries.
+
+The previously unfinished daemon continuation0x100002134 is an AppStore repair-options adapter,as established by original class bindings and selectors. It sets exitReason16 and FairPlay status,then dispatches repairAppWithOptions:replyHandler: with global block0x101038020;invoke0x1000021bc is a single RET. Six144-byte response cases reach this adapter and complete status0/decision1 under explicit private return models. The [repair report](appstore_repair_report.md) recovers the reference broker endpoint and environment-dependent remote/notification paths;these are descriptive roles and reference contracts,not IDB renames or native operations.
+
+The [appstoreagent receiver report](appstore_receiver_report.md) adds103 original compiler ranges and1600 direct edges from the peer/capability and repair-selection surface. Private helper0x1000b3088 vends services through capability predicate0x100125684; context constructor0x100125414 binds the gate to a connection audit token. Pair getter/setter0x100163f34/0x100163f84 carry the repair token and NULL alternate key, while factory invoke0x100124afc returns the RepairService singleton. Queued block0x1000f14a8 creates RepairApplicationTask; helper0x10012880c reads the supplied FairPlay status. FairPlay adapter0x100035ecc passes a platform2 filesystem path to protected routine0x1003afe84, whose complete semantics/IPC remain unknown. These roles belong to the separate appstoreagent image; overlapping VAs must not be assigned to fairplayd.
+
+## Caller-established AMS keybag routines
+
+The [event/keybag report](appstore_events_report.md) retains original nlist names and complete reference AppleMediaServices ranges for the following routines. These functional roles derive from original callers; the protected algorithm and native reachability remain unresolved.
+
+| Original name | Reference VA | Established caller role |
+| --- | --- | --- |
+| `_df35957c4e0` |0x19ca0d0e4 |Check existing u32 context; zero status retains it |
+| `_XtCqEf5X` |0x19c9e12a0 |Create context after SC Info path validation; caller passes contextID cell at object+8 |
+| `_ha0dkchaters6` |0x19c9ec168 |Import keybag bytes/length using contextID; caller consumes returned pointer64/count32 and32-byte account records |
+| `_jEHf8Xzsv8K` |0x19ca1dd68 |Dispose returned account-record pointer after caller handling |
+
+Eight private original caller cases validate status/pointer/count branches,32-byte stride and field permutation under explicit context/import/disposal models. They do not execute these protected routines or prove cryptographic, persistence or Mach transport semantics.
+
+The subsequent [protected-core report](ams_core_report.md) directly recovers `_jEHf8Xzsv8K`:eight-bit banks resolve exact `_free`,the NULL branch returns0xffff5bd9,and both paths rewrite two64-bit state cells before returning. `_XtCqEf5X` packs a48-byte record whose operation decodes to0xc4b in helper0x19c237b30. Eight exhaustive bank identities,two SMT proofs and29 private prefix/return cases retain these findings. The paths reach dynamic CoreFP loading and five exact public-symbol lookups;native library selection,full protected algorithms and downstream IPC remain unproved. The separate CoreFP dylib's eight exported original functions are retained by offset/bytes rather than assigned semantics from their names.
+
+## CoreFP export semantics recovered from original instructions
+
+The [CoreFP report](corefp_exports_report.md) establishes `lxpgvVMLd0S7uRl` at preferred offset0xcd20 as a version-output routine:helper0x20f6fc decodes operation0x3231,writes three u32 components6/8/3 to a non-NULL writable output and returns0;NULL returns0xffff5bd9. Four64-bit stores across three mutable cells accompany both paths. Bundle version6.8.3 independently corroborates the output's role. `WIn9UJ86JKdV4dM` at0xe160 constructs an address-encoded argument record and calls0x27afd4;its public status comes from record+0x10. The88-byte known written extent,mode/certificate-length codecs and pointer fields are recovered;complete schema and algorithm remain unknown. These are source-derived roles,not interpretations of the obfuscated spellings. Nine bank uses,four SMT obligations and the linked private cases retain the evidence.
+
+The [subsequent lookup report](corefp_lookup_report.md) establishes helper0x1cdb24 as a32-byte encoded service/cache adapter:primary `com.apple.fpsd`,fallback `com.apple.fairplayd`,u32 name/flags outputs and fixed success/failure markers. Helper0x57a67c performs conditional two-name deallocation requests and cache/metadata reset. Helper0x20f37c selects an optional/default write-lock object. Original protected caller0x8e81c8 constructs lookup tag0xba27/flag9 under operation0xc1f7 preconditions. Eleven distinct bank proofs,three SMT obligations,16 local cases,one source caller and three paired-image cases retain these roles;native initialization,lock/rights lifetime and complete parent processing remain unknown.
+
+The [client-path report](corefp_client_paths_report.md) adds three concrete roles. The inspected branch of0x246ea0 allocates760 bytes and copies an embedded XOR0xba container;its756-byte DER body is staged for the FPSD1200 request. Constructor0x15cc6f4 accepts exactly six negative64-bit selectors,builds a28-byte ADID request and selects XPC or legacy Mach handling under the recorded conditions. Handler0x15a4c14 passes the event to exact `xpc_copy_description` and tail-calls exact `_free`;it also mutates protected state. Complete parent semantics,successful response construction,opaque X1 meaning and native synchronization remain unknown.
+
+## CoreADI provider roles
+
+The [ADID provider analysis](adid_receiver_report.md) assigns the following evidence-bounded roles. Addresses belong to the pinned provider arm64e image, not the daemon or CoreFP.
+
+| Original routine | Recovered role | Remaining semantic boundary |
+| --- | --- | --- |
+| `0x1000009f8` | Set peer target queue, install captured-peer block, resume peer | Original listener caller, native peer/block lifetime |
+| `0x100029fc8` | Event type/error handling and protected-record handoff | Complete native XPC error semantics and scheduling |
+| `0x1000aa0ec` | Audit/data adapter, encoded 48-byte request, reply setting/sending/release/disposal | Successful outputs and all send/ownership failures |
+| `0x1000621d4` | Protected context getter with zero-cell return | Full initialization and registered callback/context lifecycle |
+| `0x1001661f8` | Protected request core containing entitlement classifier and header/UID branches | Full operation algorithms and deeper persistent/IOKit routes |
+
+The 50-value local classifier, full-width numeric fold and record codec have source-pinned SMT evidence. The large protected core's complete function bounds/hash do not establish all of its semantics.
+
+The [startup continuation](adid_startup_report.md) adds these original provider roles:
+
+| Routine | Evidence-bounded role |
+| --- | --- |
+| `0x100011180` | Main startup coordinator: persistent contexts/record transfer, environment query, signal source, XPC listener and loop-return cleanup |
+| `0x10002ba5c` | VMM query helper; writes byte 10 exactly for query success and value 1, otherwise byte 9 |
+| `0x100045bdc` | CF descriptor callback consuming kqueue events; SIGTERM path requests descriptor invalidation and loop stop |
+| `0x1000009f8` | Now connected to main's actual generated listener block; captures the main queue and installs the generated message block |
+
+The normal-environment request path inside range `0x100104e90..0x1001459b0` advances to a concrete private-context directory query after fuller startup. Its complete purpose, successful record semantics and opaque request-field meaning remain unknown.
+
+## ADID collection lookup and request-value update
+
+The [collection lookup report](adid_context_lookup_report.md) recovers the local role of `0x10019bdb4..0x10019c328` under L1-L10: normalize an encoded count, scan 16-byte array entries, follow holder/nested pointers, compare request key and audit EUID, then update the first match. This is an instruction region inside the protected routine, not a recovered complete function prototype.
+
+| Source region/site | Evidence-bounded role |
+| --- | --- |
+| `0x10019bde0`, `0x10019be6c` | Encoded count-zero selection and array-pointer load |
+| `0x10019c048`, `0x10019c0d0`, `0x10019c150` | Initial/later count tests and normalized 16-byte scan index |
+| `0x10019bfbc`, `0x10019c278` | Nested+8 lookup-key reads, compared with encoded first request field |
+| `0x10019c018`, `0x10019c2c4` | Nested+0xa0 EUID reads, compared with encoded audit EUID |
+| `0x10021ac34`, `0x10021ac38` | Load encoded second request field and stage it in frame+0x24b8 |
+| `0x10019c310` | Store staged encoded value at first matching nested record+0x98 |
+
+Eighteen coupled private cases complete that update with payload `00000000`; key/EUID mismatches complete with `ffff501f`. A count-four/null-array control reaches a private unmapped read at `0x18`; native reachability is unknown. The [checks](triage_evidence/adid_context_lookup_checks.json) distinguish original bytes/local proofs/private callback behavior from native object construction, field semantics, credentials, concurrency and IOKit transaction evidence.
+
+## ADID record construction, allocator and value consumers
+
+The [record lifecycle report](adid_record_lifecycle_report.md), R1-R10, adds the following source-bounded roles:
+
+| Original region/routine | Established local role |
+| --- | --- |
+| `0x10019c578..0x10019cb24` | Gated 96-/176-byte holder/nested construction; key-class tag,EUID,VMM and encoded-zero fields; stops before publication |
+| `0x1000621d4` | Size-sensitive allocation facade, gated by initialized context cell0x1002dd2e8; refines its earlier getter-only description |
+| `0x1002698cc` | Original intermediate allocation/stack-adjust wrapper |
+| `0x100267044` | Original allocator body with request normalization,arena metadata and two anonymous mmap callsites; full allocator/free/concurrency semantics incomplete |
+| `0x10012004c..0x1001201b4` | Presence-controlled local value serializer: BE64(value),each byte XOR0x73 |
+| `0x10013f86c..0x10013f99c` | Presence-controlled local parser: per-byte minus0x19,BE64 assembly,XOR encoding and nested+0x98 store |
+| `0x10019f654`, `0x10019fac8` | Additional encoded-value copy-out/copy-in sites; complete invocation/admission unknown |
+
+The constructor explicitly initializes40/96 holder bytes and76/176 nested bytes; remaining native initialization guarantees are unknown. A declared constructor/publication/callback/serializer pipeline preserves original constructed fields and consumes the updated value. The [99,288 checks](triage_evidence/adid_record_lifecycle_checks.json) cover61 cases,six new proofs and12 replays. Fragment predecessors,normal publication,intermediate byte-view transforms,native allocator/ports and downstream driver use remain open.
+
+## libnotify/notifyd transport routines
+
+The [notification transport report](notify_ipc_report.md),I1-I12,adds original context constructor0x1805984f4,shared mapper0x18059a6c8,notifyd checkin worker0x100002f94,check-registration worker0x100001c7c,request selector0x100008dfc,notification selector0x100008af0 and active Mach sender0x1000012a4. Original client collection and MIG string routines execute in the retained guest. Source/fixup inventories cover267 compiler functions,64 client Mach emission sites and two provider MIG tables with37 non-null stubs. Complete provider registration/admission,upstream post success,native credentials/ports and full lifecycle remain unknown.
+
+## Paired notifyd startup/admission and record routines
+
+The [paired admission report](notifyd_admission_report.md),A1-A12,executes original main0x1000052b8,registration0x100001c7c,name constructor0x1000010b4,88-byte client construction0x100000ed8,cached/name posting,RPC polling and PID/token cancellation against source-created state. Name records request73+strlen bytes with inline name@72;client keys@64 pack PID32/token32. Root/restricted/UID policy helpers execute under explicit audit/config/Boolean API fixtures. Publisher handler0x100006104 reason2 connects the two source-created Mach channels;reason0 remains at opaque event-object typing. Native startup/admission,protected-provider predecessors,transport/rights and asynchronous lifetime remain unknown.
+
+## Parsed notifyd policy and state routines
+
+The [configuration/state report](notifyd_policy_report.md),P1-P13,adds original main's stat/file/grammar flow,token-vector append0x10000723c/disposal0x1000070d0,controlled-name insertion0x100001184,first-prefix permission0x100000890,initial-state setter0x100000e48,and state1017/1019 stubs/workers. Original libbsm audit helpers execute from reference image UUIDa01677ab-bd20-3c62-8b0f-c805062f95bd;nine export bodies are pinned. Source parser sorting,selective duplicate-field updates,owner/group/other OR grants and grammar controls are independently modeled. Captured file contents are not promoted to running-daemon state;native authority/transport and protected-provider predecessors remain open.
+
+## notifyd monitor routine and callback recovery
+
+The [monitor report](notifyd_monitor_report.md),M1-M12,establishes constructor0x1000073bc,rebuild0x100007724,VNODE callback0x1000085c4,credential helper0x100007ff0,delayed resume0x100008148,configuration publication0x1000086ec and per-client publication0x100008990. The23 [complete functions](triage_evidence/notifyd_monitor_contracts.json) have39 direct incoming/198 selected outgoing branch edges;Block callbacks are separately established from source captures and descriptors. Actual capture extents include36-byte FD,40-byte pointer and48-byte configuration-publication Blocks.
+
+Original callbacks now reach original polling with declared filesystem/dispatch inputs. Source getgroups failure skips restoring imported _gL1CacheEnabled;last-active-watcher compaction skips its per-watcher cancellation loop. Native values,other owners,effects and defect feasibility remain unknown. All589469 checks pass across40 cases/495 fresh original calls;no native daemon/IPC/watch/credential operation executes.
+
+## RPC502 parser blocks and local record recovery
+
+The [parser report](rpc502_parser_report.md),R1-R12,adds the original carrier0x10099ab1c,BE32 reader0x1009b6eac,size-word preparation0x1009b7728,constructor allocation0x100913590,record initializer0x1009d8804 and unrolled span transform0x1009bb5c4. These are33 bounded source ranges in18 original LC_FUNCTION_STARTS ranges;table-driven transfers are not automatically conventional calls or complete semantic routines.
+
+Local source selection admits header1/3/5 and inner selector1/2,with a57-byte size predicate for the56-byte record. The record has XOR-encoded BE32 scalar inputs,one unchanged4-byte field,two16-byte fields reduced to byte XOR0x98,and selector-dependent optional fields. Source parse continuation frees the record then constructs a.v5.supf filename and attempts another open. All3285116 [checks](triage_evidence/rpc502_parser_checks.json) pass across69 fresh worker runs,seven local formulas and independent byte/ownership/path/codec/source checks. IDA's bridge was unavailable;current original bytes supply this increment's evidence. Native acceptance,alternate parser families and final protected operation remain unknown.
+
+
+## RPC502 supplemental-file and protected-carrier continuation
+
+The original daemon now supplies a compact supplemental-file path beyond the prior.sinf boundary. `0x1005b94f0..0x1005b95e8` is a parameterized BE32-to-encoded-word reader for byte1/4 layouts;`0x10049bc34..0x10049bd4c` reduces the local rejection to unsigned32 `D+B+128 > N` with a modulo32 sum. `0x100500ad4..0x100500cd4` and `0x10000b1a0..0x10000b380` build distinct stack arguments for wrapper `0x1009d53cc` at callsites `0x100500cd0`/`0x10000b3d0`,which calls protected carrier `0x10099ab1c` at `0x1009d5624`. Caller and carrier independently reduce the address key to `((low32(P)^0xc6d66014)*0x6b86592f) mod2^32`. Actual carrier reads establish mapping+16,cursor+24 and body length+36;`0x10065f11c` writes encoded status+32. Field+28 is128 or a wire word but has no observed consumer;operation/algorithm/driver-selector meanings remain unknown. These reporting roles do not rename IDB functions or equate large compiler ranges with semantic routines.
+
+See [supplemental-file report](rpc502_supplemental_report.md),assumptions S1-S9,[original contracts](triage_evidence/rpc502_supp_contracts.json),[finite source profiles](triage_evidence/rpc502_supp_profiles.json),and [independent verification](triage_evidence/rpc502_supp_checks.json). Earlier evidence remains frozen;the full investigation remains active.
+
+
+## RPC502 certificate,TLV record,digest and atomic-state continuation
+
+`0x10044dd40` is the source cursor-based TLV helper:64-byte argument view,encoded status/tag/length and cumulative cursor,with a32-byte parsed-item view passed to callbacks. The26-row original graph at `0x1010389a0` supplies certificate-shaped tag/child/sibling/callback data with stride48. The aligned caller and general callee item key reduce to `((low32(P)^0xe732d262)*0xba209ef7) mod2^32`;an unaligned counterexample is retained. Source callbacks `0x10040f7a4`,`0x10000aecc`,`0x10043e878` produce matching encoded digests of certificate,RSA-key and TBS spans;the latter follows OID-controlled SHA-1/MD5 paths. `0x10044f7a4` directly saves the TBS length/start pair. `0x10045c4f0` initializes the observed digest contexts. These roles are source-supported reporting interpretations,not whole-carrier renames or evidence of authentication.
+
+See [certificate report](rpc502_certificate_report.md),assumptions C1-C10,[original contracts](triage_evidence/rpc502_certificate_contracts.json),[whole-worker fixtures](triage_evidence/rpc502_certificate_profiles.json),and [independent verification](triage_evidence/rpc502_certificate_checks.json). All earlier evidence remains frozen;the full objective remains active.
+
+## Descriptor caller and builder recovery (2026-11-02)
+
+[sample_caller_report.md](sample_caller_report.md) establishes a partial descriptor-setup/unwind role for `0xfffffe000a6247a4` under selector `0x507`. The original 7844-byte compiler envelope, 12 local proofs, 113 fresh caller cases and 48 original builder slices recover full-width sample lengths, a four-byte-element extent, two task-carrier routes and an encoded output-status word. Calls at `0xfffffe000a64b498` and `0xfffffe000a68f6b0` conditionally select this coordinator through distinct exhaustive banks. The first builder consumes the `0x31ae0066` marker from record `+0x08`.
+
+Modifier `0x6353` also occurs on the distinct release helper; modifier identity alone does not identify either routine. The first builder's saved key/record relationship and both complete frame predecessors remain unproved. Other selectors, native entry reachability and complete business semantics remain unknown; see SR1-SR8.
+
+## State construction and fill/copy helpers (2026-11-02)
+
+[The state-construction report](sample_state_report.md) recovers the complete 360-byte helper at `0xfffffe000a687d64`: alignment prefix, full-W1 qword packing, unrolled stores, tail and advanced incidental X0. Canonical byte values give uniform fills; wider register values have a distinct bulk pattern. This supports a scoped fill role, not an assumed standard `memset` return contract.
+
+The 8-byte thunk at `0xfffffe000a508cf4` binds through original slot `0xfffffe000847c4c8` to exact kernel aliases `_memcpy`/`_memmove`. Source state construction maps packed carrier bytes to raw control codes 2201/2204/3000/3100, while their business names remain unknown. Six proofs and 7148 fresh cases pass; SS1-SS8 retain fixture/native and partial/full role boundaries.
+
+## Size-driven AES submission roles (2026-11-02)
+
+[The sample-transfer report](sample_transfer_report.md) recovers buffered and descriptor submission prefixes in `0xfffffe000a6247a4`. The source gathers aligned sample prefixes, records 16-byte XOR workspace entries and selects original calls at `0xfffffe000a625e40` or `0xfffffe000a626158`. Exact provider type metadata and 103 original-wrapper compositions connect the state base to `IOAESKeyData *` and state `+0xb0` to `IOAESIV *`. These identify argument roles, not a complete private key-data schema or native cryptographic result.
+
+The two paths encode the first carrier byte differently: Boolean equality with zero versus raw-byte XOR 1 in the global wrapper. A universal u8 proof establishes enum-argument equality exactly for input 0/1; upstream input domain and effective native behavior remain unknown. 201 fresh prefixes, 103 compositions and eight proofs pass; see ST1-ST8.
+
+## Packed-carrier reset and common preparer (2026-11-02)
+
+[The carrier-control report](carrier_control_report.md) establishes a complete reset role for `0xfffffe000a62309c`: it reads a carrier pointer through X0 and clears 95 bytes in a 104-byte accessed extent, preserving two gaps totaling nine bytes. A related wrapper calls this routine at `0xfffffe000a67c804`. Both sample-processing builders independently resolve their preceding preparer calls (`0xfffffe000a64b21c`, `0xfffffe000a68f418`) to `0xfffffe000a621118`.
+
+The report recovers its partial address-keyed record ABI and local `0/1`, `1/1`, kind0/kind3 and operation0 assignments. It does not assign provider enum semantics or prove that every reaching carrier has a Boolean first byte. 192 fresh cases, 22422 original instruction visits, four local proofs and six exhaustive banks pass; CC1-CC8 qualify the source/frame/PAC boundaries. [Original contracts](triage_evidence/carrier_control_contracts.json) and [fresh checks](triage_evidence/carrier_control_checks.json) retain the evidence.
+
+## Sample lock acquisition/release adapters and preparer gates (2026-11-02)
+
+[The sample-lock report](sample_lock_report.md) resolves `0xfffffe000a5b403c` under selector `0x729` as an acquisition adapter and `0xfffffe000a5bfc6c` under selector `0xc33` as its release counterpart. Explicit pointer paths bind to exact `IOLockLock`/`IOLockUnlock` aliases; null explicit pointers select a cached RW lock at `0xfffffe000ccceab8`, with zero cached value returning without a primitive. This refines the earlier post-initializer fixture label for calls `0xfffffe000a64b344` and `0xfffffe000a68f50c`; no record-zeroing role was established.
+
+The common preparer selector is `0xa07` in the two declared contexts. Null/unknown-word cases write `0xce515bbf`; exact copied outputs drive 24 reconstructed caller error continuations before acquisition. Nine local proofs, ten exhaustive banks and 140 fresh source cases pass. Native lock identity/lifetime, accepted processing and complete serialization remain unknown. See SL1-SL9, [contracts](triage_evidence/sample_lock_contracts.json) and [fresh checks](triage_evidence/sample_lock_checks.json).
+
+## IO RW allocation/free and bounded lifecycle candidates (2026-11-02)
+
+[The RW lifecycle report](rw_lifecycle_report.md) resolves the kext call at `0xfffffe000a531028` to `IORWLockAlloc` and the free/clear call at `0xfffffe000a5793b8` to `IORWLockFree`. A same-modifier call at `0xfffffe000a50d254` resolves to an internal helper instead. The eleven-site literal modifier census retains eight unresolved candidates; equal PAC modifiers are not callee identities.
+
+Original kernel wrappers delegate to exact `lck_rw_alloc_init` / `lck_rw_free` entries and use a `site.lck_rw_old_t` typed site with metadata size word 16. Original initialization writes 16 bytes; 68 linked private free-validation prefixes reach group-accounting boundaries after source header updates. A shared `STR X0,[X20]` candidate and cleanup cell clear remain unassociated with the cached fallback cell. 284 fresh cases, four proofs and two SDK signatures pass. See RL1-RL9, [contracts](triage_evidence/rw_lifecycle_contracts.json) and [fresh checks](triage_evidence/rw_lifecycle_checks.json).
+
+
+## IOKit static group constructor and startup context
+
+The [IOKit group increment](iolib_group_report.md) establishes the unnamed constructor at `0xfffffe000bd037e0`: initialize at least 328 bytes of static group storage, copy `IOKit\0` with original string helpers, update flag-dependent words, request registration and return the storage address on the early phase branch. `_IOLibInit` publishes that return at `0xfffffe000c4b91e8`. Registration and two setup targets remain exactly unnamed; no nearest-symbol name is assigned. The parent envelope calls `_IOLibInit` immediately before `_OSlibkernInit`. See GI1-GI9, [contracts](triage_evidence/iolib_group_contracts.json) and [fresh checks](triage_evidence/iolib_group_checks.json).
+
+
+## Two legacy record wrappers and internal stack bridge
+
+The [legacy stack/record report](legacy_stack_report.md) establishes source roles for exact symbols `_zzLw2eOVu9pOHqpiNw1K4ki` at `0xfffffe000a50c2b0` and `_Vt05NUgPD3Xy28y1R3R` at `0xfffffe000a50e618`. They construct partial 32-/64-byte stack records and call unnamed internal bridges at `0xfffffe000a52fd18` / `0xfffffe000a570cf4`. These two literal `0x9d3a` sites are excluded from IO RW-free identity; six earlier modifier candidates remain unresolved. Exact original `___chkstk_darwin` and `___chkstk_darwin_probe` bindings are verified. See LS1-LS9, [contracts](triage_evidence/legacy_stack_contracts.json) and [fresh checks](triage_evidence/legacy_stack_checks.json).
+
+
+## Named 64-bit record appender under selector 0x224
+
+The [source-only compact append report](legacy_tlv_report.md) establishes `_zzLw2eOVu9pOHqpiNw1K4ki` (`0xfffffe000a50c2b0`) as a three-register record appender in its recovered context. Original bridge arithmetic stages BE64(X2), narrows W1 to a tag16 and constructs operation 0x224/length8. Original shared code writes a four-byte big-endian tag/length header, calls the exact kernel memcpy alias for eight bytes and advances count/cursor. All five checked rejection classes return `0xffff5966`; completed private appends return zero. Other operations of the unnamed generic entry, actual callers/native carrier validity and external emission remain unknown. See LT1-LT9, [contracts](triage_evidence/legacy_tlv_contracts.json) and [fresh checks](triage_evidence/legacy_tlv_checks.json).
+
+
+## LSKD typed request construction and actual provider callers
+
+The [LSKD construction report](lskd_request_report.md) establishes `_mzRQjC7QF6ZQbBAmA` as a typed request constructor using `site.LSKDDispatchStream` (metadata size 160 bytes). Original kernel memset defines the complete object, and source stores establish header/operation/limits, inline buffer at+0x10, buffer pointer+0x90 and counters+0x98/+0x9c. A successful inline path publishes the object through the output reference at `0xfffffe000a53191c`. Typed allocation return/clobbers are an explicit register model; native heap validity and dynamic allocation remain unknown.
+
+Four actual provider prefixes construct operations `0x1b69`, `0x1b6b`, `0x1b6a`, `0x1b6c` and pass the source-published pointer to the compact appender with tag0x72/context64. The bounded direct-branch census, next-call arguments, provider null/version guards and static execution-wrapper allocation/free bindings are retained. Five compositional proofs require an 8-byte-aligned constructor record; an unrestricted counterexample is retained. 222 fresh cases, 96 source pointer publications and 48 provider compositions pass. See LR1-LR10, [contracts](triage_evidence/lskd_request_contracts.json) and [checks](triage_evidence/lskd_request_checks.json).
+
+
+## Complete span/u32 append roles and provider request preparation
+
+The [compact field report](lskd_fields_report.md) confirms original span/u32 helper semantics, source-key/record identities, arbitrary tag16/length16 header construction and modulo-u32 counter updates. Four actual provider methods now compose complete source-prepared requests through their execution-call boundaries. Pointer-valued spans copy little-endian pointer representations; scalar values are big-endian. The additional direct span caller `R2nPsUOYx6h` is identified statically and is not replayed here.
+
+336 fresh cases, eight source-derived compositional proofs and 120 source-publication-to-field consumptions pass. Standalone fields use no API model; provider construction retains the declared typed-heap register model and inherited constructor alignment. Native execution, ownership and daemon transport linkage remain unknown. See LF1-LF10, [contracts](triage_evidence/lskd_fields_contracts.json) and [checks](triage_evidence/lskd_fields_checks.json).
+
+
+## Source execution workspace and null-output return lineage
+
+The [workspace report](lskd_execute_report.md) connects the four complete prepared requests to a partial64-byte carrier: request pointer, R+0x40 cursor, encoded selector0x563, auxiliary begin/end, workspace end and output reference. Original code defines52 header bytes; neither unsigned ordering call initializes an arena. Two distinct views with identical original metadata name `site.AllocType`, size4096. The wrapper requests16384-byte/64-byte-aligned workspace storage.
+
+The previously known null/nonnull output partition now has original header and status provenance. Twenty-four null-output cases source-store `0x5e5571af`, prepare typed then aligned frees and return `0xffff5966`; only allocation/free registers are modeled. Nonnull cases stop before state0x57f. Its next allocation uses a160-byte `site.LSKDDispatchStream` view, established statically without execution or output-publication proof. 192 fresh cases, six local proofs and48 actual provider lineages pass. See LE1-LE10, [contracts](triage_evidence/lskd_execute_contracts.json) and [checks](triage_evidence/lskd_execute_checks.json).
+
+
+## Prospective response, metadata accessor and displacement bridge
+
+The [response-staging report](lskd_response_report.md) establishes source roles in the execution continuation, with register-only heap/free models and no business-operation execution.
+
+| Address / source scope | Recovered role |
+| --- | --- |
+| `0xfffffe000a561738`, shared fragment | Clear the declared160-byte prospective stream with original memset and build a second64-byte workspace record; this does not publish or initialize a valid header1 stream |
+| `0xfffffe000a58a1c0`, compiler entry | Record bridge with original stack probe, 16..256-byte local extent, mutable displacement cell and low16 displacement forwarding |
+| `0xfffffe000a570f0c`, selector0x3be context | Decode workspace/auxiliary/request/candidate operands, perform range checks and request-null partition, then prepare metadata access |
+| `0xfffffe000a54f50c`, selector0x6ef context | Check container header1, copy request operation word+4 into caller scratch, and store raw status in record+4; X0 remains the record pointer |
+| `0xfffffe000a522e44`, static positive path | Publish the pointer loaded from frame+0x28 through the output reference loaded from frame+8, conditional on actual successful status and frame preservation |
+
+288 fresh cases and twelve local proofs pass. Actual provider metadata paths copy operations0x1b69/0x1b6b/0x1b6a/0x1b6c without processing them. Source allocation failures return `0xffff5964`; bad/null request cases return `0xffff5966` and prepare candidate, auxiliary and workspace frees. Positive publication, valid response initialization and daemon transport remain unknown. See RS1-RS11, [contracts](triage_evidence/lskd_response_contracts.json) and [checks](triage_evidence/lskd_response_checks.json).
+
+
+## Lookup-cache predicates, discarded loads and stop caller
+
+The [lookup-state report](lskd_state_report.md) resolves the two preceding cold-cache read frontiers. Original loads at `0xfffffe000a57eef8` and `0xfffffe000a57282c` define X13; their respective82/85-instruction paths never use it before `ADRP X13` at `0xfffffe000a551f64`. This certificate applies only with cached word `0xfffffe000ccc78d0` zero. The words remain unknown; no model initializes them. Twenty-four resulting error-wrapper returns are checked. Twenty-four opaque-nonnull cache cases retain their guards.
+
+The exact `__Z13LSKDKext_stopv` method at `0xfffffe000a505480` now has twelve complete private returns: save wrapper status in X19, prepare request/response stream frees, restore frame, return0. Free effects remain register-only models. Prospective hot fragments recover a1024-entry/u32 index and full32-bit comparison under saved-frame premises; their table-pointer lineage remains unknown. See ST1-ST12 and [fresh checks](triage_evidence/lskd_state_checks.json).
+
+
+## Shared table-pointer producers and zero-entry rejection
+
+The [lookup-table report](lskd_lookup_report.md) establishes the same source-produced table address0xfffffe000ccc7b08 in vault SP+0x30 and allowed SP+0x60. Two exhaustive banks select original pool0xfffffe0008471af8 ->table+8; original subtraction8 and stores supply the saved pointer. The indexed4096 bytes are original file-backed zeroes, with native contents/lifetime unknown.
+
+Both source paths require entry32==context32 and a subsequent nonzero entry for their local positive route, assuming no intervening mutation. Forty fresh private initialized-cache cases complete lookup-error wrapper returns0xFFFF5953. Thirty-eight unknown loads are killed before use, with2584 checked def/use rows. Fifteen source proof pairs pass. No accepted native context or successful provider operation is established. See LT1-LT11 and [checks](triage_evidence/lskd_lookup_checks.json).
+
+
+## Positive retry, live saved index and cached vector
+
+The [object-slot report](lskd_objects_report.md) establishes the positive continuation from saved index to acquisition retry, nonzero tag recheck and cached eight-byte-slot load. Word0xfffffe000ccc78d0 supplies the vector base at source0xfffffe000a58b7e0/0xfffffe000a57e29c. The following loads use indexX13 with stride8. Native vector contents, allocation and raw-slot representation remain unknown.
+
+The same load PCs0xfffffe000a57eef8/0xfffffe000a57282c have a live-index role on this retry: source stores initialize SP+0x18/SP+0x58 before reentry. Earlier first-pass discarded-load certificates retain their original scope. Sixteen source proof pairs and4096 fresh isolated layout cases pass; no accepted context or complete positive handler is supplied. See OR1-OR11 and [checks](triage_evidence/lskd_objects_checks.json).
+
+
+## Selector18 core entry and conditional table-pointer producer
+
+The [writer-provenance report](lskd_writers_report.md) assigns an established ingress/preparation role to exact `_zgcqcxw1qve0CY` at0xfffffe000a5302e4. Selector18 ProcessEncryptedData reaches it through provider WkhY6wTBlbHrpaT0. Original source forwards six arguments, saves pointer/u32 frame fields, publishes byte-bank pointers at SP+0xC28/SP+0xC30 and prepares IOMallocAligned(16384,64). Thirty-six fresh entry prefixes, eighteen through the actual provider stub, stop before allocation.
+
+Those bank identities resolve the conditional SP+0xD28 producer at0xfffffe000a589938 to tag-table address0xfffffe000ccc7b08 in1024 fresh local cases. The same-frame path to indexed store0xfffffe000a5480a0 remains unknown; no actual tag-table writer is established. Thirteen source proofs and five exhaustive banks pass. See WR1-WR11 and [checks](triage_evidence/lskd_writers_checks.json).
+
+
+## Selector18 core work regions, scratch initialization and numeric guard
+
+The [core-workspace report](lskd_core_workspace_report.md) extends actual `_zgcqcxw1qve0CY` prefixes through register-only allocator returns, original ordering helpers and source initialization. It recovers136 frame-pointer pairs (108 workspace,28 typed-region),16 source workspace bytes, a1096-byte source frame clear and the numeric predicate address64!=0 &&16<=length32<=65536. Forty-three fresh cases stop before the selected fragment;36 old prefixes remain exact.
+
+Eight source proofs and four exhaustive banks pass. Native allocators, input-content parsing, complete operation and actual tag-table writing remain unexecuted/unproved. Unknown work-region bytes retain unknown masks. See CW1-CW11 and [checks](triage_evidence/lskd_core_workspace_checks.json).
+
+
+## Initialization frame and post-rwlock workspace increment
+
+Entry `0x10045053C` establishes a 3,040-byte frame, byte-bank/controller roots and cursor value 16. The CASAL gate at `0x1010B5DE0` compares `0x5D96`, proposes `0xA94EF` and retries on mismatch. Join `0x1003062A4` calls internal fill routine `0x10046FAF8` for 1,024 bytes; its aligned return advances X0. The earlier rwlock fixture root at SP+0x390 is corrected from `0x1010B7D48` to `0x1010B7DD8`. Eight corrected compositions retain the observed pair/state behavior. See [report and assumptions FE1-FE12](daemon_frame_entry_report.md) and [independent checks](triage_evidence/daemon_frame_entry_checks.json). The full objective remains active.
+
+
+## Dead stack loads and first arena allocator boundary
+
+The loads at `0x1003B5738` and `0x1003B573C` are dead along the selected callback path: MOV W10 at `0x10032A4BC` and MOV W0 at `0x10032A4DC` kill the loaded X10/X0 values before any read or call. Ten source proof pairs cover arbitrary loaded bits. The original source reaches allocator boundary `0x10032A4E8` with X0=90000 and original malloc binding at `0x10109FF58`. See [report and assumptions AE1-AE10](daemon_arena_entry_report.md) and [independent checks](triage_evidence/daemon_arena_entry_checks.json). The full objective remains active.
+
+
+## First arena storage and publication increment
+
+The source fragment after `0x10032A4E8` initializes the first arena descriptor, reciprocal +24/+32 links and paired head/end markers. Stores at `0x100322440` and `0x100322444` define the two formerly dead frame fields with the declared allocator return. The post-allocation branch at `0x100331E38` is u32 control<=1 versus >=2 under its recovered phase; readiness is published at `0x10046C750`. Sixty-four cases and eleven source proof pairs establish these selected roles. See [report and assumptions AS1-AS12](daemon_arena_storage_report.md) and [independent checks](triage_evidence/daemon_arena_storage_checks.json). The full objective remains active.
+
+
+## Unknown-preserving context and comparison-record increment
+
+The full leaf at `0x10041A5E0` decodes a 48-byte address-coded record, tests u64 equality or unsigned greater-than according to mode bit0, and writes a masked u32 choice at record+0x10. Its caller compares zero with global u32 `0x1010C8258`, selecting indices 0x174E/0x178C. Byte-origin certificates preserve copied unknown fields while reaching the first arc4random boundary at `0x100409574`. See [report and assumptions CT1-CT12](daemon_context_transfer_report.md) and [independent checks](triage_evidence/daemon_context_transfer_checks.json). The full objective remains active.
+
+
+## Entropy seed-state and time-interface increment
+
+The flattened fragments at `0x100409578` and `0x1002FBEE4` implement a 624-word u32 seed expansion at `0x1010C784C`, with recurrence `state[i]=0x6C078965*(state[i-1] XOR (state[i-1]>>30))+i` modulo 2^32. The rule matches the installed libc++ MT19937 initializer; later generator semantics remain unknown. Eleven source proof pairs and 48 A64 replays pass. See [report and assumptions ER1-ER12](daemon_entropy_return_report.md) and [independent checks](triage_evidence/daemon_entropy_return_checks.json). The full objective remains active.
+
+
+## Seed-material, state-mixing and twist-interface increment
+
+The complete leaf at `0x100427514` selects signed or unsigned 64-bit less-than from an address-coded private record and writes a masked u32 at +0x0C. Its minimum accessed footprint is 36 bytes; native object size is unknown. Three callers use unsigned mode, with `0x100317E6C` testing `3<j+1`. The surrounding code mixes four scalar material words into 624 global state words, including an arena-pointer-derived key mutation. See [report and assumptions SM1-SM14](daemon_seed_material_report.md) and [independent checks](triage_evidence/daemon_seed_material_checks.json). The full objective remains active.
+
+
+## PRNG output and private-record interface increment
+
+The complete leaf `0x100444D6C` decodes an address-keyed private record and selects u64 equality or unsigned greater-than, writing a masked u32 at +0. Its minimum accessed footprint is 40 bytes; native object size is unknown. The caller at `0x10029A1E0` compares generation counter C with 5119; its recovered phase yields `C<=5119 ? C+1 : 0`. Source-local twist fragments and tempering are recovered; selected full executions twist before each extraction. Twenty-four source proof pairs and eight complete-prefix A64 replays pass. See [report and assumptions PG1-PG14](daemon_prng_output_report.md), [independent checks](triage_evidence/daemon_prng_output_checks.json), and [byte provenance](triage_evidence/daemon_prng_output_provenance.json). The full objective remains active.
+
+
+## Complete buffer mask and shared-cache increment
+
+The flattened source at `0x100315488..0x100315648` normalizes sixteen buffer words: `W[4*j] |= ~W[2*((W[4*j]>>1)&31)]<<16` modulo 2^32 for j=0..15. All low16 halves remain unchanged; the immutable initial-buffer formula is proved equivalent and the operation is compositionally idempotent. All 128 preceding mask updates now execute. A new caller of record48 leaf `0x10041A5E0` compares generation count with zero at `0x100315734`; a different source materializer at `0x10008D004` recovers the shared cache-cell address. See [report and assumptions BC1-BC15](daemon_buffer_consumer_report.md), [independent checks](triage_evidence/daemon_buffer_consumer_checks.json), and [source proofs](triage_evidence/daemon_buffer_consumer_proofs.json). The full objective remains active.
+
+
+## Self-text window and encoded-global increment
+
+The 411-instruction block `0x1003F1390..0x1003F19FC` selects a window inside the specimen's own `__TEXT,__text`, then encodes four globals. Its bit network reduces to `V=S-16`, floor_log2(V), a bounded power-of-two length, and a masked relative offset. For this image, length is 32,768 bytes and offset is `Q & 0xE21000`:32 possible offsets for unrestricted Q. Sixteen source proof pairs and 1,434 isolated A64 cases pass. Later code-window consumers remain unknown; no integrity-check purpose is assigned. See [report and assumptions GS1-GS14](daemon_global_state_report.md), [independent checks](triage_evidence/daemon_global_state_checks.json), and [source proofs](triage_evidence/daemon_global_state_proofs.json). The full objective remains active.
+
+
+## Callback-revisit semantic recovery
+
+Original A64 source identifies `0x100ADD594` as a private stack-adjustment adapter and `0x100ACD9C4` as an address-coded byte-output/state-generator bridge. The observed four-byte mode uses two code-byte reads per emitted byte. A separate eight-u32 self-text fold and address contribution seed a reversible2184-byte context transform, followed by272 strictly-lower-index u64 swaps. The path reaches the existing rwlock creator with a new arena-resident output cell. Thirteen source proof pairs, four160048-visit A64 replays and independent reader/codec/SIMD fixtures pass. General output modes, native PAC and later transport use remain unknown. See [report and CR1-CR15](daemon_callback_revisit_report.md), [contracts](triage_evidence/daemon_callback_revisit_contracts.json), and [checks](triage_evidence/daemon_callback_revisit_checks.json). The full objective remains active.
+
+
+## Context-lock, sealing and descriptor recovery
+
+The continuation of `0x100492644` links the arena lock to a new global descriptor at `0x1010C8218`, its960-byte allocation and a complete twenty-slot initializer at `0x100407458`. Each slot is48 bytes with source-defined zero/sentinel fields. A second552-byte context codec moves the arena lock token from raw+8 to encoded+248 for the retained seed; later reads require the correct representation phase. The extended successful source path reaches the existing primary/secondary lock creators and workspace fill. Eighteen proof pairs,52 A64 replays and46 isolated codec cases pass. See [report and KL1-KL16](daemon_context_lock_report.md), [contracts](triage_evidence/daemon_context_lock_contracts.json), [sealing contracts](triage_evidence/daemon_context_seal_contracts.json), and [checks](triage_evidence/daemon_context_lock_checks.json). Native effects and full consumer/transport linkage remain unknown.
+
+
+## Arena-list allocator interpretation and return register
+
+The source consumer of descriptor `0x1010B5EF0+72` distinguishes its `D+48` sentinel, then either reaches an original `_malloc(5000)` call boundary at `0x100477840` or splits a retained initialized arena. The split path fills 1,724 bytes, patches boundary/account words and restores the gate, returning the payload through X23 with X0 holding its boundary record. The continuation is `0x10031F248` through the original saved pointer and IA modifier `0x7315`. Eight source proof pairs and independent instruction replay support the component interpretation; native epoch continuity and a library/version identity remain unknown. See [report and AL1-AL11](daemon_arena_list_report.md), [source](triage_evidence/daemon_arena_list_source.json), [proofs](triage_evidence/daemon_arena_list_proofs.json), and [checks](triage_evidence/daemon_arena_list_checks.json).
+
+
+## Allocator consumers and issuer-name/state contracts
+
+Continuation `0x10031F248` parks P1 at SP+0x1A8 and requests a second arena allocation; `0x1004818F8` parks P2 at SP+0x1B0. The source copier `0x100406A48` copies a98-byte XOR-encoded Apple Key Services Certification Authority issuer literal, and `0x100607330` compares issuer-workspace bytes under an explicit phase. The later `0x10062B2AC` gate combines readiness byte `0x1010C5798` and u32 flag `0x1010B6CB8`. Twelve source proof pairs, eight continuous CPU witnesses and1,024 isolated gate cases support these component roles. Full issuer policy, native flag writers and driver joins remain unknown. See [report and AC1-AC12](daemon_arena_consumer_report.md), [continuous checks](triage_evidence/daemon_arena_consumer_checks.json), and [literal/gate contracts](triage_evidence/daemon_arena_consumer_gate_contracts.json).
+
+
+## Arena release/coalescing and completed private result channels
+
+The source path at `0x10061B524` forms P-24 and, under the universal stable nonzero-flag class, releases both retained arena suballocations. Link updates/coalescing restore all80 defined descriptor bytes and48 initializer heap bytes. Dispatcher `0x100523894` and adapter `0x100536E98` return through their source-proven saved links; both classes emit R+0x1C=0x74C29D8A and cursor adjustment0. X0 differs but is not read before overwrite. Both rejoin the known private cleanup call `0x100BE0C50 -> 0x100435B9C` and reach the ordinary720-byte owner's `_free` request. See [report L1-L10](daemon_arena_lifetime_report.md), [eight source obligations](triage_evidence/daemon_arena_lifetime_proofs.json), and [continuous checks](triage_evidence/daemon_arena_lifetime_checks.json). Native flag/caller epochs and allocator effects remain unproved.
+
+
+## Normal cleanup return and outer result sink
+
+A declared normal return from original libSystem `_free` at `0x1001C6100` reaches the caller after writing raw u32 `0x364C5349` at cleanup R+0 and restoring ten GPRs/SP. All four retained cases then select raw u32 `0x74C29F37`, reload it into W23 and reach `0x10095F074: STR W23,[X0,#0x10]`. X0 is the unresolved u64 at F+0x24F8; source execution stops before that store. Seven literal candidate spills include five X0 stores, with frame/epoch equivalence unknown. See [report CR1-CR10](daemon_cleanup_return_report.md) and [source/CPU checks](triage_evidence/daemon_cleanup_return_checks.json).
+
+
+## Original caller record and auxiliary dispatch
+
+The shared result sink's private mode0x471C record is now connected to five X0 spills at F+0x24F8. Four decoded auxiliary values are exact matches; an inclusive interval0x38ACBB2A..0x7FFFFFFF selects0x100B2CF64. All other u32 values reach0x10095F074 with raw result0x8B3DC651. The actual caller39C894 supplies0x2BE18A5D and reaches spill97C778 in all24 retained non-NULL prefixes. Five parameterized continuations share an eight-byte decoder and stop at the CoreFoundation data import. The 720-byte cleanup's output-base epoch remains unjoined. See [report OB1-OB10](daemon_output_base_report.md) and [validated source/CPU evidence](triage_evidence/daemon_output_base_checks.json).
+
+
+## Nine auxiliary-record emitters and phase-dependent mode
+
+Nine original fragments emit the24-byte private record and reach adapterABCA64 ->entryA59BB4 ->selected record-save island under explicit bank/phase premises. Their auxiliaries cover four singleton values and interval lower endpoint38ACBB2A. Five SP-based emitters require low32(F+9D0)=6CF4 for mode471C; two FP-A8 emitters require u32(F+6C)=8AB1; two FP-100 emitters write471C directly. Twenty-nine source proof pairs and36 fresh caller pipelines pass. The2BE key codec is exact iff its record address is even; native phase/root writers and720-byte/transport epochs remain unknown. See [report AC1-AC12](daemon_aux_callers_report.md) and [checked evidence](triage_evidence/daemon_aux_callers_checks.json).
+
+
+## Shared-core initializers for the large-frame caller fields
+
+Entry61A2D0 and common setup4C244C now supply original writers of phase F+9D0, table F+9D8, controller pointers and three bank pairs. Eight strict prefixes preserve all ten fields through4C3634. The phase store zero-extends the decoded u32 tag; tag6CF4 supplies the initial phase required by the large-frame emitters. Actual F+9C8 points to1010B8DC8, distinct from the earlier explicit emitter fixture1010B66A8. Six local source proof pairs and13,056 freshly replayed source visits pass; later control/epoch and transport joins remain unknown. See [report SR1-SR10](daemon_shared_roots_report.md) and [checks](triage_evidence/daemon_shared_roots_checks.json).
+
+
+## RPC502 response ABI increment
+
+The [RPC502 response recovery](rpc502_reply_bridge_report.md) establishes `sub_FFFFFE000A5A2064` as the matching reply validator/output adapter. Argument11 is an OOL-address output, despite its decompiled `NDR_record_t *` type. All success guards precede caller-output stores; 136/172-byte records and two address/u32-count pairs are returned. Original bytes and 36 independently replayed fixtures support this local contract; native conversion and application success remain unknown.
+
+
+## Matching-kernel reply copyout increment
+
+The [matching-kernel type3 copyout report](kernel_reply_copyout_report.md) recovers the exported consuming wrapper, original mapper/helper, discard protocol and hidden X8 context result. Source clears the payload pointer before payload/header release requests. The internal consume=0 form preserves the object; errors preserve it while byte-copy failure requests mapping cleanup. Forty-two independent private replays pass; native object type and actual retirement remain unknown.
+
+
+## RPC502 outgoing OOL copyin increment
+
+The [outgoing RPC502 OOL recovery](rpc502_reply_copyin_report.md) follows original descriptor normalization, body conversion, conditional type3 construction and converted-prefix cleanup. Original factory writes preserve extent as u64 and source-region removal is requested before publication. Failure on the second OOL discards the first produced copy. Larger32769-byte fixtures stop at a type2 builder frontier. Forty-six independent replays pass; native predicates, namespace/transport joins and application success remain unestablished.
+
+
+## Copyin policy and startup increment
+
+The [copyin policy/environment report](kernel_copyin_policy_report.md) identifies the selector at0xfffffe0007e6a01c through original startup data and recovers the local predicate helper0xfffffe000bdc6bc8. Original file initialization is2; prior selector0 cases remain explicit private premises. Original owner lookup, parser and predicate/gate instructions pass111 independent replays /9,988 visits. Raw private-field roles, runtime values and hardware authentication remain separate unknowns.
+
+
+## Named task/map and replacement increment
+
+The [named task/map and replacement report](kernel_task_map_report.md) resolves the policy chain through exact `_current_task` and `_get_task_map` symbols. The stripped routine0xfffffe000bd7e78c validates task/thread association, updates their map fields and returns the old map. A direct caller stores that result at record+0x2f8. Forty-two independently replayed components verify local stores and lock pairs; full synchronization, candidate writers and reference lifetimes remain unresolved.
+
+
+## Platform capability and controller ABI increment
+
+The [platform gate report](aes_platform_gate_report.md) identifies the accelerator's typed provider producer and `service-gates` OSData-presence predicate, two-level clock/power/PSD dispatch and original AppleARMIO unsupported returns. Fifteen independently replayed CPU cases / 1317 original visits verify conditional publication, arguments, selected count guards, ignored clock result and activation frontiers. Candidate H16G clock/power overrides and inherited PSD stub are static bindings; runtime pairing remains unknown. The lowercase direct calls are distinguished from a six-symbol capitalized IORPC inventory. No native device effect, new Mach emission or completed activation is established.
+
+
+## Platform IORPC local call-chain increment
+
+The [platform IORPC report](platform_iorpc_report.md) connects original packet builders through OSMetaClassBase::Invoke, source-selected local Dispatch/_Dispatch, method adapters and Impl thunks to the lowercase device/controller methods. Exact 64-bit IDs, callback signatures, kernel-form layout, result-register propagation and power-output lifetime are recovered. Eighteen independently replayed cases / 2967 original visits distinguish actual nominal unsupported bodies from declared backend/custom-dispatch outcomes. Native hierarchy, remote routing, actual controller success and daemon linkage remain unknown.
+
+
+## Remote IORPC helper and anonymous ABI roles
+
+The [remote IORPC report](iorpc_remote_report.md) recovers anonymous helper 0xfffffe000c595bf8 as a conditional queue/destination/header/transport/reply adapter. Original builders and Invoke reach it through a declared IOService ancestor and service-link/server chain. Source preparation joins the exact common transport already recovered for FairPlay RPC502/700, with different policy arguments. Queue lookup, port reference, conversion and transport effects remain models. A separate captured action helper rewrites method/object references under its source predicate. Sixteen independent CPU cases / 4012 original visits pass; native class/queue/port and daemon joins remain unknown.
+
+
+## Original object converters and IOMachPort registry
+
+The [object-conversion report](iorpc_object_conversion_report.md) resolves anonymous helpers as object-to-port hash/cache construction, typed port association and reverse wrapper-to-object lookup, backed by exact IOMachPort vtable/metaclass symbols. Original request/reply converters now execute on selected port and zero-reference reply paths. Source-created 40-byte node state feeds later cache hits and a verified same-hash collision. Sixteen independent CPU cases / 6288 original visits pass. Lower allocations/locks/references/port creation and transport remain models; native registry/lifetime and daemon joins remain unknown.
+
+
+## Original binary object writer and OOL interfaces
+
+The [OOL serialization report](iorpc_ool_serialization_report.md) identifies anonymous writer `0xfffffe000c489088`, record emitter `0xfffffe000c488ed0`, the VM-copy input/output/deallocation interfaces, and binary-parser entry `0xfffffe000c489b18`. Exact OSSerialize/SetProperties/OSUnserializeXML symbols and 92 binding records support the roles. Twenty independent CPU replays / 31054 original visits execute selected dictionary/symbol/OSData emission and wrapper dispatch. Parser body and lower VM/collection/reference effects remain unexecuted models; generic SetProperties is not demonstrated as a FairPlay caller.
+
+
+## Original binary parser and dictionary core
+
+The [binary-parser report](iorpc_binary_parser_report.md) establishes anonymous `0xfffffe000c489b18` as the six-argument binary object parser and `0xfffffe000c44cd70` as the dictionary insertion/replacement core behind the exact public setObject entry. Original parser/class initializer/insertion bodies replace the prior whole-parser result model on selected valid D3/D4 inputs. Nineteen independent replays / 15189 source visits verify actual root returns and source key/value/count stores. Lower allocation, symbol intern, references, byte-copy and VM effects remain premises; native parsing/lifetime and FairPlay caller identity remain unknown.
+
+
+## Produced VM-copy state across original factory and consumer
+
+The [RPC502 VM-handoff report](rpc502_vm_handoff_report.md) joins anonymous outgoing body conversion, type3 VM-copy factory and internal mapper to exact exported copyout/discard using actual source-produced headers/backings. Eighteen independently replayed components / 3321 original visits use G=2/V=0 under explicit map/thread prerequisites. Source removal precedes publication and signed descriptor stores; successful consumption and error preservation reach distinct release sequences. Complete snapshot transfers replace independent receiving copy-object fixtures. Lower effects, native transport/retirement and type2 remain unestablished.
+
+
+## VM range cursor, packed decoder and factory filter
+
+The [VM range-cursor report](kernel_vm_range_cursor_report.md) resolves original anonymous cursor initializer0xfffffe000be31808, candidate decoder0xfffffe000bdc7274, range dispatcher0xfffffe000be32a0c and factory callback0xfffffe000bdd2750. The larger prior lookup frontiers are range processors. Thirty-eight fresh replays /1966 visits verify source field/guard behavior and the exact original callback slot. Empty type2 lookup reaches original cleanup; populated lookup/iterator/policy reaches the entry-copy body with held state. Native resolver/object provenance and completed type2 construction remain unknown.
+
+
+Publication-context increment: [RPC700 plist census and timestamped launchd observations](rpc700_publication_report.md). Four roots contain931 parsed plists,19 HostSpecialPort declarations and no34 within scope. A frozen native read-only snapshot reports fairplayd host17/com.apple.unfreed and31/com.apple.arcade.fpsd; two running managed-app jobs expose four endpoints without printed host-special associations. This adds environment/publication evidence; actual slot34 occupancy, RPC700 receiver, alternate-mode caller and successful target processing remain unknown.
+
+
+Managed-app interface increment: [AMS context bridge and local opaque buffer adapter](managed_fairplay_bridge_report.md). Both original managed-app arm64e slices bind AMSKeybag/sharedInstance and fairplayContextWithError:, whose AMS implementation returns a u32 context ID through AMSFairPlayContext. Four caller mappings per image, a distinct Swift error-register path and two adapter entry ABIs are retained. Runtime dispatch, buffer-operation semantics, RPC700 ownership and successful native processing remain unknown.
+
+
+Managed adapter dispatch increment: [Local authenticated calls, records and status gates](managed_adapter_dispatch_report.md). Both adapters now have all ten BLRAA call sites mapped to six local entries each, with static auth metadata, twelve selected nested edges and eight direct libSystem stack-check failure calls. Record status offsets+24/+12/+8,128 B zero-fill and eight-byte caller-output store are distinct. Deeper operations, transitive IPC, remaining tails, native effects and RPC700 ownership remain unknown.
+
+
+Host publication increment: [Launchd property, Mach message and kernel registration contracts](host_special_registration_report.md). Integer HostSpecialPort8..36 can reach service+0x54 and ordinary setter413 after the selected launchd admission/override paths. Kernel conversion/caller/policy gates and locked replacement/old-send release are recovered. Slot24 exception routing, selective cleanup25/29, cache updates after setter error, host/task field and signedness differences remain distinct. Actual native registration, alternate launchd slice, slot34 ownership, RPC700 receiver and rights balance are unknown.
+
+Launchd variant increment: [Eleven role correspondences across arm64e and arm64e.x1](launchd_variant_binding_report.md). Literal, callback, import and call-edge discovery recover 22 complete compiler-bounded bodies. The x1 slice requires LLVM for 27 selected words; selected property/publication/cleanup contracts match 102 instruction assertions. This establishes static role mappings, not complete function or authentication equivalence. Native PID 1 slice selection remains unknown after a read-only EPERM result.
+
+Service endpoint increment: [Construction factory, callback and right-operation roles](launchd_service_endpoint_report.md). Twelve launchd roles per slice connect options/service-info production, construct adapters, domain classification and receive-source callbacks. Nine cache and five kernel bodies add trap/MIG3231 convergence and XPC get/copy/extract/dispose distinctions. Constructor X3/X5 become callback/cookie at service+0x90/+0x98. Native execution, receiver/handoff, full destruction and RPC700 ownership remain unknown.
+
+Bootstrap handoff increment: [Client, launchd routine206 and receive-wrapper contracts](bootstrap_checkin_handoff_report.md). Thirteen launchd roles per slice and20 cached functions link interface5 registration, the206 handler, endpoint activation/output and XPC receive serialization/extraction. All33 status-mapper instructions per slice support a full-domain mapping proof. Five raw trace pairs match named check-ins. Native caller admission, receive-right handoff/identity and notification return remain unknown.
+
+Audit context increment: [Original producer, dispatch and token-accessor roles](launchd_audit_context_report.md). Ten launchd roles per slice and15 cache bodies identify XPC/raw token writers, ordinary trailer-to-dictionary metadata, callback-array consumption and all eight libbsm field accessors. The selected global-writer gap is resolved statically; category3 lineage, aliased writers, cross-path serialization and native admission remain unknown. The x1 raw address instruction is ADDPT and is retained without a whole-function equivalence claim.
+
+ProgramVars increment: [Original constructor, helper and libc producer roles](initializer_programvars_report.md). Both dyld slices retain twelve original named roles each; cached version/default-record/callInitializer and __program_vars_init connect RuntimeState+0x88 to five accessor cells. Thirty-nine complete bodies contain 6255 instructions/25020 B; 37 selected dyld words require LLVM. Original symbols distinguish these library routines from analytical private record names. Native reachability, header identity and PAC remain unknown.
+
+KernelArgs/environment increment: [Original producer, scanner and compactor roles](kernel_args_environment_report.md). Fifteen complete named roles per dyld slice join KernelArgs loads, ProcessConfig constructors, header-span production, exact-key lookup and selected DYLD_ pruning. Thirty bodies contain 2505 instructions/10020 B; 29 selected words require LLVM. Four x1 ADDPT sites are retained without ordinary-ADD equivalence or native-authentication claims.
+
+RPC700 endpoint-inventory increment: [Original cache callers and shared-stub roles](rpc700_endpoint_inventory_report.md). A getter stub outside image-declared sections links two named libsystem_darwin crash-reporter helpers and the libdispatch host initializer. Their selector arguments are2/2/1; none establishes slot34. Seven complete bodies contain513 instructions/2052 B. The cache-wide chain/stub/direct-branch census preserves indirect, dynamic and native-identity boundaries.
+
+XPC listener increment: [Recovered peer, event and stack-adapter roles](daemon_xpc_listener_report.md). Original callbacks at0x10000778c and0x10044d2fc join the named listener to cancellation/forwarding, adapter0x100ba80a8 and protected entry0x100b27b78. Fifteen calls resolve with matching auth metadata across29 bank cases/7424 inputs. Four compiler spans/eleven fragments retain1623 instructions; complete spans do not imply complete application semantics.
+
+## Record-stream stop and retained Arcade lineage
+
+[The record-stream report](daemon_record_stream_report.md) links writer trailer `0x1009178e4` to the reader's conditional H=0/50db stop branch at `0x100a85d74`, then Q publication at `0x100c044e4`. Twelve preserved private Arcade send profiles associate the final allocation from `0x1006c318c` with XPC setter `0x10077e5c4` and send `0x10077e614`. Original branch events support the compatible helper continuation; native incoming phase and producer inverse remain unknown. No routine rename or IDB edit was performed.
+
+## Node producer and compact address-indexed payload codec
+
+[The payload-codec report](daemon_payload_codec_report.md) identifies node allocation `0x100695928`, record-buffer assignment `0x100948bfc`, payload store `0x1006143d8` and list append `0x1006f0208`/`0x10069a4a0`/`0x1004def68`. Producer and serializer masks reduce to a common seed and seven rotate/add/XOR rounds. Fourteen component proofs establish conditional byte cancellation, phase preimage, extent and append stores. Twenty-four retained encoded snapshots reproduce the exact XPC bodies in 12 private send cases. Complete header construction, native phases and owners remain unproved.
+
+## General encoded word/tag writers and caller epochs
+
+[The header-codec report](daemon_header_codec_report.md) identifies `0x100546c90` as a general encoded BE32 writer at a caller-selected offset, with clear result F XOR8a1bf900. Callers use offsets0/6/10 for identifiers, header lengths and u32 scalar payloads. `0x1007b28a4` writes the two-byte tag. Seventy-two scoped queries establish common-mask and field/caller contracts. Register W21/W22 roles change across explicit epochs; their names do not identify persistent fields. Full admission, allocator/frame length equality and native control remain open.
+
+## Constructor entry and shared payload-length provenance
+
+[The constructor-input report](daemon_constructor_inputs_report.md) recovers the internal entry snapshot at0x100700d80 and closes the conditional allocation/header-length join: incoming E is saved at frame+a660, preserved to the allocation and relayed to frame+988; P=E XOR8b3dc651. The selected guard admits P<=fffffff5 and requests P+10 B. Saved Q=u64(P)+3d96fe86313b0569 is decoded back to the same span count. Source S is saved/reloaded without a new semantic assignment. Next frontier0x1006fd1b8 receives container/identifier/local-output-cell operands; its result remains unknown.
+
+## Constructor lookup, replacement and retirement extension
+
+[Recovered source contracts](daemon_constructor_lookup_report.md) identify 0x1006fd1b8 as first-match encoded-identifier lookup, 0x100800004 as the four-byte address-mask decoder, 0x100873ecc and conditional patches as position-preserving replacement, and 0x1006c10ac/0x100747e84 as original _free calls for the old buffer/node. Raw exact miss appends; exact success replaces. Frame+0x80b8 is old-node scratch, not the new-node result. These names describe conditional semantics, not recovered original symbols. The 60 retained constructor lookups all miss; replacement is source-only. See LK1-LK8 and the component certificate for phase, context, owner, continuation and normal-return premises.
+
+## Selected type admission and u64 writer extension
+
+[Typed scalar report](daemon_typed_scalar_report.md) establishes the selected full-u16 discriminator tree and exact scalar extent gates: internal86b4/4 B,9546/8 B,4118/span. Routine0x1005a2c2c is a separate eight-byte address-mask writer, reached through0x1004cdd70 with the saved full-u64 entry operand at frame+0xa668. Its clear representation is BE64(B XOR0x2c220a381b62f9ab). Source key origins,17 liveness intervals,90 component/composition queries and10 alteration controls support the conditional role. The final byte's XOR64 mask-word delta is accounted for. Frozen profiles contain no u64 writer occurrence; upstream u64 caller roots and native semantics remain unknown.
+
+## Constructor failure retirement and raw-status return
+
+[Cleanup report](daemon_constructor_failure_report.md) identifies0x1008c3528 as candidate/status capture and buffer-null partition,0x10078c384 as conditional candidate-buffer release,0x1006b794c as candidate-node release and full-X6 restoration, and0x10076de60 as saved constructor continuation transfer. Calls0x10078c3f0/0x1006b79a4 select original _free under C-family bank-root premises. Valid candidate ownership and normal saved-register/call behavior are required. These are source-only failure contracts;12 retained successful profiles contain no cleanup occurrence. The report also supersedes the prior allocator-left-slot label5f0 with source-proved968.
+
+## Shared-frame constructor bank origins
+
+[Initializer/consumer report](daemon_constructor_bank_origins_report.md) extends the prior setup ledger from10 to14 fields. Original pool decoders and register slices establish all five constructor bank pairs,controller addresses,table and zero-extended tag. Source maps all14 field writers to26 exact constructor loads; four newly tracked fields are node-allocation9b0/9a8 and old-node-retirement5d0/5d8. The129-store common setup footprint preserves tracked bytes except each own initializer. Local projections and frozen epochs do not prove later same-frame reaching definitions or native bindings. Two timed-out formulations are excluded;28 final component/composition queries pass.
+
+## Descriptor-array application and constructor caller identities
+
+[Source/ABI report](daemon_constructor_callers_report.md) identifies the following conditional roles in thin image SHA-256 4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e. These are analytical labels, not IDB renames or public symbols.
+
+| Routine | Established role | Evidence boundary |
+| --- | --- | --- |
+| 0x1008cadf0 | Apply selected borrowed 40 B descriptors to a collection | Qualifier equality, exact three-kind dispatch, index/count loop and continuation status |
+| 0x100828290 | U32 constructor root | Fixed 4 B extent; descriptor value at+8 |
+| 0x10069d718 | Span constructor root | Descriptor pointer+0x10, identifier+0x18 and extent+0x20; NULL pointer is omitted upstream |
+| 0x1006b74e8 | U64 constructor root | Full 64-bit value at descriptor+0; fixed 8 B extent; no retained occurrence |
+| 0x10097b9b0 | Additional generic constructor root | Values loaded from four frame cells; identifier/type/extent incoming; no retained occurrence |
+| 0x100757d2c | Shared array completion | Used for normal end and returned errors; preserves full raw X6 |
+
+The 29-query source certificate covers all 527 nonterminal instructions of the 32 fragments exactly once. A separate SAT query rejects the provisional nonzero 0x845e pointer-sentinel interpretation; the corrected span guard is exactly pointer!=0. The eight-site literal modifier census does not identify every caller: eight different original targets share modifier0x2c67. Native owners, reachability, hardware authentication and daemon-kext pairing remain unknown.
+
+## Collection drain and shared outer finish identities
+
+[Retirement report and source certificate](daemon_collection_retirement_report.md) establish the following conditional roles in thin image4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e. These are analytical roles, not original symbols or IDB renames.
+
+| Routine | Source role |
+| --- | --- |
+| 0x1006e3d4c / 0x1005134ec | Stage private drain constants, save continuation and guard supplied pointer-cell address |
+| 0x1005250f4 | Save next node, read buffer pointer and select optional buffer retirement |
+| 0x1007cf698 / 0x1005faf58 / 0x1004d7534 | Release buffer/node/container under original _free bank roots; clear node buffer and final pointer cell |
+| 0x10090a400 | Shared outer finish: success publishes pointer, other statuses enter disposal |
+| 0x10097a0c4 | Failure-side wrapper for two child drains and outer object retirement |
+| 0x100966d9c / 0x100755bc0 | Shared output publication and saved continuation transfer; status is zero-extended u32 on the established paths |
+
+The frozen corpus reaches the shared finish on success and drains a separate temporary collection from0x100902518. It does not enter the new outer/generic error caller paths. Matching a shared block cannot establish which of its branches was taken. The35-query certificate covers483 nonbranch/noncall instructions exactly once; four call sites select original _free through1024 pinned-bank cases. Native owners, allocator/PAC behavior and endpoint pairing remain unknown.
+
+## Builder producer and corrected cleanup register epoch
+
+[The builder-owner report](daemon_builder_owner_join_report.md) establishes selected entry0x100766c18 as a128 B builder allocator/frame snapshot,0x100863000/0x10072cf4c as16 B child-container allocators, and0x100857c94 as child0 publication/array gate. Source caller0x1007ccfd4 writes two40 B descriptors: fixed u32 and LEN+1 span, both qualifier2. Builder+8 supplies qualifier2's collection; builder+0 supplies qualifier1's collection. Public type/identifier meanings remain unknown.
+
+One prior prose composition is corrected:0x10097a0c4 changes X8 from heap builder H to &frame[6520] before cleanup. Following routines read H through that cell, drain H+8/H+0, release H and clear the local cell. Local source-query JSON is preserved; the corrected human retirement report and new machine-readable erratum identify the exact sites and historical hash. The28-query certificate includes actual register forwarding, six compositional memory components, two SAT interpretation rejections and two excluded unknown aggregate queries. Native graph/allocator/PAC and endpoint pairing remain unproved.
+
+## Keyed scalar population and complete stateful-helper ABI
+
+[The scalar-population report](daemon_scalar_field_population_report.md) establishes selected caller0x1009ab118/entry0x100847998 as a keyed C1 lookup/read entry,0x1006985d4 as the returned-miss-marker gate, and0x1006f0a84 as the helper-output-to-u32-constructor path. Only returned low32 marker74c29ded selects that path; the encoded key is7dab886f and constructor destination is [builder+8]. Complete found-record interpretation remains open.
+
+Compiler-bounded helper0x100444dfc..0x10044a3e0 has5497 instructions,no calls/conditional branches and a64-bit store at argument+8. Its initial X0 is saved for that output; no incoming GPR data read occurs before a local definition in the body beyond prologue/epilogue bookkeeping. Under valid disjoint owners/saved slots,this supports an output-argument ABI requiring at least16 B. Algorithm/cryptographic identity,computed-memory aliases and native timing remain unknown. Caller retains low32 and XORs deac5766; wire fieldf6964e3e/tag9777 has4 B. Do not rename it checksum/nonce/authentication result from this evidence.
+
+
+## Latest increment: helper result residue and raw-register snapshot semantics
+
+[Report](daemon_helper_result_residue_report.md), [source](triage_evidence/daemon_helper_result_residue_source.json), [certificate](triage_evidence/daemon_helper_result_residue_checks.json), [preservation](triage_evidence/daemon_helper_result_residue_delivery.json), [scoped gates](triage_evidence/daemon_helper_result_residue_quality_gates.json).
+
+The helper tail retains X5 through the selected constructor node-allocation entry. Source output is X5 XOR(X17_cut<<36) XOR0xc0eaaa2272eb67c0; twelve historical entry snapshots therefore recover low36=0x151633a82. Full64 recovery is refuted at the abstract cut; upper28 and full algorithm remain unresolved.
+
+
+## Latest increment: existing-record u32 reader and exact acceptance grammar
+
+[Report](daemon_existing_scalar_reader_report.md), [source](triage_evidence/daemon_existing_scalar_reader_source.json), [36-query certificate](triage_evidence/daemon_existing_scalar_reader_checks.json), [preservation](triage_evidence/daemon_existing_scalar_reader_delivery.json), [scoped gates](triage_evidence/daemon_existing_scalar_reader_quality_gates.json).
+
+The found-record continuation of847998 is a conditional u32 reader. Its two-byte reader5122cc returns low16(wire tag XOR4799), a different encoding from constructor tags. Word reader800004 returns W1=wire word XOR8ec35f08 and W4=wire word XOR8b3dc651. Selected tag9777/PL4 with PL+10<=SIZE publishes BE32(payload) through the borrowed OUT; recognized8485/50db return74c29cd6. Public status meanings and native validity remain unknown.
+
+
+## Latest increment: preparation footprint and affine cache semantics
+
+[Report](daemon_reader_context_footprint_report.md), [source and cache map](triage_evidence/daemon_reader_context_footprint_source.json), [certificate](triage_evidence/daemon_reader_context_footprint_checks.json), [preservation](triage_evidence/daemon_reader_context_footprint_delivery.json), [scoped gates](triage_evidence/daemon_reader_context_footprint_quality_gates.json).
+
+Preparation0x1006f6bf0 collapses to50 affine cache stores for selected cursor0:four constants,two SIZE-derived values and44 values of one prior input plus a constant. All50 relations and a25-value inverse map are universally proved. The six critical fields/24-register selected word-reader interface is independent of25 nuisance cuts;other cache values remain dependent. Application meanings/native producer epochs remain unknown.
+
+
+## Latest increment: reader stack epoch and source-reserved local bounds
+
+[Report](daemon_reader_stack_epoch_report.md), [source intervals and event audit](triage_evidence/daemon_reader_stack_epoch_source.json), [certificate](triage_evidence/daemon_reader_stack_epoch_checks.json), [preservation](triage_evidence/daemon_reader_stack_epoch_delivery.json), [scoped gates](triage_evidence/daemon_reader_stack_epoch_quality_gates.json).
+
+Source-bounded frozen-path audit connects core61a2d0 to reader847998 and builder finish90a400 with working SP F=entrySP-10dd0,under normal imported/helper returns. Nine calls per profile to444dfc reserve/restore192 B. Thirty-six lookup/reader ranges contain no SP write/call. This is an internal continuation-frame contract,not compiler-label ownership or a native execution proof.
+
+
+## Context-input producer refinement
+
+[Context-input producer candidates and six tag-to-word interfaces](daemon_context_input_producers_report.md): one locally SP-affine full-width store candidate for each of25 opaque preparation inputs; six stages share pointer-cell/key/selector staging into the common word reader. Thirty-four UNSAT queries, one SAT width-distinction witness and six changed-ledger controls pass. Same-active-frame reaching definitions, exhaustive aliases and native initialization remain unknown. Read-only IDA knowledge returned no matching producer facts and was not used semantically. No new Mach port emission or successful daemon-kext pairing is established.
+
+
+## Reader extent-family refinement
+
+[Five reader extent gates and signed tag prefixes](daemon_reader_extent_families_report.md): all five compare modular64(length-word offset + 4 B + decoded u32 extent) with their saved limit. Four use encoded cursor coordinates; five fixed bridges lead to signed-low16 tag partitions at0xd0ee. First rejection effects differ across families. Nineteen blocks/406 instructions plus386 preparation instructions,31 pointer records/32 slot matches,772 distinct translated PCs,23 UNSAT queries,one SAT coordinate counterexample and six changed-ledger controls pass. Same-frame cache initialization,no-wrap admission,complete accessor semantics and native daemon-kext pairing remain unknown. No new Mach port emission is established.
+
+
+## Typed reader dispatch refinement
+
+[Exact tag forests and payload caller interfaces](daemon_reader_typed_dispatch_report.md): all five recognize precisely reader tagsc31c/d0ee/1742 (wire8485/9777/50db). Five u32 routes require4 B and stage distinct word-return selectors; N19 also requires8 B on its recognized64 route and stages a span payload pointer. Four alternate routes store an encoded end; N20/N22 stage74c29cd6,while N21/N23 then reach74c29d88 rejection effects. Fifty-four blocks/1000 instructions plus386 preparation instructions,50 pointer records/63 slot matches,1331 translated PCs,46 UNSAT queries,one SAT path counterexample and six changed-ledger controls pass. Complete accessor output,native cache/owner/admission/PAC and daemon-kext pairing remain unknown.
+
+
+## Reader value-consumer refinement
+
+[Reader value consumers and conditional output](daemon_reader_value_consumers_report.md): N20/N21 converge on value cell7390,N22/N23 on78f0;context byte+68 selects comparison with+70 or+74. N19 joins variants,writes22 B within a24 B field envelope and separately stages a span pointer;its zero-word/span arm publishes CTX through borrowed OUT with raw success. Full885-instruction helper reads exactly eight payload bytes and stages raw X9;the complete transform is unknown. Sixteen blocks/1200 instructions plus118 span-context/386 preparation instructions,25 fixups/26 slot matches,1681 translated PCs,22 UNSAT queries,one SAT inactive-store counterexample and six changed-ledger controls pass. Native owners/cache/control attribution,ordinary publication and daemon-kext pairing remain unknown.
+
+
+## Reader allocation-origin refinement
+
+[Reader allocation origins and context admission](daemon_reader_container_origins_report.md): a private caller derives modec4dd and parent+8 output;the original malloc binding requests16 B,initializes a two-u64 pair and publishes it for empty decoded input. N19 scalar/span defaults are identified. Comparison context is incoming X10 saved before a separate112 B allocation;shared value cells and a saved head are initialized. Fourteen ranges/249 instructions,18 fixups/15 slot matches,256 bank inputs,234 translated PCs,15 UNSAT queries,one SAT provenance counterexample and six changed-ledger controls pass. Native owners/upstream modes,complete object types,non-NULL head production and daemon-kext pairing remain unknown.
