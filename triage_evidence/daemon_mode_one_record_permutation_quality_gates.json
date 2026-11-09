@@ -1,0 +1,87 @@
+{
+  "generator_sha256": "a02b223ec0c63d161cea764aa9efaa866a16f0176412e421f994187737182dc0",
+  "static_scope": "Conditional first selected-record scratch permutation:15 forward swaps,encoded inverse bank,16-cell forward reset and preservation of the second accumulator bank. Source/coherent-memory contracts only;shuffle distribution,bank equality,algorithm identity,native ownership/reachability,successful output,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 456,
+    "source_bytes": 1824,
+    "pointer_records": 3,
+    "branch_bindings": 5,
+    "SP_writes": 0,
+    "comparison_role_corrections": 2,
+    "prior_ranges_recaptured": 16,
+    "prior_bytes_recaptured": 5632,
+    "queries_unsat": 123,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 0,
+    "source_nonbranch_sites_translated": 453,
+    "reconstructed_predecessor_queries": 19,
+    "predecessor_scratch_nonbranch_sites_translated": 138,
+    "selector_abstractions": 15,
+    "address_certificates": 16,
+    "finite_address_cases": 146,
+    "source_swaps": 15,
+    "finite_transpositions": 135,
+    "inverse_iterations": 16,
+    "reset_iterations": 16,
+    "distinct_cells_touched": 32,
+    "source_store_operations": 62,
+    "source_byte_reads": 46,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_permutation_report.md": "33fe7564dfebdf06a830bdb9e1050a724545533f115a0eae5c0cfd4f4c7696ae",
+    "obfuscated_routines_report.md": "12aa79be92a2c4192e9981ef2a839a2d1e4c6aace583bf37b7133681217c6ea5",
+    "mach_ports_report.md": "aca8a2a05813329101d6f390a266df514bb483ce113733bdc17c4b864628c3d2",
+    "foundational_triage_report.md": "57624a4d30eefac74aafea0ffb4f97544b06dfe9aa05d086ead3183724c2aa21",
+    "interface_abi_report.md": "aca68a6af50ff3f4f84d3a7aed82a9885a2b2aaae31d48796d795916a5373025",
+    "interface_investigation_status.md": "f1a96077cb8bc1b9c1b21f161348e4b705e61ad5e0beaae1fb9f6061ebd05826",
+    "daemon_mode_one_record_passes_report.md": "1aac8561f6b4a1bbbe72f0846b3ed4e9f3de340f569b220eff19b678e7bc14f8"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_permutation_source.json": "9d7cfeb77680576e73c72f8609e1e96b215f3c758b6f61d1177f323c8d3b834a",
+    "daemon_mode_one_record_permutation_checks.json": "d0de8b51eff9182161e9f9507789653128db6b05b8c7febd12d6426e1afc02c6",
+    "recover_daemon_mode_one_record_permutation.py": "bb849e948b7d8ed0ee30f3528ded8c692c21015efc9ad1dfd80b80477c38f24c",
+    "validate_daemon_mode_one_record_permutation.py": "5002d1da5e50e69c0cd172f8092ea7d3b68a1aca511ac2b63a406a17caca9fe0",
+    "seal_daemon_mode_one_record_permutation.py": "a02b223ec0c63d161cea764aa9efaa866a16f0176412e421f994187737182dc0",
+    "verify_daemon_mode_one_record_permutation_publication.py": "26b663381e1bc279de8c1d9d4bf9faac427f8109a73bc491e17cab0c4516c307"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RI1-RI8;453 current and138 predecessor nonbranch sites translated,nineteen reconstructed predecessor queries,15 source-linked forward swaps,encoded inverse bank and forward reset with coherent-memory induction;123 UNSAT and three SAT results. Two unknown results are excluded. Native ownership/reachability,shuffle distribution,bank equality,algorithm identity,successful output,budget history and daemon-kext pairing remain unknown."
+  }
+}
