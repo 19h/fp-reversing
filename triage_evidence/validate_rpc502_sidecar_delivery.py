@@ -115,6 +115,7 @@ def main():
     if (BASE/'daemon_reader_value_consumers_report.md').exists():reports.add(BASE/'daemon_reader_value_consumers_report.md')
     if (BASE/'daemon_reader_container_origins_report.md').exists():reports.add(BASE/'daemon_reader_container_origins_report.md')
     if (BASE/'daemon_reader_record_headers_report.md').exists():reports.add(BASE/'daemon_reader_record_headers_report.md')
+    if (BASE/'daemon_reader_record_payloads_report.md').exists():reports.add(BASE/'daemon_reader_record_payloads_report.md')
     if (BASE/'daemon_service_cf_lifecycle_report.md').exists():reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if (BASE/'cf_mach_port_retirement_report.md').exists():reports.add(BASE/'cf_mach_port_retirement_report.md')
     if (BASE/'daemon_cf_descriptor_bridge_report.md').exists():reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1412,6 +1413,10 @@ def main():
         reader_record_headers_quality=json.loads((ROOT/'daemon_reader_record_headers_quality_gates.json').read_text())
         manifest['validation']['daemon_reader_record_headers_increment_checks']=reader_record_headers_quality['verified_counts']
         manifest['validation']['daemon_reader_record_headers_static_scope']=reader_record_headers_quality['static_scope']
+    if (ROOT/'daemon_reader_record_payloads_quality_gates.json').exists():
+        reader_record_payloads_quality=json.loads((ROOT/'daemon_reader_record_payloads_quality_gates.json').read_text())
+        manifest['validation']['daemon_reader_record_payloads_increment_checks']=reader_record_payloads_quality['verified_counts']
+        manifest['validation']['daemon_reader_record_payloads_static_scope']=reader_record_payloads_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads((ROOT/'interface_manifest.json').read_text())
     for row in check['files']:

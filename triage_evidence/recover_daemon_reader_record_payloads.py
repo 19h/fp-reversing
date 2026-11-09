@@ -4,10 +4,10 @@ import json,capstone
 from recover_daemon_xpc_core_bridge import ROOT,IMAGE,SOURCE,FIXUPS,TABLE,CS,block,sha,h,FLAGS
 from daemon_receive_tools import verify_original_fixups
 P='daemon_reader_record_payloads'
-SCOPE='Conditional N19 full u16 payload type/extent partition, scalar writer interfaces, span count and address-dependent recoding, and post-payload lookup handoff. Full insertion/back edge, native owners/PAC/endpoints and daemon-kext pairing remain unproved.'
-BLOCKS={'setup':0x1008ecb78,'router':0x1004a0f64,'upper':0x1007996e8,'check64':0x1004f83a4,'check32':0x1004cd790,'checkspan':0x10055497c,'length64':0x1006072c8,'length32':0x1005c3574,'call64':0x10053f020,'call32':0x10053ea88,'word_call':0x100615004,'span_gate':0x1004b9ce0,'span_setup':0x1007fd5e4,'span_loop':0x100791cfc,'post_payload':0x1005c635c,'lookup_entry':0x1006fd1b8,'lookup_null':0x1006c5c2c,'lookup_nonnull':0x10070d1f0,'lookup_return':0x1007c4d4c,'lookup_status':0x1006b9728}
+SCOPE='Conditional N19 full u16 payload type/extent partition, scalar writer interfaces, span count and address-dependent recoding, post-payload lookup handoff, conditional append and cursor back edge. Full replacement/cleanup, native owners/PAC/endpoints and daemon-kext pairing remain unproved.'
+BLOCKS={'setup':0x1008ecb78,'router':0x1004a0f64,'upper':0x1007996e8,'check64':0x1004f83a4,'check32':0x1004cd790,'checkspan':0x10055497c,'length64':0x1006072c8,'length32':0x1005c3574,'call64':0x10053f020,'call32':0x10053ea88,'word_call':0x100615004,'span_gate':0x1004b9ce0,'span_setup':0x1007fd5e4,'span_loop':0x100791cfc,'post_payload':0x1005c635c,'lookup_entry':0x1006fd1b8,'lookup_null':0x1006c5c2c,'lookup_nonnull':0x10070d1f0,'lookup_return':0x1007c4d4c,'lookup_status':0x1006b9728,'status_low':0x10086c7d4,'status_high':0x100767b58,'append_gate':0x100853de0,'append_empty':0x10071e7f0,'append_nonempty':0x10090064c,'append_return':0x1009a1808,'replace_stage':0x10076e3a8}
 CUTS={'count_prefix':(0x1004d617c,0x1004d6234),'count_save':(0x1004d62cc,0x1004d62d4),'writer64_entry':(0x1005a2c2c,0x1005a2c68),'writer64_exit':(0x1005a37c4,0x1005a37d0)}
-EDGES={'setup':[0x9da7],'router':[0xa630,0xa631],'upper':[0xaeb8,0xaec5],'check64':[0x1c16,0xa8bf],'check32':[0x1c16,0x77a2],'checkspan':[0x1c16,0xc9b8],'length64':[0x27fc,0x9641],'length32':[0x1c16,0x7fdb],'call64':[0x7d2d],'call32':[0x1824],'word_call':[0x9da7],'span_gate':[0xcadc,0xcafd],'span_setup':[0x3802],'span_loop':[0x3802,0x37fd],'post_payload':[0x18e2],'lookup_entry':[0xc157,0xc1ca],'lookup_nonnull':[0x5e28],'lookup_return':[0x416a],'lookup_status':[0x411a,0x4124]}
+EDGES={'setup':[0x9da7],'router':[0xa630,0xa631],'upper':[0xaeb8,0xaec5],'check64':[0x1c16,0xa8bf],'check32':[0x1c16,0x77a2],'checkspan':[0x1c16,0xc9b8],'length64':[0x27fc,0x9641],'length32':[0x1c16,0x7fdb],'call64':[0x7d2d],'call32':[0x1824],'word_call':[0x9da7],'span_gate':[0xcadc,0xcafd],'span_setup':[0x3802],'span_loop':[0x3802,0x37fd],'post_payload':[0x18e2],'lookup_entry':[0xc157,0xc1ca],'lookup_nonnull':[0x5e28],'lookup_return':[0x416a],'lookup_status':[0x411a,0x4124],'status_low':[0xbd96,0x27fc],'status_high':[0x1c48,0x1c16],'append_gate':[0x86d2,0x8704],'append_empty':[0x9467],'append_nonempty':[0x9467],'append_return':[0x3599],'replace_stage':[0x9384,0x9307]}
 def build():
  assert sha(SOURCE)=='4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e'
  fs={};edges=[];indices={0x2a5,0x1351,0x37fd,0x1308};dc=capstone.Cs(capstone.CS_ARCH_ARM64,capstone.CS_MODE_LITTLE_ENDIAN);dc.detail=True;writes={}
@@ -45,7 +45,9 @@ def build():
  for ix,div in[(0x2a5,0xa918),(0x1351,0xd08c),(0x37fd,0x8388)]:
   word=int.from_bytes(IMAGE.read(TABLE+8*ix,8),'little');assert FIXUPS[TABLE+8*ix]['target']==BLOCKS['post_payload']and((word>>32)&65535)==div
  gap_start,gap_end=0x1004d6234,0x1004d62cc;gap=IMAGE.read(gap_start,gap_end-gap_start)
- for i in dc.disasm(gap,gap_start):assert not{'x8','w8'}&{i.reg_name(q)for q in i.regs_access()[1]}
+ for i in dc.disasm(gap,gap_start):
+  assert not{'x8','w8'}&{i.reg_name(q)for q in i.regs_access()[1]}
+  assert not i.mnemonic.startswith(('b.','cb','tb'))and i.mnemonic not in('b','bl','br','blr','braa','blraa','ret','retab','retaa','svc')
  span_fixed={0,1,2,3,4,5,8,9,10,11,12,13,14,15,22,24,25,26,27,28,30}
  assert not{p+str(j)for p in('x','w')for j in span_fixed}&set(writes['span_loop'])
  ptr=[{'index':hex(ix),'slot':hex(TABLE+8*ix),'raw_bytes':IMAGE.read(TABLE+8*ix,8).hex(),'fixup':FIXUPS[TABLE+8*ix]}for ix in sorted(indices)]

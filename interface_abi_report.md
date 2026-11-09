@@ -1375,3 +1375,8 @@ The core probe call supplies W9=0x10d50 and X17=authenticated slot1010b1e28,then
 ## Reader record/header refinement
 
 [N19 admission, record allocation and header reconstruction](daemon_reader_record_headers_report.md): admitted cursor/total extent now bind N0/N24;nonnull buffer and10 B remaining guard the first header read. A u32-domain read-key identity and offset no-wrap/progress lemmas are proved. The ordinary path requests a32 B node and (P+10) B buffer and supplies shared header writers with value-preserving field encodings. Fifteen ranges/1110 instructions,24 fixups/21 slot matches,512 bank cases,1093 translated PCs,22 new and66 replayed UNSAT queries,one SAT domain counterexample and six controls pass. Payload completion,insertion/back edge,native owners/PAC and daemon-kext pairing remain unproved.
+
+
+## N19 typed payload, recoding and append continuation
+
+The [typed-payload and append report](daemon_reader_record_payloads_report.md) closes selected N19 payload routes after header completion: exact reader tagsd0ee/c31c/1742 select4 B/8 B/span;the span loop recodes source-address-masked bytes for the destination. Raw lookup results distinguish append from replacement staging. Empty/nonempty append contracts now supply the actual cursor=record_end back edge. Thirty-one ranges/cuts retain820 instructions,36 fixups/41 slot matches,1520 translated PCs,51 new and72 replayed UNSAT queries,one abstract SAT mask counterexample and six integrity controls. Full lookup/replacement/cleanup,u64 reader transformation,native owners/PAC and daemon-kext pairing remain unproved.

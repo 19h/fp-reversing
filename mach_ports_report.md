@@ -1198,3 +1198,8 @@ The SP audit locates the retained CFMachPortGetPort accessor within the same sha
 ## Reader record/header refinement
 
 [N19 admission, record allocation and header reconstruction](daemon_reader_record_headers_report.md): admitted cursor/total extent now bind N0/N24;nonnull buffer and10 B remaining guard the first header read. A u32-domain read-key identity and offset no-wrap/progress lemmas are proved. The ordinary path requests a32 B node and (P+10) B buffer and supplies shared header writers with value-preserving field encodings. Fifteen ranges/1110 instructions,24 fixups/21 slot matches,512 bank cases,1093 translated PCs,22 new and66 replayed UNSAT queries,one SAT domain counterexample and six controls pass. Payload completion,insertion/back edge,native owners/PAC and daemon-kext pairing remain unproved.
+
+
+## N19 record reconstruction and endpoint boundary
+
+The [typed-payload and append report](daemon_reader_record_payloads_report.md) establishes local scalar/span writers,context lookup handoff,ordered append stores and the selected cursor back edge. These local pointer/record contracts establish no new Mach name,right,emission site or successful daemon-kext transport pairing. The original trace's transport/UserClient distinction and endpoint evidence limits remain in force.

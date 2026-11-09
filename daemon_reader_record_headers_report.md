@@ -176,3 +176,8 @@ QG5: Pass for bounded claims. Domain-restricted key identity, logical offsets ve
 QG6: Pass. Exact source hashes/recaptures, complete non-control-instruction coverage, original fixups, exhaustive banks and new/replayed solver queries support the claims. Memory guidance supplies no semantic premise.
 
 QG7: Pass for the finite high/medium/low continuation list. No full-goal completion is claimed.
+
+
+## Subsequent payload and append evidence
+
+The [payload reconstruction and append report](daemon_reader_record_payloads_report.md) resolves the earlier payload-router frontier into exact u32/u64/span gates,scalar caller encodings and span address-aware recoding. It also establishes the actual append cursor back edge through1009a1808. Its source/SMT contracts supersede the earlier open append-back-edge item for the selected absent-result append path. Full lookup,replacement completion/retirement,the raw64 reader transform,native owners and cross-layer exchange remain unproved.
