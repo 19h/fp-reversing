@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun pointer () (_ BitVec 64))
+(define-fun index () (_ BitVec 32) (bvxor (bvmul (ite (= pointer #x0000000000000000) #x00000000 #x00000001) #x000000f6) #x00000870))
+(assert (distinct index (ite (= pointer #x0000000000000000) #x00000870 #x00000886)))
+(check-sat)

@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun address () (_ BitVec 32))
+(define-fun mixed () (_ BitVec 32) (bvxor (bvsub (bvadd address #x6b98ed43) (bvshl (bvand address #x6b98ed43) #x00000001)) #x66693479))
+(define-fun stored () (_ BitVec 32) (bvadd (bvmul mixed #x7f12daa3) #x00000c4b))
+(define-fun body_mix () (_ BitVec 32) (bvxor (bvsub (bvor address #x8a09c380) (bvand address #x8a09c380)) #x87f81aba))
+(define-fun decoded () (_ BitVec 32) (bvsub stored (bvmul body_mix #x7f12daa3)))
+(assert (or (distinct mixed (bvxor address #x0df1d93a)) (distinct decoded #x00000c4b)))
+(check-sat)
