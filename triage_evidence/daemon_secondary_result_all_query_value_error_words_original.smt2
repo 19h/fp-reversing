@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun secondary_error_ref64 () (_ BitVec 64))
+(declare-fun secondary_value_ref64 () (_ BitVec 64))
+(assert
+ (let (($x39 (= secondary_error_ref64 (_ bv0 64))))
+(let ((?x46 (bvmul (_ bv2 32) (ite (and (not (= secondary_value_ref64 (_ bv0 64))) $x39) (_ bv1 32) (_ bv0 32)))))
+(let ((?x44 ((_ extract 2 1) ?x46)))
+(let ((?x50 ((_ extract 5 4) ?x46)))
+(let ((?x51 ((_ extract 7 7) ?x46)))
+(let ((?x52 ((_ extract 10 9) ?x46)))
+(let ((?x54 ((_ extract 13 13) ?x46)))
+(let ((?x55 ((_ extract 31 15) ?x46)))
+(let ((?x58 (concat (_ bv0 32) ?x55 (_ bv1 1) ?x54 (_ bv3 2) ?x52 (_ bv1 1) ?x51 (_ bv1 1) ?x50 (_ bv1 1) ?x44 (_ bv1 1))))
+(let (($x45 (and (distinct ((_ extract 31 0) ?x58) (ite (and (and (distinct secondary_value_ref64 (_ bv0 64)) true) $x39) (_ bv22859 32) (_ bv22857 32))) true)))
+(let (($x10 (and (distinct secondary_value_ref64 secondary_value_ref64) true)))
+(or $x10 $x45)))))))))))))
+(check-sat)

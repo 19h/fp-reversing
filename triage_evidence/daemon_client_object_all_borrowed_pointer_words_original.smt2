@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun client_obj_pointer64 () (_ BitVec 64))
+(assert
+ (let (($x31 (= client_obj_pointer64 (_ bv0 64))))
+(let ((?x365 (ite $x31 (_ bv27856 32) (_ bv27860 32))))
+(let ((?x442 (bvmul (_ bv4 4) (ite $x31 (_ bv0 4) (_ bv1 4)))))
+(let ((?x25 (ite $x31 (_ bv0 32) (_ bv1 32))))
+(let ((?x385 (bvmul (_ bv4 32) ?x25)))
+(let ((?x383 ((_ extract 5 5) ?x385)))
+(let ((?x384 ((_ extract 9 8) ?x385)))
+(let ((?x429 ((_ extract 12 12) ?x385)))
+(let ((?x430 ((_ extract 31 15) ?x385)))
+(let (($x380 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x430 (_ bv3 2) ?x429 (_ bv3 2) ?x384 (_ bv3 2) ?x383 (_ bv1 1) ?x442)) ?x365) true)))
+(let (($x26 (and (distinct client_obj_pointer64 client_obj_pointer64) true)))
+(or $x26 $x380)))))))))))))
+(check-sat)

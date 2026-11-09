@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun creation_return64 () (_ BitVec 64))
+(declare-fun creation_phase32 () (_ BitVec 32))
+(assert
+ (let (($x185 (= creation_return64 (_ bv0 64))))
+(let ((?x242 (ite $x185 (_ bv32848 32) (_ bv32872 32))))
+(let ((?x263 (bvxor (bvadd (_ bv1 1) ((_ extract 0 0) creation_phase32)) (ite $x185 (_ bv1 1) (_ bv0 1)))))
+(let ((?x261 (concat (_ bv0 25) ?x263 (_ bv0 6))))
+(let ((?x265 (bvmul (_ bv4294967295 32) (concat (_ bv0 28) ?x263 (_ bv0 3)))))
+(let ((?x208 (bvadd (_ bv14644 32) creation_phase32)))
+(let ((?x246 (bvxor ?x208 (bvadd ?x265 ?x261))))
+(let ((?x244 ((_ extract 31 0) (concat (_ bv0 32) ?x246))))
+(let (($x245 (= creation_phase32 (_ bv18204 32))))
+(and $x245 (and (distinct ?x244 ?x242) true))))))))))))
+(check-sat)

@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun clock_return64 () (_ BitVec 64))
+(assert
+ (let (($x150 (= clock_return64 (_ bv0 64))))
+(let ((?x172 (ite $x150 (_ bv17471 32) (_ bv17532 32))))
+(let ((?x189 (bvnot (bvmul (_ bv3 6) (concat (_ bv0 5) (ite $x150 (_ bv0 1) (_ bv1 1)))))))
+(let ((?x190 (bvmul (_ bv67 32) (concat (_ bv0 31) (ite $x150 (_ bv0 1) (_ bv1 1))))))
+(let ((?x178 ((_ extract 9 6) ?x190)))
+(let ((?x166 (bvnot ((_ extract 10 10) ?x190))))
+(let ((?x159 ((_ extract 13 11) ?x190)))
+(let ((?x180 (bvnot ((_ extract 14 14) ?x190))))
+(let ((?x173 ((_ extract 31 15) ?x190)))
+(and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x173 ?x180 ?x159 ?x166 ?x178 ?x189)) ?x172) true)))))))))))
+(check-sat)

@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun ctxlock_seal_word_index32 () (_ BitVec 32))
+(declare-fun ctxlock_seal_seed32 () (_ BitVec 32))
+(assert
+ (let ((?x907 (bvadd ctxlock_seal_seed32 ctxlock_seal_word_index32)))
+(let ((?x780 (bvmul (_ bv16777619 32) (bvxor ctxlock_seal_seed32 ?x907))))
+(let ((?x770 (ite (= ctxlock_seal_word_index32 (_ bv0 32)) (_ bv0 32) (bvudiv_i ?x780 ctxlock_seal_word_index32))))
+(let ((?x799 (bvadd ?x780 (bvmul (_ bv4294967295 32) (bvmul ctxlock_seal_word_index32 ?x770)))))
+(let (($x1472 (or (not (= ?x799 (bvurem_i ?x780 ctxlock_seal_word_index32))) (bvule ctxlock_seal_word_index32 ?x799))))
+(let (($x353 (bvule ((_ extract 6 0) ctxlock_seal_word_index32) (_ bv68 7))))
+(let (($x1783 (= ((_ extract 31 7) ctxlock_seal_word_index32) (_ bv0 25))))
+(let (($x1129 (or (not (= ((_ extract 31 1) ctxlock_seal_word_index32) (_ bv0 31))) (= ((_ extract 0 0) ctxlock_seal_word_index32) (_ bv1 1)))))
+(and $x1129 $x1783 $x353 $x1472))))))))))
+(check-sat)

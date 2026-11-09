@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun material_index32 () (_ BitVec 32))
+(declare-fun material_key_index32 () (_ BitVec 32))
+(declare-fun material_frame64 () (_ BitVec 64))
+(assert
+ (let (($x598 (and (distinct ((_ extract 31 0) ((_ zero_extend 32) (bvadd (_ bv433381450 32) material_index32))) (bvadd (bvsub material_index32 (_ bv3861585847 32)) (_ bv1 32))) true)))
+(let (($x551 (bvule material_key_index32 (_ bv3 32))))
+(let (($x31 (bvule material_frame64 (_ bv18446744073709548575 64))))
+(let (($x29 (bvuge material_frame64 (_ bv8589934592 64))))
+(let (($x27 (= (bvand material_frame64 (_ bv15 64)) (_ bv0 64))))
+(let (($x360 (and $x27 $x29 $x31)))
+(let (($x547 (and $x360 (bvuge material_index32 (_ bv1 32)) (bvule material_index32 (_ bv623 32)) $x551)))
+(and $x547 $x598)))))))))
+(check-sat)

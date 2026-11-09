@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun handoff_D32 () (_ BitVec 32))
+(assert
+ (let ((?x101 (concat (bvnot ((_ extract 31 31) handoff_D32)) ((_ extract 30 28) handoff_D32) (bvnot ((_ extract 27 27) handoff_D32)) ((_ extract 26 26) handoff_D32) (bvnot ((_ extract 25 24) handoff_D32)) ((_ extract 23 22) handoff_D32) (bvnot ((_ extract 21 18) handoff_D32)) ((_ extract 17 17) handoff_D32) (bvnot ((_ extract 16 14) handoff_D32)) ((_ extract 13 11) handoff_D32) (bvnot ((_ extract 10 9) handoff_D32)) ((_ extract 8 7) handoff_D32) (bvnot ((_ extract 6 6) handoff_D32)) ((_ extract 5 5) handoff_D32) (bvnot ((_ extract 4 4) handoff_D32)) ((_ extract 3 1) handoff_D32) (bvnot ((_ extract 0 0) handoff_D32)))))
+(let ((?x138 ((_ extract 0 0) handoff_D32)))
+(let ((?x144 ((_ extract 4 4) handoff_D32)))
+(let ((?x162 ((_ extract 6 6) handoff_D32)))
+(let ((?x61 ((_ extract 10 9) handoff_D32)))
+(let ((?x160 ((_ extract 16 14) handoff_D32)))
+(let ((?x166 ((_ extract 21 18) handoff_D32)))
+(let ((?x142 ((_ extract 25 24) handoff_D32)))
+(let ((?x139 ((_ extract 27 27) handoff_D32)))
+(let ((?x145 (concat (_ bv0 3) ?x139 (_ bv0 1) ?x142 (_ bv0 2) ?x166 (_ bv0 1) ?x160 (_ bv0 3) ?x61 (_ bv0 2) ?x162 (_ bv0 1) ?x144 (_ bv0 3) ?x138 (_ bv0 1))))
+(let ((?x136 (bvmul (_ bv4294967295 32) ?x145)))
+(not (= (bvadd handoff_D32 ?x136) (bvadd (_ bv1958885807 32) ?x101)))))))))))))))
+(check-sat)

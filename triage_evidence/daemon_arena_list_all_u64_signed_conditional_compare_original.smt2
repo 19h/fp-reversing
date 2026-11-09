@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun fit_C64 () (_ BitVec 64))
+(declare-fun fit_A64 () (_ BitVec 64))
+(declare-fun fit_B64 () (_ BitVec 64))
+(assert
+ (let ((?x10 (ite (or (bvsle fit_A64 fit_B64) (bvsge fit_A64 fit_C64)) (_ bv1 32) (_ bv0 32))))
+(let ((?x36 ((_ extract 63 63) fit_A64)))
+(let ((?x104 ((_ extract 63 63) (bvadd fit_A64 (bvmul (_ bv18446744073709551615 64) fit_C64)))))
+(let (($x98 (and (not (= ?x36 ((_ extract 63 63) fit_B64))) (not (= ((_ extract 63 63) (bvadd fit_A64 (bvmul (_ bv18446744073709551615 64) fit_B64))) ?x36)))))
+(let ((?x92 ((_ extract 63 63) (bvadd fit_A64 (bvmul (_ bv18446744073709551615 64) fit_B64)))))
+(let (($x101 (= ?x92 (ite $x98 (_ bv1 1) (_ bv0 1)))))
+(let (($x91 (not (= fit_A64 fit_B64))))
+(let (($x112 (and $x91 $x101 (not (= ?x36 ((_ extract 63 63) fit_C64))) (not (= ?x104 ?x36)))))
+(let (($x111 (= (and $x91 $x101 (= ?x104 (_ bv1 1))) $x112)))
+(and (distinct ((_ extract 31 0) (concat (_ bv0 32) (ite $x111 (_ bv1 32) (_ bv0 32)))) ?x10) true)))))))))))
+(check-sat)

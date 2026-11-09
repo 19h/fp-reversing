@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun destruct_remaining64 () (_ BitVec 64))
+(assert
+ (let (($x268 (= destruct_remaining64 (_ bv1 64))))
+(let ((?x413 (ite $x268 (_ bv40605 32) (_ bv32396 32))))
+(let ((?x631 (ite $x268 (_ bv1 2) (_ bv0 2))))
+(let ((?x1243 (bvnot ((_ extract 3 2) (bvmul (_ bv57361 32) (ite $x268 (_ bv1 32) (_ bv0 32)))))))
+(let ((?x393 (bvmul (_ bv57361 32) (ite $x268 (_ bv1 32) (_ bv0 32)))))
+(let ((?x1265 ((_ extract 6 4) ?x393)))
+(let ((?x1331 (bvnot ((_ extract 7 7) ?x393))))
+(let ((?x1259 ((_ extract 8 8) ?x393)))
+(let ((?x1332 (bvnot ((_ extract 14 9) ?x393))))
+(let ((?x466 ((_ extract 31 15) ?x393)))
+(let (($x726 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x466 ?x1332 ?x1259 ?x1331 ?x1265 ?x1243 ?x631)) ?x413) true)))
+(let (($x719 (bvuge destruct_remaining64 (_ bv1 64))))
+(and $x719 $x726))))))))))))))
+(check-sat)

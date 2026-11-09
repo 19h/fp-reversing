@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun fallback_version32 () (_ BitVec 32))
+(assert
+ (let ((?x9 (bvlshr fallback_version32 (_ bv16 32))))
+(let (($x579 (bvuge ?x9 (_ bv11806 32))))
+(let ((?x649 ((_ zero_extend 32) (bvadd (bvand (bvlshr fallback_version32 (_ bv8 32)) (_ bv255 32)) (_ bv228936769 32)))))
+(let ((?x236 (bvadd (ite (not (= ((_ extract 31 0) ?x649) ((_ extract 31 0) ((_ zero_extend 32) (_ bv228936769 32))))) (_ bv1 32) (_ bv0 32)) ((_ extract 31 0) ((_ zero_extend 32) (_ bv983302618 32))))))
+(let ((?x241 ((_ extract 31 0) ((_ zero_extend 32) ?x236))))
+(let ((?x11 (bvand ?x9 (_ bv255 32))))
+(let (($x320 (bvuge ?x11 (_ bv31 32))))
+(let ((?x580 (ite (not (= (bvlshr fallback_version32 (_ bv24 32)) (_ bv46 32))) (_ bv983302617 32) (ite $x320 (_ bv983302619 32) (ite (not (= ?x11 (_ bv30 32))) (_ bv983302617 32) ?x241)))))
+(let ((?x7 (bvlshr fallback_version32 (_ bv24 32))))
+(let (($x467 (bvuge ?x7 (_ bv47 32))))
+(let ((?x577 (ite $x467 (_ bv983302619 32) ?x580)))
+(and (distinct (bvugt ?x577 (_ bv983302617 32)) $x579) true)))))))))))))
+(check-sat)

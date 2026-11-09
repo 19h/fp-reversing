@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun object () (_ BitVec 64))
+(define-fun state () (_ BitVec 32) (bvor (bvsub #x00002e36 #x00002a36) #x00008991))
+(define-fun idx () (_ BitVec 32) (bvxor #x00002e36 (bvmul (ite (= object #x0000000000000000) #x00000001 #x00000000)
+ (bvxor (bvsub state #x00005f45) #x00002e36))))
+(assert (not (= idx (ite (= object #x0000000000000000) #x00002e4c #x00002e36))))
+(check-sat)

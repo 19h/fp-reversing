@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun sha1_helper_index32 () (_ BitVec 32))
+(assert
+ (let (($x1837 (or (not (= ((_ extract 31 7) sha1_helper_index32) (_ bv0 25))) (bvule (_ bv79 7) ((_ extract 6 0) sha1_helper_index32)))))
+(let (($x1788 (bvule sha1_helper_index32 (_ bv4294967294 32))))
+(let (($x1515 (and $x1788 $x1837)))
+(let ((?x1896 (ite $x1515 (_ bv0 2) (_ bv1 2))))
+(let ((?x1450 (ite $x1515 (_ bv0 32) (_ bv1 32))))
+(let ((?x1945 (bvmul (_ bv65155 32) ?x1450)))
+(let ((?x484 ((_ extract 31 31) ?x1945)))
+(let ((?x2034 (concat ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ?x484 ((_ extract 31 15) ?x1945) (bvnot ((_ extract 14 9) ?x1945)) ((_ extract 8 2) ?x1945) (bvnot (bvmul (_ bv3 2) ?x1896)) (_ bv0 3))))
+(let ((?x2084 (bvadd (_ bv4311981808 64) ?x2034)))
+(let (($x1885 (bvule sha1_helper_index32 (_ bv79 32))))
+(let (($x2032 (and (bvuge sha1_helper_index32 (_ bv16 32)) $x1885)))
+(and $x2032 (and (distinct ?x2084 (ite (bvult sha1_helper_index32 (_ bv79 32)) (_ bv4312244976 64) (_ bv4312239880 64))) true))))))))))))))
+(check-sat)

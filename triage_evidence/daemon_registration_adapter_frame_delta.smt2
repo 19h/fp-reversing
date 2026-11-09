@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun seed () (_ BitVec 64))
+(define-fun returned () (_ BitVec 64) (bvadd (bvsub seed #x00000000000000f0) #x00000000000000f0))
+(define-fun delta32 () (_ BitVec 32) (bvsub ((_ extract 31 0) returned) ((_ extract 31 0) seed)))
+(define-fun published () (_ BitVec 64) (bvshl ((_ zero_extend 48) ((_ extract 15 0) delta32)) #x0000000000000004))
+(assert (not (= published #x0000000000000000)))
+(check-sat)

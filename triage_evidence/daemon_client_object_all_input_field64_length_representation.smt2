@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun client_obj_input_B08_64 () (_ BitVec 64))
+(assert
+ (let ((?x717 (concat (bvnot ((_ extract 31 31) client_obj_input_B08_64)) ((_ extract 30 28) client_obj_input_B08_64) (bvnot ((_ extract 27 27) client_obj_input_B08_64)) ((_ extract 26 26) client_obj_input_B08_64) (bvnot ((_ extract 25 24) client_obj_input_B08_64)) ((_ extract 23 22) client_obj_input_B08_64) (bvnot ((_ extract 21 18) client_obj_input_B08_64)) ((_ extract 17 17) client_obj_input_B08_64) (bvnot ((_ extract 16 14) client_obj_input_B08_64)) ((_ extract 13 11) client_obj_input_B08_64) (bvnot ((_ extract 10 9) client_obj_input_B08_64)) ((_ extract 8 7) client_obj_input_B08_64) (bvnot ((_ extract 6 6) client_obj_input_B08_64)) ((_ extract 5 5) client_obj_input_B08_64) (bvnot ((_ extract 4 4) client_obj_input_B08_64)) ((_ extract 3 1) client_obj_input_B08_64) (bvnot ((_ extract 0 0) client_obj_input_B08_64)))))
+(let ((?x410 ((_ extract 0 0) client_obj_input_B08_64)))
+(let ((?x407 ((_ extract 4 4) client_obj_input_B08_64)))
+(let ((?x404 ((_ extract 6 6) client_obj_input_B08_64)))
+(let ((?x401 ((_ extract 10 9) client_obj_input_B08_64)))
+(let ((?x398 ((_ extract 16 14) client_obj_input_B08_64)))
+(let ((?x395 ((_ extract 21 18) client_obj_input_B08_64)))
+(let ((?x392 ((_ extract 25 24) client_obj_input_B08_64)))
+(let ((?x389 ((_ extract 27 27) client_obj_input_B08_64)))
+(let ((?x427 (concat (_ bv0 3) ?x389 (_ bv0 1) ?x392 (_ bv0 2) ?x395 (_ bv0 1) ?x398 (_ bv0 3) ?x401 (_ bv0 2) ?x404 (_ bv0 1) ?x407 (_ bv0 3) ?x410 (_ bv0 1))))
+(let ((?x415 (bvmul (_ bv4294967295 32) ?x427)))
+(let ((?x358 ((_ extract 31 0) client_obj_input_B08_64)))
+(not (= (bvadd ?x358 ?x415) (bvadd (_ bv1958885807 32) ?x717))))))))))))))))
+(check-sat)

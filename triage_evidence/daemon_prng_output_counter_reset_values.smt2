@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun out_counter32 () (_ BitVec 32))
+(declare-fun out_frame64 () (_ BitVec 64))
+(assert
+ (let ((?x561 (bvmul (_ bv18446744073709551615 64) (concat ((_ extract 63 32) (bvadd (_ bv18446744073709546496 64) (concat (_ bv0 32) out_counter32))) (_ bv0 32)))))
+(let ((?x586 ((_ extract 63 63) ?x561)))
+(let (($x1052 (or (= ((_ extract 63 63) (bvadd (_ bv18446744073709546496 64) (concat (_ bv0 32) out_counter32))) (_ bv1 1)) (= ?x586 (_ bv1 1)))))
+(let (($x592 (= ((_ extract 31 13) out_counter32) (_ bv0 19))))
+(let (($x1787 (not (and $x592 (bvule ((_ extract 12 0) out_counter32) (_ bv5119 13))))))
+(let ((?x98 ((_ extract 38 0) out_frame64)))
+(let (($x1894 (bvule ?x98 (_ bv429496792096 39))))
+(let (($x2222 (= ((_ extract 63 39) out_frame64) (_ bv0 25))))
+(let (($x661 (or (not $x2222) (bvule (_ bv429496729600 39) ?x98))))
+(let (($x1986 (= ((_ extract 3 0) out_frame64) (_ bv0 4))))
+(and $x1986 $x661 $x2222 $x1894 $x1787 $x1052))))))))))))
+(check-sat)

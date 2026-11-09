@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun reader_count32 () (_ BitVec 32))
+(declare-fun reader_saved26_32 () (_ BitVec 32))
+(declare-fun reader_saved24_32 () (_ BitVec 32))
+(declare-fun reader_phase32 () (_ BitVec 32))
+(assert
+ (let (($x218 (= reader_count32 (_ bv0 32))))
+(let ((?x233 (ite $x218 (_ bv17356 32) (_ bv17353 32))))
+(let ((?x219 (ite $x218 (_ bv1 32) (_ bv0 32))))
+(let ((?x217 (bvxor reader_phase32 (bvmul (bvadd (_ bv4294900884 32) reader_saved24_32 reader_saved26_32) ?x219))))
+(let (($x238 (= reader_saved26_32 (_ bv33986 32))))
+(let (($x236 (= reader_saved24_32 (_ bv32431 32))))
+(let (($x162 (= reader_phase32 (_ bv17353 32))))
+(and $x162 $x236 $x238 (not (= ?x217 ?x233)))))))))))
+(check-sat)

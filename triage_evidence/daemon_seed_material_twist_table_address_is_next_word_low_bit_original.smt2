@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun twist_next32 () (_ BitVec 32))
+(declare-fun material_frame64 () (_ BitVec 64))
+(declare-fun twist_byte_offset64 () (_ BitVec 64))
+(assert
+ (let ((?x730 (bvadd material_frame64 (_ bv1752 64))))
+(let ((?x752 ((_ extract 0 0) twist_next32)))
+(let ((?x751 (concat (_ bv0 61) ?x752 (_ bv0 2))))
+(let ((?x780 (bvadd (_ bv1752 64) material_frame64 ?x751)))
+(let (($x758 (and (distinct ?x780 (bvadd ?x730 (bvshl ((_ zero_extend 32) (bvand twist_next32 (_ bv1 32))) (_ bv2 64)))) true)))
+(let (($x31 (bvule material_frame64 (_ bv18446744073709548575 64))))
+(let (($x29 (bvuge material_frame64 (_ bv8589934592 64))))
+(let (($x27 (= (bvand material_frame64 (_ bv15 64)) (_ bv0 64))))
+(let (($x360 (and $x27 $x29 $x31)))
+(let (($x731 (and $x360 (= (bvand twist_byte_offset64 (_ bv3 64)) (_ bv0 64)) (bvule twist_byte_offset64 (_ bv904 64)))))
+(and $x731 $x758))))))))))))
+(check-sat)

@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun routes_B64 () (_ BitVec 64))
+(declare-fun routes_A64 () (_ BitVec 64))
+(declare-fun routes_cursor64 () (_ BitVec 64))
+(declare-fun routes_value32 () (_ BitVec 32))
+(declare-fun routes_input64 () (_ BitVec 64))
+(assert
+ (let (($x308 (and (distinct routes_A64 routes_A64) true)))
+(let (($x362 (and (distinct (bvadd (_ bv450971843156 64) routes_cursor64) (bvadd (bvadd (_ bv450971843056 64) routes_cursor64) (_ bv100 64))) true)))
+(let ((?x108 (concat (_ bv0 32) routes_value32)))
+(let (($x387 (and (distinct ?x108 ((_ zero_extend 32) routes_value32)) true)))
+(let (($x257 (and (distinct routes_input64 routes_input64) true)))
+(or $x257 $x387 (and (distinct (bvadd (_ bv450971843056 64) routes_cursor64) (bvadd (_ bv450971843056 64) routes_cursor64)) true) $x362 (and (distinct (bvadd (_ bv128 64) routes_cursor64) (bvadd routes_cursor64 (_ bv128 64))) true) $x308 (and (distinct routes_B64 routes_B64) true))))))))
+(check-sat)

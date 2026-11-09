@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun callback_record64 () (_ BitVec 64))
+(assert
+ (let ((?x14 ((_ extract 31 0) (bvmul (bvxor callback_record64 (_ bv3937274569 64)) (_ bv1939347467 64)))))
+(let ((?x147 ((_ extract 0 0) callback_record64)))
+(let ((?x151 (bvadd (_ bv1 1) ?x147)))
+(let ((?x116 ((_ extract 5 5) callback_record64)))
+(let ((?x115 ((_ extract 8 8) callback_record64)))
+(let ((?x113 ((_ extract 23 21) callback_record64)))
+(let ((?x112 ((_ extract 26 25) callback_record64)))
+(let ((?x111 ((_ extract 28 28) callback_record64)))
+(let ((?x87 (concat ((_ extract 30 30) callback_record64) (_ bv1 1) ?x111 (_ bv1 1) ?x112 (_ bv1 1) ?x113 (_ bv1 1) ((_ extract 19 15) callback_record64) (_ bv63 6) ?x115 (_ bv3 2) ?x116 (_ bv1 1) ((_ extract 3 2) callback_record64) (_ bv6 3))))
+(let ((?x83 (bvmul (_ bv4294967295 32) ((_ extract 31 0) callback_record64))))
+(let ((?x85 (bvadd (_ bv3606020397 32) ?x83 ?x87)))
+(let ((?x81 (concat (bvnot ((_ extract 31 30) ?x85)) ((_ extract 29 26) ?x85) (bvnot ((_ extract 25 23) ?x85)) ((_ extract 22 22) ?x85) (bvnot ((_ extract 21 17) ?x85)) ((_ extract 16 15) ?x85) (bvnot ((_ extract 14 12) ?x85)) ((_ extract 11 11) ?x85) (bvnot ((_ extract 10 10) ?x85)) ((_ extract 9 5) ?x85) (bvnot ((_ extract 4 3) ?x85)) ((_ extract 2 2) ?x85) (bvnot ((_ extract 1 1) ?x85)) ?x151)))
+(and true (and (distinct ((_ extract 31 0) (concat (_ bv0 32) (bvmul (_ bv1939347467 32) ?x81))) ?x14) true)))))))))))))))
+(check-sat)

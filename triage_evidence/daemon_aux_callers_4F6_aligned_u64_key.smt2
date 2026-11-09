@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun aux_emit_frame_base64 () (_ BitVec 64))
+(assert
+ (let ((?x268 (bvnot ((_ extract 31 30) (bvadd (_ bv68792 32) ((_ extract 31 0) aux_emit_frame_base64))))))
+(let ((?x70 ((_ extract 0 0) aux_emit_frame_base64)))
+(let ((?x123 (concat ((_ extract 30 28) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv1 1) ((_ extract 26 25) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv15 4) ((_ extract 20 20) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv15 4) ((_ extract 15 15) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv1 1) ((_ extract 13 12) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv3 2) ((_ extract 9 7) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv1 1) ((_ extract 5 4) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv1 1) ((_ extract 2 2) (bvadd (_ bv68792 31) ((_ extract 30 0) aux_emit_frame_base64))) (_ bv1 1) ?x70 (_ bv0 1))))
+(let ((?x17 ((_ extract 31 0) aux_emit_frame_base64)))
+(let ((?x169 (bvmul (_ bv4294967295 32) ?x17)))
+(let ((?x117 (bvadd (_ bv4128220926 32) ?x169 ?x123)))
+(let ((?x191 (bvnot ((_ extract 31 30) ?x117))))
+(let (($x4397 (and (= ((_ extract 1 1) ?x117) (bvnot ((_ extract 1 1) aux_emit_frame_base64))) (= ((_ extract 2 2) ?x117) ((_ extract 2 2) (bvadd (_ bv68792 32) ?x17))) (= ((_ extract 3 3) ?x117) (bvnot ((_ extract 3 3) (bvadd (_ bv68792 32) ?x17)))) (= ((_ extract 5 4) ?x117) ((_ extract 5 4) (bvadd (_ bv68792 32) ?x17))) (= (bvnot ((_ extract 6 6) ?x117)) ((_ extract 6 6) (bvadd (_ bv68792 32) ?x17))) (= ((_ extract 7 7) ?x117) ((_ extract 7 7) (bvadd (_ bv68792 32) ?x17))) (= (bvnot ((_ extract 8 8) ?x117)) (bvnot ((_ extract 8 8) (bvadd (_ bv68792 32) ?x17)))) (= ((_ extract 9 9) ?x117) ((_ extract 9 9) (bvadd (_ bv68792 32) ?x17))) (= (bvnot ((_ extract 10 10) ?x117)) ((_ extract 10 10) (bvadd (_ bv68792 32) ?x17))) (= ((_ extract 11 11) ?x117) (bvnot ((_ extract 11 11) (bvadd (_ bv68792 32) ?x17)))) (= (bvnot ((_ extract 13 12) ?x117)) (bvnot ((_ extract 13 12) (bvadd (_ bv68792 32) ?x17)))) (= ((_ extract 14 14) ?x117) (bvnot ((_ extract 14 14) (bvadd (_ bv68792 32) ?x17)))) (= ((_ extract 15 15) ?x117) ((_ extract 15 15) (bvadd (_ bv68792 32) ?x17))) (= (bvnot ((_ extract 19 16) ?x117)) ((_ extract 19 16) (bvadd (_ bv68792 32) ?x17))) (= ((_ extract 20 20) ?x117) ((_ extract 20 20) (bvadd (_ bv68792 32) ?x17))) (= (bvnot ((_ extract 21 21) ?x117)) ((_ extract 21 21) (bvadd (_ bv68792 32) ?x17))) (= ((_ extract 22 22) ?x117) (bvnot ((_ extract 22 22) (bvadd (_ bv68792 32) ?x17)))) (= (bvnot ((_ extract 24 23) ?x117)) ((_ extract 24 23) (bvadd (_ bv68792 32) ?x17))) (= ((_ extract 25 25) ?x117) ((_ extract 25 25) (bvadd (_ bv68792 32) ?x17))) (= (bvnot ((_ extract 26 26) ?x117)) (bvnot ((_ extract 26 26) (bvadd (_ bv68792 32) ?x17)))) (= ((_ extract 27 27) ?x117) (bvnot ((_ extract 27 27) (bvadd (_ bv68792 32) ?x17)))) (= (bvnot ((_ extract 28 28) ?x117)) (bvnot ((_ extract 28 28) (bvadd (_ bv68792 32) ?x17)))) (= ((_ extract 29 29) ?x117) ((_ extract 29 29) (bvadd (_ bv68792 32) ?x17))) (= ?x191 ?x268))))
+(let (($x4404 (not $x4397)))
+(let ((?x440 ((_ extract 3 0) aux_emit_frame_base64)))
+(let (($x4482 (= ?x440 (_ bv0 4))))
+(and $x4482 $x4404)))))))))))))
+(check-sat)

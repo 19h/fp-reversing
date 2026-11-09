@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun secondary_actual_type64 () (_ BitVec 64))
+(declare-fun secondary_expected_type64 () (_ BitVec 64))
+(assert
+ (let (($x75 (= secondary_expected_type64 secondary_actual_type64)))
+(let ((?x36 (ite $x75 (_ bv47880 32) (_ bv47930 32))))
+(let ((?x112 (bvmul (_ bv2 3) (concat (_ bv0 2) (ite $x75 (_ bv0 1) (_ bv1 1))))))
+(let ((?x66 (bvmul (_ bv50 32) (concat (_ bv0 31) (ite $x75 (_ bv0 1) (_ bv1 1))))))
+(let ((?x140 ((_ extract 7 4) ?x66)))
+(let ((?x118 ((_ extract 10 10) ?x66)))
+(let ((?x135 ((_ extract 14 14) ?x66)))
+(let ((?x132 ((_ extract 31 16) ?x66)))
+(not (= (concat ?x132 (_ bv1 1) ?x135 (_ bv7 3) ?x118 (_ bv3 2) ?x140 (_ bv1 1) ?x112) ?x36)))))))))))
+(check-sat)

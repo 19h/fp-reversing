@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun client_obj_input_B08_64 () (_ BitVec 64))
+(assert
+ (let ((?x410 ((_ extract 0 0) client_obj_input_B08_64)))
+(let ((?x407 ((_ extract 4 4) client_obj_input_B08_64)))
+(let ((?x404 ((_ extract 6 6) client_obj_input_B08_64)))
+(let ((?x401 ((_ extract 10 9) client_obj_input_B08_64)))
+(let ((?x398 ((_ extract 16 14) client_obj_input_B08_64)))
+(let ((?x395 ((_ extract 21 18) client_obj_input_B08_64)))
+(let ((?x392 ((_ extract 25 24) client_obj_input_B08_64)))
+(let ((?x389 ((_ extract 27 27) client_obj_input_B08_64)))
+(let ((?x427 (concat (_ bv0 3) ?x389 (_ bv0 1) ?x392 (_ bv0 2) ?x395 (_ bv0 1) ?x398 (_ bv0 3) ?x401 (_ bv0 2) ?x404 (_ bv0 1) ?x407 (_ bv0 3) ?x410 (_ bv0 1))))
+(let ((?x415 (bvmul (_ bv4294967295 32) ?x427)))
+(let ((?x358 ((_ extract 31 0) client_obj_input_B08_64)))
+(let ((?x375 (bvadd (_ bv2336081489 32) ?x358 ?x415)))
+(or (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x375)) (bvxor ?x358 (_ bv2336081489 32))) true) (and (distinct (_ bv16384 64) (_ bv16384 64)) true)))))))))))))))
+(check-sat)

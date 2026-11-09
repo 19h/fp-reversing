@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun frame_SP64 () (_ BitVec 64))
+(declare-fun controller_A64 () (_ BitVec 64))
+(declare-fun controller_B64 () (_ BitVec 64))
+(assert
+ (let ((?x40 (bvsub (bvsub controller_B64 controller_A64) (bvadd frame_SP64 (_ bv1624 64)))))
+(let ((?x130 ((_ extract 0 0) frame_SP64)))
+(let ((?x122 ((_ extract 0 0) controller_B64)))
+(let ((?x128 ((_ extract 0 0) controller_A64)))
+(let ((?x50 (bvmul (_ bv18446744073709551615 64) frame_SP64)))
+(let ((?x45 (bvmul (_ bv18446744073709551615 64) controller_A64)))
+(let ((?x54 (bvadd (_ bv18446744073709549992 64) controller_B64 ?x45 ?x50)))
+(let ((?x126 (concat ((_ extract 63 63) ?x54) (bvnot ((_ extract 62 60) ?x54)) ((_ extract 59 58) ?x54) (bvnot ((_ extract 57 54) ?x54)) ((_ extract 53 53) ?x54) (bvnot ((_ extract 52 52) ?x54)) ((_ extract 51 47) ?x54) (bvnot ((_ extract 46 46) ?x54)) ((_ extract 45 43) ?x54) (bvnot ((_ extract 42 41) ?x54)) ((_ extract 40 38) ?x54) (bvnot ((_ extract 37 37) ?x54)) ((_ extract 36 32) ?x54) (bvnot ((_ extract 31 31) ?x54)) ((_ extract 30 28) ?x54) (bvnot ((_ extract 27 25) ?x54)) ((_ extract 24 24) ?x54) (bvnot ((_ extract 23 23) ?x54)) ((_ extract 22 22) ?x54) (bvnot ((_ extract 21 21) ?x54)) ((_ extract 20 20) ?x54) (bvnot ((_ extract 19 17) ?x54)) ((_ extract 16 16) ?x54) (bvnot ((_ extract 15 14) ?x54)) ((_ extract 13 13) ?x54) (bvnot ((_ extract 12 12) ?x54)) ((_ extract 11 9) ?x54) (bvnot ((_ extract 8 7) ?x54)) ((_ extract 6 6) ?x54) (bvnot ((_ extract 5 5) ?x54)) ((_ extract 4 3) ?x54) (bvnot ((_ extract 2 1) ?x54)) (bvadd ?x128 ?x122 ?x130))))
+(let (($x30 (and (distinct (bvmul (_ bv173855951 64) ?x126) (bvmul (bvxor ?x40 (_ bv8345247215164248486 64)) (_ bv173855951 64))) true)))
+(or $x30 $x30)))))))))))
+(check-sat)

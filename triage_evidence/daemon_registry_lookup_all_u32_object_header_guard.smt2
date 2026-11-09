@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun registry_mode32 () (_ BitVec 32))
+(declare-fun registry_header32 () (_ BitVec 32))
+(assert
+ (let (($x498 (= registry_header32 registry_mode32)))
+(let ((?x500 (ite $x498 (_ bv11630 32) (_ bv11584 32))))
+(let ((?x519 (bvmul (_ bv46 6) (ite $x498 (_ bv1 6) (_ bv0 6)))))
+(let ((?x504 (bvmul (_ bv46 32) (ite $x498 (_ bv1 32) (_ bv0 32)))))
+(let ((?x487 ((_ extract 7 7) ?x504)))
+(let ((?x501 ((_ extract 9 9) ?x504)))
+(let ((?x506 ((_ extract 12 12) ?x504)))
+(let ((?x507 ((_ extract 31 14) ?x504)))
+(not (= (concat ?x507 (_ bv1 1) ?x506 (_ bv3 2) ?x501 (_ bv1 1) ?x487 (_ bv1 1) ?x519) ?x500)))))))))))
+(check-sat)

@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun output_base_saved_58 () (_ BitVec 64))
+(declare-fun output_base_saved_50 () (_ BitVec 64))
+(declare-fun output_base_saved_48 () (_ BitVec 64))
+(declare-fun output_base_saved_40 () (_ BitVec 64))
+(declare-fun output_base_saved_38 () (_ BitVec 64))
+(declare-fun output_base_saved_30 () (_ BitVec 64))
+(declare-fun output_base_saved_28 () (_ BitVec 64))
+(declare-fun output_base_saved_20 () (_ BitVec 64))
+(declare-fun output_base_saved_18 () (_ BitVec 64))
+(declare-fun output_base_saved_10 () (_ BitVec 64))
+(declare-fun output_base_saved_8 () (_ BitVec 64))
+(declare-fun output_base_saved_0 () (_ BitVec 64))
+(declare-fun output_base_epilogue_X0 () (_ BitVec 64))
+(assert
+ (or (and (distinct (_ bv446676991920 64) (_ bv446676991920 64)) true) (and (distinct output_base_epilogue_X0 output_base_epilogue_X0) true) (and (distinct output_base_saved_0 output_base_saved_0) true) (and (distinct output_base_saved_8 output_base_saved_8) true) (and (distinct output_base_saved_10 output_base_saved_10) true) (and (distinct output_base_saved_18 output_base_saved_18) true) (and (distinct output_base_saved_20 output_base_saved_20) true) (and (distinct output_base_saved_28 output_base_saved_28) true) (and (distinct output_base_saved_30 output_base_saved_30) true) (and (distinct output_base_saved_38 output_base_saved_38) true) (and (distinct output_base_saved_40 output_base_saved_40) true) (and (distinct output_base_saved_48 output_base_saved_48) true) (and (distinct output_base_saved_50 output_base_saved_50) true) (and (distinct output_base_saved_58 output_base_saved_58) true)))
+(check-sat)

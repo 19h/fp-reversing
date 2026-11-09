@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun output_index32 () (_ BitVec 32))
+(assert
+ (let (($x372 (or (not (= ((_ extract 31 4) (bvmul (_ bv4 32) output_index32)) (_ bv0 28))) (bvule (_ bv12 4) (bvmul (_ bv4 4) ((_ extract 3 0) output_index32))))))
+(let ((?x250 (bvmul (_ bv4 32) output_index32)))
+(let (($x342 (bvule ?x250 (_ bv4294967291 32))))
+(let ((?x339 (bvmul (_ bv58568 32) (ite (and $x342 $x372) (_ bv0 32) (_ bv1 32)))))
+(let ((?x395 ((_ extract 31 31) ?x339)))
+(let ((?x398 (concat ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ?x395 ((_ extract 31 15) ?x339) (bvnot ((_ extract 14 13) ?x339)) ((_ extract 12 11) ?x339) (bvnot ((_ extract 10 9) ?x339)) ((_ extract 8 8) ?x339) (bvnot ((_ extract 7 5) ?x339)) ((_ extract 4 4) ?x339) (bvnot ((_ extract 3 3) ?x339)) ((_ extract 2 2) ?x339) (bvnot ((_ extract 1 1) ?x339)) (_ bv0 4))))
+(let ((?x397 (bvadd (_ bv4311981808 64) ?x398)))
+(let (($x133 (bvuge output_index32 (_ bv1 32))))
+(let (($x116 (and $x133 (bvule output_index32 (_ bv3 32)))))
+(and $x116 (and (distinct ?x397 (ite (bvult output_index32 (_ bv3 32)) (_ bv4312248320 64) (_ bv4312192576 64))) true))))))))))))
+(check-sat)

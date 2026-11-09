@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun status () (_ BitVec 32))
+(define-fun expected () (_ BitVec 32) (bvxor (bvadd #x00009245 #x626313dc) (bvxor #x00009245 #x0000c831)))
+(define-fun idx () (_ BitVec 32) (bvxor #x00009245 (bvmul #x00003f6d (ite (= status expected) #x00000001 #x00000000))))
+(assert (not (and (= expected #x6263fc55) (= idx (ite (= status #x6263fc55) #x0000ad28 #x00009245)))))
+(check-sat)

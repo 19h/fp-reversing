@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun x () (_ BitVec 32))
+(define-fun bit () (_ BitVec 32)
+ (bvlshr (bvnot (bvor (bvand (bvxor x #xffffffff) x) x)) #x0000001f))
+(assert (not (= (= bit #x00000001) (bvsge x #x00000000))))
+(check-sat)

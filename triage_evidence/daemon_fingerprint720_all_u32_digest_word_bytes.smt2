@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun fingerprint_digest_state32 () (_ BitVec 32))
+(assert
+ (let ((?x8566 (concat (bvnot ((_ extract 31 31) fingerprint_digest_state32)) ((_ extract 30 29) fingerprint_digest_state32) (bvnot ((_ extract 28 27) fingerprint_digest_state32)) ((_ extract 26 24) fingerprint_digest_state32))))
+(let ((?x524 ((_ extract 31 24) fingerprint_digest_state32)))
+(let ((?x584 (bvadd ?x524 (bvmul (_ bv255 8) (concat (_ bv0 2) ((_ extract 28 27) fingerprint_digest_state32) (_ bv0 4))))))
+(let (($x8258 (not (= ?x584 (bvadd (_ bv104 8) ?x8566)))))
+(let ((?x610 (concat (bvnot ((_ extract 15 15) fingerprint_digest_state32)) ((_ extract 14 13) fingerprint_digest_state32) (bvnot ((_ extract 12 11) fingerprint_digest_state32)) ((_ extract 10 8) fingerprint_digest_state32))))
+(let ((?x564 ((_ extract 15 8) fingerprint_digest_state32)))
+(let ((?x398 (bvadd ?x564 (bvmul (_ bv255 8) (concat (_ bv0 2) ((_ extract 12 11) fingerprint_digest_state32) (_ bv0 4))))))
+(let (($x571 (not (= ?x398 (bvadd (_ bv104 8) ?x610)))))
+(let ((?x8493 (concat (bvnot ((_ extract 23 23) fingerprint_digest_state32)) ((_ extract 22 21) fingerprint_digest_state32) (bvnot ((_ extract 20 19) fingerprint_digest_state32)) ((_ extract 18 16) fingerprint_digest_state32))))
+(let ((?x8263 (bvadd (_ bv104 8) ?x8493)))
+(let ((?x8506 (bvmul (_ bv255 8) (concat (_ bv0 2) ((_ extract 20 19) fingerprint_digest_state32) (_ bv0 4)))))
+(let ((?x528 ((_ extract 23 16) fingerprint_digest_state32)))
+(or (not (= (bvadd ?x528 ?x8506) ?x8263)) $x571 $x8258))))))))))))))
+(check-sat)

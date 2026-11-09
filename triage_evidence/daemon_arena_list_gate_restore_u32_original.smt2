@@ -1,0 +1,5 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(assert
+ (and (distinct ((_ extract 31 0) (_ bv23958 64)) (_ bv23958 32)) true))
+(check-sat)

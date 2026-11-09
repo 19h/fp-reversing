@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun comparison_record64 () (_ BitVec 64))
+(declare-fun comparison_frame64 () (_ BitVec 64))
+(assert
+ (let (($x382 (not (= ((_ extract 1 0) comparison_record64) (_ bv0 2)))))
+(let ((?x498 (bvadd (_ bv2808 64) comparison_frame64)))
+(let (($x457 (= comparison_record64 ?x498)))
+(let (($x32 (bvule comparison_frame64 (_ bv18446744073709548575 64))))
+(let (($x325 (or (not (= ((_ extract 63 34) comparison_frame64) (_ bv0 30))) (bvule (_ bv8589934592 34) ((_ extract 33 0) comparison_frame64)))))
+(let (($x627 (= ((_ extract 3 0) comparison_frame64) (_ bv0 4))))
+(let (($x24 (bvule comparison_record64 (_ bv18446744073709551567 64))))
+(let (($x661 (= ((_ extract 2 0) comparison_record64) (_ bv0 3))))
+(and $x661 $x24 $x627 $x325 $x32 $x457 $x382))))))))))
+(check-sat)

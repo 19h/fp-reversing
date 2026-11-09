@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun window_log64 () (_ BitVec 64))
+(assert
+ (let (($x1741 (= window_log64 (_ bv18446744073709551615 64))))
+(let (($x2263 (or $x1741 (bvult window_log64 (_ bv15 64)))))
+(let ((?x2235 ((_ extract 5 0) window_log64)))
+(let ((?x3069 (concat (_ bv0 58) ?x2235)))
+(let ((?x532 (bvshl (_ bv1 64) ?x3069)))
+(let ((?x2567 (bvadd (_ bv18446744073709518848 64) ?x532)))
+(let ((?x3172 (bvadd window_log64 (_ bv10649522825481999592 64))))
+(let (($x3182 (bvugt ?x3172 (_ bv10649522825481999606 64))))
+(let (($x2485 (and (distinct (ite $x3182 ?x2567 (_ bv0 64)) (ite $x2263 (_ bv0 64) (bvsub (bvshl (_ bv1 64) (bvand window_log64 (_ bv63 64))) (_ bv32768 64)))) true)))
+(let (($x2329 (and (distinct (ite (bvult ?x3172 (_ bv10649522825481999607 64)) window_log64 (_ bv0 64)) (ite $x2263 window_log64 (_ bv0 64))) true)))
+(let (($x1808 (or $x2329 (and (distinct (ite $x3182 ((_ zero_extend 32) (_ bv15 32)) (_ bv0 64)) (ite $x2263 (_ bv0 64) (_ bv15 64))) true) $x2485)))
+(let (($x2672 (or $x1741 (bvule window_log64 (_ bv63 64)))))
+(and $x2672 $x1808))))))))))))))
+(check-sat)

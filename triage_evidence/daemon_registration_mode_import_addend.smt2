@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun symbol () (_ BitVec 64))
+(assert (not (and (= (bvadd symbol #x000000007ed8f1f2 #xffffffff81270e0e) symbol)
+ (= (bvadd symbol #x000000007da61013 #xffffffff8259efed) symbol))))
+(check-sat)

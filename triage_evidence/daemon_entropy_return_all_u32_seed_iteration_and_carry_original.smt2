@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun entropy_index64 () (_ BitVec 64))
+(declare-fun entropy_previous32 () (_ BitVec 32))
+(declare-fun entropy_frame64 () (_ BitVec 64))
+(assert
+ (let ((?x25 ((_ extract 31 0) entropy_index64)))
+(let ((?x110 (bvmul (bvxor entropy_previous32 (bvlshr entropy_previous32 (_ bv30 32))) (_ bv1812433253 32))))
+(let ((?x80 ((_ extract 31 2) entropy_previous32)))
+(let ((?x88 (concat ?x80 (bvxor ((_ extract 1 0) entropy_previous32) ((_ extract 31 30) entropy_previous32)))))
+(let ((?x90 (bvadd ?x25 (bvmul (_ bv1812433253 32) ?x88))))
+(let (($x94 (and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x90)) (bvadd ?x110 ?x25)) true)))
+(let (($x23 (bvule entropy_frame64 (_ bv18446744073709548575 64))))
+(let (($x24 (and (= (bvand entropy_frame64 (_ bv15 64)) (_ bv0 64)) (bvuge entropy_frame64 (_ bv8589934592 64)) $x23)))
+(let (($x30 (and $x24 (bvuge entropy_index64 (_ bv1 64)) (bvule entropy_index64 (_ bv623 64)))))
+(and $x30 (or $x94 $x94))))))))))))
+(check-sat)

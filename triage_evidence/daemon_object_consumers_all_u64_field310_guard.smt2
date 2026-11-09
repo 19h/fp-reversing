@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun destruct_pointer64 () (_ BitVec 64))
+(assert
+ (let (($x26 (= destruct_pointer64 (_ bv0 64))))
+(let ((?x30 (ite $x26 (_ bv11743 32) (_ bv11772 32))))
+(let ((?x61 (bvnot (bvmul (_ bv3 5) (ite $x26 (_ bv0 5) (_ bv1 5))))))
+(let ((?x28 (ite $x26 (_ bv0 32) (_ bv1 32))))
+(let ((?x31 (bvmul (_ bv35 32) ?x28)))
+(let ((?x34 ((_ extract 5 5) ?x31)))
+(let ((?x47 (bvnot ((_ extract 8 6) ?x31))))
+(let ((?x36 ((_ extract 9 9) ?x31)))
+(let ((?x45 (bvnot ((_ extract 11 10) ?x31))))
+(let ((?x38 ((_ extract 12 12) ?x31)))
+(let ((?x43 (bvnot ((_ extract 13 13) ?x31))))
+(let ((?x40 ((_ extract 31 14) ?x31)))
+(not (= (concat ?x40 ?x43 ?x38 ?x45 ?x36 ?x47 ?x34 ?x61) ?x30)))))))))))))))
+(check-sat)

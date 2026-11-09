@@ -1,0 +1,9 @@
+{"fresh_cases_completed": 1}
+{"fresh_cases_completed": 33}
+{"fresh_cases_completed": 65}
+{"fresh_cases_completed": 97}
+{"fresh_cases_completed": 129}
+{"fresh_cases_completed": 161}
+{"fresh_cases_completed": 193}
+{"fresh_cases_completed": 225}
+{"all_checks_pass": true, "verified_counts": {"original_daemon_source_spans": 5, "independent_whole_text_four_byte_units": 3712490, "exact_syntactic_candidates": 24, "bounded_candidate_source_windows": 24, "windows_preparing_21_22_23_or_26": 12, "exhaustive_bank_rules": 2, "bank_byte_inputs_checked": 512, "original_dispatch_and_root_fixups": 8, "same_modifier_original_pointer_slots": 4, "original_kext_source_spans": 4, "kext_query_routes_verified": 2, "source_proof_pairs_unsat": 13, "source_instruction_byte_checks": 137856, "source_write_epochs": 960, "source_read_epochs": 6144, "source_capacity_reset_before_API": 512, "API_write_epochs": 576, "independent_byte_reconstructed_cases": 256, "fresh_cases": 256, "original_instruction_visits": 34464, "unknown_gap_preserved_cases": 256, "joint_query_consumer_frontiers": 256, "API_response_models_checked": 512, "successful_status_size_query_responses": 64, "source_failure_output_clears": 448, "high_word_size_mismatch_responses": 128, "second_queries_after_first_query_rejection": 224}, "source_lift_counts": {"query22_phase": 5, "query22_capacity": 2, "query22_connection": 1, "query22_arguments": 6, "query22_status_and_size": 15, "query22_failure_clear": 3, "query23_phase": 8, "query23_capacity": 2, "query23_connection": 1, "query23_arguments": 6, "query23_status_and_size": 17, "query23_success_publication": 3, "query23_failure_publication": 8, "kext_version_publication": 3, "kext_capability_publication": 3}}

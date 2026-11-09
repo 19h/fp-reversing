@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun error_status32 () (_ BitVec 32))
+(assert
+ (let ((?x285 ((_ extract 0 0) error_status32)))
+(let ((?x282 ((_ extract 4 4) error_status32)))
+(let ((?x279 ((_ extract 6 6) error_status32)))
+(let ((?x276 ((_ extract 10 9) error_status32)))
+(let ((?x273 ((_ extract 16 14) error_status32)))
+(let ((?x270 ((_ extract 21 18) error_status32)))
+(let ((?x267 ((_ extract 25 24) error_status32)))
+(let ((?x264 ((_ extract 27 27) error_status32)))
+(let ((?x300 (concat (_ bv0 3) ?x264 (_ bv0 1) ?x267 (_ bv0 2) ?x270 (_ bv0 1) ?x273 (_ bv0 3) ?x276 (_ bv0 2) ?x279 (_ bv0 1) ?x282 (_ bv0 3) ?x285 (_ bv0 1))))
+(let (($x224 (and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x300)) (bvshl (bvand error_status32 (_ bv2336081489 32)) (_ bv1 32))) true)))
+(let (($x306 (and (distinct ((_ extract 31 0) ((_ zero_extend 32) (_ bv22404 32))) (_ bv22404 32)) true)))
+(or $x306 $x224)))))))))))))
+(check-sat)

@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun completion_remaining64 () (_ BitVec 64))
+(assert
+ (let ((?x440 (bvnot ((_ extract 4 4) (bvmul (_ bv64501 32) (ite (= completion_remaining64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x697 (bvnot ((_ extract 8 7) (bvmul (_ bv64501 32) (ite (= completion_remaining64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x900 (bvnot ((_ extract 10 10) (bvmul (_ bv64501 32) (ite (= completion_remaining64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x1113 (bvnot ((_ extract 14 13) (bvmul (_ bv64501 32) (ite (= completion_remaining64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let (($x1632 (= completion_remaining64 (_ bv1 64))))
+(let ((?x484 (ite $x1632 (_ bv1 32) (_ bv0 32))))
+(let ((?x765 (bvmul (_ bv64501 32) ?x484)))
+(let ((?x550 ((_ extract 31 31) ?x765)))
+(let ((?x496 (concat ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ?x550 ((_ extract 31 15) ?x765) ?x1113 ((_ extract 12 11) ?x765) ?x900 ((_ extract 9 9) ?x765) ?x697 ((_ extract 6 5) ?x765) ?x440 ((_ extract 3 3) ?x765) (bvnot (bvmul (_ bv5 3) (ite $x1632 (_ bv1 3) (_ bv0 3)))) (_ bv0 3))))
+(let (($x831 (not (= ?x496 (bvadd (_ bv18446744069397569808 64) (ite $x1632 (_ bv4312306176 64) (_ bv4312189864 64)))))))
+(let (($x1651 (= ((_ extract 63 32) completion_remaining64) (_ bv0 32))))
+(let (($x1019 (or (not (= ((_ extract 63 1) completion_remaining64) (_ bv0 63))) (= ((_ extract 0 0) completion_remaining64) (_ bv1 1)))))
+(and $x1019 $x1651 $x831))))))))))))))
+(check-sat)

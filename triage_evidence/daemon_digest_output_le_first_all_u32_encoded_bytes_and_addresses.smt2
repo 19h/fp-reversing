@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun output_word32 () (_ BitVec 32))
+(declare-fun output_index32 () (_ BitVec 32))
+(assert
+ (let ((?x714 (concat (bvnot ((_ extract 15 15) output_word32)) ((_ extract 14 13) output_word32) (bvnot ((_ extract 12 11) output_word32)) ((_ extract 10 8) output_word32))))
+(let ((?x114 ((_ extract 15 8) output_word32)))
+(let (($x713 (= (bvadd ?x114 (bvmul (_ bv255 8) (concat (_ bv0 2) ((_ extract 12 11) output_word32) (_ bv0 4)))) (bvadd (_ bv104 8) ?x714))))
+(let ((?x674 (concat (bvnot ((_ extract 31 31) output_word32)) ((_ extract 30 29) output_word32) (bvnot ((_ extract 28 27) output_word32)) ((_ extract 26 24) output_word32))))
+(let ((?x160 ((_ extract 31 24) output_word32)))
+(let (($x705 (= (bvadd ?x160 (bvmul (_ bv255 8) (concat (_ bv0 2) ((_ extract 28 27) output_word32) (_ bv0 4)))) (bvadd (_ bv104 8) ?x674))))
+(let ((?x649 (concat (bvnot ((_ extract 23 23) output_word32)) ((_ extract 22 21) output_word32) (bvnot ((_ extract 20 19) output_word32)) ((_ extract 18 16) output_word32))))
+(let ((?x135 ((_ extract 23 16) output_word32)))
+(let (($x687 (= (bvadd ?x135 (bvmul (_ bv255 8) (concat (_ bv0 2) ((_ extract 20 19) output_word32) (_ bv0 4)))) (bvadd (_ bv104 8) ?x649))))
+(let (($x727 (or (not $x687) (not $x705) (not $x713))))
+(let (($x421 (= output_index32 (_ bv0 32))))
+(and $x421 $x727)))))))))))))
+(check-sat)

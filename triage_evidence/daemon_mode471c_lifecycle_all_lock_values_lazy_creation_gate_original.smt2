@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun life_lock64 () (_ BitVec 64))
+(assert
+ (let (($x38 (= life_lock64 (_ bv0 64))))
+(let ((?x79 (ite $x38 (_ bv17471 32) (_ bv17532 32))))
+(let ((?x86 (bvnot (bvmul (_ bv3 6) (concat (_ bv0 5) (ite $x38 (_ bv0 1) (_ bv1 1)))))))
+(let ((?x55 (bvmul (_ bv67 32) (concat (_ bv0 31) (ite $x38 (_ bv0 1) (_ bv1 1))))))
+(let ((?x62 ((_ extract 9 6) ?x55)))
+(let ((?x75 (bvnot ((_ extract 10 10) ?x55))))
+(let ((?x70 ((_ extract 13 11) ?x55)))
+(let ((?x49 (bvnot ((_ extract 14 14) ?x55))))
+(let ((?x69 ((_ extract 31 15) ?x55)))
+(let (($x46 (or (and (distinct ((_ extract 31 0) (_ bv16583 64)) (_ bv16583 32)) true) (and (distinct ((_ extract 31 0) (_ bv17532 64)) (_ bv17532 32)) true) (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x69 ?x49 ?x70 ?x75 ?x62 ?x86)) ?x79) true))))
+(and true $x46))))))))))))
+(check-sat)

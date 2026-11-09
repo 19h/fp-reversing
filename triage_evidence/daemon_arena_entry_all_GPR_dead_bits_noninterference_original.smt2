@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun incoming_x30 () (_ BitVec 64))
+(declare-fun incoming_x29 () (_ BitVec 64))
+(declare-fun incoming_x18 () (_ BitVec 64))
+(declare-fun incoming_x14 () (_ BitVec 64))
+(declare-fun incoming_x13 () (_ BitVec 64))
+(declare-fun malloc_code_pointer64 () (_ BitVec 64))
+(declare-fun incoming_x2 () (_ BitVec 64))
+(assert
+ (let ((?x94 ((_ zero_extend 32) (_ bv1652925069 32))))
+(let (($x174 (and (distinct ?x94 ?x94) true)))
+(let (($x141 (and (distinct (_ bv27300 64) (_ bv27300 64)) true)))
+(let (($x168 (and (distinct (_ bv4312489712 64) (_ bv4312489712 64)) true)))
+(let (($x130 (and (distinct malloc_code_pointer64 malloc_code_pointer64) true)))
+(or (and (distinct ((_ zero_extend 32) (_ bv90000 32)) ((_ zero_extend 32) (_ bv90000 32))) true) (and (distinct ((_ zero_extend 32) (_ bv1052917639 32)) ((_ zero_extend 32) (_ bv1052917639 32))) true) (and (distinct incoming_x2 incoming_x2) true) (and (distinct ((_ zero_extend 32) (_ bv3242028919 32)) ((_ zero_extend 32) (_ bv3242028919 32))) true) (and (distinct ((_ zero_extend 32) (_ bv1652907293 32)) ((_ zero_extend 32) (_ bv1652907293 32))) true) (and (distinct ((_ zero_extend 32) (_ bv53483 32)) ((_ zero_extend 32) (_ bv53483 32))) true) (and (distinct ((_ zero_extend 32) (_ bv1065398692 32)) ((_ zero_extend 32) (_ bv1065398692 32))) true) (and (distinct ((_ zero_extend 32) (_ bv38280 32)) ((_ zero_extend 32) (_ bv38280 32))) true) $x130 (and (distinct ((_ zero_extend 32) (_ bv52217 32)) ((_ zero_extend 32) (_ bv52217 32))) true) (and (distinct (_ bv4311015824 64) (_ bv4311015824 64)) true) (and (distinct ((_ zero_extend 32) (_ bv256 32)) ((_ zero_extend 32) (_ bv256 32))) true) (and (distinct ((_ zero_extend 32) (_ bv644669337 32)) ((_ zero_extend 32) (_ bv644669337 32))) true) (and (distinct incoming_x13 incoming_x13) true) (and (distinct incoming_x14 incoming_x14) true) $x168 (and (distinct ((_ zero_extend 32) (_ bv2027 32)) ((_ zero_extend 32) (_ bv2027 32))) true) $x141 (and (distinct incoming_x18 incoming_x18) true) (and (distinct ((_ zero_extend 32) (_ bv2718397744 32)) ((_ zero_extend 32) (_ bv2718397744 32))) true) (and (distinct (_ bv4311981808 64) (_ bv4311981808 64)) true) (and (distinct ((_ zero_extend 32) (_ bv1576569551 32)) ((_ zero_extend 32) (_ bv1576569551 32))) true) $x174 (and (distinct ((_ zero_extend 32) (_ bv24508 32)) ((_ zero_extend 32) (_ bv24508 32))) true) (and (distinct ((_ zero_extend 32) (_ bv8533 32)) ((_ zero_extend 32) (_ bv8533 32))) true) (and (distinct ((_ zero_extend 32) (_ bv17776 32)) ((_ zero_extend 32) (_ bv17776 32))) true) (and (distinct ((_ zero_extend 32) (_ bv3971866623 32)) ((_ zero_extend 32) (_ bv3971866623 32))) true) (and (distinct ((_ zero_extend 32) (_ bv2580457280 32)) ((_ zero_extend 32) (_ bv2580457280 32))) true) $x174 (and (distinct incoming_x29 incoming_x29) true) (and (distinct incoming_x30 incoming_x30) true))))))))
+(check-sat)

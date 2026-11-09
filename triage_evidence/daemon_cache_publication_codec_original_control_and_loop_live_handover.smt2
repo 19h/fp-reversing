@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun publication_N64 () (_ BitVec 64))
+(assert
+ (let ((?x2160 (bvnot ((_ extract 6 6) (bvmul (_ bv61 32) (ite (= publication_N64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x1035 (bvnot ((_ extract 8 8) (bvmul (_ bv61 32) (ite (= publication_N64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x1502 (bvnot ((_ extract 10 10) (bvmul (_ bv61 32) (ite (= publication_N64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x1360 (bvnot ((_ extract 14 13) (bvmul (_ bv61 32) (ite (= publication_N64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))))
+(let ((?x1407 (bvmul (_ bv61 32) (ite (= publication_N64 (_ bv1 64)) (_ bv1 32) (_ bv0 32)))))
+(let ((?x1365 ((_ extract 31 31) ?x1407)))
+(let ((?x1457 (concat ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ((_ extract 31 15) ?x1407) ?x1360 ((_ extract 12 11) ?x1407) ?x1502 ((_ extract 9 9) ?x1407) ?x1035 ((_ extract 7 7) ?x1407) ?x2160 ((_ extract 5 5) ?x1407) (bvnot (bvmul (_ bv29 5) (ite (= publication_N64 (_ bv1 64)) (_ bv1 5) (_ bv0 5)))) (_ bv0 3))))
+(let (($x4236 (not (= ?x1457 (bvadd (_ bv18446744069397569808 64) (ite (= publication_N64 (_ bv1 64)) (_ bv4312189440 64) (_ bv4312189416 64)))))))
+(let (($x3575 (bvule ((_ extract 4 0) publication_N64) (_ bv20 5))))
+(let (($x2626 (= ((_ extract 63 5) publication_N64) (_ bv0 59))))
+(let (($x3485 (or (not (= ((_ extract 63 1) publication_N64) (_ bv0 63))) (= ((_ extract 0 0) publication_N64) (_ bv1 1)))))
+(and $x3485 $x2626 $x3575 $x4236)))))))))))))
+(check-sat)

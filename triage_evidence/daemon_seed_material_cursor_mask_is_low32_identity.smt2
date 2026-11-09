@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun material_cursor64 () (_ BitVec 64))
+(declare-fun material_frame64 () (_ BitVec 64))
+(assert
+ (let ((?x486 ((_ extract 31 0) material_cursor64)))
+(let ((?x521 ((_ extract 1 0) material_cursor64)))
+(let ((?x542 (bvadd (_ bv3 2) ?x521 (bvmul (_ bv3 2) (concat ((_ extract 0 0) material_cursor64) (_ bv0 1))))))
+(let ((?x536 (concat (_ bv0 2) ((_ extract 28 28) material_cursor64) (_ bv0 1) ((_ extract 26 25) material_cursor64) (_ bv0 1) ((_ extract 23 22) material_cursor64) (_ bv0 2) ((_ extract 19 15) material_cursor64) (_ bv0 3) ((_ extract 11 11) material_cursor64) (_ bv0 2) ((_ extract 8 8) material_cursor64) (_ bv0 1) ((_ extract 6 3) material_cursor64) (_ bv0 1) ?x521 (_ bv0 1))))
+(let ((?x492 (bvadd (_ bv2530183547 32) ?x486 (bvmul (_ bv4294967295 32) ?x536))))
+(let ((?x544 (concat (bvnot ((_ extract 31 31) ?x492)) ((_ extract 30 29) ?x492) (bvnot ((_ extract 28 28) ?x492)) ((_ extract 27 27) ?x492) (bvnot ((_ extract 26 25) ?x492)) ((_ extract 24 24) ?x492) (bvnot ((_ extract 23 22) ?x492)) ((_ extract 21 20) ?x492) (bvnot ((_ extract 19 15) ?x492)) ((_ extract 14 12) ?x492) (bvnot ((_ extract 11 11) ?x492)) ((_ extract 10 9) ?x492) (bvnot ((_ extract 8 8) ?x492)) ((_ extract 7 7) ?x492) (bvnot ((_ extract 6 3) ?x492)) ((_ extract 2 2) ?x492) (bvnot ?x542))))
+(let (($x778 (not (= ?x544 ?x486))))
+(let (($x31 (bvule material_frame64 (_ bv18446744073709548575 64))))
+(let (($x1425 (or (not (= ((_ extract 63 34) material_frame64) (_ bv0 30))) (bvule (_ bv8589934592 34) ((_ extract 33 0) material_frame64)))))
+(let (($x660 (= ((_ extract 3 0) material_frame64) (_ bv0 4))))
+(and $x660 $x1425 $x31 $x778))))))))))))
+(check-sat)

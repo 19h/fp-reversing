@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun entropy_index64 () (_ BitVec 64))
+(declare-fun entropy_frame64 () (_ BitVec 64))
+(assert
+ (let (($x109 (and (= ((_ extract 31 10) entropy_index64) (_ bv0 22)) (bvule ((_ extract 9 0) entropy_index64) (_ bv622 10)))))
+(let ((?x134 (bvadd (concat (ite $x109 (_ bv0 26) (_ bv1 26)) (_ bv0 6)) (bvmul (_ bv4294967295 32) (concat (ite $x109 (_ bv0 31) (_ bv1 31)) (_ bv0 1))))))
+(let ((?x160 (concat ((_ extract 31 15) ?x134) (bvnot ((_ extract 14 14) ?x134)) ((_ extract 13 13) ?x134) (bvnot ((_ extract 12 10) ?x134)) ((_ extract 9 8) ?x134) (bvnot ((_ extract 7 6) ?x134)) ((_ extract 5 5) ?x134) (bvnot ((_ extract 4 4) ?x134)) ((_ extract 3 2) ?x134) (bvnot (bvmul (_ bv3 2) (concat (ite $x109 (_ bv0 1) (_ bv1 1)) (_ bv0 1)))))))
+(let (($x177 (not (= ?x160 (ite $x109 (_ bv23763 32) (_ bv23789 32))))))
+(let ((?x102 ((_ extract 9 0) entropy_index64)))
+(let (($x189 (bvule ?x102 (_ bv623 10))))
+(let (($x259 (= ((_ extract 63 10) entropy_index64) (_ bv0 54))))
+(let (($x226 (or (not (= ((_ extract 63 1) entropy_index64) (_ bv0 63))) (= ((_ extract 0 0) entropy_index64) (_ bv1 1)))))
+(let (($x23 (bvule entropy_frame64 (_ bv18446744073709548575 64))))
+(let (($x246 (or (not (= ((_ extract 63 34) entropy_frame64) (_ bv0 30))) (bvule (_ bv8589934592 34) ((_ extract 33 0) entropy_frame64)))))
+(let (($x183 (= ((_ extract 3 0) entropy_frame64) (_ bv0 4))))
+(and $x183 $x246 $x23 $x226 $x259 $x189 $x177)))))))))))))
+(check-sat)

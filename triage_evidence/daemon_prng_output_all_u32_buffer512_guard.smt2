@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun out_next_byte_offset32 () (_ BitVec 32))
+(declare-fun out_frame64 () (_ BitVec 64))
+(assert
+ (let (($x1288 (or (not (= ((_ extract 31 10) out_next_byte_offset32) (_ bv0 22))) (bvule (_ bv512 10) ((_ extract 9 0) out_next_byte_offset32)))))
+(let ((?x550 (concat ((_ extract 31 14) (bvmul (_ bv229 32) (concat (_ bv0 31) (ite $x1288 (_ bv1 1) (_ bv0 1))))) (bvnot ((_ extract 13 12) (bvmul (_ bv229 32) (concat (_ bv0 31) (ite $x1288 (_ bv1 1) (_ bv0 1)))))) ((_ extract 11 9) (bvmul (_ bv229 32) (concat (_ bv0 31) (ite $x1288 (_ bv1 1) (_ bv0 1))))) (bvnot ((_ extract 8 8) (bvmul (_ bv229 32) (concat (_ bv0 31) (ite $x1288 (_ bv1 1) (_ bv0 1)))))) ((_ extract 7 7) (bvmul (_ bv229 32) (concat (_ bv0 31) (ite $x1288 (_ bv1 1) (_ bv0 1))))) (bvnot ((_ extract 6 4) (bvmul (_ bv229 32) (concat (_ bv0 31) (ite $x1288 (_ bv1 1) (_ bv0 1)))))) (bvmul (_ bv5 4) (concat (_ bv0 3) (ite $x1288 (_ bv1 1) (_ bv0 1)))))))
+(let (($x1281 (not (= ?x550 (ite $x1288 (_ bv12693 32) (_ bv12656 32))))))
+(let ((?x4666 ((_ extract 38 0) out_frame64)))
+(let (($x3648 (bvule ?x4666 (_ bv429496792096 39))))
+(let (($x4200 (= ((_ extract 63 39) out_frame64) (_ bv0 25))))
+(let (($x4497 (or (not $x4200) (bvule (_ bv429496729600 39) ?x4666))))
+(let (($x4126 (= ((_ extract 3 0) out_frame64) (_ bv0 4))))
+(and $x4126 $x4497 $x4200 $x3648 $x1281))))))))))
+(check-sat)

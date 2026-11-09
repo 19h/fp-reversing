@@ -1,0 +1,10 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun destruct_SP64 () (_ BitVec 64))
+(assert
+ (let ((?x235 (bvadd (_ bv4611606851440093015 64) destruct_SP64)))
+(let ((?x170 (concat ((_ extract 63 62) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 61 47) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 46 46) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 45 44) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 43 43) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 42 32) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 31 31) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 30 22) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 21 21) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 20 20) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 19 19) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 18 11) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 10 10) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 9 7) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 6 6) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 5 4) (bvadd (_ bv11168 64) destruct_SP64))) ((_ extract 3 3) (bvadd (_ bv11168 64) destruct_SP64)) (bvnot ((_ extract 2 0) destruct_SP64)))))
+(let ((?x222 (concat (_ bv0 1) ((_ extract 61 47) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 45 44) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 42 32) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 30 22) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 20 20) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 18 11) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 9 7) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 1) ((_ extract 5 4) (bvadd (_ bv11168 63) ((_ extract 62 0) destruct_SP64))) (_ bv0 5))))
+(let (($x577 (= ((_ extract 3 0) destruct_SP64) (_ bv0 4))))
+(and $x577 (not (= (bvadd ?x222 ?x170) ?x235))))))))
+(check-sat)

@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun fallback_version32 () (_ BitVec 32))
+(assert
+ (let (($x597 (= ((_ extract 23 21) fallback_version32) (_ bv0 3))))
+(let (($x428 (not $x597)))
+(let (($x772 (or $x428 (bvule (_ bv30 5) ((_ extract 20 16) fallback_version32)))))
+(let ((?x798 (concat ((_ extract 31 15) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32)))) (bvnot ((_ extract 14 14) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32))))) ((_ extract 13 12) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32)))) (bvnot ((_ extract 11 11) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32))))) ((_ extract 10 10) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32)))) (bvnot ((_ extract 9 9) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32))))) ((_ extract 8 8) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32)))) (bvnot ((_ extract 7 6) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32))))) ((_ extract 5 2) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32)))) (bvnot ((_ extract 1 1) (bvmul (_ bv475 32) (ite $x772 (_ bv0 32) (_ bv1 32))))) (ite $x772 (_ bv0 1) (_ bv1 1)))))
+(let (($x1187 (not (= ?x798 (ite (= ((_ extract 23 16) fallback_version32) (_ bv30 8)) (_ bv19138 32) (_ bv19225 32))))))
+(let ((?x503 ((_ extract 31 24) fallback_version32)))
+(let (($x796 (= ?x503 (_ bv46 8))))
+(let ((?x784 ((_ extract 29 24) fallback_version32)))
+(let (($x316 (bvule (_ bv47 6) ?x784)))
+(let (($x477 (= ((_ extract 31 30) fallback_version32) (_ bv0 2))))
+(let (($x647 (not $x477)))
+(and (not (or $x647 $x316)) $x796 (not (or $x428 (= ((_ extract 20 16) fallback_version32) (_ bv31 5)))) $x1187)))))))))))))
+(check-sat)

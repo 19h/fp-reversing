@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun fallback_output_marker32 () (_ BitVec 32))
+(assert
+ (let (($x622 (or (not (= ((_ extract 31 30) fallback_output_marker32) (_ bv0 2))) (bvule (_ bv983302617 30) ((_ extract 29 0) fallback_output_marker32)))))
+(let ((?x170 (bvmul (_ bv7520 32) (ite (and $x622 (not (= fallback_output_marker32 (_ bv983302617 32)))) (_ bv1 32) (_ bv0 32)))))
+(let ((?x222 ((_ extract 3 3) ?x170)))
+(let ((?x372 (bvnot ((_ extract 4 4) ?x170))))
+(let ((?x336 ((_ extract 5 5) ?x170)))
+(let ((?x264 (bvnot ((_ extract 6 6) ?x170))))
+(let ((?x685 ((_ extract 7 7) ?x170)))
+(let ((?x228 (bvnot ((_ extract 10 8) ?x170))))
+(let ((?x172 ((_ extract 12 11) ?x170)))
+(let ((?x639 (bvnot ((_ extract 13 13) ?x170))))
+(let ((?x166 ((_ extract 31 14) ?x170)))
+(let ((?x810 (concat ?x166 ?x639 ?x172 ?x228 ?x685 ?x264 ?x336 ?x372 ?x222 (_ bv7 3))))
+(and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x810)) (ite (bvugt fallback_output_marker32 (_ bv983302617 32)) (_ bv14903 32) (_ bv10071 32))) true))))))))))))))
+(check-sat)

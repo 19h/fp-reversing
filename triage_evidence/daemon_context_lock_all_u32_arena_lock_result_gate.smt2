@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun ctxlock_result32 () (_ BitVec 32))
+(assert
+ (let (($x29 (= ctxlock_result32 (_ bv2336081489 32))))
+(let ((?x31 (ite $x29 (_ bv25160 32) (_ bv22012 32))))
+(let ((?x55 (bvnot ((_ extract 8 2) (bvmul (_ bv14260 32) (ite $x29 (_ bv1 32) (_ bv0 32)))))))
+(let ((?x30 (ite $x29 (_ bv1 32) (_ bv0 32))))
+(let ((?x35 (bvmul (_ bv14260 32) ?x30)))
+(let ((?x40 ((_ extract 9 9) ?x35)))
+(let ((?x53 (bvnot ((_ extract 10 10) ?x35))))
+(let ((?x42 ((_ extract 11 11) ?x35)))
+(let ((?x51 (bvnot ((_ extract 12 12) ?x35))))
+(let ((?x44 ((_ extract 13 13) ?x35)))
+(let ((?x49 (bvnot ((_ extract 14 14) ?x35))))
+(let ((?x46 ((_ extract 31 15) ?x35)))
+(not (= (concat ?x46 ?x49 ?x44 ?x51 ?x42 ?x53 ?x40 ?x55 (_ bv0 2)) ?x31)))))))))))))))
+(check-sat)

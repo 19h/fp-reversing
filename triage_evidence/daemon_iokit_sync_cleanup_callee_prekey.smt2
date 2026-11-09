@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun sync_record64 () (_ BitVec 64))
+(assert
+ (let ((?x105 ((_ extract 31 31) sync_record64)))
+(let ((?x106 (bvnot ?x105)))
+(let ((?x277 ((_ extract 3 3) sync_record64)))
+(let ((?x124 ((_ extract 20 20) sync_record64)))
+(let ((?x183 ((_ extract 30 30) sync_record64)))
+(let ((?x280 (concat ?x183 (_ bv3 2) ((_ extract 27 24) sync_record64) (_ bv7 3) ?x124 (_ bv1 1) ((_ extract 18 15) sync_record64) (_ bv15 4) ((_ extract 10 8) sync_record64) (_ bv15 4) ?x277 (_ bv1 1) ((_ extract 1 0) sync_record64) (_ bv0 1))))
+(let ((?x10 ((_ extract 31 0) sync_record64)))
+(let ((?x44 (bvmul (_ bv4294967295 32) ?x10)))
+(let ((?x228 (bvadd (_ bv1326941964 32) ?x44 ?x280)))
+(let ((?x295 ((_ extract 31 31) ?x228)))
+(let (($x518 (and (= ((_ extract 1 1) ?x228) ((_ extract 1 1) sync_record64)) (= (bvnot ((_ extract 2 2) ?x228)) ((_ extract 2 2) sync_record64)) (= (bvnot ((_ extract 3 3) ?x228)) (bvnot ?x277)) (= (bvnot ((_ extract 5 4) ?x228)) ((_ extract 5 4) sync_record64)) (= ((_ extract 7 6) ?x228) (bvnot ((_ extract 7 6) sync_record64))) (= ((_ extract 8 8) ?x228) ((_ extract 8 8) sync_record64)) (= (bvnot ((_ extract 9 9) ?x228)) (bvnot ((_ extract 9 9) sync_record64))) (= ((_ extract 10 10) ?x228) ((_ extract 10 10) sync_record64)) (= ((_ extract 11 11) ?x228) (bvnot ((_ extract 11 11) sync_record64))) (= (bvnot ((_ extract 14 12) ?x228)) ((_ extract 14 12) sync_record64)) (= ((_ extract 16 15) ?x228) ((_ extract 16 15) sync_record64)) (= (bvnot ((_ extract 18 17) ?x228)) (bvnot ((_ extract 18 17) sync_record64))) (= ((_ extract 19 19) ?x228) (bvnot ((_ extract 19 19) sync_record64))) (= ((_ extract 20 20) ?x228) ?x124) (= ((_ extract 21 21) ?x228) (bvnot ((_ extract 21 21) sync_record64))) (= (bvnot ((_ extract 22 22) ?x228)) ((_ extract 22 22) sync_record64)) (= ((_ extract 23 23) ?x228) (bvnot ((_ extract 23 23) sync_record64))) (= ((_ extract 24 24) ?x228) ((_ extract 24 24) sync_record64)) (= (bvnot ((_ extract 25 25) ?x228)) (bvnot ((_ extract 25 25) sync_record64))) (= ((_ extract 26 26) ?x228) ((_ extract 26 26) sync_record64)) (= (bvnot ((_ extract 27 27) ?x228)) (bvnot ((_ extract 27 27) sync_record64))) (= (bvnot ((_ extract 28 28) ?x228)) ((_ extract 28 28) sync_record64)) (= ((_ extract 29 29) ?x228) (bvnot ((_ extract 29 29) sync_record64))) (= (bvnot ((_ extract 30 30) ?x228)) (bvnot ?x183)) (= ?x295 ?x106))))
+(not $x518)))))))))))))
+(check-sat)

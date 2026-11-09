@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun registry_N32 () (_ BitVec 32))
+(declare-fun registry_i32 () (_ BitVec 32))
+(assert
+ (let (($x250 (= registry_i32 (bvadd (_ bv4294967295 32) registry_N32))))
+(let ((?x280 (ite $x250 (_ bv0 1) (_ bv1 1))))
+(let ((?x218 (bvmul (_ bv57479 32) (ite $x250 (_ bv1 32) (_ bv0 32)))))
+(let ((?x256 ((_ extract 2 1) ?x218)))
+(let ((?x273 (bvnot ((_ extract 3 3) ?x218))))
+(let ((?x266 ((_ extract 4 4) ?x218)))
+(let ((?x142 (bvnot ((_ extract 8 5) ?x218))))
+(let ((?x282 ((_ extract 13 9) ?x218)))
+(let ((?x246 (bvnot ((_ extract 14 14) ?x218))))
+(let ((?x275 ((_ extract 31 15) ?x218)))
+(let (($x447 (= (concat ?x275 ?x246 ?x282 ?x142 ?x266 ?x273 ?x256 ?x280) (ite $x250 (_ bv41326 32) (_ bv16873 32)))))
+(not $x447)))))))))))))
+(check-sat)

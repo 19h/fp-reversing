@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun frame_I64 () (_ BitVec 64))
+(declare-fun frame_A64 () (_ BitVec 64))
+(declare-fun frame_N32 () (_ BitVec 32))
+(declare-fun frame_R64 () (_ BitVec 64))
+(declare-fun frame_Q64 () (_ BitVec 64))
+(assert
+ (let (($x167 (and (distinct frame_I64 frame_I64) true)))
+(let (($x176 (and (distinct frame_A64 frame_A64) true)))
+(let (($x199 (and (distinct (_ bv4311981808 64) (_ bv4311981808 64)) true)))
+(let (($x174 (and (distinct frame_R64 frame_R64) true)))
+(let (($x256 (or (and (distinct (bvadd (_ bv18446744073709551296 64) frame_Q64) (bvsub frame_Q64 (_ bv320 64))) true) $x174 $x199 (and (distinct (concat (_ bv0 32) frame_N32) ((_ zero_extend 32) frame_N32)) true) $x176 $x167 (and (distinct (_ bv455266807388 64) (_ bv455266807388 64)) true) (and (distinct (_ bv455266809316 64) (_ bv455266809316 64)) true) (and (distinct (_ bv55095 64) (_ bv55095 64)) true))))
+(and true $x256)))))))
+(check-sat)

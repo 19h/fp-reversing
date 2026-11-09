@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun routes_phase32 () (_ BitVec 32))
+(assert
+ (let ((?x355 ((_ extract 4 2) routes_phase32)))
+(let ((?x26 ((_ extract 5 5) routes_phase32)))
+(let ((?x352 (bvnot ?x26)))
+(let ((?x24 ((_ extract 2 0) routes_phase32)))
+(let ((?x266 (bvnot ?x24)))
+(let ((?x409 ((_ extract 3 3) routes_phase32)))
+(let ((?x154 ((_ extract 5 4) routes_phase32)))
+(let ((?x335 (bvnot ?x154)))
+(let ((?x354 ((_ extract 1 0) routes_phase32)))
+(let ((?x401 (bvnot ((_ extract 2 2) routes_phase32))))
+(let ((?x159 (bvnot ((_ extract 4 4) routes_phase32))))
+(let ((?x332 (bvxor (bvadd (_ bv363270281 32) (concat (_ bv31013831 26) ?x26 ?x159 ?x409 ?x401 ?x354)) (bvadd (_ bv2399234604 32) (concat (_ bv62104109 26) ?x335 ?x409 ?x266)) (bvadd (_ bv4182744064 32) (concat (_ bv40540650 26) ?x352 ?x355 (bvnot ?x354))))))
+(not (= ?x332 (bvadd (_ bv1676271965 32) (concat (_ bv0 26) ((_ extract 5 0) routes_phase32))))))))))))))))))
+(check-sat)

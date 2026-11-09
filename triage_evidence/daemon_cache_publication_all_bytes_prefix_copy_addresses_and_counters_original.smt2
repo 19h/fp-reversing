@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun publication_i64 () (_ BitVec 64))
+(declare-fun publication_byte8 () (_ BitVec 8))
+(declare-fun publication_N64 () (_ BitVec 64))
+(assert
+ (let (($x2505 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) (bvadd (_ bv376670116 32) ((_ extract 31 0) publication_i64)))) ((_ extract 31 0) (bvsub (bvadd publication_i64 (_ bv1 64)) (_ bv3918297181 64)))) true)))
+(let (($x2751 (and (distinct ((_ extract 7 0) ((_ extract 31 0) (concat (_ bv0 56) publication_byte8))) publication_byte8) true)))
+(let ((?x2952 (bvadd (_ bv476741566464 64) publication_i64)))
+(let ((?x1758 ((_ extract 31 0) publication_i64)))
+(let ((?x3257 (concat (_ bv0 32) ?x1758)))
+(let ((?x3448 (bvadd (_ bv476741566464 64) ?x3257)))
+(let (($x2194 (or (and (distinct (bvadd (_ bv476741435392 64) publication_i64) (bvadd (_ bv476741435392 64) publication_i64)) true) (and (distinct ?x3448 ?x2952) true) $x2751 (and (distinct (bvadd (_ bv1 64) publication_i64) (bvadd publication_i64 (_ bv1 64))) true) $x2505)))
+(let (($x1925 (bvule publication_N64 (_ bv20 64))))
+(let (($x16 (bvuge publication_N64 (_ bv1 64))))
+(let (($x2352 (and $x16 $x1925 (bvult publication_i64 publication_N64))))
+(and $x2352 $x2194))))))))))))
+(check-sat)

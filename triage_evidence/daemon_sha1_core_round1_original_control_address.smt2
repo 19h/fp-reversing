@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun sha1_helper_index32 () (_ BitVec 32))
+(assert
+ (let (($x4919 (= ((_ extract 31 6) sha1_helper_index32) (_ bv0 26))))
+(let (($x4881 (not $x4919)))
+(let (($x4385 (or $x4881 (bvule (_ bv39 6) ((_ extract 5 0) sha1_helper_index32)))))
+(let ((?x2955 (bvmul (_ bv2 2) (ite (and (bvule sha1_helper_index32 (_ bv4294967294 32)) $x4385) (_ bv0 2) (_ bv1 2)))))
+(let ((?x3534 (bvmul (_ bv98 32) (ite (and (bvule sha1_helper_index32 (_ bv4294967294 32)) $x4385) (_ bv0 32) (_ bv1 32)))))
+(let ((?x3899 ((_ extract 31 31) ?x3534)))
+(let ((?x5180 (concat ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ?x3899 ((_ extract 31 15) ?x3534) (bvnot ((_ extract 14 14) ?x3534)) ((_ extract 13 12) ?x3534) (bvnot ((_ extract 11 11) ?x3534)) ((_ extract 10 10) ?x3534) (bvnot ((_ extract 9 9) ?x3534)) ((_ extract 8 6) ?x3534) (bvnot ((_ extract 5 5) ?x3534)) ((_ extract 4 3) ?x3534) (bvnot ((_ extract 2 2) ?x3534)) ?x2955 (_ bv0 3))))
+(let (($x13672 (not (= ?x5180 (bvadd (_ bv18446744069397569808 64) (ite $x4385 (_ bv4312133648 64) (_ bv4312133920 64)))))))
+(let ((?x1690 ((_ extract 5 0) sha1_helper_index32)))
+(let (($x10621 (bvule ?x1690 (_ bv39 6))))
+(let (($x4402 (not (= ((_ extract 31 5) sha1_helper_index32) (_ bv0 27)))))
+(let (($x3202 (or $x4402 (bvule (_ bv20 5) ((_ extract 4 0) sha1_helper_index32)))))
+(and $x3202 $x4919 $x10621 $x13672))))))))))))))
+(check-sat)

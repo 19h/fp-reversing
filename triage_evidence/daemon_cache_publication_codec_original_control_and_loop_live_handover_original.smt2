@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun publication_N64 () (_ BitVec 64))
+(assert
+ (let (($x1725 (and (distinct (_ bv4311981808 64) (_ bv4311981808 64)) true)))
+(let (($x1537 (and (distinct (_ bv476741435392 64) (_ bv476741435392 64)) true)))
+(let (($x902 (= publication_N64 (_ bv1 64))))
+(let ((?x2155 (ite $x902 (_ bv4312189440 64) (_ bv4312189416 64))))
+(let ((?x1407 (bvmul (_ bv61 32) (ite $x902 (_ bv1 32) (_ bv0 32)))))
+(let ((?x1365 ((_ extract 31 31) ?x1407)))
+(let ((?x1457 (concat ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ?x1365 ((_ extract 31 15) ?x1407) (bvnot ((_ extract 14 13) ?x1407)) ((_ extract 12 11) ?x1407) (bvnot ((_ extract 10 10) ?x1407)) ((_ extract 9 9) ?x1407) (bvnot ((_ extract 8 8) ?x1407)) ((_ extract 7 7) ?x1407) (bvnot ((_ extract 6 6) ?x1407)) ((_ extract 5 5) ?x1407) (bvnot (bvmul (_ bv29 5) (ite $x902 (_ bv1 5) (_ bv0 5)))) (_ bv0 3))))
+(let ((?x1797 (bvadd (_ bv4311981808 64) ?x1457)))
+(let (($x1700 (or (and (distinct ?x1797 ?x2155) true) $x1537 (and (distinct (_ bv476741500928 64) (_ bv476741500928 64)) true) (and (distinct (_ bv7001135790988276114 64) (_ bv7001135790988276114 64)) true) (and (distinct (_ bv2749298792997049622 64) (_ bv2749298792997049622 64)) true) (and (distinct (_ bv6502258558015995404 64) (_ bv6502258558015995404 64)) true) (and (distinct (_ bv15195614794701553914 64) (_ bv15195614794701553914 64)) true) (and (distinct (_ bv13219039422877195481 64) (_ bv13219039422877195481 64)) true) (and (distinct (_ bv15740482210449267284 64) (_ bv15740482210449267284 64)) true) (and (distinct (_ bv980765719290952102 64) (_ bv980765719290952102 64)) true) (and (distinct (_ bv490382859645476051 64) (_ bv490382859645476051 64)) true) (and (distinct (_ bv6286985887955548206 64) (_ bv6286985887955548206 64)) true) (and (distinct (_ bv2520610041808951837 64) (_ bv2520610041808951837 64)) true) (and (distinct (_ bv968412676342069686 64) (_ bv968412676342069686 64)) true) (and (distinct (_ bv11497777423887937841 64) (_ bv11497777423887937841 64)) true) (and (distinct (_ bv1295395701 32) ((_ extract 31 0) (_ bv1295395701 64))) true) (and (distinct (_ bv2250373430 32) ((_ extract 31 0) (_ bv2250373430 64))) true) (and (distinct (_ bv2044592985 32) ((_ extract 31 0) (_ bv2044592985 64))) true) (and (distinct (_ bv379073082 32) ((_ extract 31 0) (_ bv379073082 64))) true) (and (distinct (_ bv4312557524 64) (_ bv4312557524 64)) true) (and (distinct (_ bv4312564328 64) (_ bv4312564328 64)) true) (and (distinct (_ bv61 32) ((_ extract 31 0) (_ bv61 64))) true) (and (distinct (_ bv25951 32) ((_ extract 31 0) (_ bv25951 64))) true) $x1725)))
+(let (($x1925 (bvule publication_N64 (_ bv20 64))))
+(let (($x16 (bvuge publication_N64 (_ bv1 64))))
+(let (($x1964 (and $x16 $x1925)))
+(and $x1964 $x1700))))))))))))))
+(check-sat)

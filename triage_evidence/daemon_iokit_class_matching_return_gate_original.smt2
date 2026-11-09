@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun matching_return_pointer64 () (_ BitVec 64))
+(assert
+ (let (($x459 (= matching_return_pointer64 (_ bv0 64))))
+(let ((?x488 (ite $x459 (_ bv0 1) (_ bv1 1))))
+(let ((?x479 (bvnot ((_ extract 3 1) (bvmul (_ bv27 32) (ite $x459 (_ bv0 32) (_ bv1 32)))))))
+(let ((?x464 (bvmul (_ bv27 32) (ite $x459 (_ bv0 32) (_ bv1 32)))))
+(let ((?x468 ((_ extract 5 4) ?x464)))
+(let ((?x477 (bvnot ((_ extract 10 6) ?x464))))
+(let ((?x470 ((_ extract 12 11) ?x464)))
+(let ((?x475 (bvnot ((_ extract 13 13) ?x464))))
+(let ((?x472 ((_ extract 31 14) ?x464)))
+(let ((?x489 (concat ?x472 ?x475 ?x470 ?x477 ?x468 ?x479 ?x488)))
+(let (($x462 (and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x489)) (ite (and (distinct matching_return_pointer64 (_ bv0 64)) true) (_ bv10197 32) (_ bv10190 32))) true)))
+(or (and (distinct matching_return_pointer64 matching_return_pointer64) true) $x462)))))))))))))
+(check-sat)

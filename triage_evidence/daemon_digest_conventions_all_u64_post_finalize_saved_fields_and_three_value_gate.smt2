@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun conventions_output64 () (_ BitVec 64))
+(declare-fun conventions_B64 () (_ BitVec 64))
+(declare-fun conventions_A64 () (_ BitVec 64))
+(assert
+ (let (($x321 (and (not (= conventions_A64 (_ bv0 64))) (not (= conventions_B64 (_ bv0 64))) (not (= conventions_output64 (_ bv0 64))))))
+(let (($x247 (= conventions_A64 (_ bv0 64))))
+(let (($x245 (= conventions_B64 (_ bv0 64))))
+(let (($x75 (= conventions_output64 (_ bv0 64))))
+(let (($x249 (or $x75 $x245 $x247)))
+(let ((?x275 (bvnot (bvmul (_ bv978 10) (ite $x249 (_ bv0 10) (_ bv1 10))))))
+(let ((?x253 (bvmul (_ bv2002 32) (ite $x249 (_ bv0 32) (_ bv1 32)))))
+(let ((?x256 ((_ extract 10 10) ?x253)))
+(let ((?x261 (bvnot ((_ extract 13 11) ?x253))))
+(let ((?x258 ((_ extract 31 14) ?x253)))
+(not (= (concat ?x258 ?x261 ?x256 ?x275) (ite $x321 (_ bv15405 32) (_ bv15359 32)))))))))))))))
+(check-sat)

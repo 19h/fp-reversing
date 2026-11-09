@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun vmclean_kernel_page_shift_byte8 () (_ BitVec 8))
+(declare-fun vmclean_address64 () (_ BitVec 64))
+(declare-fun vmclean_size64 () (_ BitVec 64))
+(assert
+ (let ((?x492 (bvnot (bvshl (_ bv4294967295 32) (concat (_ bv0 27) ((_ extract 4 0) vmclean_kernel_page_shift_byte8))))))
+(let ((?x487 (concat (_ bv0 32) ?x492)))
+(let ((?x497 (bvnot (bvor (bvnot vmclean_address64) ?x487))))
+(let ((?x516 (bvnot (bvor (bvnot (bvadd vmclean_address64 vmclean_size64 ?x487)) ?x487))))
+(let (($x1558 (not (= (or (not (bvule ?x497 ?x516)) (= ?x516 ?x497)) (bvule ?x516 ?x497)))))
+(let ((?x488 (ite (bvule vmclean_address64 (bvadd vmclean_address64 vmclean_size64)) (_ bv1 1) (_ bv0 1))))
+(let ((?x1516 ((_ extract 64 64) (bvadd (concat (_ bv0 1) vmclean_address64) (concat (_ bv0 1) vmclean_size64)))))
+(or (= ?x1516 ?x488) $x1558)))))))))
+(check-sat)

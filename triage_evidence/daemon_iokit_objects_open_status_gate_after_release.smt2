@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun API_status32 () (_ BitVec 32))
+(assert
+ (let (($x67 (= API_status32 (_ bv0 32))))
+(let ((?x195 (ite $x67 (_ bv43883 32) (_ bv43867 32))))
+(let ((?x180 (concat ((_ extract 31 31) API_status32) (bvnot ((_ extract 30 23) API_status32)) ((_ extract 22 22) API_status32) (bvnot ((_ extract 21 15) API_status32)) ((_ extract 14 13) API_status32) (bvnot ((_ extract 12 10) API_status32)) ((_ extract 9 9) API_status32) (bvnot ((_ extract 8 8) API_status32)) ((_ extract 7 6) API_status32) (bvnot ((_ extract 5 4) API_status32)) ((_ extract 3 3) API_status32) (bvnot ((_ extract 2 0) API_status32)))))
+(let ((?x178 ((_ extract 2 0) API_status32)))
+(let ((?x176 ((_ extract 5 4) API_status32)))
+(let ((?x174 ((_ extract 8 8) API_status32)))
+(let ((?x172 ((_ extract 12 10) API_status32)))
+(let ((?x170 ((_ extract 21 15) API_status32)))
+(let ((?x168 ((_ extract 30 23) API_status32)))
+(let ((?x212 (concat ?x168 (_ bv0 1) ?x170 (_ bv0 2) ?x172 (_ bv0 1) ?x174 (_ bv0 2) ?x176 (_ bv0 1) ?x178 (_ bv0 1))))
+(let (($x210 (= ?x212 (bvadd (_ bv2143264055 32) (bvmul (_ bv4294967295 32) ?x180)))))
+(let ((?x303 (concat (_ bv685 26) (ite $x210 (_ bv1 1) (_ bv0 1)) (ite $x210 (_ bv0 1) (_ bv1 1)) (_ bv11 4))))
+(not (= ?x303 ?x195)))))))))))))))
+(check-sat)

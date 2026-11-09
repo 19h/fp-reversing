@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun handoff_D32 () (_ BitVec 32))
+(assert
+ (let ((?x138 ((_ extract 0 0) handoff_D32)))
+(let ((?x144 ((_ extract 4 4) handoff_D32)))
+(let ((?x162 ((_ extract 6 6) handoff_D32)))
+(let ((?x61 ((_ extract 10 9) handoff_D32)))
+(let ((?x160 ((_ extract 16 14) handoff_D32)))
+(let ((?x166 ((_ extract 21 18) handoff_D32)))
+(let ((?x142 ((_ extract 25 24) handoff_D32)))
+(let ((?x139 ((_ extract 27 27) handoff_D32)))
+(let ((?x145 (concat (_ bv0 3) ?x139 (_ bv0 1) ?x142 (_ bv0 2) ?x166 (_ bv0 1) ?x160 (_ bv0 3) ?x61 (_ bv0 2) ?x162 (_ bv0 1) ?x144 (_ bv0 3) ?x138 (_ bv0 1))))
+(let ((?x136 (bvmul (_ bv4294967295 32) ?x145)))
+(let ((?x153 (bvadd (_ bv2336081489 32) handoff_D32 ?x136)))
+(and true (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x153)) (bvxor handoff_D32 (_ bv2336081489 32))) true))))))))))))))
+(check-sat)

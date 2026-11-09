@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rw_record64 () (_ BitVec 64))
+(assert
+ (let ((?x185 (bvnot ((_ extract 31 30) rw_record64))))
+(let ((?x110 ((_ extract 3 3) rw_record64)))
+(let ((?x104 ((_ extract 20 17) rw_record64)))
+(let ((?x32 ((_ extract 29 29) rw_record64)))
+(let ((?x103 (concat (_ bv0 1) ?x32 (_ bv0 2) ((_ extract 26 24) rw_record64) (_ bv0 3) ?x104 (_ bv0 1) ((_ extract 15 12) rw_record64) (_ bv0 1) ((_ extract 10 6) rw_record64) (_ bv0 2) ?x110 (_ bv0 4))))
+(let ((?x91 (bvadd (_ bv3638626359 32) (bvmul (_ bv4294967295 32) ((_ extract 31 0) rw_record64)) ?x103)))
+(let ((?x143 ((_ extract 1 0) rw_record64)))
+(let ((?x145 (bvmul (_ bv3 2) ?x143)))
+(let (($x611 (and (= ?x145 (bvadd (_ bv1 2) (bvnot ?x143))) (= (bvnot ((_ extract 2 2) ?x91)) ((_ extract 2 2) rw_record64)) (= (bvnot ((_ extract 3 3) ?x91)) (bvnot ?x110)) (= (bvnot ((_ extract 5 4) ?x91)) ((_ extract 5 4) rw_record64)) (= ((_ extract 7 6) ?x91) ((_ extract 7 6) rw_record64)) (= (bvnot ((_ extract 8 8) ?x91)) (bvnot ((_ extract 8 8) rw_record64))) (= ((_ extract 10 9) ?x91) ((_ extract 10 9) rw_record64)) (= ((_ extract 11 11) ?x91) (bvnot ((_ extract 11 11) rw_record64))) (= (bvnot ((_ extract 14 12) ?x91)) (bvnot ((_ extract 14 12) rw_record64))) (= ((_ extract 15 15) ?x91) ((_ extract 15 15) rw_record64)) (= (bvnot ((_ extract 16 16) ?x91)) ((_ extract 16 16) rw_record64)) (= ((_ extract 20 17) ?x91) ?x104) (= (bvnot ((_ extract 21 21) ?x91)) ((_ extract 21 21) rw_record64)) (= ((_ extract 22 22) ?x91) (bvnot ((_ extract 22 22) rw_record64))) (= (bvnot ((_ extract 23 23) ?x91)) ((_ extract 23 23) rw_record64)) (= ((_ extract 25 24) ?x91) ((_ extract 25 24) rw_record64)) (= (bvnot ((_ extract 26 26) ?x91)) (bvnot ((_ extract 26 26) rw_record64))) (= ((_ extract 28 27) ?x91) (bvnot ((_ extract 28 27) rw_record64))) (= ((_ extract 29 29) ?x91) ?x32) (= ((_ extract 31 30) ?x91) ?x185))))
+(let (($x630 (not $x611)))
+(let (($x157 (= ((_ extract 2 0) rw_record64) (_ bv0 3))))
+(and $x157 $x630)))))))))))))
+(check-sat)

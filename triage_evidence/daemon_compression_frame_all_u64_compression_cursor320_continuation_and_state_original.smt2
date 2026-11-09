@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun frame_state3 () (_ BitVec 32))
+(declare-fun frame_state2 () (_ BitVec 32))
+(declare-fun frame_state1 () (_ BitVec 32))
+(declare-fun frame_state0 () (_ BitVec 32))
+(declare-fun frame_Q64 () (_ BitVec 64))
+(declare-fun frame_R64 () (_ BitVec 64))
+(assert
+ (let (($x148 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) frame_state3)) frame_state3) true)))
+(let (($x145 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) frame_state2)) frame_state2) true)))
+(let (($x199 (and (distinct (_ bv4311981808 64) (_ bv4311981808 64)) true)))
+(let (($x174 (and (distinct frame_R64 frame_R64) true)))
+(let (($x123 (or $x174 (and (distinct (bvadd (_ bv320 64) frame_Q64) (bvadd frame_Q64 (_ bv320 64))) true) (and (distinct (bvadd (_ bv455266810352 64) frame_Q64) (bvadd (_ bv455266810352 64) frame_Q64)) true) $x199 (and (distinct ((_ extract 31 0) (concat (_ bv0 32) frame_state0)) frame_state0) true) (and (distinct ((_ extract 31 0) (concat (_ bv0 32) frame_state1)) frame_state1) true) $x145 $x148 $x145 $x148)))
+(and true $x123)))))))
+(check-sat)

@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun init_candidate32 () (_ BitVec 32))
+(declare-fun init_counter64 () (_ BitVec 64))
+(assert
+ (let ((?x1712 ((_ extract 7 0) init_candidate32)))
+(let (($x1988 (and (distinct ((_ extract 7 0) ((_ extract 31 0) ((_ zero_extend 32) init_candidate32))) ?x1712) true)))
+(let (($x1174 (= init_counter64 (_ bv47 64))))
+(let ((?x608 (ite $x1174 (_ bv18424 32) (_ bv18655 32))))
+(let ((?x924 (bvmul (_ bv7 3) (ite $x1174 (_ bv0 3) (_ bv1 3)))))
+(let ((?x1636 (bvnot ((_ extract 10 3) (bvmul (_ bv3879 32) (ite $x1174 (_ bv0 32) (_ bv1 32)))))))
+(let ((?x531 (bvmul (_ bv3879 32) (ite $x1174 (_ bv0 32) (_ bv1 32)))))
+(let ((?x1538 ((_ extract 13 11) ?x531)))
+(let ((?x1904 (bvnot ((_ extract 14 14) ?x531))))
+(let ((?x317 ((_ extract 31 15) ?x531)))
+(let (($x539 (or (and (distinct (bvadd (_ bv1 64) init_counter64) (bvadd init_counter64 (_ bv1 64))) true) (and (distinct ((_ extract 31 0) (concat (_ bv0 32) ?x317 ?x1904 ?x1538 ?x1636 ?x924)) ?x608) true) (and (distinct (bvadd (_ bv446676941344 64) init_counter64) (bvadd (_ bv446676941344 64) init_counter64)) true) $x1988)))
+(and true $x539)))))))))))))
+(check-sat)

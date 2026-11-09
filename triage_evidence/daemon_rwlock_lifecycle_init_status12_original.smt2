@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun rw_init_status32 () (_ BitVec 32))
+(assert
+ (let (($x412 (= rw_init_status32 (_ bv12 32))))
+(let ((?x390 (ite $x412 (_ bv28543 32) (_ bv15295 32))))
+(let ((?x417 (bvmul (_ bv21696 32) (ite $x412 (_ bv1 32) (_ bv0 32)))))
+(let ((?x415 ((_ extract 6 6) ?x417)))
+(let ((?x426 (bvnot ((_ extract 9 7) ?x417))))
+(let ((?x419 ((_ extract 10 10) ?x417)))
+(let ((?x424 (bvnot ((_ extract 13 11) ?x417))))
+(let ((?x421 ((_ extract 31 14) ?x417)))
+(let ((?x437 (concat ?x421 ?x424 ?x419 ?x426 ?x415 (_ bv63 6))))
+(let ((?x381 ((_ extract 31 0) ((_ zero_extend 32) ?x437))))
+(and (distinct ?x381 ?x390) true))))))))))))
+(check-sat)

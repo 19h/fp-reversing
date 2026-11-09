@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun sync_controller_B64 () (_ BitVec 64))
+(declare-fun sync_SP64 () (_ BitVec 64))
+(declare-fun sync_controller_A64 () (_ BitVec 64))
+(assert
+ (let ((?x314 (bvadd (bvsub sync_controller_A64 (bvadd sync_SP64 (_ bv8 64))) sync_controller_B64)))
+(let ((?x379 ((_ extract 0 0) sync_controller_B64)))
+(let ((?x378 ((_ extract 0 0) sync_controller_A64)))
+(let ((?x375 ((_ extract 0 0) sync_SP64)))
+(let ((?x450 (bvadd ?x375 ?x378 ?x379)))
+(let ((?x267 (bvmul (_ bv18446744073709551615 64) sync_SP64)))
+(let ((?x294 (bvadd (_ bv18446744073709551608 64) sync_controller_A64 sync_controller_B64 ?x267)))
+(let ((?x451 (concat ((_ extract 63 63) ?x294) (bvnot ((_ extract 62 60) ?x294)) ((_ extract 59 58) ?x294) (bvnot ((_ extract 57 54) ?x294)) ((_ extract 53 53) ?x294) (bvnot ((_ extract 52 52) ?x294)) ((_ extract 51 47) ?x294) (bvnot ((_ extract 46 46) ?x294)) ((_ extract 45 43) ?x294) (bvnot ((_ extract 42 41) ?x294)) ((_ extract 40 38) ?x294) (bvnot ((_ extract 37 37) ?x294)) ((_ extract 36 32) ?x294) (bvnot ((_ extract 31 31) ?x294)) ((_ extract 30 28) ?x294) (bvnot ((_ extract 27 25) ?x294)) ((_ extract 24 24) ?x294) (bvnot ((_ extract 23 23) ?x294)) ((_ extract 22 22) ?x294) (bvnot ((_ extract 21 21) ?x294)) ((_ extract 20 20) ?x294) (bvnot ((_ extract 19 17) ?x294)) ((_ extract 16 16) ?x294) (bvnot ((_ extract 15 14) ?x294)) ((_ extract 13 13) ?x294) (bvnot ((_ extract 12 12) ?x294)) ((_ extract 11 9) ?x294) (bvnot ((_ extract 8 7) ?x294)) ((_ extract 6 6) ?x294) (bvnot ((_ extract 5 5) ?x294)) ((_ extract 4 3) ?x294) (bvnot ((_ extract 2 1) ?x294)) ?x450)))
+(let (($x325 (and (distinct (bvmul (_ bv173855951 64) ?x451) (bvmul (bvxor ?x314 (_ bv8345247215164248486 64)) (_ bv173855951 64))) true)))
+(or $x325 $x325)))))))))))
+(check-sat)

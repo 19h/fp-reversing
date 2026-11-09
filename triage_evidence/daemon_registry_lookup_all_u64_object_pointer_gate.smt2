@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun registry_word64 () (_ BitVec 64))
+(assert
+ (let (($x328 (= registry_word64 (_ bv0 64))))
+(let ((?x455 (ite $x328 (_ bv18012 32) (_ bv18035 32))))
+(let ((?x493 (bvmul (_ bv3 2) (ite $x328 (_ bv0 2) (_ bv1 2)))))
+(let ((?x467 (bvnot ((_ extract 4 2) (bvmul (_ bv47 32) (ite $x328 (_ bv0 32) (_ bv1 32)))))))
+(let ((?x473 (bvmul (_ bv47 32) (ite $x328 (_ bv0 32) (_ bv1 32)))))
+(let ((?x463 ((_ extract 5 5) ?x473)))
+(let ((?x465 (bvnot ((_ extract 6 6) ?x473))))
+(let ((?x462 ((_ extract 8 7) ?x473)))
+(let ((?x470 (bvnot ((_ extract 10 9) ?x473))))
+(let ((?x474 ((_ extract 13 11) ?x473)))
+(let ((?x449 (bvnot ((_ extract 14 14) ?x473))))
+(let ((?x476 ((_ extract 31 15) ?x473)))
+(not (= (concat ?x476 ?x449 ?x474 ?x470 ?x462 ?x465 ?x463 ?x467 ?x493) ?x455)))))))))))))))
+(check-sat)

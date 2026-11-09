@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun ctxlock_record64 () (_ BitVec 64))
+(assert
+ (let ((?x75 ((_ extract 12 11) ctxlock_record64)))
+(let ((?x73 ((_ extract 18 18) ctxlock_record64)))
+(let ((?x72 ((_ extract 21 20) ctxlock_record64)))
+(let ((?x70 ((_ extract 28 28) ctxlock_record64)))
+(let ((?x62 (concat (_ bv3 2) ?x70 (_ bv1 1) ((_ extract 26 23) ctxlock_record64) (_ bv1 1) ?x72 (_ bv1 1) ?x73 (_ bv1 1) ((_ extract 16 14) ctxlock_record64) (_ bv1 1) ?x75 (_ bv255 8) ((_ extract 2 0) ctxlock_record64) (_ bv0 1))))
+(let ((?x61 (bvadd (_ bv2545276936 32) (bvmul (_ bv4294967295 32) ((_ extract 31 0) ctxlock_record64)) ?x62)))
+(let ((?x94 (bvnot ((_ extract 31 31) ?x61))))
+(let ((?x121 (bvadd (bvmul (_ bv3 2) ((_ extract 1 0) ctxlock_record64)) (concat ((_ extract 0 0) ctxlock_record64) (_ bv0 1)))))
+(let ((?x122 (bvnot ?x121)))
+(let (($x24 (and (= ?x122 (bvnot ((_ extract 1 0) ctxlock_record64))) (= ((_ extract 2 2) ?x61) ((_ extract 2 2) ctxlock_record64)) (= ((_ extract 3 3) ?x61) (bvnot ((_ extract 3 3) ctxlock_record64))) (= (bvnot ((_ extract 7 4) ?x61)) ((_ extract 7 4) ctxlock_record64)) (= ((_ extract 8 8) ?x61) (bvnot ((_ extract 8 8) ctxlock_record64))) (= (bvnot ((_ extract 10 9) ?x61)) ((_ extract 10 9) ctxlock_record64)) (= (bvnot ((_ extract 12 11) ?x61)) (bvnot ?x75)) (= ((_ extract 13 13) ?x61) (bvnot ((_ extract 13 13) ctxlock_record64))) (= (bvnot ((_ extract 14 14) ?x61)) (bvnot ((_ extract 14 14) ctxlock_record64))) (= ((_ extract 16 15) ?x61) ((_ extract 16 15) ctxlock_record64)) (= (bvnot ((_ extract 17 17) ?x61)) ((_ extract 17 17) ctxlock_record64)) (= ((_ extract 18 18) ?x61) ?x73) (= (bvnot ((_ extract 19 19) ?x61)) ((_ extract 19 19) ctxlock_record64)) (= ((_ extract 21 20) ?x61) ?x72) (= ((_ extract 22 22) ?x61) (bvnot ((_ extract 22 22) ctxlock_record64))) (= ((_ extract 25 23) ?x61) ((_ extract 25 23) ctxlock_record64)) (= (bvnot ((_ extract 26 26) ?x61)) (bvnot ((_ extract 26 26) ctxlock_record64))) (= ((_ extract 27 27) ?x61) (bvnot ((_ extract 27 27) ctxlock_record64))) (= (bvnot ((_ extract 28 28) ?x61)) (bvnot ?x70)) (= (bvnot ((_ extract 29 29) ?x61)) ((_ extract 29 29) ctxlock_record64)) (= ((_ extract 30 30) ?x61) (bvnot ((_ extract 30 30) ctxlock_record64))) (= ?x94 (bvnot ((_ extract 31 31) ctxlock_record64))))))
+(not $x24))))))))))))
+(check-sat)

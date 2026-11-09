@@ -1,0 +1,16 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun cleanup_saved_18 () (_ BitVec 64))
+(declare-fun cleanup_saved_10 () (_ BitVec 64))
+(declare-fun cleanup_saved_28 () (_ BitVec 64))
+(declare-fun cleanup_saved_20 () (_ BitVec 64))
+(declare-fun cleanup_saved_38 () (_ BitVec 64))
+(declare-fun cleanup_saved_30 () (_ BitVec 64))
+(declare-fun cleanup_saved_48 () (_ BitVec 64))
+(declare-fun cleanup_saved_40 () (_ BitVec 64))
+(declare-fun cleanup_saved_58 () (_ BitVec 64))
+(declare-fun cleanup_saved_50 () (_ BitVec 64))
+(declare-fun cleanup_epilogue_X0 () (_ BitVec 64))
+(assert
+ (or (and (distinct (_ bv446676729856 64) (_ bv446676729856 64)) true) (and (distinct cleanup_epilogue_X0 cleanup_epilogue_X0) true) (and (distinct cleanup_saved_50 cleanup_saved_50) true) (and (distinct cleanup_saved_58 cleanup_saved_58) true) (and (distinct cleanup_saved_40 cleanup_saved_40) true) (and (distinct cleanup_saved_48 cleanup_saved_48) true) (and (distinct cleanup_saved_30 cleanup_saved_30) true) (and (distinct cleanup_saved_38 cleanup_saved_38) true) (and (distinct cleanup_saved_20 cleanup_saved_20) true) (and (distinct cleanup_saved_28 cleanup_saved_28) true) (and (distinct cleanup_saved_10 cleanup_saved_10) true) (and (distinct cleanup_saved_18 cleanup_saved_18) true)))
+(check-sat)

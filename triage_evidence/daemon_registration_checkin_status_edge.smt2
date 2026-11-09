@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun status () (_ BitVec 32))
+(define-fun idx () (_ BitVec 32) (bvxor #x00002e4c (bvmul (ite (= status #x00000000) #x00000001 #x00000000)
+ (bvxor (bvand (bvsub #x00002e4c #x20542f0e) #x20542ef7) #x0000c520))))
+(assert (not (= idx (ite (= status #x00000000) #x0000c55a #x00002e4c))))
+(check-sat)

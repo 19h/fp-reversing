@@ -1,0 +1,18 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun pred_raw32 () (_ BitVec 32))
+(declare-fun pred_input32 () (_ BitVec 32))
+(assert
+ (let ((?x435 ((_ extract 0 0) pred_input32)))
+(let ((?x560 (bvadd (_ bv34858300 32) pred_input32)))
+(let ((?x569 ((_ extract 7 2) ?x560)))
+(let ((?x567 ((_ extract 13 9) ?x560)))
+(let ((?x535 ((_ extract 20 16) ?x560)))
+(let ((?x599 ((_ extract 27 24) ?x560)))
+(let ((?x595 ((_ extract 30 30) ?x560)))
+(let ((?x519 (concat (_ bv1 1) ?x595 (_ bv3 2) ?x599 (_ bv7 3) ?x535 (_ bv3 2) ?x567 (_ bv1 1) ?x569 (_ bv1 1) ?x435)))
+(let ((?x455 (bvmul (bvxor (bvadd (_ bv7172 32) pred_input32) (bvadd (_ bv1292596700 32) ?x519)) (ite (= pred_raw32 (_ bv1958911766 32)) (_ bv0 32) (_ bv1 32)))))
+(let ((?x596 (concat (_ bv1 33) ?x595 (_ bv3 2) ?x599 (_ bv7 3) ?x535 (_ bv3 2) ?x567 (_ bv1 1) ?x569 (_ bv1 1) ?x435)))
+(let (($x588 (and (= ((_ extract 31 0) ?x596) (_ bv25115 32)) (= ((_ extract 31 0) (concat (_ bv0 32) (bvxor pred_input32 ?x455))) (_ bv39895 32)))))
+(and true $x588)))))))))))))
+(check-sat)
