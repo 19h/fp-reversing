@@ -115,6 +115,7 @@ def main():
     if exists(BASE/'daemon_reader_record_replacement_report.md'):reports.add(BASE/'daemon_reader_record_replacement_report.md')
     if exists(BASE/'daemon_reader_u64_codec_report.md'):reports.add(BASE/'daemon_reader_u64_codec_report.md')
     if exists(BASE/'daemon_reader_outer_lifecycle_report.md'):reports.add(BASE/'daemon_reader_outer_lifecycle_report.md')
+    if exists(BASE/'daemon_reader_nested_input_report.md'):reports.add(BASE/'daemon_reader_nested_input_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1429,6 +1430,10 @@ def main():
         outer_lifecycle_quality=json.loads(read(ROOT/'daemon_reader_outer_lifecycle_quality_gates.json'))
         manifest['validation']['daemon_reader_outer_lifecycle_increment_checks']=outer_lifecycle_quality['verified_counts']
         manifest['validation']['daemon_reader_outer_lifecycle_static_scope']=outer_lifecycle_quality['static_scope']
+    if exists(ROOT/'daemon_reader_nested_input_quality_gates.json'):
+        nested_input_quality=json.loads(read(ROOT/'daemon_reader_nested_input_quality_gates.json'))
+        manifest['validation']['daemon_reader_nested_input_increment_checks']=nested_input_quality['verified_counts']
+        manifest['validation']['daemon_reader_nested_input_static_scope']=nested_input_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

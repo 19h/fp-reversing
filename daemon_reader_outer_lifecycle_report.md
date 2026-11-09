@@ -151,3 +151,6 @@ QG5: Composed versus isolated gate conditions, encoded extent versus result, hea
 QG6: Source bytes, daemon/fixup/bank identities, exact retained queries, altered-ledger rejection and original trace preservation are independently checked. Prior conditional contracts remain identified as dependencies.
 
 QG7: High/medium/low continuation opportunities are bounded and tied to evidence that would close each named frontier. No complete native parser, cleanup, ownership, PAC, external exposure or daemon-kext pairing result is claimed.
+
+
+[Matched-record span into N19](daemon_reader_nested_input_report.md): encoded key7615e796 in OBJ+0 yields a matched record whose BUF+10/P span supplies the N19 pointer/extent; exact fit is u64(P)+10<=SIZE. The span forest derives actual phase4b1d. F is u32[OBJ+10]-1d45dafb, so selected N19 admission is exact context-word equality, independent of flag lowbit. Twenty-five ranges/452 instructions plus386 preparation instructions,38 fixups/36 slot matches,814 modeled PCs,27 new and58 replayed UNSAT queries,one SAT interpretation counterexample and six controls pass. Native caller/context/owner/PAC identity, complete parser/cleanup and daemon-kext pairing remain unproved.
