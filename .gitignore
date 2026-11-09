@@ -1,0 +1,7 @@
+__pycache/
+.DS_Store
+*.id*
+*.nam
+*.til
+*.c
+*.asm
