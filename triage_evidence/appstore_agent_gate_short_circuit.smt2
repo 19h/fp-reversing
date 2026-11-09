@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun member () (_ BitVec 32))
+(declare-fun alternateKey () (_ BitVec 64))
+(define-fun csinc () (_ BitVec 32) (ite (distinct alternateKey #x0000000000000000) member #x00000001))
+(define-fun taken () Bool (= ((_ extract 0 0) csinc) #b1))
+(assert (distinct taken (or (= alternateKey #x0000000000000000) (= ((_ extract 0 0) member) #b1))))
+(check-sat)

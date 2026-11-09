@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun status () (_ BitVec 32))
+(define-fun delta () (_ BitVec 32) (bvadd status #x0000a65b))
+(define-fun first () Bool (or (and (bvule delta #x00000003) (distinct delta #x00000001)) (= status #xffff5b82) (= status #xffff5b80)))
+(define-fun final () Bool (or (and (bvule delta #x00000003) (distinct delta #x00000001)) (= status #xffff5b80) (= status #xffff5b82)))
+(define-fun expected () Bool (or (= status #xffff59a5) (= status #xffff59a7) (= status #xffff59a8) (= status #xffff5b82) (= status #xffff5b80)))
+(assert (or (distinct first expected) (distinct final expected)))
+(check-sat)
