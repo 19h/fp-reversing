@@ -1,0 +1,16 @@
+(set-option :timeout 60000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun token_input64 () (_ BitVec 64))
+(assert
+ (let ((?x107 ((_ zero_extend 32) (bvor (bvand ((_ extract 31 0) ((_ zero_extend 32) (_ bv65126 32))) (_ bv65535 32)) (bvshl (_ bv62717 32) (_ bv16 32))))))
+(let ((?x87 ((_ zero_extend 32) (bvor (bvand ((_ extract 31 0) ((_ zero_extend 32) (_ bv53865 32))) (_ bv65535 32)) (bvshl (_ bv13529 32) (_ bv16 32))))))
+(let ((?x93 (bvxor ((_ extract 31 0) (_ bv886690409 64)) ((_ extract 31 0) ((_ zero_extend 32) (bvsub ((_ extract 31 0) ?x87) (_ bv1 32)))))))
+(let ((?x8 ((_ extract 31 0) token_input64)))
+(let ((?x108 ((_ extract 31 0) ((_ zero_extend 32) (bvshl ?x8 (bvand ((_ extract 31 0) ((_ zero_extend 32) ?x93)) (_ bv31 32)))))))
+(let ((?x119 ((_ zero_extend 32) (bvor (bvand ((_ extract 31 0) ((_ zero_extend 32) (_ bv48096 32))) (_ bv65535 32)) (bvshl (_ bv32683 32) (_ bv16 32))))))
+(let ((?x76 ((_ zero_extend 32) (bvor (bvand ((_ extract 31 0) ((_ zero_extend 32) (_ bv65331 32))) (_ bv65535 32)) (bvshl (_ bv64126 32) (_ bv16 32))))))
+(let ((?x122 (bvadd ((_ extract 31 0) ((_ zero_extend 32) (bvxor ?x8 ((_ extract 31 0) ?x76)))) ((_ extract 31 0) ?x119))))
+(let ((?x126 (bvadd ((_ extract 31 0) ((_ zero_extend 32) ?x122)) ((_ extract 31 0) ((_ zero_extend 32) (bvand ?x108 ((_ extract 31 0) ?x107)))))))
+(and (distinct ((_ extract 31 0) ((_ zero_extend 32) ?x126)) (bvadd ?x8 (_ bv2049620755 32))) true)))))))))))
+(check-sat)

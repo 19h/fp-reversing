@@ -1,0 +1,15 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun key8 () (_ BitVec 8))
+(declare-fun other_input32 () (_ BitVec 32))
+(declare-fun left () (Array (_ BitVec 8) (_ BitVec 8)))
+(declare-fun right () (Array (_ BitVec 8) (_ BitVec 8)))
+(declare-fun input32 () (_ BitVec 32))
+(assert
+ (let ((?x69 (select right (bvxor (select left ((_ extract 7 0) other_input32)) key8))))
+(let ((?x61 ((_ extract 7 0) other_input32)))
+(let ((?x60 ((_ extract 7 0) input32)))
+(let (($x71 (and (distinct (bvxor ?x60 (select right (bvxor (select left ?x60) key8))) (bvxor ?x61 ?x69)) true)))
+(let (($x62 (= ?x60 ?x61)))
+(and $x62 $x71)))))))
+(check-sat)

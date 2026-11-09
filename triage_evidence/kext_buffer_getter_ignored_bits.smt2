@@ -1,0 +1,17 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun indirect64 () (_ BitVec 64))
+(declare-fun direct64 () (_ BitVec 64))
+(declare-fun other_type32 () (_ BitVec 32))
+(declare-fun other_flag8 () (_ BitVec 8))
+(declare-fun type32 () (_ BitVec 32))
+(declare-fun flag8 () (_ BitVec 8))
+(assert
+ (let ((?x38 ((_ extract 6 6) other_flag8)))
+(let (($x39 (= ?x38 (_ bv1 1))))
+(let ((?x43 (ite $x39 (_ bv0 64) (ite (= (bvand other_type32 (_ bv240 32)) (_ bv32 32)) direct64 indirect64))))
+(let ((?x21 ((_ extract 6 6) flag8)))
+(let (($x23 (= ?x21 (_ bv1 1))))
+(let ((?x29 (ite $x23 (_ bv0 64) (ite (= (bvand type32 (_ bv240 32)) (_ bv32 32)) direct64 indirect64))))
+(and (= (bvand (bvxor flag8 other_flag8) (_ bv64 8)) (_ bv0 8)) (= (bvand (bvxor type32 other_type32) (_ bv240 32)) (_ bv0 32)) (and (distinct ?x29 ?x43) true)))))))))
+(check-sat)

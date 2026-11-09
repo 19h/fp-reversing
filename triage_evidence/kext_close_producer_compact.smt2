@@ -1,0 +1,15 @@
+(set-option :timeout 60000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun argument_address64 () (_ BitVec 64))
+(assert
+ (let ((?x60 ((_ zero_extend 32) (bvor (bvand ((_ extract 31 0) ((_ zero_extend 32) (_ bv50003 32))) (_ bv65535 32)) (bvshl (_ bv63614 32) (_ bv16 32))))))
+(let ((?x48 ((_ zero_extend 32) (bvor (bvand ((_ extract 31 0) ((_ zero_extend 32) (_ bv47935 32))) (_ bv65535 32)) (bvshl (_ bv49812 32) (_ bv16 32))))))
+(let ((?x21 (bvor (bvand (bvor (bvand (_ bv36749 64) (_ bv18446744069414649855 64)) (bvshl (_ bv60060 64) (_ bv16 64))) (_ bv18446462603027808255 64)) (bvshl (_ bv53823 64) (_ bv32 64)))))
+(let ((?x28 ((_ extract 31 0) (bvor (bvand ?x21 (_ bv281474976710655 64)) (bvshl (_ bv41995 64) (_ bv48 64))))))
+(let ((?x7 ((_ extract 31 0) argument_address64)))
+(let ((?x37 (bvsub ((_ extract 31 0) ((_ zero_extend 32) (bvadd ?x7 ?x28))) (bvshl ((_ extract 31 0) ((_ zero_extend 32) (bvand ?x7 ?x28))) (_ bv1 32)))))
+(let ((?x61 ((_ extract 31 0) ((_ zero_extend 32) (bvxor ((_ extract 31 0) ((_ zero_extend 32) ?x37)) ((_ extract 31 0) ?x48))))))
+(let ((?x65 ((_ extract 31 0) ((_ zero_extend 32) (bvmul ?x61 ((_ extract 31 0) ?x60))))))
+(and (distinct ?x65 (bvmul (bvxor ?x7 (_ bv671626418 32)) (_ bv4169057107 32))) true))))))))))
+(check-sat)

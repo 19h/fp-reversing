@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun r () (_ BitVec 32))
+(define-fun folded () (_ BitVec 32)
+ (bvadd (bvxor r #xdb9cfadf) (bvand (bvshl r #x00000001) #xb739f5be)))
+(assert (not (= (= folded #xdb9cfadf) (= r #x00000000))))
+(check-sat)

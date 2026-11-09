@@ -1,0 +1,16 @@
+(set-option :timeout 60000)
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun mapped_extent32 () (_ BitVec 32))
+(declare-fun mapped_address64 () (_ BitVec 64))
+(assert
+ (let ((?x287 (bvsub (bvadd (bvadd mapped_address64 ((_ zero_extend 32) mapped_extent32)) (_ bv16384 64)) (_ bv1 64))))
+(let ((?x230 (bvshl (_ bv18446744073709551615 64) (bvand (_ bv14 64) (_ bv63 64)))))
+(let ((?x165 (bvor (bvand (bvor (bvand (_ bv53449 64) (_ bv18446744069414649855 64)) (bvshl (_ bv32944 64) (_ bv16 64))) (_ bv18446462603027808255 64)) (bvshl (_ bv14368 64) (_ bv32 64)))))
+(let ((?x137 (bvadd mapped_address64 ((_ zero_extend 32) ((_ extract 31 0) ((_ zero_extend 32) mapped_extent32))))))
+(let ((?x147 (bvor (bvand (bvor (bvand (_ bv24174 64) (_ bv18446744069414649855 64)) (bvshl (_ bv65182 64) (_ bv16 64))) (_ bv18446462603027808255 64)) (bvshl (_ bv36798 64) (_ bv32 64)))))
+(let ((?x132 (bvor (bvand (bvor (bvand (_ bv12087 64) (_ bv18446744069414649855 64)) (bvshl (_ bv32591 64) (_ bv16 64))) (_ bv18446462603027808255 64)) (bvshl (_ bv51167 64) (_ bv32 64)))))
+(let ((?x170 (bvadd (bvxor ?x137 (bvor (bvand ?x132 (_ bv281474976710655 64)) (bvshl (_ bv48634 64) (_ bv48 64)))) (bvand (bvor (bvand ?x147 (_ bv281474976710655 64)) (bvshl (_ bv31733 64) (_ bv48 64))) (bvshl ?x137 (_ bv1 64))))))
+(let ((?x273 (bvadd ((_ zero_extend 32) (bvnot ((_ extract 31 0) ?x230))) (bvadd ?x170 (bvor (bvand ?x165 (_ bv281474976710655 64)) (bvshl (_ bv16901 64) (_ bv48 64)))))))
+(and (distinct (bvand ?x273 ?x230) (bvand ?x287 (_ bv18446744073709535232 64))) true))))))))))
+(check-sat)
