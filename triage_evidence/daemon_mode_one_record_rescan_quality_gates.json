@@ -1,0 +1,80 @@
+{
+  "generator_sha256": "7674e6beff87797251463f3e61cf29847f893b2649029126654711650f7d6b42",
+  "static_scope": "Conditional first-arrival count gate and two further COUNT-byte record passes,canonical four-word bank handoff and common join. Static source/coherent-frame contracts only;compact recurrence equivalence,native ownership/reachability,successful output,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 7,
+    "source_instructions": 823,
+    "source_bytes": 3292,
+    "pointer_records": 8,
+    "branch_bindings": 11,
+    "SP_writes": 0,
+    "comparison_role_corrections": 11,
+    "prior_ranges_recaptured": 26,
+    "prior_bytes_recaptured": 9960,
+    "queries_unsat": 414,
+    "queries_sat": 26,
+    "predecessor_queries_replayed": 360,
+    "source_nonbranch_sites_translated": 816,
+    "lineage_models_checked": 57,
+    "lineage_distinct_source_store_sites": 70,
+    "lineage_model_store_instances": 115,
+    "ordered_post_table_passes": 2,
+    "table_cells_preserved": 832,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_rescan_report.md": "ffe88d020768f06818e6e7aba447796b2ef4f6ab232776e251adbd35a703cf25",
+    "obfuscated_routines_report.md": "03da96caee69ed3413fd7edfdb299bba6c28f8c0fec04aa37f7eac8fd2a36542",
+    "mach_ports_report.md": "7d30dad9fa06b74cae03d8ed5f56551c9b853ad35fed808d63f334c23445dc5d",
+    "foundational_triage_report.md": "02ac1402877def42a5ee97c2d44f6ff1d1115529c07ed98e421f6b6d540271bd",
+    "interface_abi_report.md": "3bd497e80d44005ce4ddd68c4c5449ba620438fc4bc19b7b524eb24291076652",
+    "interface_investigation_status.md": "787b1426d5851f0d072a18fac7de67043b1071b1dbbe0e35d68ea0495f52079c",
+    "daemon_mode_one_record_codecs_report.md": "14b3a3280dac8b23a3218bbc9ae68887d19d348b59f8b8887f901309e3b67ff0"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_rescan_source.json": "e31a14d07e6fb16b357bf6d3f007d6acdddae80dea674f848e1bab358d7a85b5",
+    "daemon_mode_one_record_rescan_checks.json": "8c684250fe7bce7cb35360071dbd3344dbfad7bf84d741248cbc74e51cc348ee",
+    "recover_daemon_mode_one_record_rescan.py": "1bf4553d4be8b15e288445f5cba7ac70f185ae42a2d030eb42286a2a9339eeb4",
+    "validate_daemon_mode_one_record_rescan.py": "fa9d2fdac2782803e59b76b2aff8379a6714163349d4bbafa5b1c94a32ead47a",
+    "seal_daemon_mode_one_record_rescan.py": "7674e6beff87797251463f3e61cf29847f893b2649029126654711650f7d6b42",
+    "verify_daemon_mode_one_record_rescan_publication.py": "7327ac590d1d13041fd199d31b012c6761cbf671b07b2e4ae137d074f171f3ca"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RR1-RR8;816 current sites translated,first-arrival zero-state lineage via57 models/70 source store PCs/115 model stores,two further COUNT-byte passes,canonical bank handoff and common join,832 table cells retained;414 UNSAT/26 SAT results including360 predecessor replays. Native owners/reachability,compact recurrence and final-bank equality,arbitrary re-entry,successful output,budget history and daemon-kext pairing remain unproved."
+  }
+}
