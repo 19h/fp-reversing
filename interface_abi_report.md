@@ -1465,3 +1465,8 @@ The [u64/container report](daemon_reader_u64_codec_report.md) proves the full885
 
 
 [Keyed option and context default](daemon_reader_option_default_report.md): encoded keyf24be74b/decoded7976211a in OBJ+0 publishes a typed u32 value to F at K53ac. Exact success preserves V; exact miss writes M-1d45dafb; every other accessor result selects error. Selected N19 admission is (success AND V=0) OR (miss AND M=1d45dafb), rather than universal header equality. Two context-dependent predecessors derive caller selector935, and the actual status tree derives default phase2122. Eighteen ranges/326 instructions,26 fixups/28 slot matches,308 modeled PCs,22 new and107 replayed UNSAT certificates,one SAT scope counterexample,six controls and an exact byte-memory join pass. Native caller/owner/PAC/context identity,complete parser/cleanup,external delivery and daemon-kext pairing remain unproved.
+
+
+## Checkpoint, iterator and LOCAL request-field follow-up
+
+The checkpoint restores the existing header-decoder constants and NODE,next restores W5=0x4719,and NEXT selects decoder or LOCAL. LOCAL-present saves frame views and LOCAL+bias,reads request+0x28 and COOKIE,and the constructor-form selector reaches the new phase under the stated alignment/stability premises. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.

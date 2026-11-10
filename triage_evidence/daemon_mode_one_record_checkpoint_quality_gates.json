@@ -1,0 +1,97 @@
+{
+  "generator_sha256": "90de5b34392f85e0dc2696bad2d4935414e3a017cdea7202c92da0460927b9d3",
+  "static_scope": "Common post-absorption checkpoint:128 plane reads,complete296-byte workspace replacement,frame-only input and restored decoder ABI;record-next/LOCAL dispatch and cookie-coded request+28 guard. Decoded workspace function,arbitrary selector inverse,native ownership/reachability/output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 5,
+    "source_instructions": 7072,
+    "source_bytes": 28288,
+    "pointer_records": 6,
+    "branch_bindings": 7,
+    "SP_writes": 0,
+    "comparison_role_corrections": 4,
+    "bitfield_decodes_checked": 25,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 0,
+    "pair_load_decodes_checked": 5,
+    "ADRP_decodes_checked": 0,
+    "TST_decodes_checked": 1,
+    "CNEG_decodes_checked": 1,
+    "EXTR_decodes_checked": 2,
+    "prior_ranges_recaptured": 58,
+    "prior_bytes_recaptured": 193604,
+    "queries_unsat": 59,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 45,
+    "source_nonbranch_sites_translated": 7068,
+    "checkpoint_frame_reads": 592,
+    "checkpoint_loads": 622,
+    "checkpoint_stores": 250,
+    "checkpoint_u32_stores": 245,
+    "checkpoint_u64_stores": 5,
+    "checkpoint_store_bytes": 1020,
+    "checkpoint_distinct_written_bytes": 796,
+    "checkpoint_plane_byte_reads": 128,
+    "checkpoint_workspace_u32_stores": 74,
+    "checkpoint_workspace_bytes": 296,
+    "checkpoint_GPR_liveins": 0,
+    "checkpoint_paired_loads": 5,
+    "protected_precheckpoint_stages": 7,
+    "LOCAL_present_stores": 3,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_checkpoint_report.md": "6e4704d8e4783f41353a865f67bf71d323e1a1dc1677e7ef2d701edf4ba4570a",
+    "obfuscated_routines_report.md": "fbd1b0c8d4c2de49d8814a5ae3624ea214d6184bad91d3fe77f2cc7dc9ae6de3",
+    "mach_ports_report.md": "1cffbf61d13b8070b766c90174eeabdd1bd5ea487231eb80d0abc0fe0d0918cf",
+    "foundational_triage_report.md": "4d4caf5a3488689ff46eaab91fc7054e4d6578012abae68650881dcfc721cd20",
+    "interface_abi_report.md": "539a1dffe4639dbf6319dfa61da3addf96e4f7d3606a4511d53012f02402808d",
+    "interface_investigation_status.md": "d419be774122ed094fcbd3ac6aee48b5fecca29175e884f3f2570d5642f7cf18",
+    "daemon_mode_one_record_reentry_report.md": "ff148793ecf3c0fe95e986e1b4ecd749b7abd0a55fb9458087fd821e586ae49d"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_checkpoint_source.json": "c92aa605fb01ed2a8839c5f5cad6f8b802f7286b58c1467909ade22b0da17352",
+    "daemon_mode_one_record_checkpoint_checks.json": "d994545fc93b6397239aad3741c0e9240961d457dc6c7b15ebe3f039853a84b4",
+    "recover_daemon_mode_one_record_checkpoint.py": "4c7197a56ff0c0686b82426891536dfe8d08159256d47d8a4dcac9c9caed018d",
+    "validate_daemon_mode_one_record_checkpoint.py": "0fc51e247e9c893ed8337b75ac86bb38f986718c8888f34d956876f8d142b1ef",
+    "seal_daemon_mode_one_record_checkpoint.py": "90de5b34392f85e0dc2696bad2d4935414e3a017cdea7202c92da0460927b9d3",
+    "verify_daemon_mode_one_record_checkpoint_publication.py": "d2cf27bb7dbfb8829028b61ff33cf043a2eba73ef9545c8a44bb61f2315c4172"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and CP1-CP8;7068 unique sites,59 UNSAT/two SAT including45 selected predecessor queries;128 exact plane reads,296-byte workspace replacement,typed word lifetime,iterator/decoder restoration and original-wrapper request-field sufficiency. Arbitrary selector inverse,decoded workspace function,native traversal/output and daemon-kext pairing remain unknown."
+  }
+}

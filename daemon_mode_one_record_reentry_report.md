@@ -187,3 +187,8 @@ QG5:The first-entry constant specialization is separated from24 fixed/15 positio
 QG6:Original bytes/fixups,fresh prior recapture,original-source solver queries and retained dependency/store ledgers support the stated scope;no native or new IDA result is claimed.
 
 QG7:Continuation priorities cover the finalizer,upstream size constraints,external publication,representation equivalence and canonical-mask comparison.
+
+
+## Checkpoint, iterator and LOCAL request-field follow-up
+
+The former common finalizer frontier is now established as a workspace replacement/checkpoint and iterator restore. It reads128 plane cells,replaces296 workspace bytes,restores decoder state and loads NEXT through the existing iterator. This establishes private record-processing re-entry;decoded checkpoint semantics and native completion remain unknown. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.
