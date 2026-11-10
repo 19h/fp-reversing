@@ -1441,3 +1441,5 @@ The fresh 48-byte backing record has a conditional zero origin from the selected
 The kext global cleanup can reach base descriptor teardown and a separate release of the owner at +0x90. The final reference for either receiver depends on its own CAS and field epoch. [MixedData reference release](mixed_data_release_report.md).
 
 The owner capacity remains 48 B at the retirement request. The lower wrapper recovers the element extent and uses it for the original clear before zone handoff. [MixedData backing retirement](mixed_data_retirement_report.md).
+
+The matched startup geometry gives the tagged record a 48-byte element extent. The file and initialized flag epochs select different heap operands, and the initialized bias supplies a source-generated size class. [MixedData startup geometry](mixed_data_zone_geometry_report.md).

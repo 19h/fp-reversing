@@ -365,6 +365,7 @@ def main():
     if exists(BASE/'mixed_data_backing_report.md'):reports.add(BASE/'mixed_data_backing_report.md')
     if exists(BASE/'mixed_data_release_report.md'):reports.add(BASE/'mixed_data_release_report.md')
     if exists(BASE/'mixed_data_retirement_report.md'):reports.add(BASE/'mixed_data_retirement_report.md')
+    if exists(BASE/'mixed_data_zone_geometry_report.md'):reports.add(BASE/'mixed_data_zone_geometry_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1754,6 +1755,10 @@ def main():
         mixed_retirement_quality=json.loads(read(ROOT/'mixed_data_retirement_quality_gates.json'))
         manifest['validation']['mixed_data_retirement_increment_checks']=mixed_retirement_quality['verified_counts']
         manifest['validation']['mixed_data_retirement_static_scope']=mixed_retirement_quality['static_scope']
+    if exists(ROOT/'mixed_data_zone_geometry_quality_gates.json'):
+        mixed_geometry_quality=json.loads(read(ROOT/'mixed_data_zone_geometry_quality_gates.json'))
+        manifest['validation']['mixed_data_zone_geometry_increment_checks']=mixed_geometry_quality['verified_counts']
+        manifest['validation']['mixed_data_zone_geometry_static_scope']=mixed_geometry_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

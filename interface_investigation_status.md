@@ -1229,3 +1229,5 @@ The backing report connects the fresh record request to both selected successful
 Five owner release requests now join to the nominal final-reference route. The kext cleanup and MixedData owner remain separate reference epochs, and actual native retirement remains open. [MixedData reference release](mixed_data_release_report.md).
 
 The source now connects the tagged backing allocation to pointer recovery, full-element clearing and zone handoff for the selected layout. Native extent and reuse remain open. [MixedData backing retirement](mixed_data_retirement_report.md).
+
+The original size table, variable view assignment and early-heap initialization now establish the 48-byte source extent. Exact live zone selection and actual allocation remain open. [MixedData startup geometry](mixed_data_zone_geometry_report.md).

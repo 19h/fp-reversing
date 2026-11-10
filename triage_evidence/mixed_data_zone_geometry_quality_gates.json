@@ -1,0 +1,70 @@
+{
+  "generator_sha256": "f50fc3021895b2ea219843b7a8f45b2cb26ff60c2de68fe8014883b50d0c7f5a",
+  "static_scope": "Original-source correspondence from allocator startup to the tagged MixedData view, heap family and 48-byte element extent under a matched startup epoch. Native family selection, bias, accounting pointers and allocation are unobserved.",
+  "verified_counts": {
+    "captured_functions": 14,
+    "captured_instructions": 1898,
+    "startup_entries_checked": 1,
+    "kernel_variable_view_records": 408,
+    "captured_code_bytes": 7592,
+    "queries_unsat": 10,
+    "size_table_entries": 22,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "mixed_data_zone_geometry_report.md": "5dcdb201c11a06826739f848e34b3facd9766a40ec8255420e05a5b72c14d340",
+    "obfuscated_routines_report.md": "397c131dd04c89a1c1acc68834cac40eea40e614dd4c330cc8a683728bf08a71",
+    "mach_ports_report.md": "4bbc458d0c2c14db7934266161b88dcacc7a2eef2d1f683f13b8fa1c4a59412c",
+    "foundational_triage_report.md": "67f3b267d2fd4368dc5bbdf50725a5d9f9cc23ba1b1034d55bb88fc828befee3",
+    "interface_abi_report.md": "15d02b6f0aeb1188c02e3cb5135174968673ead0ac84e321091cfa63a3c8b3b8",
+    "interface_investigation_status.md": "c0e3838ae850c67279958701f8d5cc89c4a77910267b03ac66b708a71c4d249a",
+    "mixed_data_backing_report.md": "bf94c00aad56f721c96d87672925d7446425549baadb8d64a07c596ae9c09123",
+    "mixed_data_retirement_report.md": "2da0fffe097ea134b35da7ba783459d1853a6e4a3197405575d805eb0f061fe5"
+  },
+  "evidence_sha256": {
+    "mixed_data_zone_geometry_source.json": "143d251da4e0d263075583a21516e7e360b5e710ab7e50a70cbe36103d30e0ab",
+    "mixed_data_zone_geometry_checks.json": "a1bb8a161cbaf5ed18bf68bc45a5d72067ccc4d2f50e90b3e5c884ef52e0b48d",
+    "recover_mixed_data_zone_geometry.py": "89ab1dcd9dd698996d9570847bc3e77d5cc6e28e42152c0aee72c7a4b01042b0",
+    "validate_mixed_data_zone_geometry.py": "f365475a3a43acb1a18a524f8ef3d749b50c263c847ecfd6ad4af99c728b7607",
+    "seal_mixed_data_zone_geometry.py": "f50fc3021895b2ea219843b7a8f45b2cb26ff60c2de68fe8014883b50d0c7f5a",
+    "verify_mixed_data_zone_geometry_publication.py": "a010f8356ddd7f3150c966539ff4376fdbaf36119f4faff1ec455e23214973c0"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and MG1-MG8. Original startup entry, family size table, view registration and allocation extent. Ten UNSAT results and five rejected alterations. Native zone selection and allocation remain open."
+  }
+}

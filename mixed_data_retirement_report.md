@@ -1,5 +1,7 @@
 # MixedData backing retirement and element clearing
 
+Startup refinement. The descriptor flag 0x61 below describes the file epoch. The initialized descriptor uses low16 0x8061. A matched 48-byte element takes the direct allocation return path, while the adjusted case remains a conditional contract for other geometries. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
+
 The tagged retirement path recovers the original zone element base and extent before clearing and handing back a MixedData backing allocation. The owner passes its recorded 48-byte capacity. The retirement wrapper uses the zone's element extent for the clear. For the selected page-boundary allocation case, the allocator writes a displacement and the retirement lookup reads and clears the same field under matched metadata and pointer epochs. Both the direct and adjusted pointer cases recover the same logical element base under the stated conditions. [MT1-MT8]
 
 The original capture contains eight compiler-bounded functions, 646 instructions and 2,584 B from kernel collection SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Four bodies match previous captures exactly. Original nlist records identify the clear routine as `_bzero` / `___bzero`. The validation rejects 11 SMT counterexample queries and five altered captures. The static scalar coverage check enumerates all 80 extents from 48 through 127 B.

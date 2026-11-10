@@ -1,5 +1,7 @@
 # MixedData backing allocation and zero-check contract
 
+Startup refinement. The heap operand below describes the file-flag epoch. The original parser later publishes low16 0x8061 and selects the typed variable heap descriptor. Both selected initialized bias routes yield a 48-byte element under the matched startup conditions. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
+
 The original kernel allocator checks the element that supplies the fresh 48-byte MixedData record. For the captured request and the field and allocator epochs in MB1-MB8, both the cache path and the fallback zone path require a zero result from the same content check before returning a nonnull element. If the checked extent covers the request and the bytes remain stable until the helper writes the record, the ten unwritten bytes and the six preserved state bits enter the helper as zero. The record initializer itself writes 38 bytes, including its partial state-byte update. [MB1-MB8]
 
 The source image and original fixups supply the evidence. Capture covers nine compiler-bounded bodies, 958 instructions and 3,832 B from kernel collection SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Nine SMT queries reject counterexamples to the stated scalar, vector, flag and span properties. Four altered captures fail fresh source comparison. Live zone state and native execution remain unknown.

@@ -1419,3 +1419,5 @@ The previously unnamed raw allocator wrapper resolves the tagged `ioGMDData.ioPL
 The owner release report assigns the private free role using the inherited release and tagged-release bodies, the finalization-word gate and the authenticated MixedData +0xb0 slot. [MixedData reference release](mixed_data_release_report.md).
 
 The tagged retirement wrapper recovers a zone element base and extent before calling the exact bzero and handing off to the zone routine. The source proof covers a direct pointer and a selected adjusted-pointer layout. [MixedData backing retirement](mixed_data_retirement_report.md).
+
+The captured heap startup, family constructor, setup callback and variable view parser now have source-established roles in the tagged MixedData allocation. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
