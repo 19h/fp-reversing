@@ -1,0 +1,108 @@
+{
+  "generator_sha256": "16c0ddf8621181a695259c7d0d5bc9b7559f58f553b2c4e79c17b83d7fdbb570",
+  "static_scope": "Four-step secondary word import and post-import handoff;source/control/address contracts with arbitrary plane bytes and unconstrained other GPRs under the inherited private ABI. Word-value transforms,post-mutation codec validity,native ownership/output,algorithm identity and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 2,
+    "source_instructions": 1536,
+    "source_bytes": 6144,
+    "pointer_records": 3,
+    "branch_bindings": 3,
+    "SP_writes": 0,
+    "UDIV_decodes_checked": 2,
+    "UMULL_decodes_checked": 30,
+    "bitfield_decodes_checked": 18,
+    "register_shift_decodes_checked": 0,
+    "comparison_role_corrections": 2,
+    "prior_ranges_recaptured": 10,
+    "prior_bytes_recaptured": 14512,
+    "queries_unsat": 23,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 16,
+    "source_nonbranch_sites_translated": 1534,
+    "fresh_caller_literal_sites": 2,
+    "induction_cases": 4,
+    "independent_byte_inputs_per_case": 32,
+    "plane_bytes_read_once": 128,
+    "secondary_word_stores": 64,
+    "secondary_bytes_written": 256,
+    "secondary_streams": 4,
+    "secondary_words_per_stream": 16,
+    "unclaimed_secondary_coordinates": 222,
+    "initial_unprescribed_frame_inputs": 0,
+    "source_value_cuts": 0,
+    "computed_address_normalizations": 0,
+    "UDIV_denominator_source_slice_sites": 5,
+    "per_iteration_loads": 89,
+    "per_iteration_stores": 37,
+    "four_iterations_loads": 356,
+    "four_iterations_stores": 148,
+    "four_iterations_read_bytes": 1664,
+    "four_iterations_store_bytes": 672,
+    "four_iterations_distinct_bytes_written": 332,
+    "post_loads": 4,
+    "post_stores": 6,
+    "combined_read_bytes": 1685,
+    "combined_store_bytes": 696,
+    "combined_distinct_bytes_written": 348,
+    "IDA_spot_bytes_matched": 96,
+    "IDA_semantic_memory_claims_imported": 0,
+    "arithmetic_cells_read_by_import": 0,
+    "arithmetic_cells_written": 0,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_secondary_word_import_report.md": "b1fc6752755aad3b3f41d6af9db8b355f777eaadbdbc9771594dfb70d82a892d",
+    "obfuscated_routines_report.md": "9b90fe673b325816d70183755194c118263ad80aeaa8eaf3dec4030ea9569bdd",
+    "mach_ports_report.md": "a249b2008faf3266b8d580b23dccfda237d786bb0eeec7415a5e96ba9a2b882d",
+    "foundational_triage_report.md": "3ff4bd353d060f7f7a5899bbb60327b97ed59003098161d850ac90e89c586a18",
+    "interface_abi_report.md": "6c864c673f74b7e444493d1f5a537ae2b6a43e4a5421af5d939fd65a5b83d244",
+    "interface_investigation_status.md": "bf56a5290df8b903c20052b19816ea1d674858b79340d11ac3edaf812e5abd4f",
+    "daemon_mode_one_word_xor_plane_refresh_report.md": "9b83ecb7e3a1af9c73aded09cd05ad564879a3aa51ff15fed7cd97eec9f37fe7"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_secondary_word_import_source.json": "f8d68ee8030767c03bfaaa33d42acf1e0258ce69fab275c45f927332c846e213",
+    "daemon_mode_one_secondary_word_import_checks.json": "88602491c91df3944d13fe215b7160ff91e9a668a9fda3f9ee51bd2e1caeb43c",
+    "recover_daemon_mode_one_secondary_word_import.py": "4853c1c4ede84e75a55849cb5b09d28596c20095c38cf5aa4cf100ef2df5c555",
+    "validate_daemon_mode_one_secondary_word_import.py": "08bfa542e3ac668696f10a104b73cc8ffe45c82cb6e304443d5056bd52b06937",
+    "seal_daemon_mode_one_secondary_word_import.py": "16c0ddf8621181a695259c7d0d5bc9b7559f58f553b2c4e79c17b83d7fdbb570",
+    "verify_daemon_mode_one_secondary_word_import_publication.py": "58b750bcdc84ac7dd6d8363759a43e30321a0a38fc1effbea64336dc3c8635d3"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SI1-SI8;1534 source sites,23 UNSAT/three abstract SAT,including16 selected predecessor replays;four-case128-byte to64-word import,exact frame/control/denominator contracts and post-import raw-u8 handoff. Word-value transforms,post-mutation codec validity,full IDB identity,native ownership/output and daemon-kext pairing remain explicit unknowns."
+  }
+}

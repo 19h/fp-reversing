@@ -1320,3 +1320,7 @@ Seven additional continuations have zero Mach-port emissions and ten authenticat
 ## Word XOR and plane-refresh follow-up
 
 Three further continuations have zero Mach-port emissions and four private authenticated branch bindings. Their word/plane/root interfaces establish no new public selector,native delivery or daemon/kext pairing. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).
+
+## Secondary word import follow-up
+
+The secondary import and following handoff add no Mach receive/send or port-emission site:their outgoing interface is private frame/register state and authenticated table dispatch. Linking the256-byte secondary grid to a later descriptor or IOKit buffer remains unknown. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).

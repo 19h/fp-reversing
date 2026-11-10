@@ -1344,3 +1344,7 @@ The initializer successor is a parity dispatcher with separate LOCAL and frame-v
 ## Word XOR and plane-refresh follow-up
 
 The201-instruction path is a compact four-cell word XOR with mask u32((W16+0x8cca81ed)<<3). The alternate2171-instruction continuation refreshes both64-byte planes;the merged29-instruction seed consumes F750 into X27 and materializes divisor962. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).
+
+## Secondary word import follow-up
+
+The1471-instruction seed successor is a four-step import from both64-byte primary planes to four16-word secondary streams. Exact addresses and termination hold for arbitrary plane bytes;numeric word transforms remain unknown. The65-instruction successor selects0x100c503c8 through a raw ENC0-dependent frame field. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).

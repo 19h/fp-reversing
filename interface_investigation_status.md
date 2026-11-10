@@ -1154,3 +1154,7 @@ Parity-specific state/LOCAL/frame-view contracts,conditional byte update,exact m
 ## Word XOR and plane-refresh follow-up
 
 Compact word XOR,complete128-byte plane refresh and secondary-root entry contracts are published. The frontier includes0x100d524a8 and0x100d77384;earlier coordinate correlations,arithmetic-table validity,native output and cross-layer pairing remain unresolved. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).
+
+## Secondary word import follow-up
+
+The seed consumer and post-import block now have source-pinned four-step geometry,frame/control and raw-u8 contracts. Current frontier includes0x100c503c8 and the still unresolved0x100d77384. Direct parent proofs plus the saved-root producer replayed;one broader recursive replay returned unknown and is excluded. Native output/ownership,table validity,algorithm identity and cross-layer pairing remain unresolved;goal remains active. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).

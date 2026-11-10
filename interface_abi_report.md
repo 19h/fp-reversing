@@ -1497,3 +1497,7 @@ The odd adapter restores LOCAL+bias and X0=0;the even adapter uses a numeric bia
 ## Word XOR and plane-refresh follow-up
 
 The four-byte XOR rejoins the29-instruction seed with W9=0x4923. The refresh returns parity-specific comparison state. The seed loads X27=F+c80 from F750,retains X21=F+8b0,sets F6c8=962 and selects0x100d524a8;W7 remains inherited. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).
+
+## Secondary word import follow-up
+
+The secondary root has coordinate D(j)=F+0xc80+4*((241*j)mod286),with four16-word streams at labels0,72,142,212. W15/W3 advance16/4 per iteration;the fourth exits through slot1f61. The post-import block selects slot1ef1,target0x100c503c8,diversity5b22. Word-value semantics and native allocation extent remain unknown. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).

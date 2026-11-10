@@ -1366,3 +1366,7 @@ Parity selects distinct scalar banks and F350/F360/X0 representations before a c
 ## Word XOR and plane-refresh follow-up
 
 The comparison-equal arm updates only C63..C60 as one numerical32-bit XOR. The alternate route rewrites all128 plane cells with two proved source-slice address cuts;the seed loads the secondary root and preserves the296-byte workspace. A64-byte/marker/bit-length padding hypothesis is separately tagged;byte-count identity,plane decoding and full suffix handling remain unproved. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).
+
+## Secondary word import follow-up
+
+Four induction cases establish128 byte reads,64 distinct u32 destinations,frame epochs and finite import termination,followed by an exact raw-u8 ENC0 handoff. Read-only IDA supplied96 matching bytes and bounded cache context;full container/slice identity remains unverified after a timed-out batch and unavailable worker. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).
