@@ -202,3 +202,5 @@ QG4: Byte units, u8/u32/u64 widths, exact modular arithmetic, source effects and
 QG5: Zero-count bypass, generic versus initial-even counts, source-index/numerator wrap, saved-view epochs, failed combined queries and unproved padding are separated. Historical propositions retain their source assertions while timeout budgets are raised from15 to45 seconds where needed; original query hashes are recorded.
 QG6: Original executable/fixup bytes, fresh source equations, exact accepted queries and preserved predecessor models provide provenance. No new live IDA or native observation is claimed.
 QG7: High/medium impact continuation opportunities identify the remaining control, representation, ownership and transport gaps.
+
+The serializer producer now proves the actual flag1/parity0 handoff, exact view bytes and the next initial even count 32, closing the prior static phase/progression-entry gap. The matched-state view/LOCAL XOR relation is proved separately; actual tail/padding, ownership and native execution remain unknown. [Result words, views and publication](daemon_mode_one_result_publication_report.md).

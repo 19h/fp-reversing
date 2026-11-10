@@ -1380,3 +1380,5 @@ The secondary component now exposes16 saved scalar producers,two environment-wor
 The secondary reentry now has a16-field private commit, changing progression-word ABI, matching saved/cached TABLE roots, register-pair preservation and a guard-proved C(0) XOR80. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
 
 The even-context F360 source resolves through F300 to F+1150,and the preserved X0 view resolves to F+1100. Fresh source proofs recover an encoded byte index,two equal-count copy loops,and the conditional initial32-byte case. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).
+
+The result path now has 149 materializer stores, exact dual-view/LOCAL byte geometry, a matched-state XOR representation identity, and an actual flag1/parity0 bridge into the next even import. Ownership, alias policy, normal return and native exposure remain unknown. [Result words, views and publication](daemon_mode_one_result_publication_report.md).

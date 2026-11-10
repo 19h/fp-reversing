@@ -1511,3 +1511,5 @@ The secondary loop ABI includes source-bound counters,zero high halves for X3/X1
 The finish supplies W19=u32(saved F37c+64), W22=u32[F4ac] and W12=34d0. Fresh refresh/reentry proofs generalize the prior fixed-W19 contract and establish the even guard that selects exactly C(0). [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
 
 The unequal even gate supplies R=u32(BWORD-PSTATE-AWORD+29ee6c20)!=0. Both readers use u32(PSTATE-4a62f57c+j) as a byte offset;the first XORs f9 and the second preserves source bytes. The initial even saved fields yield R32 only with the stated initial progression premise. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).
+
+The flag1 serializer writes LOCAL+0..31 as eight exact big-endian u32 expressions and then writes raw code 0x8b3dc651 to REQUEST+0. The flag0 serializer writes F+1100/F+1150 views and supplies the initial even count 32 with literal flag1/parity0. Request consumer semantics remain unknown. [Result words, views and publication](daemon_mode_one_result_publication_report.md).

@@ -1,0 +1,87 @@
+{
+  "generator_sha256": "8bed7636557fd4805c5d559f6c502945ea737ebbe666c50fb5f33c9765037a43",
+  "static_scope": "Source-bound terminal state materialization,two private32-byte encodings,LOCAL32-byte output/REQUEST result store,and flag0-to-flag1 even-phase control bridge. Whole algorithm,native execution,buffer ownership/extent/alias policy and daemon-kext transport remain unknown.",
+  "verified_counts": {
+    "source_ranges": 8,
+    "source_instructions": 10711,
+    "source_bytes": 42844,
+    "branch_bindings": 8,
+    "pointer_records": 9,
+    "ISA_decodes_checked": 830,
+    "comparison_role_corrections": 1,
+    "prior_ranges_recaptured": 26,
+    "prior_bytes_recaptured": 110464,
+    "frontier_ranges_hashed": 1,
+    "frontier_bytes_hashed": 68,
+    "SP_writes": 0,
+    "queries_unsat": 37,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 13,
+    "source_nonbranch_sites_translated": 10704,
+    "materialize_u32_stores": 149,
+    "materialize_computed_byte_reads": 552,
+    "materialize_proved_UDIV962_denominators": 14,
+    "view_bytes_written": 64,
+    "LOCAL_bytes_written": 32,
+    "LOCAL_word_identities": 8,
+    "matched_state_byte_representation_identities": 32,
+    "view_extra_computed_address_normalizations": 3,
+    "request_result_u32_stores": 1,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_result_publication_report.md": "c51d2743d2d80e203b070e3ebe29dc661629e496bba892588fa4801130e240d6",
+    "obfuscated_routines_report.md": "b62f1ab57d579598a8187ba4e91a80f93feeb69d009a4503801f8d96558fecdf",
+    "mach_ports_report.md": "2c0157c5136d1caa1516da2e9a7bd86369ad45aedc1b39f18d7d7482a9611424",
+    "foundational_triage_report.md": "4711d825159eef035cbd5dc514f25ae2e7ebb65189aa773a12f9841032b93c7f",
+    "interface_abi_report.md": "9c042d87d0dcbd5c95eb7ab193147b8ebe5df88a60d043d6081461d687e5716c",
+    "interface_investigation_status.md": "cb8f43a97090450ad365ae031ab149e231b23bcaee692b379b2e9ceb471eeb73",
+    "daemon_mode_one_even_view_import_report.md": "100bff8f68e1c0446c68d69a13e5aaee00bb91762f9df61d0a3ae16336023fd8"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_result_publication_source.json": "05f671928c7ebe8393ad5fa656b702d5f8d7a5c70f5667b7e56e44df6832ac1e",
+    "daemon_mode_one_result_publication_checks.json": "56ee99e235264f62f824de08231084bee018bddd64ed669f0bcf6ed1358cc961",
+    "recover_daemon_mode_one_result_publication.py": "3d0ad4baf0251f2d1c8105df8498238535e908b4e4917d137d05b0002b81ef8b",
+    "validate_daemon_mode_one_result_publication.py": "cc8793813243cc1fb8e704c71cae00d4c281da5630986027ee6e58fd232f3910",
+    "seal_daemon_mode_one_result_publication.py": "8bed7636557fd4805c5d559f6c502945ea737ebbe666c50fb5f33c9765037a43",
+    "verify_daemon_mode_one_result_publication_publication.py": "59e1072d32eb99907e94c2ea3840db8deb2e9358bebc61d1b4289f91ab0675cd"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RP1-RP8;10704 source sites,37 UNSAT/three abstract SAT and13 predecessor replays. Exact result words,64 view bytes,32 LOCAL bytes,matched-state encoder relation,request result prefix and actual flag1/even bridge are covered. Native arrival,ownership/extents/alias policy,normal return,whole algorithm and cross-layer pairing remain unknown."
+  }
+}

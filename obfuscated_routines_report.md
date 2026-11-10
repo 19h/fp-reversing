@@ -1358,3 +1358,5 @@ The secondary setup and64-round consumer now have exact word/table/control contr
 The secondary finish commits the remaining12 saved fields, computes exact modular advances by64, and reaches a generalized plane refresh with proved parity gates and a correlated first-plane-byte XOR. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
 
 Two private-view byte-copy loops now have exact nonzero u32 count,source-index and destination contracts. The initial even saved-field context specializes to32 bytes per view,with a C(32) marker and0x300 suffix XOR mask;native arrival and decoded padding remain unknown. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).
+
+The terminal materializer now has two exact serializer targets. One emits two private views and enters the next even import; the other writes 32 LOCAL bytes with eight exact big-endian word identities, followed by a raw request result code. Whole algorithm and native execution remain unknown. [Result words, views and publication](daemon_mode_one_result_publication_report.md).

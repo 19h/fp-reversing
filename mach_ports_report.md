@@ -1334,3 +1334,5 @@ The secondary setup/64-round/update/gate ranges contain no Mach message,right-tr
 The secondary state-commit/refresh/reentry ranges have no new Mach-port emission site. Their authenticated private branches and scalar/plane stores leave native output and matched daemon-kext transport unresolved. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
 
 The newly analyzed view-import entry,two loops,bridge and marker have no direct Mach send/receive,port allocation or right transfer. Their concrete byte readers consume private views under stated source-epoch premises;no matched daemon-kext exchange is established. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).
+
+The materializer, serializers and phase bridge add zero direct Mach send/receive, right-transfer or port-emission sites. Their writes reach private views, request-derived LOCAL and REQUEST+0; an external reply or daemon-kext transport consumer remains unknown. [Result words, views and publication](daemon_mode_one_result_publication_report.md).
