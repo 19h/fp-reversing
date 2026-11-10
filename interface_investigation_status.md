@@ -1227,3 +1227,5 @@ Original class identity, explicit owner initialization, fresh backing request an
 The backing report connects the fresh record request to both selected successful zero-check returns and derives the returned span under the declared allocator epoch. [MixedData backing allocation](mixed_data_backing_report.md).
 
 Five owner release requests now join to the nominal final-reference route. The kext cleanup and MixedData owner remain separate reference epochs, and actual native retirement remains open. [MixedData reference release](mixed_data_release_report.md).
+
+The source now connects the tagged backing allocation to pointer recovery, full-element clearing and zone handoff for the selected layout. Native extent and reuse remain open. [MixedData backing retirement](mixed_data_retirement_report.md).

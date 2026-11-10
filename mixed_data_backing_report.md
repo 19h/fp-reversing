@@ -63,3 +63,5 @@ The helper reloads the published backing pointer from owner +0x10. The predecess
 - **QG5** retains the null and diagnostic outcomes, distinguishes requested and checked extents, and scopes conclusions to the declared epochs.
 - **QG6** ties nine UNSAT results, four rejected alterations and source graphs to original bytes and fixups.
 - **QG7** ranks unresolved startup, ownership, refill and type provenance by impact.
+
+The matching retirement path recovers the original element base and clears the element extent before zone handoff. In the selected adjusted-pointer case it reads the same displacement field that allocation wrote. [MixedData backing retirement](mixed_data_retirement_report.md).

@@ -1,0 +1,68 @@
+{
+  "generator_sha256": "2a26034e4d4a6af7870d619d16a46f36bf3c23a93cfd1fcfbc588fa90f6f6b85",
+  "static_scope": "Static contract for retiring a selected 48-byte MixedData backing request. The original allocator and retirement wrapper agree on the logical element base under the declared metadata and pointer epochs. The retirement wrapper requests a complete element clear before zone handoff.",
+  "verified_counts": {
+    "captured_functions": 8,
+    "captured_instructions": 646,
+    "original_joins": 4,
+    "captured_code_bytes": 2584,
+    "queries_unsat": 11,
+    "scalar_extents_checked": 80,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "mixed_data_retirement_report.md": "56c70ccc11628b385db61b477a6c2563ce38adbf6bbe7cac56e5bd597248f8f2",
+    "obfuscated_routines_report.md": "e325635c57056c4dfac0924ff2e33176e9d4ec2d7a3cc7d13cae1e468cde9df0",
+    "mach_ports_report.md": "5f8a4130d04567fcd0ade6c7d3cf5bb659269699200a339a4aaea42652116d3c",
+    "foundational_triage_report.md": "d2c1c0e00b89871ca71bf3bd0ed63efa89449139cd3644c9806fd07939c5f494",
+    "interface_abi_report.md": "e390aaef59affd8135e697bc98e9df79a1eb90b43459a5d89d06c82ad572f528",
+    "interface_investigation_status.md": "4ceb79a90897e6ba85641bb1ddaee1fbca8600c538cf67c3ebbf676d4af6554d",
+    "mixed_data_backing_report.md": "1f3f88126f9692805a66d3e8d6f110f491804cd8b5b7e06ba539e78eff7dcfdb"
+  },
+  "evidence_sha256": {
+    "mixed_data_retirement_source.json": "2f11cea2ae58a2f8304009ea2d27ab032af792181b3152f53bad3b23aafca967",
+    "mixed_data_retirement_checks.json": "b49edd4a838beaf819476fd3998aaf193e6d3f68d356fc2017488fd9f9f77770",
+    "recover_mixed_data_retirement.py": "ee80f80300984ee40e6513df7060569a9718ce3ff04e6911bda11cf7bcc29c9c",
+    "validate_mixed_data_retirement.py": "dc3d253cc740510cadd3e3ac2c74ffafd048e1b8da463bc639e6113d732ea277",
+    "seal_mixed_data_retirement.py": "2a26034e4d4a6af7870d619d16a46f36bf3c23a93cfd1fcfbc588fa90f6f6b85",
+    "verify_mixed_data_retirement_publication.py": "bfc054057dbc6fd756e3084ebbd9ce3710c4c263c3b44043790f557fab7bc001"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and MT1-MT8. Allocation displacement, retirement inverse and element clearing. Eleven UNSAT results, 80 scalar extent checks and five rejected alterations. Native geometry and actual retirement remain open."
+  }
+}

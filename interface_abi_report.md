@@ -1570,3 +1570,5 @@ The recovered owner interface separates its 32-bit initialized reference word, i
 The backing allocation passes a tagged descriptor, request size and flags to the raw wrapper. The lower zone pair supplies the checked element pointer and extent in X0/X1. [MixedData backing allocation](mixed_data_backing_report.md).
 
 The inherited OSObject release path supplies a null tag and signed threshold 1. It updates a 32-bit word and conditionally tails through +0xb0. The 16-bit getter remains a separate projection. [MixedData reference release](mixed_data_release_report.md).
+
+The backing retirement ABI separates the published pointer, request size, recovered element base, zone and element extent. The adjusted allocation and retirement source paths agree on the offset field under matched metadata. [MixedData backing retirement](mixed_data_retirement_report.md).

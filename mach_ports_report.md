@@ -1393,3 +1393,5 @@ The owner allocator, creator and retirement correspondence establishes no Mach p
 The selected tagged backing allocation and element zero-check correspondence contains no Mach right operation. Runtime zone population remains an independent premise. [MixedData backing allocation](mixed_data_backing_report.md).
 
 The selected descriptor and owner release paths issue no Mach right operation. Their conditional source join goes through kernel virtual calls and separate reference words. [MixedData reference release](mixed_data_release_report.md).
+
+The tagged backing lookup, clear and zone handoff issue no Mach right operation in the selected source correspondence. [MixedData backing retirement](mixed_data_retirement_report.md).
