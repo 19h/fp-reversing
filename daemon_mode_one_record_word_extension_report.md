@@ -143,3 +143,5 @@ QG5: Standard components are separated from whole-hash identity;containment from
 QG6: Original bytes/fixups,recaptured predecessor source,original-source solver queries and the pinned NIST publication supply primary provenance;no new native or IDA observation is claimed.
 
 QG7: Bounded continuation prioritizes decoded recurrence,remaining next-block semantics,output linkage and source input-role recovery.
+
+Follow-up: [64-round consumer and COUNT-controlled suffix re-entry](daemon_mode_one_record_rounds_report.md) establishes the complete setup/body/update/adapter interface,all623 scratch-byte bounds,the128-byte refresh,and the original COUNT>64 first-prefix decision.

@@ -148,6 +148,7 @@ def main():
     if exists(BASE/'daemon_mode_one_record_long_prefix_report.md'):reports.add(BASE/'daemon_mode_one_record_long_prefix_report.md')
     if exists(BASE/'daemon_mode_one_record_word_gather_report.md'):reports.add(BASE/'daemon_mode_one_record_word_gather_report.md')
     if exists(BASE/'daemon_mode_one_record_word_extension_report.md'):reports.add(BASE/'daemon_mode_one_record_word_extension_report.md')
+    if exists(BASE/'daemon_mode_one_record_rounds_report.md'):reports.add(BASE/'daemon_mode_one_record_rounds_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1599,6 +1600,10 @@ def main():
         word_extension_quality=json.loads(read(ROOT/'daemon_mode_one_record_word_extension_quality_gates.json'))
         manifest['validation']['daemon_mode_one_record_word_extension_increment_checks']=word_extension_quality['verified_counts']
         manifest['validation']['daemon_mode_one_record_word_extension_static_scope']=word_extension_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_record_rounds_quality_gates.json'):
+        record_rounds_quality=json.loads(read(ROOT/'daemon_mode_one_record_rounds_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_record_rounds_increment_checks']=record_rounds_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_record_rounds_static_scope']=record_rounds_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

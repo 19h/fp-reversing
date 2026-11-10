@@ -1,0 +1,95 @@
+{
+  "generator_sha256": "01a1106f1aeb5648559954e6931f2741d19eaf13bfca745fb1fa11360b637ee4",
+  "static_scope": "Conditional64-round word-grid/image-bank consumer,private frame effects,source COUNT/biased-position suffix predicate,128-byte scratch refresh and initializer re-entry. All623 scratch-byte read sites bounded;decoded round arithmetic,whole algorithm,native traversal/owners,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 16451,
+    "source_bytes": 65804,
+    "pointer_records": 8,
+    "branch_bindings": 6,
+    "SP_writes": 0,
+    "comparison_role_corrections": 5,
+    "bitfield_decodes_checked": 294,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 0,
+    "pair_load_decodes_checked": 0,
+    "ADRP_decodes_checked": 2,
+    "prior_ranges_recaptured": 61,
+    "prior_bytes_recaptured": 97224,
+    "queries_unsat": 93,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 7,
+    "source_nonbranch_sites_translated": 16447,
+    "selected_instances_without_repeat": 226393,
+    "selected_instances_with_repeat": 226489,
+    "rounds": 64,
+    "grid_word_reads": 128,
+    "image_word_reads": 128,
+    "scratch_byte_source_sites_bounded": 623,
+    "scratch_byte_reads_selected_traversal": 9317,
+    "byte_selector_cases": 256,
+    "source_cuts": 1,
+    "root_lineage_stages": 12,
+    "updated_plane_bytes": 128,
+    "state_word_destinations": 16,
+    "retained_codebook_cells": 800,
+    "word_grid_bytes_preserved": 1120,
+    "populated_word_bytes_preserved": 1024,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_rounds_report.md": "36455eef8b2cf82a9bc32476e8167fffbeac99a8acb7f61fcadfe7f56d8d6fad",
+    "obfuscated_routines_report.md": "3248e3d68747e1dcd80e43a9db9861eb25d391f40a7f6b22c53e58245a02775e",
+    "mach_ports_report.md": "b2e79e5a96fad81153748abcbda6c36611d998daf93a3fff49f327ef7f54441d",
+    "foundational_triage_report.md": "7ce739f8c7514d9bd3e089be01446681f5dfa4794a6891ee2b489f1df4a78c9a",
+    "interface_abi_report.md": "ef08b1e1726edc0373daf538ea6d09b4886f401749efa896ac261c4e9fa5f69b",
+    "interface_investigation_status.md": "9d7f5e6d33b286338b7bb824e636ec65e158fc04666c93bc1f6308e44c7c1f3c",
+    "daemon_mode_one_record_word_extension_report.md": "b74c4cf869f31d6d5934f066ff55fb3da32ad242c20102089f267269f5cbbb4d"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_rounds_source.json": "27e1b7922dc1a06d59eae44cbf2f6c000cfb48a60c579e08365922bbf7dad81a",
+    "daemon_mode_one_record_rounds_checks.json": "2180518e21daa077de8b9886617b649cbf6659be74a07c61d1b816478eba7fd4",
+    "recover_daemon_mode_one_record_rounds.py": "dfb1a05591edbb91f788965c2908cf2736ee5a17bd094ca02edf136b84a88fb4",
+    "validate_daemon_mode_one_record_rounds.py": "6f7c9039ca092805892321e8cb1061af9a7daee9fe902ff01ee65ecccdb3205e",
+    "seal_daemon_mode_one_record_rounds.py": "01a1106f1aeb5648559954e6931f2741d19eaf13bfca745fb1fa11360b637ee4",
+    "verify_daemon_mode_one_record_rounds_publication.py": "12c6556a845f476eff61c7370f739243dbebe1ccf7d583b36fb33c16b0f43785"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and CR1-CR8;16447 unique sites,64 rounds,128 initialized-grid and128 image-bank word reads,all623 scratch bounds,complete new frame effects,128-byte refresh and universal COUNT/biased-position suffix predicate. Decoded recurrence,whole algorithm,initialized lookup membership,changed initializer frame epoch,native ownership/traversal,successful output and daemon-kext pairing remain unknown."
+  }
+}
