@@ -1,0 +1,84 @@
+{
+  "generator_sha256": "c4688e02c96229648025c337c962f9e0d3c7abdebbf5eb1225c4cbb84371ef23",
+  "static_scope": "Conditional COUNT64 successors:short-record address-keyed byte decoder and paired-plane updates,zero padding by untouched fixed suffix,exact63-byte bounded loop,and long-count state prelude/handoff. Source/coherent-memory contracts only;whole algorithm,native owners/reachability,successful output,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 5,
+    "source_instructions": 670,
+    "source_bytes": 2680,
+    "pointer_records": 6,
+    "branch_bindings": 8,
+    "SP_writes": 0,
+    "comparison_role_corrections": 9,
+    "bitfield_decodes_checked": 0,
+    "pair_store_decodes_checked": 0,
+    "prior_ranges_recaptured": 1,
+    "prior_bytes_recaptured": 28428,
+    "queries_unsat": 451,
+    "queries_sat": 36,
+    "predecessor_queries_replayed": 457,
+    "source_nonbranch_sites_translated": 665,
+    "codec_seed_certificates": 1,
+    "codec_round_certificates": 7,
+    "codec_byte_extract_certificates": 1,
+    "scratch_address_cases": 128,
+    "plane_cells_bounded": 128,
+    "short_max_iterations": 63,
+    "arithmetic_and_codebook_cells_retained": 800,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_input_planes_report.md": "a660bfd9e07be50393734432489426e622cdaba822e8257011ef406404836b20",
+    "obfuscated_routines_report.md": "dae577e302d031fb5b3887baa5151cefaacae03caffb360e311fb2e223e88e4a",
+    "mach_ports_report.md": "f0a051349f4453e56d0dae933cb77b6d4d24fb093077bd824e68fccbf0ff682d",
+    "foundational_triage_report.md": "e75bd962b6bc0f2c0e26e325d0598c1bab71ce187d0c9fd1480ca473e8458797",
+    "interface_abi_report.md": "05671c16d9573e1de73f24afdfde5f3e0800e816fc96ac805c161906d516b06a",
+    "interface_investigation_status.md": "359e4adf78836425fb49cf201a297b49dc5efafbf3a097c4d273ffff6c2b7f56",
+    "daemon_mode_one_record_join_report.md": "b373e5f4502c7ec3ee90b1724ec42395d2e04c00333fcd08b8af9971a91ec4de"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_input_planes_source.json": "ce691150cacc62728d2b4dc5040dc193b29b9e3a61bfddf1a335124098ae6f01",
+    "daemon_mode_one_record_input_planes_checks.json": "abe25e8b330a05466e6aa669691b72c4cae819bdd0119d5e84cf6105f4d7dc3a",
+    "recover_daemon_mode_one_record_input_planes.py": "869aceb1db2c834f7b74a6c91e730a223d3b7a7336912eae1f8389dc9f6b17fd",
+    "validate_daemon_mode_one_record_input_planes.py": "2acc872aa3f4692a780c32975f85f25fa9bf884c4fa6b42bb646bb001bced4d7",
+    "seal_daemon_mode_one_record_input_planes.py": "c4688e02c96229648025c337c962f9e0d3c7abdebbf5eb1225c4cbb84371ef23",
+    "verify_daemon_mode_one_record_input_planes_publication.py": "9c70f2a6162da8499d4cd9843ddcb5ae65e5cb75c1c8d157f35255dbe5c0eae3"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and IP1-IP8;665 current sites translated,universal address-codec seed/seven rounds/byte selection,128 plane addresses,exact bounded COUNT-byte updates and coherent zero-padded64-byte representation,plus long-count state handoff and field epochs;451 UNSAT/36 SAT results including457 predecessor replays. Whole algorithm,long-state compact form,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  }
+}
