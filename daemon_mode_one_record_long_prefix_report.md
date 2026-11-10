@@ -170,3 +170,5 @@ QG5: Actual CSEL predicate is distinguished from a candidate false arm;candidate
 QG6: Original image bytes,authenticated fixups,fresh predecessor capture,complete source SSA and accepted solver results provide primary evidence;no new dynamic or IDA observation is claimed.
 
 QG7: Impact-ranked continuation covers the next counter gate,mask/state equivalence,remaining suffix,publication and wider cancellation patterns.
+
+Follow-up: [Paired-plane gather,280-slot word view and encoder handoff](daemon_mode_one_record_word_gather_report.md) proves four rounds reading all128 plane bytes and writing64 words through the227/mod280 permutation. Both saved view roots are source-derived;800 codebook cells remain unchanged while eight bytes of the former963-byte scratch are overwritten. The exit converts I(0) from E0 to E1 under the retained codebook contract and selects0x100c557e8. All1626 sites/6048 instances translate;36 UNSAT/six SAT checks pass,including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,caller output and daemon-kext pairing remain unknown.

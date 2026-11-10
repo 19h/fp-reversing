@@ -1,0 +1,96 @@
+{
+  "generator_sha256": "7f3035809ce43ab6efedfaf06f0a26987f3619ed6681f3d6a900b14e012c6d7f",
+  "static_scope": "Conditional post-prefix four-round paired-plane gather and64-word scatter:exact root producers,128 plane reads,64 permuted word stores in a280-slot private view,retained800 codebook cells and typed-zero encoder handoff. Compact word transform,native ownership/traversal,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 5,
+    "source_instructions": 1629,
+    "source_bytes": 6516,
+    "pointer_records": 4,
+    "branch_bindings": 4,
+    "SP_writes": 0,
+    "comparison_role_corrections": 1,
+    "bitfield_decodes_checked": 12,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 0,
+    "pair_load_decodes_checked": 1,
+    "prior_ranges_recaptured": 43,
+    "prior_bytes_recaptured": 81208,
+    "queries_unsat": 36,
+    "queries_sat": 6,
+    "predecessor_queries_replayed": 17,
+    "source_nonbranch_sites_translated": 1626,
+    "translated_instances": 6048,
+    "iterations": 4,
+    "plane_byte_reads": 128,
+    "word_stores": 64,
+    "word_bytes_written": 256,
+    "word_grid_slots": 280,
+    "all_plane_and_word_addresses_certified": 192,
+    "root_producer_certificates": 2,
+    "root_lifetime_artifacts": 10,
+    "arithmetic_and_codebook_cells_retained": 800,
+    "exit_codebook_reads": 1,
+    "typed_zero_encoder_corollaries": 1,
+    "rejected_alterations": 7,
+    "source_load_effects": 471,
+    "source_store_effects": 282,
+    "read_bytes": 2589,
+    "store_bytes": 1768,
+    "distinct_store_bytes": 580
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_word_gather_report.md": "72ec64ea5c5e6f9375b469be110f6f00d9c6a5df2bdc107cf91da5df8ad8a3e1",
+    "obfuscated_routines_report.md": "87c3e5e25e4508d1d1dffe80a517bf87aea1248a59c75e77f90b8955bd308a41",
+    "mach_ports_report.md": "1bb54f58bcbac08519b7028fefe6cef9a9705c0d23d0766b06b5061236fd1101",
+    "foundational_triage_report.md": "7b58540c60b4ac29abd9290b1322cd863d3564602d837b5f24229c3d305fc0f2",
+    "interface_abi_report.md": "41510823df99f63c79545eb541e33afd429385e67abaa3fc5b8364a3d8a052a5",
+    "interface_investigation_status.md": "8df996ce8c2a1f7a42c8748eea9dc2c84d713553c928144443c655e980999af7",
+    "daemon_mode_one_record_long_prefix_report.md": "beaf713133978366defe4321e096f9ccd255572384c2793094f8f9538da13ca3"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_word_gather_source.json": "8e655f4345fcab38d9240808dfb843db2444d87677a59212ac2bd34551614b16",
+    "daemon_mode_one_record_word_gather_checks.json": "6fd303ef833b2e4608a6d9b5f156498c8347651b47d51ea6c9c49b33ea73cd36",
+    "recover_daemon_mode_one_record_word_gather.py": "da8e35879f856879ceefa525b7f0a54795bec57e34286004556cc39597d23dc4",
+    "validate_daemon_mode_one_record_word_gather.py": "22de00d43e7331ef66176371e80e02cfd53b570822eaec8fe03905dbeda7f9d7",
+    "seal_daemon_mode_one_record_word_gather.py": "7f3035809ce43ab6efedfaf06f0a26987f3619ed6681f3d6a900b14e012c6d7f",
+    "verify_daemon_mode_one_record_word_gather_publication.py": "39cc938dac94c42d0ab5b7a4f855fcc478fb90e8f1be2834e69e1777ae7ac500"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WG1-WG8;1626 unique sites/6048 instances,two source root producers,ten-artifact root census,four gather/scatter rounds,128 plane reads,64 words in the280-slot view,192 certified addresses,eight overwritten bytes of former963-byte scratch,current800-cell preservation and typed E0-to-E1 encoder handoff;36 UNSAT/6 SAT results including17 selected predecessor/codebook queries. Compact transform,native ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  }
+}

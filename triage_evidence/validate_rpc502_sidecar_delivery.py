@@ -146,6 +146,7 @@ def main():
     if exists(BASE/'daemon_mode_one_record_input_planes_report.md'):reports.add(BASE/'daemon_mode_one_record_input_planes_report.md')
     if exists(BASE/'daemon_mode_one_record_long_planes_report.md'):reports.add(BASE/'daemon_mode_one_record_long_planes_report.md')
     if exists(BASE/'daemon_mode_one_record_long_prefix_report.md'):reports.add(BASE/'daemon_mode_one_record_long_prefix_report.md')
+    if exists(BASE/'daemon_mode_one_record_word_gather_report.md'):reports.add(BASE/'daemon_mode_one_record_word_gather_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1589,6 +1590,10 @@ def main():
         long_prefix_quality=json.loads(read(ROOT/'daemon_mode_one_record_long_prefix_quality_gates.json'))
         manifest['validation']['daemon_mode_one_record_long_prefix_increment_checks']=long_prefix_quality['verified_counts']
         manifest['validation']['daemon_mode_one_record_long_prefix_static_scope']=long_prefix_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_record_word_gather_quality_gates.json'):
+        word_gather_quality=json.loads(read(ROOT/'daemon_mode_one_record_word_gather_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_record_word_gather_increment_checks']=word_gather_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_record_word_gather_static_scope']=word_gather_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
