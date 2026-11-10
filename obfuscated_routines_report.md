@@ -1348,3 +1348,7 @@ The201-instruction path is a compact four-cell word XOR with mask u32((W16+0x8cc
 ## Secondary word import follow-up
 
 The1471-instruction seed successor is a four-step import from both64-byte primary planes to four16-word secondary streams. Exact addresses and termination hold for arbitrary plane bytes;numeric word transforms remain unknown. The65-instruction successor selects0x100c503c8 through a raw ENC0-dependent frame field. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).
+
+## Secondary word extension follow-up
+
+The2245-instruction continuation is a48-step four-stream word expansion with four exact SHA-2 small-sigma identities and one proved state-parametric additive dependence. This classifies mathematical components;the remaining value representations and whole algorithm remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).

@@ -1501,3 +1501,7 @@ The four-byte XOR rejoins the29-instruction seed with W9=0x4923. The refresh ret
 ## Secondary word import follow-up
 
 The secondary root has coordinate D(j)=F+0xc80+4*((241*j)mod286),with four16-word streams at labels0,72,142,212. W15/W3 advance16/4 per iteration;the fourth exits through slot1f61. The post-import block selects slot1ef1,target0x100c503c8,diversity5b22. Word-value semantics and native allocation extent remain unknown. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).
+
+## Secondary word extension follow-up
+
+The286-slot grid now has a48-iteration extension contract:stream bases0,72,142,212 each reach64 words. The pre-decrement countdown exits at0 and returns W23=0xffffffff;slot0xa529 reaches a prefix clearing low32 F748 and reading u32 F4e4. Exact sigma and state-parametric stream contracts are retained. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).

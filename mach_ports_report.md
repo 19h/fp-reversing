@@ -1324,3 +1324,7 @@ Three further continuations have zero Mach-port emissions and four private authe
 ## Secondary word import follow-up
 
 The secondary import and following handoff add no Mach receive/send or port-emission site:their outgoing interface is private frame/register state and authenticated table dispatch. Linking the256-byte secondary grid to a later descriptor or IOKit buffer remains unknown. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).
+
+## Secondary word extension follow-up
+
+The secondary extension and seven-instruction exit prefix contain no Mach-message,right-transfer or port-emission site. Their outgoing interface is the expanded grid,scalar frame/register state and slot0xa529 to0x100c2c25c;the next prefix consumes F4e4. Native serialization and daemon/kext linkage remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).

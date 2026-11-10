@@ -148,3 +148,7 @@ QG4: Widths and byte units are explicit; four-case address/control certificates 
 QG5: Opaque word values, conditional nibble validity, rejected F738 proposal, prototype comparison error, uncertain native arrival and failed full-IDB reads remain explicit.
 QG6: Pinned executable bytes, original authenticated records, recaptured predecessors, strict solver results and bounded MCP observations supply provenance; no unverified memory semantics are adopted.
 QG7: Impact-ranked follow-ups address downstream value semantics, mutation epochs and cross-layer mapping. All gates apply to this increment; the continuing interface investigation remains active.
+
+## Secondary word extension follow-up
+
+The previously untranslated target0x100c503c8 is a48-step extension of the four16-word streams to64 words each. It adds all69 byte bounds,40 bank roles,exact sigma components and a state-parametric additive dependence;the exit selects0x100c2c25c and reads F4e4. Full decoded recurrence and native pairing remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).

@@ -1158,3 +1158,7 @@ Compact word XOR,complete128-byte plane refresh and secondary-root entry contrac
 ## Secondary word import follow-up
 
 The seed consumer and post-import block now have source-pinned four-step geometry,frame/control and raw-u8 contracts. Current frontier includes0x100c503c8 and the still unresolved0x100d77384. Direct parent proofs plus the saved-root producer replayed;one broader recursive replay returned unknown and is excluded. Native output/ownership,table validity,algorithm identity and cross-layer pairing remain unresolved;goal remains active. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).
+
+## Secondary word extension follow-up
+
+The secondary extension now has48-step geometry,all69 primary-byte bounds,40 bank assignments,four exact sigma functions and one additive stream dependence with an unresolved component-state bias. The frontier is0x100c2c25c beyond its seven-instruction prefix,plus the unresolved0x100d77384. Closed-path value correlations,current table validity,native output/ownership and cross-layer pairing remain open;goal remains active. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).

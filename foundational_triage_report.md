@@ -1370,3 +1370,7 @@ The comparison-equal arm updates only C63..C60 as one numerical32-bit XOR. The a
 ## Secondary word import follow-up
 
 Four induction cases establish128 byte reads,64 distinct u32 destinations,frame epochs and finite import termination,followed by an exact raw-u8 ENC0 handoff. Read-only IDA supplied96 matching bytes and bounded cache context;full container/slice identity remains unverified after a timed-out batch and unavailable worker. See [secondary word import and post-import handoff](daemon_mode_one_secondary_word_import_report.md).
+
+## Secondary word extension follow-up
+
+The48-step chronology expands64 initialized words to256,with384 backward reads,192 new stores and69 byte reads per iteration bounded to the962-byte primary domain. Forty byte sites have bank-membership proofs;the remaining29 roles,current table validity,state bias and native owners remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).

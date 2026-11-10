@@ -1,0 +1,123 @@
+{
+  "generator_sha256": "147fe7e3b17ad599e1c1bb386e8ad0045e7a472b8c86658d20177109db3e999b",
+  "static_scope": "Conditional48-step secondary word expansion:word/frame/control contracts,all69 primary-byte bounds,four exact SHA-2 small-sigma components and one state-parametric additive stream dependence. Numeric table validity,full decoded four-stream recurrence,native arrival/owners/output,whole algorithm and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "exit_block_full_instructions": 10637,
+    "exit_block_untranslated_instructions": 10630,
+    "exit_block_bytes_hashed": 42548,
+    "source_ranges": 2,
+    "source_instructions": 2252,
+    "source_bytes": 9008,
+    "pointer_records": 2,
+    "branch_bindings": 2,
+    "SP_writes": 0,
+    "EON_decodes_checked": 1,
+    "TST_decodes_checked": 1,
+    "CNEG_decodes_checked": 1,
+    "UDIV_decodes_checked": 1,
+    "UMULL_decodes_checked": 74,
+    "bitfield_decodes_checked": 39,
+    "register_shift_decodes_checked": 2,
+    "comparison_role_corrections": 2,
+    "prior_ranges_recaptured": 4,
+    "prior_bytes_recaptured": 12088,
+    "queries_unsat": 36,
+    "queries_sat": 6,
+    "predecessor_queries_replayed": 14,
+    "source_nonbranch_sites_translated": 2251,
+    "selected_traversal_nonbranch_instances": 107719,
+    "iterations": 48,
+    "word_read_operations": 384,
+    "new_word_stores": 192,
+    "new_word_bytes": 768,
+    "final_populated_words": 256,
+    "final_populated_word_bytes": 1024,
+    "unclaimed_grid_slots": 30,
+    "primary_byte_reads_bounded": 69,
+    "primary_byte_reads_total": 3312,
+    "short_reciprocal_sites": 40,
+    "full_reciprocal_sites": 29,
+    "short_numerator_upper_bound": 759849,
+    "proved_bank_membership_sites": 40,
+    "proved_SUM_sites": 11,
+    "proved_CARRY_sites": 3,
+    "proved_XOR_sites": 3,
+    "proved_ENC_sites": 15,
+    "proved_DEC_sites": 8,
+    "source_sigma_identities": 4,
+    "state_parametric_additive_streams": 1,
+    "rejected_second_additive_streams": 1,
+    "rejected_pair_XOR_groups": 2,
+    "per_iteration_loads": 169,
+    "per_iteration_stores": 27,
+    "per_iteration_read_bytes": 729,
+    "per_iteration_store_bytes": 108,
+    "private_frame_stores": 23,
+    "private_frame_distinct_written_bytes": 76,
+    "loop_and_prefix_loads": 8113,
+    "loop_and_prefix_stores": 1297,
+    "loop_and_prefix_read_bytes": 34996,
+    "loop_and_prefix_store_bytes": 5188,
+    "loop_and_prefix_distinct_written_bytes": 844,
+    "source_value_cuts": 0,
+    "computed_address_normalizations": 0,
+    "initial_unprescribed_frame_inputs": 0,
+    "primary_standard_bytes": 833315,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_secondary_word_extension_report.md": "10e9b2225df1efe8d9c7371692aba57cc99136c29a73a68369e0213f46117dd3",
+    "obfuscated_routines_report.md": "5a3a95ba786f0db70ba2b6c93c29cc9c243b2e10b26ffd74eb0a8862d6dafd2c",
+    "mach_ports_report.md": "a64b61073f7763619d8d85259aca9f778a8f61fa2876fe868059117499b18e50",
+    "foundational_triage_report.md": "f34604cba1ad0d62583c665d94e1dc565cf5b312cb042292277e3bcff3f3b69e",
+    "interface_abi_report.md": "156c3a5b501161f873e394658dd992a22aabf2bb3b9c11e7c6bd85f0fb736e03",
+    "interface_investigation_status.md": "886b53607c626eeb56a40f5db2f47a04c07843c266cf7cc76a47afdcadd4fe93",
+    "daemon_mode_one_secondary_word_import_report.md": "97bfba4398e77e3e657ab83164c2d94534ce70a679af5152efce511e7dd9c918"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_secondary_word_extension_source.json": "52efd1e263bf90cd8b798db91c8b31d5598da02e3fa9e0cd05d39ca3ff1519d2",
+    "daemon_mode_one_secondary_word_extension_checks.json": "b1ac944244cc7cc53fae7337476b723dcdbe736380d5405c6d57adaf6072c6a6",
+    "recover_daemon_mode_one_secondary_word_extension.py": "5c0881171cb57abbfb4bfe13f95a965101ad2688be1e1f811c9cd970c1f15593",
+    "validate_daemon_mode_one_secondary_word_extension.py": "12b7b13b2451485344844667e97f1f838d2cd9ed6124fda027607c976a0972e4",
+    "seal_daemon_mode_one_secondary_word_extension.py": "147fe7e3b17ad599e1c1bb386e8ad0045e7a472b8c86658d20177109db3e999b",
+    "verify_daemon_mode_one_secondary_word_extension_publication.py": "5cdba91b0539369a2f53432b3ef92a6169487c9843c11759393e7299645d4cd5"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SX1-SX8;2251 source sites,36 UNSAT/six abstract SAT,including14 selected predecessor replays;48-step word expansion,69 byte bounds,40 bank roles,four exact sigma components,one state-parametric additive dependence and F4e4 exit prefix. Full recurrence,29 bank roles,current table validity,native ownership/output and cross-layer pairing remain explicit unknowns."
+  }
+}
