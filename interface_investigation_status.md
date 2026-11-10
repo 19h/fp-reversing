@@ -1191,3 +1191,8 @@ Current cross-layer increment:source-established version4c0b0000/capability1f8,t
 ## Capability preparation and selector21 contract
 
 Published capability/preparation and selector21 ABI increment:42 UNSAT/three abstract SAT,370 translated instances,two capability readers,one complete16-byte loop,six daemon arguments,eleven provider arguments and ten core arguments. Fixed512 decompilation output is corrected. Private-call delta/frame lifetime,working-mode serialization,construction/API-buffer identity,extended preparation,core bounds and native pairing remain open;goal active. [Evidence and exact boundaries](versioned_request_abi_report.md).
+
+
+## Typed UserClient context lifecycle
+
+Published task/context lifecycle increment:40 UNSAT/two abstract SAT,366 distinct source instructions,ten fresh bank cuts and seven freshness alterations. Source-bound creation and empty-head cleanup pass. Populated-list teardown,task-reference balance,actual provider/connection identity and complete transactions remain open;goal active. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).

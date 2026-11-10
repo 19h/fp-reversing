@@ -1381,3 +1381,8 @@ The pinned provider uOxAg/V2F1SYee route returns version0x4c0b0000;Q5TC6/QIWEiU 
 ## Capability preparation and selector21 contract
 
 Two daemon capability readers now have source bit/slot contracts. Conditional working-mode values1/2/5/6,a complete16-byte prefix and a fixed16-byte field are recovered without assigning wire-mode identity or an algorithm. The qtQQt provider adapter has an exact ten-argument core tail into UeFdbi;its incoming this/task/scalar/span/count channels are distinguished. [Evidence and exact boundaries](versioned_request_abi_report.md).
+
+
+## Typed UserClient context lifecycle
+
+`Trped0719ab` removes this and forwards (context cell,mode32,task64) into `_lapsl183ah`; `LasdMdn12cas` forwards the cell into `_kratpzs81h`. Typed24-byte creation and empty-head cleanup are source-proved;populated-list cleanup and native owners remain open. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).

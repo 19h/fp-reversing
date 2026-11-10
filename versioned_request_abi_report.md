@@ -164,3 +164,8 @@ The supplied C at lines8791-8823 displays `*output_count=0x200` on success and o
 - QG5:Distinct frame epochs,user/kernel pointers,encoded/decoded bits,local/wire modes,552/512/returned counts,API/outer/provider statuses,component/native behavior and immutable/live read bytes remain distinct. The decompilation's fixed-count statement is explicitly corrected.
 - QG6:Original hashes,raw instructions,dispatch/member/vtable records,eight byte arrays,370 translated instances,42 UNSAT,three abstract SAT and eight freshness alterations provide scoped provenance. Recalled facts and unproved buffer/frame joins supply no semantic premise.
 - QG7:Impact-ranked continuation addresses the actual remaining frame,serialization,extended-preparation,core-count,native-pairing and inventory gaps without promoting the component results to a completed native exchange.
+
+
+## Typed UserClient context lifecycle
+
+The selector21 task argument now has an initializer-field provenance certificate and a separate UserClient context lifecycle. This does not close the preceding daemon buffer/frame/working-mode joins or establish native task ownership. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).

@@ -1534,3 +1534,8 @@ The selector22/23 provider getters return zero-extended u32 values4c0b0000/1f8 t
 ## Capability preparation and selector21 contract
 
 Selector21 has a fixed552 B structure ABI distinct from input count at+544,initial512 provider capacity,and embedded provider status at+548. The UserClient passes eleven provider arguments;qtQQt removes this and forwards ten core arguments,including two stack channels. The wrapper copies the provider-mutated count on success. The daemon API status codec and user in-place addresses are proved separately from kernel buffer aliasing and native pairing. [Evidence and exact boundaries](versioned_request_abi_report.md).
+
+
+## Typed UserClient context lifecycle
+
+Start provider ABI is (this,cell address,mode32,task64);the adapter removes this. Stop forwards the cell address. The24-byte context stores u64 head at0,u32 mode at8 and u64 task at16;four padding bytes are unwritten. Empty-head typed-free and raw helper/caller result channels remain distinct. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).

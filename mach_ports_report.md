@@ -1357,3 +1357,8 @@ Selectors22/23 retain their zero-input/four-byte-output IOKit contracts. The pin
 ## Capability preparation and selector21 contract
 
 Call0x100478a04 resolves to IOConnectCallStructMethod(selector21),with552 B input,the same user input/output address and a capacity-cell pointer. Connection is u32[state+4]. The kernel descriptor is552/552 B;provider/task parameters and spans are kernel pointers,not new Mach names. No native message,right,port identity or complete construction-buffer join is established. [Evidence and exact boundaries](versioned_request_abi_report.md).
+
+
+## Typed UserClient context lifecycle
+
+The initializer task field and context task field are u64 kernel pointers;they are separate from a u32 IOKit connection name. The new context is a typed24-byte heap record. No additional Mach-port emission or native right retirement is established. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).

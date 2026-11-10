@@ -1,0 +1,84 @@
+{
+  "generator_sha256": "f224696847c2f6037d1d7dd7dd9d8f7ea3540e78945646f06e5dae6be963aa4a",
+  "static_scope": "Source-bound UserClient task publication and forwarding,start/stop provider adapters,typed24-byte context creation and empty-head cleanup. Populated-list teardown,framework task references,concurrency,native receiver/provider identity and successful daemon-kext transactions remain unproved.",
+  "verified_counts": {
+    "kext_functions": 9,
+    "kext_instructions": 1299,
+    "kext_bytes": 5196,
+    "kernel_functions": 3,
+    "kernel_instructions": 31,
+    "source_fragments": 24,
+    "literal_bank_arrays": 8,
+    "bank_rules": 10,
+    "bank_input_cases": 2560,
+    "pool_pointers": 8,
+    "branch_pointers": 11,
+    "lifecycle_bindings": 10,
+    "typed_descriptors": 2,
+    "context_bytes": 24,
+    "cast_stub_bytes": 16,
+    "cast_stub_instructions": 4,
+    "queries_unsat": 40,
+    "queries_sat": 2,
+    "source_instruction_instances_translated": 1117,
+    "distinct_source_instruction_sites_translated": 366,
+    "fresh_bank_cuts": 10,
+    "predecessor_queries_replayed": 2,
+    "rejected_alterations": 7
+  },
+  "report_sha256": {
+    "userclient_context_lifecycle_report.md": "e53d4f4ea93a3c3d84e031a78e8385e97a1b14341170756ec3534adf4275681f",
+    "obfuscated_routines_report.md": "0b9f021943233595a2f14f28e51851a3a822f751a3c7284bdffda7c361d5be1f",
+    "mach_ports_report.md": "919ec43143d9c72c3f8b0bdd15b2f01cab55cafb1649874f617dd7b3edc6cf31",
+    "foundational_triage_report.md": "4fe567fa7bc933c97361404ad705015e04432527d1eeb7c97a863523777b952c",
+    "interface_abi_report.md": "b6fdad008729a6b5c9ae03de4c11037dab984daa632fe4907c7f44a6212e8a77",
+    "interface_investigation_status.md": "bf09aebb645b74e5798707ee3371ad53343e9826890ff4d3f634c87dc67cfede",
+    "versioned_request_abi_report.md": "80d81aae4f72bb10d69f4d440aa8c991213a44563f5df5bd31c7d8dc24aee91c"
+  },
+  "evidence_sha256": {
+    "userclient_context_lifecycle_source.json": "290ed4483ba0a9e4b4350f3b70a55537f4c4adeef963942bfbc452f3d99a4fa1",
+    "userclient_context_lifecycle_checks.json": "91ae174d57898ee7b21b164635c06fbd6f56c5d54ea01edd2c1adc24f8d59f52",
+    "recover_userclient_context_lifecycle.py": "4cb5d826b81759a75df8d04b34022167277b72465c6ea983d778285d3aa318f9",
+    "validate_userclient_context_lifecycle.py": "3c1980beabc46c9e510f062f9ce065550cea088bcdf9a1984b4c637fe334109f",
+    "seal_userclient_context_lifecycle.py": "f224696847c2f6037d1d7dd7dd9d8f7ea3540e78945646f06e5dae6be963aa4a",
+    "verify_userclient_context_lifecycle_publication.py": "b0ae2d4c33792315d9b960149342b1768b32f605696461b1fc556df7ba968f86"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and UC1-UC8;task64 publication and forwarding,start/stop adapters,typed24-byte context creation,empty-head cleanup and caller result separation. Forty UNSAT including two predecessor replays,two abstract SAT,366 distinct translated sites and seven freshness alterations pass. Populated-list cleanup,task-reference balance,concurrency,native provider identity and complete transactions remain unproved."
+  }
+}

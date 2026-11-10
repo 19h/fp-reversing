@@ -1403,3 +1403,8 @@ Pinned getter metadata is constant under the original bank/pointer epochs:versio
 ## Capability preparation and selector21 contract
 
 Capability bit3 gates preparation;decoded bits5/6/1 affect local working modes. Private-call SP adjustment prevents assuming the old saved state pointer unless its frame contract holds. Original selector21 instructions expose a provider-mutated count initialized512,copied only on provider success,and status at output+548 while outer method status is0. The supplied C fixed512 output statement is corrected;core capacity compliance remains unknown. [Evidence and exact boundaries](versioned_request_abi_report.md).
+
+
+## Typed UserClient context lifecycle
+
+Initializer task publication joins selector21 forwarding conditionally. Start publishes a typed24-byte context containing head,mode and task;empty-head stop requests typed free and clears its cell. Start overwrites the helper result with1. Task-reference balance,populated-list cleanup and concurrency remain open. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).
