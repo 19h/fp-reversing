@@ -238,3 +238,7 @@ QG5:Prior sum-compatible encoding versus carry-selected numeric orientation,inpu
 QG6:Claims trace to the pinned image,original pointer records,exact ROM cells,fresh source comparison,1378 UNSAT/two abstract SAT and686 replayed predecessor queries. The register-shift rule has a primary Arm reference.
 
 QG7:Impact-ranked continuation covers real consumers,arithmetic lifting,encoding equality,ROM scope and actual output/peer ownership. No unrelated target probing is included.
+
+## Workspace state installation follow-up
+
+The next two traversals and state initializer repurpose all Q/I storage as two64-byte data planes while preserving the800 SUM/CARRY/XOR/decoder/encoder cells. Their later consumers must use the new frame epoch. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).

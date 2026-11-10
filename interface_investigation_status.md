@@ -1142,3 +1142,7 @@ Current frontier is `0x100c1c8a0`,after construction of separately encoded addit
 ## Carry, XOR and numeric-map follow-up
 
 Current frontier is `0x100d845e0`,after construction of carry/XOR and input/output numeric maps. Next priorities are actual consumers,carry propagation and encoding transitions,followed by output ownership/serialization and matched daemon/kext ABI. Goal remains active. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.
+
+## Workspace state installation follow-up
+
+Published bounded contracts cover two74-word traversals,128 state-plane bytes,32 replaced permutation cells,800 retained arithmetic/codec cells and saved-slot lifetime ends. The active frontier is0x100b6fe00;whole-algorithm identity,native ownership/output and daemon/kext linkage remain unresolved. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).

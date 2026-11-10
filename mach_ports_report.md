@@ -1308,3 +1308,7 @@ The inverse/shuffle/encoded-addition chain contains no Mach send/receive,port al
 ## Carry, XOR and numeric-map follow-up
 
 The carry/XOR/numeric-map builders contain no Mach send/receive,port allocation,right transfer or message-emission site. Their accesses are private frame tables and inherited immutable ROM;there is no new controller-word read. Native output and daemon/kext pairing remain unknown. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.
+
+## Workspace state installation follow-up
+
+The four selected continuations have zero Mach-port emissions and only private authenticated BRAA edges. The initializer dispatches through slot0x40d0 to0x100b6fe00;this establishes no new daemon/kext IPC pairing. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).

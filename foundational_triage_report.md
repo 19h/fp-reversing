@@ -1354,3 +1354,7 @@ The first forward nibble map is replaced only after its inverse is stored in dis
 ## Carry, XOR and numeric-map follow-up
 
 The suite now accounts for832 disjoint initialized private cells and800 selected ROM cells. The carry table stores encoded0/1 symbols in the high nibble. Input decoding and output encoding have different roles;mutual inversion is not inferred. Reaching W9 and the decoder final W16=653 are established from actual producer/lifetime evidence. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.
+
+## Workspace state installation follow-up
+
+The unchanged296-byte workspace feeds two full traversals and a128-byte state-plane install. Saved NODE/cookie and two image-root slots receive u32 overwrites;LOCAL/request roots survive. Table and saved-slot identities require the new epoch. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).

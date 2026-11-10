@@ -1,0 +1,94 @@
+{
+  "generator_sha256": "501a20f6d25851d01c966f1fcf3377d82e6140e3889544d201ee9f18f33a537c",
+  "static_scope": "Two74-word workspace traversals and128-byte private state install;Q/I cells are repurposed while800 arithmetic/codec cells survive. Full source,address/control contracts and saved-slot epochs only;algorithm identity,native ownership/output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 5679,
+    "source_bytes": 22716,
+    "pointer_records": 5,
+    "branch_bindings": 6,
+    "SP_writes": 0,
+    "bitfield_decodes_checked": 12,
+    "register_shift_decodes_checked": 8,
+    "comparison_role_corrections": 8,
+    "prior_ranges_recaptured": 7,
+    "prior_bytes_recaptured": 3920,
+    "queries_unsat": 12,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 1,
+    "source_nonbranch_sites_translated": 5675,
+    "words_per_traversal": 74,
+    "workspace_loop_loads": 148,
+    "workspace_loop_read_bytes": 592,
+    "second_adapter_executions": 73,
+    "install_frame_input_words": 76,
+    "install_workspace_input_words": 74,
+    "install_source_loads": 318,
+    "install_store_effects": 398,
+    "install_store_bytes": 1228,
+    "install_distinct_bytes_written": 668,
+    "install_read_bytes": 1288,
+    "computed_accesses_normalized": 3,
+    "private_plane_bytes": 128,
+    "repurposed_permutation_cells": 32,
+    "retained_arithmetic_codec_cells": 800,
+    "known_domain_cells": 928,
+    "unclaimed_domain_cells": 34,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_workspace_state_install_report.md": "0dbfbe7e5e9cda9a37de01ed81b4fc35e86e8e561ddcf06c0ae2bf8087eb00ab",
+    "obfuscated_routines_report.md": "e6229bd4296d4a7463e6fc7f3629d16542ea1a001459fa1a292d8228f9b56d29",
+    "mach_ports_report.md": "39cac7fc260c70a305bd94a18508a32da3510cf8d1daf582d9dc870cef9cc269",
+    "foundational_triage_report.md": "a5f294eeb18da3ad0db4e3719aeb22b76bf0ea76fd911eac69365bcba03293d2",
+    "interface_abi_report.md": "a9a5e0a2ef4b56b967d1363c140eff42630c5a630f9408151b233b71536948f3",
+    "interface_investigation_status.md": "89963c059c81f8e3cea59bc75b68443d1b11a168b3d853be31571cbde25102ad",
+    "daemon_mode_one_nibble_operation_suite_report.md": "f9f7253aff086872c5847c7b40cea6a9658a1ea20f4b94a61cd6c64849a553af"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_workspace_state_install_source.json": "6bcf0ce93ff161f15becf47902d3614491eb5390ae8f1816fab10463d1d68e8c",
+    "daemon_mode_one_workspace_state_install_checks.json": "aa779b6bfd7cb5c40014e004838190ebc886b2371b30dbe6fb7c2871d5731a31",
+    "recover_daemon_mode_one_workspace_state_install.py": "bae21891f9874240435662db38f638844a231ec4b581f9c8a9e574f0bd3adbb5",
+    "validate_daemon_mode_one_workspace_state_install.py": "d709081431bf54a040425b7218026dcb7540a94188495cc56c90f3a0b1d7bdfe",
+    "seal_daemon_mode_one_workspace_state_install.py": "501a20f6d25851d01c966f1fcf3377d82e6140e3889544d201ee9f18f33a537c",
+    "verify_daemon_mode_one_workspace_state_install_publication.py": "7bd223e63c99bddd0540f7028bd7978361643c7d1f4457eb6da8e55a2818f24b"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WS1-WS8;5675 source sites,12 UNSAT/two specified abstract SAT,including one replayed encoder boundary;two74-word traversals,128 state-plane stores,32 permutation cells repurposed and800 arithmetic/codec cells preserved;computed-access forwarding and saved-slot epochs. Native ownership/output and daemon-kext pairing remain unknown."
+  }
+}

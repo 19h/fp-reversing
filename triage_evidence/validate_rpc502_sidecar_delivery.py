@@ -154,6 +154,7 @@ def main():
     if exists(BASE/'daemon_mode_one_workspace_passes_report.md'):reports.add(BASE/'daemon_mode_one_workspace_passes_report.md')
     if exists(BASE/'daemon_mode_one_encoded_addition_report.md'):reports.add(BASE/'daemon_mode_one_encoded_addition_report.md')
     if exists(BASE/'daemon_mode_one_nibble_operation_suite_report.md'):reports.add(BASE/'daemon_mode_one_nibble_operation_suite_report.md')
+    if exists(BASE/'daemon_mode_one_workspace_state_install_report.md'):reports.add(BASE/'daemon_mode_one_workspace_state_install_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1629,6 +1630,10 @@ def main():
         nibble_operation_suite_quality=json.loads(read(ROOT/'daemon_mode_one_nibble_operation_suite_quality_gates.json'))
         manifest['validation']['daemon_mode_one_nibble_operation_suite_increment_checks']=nibble_operation_suite_quality['verified_counts']
         manifest['validation']['daemon_mode_one_nibble_operation_suite_static_scope']=nibble_operation_suite_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_workspace_state_install_quality_gates.json'):
+        workspace_state_install_quality=json.loads(read(ROOT/'daemon_mode_one_workspace_state_install_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_workspace_state_install_increment_checks']=workspace_state_install_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_workspace_state_install_static_scope']=workspace_state_install_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

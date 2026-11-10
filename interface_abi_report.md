@@ -1485,3 +1485,7 @@ The generated operation satisfies D[x+16*y]=Eout((Ein_inverse(x)+Ein_inverse(y))
 ## Carry, XOR and numeric-map follow-up
 
 For Ein=P composed with E and Eout=Q composed with E,the tables implement Eout(sum mod16),Eout(carry)<<4 and Eout(XOR);DEC[Ein(a)]=a and ENC[n]=Eout(n). Current source proves two256-step and two16-step loops plus their full register boundaries. Numeric orientation is pinned by carry and independently agrees with both static ROM maps. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.
+
+## Workspace state installation follow-up
+
+The second traversal repeats through a16-instruction index/state adapter. The initializer consumes74 workspace words,two first-pass auxiliary frame words and retained register state;Q/I cells are repurposed,800 arithmetic/codec cells remain,and the next private ABI selects0x100b6fe00. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).

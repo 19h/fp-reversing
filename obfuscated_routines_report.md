@@ -1332,3 +1332,7 @@ The continuation chain builds the first nibble permutation inverse,creates a sec
 ## Carry, XOR and numeric-map follow-up
 
 Four subsequent continuations generate high-nibble carry,XOR,input-decoder and output-encoder tables. Carry selects generator11 as the shared numeric encoding among the eight sum-compatible choices. The local suite implements four-bit sum/carry/XOR with role-specific input and output maps;full-word or whole-algorithm identity remains unproved. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.
+
+## Workspace state installation follow-up
+
+The two74-word workspace traversals,second-pass adapter and4870-instruction initializer have source/address/control contracts. The initializer replaces Q/I storage with two64-byte input-dependent planes while preserving800 arithmetic/codec cells;decoded recurrence and algorithm identity remain unknown. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).
