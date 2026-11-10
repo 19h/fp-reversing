@@ -183,3 +183,5 @@ These commands regenerate this increment's outputs. Preserve the published files
 | QG7 | Pass: impact-labeled bounded continuation table |
 
 [Source identity](triage_evidence/sample_lock_source_identity.json), [baseline preservation](triage_evidence/sample_lock_preservation.json) and [machine-readable quality gates](triage_evidence/sample_lock_quality_gates.json) retain delivery checks. No new incoming/outgoing Mach port or emission site is established by these kernel-internal interfaces.
+
+The selected startup path can populate the cached fallback cell from IOLockAlloc. The allocation family is established for that path. The runtime value supplied to either RW call remains unknown. [Cached lock publication and API types](cached_lock_origin_report.md).

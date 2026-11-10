@@ -65,3 +65,5 @@ The adapter's caller selects a continuation through the original slot for saved 
 - **QG5** distinguishes descriptor, auxiliary allocation and lock operands. Selected source outcomes retain their caller and ownership premises.
 - **QG6** links original instructions, ten bank identities, eight authenticated continuations and eight local proofs to the claims.
 - **QG7** ranks caller reachability, lock identity, resource continuity and broader coverage.
+
+The selected startup producer supplies an IOLockAlloc result to the same cell read by the teardown suffix. The allocation and free APIs are nominally both mutex APIs. Native epoch identity remains open. [Cached lock publication and API types](cached_lock_origin_report.md).

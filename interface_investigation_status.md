@@ -1235,3 +1235,5 @@ The original size table, variable view assignment and early-heap initialization 
 The constructor, kext cleanup and base free now have a conditional prepare-count correspondence. Actual VM wiring, teardown scheduling and later backing capacity remain open. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
 
 The selected protected cleanup continuation now covers the matching auxiliary producer, retirement and parent return. Reaching caller state and native ownership remain open. [AES initialization and cleanup](aes_cleanup_epoch_report.md).
+
+The cached lock producer now has a source-backed mutex allocation and publication path, with distinct kernel mutex and RW type evidence. Native pointer continuity remains open. [Cached lock publication and API types](cached_lock_origin_report.md).

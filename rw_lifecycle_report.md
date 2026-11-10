@@ -182,3 +182,5 @@ These regenerate this increment's outputs; preserve published artifacts and use 
 | QG7 | Pass: impact-labeled continuation table |
 
 [Source identity](triage_evidence/rw_lifecycle_source_identity.json), [preservation](triage_evidence/rw_lifecycle_preservation.json) and [machine-readable quality gates](triage_evidence/rw_lifecycle_quality_gates.json) retain final delivery checks. No new incoming/outgoing Mach port, right transfer or native IPC event is established by these kernel-internal interfaces.
+
+A separate provider-startup path publishes an IOLockAlloc result into the cached cell. The X20 destination for the RW allocation candidate in this report remains open. [Cached lock publication and API types](cached_lock_origin_report.md).
