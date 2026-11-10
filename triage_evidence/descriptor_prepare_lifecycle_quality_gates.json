@@ -1,0 +1,69 @@
+{
+  "generator_sha256": "0a2d20a1f94cb6ebb5d1c32bf545d2c340a21321525002a9ca5a259b26e3eea9",
+  "static_scope": "Source-level descriptor prepare and complete count, normal final-completion metadata interface, reinitialization and final-release drain, and kext caller handoffs. Lower VM effects and native execution remain unobserved.",
+  "verified_counts": {
+    "captured_functions": 12,
+    "kernel_instructions": 3293,
+    "kext_instructions": 41,
+    "original_slots": 6,
+    "captured_code_bytes": 13336,
+    "queries_unsat": 15,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "descriptor_prepare_lifecycle_report.md": "3dd54fe5f7b431c287f6e60e2db55b3a6b6ed176a3f9ccede4367d37daf4b643",
+    "obfuscated_routines_report.md": "089a9baa945548dc05fd002e9fff739a43938414a6375fa6cf4235f35834f3f4",
+    "mach_ports_report.md": "8fbff2228ea007365925aba467bb7005f0c836eba39718c548f8f8148cf3ca6b",
+    "foundational_triage_report.md": "d86e0530afcca69b3fb2982c94f3c4795e6d9769ad5908b83f29205ad1ab886a",
+    "interface_abi_report.md": "f8d72fa987b48c69464aa04c44b0bbedfd3dad66dde9af8fe873fb47dd14e8fe",
+    "interface_investigation_status.md": "952d969960ebb6ad1ce3cad488391b538f38fd8e7ef0c0aacc64577b6b473577",
+    "buffer_construction_flow_report.md": "0c6ccf111f43b572214fe32e851acfaa0b40669053ea6af6fde8b2619540f038",
+    "kext_buffer_report.md": "56759e1d833cccc3a37039b1c73e76b5c5d3c013ce813f4757139a80875d5cd3"
+  },
+  "evidence_sha256": {
+    "descriptor_prepare_lifecycle_source.json": "e75e81a421a04335fcf87a5071c708585d667788a1837c282336ff8b8a787f6a",
+    "descriptor_prepare_lifecycle_checks.json": "f43219e3dc365e9d90ceac2881129cfdb744cc70ac42fedb7856f63497ff1f12",
+    "recover_descriptor_prepare_lifecycle.py": "3f2d933e81f4e3d443980a95467d979029474de504a11acec20b19b7492ca33d",
+    "validate_descriptor_prepare_lifecycle.py": "64e6e736c50d47262b78b5d34949574cc1696cd218c9adbbe26624e005c6c8b5",
+    "seal_descriptor_prepare_lifecycle.py": "0a2d20a1f94cb6ebb5d1c32bf545d2c340a21321525002a9ca5a259b26e3eea9",
+    "verify_descriptor_prepare_lifecycle_publication.py": "73a9f1fdc53449adecf95bd962596358b94bcdf741ff4cf718be6714c6b683cf"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and PL1-PL8. Two prepare sites, ordinary completion, the metadata stride and the final-release drain. Fifteen UNSAT results and six rejected alterations. Actual VM effects and native counts remain open."
+  }
+}

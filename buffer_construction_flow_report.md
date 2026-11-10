@@ -168,3 +168,5 @@ Numerically, 81920 B equals twenty 4096 B fill spans and five literal 16384 B ro
 ## DMA mapping constraints and lazy metadata
 
 The subsequent DMA-constraint analysis closes the direct selected method graph for operation0x04000000/size40. It establishes exact request packing,min/max constraint effects,protected-field exclusions and lazy helper/creator interfaces. Partial metadata initialization and lower allocator/reference/readiness effects remain explicit boundaries;the full constructor and native mapping are still unproved. [Evidence and exact boundaries](dma_map_constraints_report.md).
+
+The two successful prepare requests now join the original +0x88 increment and the teardown drain. The first wire path may append 40-byte records and grow backing capacity. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).

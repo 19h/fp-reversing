@@ -1,0 +1,54 @@
+{
+  "generator_sha256": "0a2d20a1f94cb6ebb5d1c32bf545d2c340a21321525002a9ca5a259b26e3eea9",
+  "prior_manifest_sha256": "69810a971e11d3cd7fb5a0cd159d6a3620b89fe20a4482cb2caa958c41e8432e",
+  "prior_artifacts_checked": 7994,
+  "prior_artifacts_unchanged": 7986,
+  "allowed_changes": [
+    {
+      "path": "buffer_construction_flow_report.md",
+      "prior_sha256": "cc0dc0292e8be2fd556c12655738cc5c01beccefe25aaa5377a8decfea3ee6cb",
+      "sha256": "0c6ccf111f43b572214fe32e851acfaa0b40669053ea6af6fde8b2619540f038"
+    },
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "67f3b267d2fd4368dc5bbdf50725a5d9f9cc23ba1b1034d55bb88fc828befee3",
+      "sha256": "d86e0530afcca69b3fb2982c94f3c4795e6d9769ad5908b83f29205ad1ab886a"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "15d02b6f0aeb1188c02e3cb5135174968673ead0ac84e321091cfa63a3c8b3b8",
+      "sha256": "f8d72fa987b48c69464aa04c44b0bbedfd3dad66dde9af8fe873fb47dd14e8fe"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "c0e3838ae850c67279958701f8d5cc89c4a77910267b03ac66b708a71c4d249a",
+      "sha256": "952d969960ebb6ad1ce3cad488391b538f38fd8e7ef0c0aacc64577b6b473577"
+    },
+    {
+      "path": "kext_buffer_report.md",
+      "prior_sha256": "a96e3ab2ff8c9aee6a0c5584ee6af3388502ea2618071d078cc8c87238faa321",
+      "sha256": "56759e1d833cccc3a37039b1c73e76b5c5d3c013ce813f4757139a80875d5cd3"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "4bbc458d0c2c14db7934266161b88dcacc7a2eef2d1f683f13b8fa1c4a59412c",
+      "sha256": "8fbff2228ea007365925aba467bb7005f0c836eba39718c548f8f8148cf3ca6b"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "397c131dd04c89a1c1acc68834cac40eea40e614dd4c330cc8a683728bf08a71",
+      "sha256": "089a9baa945548dc05fd002e9fff739a43938414a6375fa6cf4235f35834f3f4"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "9117bc029c52ab9a91ff2ed96fdc6557397b94ac0d382ebfa41b4a16f592d74d",
+      "sha256": "98b97db3d3df9cb6e1b01a01b1d5af470ba760ac2c105801015daa64143a8ba8"
+    }
+  ],
+  "original_inputs_preserved": 3,
+  "Python_syntax_checks": 5,
+  "local_links_checked": 2921,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "full_goal_complete": false
+}

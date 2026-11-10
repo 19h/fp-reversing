@@ -1421,3 +1421,5 @@ The owner release report assigns the private free role using the inherited relea
 The tagged retirement wrapper recovers a zone element base and extent before calling the exact bzero and handing off to the zone routine. The source proof covers a direct pointer and a selected adjusted-pointer layout. [MixedData backing retirement](mixed_data_retirement_report.md).
 
 The captured heap startup, family constructor, setup callback and variable view parser now have source-established roles in the tagged MixedData allocation. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
+
+The descriptor lifecycle report resolves the local count, wire entry append, completion walk and used-length update roles from the captured original routines. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).

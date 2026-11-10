@@ -1443,3 +1443,5 @@ The kext global cleanup can reach base descriptor teardown and a separate releas
 The owner capacity remains 48 B at the retirement request. The lower wrapper recovers the element extent and uses it for the original clear before zone handoff. [MixedData backing retirement](mixed_data_retirement_report.md).
 
 The matched startup geometry gives the tagged record a 48-byte element extent. The file and initialized flag epochs select different heap operands, and the initialized bias supplies a source-generated size class. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
+
+Successful preparation increments descriptor +0x88. The ordinary completion decrements it under admitted record and synchronization conditions. Base free drains the remainder before releasing the MixedData owner. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).

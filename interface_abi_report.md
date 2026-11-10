@@ -1574,3 +1574,5 @@ The inherited OSObject release path supplies a null tag and signed threshold 1. 
 The backing retirement ABI separates the published pointer, request size, recovered element base, zone and element extent. The adjusted allocation and retirement source paths agree on the offset field under matched metadata. [MixedData backing retirement](mixed_data_retirement_report.md).
 
 The tagged view parser preserves low16 0x8061 after its initial registration and signature stores. The resulting allocation uses family bias plus class 2 under the matched startup conditions. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
+
+The ordinary completion uses 40-byte entries after the 48-byte header and an 8-byte table stride. The final used-length update retains backing capacity on the reuse path. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
