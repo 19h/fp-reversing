@@ -1377,3 +1377,8 @@ The resolved private calls exchange an operation-record pointer,caller-cell poin
 ## Inner write frontier and shared staging interface
 
 The inner routes exchange record pointers,private state/IV views,external buffer addresses and provider descriptor arguments. CCC7848 joins local staging dereferences to the earlier descriptor-publication evidence. No new Mach right or emission site is established;native transport and right lifetimes remain separate. [Evidence and exact boundaries](inner_write_frontier_report.md).
+
+
+## Shared-buffer construction and preparation flow
+
+The new construction evidence concerns descriptor/range fields,typed allocation requests and virtual prepare/DMA/length interfaces beneath CCC7848. It establishes no new incoming/outgoing Mach right or emission site;native daemon/provider pairing remains unknown. [Evidence and exact boundaries](buffer_construction_flow_report.md).

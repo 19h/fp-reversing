@@ -1,0 +1,79 @@
+{
+  "generator_sha256": "971b254dbd26a76973a6462633cb938fb94cf07e2642068b6ab3fa0fd49ad37b",
+  "static_scope": "Source-bound specialization of the FairPlay81920-byte/options0x13 buffer construction route,metadata capacity/length/range publications,three allocation-request alternatives,base preparation and DMA-command/setLength boundaries. Actual backing,zeroed allocation,all constructor paths,callee noninterference and native lifetime remain unproved.",
+  "verified_counts": {
+    "captured_functions": 11,
+    "captured_instructions": 1948,
+    "captured_code_bytes": 7792,
+    "source_fragments": 38,
+    "nominal_descriptor_slots": 6,
+    "original_import_pointers": 3,
+    "complete_store_call_censuses": 5,
+    "buffer_init_instructions": 427,
+    "base_init_instructions": 517,
+    "dma_operation_instructions": 619,
+    "queries_unsat": 43,
+    "queries_sat": 1,
+    "source_instruction_instances_translated": 212,
+    "distinct_source_instruction_sites_translated": 212,
+    "static_branch_predicates": 21,
+    "alignment_formula_values": 32,
+    "predecessor_queries_replayed": 1,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "buffer_construction_flow_report.md": "a9f595f9f238619b0c26ee36b3ac13fe867bca5728f7162814e82aa35982d5f2",
+    "obfuscated_routines_report.md": "d39efef1a879e988e7b112d39713610cc1d7644864d7f9229a1c2718256e1f31",
+    "mach_ports_report.md": "6611fd5aa64dbe0ce1b93410e3d66366acb5677eb02438126d7c37de3660e284",
+    "foundational_triage_report.md": "de55b855a7d75fb031a4619c6d53bb22c03cf027867341307bb37e99db4770a5",
+    "interface_abi_report.md": "20c70b1e30e1932d7ca5b40fec55be108a627b5545edced1d96c59173428f212",
+    "interface_investigation_status.md": "310b55a266a76fa7e7c27c3f7c224a932fa786be4c606d22293d14b8de3b2c95",
+    "kext_buffer_report.md": "a96e3ab2ff8c9aee6a0c5584ee6af3388502ea2618071d078cc8c87238faa321"
+  },
+  "evidence_sha256": {
+    "buffer_construction_flow_source.json": "23bc4c8da7b5e259aa446508a2a67f9682e960fff780d8326d0dacacf2a06d74",
+    "buffer_construction_flow_checks.json": "9adbbf519be5fe1a2ea54a47fbce0c3be25397dcec07d81986a4e6d4f87bd7b4",
+    "recover_buffer_construction_flow.py": "964c142e6953d275433fc4b14393b5fa439168d3651ca27ae208d21a6a0f3672",
+    "validate_buffer_construction_flow.py": "e7740a5720811e8fb2b8cb8e0e2fa51bc3149cfd2949f1705f3e28aec3cf4ab9",
+    "seal_buffer_construction_flow.py": "971b254dbd26a76973a6462633cb938fb94cf07e2642068b6ab3fa0fd49ad37b",
+    "verify_buffer_construction_flow_publication.py": "d96a4eece21d1d83636ba5d9a16ccb6b7fdea6fc4819e0ec002d00719c640f7d"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and BC1-BC8;original request,capacity/length/range metadata,three allocation request alternatives,base preparation,DMA-operation and nominal methods. Forty-three UNSAT,one abstract SAT,212 translated source sites,32 alignment-formula values and six freshness alterations pass. Allocation zeroing,actual backing,complete constructor paths,callee noninterference and native lifetime remain unproved."
+  }
+}

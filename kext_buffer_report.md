@@ -183,3 +183,8 @@ The verifier re-reads original source, symbols, slots, compiler-bounded function
 ## Scoped quality gates
 
 QG1 passes for factual technical analysis. QG2 passes with D1-D8, dependencies and falsification probes. QG3 passes for the descriptor factory/accessor/cleanup increment; complete native initialization and the broad interface goal remain incomplete. QG4 passes for explicit widths, bytes, exact option arithmetic, event counts and complexity. QG5 passes with nominal/actual receiver, declared/native state, logical/native retirement, raw/SDK-labeled options and source/annotation distinctions explicit. QG6 passes through original bytes, exact symbols, chain membership, source constructors, fresh private runs, two local proofs and compile-only header checks. QG7 passes with impact-labeled continuation. [Machine-readable gates](triage_evidence/kext_buffer_quality_gates.json) and [prior-artifact preservation](triage_evidence/kext_buffer_preservation.json) cover this delivery.
+
+
+## Shared-buffer construction and preparation flow
+
+The subsequent constructor-flow analysis separates requested/stored capacity from logical length and actual backing. It resolves original setLength/getCapacity slots,three raw allocation request alternatives,base options0x11b and its internal prepare request,the intermediate DMA operation,and final length publication. The getter nonnull condition still depends on allocation/field/lifetime contracts;an abstract inherited-flag control does not establish a reachable native failure. [Evidence and exact boundaries](buffer_construction_flow_report.md).

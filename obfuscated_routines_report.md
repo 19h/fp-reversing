@@ -1401,3 +1401,8 @@ Three core calls resolve to one136-instruction seed/header adapter at0xfffffe000
 ## Inner write frontier and shared staging interface
 
 The complete inner census resolves ten copy calls,two calls to a90-instruction fill primitive,one hardware initializer,one hardware adapter and one canary-failure import. The fill zero-argument footprint is source-proved. Nominal targets and local argument roots remain conditional on reaching table/frame epochs. [Evidence and exact boundaries](inner_write_frontier_report.md).
+
+
+## Shared-buffer construction and preparation flow
+
+The shared staging path now has source-bound constructor metadata and request alternatives. Unnamed allocation backend targets retain raw numeric ABIs;exact symbols bind setLength,getCapacity and dmaCommandOperation. Lower allocation zeroing and native backing remain separate obligations. [Evidence and exact boundaries](buffer_construction_flow_report.md).

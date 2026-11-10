@@ -1423,3 +1423,8 @@ The three private SP updates now have a common adapter,mutable-word provenance,b
 ## Inner write frontier and shared staging interface
 
 Of40 direct inner stores,36 address the private frame;the others update two controller globals,restore the header and publish record status. Seven selected call destinations fit below the header. Four external copy ranges,one external fill capacity,provider effects and exact dispatch states remain open. [Evidence and exact boundaries](inner_write_frontier_report.md).
+
+
+## Shared-buffer construction and preparation flow
+
+The81920-byte/options0x13 request publishes capacity at descriptor+c0 and a single range;logical length is a separate+50 field. The base initializer can request prepare before the kext explicit prepare. Source metadata,lower allocator zeroing,actual backing and native lifetime accounting remain distinct. [Evidence and exact boundaries](buffer_construction_flow_report.md).

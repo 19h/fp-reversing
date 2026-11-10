@@ -1554,3 +1554,8 @@ Common adapter ABI:X0 operation record,X1 caller-cell address. Inner ABI:X0 same
 ## Inner write frontier and shared staging interface
 
 All14 nominal inner indirect calls now have original-bank/pointer-chain bindings. The hardware adapter passes the same shared descriptor as both buffer arguments,truncates count64 to count32,and forwards private IV/state views. The reused frame80 cell has distinct32-bit control and64-bit global-pointer phases. [Evidence and exact boundaries](inner_write_frontier_report.md).
+
+
+## Shared-buffer construction and preparation flow
+
+Original construction components bind task/options/capacity/alignment/physical-mask arguments,three backend request alternatives,base options0x11b,DMA operation0x04000000 with40-byte request,and final setLength of capacity. The nominal getter/CCC7848 join still requires initialized flags,ranges and lower-call preservation. [Evidence and exact boundaries](buffer_construction_flow_report.md).

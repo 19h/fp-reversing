@@ -1211,3 +1211,8 @@ Published stack-delta ABI increment:47 UNSAT,three abstract SAT,338 distinct tra
 ## Inner write frontier and shared staging interface
 
 Published inner-write increment:49 UNSAT,274 distinct translated sites,24 symbolic fill paths,40 stores and15 calls. All eight jump diversities are reused by original targets outside the inner routine;matching metadata does not close its CFG. Full header preservation,actual zero deltas,external ranges and native transactions remain unproved;goal active. [Evidence and exact boundaries](inner_write_frontier_report.md).
+
+
+## Shared-buffer construction and preparation flow
+
+Published buffer-construction increment:43 UNSAT,one explicitly abstract SAT,212 translated sites,38 fragments,six nominal method slots and32 alignment-formula values. Two initialization preparation request sites and the DMA-operation boundary refine lifetime triage. Actual backing,zeroing,complete constructor CFG,callee noninterference and native transactions remain unproved;goal active. [Evidence and exact boundaries](buffer_construction_flow_report.md).
