@@ -1356,3 +1356,5 @@ The2245-instruction continuation is a48-step four-stream word expansion with fou
 The secondary setup and64-round consumer now have exact word/table/control contracts,scalar producer sites and a caller-bound update/gate. Complete round arithmetic and native algorithm/output remain unknown. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
 
 The secondary finish commits the remaining12 saved fields, computes exact modular advances by64, and reaches a generalized plane refresh with proved parity gates and a correlated first-plane-byte XOR. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
+
+Two private-view byte-copy loops now have exact nonzero u32 count,source-index and destination contracts. The initial even saved-field context specializes to32 bytes per view,with a C(32) marker and0x300 suffix XOR mask;native arrival and decoded padding remain unknown. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).

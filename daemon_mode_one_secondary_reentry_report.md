@@ -206,3 +206,5 @@ QG4: Byte units, u8/u32/u64 widths, modular overflow, source instances and disti
 QG5: The obsolete fixed-state premise, missing saved TABLE binding, phase-specific register roles, conditional byte bound and earlier unrestricted mutation are separated.
 QG6: Original executable/fixup bytes, fresh source composition and exact retained queries provide provenance. No new live IDA or native observation is claimed.
 QG7: High/medium impact continuation opportunities and native interpretation limits are explicit.
+
+The31-instruction unequal continuation now leads to two proved copy loops and a general post-copy marker. Initial even saved fields/root contracts specialize them to32 bytes per view and marker C(32);application to a later native flag/progression epoch remains unproved. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).

@@ -1,0 +1,86 @@
+{
+  "generator_sha256": "8cf939cd5a3d9c0a267531d6da558c0f3913bc6dfdb3891a0348c7376671e876",
+  "static_scope": "Two view-to-plane byte-copy loops,exact nonzero u32 count/control contracts,initial even-context32-byte specialization and marker/suffix-mask components. Native arrival,source ownership/extent,decoded message/padding,whole algorithm,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 5,
+    "source_instructions": 148,
+    "source_bytes": 592,
+    "branch_bindings": 7,
+    "pointer_records": 6,
+    "ISA_decodes_checked": 3,
+    "comparison_role_corrections": 8,
+    "prior_ranges_recaptured": 19,
+    "prior_bytes_recaptured": 46920,
+    "frontier_ranges_hashed": 1,
+    "frontier_bytes_hashed": 80,
+    "SP_writes": 0,
+    "queries_unsat": 35,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 10,
+    "source_nonbranch_sites_translated": 143,
+    "initial_even_iterations_per_loop": 32,
+    "initial_even_view_bytes_read": 64,
+    "initial_even_plane_bytes_copied": 64,
+    "initial_even_with_marker_distinct_bytes_written": 65,
+    "initial_even_arithmetic_cells_preserved": 800,
+    "marker_address_normalizations": 2,
+    "source_value_cuts": 0,
+    "suffix_mask_value": 768,
+    "rejected_alterations": 7
+  },
+  "report_sha256": {
+    "daemon_mode_one_even_view_import_report.md": "25becebe29ad9685b20bb74971631c757119eee5d783e0f4190cae27715f905f",
+    "obfuscated_routines_report.md": "7c08d0707a13bf638f5c3e339b363ab343d15e5837a87950091a53c20ee7b487",
+    "mach_ports_report.md": "062fb8eca5adb6c4dc287e0bc8c069a095189c89efd4495194497fe105c77834",
+    "foundational_triage_report.md": "f77a783e73bcd619b8c523af36611a2c84e6933d426f77484b711c8f78a3d535",
+    "interface_abi_report.md": "533905106516e69f575eec5b3350bd7641e9e8d7abe279c9df5e30be3760ed5e",
+    "interface_investigation_status.md": "8a0df3f4049c9c4f7ea7aac1c3905987af76efd8b86792f544c100a88f2c1c69",
+    "daemon_mode_one_secondary_reentry_report.md": "48bcef664e92fb45bfe94dc2eb289f71c776bd5d5b519388531eeff22ec8ec11"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_even_view_import_source.json": "bda7943c60b35d4d8219390fa2ddac80d813c63a40815eff49faee8aab0b0f5b",
+    "daemon_mode_one_even_view_import_checks.json": "ad0c294e00a6a86a78fda83b3ae353497a104e8b08c57939edc4c5eca6fcbbbb",
+    "recover_daemon_mode_one_even_view_import.py": "af56af03d19d181c6936ccb47d2cb0d3207a6a631f13ab848aeff74ce1471b21",
+    "validate_daemon_mode_one_even_view_import.py": "691e307fdda65018028c61273bdc9361de47f91fa33b8f072546af87303e6a97",
+    "seal_daemon_mode_one_even_view_import.py": "8cf939cd5a3d9c0a267531d6da558c0f3913bc6dfdb3891a0348c7376671e876",
+    "verify_daemon_mode_one_even_view_import_publication.py": "f145e44ea31d2c784a889f98c257060f4fba6f57d021c6c21ef3d108d14b5da4"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and VI1-VI8;143 source sites,35 UNSAT/two abstract SAT,including10 predecessor propositions with original query hashes and raised timeout budgets. Two exact nonzero-count view readers,encoded byte index,initial even32-byte specialization and marker/suffix-mask components are covered. Native arrival,view owner/extent,decoded padding,whole algorithm/output and cross-layer pairing remain explicit unknowns."
+  }
+}

@@ -1332,3 +1332,5 @@ The secondary extension and seven-instruction exit prefix contain no Mach-messag
 The secondary setup/64-round/update/gate ranges contain no Mach message,right-transfer or port-emission site;the image/global/frame interfaces do not establish daemon-kext pairing. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
 
 The secondary state-commit/refresh/reentry ranges have no new Mach-port emission site. Their authenticated private branches and scalar/plane stores leave native output and matched daemon-kext transport unresolved. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
+
+The newly analyzed view-import entry,two loops,bridge and marker have no direct Mach send/receive,port allocation or right transfer. Their concrete byte readers consume private views under stated source-epoch premises;no matched daemon-kext exchange is established. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).

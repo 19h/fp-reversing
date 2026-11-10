@@ -1166,3 +1166,5 @@ The secondary extension now has48-step geometry,all69 primary-byte bounds,40 ban
 Published static increment:secondary setup,64-round initialized-grid/image-bank consumer,state-update and convergent gate. Remaining computed byte bounds,whole arithmetic,native ownership/output and daemon-kext pairing remain unresolved. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
 
 Published static increment:16-field state commit,64-unit modular progression,generalized128-byte refresh,parity reentry and correlated C(0) XOR80. Native field meanings,termination,output and daemon-kext pairing remain unresolved. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
+
+Published static increment:two private-view import loops,exact nonzero count/source-index contracts,initial even32-byte specialization,and marker/suffix-mask components. Native arrival,view owner/extent,decoded padding,output and daemon-kext pairing remain unresolved. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).

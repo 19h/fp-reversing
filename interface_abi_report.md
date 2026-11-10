@@ -1509,3 +1509,5 @@ The286-slot grid now has a48-iteration extension contract:stream bases0,72,142,2
 The secondary loop ABI includes source-bound counters,zero high halves for X3/X11/X15,and outgoing W4=a9d0. That W4 binding selects the correct state-update phase words and flag/gate targets. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
 
 The finish supplies W19=u32(saved F37c+64), W22=u32[F4ac] and W12=34d0. Fresh refresh/reentry proofs generalize the prior fixed-W19 contract and establish the even guard that selects exactly C(0). [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
+
+The unequal even gate supplies R=u32(BWORD-PSTATE-AWORD+29ee6c20)!=0. Both readers use u32(PSTATE-4a62f57c+j) as a byte offset;the first XORs f9 and the second preserves source bytes. The initial even saved fields yield R32 only with the stated initial progression premise. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).

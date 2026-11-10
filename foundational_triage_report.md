@@ -1378,3 +1378,5 @@ The48-step chronology expands64 initialized words to256,with384 backward reads,1
 The secondary component now exposes16 saved scalar producers,two environment-word reads,a constant composed image-bank selector,and exact initialized-grid/image-word geometry through64 rounds and the update gate. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
 
 The secondary reentry now has a16-field private commit, changing progression-word ABI, matching saved/cached TABLE roots, register-pair preservation and a guard-proved C(0) XOR80. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).
+
+The even-context F360 source resolves through F300 to F+1150,and the preserved X0 view resolves to F+1100. Fresh source proofs recover an encoded byte index,two equal-count copy loops,and the conditional initial32-byte case. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).
