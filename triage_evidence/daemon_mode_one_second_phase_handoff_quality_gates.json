@@ -1,0 +1,87 @@
+{
+  "generator_sha256": "03b2a2319e4976d1766aa1c7ede374de2d45f04e6b6f4ed2d6f1386ee23958e9",
+  "static_scope": "Source-proved86 equality/complementary bank repack and set-bit workspace handoff;selected reentry preservation and captured-artifact budget/control coverage limits. No whole-core budget preservation,native return,algorithm identity or daemon-kext transport claim.",
+  "verified_counts": {
+    "source_ranges": 8,
+    "source_instructions": 569,
+    "source_bytes": 2276,
+    "branch_bindings": 14,
+    "pointer_records": 13,
+    "ISA_decodes_checked": 5,
+    "comparison_role_corrections": 4,
+    "prior_ranges_recaptured": 232,
+    "prior_bytes_recaptured": 519616,
+    "locator_artifacts": 45,
+    "locator_distinct_ranges": 183,
+    "locator_distinct_instruction_sites": 111274,
+    "locator_candidate_store_sites": 3781,
+    "SP_writes": 0,
+    "queries_unsat": 35,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 14,
+    "source_nonbranch_sites_translated": 561,
+    "second_repack_u32_stores": 16,
+    "combined_sparse_words": 32,
+    "workspace_word_codecs_rechecked": 32,
+    "workspace_literal_bytes_rechecked": 168,
+    "workspace_distinct_bytes_written": 312,
+    "retained_repeat_stage_lifetime_components": 7,
+    "source_value_cuts": 0,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_second_phase_handoff_report.md": "a55625e53694581750bf0277a710d07195a37bb12e3b65fe2b79e5c21bcdfcb4",
+    "obfuscated_routines_report.md": "329a4b1f7e1bfd5fb549d9efd08e259f19da04cb31ab7c6becc6b36015c23807",
+    "mach_ports_report.md": "b991b9b3e8e572522e4c9775d9b9d580a15e718b65c61d0904d6b795e943de2f",
+    "foundational_triage_report.md": "0ceddac28d918a5ccf5ce97347f4e359ea566839534ac7092bde80a716ace5c6",
+    "interface_abi_report.md": "9e1d5018213f44e81fb04a28c3f60f2c6ca60b427200fdddb8b67039a9e67919",
+    "interface_investigation_status.md": "0728b500a8d456dc213c1bebc1c07d6e3791cb3c386b83603b301e1141942134",
+    "daemon_mode_one_phase_handoff_report.md": "fe9f87bc70a331f6087e80cdc01f8fc0d0d38cfa94c8d8269c79348df2251ee1"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_second_phase_handoff_source.json": "55393b82b5a5e39c011408567e2eead6a7609755eff69867d0489293a983450e",
+    "daemon_mode_one_second_phase_handoff_checks.json": "9e7adf71312c8f2a8effd2639e664d19eeae7e36c0a3be0832f0bed086ca60ee",
+    "recover_daemon_mode_one_second_phase_handoff.py": "968fde5b52de789ba4be34f094dc1636d1ff9840e010bf389dd798c9947fbae3",
+    "validate_daemon_mode_one_second_phase_handoff.py": "09a66868e5fcd32dfd903e9360842458dc8fc880ffd0269f3babc806bf5a370f",
+    "seal_daemon_mode_one_second_phase_handoff.py": "03b2a2319e4976d1766aa1c7ede374de2d45f04e6b6f4ed2d6f1386ee23958e9",
+    "verify_daemon_mode_one_second_phase_handoff_publication.py": "eafaec2ae43f678e99ba8b06d90ed024481654efe90785f6b95b0d9c4b30de18"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SH1-SH8;561 source sites,35 UNSAT/two abstract SAT and14 predecessor replays. Exact86 bridge,complementary16-word repack,hidden addition,phase-one workspace ABI,32 word/168 literal-byte rechecks and bounded lifetime/budget facts are covered. The45-artifact locator union is not whole-program coverage. Full budget history,zero processing delta,native return,ownership,algorithm and matched transport remain unknown."
+  }
+}
