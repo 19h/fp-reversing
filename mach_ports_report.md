@@ -1367,3 +1367,8 @@ The initializer task field and context task field are u64 kernel pointers;they a
 ## Context to descriptor task flow
 
 Selector26 passes context and task as separate kernel pointers. Its inner core receives context,then reads task64 for descriptor factories;these are separate from connection-name and port-right channels. No new Mach emission or native right-retirement event is established. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).
+
+
+## Resolved core stack-delta ABI
+
+The resolved private calls exchange an operation-record pointer,caller-cell pointer and private header. Their mutable global word and aligned exported delta are private control/data ABI values. No additional Mach-port emission or native right retirement is established. [Evidence and exact boundaries](core_stack_delta_abi_report.md).

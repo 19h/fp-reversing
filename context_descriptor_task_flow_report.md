@@ -159,3 +159,8 @@ A u32 scratch-write control also changes the low half of a previously saved task
 - QG5:Direct UserClient task versus embedded context task,current versus entry SP,phase-dependent versus literal mode gates,two record offsets,per-client context versus global descriptor cells,and raw status versus native success remain distinct.
 - QG6:Original hashes,compiler envelopes,instructions,chained pointer words,banks,356 source sites,43 UNSAT including4 replays,3 abstract SAT and7 freshness alterations supply scoped provenance. No current IDA or native-execution claim is made.
 - QG7:The continuation covers the remaining frame,global lifetime,second-consumer,populated-list,native-pairing and inventory gaps without claiming a completed exchange.
+
+
+## Resolved core stack-delta ABI
+
+The three private calls now resolve to one adapter. Its actual return domain is aligned0..0xffff0 B,which excludes the earlier unrestricted negative-delta cancellation control for this route. Zero delta is equivalent to final header low16 equality with the captured seed. Entry restoration is established;the remaining inner preservation and complete CFG remain unproved. [Evidence and exact boundaries](core_stack_delta_abi_report.md).

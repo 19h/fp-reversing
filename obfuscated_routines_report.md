@@ -1391,3 +1391,8 @@ Two daemon capability readers now have source bit/slot contracts. Conditional wo
 ## Context to descriptor task flow
 
 `_PRnut72j9` has eleven literal saved-context reloads;three read task64 and two read mode32. The task-bearing second record conditionally selects `0xfffffe000a61c404`,whose checked prefix forwards task64 to exact `_createSamplesIOMD`. Complete function semantics and frame epochs remain open. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).
+
+
+## Resolved core stack-delta ABI
+
+Three core calls resolve to one136-instruction seed/header adapter at0xfffffe000a688ebc. It exports16*low16(final header minus captured seed),bounds caller deltas to0..0xffff0 B,and restores its own private frame. Inner entry restoration is source-proved;full low2-byte preservation and actual zero deltas remain open. [Evidence and exact boundaries](core_stack_delta_abi_report.md).

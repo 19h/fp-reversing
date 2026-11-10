@@ -1201,3 +1201,8 @@ Published task/context lifecycle increment:40 UNSAT/two abstract SAT,366 distinc
 ## Context to descriptor task flow
 
 Published context-to-descriptor increment:43 UNSAT including four replays,three abstract SAT,356 translated sites,eleven literal context reloads and three SP-delta boundaries. Typed task-carrier/factory joins pass conditionally. Full frame/alias closure,task references,global serialization,native mappings and complete transactions remain open;goal active. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).
+
+
+## Resolved core stack-delta ABI
+
+Published stack-delta ABI increment:47 UNSAT,three abstract SAT,338 distinct translated sites,eleven fresh bank cuts and16 allocation witnesses. Actual adapter deltas are nonnegative/aligned/bounded;three-visit negative cancellation is excluded. Full header preservation,actual zero deltas,native frames and complete transactions remain open;goal active. [Evidence and exact boundaries](core_stack_delta_abi_report.md).

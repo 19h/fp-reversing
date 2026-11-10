@@ -1544,3 +1544,8 @@ Start provider ABI is (this,cell address,mode32,task64);the adapter removes this
 ## Context to descriptor task flow
 
 Selector26 provider ABI carries (this,address64,extent32,context64,task64);core ABI carries (staging,extent64,context64). Context+0x10 feeds task fields at two record offsets,+0x38 and+0x10;factories forward task64 in X3 with raw options2/3. Global descriptor publication is distinct from native ownership. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).
+
+
+## Resolved core stack-delta ABI
+
+Common adapter ABI:X0 operation record,X1 caller-cell address. Inner ABI:X0 same record,X1 private header. The adapter stores u64 D=16*low16(final header32 minus captured seed32) through the caller cell;its X0 remains an incidental inner return. Private frame restoration and later caller SP addition are distinct. [Evidence and exact boundaries](core_stack_delta_abi_report.md).

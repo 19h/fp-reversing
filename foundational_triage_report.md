@@ -1413,3 +1413,8 @@ Initializer task publication joins selector21 forwarding conditionally. Start pu
 ## Context to descriptor task flow
 
 The typed per-client context now connects conditionally to sample descriptor factories through two task-bearing record protocols. The factories publish module-global descriptors. Three private SP deltas and23 scratch overlaps prevent unconditional frame/task continuity;native mappings and reference balance remain open. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).
+
+
+## Resolved core stack-delta ABI
+
+The three private SP updates now have a common adapter,mutable-word provenance,bounded16..256 B private allocation and exact delta encoding. Entry restores the seed;zero return delta requires its low16 bits survive the inner routine. Forty stores/fifteen calls remain the preservation frontier. [Evidence and exact boundaries](core_stack_delta_abi_report.md).

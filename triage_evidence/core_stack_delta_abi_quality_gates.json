@@ -1,0 +1,82 @@
+{
+  "generator_sha256": "ff85aacc3ddf685c32942b3ca0aaef2382c56b1ce0742c25be893697880e0231",
+  "static_scope": "Source-bound resolution of three core private calls to one seed/header adapter,its exact16-byte delta encoding,bounded private allocation,inner header restoration and conditional zero-delta contracts. Full inner write/call/CFG preservation and native frame/transaction identity remain unproved.",
+  "verified_counts": {
+    "captured_functions": 5,
+    "captured_instructions": 1260,
+    "captured_code_bytes": 5040,
+    "recaptured_core_instructions": 50634,
+    "source_fragments": 25,
+    "literal_bank_arrays": 10,
+    "bank_rules": 11,
+    "bank_input_cases": 2816,
+    "pool_and_import_pointers": 11,
+    "selected_call_sites": 3,
+    "inner_store_instructions": 40,
+    "inner_call_instructions": 15,
+    "inner_return_instructions": 1,
+    "hardware_X1_prefix_CFG_sites": 21,
+    "queries_unsat": 47,
+    "queries_sat": 3,
+    "source_instruction_instances_translated": 1248,
+    "distinct_source_instruction_sites_translated": 338,
+    "fresh_bank_cuts": 11,
+    "allocation_size_witnesses": 16,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "core_stack_delta_abi_report.md": "c8d67b88613f3c0adec89606202e38b815846faf6b0c5019f388921b28518c25",
+    "obfuscated_routines_report.md": "bc6f8978543b541559e793afb3d7d266924246db3a5f3bc42728f34ba6e4efa4",
+    "mach_ports_report.md": "4ebf1c08756c4ea643d20695a87c707bd358825fe9643a1272692d785963a178",
+    "foundational_triage_report.md": "e08d586b7f1f7bd2ad55e37d5f64f6469392c599dd11923e053cebc546031c23",
+    "interface_abi_report.md": "93834f27ab610c2272eceb7ca16e2f1104ef029d72dbc14d4b5ddb83e18ebfc4",
+    "interface_investigation_status.md": "893b41259555b5370fc2910366e63b93dc665474c783e0c0defaa4d172027d0f",
+    "context_descriptor_task_flow_report.md": "87862aa7fbec67ea111cd91074bedb177e6266f4b9034d14e88785081878b507"
+  },
+  "evidence_sha256": {
+    "core_stack_delta_abi_source.json": "c63572f61c936f013111231709aa7f81aafba04a0d243e4fdaecd47c759ff9f7",
+    "core_stack_delta_abi_checks.json": "c60e1fdd93b6a4a4fc04a223bd4e2431ae8a243475e1b53bd8148c7914390c03",
+    "recover_core_stack_delta_abi.py": "e94733543d37fbe3419ce818530967c980862120303316c0ce82d14000e5f87f",
+    "validate_core_stack_delta_abi.py": "5b9deaea4d24b0d8525a6cbbcf18e5243f38f739a7abf579c04d324d727e8336",
+    "seal_core_stack_delta_abi.py": "ff85aacc3ddf685c32942b3ca0aaef2382c56b1ce0742c25be893697880e0231",
+    "verify_core_stack_delta_abi_publication.py": "a0e8cc0f0066d53a3d4535e7271c9d9adbed0ebdeb61b428c60918f93bb63ace"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SD1-SD8;three callers/common adapter,seed/header ABI,bounded private allocation/probe,entry restoration,exact aligned delta domain and conditional three-visit composition. Forty-seven UNSAT,three abstract SAT,338 distinct source sites,six freshness alterations and16 allocation-size witnesses pass. Full inner header preservation,actual zero deltas,frame reachability and native transactions remain unproved."
+  }
+}

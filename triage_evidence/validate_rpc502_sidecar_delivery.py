@@ -357,6 +357,7 @@ def main():
     if exists(BASE/'versioned_request_abi_report.md'):reports.add(BASE/'versioned_request_abi_report.md')
     if exists(BASE/'userclient_context_lifecycle_report.md'):reports.add(BASE/'userclient_context_lifecycle_report.md')
     if exists(BASE/'context_descriptor_task_flow_report.md'):reports.add(BASE/'context_descriptor_task_flow_report.md')
+    if exists(BASE/'core_stack_delta_abi_report.md'):reports.add(BASE/'core_stack_delta_abi_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1714,6 +1715,10 @@ def main():
         context_descriptor_quality=json.loads(read(ROOT/'context_descriptor_task_flow_quality_gates.json'))
         manifest['validation']['context_descriptor_task_flow_increment_checks']=context_descriptor_quality['verified_counts']
         manifest['validation']['context_descriptor_task_flow_static_scope']=context_descriptor_quality['static_scope']
+    if exists(ROOT/'core_stack_delta_abi_quality_gates.json'):
+        core_stack_delta_quality=json.loads(read(ROOT/'core_stack_delta_abi_quality_gates.json'))
+        manifest['validation']['core_stack_delta_abi_increment_checks']=core_stack_delta_quality['verified_counts']
+        manifest['validation']['core_stack_delta_abi_static_scope']=core_stack_delta_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
