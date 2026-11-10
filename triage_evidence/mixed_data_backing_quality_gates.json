@@ -1,0 +1,70 @@
+{
+  "generator_sha256": "49e897ddce1e00520619dc82d237fe97863336d36d8e44a2b1ceed0d7883eac3",
+  "static_scope": "Original-source correspondence for the fresh 48-byte MixedData backing request, tagged allocation view, small-zone dispatch, checked successful element return and conditional preservation through creator and helper. Runtime zone values, cache population, complete allocator behavior and native lifetime remain open.",
+  "verified_counts": {
+    "captured_functions": 9,
+    "captured_instructions": 958,
+    "captured_code_bytes": 3832,
+    "queries_unsat": 9,
+    "rejected_alterations": 4,
+    "cache_graph_nodes": 95,
+    "cache_graph_edges": 101,
+    "fallback_graph_nodes": 393,
+    "fallback_graph_edges": 430
+  },
+  "report_sha256": {
+    "mixed_data_backing_report.md": "341c713ad9996c1f1a962d8577bae0d52800b6e08e06a2a7567ba2009cab1235",
+    "obfuscated_routines_report.md": "867dcd4cb1ffa289539e540953ee4735c5d5ba8e371b5b6acef85e4f10ad0965",
+    "mach_ports_report.md": "1f4c75690cbf83226623df3ca91068a319502f497e213888103ca32cb2a8f5f2",
+    "foundational_triage_report.md": "1b4a3d7a3826123f4de9072507e564706a7f80f10fa341c3c69ef0e64a6ecf75",
+    "interface_abi_report.md": "42f13ec9dabb8556ec637398810f84fc26c6ad9bb04d8e2c69845100d2d3a05c",
+    "interface_investigation_status.md": "8498d2ca471c29e22ef3725e573a0258cbdbebfef4d9a513064a1e6fa3ecb172",
+    "mixed_data_lifecycle_report.md": "80008380050654cb812c721522187c829522530e7fef8c590b196588e0b5a86f"
+  },
+  "evidence_sha256": {
+    "mixed_data_backing_source.json": "70fbe19ec09ddc72b9e735d34b50afe6ac3ad82f6df197b915b5a08c5e78d447",
+    "mixed_data_backing_checks.json": "b87a820819e288eb2f428d4aec00cf825a4dcca610d7059466cd9caf47cfb293",
+    "recover_mixed_data_backing.py": "7565f84c87896a167717e29e4f8f524341e6e3a5b2709c9e98902ca8c1b3df6e",
+    "validate_mixed_data_backing.py": "9bc55b3d943bd1b95414dbe1bc1d83470805fdc3356c903f5d48afedcbd62321",
+    "seal_mixed_data_backing.py": "49e897ddce1e00520619dc82d237fe97863336d36d8e44a2b1ceed0d7883eac3",
+    "verify_mixed_data_backing_publication.py": "2d70733e9a90bfd565e301703b453f34c53707fb5b1746aab415aea5fd26b768"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and MB1-MB8. Tagged allocation operands, checked zone returns and the conditional record join. Nine UNSAT results and four rejected alterations. Runtime geometry and native allocation remain open."
+  }
+}

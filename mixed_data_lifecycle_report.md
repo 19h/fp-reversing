@@ -139,3 +139,5 @@ The four modeled atomic sites retain width, old-value dependence and modulo arit
 - **QG5:** The 32-bit reference word, 16-bit getter, 32-bit class count and 64-bit debug total remain distinct. Owner initialization does not imply backing initialization.
 - **QG6:** Original byte spans, strings, symbols, fixup membership, 43 UNSAT results and six rejected alterations are replayable through the linked artifacts.
 - **QG7:** Follow-up priorities identify the source boundaries most likely to change the lifecycle and ownership claims.
+
+The subsequent backing study establishes a conditional zero source for the ten untouched record bytes and six preserved bits. The source result requires a sufficient live zone extent and storage stability. [MixedData backing allocation](mixed_data_backing_report.md).

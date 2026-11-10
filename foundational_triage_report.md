@@ -1435,3 +1435,5 @@ The81920-byte/options0x13 request publishes capacity at descriptor+c0 and a sing
 The intermediate DMA step now has a source-proved unsigned-max alignment/unsigned-min address-bit merge and a61-node/65-edge selected graph. Two metadata stores plus six private-frame saves bound its direct effects. The helper touches38 of48 record bytes,including one partially preserved state byte;ten whole bytes need prior/allocator provenance. [Evidence and exact boundaries](dma_map_constraints_report.md).
 
 The 40-byte mixed-data owner explicitly zeros its 24-byte payload before the creator requests a separate 48-byte backing record. This closes the fresh-owner field premise; lower backing contents and native ownership are still open. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
+
+The fresh 48-byte backing record has a conditional zero origin from the selected cache and fallback zone checks. The result depends on a checked extent of at least 48 bytes and stable storage through the helper reload. [MixedData backing allocation](mixed_data_backing_report.md).

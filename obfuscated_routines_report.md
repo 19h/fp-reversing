@@ -1413,3 +1413,5 @@ The shared staging path now has source-bound constructor metadata and request al
 The unnamed117-instruction helper0xfffffe000c536f94 ensures descriptor metadata and initializes a48-byte constraint record;unnamed creator0xfffffe000c537394 obtains an owner and reserved data storage. Reserve/used/capacity and partial initialization are recovered;exact runtime class and native lower effects remain unknown. [Evidence and exact boundaries](dma_map_constraints_report.md).
 
 Original metaclass registration and vtable fixups identify the private owner as `_IOMemoryDescriptorMixedData`. Original slots and method bodies support distinct allocator, private free, deleting and first-word invalidation roles. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
+
+The previously unnamed raw allocator wrapper resolves the tagged `ioGMDData.ioPLBlock` site and dispatches the fresh record to a small-zone content-checking interface. [MixedData backing allocation](mixed_data_backing_report.md).

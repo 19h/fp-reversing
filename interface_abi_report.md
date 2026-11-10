@@ -1566,3 +1566,5 @@ Original construction components bind task/options/capacity/alignment/physical-m
 The constructor builds all40 bytes of a specification:alignment64,null device,zero options,address-bit value64 and zero reserves. Original operation0x04000000 consumes offsets0/+14 and merges into record+8/+2c. SDK27.2 syntax-only layout/status checks corroborate the request names without asserting historical private-layout equivalence. [Evidence and exact boundaries](dma_map_constraints_report.md).
 
 The recovered owner interface separates its 32-bit initialized reference word, inherited 16-bit getter, 32-bit metaclass count and 64-bit debug total. The static retirement route pairs raw backing and owner operands with their allocation sources. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
+
+The backing allocation passes a tagged descriptor, request size and flags to the raw wrapper. The lower zone pair supplies the checked element pointer and extent in X0/X1. [MixedData backing allocation](mixed_data_backing_report.md).
