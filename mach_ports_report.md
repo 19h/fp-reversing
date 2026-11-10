@@ -1293,3 +1293,8 @@ The [u64/container report](daemon_reader_u64_codec_report.md) identifies the loc
 ## Checkpoint, iterator and LOCAL request-field follow-up
 
 The checkpoint/iterator/LOCAL continuations contain no Mach send/receive,port allocation,right transfer or message-emission site. The new continuation slots are private authenticated control edges;the R+0 store is a private raw-result prefix. Native wire pairing remains unknown. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.
+
+
+## Workspace passes and byte-permutation follow-up
+
+The two workspace passes and byte-permutation stage contain no Mach send/receive,port allocation,right transfer or message-emission site. Their interfaces are private frame words,scalar registers and authenticated continuation slots;actual cross-layer pairing remains unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.

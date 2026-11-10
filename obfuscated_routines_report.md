@@ -1317,3 +1317,8 @@ The [u64/container report](daemon_reader_u64_codec_report.md) proves the full885
 ## Checkpoint, iterator and LOCAL request-field follow-up
 
 The continuation at `0x100c74750` reads128 plane bytes,replaces the complete296-byte workspace and restores the decoder ABI before NEXT iteration. The LOCAL-present continuation reads cookie-coded request+0x28;the original wrapper field is sufficient to select `0x100d3ce60`. Decoded workspace function and arbitrary-selector inverse remain unknown. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.
+
+
+## Workspace passes and byte-permutation follow-up
+
+The continuations at `0x100d3ce60` and `0x100ab7b74` each scan74 workspace words through separately seeded four-word scalar recurrences. `0x100b0c100` initializes16 identity bytes and makes15 suffix swaps,preserving a permutation of0..15 under coherent frame memory. Decoded scalar/permutation identities remain unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.

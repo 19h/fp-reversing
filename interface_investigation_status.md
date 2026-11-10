@@ -1127,3 +1127,8 @@ Audited12 frozen paths/6367 ordered intervals/966122 original-source instruction
 ## Checkpoint, iterator and LOCAL request-field follow-up
 
 The record checkpoint and iterator re-entry are source-proved. Current frontier: `0x100d3ce60`,its replacement-workspace and biased-LOCAL consumers,actual ownership/output serialization,and matched daemon/kext ABI. Arbitrary-selector inverse,decoded workspace function and native traversal/output remain unknown. Goal remains active. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.
+
+
+## Workspace passes and byte-permutation follow-up
+
+Current source frontier is `0x100a4f144`,after two74-word passes and a proved16-value permutation stage. Next priorities are the new-root/permutation consumers,actual LOCAL+bias use and output serialization,with matched daemon/kext ABI still unresolved. Goal remains active. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.

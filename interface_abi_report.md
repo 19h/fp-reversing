@@ -1470,3 +1470,8 @@ The [u64/container report](daemon_reader_u64_codec_report.md) proves the full885
 ## Checkpoint, iterator and LOCAL request-field follow-up
 
 The checkpoint restores the existing header-decoder constants and NODE,next restores W5=0x4719,and NEXT selects decoder or LOCAL. LOCAL-present saves frame views and LOCAL+bias,reads request+0x28 and COOKIE,and the constructor-form selector reaches the new phase under the stated alignment/stability premises. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.
+
+
+## Workspace passes and byte-permutation follow-up
+
+The first pass uses W5/W6/W14/W16;the second resets a separate W8/W9/W12/W21 seed and preserves five other first-pass outputs. Byte-stage entry supplies W13=0x8721,W22=1,X26=F+c80. Exit supplies the new permutation root in X20/X26 and selects `0x100a4f144`;root extents and native output remain unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.

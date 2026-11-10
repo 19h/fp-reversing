@@ -1,0 +1,104 @@
+{
+  "generator_sha256": "08c2e55749b5173322edcdc6a591ec137a0e54b08eb0a26997d8504dda955f7e",
+  "static_scope": "Two complete74-word workspace passes,source scalar recurrences,reciprocal-division bounds and16-cell byte-permutation initialization/swaps. Decoded state identity,native ownership/output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 731,
+    "source_bytes": 2924,
+    "pointer_records": 5,
+    "branch_bindings": 5,
+    "SP_writes": 0,
+    "comparison_role_corrections": 3,
+    "bitfield_decodes_checked": 0,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 0,
+    "pair_load_decodes_checked": 0,
+    "ADRP_decodes_checked": 0,
+    "TST_decodes_checked": 1,
+    "CNEG_decodes_checked": 0,
+    "EXTR_decodes_checked": 0,
+    "UMULL_decodes_checked": 13,
+    "UDIV_decodes_checked": 1,
+    "prior_ranges_recaptured": 10,
+    "prior_bytes_recaptured": 34804,
+    "queries_unsat": 174,
+    "queries_sat": 0,
+    "predecessor_queries_replayed": 3,
+    "source_nonbranch_sites_translated": 728,
+    "entry_sites_translated": 142,
+    "words_per_pass": 74,
+    "workspace_read_operations": 148,
+    "workspace_read_bytes": 592,
+    "state_words_per_pass": 4,
+    "integer_division_theorems": 12,
+    "source_remainder_shape_proofs": 11,
+    "source_mask_bounds": 3,
+    "source_overapproximations": 14,
+    "selected_address_cases": 133,
+    "identity_seed_stores": 16,
+    "source_swaps": 15,
+    "source_byte_reads": 29,
+    "source_byte_stores": 46,
+    "shuffle_stores": 47,
+    "shuffle_distinct_byte_destinations": 16,
+    "shuffle_root_stores": 1,
+    "generic_array_laws": 2,
+    "finite_index_transpositions": 256,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_workspace_passes_report.md": "23d52dae79f5ae0c2f7cb26d8e36d773659991cc583fd2dd63720abeb342abe8",
+    "obfuscated_routines_report.md": "6899659503416a2a90a84fc2980899fb36b2acbc8c22471eed5fcaf2a70b8733",
+    "mach_ports_report.md": "bf9670ba8462a33c0a3052731044d969f487f958aa1dc459c6ac19e5a75a53bb",
+    "foundational_triage_report.md": "092d3365a148fe3e2ab330ff32a3de9b77d3148bdae331fa66a3878459ec2054",
+    "interface_abi_report.md": "134fcce01129b742410e4a64250b224186d58243e632e4ac6e1725072a975384",
+    "interface_investigation_status.md": "8fcd4858bd6bd9ee2680d5f5a3f4b9746a47c141af08c5e6b902951a739fe9c3",
+    "daemon_mode_one_record_checkpoint_report.md": "bdc890926f0a1fdbe68482a7e8e88c257fca938d5d9185ccad4754657194132d"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_workspace_passes_source.json": "1bfc068831b525055e22606394946e096534c749d86917b7bcbe3eaf4244fa50",
+    "daemon_mode_one_workspace_passes_checks.json": "3c032a4ca55d584d3358fb20675e9417ebbf7bb7960b7e599e3ca869e592a0fd",
+    "recover_daemon_mode_one_workspace_passes.py": "40b6517812fbbaed565764813a39d8e83c4dae56639f9d97bdf9089051726621",
+    "validate_daemon_mode_one_workspace_passes.py": "e7d243c38f18cb894432d11cd82082adde607d4c2a481b948470fb3707702265",
+    "seal_daemon_mode_one_workspace_passes.py": "08c2e55749b5173322edcdc6a591ec137a0e54b08eb0a26997d8504dda955f7e",
+    "verify_daemon_mode_one_workspace_passes_publication.py": "13cd869ea81904a9155527b2b49d29083222e1a6c5a815ffefabaacc508c0cb8"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WP1-WP8;728 unique current sites plus142 entry sites,174 UNSAT including three predecessor queries;two74-word scalar passes,16 identity bytes and15 suffix swaps;12 integer division facts,11 source shapes,three mask bounds,14 bounded cuts,133 residue cases and two coherent-array laws. Decoded scalar/permutation identity,native ownership/output and daemon-kext pairing remain unknown."
+  }
+}

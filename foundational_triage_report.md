@@ -1339,3 +1339,8 @@ The [u64/container report](daemon_reader_u64_codec_report.md) proves the full885
 ## Checkpoint, iterator and LOCAL request-field follow-up
 
 Checkpoint stores end the earlier COUNT,PBUF and F4d8 numeric-word epochs. All128 plane bytes are read once,74 u32 stores replace the workspace,and saved NODE/request/cookie survive. LOCAL contributes to a biased saved word;derived frame-view extents remain unknown. See the [source-pinned checkpoint and request-gate report](daemon_mode_one_record_checkpoint_report.md) for59 UNSAT/two SAT checks,45 predecessor replays and scoped assumptions.
+
+
+## Workspace passes and byte-permutation follow-up
+
+Two read-only workspace passes make148 word reads /592 B. The following stage partially overwrites the former word-grid view with16 byte cells,makes15 alias-safe swaps and replaces F750 with F+c80 while retaining F758=F+8b0. Saved request/LOCAL words and the296-byte workspace remain untouched. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.

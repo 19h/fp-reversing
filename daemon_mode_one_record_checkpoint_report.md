@@ -163,3 +163,8 @@ QG5:Old workspace,COUNT,PBUF and numeric-word epochs are distinguished;LOCAL bia
 QG6:All local claims trace to the pinned image,authenticated records,fresh source comparison,accepted SMT queries and preserved predecessor evidence;instruction aliases have a primary Arm reference.
 
 QG7:Impact-ranked next steps cover the new phase,decoded checkpoint function,list lifecycle,request predicate and actual cross-layer exposure. No unrelated target probing is included.
+
+
+## Workspace passes and byte-permutation follow-up
+
+The former `0x100d3ce60` frontier is now two separately seeded74-word workspace passes followed by16 identity-byte stores and15 suffix swaps. The stage preserves the permutation invariant,changes the F750 root epoch and continues to `0x100a4f144`;decoded function and native output remain unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.

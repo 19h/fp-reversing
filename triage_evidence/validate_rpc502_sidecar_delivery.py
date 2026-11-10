@@ -151,6 +151,7 @@ def main():
     if exists(BASE/'daemon_mode_one_record_rounds_report.md'):reports.add(BASE/'daemon_mode_one_record_rounds_report.md')
     if exists(BASE/'daemon_mode_one_record_reentry_report.md'):reports.add(BASE/'daemon_mode_one_record_reentry_report.md')
     if exists(BASE/'daemon_mode_one_record_checkpoint_report.md'):reports.add(BASE/'daemon_mode_one_record_checkpoint_report.md')
+    if exists(BASE/'daemon_mode_one_workspace_passes_report.md'):reports.add(BASE/'daemon_mode_one_workspace_passes_report.md')
     if exists(BASE/'daemon_service_cf_lifecycle_report.md'):reports.add(BASE/'daemon_service_cf_lifecycle_report.md')
     if exists(BASE/'cf_mach_port_retirement_report.md'):reports.add(BASE/'cf_mach_port_retirement_report.md')
     if exists(BASE/'daemon_cf_descriptor_bridge_report.md'):reports.add(BASE/'daemon_cf_descriptor_bridge_report.md')
@@ -1614,6 +1615,10 @@ def main():
         checkpoint_quality=json.loads(read(ROOT/'daemon_mode_one_record_checkpoint_quality_gates.json'))
         manifest['validation']['daemon_mode_one_record_checkpoint_increment_checks']=checkpoint_quality['verified_counts']
         manifest['validation']['daemon_mode_one_record_checkpoint_static_scope']=checkpoint_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_workspace_passes_quality_gates.json'):
+        workspace_passes_quality=json.loads(read(ROOT/'daemon_mode_one_workspace_passes_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_workspace_passes_increment_checks']=workspace_passes_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_workspace_passes_static_scope']=workspace_passes_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
