@@ -214,3 +214,5 @@ QG4: u8/u32/u64 widths,byte units,modular overflow and source-instance versus di
 QG5: Zero-valued constant proposals,unbound W4 targets,independent-read coherence,high-half register epochs and final countdown underflow are separated from accepted claims.
 QG6: Pinned original image bytes,data,fixups,source models and exact solver queries supply provenance. No new live IDA or native validation is claimed.
 QG7: The continuation list identifies high/medium impact opportunities within explicit source/native boundaries.
+
+The172-instruction finish is now translated and completes the16-field private update. Its changed W19 ABI reaches a generalized refresh and parity reentry;the even correlated mutation is proved to flip C(0). The separate9241-instruction continuation remains unresolved. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).

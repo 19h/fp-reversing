@@ -1376,3 +1376,5 @@ Four induction cases establish128 byte reads,64 distinct u32 destinations,frame 
 The48-step chronology expands64 initialized words to256,with384 backward reads,192 new stores and69 byte reads per iteration bounded to the962-byte primary domain. Forty byte sites have bank-membership proofs;the remaining29 roles,current table validity,state bias and native owners remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).
 
 The secondary component now exposes16 saved scalar producers,two environment-word reads,a constant composed image-bank selector,and exact initialized-grid/image-word geometry through64 rounds and the update gate. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
+
+The secondary reentry now has a16-field private commit, changing progression-word ABI, matching saved/cached TABLE roots, register-pair preservation and a guard-proved C(0) XOR80. [Secondary state commit and reentry](daemon_mode_one_secondary_reentry_report.md).

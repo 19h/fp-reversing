@@ -1,0 +1,88 @@
+{
+  "generator_sha256": "ad35a6b3d2c618f3a5138199d36780919d5973103884fc1ad2cde51a4daf94f4",
+  "static_scope": "Secondary state commit and64-unit modular progression,generalized128-byte plane refresh,parity-dependent reentry gates and guard-selected first-plane-byte XOR with known schedule bridge. Native field meanings,whole arithmetic,termination,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 5,
+    "source_instructions": 2423,
+    "source_bytes": 9692,
+    "branch_bindings": 8,
+    "pointer_records": 7,
+    "ISA_decodes_checked": 2,
+    "comparison_role_corrections": 2,
+    "prior_ranges_recaptured": 14,
+    "prior_bytes_recaptured": 81496,
+    "frontier_ranges_hashed": 2,
+    "frontier_bytes_hashed": 248,
+    "SP_writes": 0,
+    "queries_unsat": 28,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 9,
+    "source_nonbranch_sites_translated": 2418,
+    "finish_u32_stores": 13,
+    "chained_saved_state_fields_written": 16,
+    "chained_saved_state_bytes": 64,
+    "plane_byte_stores": 128,
+    "arithmetic_cells_preserved": 800,
+    "refresh_proved_value_cuts": 2,
+    "refresh_store_address_normalizations": 4,
+    "current_distinct_bytes_written": 196,
+    "guarded_first_plane_byte_XOR_sites": 1,
+    "guarded_byte_address_normalizations": 2,
+    "rejected_alterations": 7
+  },
+  "report_sha256": {
+    "daemon_mode_one_secondary_reentry_report.md": "4c4e3ab68c89923631ec6477a7392dea73f2b3ac5862d171489ef991ca0a3937",
+    "obfuscated_routines_report.md": "bc03206be0d4e8e1ad808d0fa5d49e996e669407955998c11943dff57ce802ec",
+    "mach_ports_report.md": "b4383384db594283847115b69e1ec85d24fff8e12c70169a43c20bd416b11bb9",
+    "foundational_triage_report.md": "9691e70e23d65822ce54b5e18c4d40158f65849e203501b3babbf178a080d407",
+    "interface_abi_report.md": "5b3ec8eafa5189a23a5e99b80e7a083c6fb4680b5396d5b450fdabf04e558ac2",
+    "interface_investigation_status.md": "dd3bb267f79e60eeb53ca248475781d58ee47be5c1c518ce6276c8623bd04b88",
+    "daemon_mode_one_secondary_rounds_report.md": "94aecf4748f1a254a514f2eef00b71002359f61f0f756d6c96a8d398f56b0188"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_secondary_reentry_source.json": "f2cb8c2b771f83a0ddcefd94c6846f44157ec3f78f4bd7b7864c1cd16d585e9d",
+    "daemon_mode_one_secondary_reentry_checks.json": "5a6d794454ea7598b41fceb3cb381f0ad7fe1217c4b0cb39d035dbc735e9cafc",
+    "recover_daemon_mode_one_secondary_reentry.py": "93c036deeb754141319429f988c96d3d066bfa25699a757279eaf9be8f1bfd65",
+    "validate_daemon_mode_one_secondary_reentry.py": "41e34e0dd0475825726d9753133c99ad766ca4cee6dbbcdf97acea4ceeb7ebcd",
+    "seal_daemon_mode_one_secondary_reentry.py": "ad35a6b3d2c618f3a5138199d36780919d5973103884fc1ad2cde51a4daf94f4",
+    "verify_daemon_mode_one_secondary_reentry_publication.py": "e76d4dca59f741c8d608c080c8f2579aba46be2feaf52aec3a7fd099a0f39801"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RE1-RE8;2418 source sites,28 UNSAT/three abstract SAT,including9 selected predecessor replays;16-field commit,modular progression,generalized128-byte refresh,both parity gates and correlated C(0) XOR80. Native meanings,termination,output,whole arithmetic and cross-layer pairing remain explicit unknowns."
+  }
+}
