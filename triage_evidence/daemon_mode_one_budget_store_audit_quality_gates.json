@@ -1,0 +1,86 @@
+{
+  "generator_sha256": "66c14f00fa422e3b91080f0183b1b3eba833ec0cb0e0c7fed91605459f109315",
+  "static_scope": "Exhaustive store catalogue for46 pinned source artifacts after explicit caller/adapter filtering,independent SP-store decoding,exact entry controller/guard/budget destinations,and conditional budget/return laws. Retained computed-address/owner contracts and captured-control closure remain premises;no whole-program/native return or transport claim.",
+  "verified_counts": {
+    "inventory_artifacts": 46,
+    "retained_range_instances": 209,
+    "retained_bytes_recaptured": 518140,
+    "core_instruction_sites": 110556,
+    "core_store_sites": 3754,
+    "SP_store_encodings_independently_decoded": 3307,
+    "retained_frame_offset_sites": 236,
+    "retained_array_contract_sites": 174,
+    "LOCAL_byte_store_sites": 32,
+    "special_destination_sites": 5,
+    "translated_source_ranges": 4,
+    "translated_source_instructions": 81,
+    "translated_source_bytes": 324,
+    "structural_frame_ranges": 2,
+    "structural_frame_instructions": 33,
+    "controller_bank_byte_cases": 512,
+    "original_pointer_records": 4,
+    "IDA_text_bytes_matched": 14849960,
+    "queries_unsat": 27,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 14,
+    "source_nonbranch_sites_translated": 81,
+    "fresh_controller_value_cuts": 0,
+    "current_store_effects": 6,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_budget_store_audit_report.md": "29ab6b951f363992e48ffa9c09e6400f3d22a009d917fa0f18ace0f65671b228",
+    "obfuscated_routines_report.md": "a5d80cfc73a4ba2cdb58c5d46de4c32508e7d7a27bfcce13c3f2b4547de41324",
+    "mach_ports_report.md": "3caf9d48c0e9e2040ff5acfdb06c21e76ad08d297857424c297e1b4e703c6ed8",
+    "foundational_triage_report.md": "f43061b41530f83732362d207eb54e2e5cbe4fff5965ae0b836685e63b359545",
+    "interface_abi_report.md": "78619b005d04a8993d8c5bc7264aff704b32f9465cff85939866345ecff6c73d",
+    "interface_investigation_status.md": "db45c9e24cd9bf5892a25169261e732e6d614f31627f3bf22c8e57ca36a07956",
+    "daemon_mode_one_second_phase_handoff_report.md": "b49400d1561100babe33006b2dd112d6b797d1b17e1d2300f58228cfc6bc2a41"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_budget_store_audit_source.json": "b885f61dd09ed465d76e388a411c36b0b80f38fc096b02d2d900ae349eca7819",
+    "daemon_mode_one_budget_store_audit_checks.json": "735b7ec02bd0726b70709c11ca107eb826f1ab57c2ff7a65fb0e4f4346b2bcc1",
+    "recover_daemon_mode_one_budget_store_audit.py": "0de58021d1014d245206eb2320779fe918879ef74e2e88656be4d2c4e734aa3d",
+    "validate_daemon_mode_one_budget_store_audit.py": "06e47c37fe2213e90dbb2aed86e97d5cf75da0cca3fd8b068b56371bd8cb0765",
+    "seal_daemon_mode_one_budget_store_audit.py": "66c14f00fa422e3b91080f0183b1b3eba833ec0cb0e0c7fed91605459f109315",
+    "verify_daemon_mode_one_budget_store_audit_publication.py": "ed24cbe793e98d9fbd4ab5105861b9acdce92eec34b357a6191536c1e0edc2cb"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and BA1-BA8;3754 captured core stores,3307 independently decoded SP stores,81 translated source instructions,27 UNSAT/two abstract SAT and14 predecessor replays. Exact controller/canary/budget/request/delta equations,one-carrier controller encodings,byte preservation and conditional zero-delta law are covered. The236 retained frame-offset and174 array-site contracts,logical control closure,callee/owner behavior and native return remain explicit premises. Loaded code matches the pinned text;whole-file IDB identity and matched transport remain unestablished."
+  }
+}

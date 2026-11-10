@@ -351,6 +351,7 @@ def main():
     if exists(BASE/'daemon_mode_one_result_publication_report.md'):reports.add(BASE/'daemon_mode_one_result_publication_report.md')
     if exists(BASE/'daemon_mode_one_output_verification_report.md'):reports.add(BASE/'daemon_mode_one_output_verification_report.md')
     if exists(BASE/'daemon_mode_one_second_phase_handoff_report.md'):reports.add(BASE/'daemon_mode_one_second_phase_handoff_report.md')
+    if exists(BASE/'daemon_mode_one_budget_store_audit_report.md'):reports.add(BASE/'daemon_mode_one_budget_store_audit_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1684,6 +1685,10 @@ def main():
         second_phase_handoff_quality=json.loads(read(ROOT/'daemon_mode_one_second_phase_handoff_quality_gates.json'))
         manifest['validation']['daemon_mode_one_second_phase_handoff_increment_checks']=second_phase_handoff_quality['verified_counts']
         manifest['validation']['daemon_mode_one_second_phase_handoff_static_scope']=second_phase_handoff_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_budget_store_audit_quality_gates.json'):
+        budget_store_audit_quality=json.loads(read(ROOT/'daemon_mode_one_budget_store_audit_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_budget_store_audit_increment_checks']=budget_store_audit_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_budget_store_audit_static_scope']=budget_store_audit_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
