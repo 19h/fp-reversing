@@ -1,0 +1,85 @@
+{
+  "generator_sha256": "2ffdd86fbd556b624e9d671ffd797da03eb5243abf7a00d66e07edc2a35cc73e",
+  "static_scope": "Conditional long-record initializer:complete original source SSA,all128 derived-plane stores,independent four-word register-bank dependency domains,all private effects,and exact unsigned COUNT64 continuation. Compact byte functions,native reachability,whole algorithm,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 1,
+    "source_instructions": 4175,
+    "source_bytes": 16700,
+    "pointer_records": 2,
+    "branch_bindings": 2,
+    "SP_writes": 0,
+    "comparison_role_corrections": 4,
+    "bitfield_decodes_checked": 0,
+    "pair_store_decodes_checked": 0,
+    "prior_ranges_recaptured": 6,
+    "prior_bytes_recaptured": 31108,
+    "queries_unsat": 19,
+    "queries_sat": 4,
+    "predecessor_queries_replayed": 7,
+    "source_nonbranch_sites_translated": 4174,
+    "frame_alias_normalizations": 27,
+    "indexed_store_normalizations": 5,
+    "universal_intermediate_overapproximations": 4,
+    "plane_byte_stores": 128,
+    "u32_stores": 3,
+    "logical_store_effects": 131,
+    "distinct_store_bytes": 140,
+    "arithmetic_and_codebook_cells_retained": 800,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_long_planes_report.md": "901e7e7b82d83c7aab2350652d7b8f7a9180c715e564b7b274e1bf7ffd2016fa",
+    "obfuscated_routines_report.md": "fd78c5424d7d3003840cda69ca8473e4f09eac006193b1e61c034cd3c7e070c7",
+    "mach_ports_report.md": "75b2bb4f50a8c6a83536346ef8d525fe06113fd01117a849522edce29096659c",
+    "foundational_triage_report.md": "201336f2671919756f91bb4a3cdd66ce1b824113856bd7b84261b254c3b39668",
+    "interface_abi_report.md": "b8e687e1bc337bf43feaf3a8250df00bdb09171871c7799d9e93cf583da81959",
+    "interface_investigation_status.md": "6ea7b827806dc0361fe31ce192e2b3159cc82cbbb51cf34580a476c9e2b616e4",
+    "daemon_mode_one_record_input_planes_report.md": "370f65fc4e5c95e2f55150f1e73c001455b782a96c7c7e6db3d4a460b27a4700"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_long_planes_source.json": "4d0f56d0b9b15934f11a29fb27eb04d10f0337a61805ae9e89b1068a9bc1b0a0",
+    "daemon_mode_one_record_long_planes_checks.json": "ec6bce8015eadf339294813af16dafc6c56e5616faa5a5174f1f24f4d2c4dbe5",
+    "recover_daemon_mode_one_record_long_planes.py": "b3b28787abff1f3ee331c03334d32f064552d54e341340508c82b3cbf298232c",
+    "validate_daemon_mode_one_record_long_planes.py": "9c1e9fb249f8e8779400e58ddfa501cf8b585ab84765a6c8347a7614ea92305c",
+    "seal_daemon_mode_one_record_long_planes.py": "2ffdd86fbd556b624e9d671ffd797da03eb5243abf7a00d66e07edc2a35cc73e",
+    "verify_daemon_mode_one_record_long_planes_publication.py": "abcd4394d6bbcd1ab019637573488df7776177d55c3e76798eb21a81b70154cf"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and LP1-LP8;4174 current sites translated,five exact indexed store addresses with four universal intermediate overapproximations,128 plane bytes replaced,two separate incoming register dependency domains,140 distinct private store bytes,and unsigned COUNT64 retest;19 UNSAT/4 SAT results including seven selected predecessor replays. Compact byte functions,whole algorithm,native reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  }
+}

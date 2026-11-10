@@ -184,3 +184,5 @@ QG5: Separate plane stores versus decoded representation,COUNT0/header reads,zer
 QG6: Fresh source/fixups,457 predecessor replays,actual joining-field proofs,source-linked codec/address/control certificates and six rejected alterations establish scoped provenance.
 
 QG7: Five impact-ranked continuations retain source/state/output/interface questions and the unresolved native daemon/kext boundary.
+
+Follow-up: [Selected-record long-input derived planes and count retest](daemon_mode_one_record_long_planes_report.md) proves all128 plane-byte replacements from two separate incoming four-word banks,without record or old-plane byte reads. All4174 nonbranch sites translate;five indexed store addresses,three phase replacements and the repeated unsigned COUNT64 gate are proved. The current long entry selects0x100c9148c,IA0x6307.19 UNSAT/four SAT checks pass,including seven selected predecessor contracts. Compact byte functions,native reachability,caller output and daemon-kext pairing remain unknown.
