@@ -188,3 +188,8 @@ QG5:The static ROM group is distinguished from its separately encoded table;whol
 QG6:Claims trace to the pinned image,original fixups,captured byte tables,fresh source comparison,685 UNSAT/one abstract SAT,complete finite ledgers and174 replayed predecessor queries. No native behavior is inferred.
 
 QG7:Impact-ranked next steps cover table consumers,LOCAL/output/cross-layer ownership,other encoded operations,exact encoding functions and controller provenance. No unrelated target probing is included.
+
+
+## Carry, XOR and numeric-map follow-up
+
+Carry fixes the numeric encoding to generator11 among the eight valid sum encodings;the previously displayed generator0 remains valid for the sum law and equals the new encoding composed with multiplication by5 modulo16. The following source also establishes encoded XOR and role-specific input-decoder/output-encoder tables,without assuming those private maps are mutual inverses. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.

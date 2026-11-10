@@ -1137,3 +1137,8 @@ Current source frontier is `0x100a4f144`,after two74-word passes and a proved16-
 ## Inverse map and encoded modulo16 addition follow-up
 
 Current frontier is `0x100c1c8a0`,after construction of separately encoded addition modulo16. The local ROM law,input/output encoding roles and table layout are source-proved. Priorities remain actual table/LOCAL consumers,owners/extents,serialization and matched daemon/kext ABI. Goal remains active. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.
+
+
+## Carry, XOR and numeric-map follow-up
+
+Current frontier is `0x100d845e0`,after construction of carry/XOR and input/output numeric maps. Next priorities are actual consumers,carry propagation and encoding transitions,followed by output ownership/serialization and matched daemon/kext ABI. Goal remains active. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.

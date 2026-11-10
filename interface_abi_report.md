@@ -1480,3 +1480,8 @@ The first pass uses W5/W6/W14/W16;the second resets a separate W8/W9/W12/W21 see
 ## Inverse map and encoded modulo16 addition follow-up
 
 The generated operation satisfies D[x+16*y]=Eout((Ein_inverse(x)+Ein_inverse(y))mod16),with Ein=P composed with E and Eout=Q composed with E. Both controller words can change selector-byte read addresses while the selected ROM bank remains fixed under immutable image/root premises. Native output and cross-layer contracts remain unresolved. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.
+
+
+## Carry, XOR and numeric-map follow-up
+
+For Ein=P composed with E and Eout=Q composed with E,the tables implement Eout(sum mod16),Eout(carry)<<4 and Eout(XOR);DEC[Ein(a)]=a and ENC[n]=Eout(n). Current source proves two256-step and two16-step loops plus their full register boundaries. Numeric orientation is pinned by carry and independently agrees with both static ROM maps. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.

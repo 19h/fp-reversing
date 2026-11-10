@@ -1303,3 +1303,8 @@ The two workspace passes and byte-permutation stage contain no Mach send/receive
 ## Inverse map and encoded modulo16 addition follow-up
 
 The inverse/shuffle/encoded-addition chain contains no Mach send/receive,port allocation,right transfer or message-emission site. It reads two controller words and image lookup data,but its bank selector collapses to0x72. Actual native owners and daemon/kext pairing remain unknown. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.
+
+
+## Carry, XOR and numeric-map follow-up
+
+The carry/XOR/numeric-map builders contain no Mach send/receive,port allocation,right transfer or message-emission site. Their accesses are private frame tables and inherited immutable ROM;there is no new controller-word read. Native output and daemon/kext pairing remain unknown. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.

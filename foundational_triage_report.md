@@ -1349,3 +1349,8 @@ Two read-only workspace passes make148 word reads /592 B. The following stage pa
 ## Inverse map and encoded modulo16 addition follow-up
 
 The first forward nibble map is replaced only after its inverse is stored in disjoint labels593..608. The new forward map occupies labels0..15,and the generated table occupies72..327:288 known cells. The ROM data pointer requires the original dyld rebase value,not the raw chained file word;only256 selected cells of its928-byte region have the nibble-encoded codomain. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.
+
+
+## Carry, XOR and numeric-map follow-up
+
+The suite now accounts for832 disjoint initialized private cells and800 selected ROM cells. The carry table stores encoded0/1 symbols in the high nibble. Input decoding and output encoding have different roles;mutual inversion is not inferred. Reaching W9 and the decoder final W16=653 are established from actual producer/lifetime evidence. See the [source-pinned nibble-operation report](daemon_mode_one_nibble_operation_suite_report.md) for1378 UNSAT/two abstract SAT,complete ROM/address cases and scoped assumptions.
