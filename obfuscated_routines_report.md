@@ -1336,3 +1336,7 @@ Four subsequent continuations generate high-nibble carry,XOR,input-decoder and o
 ## Workspace state installation follow-up
 
 The two74-word workspace traversals,second-pass adapter and4870-instruction initializer have source/address/control contracts. The initializer replaces Q/I storage with two64-byte input-dependent planes while preserving800 arithmetic/codec cells;decoded recurrence and algorithm identity remain unknown. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).
+
+## Parity-state adapter follow-up
+
+The initializer successor is a parity dispatcher with separate LOCAL and frame-view state adapters. A shared setup selects a conditional high-bit update whose component coordinate spans all962 private cells;three further private targets remain unresolved. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).

@@ -1489,3 +1489,7 @@ For Ein=P composed with E and Eout=Q composed with E,the tables implement Eout(s
 ## Workspace state installation follow-up
 
 The second traversal repeats through a16-instruction index/state adapter. The initializer consumes74 workspace words,two first-pass auxiliary frame words and retained register state;Q/I cells are repurposed,800 arithmetic/codec cells remain,and the next private ABI selects0x100b6fe00. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).
+
+## Parity-state adapter follow-up
+
+The odd adapter restores LOCAL+bias and X0=0;the even adapter uses a numeric bias and X0=F1100. Both select0x100d74e68. X0/F380 have phase-specific meanings;the subsequent byte-update and comparison contracts retain three separate outgoing frontiers. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).

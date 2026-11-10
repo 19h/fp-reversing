@@ -1,0 +1,49 @@
+{
+  "generator_sha256": "bc6ee3645eb7e631e2013c8228818b27fcc8767719401dfc5abbe79c432832e9",
+  "prior_manifest_sha256": "0f481b2a12b589bb15c713727376707fbb362cf85845cfc36fcd7098db5ccee9",
+  "prior_artifacts_checked": 7744,
+  "prior_artifacts_unchanged": 7737,
+  "allowed_changes": [
+    {
+      "path": "daemon_mode_one_workspace_state_install_report.md",
+      "prior_sha256": "0dbfbe7e5e9cda9a37de01ed81b4fc35e86e8e561ddcf06c0ae2bf8087eb00ab",
+      "sha256": "3fbb7fd1a017eea784931c8d2f7c0295552aa2f2770ac948be5900b2e4c9cb0b"
+    },
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "a5f294eeb18da3ad0db4e3719aeb22b76bf0ea76fd911eac69365bcba03293d2",
+      "sha256": "05b4c9ae4ef51350e848a1096ce1c8c80cd37ed5a3fe0a3d2aac5a1fafb55aab"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "a9a5e0a2ef4b56b967d1363c140eff42630c5a630f9408151b233b71536948f3",
+      "sha256": "9c0f5298688d81813f69ecf2d41615781ef73f4a4b24dab5e6fc5c385440b3cc"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "89963c059c81f8e3cea59bc75b68443d1b11a168b3d853be31571cbde25102ad",
+      "sha256": "36ca3140c8fa78e0644476a859e0e2872f07e4a6e40f3b7f096d0894c3ec4b9b"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "39cac7fc260c70a305bd94a18508a32da3510cf8d1daf582d9dc870cef9cc269",
+      "sha256": "d908f751846fd76dd64020934fd58337c474f6a8cbf4abc390e6632aab57738e"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "e6229bd4296d4a7463e6fc7f3629d16542ea1a001459fa1a292d8228f9b56d29",
+      "sha256": "de18049fc83b41f4e288fbda48d00dfa7bdf635df750c2584cc26dd24737d9ef"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "c79958f3c5a8a65ec3f822692c97dfd980d004242968b3ed608a820f903e4592",
+      "sha256": "580e3d54a965304357cfc2a8cb85b1a69de3388b85c74f8a30b22e830435b4c4"
+    }
+  ],
+  "original_inputs_preserved": 3,
+  "Python_syntax_checks": 5,
+  "local_links_checked": 2782,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "full_goal_complete": false
+}

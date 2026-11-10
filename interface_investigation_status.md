@@ -1146,3 +1146,7 @@ Current frontier is `0x100d845e0`,after construction of carry/XOR and input/outp
 ## Workspace state installation follow-up
 
 Published bounded contracts cover two74-word traversals,128 state-plane bytes,32 replaced permutation cells,800 retained arithmetic/codec cells and saved-slot lifetime ends. The active frontier is0x100b6fe00;whole-algorithm identity,native ownership/output and daemon/kext linkage remain unresolved. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).
+
+## Parity-state adapter follow-up
+
+Parity-specific state/LOCAL/frame-view contracts,conditional byte update,exact modulo962 reduction and following fork are published. Actual correlated cell classification,later parity/skip reachability,the three consumers,whole-algorithm identity and native cross-layer linkage remain unresolved. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).

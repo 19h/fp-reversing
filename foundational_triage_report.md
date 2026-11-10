@@ -1358,3 +1358,7 @@ The suite now accounts for832 disjoint initialized private cells and800 selected
 ## Workspace state installation follow-up
 
 The unchanged296-byte workspace feeds two full traversals and a128-byte state-plane install. Saved NODE/cookie and two image-root slots receive u32 overwrites;LOCAL/request roots survive. Table and saved-slot identities require the new epoch. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).
+
+## Parity-state adapter follow-up
+
+Parity selects distinct scalar banks and F350/F360/X0 representations before a common setup. A later XOR80 byte update is bounded to962 private cells;the predecessor800-cell retention guarantee cannot be extended past it without producer correlations. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).

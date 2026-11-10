@@ -1312,3 +1312,7 @@ The carry/XOR/numeric-map builders contain no Mach send/receive,port allocation,
 ## Workspace state installation follow-up
 
 The four selected continuations have zero Mach-port emissions and only private authenticated BRAA edges. The initializer dispatches through slot0x40d0 to0x100b6fe00;this establishes no new daemon/kext IPC pairing. See [workspace state installation](daemon_mode_one_workspace_state_install_report.md).
+
+## Parity-state adapter follow-up
+
+Seven additional continuations have zero Mach-port emissions and ten authenticated source-edge bindings. Their parity and flag words are private state;no public selector,native reachability or daemon/kext pairing follows. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).

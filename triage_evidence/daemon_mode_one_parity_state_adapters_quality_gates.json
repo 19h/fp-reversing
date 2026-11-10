@@ -1,0 +1,90 @@
+{
+  "generator_sha256": "bc6ee3645eb7e631e2013c8228818b27fcc8767719401dfc5abbe79c432832e9",
+  "static_scope": "Parity dispatcher,odd LOCAL/even frame-view state adapters,conditional high-bit update and following fork;exact source/private ABI and962-byte reduction only. Native ownership,output,algorithm identity and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 7,
+    "source_instructions": 1227,
+    "source_bytes": 4908,
+    "pointer_records": 9,
+    "branch_bindings": 10,
+    "SP_writes": 0,
+    "UMULL_decodes_checked": 1,
+    "bitfield_decodes_checked": 0,
+    "register_shift_decodes_checked": 0,
+    "comparison_role_corrections": 1,
+    "prior_ranges_recaptured": 9,
+    "prior_bytes_recaptured": 51004,
+    "queries_unsat": 34,
+    "queries_sat": 4,
+    "predecessor_queries_replayed": 15,
+    "source_nonbranch_sites_translated": 1220,
+    "fresh_incoming_initializer_sites": 4869,
+    "distinct_parity_adapters": 2,
+    "shared_setup_contexts_proved": 2,
+    "source_load_operations": 68,
+    "source_store_operations": 43,
+    "source_byte_loads": 1,
+    "source_byte_stores": 1,
+    "private_domain_bytes": 962,
+    "component_cells_with_symbolic_preimages": 962,
+    "integer_reciprocal_theorems": 1,
+    "abstract_component_address_examples": 2,
+    "source_value_cuts": 0,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_parity_state_adapters_report.md": "0413ccf8bc944c82a0574b39e71930d0d5ec52dd113aef77fa20d1a5a7099543",
+    "obfuscated_routines_report.md": "de18049fc83b41f4e288fbda48d00dfa7bdf635df750c2584cc26dd24737d9ef",
+    "mach_ports_report.md": "d908f751846fd76dd64020934fd58337c474f6a8cbf4abc390e6632aab57738e",
+    "foundational_triage_report.md": "05b4c9ae4ef51350e848a1096ce1c8c80cd37ed5a3fe0a3d2aac5a1fafb55aab",
+    "interface_abi_report.md": "9c0f5298688d81813f69ecf2d41615781ef73f4a4b24dab5e6fc5c385440b3cc",
+    "interface_investigation_status.md": "36ca3140c8fa78e0644476a859e0e2872f07e4a6e40f3b7f096d0894c3ec4b9b",
+    "daemon_mode_one_workspace_state_install_report.md": "3fbb7fd1a017eea784931c8d2f7c0295552aa2f2770ac948be5900b2e4c9cb0b"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_parity_state_adapters_source.json": "393ea9b965ac548e216792f413201d7ec429769a5a1faea6caa2ca0f1c490d51",
+    "daemon_mode_one_parity_state_adapters_checks.json": "ce97e1f84fd51b90ee66317f445648b1f937b597e187d23ef489a158f2790104",
+    "recover_daemon_mode_one_parity_state_adapters.py": "2d2c9537961c20afee2b81fece99833e761529675853187b4300185f528702dc",
+    "validate_daemon_mode_one_parity_state_adapters.py": "47dd08d86a7f2993a28fb53fa7897503b59ec01210aab6bd64cda68904ee3785",
+    "seal_daemon_mode_one_parity_state_adapters.py": "bc6ee3645eb7e631e2013c8228818b27fcc8767719401dfc5abbe79c432832e9",
+    "verify_daemon_mode_one_parity_state_adapters_publication.py": "b1861de19d5bc60aa6fbe46b2cc2f6a6d4cf241000ac472929894925f1887103"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and PA1-PA8;1220 source sites,34 UNSAT/four abstract SAT,including15 predecessor replays;two parity-specific adapters,two composed setup contexts,one conditional XOR80 byte update and962-cell reduction/preimage certificates. Root lifetimes,initial-entry limits and three outgoing frontiers are explicit;native ownership/output,algorithm identity and daemon-kext pairing remain unknown."
+  }
+}
