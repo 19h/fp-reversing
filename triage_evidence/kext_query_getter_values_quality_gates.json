@@ -1,0 +1,78 @@
+{
+  "generator_sha256": "2c8b2534839568818c6f5d065c5942c7819b86cfb36ebd4375e89bad91ef4f9e",
+  "static_scope": "Source-established version4c0b0000 and capability1f8 for the pinned base-provider getter routes,with exact internal bank/pointer/record/return contracts and conditional daemon cache specialization. Ordinary returns,stable original tables,guard/PAC and live connection/provider/build pairing remain premises;no native transaction or hardware capability semantics are asserted.",
+  "verified_counts": {
+    "kext_source_ranges": 9,
+    "kext_source_instructions": 453,
+    "kext_source_bytes": 1812,
+    "exhaustive_bank_rules": 12,
+    "exhaustive_bank_inputs": 3072,
+    "literal_bank_bytes": 2048,
+    "literal_pool_records": 8,
+    "saved_IDA_functions_matched": 5,
+    "saved_IDA_bytes_matched": 1620,
+    "daemon_ranges_recaptured": 21,
+    "daemon_bytes_recaptured": 2904,
+    "queries_unsat": 38,
+    "queries_sat": 2,
+    "predecessor_queries_replayed": 9,
+    "source_nonbranch_instruction_instances_translated": 354,
+    "fresh_source_bank_cuts": 12,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "kext_query_getter_values_report.md": "b143b852abad93ad70b5d452a19f57249da2483bfe82e23372eb94e894511fd9",
+    "obfuscated_routines_report.md": "e28568784000d80c9aa31177e4ff0d5168db7fc4f8d05baae469416de939bfb2",
+    "mach_ports_report.md": "f9d2bafc698c5104f53980d1e62da95b24ea62241d0955a643ee6eb4ab4b7c46",
+    "foundational_triage_report.md": "5bd4290826aa3030d9ae21a9cd5937b08c9df9112cb8140d9324295c9f588358",
+    "interface_abi_report.md": "3e63ae6c76d0962d96f661e6db07689cb7426357a2a7f006f49bad5b31920850",
+    "interface_investigation_status.md": "ede2ac45c8a955c552ae3daeb8c6ef79353cf81e335e8c59106a4fa45bd9952a",
+    "daemon_iokit_census_report.md": "a725ad3d049ccdd0015d2bc4b660f4dad801e442d6da20556c9d72f281aa6b7b"
+  },
+  "evidence_sha256": {
+    "kext_query_getter_values_source.json": "9be7a1a298b3e1eb781656cc82270812d3c07bce893b66139c7dd746a7da1d66",
+    "kext_query_getter_values_checks.json": "4b2823caed643f45cc0c3430ca32c0a74f4025d8a5c2748fc33308d933e6cf5e",
+    "recover_kext_query_getter_values.py": "a7923e094c6b9356abc377a1e17a98b847d31dc51929de8551edb89183974928",
+    "validate_kext_query_getter_values.py": "0a0b9e5ebc9ace7643d87a2bb74554d4c1c839fce05b6ad0dfea2c34a3888ac7",
+    "seal_kext_query_getter_values.py": "2c8b2534839568818c6f5d065c5942c7819b86cfb36ebd4375e89bad91ef4f9e",
+    "verify_kext_query_getter_values_publication.py": "9b199778803c9f094e751aee38bd6c63656aba096c1976d3892b9b604ca90448"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and KG1-KG8;nine kext ranges453 instructions,354 translated instances,twelve original bank equalities,three exact call targets,two constant leaves and record-result joins. Thirty-eight UNSAT,two abstract SAT,nine predecessor replays and eight rejected alterations pass. Version4c0b0000/capability1f8 specialize the daemon cache and four query outcomes. Saved read-only IDA input/function hashes match;native connection/provider/build pairing,PAC,ordinary returns and capability-bit meanings remain separate."
+  }
+}

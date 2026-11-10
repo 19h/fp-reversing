@@ -1181,3 +1181,8 @@ Published static increment:3307 independent SP-store decodes,complete3754-site c
 ## Computed-store footprint refinement
 
 Current bounded increment:ten computed-store finite footprints,13 UNSAT/six abstract SAT,three fresh source models and eight rejected freshness alterations. Of174 catalogue array sites,164 remain without this new footprint proof;236 retained frame-offset sites and whole-core/native transport obligations remain unresolved. Goal active. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).
+
+
+## Provider getter values and daemon specialization
+
+Current cross-layer increment:source-established version4c0b0000/capability1f8,three resolved getter-internal calls,twelve fresh bank equalities,record-to-return joins,conditional daemon cache specialization and four query outcomes.38 UNSAT/two abstract SAT,nine predecessor replays and eight freshness alterations pass. Native port/provider/build pairing,successful transactions and capability-bit semantics remain unresolved;goal active. [Evidence and exact boundaries](kext_query_getter_values_report.md).

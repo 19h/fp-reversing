@@ -1393,3 +1393,8 @@ The loaded IDB records a different whole-file input hash,but its complete1484996
 ## Computed-store footprint refinement
 
 Ten previously retained computed-array envelopes now have fresh source equations and exhaustive finite footprints. The448 modeled stores write1600 B across three separate phases;the closest phase ends168 B before the canary. Pairwise cross-phase byte intersections are64,1 and43 B,requiring epoch-sensitive data flow. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).
+
+
+## Provider getter values and daemon specialization
+
+Pinned getter metadata is constant under the original bank/pointer epochs:version0x4c0b0000,capabilities0x1f8. Six controller writes,three stack records,three internal calls and separate result-pointer/register channels explain the apparent getter complexity. Failed capability-query fallback yields decoded8 if the version query was accepted,or0 if both were rejected;accepted capabilities remain1f8. Native outcomes are unknown. [Evidence and exact boundaries](kext_query_getter_values_report.md).

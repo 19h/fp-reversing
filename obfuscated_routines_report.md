@@ -1371,3 +1371,8 @@ The core entry now has exact stack-dependent u64 controller updates at 0x1010b68
 ## Computed-store footprint refinement
 
 Fresh source models discharge ten computed-store footprints:two48-iteration four-word expansions and a32-iteration two-byte absorption. Coordinate maps,all448 finite store instances and exact phase intersections are proved under the original entry/root/counter contracts;164 other computed-array sites and236 retained alias sites remain outside this increment. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).
+
+
+## Provider getter values and daemon specialization
+
+The pinned provider uOxAg/V2F1SYee route returns version0x4c0b0000;Q5TC6/QIWEiU returns capabilities0x1f8. Fresh source models prove twelve bank cancellations and three authenticated-pointer target associations. The version adapter overwrites caller record+4 after a nested constant-marker leaf;the capability leaf writes record+4 directly. Record-result channels,ordinary return premises and unknown capability-bit meanings are explicit. [Evidence and exact boundaries](kext_query_getter_values_report.md).

@@ -1347,3 +1347,8 @@ The budget/controller audit adds no direct Mach send/receive,right transfer,port
 ## Computed-store footprint refinement
 
 The computed-store footprint increment introduces no Mach-port emission or peer claim. Its ten source stores target conditional private-frame coordinates;cross-phase overlap does not establish transport,external exposure or a daemon-kext connection. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).
+
+
+## Provider getter values and daemon specialization
+
+Selectors22/23 retain their zero-input/four-byte-output IOKit contracts. The pinned getter values are now source-established as0x4c0b0000/0x1f8,and conditional daemon query outcomes are specialized. This increment emits no Mach message and supplies no native port,right,connection/provider identity or live build pairing. [Evidence and exact boundaries](kext_query_getter_values_report.md).

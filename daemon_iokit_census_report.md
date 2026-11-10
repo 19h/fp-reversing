@@ -175,3 +175,8 @@ The baseline contains2254 artifacts,2248 unchanged with six declared report/inde
 |QG5 |Pass |Discriminator/target, IDB/file pointers, conditional/native routing and output/return layers separated |
 |QG6 |Pass |256 fresh byte audits,13 source proof pairs, independent text census, original fixups and105 live source-row comparisons |
 |QG7 |Pass |Impact-labeled continuation table |
+
+
+## Provider getter values and daemon specialization
+
+The deeper getter opacity recorded above is refined by the current source proof:the pinned version route returns0x4c0b0000 and capability route returns0x1f8 under stable original bank/pointer and ordinary-return conditions. The new report proves both internal record/result paths and specializes the retained daemon guards,cache and fallback. These are pinned-code values,not observations of a native connection or hardware capability. [Evidence and exact boundaries](kext_query_getter_values_report.md).

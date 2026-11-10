@@ -1524,3 +1524,8 @@ The source budget initialization cancels the adapter minus144 bias. The exact re
 ## Computed-store footprint refinement
 
 Computed destination contracts are now explicit for ten stores under their original frame roots and unsigned counter domains. Fresh source models and exact modular coordinate laws replace the destination envelope premise for these sites;entry ABI,phase transitions,control closure,ownership and native return remain separate obligations. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).
+
+
+## Provider getter values and daemon specialization
+
+The selector22/23 provider getters return zero-extended u32 values4c0b0000/1f8 through record+4,then UserClient publishes low32 and returns outer status0. The nested version helper returns a local pointer that the enclosing getter ignores. Matching the daemon status0/size64=4 guards gives exact initial cache words and all four accepted/rejected outcomes,with native routing/build pairing still a premise. [Evidence and exact boundaries](kext_query_getter_values_report.md).
