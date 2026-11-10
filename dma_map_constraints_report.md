@@ -153,3 +153,5 @@ For the constructor's alignment A and 64-bit address request, a valid freshly in
 - QG5: Public SDK request layout/private record layout, minimum accessed/actual allocated extent, direct/lower-call effects, source status/native outcome, touched/fully defined bytes, algebraic commutativity/concurrent serialization and fixed-operation/all-operation coverage remain distinct.
 - QG6: Original hashes, compiler envelopes, raw code/chain words, exact method/global symbols, SDK layout/status probe, 44 accepted UNSAT certificates, predecessor replay and six freshness alterations provide scoped provenance.
 - QG7: Continuation targets exact allocator, metadata-class, initialization, lifetime, staging-bound and downstream-mapper obligations without treating constraint updates as native mapping or successful hardware transfer.
+
+The allocator for the identified 40-byte owner explicitly zeros its data pointer, capacity and used fields, establishing the fresh creator branch under stable fields. The separate 48-byte backing request does not establish zeroing for bytes left open by the record initializer. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).

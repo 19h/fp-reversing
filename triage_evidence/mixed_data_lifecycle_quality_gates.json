@@ -1,0 +1,85 @@
+{
+  "generator_sha256": "773d1b7857b7aaff8d966f9c88d7f3b1eb6b95af2698f0d7620dba3a1628817e",
+  "static_scope": "Source-bound identification of _IOMemoryDescriptorMixedData,its40-byte typed/fallback owner allocation,explicit zeroed data/used/capacity fields,creator join and two-level retirement/accounting interfaces. Native allocations,reference lifetimes,backing-record zeroing and complete constructor/transaction identity remain unproved.",
+  "verified_counts": {
+    "captured_functions": 11,
+    "captured_instructions": 529,
+    "captured_code_bytes": 2116,
+    "source_fragments": 34,
+    "original_vtable_slots": 9,
+    "original_initializer_entries": 91,
+    "matching_initializer_entries": 1,
+    "kernel_text_words_scanned": 2540432,
+    "ADRP_page_candidates": 328,
+    "adjacent_metaclass_materializers": 4,
+    "registered_class_name_bytes": 29,
+    "owner_instance_size_bytes": 40,
+    "constraint_record_size_bytes": 48,
+    "complete_store_call_censuses": 4,
+    "queries_unsat": 43,
+    "queries_sat": 0,
+    "source_instruction_instances_translated": 144,
+    "distinct_source_instruction_sites_translated": 144,
+    "symbolic_PACDA_sites": 2,
+    "atomic_add_relations": 4,
+    "owner_explicit_payload_zero_bytes": 24,
+    "owner_unwritten_padding_bytes": 4,
+    "predecessor_queries_replayed": 2,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "mixed_data_lifecycle_report.md": "8fee884f7e5f43144c933b1281497ca8e2cf46cb60e4c0571bdb16f74330bdcf",
+    "obfuscated_routines_report.md": "352fb0dc23311e87a348dc1ef1d14d771e2d7450671f359959d1f61191134d91",
+    "mach_ports_report.md": "39f28b493fd09a7b8d3750fa03387f1f719af6824b255b5478e8c4151a427674",
+    "foundational_triage_report.md": "c96da259ae1ee64619f83f3f2ac36b24f03675b4a4cf24849f7c8fe516277c9c",
+    "interface_abi_report.md": "bbc042ca3d07beb49c2d4fc2dc8be6423f34664bb4f52821b8ff24e1cfcfa183",
+    "interface_investigation_status.md": "58c2d076d0db7f2181b29a544e3d33de3287b8fe029fef0ae9e7beb4b1fdf9d5",
+    "dma_map_constraints_report.md": "7e5b61d6bceb67276fec51902136015f30b1845e5522e06d7a0195f8ded58cde"
+  },
+  "evidence_sha256": {
+    "mixed_data_lifecycle_source.json": "b00b3c67d69a8774a159ea2602f699e795728b83a4964abf535ddd9a108c7ba0",
+    "mixed_data_lifecycle_checks.json": "5d2903294824ad508bf1fb5ed9776930561b26cd885393ace04d906383f8dc91",
+    "recover_mixed_data_lifecycle.py": "a5eeb3dd00d7bfd5011b330239c3b32656e5dc7b33e8eba843281574d099d77e",
+    "validate_mixed_data_lifecycle.py": "bbb6be515cdbc67fc9793548a546aed7a5ea98e36ab6236e2d4a8ac5f66f6d65",
+    "seal_mixed_data_lifecycle.py": "773d1b7857b7aaff8d966f9c88d7f3b1eb6b95af2698f0d7620dba3a1628817e",
+    "verify_mixed_data_lifecycle_publication.py": "d00d0cf25d850698266ae81c3614cab26bf2a8ad9f8af0be3826a595ca24c99b"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and ML1-ML8; source class identity, 40-byte owner initialization, creator join and retirement operands. Forty-three UNSAT, 144 translated sites, two symbolic PAC sites, four atomic relations and six freshness alterations pass. Lower call effects, backing zeroing and native ownership remain unproved."
+  }
+}

@@ -1221,3 +1221,5 @@ Published buffer-construction increment:43 UNSAT,one explicitly abstract SAT,212
 ## DMA mapping constraints and lazy metadata
 
 Published DMA-constraint increment:44 UNSAT,127 source sites,61-node/65-edge selected graph,one lazy helper boundary and exact40/48-byte joins. Fast-path protected-field noninterference holds under explicit disjointness. Full helper/lower effects,zeroing,actual backing,constructor completeness and native transfers remain unproved;goal active. [Evidence and exact boundaries](dma_map_constraints_report.md).
+
+Original class identity, explicit owner initialization, fresh backing request and two-level retirement now have a bounded source correspondence and 43 UNSAT certificates. Lower backing zeroing and the last-reference route remain open. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
