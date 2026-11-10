@@ -1,0 +1,96 @@
+{
+  "generator_sha256": "dec6cf7072341db115a9f4fdf47fbed980d8d7ab5b69c3b854375ad6ca38f2d4",
+  "static_scope": "Conditional48-step280-slot word schedule:all eight backward word reads/four new words,all69 scratch-byte bounds,exact source small-sigma projections matching SHA-224/SHA-256 definitions,and low-word post-extension handoff. Full decoded sum recurrence,whole hash identity,table values,native mapping/owners/traversal,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 2,
+    "source_instructions": 1486,
+    "source_bytes": 5944,
+    "pointer_records": 2,
+    "branch_bindings": 2,
+    "SP_writes": 0,
+    "comparison_role_corrections": 1,
+    "bitfield_decodes_checked": 42,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 0,
+    "pair_load_decodes_checked": 0,
+    "prior_ranges_recaptured": 5,
+    "prior_bytes_recaptured": 6516,
+    "queries_unsat": 37,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 18,
+    "source_nonbranch_sites_translated": 1485,
+    "selected_traversal_nonbranch_instances": 70951,
+    "iterations": 48,
+    "word_read_operations": 384,
+    "new_word_stores": 192,
+    "new_word_bytes": 768,
+    "total_populated_words": 256,
+    "word_grid_slots": 280,
+    "scratch_byte_accesses_bounded": 69,
+    "scratch_byte_reads": 3312,
+    "bounded_reciprocal_sites": 56,
+    "full_u32_reciprocal_sites": 13,
+    "source_sigma_identities": 4,
+    "retained_scratch_bytes": 961,
+    "private_frame_stores_per_iteration": 17,
+    "private_frame_bytes_written_distinct": 56,
+    "primary_standard_bytes": 833315,
+    "rejected_alterations": 7
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_word_extension_report.md": "495b76f89efaa9efba924001c3a24444c62db853d404a8c17a39cf8a7f979d0e",
+    "obfuscated_routines_report.md": "350bfe38a805d77b5a10e8f482fbacfbc604e3f6fb12a36e6fdae5193aaa5dfa",
+    "mach_ports_report.md": "1da2b3bbb01f5847cccdd69cb68b7fdbde1610ffb53aced085e221d571b27120",
+    "foundational_triage_report.md": "3971f859593b0ef00b060922c083300951b925cd448105a6ce2283e7fff117df",
+    "interface_abi_report.md": "7acb2a7b919c6bb715bafa75e4bc11883a08eec94848377ae2fc2f0d365f7780",
+    "interface_investigation_status.md": "61c2c17eb8714142da244de1b6f53f9aab89265451cc00945c9745b7333081df",
+    "daemon_mode_one_record_word_gather_report.md": "0ad4a080a6ce50cf1ba0684356d5666523fb3d4608d387e51e9410394c920a9d"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_word_extension_source.json": "a5882701b6e5faac54ac25ffd5532f701b5cc552d23e0266f9e5770887db030c",
+    "daemon_mode_one_record_word_extension_checks.json": "635f0406a0dcb94a46ad9cd77b60c098872e5ba9ee2f630ca39bde5cd5c93895",
+    "daemon_mode_one_record_word_extension_fips180-4.pdf": "0455b406d89648d20cbde375561e19c245b9815e894164c2670772e3d54deb82",
+    "recover_daemon_mode_one_record_word_extension.py": "c1475d71420b41ab695ec37d5bda98c14f93b5883c936bd3d1445acdf361d515",
+    "validate_daemon_mode_one_record_word_extension.py": "e7218d35b1b94e26ba63f6ecd61435bd6816a050d30a6d02da4a1b8f39e54356",
+    "seal_daemon_mode_one_record_word_extension.py": "dec6cf7072341db115a9f4fdf47fbed980d8d7ab5b69c3b854375ad6ca38f2d4",
+    "verify_daemon_mode_one_record_word_extension_publication.py": "be33f9e384ab9b85b966c4811994dd624b107e7f6cc1fe17f0feb69aa19499cf"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WE1-WE8;1485 unique sites,48 iterations,384 backward word reads,192 new words,256 populated280-slot words,all69 scratch bounds through source shapes/ranges/exact reciprocals,width closure,four universal FIPS180-4 small-sigma projections and new F458-dependent handoff;37 UNSAT/3 SAT including18 selected predecessor queries. Full decoded recurrence,whole hash identity,table values,native mapping/ownership/traversal,successful output and daemon-kext pairing remain unproved."
+  }
+}

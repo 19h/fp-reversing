@@ -172,3 +172,5 @@ QG5: Historical root provenance is separated from native lifetime;280-slot layou
 QG6: Original image bytes,authenticated fixups,fresh historical recaptures,current source SSA and accepted solver results provide primary evidence;no new dynamic or IDA observation is claimed.
 
 QG7: Impact-ranked continuation covers the next word consumer,compact state semantics,publication,storage aliases and preceding mask equivalence.
+
+Follow-up: [280-slot word schedule and exact SHA-2 small-sigma components](daemon_mode_one_record_word_extension_report.md) proves48 iterations,384 backward word reads and192 new words,completing256 populated words. All69 scratch-byte offsets are bounded to the preserved961-byte domain through original-source shape/range and exact-reciprocal certificates. Four universal source identities match the SHA-224/SHA-256 small-sigma definitions;full decoded recurrence and whole hash identity remain unproved. All1485 sites translate;37 UNSAT/three SAT results pass,including18 selected predecessor queries. The exit prefix reads F458 and derives new state;native ownership/traversal,caller output and daemon-kext pairing remain unknown.
