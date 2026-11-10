@@ -1493,3 +1493,7 @@ The second traversal repeats through a16-instruction index/state adapter. The in
 ## Parity-state adapter follow-up
 
 The odd adapter restores LOCAL+bias and X0=0;the even adapter uses a numeric bias and X0=F1100. Both select0x100d74e68. X0/F380 have phase-specific meanings;the subsequent byte-update and comparison contracts retain three separate outgoing frontiers. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).
+
+## Word XOR and plane-refresh follow-up
+
+The four-byte XOR rejoins the29-instruction seed with W9=0x4923. The refresh returns parity-specific comparison state. The seed loads X27=F+c80 from F750,retains X21=F+8b0,sets F6c8=962 and selects0x100d524a8;W7 remains inherited. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).

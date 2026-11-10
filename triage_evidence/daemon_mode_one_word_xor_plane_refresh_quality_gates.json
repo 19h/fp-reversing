@@ -1,0 +1,98 @@
+{
+  "generator_sha256": "63bd6ee3ff2ac529c5f443eece9da0f6c0946b03a1d8659575dc32ad4f25a356",
+  "static_scope": "Compact scattered32-bit XOR,128-byte plane refresh and secondary-root entry;source/control/address/value contracts under recorded private ABI premises. Numeric table validity after earlier mutation,native ownership/output,algorithm identity and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 2401,
+    "source_bytes": 9604,
+    "pointer_records": 4,
+    "branch_bindings": 4,
+    "SP_writes": 0,
+    "UMULL_decodes_checked": 0,
+    "bitfield_decodes_checked": 2,
+    "register_shift_decodes_checked": 2,
+    "comparison_role_corrections": 0,
+    "prior_ranges_recaptured": 10,
+    "prior_bytes_recaptured": 7832,
+    "queries_unsat": 48,
+    "queries_sat": 6,
+    "predecessor_queries_replayed": 39,
+    "source_nonbranch_sites_translated": 2398,
+    "fresh_caller_nonbranch_sites": 217,
+    "word_bytes_updated": 4,
+    "word_computed_read_normalizations": 1,
+    "refresh_plane_bytes": 128,
+    "refresh_literal_byte_stores": 124,
+    "refresh_computed_store_normalizations": 4,
+    "refresh_scalar_u32_stores": 2,
+    "proved_address_source_cuts": 2,
+    "address_source_slice_lemmas": 2,
+    "abstract_refresh_valuations": 2,
+    "source_load_operations": 16,
+    "source_store_operations": 137,
+    "source_read_bytes": 76,
+    "source_store_bytes": 152,
+    "source_distinct_bytes_written_union": 148,
+    "private_byte_store_effects": 132,
+    "scalar_u32_store_effects": 5,
+    "saved_secondary_root_consumptions": 1,
+    "materialized_divisor": 962,
+    "arithmetic_cells_written": 0,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_word_xor_plane_refresh_report.md": "80f2d81933107132cdd496df09ab318656a51446b319677699629f9b28fb4254",
+    "obfuscated_routines_report.md": "e053a0c1e8b902769e1eccb7d3386a058e76b472b6ea0c8f386fbd91f6ba79e0",
+    "mach_ports_report.md": "042bbecbd164d42580e108283d8c2ee416417982266a024d778594247b604901",
+    "foundational_triage_report.md": "938b75f0afa698b03048ec1b0b3df7a5d914b233b9959303d1939224bf9cf55c",
+    "interface_abi_report.md": "0ceab1fe2bd12918ed58848a36ef935557efdece9cae8e89da401363cde7cc49",
+    "interface_investigation_status.md": "abbf6786959b0a5ee4f6523ae21d5e109824d77b51690c6d908a51ede7988ddd",
+    "daemon_mode_one_parity_state_adapters_report.md": "a5bb05cb4561f39e0f3f3e691d79ca87aa1cfec4d0d8d6ab491da868bfba3076"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_word_xor_plane_refresh_source.json": "88bebf29e006a712aca6846a2357b87ff60b8809db7249cc06a11d31b735bcef",
+    "daemon_mode_one_word_xor_plane_refresh_checks.json": "50009b9e8dbc519e7854f60d61712422af58370a7cac1747862e60bbbbdb6699",
+    "recover_daemon_mode_one_word_xor_plane_refresh.py": "a0384252615cd84f1a7b7dc2fb3757126bffaf72adbf8540406283c526ab8d5e",
+    "validate_daemon_mode_one_word_xor_plane_refresh.py": "4dd39b08bded19a278cc238f5bece7b1ff9e571b6612583cc67acb706f88c53c",
+    "seal_daemon_mode_one_word_xor_plane_refresh.py": "63bd6ee3ff2ac529c5f443eece9da0f6c0946b03a1d8659575dc32ad4f25a356",
+    "verify_daemon_mode_one_word_xor_plane_refresh_publication.py": "2a32e576983bc0c5dafdf6825dbad4ece456d8ac61efe477be865d8b6e312d98"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and WR1-WR8;2398 source sites,48 UNSAT/six abstract SAT,including39 predecessor replays;compact four-cell word XOR,128-byte refresh with two proved address cuts,and saved-secondary-root entry with divisor962. Earlier table-validity uncertainty,native ownership/output,algorithm identity and daemon-kext pairing remain explicit."
+  }
+}

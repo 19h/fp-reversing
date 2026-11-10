@@ -1150,3 +1150,7 @@ Published bounded contracts cover two74-word traversals,128 state-plane bytes,32
 ## Parity-state adapter follow-up
 
 Parity-specific state/LOCAL/frame-view contracts,conditional byte update,exact modulo962 reduction and following fork are published. Actual correlated cell classification,later parity/skip reachability,the three consumers,whole-algorithm identity and native cross-layer linkage remain unresolved. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).
+
+## Word XOR and plane-refresh follow-up
+
+Compact word XOR,complete128-byte plane refresh and secondary-root entry contracts are published. The frontier includes0x100d524a8 and0x100d77384;earlier coordinate correlations,arithmetic-table validity,native output and cross-layer pairing remain unresolved. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).

@@ -1362,3 +1362,7 @@ The unchanged296-byte workspace feeds two full traversals and a128-byte state-pl
 ## Parity-state adapter follow-up
 
 Parity selects distinct scalar banks and F350/F360/X0 representations before a common setup. A later XOR80 byte update is bounded to962 private cells;the predecessor800-cell retention guarantee cannot be extended past it without producer correlations. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).
+
+## Word XOR and plane-refresh follow-up
+
+The comparison-equal arm updates only C63..C60 as one numerical32-bit XOR. The alternate route rewrites all128 plane cells with two proved source-slice address cuts;the seed loads the secondary root and preserves the296-byte workspace. A64-byte/marker/bit-length padding hypothesis is separately tagged;byte-count identity,plane decoding and full suffix handling remain unproved. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).

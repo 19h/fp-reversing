@@ -1340,3 +1340,7 @@ The two74-word workspace traversals,second-pass adapter and4870-instruction init
 ## Parity-state adapter follow-up
 
 The initializer successor is a parity dispatcher with separate LOCAL and frame-view state adapters. A shared setup selects a conditional high-bit update whose component coordinate spans all962 private cells;three further private targets remain unresolved. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).
+
+## Word XOR and plane-refresh follow-up
+
+The201-instruction path is a compact four-cell word XOR with mask u32((W16+0x8cca81ed)<<3). The alternate2171-instruction continuation refreshes both64-byte planes;the merged29-instruction seed consumes F750 into X27 and materializes divisor962. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).

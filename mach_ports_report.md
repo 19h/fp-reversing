@@ -1316,3 +1316,7 @@ The four selected continuations have zero Mach-port emissions and only private a
 ## Parity-state adapter follow-up
 
 Seven additional continuations have zero Mach-port emissions and ten authenticated source-edge bindings. Their parity and flag words are private state;no public selector,native reachability or daemon/kext pairing follows. See [parity-state adapters](daemon_mode_one_parity_state_adapters_report.md).
+
+## Word XOR and plane-refresh follow-up
+
+Three further continuations have zero Mach-port emissions and four private authenticated branch bindings. Their word/plane/root interfaces establish no new public selector,native delivery or daemon/kext pairing. See [word XOR and plane refresh](daemon_mode_one_word_xor_plane_refresh_report.md).
