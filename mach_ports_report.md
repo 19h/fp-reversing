@@ -1328,3 +1328,5 @@ The secondary import and following handoff add no Mach receive/send or port-emis
 ## Secondary word extension follow-up
 
 The secondary extension and seven-instruction exit prefix contain no Mach-message,right-transfer or port-emission site. Their outgoing interface is the expanded grid,scalar frame/register state and slot0xa529 to0x100c2c25c;the next prefix consumes F4e4. Native serialization and daemon/kext linkage remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).
+
+The secondary setup/64-round/update/gate ranges contain no Mach message,right-transfer or port-emission site;the image/global/frame interfaces do not establish daemon-kext pairing. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).

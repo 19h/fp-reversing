@@ -214,3 +214,5 @@ QG4: u8/u32/u64 widths,byte effects,integer quotient/overflow lemmas and chronol
 QG5: Unknown numeric table values/29 bank roles,state bias,stream representations,native arrival and remaining exit body remain explicit. Strict checks reject solver errors/unknown/timeouts;initial unsupported-EON,declaration-order and candidate-fit attempts are excluded as certificates.
 QG6: Pinned bytes,original authenticated records,recaptured predecessors,strict solver queries and the hashed primary PDF provide provenance. Prior IDA/cache context supplies no new semantic claim.
 QG7: Ranked follow-ups address closed-path correlations,next-block data/ownership flow,remaining table roles and cross-layer pairing. Gates apply to this increment;the continuing investigation remains active.
+
+The complete setup,its16 saved scalar producer sites,the64-round consumer and caller-bound state-update/gate are now covered by the next bounded report. Its continuation bodies and native result remain unresolved. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).

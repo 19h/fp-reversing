@@ -1162,3 +1162,5 @@ The seed consumer and post-import block now have source-pinned four-step geometr
 ## Secondary word extension follow-up
 
 The secondary extension now has48-step geometry,all69 primary-byte bounds,40 bank assignments,four exact sigma functions and one additive stream dependence with an unresolved component-state bias. The frontier is0x100c2c25c beyond its seven-instruction prefix,plus the unresolved0x100d77384. Closed-path value correlations,current table validity,native output/ownership and cross-layer pairing remain open;goal remains active. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).
+
+Published static increment:secondary setup,64-round initialized-grid/image-bank consumer,state-update and convergent gate. Remaining computed byte bounds,whole arithmetic,native ownership/output and daemon-kext pairing remain unresolved. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).

@@ -1,0 +1,86 @@
+{
+  "generator_sha256": "f990540af2a54cd760565931deb4d53f635a43f14128311a3ec85c78d9495c74",
+  "static_scope": "Conditional secondary setup,64-round word/table consumer,state update and flag-zero scalar gate. Exact control/address contracts and scalar producer sites;complete round arithmetic,native state ownership/output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 4,
+    "source_instructions": 16746,
+    "source_bytes": 66984,
+    "branch_bindings": 7,
+    "pointer_records": 7,
+    "original_bank_bytes": 1280,
+    "scalar_producer_rows": 32,
+    "ISA_decodes_checked": 944,
+    "comparison_role_corrections": 7,
+    "prior_ranges_recaptured": 21,
+    "prior_bytes_recaptured": 24268,
+    "SP_writes": 0,
+    "queries_unsat": 29,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 12,
+    "source_nonbranch_sites_translated": 16742,
+    "selected_traversal_nonbranch_instances": 298352,
+    "rounds": 64,
+    "round_word_reads": 128,
+    "round_image_word_reads": 128,
+    "round_byte_reads": 8960,
+    "selector_finite_cases": 256,
+    "source_value_cuts": 1,
+    "computed_address_normalizations": 0,
+    "rejected_alterations": 7
+  },
+  "report_sha256": {
+    "daemon_mode_one_secondary_rounds_report.md": "7eda80853dfbff9b0937263ad7214601e5a9badcfceb15f950ff122daa5a98aa",
+    "obfuscated_routines_report.md": "509709eb4dd2c2d59629f38790c0e12b5159abd94b42c7f93751589dbac3b869",
+    "mach_ports_report.md": "bc4f221698d90a9acefd409e459e3a31c7dfb419f3d31bf3e7621a78790af9b8",
+    "foundational_triage_report.md": "0a78b8c1f5a735eafe4ba3743f2aaeaf9a9026d0980bb493ca4e8e249f61d526",
+    "interface_abi_report.md": "644f016280124c8d0f37743e3c7be1cb61c1d2b130464fcbeeb625f00a930b36",
+    "interface_investigation_status.md": "ad33dfb7686be602842a9b19bf53e4b8e27864dad2f81d1d6bdf02a43d061fd6",
+    "daemon_mode_one_secondary_word_extension_report.md": "7a94a57bf3786c412f428391c0a85f4dbc138540a754a08905d88471fa37b3e9"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_secondary_rounds_source.json": "9ffc444c91d3430731e3e1cd24802298739fc5018917e889219a7fe231556fff",
+    "daemon_mode_one_secondary_rounds_checks.json": "2d6eb4383f6ab7ba9a7780476a725150351c1932f7ab03a841f47eb6008eefda",
+    "recover_daemon_mode_one_secondary_rounds.py": "39876ea54ede864e708721bf92f6fc1646e7b3149de5f0f547b4ef173312241e",
+    "validate_daemon_mode_one_secondary_rounds.py": "01a9af3284c39ca21f223bc3efc9d48438ffee2c8057548828f213a9cf00329b",
+    "seal_daemon_mode_one_secondary_rounds.py": "f990540af2a54cd760565931deb4d53f635a43f14128311a3ec85c78d9495c74",
+    "verify_daemon_mode_one_secondary_rounds_publication.py": "bc077af39efaf9fdae5b0768d623e480762a7e0f6bf14392a47cd7cc748af0c8"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and SR1-SR8;16742 source sites,29 UNSAT/three abstract SAT,including12 selected predecessor replays;scalar producers,64-round grid/ROM/control contracts,constant selector,state update and scalar gate. Whole arithmetic,computed byte bounds,native ownership/output and cross-layer pairing remain explicit unknowns."
+  }
+}

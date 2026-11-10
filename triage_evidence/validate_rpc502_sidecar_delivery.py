@@ -345,6 +345,7 @@ def main():
     if exists(BASE/'daemon_context_lock_report.md'):reports.add(BASE/'daemon_context_lock_report.md')
     if exists(BASE/'daemon_descriptor_readers_report.md'):reports.add(BASE/'daemon_descriptor_readers_report.md')
     if exists(BASE/'daemon_descriptor_producers_report.md'):reports.add(BASE/'daemon_descriptor_producers_report.md')
+    if exists(BASE/'daemon_mode_one_secondary_rounds_report.md'):reports.add(BASE/'daemon_mode_one_secondary_rounds_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1654,6 +1655,10 @@ def main():
         secondary_word_extension_quality=json.loads(read(ROOT/'daemon_mode_one_secondary_word_extension_quality_gates.json'))
         manifest['validation']['daemon_mode_one_secondary_word_extension_increment_checks']=secondary_word_extension_quality['verified_counts']
         manifest['validation']['daemon_mode_one_secondary_word_extension_static_scope']=secondary_word_extension_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_secondary_rounds_quality_gates.json'):
+        secondary_rounds_quality=json.loads(read(ROOT/'daemon_mode_one_secondary_rounds_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_secondary_rounds_increment_checks']=secondary_rounds_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_secondary_rounds_static_scope']=secondary_rounds_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

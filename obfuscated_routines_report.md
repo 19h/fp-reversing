@@ -1352,3 +1352,5 @@ The1471-instruction seed successor is a four-step import from both64-byte primar
 ## Secondary word extension follow-up
 
 The2245-instruction continuation is a48-step four-stream word expansion with four exact SHA-2 small-sigma identities and one proved state-parametric additive dependence. This classifies mathematical components;the remaining value representations and whole algorithm remain unknown. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).
+
+The secondary setup and64-round consumer now have exact word/table/control contracts,scalar producer sites and a caller-bound update/gate. Complete round arithmetic and native algorithm/output remain unknown. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).

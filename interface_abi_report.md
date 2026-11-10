@@ -1505,3 +1505,5 @@ The secondary root has coordinate D(j)=F+0xc80+4*((241*j)mod286),with four16-wor
 ## Secondary word extension follow-up
 
 The286-slot grid now has a48-iteration extension contract:stream bases0,72,142,212 each reach64 words. The pre-decrement countdown exits at0 and returns W23=0xffffffff;slot0xa529 reaches a prefix clearing low32 F748 and reading u32 F4e4. Exact sigma and state-parametric stream contracts are retained. See [secondary word extension](daemon_mode_one_secondary_word_extension_report.md).
+
+The secondary loop ABI includes source-bound counters,zero high halves for X3/X11/X15,and outgoing W4=a9d0. That W4 binding selects the correct state-update phase words and flag/gate targets. [Secondary64-round interfaces](daemon_mode_one_secondary_rounds_report.md).
