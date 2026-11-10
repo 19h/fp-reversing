@@ -363,6 +363,7 @@ def main():
     if exists(BASE/'dma_map_constraints_report.md'):reports.add(BASE/'dma_map_constraints_report.md')
     if exists(BASE/'mixed_data_lifecycle_report.md'):reports.add(BASE/'mixed_data_lifecycle_report.md')
     if exists(BASE/'mixed_data_backing_report.md'):reports.add(BASE/'mixed_data_backing_report.md')
+    if exists(BASE/'mixed_data_release_report.md'):reports.add(BASE/'mixed_data_release_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1744,6 +1745,10 @@ def main():
         mixed_backing_quality=json.loads(read(ROOT/'mixed_data_backing_quality_gates.json'))
         manifest['validation']['mixed_data_backing_increment_checks']=mixed_backing_quality['verified_counts']
         manifest['validation']['mixed_data_backing_static_scope']=mixed_backing_quality['static_scope']
+    if exists(ROOT/'mixed_data_release_quality_gates.json'):
+        mixed_release_quality=json.loads(read(ROOT/'mixed_data_release_quality_gates.json'))
+        manifest['validation']['mixed_data_release_increment_checks']=mixed_release_quality['verified_counts']
+        manifest['validation']['mixed_data_release_static_scope']=mixed_release_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,0 +1,68 @@
+{
+  "generator_sha256": "a13b9284bf162ba189b2e26171a5bb278e352af0ff482361c1fbaa6195a645cf",
+  "static_scope": "Original-source correspondence from descriptor and creator release sites through inherited OSObject reference methods to nominal MixedData free and deletion. Successful CAS, stable receiver/slot identity and field epochs are explicit premises.",
+  "verified_counts": {
+    "kernel_functions": 16,
+    "kernel_instructions": 949,
+    "kext_instructions": 26,
+    "original_slots": 25,
+    "owner_release_sites": 5,
+    "queries_unsat": 14,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "mixed_data_release_report.md": "2d703ca9af217dff5fb763cff2493ec6caaae8423b8857da33d4a98cb6f359d0",
+    "obfuscated_routines_report.md": "d0bce10c49dd52a76bf4e0fe65dc1fd822ed760fa61c5f9d8ba05952702d15de",
+    "mach_ports_report.md": "0ea7fa490ff5059b7effc5bb07b1cd2973ff744a73d286bffe76bcbb97bcbe4b",
+    "foundational_triage_report.md": "1f937da1a4b55df75d455cf4620d4c089f3b504d347bc137307c835ad12eb1d3",
+    "interface_abi_report.md": "590e829f87dbdae6dbf28aa0ce6b99f81dfe06eb365b7bfae425f504ec5c018b",
+    "interface_investigation_status.md": "eef66767c671117084aef3f98dd3f98cda1ee57aca2200d509642bd1662ae555",
+    "mixed_data_lifecycle_report.md": "1bda64bf017ea2ca38939180d55f7bbfd371e8eb84cdab6e0e283030ecb2e695"
+  },
+  "evidence_sha256": {
+    "mixed_data_release_source.json": "c8bdc0e664c0b56df317c3a3e7c9ff1e4b33d2beaba0faf9d7c0e9b6b6bb4164",
+    "mixed_data_release_checks.json": "67b1e3c310bd9a5244a995de1c0dfb5052e47362f3c500c51b5b2245db6735db",
+    "recover_mixed_data_release.py": "388c79368834adf7e184f159fe32e7529719719fbe43c9cac4c29bfc4584cdd8",
+    "validate_mixed_data_release.py": "19d26f222b073f176c8f23e7591de8af10e41683127c323b050bd44c7e451934",
+    "seal_mixed_data_release.py": "a13b9284bf162ba189b2e26171a5bb278e352af0ff482361c1fbaa6195a645cf",
+    "verify_mixed_data_release_publication.py": "a9b044797007bf899d59cd30cdd59025b5679c9422affee0ef1c5577b41918aa"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and MR1-MR8. Original slots, release dispatch, CAS relations and the conditional descriptor-to-owner join. Fourteen UNSAT results and five rejected alterations. Native lifetime and actual retirement remain open."
+  }
+}

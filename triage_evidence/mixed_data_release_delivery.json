@@ -1,0 +1,49 @@
+{
+  "generator_sha256": "a13b9284bf162ba189b2e26171a5bb278e352af0ff482361c1fbaa6195a645cf",
+  "prior_manifest_sha256": "353875248895dac83768b51f937a4ceb53c5998b32854adb6333de47a3017bf0",
+  "prior_artifacts_checked": 7964,
+  "prior_artifacts_unchanged": 7957,
+  "allowed_changes": [
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "1b4a3d7a3826123f4de9072507e564706a7f80f10fa341c3c69ef0e64a6ecf75",
+      "sha256": "1f937da1a4b55df75d455cf4620d4c089f3b504d347bc137307c835ad12eb1d3"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "42f13ec9dabb8556ec637398810f84fc26c6ad9bb04d8e2c69845100d2d3a05c",
+      "sha256": "590e829f87dbdae6dbf28aa0ce6b99f81dfe06eb365b7bfae425f504ec5c018b"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "8498d2ca471c29e22ef3725e573a0258cbdbebfef4d9a513064a1e6fa3ecb172",
+      "sha256": "eef66767c671117084aef3f98dd3f98cda1ee57aca2200d509642bd1662ae555"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "1f4c75690cbf83226623df3ca91068a319502f497e213888103ca32cb2a8f5f2",
+      "sha256": "0ea7fa490ff5059b7effc5bb07b1cd2973ff744a73d286bffe76bcbb97bcbe4b"
+    },
+    {
+      "path": "mixed_data_lifecycle_report.md",
+      "prior_sha256": "80008380050654cb812c721522187c829522530e7fef8c590b196588e0b5a86f",
+      "sha256": "1bda64bf017ea2ca38939180d55f7bbfd371e8eb84cdab6e0e283030ecb2e695"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "867dcd4cb1ffa289539e540953ee4735c5d5ba8e371b5b6acef85e4f10ad0965",
+      "sha256": "d0bce10c49dd52a76bf4e0fe65dc1fd822ed760fa61c5f9d8ba05952702d15de"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "90325ebd43a57069e01fd6fb6fdfaaa886d58f8962f89edc660be93dc2f45e65",
+      "sha256": "35e7c540018a2ccea93d0c1638d8db9d1203063e1e07a1decde3cd55b7b00906"
+    }
+  ],
+  "original_inputs_preserved": 3,
+  "Python_syntax_checks": 5,
+  "local_links_checked": 2893,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "full_goal_complete": false
+}

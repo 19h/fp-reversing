@@ -1568,3 +1568,5 @@ The constructor builds all40 bytes of a specification:alignment64,null device,ze
 The recovered owner interface separates its 32-bit initialized reference word, inherited 16-bit getter, 32-bit metaclass count and 64-bit debug total. The static retirement route pairs raw backing and owner operands with their allocation sources. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
 
 The backing allocation passes a tagged descriptor, request size and flags to the raw wrapper. The lower zone pair supplies the checked element pointer and extent in X0/X1. [MixedData backing allocation](mixed_data_backing_report.md).
+
+The inherited OSObject release path supplies a null tag and signed threshold 1. It updates a 32-bit word and conditionally tails through +0xb0. The 16-bit getter remains a separate projection. [MixedData reference release](mixed_data_release_report.md).

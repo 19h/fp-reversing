@@ -1225,3 +1225,5 @@ Published DMA-constraint increment:44 UNSAT,127 source sites,61-node/65-edge sel
 Original class identity, explicit owner initialization, fresh backing request and two-level retirement now have a bounded source correspondence and 43 UNSAT certificates. Lower backing zeroing and the last-reference route remain open. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
 
 The backing report connects the fresh record request to both selected successful zero-check returns and derives the returned span under the declared allocator epoch. [MixedData backing allocation](mixed_data_backing_report.md).
+
+Five owner release requests now join to the nominal final-reference route. The kext cleanup and MixedData owner remain separate reference epochs, and actual native retirement remains open. [MixedData reference release](mixed_data_release_report.md).

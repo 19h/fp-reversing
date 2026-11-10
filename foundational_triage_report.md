@@ -1437,3 +1437,5 @@ The intermediate DMA step now has a source-proved unsigned-max alignment/unsigne
 The 40-byte mixed-data owner explicitly zeros its 24-byte payload before the creator requests a separate 48-byte backing record. This closes the fresh-owner field premise; lower backing contents and native ownership are still open. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
 
 The fresh 48-byte backing record has a conditional zero origin from the selected cache and fallback zone checks. The result depends on a checked extent of at least 48 bytes and stable storage through the helper reload. [MixedData backing allocation](mixed_data_backing_report.md).
+
+The kext global cleanup can reach base descriptor teardown and a separate release of the owner at +0x90. The final reference for either receiver depends on its own CAS and field epoch. [MixedData reference release](mixed_data_release_report.md).

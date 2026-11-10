@@ -141,3 +141,5 @@ The four modeled atomic sites retain width, old-value dependence and modulo arit
 - **QG7:** Follow-up priorities identify the source boundaries most likely to change the lifecycle and ownership claims.
 
 The subsequent backing study establishes a conditional zero source for the ten untouched record bytes and six preserved bits. The source result requires a sufficient live zone extent and storage stability. [MixedData backing allocation](mixed_data_backing_report.md).
+
+The inherited release path now joins the initial 32-bit word of 1 to the nominal private free entry under a successful CAS and stable receiver. Five source call sites and the kext cleanup join establish the conditional route. [MixedData reference release](mixed_data_release_report.md).

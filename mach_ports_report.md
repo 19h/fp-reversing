@@ -1391,3 +1391,5 @@ Operation0x04000000 follows a fixed40-byte mapping-specification interface and u
 The owner allocator, creator and retirement correspondence establishes no Mach port emission in the selected source. The lower calls remain outside this bound. See [mixed-data owner lifecycle](mixed_data_lifecycle_report.md).
 
 The selected tagged backing allocation and element zero-check correspondence contains no Mach right operation. Runtime zone population remains an independent premise. [MixedData backing allocation](mixed_data_backing_report.md).
+
+The selected descriptor and owner release paths issue no Mach right operation. Their conditional source join goes through kernel virtual calls and separate reference words. [MixedData reference release](mixed_data_release_report.md).
