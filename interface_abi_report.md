@@ -1475,3 +1475,8 @@ The checkpoint restores the existing header-decoder constants and NODE,next rest
 ## Workspace passes and byte-permutation follow-up
 
 The first pass uses W5/W6/W14/W16;the second resets a separate W8/W9/W12/W21 seed and preserves five other first-pass outputs. Byte-stage entry supplies W13=0x8721,W22=1,X26=F+c80. Exit supplies the new permutation root in X20/X26 and selects `0x100a4f144`;root extents and native output remain unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.
+
+
+## Inverse map and encoded modulo16 addition follow-up
+
+The generated operation satisfies D[x+16*y]=Eout((Ein_inverse(x)+Ein_inverse(y))mod16),with Ein=P composed with E and Eout=Q composed with E. Both controller words can change selector-byte read addresses while the selected ROM bank remains fixed under immutable image/root premises. Native output and cross-layer contracts remain unresolved. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.

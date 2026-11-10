@@ -1132,3 +1132,8 @@ The record checkpoint and iterator re-entry are source-proved. Current frontier:
 ## Workspace passes and byte-permutation follow-up
 
 Current source frontier is `0x100a4f144`,after two74-word passes and a proved16-value permutation stage. Next priorities are the new-root/permutation consumers,actual LOCAL+bias use and output serialization,with matched daemon/kext ABI still unresolved. Goal remains active. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.
+
+
+## Inverse map and encoded modulo16 addition follow-up
+
+Current frontier is `0x100c1c8a0`,after construction of separately encoded addition modulo16. The local ROM law,input/output encoding roles and table layout are source-proved. Priorities remain actual table/LOCAL consumers,owners/extents,serialization and matched daemon/kext ABI. Goal remains active. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.

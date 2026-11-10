@@ -1344,3 +1344,8 @@ Checkpoint stores end the earlier COUNT,PBUF and F4d8 numeric-word epochs. All12
 ## Workspace passes and byte-permutation follow-up
 
 Two read-only workspace passes make148 word reads /592 B. The following stage partially overwrites the former word-grid view with16 byte cells,makes15 alias-safe swaps and replaces F750 with F+c80 while retaining F758=F+8b0. Saved request/LOCAL words and the296-byte workspace remain untouched. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.
+
+
+## Inverse map and encoded modulo16 addition follow-up
+
+The first forward nibble map is replaced only after its inverse is stored in disjoint labels593..608. The new forward map occupies labels0..15,and the generated table occupies72..327:288 known cells. The ROM data pointer requires the original dyld rebase value,not the raw chained file word;only256 selected cells of its928-byte region have the nibble-encoded codomain. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.

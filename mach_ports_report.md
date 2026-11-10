@@ -1298,3 +1298,8 @@ The checkpoint/iterator/LOCAL continuations contain no Mach send/receive,port al
 ## Workspace passes and byte-permutation follow-up
 
 The two workspace passes and byte-permutation stage contain no Mach send/receive,port allocation,right transfer or message-emission site. Their interfaces are private frame words,scalar registers and authenticated continuation slots;actual cross-layer pairing remains unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.
+
+
+## Inverse map and encoded modulo16 addition follow-up
+
+The inverse/shuffle/encoded-addition chain contains no Mach send/receive,port allocation,right transfer or message-emission site. It reads two controller words and image lookup data,but its bank selector collapses to0x72. Actual native owners and daemon/kext pairing remain unknown. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.

@@ -1,0 +1,110 @@
+{
+  "generator_sha256": "5dca60f18915b217cc5eb1193eba3c267bc8d053b81ad172679cc6d4e6382196",
+  "static_scope": "Sixteen-cell inverse construction,independently sourced second permutation and256-entry differently encoded addition modulo16. Source bounds,loader fixup,constant image selection and fixed ROM operation are proved;native owners/output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 438,
+    "source_bytes": 1752,
+    "pointer_records": 5,
+    "branch_bindings": 5,
+    "SP_writes": 0,
+    "comparison_role_corrections": 3,
+    "bitfield_decodes_checked": 1,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 0,
+    "pair_load_decodes_checked": 0,
+    "ADRP_decodes_checked": 1,
+    "TST_decodes_checked": 1,
+    "CNEG_decodes_checked": 0,
+    "EXTR_decodes_checked": 0,
+    "UMULL_decodes_checked": 18,
+    "UDIV_decodes_checked": 1,
+    "prior_ranges_recaptured": 12,
+    "prior_bytes_recaptured": 97016,
+    "selector_byte_cases": 256,
+    "selector_image_bytes": 512,
+    "ROM_image_bytes": 928,
+    "selected_ROM_cells": 256,
+    "data_rebase_records": 1,
+    "queries_unsat": 685,
+    "queries_sat": 1,
+    "predecessor_queries_replayed": 174,
+    "source_nonbranch_sites_translated": 435,
+    "inverse_iterations": 16,
+    "inverse_source_address_cases": 16,
+    "inverse_destination_address_cases": 16,
+    "inverse_array_cells": 16,
+    "second_shuffle_overapproximations": 14,
+    "second_shuffle_address_cases": 133,
+    "second_shuffle_identity_stores": 16,
+    "second_shuffle_swaps": 15,
+    "second_shuffle_byte_reads": 29,
+    "second_shuffle_byte_stores": 46,
+    "builder_iterations": 256,
+    "builder_inverse_address_cases": 32,
+    "builder_Q_address_cases": 16,
+    "builder_ROM_address_cases": 256,
+    "builder_byte_reads_per_iteration": 6,
+    "builder_byte_stores_per_iteration": 1,
+    "ROM_associativity_cases": 4096,
+    "ROM_encoded_addition_cases": 256,
+    "ROM_order16_generators": 8,
+    "known_frame_cells": 288,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_encoded_addition_report.md": "b64bca6dea43e6245f5937d33e0b067ad802cc895f5b9b8aa29bef648cc7fccf",
+    "obfuscated_routines_report.md": "37381a6a3e4340670019af015959ef50d29c0407f1fe1e582cf341cdad938254",
+    "mach_ports_report.md": "cc47d1714344b46e8cdc3c2397e727bfc01b88eac234c829862e798d36907792",
+    "foundational_triage_report.md": "5078b360815ad5a05beb45e52991ef92a7d5f378977ea289ac4f10e8097d02b2",
+    "interface_abi_report.md": "c17eb56fab5a55c089e24e708eac5aaf899a66cb4b857797013bec9b90b7f56b",
+    "interface_investigation_status.md": "e1f774612f6c9594225df101c850eb9dfa95bae04afffb8a7fb25b075e96fda2",
+    "daemon_mode_one_workspace_passes_report.md": "86bd8e285ffd08bc29e5b6eb374fea83f2aad6b26f860632edd29e8951c8bb87"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_encoded_addition_source.json": "bee94925d684a7db3ceb00944f5e9a5a1b23a178cf409e236d0b6aa965877b0f",
+    "daemon_mode_one_encoded_addition_checks.json": "2d4835bbb96398e80db47d490e112042b00fc74411beea2d23f1476c1d0f49c0",
+    "recover_daemon_mode_one_encoded_addition.py": "95e21066cff174a808e290ace3e90544c329afb60cc3438de25b6aea1d06a8db",
+    "validate_daemon_mode_one_encoded_addition.py": "02a86d2b1959ce01d06305533ada6fb2ea1de4ff8960c61f3d97762cac6ec9d9",
+    "seal_daemon_mode_one_encoded_addition.py": "5dca60f18915b217cc5eb1193eba3c267bc8d053b81ad172679cc6d4e6382196",
+    "verify_daemon_mode_one_encoded_addition_publication.py": "c5debcbbc62e23eabec0892cb3319451eda906a94107be5014fb1df6a47cb8a6"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and EA1-EA8;435 source sites,685 UNSAT/one abstract SAT including174 predecessor queries;16-cell inverse,second15-swap permutation,256-entry encoded modulo16 addition;source ROM/fixup and selected-cell range,256 addition/4096 associativity cases,eight generators and exact input/output encoding roles. Native ownership/output and daemon-kext pairing remain unknown."
+  }
+}

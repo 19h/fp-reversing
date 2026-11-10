@@ -1322,3 +1322,8 @@ The continuation at `0x100c74750` reads128 plane bytes,replaces the complete296-
 ## Workspace passes and byte-permutation follow-up
 
 The continuations at `0x100d3ce60` and `0x100ab7b74` each scan74 workspace words through separately seeded four-word scalar recurrences. `0x100b0c100` initializes16 identity bytes and makes15 suffix swaps,preserving a permutation of0..15 under coherent frame memory. Decoded scalar/permutation identities remain unknown. See the [source-pinned workspace-pass report](daemon_mode_one_workspace_passes_report.md) for174 UNSAT proofs,explicit bounded cuts,coherent-array composition and scoped assumptions.
+
+
+## Inverse map and encoded modulo16 addition follow-up
+
+The continuation chain builds the first nibble permutation inverse,creates a second permutation from the separately retained workspace-pass state,and constructs a256-entry nibble table. The selected ROM operation is exactly addition modulo16 under a fixed symbol encoding;the generated table has separate input/output encodings and is commutative/Latin,with associativity not established. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.

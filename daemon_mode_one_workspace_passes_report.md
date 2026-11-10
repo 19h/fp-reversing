@@ -168,3 +168,8 @@ QG5:Separate state seeds,overwritten W14,F750 and partial word-grid epochs are d
 QG6:Claims trace to the pinned image,original authenticated records,fresh source comparison,174 accepted proofs,finite ledgers and preserved predecessor evidence. Immediate TST semantics use the primary Arm reference recorded by the extractor;no native behavior is inferred.
 
 QG7:Impact-ranked next steps cover the next continuation,LOCAL/output/cross-layer exposure,decoded scalar functions,exact selection function and later grid consumers. No unrelated target probing is included.
+
+
+## Inverse map and encoded modulo16 addition follow-up
+
+The former frontier constructs inverse(P),reinitializes the original forward cells as Q using retained second-pass state,and generates a256-entry nibble table implementing separately encoded addition modulo16. The selected ROM law has identity symbol12 and eight order16 generators. Generated-table associativity is not inferred from the ROM group law. See the [source-pinned encoded-addition report](daemon_mode_one_encoded_addition_report.md) for685 UNSAT/one abstract SAT,ROM/loader provenance and scoped assumptions.
