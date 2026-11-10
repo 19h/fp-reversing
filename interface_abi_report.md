@@ -1519,3 +1519,8 @@ The mode1 caller admits raw marker 0x8b3dc651 to an encoded length32 gate and ex
 The round gate supplies W0=2ac4,W9=u32(-32a9),W14=32ff and W27=F460 to the86 equality bridge. Exact86 selects3305 ->100b74ff4;the complementary repack returns through30fa with W14=6284. A set F448 low bit selects the32-word/168-literal-byte workspace with the established request ABI. [Second-phase bank completion and workspace handoff](daemon_mode_one_second_phase_handoff_report.md).
 
 The source budget initialization cancels the adapter minus144 bias. The exact returned delta is16*low16(final_budget-V) bytes,so equal low16 is necessary and sufficient for scalar zero delta. Full captured-path budget preservation is sufficient under stated destination/callee/owner contracts;normal native return is not inferred. [Captured stores and conditional budget law](daemon_mode_one_budget_store_audit_report.md).
+
+
+## Computed-store footprint refinement
+
+Computed destination contracts are now explicit for ten stores under their original frame roots and unsigned counter domains. Fresh source models and exact modular coordinate laws replace the destination envelope premise for these sites;entry ABI,phase transitions,control closure,ownership and native return remain separate obligations. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).

@@ -175,3 +175,8 @@ The current ranges emit no Mach message,transfer no right,allocate no port and i
 - QG5:Site/effect/runtime counts,initial/body SP epochs,raw decoding/retained evidence/computed premises,full/low16 budget equality,IDA item/raw-word counts and code/whole-file identity are separated. Unconditional native budget preservation remains unproved.
 - QG6:Original bytes,banks,rebases,209 recaptures,3307 raw store decodes,27 UNSAT,two abstract SAT,14 predecessor replays,read-only IDA observations and eight rejected alterations provide scoped provenance. Validation does not relabel retained destination premises as fresh proofs or reobserve live IDA state.
 - QG7:Impact-ranked continuation targets actual remaining coverage,alias,epoch,callee,data-identity and transport gaps without promoting the conditional result to native completion.
+
+
+## Computed-store footprint refinement
+
+A subsequent increment replaces the conservative destination-envelope premise for ten of the174 computed-array sites with fresh source equality and exhaustive finite footprint proofs. This leaves164 other array sites without this new proof;the original captured-path budget law remains conditional on entry roots,epochs,control closure,callee effects and ownership. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).

@@ -1388,3 +1388,8 @@ The first-key stored span is compared after address-dependent byte decoding. The
 A45-artifact locator census exposed the previously unanalysed86-valued branch. Its complementary repack and source-bound workspace handoff are now proved,with seven bounded lifetime components. Preserving the budget in those footprints does not establish whole-core budget history or native return. [Second-phase bank completion and workspace handoff](daemon_mode_one_second_phase_handoff_report.md).
 
 The loaded IDB records a different whole-file input hash,but its complete14849960-byte code section matches the pinned file. Its169 entry item heads plus46 macro tails cover215 A64 words. A3754-store core catalogue now supports bounded protected-state and conditional zero-delta reasoning;174 computed envelopes and native ownership/control closure remain premises. [Captured stores and conditional budget law](daemon_mode_one_budget_store_audit_report.md).
+
+
+## Computed-store footprint refinement
+
+Ten previously retained computed-array envelopes now have fresh source equations and exhaustive finite footprints. The448 modeled stores write1600 B across three separate phases;the closest phase ends168 B before the canary. Pairwise cross-phase byte intersections are64,1 and43 B,requiring epoch-sensitive data flow. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).

@@ -1366,3 +1366,8 @@ The mode1 result now has a concrete caller-side verification role: a full 32-byt
 The previously omitted F46086 successor is an exact equality bridge and complementary16-word repack. Its bitwise shift/mask/XOR expression simplifies to u32 addition;both repacks cover a32-word sparse bank and the set-bit latch supplies the established workspace ABI. Whole-function/native coverage remains unproved. [Second-phase bank completion and workspace handoff](daemon_mode_one_second_phase_handoff_report.md).
 
 The core entry now has exact stack-dependent u64 controller updates at 0x1010b6838/0x1010c4670. Both completed outputs invert to one updated u64 carrier. A3754-site captured-store catalogue and conditional budget/zero-delta law separate raw SP decoding from retained alias/array contracts and native ownership. [Captured stores and conditional budget law](daemon_mode_one_budget_store_audit_report.md).
+
+
+## Computed-store footprint refinement
+
+Fresh source models discharge ten computed-store footprints:two48-iteration four-word expansions and a32-iteration two-byte absorption. Coordinate maps,all448 finite store instances and exact phase intersections are proved under the original entry/root/counter contracts;164 other computed-array sites and236 retained alias sites remain outside this increment. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).

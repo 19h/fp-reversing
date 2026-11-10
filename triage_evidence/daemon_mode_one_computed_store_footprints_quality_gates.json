@@ -1,0 +1,76 @@
+{
+  "generator_sha256": "414baf5c466a98bacff9669f3495cfa22dc6f23b0a5ba17d4042ca891213d717",
+  "static_scope": "Fresh source models and exact finite byte footprints for ten formerly premise-only computed stores:two48-iteration four-word expansions and one32-iteration two-byte absorption. Root,entry ABI,epoch and counter domains remain explicit;164 other array sites,236 alias sites,whole control closure,native owners/return and transport pairing remain unproved.",
+  "verified_counts": {
+    "source_ranges": 7,
+    "source_instructions_recaptured": 4152,
+    "source_bytes_recaptured": 16608,
+    "computed_store_sites_source_bound": 10,
+    "word_store_sites": 8,
+    "byte_store_sites": 2,
+    "finite_store_instances": 448,
+    "finite_byte_write_operations": 1600,
+    "array_sites_remaining_without_new_footprint": 164,
+    "queries_unsat": 13,
+    "queries_sat": 6,
+    "source_nonbranch_sites_translated": 4051,
+    "source_models_freshly_rebuilt": 3,
+    "destination_envelope_premises": 0,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_computed_store_footprints_report.md": "7d78431fba888267466e3497d0677a882af0262ca02fbec035daa900c1a5f814",
+    "obfuscated_routines_report.md": "57f272599256006665ddf04d20cbb7b05d9ba06041e04019f71be5570921e512",
+    "mach_ports_report.md": "65c2598271fad77ce5c18e31de9b897207b2d88e7067359e7682f0416b2104ff",
+    "foundational_triage_report.md": "7946c9e65705be2775daff656c8c1e7cba09ea480915b57f52e0437c90cce6eb",
+    "interface_abi_report.md": "aea33df746562a1834f4c77689ca7e3211693f0a37215ddddb96280c5aa5da67",
+    "interface_investigation_status.md": "62643824987df25e9465c1f9e894a9456510a1fd9f336aa676e2760414d73cb4",
+    "daemon_mode_one_budget_store_audit_report.md": "58c5d9aee7b3455411c2218b163be8311006fbe304586d6eec90c13358476766"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_computed_store_footprints_source.json": "d703e8e865ea139d220733c9ab9e56458b6fd596e4bf5a0d68d930c061d6f72b",
+    "daemon_mode_one_computed_store_footprints_checks.json": "430b0984670142bf1534762cab3b6713e3d601230d09270ab69bf136658e8b37",
+    "recover_daemon_mode_one_computed_store_footprints.py": "666356b3ebaa45fd99e59906e0d468ccee7bc4a92b06a25f3e3b7eb20c62c6e0",
+    "validate_daemon_mode_one_computed_store_footprints.py": "ccfc0bc60935a6d043edbfefba07039c0c33a431835faf53fd2581d3fb43a202",
+    "seal_daemon_mode_one_computed_store_footprints.py": "414baf5c466a98bacff9669f3495cfa22dc6f23b0a5ba17d4042ca891213d717",
+    "verify_daemon_mode_one_computed_store_footprints_publication.py": "1e62fbea7abbc3510ef74650e95706a5cab36c476cf9d2f225b0dd8de38889ca"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and CF1-CF8;ten original computed stores,three freshly rebuilt source models,4051 translated source instructions,448 finite store instances and1600 byte writes. Thirteen UNSAT/six abstract SAT and eight freshness alterations pass. No destination envelope premise is assumed for these ten sites;entry roots,epoch,counters and finite component traversal remain contracts. The164 other array sites,236 alias sites,native control/ownership/return and daemon-kext pairing remain unproved."
+  }
+}

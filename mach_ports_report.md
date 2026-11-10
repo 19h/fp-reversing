@@ -1342,3 +1342,8 @@ The mode1 caller comparator, retry and option-join ranges add zero Mach send/rec
 The newly analyzed86 bridge,complementary repack,workspace composition and generic advance have no direct Mach send/receive,right transfer,port allocation or port-emission site. Their interfaces are private frame words,codebook roots and request-derived C0/LOCAL continuations;matched transport remains unknown. [Second-phase bank completion and workspace handoff](daemon_mode_one_second_phase_handoff_report.md).
 
 The budget/controller audit adds no direct Mach send/receive,right transfer,port allocation or IOKit invocation. Its new interfaces are paired image-controller state,canary/budget bytes,the request result and adapter DOUT. Those integer/pointer effects do not establish port identities or matched daemon-kext exchange. [Captured stores and conditional budget law](daemon_mode_one_budget_store_audit_report.md).
+
+
+## Computed-store footprint refinement
+
+The computed-store footprint increment introduces no Mach-port emission or peer claim. Its ten source stores target conditional private-frame coordinates;cross-phase overlap does not establish transport,external exposure or a daemon-kext connection. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).

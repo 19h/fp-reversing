@@ -1176,3 +1176,8 @@ Published static increment: caller output verification, independent address-mask
 Published static increment: missing86-phase bridge,complementary16-word bank repack,hidden addition,phase-one workspace composition,all32 word encodings/168 literal bytes rechecked,and generic overflow-aware advance. Full budget history,continuous repeat-stage execution,native return,ownership and daemon-kext serialization remain unresolved;the broader objective remains active. [Second-phase bank completion and workspace handoff](daemon_mode_one_second_phase_handoff_report.md).
 
 Published static increment:3307 independent SP-store decodes,complete3754-site catalogue for filtered captures,exact stack-dependent controller/guard/budget/result/delta equations,one-carrier controller encoding relation and conditional zero-delta law. Whole-core control closure,236 retained frame-offset/174 array-site reaching contracts,native ownership/return and matched transport remain unresolved;the broad goal stays active. [Captured stores and conditional budget law](daemon_mode_one_budget_store_audit_report.md).
+
+
+## Computed-store footprint refinement
+
+Current bounded increment:ten computed-store finite footprints,13 UNSAT/six abstract SAT,three fresh source models and eight rejected freshness alterations. Of174 catalogue array sites,164 remain without this new footprint proof;236 retained frame-offset sites and whole-core/native transport obligations remain unresolved. Goal active. [Evidence and exact boundaries](daemon_mode_one_computed_store_footprints_report.md).
