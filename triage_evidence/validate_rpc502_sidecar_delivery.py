@@ -358,6 +358,7 @@ def main():
     if exists(BASE/'userclient_context_lifecycle_report.md'):reports.add(BASE/'userclient_context_lifecycle_report.md')
     if exists(BASE/'context_descriptor_task_flow_report.md'):reports.add(BASE/'context_descriptor_task_flow_report.md')
     if exists(BASE/'core_stack_delta_abi_report.md'):reports.add(BASE/'core_stack_delta_abi_report.md')
+    if exists(BASE/'inner_write_frontier_report.md'):reports.add(BASE/'inner_write_frontier_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1719,6 +1720,10 @@ def main():
         core_stack_delta_quality=json.loads(read(ROOT/'core_stack_delta_abi_quality_gates.json'))
         manifest['validation']['core_stack_delta_abi_increment_checks']=core_stack_delta_quality['verified_counts']
         manifest['validation']['core_stack_delta_abi_static_scope']=core_stack_delta_quality['static_scope']
+    if exists(ROOT/'inner_write_frontier_quality_gates.json'):
+        inner_write_quality=json.loads(read(ROOT/'inner_write_frontier_quality_gates.json'))
+        manifest['validation']['inner_write_frontier_increment_checks']=inner_write_quality['verified_counts']
+        manifest['validation']['inner_write_frontier_static_scope']=inner_write_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

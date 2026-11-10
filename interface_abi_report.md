@@ -1549,3 +1549,8 @@ Selector26 provider ABI carries (this,address64,extent32,context64,task64);core 
 ## Resolved core stack-delta ABI
 
 Common adapter ABI:X0 operation record,X1 caller-cell address. Inner ABI:X0 same record,X1 private header. The adapter stores u64 D=16*low16(final header32 minus captured seed32) through the caller cell;its X0 remains an incidental inner return. Private frame restoration and later caller SP addition are distinct. [Evidence and exact boundaries](core_stack_delta_abi_report.md).
+
+
+## Inner write frontier and shared staging interface
+
+All14 nominal inner indirect calls now have original-bank/pointer-chain bindings. The hardware adapter passes the same shared descriptor as both buffer arguments,truncates count64 to count32,and forwards private IV/state views. The reused frame80 cell has distinct32-bit control and64-bit global-pointer phases. [Evidence and exact boundaries](inner_write_frontier_report.md).

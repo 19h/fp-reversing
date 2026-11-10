@@ -1,0 +1,85 @@
+{
+  "generator_sha256": "c64912de5e1945414b664c61167854c3bbd1e3b80424148b54f77244d59fab04",
+  "static_scope": "Complete compiler-envelope inner store/call census,source-bound nominal call selections,conditional private-frame footprints,hardware ABI and original discriminator reuse. Full reaching paths,external write bounds,provider effects and actual zero deltas remain unproved.",
+  "verified_counts": {
+    "captured_functions_and_stubs": 7,
+    "captured_instructions": 1255,
+    "captured_code_bytes": 5020,
+    "source_fragments": 23,
+    "inner_store_instructions": 40,
+    "private_frame_store_instructions": 36,
+    "inner_call_instructions": 15,
+    "selected_indirect_call_sites": 14,
+    "additional_global_root_selections": 1,
+    "literal_bank_arrays": 10,
+    "bank_input_cases": 3840,
+    "inner_indirect_jump_sites": 22,
+    "jump_diversity_groups": 8,
+    "original_matching_diversity_entries": 69,
+    "matching_diversity_entries_outside_inner": 47,
+    "scanned_const_words": 9230,
+    "queries_unsat": 49,
+    "queries_sat": 0,
+    "source_instruction_instances_translated": 275,
+    "distinct_source_instruction_sites_translated": 274,
+    "fresh_bank_cuts": 15,
+    "fill_symbolic_branch_paths": 24,
+    "predecessor_queries_replayed": 2,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "inner_write_frontier_report.md": "1457789541bc72193d04c066321303456a74b687d362d67d6dccb1ef27ead85b",
+    "obfuscated_routines_report.md": "658deca83ea04509e3ea558ef86253264db628b92579e32c60beb00a881aeb57",
+    "mach_ports_report.md": "8f82cad8dceaa5e3bf66eb8d57da440a9eed10be5dfd954e3765d8c59cbe242c",
+    "foundational_triage_report.md": "f6e6bca95c54a016718ade8f690a9fa348f394b8053ff3d1e612438dd803c6b9",
+    "interface_abi_report.md": "23eb1956c03b4ec88642716bbc635f3c9a119b5fe1ee46b592c1c9e4c9c8a06a",
+    "interface_investigation_status.md": "67d2a41ec1259c271dd6ab992bc4e688a1583c06ba244423dee02bbab5ab8260",
+    "core_stack_delta_abi_report.md": "e129661fa317cbaa360d4b0459d5b7775703f82bbcd65f1c454dc023a72e0856"
+  },
+  "evidence_sha256": {
+    "inner_write_frontier_source.json": "0c559dc237ea5f9cda1f7e9aa1499244e097ff13160a2819432d59d5aa0ef0dd",
+    "inner_write_frontier_checks.json": "76fc7e1812358ef99ea19b08d4164e504b372f0a073fea838f7771906920f78e",
+    "recover_inner_write_frontier.py": "56230e1afe9221a4d1db65ecc9fef50bb2f72e776e60befb7850a798762ed8e1",
+    "validate_inner_write_frontier.py": "0c033655e8896e05ccc49f5dcef1baaba9568bc6f77a4def74c8d20b8e80fdb6",
+    "seal_inner_write_frontier.py": "c64912de5e1945414b664c61167854c3bbd1e3b80424148b54f77244d59fab04",
+    "verify_inner_write_frontier_publication.py": "1c6ceeda5570c9d776a5b8ec9218fc4529bff82e48f552b06c62d53dd5f034d7"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and IW1-IW8;complete40-store/15-call census,14 nominal indirect selections,global staging-pointer join,zero-fill footprint,hardware argument widths and discriminator reuse. Forty-nine UNSAT,274 distinct translated source sites,24 symbolic fill paths and six freshness alterations pass. Full reaching CFG,external ranges,provider effects,actual zero deltas and native transactions remain unproved."
+  }
+}

@@ -153,3 +153,8 @@ Under per-call zero deltas,the caller's saved-context cell retains its original 
 - QG5:Captured versus updated control word,private allocation versus caller delta,entry versus final header,low2 versus whole8 bytes,incidental X0 versus delta/status cells,and unrestricted versus adapter-bounded deltas remain distinct.
 - QG6:Original hashes,compiler boundaries,raw pointer/code bytes,338 source sites,47 UNSAT,3 abstract SAT,16 witnesses and6 freshness alterations provide scoped provenance. The21-site argument audit has its own explicit graph boundary.
 - QG7:Continuation targets the remaining write/call/CFG,frame,global-state and native-pairing obligations without presenting entry restoration as full zero-delta proof.
+
+
+## Inner write frontier and shared staging interface
+
+The complete inner write/call frontier now has a source-bound census and nominal callee selections. Thirty-six direct stores and seven private destination-call extents exclude the header under the declared frame/callee contracts. The zero-fill footprint and CCC7848 staging join are established;external spans,provider effects and reaching CFG still prevent an actual D=0 conclusion. [Evidence and exact boundaries](inner_write_frontier_report.md).

@@ -1206,3 +1206,8 @@ Published context-to-descriptor increment:43 UNSAT including four replays,three 
 ## Resolved core stack-delta ABI
 
 Published stack-delta ABI increment:47 UNSAT,three abstract SAT,338 distinct translated sites,eleven fresh bank cuts and16 allocation witnesses. Actual adapter deltas are nonnegative/aligned/bounded;three-visit negative cancellation is excluded. Full header preservation,actual zero deltas,native frames and complete transactions remain open;goal active. [Evidence and exact boundaries](core_stack_delta_abi_report.md).
+
+
+## Inner write frontier and shared staging interface
+
+Published inner-write increment:49 UNSAT,274 distinct translated sites,24 symbolic fill paths,40 stores and15 calls. All eight jump diversities are reused by original targets outside the inner routine;matching metadata does not close its CFG. Full header preservation,actual zero deltas,external ranges and native transactions remain unproved;goal active. [Evidence and exact boundaries](inner_write_frontier_report.md).

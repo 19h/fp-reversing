@@ -1396,3 +1396,8 @@ Two daemon capability readers now have source bit/slot contracts. Conditional wo
 ## Resolved core stack-delta ABI
 
 Three core calls resolve to one136-instruction seed/header adapter at0xfffffe000a688ebc. It exports16*low16(final header minus captured seed),bounds caller deltas to0..0xffff0 B,and restores its own private frame. Inner entry restoration is source-proved;full low2-byte preservation and actual zero deltas remain open. [Evidence and exact boundaries](core_stack_delta_abi_report.md).
+
+
+## Inner write frontier and shared staging interface
+
+The complete inner census resolves ten copy calls,two calls to a90-instruction fill primitive,one hardware initializer,one hardware adapter and one canary-failure import. The fill zero-argument footprint is source-proved. Nominal targets and local argument roots remain conditional on reaching table/frame epochs. [Evidence and exact boundaries](inner_write_frontier_report.md).

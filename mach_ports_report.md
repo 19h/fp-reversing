@@ -1372,3 +1372,8 @@ Selector26 passes context and task as separate kernel pointers. Its inner core r
 ## Resolved core stack-delta ABI
 
 The resolved private calls exchange an operation-record pointer,caller-cell pointer and private header. Their mutable global word and aligned exported delta are private control/data ABI values. No additional Mach-port emission or native right retirement is established. [Evidence and exact boundaries](core_stack_delta_abi_report.md).
+
+
+## Inner write frontier and shared staging interface
+
+The inner routes exchange record pointers,private state/IV views,external buffer addresses and provider descriptor arguments. CCC7848 joins local staging dereferences to the earlier descriptor-publication evidence. No new Mach right or emission site is established;native transport and right lifetimes remain separate. [Evidence and exact boundaries](inner_write_frontier_report.md).

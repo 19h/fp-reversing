@@ -1418,3 +1418,8 @@ The typed per-client context now connects conditionally to sample descriptor fac
 ## Resolved core stack-delta ABI
 
 The three private SP updates now have a common adapter,mutable-word provenance,bounded16..256 B private allocation and exact delta encoding. Entry restores the seed;zero return delta requires its low16 bits survive the inner routine. Forty stores/fifteen calls remain the preservation frontier. [Evidence and exact boundaries](core_stack_delta_abi_report.md).
+
+
+## Inner write frontier and shared staging interface
+
+Of40 direct inner stores,36 address the private frame;the others update two controller globals,restore the header and publish record status. Seven selected call destinations fit below the header. Four external copy ranges,one external fill capacity,provider effects and exact dispatch states remain open. [Evidence and exact boundaries](inner_write_frontier_report.md).
