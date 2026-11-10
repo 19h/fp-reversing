@@ -1336,3 +1336,5 @@ The secondary state-commit/refresh/reentry ranges have no new Mach-port emission
 The newly analyzed view-import entry,two loops,bridge and marker have no direct Mach send/receive,port allocation or right transfer. Their concrete byte readers consume private views under stated source-epoch premises;no matched daemon-kext exchange is established. [Even-context private-view import](daemon_mode_one_even_view_import_report.md).
 
 The materializer, serializers and phase bridge add zero direct Mach send/receive, right-transfer or port-emission sites. Their writes reach private views, request-derived LOCAL and REQUEST+0; an external reply or daemon-kext transport consumer remains unknown. [Result words, views and publication](daemon_mode_one_result_publication_report.md).
+
+The mode1 caller comparator, retry and option-join ranges add zero Mach send/receive, right-transfer or port-emission sites. They consume LOCAL32 as a verification candidate; no serialization of those bytes into an external reply or matched IOKit exchange is established. [Caller output verification and retry](daemon_mode_one_output_verification_report.md).

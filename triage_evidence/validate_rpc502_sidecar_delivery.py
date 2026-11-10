@@ -349,6 +349,7 @@ def main():
     if exists(BASE/'daemon_mode_one_secondary_reentry_report.md'):reports.add(BASE/'daemon_mode_one_secondary_reentry_report.md')
     if exists(BASE/'daemon_mode_one_even_view_import_report.md'):reports.add(BASE/'daemon_mode_one_even_view_import_report.md')
     if exists(BASE/'daemon_mode_one_result_publication_report.md'):reports.add(BASE/'daemon_mode_one_result_publication_report.md')
+    if exists(BASE/'daemon_mode_one_output_verification_report.md'):reports.add(BASE/'daemon_mode_one_output_verification_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1674,6 +1675,10 @@ def main():
         result_publication_quality=json.loads(read(ROOT/'daemon_mode_one_result_publication_quality_gates.json'))
         manifest['validation']['daemon_mode_one_result_publication_increment_checks']=result_publication_quality['verified_counts']
         manifest['validation']['daemon_mode_one_result_publication_static_scope']=result_publication_quality['static_scope']
+    if exists(ROOT/'daemon_mode_one_output_verification_quality_gates.json'):
+        output_verification_quality=json.loads(read(ROOT/'daemon_mode_one_output_verification_quality_gates.json'))
+        manifest['validation']['daemon_mode_one_output_verification_increment_checks']=output_verification_quality['verified_counts']
+        manifest['validation']['daemon_mode_one_output_verification_static_scope']=output_verification_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

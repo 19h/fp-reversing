@@ -1,0 +1,85 @@
+{
+  "generator_sha256": "c83377d24b09097dc1c42f2c162e1aab69760eac08dfa11328f9d8a7c53704df",
+  "static_scope": "Conditional normal-return/zero-delta mode1 consumer: encoded span length32, full32-byte address-bound equality reduction, option-parser join and alternate object-source retry. Whole core budget history, native ownership/return, algorithm identity and daemon-kext transport remain unknown.",
+  "verified_counts": {
+    "source_ranges": 24,
+    "source_instructions": 555,
+    "source_bytes": 2220,
+    "branch_bindings": 32,
+    "saved_continuation_bindings": 4,
+    "pointer_records": 30,
+    "ISA_decodes_checked": 36,
+    "comparison_role_corrections": 11,
+    "prior_ranges_recaptured": 67,
+    "prior_bytes_recaptured": 49428,
+    "internal_call_bytes_checked": 8,
+    "wrapper_prefix_seed_preservation_instructions": 97,
+    "SP_writes": 0,
+    "queries_unsat": 71,
+    "queries_sat": 3,
+    "predecessor_queries_replayed": 13,
+    "source_nonbranch_sites_translated": 533,
+    "comparison_iterations": 32,
+    "SPAN_byte_reads": 32,
+    "LOCAL_byte_reads": 32,
+    "retry_LOCAL_halfword_zero_stores": 16,
+    "retry_LOCAL_bytes_zeroed": 32,
+    "source_value_cuts": 0,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_output_verification_report.md": "5bc066e33476654bf8eebffae85a2cd4c18c6a6eb30f31c3eae4b026acab112a",
+    "obfuscated_routines_report.md": "e6d558f18d8de87bbff49f9f46cb8f7f6655722e54ced70c40a0fa2d6ebedab8",
+    "mach_ports_report.md": "e619b2d35f322a38de62c917dbb4fe4e205a941edb4c9e1d971d10dd80e662cb",
+    "foundational_triage_report.md": "f906148f0b8f709fe60699a5bd5b1f5f1c5c00096c8e1732de0c59f8de3f7428",
+    "interface_abi_report.md": "46921cbb2f713d5d17f86292a100886c18527d6615a70f9674bb7ae55c2560e2",
+    "interface_investigation_status.md": "c11c8ab1e6a0dd8f7973f088ec7b9cd76843678d8f4155c167e3ec38877d08ae",
+    "daemon_mode_one_result_publication_report.md": "420d9bfd9947386a74d19b6f2631afd824561f18b7d5f6f7aba72c6369b22b9f"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_output_verification_source.json": "5b675ab7881781b493d3e4bf1009ac1b0e13b85da553b39d7a58025a4124cda9",
+    "daemon_mode_one_output_verification_checks.json": "c35b9ac357d44645304a6b7a3707d469e8646867b997faa7529f327139a4bb8f",
+    "recover_daemon_mode_one_output_verification.py": "a450eba61e812e56a25121e769e9ea2d3a8e7889d6a1a951cd75fb23cdde93ee",
+    "validate_daemon_mode_one_output_verification.py": "c70a0d6797308c42af4fa9f4f4a6d79afc19ffd5e5bbb1bae888989482eae475",
+    "seal_daemon_mode_one_output_verification.py": "c83377d24b09097dc1c42f2c162e1aab69760eac08dfa11328f9d8a7c53704df",
+    "verify_daemon_mode_one_output_verification_publication.py": "ed586e0f5eaf962848257a4ab9b735f275e3b6245068b4a58fe651f43a36c04d"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and OV1-OV8;533 source sites,71 UNSAT/three abstract SAT and13 predecessor replays. Exact32-byte address-bound comparison,reduction,alternate-source retry,seed continuity,option join and raw failure staging are covered. Whole processing budget history,normal native return,ownership/extents/alias policy,algorithm identity and matched transport remain unknown."
+  }
+}

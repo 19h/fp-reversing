@@ -186,3 +186,5 @@ There are no direct Mach sends, receives, right transfers, port allocations or t
 - QG5: The sampled F748 constant is explicitly refuted; matched-state encoder equivalence is separated from different-state phase execution, and alias/canary limitations remain explicit.
 - QG6: Pinned original bytes, fixups/imports, 830 ISA checks, 37 UNSAT results, three abstract SAT results, 13 predecessor replays and eight rejected alterations provide scoped provenance. Preservation and publication audits separately verify artifacts and links.
 - QG7: The impact-ranked continuation identifies unresolved recurrence, ownership, return and cross-layer consumer questions without treating them as established findings.
+
+The result consumer now uses LOCAL32 as a verification candidate against an address-decoded first-key span, then rejoins the known option parser or retries another inline object source. This closes the local consumer question under normal-return/zero-delta premises; external serialization and native execution remain unknown. [Caller output verification and retry](daemon_mode_one_output_verification_report.md).
