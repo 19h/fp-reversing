@@ -1,0 +1,73 @@
+{
+  "generator_sha256": "37a79e02ce7d6e24b27b86c95f5fa33fe8ea61979be30ae1ab055a435cf9a0c3",
+  "static_scope": "Original-source initializer publication and cleanup contracts, selected protected cleanup continuation, and matched 512-byte auxiliary allocation and retirement. Original caller state and native resources remain explicit premises.",
+  "verified_counts": {
+    "complete_bodies": 10,
+    "selected_source_spans": 4,
+    "captured_instructions": 986,
+    "constant_bank_rules": 10,
+    "constant_bank_inputs_checked": 2560,
+    "original_continuation_slots": 8,
+    "captured_code_bytes": 3944,
+    "queries_unsat": 8,
+    "initialization_cases": 32,
+    "cleanup_cases": 8,
+    "rejected_alterations": 5
+  },
+  "report_sha256": {
+    "aes_cleanup_epoch_report.md": "f9ca477f7da896da47e6ab5ec0c49d61e3f980ccf032b3512e6ea3564c7f49a6",
+    "obfuscated_routines_report.md": "47621156eb65ec21afce5681ba423156831a57a8a3da41044d6b904dcdb03fc7",
+    "mach_ports_report.md": "43be2712eba8cfa9068b9d3297434c343171ca07672b9ff07a5928eed9884dec",
+    "foundational_triage_report.md": "a3e1205c9e4d84907719c6ec736c83b841ec2a3533ca689936ccdbe7ea23957f",
+    "interface_abi_report.md": "b6d0d26f8a4b03ffc03cf74fd23f37bf622e1571a09d432f8f9578925c4114db",
+    "interface_investigation_status.md": "41e33ec2de0d7a39250f4696a69e65a7865a8edd971214c4ad205d4ec7d03e24",
+    "kext_aes_dispatch_report.md": "164020adba38c324aaba3256021dd8ad45a2bc000b415da45bb92455ef1f3389",
+    "kext_buffer_report.md": "aae61f3c2c93f763aaabc8c4d5eaa4c2ba55913a9cb83398323a3990ef86442f"
+  },
+  "evidence_sha256": {
+    "aes_cleanup_epoch_source.json": "3c63729f579843a9da2b6e93bbafb83d6b908c6877bba051e9016a24999cf1b6",
+    "aes_cleanup_epoch_checks.json": "e2fafdea3c145ba5d5e8e74acc0e5679e0f5635c1c5677c488ed8d3021e26795",
+    "recover_aes_cleanup_epoch.py": "2d215d3374bf006d0bdcd71baaf98f4cf148a744b71cc0d778deab682b4861e0",
+    "validate_aes_cleanup_epoch.py": "1bbbacc2e7d8f3d1c8e346fc68829c5adfa514c1ff96ee77380af8f5adaa7d6e",
+    "seal_aes_cleanup_epoch.py": "37a79e02ce7d6e24b27b86c95f5fa33fe8ea61979be30ae1ab055a435cf9a0c3",
+    "verify_aes_cleanup_epoch_publication.py": "81be0a54f4a0fe74ab183ca8e7ce2a83a73d7ff293be6c2b32b7a12ea1480775"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and AE1-AE8. Original publication states, paired 512-byte requests and the selected protected cleanup continuation. Eight UNSAT results and five rejected alterations. Runtime state and ownership remain open."
+  }
+}

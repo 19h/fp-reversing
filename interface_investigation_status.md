@@ -1233,3 +1233,5 @@ The source now connects the tagged backing allocation to pointer recovery, full-
 The original size table, variable view assignment and early-heap initialization now establish the 48-byte source extent. Exact live zone selection and actual allocation remain open. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
 
 The constructor, kext cleanup and base free now have a conditional prepare-count correspondence. Actual VM wiring, teardown scheduling and later backing capacity remain open. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
+
+The selected protected cleanup continuation now covers the matching auxiliary producer, retirement and parent return. Reaching caller state and native ownership remain open. [AES initialization and cleanup](aes_cleanup_epoch_report.md).

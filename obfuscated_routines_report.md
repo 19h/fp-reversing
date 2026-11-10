@@ -1423,3 +1423,5 @@ The tagged retirement wrapper recovers a zone element base and extent before cal
 The captured heap startup, family constructor, setup callback and variable view parser now have source-established roles in the tagged MixedData allocation. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
 
 The descriptor lifecycle report resolves the local count, wire entry append, completion walk and used-length update roles from the captured original routines. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
+
+The selected protected cleanup suffix conditionally retires a separate auxiliary allocation and passes a cached lock operand to a local teardown helper. The source producer publishes the matching auxiliary pointer. [AES initialization and cleanup](aes_cleanup_epoch_report.md).

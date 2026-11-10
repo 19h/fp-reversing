@@ -367,6 +367,7 @@ def main():
     if exists(BASE/'mixed_data_retirement_report.md'):reports.add(BASE/'mixed_data_retirement_report.md')
     if exists(BASE/'mixed_data_zone_geometry_report.md'):reports.add(BASE/'mixed_data_zone_geometry_report.md')
     if exists(BASE/'descriptor_prepare_lifecycle_report.md'):reports.add(BASE/'descriptor_prepare_lifecycle_report.md')
+    if exists(BASE/'aes_cleanup_epoch_report.md'):reports.add(BASE/'aes_cleanup_epoch_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1764,6 +1765,10 @@ def main():
         prepare_lifecycle_quality=json.loads(read(ROOT/'descriptor_prepare_lifecycle_quality_gates.json'))
         manifest['validation']['descriptor_prepare_lifecycle_increment_checks']=prepare_lifecycle_quality['verified_counts']
         manifest['validation']['descriptor_prepare_lifecycle_static_scope']=prepare_lifecycle_quality['static_scope']
+    if exists(ROOT/'aes_cleanup_epoch_quality_gates.json'):
+        aes_cleanup_quality=json.loads(read(ROOT/'aes_cleanup_epoch_quality_gates.json'))
+        manifest['validation']['aes_cleanup_epoch_increment_checks']=aes_cleanup_quality['verified_counts']
+        manifest['validation']['aes_cleanup_epoch_static_scope']=aes_cleanup_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

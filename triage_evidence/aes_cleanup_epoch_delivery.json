@@ -1,0 +1,54 @@
+{
+  "generator_sha256": "37a79e02ce7d6e24b27b86c95f5fa33fe8ea61979be30ae1ab055a435cf9a0c3",
+  "prior_manifest_sha256": "45276f8938633e52a3a8658bc47a62e27776aca7c80fc11578181512dc4a9751",
+  "prior_artifacts_checked": 8004,
+  "prior_artifacts_unchanged": 7996,
+  "allowed_changes": [
+    {
+      "path": "foundational_triage_report.md",
+      "prior_sha256": "d86e0530afcca69b3fb2982c94f3c4795e6d9769ad5908b83f29205ad1ab886a",
+      "sha256": "a3e1205c9e4d84907719c6ec736c83b841ec2a3533ca689936ccdbe7ea23957f"
+    },
+    {
+      "path": "interface_abi_report.md",
+      "prior_sha256": "f8d72fa987b48c69464aa04c44b0bbedfd3dad66dde9af8fe873fb47dd14e8fe",
+      "sha256": "b6d0d26f8a4b03ffc03cf74fd23f37bf622e1571a09d432f8f9578925c4114db"
+    },
+    {
+      "path": "interface_investigation_status.md",
+      "prior_sha256": "952d969960ebb6ad1ce3cad488391b538f38fd8e7ef0c0aacc64577b6b473577",
+      "sha256": "41e33ec2de0d7a39250f4696a69e65a7865a8edd971214c4ad205d4ec7d03e24"
+    },
+    {
+      "path": "kext_aes_dispatch_report.md",
+      "prior_sha256": "bf63f9661ba1629bf305587f316ba4f388eeff8f6d7d21801acb1471ab09b92d",
+      "sha256": "164020adba38c324aaba3256021dd8ad45a2bc000b415da45bb92455ef1f3389"
+    },
+    {
+      "path": "kext_buffer_report.md",
+      "prior_sha256": "56759e1d833cccc3a37039b1c73e76b5c5d3c013ce813f4757139a80875d5cd3",
+      "sha256": "aae61f3c2c93f763aaabc8c4d5eaa4c2ba55913a9cb83398323a3990ef86442f"
+    },
+    {
+      "path": "mach_ports_report.md",
+      "prior_sha256": "8fbff2228ea007365925aba467bb7005f0c836eba39718c548f8f8148cf3ca6b",
+      "sha256": "43be2712eba8cfa9068b9d3297434c343171ca07672b9ff07a5928eed9884dec"
+    },
+    {
+      "path": "obfuscated_routines_report.md",
+      "prior_sha256": "089a9baa945548dc05fd002e9fff739a43938414a6375fa6cf4235f35834f3f4",
+      "sha256": "47621156eb65ec21afce5681ba423156831a57a8a3da41044d6b904dcdb03fc7"
+    },
+    {
+      "path": "triage_evidence/validate_rpc502_sidecar_delivery.py",
+      "prior_sha256": "98b97db3d3df9cb6e1b01a01b1d5af470ba760ac2c105801015daa64143a8ba8",
+      "sha256": "22fa97f6a23f9e88abfff3b5557acad12721e6f0bcf757c6b4b422186ec36091"
+    }
+  ],
+  "original_inputs_preserved": 3,
+  "Python_syntax_checks": 5,
+  "local_links_checked": 2924,
+  "all_checks_pass": true,
+  "goal_status": "active",
+  "full_goal_complete": false
+}

@@ -1399,3 +1399,5 @@ The tagged backing lookup, clear and zone handoff issue no Mach right operation 
 The startup-to-zone correspondence adds no Mach right operation. Its numeric startup phase and zone index are separate from Mach names and message identifiers. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
 
 The two descriptor preparations, ordinary completion and final-release drain add no Mach right operation in the selected source correspondence. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
+
+The selected initializer, auxiliary allocation, cleanup and lock teardown route adds no Mach right operation. The parent publishes a local continuation word. [AES initialization and cleanup](aes_cleanup_epoch_report.md).

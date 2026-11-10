@@ -1445,3 +1445,5 @@ The owner capacity remains 48 B at the retirement request. The lower wrapper rec
 The matched startup geometry gives the tagged record a 48-byte element extent. The file and initialized flag epochs select different heap operands, and the initialized bias supplies a source-generated size class. [MixedData startup geometry](mixed_data_zone_geometry_report.md).
 
 Successful preparation increments descriptor +0x88. The ordinary completion decrements it under admitted record and synchronization conditions. Base free drains the remainder before releasing the MixedData owner. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
+
+Provider and descriptor publications precede the applicable local initialization failures. The separately recovered cleanup continuation retires a matching 512-byte allocation under a stable publication epoch. [AES initialization and cleanup](aes_cleanup_epoch_report.md).

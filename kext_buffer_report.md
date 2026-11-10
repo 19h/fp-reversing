@@ -190,3 +190,5 @@ QG1 passes for factual technical analysis. QG2 passes with D1-D8, dependencies a
 The subsequent constructor-flow analysis separates requested/stored capacity from logical length and actual backing. It resolves original setLength/getCapacity slots,three raw allocation request alternatives,base options0x11b and its internal prepare request,the intermediate DMA operation,and final length publication. The getter nonnull condition still depends on allocation/field/lifetime contracts;an abstract inherited-flag control does not establish a reachable native failure. [Evidence and exact boundaries](buffer_construction_flow_report.md).
 
 The explicit kext complete is followed by a remaining-count drain if descriptor release reaches free. The count decreases under the original ordinary completion premises. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
+
+The initializer publication audit distinguishes null waiter, null factory and prepare failure and joins the separate protected cleanup continuation under its own state premises. [AES initialization and cleanup](aes_cleanup_epoch_report.md).

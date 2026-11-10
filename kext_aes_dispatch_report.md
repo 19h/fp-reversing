@@ -191,3 +191,5 @@ The verifier re-reads original envelopes, instruction spans, pool loads, pointer
 ## Scoped quality gates
 
 QG1 passes for factual analysis. QG2 passes with R1-R8, dependencies and falsification probes. QG3 passes for conditional dispatch mappings, the partial cleanup record and two obfuscated routine roles; native paths and the broad goal remain incomplete. QG4 passes for exact widths, byte extents, source visits, exhaustive byte domains and complexity. QG5 passes with frame definitions/reaching state, constant/payload-dependent selectors, local/native execution and markers/business meaning separated. QG6 passes through original source, compiler bounds, pointer chains, source lineages, fresh slices/classifier cases and six local proofs. QG7 passes with impact-labeled continuation. [Machine-readable gates](triage_evidence/kext_aes_dispatch_quality_gates.json) cover this delivery.
+
+The adapter suffix after the known hardware cleanup call now has a selected source correspondence through auxiliary retirement, the cached lock operand and the parent return store. [AES initialization and cleanup](aes_cleanup_epoch_report.md).
