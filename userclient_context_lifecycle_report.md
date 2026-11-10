@@ -134,3 +134,8 @@ The context pointer,task pointer,provider object,IOKit connection name and Mach 
 - QG5:Different object fields,raw64/u32 channels,mode versus wire values,helper/base/start results,normalized versus original descriptor words,and source requests versus native retirement remain distinct.
 - QG6:Original hashes,compiler boundaries,raw code/pointer words,descriptor/string bytes,source SSA,40 UNSAT certificates,2 abstract SAT controls and7 freshness alterations supply scoped provenance. The unverified recalled note supplies none.
 - QG7:The continuation identifies the remaining populated-list,task-reference,concurrency,native-pairing and daemon-buffer questions without treating this local lifecycle contract as a completed exchange.
+
+
+## Context to descriptor task flow
+
+The typed context now has a bounded core-consumer census and conditional task-field joins to two descriptor record protocols. The per-client context and module-global descriptor cells remain distinct. Populated-list teardown,frame epochs,task-reference balance and actual mappings remain unresolved. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).

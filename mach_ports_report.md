@@ -1362,3 +1362,8 @@ Call0x100478a04 resolves to IOConnectCallStructMethod(selector21),with552 B inpu
 ## Typed UserClient context lifecycle
 
 The initializer task field and context task field are u64 kernel pointers;they are separate from a u32 IOKit connection name. The new context is a typed24-byte heap record. No additional Mach-port emission or native right retirement is established. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).
+
+
+## Context to descriptor task flow
+
+Selector26 passes context and task as separate kernel pointers. Its inner core receives context,then reads task64 for descriptor factories;these are separate from connection-name and port-right channels. No new Mach emission or native right-retirement event is established. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).

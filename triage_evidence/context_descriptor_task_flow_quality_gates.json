@@ -1,0 +1,84 @@
+{
+  "generator_sha256": "a8b396b1ac10cf54aa5a107d402bf71b827d996e6de071b74a61e9eec0b27e8c",
+  "static_scope": "Source-bound typed UserClient context flow through selector26 into mode/head/task consumers,two task-bearing records and sample descriptor factories. Literal-frame census is bounded;three private SP deltas,interference,whole-path reachability,task references,native descriptor ownership and delivery remain unproved.",
+  "verified_counts": {
+    "captured_kext_functions": 7,
+    "captured_instructions": 53728,
+    "captured_code_bytes": 214912,
+    "core_aligned_words": 50634,
+    "source_fragments": 30,
+    "literal_context_reloads": 11,
+    "literal_context_stores": 1,
+    "literal_scratch_overlaps": 23,
+    "SP_mutation_sites": 9,
+    "private_SP_delta_sites": 3,
+    "literal_bank_arrays": 6,
+    "bank_rules": 3,
+    "bank_input_cases": 768,
+    "original_pointer_records": 8,
+    "mode_branch_pointers": 2,
+    "factory_stub_bytes": 16,
+    "queries_unsat": 43,
+    "queries_sat": 3,
+    "source_instruction_instances_translated": 547,
+    "distinct_source_instruction_sites_translated": 356,
+    "fresh_bank_cuts": 3,
+    "predecessor_queries_replayed": 4,
+    "rejected_alterations": 7
+  },
+  "report_sha256": {
+    "context_descriptor_task_flow_report.md": "f45f5fec215b24831ca09a88f7760890b4105709f9050ca7f459a4d1e3781897",
+    "obfuscated_routines_report.md": "ccaf0bf0911eff48e66ffe13f2eedbf5414d9b166101fd1807c48d56ce86c1e7",
+    "mach_ports_report.md": "32aa3b0f4b694fe3ffeed4f1dc543d64c984c37c8465a7ab626bc4d33db91f3e",
+    "foundational_triage_report.md": "19e772de20b1d3f4644e41705fc64b8afcc285b910e68723f0340ebb8fb58943",
+    "interface_abi_report.md": "23bf741e095194d47246580cdc1d0b2b5b678d5c25f2d8579f6afe19d81f564a",
+    "interface_investigation_status.md": "99488fdeec969460c8f825fe3ae8622ba5109fabc37c3ebdb2c2fa89a814dd67",
+    "userclient_context_lifecycle_report.md": "06968609228743509ec43548efad177a0b4fe96ed7228eb62c44fa3f6db4df98"
+  },
+  "evidence_sha256": {
+    "context_descriptor_task_flow_source.json": "4258ad2b5ed8c145e9105019a37a75836ca881f6d0ab120d809ea5cb0eae952f",
+    "context_descriptor_task_flow_checks.json": "097fdc5ca046c4b6e686aab1e30ff3c5d30d9f9227bf95faae99d9382662e834",
+    "recover_context_descriptor_task_flow.py": "e664168e349499e479e6371a08b4a94b9d0dd1b250253d03c47320d8ee7dbf9b",
+    "validate_context_descriptor_task_flow.py": "235a34be5eed7991651d02de215faee55876223f85cdf7d5aaaa24073fae0b38",
+    "seal_context_descriptor_task_flow.py": "a8b396b1ac10cf54aa5a107d402bf71b827d996e6de071b74a61e9eec0b27e8c",
+    "verify_context_descriptor_task_flow_publication.py": "0963ddc911a5efaa0342964d08ef109c856fe4d4f6f2956490fc6c3ce9a62a2b"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and DF1-DF8;typed context/task flow through selector26,two task-bearing record protocols,descriptor factories,global result publication and three SP-delta boundaries. Forty-three UNSAT including four replays,three abstract SAT,356 distinct source sites and seven freshness alterations pass. Frame/alias closure,task references,global serialization,native mappings and complete transactions remain unproved."
+  }
+}

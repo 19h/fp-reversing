@@ -356,6 +356,7 @@ def main():
     if exists(BASE/'kext_query_getter_values_report.md'):reports.add(BASE/'kext_query_getter_values_report.md')
     if exists(BASE/'versioned_request_abi_report.md'):reports.add(BASE/'versioned_request_abi_report.md')
     if exists(BASE/'userclient_context_lifecycle_report.md'):reports.add(BASE/'userclient_context_lifecycle_report.md')
+    if exists(BASE/'context_descriptor_task_flow_report.md'):reports.add(BASE/'context_descriptor_task_flow_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1709,6 +1710,10 @@ def main():
         userclient_context_quality=json.loads(read(ROOT/'userclient_context_lifecycle_quality_gates.json'))
         manifest['validation']['userclient_context_lifecycle_increment_checks']=userclient_context_quality['verified_counts']
         manifest['validation']['userclient_context_lifecycle_static_scope']=userclient_context_quality['static_scope']
+    if exists(ROOT/'context_descriptor_task_flow_quality_gates.json'):
+        context_descriptor_quality=json.loads(read(ROOT/'context_descriptor_task_flow_quality_gates.json'))
+        manifest['validation']['context_descriptor_task_flow_increment_checks']=context_descriptor_quality['verified_counts']
+        manifest['validation']['context_descriptor_task_flow_static_scope']=context_descriptor_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

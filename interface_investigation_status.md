@@ -1196,3 +1196,8 @@ Published capability/preparation and selector21 ABI increment:42 UNSAT/three abs
 ## Typed UserClient context lifecycle
 
 Published task/context lifecycle increment:40 UNSAT/two abstract SAT,366 distinct source instructions,ten fresh bank cuts and seven freshness alterations. Source-bound creation and empty-head cleanup pass. Populated-list teardown,task-reference balance,actual provider/connection identity and complete transactions remain open;goal active. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).
+
+
+## Context to descriptor task flow
+
+Published context-to-descriptor increment:43 UNSAT including four replays,three abstract SAT,356 translated sites,eleven literal context reloads and three SP-delta boundaries. Typed task-carrier/factory joins pass conditionally. Full frame/alias closure,task references,global serialization,native mappings and complete transactions remain open;goal active. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).

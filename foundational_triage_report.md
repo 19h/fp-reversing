@@ -1408,3 +1408,8 @@ Capability bit3 gates preparation;decoded bits5/6/1 affect local working modes. 
 ## Typed UserClient context lifecycle
 
 Initializer task publication joins selector21 forwarding conditionally. Start publishes a typed24-byte context containing head,mode and task;empty-head stop requests typed free and clears its cell. Start overwrites the helper result with1. Task-reference balance,populated-list cleanup and concurrency remain open. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).
+
+
+## Context to descriptor task flow
+
+The typed per-client context now connects conditionally to sample descriptor factories through two task-bearing record protocols. The factories publish module-global descriptors. Three private SP deltas and23 scratch overlaps prevent unconditional frame/task continuity;native mappings and reference balance remain open. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).

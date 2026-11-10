@@ -1386,3 +1386,8 @@ Two daemon capability readers now have source bit/slot contracts. Conditional wo
 ## Typed UserClient context lifecycle
 
 `Trped0719ab` removes this and forwards (context cell,mode32,task64) into `_lapsl183ah`; `LasdMdn12cas` forwards the cell into `_kratpzs81h`. Typed24-byte creation and empty-head cleanup are source-proved;populated-list cleanup and native owners remain open. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).
+
+
+## Context to descriptor task flow
+
+`_PRnut72j9` has eleven literal saved-context reloads;three read task64 and two read mode32. The task-bearing second record conditionally selects `0xfffffe000a61c404`,whose checked prefix forwards task64 to exact `_createSamplesIOMD`. Complete function semantics and frame epochs remain open. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).

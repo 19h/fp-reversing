@@ -1539,3 +1539,8 @@ Selector21 has a fixed552 B structure ABI distinct from input count at+544,initi
 ## Typed UserClient context lifecycle
 
 Start provider ABI is (this,cell address,mode32,task64);the adapter removes this. Stop forwards the cell address. The24-byte context stores u64 head at0,u32 mode at8 and u64 task at16;four padding bytes are unwritten. Empty-head typed-free and raw helper/caller result channels remain distinct. [Evidence and exact boundaries](userclient_context_lifecycle_report.md).
+
+
+## Context to descriptor task flow
+
+Selector26 provider ABI carries (this,address64,extent32,context64,task64);core ABI carries (staging,extent64,context64). Context+0x10 feeds task fields at two record offsets,+0x38 and+0x10;factories forward task64 in X3 with raw options2/3. Global descriptor publication is distinct from native ownership. [Evidence and exact boundaries](context_descriptor_task_flow_report.md).
