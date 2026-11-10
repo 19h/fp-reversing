@@ -1,0 +1,95 @@
+{
+  "generator_sha256": "0864399145dfd91528f0aac3aae787a0675f4b8aa8419ca0df411547f5b1a1db",
+  "static_scope": "Conditional long-record64-byte prefix:full seed/body/exit source SSA,four finite counter states,all record/plane addresses,original-source U/V update identities,address-only V-mask functions,private frame effects and authenticated exit. Canonical-mask identity,compact state/algorithm,native traversal,output and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 3,
+    "source_instructions": 5037,
+    "source_bytes": 20148,
+    "pointer_records": 4,
+    "branch_bindings": 4,
+    "SP_writes": 0,
+    "comparison_role_corrections": 2,
+    "bitfield_decodes_checked": 8,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 2,
+    "pair_load_decodes_checked": 1,
+    "prior_ranges_recaptured": 6,
+    "prior_bytes_recaptured": 19380,
+    "queries_unsat": 48,
+    "queries_sat": 11,
+    "predecessor_queries_replayed": 23,
+    "source_nonbranch_sites_translated": 5034,
+    "translated_instances": 19194,
+    "iterations": 4,
+    "record_byte_reads": 64,
+    "plane_byte_reads": 128,
+    "plane_byte_stores": 128,
+    "all_byte_addresses_certified": 320,
+    "seed_state_words": 8,
+    "seed_constant_words": 39,
+    "CSEL_arm_equalities": 4,
+    "V_XOR_source_linearity_certificates": 4,
+    "arithmetic_and_codebook_cells_retained": 800,
+    "rejected_alterations": 7,
+    "source_read_operations": 730,
+    "source_store_effects": 433,
+    "read_bytes": 3020,
+    "store_bytes": 1684,
+    "distinct_store_bytes": 528
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_long_prefix_report.md": "553b7ca8c70fe14508eb74287e5eb8ed4ad6c4ecab066cd9e5018217da4bd695",
+    "obfuscated_routines_report.md": "39f7b581e9ee1d73f577e14795ff7ba30ead0c16f356876106f88762da6dd30c",
+    "mach_ports_report.md": "e112b2b0295421d30d4c9fa2b7759ca3a8d86fe5a74c15907eeaca94c504f4a6",
+    "foundational_triage_report.md": "c57aad97cab4a910fbb7bf85b42a3d436d63ac20f55f8f39eee8c41e852f2c1b",
+    "interface_abi_report.md": "8c4fb6da884e6533e33bd5b4c81563036a98c5e690e84b40b1861133abd3803b",
+    "interface_investigation_status.md": "df2481290d3df685ada6f3a8c99faf1c66f7837cc9be26fb90313739cb37eff1",
+    "daemon_mode_one_record_long_planes_report.md": "23acf021c67161a9febc3911bcb27ba806748902283f9645a7329fbd1524519f"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_long_prefix_source.json": "50607e490992b1b3461ec51b9ad6203d18f0d98442cf8c530968c1a23a04cf00",
+    "daemon_mode_one_record_long_prefix_checks.json": "8f7a310ee03bc2fcbe6642b338cee3e6f86757418a3c1e7509f71ecbcfabad62",
+    "recover_daemon_mode_one_record_long_prefix.py": "30736a28c5629fba8a0660713cd222a6678540171a1f667aae28cccd3d9a8563",
+    "validate_daemon_mode_one_record_long_prefix.py": "de3a15e555d8cf0d5341ed3bbcb3bdeca3aa9eb34b98468cb14a7e92228036b7",
+    "seal_daemon_mode_one_record_long_prefix.py": "0864399145dfd91528f0aac3aae787a0675f4b8aa8419ca0df411547f5b1a1db",
+    "verify_daemon_mode_one_record_long_prefix_publication.py": "6fc99ac6ced52443f7ffd5b455f9ccacec309e88739fae745742752f1495ca07"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and PF1-PF8;5034 unique sites/19194 instances,four exact16-byte iterations,all320 byte addresses,64 U XOR updates,64 address-only V mask functions,source CSEL case equalities,eight retained state words and exact biased64-byte exit;48 UNSAT/11 SAT results including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native reachability,successful output and daemon-kext pairing remain unproved."
+  }
+}

@@ -164,3 +164,5 @@ QG5: Fixed original planes are distinguished from their full replacement;depende
 QG6: The original image bytes,authenticated fixup records,fresh predecessor recaptures,selected incoming queries and current source SSA are primary evidence;no new dynamic or IDA observation is claimed.
 
 QG7: The bounded continuation table ranks unresolved plane functions,consumers,external output and later frame/control epochs by impact.
+
+Follow-up: [Selected-record long-input64-byte prefix absorption](daemon_mode_one_record_long_prefix_report.md) proves four16-byte iterations,all320 byte addresses and complete two-plane updates. U XORs raw record bytes;V XORs source-defined address-only masks. A data-dependent CSEL has no effect on its resulting V byte. The exit advances two biased counters by64 and selects0x100b8ed9c. All5034 unique sites/19194 instances translate;48 UNSAT/11 SAT checks pass,including23 predecessor queries. Canonical-mask identity,compact state/algorithm,native traversal,caller output and daemon-kext pairing remain unknown.
