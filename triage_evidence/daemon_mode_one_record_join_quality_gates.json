@@ -1,0 +1,90 @@
+{
+  "generator_sha256": "82eab1629af1137905baa8e7aebbd032552a1dd961268360b19d69c51addca31",
+  "static_scope": "Conditional complete selected-record common join:workspace-linked frame data flow,two fixed64-byte planes,raw permutation-bank replacement,800 preserved arithmetic/codebook cells,and exact unsigned COUNT64 fork. Static contracts only;compact complete state recurrence,native owners/reachability,successful output,budget history and daemon-kext pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 1,
+    "source_instructions": 7107,
+    "source_bytes": 28428,
+    "pointer_records": 2,
+    "branch_bindings": 2,
+    "SP_writes": 0,
+    "comparison_role_corrections": 4,
+    "bitfield_decodes_checked": 20,
+    "pair_store_decodes_checked": 6,
+    "prior_ranges_recaptured": 18,
+    "prior_bytes_recaptured": 6848,
+    "queries_unsat": 426,
+    "queries_sat": 31,
+    "predecessor_queries_replayed": 443,
+    "source_nonbranch_sites_translated": 7106,
+    "frame_alias_normalizations": 27,
+    "indexed_word_normalizations": 4,
+    "pair_store_lowerings": 6,
+    "workspace_bytes_preserved": 296,
+    "fixed_plane_bytes": 128,
+    "encoded_word_transfers": 16,
+    "raw_permutation_cells_replaced": 32,
+    "arithmetic_and_codebook_cells_retained": 800,
+    "known_scratch_cells_after_replacement": 928,
+    "logical_store_effects": 595,
+    "source_loads": 390,
+    "store_bytes": 2008,
+    "distinct_bytes_written": 1552,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_join_report.md": "916055511f8dbcc6cc52106749a1d7794cdb19542eeff1d080167d72d5704ba5",
+    "obfuscated_routines_report.md": "7eac0ffee130cfbebb1d9e00885de0bb0037454601a37d661422e29782f1fb9a",
+    "mach_ports_report.md": "d4fb8a89a1d06b4e08bd5da5381031a85f6aabf696920ee3e85c019a89556c08",
+    "foundational_triage_report.md": "b0268f33d8b1feb83d6c1274636e38d354f9a3a76038b95e37d0d9e4cd8468b4",
+    "interface_abi_report.md": "d236ccc607270b2b52b9698edc1b1889e95055ca5f8d04836e07f8886ca82f73",
+    "interface_investigation_status.md": "935345bee3382d6ecdb40c0e1f66d2fc5d07dd7c6322be41ba4e1e9e524ce073",
+    "daemon_mode_one_record_rescan_report.md": "7a7e945afa9f37fb2d52b45d74a1b026259e894857a7d4337c7b0439563fc182"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_join_source.json": "c4dd2dcc7b7059b98f2c00f9c98f4fbe92124a563e497c2f41a41e6dd73f76bb",
+    "daemon_mode_one_record_join_checks.json": "4e927ca18fc0bb388599f5c90df7ac31c8bcf01981b063c211763f723bdc2fc3",
+    "recover_daemon_mode_one_record_join.py": "70cbf7a0baca82f771979d65843083f99d3b74fc96392a6f08137a2049ea6a8e",
+    "validate_daemon_mode_one_record_join.py": "1697fa00048b737aeeb597794540f077c83c5b43ab9ace51bcc380484d4783e2",
+    "seal_daemon_mode_one_record_join.py": "82eab1629af1137905baa8e7aebbd032552a1dd961268360b19d69c51addca31",
+    "verify_daemon_mode_one_record_join_publication.py": "6fdca3d842c2d107e5d137852d9072da93142431b44fef0c4e145e9adfc4830f"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RJ1-RJ8;7106 current sites translated,complete595-store/390-load frame model,two fixed64-byte planes,raw32-cell A/B replacement with800 arithmetic/codebook cells retained,sixteen encoded word transfers and exact unsigned COUNT64 fork;426 UNSAT/31 SAT results including443 predecessor replays. Complete compact state/algorithm identity,native owners/reachability,successful output,budget history and daemon-kext pairing remain unproved."
+  }
+}
