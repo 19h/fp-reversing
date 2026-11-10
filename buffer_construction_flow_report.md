@@ -163,3 +163,8 @@ Numerically, 81920 B equals twenty 4096 B fill spans and five literal 16384 B ro
 - QG5: Requested capacity, stored capacity, logical length and backing extent; nominal/live methods; local/global epochs; source requests/completed native operations; two preparation sites/reference balance; and abstract flags/native reachability remain distinct.
 - QG6: Primary image hashes, compiler bounds, raw code/chain words, exact method/data symbols, 43 accepted UNSAT certificates, one abstract SAT control, one replayed staging proposition and six freshness alterations supply scoped provenance.
 - QG7: Continuation addresses precise allocator, base/DMA effects, preparation/free, staging-bound, runtime environment and native-pairing dependencies without claiming complete construction or a native defect.
+
+
+## DMA mapping constraints and lazy metadata
+
+The subsequent DMA-constraint analysis closes the direct selected method graph for operation0x04000000/size40. It establishes exact request packing,min/max constraint effects,protected-field exclusions and lazy helper/creator interfaces. Partial metadata initialization and lower allocator/reference/readiness effects remain explicit boundaries;the full constructor and native mapping are still unproved. [Evidence and exact boundaries](dma_map_constraints_report.md).

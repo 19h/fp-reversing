@@ -1406,3 +1406,8 @@ The complete inner census resolves ten copy calls,two calls to a90-instruction f
 ## Shared-buffer construction and preparation flow
 
 The shared staging path now has source-bound constructor metadata and request alternatives. Unnamed allocation backend targets retain raw numeric ABIs;exact symbols bind setLength,getCapacity and dmaCommandOperation. Lower allocation zeroing and native backing remain separate obligations. [Evidence and exact boundaries](buffer_construction_flow_report.md).
+
+
+## DMA mapping constraints and lazy metadata
+
+The unnamed117-instruction helper0xfffffe000c536f94 ensures descriptor metadata and initializes a48-byte constraint record;unnamed creator0xfffffe000c537394 obtains an owner and reserved data storage. Reserve/used/capacity and partial initialization are recovered;exact runtime class and native lower effects remain unknown. [Evidence and exact boundaries](dma_map_constraints_report.md).

@@ -1,0 +1,83 @@
+{
+  "generator_sha256": "fc2a6f0208d27a35e923f0e03dec7a2ea979772795f94fc30d66e51962b6b272",
+  "static_scope": "Source-bound40-byte DMA mapping specification,operation04000000 selected control graph,min/max metadata updates and lazy metadata allocation/helper footprints. Native mappings,hardware transfers,full lower allocation/reference effects and complete constructor noninterference remain unproved.",
+  "verified_counts": {
+    "captured_functions": 4,
+    "captured_instructions": 1221,
+    "captured_code_bytes": 4884,
+    "source_fragments": 33,
+    "selected_graph_instruction_sites": 61,
+    "selected_graph_edges": 65,
+    "selected_graph_call_frontiers": 1,
+    "selected_graph_store_instructions": 8,
+    "selected_graph_returns": 1,
+    "fresh_branch_overrides": 3,
+    "helper_instructions": 117,
+    "creator_instructions": 58,
+    "SDK_syntax_only_exit": 0,
+    "queries_unsat": 44,
+    "queries_sat": 0,
+    "source_instruction_instances_translated": 127,
+    "distinct_source_instruction_sites_translated": 127,
+    "metadata_bytes_touched": 38,
+    "metadata_bytes_fully_defined_without_old_contents": 37,
+    "metadata_unwritten_bytes": 10,
+    "predecessor_queries_replayed": 1,
+    "rejected_alterations": 6
+  },
+  "report_sha256": {
+    "dma_map_constraints_report.md": "6626714d2d1ce0ac6a4f4d9991149f22e21654dc6fec7039b811dd78850da462",
+    "obfuscated_routines_report.md": "6a293db23bb585dc06d3aaa67db71de65a3b5a8134bd394cba3d8e59a4393e08",
+    "mach_ports_report.md": "8259aa360f92769984ad34ccb1ec838d2eaf909b24f7bf6770b51f325cbb58b2",
+    "foundational_triage_report.md": "09efba24a2cda3262491af86dbcf3d599b00f05138f40211a5861d73c06a0379",
+    "interface_abi_report.md": "3cb515725a32e2e469b81b0de9f93a85126e51be67fdb9ec311223af1ce23372",
+    "interface_investigation_status.md": "d5914b196ed0ad525f8eb07759e7891c0fc1b0845b6edc48f9107f9e5a6c0c91",
+    "buffer_construction_flow_report.md": "cc0dc0292e8be2fd556c12655738cc5c01beccefe25aaa5377a8decfea3ee6cb"
+  },
+  "evidence_sha256": {
+    "dma_map_constraints_source.json": "e2638d583aeef11ebc06fcea4a10eed29f0ecd303481d3326a2adb42bdfafd3e",
+    "dma_map_constraints_checks.json": "f5b89c8f3cc3807426d8a630d0f05f1877dd1a93fa83f14ca21a564d844222dd",
+    "recover_dma_map_constraints.py": "4ec77896f097498c716aa90a5bd14295d63c32c747ea9c42b6bc2e2277571da8",
+    "validate_dma_map_constraints.py": "e3d64ee46d6192cb3473f39af0eda5175496931efc87e43654f31e21807521b6",
+    "seal_dma_map_constraints.py": "fc2a6f0208d27a35e923f0e03dec7a2ea979772795f94fc30d66e51962b6b272",
+    "verify_dma_map_constraints_publication.py": "3ca12d4f92691d473be4665e8f1274d849264baf407b696fca2a0c594cbd9cbf"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and DM1-DM8;source specification packing,selected61-node/65-edge graph,min/max merge,metadata helper/creator interfaces and partial48-byte initialization. Forty-four UNSAT,127 translated source sites,syntax-only SDK corroboration and six freshness alterations pass. Full lower call effects,zeroing,actual backing,complete constructor and native mappings/transfers remain unproved."
+  }
+}

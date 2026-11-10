@@ -1382,3 +1382,8 @@ The inner routes exchange record pointers,private state/IV views,external buffer
 ## Shared-buffer construction and preparation flow
 
 The new construction evidence concerns descriptor/range fields,typed allocation requests and virtual prepare/DMA/length interfaces beneath CCC7848. It establishes no new incoming/outgoing Mach right or emission site;native daemon/provider pairing remains unknown. [Evidence and exact boundaries](buffer_construction_flow_report.md).
+
+
+## DMA mapping constraints and lazy metadata
+
+Operation0x04000000 follows a fixed40-byte mapping-specification interface and updates private descriptor metadata. Its selected method graph has one lazy metadata-helper boundary. No new incoming/outgoing Mach right or emission site is established;native mapping and transport remain separate. [Evidence and exact boundaries](dma_map_constraints_report.md).

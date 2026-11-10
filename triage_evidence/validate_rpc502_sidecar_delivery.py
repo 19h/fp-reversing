@@ -360,6 +360,7 @@ def main():
     if exists(BASE/'core_stack_delta_abi_report.md'):reports.add(BASE/'core_stack_delta_abi_report.md')
     if exists(BASE/'inner_write_frontier_report.md'):reports.add(BASE/'inner_write_frontier_report.md')
     if exists(BASE/'buffer_construction_flow_report.md'):reports.add(BASE/'buffer_construction_flow_report.md')
+    if exists(BASE/'dma_map_constraints_report.md'):reports.add(BASE/'dma_map_constraints_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1729,6 +1730,10 @@ def main():
         buffer_construction_quality=json.loads(read(ROOT/'buffer_construction_flow_quality_gates.json'))
         manifest['validation']['buffer_construction_flow_increment_checks']=buffer_construction_quality['verified_counts']
         manifest['validation']['buffer_construction_flow_static_scope']=buffer_construction_quality['static_scope']
+    if exists(ROOT/'dma_map_constraints_quality_gates.json'):
+        dma_map_quality=json.loads(read(ROOT/'dma_map_constraints_quality_gates.json'))
+        manifest['validation']['dma_map_constraints_increment_checks']=dma_map_quality['verified_counts']
+        manifest['validation']['dma_map_constraints_static_scope']=dma_map_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

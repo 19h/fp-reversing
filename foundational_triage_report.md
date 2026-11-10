@@ -1428,3 +1428,8 @@ Of40 direct inner stores,36 address the private frame;the others update two cont
 ## Shared-buffer construction and preparation flow
 
 The81920-byte/options0x13 request publishes capacity at descriptor+c0 and a single range;logical length is a separate+50 field. The base initializer can request prepare before the kext explicit prepare. Source metadata,lower allocator zeroing,actual backing and native lifetime accounting remain distinct. [Evidence and exact boundaries](buffer_construction_flow_report.md).
+
+
+## DMA mapping constraints and lazy metadata
+
+The intermediate DMA step now has a source-proved unsigned-max alignment/unsigned-min address-bit merge and a61-node/65-edge selected graph. Two metadata stores plus six private-frame saves bound its direct effects. The helper touches38 of48 record bytes,including one partially preserved state byte;ten whole bytes need prior/allocator provenance. [Evidence and exact boundaries](dma_map_constraints_report.md).

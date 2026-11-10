@@ -1216,3 +1216,8 @@ Published inner-write increment:49 UNSAT,274 distinct translated sites,24 symbol
 ## Shared-buffer construction and preparation flow
 
 Published buffer-construction increment:43 UNSAT,one explicitly abstract SAT,212 translated sites,38 fragments,six nominal method slots and32 alignment-formula values. Two initialization preparation request sites and the DMA-operation boundary refine lifetime triage. Actual backing,zeroing,complete constructor CFG,callee noninterference and native transactions remain unproved;goal active. [Evidence and exact boundaries](buffer_construction_flow_report.md).
+
+
+## DMA mapping constraints and lazy metadata
+
+Published DMA-constraint increment:44 UNSAT,127 source sites,61-node/65-edge selected graph,one lazy helper boundary and exact40/48-byte joins. Fast-path protected-field noninterference holds under explicit disjointness. Full helper/lower effects,zeroing,actual backing,constructor completeness and native transfers remain unproved;goal active. [Evidence and exact boundaries](dma_map_constraints_report.md).

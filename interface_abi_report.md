@@ -1559,3 +1559,8 @@ All14 nominal inner indirect calls now have original-bank/pointer-chain bindings
 ## Shared-buffer construction and preparation flow
 
 Original construction components bind task/options/capacity/alignment/physical-mask arguments,three backend request alternatives,base options0x11b,DMA operation0x04000000 with40-byte request,and final setLength of capacity. The nominal getter/CCC7848 join still requires initialized flags,ranges and lower-call preservation. [Evidence and exact boundaries](buffer_construction_flow_report.md).
+
+
+## DMA mapping constraints and lazy metadata
+
+The constructor builds all40 bytes of a specification:alignment64,null device,zero options,address-bit value64 and zero reserves. Original operation0x04000000 consumes offsets0/+14 and merges into record+8/+2c. SDK27.2 syntax-only layout/status checks corroborate the request names without asserting historical private-layout equivalence. [Evidence and exact boundaries](dma_map_constraints_report.md).
