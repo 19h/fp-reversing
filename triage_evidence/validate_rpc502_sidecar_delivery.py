@@ -354,6 +354,7 @@ def main():
     if exists(BASE/'daemon_mode_one_budget_store_audit_report.md'):reports.add(BASE/'daemon_mode_one_budget_store_audit_report.md')
     if exists(BASE/'daemon_mode_one_computed_store_footprints_report.md'):reports.add(BASE/'daemon_mode_one_computed_store_footprints_report.md')
     if exists(BASE/'kext_query_getter_values_report.md'):reports.add(BASE/'kext_query_getter_values_report.md')
+    if exists(BASE/'versioned_request_abi_report.md'):reports.add(BASE/'versioned_request_abi_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1699,6 +1700,10 @@ def main():
         query_getter_values_quality=json.loads(read(ROOT/'kext_query_getter_values_quality_gates.json'))
         manifest['validation']['kext_query_getter_values_increment_checks']=query_getter_values_quality['verified_counts']
         manifest['validation']['kext_query_getter_values_static_scope']=query_getter_values_quality['static_scope']
+    if exists(ROOT/'versioned_request_abi_quality_gates.json'):
+        versioned_request_quality=json.loads(read(ROOT/'versioned_request_abi_quality_gates.json'))
+        manifest['validation']['versioned_request_abi_increment_checks']=versioned_request_quality['verified_counts']
+        manifest['validation']['versioned_request_abi_static_scope']=versioned_request_quality['static_scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

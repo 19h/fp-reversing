@@ -1352,3 +1352,8 @@ The computed-store footprint increment introduces no Mach-port emission or peer 
 ## Provider getter values and daemon specialization
 
 Selectors22/23 retain their zero-input/four-byte-output IOKit contracts. The pinned getter values are now source-established as0x4c0b0000/0x1f8,and conditional daemon query outcomes are specialized. This increment emits no Mach message and supplies no native port,right,connection/provider identity or live build pairing. [Evidence and exact boundaries](kext_query_getter_values_report.md).
+
+
+## Capability preparation and selector21 contract
+
+Call0x100478a04 resolves to IOConnectCallStructMethod(selector21),with552 B input,the same user input/output address and a capacity-cell pointer. Connection is u32[state+4]. The kernel descriptor is552/552 B;provider/task parameters and spans are kernel pointers,not new Mach names. No native message,right,port identity or complete construction-buffer join is established. [Evidence and exact boundaries](versioned_request_abi_report.md).

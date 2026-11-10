@@ -1186,3 +1186,8 @@ Current bounded increment:ten computed-store finite footprints,13 UNSAT/six abst
 ## Provider getter values and daemon specialization
 
 Current cross-layer increment:source-established version4c0b0000/capability1f8,three resolved getter-internal calls,twelve fresh bank equalities,record-to-return joins,conditional daemon cache specialization and four query outcomes.38 UNSAT/two abstract SAT,nine predecessor replays and eight freshness alterations pass. Native port/provider/build pairing,successful transactions and capability-bit semantics remain unresolved;goal active. [Evidence and exact boundaries](kext_query_getter_values_report.md).
+
+
+## Capability preparation and selector21 contract
+
+Published capability/preparation and selector21 ABI increment:42 UNSAT/three abstract SAT,370 translated instances,two capability readers,one complete16-byte loop,six daemon arguments,eleven provider arguments and ten core arguments. Fixed512 decompilation output is corrected. Private-call delta/frame lifetime,working-mode serialization,construction/API-buffer identity,extended preparation,core bounds and native pairing remain open;goal active. [Evidence and exact boundaries](versioned_request_abi_report.md).

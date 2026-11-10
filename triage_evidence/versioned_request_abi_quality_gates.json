@@ -1,0 +1,82 @@
+{
+  "generator_sha256": "1067837663ebe4298dd877e37512ddea242610742391e42c57de23a07c127010",
+  "static_scope": "Source-bound encoded-capability bit3/bit5/bit6/bit1 gates,conditional16-byte preparation,552-byte daemon selector21 call and complete UserClient/provider/core argument/status/count contracts. Same-frame/root/buffer joins,private-call delta/ownership,full extended preparation,native connection/provider/build pairing and core output bounds remain explicit unknowns.",
+  "verified_counts": {
+    "daemon_ranges": 18,
+    "daemon_range_instruction_instances": 1005,
+    "daemon_range_bytes": 4020,
+    "kext_ranges": 2,
+    "kext_instructions": 60,
+    "kext_bytes": 240,
+    "census_instruction_words": 3712490,
+    "census_slot_loads": 368,
+    "census_direct_field14_hits": 2,
+    "literal_bank_arrays": 8,
+    "bank_byte_inputs": 1024,
+    "literal_pool_roots": 6,
+    "branch_pointer_records": 10,
+    "selector_record_bytes": 48,
+    "loop_image_bytes": 16,
+    "queries_unsat": 42,
+    "queries_sat": 3,
+    "source_nonbranch_instruction_instances_translated": 370,
+    "source_exact_bank_cuts": 1,
+    "prefix_iterations": 16,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "versioned_request_abi_report.md": "93a0d49f3cfcfb79d62346c4ba16d5164eb8f3ad435cd705c4da0a1d3c9ab46f",
+    "obfuscated_routines_report.md": "1ba2cf6e9baf8a699e42153680cb8e84d302799a2fcce8cd5e1702c5a3beefe3",
+    "mach_ports_report.md": "ed8ac5de6e4c6009b64732aa48db6ff0981c53af63eac9a199efd58056de258e",
+    "foundational_triage_report.md": "1b6c12f4da1e420f47db85a8d3789b992476e61976bf6ee7a586d649c38999b8",
+    "interface_abi_report.md": "eb01038aec1bf6c8dccbb72244cdb1101f9c89b51906f52a95eb656464473da3",
+    "interface_investigation_status.md": "817ef8220d4635aea12bfaf0fe1d28d30666a79c550a9cbc4fb4328cedf78e7a",
+    "kext_query_getter_values_report.md": "754191a46b3d96c2dcfc980abee0389cd6882f797d056096ca3244b4b5030d59"
+  },
+  "evidence_sha256": {
+    "versioned_request_abi_source.json": "43319db5d7d5471ded1d52b78319db4821b460088e407ccbb5a44091d9a6285d",
+    "versioned_request_abi_checks.json": "2e5decc7fdc4c39fd5a3a01be9d6dced22749aea75c581ac2b0b458dafa86da0",
+    "recover_versioned_request_abi.py": "d24db02428db194798420387cf53fb14b7b9f1cd33d51edb25813f6c1ee5b105",
+    "validate_versioned_request_abi.py": "185149e05820dc7156682d4d4a7a55972ac721e647dc3ee5e8c2697d262cc833",
+    "seal_versioned_request_abi.py": "1067837663ebe4298dd877e37512ddea242610742391e42c57de23a07c127010",
+    "verify_versioned_request_abi_publication.py": "1ab00ee469f18bc1856888a90434820268e1d5d8e19c2598b50f0303574e3087"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and VA1-VA8;two capability readers,16-byte descending prefix,fixed16-byte field,private-call delta,six daemon arguments,eleven provider arguments and ten core arguments. Forty-two UNSAT,three abstract SAT,370 translated instances and eight freshness alterations pass. The kernel mutable-count source corrects the fixed512 decompilation claim. Same-frame lifetime,construction/API-buffer identity,wire-mode identity,extended preparation,provider capacity compliance and native pairing remain unproved."
+  }
+}

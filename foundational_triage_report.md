@@ -1398,3 +1398,8 @@ Ten previously retained computed-array envelopes now have fresh source equations
 ## Provider getter values and daemon specialization
 
 Pinned getter metadata is constant under the original bank/pointer epochs:version0x4c0b0000,capabilities0x1f8. Six controller writes,three stack records,three internal calls and separate result-pointer/register channels explain the apparent getter complexity. Failed capability-query fallback yields decoded8 if the version query was accepted,or0 if both were rejected;accepted capabilities remain1f8. Native outcomes are unknown. [Evidence and exact boundaries](kext_query_getter_values_report.md).
+
+
+## Capability preparation and selector21 contract
+
+Capability bit3 gates preparation;decoded bits5/6/1 affect local working modes. Private-call SP adjustment prevents assuming the old saved state pointer unless its frame contract holds. Original selector21 instructions expose a provider-mutated count initialized512,copied only on provider success,and status at output+548 while outer method status is0. The supplied C fixed512 output statement is corrected;core capacity compliance remains unknown. [Evidence and exact boundaries](versioned_request_abi_report.md).

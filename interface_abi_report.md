@@ -1529,3 +1529,8 @@ Computed destination contracts are now explicit for ten stores under their origi
 ## Provider getter values and daemon specialization
 
 The selector22/23 provider getters return zero-extended u32 values4c0b0000/1f8 through record+4,then UserClient publishes low32 and returns outer status0. The nested version helper returns a local pointer that the enclosing getter ignores. Matching the daemon status0/size64=4 guards gives exact initial cache words and all four accepted/rejected outcomes,with native routing/build pairing still a premise. [Evidence and exact boundaries](kext_query_getter_values_report.md).
+
+
+## Capability preparation and selector21 contract
+
+Selector21 has a fixed552 B structure ABI distinct from input count at+544,initial512 provider capacity,and embedded provider status at+548. The UserClient passes eleven provider arguments;qtQQt removes this and forwards ten core arguments,including two stack channels. The wrapper copies the provider-mutated count on success. The daemon API status codec and user in-place addresses are proved separately from kernel buffer aliasing and native pairing. [Evidence and exact boundaries](versioned_request_abi_report.md).

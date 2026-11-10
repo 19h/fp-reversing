@@ -1376,3 +1376,8 @@ Fresh source models discharge ten computed-store footprints:two48-iteration four
 ## Provider getter values and daemon specialization
 
 The pinned provider uOxAg/V2F1SYee route returns version0x4c0b0000;Q5TC6/QIWEiU returns capabilities0x1f8. Fresh source models prove twelve bank cancellations and three authenticated-pointer target associations. The version adapter overwrites caller record+4 after a nested constant-marker leaf;the capability leaf writes record+4 directly. Record-result channels,ordinary return premises and unknown capability-bit meanings are explicit. [Evidence and exact boundaries](kext_query_getter_values_report.md).
+
+
+## Capability preparation and selector21 contract
+
+Two daemon capability readers now have source bit/slot contracts. Conditional working-mode values1/2/5/6,a complete16-byte prefix and a fixed16-byte field are recovered without assigning wire-mode identity or an algorithm. The qtQQt provider adapter has an exact ten-argument core tail into UeFdbi;its incoming this/task/scalar/span/count channels are distinguished. [Evidence and exact boundaries](versioned_request_abi_report.md).

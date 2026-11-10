@@ -130,3 +130,8 @@ This table describes source-level composition after successful discovery/open an
 - QG5:Constant returned data and controller side effects,private record words and wire commands,returned pointer and metadata value,provider data and UserClient status,accepted query and fallback capability,static and native pairing remain distinct.
 - QG6:Original KC/normalized bytes,descriptor/member/vtable pointers,eight byte arrays,twelve fresh source equalities,38 UNSAT,two abstract SAT,nine original predecessor replays,saved IDA hashes and eight freshness alterations provide scoped provenance.
 - QG7:Impact-ranked continuation targets encoded-field readers,selector21 ABI,native endpoint identity,mutable controller epochs and overrides;no capability-bit function or successful native exchange is invented.
+
+
+## Capability preparation and selector21 contract
+
+Source consumers refine four local capability-bit roles:bit3 gates16-byte preparation,with bits5/6/1 participating in conditional working-mode selection. These values are not yet equated with wire fields. The accompanying selector21 contract proves complete provider/core argument shuffling and a mutable output count,correcting the supplied C fixed512 statement. Bits7/8,application-level meanings and native pairing remain unresolved. [Evidence and exact boundaries](versioned_request_abi_report.md).
