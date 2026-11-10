@@ -176,3 +176,5 @@ QG5: Register ABI and changed frame epoch are distinct; bounds and initialized t
 QG6: Original bytes/fixups, fresh prior-source recapture, original-source solver equalities and complete retained ledgers support the stated scope; no new native or IDA observation is claimed.
 
 QG7: The bounded continuation prioritizes advanced-BIAS re-entry, the alternative block, decoded state, lifecycle and actual cross-layer publication.
+
+Follow-up: [Position-aware re-entry and bounded absorption cycle](daemon_mode_one_record_reentry_report.md) proves the changed frame epoch,shifted short/full record addresses,the24/15 seed-word split,and conditional cycle coverage while retaining the modular-boundary counterexample.

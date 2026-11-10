@@ -1,0 +1,105 @@
+{
+  "generator_sha256": "a929ed361716b29f8c6fa64c70e447a9031bd99c44c494dd025216c8f6103e2f",
+  "static_scope": "Parameterized position-aware re-entry:original modular COUNT threshold,complete short-remainder address/codec/loop contract,four16-byte full-prefix steps,64-byte biased progress and conditional control/address cycle composition. Counter-wrap behavior is retained as abstract evidence;native acceptance/owners/traversal,decoded state and daemon-kext output pairing remain unknown.",
+  "verified_counts": {
+    "source_ranges": 7,
+    "source_instructions": 9598,
+    "source_bytes": 38392,
+    "pointer_records": 9,
+    "branch_bindings": 11,
+    "SP_writes": 0,
+    "comparison_role_corrections": 14,
+    "bitfield_decodes_checked": 8,
+    "pair_store_decodes_checked": 0,
+    "EON_decodes_checked": 2,
+    "pair_load_decodes_checked": 1,
+    "ADRP_decodes_checked": 0,
+    "prior_ranges_recaptured": 20,
+    "prior_bytes_recaptured": 117792,
+    "queries_unsat": 97,
+    "queries_sat": 6,
+    "predecessor_queries_replayed": 45,
+    "source_nonbranch_sites_translated": 9591,
+    "initializer_frame_aliases": 27,
+    "initializer_indexed_store_addresses": 5,
+    "initializer_universal_intermediate_overapproximations": 4,
+    "initializer_plane_stores": 128,
+    "short_parameterized_body_sites": 271,
+    "short_max_byte_reads": 63,
+    "short_finite_plane_address_cases": 128,
+    "short_source_cuts": 3,
+    "full_body_steps": 4,
+    "full_record_byte_reads": 64,
+    "full_plane_byte_reads": 128,
+    "full_plane_byte_stores": 128,
+    "full_original_byte_addresses_proved": 320,
+    "full_selected_instances_including_seed_exit": 19194,
+    "full_selected_instances_including_initializer": 23368,
+    "full_seed_state_words": 8,
+    "full_seed_control_coordinate_words": 39,
+    "full_seed_fixed_words": 24,
+    "full_seed_position_words": 15,
+    "full_CSEL_arm_equalities": 4,
+    "full_V_linearity_certificates": 4,
+    "retained_codebook_cells": 800,
+    "cycle_progress_preservation_stages": 3,
+    "cycle_max_COUNT_proved": 4294967232,
+    "positive_reentry_overwritten_plane_bytes": 128,
+    "rejected_alterations": 8
+  },
+  "report_sha256": {
+    "daemon_mode_one_record_reentry_report.md": "3c788e4b6719c32b6fc22710e084cf83dfb8e5b6b34818495d7e0979fe18d255",
+    "obfuscated_routines_report.md": "a7b875a5a7d0ec485c15fb26bc3fff230cd57b3f75bd26e6aeaed6da2f9fcb56",
+    "mach_ports_report.md": "7f28890c46810338edbe1047c11bfb476a85557a2090719733c4a64dc5d68138",
+    "foundational_triage_report.md": "73ef15f4048318f84ee0745e7b1ec125f80d9f375be756399af267eacdc89e0a",
+    "interface_abi_report.md": "33699a16d6af3d2c0f2694f15e77f33275b82f7d9302cb520cbebe76abb85779",
+    "interface_investigation_status.md": "d681a3f21b53365be3beb181c4e5f0d0de48b995a9a47940da164c6774746773",
+    "daemon_mode_one_record_rounds_report.md": "93f117d022051933b8aa9558182da1e104bf76c92f64134472071387cf3791e3"
+  },
+  "evidence_sha256": {
+    "daemon_mode_one_record_reentry_source.json": "81f1538c6aea3b17ea540333fe22c7a7413185dbab54ef1e20dd984c0043e847",
+    "daemon_mode_one_record_reentry_checks.json": "207ed0b4f8112b0aede7764050b1ecad2d358501d98dbfceffa3fcdd3acc4b03",
+    "recover_daemon_mode_one_record_reentry.py": "23903c8fd7d316d0c8c73bdc42751981c21e886a71f43c3cd0ce3226c33530c2",
+    "validate_daemon_mode_one_record_reentry.py": "447f20cb4b04b857e4c83860bbc22ef7bbd1d07ade0ddcc62186d6ca6a90d401",
+    "seal_daemon_mode_one_record_reentry.py": "a929ed361716b29f8c6fa64c70e447a9031bd99c44c494dd025216c8f6103e2f",
+    "verify_daemon_mode_one_record_reentry_publication.py": "0c82a13402cbf87dc6674cba8df35764725e3e4bc00079101bf2226e4d6898fd"
+  },
+  "goal_status": "active",
+  "target_executed": false,
+  "target_emulated": false,
+  "FairPlay_requests_sent": false,
+  "native_listener_identity_proved": false,
+  "native_peer_identity_proved": false,
+  "native_authorization_proved": false,
+  "hardware_PAC_checked": false,
+  "IDB_mutated": false,
+  "full_goal_complete": false,
+  "QG1": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG1 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  },
+  "QG2": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG2 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  },
+  "QG3": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG3 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  },
+  "QG4": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG4 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  },
+  "QG5": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG5 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  },
+  "QG6": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG6 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  },
+  "QG7": {
+    "status": "pass_for_increment",
+    "evidence": "Report QG7 and RE1-RE8;9591 unique sites,97 UNSAT/six SAT including45 selected predecessor queries;parameterized short/full addresses and XOR updates,24 fixed/15 position seed words,64-byte progress,conditional bounded cycle coverage and128 overwritten-before-read plane bytes. Full-u32 length conformance,caller limits,native traversal/output,decoded state and daemon-kext pairing remain unknown."
+  }
+}
