@@ -145,3 +145,6 @@ Source recovery/proof construction costs O(B+I+P) time/space for source bytes B,
 - **QG7**: Further work is bounded and impact-ranked; native scheduling, IPC completion and pointer epochs remain unknown.
 
 Evidence: [source and certificates](triage_evidence/aes_runqueue_membership_checks.json.zst), [generator](triage_evidence/recover_aes_runqueue_membership.py), [independent interpreter](triage_evidence/audit_aes_runqueue_membership.py), [publication audit](triage_evidence/verify_aes_runqueue_membership_publication.py).
+
+
+The [AES cached-class report](aes_cached_class_queue_report.md) establishes the original paired-record constructor, 96 initialized priority heads, two distinct class queue headers, complete selected cached backend, deadline-heap publication and parent-summary return. Thirty new UNSAT checks, four abstract SAT controls and 1717 private cases pass, including 1152 constructor/snapshot/backend compositions. The earlier 128-value enqueue sweep remains an abstract domain; native range enforcement, uncached placement, ownership/scheduling and matched daemon completion remain unknown (CQ1-CQ8).

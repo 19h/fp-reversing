@@ -394,6 +394,7 @@ def main():
     if exists(BASE/'aes_event_wake_selection_report.md'):reports.add(BASE/'aes_event_wake_selection_report.md')
     if exists(BASE/'aes_block_wake_handshake_report.md'):reports.add(BASE/'aes_block_wake_handshake_report.md')
     if exists(BASE/'aes_runqueue_membership_report.md'):reports.add(BASE/'aes_runqueue_membership_report.md')
+    if exists(BASE/'aes_cached_class_queue_report.md'):reports.add(BASE/'aes_cached_class_queue_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1900,6 +1901,10 @@ def main():
         runqueue_checks=json.loads(read(ROOT/'aes_runqueue_membership_checks.json'))
         manifest['validation']['aes_runqueue_membership_increment_checks']=runqueue_checks['verified_counts']
         manifest['validation']['aes_runqueue_membership_static_scope']=runqueue_checks['scope']
+    if exists(ROOT/'aes_cached_class_queue_checks.json'):
+        cached_class_checks=json.loads(read(ROOT/'aes_cached_class_queue_checks.json'))
+        manifest['validation']['aes_cached_class_queue_increment_checks']=cached_class_checks['verified_counts']
+        manifest['validation']['aes_cached_class_queue_static_scope']=cached_class_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

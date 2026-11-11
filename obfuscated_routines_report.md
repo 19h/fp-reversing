@@ -1474,3 +1474,6 @@ The [AES block/wake handshake report](aes_block_wake_handshake_report.md) establ
 
 
 The [AES runqueue membership report](aes_runqueue_membership_report.md) extends the prior placement frontier through the original bound-context backend and compact priority-ring insertion. It recovers maximum-increase return semantics, append/prepend flags, two occupancy words, classified/total counters, cumulative class increments and 1112/112/200 B record strides. Twenty-four new UNSAT checks, three abstract SAT controls and 4142 private cases pass, including twelve complete selected placement routes. Generic-backend completion, native ownership/scheduling and matched daemon-kext results remain unknown; the broader goal stays active (RQ1-RQ8).
+
+
+The [AES cached-class report](aes_cached_class_queue_report.md) establishes the original paired-record constructor, 96 initialized priority heads, two distinct class queue headers, complete selected cached backend, deadline-heap publication and parent-summary return. Thirty new UNSAT checks, four abstract SAT controls and 1717 private cases pass, including 1152 constructor/snapshot/backend compositions. The earlier 128-value enqueue sweep remains an abstract domain; native range enforcement, uncached placement, ownership/scheduling and matched daemon completion remain unknown (CQ1-CQ8).
