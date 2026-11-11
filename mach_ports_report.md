@@ -1465,3 +1465,7 @@ The [CoreFP1201 record/cursor increment](fpsd1201_record_report.md) closes zero 
 The [CoreFP1201 byte-import report](fpsd1201_import_report.md) identifies0x17bbb8 as a big-endian byte-to-encoded-limb importer,with selected unsigned length0..256 B and normalized limb counts. Eight nested prefixes import128 bytes from diagnostic context C,leave candidate P+0x880 untouched and stop before0x98189c ->0x14fac64. Sixty-eight independently audited cases and matching reference-file corroboration establish this local ABI; complete protected processing,native port lineage and daemon/kext pairing remain unknown.
 
 The [CoreFP1201 operand-preparation report](fpsd1201_operand_report.md) resolves the selected negative-inverse coefficient, separates three descriptor identities and follows the original scalar-one initializer. Eight unchanged-context cases stop before an unbacked payload read; 28 explicitly backed prefixes stop before 0x14f9408 -> 0x5a600c. Forty source obligations, independent replay and odd/even controls support this local contract. Native context production, complete arithmetic, port lineage and daemon/kext pairing remain unknown.
+
+## CoreFP1201 signed-shift continuation
+
+The [CoreFP signed-shift increment](fpsd1201_shift_report.md) completes a local arithmetic primitive and classifies its zero/sign dependencies. No selected executed path calls a Mach API or emits a right. The caller advances to the unexecuted 0x14f94c4 -> 0x649430 boundary; native request1200/request1201 endpoint continuity and daemon/kext lineage remain open.

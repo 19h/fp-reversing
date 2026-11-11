@@ -146,3 +146,7 @@ The u32 recurrence has 31 bounded iterations and constant word storage. Generali
 | Medium | Recover synchronization and lifetime rules for the shared mutable state cells, including the wrapper/child's common state B. |
 
 **QG1** passes: factual technical analysis. **QG2** passes: OP1-OP8 state assumptions, dependencies and probes. **QG3** passes for the operand-preparation increment; the full goal remains incomplete. **QG4** passes: u32/u64 modular widths, scalar/count distinction, byte extents and induction agree. **QG5** passes: unbacked versus backed inputs, even controls, distinct descriptors, incomplete IDA bounds and stopped returns are explicit. **QG6** passes: primary binary bytes, matching file, original fixups, distinct source lifters, independent replay and scoped proofs support the claims. **QG7** passes: impact-ranked continuation covers arithmetic, context production, ownership and native interface joins.
+
+## CoreFP1201 signed-shift continuation
+
+The [signed-shift continuation](fpsd1201_shift_report.md) continues eight of this report's explicitly backed prefixes through complete 0x5a600c returns. It identifies both shift paths and zero/sign dependencies, producing 2^32 from scalar 1 for one context limb and retaining 1 for count zero. The next boundary is 0x14f94c4 -> 0x649430. This supersedes the local stop-before-shift boundary for those controls; native context production, complete arithmetic-child return and native IPC lineage remain unknown.

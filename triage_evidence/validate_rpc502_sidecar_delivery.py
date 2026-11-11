@@ -416,6 +416,7 @@ def main():
     if exists(BASE/'fpsd1201_record_report.md'):reports.add(BASE/'fpsd1201_record_report.md')
     if exists(BASE/'fpsd1201_import_report.md'):reports.add(BASE/'fpsd1201_import_report.md')
     if exists(BASE/'fpsd1201_operand_report.md'):reports.add(BASE/'fpsd1201_operand_report.md')
+    if exists(BASE/'fpsd1201_shift_report.md'):reports.add(BASE/'fpsd1201_shift_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2010,6 +2011,10 @@ def main():
         operand_checks=json.loads(read(ROOT/'fpsd1201_operand_checks.json'))
         manifest['validation']['fpsd1201_operand_increment_checks']=operand_checks['verified_counts']
         manifest['validation']['fpsd1201_operand_static_scope']=operand_checks['scope']
+    if exists(ROOT/'fpsd1201_shift_checks.json'):
+        shift_checks=json.loads(read(ROOT/'fpsd1201_shift_checks.json'))
+        manifest['validation']['fpsd1201_shift_increment_checks']=shift_checks['verified_counts']
+        manifest['validation']['fpsd1201_shift_static_scope']=shift_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
