@@ -1595,3 +1595,7 @@ The [CoreFP1201 operand-preparation report](fpsd1201_operand_report.md) resolves
 ## CoreFP1201 signed-shift continuation
 
 The [signed-shift increment](fpsd1201_shift_report.md) identifies five obfuscated CoreFP routines as a signed-shift dispatcher, left/right limb paths and zero/sign queries. Fresh IDA and original-file correspondence cover 5700 B; independent replay checks 144 configurations and 168717 visits. Source-constructor proofs and complete finite arithmetic returns remain distinct. Native descriptor bounds, context production, whole-parent stack epochs and daemon/kext pairing remain unknown.
+
+## CoreFP1201 working-copy and comparison continuation
+
+The [working-copy/comparison increment](fpsd1201_comparison_report.md) resolves 0x649430 as an encoded count/limb copier and 0x33abec as a conditional signed-integer comparator. Independent replay covers 243 configurations and 176644 visits. Noncanonical-zero controls bound numeric semantics; source padding proofs explain the working descriptor's varying absolute stack address. Native context production, complete arithmetic, frame epochs and daemon/kext pairing remain unknown.

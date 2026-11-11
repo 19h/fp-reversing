@@ -1469,3 +1469,7 @@ The [CoreFP1201 operand-preparation report](fpsd1201_operand_report.md) resolves
 ## CoreFP1201 signed-shift continuation
 
 The [CoreFP signed-shift increment](fpsd1201_shift_report.md) completes a local arithmetic primitive and classifies its zero/sign dependencies. No selected executed path calls a Mach API or emits a right. The caller advances to the unexecuted 0x14f94c4 -> 0x649430 boundary; native request1200/request1201 endpoint continuity and daemon/kext lineage remain open.
+
+## CoreFP1201 working-copy and comparison continuation
+
+The [CoreFP working-copy/comparison increment](fpsd1201_comparison_report.md) recovers local descriptor copy, signed comparison and dynamic frame geometry. No selected executed path emits a right or calls a Mach API. Eight caller continuations reach the unexecuted 0x14f9d74 -> 0x5e8158 call; native request1200/request1201 endpoint continuity and daemon/kext pairing remain open.

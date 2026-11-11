@@ -179,3 +179,7 @@ The [CoreFP1201 operand-preparation report](fpsd1201_operand_report.md) resolves
 ## CoreFP1201 signed-shift continuation
 
 The [signed-shift increment](fpsd1201_shift_report.md) follows the scalar-one temporary through complete original 0x5a600c dispatch and both leaf/query dependencies. Eight continued caller cases produce 2^32 for one context limb or retain 1 for count zero, then stop before 0x14f94c4 -> 0x649430. Another 136 isolated cases and independent integer oracles establish the bounded signed-magnitude shift contract. Native request1200-to1201 endpoint/data lineage and complete protected processing remain unknown.
+
+## CoreFP1201 working-copy and comparison continuation
+
+The [working-copy/comparison increment](fpsd1201_comparison_report.md) follows the context copy and two complete original comparisons after radix preparation. Eight caller cases compare original and copied context against the same radix descriptor, then stop before 0x14f9d74 -> 0x5e8158. Independent byte/integer oracles and source checks distinguish canonical comparison from four noncanonical-zero controls and resolve seed-dependent frame padding. Native endpoint/data lineage and complete protected processing remain unknown.

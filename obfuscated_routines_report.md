@@ -1553,3 +1553,7 @@ The [CoreFP1201 operand-preparation report](fpsd1201_operand_report.md) resolves
 ## CoreFP1201 signed-shift continuation
 
 The [signed-shift recovery](fpsd1201_shift_report.md) assigns bounded functional roles to 0x5a600c (signed dispatcher), 0x5a6774 (left shift), 0x4be1cc (magnitude right shift), 0x624ff0 (sign query) and 0x5dcd08 (zero predicate). Five fresh compiler-bounded IDA spans and 144 independently replayed complete shift results support these roles. Universal amount/partition identities are proved; the complete arbitrary-size algorithm is not universally proved. The next original helper is 0x649430, whose grammar remains unknown.
+
+## CoreFP1201 working-copy and comparison continuation
+
+The [working-copy/comparison recovery](fpsd1201_comparison_report.md) identifies 0x649430 as a count/raw-limb copier with same-descriptor bypass and 0x33abec as a biased signed comparator under canonical-count assumptions. Two fresh compiler-bounded IDA spans, 243 independent configurations and 23 retained source obligations support the local contracts. Four noncanonical-zero cases delimit numeric semantics. The next original helper is 0x5e8158; complete arithmetic and native lineage remain unknown.

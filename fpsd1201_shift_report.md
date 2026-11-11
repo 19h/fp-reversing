@@ -143,3 +143,7 @@ The audit checks 168717 original visits, 25418 reads, 6815 writes, 5871 PAC mode
 | Low | Extend query contracts to noncanonical representations. | Add leading-zero and empty/null-payload diagnostic fixtures separately; preserve the distinction between representation normalization and numeric zero. |
 
 Quality gates: **QG1** no normative content is required. **QG2** SH1-SH8 state assumptions, dependent results and falsification probes. **QG3** routine functions, record/call contracts, data/control flow, port consequences and continuation are covered. **QG4** byte sizes and modulo-word equations are reproducible; shifts use bits and limbs use 32 bits. **QG5** finite, universal and native claims are separated; rejected codec and duplicate-zero cases are explicit. **QG6** pinned original bytes, compiler boundaries, independent source parsing/replay and source-constructor proofs support claims. **QG7** impact-ranked continuation remains bounded. The full investigation remains active.
+
+## CoreFP1201 working-copy and comparison continuation
+
+The [working-copy/comparison continuation](fpsd1201_comparison_report.md) continues the eight caller cases through 0x649430 and two 0x33abec comparisons, reaching the unexecuted 0x14f9d74 -> 0x5e8158 call. It establishes a separate working context and resolves seed-dependent wrapper padding. This supersedes this report's stop-before-copy boundary for those controls; native context production, complete arithmetic-child return and IPC lineage remain unknown.
