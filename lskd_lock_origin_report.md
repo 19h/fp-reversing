@@ -134,3 +134,5 @@ The instruction lift costs O(I) DAG construction and space. Byte-bank checks cos
 - **QG5** passes with separate cells, selector premises, status namespaces, local source composition and unknown native epochs.
 - **QG6** passes with original bytes, chained roots, exact imports, supplied reference excerpts, 18 source-derived proofs and complete recapture.
 - **QG7** passes with impact-ranked caller, publication, status and lifetime questions.
+
+The subsequent [SecureTime report](lskd_secure_time_report.md) supplies a second concrete destination for child phase `0x90d`: the member at `+0x18` of a published 64 B `site.LSKDSecureTime` object. Its caller preclears that member and returns raw success even on nonzero constructor status. This is distinct from the global LSKD RW-cell preparer; native allocation and matched ownership remain unknown.

@@ -373,6 +373,7 @@ def main():
     if exists(BASE/'lskd_start_lock_flow_report.md'):reports.add(BASE/'lskd_start_lock_flow_report.md')
     if exists(BASE/'lskd_vector_origin_report.md'):reports.add(BASE/'lskd_vector_origin_report.md')
     if exists(BASE/'lskd_element_population_report.md'):reports.add(BASE/'lskd_element_population_report.md')
+    if exists(BASE/'lskd_secure_time_report.md'):reports.add(BASE/'lskd_secure_time_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1795,6 +1796,10 @@ def main():
         lskd_population_checks=json.loads(read(ROOT/'lskd_element_population_checks.json'))
         manifest['validation']['lskd_element_population_increment_checks']=lskd_population_checks['verified_counts']
         manifest['validation']['lskd_element_population_static_scope']=lskd_population_checks['scope']
+    if exists(ROOT/'lskd_secure_time_checks.json'):
+        secure_time_checks=json.loads(read(ROOT/'lskd_secure_time_checks.json'))
+        manifest['validation']['lskd_secure_time_increment_checks']=secure_time_checks['verified_counts']
+        manifest['validation']['lskd_secure_time_static_scope']=secure_time_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

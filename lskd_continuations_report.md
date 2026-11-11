@@ -219,3 +219,5 @@ Time is O(B+C*(V+E)+I+256R), plus source mapping and solver-dependent cost (30 s
 | QG7 | Pass | Impact-labeled continuation table |
 
 [Element population and representation](lskd_element_population_report.md) recovers the conditional 1024-slot loop, 32 sixteen-byte rewrites and 63 distinct-word swaps per nonnull body, transformed-slot publication, completion-record phase `0x1c8ff7c8`, returning-helper raw-success handoff, cached-lock release and the separate presence gate. Twenty-two UNSAT queries cover 154 lifted instruction instances, including the complete 42-instruction SIMD body. Full pointer-codec/helper semantics, native ownership/population and a daemon reply remain unknown.
+
+The subsequent [SecureTime report](lskd_secure_time_report.md) establishes an explicit-pointer caller of acquisition phase `0x2d2`: a freshly reloaded member at `+0x18` of the published SecureTime object. Under successful construction and a stable object epoch, this selects the embedded RW rather than the earlier cached-global fallback. Its entropy/clock suffix and still-unrecovered retirement must be joined before claiming native ownership or balance.

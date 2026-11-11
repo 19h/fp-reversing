@@ -2,7 +2,7 @@
 
 The start source contains a 1,024-slot population loop. After each returning element allocation and initial field/tag stores, its nonnull-slot arm rewrites 512 B, swaps 64 eight-byte words through 63 distinct-index exchanges, and overwrites the vector slot with a transformed word. The footer advances the slot index and repeats until 1,024 slots have been processed. This supplies the loop and representation context missing from the [vector-origin report](lskd_vector_origin_report.md). Complete stack-byte pointer-codec semantics and native population remain **unknown**. [EP1-EP7]
 
-The loop exit selects helper `0xfffffe000a52f728` with a newly recovered record. If that helper returns, the caller supplies raw success `0x5e561849` to the shared cached-lock release path. A subsequent presence gate at cell `0xfffffe000ccc78c0` determines whether to return that raw success or enter another source continuation. The helper's effects, native lock ownership and a daemon-facing reply remain unestablished. [EP3,EP8-EP9]
+The loop exit selects helper `0xfffffe000a52f728` with a newly recovered record. The subsequent [SecureTime analysis](lskd_secure_time_report.md) establishes that helper as an eight-byte compiler-bounded `BTI C; RET` no-op, without record accesses. The caller supplies raw success `0x5e561849` to the shared cached-lock release path. A subsequent presence gate at cell `0xfffffe000ccc78c0` determines whether to return that raw success or allocate the now-identified 64 B SecureTime object. Native lock ownership and a daemon-facing reply remain unestablished. [EP3,EP8-EP9]
 
 [Original source and checks](triage_evidence/lskd_element_population_checks.json.zst), the [extractor](triage_evidence/recover_lskd_element_population.py) and the [publication audit](triage_evidence/verify_lskd_element_population_publication.py) retain eight kext spans containing 407 instructions / 1,628 B, 23 operand anchors, two exhaustive banks covering 512 inputs, nine authenticated slots, and thirteen retained frames with eleven fields each. Twenty-two UNSAT queries cover 154 source-lifted instruction instances, including all 42 instructions of the sixteen-byte SIMD rewrite body. No new target, allocator, entropy, synchronization or IDA execution occurred.
 
@@ -22,7 +22,7 @@ previous source: acquire -> vector allocation/publication -> index 0
                            -> cached RW release adapter
                            -> presence cell CCC78C0
                                 nonnull -> raw-success result return
-                                null    -> A5268DC [next frontier]
+                                null    -> A5268DC [SecureTime allocation]
 ```
 
 Diagram addresses abbreviate prefix `0xfffffe000`. The source can reach the footer directly on its reloaded-null-slot arm; that does not remove the earlier field writes or establish a successful null allocation. The diagram's repeated object effects assume accessible storage and the source memory/epoch premises below.
@@ -121,9 +121,9 @@ The earlier vector-allocation continuation initializes the index to zero. Under 
 
 | Conditional source quantity | Calculation | Scope |
 | --- | --- | --- |
-| Element typed-allocation calls | 1024 | Excludes any allocation inside the unreduced completion helper |
+| Element typed-allocation calls | 1024 | Population-loop count; later inspection establishes that the completion helper has no calls |
 | Declared element payload total | `1024 * 512 B = 524288 B` | Sum of descriptor sizes; actual backing and overhead unknown |
-| Vector plus element declarations | `8192 B + 524288 B = 532480 B` | 520 KiB nominal payload; excludes lock and helper internals |
+| Vector plus element declarations | `8192 B + 524288 B = 532480 B` | 520 KiB nominal payload; excludes lock storage and the later 64 B SecureTime allocation |
 | SIMD rewrite iterations | `1024 * 32 = 32768` | Assumes each reloaded slot takes the nonnull body |
 | Word-swap iterations | `1024 * 63 = 64512` | Same nonnull-body premise |
 
@@ -139,7 +139,7 @@ record_u32[0] = key32 XOR u32(0x3BE + 0x1C8FF40A)
               = key32 XOR 0x1C8FF7C8
 ```
 
-This is the caller's encoded-control relation. It does not establish how the selected helper interprets the phase. The remaining explicit caller stores are:
+This is the caller's encoded-control relation. Subsequent compiler-bounded inspection establishes that the selected helper does not read or decode it. The remaining explicit caller stores are:
 
 | Record offset | Width | Source-written argument |
 | --- | --- | --- |
@@ -149,7 +149,7 @@ This is the caller's encoded-control relation. It does not establish how the sel
 | `+0x20` | u64 | Child address W`+0x1c0` |
 | `+0x28` | u64 | Workspace limit W`+0x4000` |
 
-These stores cover 36 unique bytes in a 48 B field envelope. They do not newly write record `+4..+7` or `+0x18..+0x1f`; those prior contents remain separate epochs. The exhaustive SP`+0x150/+0x158` bank resolves original slot `0xfffffe0008471450` to `0xfffffe000a52f728`, diversity `0x6e7d`, at call `0xfffffe000a56e9e4`. The helper body and any record outputs remain outside this increment. [EP8]
+These stores cover 36 unique bytes in a 48 B field envelope. They do not newly write record `+4..+7` or `+0x18..+0x1f`; those prior contents remain separate epochs. The exhaustive SP`+0x150/+0x158` bank resolves original slot `0xfffffe0008471450` to `0xfffffe000a52f728`, diversity `0x6e7d`, at call `0xfffffe000a56e9e4`. The later [SecureTime report](lskd_secure_time_report.md) captures its complete eight-byte body and proves there are no record accesses or outputs in this selected callee. The original population artifact remains a frozen record of this increment's narrower scope. [EP8]
 
 If that call returns, source `0xfffffe000a56e9ec..0xfffffe000a56e9f0` explicitly supplies W9=`0x5e561849`. There is no intervening comparison of the helper's returned status on this captured caller suffix. Saved index `0x15f` selects the shared status/release block `0xfffffe000a529758`, diversity `0x6a52`. That block saves the raw word in scratch W`+0x180` and enters the [previously recovered release preparation](lskd_vector_origin_report.md): selector `0x1d3`, null explicit lock pointer, cached-RW release adapter `0xfffffe000a551f38`. Its original slot is `0xfffffe0008471498`, diversity `0x84cc`. Actual `IORWLockUnlock` still requires a nonnull valid cached pointer and a matching owned lock epoch. [EP8-EP9]
 
@@ -158,9 +158,9 @@ After the release adapter returns, the source reloads the scratch word. Raw succ
 | Fresh presence value | Table index / target | Established continuation |
 | --- | --- | --- |
 | Nonzero | `0x1fb` / `0xfffffe000a52e4b0`, diversity `0x2984` | Stores raw success at receiver `+0x38`, restores caller frame and returns |
-| Zero | `0x74c` / `0xfffffe000a5268dc`, diversity `0x2984` | Supplies raw success in W8 to another source body; final effects unknown |
+| Zero | `0x74c` / `0xfffffe000a5268dc`, diversity `0x2984` | Supplies raw success in W8 to the later-recovered SecureTime allocation body; completed initialization remains unknown |
 
-Cell `0xfffffe000ccc78c0` is distinct from the vector cell at `0xfffffe000ccc78d0`, the seed-pointer cell at `0xfffffe000ccc78b8` and RW cell at `0xfffffe000ccc78a8`. No new producer or native value for the presence cell is established here. A returning completion helper therefore does not by itself prove the final start result, whole initialization or an outer transport response.
+Cell `0xfffffe000ccc78c0` is distinct from the vector cell at `0xfffffe000ccc78d0`, the seed-pointer cell at `0xfffffe000ccc78b8` and RW cell at `0xfffffe000ccc78a8`. Its source producer is now established by the [SecureTime report](lskd_secure_time_report.md); the actual native value remains unknown. The no-op completion helper does not by itself prove the final start result, whole initialization or an outer transport response.
 
 ## Assumption register
 
@@ -173,7 +173,7 @@ Cell `0xfffffe000ccc78c0` is distinct from the vector cell at `0xfffffe000ccc78d
 | EP5 | The reloaded element pointer designates 512 accessible bytes. The full rewrite and its data reads depend on that capacity premise. | Establish actual allocator outcomes, links, backing capacity and initialization policy; retain the prior slice's 348 unwritten bytes as unknown inputs. |
 | EP6 | A64/AdvSIMD arithmetic, TBL out-of-range zeroing and unsigned UDIV/MSUB have the declared instruction semantics. Local formulas depend on those semantics. | Interpret original operands, image-loaded selectors and all 42 body instructions; solve byte, coordinate, inverse and remainder mismatch queries. |
 | EP7 | The two swap addresses are distinct and the captured register/frame state reaches the footer. The permutation and 1024-iteration source count depend on this. | Prove `0 <= j < i <= 63`, re-lift the three-store swap and counter, and check preserved registers and exact continuation slots. |
-| EP8 | The completion helper accepts the supplied record and returns without invalidating caller state. The post-helper raw-success handoff depends on that return. | Recover its decoder, record reads/writes, nested calls and native admissibility before assigning semantic success or ownership. |
+| EP8 | The selected completion call returns normally through the pinned eight-byte no-op. The post-helper raw-success handoff depends on that return and caller state. | Recheck the later report's exact compiler bounds and `BTI C; RET` bytes; establish native control/authentication separately. There is no source record decoder in this callee. |
 | EP9 | A stable cached-lock epoch and fresh presence load join the source suffix. Native release and a complete reply depend on additional evidence. | Match actual acquisition/release identity and ownership, enumerate competing writers, trace the zero-presence continuation and outer transport forwarding. |
 
 ## Bounded continuation
@@ -181,8 +181,8 @@ Cell `0xfffffe000ccc78c0` is distinct from the vector cell at `0xfffffe000ccc78d
 | Impact | Further question | Required evidence |
 | --- | --- | --- |
 | High | What is the complete vector-slot pointer codec, and how do readers decode it? | Prefix/suffix byte-permutation ranges, exact inverse and a source-pinned writer/reader equivalence under matching seed epochs. |
-| High | What does helper `0xfffffe000a52f728` construct or publish? | Actual phase decoder, all record outputs and stores, nested interfaces and native admission. |
-| High | What happens when post-release presence cell `0xfffffe000ccc78c0` is zero? | Original continuation `0xfffffe000a5268dc`, state writers and complete return path. |
+| High | How does SecureTime initialization complete after its clock query? | The later report resolves the helper as a no-op and the zero-presence arm as typed allocation/embedded-RW construction; follow clock consumer `0xfffffe000a51c0e0`, field writes and retirement. |
+| High | How is a partially initialized published SecureTime object admitted by later consumers? | All producers/readers and native allocation/publication epochs; source null and constructor-failure arms return the same raw-success word. |
 | High | Do native allocation and locking satisfy the repeated-body premises? | Matching runtime metadata, allocation results, accessible contents, lock identity and ownership. |
 | Medium | How do the period-256 byte relation and word shuffle appear in retained readers? | Their inverse or equivalent source data flow; literal multipliers alone do not identify a standardized algorithm. |
 
@@ -196,6 +196,6 @@ Extraction costs O(B+I+E+256R) time and storage for consumed source bytes B, ins
 - **QG2** passes with EP1-EP9, dependent results and falsification probes.
 - **QG3** passes for this increment's outer loop, exact SIMD byte relation, distinct-word swaps, slot overwrite and completion/release/presence interfaces. The full objective remains active.
 - **QG4** passes with u8/u32/u64 widths, explicit modular arithmetic, byte offsets, iteration counts and descriptor-size sums.
-- **QG5** passes with opaque preexisting bytes, distinct global roles, direct-null versus transformed footer entries, conditional source counts and unreduced codec/helper semantics.
+- **QG5** passes with opaque preexisting bytes, distinct global roles, direct-null versus transformed footer entries, conditional source counts and the unreduced pointer codec. The later SecureTime report resolves the selected completion helper as a no-op.
 - **QG6** passes with original bytes, C excerpts, data tables, chained slots, retained byte epochs, register-write audit and twenty-two checked queries.
-- **QG7** passes with impact-ranked codec, helper, presence, runtime and inverse-reader questions.
+- **QG7** passes with impact-ranked codec, SecureTime continuation, runtime and inverse-reader questions.
