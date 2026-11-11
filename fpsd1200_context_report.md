@@ -195,3 +195,7 @@ The replay costs O(B+F+C*K+R+256*N) time and O(B+F+R) transient space: B is mapp
 **QG6** Pass: pinned source/fixup/library/context/certificate provenance, fresh read-only IDA span checks, independent event replay and one local UNSAT certificate support the bounded claims.
 
 **QG7** Pass: impact-ranked continuation questions are bounded by their explicit evidence gaps.
+
+## Certificate and inline-output continuation
+
+The [certificate continuation](fpsd1200_certificate_report.md) extends this boundary through actual Root/AAA constructors, two public-signature relationships, a third exponentiation under the supplied CoreFP leaf modulus, and original 128-byte inline stores at0x1002212a0. Later code constructs the own leaf and selects vm_deallocate at0x10049e114 with explicit task-self fixture, preserved output-address seed and zero size. Four independently replayed profiles cover30103606 original visits and 251 full arithmetic calls. The full goal remains active; output OOL ownership, returned right and native completion remain unknown (FV1-FV8).

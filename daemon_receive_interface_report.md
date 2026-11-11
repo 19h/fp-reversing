@@ -187,3 +187,7 @@ The [pool continuation](fpsd1200_arena_report.md) carries that original path thr
 ## FPSD1200 environment and OOL-input continuation
 
 The [context report](fpsd1200_context_report.md) joins admitted FPSD1200 processing to original seed/time material, readiness/arena/self-text prerequisites and all756 reference-certificate bytes. Five original simple error replies restore the selected slot marker and retire the incoming OOL through the recorded MIG call; the DER routes reach a process-local atomic gate and one explicit continuation reaches malloc(1219). No new send, right producer or IOKit call is established (FX1-FX8).
+
+## FPSD1200 certificate and local inline result
+
+The [certificate report](fpsd1200_certificate_report.md) joins the incoming CoreFP DER to actual Root/AAA signature arithmetic and source-built representative exponentiation under its leaf public modulus. Original stores at0x1002212a0 define reply[68,196),128 bytes matching the complete big-endian public-exponent result. The staged 104-byte payload, including output OOL/name cells, remains unchanged. The later vm_deallocate call at0x10049e114 is an unexecuted API boundary, not receive/send completion. One first-certificate NULL case returns original 36-byte status0xffff5bd4 and retires the input through record-only MIG cleanup. Native output ownership and completion remain unknown (FV1-FV8).

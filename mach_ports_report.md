@@ -1421,3 +1421,7 @@ The [pool continuation](fpsd1200_arena_report.md) reaches five original zero-sta
 ## FPSD1200 context/error continuation
 
 The [context report](fpsd1200_context_report.md) retains request local name+12 as the incoming application port and request remote name+8 as the reply-buffer destination. Five completed36-byte error replies call original mig_deallocate at0x10000468c, then clear the input OOL cells; the import is record-only. Certificate-consuming continuations stop at later atomic/allocation boundaries. No new emitted Mach message, output name/right producer or IOKit connection is established (FX1-FX8).
+
+## FPSD1200 task-self import and VM-call boundary
+
+The [certificate continuation](fpsd1200_certificate_report.md) distinguishes request local0x1400, header reply destination0x6400 and explicit task-self data fixture0x6600. Original LDR W0 at0x10049e0f8 consumes imported mach_task_self_ through original bind slot0x1010a39c8. Original call0x10049e114 selects vm_deallocate through bind slot0x1010a00f8, with first three arguments0x6600,0xa5a5a5a5a5a5a5a5,0. The API implementation is unexecuted; actual native message emission remains unknown. Original 128-byte inline output exists, but OOL/name cells remain seeded; no new returned right, native port producer or IOKit connection is established (FV1-FV8).

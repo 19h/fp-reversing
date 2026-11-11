@@ -1676,3 +1676,7 @@ The [pool continuation](fpsd1200_arena_report.md) recovers a bounded allocation 
 ## FPSD1200 environment and application-input extension
 
 The [context report](fpsd1200_context_report.md) establishes the selected request+56 bit1 predicate, original random/gettimeofday argument and material layout, later CASAL operand contracts and all756 OOL-certificate bytes consumed. Reference words2/2 and matching counts756 remain distinct from countercases. Five original36-byte error replies use status+32 and restore the selected slot marker; these findings do not establish native rights, emissions, certificate trust or IOKit completion (FX1-FX8).
+
+## FPSD1200 certificate integers, inline bytes and task-map API
+
+The [certificate report](fpsd1200_certificate_report.md) records selected 16-byte integer headers, encoded LE32 limbs,40/48-byte square/product arguments and 20-byte Montgomery context. Every actual arithmetic output and exponent order is checked against public integer arithmetic. STRB at0x1002212a0 exports the third result in big-endian form to reply[68,196). Current SDK compile checks establish u32 mach_task_self_ and three-argument vm_deallocate(vm_map_t,vm_address_t,vm_size_t), with port32/address64/size64. Original call0x10049e114 carries explicit task-name fixture, seeded address and zero size; no VM return, native message or returned-right ABI is inferred (FV1-FV8).

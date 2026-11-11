@@ -1323,3 +1323,7 @@ Completed the [pool continuation](fpsd1200_arena_report.md): original 50*896-byt
 ## FPSD1200 seed/environment and certificate increment
 
 Completed the [context continuation](fpsd1200_context_report.md): original624-word seed expansion, encoded clock/random material, readiness/arena/self-text dependencies, source-written startup composition, certificate-input reads and error rollback. Nineteen independent profiles and594 matching live IDA spans pass. All756 DER bytes reach a later atomic guard; one explicit scalar continuation reaches malloc(1219) at the prior root-CA constructor site. The full goal remains active. Next priorities are constructor/validation returns, actual output/provider/IOKit producers and native receive/send/initialization continuity (FX1-FX8).
+
+## FPSD1200 certificate and inline-output increment
+
+Completed the [certificate continuation](fpsd1200_certificate_report.md): original Root/AAA/own-leaf construction, certificate lifetime, complete public-exponent arithmetic and actual 128-byte inline output. Four independent profiles pass 30103606 original instruction visits, 251 complete arithmetic calls and 832 matching live IDA spans. Later code selects an unexecuted vm_deallocate API with explicit task-self fixture, preserved OOL seed and zero size. Full investigation remains active. Next priorities are output OOL address/count ownership, subsequent VM/status/slot continuation, returned-name producers and actual native receive/send (FV1-FV8).

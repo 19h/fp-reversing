@@ -1505,3 +1505,7 @@ The [pool continuation](fpsd1200_arena_report.md) assigns local source roles to 
 ## FPSD1200 seed, environment and certificate fragments
 
 The [context report](fpsd1200_context_report.md) assigns source-backed fragment roles: seed expansion at0x10052deec, four-word material construction at0x100405a74..0x100405b88, readiness-dependent arena selection at0x10047ab44, self-text input at0x10049da00, OOL byte consumers starting0x100315ae8/0x10022cb78, and slot rollback at0x100633cb4. Source/private compositions reach the root-CA allocation site0x100346714. These roles do not assert complete C-function prototypes, native certificate acceptance or a successful IOKit route (FX1-FX8).
+
+## FPSD1200 constructor, arithmetic and byte-export roles
+
+The [certificate continuation](fpsd1200_certificate_report.md) supplies source/effect evidence for selected flattened fragments: allocation dispatch at0x100346714; descending XOR `0x98` copy0x1003f0e5c; four-byte shift0x10030980c; Montgomery square0x100539ea0/product0x10094593c; complete result export STRB0x1002212a0; certificate retirement0x100582efc/0x1005ada28; task-self load0x10049e0f8 and VM-call boundary0x10049e114. Actual moduli, signature representatives,251 complete products and eight exponent sequences corroborate arithmetic roles. These are selected fragment contracts, not complete function prototypes or native trust/IPC completion. Field semantics of fdpc and the peer extension remain unknown (FV1-FV8).

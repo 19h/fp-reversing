@@ -1547,3 +1547,7 @@ The [pool continuation](fpsd1200_arena_report.md) establishes 50 slots at 896-by
 ## FPSD1200 context dependencies and certificate input
 
 The [context report](fpsd1200_context_report.md) identifies a624-word seed expansion, four encoded random/time material words, readiness/descriptor/owner/self-text dependencies and original OOL certificate reads. Independent replay covers19 profiles and7245815 original visits, including guarded missing-context reads, five error rollbacks and a DER-to-root-CA allocation boundary. Startup/provider snapshots remain explicit private compositions; native continuity, trust and daemon-kext completion are unknown (FX1-FX8).
+
+## FPSD1200 public arithmetic and output/VM continuation
+
+The [certificate report](fpsd1200_certificate_report.md) establishes actual Root/AAA constructors and retirement, source-known typed arithmetic records,251 complete Montgomery products, eight full exponent sequences and two public-signature relations. A third source-built representative begins00/ASCII fdpc/00000001; its field meanings remain unknown. Actual 128-byte source stores fill the inline result. Later own-leaf construction reaches task-self data and an unexecuted VM API with preserved OOL seed and zero size. Four independent profiles and 832 matching IDA spans preserve explicit startup, PAC, atomic and API premises. Full investigation remains active; native ownership, rights and completion remain unknown (FV1-FV8).
