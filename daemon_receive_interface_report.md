@@ -239,3 +239,7 @@ The [CoreFP signed-shift increment](fpsd1201_shift_report.md) recovers a local c
 ## CoreFP1201 working-copy and comparison continuation
 
 The [CoreFP comparison increment](fpsd1201_comparison_report.md) establishes local working-context copy and signed-comparison contracts, including per-call record reuse and seed-dependent frame geometry. Eight caller cases advance to the unexecuted 0x5e8158 boundary. This adds no daemon receiver invocation or native endpoint/right identity; complete request1201 processing and daemon/kext lineage remain unknown.
+
+## CoreFP1201 subtraction continuation
+
+The client-side [subtraction continuation](fpsd1201_subtraction_report.md) establishes a further local arithmetic return in eight private caller profiles. No native receive, reply-right identity or daemon/kext pairing follows from this local contract.

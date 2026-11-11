@@ -1371,3 +1371,7 @@ The [CoreFP1201 increment](fpsd1201_client_report.md) independently checks27 cli
 The [CoreFP1201 caller increment](fpsd1201_caller_report.md) adds a full parent source census, three exhaustive bank identities,12 independently replayed local loop/gate profiles and20 original stack-delta suffix cases. The local target and scalar guard are established; complete request1200-to1201 port/data lineage, zero stack delta and native daemon/kext/deeper continuity remain open. The full goal remains active.
 
 The [CoreFP1201 record increment](fpsd1201_record_report.md) adds24 independently replayed source-staged/nested profiles,16 complete zero-adjustment rejections,two compiler-bounded fresh bodies and four original65537 initializations. Continuing cases stop before0x17bbb8 without touching the candidate128-byte input. Complete successful helper return,context/input production,whole-parent stack epochs and native daemon/kext/deeper continuity remain open. The full goal remains active.
+
+## CoreFP1201 subtraction continuation
+
+The [CoreFP1201 subtraction increment](fpsd1201_subtraction_report.md) recovers 0x5e8158 as B := B - A and retains both original magnitude dependencies. Independent replay checks 197 profiles and 252548 original visits; eight caller profiles complete subtraction and stop before 0x14f9d78. Source-produced context, complete arithmetic-child/request1201 return, native port ownership and daemon/kext/deeper lineage remain open. The full goal remains active.

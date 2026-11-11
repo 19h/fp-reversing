@@ -182,3 +182,7 @@ The audit checks 176644 original visits, 20274 reads, 5377 writes, 6012 PAC mode
 | Low | Extend compact proofs to complete bounded loops and exceptional representations. | Source word identities and finite complete returns are distinct; avoid promoting either to an unrestricted arbitrary-size algorithm proof. |
 
 Quality gates: **QG1** no normative content is required. **QG2** CP1-CP8 state assumptions, dependent results and probes. **QG3** routine roles, record/call ABIs, source data/control flow, environmental frame context, port consequences and continuation are covered. **QG4** B denotes bytes; limbs are 32 bits; u32/u64 modular arithmetic and padding alignment are reproducible. **QG5** noncanonical zero, same-object/zero-count cases, rejected fixed-offset inference and finite/universal/native boundaries are explicit. **QG6** primary binary bytes, independent source parsing/replay, original slots and distinct source lifters support claims. **QG7** impact-ranked continuation remains bounded. The full investigation remains active.
+
+## CoreFP1201 subtraction continuation
+
+The subsequent [subtraction increment](fpsd1201_subtraction_report.md) supersedes the stop-before-0x5e8158 boundary for eight continued caller cases: the record at +0x08/+0x10 supplies working input A and radix/output B, and the complete original operation is B := B - A. The new boundary is after return, before 0x14f9d78; whole-child and native continuity remain open.

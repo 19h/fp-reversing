@@ -1557,3 +1557,7 @@ The [signed-shift recovery](fpsd1201_shift_report.md) assigns bounded functional
 ## CoreFP1201 working-copy and comparison continuation
 
 The [working-copy/comparison recovery](fpsd1201_comparison_report.md) identifies 0x649430 as a count/raw-limb copier with same-descriptor bypass and 0x33abec as a biased signed comparator under canonical-count assumptions. Two fresh compiler-bounded IDA spans, 243 independent configurations and 23 retained source obligations support the local contracts. Four noncanonical-zero cases delimit numeric semantics. The next original helper is 0x5e8158; complete arithmetic and native lineage remain unknown.
+
+## CoreFP1201 subtraction continuation
+
+The [subtraction report](fpsd1201_subtraction_report.md) establishes 0x5e8158 as in-place B := B - A, 0x1ec40 as sign(first)*(abs(first)-abs(second)), and 0x443bf4 as sign(second)*(abs(first)+abs(second)) on the retained canonical inputs. It records full compiler intervals, obfuscated control codecs, exact call slots, complete alias returns and word-level proofs; arbitrary-size equivalence and native provenance remain open.

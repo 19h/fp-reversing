@@ -183,3 +183,7 @@ The [signed-shift increment](fpsd1201_shift_report.md) follows the scalar-one te
 ## CoreFP1201 working-copy and comparison continuation
 
 The [working-copy/comparison increment](fpsd1201_comparison_report.md) follows the context copy and two complete original comparisons after radix preparation. Eight caller cases compare original and copied context against the same radix descriptor, then stop before 0x14f9d74 -> 0x5e8158. Independent byte/integer oracles and source checks distinguish canonical comparison from four noncanonical-zero controls and resolve seed-dependent frame padding. Native endpoint/data lineage and complete protected processing remain unknown.
+
+## CoreFP1201 subtraction continuation
+
+The [subtraction increment](fpsd1201_subtraction_report.md) continues eight original caller profiles through 0x5e8158, recovers B := B - A and both magnitude leaves, and stops after return at 0x14f9d78. Complete request1201 payload/endpoint production and native daemon/kext lineage remain unknown.

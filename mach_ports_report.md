@@ -1473,3 +1473,7 @@ The [CoreFP signed-shift increment](fpsd1201_shift_report.md) completes a local 
 ## CoreFP1201 working-copy and comparison continuation
 
 The [CoreFP working-copy/comparison increment](fpsd1201_comparison_report.md) recovers local descriptor copy, signed comparison and dynamic frame geometry. No selected executed path emits a right or calls a Mach API. Eight caller continuations reach the unexecuted 0x14f9d74 -> 0x5e8158 call; native request1200/request1201 endpoint continuity and daemon/kext pairing remain open.
+
+## CoreFP1201 subtraction continuation
+
+The [subtraction continuation](fpsd1201_subtraction_report.md) establishes a local encoded-integer update and its original arithmetic call sites. No selected executed path invokes a Mach API or emits a Mach right. Native endpoint/right identity and daemon/kext pairing remain unknown; existing emission-site evidence is unchanged.

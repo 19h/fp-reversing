@@ -1728,3 +1728,7 @@ The [signed-shift ABI increment](fpsd1201_shift_report.md) recovers the 16 B dis
 ## CoreFP1201 working-copy and comparison continuation
 
 The [copy/comparison ABI increment](fpsd1201_comparison_report.md) recovers the 24 B copy record view, 28 B comparator view, additive pointer codecs and three biased comparison results. It separates canonical numeric ordering from noncanonical count ordering and proves cursor-seed padding of 16..256 B. Complete private byte/integer oracles pass 243 configurations; the next unexecuted helper is 0x5e8158. Native bounds, ownership and daemon/kext joins remain unknown.
+
+## CoreFP1201 subtraction continuation
+
+The [subtraction increment](fpsd1201_subtraction_report.md) recovers the 24 B signed-subtraction record, 32 B magnitude-difference record and 28 B magnitude-addition prefix. The addition leaf uses +0x08 for output and +0x10 for its second input. Original call slots/modifiers and 197 private outcomes are independently checked.

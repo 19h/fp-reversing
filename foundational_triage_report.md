@@ -1599,3 +1599,7 @@ The [signed-shift increment](fpsd1201_shift_report.md) identifies five obfuscate
 ## CoreFP1201 working-copy and comparison continuation
 
 The [working-copy/comparison increment](fpsd1201_comparison_report.md) resolves 0x649430 as an encoded count/limb copier and 0x33abec as a conditional signed-integer comparator. Independent replay covers 243 configurations and 176644 visits. Noncanonical-zero controls bound numeric semantics; source padding proofs explain the working descriptor's varying absolute stack address. Native context production, complete arithmetic, frame epochs and daemon/kext pairing remain unknown.
+
+## CoreFP1201 subtraction continuation
+
+The [subtraction report](fpsd1201_subtraction_report.md) adds exact signed-count arithmetic records, magnitude-leaf input/output roles, complete alias controls and carry/no-borrow identities. It distinguishes source-written radix mutation from the preserved working input and stops after the local return.
