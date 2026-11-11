@@ -31,7 +31,7 @@ All three selected load paths and the startup publisher use original slot `0xfff
 
 The common IOKit group operand comes from `0xfffffe000cb52628`. The kernel allocation and retirement APIs use distinct typed views even though each view has a size metadata word of 16 B. The mutex path uses `site.lck_mtx_t` at `0xfffffe0007e42b98`. The RW path uses `site.lck_rw_old_t` at `0xfffffe0007e42bd8`. The mutex allocator writes top byte `0x22` to the first u32, while the RW allocator copies an initial 8 B constant whose first u32 has top byte `0x33`. The mutex destroy and RW free bodies use their respective tags on their nominal validation paths. The exact RW acquire prefix separately reads the halfword at object +0xa, and RW done loads the word at +8. A freshly initialized mutex has bit 6 clear in that halfword under both captured debug branches. The solver checks concern the fresh initialized bytes and the type-tag tests. Native object contents after intervening calls, the results of any actual cross-family use and native request reachability remain unknown. [CL4-CL5]
 
-The earlier RW allocation/store candidate has no established destination for its X20. This increment identifies a separate, positively sourced mutex publication into the cell. It leaves open other writers and any replacements between the producer, sample adapters and teardown. The selected paths contain no Mach right operation. [CL4-CL6]
+The later [LSKD construction report](lskd_lock_origin_report.md) resolves the earlier RW store's X20 from incoming record +8 under child phase `0x90d` and establishes a conditional preparer for the distinct LSKD cell `0xfffffe000ccc78a8`. Its free adapter's LSKD cell was already resolved in the LSKD continuation evidence. The mutex publication here concerns the sample-processing cell. Other writers and replacements between its producer, sample adapters and teardown remain open. The selected paths contain no Mach right operation. [CL4-CL6]
 
 ## Assumption register
 
@@ -48,7 +48,7 @@ The earlier RW allocation/store candidate has no established destination for its
 
 - **High.** Establish other writers and the last reaching publication before each sample adapter and teardown read.
 - **High.** Correlate provider startup and cleanup selection with matched caller and owner state.
-- **Medium.** Resolve the legacy RW store and free fragments' X20 destinations and the impact of explicit-pointer precedence on cached-cell use.
+- **Medium.** Resolve native callers and pointer epochs for the legacy LSKD construction and retirement paths, and the impact of explicit-pointer precedence on cached-cell use.
 - **Low.** Extend the inventory to other cells published by the shared mutex allocation helper.
 
 ## Quality gates

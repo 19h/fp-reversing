@@ -1449,3 +1449,5 @@ Successful preparation increments descriptor +0x88. The ordinary completion decr
 Provider and descriptor publications precede the applicable local initialization failures. The separately recovered cleanup continuation retires a matching 512-byte allocation under a stable publication epoch. [AES initialization and cleanup](aes_cleanup_epoch_report.md).
 
 Provider startup has a selected mutex publication into the same global pointer cell that the sample RW adapters and protected mutex teardown can read. The three paths still require an ownership and epoch join. [Cached lock publication and API types](cached_lock_origin_report.md).
+
+The legacy RW store belongs to a destination-record construction adapter. Its global preparer supplies the distinct LSKD cell under a stated parent phase, and its status transform joins the local result to the established LSKD raw namespace. Native reachability and lifetime ordering remain open. [LSKD RW construction records](lskd_lock_origin_report.md).

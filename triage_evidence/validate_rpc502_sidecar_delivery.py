@@ -369,6 +369,7 @@ def main():
     if exists(BASE/'descriptor_prepare_lifecycle_report.md'):reports.add(BASE/'descriptor_prepare_lifecycle_report.md')
     if exists(BASE/'aes_cleanup_epoch_report.md'):reports.add(BASE/'aes_cleanup_epoch_report.md')
     if exists(BASE/'cached_lock_origin_report.md'):reports.add(BASE/'cached_lock_origin_report.md')
+    if exists(BASE/'lskd_lock_origin_report.md'):reports.add(BASE/'lskd_lock_origin_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1774,6 +1775,10 @@ def main():
         cached_lock_checks=json.loads(read(ROOT/'cached_lock_origin_checks.json'))
         manifest['validation']['cached_lock_origin_increment_checks']=cached_lock_checks['verified_counts']
         manifest['validation']['cached_lock_origin_static_scope']=cached_lock_checks['scope']
+    if exists(ROOT/'lskd_lock_origin_checks.json'):
+        lskd_lock_checks=json.loads(read(ROOT/'lskd_lock_origin_checks.json'))
+        manifest['validation']['lskd_lock_origin_increment_checks']=lskd_lock_checks['verified_counts']
+        manifest['validation']['lskd_lock_origin_static_scope']=lskd_lock_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1237,3 +1237,5 @@ The constructor, kext cleanup and base free now have a conditional prepare-count
 The selected protected cleanup continuation now covers the matching auxiliary producer, retirement and parent return. Reaching caller state and native ownership remain open. [AES initialization and cleanup](aes_cleanup_epoch_report.md).
 
 The cached lock producer now has a source-backed mutex allocation and publication path, with distinct kernel mutex and RW type evidence. Native pointer continuity remains open. [Cached lock publication and API types](cached_lock_origin_report.md).
+
+The legacy RW allocator store now has a selected destination lineage through record +8 and a conditional preparer for the separate LSKD cell. Generic allocation status and parent raw status have an all-u32 correspondence. Actual parent-phase reachability, intervening writers and matched native lifetimes remain open. [LSKD RW construction records](lskd_lock_origin_report.md).
