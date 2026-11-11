@@ -4,6 +4,8 @@ The RW allocation fragment at `0xfffffe000a531028` belongs to a record adapter e
 
 A second preparer, `0xfffffe000a52ea1c`, supplies LSKD cell `0xfffffe000ccc78a8` as that destination. Its decoded parent phase must be `0xc2b1dbf2` to select child phase `0x90d`. The source chain is established conditionally on that phase and a returning bounds helper. A native caller producing that phase, a completed native allocation, and the last reaching pointer epoch remain **unknown**. The sample-processing cell `0xfffffe000ccceab8` is a separate address. [LO3-LO6]
 
+The subsequent [start-flow report](lskd_start_lock_flow_report.md) sources that parent phase from the operation `0x1b59` handler under its retained state `0x3be`, after the returning entropy loop and null seed-pointer gate. It also establishes source seed publication before construction, the allocation-failure return and the successful acquisition handoff. Native execution and pointer lifetimes remain open.
+
 The [original-source capture](triage_evidence/lskd_lock_origin_checks.json.zst) contains 633 instructions and 2,532 B from ten spans, eight original bank-pointer roots, ten exhaustive byte-bank rules covering 2,560 inputs, six authenticated continuation slots, two exact import bindings and five supplied-reference excerpts. Eighteen UNSAT queries lift 118 instruction instances and check the record codecs, selected gates, publication and status arithmetic. The [extractor](triage_evidence/recover_lskd_lock_origin.py) and [publication audit](triage_evidence/verify_lskd_lock_origin_publication.py) retain the reproduction and delivery checks. No new target execution or IDA access was needed.
 
 ```text
@@ -113,7 +115,7 @@ The cell difference is `0x7210` B, or 29,200 B. A common IOKit group and common 
 
 | Impact | Further question | Evidence needed |
 | --- | --- | --- |
-| High | Which original caller produces parent phase `0xc2b1dbf2`? | Resolve preparer callers and their encoded control, frame and bounds path. |
+| High | Does the source start caller producing parent phase `0xc2b1dbf2` execute natively? | The subsequent start-flow report supplies its source phase and frame. Matching runtime entropy returns, bounds, authentication and pointer epochs remain required. |
 | High | Which publication reaches each LSKD acquire, unlock and free? | Last reaching cell writes and actual lifetime/order evidence, including repeated construction. |
 | High | What reaches the sample-processing cell between startup and cleanup? | Complete its separate writer and owner lineage. The LSKD constructor establishes no writer to that address. |
 | Medium | Where do the two status namespaces reach daemon-visible results? | Source method/caller status forwarding and transport reply field correspondence. |

@@ -4,6 +4,8 @@ The [metadata-access continuation](lskd_response_report.md) now reaches a comple
 
 Eight original direct callers now have checked constructor-to-selection lineages. Four extend the earlier provider cases: named start/stop wrappers, obfuscated method `wT74ohNhs04Oy`, and span method `R2nPsUOYx6h`. Every retained and fresh case stops before the selected fragment's first instruction. Handler semantics, subsequent IPC, response initialization/publication and native lifetime remain **unknown**. The broad objective remains active.
 
+The subsequent [start-flow report](lskd_start_lock_flow_report.md) sources the start handler's lock-construction phase from retained state `0x3be` and establishes its seed publication and local status routes conditionally on returning calls. The selector-only case limits below remain unchanged.
+
 [Source contracts](triage_evidence/lskd_consumer_contracts.json), [retained cases](triage_evidence/lskd_consumer_profiles.json), [fresh replays](triage_evidence/lskd_consumer_replays.json), [independent checks](triage_evidence/lskd_consumer_checks.json), [nineteen proof pairs](triage_evidence/lskd_consumer_proofs.json), [source identity](triage_evidence/lskd_consumer_source_identity.json), [preservation](triage_evidence/lskd_consumer_preservation.json) and [scoped quality gates](triage_evidence/lskd_consumer_quality_gates.json) retain the evidence.
 
 ```text

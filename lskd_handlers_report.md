@@ -4,6 +4,8 @@ The [operation selector](lskd_consumer_report.md) now has checked continuations 
 
 Operation0x1b5b source-initializes the prospective response as a header1 stream: operation0x1b5b, field limit1, capacity8 bytes, zero counters and inline pointer=candidate+0x10. The start operation prepares `_kernel_read_random(workspace+0x9c,4)`; the stop operation prepares a separate null-first-word record for an unnamed helper. Those two calls remain unexecuted. All cases stop before complete business-handler processing or response publication. Native validity, subsequent payload decoding and daemon transport remain **unknown**. The broad objective remains active.
 
+The later [start-flow report](lskd_start_lock_flow_report.md) extends the source analysis beyond the retained start entropy frontier without executing that backend. It establishes the 128-request loop, seed-pointer publication, construction phase, local failure status and successful RW acquisition preparation. The cases below retain their original stopping boundaries.
+
 [Original contracts](triage_evidence/lskd_handlers_contracts.json), [retained profiles](triage_evidence/lskd_handlers_profiles.json), [distinct fresh replays](triage_evidence/lskd_handlers_replays.json), [independent checks](triage_evidence/lskd_handlers_checks.json), [twenty-five original/normalized proof pairs](triage_evidence/lskd_handlers_proofs.json), [source identity](triage_evidence/lskd_handlers_source_identity.json), [preservation](triage_evidence/lskd_handlers_preservation.json) and [scoped quality gates](triage_evidence/lskd_handlers_quality_gates.json) retain the evidence.
 
 ```text

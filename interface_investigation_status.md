@@ -1239,3 +1239,5 @@ The selected protected cleanup continuation now covers the matching auxiliary pr
 The cached lock producer now has a source-backed mutex allocation and publication path, with distinct kernel mutex and RW type evidence. Native pointer continuity remains open. [Cached lock publication and API types](cached_lock_origin_report.md).
 
 The legacy RW allocator store now has a selected destination lineage through record +8 and a conditional preparer for the separate LSKD cell. Generic allocation status and parent raw status have an all-u32 correspondence. Actual parent-phase reachability, intervening writers and matched native lifetimes remain open. [LSKD RW construction records](lskd_lock_origin_report.md).
+
+The start handler now supplies the previously conditional parent phase in a source continuation from thirteen retained entropy boundaries. Its seed writes, publication-before-construction order, local failure return and successful acquisition handoff are established under returning-call premises. Native completion, the post-acquisition continuation and pointer epochs remain open. [LSKD start initialization and lock handoff](lskd_start_lock_flow_report.md).

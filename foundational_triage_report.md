@@ -1451,3 +1451,5 @@ Provider and descriptor publications precede the applicable local initialization
 Provider startup has a selected mutex publication into the same global pointer cell that the sample RW adapters and protected mutex teardown can read. The three paths still require an ownership and epoch join. [Cached lock publication and API types](cached_lock_origin_report.md).
 
 The legacy RW store belongs to a destination-record construction adapter. Its global preparer supplies the distinct LSKD cell under a stated parent phase, and its status transform joins the local result to the established LSKD raw namespace. Native reachability and lifetime ordering remain open. [LSKD RW construction records](lskd_lock_origin_report.md).
+
+Start operation `0x1b59` supplies that construction phase after a 128-request entropy loop and seed-pointer publication. Its null-allocation suffix returns raw status without resetting the seed publication, while its success branch prepares cached RW acquisition. Workspace and auxiliary limits are separately sourced. [LSKD start initialization and lock handoff](lskd_start_lock_flow_report.md).

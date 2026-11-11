@@ -100,6 +100,8 @@ Acquisition checks an explicit pointer before falling back to G. Release separat
 
 The free adapter's entry computes the exact cached-cell address into X20. Its nonnull branch passes the current G to the free wrapper at0xfffffe000a5793b8. The next original instruction, `STR XZR,[X20]` at0xfffffe000a5793bc, establishes a conditional clear after a returning call. No current execution traverses that nonnull free branch.
 
+The subsequent [start-flow analysis](lskd_start_lock_flow_report.md) establishes a source constructor-to-acquisition handoff on the start success branch. It prepares a null explicit pointer with phase `0x2d2` after RW construction. A stable cached-pointer epoch and actual native ownership remain required to join that handoff to acquisition and later retirement.
+
 ## Lock record layouts and selector channels
 
 Offsets are bytes; accessed footprints do not imply C structure sizes. Field gaps are not asserted initialized. Selector arithmetic is unsigned modulo2^32. R is the record address. [CT1, CT5-CT7]
