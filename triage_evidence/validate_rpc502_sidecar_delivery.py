@@ -380,6 +380,7 @@ def main():
     if exists(BASE/'lskd_context_compare_report.md'):reports.add(BASE/'lskd_context_compare_report.md')
     if exists(BASE/'lskd_reader_lineage_report.md'):reports.add(BASE/'lskd_reader_lineage_report.md')
     if exists(BASE/'lskd_context_codec_report.md'):reports.add(BASE/'lskd_context_codec_report.md')
+    if exists(BASE/'lskd_context_return_report.md'):reports.add(BASE/'lskd_context_return_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1830,6 +1831,10 @@ def main():
         codec_checks=json.loads(read(ROOT/'lskd_context_codec_checks.json'))
         manifest['validation']['lskd_context_codec_increment_checks']=codec_checks['verified_counts']
         manifest['validation']['lskd_context_codec_static_scope']=codec_checks['scope']
+    if exists(ROOT/'lskd_context_return_checks.json'):
+        return_checks=json.loads(read(ROOT/'lskd_context_return_checks.json'))
+        manifest['validation']['lskd_context_return_increment_checks']=return_checks['verified_counts']
+        manifest['validation']['lskd_context_return_static_scope']=return_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

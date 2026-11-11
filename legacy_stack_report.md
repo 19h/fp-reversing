@@ -171,3 +171,6 @@ QG1 passes for factual technical analysis. QG2 is LS1-LS9 with dependencies and 
 
 
 The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phase `0x6e3`, the four reader-call banks and context byte `+0x174` on a matched source template. It recovers the complete flag-record decoder and the conditional clock-entry gate. Earlier unresolved-root statements describe the earlier bounded increment; the intervening context transform, full route preservation, native epoch and daemon request lineage remain open.
+
+
+The [context re-encoding and record-return analysis](lskd_context_return_report.md) now closes the selected default/rejection representation path, decodes original W1 values 1,2,4,5 and state144 updates, and maps private statuses to exact stored u32 results through a cached RW release. Actual operation meanings, matched lock ownership, whole-operation cursor preservation and daemon request lineage remain open. Earlier restoration/selector-unknown statements describe the earlier bounded increment.

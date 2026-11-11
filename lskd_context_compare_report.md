@@ -186,3 +186,6 @@ The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phas
 
 
 The [paired context representation](lskd_context_codec_report.md) now proves pointer recovery and the inverse 512 B data transform for matched seed/slot/object epochs. The decoded initializer has byte `+0x174`=0, byte `+0x175`=1 and a zero normalized comparison limit. Later field writers, representation restoration, native epoch matching and daemon request lineage remain open; earlier codec-unknown statements describe the earlier bounded increment.
+
+
+The [context re-encoding and record-return analysis](lskd_context_return_report.md) now closes the selected default/rejection representation path, decodes original W1 values 1,2,4,5 and state144 updates, and maps private statuses to exact stored u32 results through a cached RW release. Actual operation meanings, matched lock ownership, whole-operation cursor preservation and daemon request lineage remain open. Earlier restoration/selector-unknown statements describe the earlier bounded increment.
