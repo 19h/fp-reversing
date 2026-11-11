@@ -408,6 +408,7 @@ def main():
     if exists(BASE/'fpsd1200_lifetime_report.md'):reports.add(BASE/'fpsd1200_lifetime_report.md')
     if exists(BASE/'fpsd1200_process_report.md'):reports.add(BASE/'fpsd1200_process_report.md')
     if exists(BASE/'fpsd1201_session_report.md'):reports.add(BASE/'fpsd1201_session_report.md')
+    if exists(BASE/'fpsd1202_ool_report.md'):reports.add(BASE/'fpsd1202_ool_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1970,6 +1971,10 @@ def main():
         session_checks=json.loads(read(ROOT/'fpsd1201_session_checks.json'))
         manifest['validation']['fpsd1201_session_increment_checks']=session_checks['verified_counts']
         manifest['validation']['fpsd1201_session_static_scope']=session_checks['scope']
+    if exists(ROOT/'fpsd1202_ool_checks.json'):
+        ool_checks=json.loads(read(ROOT/'fpsd1202_ool_checks.json'))
+        manifest['validation']['fpsd1202_ool_increment_checks']=ool_checks['verified_counts']
+        manifest['validation']['fpsd1202_ool_static_scope']=ool_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

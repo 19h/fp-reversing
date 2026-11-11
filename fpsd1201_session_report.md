@@ -197,3 +197,7 @@ Replay takes O(V+J+H*R+I) time and O(J+H*R+I) space for original visits V, journ
 | Medium | Extend the literal census with computed-address aliases before claiming complete slot-tail coverage. |
 
 **QG1** passes: factual source, ABI and bounded state analysis. **QG2** passes: FS1-FS8 provide assumptions, dependencies and falsification probes. **QG3** passes for this increment; the broad investigation remains active. **QG4** passes: exact byte extents, counts, widths and modular arithmetic are reproducible. **QG5** passes within scope: transient marker4c versus final49, source requests versus native effects, literal offsets versus object identity and snapshot joins versus temporal continuity are explicit. **QG6** passes: original image/fixups, live IDA byte attestation, primary SDK, independent replay and source lifting support the claims; auxiliary analysis side effects remain explicitly unmeasured. **QG7** passes: remaining obligations have bounded impact labels.
+
+## FPSD1202 control endpoint and OOL continuation
+
+The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF field to the control-name comparator, recovers the marker4d session selector and establishes the OOL input/deallocation/reply ABI. Fifteen independently replayed profiles distinguish original failures, declared application-return controls and explicit stop boundaries. Source-produced marker4d ownership, successful processing and native transport/reclamation remain unknown.
