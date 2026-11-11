@@ -1521,3 +1521,7 @@ The [CF endpoint report](fpsd1200_port_report.md) supplies original source/effec
 ## FPSD1200 queue/status/cleanup and slot-copy fragments
 
 The [lifetime/queue report](fpsd1200_lifetime_report.md) joins queue store0x100096920 to watch read0x1003ae3d8, local return encoding0x1003ae464..0x1003ae46c, unused-storage accessor call0x100493a58, CF cleanup0x100474e6c/0x100474eb4, slot clearing0x100474eb8, marker reset0x1004d8440 and selected error propagation0x1004d8454/0x10061aa0c. Copy fragments0x1006219b8/0x1006219bc and0x1005a7330/0x1005a7340 carry a diagnostic upstream u32 through a stack temporary to slot+400. Independent replay distinguishes original write footprints from initialized value origin. These are bounded fragment contracts, with native lifetime and field semantics unresolved (FL1-FL8).
+
+## Process-event session matching and reset continuations
+
+The [process-event report](fpsd1200_process_report.md) assigns bounded roles to original fragments: marker read/gate `0x10029a254`, encoded-PID read `0x1001fb82c` / comparison `0x1001fb8bc`, selected reset stores `0x1003f8830` / `0x1003f8844` / `0x1004840d4`, CF cleanup calls `0x10025e648` / `0x10025e6a4` and CF-field clear `0x10025e6ac`. Fresh complete callback replays and independent straight-line source lifting corroborate those roles. These are flattened continuations, not newly proven standalone functions; the48-byte reset pattern is not assigned a cryptographic role (FP1-FP8).

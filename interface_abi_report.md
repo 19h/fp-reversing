@@ -1692,3 +1692,7 @@ The [CF endpoint report](fpsd1200_port_report.md) adds exact CF source/main-loop
 ## FPSD1200 queue codec, accessor and error-return contract
 
 The [lifetime/queue report](fpsd1200_lifetime_report.md) joins original kqueue encoding at0x100096920 (u32 descriptor+0x060ed969) to the watch's four-byte header+72 load and selected-phase decoding. A full-domain local query covers the composed codec. The source kevent return carrier is ret32 XOR0x8b3dc651; selected -1 propagates to a36-byte status0xffffffff reply after cleanup. SDK compilation establishes int *__error(void), but original code does not read its returned storage in the tested continuations. A separate stack u32 copy from SP+0x9a0 through SP+0x818 to slot+400 is established; field semantics and native initialization remain unknown (FL1-FL8).
+
+## Process-event to FPSD1200 slot ABI
+
+The [process-event report](fpsd1200_process_report.md) establishes a896-byte stride, a50-slot composed pool, encoded PID at+140, marker at+876 and CF reference at+0. Under checked reader phases, matching is `stored32 == PID32 + 0x382eac5c` modulo2^32. The marker predicate excludes `0x4577df49` and `0x4577df4a`; it is not equality with a single active value. The writer equation is separately phase-conditional. SDK compile checks attest the32-byte event layout and CF descriptor callback type; source composition does not establish native ABI/version pairing or IPC effects (FP1-FP8).

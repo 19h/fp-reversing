@@ -203,3 +203,7 @@ The [CF endpoint report](fpsd1200_port_report.md) joins the shared receive callb
 ## FPSD1200 failed process-watch cleanup
 
 The [lifetime/queue report](fpsd1200_lifetime_report.md) follows kevent=-1 through the __error call without an errno read, CF invalidation/release requests, slot clearing/marker reset and original36-byte status -1 reply. NULL and unmapped accessor-result controls have identical original sequences and retained terminal state. Explicit descriptor7 composition still reaches212-byte success; the prior descriptor0 word was an original image value, not proof that retained startup executed kqueue initialization. Native callback send, right conversion and input/output-owner effects remain unknown (FL1-FL8).
+
+## FPSD1200 session retirement through the process-event callback
+
+The [process-event report](fpsd1200_process_report.md) connects the successful FPSD1200 pool to descriptor callback `0x10044f23c` through an explicit source-snapshot composition. The callback's `kevent` output ident is compared with encoded slot+140, then matching eligible slots receive exact reset stores and CF invalidation/release requests. Eight independently replayed cases cover44440 original callback visits; the preceding session prefix is pinned rather than freshly repeated. Native callback delivery, CF effects and transport remain unknown (FP1-FP8).
