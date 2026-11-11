@@ -195,3 +195,7 @@ The [certificate report](fpsd1200_certificate_report.md) joins the incoming Core
 ## FPSD1200 VM output and shared-callback creation edge
 
 The [VM/output report](fpsd1200_vm_report.md) establishes original consumers of staged OOL address/count, deallocation at 0x10049e114, allocation at 0x10049e17c and a complete 719-byte copy of the embedded daemon leaf into a private VM owner. Original count store 0x100543d3c precedes certificate retirement and helper0x100001f50's CFMachPortCreate request at 0x100001f8c. This connects FPSD1200 to the previously recovered shared callback 0x100425f78 with source-defined zero 40-byte context. CF object/name extraction, output-address publication, registration and actual transport remain unresolved. Allocation failure returns original 36-byte status0xffff5bd4 (VM1-VM8).
+
+## FPSD1200 endpoint return and original reply construction
+
+The [CF endpoint report](fpsd1200_port_report.md) joins the shared receive callback to a per-slot CF object, main-loop source registration and one-shot audit-PID exit-watch request. Explicit opaque CF/mode/kevent results allow original code to publish all seven staged outputs and construct212 bytes with two descriptors/status0; no protected output tuple is injected. Port/source NULL controls return36-byte errors; kevent=-1 stops at __error. The separate callback send0x100035184 is outside this demultiplexer-entry replay, so native transmission, right conversion and client acceptance remain unknown (FP1-FP8).

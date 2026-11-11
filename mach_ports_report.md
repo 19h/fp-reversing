@@ -1429,3 +1429,7 @@ The [certificate continuation](fpsd1200_certificate_report.md) distinguishes req
 ## FPSD1200 VM task argument and CF port-construction request
 
 The [VM/output continuation](fpsd1200_vm_report.md) separates request-local name0x1400, reply destination0x6400 and explicit task-self fixture 0x6600. Original vm_allocate call0x10049e17c uses target task, address temporary,719-byte extent and flags 1; source copies the own-leaf DER and writes count 719. Both successful private cases then request CFMachPortCreate at 0x100001f8c with callback 0x100425f78, zero 40-byte context and false Boolean. API return is unexecuted: there is no supplied CF object, raw name/right, native emission or completed reply. Staged name P+100 and OOL address P+72 remain their initial seeds; later native and publication contracts remain open (VM1-VM8).
+
+## FPSD1200 CF object-to-raw-name publication
+
+The [CF endpoint report](fpsd1200_port_report.md) establishes original CF result storage at slot+0 (0x100624eb4), source/default-mode registration and CFGetPort0x1005a7410. Under the declared opaque object/result model, original store0x1005a7458 publishes name0x6800 at P+100 and original MIG places it at reply+44 with outgoing disposition19/type0. Incoming local0x1400, reply destination0x6400, task-self fixture0x6600 and CF object0x77001000 have distinct roles. No insert-right or native send executes on this path. One full212-byte reply is constructed; actual rights, kernel copyout and receiver disposition conversion remain unknown (FP1-FP8).

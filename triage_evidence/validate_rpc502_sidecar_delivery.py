@@ -404,6 +404,7 @@ def main():
     if exists(BASE/'fpsd1200_context_report.md'):reports.add(BASE/'fpsd1200_context_report.md')
     if exists(BASE/'fpsd1200_certificate_report.md'):reports.add(BASE/'fpsd1200_certificate_report.md')
     if exists(BASE/'fpsd1200_vm_report.md'):reports.add(BASE/'fpsd1200_vm_report.md')
+    if exists(BASE/'fpsd1200_port_report.md'):reports.add(BASE/'fpsd1200_port_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1950,6 +1951,10 @@ def main():
         vm_checks=json.loads(read(ROOT/'fpsd1200_vm_checks.json'))
         manifest['validation']['fpsd1200_vm_increment_checks']=vm_checks['verified_counts']
         manifest['validation']['fpsd1200_vm_static_scope']=vm_checks['scope']
+    if exists(ROOT/'fpsd1200_port_checks.json'):
+        port_checks=json.loads(read(ROOT/'fpsd1200_port_checks.json'))
+        manifest['validation']['fpsd1200_port_increment_checks']=port_checks['verified_counts']
+        manifest['validation']['fpsd1200_port_static_scope']=port_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

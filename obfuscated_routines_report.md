@@ -1513,3 +1513,7 @@ The [certificate continuation](fpsd1200_certificate_report.md) supplies source/e
 ## FPSD1200 VM and certificate-copy fragment roles
 
 The [VM/output report](fpsd1200_vm_report.md) joins staged address/count loads0x100400bc8/0x100475dd4 to VM deallocation0x10049e114 and allocation0x10049e17c. Original copy stores0x10048d95c and 0x100633d64..0x100633ddc define all 719 DER bytes in descending offset order; count store 0x100543d3c and certificate retirement0x1004a9ac8 follow. The continuation reaches existing helper0x100001f50 and CFMachPortCreate0x100001f8c with shared callback 0x100425f78. These are selected source/data contracts, not a general memcpy prototype or proof of native CF/right creation, publication or IPC completion (VM1-VM8).
+
+## FPSD1200 flattened endpoint and output fragments
+
+The [CF endpoint report](fpsd1200_port_report.md) supplies original source/effect contracts for slot CF storage0x100624eb4, source creation0x1005236b0, main-loop/default-mode registration0x1003ae28c..0x1003ae380, signed audit-PID/event construction0x1003ae384..0x1003ae458, original staged-output stores0x100624c68/0x100624c70/0x1005a7378/0x1005a7394/0x1005a73ac, CFGetPort0x1005a7410 and name publication0x1005a7458. Slot-copy fragment0x100552948 retains the exact third128-byte exponent input XOR0x98. Complete private source replay and local codec proofs corroborate these roles; arbitrary-state prototypes, field meanings, native rights and kext interaction remain unknown (FP1-FP8).
