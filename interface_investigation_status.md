@@ -1307,3 +1307,7 @@ The [context-score policy report](aes_context_score_policy_report.md) recovers n
 ## FPSD1200 application and reply contract increment
 
 The reference FPSD1200 local ABI now closes across serializer/stub/wrapper/parser:13 server cases,22 client cases,1536 bank inputs,15 original format12 words and11 matching IDA ranges pass. Actual shared-dispatcher decoding, output producers/definedness, native right ownership and matched daemon-kext completion remain open; the full goal stays active. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
+
+## FPSD1200 original admission prefix
+
+Completed the [FPSD1200 admission-prefix increment](fpsd1200_admission_report.md): original protected dispatch and record marshalling, first numeric/text entitlement helper, private Boolean fallback, exact audit-token propagation, original failure returns and zero-delta computation. Independent replay and source/IDA/fixup/SDK checks pass for 27 cases (16 error replies, 11 stops before PID extraction). The full interface goal remains active. Next priorities are the exact audit-PID call/return and subsequent provider/IOKit route, actual runtime Security context and successful output/port/OOL producers; this increment establishes no successful daemon-kext transaction.

@@ -171,3 +171,7 @@ The supplied trace's PC0x180547c20 equals RET after this cache's SVC. Its27 prin
 ## FPSD1200 application and reply contract increment
 
 FPSD1200 now has a recovered14-argument application ABI and104-byte protected-call payload. Original selectors resolve copy helper0x10046f89c and shared dispatcher0x10065ffd8; input OOL deallocation/clearing and212-byte reply descriptors are traced to exact source sites. The protected core remains a declared output fixture. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
+
+## FPSD1200 original admission prefix
+
+The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) follows the same original received carrier through protected dispatch into Security callsites. The original 32-byte audit token is copied into first and fallback `SecTaskCreateWithAuditToken` calls; modeled entitlement results select direct PID extraction, Boolean fallback or original error return. All 27 prefixes avoid reading the input OOL payload. Sixteen failures reach original input deallocation/clearing and 36-byte reply construction; eleven other cases stop before PID extraction. This establishes finite local ordering and explicit cleanup calls, without native credentials, endpoint access or transport completion.

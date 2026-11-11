@@ -189,3 +189,7 @@ The independent oracle passes13 server cases and22 client cases, including seven
 | Low | Compare the separate56-byte request1200 interface and other FPSD parsers without unifying endpoints by numerical request ID. |
 
 This report is one completed increment. The full investigation remains active and incomplete.
+
+## FPSD1200 original admission prefix
+
+The [original admission-prefix recovery](fpsd1200_admission_report.md) extends this contract through adapter `0x10065ffd8`, core `0x10061a2d0`, decoded phase `0x6cf4` and operation `0xad952088`. Original marshalling reaches the `fairplay-client` numeric/text helper, with `com.apple.private.fpsd.client` Boolean fallback. Sixteen controlled failures now establish status `0xffff5bbb`, a 36-byte error reply and zero adapter delta through original instructions; the successful 212-byte replies in this contract remain protected-output fixtures. Eleven other cases stop before `audit_token_to_au32` at `0x100581f2c`. No native admission or successful kext operation is established.

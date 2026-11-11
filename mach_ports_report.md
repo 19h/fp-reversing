@@ -1405,3 +1405,7 @@ The selected initializer, auxiliary allocation, cleanup and lock teardown route 
 ## FPSD1200 application and reply contract increment
 
 The FPSD1200 increment identifies incoming received-local-name use, response destination copying, returned port-name output at reply+44, outgoing descriptor disposition19 and modeled receive-side17. It records exact buffer/copy/cleanup sites; no actual message send, right producer, native object identity or kext connection is newly established. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
+
+## FPSD1200 original admission prefix
+
+The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) preserves the received-local-name field and reply destination through original protected dispatch. It adds no port producer or `mach_msg` emission: 16 modeled API-failure paths produce original nonzero-status 36-byte replies, while 11 other cases stop before PID extraction at `0x100581f2c`. Successful returned port/OOL provenance remains open. Security receives exact copied audit-token bytes under declared fixtures; those copies do not identify a native sender, task-local right or FairPlayIOKit connection.

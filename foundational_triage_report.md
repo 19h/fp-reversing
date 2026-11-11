@@ -1531,3 +1531,7 @@ The [context-score policy report](aes_context_score_policy_report.md) recovers n
 ## FPSD1200 application and reply contract increment
 
 The recovered FPSD1200 boundary joins the reference CoreFP serializer, daemon MIG stub,14-argument wrapper,104-byte carrier payload and original212-byte client parser. It distinguishes protected-core outputs from demonstrated serialization and records installed CoreFP version drift; native certificate policy/provider completion remains unknown. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
+
+## FPSD1200 original admission prefix
+
+The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) recovers the original operation-specific route, entitlement helper/fallback, 32-byte audit propagation and explicit CF/MIG cleanup. Independent replay covers 108443 original instruction visits, 405 import events, 513 GP/SP/NZCV checkpoints and 200 original copy calls across 27 cases. Source provenance includes 51 fresh read-only IDA span hashes, 182 original rebases, 21 bind/import records and two rehashed SDK declarations. Eight local UNSAT certificates, two SAT premise controls and 17 exhaustive byte-bank composition identities retain finite/model scope; 864 unpaired lookup reads and the next audit-PID implementation remain unresolved.

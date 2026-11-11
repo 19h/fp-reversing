@@ -1489,3 +1489,7 @@ The [context-score policy report](aes_context_score_policy_report.md) recovers n
 ## FPSD1200 application and reply contract increment
 
 The FPSD1200 wrapper0x100007b28 stages a104-byte payload and an address-encoded carrier, mutates two64-bit state cells, calls copy helper0x10046f89c and shared dispatcher0x10065ffd8, decodes status XOR0x8b3dc651 and copies seven output fields. Six constant-bank resolutions and independent byte/ABI checks establish these local roles; protected algorithm and provider call chain remain unknown. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
+
+## FPSD1200 original admission prefix
+
+The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) assigns source-backed local roles to operation leaf `0x1004666ec` (record/audit marshalling), nested adapter/entry `0x1004d4268` / `0x1004bd65c`, preflight `0x10052db58`, entitlement helper `0x100414874`, fallback continuation `0x1004de208` and audit-PID join `0x100581dd0`. The original core decodes phase `0x6cf4` and operation `0xad952088`; these labels do not name the full FairPlay algorithm. Roles are supported by original instruction/operand and event replay, fresh IDA span hashes and bounded selector certificates. Arbitrary continuation fragments are not assigned independent C prototypes.

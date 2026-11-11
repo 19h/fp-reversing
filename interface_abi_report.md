@@ -1660,3 +1660,7 @@ The [context-score policy report](aes_context_score_policy_report.md) recovers n
 ## FPSD1200 application and reply contract increment
 
 FPSD1200: request64 B, reply212 B, descriptor count2; daemon wrapper14 arguments stage104 B plus an address-encoded carrier. OOL output/count/deallocate, three scalars and port name are copied back; the client consumes eight output regions. Zero returned stack delta, protected outputs and receive disposition conversion are explicit fixtures. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
+
+## FPSD1200 original admission prefix
+
+The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) extends original carrier/control recovery into SecTask and CF callsites. Helper `0x100414874` receives an audit pointer at record+0 and the original `fairplay-client` C-string pointer at +8, returning marker byte at +16; +8 is not a converted-number pointer. The first path accepts its selected Number/String conversion outcomes and falls back to Boolean `com.apple.private.fpsd.client`. Sixteen real original-code failure returns restore adapter scratch and compute delta zero, then decode `0xffff5bbb`; eleven cases stop before audit-PID extraction. API objects/results, PAC and stack probes remain explicit models, and converted-value lifetime is unknown.
