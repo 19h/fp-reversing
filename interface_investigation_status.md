@@ -1303,3 +1303,7 @@ The [AES uncached-context report](aes_uncached_context_queue_report.md) establis
 ## Context score policy and scheduler attribution increment
 
 The [context-score policy report](aes_context_score_policy_report.md) recovers nonzero-category aging, accounting normalization, timestamped offset caching, the wake-to-accounting field join and configuration/table conversion. Thirty-two new UNSAT checks, four abstract SAT controls and 3681 private cases pass, including policy-enabled first/second placement, controlled pair mismatches and original configuration/converter execution. A pinned Apple source comparison supports qualified Clutch-scheduler names and refines the earlier policy-byte label to a candidate group category. Exact compiled revision, actual option admission, native concurrency/scheduling and matched daemon/provider completion remain unknown (SP1-SP8).
+
+## FPSD1200 application and reply contract increment
+
+The reference FPSD1200 local ABI now closes across serializer/stub/wrapper/parser:13 server cases,22 client cases,1536 bank inputs,15 original format12 words and11 matching IDA ranges pass. Actual shared-dispatcher decoding, output producers/definedness, native right ownership and matched daemon-kext completion remain open; the full goal stays active. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).

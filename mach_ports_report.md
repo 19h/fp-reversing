@@ -1401,3 +1401,7 @@ The startup-to-zone correspondence adds no Mach right operation. Its numeric sta
 The two descriptor preparations, ordinary completion and final-release drain add no Mach right operation in the selected source correspondence. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
 
 The selected initializer, auxiliary allocation, cleanup and lock teardown route adds no Mach right operation. The parent publishes a local continuation word. [AES initialization and cleanup](aes_cleanup_epoch_report.md).
+
+## FPSD1200 application and reply contract increment
+
+The FPSD1200 increment identifies incoming received-local-name use, response destination copying, returned port-name output at reply+44, outgoing descriptor disposition19 and modeled receive-side17. It records exact buffer/copy/cleanup sites; no actual message send, right producer, native object identity or kext connection is newly established. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).

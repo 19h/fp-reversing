@@ -167,12 +167,12 @@ These are original table references,not complete caller or destination proofs. I
 Reproduction from the extraction directory,using the existing analysis environment:
 
 ```text
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/recover_corefp_import_calls.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/recover_corefp_exports.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_exports.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_version_bridge.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_mach_requests.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/validate_corefp_exports_delivery.py
+$PYTHON triage_evidence/recover_corefp_import_calls.py
+$PYTHON triage_evidence/recover_corefp_exports.py
+$PYTHON triage_evidence/probe_corefp_exports.py
+$PYTHON triage_evidence/probe_corefp_version_bridge.py
+$PYTHON triage_evidence/probe_corefp_mach_requests.py
+$PYTHON triage_evidence/validate_corefp_exports_delivery.py
 ```
 
 The existing [format12 reader](triage_evidence/corefp_fixups_reader.py) independently checks all original chain members against the static-tool text. The verifier reads all original fixup words,selected targets,banks,source-function hashes,ordered private instruction hashes,bridge pages/stubs,request fields and dependencies. It reruns all four SMT obligations and compiles the [arm64e layouts/SDK constants](triage_evidence/corefp_exports_layouts.c) without linking or executing. Exact counts and QG1-QG7 status are in the linked check/gate records. The original three supplied inputs remain hash-checked and preserved;no IDB changes were made.
@@ -197,3 +197,7 @@ The full investigation remains active and incomplete. No source-analysis blocker
 The [lookup/cache and paired-image report](corefp_lookup_report.md) resolves the destination acquisition for header-only request1203:original lookup0x1cdb24 requests `com.apple.fpsd`,falls back to `com.apple.fairplayd` only on1102,and passes the primary cached name to builder0x90c8. It recovers the32-byte lookup record,one original protected caller,cache reuse/two-name reset and ignored metadata status. The supplied daemon's metadata method is1204;its1203 rejects this24-byte simple query with-304. Three explicit private comparisons establish original-ID rejection,request-only reply-ID mismatch,and payload parsing under counterfactual adaptation of both IDs. Actual native pairing and the other builders' acquisition paths remain unknown.
 
 The [subsequent client-path report](corefp_client_paths_report.md) resolves two request1200 destinations:the64-byte FPSD client receives the lookup name and stages a756-byte certificate;the56-byte client targets `com.apple.adid` through XPC and a legacy Mach fallback. Its signed64-bit selector,28-byte network-order payload,five interrupted-object XPC attempts,invalid-destination recovery and event-description/free handler have original-byte/private evidence. Current CoreADI provider declarations are retained separately from live endpoint identity.
+
+## FPSD1200 application and reply contract increment
+
+The reference64-byte FPSD1200 builder now has a recovered212-byte reply parser: eight caller output regions, descriptor/count guards, simple-error propagation and transport-dependent reply-port cleanup. The separate56-byte request1200 interface remains outside this pairing. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).

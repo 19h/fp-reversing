@@ -128,9 +128,9 @@ The send options depend on the received reply-right disposition. This is an exte
 ## Reproduction, validation, and bounded extensions
 
 ```sh
-xcrun dyld_info -fixups /Users/___/Downloads/zut/fairplayd.arm64e \
+xcrun dyld_info -fixups fairplayd.arm64e (reference input) \
   > triage_evidence/daemon_receive_fixups.txt
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/recover_daemon_receive.py
+$PYTHON triage_evidence/recover_daemon_receive.py
 ```
 
 Current results: 35 original native ranges, three fresh live/original comparisons, 22 exhaustive 256-input selector-bank reductions, 34 original branch-slot checks, 65 independent original fixup-word/import checks, and six SMT queries returning `unsat`. The latter cover the opaque1200 range, both two-ID ranges, demultiplexer Boolean selection, simple-status sign selection, and the exact pair of send errors requiring reply destruction. Constant route states converge to the same common post-demultiplexer frame with W24=0. Manual native-to-formula lifting remains reviewable in the saved script and report; the checks do not substitute for native execution or PAC validation.
@@ -167,3 +167,7 @@ The subsequent [arcade handshake recovery](created_port_report.md) resolves the 
 [user_trap_interface_report.md](user_trap_interface_report.md) connects the recovered reply API to available original libsystem_kernel: mach_msg -> mach_msg_overwrite -> packed mach_msg2_internal -> SVC0x180547c1c/X16=-47. Port-name/header fields, descriptor count, runtime-selected vectors/class flags and library interruption retry masks are established separately from actual IPC delivery. The callback's options1/0x11 are SEND_MSG or SEND_MSG|SEND_TIMEOUT; selected destroy statuses are INVALID_DEST/TIMED_OUT in the checked SDK.
 
 The supplied trace's PC0x180547c20 equals RET after this cache's SVC. Its27 printed trap observations include five identical-packet RESTART/resume pairs rather than five newly printed sends. Current RAX source explains the pattern conditionally on historical producer equivalence. Installed CF receive/trailer allocation, runtime callback data and actual port objects remain unknown.
+
+## FPSD1200 application and reply contract increment
+
+FPSD1200 now has a recovered14-argument application ABI and104-byte protected-call payload. Original selectors resolve copy helper0x10046f89c and shared dispatcher0x10065ffd8; input OOL deallocation/clearing and212-byte reply descriptors are traced to exact source sites. The protected core remains a declared output fixture. See [FPSD1200 contract](fpsd1200_contract_report.md) and [source/private evidence](triage_evidence/fpsd1200_contract_checks.json.zst).
