@@ -143,10 +143,10 @@ The original `/System/Library/LaunchDaemons/com.apple.adid.plist` declares Mach 
 The increment passes6220 assertions across51 private cases,5866 distinct retained instruction records,three exhaustive256-input banks,20 selected pointers and two full-domain SMT obligations. The760-byte encoded source,756-byte DER/parser output,provider metadata/static-tool output and arm64e28-byte layout compile are independently reread. Original supplied inputs and IDBs remain preserved. QG1-QG7 pass for these stated claims;the full objective remains incomplete.
 
 ```text
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/recover_corefp_client_paths.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_client_flow.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_secondary_client.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/validate_corefp_client_paths_delivery.py
+$PYTHON triage_evidence/recover_corefp_client_paths.py
+$PYTHON triage_evidence/probe_corefp_client_flow.py
+$PYTHON triage_evidence/probe_corefp_secondary_client.py
+$PYTHON triage_evidence/validate_corefp_client_paths_delivery.py
 ```
 
 Static extraction/readback is O(B+F+R+V+256K),with image bytes B,fixups F,retained ranges R,source visits V and bank identities K;space O(B+F+R+V). Private cases retain the30000-hook bound. Solver cost is separate,with30 s per-query caps. Byte counts and32/64-bit modular arithmetic are explicit;no native performance result is inferred.
@@ -165,3 +165,5 @@ No source-analysis blocker is asserted. The broader daemon,kext and deeper-facil
 ## Provider-side continuation
 
 The [ADID receiver report](adid_receiver_report.md) recovers the provider's peer setup, event callback, audit/data adapter, 48-byte private record and initialized-context dependency. Its local `adi-client` classifier lists 50 values; original cases reach the 28-byte client request after that gate. Six unlisted-client response pairs connect provider `data = ff ff 4f f2` to CoreFP return `0xffff4ff2`. This is source/private ABI correspondence. Native pairing, successful operation semantics, X1's meaning and legacy Mach compatibility remain unknown.
+
+The [request1201 client/server contract](fpsd1201_client_report.md) recovers builder0x8d40, send0x8e04, exact164-byte inline request, ID1301/simple36 reply grammar and reply-port cleanup calls. Twenty-seven client profiles and a fresh original daemon failure replay establish local byte/status continuity under declared receive conversion. The protected caller and actual destination-right origin remain unknown.

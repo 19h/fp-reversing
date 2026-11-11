@@ -201,3 +201,5 @@ Replay takes O(V+J+H*R+I) time and O(J+H*R+I) space for original visits V, journ
 ## FPSD1202 control endpoint and OOL continuation
 
 The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF field to the control-name comparator, recovers the marker4d session selector and establishes the OOL input/deallocation/reply ABI. Fifteen independently replayed profiles distinguish original failures, declared application-return controls and explicit stop boundaries. Source-produced marker4d ownership, successful processing and native transport/reclamation remain unknown.
+
+The [CoreFP1201 client report](fpsd1201_client_report.md) joins the reference serializer and reply parser to a fresh480680-visit replay of this original zero-input failure. All140 body bytes and the complete164-byte received request match after declared header/name conversion; the36-byte reply produces the same client statusffff5b37. Native endpoint identity, protected caller reachability and successful processing remain unknown.
