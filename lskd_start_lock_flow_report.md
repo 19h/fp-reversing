@@ -147,3 +147,5 @@ Source capture and retained-byte reconstruction cost O(B+I+E+256R), plus origina
 - **QG5** passes with distinct frame epochs, workspace and auxiliary limits, four separate global roles, source order and unknown native lifetimes.
 - **QG6** passes with original bytes, exact symbols, chained slots, retained-case byte epochs and eighteen checked queries.
 - **QG7** passes with impact-ranked runtime, seed-consumer, continuation and transport questions.
+
+[Element population and representation](lskd_element_population_report.md) recovers the conditional 1024-slot loop, 32 sixteen-byte rewrites and 63 distinct-word swaps per nonnull body, transformed-slot publication, completion-record phase `0x1c8ff7c8`, returning-helper raw-success handoff, cached-lock release and the separate presence gate. Twenty-two UNSAT queries cover 154 lifted instruction instances, including the complete 42-instruction SIMD body. Full pointer-codec/helper semantics, native ownership/population and a daemon reply remain unknown.

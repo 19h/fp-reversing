@@ -217,3 +217,5 @@ Time is O(B+C*(V+E)+I+256R), plus source mapping and solver-dependent cost (30 s
 | QG5 | Pass | Distinct raw statuses, source phases, file/runtime cache state, conditional clear, local/Mach publication and private/native evidence |
 | QG6 | Pass | Original bytes/names/chains,355 fresh byte-audited cases,20 re-lifted proof pairs and exhaustive banks |
 | QG7 | Pass | Impact-labeled continuation table |
+
+[Element population and representation](lskd_element_population_report.md) recovers the conditional 1024-slot loop, 32 sixteen-byte rewrites and 63 distinct-word swaps per nonnull body, transformed-slot publication, completion-record phase `0x1c8ff7c8`, returning-helper raw-success handoff, cached-lock release and the separate presence gate. Twenty-two UNSAT queries cover 154 lifted instruction instances, including the complete 42-instruction SIMD body. Full pointer-codec/helper semantics, native ownership/population and a daemon reply remain unknown.
