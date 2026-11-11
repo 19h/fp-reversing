@@ -199,3 +199,7 @@ The [VM/output report](fpsd1200_vm_report.md) establishes original consumers of 
 ## FPSD1200 endpoint return and original reply construction
 
 The [CF endpoint report](fpsd1200_port_report.md) joins the shared receive callback to a per-slot CF object, main-loop source registration and one-shot audit-PID exit-watch request. Explicit opaque CF/mode/kevent results allow original code to publish all seven staged outputs and construct212 bytes with two descriptors/status0; no protected output tuple is injected. Port/source NULL controls return36-byte errors; kevent=-1 stops at __error. The separate callback send0x100035184 is outside this demultiplexer-entry replay, so native transmission, right conversion and client acceptance remain unknown (FP1-FP8).
+
+## FPSD1200 failed process-watch cleanup
+
+The [lifetime/queue report](fpsd1200_lifetime_report.md) follows kevent=-1 through the __error call without an errno read, CF invalidation/release requests, slot clearing/marker reset and original36-byte status -1 reply. NULL and unmapped accessor-result controls have identical original sequences and retained terminal state. Explicit descriptor7 composition still reaches212-byte success; the prior descriptor0 word was an original image value, not proof that retained startup executed kqueue initialization. Native callback send, right conversion and input/output-owner effects remain unknown (FL1-FL8).

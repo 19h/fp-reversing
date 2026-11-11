@@ -1688,3 +1688,7 @@ The [VM/output report](fpsd1200_vm_report.md) establishes original vm_allocate c
 ## FPSD1200 CF, process-event and seven-output ABI
 
 The [CF endpoint report](fpsd1200_port_report.md) adds exact CF source/main-loop/default-mode/GetPort contracts and a source-defined32-byte kevent: ident0/8, filter8/2=-5, flags10/2=0x11, fflags12/4=0x80000000, data16/8=0 and udata24/8=NULL (offset/width in bytes). The six API arguments are queue descriptor, change pointer,1,NULL,0,NULL. Original P+72/80/84/88/92/96/100 producers publish VM address/count719/deallocate1/scalars76,9,0/raw name, then original MIG constructs212 bytes. SDK arm64e compilation and full-domain PID/selected-phase name codec checks delimit these local contracts. Native queue/rights, kernel descriptor conversion and transport remain unknown (FP1-FP8).
+
+## FPSD1200 queue codec, accessor and error-return contract
+
+The [lifetime/queue report](fpsd1200_lifetime_report.md) joins original kqueue encoding at0x100096920 (u32 descriptor+0x060ed969) to the watch's four-byte header+72 load and selected-phase decoding. A full-domain local query covers the composed codec. The source kevent return carrier is ret32 XOR0x8b3dc651; selected -1 propagates to a36-byte status0xffffffff reply after cleanup. SDK compilation establishes int *__error(void), but original code does not read its returned storage in the tested continuations. A separate stack u32 copy from SP+0x9a0 through SP+0x818 to slot+400 is established; field semantics and native initialization remain unknown (FL1-FL8).

@@ -1433,3 +1433,7 @@ The [VM/output continuation](fpsd1200_vm_report.md) separates request-local name
 ## FPSD1200 CF object-to-raw-name publication
 
 The [CF endpoint report](fpsd1200_port_report.md) establishes original CF result storage at slot+0 (0x100624eb4), source/default-mode registration and CFGetPort0x1005a7410. Under the declared opaque object/result model, original store0x1005a7458 publishes name0x6800 at P+100 and original MIG places it at reply+44 with outgoing disposition19/type0. Incoming local0x1400, reply destination0x6400, task-self fixture0x6600 and CF object0x77001000 have distinct roles. No insert-right or native send executes on this path. One full212-byte reply is constructed; actual rights, kernel copyout and receiver disposition conversion remain unknown (FP1-FP8).
+
+## FPSD1200 failed-watch endpoint retirement requests
+
+The [lifetime/queue report](fpsd1200_lifetime_report.md) establishes original CF invalidation0x100474e6c, release0x100474eb4 and eight-byte slot clearing0x100474eb8 after a failed process-watch request. No CFGetPort/name publication follows that branch; the original reply is36-byte status -1. The BSD queue descriptor is recovered from header+72, joining setup store0x100096920 to read0x1003ae3d8. The returned719-byte private VM owner is separate and remains mapped in these cases without a later observed VM cleanup request. Native port retirement, source removal, unmapping and transport remain unverified (FL1-FL8).

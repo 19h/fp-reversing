@@ -1517,3 +1517,7 @@ The [VM/output report](fpsd1200_vm_report.md) joins staged address/count loads0x
 ## FPSD1200 flattened endpoint and output fragments
 
 The [CF endpoint report](fpsd1200_port_report.md) supplies original source/effect contracts for slot CF storage0x100624eb4, source creation0x1005236b0, main-loop/default-mode registration0x1003ae28c..0x1003ae380, signed audit-PID/event construction0x1003ae384..0x1003ae458, original staged-output stores0x100624c68/0x100624c70/0x1005a7378/0x1005a7394/0x1005a73ac, CFGetPort0x1005a7410 and name publication0x1005a7458. Slot-copy fragment0x100552948 retains the exact third128-byte exponent input XOR0x98. Complete private source replay and local codec proofs corroborate these roles; arbitrary-state prototypes, field meanings, native rights and kext interaction remain unknown (FP1-FP8).
+
+## FPSD1200 queue/status/cleanup and slot-copy fragments
+
+The [lifetime/queue report](fpsd1200_lifetime_report.md) joins queue store0x100096920 to watch read0x1003ae3d8, local return encoding0x1003ae464..0x1003ae46c, unused-storage accessor call0x100493a58, CF cleanup0x100474e6c/0x100474eb4, slot clearing0x100474eb8, marker reset0x1004d8440 and selected error propagation0x1004d8454/0x10061aa0c. Copy fragments0x1006219b8/0x1006219bc and0x1005a7330/0x1005a7340 carry a diagnostic upstream u32 through a stack temporary to slot+400. Independent replay distinguishes original write footprints from initialized value origin. These are bounded fragment contracts, with native lifetime and field semantics unresolved (FL1-FL8).
