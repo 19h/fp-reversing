@@ -389,6 +389,7 @@ def main():
     if exists(BASE/'aes_configuration_commands_report.md'):reports.add(BASE/'aes_configuration_commands_report.md')
     if exists(BASE/'aes_trace_wakeup_report.md'):reports.add(BASE/'aes_trace_wakeup_report.md')
     if exists(BASE/'aes_event_registration_report.md'):reports.add(BASE/'aes_event_registration_report.md')
+    if exists(BASE/'event_wait_table_report.md'):reports.add(BASE/'event_wait_table_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1875,6 +1876,10 @@ def main():
         event_registration_checks=json.loads(read(ROOT/'aes_event_registration_checks.json'))
         manifest['validation']['aes_event_registration_increment_checks']=event_registration_checks['verified_counts']
         manifest['validation']['aes_event_registration_static_scope']=event_registration_checks['scope']
+    if exists(ROOT/'event_wait_table_checks.json'):
+        event_wait_table_checks=json.loads(read(ROOT/'event_wait_table_checks.json'))
+        manifest['validation']['event_wait_table_increment_checks']=event_wait_table_checks['verified_counts']
+        manifest['validation']['event_wait_table_static_scope']=event_wait_table_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

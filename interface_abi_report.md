@@ -1628,3 +1628,7 @@ The [trace/wakeup report](aes_trace_wakeup_report.md) maps eight configuration s
 ## AES event hash, registration and result ABI
 
 The [event-registration report](aes_event_registration_report.md) recovers the shared event hash and 24 B queue stride, configuration interruptibility 2 versus carrier 0, registration-core urgency/deadline/leeway 0 and current-thread argument. With raw mutex action 0x10, registration result !=0xffffffff bypasses release/block; configuration overwrites all eight sleep-return values without reading them. Wake maps lower raw zero to 48 and nonzero to 0. Native event/table/mutex epochs and actual wake progress remain unknown (ER1-ER8).
+
+## Global event-table initialization ABI
+
+The [event-table startup report](event_wait_table_report.md) records option-reader arguments, the W0/X1 allocation return pair, count-before-allocation/root-before-record publication, exact 24 B queue headers and their registration/wake validity interface. These kernel startup/memory contracts add no Mach endpoint or emission; native invocation and table epochs remain unknown (ET1-ET7).

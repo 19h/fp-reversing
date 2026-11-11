@@ -163,3 +163,7 @@ Extraction/path construction is O(B+I+P) time/space for collection bytes B, deco
 **QG6**: Original bytes/bounds/symbols/chains, frozen source comparisons, SMT certificates and independent finite interpretation supply primary provenance.
 
 **QG7**: The impact-ranked continuation table bounds further work; no native wait, device completion or daemon/kext pairing is established.
+
+## Startup producer and readiness boundary
+
+The [event-table startup report](event_wait_table_report.md) identifies an authenticated numeric phase-14 callback, its `wqsize` option/default budget paths, count/root publication and 24 B record initialization. Completed source initialization supplies the byte+5 validity bit; actual invocation, backing, allocation status, visibility and matching runtime table epochs remain premises (ET1-ET7).

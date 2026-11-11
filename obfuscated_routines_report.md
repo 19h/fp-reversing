@@ -1457,3 +1457,7 @@ The [trace/wakeup report](aes_trace_wakeup_report.md) adds source ring-record ro
 ## Lower event-registration and retry context
 
 The [event-registration report](aes_event_registration_report.md) establishes lower queue/hash/registration contracts reached by the hardware-provider interface below the obfuscated caller. It separates configuration retries from the final carrier wait and recovers their differing interruptibility/result handling. These source contracts do not identify the whole obfuscated algorithm, actual key data, native daemon request or hardware completion (ER1-ER8).
+
+## Unnamed event-table startup routines
+
+The [event-table startup report](event_wait_table_report.md) establishes source roles for the unnamed registered callback at `0xfffffe000c6319e4`, option reader at `0xfffffe000c5e48a4` and allocator at `0xfffffe000bdc08e0`. It retains exact bytes, startup/fixup metadata, arithmetic and return ABI without assigning unmatched API or enum names. Native semantics beyond the selected contracts remain unproved (ET1-ET7).

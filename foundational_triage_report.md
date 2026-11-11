@@ -1499,3 +1499,7 @@ The [trace/wakeup report](aes_trace_wakeup_report.md) links source allocation ge
 ## AES global event-registration context
 
 The [event-registration report](aes_event_registration_report.md) adds source hash/table identity, different carrier/configuration interruptibility, conditional abort/publication, physical mutex/RMW widths and the no-block registration-return path. Forty-seven new UNSAT checks, seven feasible source paths, three SAT controls and 3777 independent finite cases pass. Native table initialization, lock/thread ownership, matching event membership and scheduler/device progress remain unknown (ER1-ER8).
+
+## Event-table startup context
+
+The [event-table startup report](event_wait_table_report.md) connects the global AES pointer-event table to its registered startup producer. It separates external option/default snapshots, modular sizing, allocator return ABI and initialized record bytes from native startup ordering, successful allocation and scheduler readiness (ET1-ET7).
