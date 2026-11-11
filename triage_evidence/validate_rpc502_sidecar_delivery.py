@@ -392,6 +392,7 @@ def main():
     if exists(BASE/'event_wait_table_report.md'):reports.add(BASE/'event_wait_table_report.md')
     if exists(BASE/'startup_dispatch_report.md'):reports.add(BASE/'startup_dispatch_report.md')
     if exists(BASE/'aes_event_wake_selection_report.md'):reports.add(BASE/'aes_event_wake_selection_report.md')
+    if exists(BASE/'aes_block_wake_handshake_report.md'):reports.add(BASE/'aes_block_wake_handshake_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1890,6 +1891,10 @@ def main():
         wake_selection_checks=json.loads(read(ROOT/'aes_event_wake_selection_checks.json'))
         manifest['validation']['aes_event_wake_selection_increment_checks']=wake_selection_checks['verified_counts']
         manifest['validation']['aes_event_wake_selection_static_scope']=wake_selection_checks['scope']
+    if exists(ROOT/'aes_block_wake_handshake_checks.json'):
+        handshake_checks=json.loads(read(ROOT/'aes_block_wake_handshake_checks.json'))
+        manifest['validation']['aes_block_wake_handshake_increment_checks']=handshake_checks['verified_counts']
+        manifest['validation']['aes_block_wake_handshake_static_scope']=handshake_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1639,3 +1639,6 @@ The [startup-dispatch report](startup_dispatch_report.md) establishes the 24 B e
 
 
 The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).
+
+
+The [AES block/wake handshake report](aes_block_wake_handshake_report.md) establishes the ordinary wake-state return split, complementary post-switch bit clearing, global/paired counter contracts, raw callback codes 1/2 and placement-to-queue ABI. Thirty-four new UNSAT checks, four abstract SAT controls and 227 private cases pass. Actual queue insertion, context switching, concurrent epochs and daemon-kext completion remain unknown (BH1-BH8).

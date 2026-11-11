@@ -154,3 +154,6 @@ The generator requires O(B+I+P) source/proof-construction time and space, exclud
 - **QG7**: Continuations are bounded and ranked by impact; native epochs, liveness and daemon-facing completion remain unknown.
 
 Evidence: [source and certificates](triage_evidence/aes_event_wake_selection_checks.json.zst), [generator](triage_evidence/recover_aes_event_wake_selection.py), [independent interpreter](triage_evidence/audit_aes_event_wake_selection.py), [publication audit](triage_evidence/verify_aes_event_wake_selection_publication.py).
+
+
+The [AES block/wake handshake report](aes_block_wake_handshake_report.md) establishes the ordinary wake-state return split, complementary post-switch bit clearing, global/paired counter contracts, raw callback codes 1/2 and placement-to-queue ABI. Thirty-four new UNSAT checks, four abstract SAT controls and 227 private cases pass. Actual queue insertion, context switching, concurrent epochs and daemon-kext completion remain unknown (BH1-BH8).

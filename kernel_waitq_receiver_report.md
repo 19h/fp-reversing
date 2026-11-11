@@ -164,10 +164,13 @@ Separate fresh CPU replay verifies14101 original visits,3999 reads /26431 bytes,
 Three SMT counterexample queries are UNSAT within their recorded scalar domains: FIFO's two guards equal the conjunction of identity/event matching; the scheduler mask removes the staging bit while preserving unmasked bits; and the stated identify/release hold sequence balances without exceeding u32 at its highest increment. These do not quantify over native scheduling, heap membership, interrupts or complete daemon behavior.
 
 ```sh
-cd /Users/___/dev/dylex/extracted
-env PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_kernel_waitq_receiver.py
-env PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_kernel_waitq_receiver.py
-env PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kernel_waitq_receiver.py
+env PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=triage_evidence \
+  "$PYTHON" -P triage_evidence/recover_kernel_waitq_receiver.py
+env PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=triage_evidence \
+  "$PYTHON" -P triage_evidence/probe_kernel_waitq_receiver.py
+env Z3_LIBRARY_PATH="$Z3_LIBRARY_DIR" PYTHONDONTWRITEBYTECODE=1 \
+  PYTHONPATH="triage_evidence:$Z3_PYTHONPATH" \
+  "$PYTHON" -P triage_evidence/validate_kernel_waitq_receiver.py
 ```
 
 Recovery is O(image+captured source) time and space. Component execution/replay and validation are O(image+visits+RAM+effects), with O(image+RAM+journals) space; SMT involves three fixed-width formulas. FIFO selection is O(number of scanned members) per call for the tested uncontended path. No bound on general scheduler latency, hash/set traversal or lock contention is established. Scripts rewrite their own artifacts; publication checks pin their exact resulting hashes.
@@ -197,3 +200,6 @@ QG5: Selected-list ownership, extra nesting hold, free-versus-owned spin states,
 QG6: Original KC bodies/words/symbols are recaptured; exact producer CPU/RAM/globals and declared overlays are pinned; independent semantic oracles and CPU replay pass. No native or historical-run provenance is inferred from synthetic components.
 
 QG7: The bounded impact table identifies receive initialization, slow scheduling, copyout, port-set/hash and open-failure opportunities without extending these results to unobserved behavior.
+
+
+The [block/wake handshake report](aes_block_wake_handshake_report.md) extends the numerical state0x101 frontier with original wake-state and counter bodies over declared private epochs. It establishes the ordinary helper result1 and placement(thread,5) interface. It does not resume the historical notification RAM component or establish native Mach delivery; that component retains its original prefix boundary (BH1-BH8).
