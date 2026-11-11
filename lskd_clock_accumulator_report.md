@@ -198,3 +198,6 @@ Extraction costs O(B+I) time/space plus original chain decoding, with B retained
 - **QG7** passes with impact-ranked request, result-range, context-predicate, publication-epoch and provider questions.
 
 The [context-comparison report](lskd_context_compare_report.md) corrects the continuation operand to the carry-flag XOR, recovers the complete comparison-record leaf and conditionally proves the final local gate: decoded accumulator < normalized context value and saved control low byte = 1. Twenty-two UNSAT certificates and two SAT controls cover the corrected handoff and carry-aware predicate. A 256-slot census retains three matching-diversity helper candidates; actual bank roots, saved phase, context/control producers and daemon-kext lineage remain unknown.
+
+
+The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phase `0x6e3`, the four reader-call banks and context byte `+0x174` on a matched source template. It recovers the complete flag-record decoder and the conditional clock-entry gate. Earlier unresolved-root statements describe the earlier bounded increment; the intervening context transform, full route preservation, native epoch and daemon request lineage remain open.

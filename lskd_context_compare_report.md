@@ -180,3 +180,6 @@ Extraction costs O(B+I+W) time/space plus original chain decoding, for bytes B, 
 - **QG5** passes with the prior handoff error corrected, actual banks/saved phase unresolved, arbitrary wrapped operands covered and externally visible meanings unassigned.
 - **QG6** passes with original bytes/fixups/symbol, supplied C, checked source certificates, pinned dependencies and preserved inputs.
 - **QG7** passes with impact-ranked binding, context/control provenance, outer-result and comparator-family questions.
+
+
+The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phase `0x6e3`, the four reader-call banks and context byte `+0x174` on a matched source template. It recovers the complete flag-record decoder and the conditional clock-entry gate. Earlier unresolved-root statements describe the earlier bounded increment; the intervening context transform, full route preservation, native epoch and daemon request lineage remain open.

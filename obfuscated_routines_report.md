@@ -636,7 +636,7 @@ QG1: factual analysis only. QG2: O1-O5 state assumptions and probes. QG3: the en
 
 [The zut trace report](zut_trace_report.md) inventories the existing `fp-harness` observations, checkpoints, strict lifter/SMT workflow, and target-loop proof artifacts. The daemon image's executable section and all other `__TEXT` sections match the loaded daemon IDB, permitting bounded code correlation. The target-loop artifact provides local frozen-state semantic recovery, not a complete routine or native protocol proof; its historical checks were inspected, not rerun.
 
-Four older annotations in `/Users/___/Downloads/zut/evidence.json` and `trace.txt` incorrectly render `B.NE` as `bcc` at daemon addresses `0x100004540`, `0x10000454c`, `0x100004558`, and `0x100004568`. Target bytes and live IDA confirm the equality-based conditions. The original artifacts were preserved; [the audit](triage_evidence/zut_trace_decoded.json) records words and corrected condition names. The separate Python `fpd` harness uses synthetic import/object models and fixed-tag PAC handling, so its paths require explicit model boundaries. These daemon findings do not establish additional obfuscated kext routine semantics.
+Four older annotations in the supplied `zut/evidence.json` and `zut/trace.txt` incorrectly render `B.NE` as `bcc` at daemon addresses `0x100004540`, `0x10000454c`, `0x100004558`, and `0x100004568`. Target bytes and live IDA confirm the equality-based conditions. The original artifacts were preserved; [the audit](triage_evidence/zut_trace_decoded.json) records words and corrected condition names. The separate Python `fpd` harness uses synthetic import/object models and fixed-tag PAC handling, so its paths require explicit model boundaries. These daemon findings do not establish additional obfuscated kext routine semantics.
 
 
 ## Current native interface recovery (2026-11-01)
@@ -1425,3 +1425,6 @@ The captured heap startup, family constructor, setup callback and variable view 
 The descriptor lifecycle report resolves the local count, wire entry append, completion walk and used-length update roles from the captured original routines. [Descriptor preparation and completion](descriptor_prepare_lifecycle_report.md).
 
 The selected protected cleanup suffix conditionally retires a separate auxiliary allocation and passes a cached lock operand to a local teardown helper. The source producer publishes the matching auxiliary pointer. [AES initialization and cleanup](aes_cleanup_epoch_report.md).
+
+
+The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phase `0x6e3`, the four reader-call banks and context byte `+0x174` on a matched source template. It recovers the complete flag-record decoder and the conditional clock-entry gate. Earlier unresolved-root statements describe the earlier bounded increment; the intervening context transform, full route preservation, native epoch and daemon request lineage remain open.

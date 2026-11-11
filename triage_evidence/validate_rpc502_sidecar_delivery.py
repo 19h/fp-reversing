@@ -378,6 +378,7 @@ def main():
     if exists(BASE/'lskd_clock_reader_report.md'):reports.add(BASE/'lskd_clock_reader_report.md')
     if exists(BASE/'lskd_clock_accumulator_report.md'):reports.add(BASE/'lskd_clock_accumulator_report.md')
     if exists(BASE/'lskd_context_compare_report.md'):reports.add(BASE/'lskd_context_compare_report.md')
+    if exists(BASE/'lskd_reader_lineage_report.md'):reports.add(BASE/'lskd_reader_lineage_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1820,6 +1821,10 @@ def main():
         context_checks=json.loads(read(ROOT/'lskd_context_compare_checks.json'))
         manifest['validation']['lskd_context_compare_increment_checks']=context_checks['verified_counts']
         manifest['validation']['lskd_context_compare_static_scope']=context_checks['scope']
+    if exists(ROOT/'lskd_reader_lineage_checks.json'):
+        lineage_checks=json.loads(read(ROOT/'lskd_reader_lineage_checks.json'))
+        manifest['validation']['lskd_reader_lineage_increment_checks']=lineage_checks['verified_counts']
+        manifest['validation']['lskd_reader_lineage_static_scope']=lineage_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

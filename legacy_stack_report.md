@@ -151,10 +151,12 @@ The verifier freshly recreates all cases, compares complete retained/fresh profi
 
 Complexity is `O(B+C*(V+E)+256R)` time/retained space for source bytes B, cases C, visits V, events E and bank rules R, plus solver-dependent proof cost. Each run is limited to 30000 visits. Byte quantities and unsigned fixed widths are explicit; there is no SI conversion.
 
+Set `ANALYSIS_PYTHON`, `Z3_PYTHON_SITE` and `Z3_LIBRARY_DIR` to the local analysis interpreter, Z3 Python package directory and Z3 shared-library directory before running:
+
 ```sh
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages \
-Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_legacy_stack.py
+PYTHONPATH="triage_evidence:${Z3_PYTHON_SITE}" \
+Z3_LIBRARY_PATH="${Z3_LIBRARY_DIR}" \
+"${ANALYSIS_PYTHON}" -P triage_evidence/validate_legacy_stack.py
 ```
 
 | Impact | Remaining interface question | Discriminating evidence |
@@ -166,3 +168,6 @@ Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
 | Low | What is the semantic domain of the first wrapper's narrowed W1? | Establish actual caller definitions and field interpretation; trace periodicity alone is insufficient |
 
 QG1 passes for factual technical analysis. QG2 is LS1-LS9 with dependencies and falsification probes. QG3 passes for this increment's two reclassifications, wrapper/bridge records, original probe and source stack/status effects; the broader objective remains incomplete. QG4 covers fixed widths, byte epochs, bounds, counts and complexity. QG5 separates modifier/target, intermediate/final operand, model/source output, zero/nonzero displacement and private/native effects. QG6 uses primary bytes, exact symbols/chains, exhaustive banks, fresh replay and five local proofs. QG7 is the impact-labeled continuation table. Original inputs, IDBs, external `dump.md` and published predecessor evidence remain preserved.
+
+
+The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phase `0x6e3`, the four reader-call banks and context byte `+0x174` on a matched source template. It recovers the complete flag-record decoder and the conditional clock-entry gate. Earlier unresolved-root statements describe the earlier bounded increment; the intervening context transform, full route preservation, native epoch and daemon request lineage remain open.

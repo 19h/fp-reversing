@@ -1255,3 +1255,6 @@ The cached lock producer now has a source-backed mutex allocation and publicatio
 The legacy RW allocator store now has a selected destination lineage through record +8 and a conditional preparer for the separate LSKD cell. Generic allocation status and parent raw status have an all-u32 correspondence. Actual parent-phase reachability, intervening writers and matched native lifetimes remain open. [LSKD RW construction records](lskd_lock_origin_report.md).
 
 The start handler now supplies the previously conditional parent phase in a source continuation from thirteen retained entropy boundaries. Its seed writes, publication-before-construction order, local failure return and successful acquisition handoff are established under returning-call premises. Native completion, the post-acquisition continuation and pointer epochs remain open. [LSKD start initialization and lock handoff](lskd_start_lock_flow_report.md).
+
+
+The [named-wrapper reader lineage](lskd_reader_lineage_report.md) now binds phase `0x6e3`, the four reader-call banks and context byte `+0x174` on a matched source template. It recovers the complete flag-record decoder and the conditional clock-entry gate. Earlier unresolved-root statements describe the earlier bounded increment; the intervening context transform, full route preservation, native epoch and daemon request lineage remain open.
