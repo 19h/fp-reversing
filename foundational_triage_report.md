@@ -1543,3 +1543,7 @@ The [FPSD1200 identity-path report](fpsd1200_identity_report.md) connects the or
 ## FPSD1200 pool and application-word continuation
 
 The [pool continuation](fpsd1200_arena_report.md) establishes 50 slots at 896-byte stride in a 44800-byte request, with only 1000 metadata bytes defined by initialization. Pointer/count publication, first-slot marker, independent application-word/count controls, a scalar atomic update followed by an original reset, and seeded zero-status returns are retained. Independent replay checks 215678 original visits, 378 import events, 1661 heap stores and 7864320 terminal private bytes across 12 profiles. Fresh IDA checks cover 106 code spans; three local UNSAT queries and 4352 bank inputs pass. Native allocation/synchronization, slot semantics, output producers and daemon-kext completion remain unknown (FA1-FA8).
+
+## FPSD1200 context dependencies and certificate input
+
+The [context report](fpsd1200_context_report.md) identifies a624-word seed expansion, four encoded random/time material words, readiness/descriptor/owner/self-text dependencies and original OOL certificate reads. Independent replay covers19 profiles and7245815 original visits, including guarded missing-context reads, five error rollbacks and a DER-to-root-CA allocation boundary. Startup/provider snapshots remain explicit private compositions; native continuity, trust and daemon-kext completion are unknown (FX1-FX8).

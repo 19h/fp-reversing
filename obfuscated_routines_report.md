@@ -1501,3 +1501,7 @@ The [FPSD1200 identity-path report](fpsd1200_identity_report.md) establishes ada
 ## FPSD1200 pool and application-word continuation
 
 The [pool continuation](fpsd1200_arena_report.md) assigns local source roles to metadata stores `0x10013ebe0`/`0x10013ebe4`/`0x1001b4724`, pointer/count publisher `0x100057634`, slot-marker writer `0x10051e068`, sampled word selector `0x100635670..0x1006356a8`, atomic boundary `0x1006009c0` and later reset `0x1006303ec`. Explicit scalar atomic continuations reach the `arc4random` import at `0x100630448`. The original zero-status return branch preserves reply seeds. Pool marker business meaning, complete application-word decoding, random consumer and provider/IOKit semantics remain unknown; these fragments are not assigned independent C prototypes (FA1-FA8).
+
+## FPSD1200 seed, environment and certificate fragments
+
+The [context report](fpsd1200_context_report.md) assigns source-backed fragment roles: seed expansion at0x10052deec, four-word material construction at0x100405a74..0x100405b88, readiness-dependent arena selection at0x10047ab44, self-text input at0x10049da00, OOL byte consumers starting0x100315ae8/0x10022cb78, and slot rollback at0x100633cb4. Source/private compositions reach the root-CA allocation site0x100346714. These roles do not assert complete C-function prototypes, native certificate acceptance or a successful IOKit route (FX1-FX8).

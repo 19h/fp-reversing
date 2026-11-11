@@ -144,3 +144,7 @@ Generation reuses the retained read-only IDA attestation; a fresh live read is a
 | Low | Compare pool markers/layout with other independently pinned operation carriers; shared fragment addresses alone do not establish shared business semantics. |
 
 This is one completed investigation increment. The full interface goal remains active.
+
+## Environment and certificate continuation
+
+The [context continuation](fpsd1200_context_report.md) resolves the first random-result consumer, 624-word seed recurrence, clock/random material, readiness/arena/self-text dependencies, OOL certificate consumption and original error rollback. Nineteen independent profiles cover 7245815 original visits; the retained 756-byte DER reaches a later atomic gate, and an explicit scalar continuation reaches the root-CA allocation boundary. These cases extend the earlier prefix without changing its twelve-case scope. Native port/right producers, IOKit linkage and successful completion remain unknown (FX1-FX8).

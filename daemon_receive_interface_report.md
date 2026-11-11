@@ -183,3 +183,7 @@ The [FPSD1200 identity-path report](fpsd1200_identity_report.md) preserves the r
 ## FPSD1200 pool and application-word continuation
 
 The [pool continuation](fpsd1200_arena_report.md) carries that original path through a 50-slot allocation and process-local publication. Request+52 controls the sampled later branch independently of OOL count8/756: words1/2 reach a scalar-atomic boundary and, with its explicit model, `arc4random`; word3 and reference `0x11223344` return zero through the original wrapper. Five complex reply returns retain seeds in the inline block and output cells. All 12 profiles read no input OOL bytes and reach no new IOKit call or Mach emission. Status zero is distinct from established output definedness, native admission or successful transaction (FA1-FA8).
+
+## FPSD1200 environment and OOL-input continuation
+
+The [context report](fpsd1200_context_report.md) joins admitted FPSD1200 processing to original seed/time material, readiness/arena/self-text prerequisites and all756 reference-certificate bytes. Five original simple error replies restore the selected slot marker and retire the incoming OOL through the recorded MIG call; the DER routes reach a process-local atomic gate and one explicit continuation reaches malloc(1219). No new send, right producer or IOKit call is established (FX1-FX8).

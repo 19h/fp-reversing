@@ -1672,3 +1672,7 @@ The [FPSD1200 identity-path report](fpsd1200_identity_report.md) extends the ori
 ## FPSD1200 pool and application-word continuation
 
 The [pool continuation](fpsd1200_arena_report.md) recovers a bounded allocation layout: stride896, 50 slots, u32 metadata at +876 and zeroed u64 fields at +880/+888; only selected slot0 changes marker. `STP` at `0x100057634` publishes the owner pointer/count to `0x1010c4cd8`/`0x1010c4ce0`. The original `CASAL W8,W14,[X12]` at `0x1006009c0` accesses process-local word `0x1010b5de0`; its scalar fixture and following original reset are separate from native ordering. Five zero-status original returns preserve output seeds, so application status, complex-descriptor bytes and actual output/right validity remain distinct ABI layers (FA1-FA8).
+
+## FPSD1200 environment and application-input extension
+
+The [context report](fpsd1200_context_report.md) establishes the selected request+56 bit1 predicate, original random/gettimeofday argument and material layout, later CASAL operand contracts and all756 OOL-certificate bytes consumed. Reference words2/2 and matching counts756 remain distinct from countercases. Five original36-byte error replies use status+32 and restore the selected slot marker; these findings do not establish native rights, emissions, certificate trust or IOKit completion (FX1-FX8).

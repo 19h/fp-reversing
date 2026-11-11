@@ -1417,3 +1417,7 @@ The [FPSD1200 identity-path report](fpsd1200_identity_report.md) adds original P
 ## FPSD1200 pool continuation and returned-name boundary
 
 The [pool continuation](fpsd1200_arena_report.md) reaches five original zero-status returns and the 212-byte reply formatter. The incoming application name still comes from request+12 at `0x10000467c`; reply destination follows the earlier header contract. Wrapper copy-back at `0x100007f34..0x100007f60` writes reply+44 from the staged name cell, which remains fixture seed bytes. Disposition19/type0 and complex formatting at `0x1000046f0..0x100004704` serialize a descriptor; neither location emits a message or produces a right. No new port producer, `mach_msg` send, successful OOL ownership or IOKit connection is established. Complex reply+32 is descriptor data, not the separate 36-byte error format's status word (FA1-FA8).
+
+## FPSD1200 context/error continuation
+
+The [context report](fpsd1200_context_report.md) retains request local name+12 as the incoming application port and request remote name+8 as the reply-buffer destination. Five completed36-byte error replies call original mig_deallocate at0x10000468c, then clear the input OOL cells; the import is record-only. Certificate-consuming continuations stop at later atomic/allocation boundaries. No new emitted Mach message, output name/right producer or IOKit connection is established (FX1-FX8).

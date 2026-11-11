@@ -1319,3 +1319,7 @@ Completed the [FPSD1200 identity-path increment](fpsd1200_identity_report.md): o
 ## FPSD1200 pool and application-word continuation
 
 Completed the [pool continuation](fpsd1200_arena_report.md): original 50*896-byte layout, partial metadata initialization, pointer/count publication, selected marker and application-word branch. Twelve independent profiles pass, including five original zero-status returns that preserve reply seeds and four explicit scalar atomic continuations that reach `arc4random`. Fresh IDA/source/fixup checks cover 106 spans; no new native output, port producer, emission or IOKit call is established. The full goal remains active. Next priorities are the random-result consumer, payload/output/provider route, slot consumers and actual native credentials, rights and cross-layer completion (FA1-FA8).
+
+## FPSD1200 seed/environment and certificate increment
+
+Completed the [context continuation](fpsd1200_context_report.md): original624-word seed expansion, encoded clock/random material, readiness/arena/self-text dependencies, source-written startup composition, certificate-input reads and error rollback. Nineteen independent profiles and594 matching live IDA spans pass. All756 DER bytes reach a later atomic guard; one explicit scalar continuation reaches malloc(1219) at the prior root-CA constructor site. The full goal remains active. Next priorities are constructor/validation returns, actual output/provider/IOKit producers and native receive/send/initialization continuity (FX1-FX8).
