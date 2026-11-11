@@ -1632,3 +1632,7 @@ The [event-registration report](aes_event_registration_report.md) recovers the s
 ## Global event-table initialization ABI
 
 The [event-table startup report](event_wait_table_report.md) records option-reader arguments, the W0/X1 allocation return pair, count-before-allocation/root-before-record publication, exact 24 B queue headers and their registration/wake validity interface. These kernel startup/memory contracts add no Mach endpoint or emission; native invocation and table epochs remain unknown (ET1-ET7).
+
+## Startup callback and cursor ABI
+
+The [startup-dispatch report](startup_dispatch_report.md) establishes the 24 B entry ABI, X0 argument / X17=0x2abe authenticated callback call, phase-before-call and cursor-after-return stores, and unsigned threshold gates. The source wait-table callback belongs to phase14 `mach_ipc`, tied at rank0 with41 peers; this adds no Mach endpoint or message emission (SD1-SD7).

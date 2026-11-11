@@ -1461,3 +1461,7 @@ The [event-registration report](aes_event_registration_report.md) establishes lo
 ## Unnamed event-table startup routines
 
 The [event-table startup report](event_wait_table_report.md) establishes source roles for the unnamed registered callback at `0xfffffe000c6319e4`, option reader at `0xfffffe000c5e48a4` and allocator at `0xfffffe000bdc08e0`. It retains exact bytes, startup/fixup metadata, arithmetic and return ABI without assigning unmatched API or enum names. Native semantics beyond the selected contracts remain unproved (ET1-ET7).
+
+## Startup dispatcher and comparator roles
+
+The [startup-dispatch report](startup_dispatch_report.md) links unnamed code to the original diagnostic literal `kernel_startup_initialize_upto`, recovers its phase-name pointer table, and establishes comparator, sorter, callback and cursor roles through original source and independent interpretation. Exact nlist names, native callback success and hardware PAC remain unproved (SD1-SD7).

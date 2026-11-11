@@ -36,7 +36,7 @@ Evidence: [source and certificates](triage_evidence/event_wait_table_checks.json
 
 ## Startup registration and environmental input
 
-Five complete compiler-bounded functions contain 1,022 instructions / 4,088 B: the callback, option reader, allocator and two event wrappers. The callback's 110 instructions / 440 B are retained in full. Its startup record at `0xfffffe000cbebbf8` is an aligned 24 B entry in `__BOOTDATA,__init_entry_set`; the leading u32 words are 14 and 0, the authenticated format-8 pointer at+8 targets `0xfffffe000c6319e4`, and the final u64 argument is zero. Numeric registration is established; the symbolic phase name and actual dispatch are not inferred. [ET1,ET2]
+Five complete compiler-bounded functions contain 1,022 instructions / 4,088 B: the callback, option reader, allocator and two event wrappers. The callback's 110 instructions / 440 B are retained in full. Its startup record at `0xfffffe000cbebbf8` is an aligned 24 B entry in `__BOOTDATA,__init_entry_set`; the leading u32 words are 14 and 0, the authenticated format-8 pointer at+8 targets `0xfffffe000c6319e4`, and the final u64 argument is zero. Numeric registration is established. The [startup-dispatch report](startup_dispatch_report.md) recovers the original phase-name literal `mach_ipc`; actual native dispatch remains unobserved. [ET1,ET2]
 
 | Interface / item | Original address | Exact source fact |
 | --- | --- | --- |
@@ -123,3 +123,7 @@ Extraction and locator work are O(B+I+P) time/space for collection bytes B, inst
 **QG6**: Original collection bytes, compiler/section metadata, authenticated chain membership, scalar certificates and independent byte interpretation provide primary provenance.
 
 **QG7**: The impact-ranked continuation table bounds the remaining initialization, environment, serialization and daemon/kext joins.
+
+## Source ordering and callback-return qualification
+
+The [startup-dispatch report](startup_dispatch_report.md) establishes unsigned phase/rank comparison, the authenticated callback ABI, 42 rank-zero entries in `mach_ipc`, and cursor advance after callback return. A completed phase14 traversal includes this callback under sorted-table, returning-call and exclusive-cursor premises. It does not establish successful allocation, initialized-table visibility or native AES use (SD1-SD7).

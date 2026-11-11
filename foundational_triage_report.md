@@ -1503,3 +1503,7 @@ The [event-registration report](aes_event_registration_report.md) adds source ha
 ## Event-table startup context
 
 The [event-table startup report](event_wait_table_report.md) connects the global AES pointer-event table to its registered startup producer. It separates external option/default snapshots, modular sizing, allocator return ABI and initialized record bytes from native startup ordering, successful allocation and scheduler readiness (ET1-ET7).
+
+## Startup phase and readiness context
+
+The [startup-dispatch report](startup_dispatch_report.md) recovers original phase labels, unsigned phase/rank ordering, authenticated callback arguments and return-before-cursor publication. It distinguishes completed source traversal from successful callback effects, concurrent/reentrant exclusion and native consumer visibility (SD1-SD7).

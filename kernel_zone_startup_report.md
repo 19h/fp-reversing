@@ -15,7 +15,7 @@ Evidence: [original source and 70 startup records](triage_evidence/kernel_zone_s
 | `0xfffffe000cbea3d0` | Authenticated callback-pointer slot targeting `0xfffffe000c63222c` | Format 8, auth 1, key index 0, diversity `0x2abe`, address-diversity 0; hardware authentication untested |
 | `0xfffffe000cbea3d8` | Argument-pointer slot targeting specification `0xfffffe000cbc8310` | Original unauthenticated format-8 fixup |
 
-Exact original symbols for the three newly captured routines are absent. The role names above describe recovered behavior; they do not assert recovered source names. The startup entry's two numeric words are 7 and 3. The extractor catalogs all 70 fixup references to this callback, including their argument specifications and owning sections. Actual startup-engine traversal/order is unknown; numeric metadata and address order do not prove execution order. [ZS1,ZS2]
+Exact original symbols for the three newly captured routines are absent. The role names above describe recovered behavior; they do not assert recovered source names. The startup entry's two numeric words are 7 and 3. The extractor catalogs all 70 fixup references to this callback, including their argument specifications and owning sections. The [startup-dispatch report](startup_dispatch_report.md) now establishes comparator and conditional traversal contracts; native execution order remains unobserved. [ZS1,ZS2]
 
 The callback itself establishes the following 48-byte specification layout in `__BOOTDATA,__init`:
 
@@ -139,12 +139,12 @@ The empty-cache component is a prefix stop at `0xfffffe000bd75e20`; it is not a 
 ## Reproduction, independent checks and quality gates
 
 ```sh
-cd /Users/___/dev/dylex/extracted
-export PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages
-export Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_kernel_zone_startup.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_kernel_zone_startup.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kernel_zone_startup.py
+# Run from the repository root.
+export PYTHONPATH="triage_evidence${Z3_PYTHONPATH:+:$Z3_PYTHONPATH}"
+export Z3_LIBRARY_PATH="$Z3_LIBRARY_DIR"
+"$PYTHON" -P triage_evidence/recover_kernel_zone_startup.py
+"$PYTHON" -P triage_evidence/probe_kernel_zone_startup.py
+"$PYTHON" -P triage_evidence/validate_kernel_zone_startup.py
 ```
 
 Static capture retains 16 complete functions / 2732 instructions, including three new functions / 661 instructions. The independent replayer imports no probe executor. It checks 1953 original instruction visits, 489 reads / 3440 bytes, 401 writes / 2800 bytes, 67 primitive call models, 41 startup frames, 12 allocation frames, 10 final boundaries, 320 SIMD registers, three thread system-register values, 2316 final global bytes and 10485760 final private RAM bytes. Six logical data-signing and three logical authentication steps remain explicit. Three constrained scalar proofs return `unsat`; they are arithmetic contracts, not general reachability proofs.
@@ -152,3 +152,7 @@ Static capture retains 16 complete functions / 2732 instructions, including thre
 Recovery costs O(image bytes + fixups + captured source) time and O(image + catalog + source) space. CPU replay/validation costs O(image + visits + RAM + journal effects) time and O(image + one RAM map + journals) space, excluding solver internals. Each fixed-width solver query records its exact domain and expression; no solver-complexity bound is asserted.
 
 QG1: no normative conclusion required. QG2: ZS1-ZS8 record dependencies and falsification probes. QG3: anonymous roles, startup/consumer ABI, allocation-domain mapping and Mach-port evidence boundary covered for this increment; full investigation remains active. QG4: all extents/offsets/strides are bytes, numeric flags remain explicit and arithmetic bounds are reproducible. QG5: prior candidate ambiguity is resolved statically; empty-cache, controlled variants, prefix stops and native unknowns remain distinct. QG6: original KC bytes, fixups, complete bodies, independent field oracles and full-effect replay provide verified local provenance. QG7: bounded extensions and impact labels recorded above. Scoped gates pass; native full FairPlay continuity remains unknown.
+
+## Startup dispatcher correspondence
+
+The [startup-dispatch report](startup_dispatch_report.md) resolves original phase7 to `zalloc` and phase14 to `mach_ipc`, and establishes unsigned phase/rank comparison and callback/cursor order. Its private full-table sort preserves all3519 records; callback bodies are returning ABI models in the separate dispatch traversal. These contracts qualify source ordering of zone and event-table initialization while native invocation, cache population and actual callback effects remain unknown (SD1-SD7).
