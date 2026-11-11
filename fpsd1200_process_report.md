@@ -160,3 +160,7 @@ Replay takes O(V+J+H*R+I) time and space O(J+H*R+I), for original visits V, jour
 | Medium | Trace slot+400's semantic origin and other consumers. Its non-use here does not establish a global absence of consumers. |
 
 **QG1** passes: factual source, ABI and bounded state analysis. **QG2** passes: FP1-FP8 list assumptions, dependencies and falsification probes. **QG3** passes for this increment; the broad goal remains active. **QG4** passes: exact byte extents, widths, counts and modular arithmetic are reproducible. **QG5** passes within scope: reader phase versus conditional writer phase, pool composition versus native continuity, CF reference versus Mach name, write footprint versus semantic origin and requests versus effects remain distinct. **QG6** passes: original image/fixups, read-only live IDA, primary SDK, fresh independent replay, independent source lifting and pinned predecessor provenance support the claims. **QG7** passes: remaining questions have bounded impact labels.
+
+## FPSD1201 session selection and failure-state continuation
+
+The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.

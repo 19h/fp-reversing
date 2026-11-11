@@ -1696,3 +1696,7 @@ The [lifetime/queue report](fpsd1200_lifetime_report.md) joins original kqueue e
 ## Process-event to FPSD1200 slot ABI
 
 The [process-event report](fpsd1200_process_report.md) establishes a896-byte stride, a50-slot composed pool, encoded PID at+140, marker at+876 and CF reference at+0. Under checked reader phases, matching is `stored32 == PID32 + 0x382eac5c` modulo2^32. The marker predicate excludes `0x4577df49` and `0x4577df4a`; it is not equality with a single active value. The writer equation is separately phase-conditional. SDK compile checks attest the32-byte event layout and CF descriptor callback type; source composition does not establish native ABI/version pairing or IPC effects (FP1-FP8).
+
+## FPSD1201 session selection and failure-state continuation
+
+The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.

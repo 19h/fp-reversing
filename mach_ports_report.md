@@ -1441,3 +1441,7 @@ The [lifetime/queue report](fpsd1200_lifetime_report.md) establishes original CF
 ## Process-event retirement and the session CF reference
 
 The [process-event report](fpsd1200_process_report.md) identifies original `CFMachPortInvalidate` / `CFRelease` call sites `0x10025e648` / `0x10025e6a4`, followed by a slot+0 clear at `0x10025e6ac`, for a matching encoded PID. These requests use opaque CF reference `0x77001000`. BSD descriptor7 and the event ident are separate namespaces. The callback neither resolves the predecessor's supplied raw Mach name `0x6800` nor sends a Mach message; native right destruction and client ownership remain unknown (FP1-FP8).
+
+## FPSD1201 session selection and failure-state continuation
+
+The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.

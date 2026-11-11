@@ -1567,3 +1567,7 @@ The [lifetime/queue report](fpsd1200_lifetime_report.md) independently replays f
 ## Process-event control over populated session state
 
 The [new session-retirement increment](fpsd1200_process_report.md) recovers the callback's external event-to-pool dependency: marker gate, encoded PID match, selected field resets and CF cleanup requests. Original reader arithmetic is independently source-lifted; three all-u32 queries are UNSAT. Eight full callback replays and a fresh descriptor initializer/setup replay preserve exact CPU/RAM evidence. The successful FPSD1200 pool is a pinned predecessor snapshot; native temporal continuity, CF/right lifetimes and nonzero tail-object cleanup remain unresolved (FP1-FP8).
+
+## FPSD1201 session selection and failure-state continuation
+
+The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.

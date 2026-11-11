@@ -207,3 +207,7 @@ The [lifetime/queue report](fpsd1200_lifetime_report.md) follows kevent=-1 throu
 ## FPSD1200 session retirement through the process-event callback
 
 The [process-event report](fpsd1200_process_report.md) connects the successful FPSD1200 pool to descriptor callback `0x10044f23c` through an explicit source-snapshot composition. The callback's `kevent` output ident is compared with encoded slot+140, then matching eligible slots receive exact reset stores and CF invalidation/release requests. Eight independently replayed cases cover44440 original callback visits; the preceding session prefix is pinned rather than freshly repeated. Native callback delivery, CF effects and transport remain unknown (FP1-FP8).
+
+## FPSD1201 session selection and failure-state continuation
+
+The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.

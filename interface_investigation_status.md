@@ -1343,3 +1343,7 @@ Completed the [lifetime/queue continuation](fpsd1200_lifetime_report.md): origin
 ## FPSD1200 populated-session process-event retirement increment
 
 Completed the [process-event continuation](fpsd1200_process_report.md): original encoded PID matching at slot+140, exact marker exclusion predicate, selected pattern/field resets, CF invalidation/release requests and final CF-reference clear. Eight independently replayed callbacks cover44440 original visits; the descriptor initializer/setup add22599 fresh visits. Read-only IDA checks cover34 source spans and one writer range; three independently source-lifted arithmetic queries are UNSAT. Slot+400 is not consumed on this route. Full goal remains active. Next priorities are source-produced nonzero tail-object lifetimes, subsequent session-to-provider/IOKit/deeper joins and native continuity, event, right and VM-owner effects (FP1-FP8).
+
+## FPSD1201 session selection and failure-state continuation
+
+The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.
