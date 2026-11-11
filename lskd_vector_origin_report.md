@@ -161,3 +161,6 @@ Extraction costs O(B+I+E+256R) time and storage for consumed bytes B, instructio
 - **QG5** passes with distinct frame fields, allocator versus fresh-load predicates, partial initialization, conditional null outcomes and unknown native epochs.
 - **QG6** passes with original bytes, site strings, pointer chains, exact allocator symbols, retained frame producers and sixteen checked mismatch queries.
 - **QG7** passes with impact-ranked loop, allocator, synchronization, field-consumer and transport questions.
+
+
+The [paired context representation](lskd_context_codec_report.md) now proves pointer recovery and the inverse 512 B data transform for matched seed/slot/object epochs. The decoded initializer has byte `+0x174`=0, byte `+0x175`=1 and a zero normalized comparison limit. Later field writers, representation restoration, native epoch matching and daemon request lineage remain open; earlier codec-unknown statements describe the earlier bounded increment.

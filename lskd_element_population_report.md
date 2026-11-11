@@ -199,3 +199,6 @@ Extraction costs O(B+I+E+256R) time and storage for consumed source bytes B, ins
 - **QG5** passes with opaque preexisting bytes, distinct global roles, direct-null versus transformed footer entries, conditional source counts and the unreduced pointer codec. The later SecureTime report resolves the selected completion helper as a no-op.
 - **QG6** passes with original bytes, C excerpts, data tables, chained slots, retained byte epochs, register-write audit and twenty-two checked queries.
 - **QG7** passes with impact-ranked codec, SecureTime continuation, runtime and inverse-reader questions.
+
+
+The [paired context representation](lskd_context_codec_report.md) now proves pointer recovery and the inverse 512 B data transform for matched seed/slot/object epochs. The decoded initializer has byte `+0x174`=0, byte `+0x175`=1 and a zero normalized comparison limit. Later field writers, representation restoration, native epoch matching and daemon request lineage remain open; earlier codec-unknown statements describe the earlier bounded increment.
