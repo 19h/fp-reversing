@@ -162,3 +162,7 @@ The [AES runqueue membership report](aes_runqueue_membership_report.md) extends 
 
 
 The [AES cached-class report](aes_cached_class_queue_report.md) establishes the original paired-record constructor, 96 initialized priority heads, two distinct class queue headers, complete selected cached backend, deadline-heap publication and parent-summary return. Thirty new UNSAT checks, four abstract SAT controls and 1717 private cases pass, including 1152 constructor/snapshot/backend compositions. The earlier 128-value enqueue sweep remains an abstract domain; native range enforcement, uncached placement, ownership/scheduling and matched daemon completion remain unknown (CQ1-CQ8).
+
+## Context score policy and scheduler attribution increment
+
+The [context-score policy report](aes_context_score_policy_report.md) recovers nonzero-category aging, accounting normalization, timestamped offset caching, the wake-to-accounting field join and configuration/table conversion. Thirty-two new UNSAT checks, four abstract SAT controls and 3681 private cases pass, including policy-enabled first/second placement, controlled pair mismatches and original configuration/converter execution. A pinned Apple source comparison supports qualified Clutch-scheduler names and refines the earlier policy-byte label to a candidate group category. Exact compiled revision, actual option admission, native concurrency/scheduling and matched daemon/provider completion remain unknown (SP1-SP8).

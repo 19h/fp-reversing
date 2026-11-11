@@ -1523,3 +1523,7 @@ The [AES cached-class report](aes_cached_class_queue_report.md) establishes the 
 ## Uncached context placement increment
 
 The [AES uncached-context report](aes_uncached_context_queue_report.md) establishes the three lane selectors, 200 B context layout, separate primary/secondary thread heap nodes, waiter list, per-context accounting, generic-class publication and policy-off score/parent-summary distinction. Twenty-five new UNSAT checks, three abstract SAT controls and 1852 private cases pass, including 216 original first/second-thread compositions with the original tail rekey. The cases retain one context per occupied generic class; active policy, multiple-context ordering, native scheduling/concurrency and matched daemon/provider completion remain unknown (UC1-UC8).
+
+## Context score policy and scheduler attribution increment
+
+The [context-score policy report](aes_context_score_policy_report.md) recovers nonzero-category aging, accounting normalization, timestamped offset caching, the wake-to-accounting field join and configuration/table conversion. Thirty-two new UNSAT checks, four abstract SAT controls and 3681 private cases pass, including policy-enabled first/second placement, controlled pair mismatches and original configuration/converter execution. A pinned Apple source comparison supports qualified Clutch-scheduler names and refines the earlier policy-byte label to a candidate group category. Exact compiled revision, actual option admission, native concurrency/scheduling and matched daemon/provider completion remain unknown (SP1-SP8).

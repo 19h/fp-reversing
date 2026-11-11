@@ -154,3 +154,7 @@ Recovery costs O(B+I+P) time/space for source bytes B, instructions I and certif
 - **QG7**: Remaining work is bounded and impact-ranked; native scheduling, concurrent ownership and matched daemon completion remain unknown.
 
 Evidence: [source and certificates](triage_evidence/aes_uncached_context_queue_checks.json.zst), [generator](triage_evidence/recover_aes_uncached_context_queue.py), [independent interpreter](triage_evidence/audit_aes_uncached_context_queue.py), [publication audit](triage_evidence/verify_aes_uncached_context_queue_publication.py).
+
+## Context score policy and scheduler attribution increment
+
+The [context-score policy report](aes_context_score_policy_report.md) recovers nonzero-category aging, accounting normalization, timestamped offset caching, the wake-to-accounting field join and configuration/table conversion. Thirty-two new UNSAT checks, four abstract SAT controls and 3681 private cases pass, including policy-enabled first/second placement, controlled pair mismatches and original configuration/converter execution. A pinned Apple source comparison supports qualified Clutch-scheduler names and refines the earlier policy-byte label to a candidate group category. Exact compiled revision, actual option admission, native concurrency/scheduling and matched daemon/provider completion remain unknown (SP1-SP8).

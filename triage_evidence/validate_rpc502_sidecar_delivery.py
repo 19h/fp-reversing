@@ -396,6 +396,7 @@ def main():
     if exists(BASE/'aes_runqueue_membership_report.md'):reports.add(BASE/'aes_runqueue_membership_report.md')
     if exists(BASE/'aes_cached_class_queue_report.md'):reports.add(BASE/'aes_cached_class_queue_report.md')
     if exists(BASE/'aes_uncached_context_queue_report.md'):reports.add(BASE/'aes_uncached_context_queue_report.md')
+    if exists(BASE/'aes_context_score_policy_report.md'):reports.add(BASE/'aes_context_score_policy_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1910,6 +1911,10 @@ def main():
         uncached_context_checks=json.loads(read(ROOT/'aes_uncached_context_queue_checks.json'))
         manifest['validation']['aes_uncached_context_queue_increment_checks']=uncached_context_checks['verified_counts']
         manifest['validation']['aes_uncached_context_queue_static_scope']=uncached_context_checks['scope']
+    if exists(ROOT/'aes_context_score_policy_checks.json'):
+        score_policy_checks=json.loads(read(ROOT/'aes_context_score_policy_checks.json'))
+        manifest['validation']['aes_context_score_policy_increment_checks']=score_policy_checks['verified_counts']
+        manifest['validation']['aes_context_score_policy_static_scope']=score_policy_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
