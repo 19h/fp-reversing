@@ -2,7 +2,7 @@
 
 The post-population helper `0xfffffe000a52f728` is exactly `BTI C; RET`: an eight-byte compiler-bounded no-op. It does not consume the completion record or construct another object. The later zero-presence continuation allocates a 64 B `site.LSKDSecureTime` object and publishes its raw pointer into cell `0xfffffe000ccc78c0` before checking the result. Its nonnull branch constructs an RW lock at object `+0x18`. Both the object-allocation null arm and the nonzero constructor-status arm select the common raw-success return `0x5e561849`. Raw success therefore does not establish a fully initialized SecureTime object. These are conditional source statements; native failure admission, execution and ownership remain **unknown**. [ST1-ST6]
 
-Constructor success prepares acquisition of the embedded RW pointer, writes a self-reference and a seed-derived qword, requests four random bytes at object offset zero, then requests a four-byte read of `kern.monotonicclock` through exact kernel `_kernel_sysctlbyname`. The clock result consumer begins at `0xfffffe000a51c0e0` and remains the next source frontier. The clock's units, subsequent object fields, embedded-lock release/free, completed start result and daemon-facing reply remain **unknown**. [ST3-ST8]
+Constructor success prepares acquisition of the embedded RW pointer, writes a self-reference and a seed-derived qword, requests four random bytes at object offset zero, then requests a four-byte read of `kern.monotonicclock` through exact kernel `_kernel_sysctlbyname`. The later [clock-completion report](lskd_clock_completion_report.md) recovers that consumer's exact field formulas, explicit unlock and common raw-success source return. It also identifies the conditional AppleSPMIPMU seconds OID and nominal tick projection. Native clock availability/calibration, lock balance, object/free lifetime and daemon-facing completion remain **unknown**. [ST3-ST8]
 
 [Original source and checked queries](triage_evidence/lskd_secure_time_checks.json.zst), the [extractor](triage_evidence/recover_lskd_secure_time.py) and the [publication audit](triage_evidence/verify_lskd_secure_time_publication.py) retain eleven kext spans / 348 instructions / 1,392 B, twenty-eight operand anchors, seven exhaustive banks / 1,792 inputs, six authenticated continuation slots and thirteen retained frames with eighteen fields each. Nineteen UNSAT queries cover 159 source-lifted instruction instances. No new target, allocator, synchronization, entropy, sysctl or IDA execution occurred.
 
@@ -20,7 +20,7 @@ population exit -> prepared completion record -> A52F728: BTI C; RET
                                  -> P+8 = P; seed-derived qword at P
                                  -> read_random(P,4)
                                  -> sysctl("kern.monotonicclock",...,4,...)
-                                 -> A51C0E0 [next result consumer]
+                                 -> A51C0E0 [fields and explicit unlock; later report]
 ```
 
 Diagram offsets are hexadecimal and addresses abbreviate prefix `0xfffffe000`. Each returning call and pointer reload requires the frame, object and publication epochs below. A source acquisition request does not establish native lock ownership.
@@ -116,7 +116,7 @@ After a returning acquisition call, the source reloads P again. The selected wri
 
 Under preceding flag 255 and seed pointer T=`0xfffffe000ccc78f4`, the signed flag load followed by mask `0xffffffffa7d93298` selects byte offset `0x98`=152. The qword therefore comprises seed u32 indices 38 and 39 in little-endian order. Neither index is one of the preceding sixteen edited indices 0,4,...,60. Its contents remain opaque. The bit-63 clear and XOR are explicit source operations; no time value or standardized cryptographic role is inferred. [ST7]
 
-The entropy bank selects wrapper `0xfffffe000a508d6c` through slot `0xfffffe00084714a8`, diversity `0x6e7d`. Original stub `0xfffffe000a69f394` loads import slot `0xfffffe000847c4f8`, whose exact kernel target is `_read_random` at `0xfffffe000be57d68`. Four bytes are requested at P, overlapping the lower half of the preceding qword. Actual returned bytes and backend behavior remain unknown. The caller makes no intervening result test before the clock-preparation continuation `0xfffffe000a511804`, selected by index `0x5b7`, diversity `0x40d9`. Embedded-lock release has not yet been recovered. [ST3,ST5,ST7-ST8]
+The entropy bank selects wrapper `0xfffffe000a508d6c` through slot `0xfffffe00084714a8`, diversity `0x6e7d`. Original stub `0xfffffe000a69f394` loads import slot `0xfffffe000847c4f8`, whose exact kernel target is `_read_random` at `0xfffffe000be57d68`. Four bytes are requested at P, overlapping the lower half of the preceding qword. Actual returned bytes and backend behavior remain unknown. The caller makes no intervening result test before the clock-preparation continuation `0xfffffe000a511804`, selected by index `0x5b7`, diversity `0x40d9`. The later [clock-completion report](lskd_clock_completion_report.md) recovers the embedded-pointer release preparation after the clock-dependent field writes; native ownership and free remain unknown. [ST3,ST5,ST7-ST8]
 
 ## Clock query ABI and result handoff
 
@@ -132,7 +132,7 @@ The clock block writes zero to scratch SCR`+0x94` as u32, sets the stack's 64-bi
 
 The exhaustive bank selects wrapper `0xfffffe000a508d74` through slot `0xfffffe0008471508`, diversity `0x6e7d`. Its branch reaches stub `0xfffffe000a69f3b4`, which uses import slot `0xfffffe000847c508`. Original chaining resolves that slot to `0xfffffe000c2de71c`, with exact kernel aliases `_kernel_sysctlbyname` and `_sysctlbyname`.
 
-On a returning call, ten u16 stores clear the first twenty name-buffer bytes; the separately zeroed twenty-first byte is not rewritten. `0xfffffe000a51194c` reloads the four-byte output into W15 while preserving X0's returned value through the inspected suffix. The source does not reload the returned length or branch on the status in this block. It retains the original target loaded from index `0x4b` and branches to `0xfffffe000a51c0e0`, diversity `0xf24b`. That consumer, including status interpretation, final field stores and lock release, remains unresolved. Requested output width does not establish clock units, supported OID type, successful output or a secure-clock algorithm. [ST8]
+On a returning call, ten u16 stores clear the first twenty name-buffer bytes; the separately zeroed twenty-first byte is not rewritten. `0xfffffe000a51194c` reloads the four-byte output into W15 while preserving X0's returned value through the inspected suffix. The source does not reload the returned length or branch on the status in this block. It retains the original target loaded from index `0x4b` and branches to `0xfffffe000a51c0e0`, diversity `0xf24b`. The later [clock-completion report](lskd_clock_completion_report.md) establishes that this consumer writes the new fields without a local status/returned-length gate, then prepares explicit unlock and raw-success source return. Its provider analysis identifies a four-byte seconds projection under the matched nominal OID/vtable premises. Requested width alone still does not establish physical calibration, successful output or a secure-clock algorithm. [ST8]
 
 ## Assumption register
 
@@ -151,8 +151,8 @@ On a returning call, ten u16 stores clear the first twenty name-buffer bytes; th
 
 | Impact | Next question | Evidence required |
 | --- | --- | --- |
-| High | How is the clock output admitted and written to SecureTime? | Consumer `0xfffffe000a51c0e0`, all source field stores, failure return and lock-release path. |
-| High | Which named OID and handler implement `kern.monotonicclock` on this build? | Original OID registration, handler/type, result units and environmental policy; do not infer from the name. |
+| High | How do later SecureTime readers admit the stored clock/seed relations? | The clock-completion report now resolves this source writer and explicit unlock; follow field consumers and matched epochs. |
+| High | Is the recovered AppleSPMIPMU OID/provider actually selected and calibrated? | The clock-completion report now captures the original OID, registration, seconds handler and nominal vtable; native traversal and hardware evidence remain required. |
 | High | What do later consumers require from a published P with a zero embedded lock? | Complete producer/consumer/retirement census, allocator failure admission and native publication/ownership epochs. |
 | High | How do these objects feed a daemon-facing transaction? | Matching request, output serialization and IPC ownership with source and native evidence kept distinct. |
 | Medium | Are the seed-derived upper bytes retained after the four-byte random request? | Complete entropy-write contract and subsequent field readers/writers; overlap alone does not prove final contents. |

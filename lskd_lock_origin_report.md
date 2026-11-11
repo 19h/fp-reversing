@@ -136,3 +136,5 @@ The instruction lift costs O(I) DAG construction and space. Byte-bank checks cos
 - **QG7** passes with impact-ranked caller, publication, status and lifetime questions.
 
 The subsequent [SecureTime report](lskd_secure_time_report.md) supplies a second concrete destination for child phase `0x90d`: the member at `+0x18` of a published 64 B `site.LSKDSecureTime` object. Its caller preclears that member and returns raw success even on nonzero constructor status. This is distinct from the global LSKD RW-cell preparer; native allocation and matched ownership remain unknown.
+
+The [clock-completion report](lskd_clock_completion_report.md) extends the embedded SecureTime RW destination to an explicit release record after local field initialization. The source joins constructor, acquisition and unlock phases under stable object/lock premises; native balance and destruction remain unknown.
