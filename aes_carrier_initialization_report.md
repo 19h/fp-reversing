@@ -36,7 +36,7 @@ status +0x78:
 
 ## Primary bytes and exact allocation ABI
 
-Collection: `/Users/___/Downloads/fpx/img4_dump/kernelcache.macho`; SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Exact nlist names, compiler boundaries, instruction bytes and original import fixups are retained. No IDB is changed.
+Collection: `kernelcache.macho`; SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Exact nlist names, compiler boundaries, instruction bytes and original import fixups are retained. No IDB is changed.
 
 | Source object / routine | Original address | Established contract |
 | --- | --- | --- |
@@ -94,7 +94,7 @@ No exact-literal +0x78 operand occurs in the candidate driver text. This is a co
 
 Sixteen fresh independent CPU replays verify 7078 original instruction visits, 944 writes (7385 bytes), 1483 reads (11580 bytes), 479 logical authentication steps, 300 indirect edges, 164 declared API models, 16 boundaries and 704 final object images. Additional checks cover 39 allocation frames, seven backend frontiers, 40 base-constructor frames, all 32 accounting additions, constructor tail preservation and 32 declared zeroing effects totaling 4608 bytes. These finite checks establish reproducibility under the stated premises.
 
-From the extracted directory, run `PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_aes_carrier_initialization.py`. Recovery additionally fetches the pinned Apple header; ordinary validation checks its recorded identity and captured excerpt without fetching it again. Algorithms use time O(image bytes + text bytes + source visits + journal effects) and space O(image bytes + captured text + journals + private RAM). Addresses/offsets are hexadecimal, byte counts are exact integers, and one byte is 8 bits. No timing or physical-register unit is inferred.
+From the extracted directory, run `PYTHONPATH=triage_evidence "$PYTHON" -P triage_evidence/validate_aes_carrier_initialization.py`. Recovery additionally fetches the pinned Apple header; ordinary validation checks its recorded identity and captured excerpt without fetching it again. Algorithms use time O(image bytes + text bytes + source visits + journal effects) and space O(image bytes + captured text + journals + private RAM). Addresses/offsets are hexadecimal, byte counts are exact integers, and one byte is 8 bits. No timing or physical-register unit is inferred.
 
 | Impact | Remaining evidence | Purpose |
 | --- | --- | --- |
@@ -118,3 +118,7 @@ QG5: Allocation-request semantics, declared backend memory, constructor writes a
 QG6: Original bytes/symbols/imports, exact object transfers, independent CPU/read/write replay and a separately identified primary Apple header provide provenance. Native allocation, synchronization, crypto, Mach IPC and PAC are not executed; no IDB is changed.
 
 QG7: The impact-labelled continuation table identifies the remaining architectural joins. Scoped gate passage does not imply full interface recovery or authentic hardware completion.
+
+## Separate hardware-provider allocation geometry
+
+The [trace/wakeup report](aes_trace_wakeup_report.md) reuses this report's separately versioned raw-4/Z_ZERO provenance for a different allocation: the AppleS8000AESAccelerator class and type view both specify 2560 B. That exactly covers its software ring and cursor. It does not change the carrier's 144 B contract or establish native zeroed memory, derived-field preservation or provider lifetime (TW1-TW5).

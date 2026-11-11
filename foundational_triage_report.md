@@ -1491,3 +1491,7 @@ The [AES DMA preparation report](aes_dma_preparation_report.md) establishes orig
 ## AES configuration/emitter continuation
 
 The [configuration/command report](aes_configuration_commands_report.md) supplies source partitions and command-record contracts for the nominal AppleS8000 AES provider, including FIFO status snapshots, software trace records, version-selected MMIO writes, synchronization and retry sleep interfaces. Fifty-six new UNSAT checks, 24 feasible scalar paths, one SAT premise control and 4151 scalar / 52 byte-layout interpreter cases qualify the declared source contracts. Native admission, device effects, ring ownership and daemon/kext lineage remain unknown (AC1-AC8).
+
+## AES trace/wakeup context
+
+The [trace/wakeup report](aes_trace_wakeup_report.md) links source allocation geometry, an eight-store literal cursor census, software diagnostic records and the conditional interrupt producer for configuration sleep. Sixty-eight new UNSAT certificates, seven feasible interrupt paths, two SAT premise controls and 16768 independent finite cases qualify these source contracts. Native initialization, writer closure, synchronization, register effects and daemon/kext epochs remain unknown (TW1-TW8).

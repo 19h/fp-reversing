@@ -164,3 +164,7 @@ The later [DMA preparation report](aes_dma_preparation_report.md) replaces selec
 ## Configuration continuation
 
 The [configuration/command report](aes_configuration_commands_report.md) resolves the source call at `0xfffffe0009d50d4c` as `_configureAES(provider,command,0)`. It partitions operation and normalized selected-key selector inputs, recovers bounded command layouts and orders software trace, cursor update and MMIO stores. Recognition is not complete later admission; hardware completion and same-job descriptor/command continuity remain unknown (AC1-AC8).
+
+## Provider extent provenance and interrupt continuation
+
+The [trace/wakeup report](aes_trace_wakeup_report.md) supplies class metadata and allocation-request provenance for the existing private 0xa00-byte provider reservation. It recovers startup/state/completion/command record roles, all eight literal cursor stores and the conditional configuration-wakeup producer. Source size and argument contracts do not establish actual allocator capacity, initial bytes, device completion or native request pairing (TW1-TW8).

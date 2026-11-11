@@ -387,6 +387,7 @@ def main():
     if exists(BASE/'aes_provider_admission_report.md'):reports.add(BASE/'aes_provider_admission_report.md')
     if exists(BASE/'aes_dma_preparation_report.md'):reports.add(BASE/'aes_dma_preparation_report.md')
     if exists(BASE/'aes_configuration_commands_report.md'):reports.add(BASE/'aes_configuration_commands_report.md')
+    if exists(BASE/'aes_trace_wakeup_report.md'):reports.add(BASE/'aes_trace_wakeup_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1865,6 +1866,10 @@ def main():
         configuration_checks=json.loads(read(ROOT/'aes_configuration_commands_checks.json'))
         manifest['validation']['aes_configuration_commands_increment_checks']=configuration_checks['verified_counts']
         manifest['validation']['aes_configuration_commands_static_scope']=configuration_checks['scope']
+    if exists(ROOT/'aes_trace_wakeup_checks.json'):
+        trace_wakeup_checks=json.loads(read(ROOT/'aes_trace_wakeup_checks.json'))
+        manifest['validation']['aes_trace_wakeup_increment_checks']=trace_wakeup_checks['verified_counts']
+        manifest['validation']['aes_trace_wakeup_static_scope']=trace_wakeup_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

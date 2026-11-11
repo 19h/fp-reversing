@@ -1449,3 +1449,7 @@ The [AES DMA preparation report](aes_dma_preparation_report.md) supplies deeper 
 ## Lower AES configuration provenance
 
 The [configuration/command report](aes_configuration_commands_report.md) extends the exact-symbol hardware-provider boundary reached by the obfuscated caller. It distinguishes original caller selectors from provider-remapped metadata, scalar selector recognition from later admission and static command packing from device completion. The bounded source contracts support the lower interface role; they do not establish a whole obfuscated routine identity, actual key provenance or native daemon/kext request pairing (AC1-AC8).
+
+## Lower-provider diagnostic and wakeup evidence
+
+The [trace/wakeup report](aes_trace_wakeup_report.md) adds source ring-record roles, exact allocation geometry and a conditional configuration wait/wakeup join below the recovered obfuscated hardware interface. Internal markers identify source phases; none establishes the obfuscated caller's semantic identity, actual key provenance, authenticated daemon request or completed cryptographic output (TW1-TW8).

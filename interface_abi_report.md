@@ -1620,3 +1620,7 @@ The [AES DMA preparation ABI](aes_dma_preparation_report.md) identifies the 32 B
 ## AES configuration and emitter ABI
 
 The [configuration/command report](aes_configuration_commands_report.md) records `_configureAES(provider,command,0)`, selected key+0x24 selector normalization, 20 B IV / 36 B DSB / 68 B extended records, separate ordinary key-header/payload requests and the u32 emitter. Each payload location is read into an 8 B software record before cursor update, then read again for a version-selected MMIO store; equal values require source stability. Exact nominal imports identify OSSynchronizeIO, memcpy/memmove aliases and IOCommandGate::commandSleep; actual receivers and native effects remain premises (AC1-AC8). These device commands do not establish additional Mach-port endpoints.
+
+## AES configuration sleep and interrupt wakeup
+
+The [trace/wakeup report](aes_trace_wakeup_report.md) maps eight configuration sleep calls to gate+0x200 with event P+0x150 and raw flags 2. The admitted interrupt path clears the wait byte and invokes nominal gate+0x208 with the same event and raw boolean 0; its wrapper forwards through gate+0x30 to virtual +0x1b8. This establishes a source event-address/argument join, with actual gate/workloop ownership, sleep registration, delivery and retry progress still unknown (TW1-TW8).

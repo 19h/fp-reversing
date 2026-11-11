@@ -171,3 +171,7 @@ Reproduce with `PYTHONPATH="triage_evidence${Z3_PYTHONPATH:+:$Z3_PYTHONPATH}" Z3
 **QG6**: Original collection bytes, compiler bounds, exact nlist definitions, authenticated chains, source/SMT certificates and an independent byte-memory/scalar interpreter supply primary provenance.
 
 **QG7**: The impact-ranked continuation table bounds the architectural expansion; scoped passage is not native key installation, hardware completion or daemon/kext pairing.
+
+## Trace lifetime and conditional wakeup
+
+The [trace/wakeup report](aes_trace_wakeup_report.md) establishes source class/request size 2560 B, eight literal cursor stores and their local transition contracts. It resolves the conditional interrupt producer for the same configuration wait event P+0x150, including byte-wide publication/clear, control-bit handling, eight sleep sites and nominal wakeup arguments. Native zeroing, closed writer sets, serialization and matching gate/workloop epochs remain unknown (TW1-TW8).
