@@ -465,7 +465,7 @@ Companion reports: [obfuscated routine roles](obfuscated_routines_report.md), [M
 
 | Property | Established value / boundary |
 | --- | --- |
-| Backing file | `/Users/___/dev/dylex/extracted/com.apple.driver.FairPlayIOKit` |
+| Backing file | `com.apple.driver.FairPlayIOKit` |
 | Binary SHA-256 | `2ec5e76ffc0a1873d284cbc50846b63f3576df2e5af98738df81faae33954a2c` |
 | Mach-O UUID | `227f9df7-645d-39b8-b74a-685303d16b4b` |
 | CPU / Mach-O type | ARM64/arm64e metadata and authenticated instructions; file type11 (`MH_KEXT_BUNDLE`) |
@@ -646,7 +646,7 @@ The raw native scan deliberately includes instructions outside IDB functions and
 
 ## Reproduction and evidence index
 
-From `/Users/___/dev/dylex/extracted`:
+From the repository root:
 
 ```sh
 python3 fairplay_triage_index.py
@@ -1453,3 +1453,5 @@ Provider startup has a selected mutex publication into the same global pointer c
 The legacy RW store belongs to a destination-record construction adapter. Its global preparer supplies the distinct LSKD cell under a stated parent phase, and its status transform joins the local result to the established LSKD raw namespace. Native reachability and lifetime ordering remain open. [LSKD RW construction records](lskd_lock_origin_report.md).
 
 Start operation `0x1b59` supplies that construction phase after a 128-request entropy loop and seed-pointer publication. Its null-allocation suffix returns raw status without resetting the seed publication, while its success branch prepares cached RW acquisition. Workspace and auxiliary limits are separately sourced. [LSKD start initialization and lock handoff](lskd_start_lock_flow_report.md).
+
+[Vector origin and typed element initialization](lskd_vector_origin_report.md) establishes the source publication into `0xfffffe000ccc78d0`, the 8192 B `site.KDDecryptParamsArray_t` descriptor, a 512 B `site.KDDecryptParams` element descriptor, first-slot/tag writes and the conditional vector-failure release/result suffix. Sixteen UNSAT queries, five exhaustive banks and thirteen reconstructed start frames pass. Native allocator outcomes, completed population, lock ownership and matched reader epochs remain unknown.

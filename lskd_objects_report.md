@@ -1,5 +1,7 @@
 # LSKD positive retry, cached slot vector and index-state ABI
 
+Subsequent source evidence: [Vector origin and typed element initialization](lskd_vector_origin_report.md) establishes the source publication into `0xfffffe000ccc78d0`, the 8192 B `site.KDDecryptParamsArray_t` descriptor, a 512 B `site.KDDecryptParams` element descriptor, first-slot/tag writes and the conditional vector-failure release/result suffix. Sixteen UNSAT queries, five exhaustive banks and thirteen reconstructed start frames pass. Native allocator outcomes, completed population, lock ownership and matched reader epochs remain unknown.
+
 The word at `0xfffffe000ccc78d0` has an additional source role beyond presence testing: the positive route loads it as the base of an eight-byte-slot array. Both vault and allowed use the selected ten-bit index to load a raw64-bit slot word and partition zero/nonzero values. The actual vector pointer, native allocation extent, slot contents and object type remain unknown. [OR1-OR7]
 
 The positive routes save the selected index, call the existing acquisition adapter again, then check that the tag is still nonzero before loading the slot. They do not repeat the earlier full low32-bit key comparison in these inspected retry fragments. Native update ordering, synchronization and lifetime conclusions require the producer/writer paths. No complete positive handler or accepted native context executes here.
@@ -64,9 +66,9 @@ OR1-OR11 qualify the corresponding claims. The local fixtures are instruction-la
 
 | Source interface | Established source role | Remaining native premise |
 | --- | --- | --- |
-|0xfffffe000ccc7b08 | Shared u32 tag table indexed by low10 bits | Runtime contents and writers unknown; indexed extent4096 bytes |
-|0xfffffe000ccc78d0 | Presence test and cached base for an eight-byte-slot vector | Runtime pointer, allocation, ownership and reclamation unknown; indexed extent8192 bytes |
-|0xfffffe000ccc78a8 | Cached RW-lock pointer used by the recovered acquisition/release/free adapters | Runtime lock creation/identity/lifetime unknown |
+|0xfffffe000ccc7b08 | Shared u32 tag table indexed by low10 bits | Source first-element tag-zero writer now recovered; native contents/epochs unknown; indexed extent4096 bytes |
+|0xfffffe000ccc78d0 | Presence test and cached base for an eight-byte-slot vector | Source 8192 B typed allocation and publication now recovered; native pointer, ownership and reclamation unknown |
+|0xfffffe000ccc78a8 | Cached RW-lock pointer used by the recovered acquisition/release/free adapters | Source RW construction now recovered in the linked start reports; native identity/lifetime unknown |
 
 The indexed vector extent is1024*8 B=8192 B=8 KiB. The source computes the slot address with X13 shifted by3. This establishes the accessed address range under a valid array-base premise; it does not establish an8192-byte native allocation. [OR4, OR7-OR9]
 
@@ -112,18 +114,18 @@ The4096 isolated fixtures execute only the original prefixes ending immediately 
 
 The indexed-store inventory from the previous report provides a useful candidate at0xfffffe000a5480a0: `STR W26,[X15,W8,UXTW #2]`, with X15 loaded from SP+0xD28. Another source fragment at0xfffffe000a589938 stores `pool[decoded_index]-8` at SP+0xD28. Exact original windows are retained for both. The second fragment requires byte-bank pointer inputs from SP+0xC28 and X26; their reaching definitions are unresolved. A common frame/reaching definition between the two sites is also unresolved. These are source-search anchors, not an established table writer. [OR11]
 
-No new Mach right, incoming/outgoing port, message ID or external emission site is established. The tag table, vector cache, saved index and raw slot word are kernel-local memory interfaces. Native producer and transport linkage remain unknown.
+No new Mach right, incoming/outgoing port, message ID or external emission site is established. The tag table, vector cache, saved index and raw slot word are kernel-local memory interfaces. Native producer epochs and transport linkage remain unknown; the linked vector-origin increment supplies a static producer.
 
 ## Reproduction, preservation and scoped quality gates
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_lskd_objects.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_lskd_objects.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_lskd_objects.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_objects.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_objects_preservation.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_objects_delivery.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_rpc502_sidecar_delivery.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_lskd_objects.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_lskd_objects.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/prove_lskd_objects.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_objects.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_objects_preservation.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_objects_delivery.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_rpc502_sidecar_delivery.py
 ```
 
 The fresh verifier reconstructs original source windows/pointers, re-lifts sixteen proof pairs, independently decodes the load words and reruns all4096 local fixtures with exact source reads/writes and outcomes. The baseline contains2030 artifacts,2024 unchanged with six declared report/index edits. Original analysis.md, C and calls inputs remain unchanged. Earlier native/synthetic boundaries and complete-parent evidence remain frozen.

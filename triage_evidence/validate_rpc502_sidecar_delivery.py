@@ -371,6 +371,7 @@ def main():
     if exists(BASE/'cached_lock_origin_report.md'):reports.add(BASE/'cached_lock_origin_report.md')
     if exists(BASE/'lskd_lock_origin_report.md'):reports.add(BASE/'lskd_lock_origin_report.md')
     if exists(BASE/'lskd_start_lock_flow_report.md'):reports.add(BASE/'lskd_start_lock_flow_report.md')
+    if exists(BASE/'lskd_vector_origin_report.md'):reports.add(BASE/'lskd_vector_origin_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -388,11 +389,12 @@ def main():
                 sdk=json.loads(read(ROOT/'kernel_root_port_construct_source.json'))['SDK_context']
                 assert path.name=='kernel_root_port_construct_report.md' and name==sdk['path'],(path,name)
                 assert sdk['sha256']=='959cc098bb307ccc44a2193a9ff7b8ec8bbcedc335933512cdbe13d3c9088185'
-                installed=Path('/Library/Developer/CommandLineTools/SDKs/MacOSX27.2.sdk/usr/include/mach/port.h')
+                sdk_root=Path(subprocess.check_output(['xcrun','--sdk','macosx','--show-sdk-path'],text=True).strip())
+                installed=sdk_root/'usr'/'include'/'mach'/'port.h'
                 current_sha=sha(installed)
                 assert current_sha!=sdk['sha256']
-                unavailable_external.append({'report':path.name,'path':name,'historical_sha256':sdk['sha256'],
-                    'status':'historical_external_reference_unavailable','installed_comparison_path':str(installed),
+                unavailable_external.append({'report':path.name,'path':'historical SDK:usr/include/mach/port.h','historical_sha256':sdk['sha256'],
+                    'status':'historical_external_reference_unavailable','installed_comparison_path':'installed SDK:usr/include/mach/port.h',
                     'installed_comparison_sha256':current_sha,'equivalence_established':False})
             links+=1
     evidence=sorted({canonical(p)for p in ROOT.iterdir()if p.is_file()and canonical(p).name!='interface_manifest.json'and p.suffix.lower()not in{'.i64','.idb','.id0','.id1','.id2','.nam','.til'}})
@@ -1784,6 +1786,10 @@ def main():
         lskd_start_checks=json.loads(read(ROOT/'lskd_start_lock_flow_checks.json'))
         manifest['validation']['lskd_start_lock_flow_increment_checks']=lskd_start_checks['verified_counts']
         manifest['validation']['lskd_start_lock_flow_static_scope']=lskd_start_checks['scope']
+    if exists(ROOT/'lskd_vector_origin_checks.json'):
+        lskd_vector_checks=json.loads(read(ROOT/'lskd_vector_origin_checks.json'))
+        manifest['validation']['lskd_vector_origin_increment_checks']=lskd_vector_checks['verified_counts']
+        manifest['validation']['lskd_vector_origin_static_scope']=lskd_vector_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,5 +1,7 @@
 # LSKD context records, RW-lock adapters and guarded continuations
 
+Subsequent source evidence: [Vector origin and typed element initialization](lskd_vector_origin_report.md) establishes the source publication into `0xfffffe000ccc78d0`, the 8192 B `site.KDDecryptParamsArray_t` descriptor, a 512 B `site.KDDecryptParams` element descriptor, first-slot/tag writes and the conditional vector-failure release/result suffix. Sixteen UNSAT queries, five exhaustive banks and thirteen reconstructed start frames pass. Native allocator outcomes, completed population, lock ownership and matched reader epochs remain unknown.
+
 The previously unnamed helper at `0xfffffe000a54e220` is a source lock-acquisition adapter in the checked selector context. Its companion `0xfffffe000a551f38` releases the lock, and `0xfffffe000a5529a8` conditionally frees and clears a cached RW-lock pointer. All three select cell `0xfffffe000ccc78a8`; exact original kernel bindings identify `IORWLockWrite`, `IORWLockUnlock`, and `IORWLockFree`. Native synchronization and destruction remain **unknown** and unexecuted. [CT1-CT12]
 
 Vault and allowed records also have recovered context transformations. Their constant comparisons test zero context after reversible record encoding. Twenty source-derived proof pairs establish the local codecs, selector/pointer gates, source caller composition and conditional cache clear. The proof set contains 286 lifted instruction instances. These constants are not assigned authentication or cryptographic meaning.
@@ -180,13 +182,13 @@ Preflight stops before either instruction. Neither PC appears in executed source
 From this directory:
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_lskd_continuations.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_lskd_continuations.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_lskd_continuations.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_continuations.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_continuations_preservation.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_continuations_delivery.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_rpc502_sidecar_delivery.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_lskd_continuations.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_lskd_continuations.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/prove_lskd_continuations.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_continuations.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_continuations_preservation.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_continuations_delivery.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_rpc502_sidecar_delivery.py
 ```
 
 Expected:355 fresh cases,343 exact preceding prefixes plus12 exact parent prefixes,20 source proof pairs UNSAT, six exhaustive banks,13 local stop publications,24 private-read boundaries,12 unexecuted RW-write calls,159 GP/SP helper returns and zero native synchronization operations. Baseline1891 artifacts are preserved with1885 unchanged and six declared report/aggregator edits. Original inputs and IDBs remain intact.

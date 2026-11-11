@@ -494,7 +494,7 @@ This increment establishes the selector-26 descriptor and copy boundary, recover
 
 ## Evidence and assumption register
 
-The kext SHA-256 is `2ec5e76ffc0a1873d284cbc50846b63f3576df2e5af98738df81faae33954a2c`; UUID `227f9df7-645d-39b8-b74a-685303d16b4b`. The daemon IDB records universal-file SHA-256 `4c91eccb3c7e2dd39360986544afbf29f5a32dc638c760173cc1676b965be5a7`. That exact file was found at `/Users/___/Downloads/fpx/fairplayd`; its arm64e slice at file offset `3407872`, length `17668912` bytes, has SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`, identical to the zut thin executable. See [container identity](triage_evidence/daemon_container_identity.json). The whole-file hash difference is now explained by universal-container versus slice identity.
+The kext SHA-256 is `2ec5e76ffc0a1873d284cbc50846b63f3576df2e5af98738df81faae33954a2c`; UUID `227f9df7-645d-39b8-b74a-685303d16b4b`. The daemon IDB records universal-file SHA-256 `4c91eccb3c7e2dd39360986544afbf29f5a32dc638c760173cc1676b965be5a7`. That exact file was found at `fairplayd (universal container)`; its arm64e slice at file offset `3407872`, length `17668912` bytes, has SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`, identical to the zut thin executable. See [container identity](triage_evidence/daemon_container_identity.json). The whole-file hash difference is now explained by universal-container versus slice identity.
 
 | Assumption | Dependent claims | Falsification probe |
 | --- | --- | --- |
@@ -585,7 +585,7 @@ The following daemon parser uses a 10-byte record header:
 
 Header room is checked before reads; the record end uses `uint64(offset)+10+L` and must not exceed the uint32 total extent. Accepted tags are `0x9777` (exactly 4-byte payload), `0x8485` (exactly 8-byte payload), and `0x50db` (span). Scalar staging uses `BE32 xor 0x8b3dc651` / `BE64 xor 0x2c220a381b62f9ab`. A zero **raw** key on a span terminates at that record's consumed end even when trailing bytes remain. No key meaning, cryptographic algorithm, or complete constructor implementation follows from these parser rules.
 
-Prior proof artifacts are at `/Users/___/Downloads/fpx/analysis/arm_avp_method26_*` and `arm_avp_reply_tag_*`. Their current source/table provenance was refreshed: 40 source/bank records, 49 live slot records, and 46 original chained-word checks match. Earlier synthetic/C comparisons were inspected, not rerun. See [manifest snapshot](triage_evidence/daemon_prior_proof_manifests.json) and [live readback](triage_evidence/daemon_prior_proof_readback.json).
+Prior proof artifacts are at `arm_avp_method26_* (retained prior-proof family)` and `arm_avp_reply_tag_*`. Their current source/table provenance was refreshed: 40 source/bank records, 49 live slot records, and 46 original chained-word checks match. Earlier synthetic/C comparisons were inspected, not rerun. See [manifest snapshot](triage_evidence/daemon_prior_proof_manifests.json) and [live readback](triage_evidence/daemon_prior_proof_readback.json).
 
 ## RPC502: matching kernel and user representations
 
@@ -1582,3 +1582,5 @@ The auxiliary producer and retirement agree on a 512-byte size and a shared poin
 The legacy RW construction adapter reads its destination at record +8 and writes status at +0x10. Selected child phase `0x90d` joins the allocation return to that destination. A separate preparer supplies LSKD cell `0xfffffe000ccc78a8` under its stated parent phase and translates status by adding `0x5e561849`. Native caller reachability and pointer epochs remain unknown. [LSKD RW construction records](lskd_lock_origin_report.md).
 
 The start handler supplies parent phase `0xc2b1dbf2` under retained state `0x3be`. Its source loop requests 128 four-byte entropy words, and its post-publication construction status selects either the common raw-result field at receiver +0x38 or a null-explicit acquisition record with selector `0x2d2`. Native entropy, lock operations and a completed outer reply remain unobserved. [LSKD start initialization and lock handoff](lskd_start_lock_flow_report.md).
+
+[Vector origin and typed element initialization](lskd_vector_origin_report.md) establishes the source publication into `0xfffffe000ccc78d0`, the 8192 B `site.KDDecryptParamsArray_t` descriptor, a 512 B `site.KDDecryptParams` element descriptor, first-slot/tag writes and the conditional vector-failure release/result suffix. Sixteen UNSAT queries, five exhaustive banks and thirteen reconstructed start frames pass. Native allocator outcomes, completed population, lock ownership and matched reader epochs remain unknown.

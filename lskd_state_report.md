@@ -1,5 +1,7 @@
 # LSKD lookup state, dead-load certificates and complete stop return
 
+Subsequent source evidence: [Vector origin and typed element initialization](lskd_vector_origin_report.md) establishes the source publication into `0xfffffe000ccc78d0`, the 8192 B `site.KDDecryptParamsArray_t` descriptor, a 512 B `site.KDDecryptParams` element descriptor, first-slot/tag writes and the conditional vector-failure release/result suffix. Sixteen UNSAT queries, five exhaustive banks and thirteen reconstructed start frames pass. Native allocator outcomes, completed population, lock ownership and matched reader epochs remain unknown.
+
 The two private-read frontiers in the [preceding continuation report](lskd_continuations_report.md) now have source-level def/use certificates for the zero-lookup-cache paths. Each original load defines X13; the following82 or85 instructions do not read X13/W13 before the original `ADRP X13` overwrites it. The eight-byte words remain uninitialized in the analysis model. No value is guessed, initialized, substituted, or consumed. This resolves24 guarded error continuations under the stated cache/state premises. [ST1-ST12]
 
 The complete original `LSKDKext_stop()` caller also executes in twelve private cases. It preserves the execution-wrapper status in X19, prepares request and response stream frees, restores its frame and returns0. Native free effects remain register-only models, with no model memory writes. No native synchronization or IPC executes.
@@ -92,8 +94,8 @@ This certificate changes the analysis guard's admissible paths. The original ins
 
 | Cell | Source evidence | Current boundary |
 | --- | --- | --- |
-|0xfffffe000ccc78a8 | RW pointer cache in the preceding write/unlock/free adapters | Twelve existing opaque-nonnull cases stop before IORWLockWrite; native creation/lifetime unknown |
-|0xfffffe000ccc78d0 | Presence word controlling the prospective context lookup;49 zero-valued source read epochs | Its native runtime value, producer and relation to the saved table pointer remain unknown |
+|0xfffffe000ccc78a8 | RW pointer cache in the preceding write/unlock/free adapters | Twelve existing opaque-nonnull cases stop before IORWLockWrite; source construction recovered in linked start reports, native creation/lifetime unknown |
+|0xfffffe000ccc78d0 | Presence word controlling the prospective context lookup;49 zero-valued source read epochs | Static typed-vector producer recovered in the linked vector-origin report; native value and matching reader epoch remain unknown |
 
 Two independent exhaustive byte-bank expressions resolve original pool slot0xfffffe0008471c80 to0xfffffe000ccc78d0. Vault uses left0xfffffe000791d3b0/right0xfffffe0007920e10/key0x65/additive-0x40. Allowed uses left0xfffffe00079172c0/right0xfffffe0007919cb0/key0xB5/additive0x14. All256 byte inputs per expression resolve the same original slot and cell. The original pointer has verified chained-format8 membership.
 
@@ -149,13 +151,13 @@ No original target-file, credential, loader, native heap, synchronization, crypt
 ## Reproduction and algorithmic scope
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_lskd_state.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_lskd_state.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_lskd_state.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_state.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_state_preservation.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_lskd_state_delivery.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_rpc502_sidecar_delivery.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_lskd_state.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_lskd_state.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/prove_lskd_state.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_state.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_state_preservation.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_lskd_state_delivery.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_rpc502_sidecar_delivery.py
 ```
 
 Expected:379 fresh cases;355 exact preceding prefixes plus24 parent prefixes;24 certified unknown loads with2004 def/use checks and zero uses before24 kills;24 nonzero-cache guards retained; twelve complete original stop returns; seven local source proof pairs UNSAT. The audit preserves unknown-byte masks and reconstructs all source writes independently.
