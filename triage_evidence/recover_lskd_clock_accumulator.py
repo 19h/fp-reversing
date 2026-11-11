@@ -233,18 +233,22 @@ def prove(capture):
         obj.read('x26') != context+0xab53c9aef42360b8,
         obj.read('w11') != z3.If(z3.ULT(current_decoded+0x081864b3,0x081864b3),z3.BitVecVal(1,32),z3.BitVecVal(0,32)),
         obj.read('w21') != z3.If(z3.ULT(context+0xab53c9aef42360b8,0x081864b3),z3.BitVecVal(1,32),z3.BitVecVal(0,32)))
+    q['context_compare_operands']=z3.Or(q['context_compare_operands'],
+        obj.read('w22') != (z3.If(z3.ULT(current_decoded+0x081864b3,0x081864b3),z3.BitVecVal(1,32),z3.BitVecVal(0,32)) ^
+        z3.If(z3.ULT(context+0xab53c9aef42360b8,0x081864b3),z3.BitVecVal(1,32),z3.BitVecVal(0,32))))
 
     obj=run('continuation_record_key',0xfffffe000a5245d8,0xfffffe000a52461c,{'x25':record})
     key64=(record ^ 0x4c2e944469e35e3f)*0x7a59c441
     q['continuation_record_key']=obj.read('x10')!=key64
     key_symbol=z3.BitVec('continuation_key64',64)
+    record_operand=z3.BitVec('continuation_operand64',64)
     obj=run('continuation_record_fields',0xfffffe000a52461c,0xfffffe000a524654,
-        {'x29':fp,'x10':key_symbol,'w8':0xf6074c82,'w9':0xf6074dc1,'w23':0x6e3,'x22':d})
+        {'x29':fp,'x10':key_symbol,'w8':0xf6074c82,'w9':0xf6074dc1,'w23':0x6e3,'x22':record_operand})
     lowkey=resize(key_symbol,32)
     q['continuation_record_fields']=z3.Or(cell(obj,record,8)!=key_symbol,
         cell(obj,record+8,4)!=0x392d87ef-lowkey,cell(obj,record+12,4)!=lowkey ^ 0xf6074dc1,
         cell(obj,record+20,4)!=lowkey ^ 0xf6074dd4,cell(obj,record+24,4)!=lowkey,
-        cell(obj,record+28,4)!=0xf6074c82-lowkey,cell(obj,record+32,8)!=d-key_symbol)
+        cell(obj,record+28,4)!=0xf6074c82-lowkey,cell(obj,record+32,8)!=record_operand-key_symbol)
     footprint=[{'pc':hex(s['pc']), 'offset_B':z3.simplify(s['address']-record).as_long(),
         'size_B':s['size_bytes']} for s in obj.stores]
     written={b for s in footprint for b in range(s['offset_B'],s['offset_B']+s['size_B'])}
@@ -294,6 +298,7 @@ def build():
             'negative_controls_sat':len(controls),'record_written_B':36,'record_envelope_B':40,
             'IDA_spotcheck_B':sum(r['size_B'] for r in IDA_READBACK['ranges'])},
         'selected_contract':{'conditional_incoming_phase32':'0x6e3','flag32':255,
+            'continuation_operand_role':'zero-extended XOR of the two context comparison carry flags; not seed98',
             'fresh_clock_B':4,'accumulator_B':8,'elapsed_max':'0xffffffff',
             'actual_incoming_phase_proven':False,'actual_frame_roots_proven':False,
             'actual_helper_targets_proven':False,'upstream_request_recovered':False,

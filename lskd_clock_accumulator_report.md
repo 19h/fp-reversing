@@ -128,6 +128,8 @@ On a returning release-shaped call, `0xfffffe000a5244bc..a5244c8` forms `current
 
 The context root is loaded from SP`+1f8`; its upstream provenance is unknown. The remaining final predicate/result is not recovered, so no expiry/admission role is assigned to these operands. [CA2,CA4,CA7]
 
+CARRY_XOR is zero_extend64(W11 XOR W21), written to W22 at `0xfffffe000a5245c8`. This corrects the preceding publication's erroneous seed98 attribution at R+20: its isolated record-store query allowed an arbitrary incoming X22 but did not establish that register's reaching value. The corrected context certificate now includes the W22 handoff.
+
 The source then reuses R for another helper record. Define K64=`u64((R XOR 4c2e944469e35e3f) * 7a59c441)` and k=low32(K64). Stores `0xfffffe000a52461c..a524654` cover exactly 36 B in a 40 B envelope:
 
 | Offset from R (hex) | Width (B) | Source value |
@@ -139,7 +141,7 @@ The source then reuses R for another helper record. Define K64=`u64((R XOR 4c2e9
 | `14` | 4 | `k XOR f6074dd4` |
 | `18` | 4 | k |
 | `1c` | 4 | `u32(f6074c82 - k)` |
-| `20` | 8 | `u64(seed98 - K64)` |
+| `20` | 8 | `u64(CARRY_XOR - K64)` |
 
 Call `0xfffffe000a5246ac` supplies X0=R, discriminator `0x2971`, frame bank pointers SP`+188/+180`, key `0x2f`, additive `0x9fe`. Its target and record-result contract are unknown. On return, source `0xfffffe000a5246b0..a5246bc` performs:
 
@@ -194,3 +196,5 @@ Extraction costs O(B+I) time/space plus original chain decoding, with B retained
 - **QG5** passes with conditional roots/phase, epoch/call preservation, u64 wrap, unwritten result bytes and unresolved callees explicit.
 - **QG6** passes with original bytes/fixups, pinned dependencies, replayed certificates, frozen IDA bytes and preserved supplied inputs.
 - **QG7** passes with impact-ranked request, result-range, context-predicate, publication-epoch and provider questions.
+
+The [context-comparison report](lskd_context_compare_report.md) corrects the continuation operand to the carry-flag XOR, recovers the complete comparison-record leaf and conditionally proves the final local gate: decoded accumulator < normalized context value and saved control low byte = 1. Twenty-two UNSAT certificates and two SAT controls cover the corrected handoff and carry-aware predicate. A 256-slot census retains three matching-diversity helper candidates; actual bank roots, saved phase, context/control producers and daemon-kext lineage remain unknown.
