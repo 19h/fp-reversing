@@ -158,3 +158,5 @@ Reproduction runs the producer, independent auditor and publication verifier wit
 - **QG5**: Unwritten size word, receive conversion, parser-only status0, reply grammar priority, weak voucher models and unknown endpoint identity remain explicit.
 - **QG6**: Retained reference bytes/fixups, fresh live IDA/SDK checks, independent client replay/wire oracle/solver and original daemon replay support the claims.
 - **QG7**: Impact-ranked continuations preserve unresolved caller provenance, session lifetime and native daemon/kext/deeper joins. The full goal remains active.
+
+The subsequent [caller report](fpsd1201_caller_report.md) resolves parent call0x8f3838, the unsigned scalar>=2 guard and nominal argument loads. It identifies request1200's output cell as a conditional destination source and distinguishes output+0x800, candidate input+0x880 and loop destination+0x900. Whole-parent stack continuity, protected input production and native endpoint identity remain unknown.

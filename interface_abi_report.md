@@ -1712,3 +1712,5 @@ The [session-path report](fpsd1202_session_report.md) adds the phase-checked nam
 The [tail contract report](fpsd_tail_retirement_report.md) separates896-byte slot fields +888/+880, original object+24 zeroing and pending +0/u64 versus +108/u32 reads. All-u64 null-selector proofs use freshly checked CPU phases. Diagnostic backing size supplies no native object extent; no object byte is consumed or daemon/kext transaction completed.
 
 The [request1201 client ABI report](fpsd1201_client_report.md) matches CoreFP entry W0/W1/X2 to a simple164-byte request with NDR+24, scalar+32 and128 bytes+36. Original mach_msg uses send164/receive44; the parser expects ID1301, simple36 and remote0, then forwards u32 status. Fresh original daemon replay returnsffff5b37 through that contract under declared receive conversion.
+
+The [CoreFP1201 caller ABI](fpsd1201_caller_report.md) resolves call0x8f3838 ->builder0x8d40, W0 from nominal SP+0x4e8, W1 from MEM64[SP+0x258]+0x168 with unsigned>=2 admission on the selected route, and X2 from SP+0x1b8. Whole-parent reaching definitions and frame continuity remain conditional.

@@ -223,3 +223,5 @@ The [selected-session report](fpsd1202_session_report.md) extends the marker4d s
 The [tail cleanup report](fpsd_tail_retirement_report.md) extends process-event handling through declared nonzero pointers without consuming opaque object bytes. The +888 path stops after object+24 is zeroed; the +880 path reaches its first pending read after session CF cleanup requests. These are callback intervals, with no new receive/reply message or native transport claim.
 
 The [CoreFP1201 round trip](fpsd1201_client_report.md) matches the reference client scalar/inline128 serializer to the daemon164-byte request and returns the original daemon statusffff5b37 through the client36-byte parser. Header/name conversion is declared separately in each direction; native delivery and namespace identity remain unknown.
+
+The [CoreFP1201 caller increment](fpsd1201_caller_report.md) identifies the parent call and scalar guard, while keeping the client returned-name handoff conditional on stack epochs and cell preservation. No additional daemon receive or native client/server identity is established.
