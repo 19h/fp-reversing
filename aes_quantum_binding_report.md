@@ -39,7 +39,7 @@ separate _prepareTransfer inputs, not a configuration-success continuation
 
 ## Primary bytes and precise interface names
 
-Collection: `/Users/___/Downloads/fpx/img4_dump/kernelcache.macho`; SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Exact symbols, compiler ranges and original bytes are captured. No IDB is changed.
+Collection: `kernelcache.macho`; SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Exact symbols, compiler ranges and original bytes are captured. No IDB is changed.
 
 | Source routine | Original range / use |
 | --- | --- |
@@ -132,7 +132,7 @@ Fresh independent A64 replay verifies 6226 original instruction visits, 1146 wri
 
 All 13 initial object snapshots and final global images are checked against their source producers. The allocation-accounting and DMA metaclass snapshots remain unchanged. No new job/DMA allocation occurs. The private provider extent is explicitly enlarged to 0xa00 bytes to capture trace accesses, with no claim that native owner extents are established.
 
-Run from the extracted directory: `PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_aes_quantum_binding.py`. Complexity is O(image bytes + source visits + journal events + objects) time and O(image bytes + journals + private RAM) space. Addresses/offsets are hexadecimal; byte counts are exact integers; one byte is 8 bits. No timing, bus bandwidth or measured cache effect is inferred.
+Run from the extracted directory: `PYTHONPATH=triage_evidence "$PYTHON" -P triage_evidence/validate_aes_quantum_binding.py`. Complexity is O(image bytes + source visits + journal events + objects) time and O(image bytes + journals + private RAM) space. Addresses/offsets are hexadecimal; byte counts are exact integers; one byte is 8 bits. No timing, bus bandwidth or measured cache effect is inferred.
 
 ## Bounded continuation and scoped quality gates
 
@@ -158,3 +158,5 @@ QG5: Prepare, performOperation, descriptor binding, configuration return, carrie
 QG6: Original bytes/symbols/fixups, exact object/global transfers, separately identified SDK declarations and fresh CPU/read/write replay provide provenance. No native cache, mapper, DMA, device, crypto, Mach IPC or PAC operation executes; no IDB is changed.
 
 QG7: The impact-labelled continuation table identifies unresolved architectural joins. Scoped gate passage does not establish authentic activation, configuration success, hardware completion or constructor/daemon continuity.
+
+The later [DMA preparation report](aes_dma_preparation_report.md) replaces selected no-effect API premises with original-source contracts: fresh binding requests prepare(0,0,true,true), zero length derives from descriptor+0x50 through a 32 B summary, and codes 1/2 in the pinned descriptor implementation take a barrier-only path. Same-pointer binding shortcuts preparation. Segment cursor gates, callback/shim result separation and the transfer minimum are recovered; complete mapper/configuration effects and native continuity remain unknown.
