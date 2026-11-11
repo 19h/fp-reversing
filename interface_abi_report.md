@@ -1714,3 +1714,5 @@ The [tail contract report](fpsd_tail_retirement_report.md) separates896-byte slo
 The [request1201 client ABI report](fpsd1201_client_report.md) matches CoreFP entry W0/W1/X2 to a simple164-byte request with NDR+24, scalar+32 and128 bytes+36. Original mach_msg uses send164/receive44; the parser expects ID1301, simple36 and remote0, then forwards u32 status. Fresh original daemon replay returnsffff5b37 through that contract under declared receive conversion.
 
 The [CoreFP1201 caller ABI](fpsd1201_caller_report.md) resolves call0x8f3838 ->builder0x8d40, W0 from nominal SP+0x4e8, W1 from MEM64[SP+0x258]+0x168 with unsigned>=2 admission on the selected route, and X2 from SP+0x1b8. Whole-parent reaching definitions and frame continuity remain conditional.
+
+The [CoreFP1201 protected-record ABI](fpsd1201_record_report.md) maps the80-byte parent record,aligned pointer codec,selected64-bit pointer guards and internal status field. The helper/child subtract/add0xe0 cursor sequence yields an original zero adjustment on16 complete rejections; successful full return remains unestablished.

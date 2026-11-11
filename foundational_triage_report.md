@@ -1585,3 +1585,5 @@ The [tail cleanup continuation](fpsd_tail_retirement_report.md) independently ch
 The [CoreFP1201 analysis](fpsd1201_client_report.md) adds original client serializer/parser evidence, nine fresh IDA spans and a new independent failure round trip. It explicitly separates the unwritten pre-library size word from send_size164, parser grammar from protected processing, and equal private names from native cross-task namespace identity.
 
 The [CoreFP1201 parent increment](fpsd1201_caller_report.md) scans the full21366-instruction source parent, resolves constant table selection, independently replays12 local loop/gate cases and identifies five dynamic stack assignments. Nominal port/data origins remain conditional; three distinct adjacent128-byte ranges must not be conflated.
+
+The [CoreFP1201 record continuation](fpsd1201_record_report.md) distinguishes compiler function bounds from an incomplete IDA function,recovers pre-admission descriptor reads and separates a computed zero adjustment from a retained zero seed. Twenty-four independently replayed cases preserve native ownership,context provenance and whole-parent gaps.

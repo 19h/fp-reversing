@@ -1459,3 +1459,5 @@ The [tail retirement report](fpsd_tail_retirement_report.md) orders session CF i
 The [CoreFP1201 client report](fpsd1201_client_report.md) establishes destination W0 and mig_get_reply_port output at header+8/+12, COPY_SEND/MAKE_SEND_ONCE bits1513, and send call0x8e04. Cleanup sites are mig_put_reply_port0x8e38, mig_dealloc_reply_port0x8e88 and mach_msg_destroy0x8ea0. The exact three-result put-reply predicate is proved for allu32 transport results; no native right lifetime is inferred.
 
 The [CoreFP1201 caller report](fpsd1201_caller_report.md) connects the nominal request1200 returned-name output slot to the later W0 destination load, conditional on stack epoch and contents. The call is0x8f3838; emission remains the previously audited mach_msg at0x8e04. Native right/name identity and transport are unknown.
+
+The [CoreFP1201 record/cursor increment](fpsd1201_record_report.md) closes zero stack adjustment only for completed private rejection paths. Continuing paths retain an unwritten output seed at the unresolved call. The nominal returned-name/destination join therefore remains conditional; no new Mach emission or native right identity is established.

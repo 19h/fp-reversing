@@ -225,3 +225,5 @@ The [tail cleanup report](fpsd_tail_retirement_report.md) extends process-event 
 The [CoreFP1201 round trip](fpsd1201_client_report.md) matches the reference client scalar/inline128 serializer to the daemon164-byte request and returns the original daemon statusffff5b37 through the client36-byte parser. Header/name conversion is declared separately in each direction; native delivery and namespace identity remain unknown.
 
 The [CoreFP1201 caller increment](fpsd1201_caller_report.md) identifies the parent call and scalar guard, while keeping the client returned-name handoff conditional on stack epochs and cell preservation. No additional daemon receive or native client/server identity is established.
+
+The [CoreFP1201 protected-record continuation](fpsd1201_record_report.md) remains on the client side:16 complete original rejection paths write zero stack adjustments,while eight cases stop before the next unresolved call. No additional daemon receive,transport or native endpoint identity is established.

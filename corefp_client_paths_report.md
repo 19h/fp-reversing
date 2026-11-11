@@ -169,3 +169,5 @@ The [ADID receiver report](adid_receiver_report.md) recovers the provider's peer
 The [request1201 client/server contract](fpsd1201_client_report.md) recovers builder0x8d40, send0x8e04, exact164-byte inline request, ID1301/simple36 reply grammar and reply-port cleanup calls. Twenty-seven client profiles and a fresh original daemon failure replay establish local byte/status continuity under declared receive conversion. The protected caller and actual destination-right origin remain unknown.
 
 The [CoreFP1201 caller report](fpsd1201_caller_report.md) now resolves the later local target, unsigned scalar guard and nominal request1200-output/request1201-destination cell. Three adjacent128-byte ranges and five dynamic SP assignments prevent an unconditional whole-parent handoff claim; native endpoint/right identity remains unknown.
+
+The [CoreFP1201 nested-record report](fpsd1201_record_report.md) recovers source staging, helper/child cursor cancellation, internal rejection status and a selected65537 initializer. It does not establish production of the candidate128-byte source or a continuous request1200-to1201 port handoff.
