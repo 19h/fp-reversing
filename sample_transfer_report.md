@@ -188,10 +188,12 @@ Time is O(C*(B+V+L)+I+E) and retained space O(B+retained cases/events), plus sol
 
 The command used before publication follows. Published outputs remain frozen; reproduction requires a separate copy and distinct output paths.
 
+Set `PYTHON`, `Z3_PYTHONPATH` and `Z3_LIBRARY_DIR` to the analysis interpreter and matching Z3 module/library locations.
+
 ```
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages \
-Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_sample_transfer.py
+PYTHONPATH="triage_evidence:${Z3_PYTHONPATH}" \
+Z3_LIBRARY_PATH="${Z3_LIBRARY_DIR}" \
+"${PYTHON}" -P triage_evidence/validate_sample_transfer.py
 ```
 
 ## Assumption register and bounded continuation
@@ -219,3 +221,6 @@ Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
 QG1: factual technical analysis requires no normative conclusion. QG2: ST1-ST8 retain dependent results and falsification probes. QG3: metadata, two transfer paths, counters, typed pointer/operation roles, wrapper composition and pre-provider ABI are covered for this increment; the broad goal remains active. QG4: byte extents, u32/u64 widths, arithmetic domains, source epochs and complexity are explicit. QG5: provider argument differences/native behavior, raw/aligned offsets, modeled/real counts, nominal/runtime class and pre/post operation are separated. QG6: original source/symbols/chains, eight proofs, six exhaustive banks and 304 fresh source cases support the stated scope. QG7: impact-labeled continuation is complete.
 
 [Source identity](triage_evidence/sample_transfer_source_identity.json), [prior-artifact preservation](triage_evidence/sample_transfer_preservation.json) and [delivery quality gates](triage_evidence/sample_transfer_quality_gates.json) retain final readback.
+
+
+The [shared operation preflight](lskd_operation_preflight_report.md) now binds original W1 values 1,2,4,5 to a no-op hook followed by an `initKernelAESHW()` record wrapper. Nonzero initializer low32 results enter the prior conditional return path unchanged; zero continues operation dispatch. The continuing source recovers original X2/X4-low32, saves the address of cached-byte cell CCC7848, and establishes count thresholds 32/16 for W1=1/5 with units still unknown. Native epochs, full operation meanings and daemon transport remain open.

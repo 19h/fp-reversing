@@ -107,10 +107,10 @@ The AES flag and close flag are distinct addresses. This branch is inspected sta
 
 ## Reproduction and validation
 
-Run only the new verifier before publication; published evidence files are frozen:
+For reproduction, set `PYTHON` to the analysis interpreter and use a separate evidence tree; published evidence files are frozen:
 
 ```
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kext_cold_init.py
+PYTHONPATH=triage_evidence "${PYTHON}" -P triage_evidence/validate_kext_cold_init.py
 ```
 
 | Validation | Result |
@@ -154,3 +154,6 @@ The algorithm reads pinned source, runs each declared original prefix in private
 ## Scoped quality gates
 
 QG1 passes for factual technical analysis. QG2 passes with A1-A8 and dependent results above. QG3 passes for this cold allocation/discovery/failure increment; the broad interface goal remains active and incomplete. QG4 passes for explicit byte widths, exact timeout units, source epochs and complexity. QG5 passes with warm/cold flags, logical/native release, requested/elapsed timeout and static/executed positive paths separated. QG6 passes through original bytes, symbols, chained slots, compile-only layout and eight distinct fresh replays. QG7 passes with impact-labeled bounded continuation. [Machine-readable gates](triage_evidence/kext_cold_init_quality_gates.json), [source readback](triage_evidence/kext_cold_init_source_identity.json) and [prior-artifact preservation](triage_evidence/kext_cold_init_preservation.json) cover this delivery.
+
+
+The [shared operation preflight](lskd_operation_preflight_report.md) now binds original W1 values 1,2,4,5 to a no-op hook followed by an `initKernelAESHW()` record wrapper. Nonzero initializer low32 results enter the prior conditional return path unchanged; zero continues operation dispatch. The continuing source recovers original X2/X4-low32, saves the address of cached-byte cell CCC7848, and establishes count thresholds 32/16 for W1=1/5 with units still unknown. Native epochs, full operation meanings and daemon transport remain open.
