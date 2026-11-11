@@ -160,3 +160,7 @@ Extraction and straight-line expression construction take O(B+I) time/space for 
 **QG6**: Original collection bytes, compiler bounds, nlist definitions, chained fixups, decoded instruction ledgers and independently rechecked source/SMT certificates supply primary provenance.
 
 **QG7**: The impact-ranked continuation table bounds the architectural expansion. Scoped passage does not establish native DMA readiness, hardware completion or daemon/kext pairing.
+
+## Configuration and emitted records
+
+The [configuration/command report](aes_configuration_commands_report.md) extends the quantum's subsequent configuration boundary with complete scalar operation/selector partitions, selected 20/36/68 B record layouts and the source FIFO/trace/MMIO emitter. These are separate from descriptor preparation: nominal calls, object extents, device acceptance and a single native descriptor/job epoch remain premises (AC1-AC8 in that report). Prepared length does not establish configuration success or hardware completion.

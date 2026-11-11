@@ -160,3 +160,7 @@ QG6: Original bytes/symbols/fixups, exact object/global transfers, separately id
 QG7: The impact-labelled continuation table identifies unresolved architectural joins. Scoped gate passage does not establish authentic activation, configuration success, hardware completion or constructor/daemon continuity.
 
 The later [DMA preparation report](aes_dma_preparation_report.md) replaces selected no-effect API premises with original-source contracts: fresh binding requests prepare(0,0,true,true), zero length derives from descriptor+0x50 through a 32 B summary, and codes 1/2 in the pinned descriptor implementation take a barrier-only path. Same-pointer binding shortcuts preparation. Segment cursor gates, callback/shim result separation and the transfer minimum are recovered; complete mapper/configuration effects and native continuity remain unknown.
+
+## Configuration continuation
+
+The [configuration/command report](aes_configuration_commands_report.md) resolves the source call at `0xfffffe0009d50d4c` as `_configureAES(provider,command,0)`. It partitions operation and normalized selected-key selector inputs, recovers bounded command layouts and orders software trace, cursor update and MMIO stores. Recognition is not complete later admission; hardware completion and same-job descriptor/command continuity remain unknown (AC1-AC8).

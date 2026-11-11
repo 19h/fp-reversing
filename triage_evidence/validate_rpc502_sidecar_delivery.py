@@ -386,6 +386,7 @@ def main():
     if exists(BASE/'lskd_hardware_staging_report.md'):reports.add(BASE/'lskd_hardware_staging_report.md')
     if exists(BASE/'aes_provider_admission_report.md'):reports.add(BASE/'aes_provider_admission_report.md')
     if exists(BASE/'aes_dma_preparation_report.md'):reports.add(BASE/'aes_dma_preparation_report.md')
+    if exists(BASE/'aes_configuration_commands_report.md'):reports.add(BASE/'aes_configuration_commands_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1860,6 +1861,10 @@ def main():
         dma_checks=json.loads(read(ROOT/'aes_dma_preparation_checks.json'))
         manifest['validation']['aes_dma_preparation_increment_checks']=dma_checks['verified_counts']
         manifest['validation']['aes_dma_preparation_static_scope']=dma_checks['scope']
+    if exists(ROOT/'aes_configuration_commands_checks.json'):
+        configuration_checks=json.loads(read(ROOT/'aes_configuration_commands_checks.json'))
+        manifest['validation']['aes_configuration_commands_increment_checks']=configuration_checks['verified_counts']
+        manifest['validation']['aes_configuration_commands_static_scope']=configuration_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
