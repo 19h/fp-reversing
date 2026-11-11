@@ -383,6 +383,7 @@ def main():
     if exists(BASE/'lskd_context_return_report.md'):reports.add(BASE/'lskd_context_return_report.md')
     if exists(BASE/'lskd_operation_preflight_report.md'):reports.add(BASE/'lskd_operation_preflight_report.md')
     if exists(BASE/'lskd_byte_spans_report.md'):reports.add(BASE/'lskd_byte_spans_report.md')
+    if exists(BASE/'lskd_hardware_staging_report.md'):reports.add(BASE/'lskd_hardware_staging_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1845,6 +1846,10 @@ def main():
         byte_spans_checks=json.loads(read(ROOT/'lskd_byte_spans_checks.json'))
         manifest['validation']['lskd_byte_spans_increment_checks']=byte_spans_checks['verified_counts']
         manifest['validation']['lskd_byte_spans_static_scope']=byte_spans_checks['scope']
+    if exists(ROOT/'lskd_hardware_staging_checks.json'):
+        staging_checks=json.loads(read(ROOT/'lskd_hardware_staging_checks.json'))
+        manifest['validation']['lskd_hardware_staging_increment_checks']=staging_checks['verified_counts']
+        manifest['validation']['lskd_hardware_staging_static_scope']=staging_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
