@@ -164,3 +164,5 @@ Replay takes O(V+J+H*R+I) time and space O(J+H*R+I), for original visits V, jour
 ## FPSD1201 session selection and failure-state continuation
 
 The [session report](fpsd1201_session_report.md) recovers the simple164-byte request,16-byte protected payload, marker4b/name selection, original failure reset to marker49 and reply construction. Ten complete request profiles and a separately composed process-event callback are independently replayed. Nonzero tail stores are source leads; native right ownership, reclamation and successful request1201 processing remain unknown.
+
+The [tail-retirement continuation](fpsd_tail_retirement_report.md) distinguishes nonzero +888 and +880 cleanup frontiers in nine independently replayed callback profiles. It stops before opaque object reads; the +888 object+24 store precedes session CF cleanup, whereas the +880 pending read follows the52 pool stores and CF requests. Source-produced object lifetimes remain unknown.

@@ -1579,3 +1579,5 @@ The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF fi
 ## FPSD1202 selected-session data flow
 
 The [selected-session analysis](fpsd1202_session_report.md) identifies the shared digest and encoded block-transform roles through13 independently replayed profiles and133 fresh IDA spans. Eight full20-byte digest outputs match SHA-1 over big-endian B/C plus OOL16; eight block calls match independent AES references on diagnostic stored bytes. Slot+816 publication, +868/+872 increments, first-byte inline comparison and output-seed provenance are separated from native state, ownership and cross-layer completion.
+
+The [tail cleanup continuation](fpsd_tail_retirement_report.md) independently checks37834 original callback visits across nine profiles, two source-lifted null selectors and distinct +888/+880 cleanup order. Retained whole-code IDA attestation covers39 source spans; a fresh function/reference locator completed, but the subsequent live byte readback failed. Static publishers remain unjoined to native object lifetimes.

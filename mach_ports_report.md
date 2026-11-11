@@ -1453,3 +1453,5 @@ The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF fi
 ## FPSD1202 selected-session name continuation
 
 The [session-path report](fpsd1202_session_report.md) checks original call0x1004a0834 and its name comparison against received local name6800. Changing the declared session CF result to6801 returns original status5 before payload reads or pool stores. Reply destination6400 is still staged at0x100004b9c with ID1302; no port-right descriptor, new endpoint or native Mach emission is added. The declared4d state and task-local numeric names do not establish native endpoint ownership.
+
+The [tail retirement report](fpsd_tail_retirement_report.md) orders session CF invalidation/release requests before the first +880 object read when +888 is null. Nonzero +888 reaches its object boundary before those requests. No new Mach name, right descriptor or send occurs; native right teardown and object ownership remain unknown.

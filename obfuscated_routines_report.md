@@ -1537,3 +1537,5 @@ The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF fi
 ## FPSD1202 selected-session routine roles
 
 The [selected-session report](fpsd1202_session_report.md) joins digest initializer0x10045c4f0 and shared helper0x100440be4 to eight original full20-byte SHA-1 output epochs. Adapter0x100539c20/body0x10053948c produce blocks matching AES-128 encryption under XOR98 representation adapters in five distinct diagnostic tuples. Complete local source equivalence, native usable key state and caller authorization remain unknown; raw helper X0 is kept separate from encoded record result and enclosing application status.
+
+The [tail retirement analysis](fpsd_tail_retirement_report.md) recovers phase-checked null dispatch at0x1003ce728 and0x100265248, the original +888 object+24 store at0x100406d60 and pending +880 object+108 read at0x1001faa20. Static marker4d publication in sub_1009B7D10 has three confirmed noncode references; its object/base producers and lifetime join remain unknown.

@@ -219,3 +219,5 @@ The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF fi
 ## FPSD1202 selected-session continuation
 
 The [selected-session report](fpsd1202_session_report.md) extends the marker4d stop through the session CF-name comparison and complete13-case original return interval. Words A=1/2 reach shared digest/block-transform code and original status8 with diagnostic session bytes; tested other words return0 with zero OOL count and retained output seeds. The reply layout/status distinction, input deallocation call and absence of native send/IOKit effects are retained explicitly.
+
+The [tail cleanup report](fpsd_tail_retirement_report.md) extends process-event handling through declared nonzero pointers without consuming opaque object bytes. The +888 path stops after object+24 is zeroed; the +880 path reaches its first pending read after session CF cleanup requests. These are callback intervals, with no new receive/reply message or native transport claim.

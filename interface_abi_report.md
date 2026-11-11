@@ -1708,3 +1708,5 @@ The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF fi
 ## FPSD1202 selected-session record and operation fork
 
 The [session-path report](fpsd1202_session_report.md) adds the phase-checked name equality and exact all-u32 A=1/2 fork, observed32-byte transform record, diagnostic digest/AES correspondence and counter expressions. Original application status is read at0x100004848; complex reply+32 belongs to the OOL address. No completed daemon-to-kext/provider transaction follows from this local helper/record evidence.
+
+The [tail contract report](fpsd_tail_retirement_report.md) separates896-byte slot fields +888/+880, original object+24 zeroing and pending +0/u64 versus +108/u32 reads. All-u64 null-selector proofs use freshly checked CPU phases. Diagnostic backing size supplies no native object extent; no object byte is consumed or daemon/kext transaction completed.
