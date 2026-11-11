@@ -1507,3 +1507,6 @@ The [event-table startup report](event_wait_table_report.md) connects the global
 ## Startup phase and readiness context
 
 The [startup-dispatch report](startup_dispatch_report.md) recovers original phase labels, unsigned phase/rank ordering, authenticated callback arguments and return-before-cursor publication. It distinguishes completed source traversal from successful callback effects, concurrent/reentrant exclusion and native consumer visibility (SD1-SD7).
+
+
+The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).

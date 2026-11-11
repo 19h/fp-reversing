@@ -127,3 +127,6 @@ Extraction and locator work are O(B+I+P) time/space for collection bytes B, inst
 ## Source ordering and callback-return qualification
 
 The [startup-dispatch report](startup_dispatch_report.md) establishes unsigned phase/rank comparison, the authenticated callback ABI, 42 rank-zero entries in `mach_ipc`, and cursor advance after callback return. A completed phase14 traversal includes this callback under sorted-table, returning-call and exclusive-cursor premises. It does not establish successful allocation, initialized-table visibility or native AES use (SD1-SD7).
+
+
+The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).

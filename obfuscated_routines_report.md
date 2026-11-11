@@ -1465,3 +1465,6 @@ The [event-table startup report](event_wait_table_report.md) establishes source 
 ## Startup dispatcher and comparator roles
 
 The [startup-dispatch report](startup_dispatch_report.md) links unnamed code to the original diagnostic literal `kernel_startup_initialize_upto`, recovers its phase-name pointer table, and establishes comparator, sorter, callback and cursor roles through original source and independent interpretation. Exact nlist names, native callback success and hardware PAC remain unproved (SD1-SD7).
+
+
+The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).

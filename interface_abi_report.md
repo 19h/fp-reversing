@@ -1636,3 +1636,6 @@ The [event-table startup report](event_wait_table_report.md) records option-read
 ## Startup callback and cursor ABI
 
 The [startup-dispatch report](startup_dispatch_report.md) establishes the 24 B entry ABI, X0 argument / X17=0x2abe authenticated callback call, phase-before-call and cursor-after-return stores, and unsigned threshold gates. The source wait-table callback belongs to phase14 `mach_ipc`, tied at rank0 with41 peers; this adds no Mach endpoint or message emission (SD1-SD7).
+
+
+The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).

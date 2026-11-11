@@ -167,3 +167,6 @@ Extraction/path construction is O(B+I+P) time/space for collection bytes B, deco
 ## Startup producer and readiness boundary
 
 The [event-table startup report](event_wait_table_report.md) identifies an authenticated numeric phase-14 callback, its `wqsize` option/default budget paths, count/root publication and 24 B record initialization. Completed source initialization supplies the byte+5 validity bit; actual invocation, backing, allocation status, visibility and matching runtime table epochs remain premises (ET1-ET7).
+
+
+The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).
