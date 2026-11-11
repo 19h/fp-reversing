@@ -4,6 +4,8 @@ Request1202 first compares its received local Mach name with the name extracted 
 
 This continues the [FPSD1201 report](fpsd1201_session_report.md). The broad daemon/kext/deeper-interface goal remains active.
 
+The subsequent [selected-session report](fpsd1202_session_report.md) continues the declared marker4d case through the CF-name comparison, operation1/2 fork, diagnostic SHA-1/AES path, counter stores and original replies. It supersedes this report's stop boundary only for those explicit later profiles; native valid state and daemon/kext completion remain unknown.
+
 ## Assumption register
 
 | ID | Assumption and dependent results | Stress test / falsification probe |

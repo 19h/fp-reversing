@@ -215,3 +215,7 @@ The [session report](fpsd1201_session_report.md) recovers the simple164-byte req
 ## FPSD1202 control endpoint and OOL continuation
 
 The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF field to the control-name comparator, recovers the marker4d session selector and establishes the OOL input/deallocation/reply ABI. Fifteen independently replayed profiles distinguish original failures, declared application-return controls and explicit stop boundaries. Source-produced marker4d ownership, successful processing and native transport/reclamation remain unknown.
+
+## FPSD1202 selected-session continuation
+
+The [selected-session report](fpsd1202_session_report.md) extends the marker4d stop through the session CF-name comparison and complete13-case original return interval. Words A=1/2 reach shared digest/block-transform code and original status8 with diagnostic session bytes; tested other words return0 with zero OOL count and retained output seeds. The reply layout/status distinction, input deallocation call and absence of native send/IOKit effects are retained explicitly.

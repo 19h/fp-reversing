@@ -1449,3 +1449,7 @@ The [session report](fpsd1201_session_report.md) recovers the simple164-byte req
 ## FPSD1202 control endpoint and OOL continuation
 
 The [request1202 report](fpsd1202_ool_report.md) joins the registered fpsd CF field to the control-name comparator, recovers the marker4d session selector and establishes the OOL input/deallocation/reply ABI. Fifteen independently replayed profiles distinguish original failures, declared application-return controls and explicit stop boundaries. Source-produced marker4d ownership, successful processing and native transport/reclamation remain unknown.
+
+## FPSD1202 selected-session name continuation
+
+The [session-path report](fpsd1202_session_report.md) checks original call0x1004a0834 and its name comparison against received local name6800. Changing the declared session CF result to6801 returns original status5 before payload reads or pool stores. Reply destination6400 is still staged at0x100004b9c with ID1302; no port-right descriptor, new endpoint or native Mach emission is added. The declared4d state and task-local numeric names do not establish native endpoint ownership.
