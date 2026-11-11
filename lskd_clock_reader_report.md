@@ -164,3 +164,5 @@ Extraction/census costs O(B+I+L) time/space plus original chain decoding, for ca
 - **QG5** passes with alignment, conditional roots/phase, unbound helpers, arbitrary field64 and captured-only follow-ons explicit. Timed-out direct queries are excluded.
 - **QG6** passes with original bytes/fixups, supplied C, dependency hashes, checked certificates and retained predecessor rechecks.
 - **QG7** passes with impact-ranked request lineage, full result, partial-object and clock-boundary questions.
+
+The [elapsed high-water and continuation-record report](lskd_clock_accumulator_report.md) reduces the selected reader to a conditional unsigned elapsed high-water update. Thirty-four UNSAT certificates cover 754 lifted instruction instances; two SAT controls distinguish decoded-accumulator wrap from elapsed nondecrease and expose the missing signed-result range contract. Fresh embedded-pointer release preparation and a 40 B continuation envelope with 36 B locally written are recovered. Actual phase/frame roots, concrete helper targets, final context predicate, native epoch and daemon-kext lineage remain unknown.
