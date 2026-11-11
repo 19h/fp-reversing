@@ -182,9 +182,8 @@ The bounded original table range `0xfffffe0008470000..0xfffffe000847c000` contai
 The verification command used before publication is below. Published outputs remain frozen; independent reproduction requires a separate copy of the source/evidence tree.
 
 ```
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages \
-Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kext_aes_handoff.py
+env PYTHONPATH="triage_evidence:$Z3_PYTHONPATH" \
+Z3_LIBRARY_PATH="$Z3_LIBRARY_DIR" "$PYTHON" -P triage_evidence/validate_kext_aes_handoff.py
 ```
 
 The verifier re-reads original function bounds, bytes, symbols, slots and headers, rechecks the word proofs and byte-bank identities, and runs newly created wrapper cases. Cost is O(B + C*I + E + N) time and retained space for source bytes B, cases C, bounded per-case instructions I, events E and scanned symbols N, plus compiler and solver-dependent fixed-word work. Provider argument values, including opaque invalid-as-native pointer sentinels, are ABI fixtures; APIs do not dereference or accept them.
@@ -217,3 +216,5 @@ The verifier re-reads original function bounds, bytes, symbols, slots and header
 ## Scoped quality gates
 
 QG1 passes for factual analysis. QG2 passes with H1-H9, dependent results and falsification probes. QG3 passes for wrapper/provider ABI, partial command/completion and one cleanup caller; the broad goal remains active and incomplete. QG4 passes for explicit widths, register/stack locations, exact byte counts and complexity. QG5 passes with modeled/native effects, nominal/actual receivers, exact-symbol/SDK-correlated methods, resolved/unresolved references and local/native reachability separated. QG6 passes through original bytes, compiler bounds, symbols, slots, 85 fresh cases, three local proofs and exhaustive bank checks. QG7 passes with impact-labeled continuation. [Machine-readable gates](triage_evidence/kext_aes_handoff_quality_gates.json), [source readback](triage_evidence/kext_aes_handoff_source_identity.json) and [prior-artifact preservation](triage_evidence/kext_aes_handoff_preservation.json) cover delivery.
+
+The [descriptor-AES admission and scheduling analysis](aes_provider_admission_report.md) establishes the full64 16-byte-aligned provider length guard through 8388608 B, early key-data+24 low31 publication and optional provider-table key remapping. It connects the earlier sample-state control word to the typed provider selector, resolves descriptor physical-address requests and command fields, and distinguishes the immediate threshold from the operation-specific scheduler quantum. Descriptor extent acceptance, full key policy, native class/configuration, hardware completion and daemon linkage remain open.

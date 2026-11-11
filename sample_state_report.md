@@ -168,9 +168,8 @@ Nonempty source data flow continues through the descriptor read, returned-count 
 The fresh verifier re-reads functions, exact symbols, import slots, bank bytes, compiler/SDK output and proof files. It then replays the original fill/state cases and reconstructs state from source writes plus explicitly modeled copies. Cost is O(Cs*(B+Vs)+Cf*(Vf+L)+I+E) time and O(B+retained cases/events) space, plus solver/compiler-dependent work. Cs/Cf count state/fill cases, B mapped bytes, Vs/Vf bounded visits, L fill bytes, I inspected source and E events. Source caps are 20000 instructions per state/fill case.
 
 ```
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages \
-Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_sample_state.py
+env PYTHONPATH="triage_evidence:$Z3_PYTHONPATH" \
+Z3_LIBRARY_PATH="$Z3_LIBRARY_DIR" "$PYTHON" -P triage_evidence/validate_sample_state.py
 ```
 
 This was the pre-publication command. Published artifacts remain frozen; reproduction requires a separate copy and distinct outputs.
@@ -199,3 +198,5 @@ This was the pre-publication command. Published artifacts remain frozen; reprodu
 QG1: factual analysis requires no normative conclusion. QG2: SS1-SS8 specify assumptions and falsification probes. QG3: state/carrier, pure helper, copy/heap ABI, conditional lifetime and next data-read boundary are covered for this increment; the full goal remains active. QG4: widths, byte intervals, arithmetic, source coverage and complexity are reproducible. QG5: raw scalars/extents, native/model operations, advanced X0/C return type, alias names and explicit/implicit completion are distinguished. QG6: original bytes/symbols/chains, ten exhaustive banks, six proofs, 7148 fresh cases and SDK evidence support the stated bounds. QG7: impact-labeled continuation is complete.
 
 [Delivery quality gates](triage_evidence/sample_state_quality_gates.json) record final source, prior-artifact and report-link verification.
+
+The [descriptor-AES admission and scheduling analysis](aes_provider_admission_report.md) establishes the full64 16-byte-aligned provider length guard through 8388608 B, early key-data+24 low31 publication and optional provider-table key remapping. It connects the earlier sample-state control word to the typed provider selector, resolves descriptor physical-address requests and command fields, and distinguishes the immediate threshold from the operation-specific scheduler quantum. Descriptor extent acceptance, full key policy, native class/configuration, hardware completion and daemon linkage remain open.
