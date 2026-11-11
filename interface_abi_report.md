@@ -1668,3 +1668,7 @@ The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) extends ori
 ## FPSD1200 PID and FPDI identity path
 
 The [FPSD1200 identity-path report](fpsd1200_identity_report.md) extends the original audit/PID ABI into a separate 24-byte observed helper record: destination pointer at +0, copied-token pointer at +8, encoded control at +16 and local result at +20. The caller selects `0x10062d24c` for local word `0x3eb38698`, otherwise `0x10062a78c` under the recorded phase. These are internal record results, not external MIG status. The report records 256-byte UTF-8 conversion, dictionary/Array calls, shared buffer/mask reads, original once callback and exact lock/allocation arguments with their explicit model boundaries.
+
+## FPSD1200 pool and application-word continuation
+
+The [pool continuation](fpsd1200_arena_report.md) recovers a bounded allocation layout: stride896, 50 slots, u32 metadata at +876 and zeroed u64 fields at +880/+888; only selected slot0 changes marker. `STP` at `0x100057634` publishes the owner pointer/count to `0x1010c4cd8`/`0x1010c4ce0`. The original `CASAL W8,W14,[X12]` at `0x1006009c0` accesses process-local word `0x1010b5de0`; its scalar fixture and following original reset are separate from native ordering. Five zero-status original returns preserve output seeds, so application status, complex-descriptor bytes and actual output/right validity remain distinct ABI layers (FA1-FA8).

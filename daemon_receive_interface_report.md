@@ -179,3 +179,7 @@ The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) follows the
 ## FPSD1200 PID and FPDI identity path
 
 The [FPSD1200 identity-path report](fpsd1200_identity_report.md) preserves the received carrier through 25 original libbsm calls and 250 complete audit-token copies. A separate FPDI entitlement dictionary supplies selected client-identifier/capabilities inputs. The subsequent local record result and process-local buffer transformations precede once/lock and allocation boundaries. No input OOL byte is read in these prefixes and no complete reply is produced; audit bytes and API objects/results remain explicit private fixtures.
+
+## FPSD1200 pool and application-word continuation
+
+The [pool continuation](fpsd1200_arena_report.md) carries that original path through a 50-slot allocation and process-local publication. Request+52 controls the sampled later branch independently of OOL count8/756: words1/2 reach a scalar-atomic boundary and, with its explicit model, `arc4random`; word3 and reference `0x11223344` return zero through the original wrapper. Five complex reply returns retain seeds in the inline block and output cells. All 12 profiles read no input OOL bytes and reach no new IOKit call or Mach emission. Status zero is distinct from established output definedness, native admission or successful transaction (FA1-FA8).

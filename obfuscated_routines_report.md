@@ -1497,3 +1497,7 @@ The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) assigns sou
 ## FPSD1200 PID and FPDI identity path
 
 The [FPSD1200 identity-path report](fpsd1200_identity_report.md) establishes adapter `0x10049c710` and operation-specific dictionary continuations at `0x1005269e8`, `0x10040a7b0`, `0x1004be140`, the client-value call at `0x100581b48`. It separates helper result selection from later address-dependent byte transformations and the known acquisition adapter `0x10043e280`. Original source/fixup and replay evidence supports these local roles; arbitrary continuation fragments are not assigned independent C prototypes, and a local matching result does not establish complete authorization.
+
+## FPSD1200 pool and application-word continuation
+
+The [pool continuation](fpsd1200_arena_report.md) assigns local source roles to metadata stores `0x10013ebe0`/`0x10013ebe4`/`0x1001b4724`, pointer/count publisher `0x100057634`, slot-marker writer `0x10051e068`, sampled word selector `0x100635670..0x1006356a8`, atomic boundary `0x1006009c0` and later reset `0x1006303ec`. Explicit scalar atomic continuations reach the `arc4random` import at `0x100630448`. The original zero-status return branch preserves reply seeds. Pool marker business meaning, complete application-word decoding, random consumer and provider/IOKit semantics remain unknown; these fragments are not assigned independent C prototypes (FA1-FA8).

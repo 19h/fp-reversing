@@ -162,3 +162,7 @@ Generation reuses the retained live IDA attestation; a fresh IDA read is separat
 | Low | Compare this FPDI dictionary path with other operation tags using independently pinned carrier identities; common helper addresses do not unify endpoint policy. |
 
 This is one completed investigation increment; the full daemon/kext/deeper-interface goal remains active.
+
+## Subsequent pool continuation
+
+The [pool continuation](fpsd1200_arena_report.md) extends the allocation boundary through original initialization/publication: 50 slots at 896-byte stride, 1000 initialized metadata bytes in a 44800-byte owner, pointer/count globals and a selected slot marker. Twelve independent cases cover NULL allocation, two owner fills, application-word/count controls, pre-atomic guards and an explicit scalar atomic continuation to `arc4random`. Five original zero-status returns preserve reply seeds; no native successful output, right or daemon-kext transaction is established. The earlier 25-case identity results remain scoped to their original boundaries (FA1-FA8).

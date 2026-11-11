@@ -1315,3 +1315,7 @@ Completed the [FPSD1200 admission-prefix increment](fpsd1200_admission_report.md
 ## FPSD1200 PID and FPDI identity path
 
 Completed the [FPSD1200 identity-path increment](fpsd1200_identity_report.md): original selected libbsm PID extraction, FPDI dictionary/field interfaces, local result/cleanup, matched process-local buffer dependency and once/lock/allocation boundaries. Independent 25-case replay and fresh IDA/source/fixup/SDK checks pass. The full goal remains active. Next priorities are the original 44800-byte allocation/registry/provider route, capability elements and remaining identity validation, plus actual runtime audit/Security/buffer lifetime and successful IOKit/output provenance.
+
+## FPSD1200 pool and application-word continuation
+
+Completed the [pool continuation](fpsd1200_arena_report.md): original 50*896-byte layout, partial metadata initialization, pointer/count publication, selected marker and application-word branch. Twelve independent profiles pass, including five original zero-status returns that preserve reply seeds and four explicit scalar atomic continuations that reach `arc4random`. Fresh IDA/source/fixup checks cover 106 spans; no new native output, port producer, emission or IOKit call is established. The full goal remains active. Next priorities are the random-result consumer, payload/output/provider route, slot consumers and actual native credentials, rights and cross-layer completion (FA1-FA8).

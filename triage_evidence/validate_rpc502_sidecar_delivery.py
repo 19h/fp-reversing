@@ -400,6 +400,7 @@ def main():
     if exists(BASE/'fpsd1200_contract_report.md'):reports.add(BASE/'fpsd1200_contract_report.md')
     if exists(BASE/'fpsd1200_admission_report.md'):reports.add(BASE/'fpsd1200_admission_report.md')
     if exists(BASE/'fpsd1200_identity_report.md'):reports.add(BASE/'fpsd1200_identity_report.md')
+    if exists(BASE/'fpsd1200_arena_report.md'):reports.add(BASE/'fpsd1200_arena_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1930,6 +1931,10 @@ def main():
         fpsd1200_identity_checks=json.loads(read(ROOT/'fpsd1200_identity_checks.json'))
         manifest['validation']['fpsd1200_identity_increment_checks']=fpsd1200_identity_checks['verified_counts']
         manifest['validation']['fpsd1200_identity_static_scope']=fpsd1200_identity_checks['scope']
+    if exists(ROOT/'fpsd1200_arena_checks.json'):
+        fpsd1200_arena_checks=json.loads(read(ROOT/'fpsd1200_arena_checks.json'))
+        manifest['validation']['fpsd1200_arena_increment_checks']=fpsd1200_arena_checks['verified_counts']
+        manifest['validation']['fpsd1200_arena_static_scope']=fpsd1200_arena_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

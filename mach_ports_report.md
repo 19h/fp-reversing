@@ -1413,3 +1413,7 @@ The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) preserves t
 ## FPSD1200 PID and FPDI identity path
 
 The [FPSD1200 identity-path report](fpsd1200_identity_report.md) adds original PID extraction and Security/CF/once/lock/allocation touch points, without a new Mach-port producer or emission site. All 25 cases stop before missing-environment reads or unmodeled imports. The received-local-name/reply destination remain carried from the original MIG prefix; the imported allocation request and matching local helper result do not identify a kext connection, successful reply port/OOL ownership or transport completion.
+
+## FPSD1200 pool continuation and returned-name boundary
+
+The [pool continuation](fpsd1200_arena_report.md) reaches five original zero-status returns and the 212-byte reply formatter. The incoming application name still comes from request+12 at `0x10000467c`; reply destination follows the earlier header contract. Wrapper copy-back at `0x100007f34..0x100007f60` writes reply+44 from the staged name cell, which remains fixture seed bytes. Disposition19/type0 and complex formatting at `0x1000046f0..0x100004704` serialize a descriptor; neither location emits a message or produces a right. No new port producer, `mach_msg` send, successful OOL ownership or IOKit connection is established. Complex reply+32 is descriptor data, not the separate 36-byte error format's status word (FA1-FA8).
