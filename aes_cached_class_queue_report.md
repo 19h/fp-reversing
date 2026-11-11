@@ -166,3 +166,7 @@ Recovery/proof construction costs O(B+I+P) time/space for source bytes B, instru
 - **QG7**: Further work is bounded and impact-ranked; native range enforcement, ownership, scheduling and daemon completion remain unknown.
 
 Evidence: [source and certificates](triage_evidence/aes_cached_class_queue_checks.json.zst), [generator](triage_evidence/recover_aes_cached_class_queue.py), [independent interpreter](triage_evidence/audit_aes_cached_class_queue.py), [publication audit](triage_evidence/verify_aes_cached_class_queue_publication.py).
+
+## Uncached context placement increment
+
+The [AES uncached-context report](aes_uncached_context_queue_report.md) establishes the three lane selectors, 200 B context layout, separate primary/secondary thread heap nodes, waiter list, per-context accounting, generic-class publication and policy-off score/parent-summary distinction. Twenty-five new UNSAT checks, three abstract SAT controls and 1852 private cases pass, including 216 original first/second-thread compositions with the original tail rekey. The cases retain one context per occupied generic class; active policy, multiple-context ordering, native scheduling/concurrency and matched daemon/provider completion remain unknown (UC1-UC8).

@@ -1295,3 +1295,7 @@ The [AES runqueue membership report](aes_runqueue_membership_report.md) extends 
 
 
 The [AES cached-class report](aes_cached_class_queue_report.md) establishes the original paired-record constructor, 96 initialized priority heads, two distinct class queue headers, complete selected cached backend, deadline-heap publication and parent-summary return. Thirty new UNSAT checks, four abstract SAT controls and 1717 private cases pass, including 1152 constructor/snapshot/backend compositions. The earlier 128-value enqueue sweep remains an abstract domain; native range enforcement, uncached placement, ownership/scheduling and matched daemon completion remain unknown (CQ1-CQ8).
+
+## Uncached context placement increment
+
+The [AES uncached-context report](aes_uncached_context_queue_report.md) establishes the three lane selectors, 200 B context layout, separate primary/secondary thread heap nodes, waiter list, per-context accounting, generic-class publication and policy-off score/parent-summary distinction. Twenty-five new UNSAT checks, three abstract SAT controls and 1852 private cases pass, including 216 original first/second-thread compositions with the original tail rekey. The cases retain one context per occupied generic class; active policy, multiple-context ordering, native scheduling/concurrency and matched daemon/provider completion remain unknown (UC1-UC8).
