@@ -164,3 +164,5 @@ For bytes B, instructions I, nlist records N and bank rules R, extraction costs 
 - **QG5** passes with nonaliasing/storage premises, source status-channel behavior, partial field coverage, nominal/native distinctions and the excluded direct-solver result explicit.
 - **QG6** passes with original bytes/starts/chains/symbols, pinned predecessor evidence, installed-SDK comparison and checked source/decomposition certificates.
 - **QG7** passes with impact-ranked reader, provider, registration, lifetime and edge-case questions.
+
+The [conditional stored-clock reader report](lskd_clock_reader_report.md) decodes the initialization relation, proves the zero-arm rewrite and recovers an exact unsigned fresh-versus-stored comparison. Fifteen UNSAT queries and two SAT controls qualify its phase/alignment and comparison contracts. Actual reader phase/frame roots, both helper-bank bindings, later admission/result and native daemon-kext lineage remain unknown.

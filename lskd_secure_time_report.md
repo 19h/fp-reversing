@@ -168,3 +168,5 @@ Extraction costs O(B+I+E+256R) time/space for source bytes B, instructions I, re
 - **QG5** passes with native admission, source partial initialization, record reuse, fresh reload epochs and distinct lock domains explicit.
 - **QG6** passes with original bytes, compiler starts, C excerpts, exact imports, exhaustive banks, retained producer epochs and checked queries.
 - **QG7** passes with impact-ranked consumer, OID, lifecycle, entropy and cross-layer questions.
+
+The [conditional stored-clock reader report](lskd_clock_reader_report.md) decodes the initialization relation, proves the zero-arm rewrite and recovers an exact unsigned fresh-versus-stored comparison. Fifteen UNSAT queries and two SAT controls qualify its phase/alignment and comparison contracts. Actual reader phase/frame roots, both helper-bank bindings, later admission/result and native daemon-kext lineage remain unknown.

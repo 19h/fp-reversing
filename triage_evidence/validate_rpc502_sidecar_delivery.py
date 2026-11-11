@@ -375,6 +375,7 @@ def main():
     if exists(BASE/'lskd_element_population_report.md'):reports.add(BASE/'lskd_element_population_report.md')
     if exists(BASE/'lskd_secure_time_report.md'):reports.add(BASE/'lskd_secure_time_report.md')
     if exists(BASE/'lskd_clock_completion_report.md'):reports.add(BASE/'lskd_clock_completion_report.md')
+    if exists(BASE/'lskd_clock_reader_report.md'):reports.add(BASE/'lskd_clock_reader_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1805,6 +1806,10 @@ def main():
         clock_completion_checks=json.loads(read(ROOT/'lskd_clock_completion_checks.json'))
         manifest['validation']['lskd_clock_completion_increment_checks']=clock_completion_checks['verified_counts']
         manifest['validation']['lskd_clock_completion_static_scope']=clock_completion_checks['scope']
+    if exists(ROOT/'lskd_clock_reader_checks.json'):
+        clock_reader_checks=json.loads(read(ROOT/'lskd_clock_reader_checks.json'))
+        manifest['validation']['lskd_clock_reader_increment_checks']=clock_reader_checks['verified_counts']
+        manifest['validation']['lskd_clock_reader_static_scope']=clock_reader_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
