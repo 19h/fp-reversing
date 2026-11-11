@@ -382,6 +382,7 @@ def main():
     if exists(BASE/'lskd_context_codec_report.md'):reports.add(BASE/'lskd_context_codec_report.md')
     if exists(BASE/'lskd_context_return_report.md'):reports.add(BASE/'lskd_context_return_report.md')
     if exists(BASE/'lskd_operation_preflight_report.md'):reports.add(BASE/'lskd_operation_preflight_report.md')
+    if exists(BASE/'lskd_byte_spans_report.md'):reports.add(BASE/'lskd_byte_spans_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -1840,6 +1841,10 @@ def main():
         preflight_checks=json.loads(read(ROOT/'lskd_operation_preflight_checks.json'))
         manifest['validation']['lskd_operation_preflight_increment_checks']=preflight_checks['verified_counts']
         manifest['validation']['lskd_operation_preflight_static_scope']=preflight_checks['scope']
+    if exists(ROOT/'lskd_byte_spans_checks.json'):
+        byte_spans_checks=json.loads(read(ROOT/'lskd_byte_spans_checks.json'))
+        manifest['validation']['lskd_byte_spans_increment_checks']=byte_spans_checks['verified_counts']
+        manifest['validation']['lskd_byte_spans_static_scope']=byte_spans_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,8 +1,8 @@
-# Shared operation preflight, AES initialization and count admission
+# Shared operation preflight, AES initialization and count branching
 
 The shared body reached by original W1 values 1, 2, 4 and 5 first calls a `BTI; RET` stub, then a record wrapper around `initKernelAESHW()`. The first call consumes no record fields. The second wrapper writes the initializer's low32 result plus `0x06371ecc` at record `+4`. A nonzero low32 result takes the established context re-encoding/release path; conditional outer-result composition forwards the original numeric result unchanged. A zero result continues operation dispatch and does not establish completion of the selected operation. [PF1-PF8]
 
-The continuing source saves the address of global `0xfffffe000ccc7848`, the earlier identified cached `getBytesNoCopy()` output cell. It also recovers original X2 and the low32 of original X4. Operations 1 and 5 share an unsigned count gate requiring that low32 value to be at least 32 or 16, respectively. Its units and public argument meaning remain **unknown**. This joins the named wrapper to the shared accelerator-buffer facilities while retaining native lifetime, serialization, daemon-request and complete operation semantics as open questions. [PF2-PF8]
+The continuing source saves the address of global `0xfffffe000ccc7848`, the earlier identified cached `getBytesNoCopy()` output cell. It also recovers original X2 and the low32 of original X4. Operations 1 and 5 compare that low32 value against unsigned thresholds 32 and 16, respectively; both arms continue. The subsequent [byte-span report](lskd_byte_spans_report.md) establishes byte units and short-copy versus full-split routing. The public operation meanings remain **unknown**. This joins the named wrapper to the shared accelerator-buffer facilities while retaining native lifetime, serialization, daemon-request and complete operation semantics as open questions. [PF2-PF8]
 
 [Evidence](triage_evidence/lskd_operation_preflight_checks.json.zst), [extractor](triage_evidence/recover_lskd_operation_preflight.py) and [publication audit](triage_evidence/verify_lskd_operation_preflight_publication.py) retain 10 spans / 430 instructions / 1,720 B. Twenty-eight UNSAT queries cover 27 source pieces / 19,867 lifted instruction instances. Of these instances, 19,712 belong to seven source bank cuts, each enumerated over all 256 low-byte inputs with arbitrary upper24 bits. One SAT control separates a ready-bit test from validation of the cached pointer. No new native execution, IDA lookup, IDB mutation, Mach message or port-right emission occurs.
 
@@ -18,12 +18,12 @@ original W1 = 1,2,4,5; working context decoded
   -> low32(raw_result) == 0
        -> index979 -> A59B718 -> index849 -> A52A990
        -> save original X4 low32, original X2, address of CCC7848
-       +-> W1=1,5 -> A535AD8 -> unsigned count >= 32,16 respectively
+       +-> W1=1,5 -> A535AD8 -> unsigned threshold 32,16; both arms continue
        +-> W1=2   -> A534758 [operation body remains open]
        +-> W1=4   -> A5238F8 [state144 consumer frontier]
 ```
 
-Address suffixes and codes in the diagram are hexadecimal; admission thresholds 32 and 16 are decimal integers, with no assigned physical unit.
+Address suffixes and codes in the diagram are hexadecimal; thresholds 32 and 16 are decimal byte counts, as established by the subsequent byte-span evidence.
 
 ## Assumption register and primary provenance
 
@@ -92,7 +92,7 @@ The last two are arithmetic compositions with previously established initializer
 
 The initializer tests bit0 of readiness byte `0xfffffe000ccceb00`. Its ready-bit arm sets status zero without reading CCC7848. Consequently, that test alone supplies no cached-pointer validation. The SAT control admits a ready-bit/non-null-invariant mismatch in the abstract source state; it does not establish that native construction reaches such a state. The cold provider, allocation, preparation, publication and cleanup paths remain covered by the earlier [cold-init](kext_cold_init_report.md) and [buffer](kext_buffer_report.md) reports. [PF1,PF6,PF8]
 
-## Original inputs, cached-cell identity and count admission
+## Original inputs, cached-cell identity and count branching
 
 After zero preflight, source `a52a994..a52a9d4` decodes outer record `+8` with the saved entry key. This recovers low32 of original X4 and stores its zero-extended value at body SP`+0xc8`. Source `a52a9d8..a52a9e0` copies outer record `+0x28`, exactly original X2, to SP`+0x1e8`. The earlier use of SP`+0x1e8` for reader-control state is a different source phase; the offset must not retain that earlier meaning after this overwrite. [PF2-PF4]
 
@@ -100,24 +100,24 @@ The next pool bank selects an original pointer to `0xfffffe000ccc784c`. Source s
 
 | Original W1 | Post-preflight route | Next retained meaning |
 | ---: | --- | --- |
-| 1 | `659 -> a520554 -> 2f6 -> a535ad8` | Require unsigned low32(original X4) >= 32 |
+| 1 | `659 -> a520554 -> 2f6 -> a535ad8` | Compare unsigned low32(original X4) with 32; both arms continue |
 | 2 | `659 -> a520554 -> 302 -> a534758` | Further operation body remains open |
 | 4 | `628 -> a536798 -> 928 -> a5238f8` | Save context`+0x144` address at SP`+0x80`, read its current u32 |
-| 5 | `628 -> a536798 -> 2f6 -> a535ad8` | Require unsigned low32(original X4) >= 16 |
+| 5 | `628 -> a536798 -> 2f6 -> a535ad8` | Compare unsigned low32(original X4) with 16; both arms continue |
 
-The first partition uses signed original W1, consistent with the admitted positive selectors. The shared count test uses unsigned32 ordering, accepts equality at its threshold and sees the source's truncation of original X4. An X4 value above 2^32 therefore cannot be interpreted as an untruncated count here. No allocation or copied-buffer bound follows from this test alone. [PF2-PF4,PF8]
+The first partition uses signed original W1, consistent with the admitted positive selectors. The shared count test uses unsigned32 ordering, selects the higher-count arm at equality and sees the source's truncation of original X4. An X4 value above 2^32 therefore cannot be interpreted as an untruncated count here. No allocation or copied-buffer bound follows from this test alone. [PF2-PF4,PF8]
 
-For W1=1 or 5, an admitted count selects index `0x996` / `0xfffffe000a57f8e8`; a smaller count selects `0x988` / `0xfffffe000a51a934`, both through diversity `0x0ee4`. These destinations are retained as original fixups, not analyzed operation bodies or assigned error semantics. For W1=4, the state144 word may be the earlier B+1 update or a different preexisting value; this frontier reads arbitrary current state rather than proving it equals one normalized enum. [PF1-PF4,PF8]
+For W1=1 or 5, a count at or above its threshold selects index `0x996` / `0xfffffe000a57f8e8`; a smaller count selects `0x988` / `0xfffffe000a51a934`, both through diversity `0x0ee4`. This certificate retains those destinations as original fixups. The subsequent [byte-span report](lskd_byte_spans_report.md) analyzes both arms and proves their common builder and distinct continuations; the lower-count arm is not a rejection. For W1=4, the state144 word may be the earlier B+1 update or a different preexisting value; this frontier reads arbitrary current state rather than proving it equals one normalized enum. [PF1-PF4,PF8]
 
 ## Reproduction, bounded follow-up and quality gates
 
 The extractor's `--verify` recomputes and compares all source evidence. Twenty-eight new solver obligations are UNSAT and one negative control is SAT. Seven instruction-bank cuts enumerate 1,792 low-byte cases with an independent symbolic upper24 input in each cut; the output reduces to the same exact constant index in every case. This is exhaustive over each cut's 32-bit input, conditional on its supplied frame/static roots. The publication audit replays those queries plus 65 prior UNSAT queries and four prior SAT controls from context-return and reader-lineage evidence, independently checks bytes/fixups/bank identities and register/memory access boundaries, preserves the original inputs, and checks the manifest and path scrub. [PF1-PF8]
 
-There are 155 non-bank scalar instruction instances and 19,712 bank-cut instances, totaling 19,867. The retained source comprises 430 distinct instruction rows across 10 nonoverlapping spans. Ten continuation slots, six static pool-load slots and seven bank-selected slots cover 21 distinct original fixup addresses. Extraction/expression complexity is O(N+I+256R) time and space for input/index bytes N, lifted instances I and bank rules R; SMT solver cost is separate. All memory widths are bytes; numeric admission thresholds have unknown units. Status arithmetic is modular32, controller/pointer arithmetic modular64, and X4 decoding explicitly truncates and zero-extends. No native target or host service is executed.
+There are 155 non-bank scalar instruction instances and 19,712 bank-cut instances, totaling 19,867. The retained source comprises 430 distinct instruction rows across 10 nonoverlapping spans. Ten continuation slots, six static pool-load slots and seven bank-selected slots cover 21 distinct original fixup addresses. Extraction/expression complexity is O(N+I+256R) time and space for input/index bytes N, lifted instances I and bank rules R; SMT solver cost is separate. All memory widths are bytes; the subsequent byte-span certificate establishes byte units for the thresholds. The frozen preflight certificate alone does not prove units. Status arithmetic is modular32, controller/pointer arithmetic modular64, and X4 decoding explicitly truncates and zero-extends. No native target or host service is executed.
 
 | Impact | Bounded follow-up | Discriminating evidence |
 | --- | --- | --- |
-| High | Recover actual meanings of W1=1,2,4,5 | Follow the admitted count/body and state144 continuations into their input/output and provider calls |
+| High | Recover actual meanings of W1=1,2,4,5 | Follow the count/body and state144 continuations into their input/output and provider calls |
 | High | Establish X2/X4 roles and extents | Trace actual dereferences, copy counts and serialization; numeric thresholds alone do not name a buffer or establish its size |
 | High | Match cached-byte publication, capacity and lifetime | Join CCC7848 dereferences to descriptor construction/cleanup and concurrent users in the same native epoch |
 | High | Establish lock/controller serialization | Track the cached RW domain, controller C/B writes and other users across actual calls and teardown |
@@ -125,4 +125,6 @@ There are 155 non-bank scalar instruction instances and 19,712 bank-cut instance
 | Medium | Join the named outer call to daemon transport | Match actual IOKit/daemon arguments and result consumers without treating internal records as Mach messages |
 | Low | Census no-op hook aliases | Compare other callers/slots and their modifiers before assigning a common semantic role |
 
-**QG1**: No normative claim is required. **QG2**: PF1-PF8 state assumptions, dependencies and falsification probes. **QG3**: The increment covers shared calls/records, controller writes, initializer-result routing, original input recovery, cached-cell identity and count admission; full operation and transport completion remain open. **QG4**: Widths, byte extents, modular arithmetic, signed/unsigned ordering, threshold units and algorithm costs are explicit. **QG5**: The no-op, two record phases, zero-preflight/final-result distinction, X4 truncation and cell-address/pointer distinction are explicit. **QG6**: Original code/fixups, supplied C, frozen initializer/ABI evidence and reproducible source certificates provide primary provenance. **QG7**: Impact-ranked questions bound further data-flow, control-flow, external-input and architectural-interface work.
+**QG1**: No normative claim is required. **QG2**: PF1-PF8 state assumptions, dependencies and falsification probes. **QG3**: The increment covers shared calls/records, controller writes, initializer-result routing, original input recovery, cached-cell identity and count branching; full operation and transport completion remain open. **QG4**: Widths, byte extents, modular arithmetic, signed/unsigned ordering, threshold units and algorithm costs are explicit. **QG5**: The no-op, two record phases, zero-preflight/final-result distinction, X4 truncation and cell-address/pointer distinction are explicit. **QG6**: Original code/fixups, supplied C, frozen initializer/ABI evidence and reproducible source certificates provide primary provenance. **QG7**: Impact-ranked questions bound further data-flow, control-flow, external-input and architectural-interface work.
+
+The [operation 1/5 byte-span analysis](lskd_byte_spans_report.md) resolves original X2 as source, X3 as destination and low32(X4) as a byte count. The 32/16-byte tests select short-copy versus full-split routes; shorter counts copy unchanged and reach conditional outer zero under the prior return premises. Full-split routing copies a 16/0-byte prefix and a 0-15-byte suffix before handing an aligned middle span to A5722B8. Sixty-four bounded direction/length cases prove per-pass snapshot copying; whole-operation overlap behavior, native epochs and daemon serialization remain open.

@@ -139,3 +139,5 @@ Extraction/expression construction requires O(N+I+L) time/space for consumed sou
 
 
 The [context re-encoding and record-return analysis](lskd_context_return_report.md) now closes the selected default/rejection representation path, decodes original W1 values 1,2,4,5 and state144 updates, and maps private statuses to exact stored u32 results through a cached RW release. Actual operation meanings, matched lock ownership, whole-operation cursor preservation and daemon request lineage remain open. Earlier restoration/selector-unknown statements describe the earlier bounded increment.
+
+The [operation 1/5 byte-span analysis](lskd_byte_spans_report.md) resolves original X2 as source, X3 as destination and low32(X4) as a byte count. The 32/16-byte tests select short-copy versus full-split routes; shorter counts copy unchanged and reach conditional outer zero under the prior return premises. Full-split routing copies a 16/0-byte prefix and a 0-15-byte suffix before handing an aligned middle span to A5722B8. Sixty-four bounded direction/length cases prove per-pass snapshot copying; whole-operation overlap behavior, native epochs and daemon serialization remain open.
