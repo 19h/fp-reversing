@@ -39,7 +39,7 @@ explicit object transfer + exact saved caller context
 
 ## Primary identity and dispatch
 
-Primary collection: `/Users/___/Downloads/fpx/img4_dump/kernelcache.macho`, SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Exact nlist names, complete compiler function ranges, original bytes and chained records are captured. Source recapture and replay use the original file without IDB changes.
+Primary collection: `kernelcache.macho`, SHA-256 `d5f0b4d49520744ebcd777a66be7ff69225a8ef2879773340854eab0b1370afe`. Exact nlist names, complete compiler function ranges, original bytes and chained records are captured. Source recapture and replay use the original file without IDB changes.
 
 | Receiver / offset from vptr | Original slot | Exact decoded target | Diversity |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ The nonzero sleep-result case restores workloop owner/depth bookkeeping but reac
 
 Fresh independent A64 replay checks 1572 original instruction visits, 209 writes (1616 bytes), 407 reads (3177 bytes), 95 logical authentication steps, 53 indirect edges, 29 no-effect API models, 12 boundaries and 588 final object images. Additional oracles check exact refreshed-pool transfer, 384 preserved base words, 11 object transfers, three exact saved-context resumptions, two read-before-reclaim/public-result orders, ownership/assertion frontiers and both raw wake counts.
 
-Run from the extracted directory: `PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_aes_synchronous_wait.py`. Complexity is O(image bytes + instruction visits + journal events + carriers) time and O(image bytes + journals + private RAM) space. Offsets/addresses are hexadecimal; byte counts and operation counts are exact integers; one byte is 8 bits. No duration or native scheduling latency is inferred.
+Run from the extracted directory: `PYTHONPATH=triage_evidence "$PYTHON" -P triage_evidence/validate_aes_synchronous_wait.py`. Complexity is O(image bytes + instruction visits + journal events + carriers) time and O(image bytes + journals + private RAM) space. Offsets/addresses are hexadecimal; byte counts and operation counts are exact integers; one byte is 8 bits. No duration or native scheduling latency is inferred.
 
 ## Bounded continuation and scoped quality gates
 
@@ -138,3 +138,7 @@ QG5: Hardware status, kernel sleep result, wake return, public result and bookke
 QG6: Original bytes, exact symbols/fixups, source-produced stack/object state and fresh CPU/read/write replay provide provenance. No native device, descriptor, scheduler, Mach IPC, PAC or IDB mutation executes.
 
 QG7: The bounded continuation table identifies unresolved architectural joins and their impact. Scoped gate passage does not establish authentic hardware completion, native wakeup or full constructor/daemon continuity.
+
+## Interruptibility and lower registration paths
+
+The [event-registration report](aes_event_registration_report.md) distinguishes the carrier wait's raw interruptibility 0 from configuration's raw 2. It resolves the shared event hash, selected mark-wait abort/publication, action-0x10 result dispatch and u32-release/u64-reacquire compare-exchange snapshots. A non-waiting registration result bypasses release/block; existing saved-context resumptions remain declared components, with native table/thread/mutex epochs and actual resumption unproved (ER1-ER8).

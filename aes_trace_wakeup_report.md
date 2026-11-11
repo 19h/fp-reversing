@@ -155,3 +155,7 @@ Reproduce the generator with `--verify`, then run the independent interpreter an
 **QG6**: Original bytes/bounds/symbols/chains, retained versioned primary flag provenance, SMT certificates and independent integer/byte-memory interpretation support the scoped claims.
 
 **QG7**: The impact-ranked table bounds further architectural work; native completion and daemon/kext pairing remain unknown.
+
+## Registration and physical mutex continuation
+
+The [event-registration report](aes_event_registration_report.md) extends the nominal gate/workloop handoff with identical wait/wake hash expressions, source table globals and the input-2 registration abort predicate. It distinguishes cleared owner/depth bookkeeping from the physical mutex word, proves the action-0x10 no-block path for non-waiting registration results and checks all eight configuration sleep returns through their first X0/W0 overwrite. Native table initialization, ownership, membership and scheduler progress remain unknown (ER1-ER8).

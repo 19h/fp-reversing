@@ -1453,3 +1453,7 @@ The [configuration/command report](aes_configuration_commands_report.md) extends
 ## Lower-provider diagnostic and wakeup evidence
 
 The [trace/wakeup report](aes_trace_wakeup_report.md) adds source ring-record roles, exact allocation geometry and a conditional configuration wait/wakeup join below the recovered obfuscated hardware interface. Internal markers identify source phases; none establishes the obfuscated caller's semantic identity, actual key provenance, authenticated daemon request or completed cryptographic output (TW1-TW8).
+
+## Lower event-registration and retry context
+
+The [event-registration report](aes_event_registration_report.md) establishes lower queue/hash/registration contracts reached by the hardware-provider interface below the obfuscated caller. It separates configuration retries from the final carrier wait and recovers their differing interruptibility/result handling. These source contracts do not identify the whole obfuscated algorithm, actual key data, native daemon request or hardware completion (ER1-ER8).

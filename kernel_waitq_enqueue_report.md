@@ -161,11 +161,11 @@ Fresh replay verifies14669 original instruction visits,4007 reads /25858 bytes,2
 Four scalar counterexample queries are UNSAT: effective interruptibility is one input and bounded by both; the source abort tree equals the compact predicate; every u8 priority-only node word is below65536; and the retained mark/stage/fast-release state expression returns4. Domains and solver queries are retained. They do not quantify over native timing, liveness, arbitrary initialized heaps, allocation success or full FairPlay behavior.
 
 ```sh
-cd /Users/___/dev/dylex/extracted
+# Run from the repository root.
 
-env PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_kernel_waitq_enqueue.py
-env PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_kernel_waitq_enqueue.py
-env PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kernel_waitq_enqueue.py
+env PYTHONPATH=triage_evidence "$PYTHON" -P triage_evidence/recover_kernel_waitq_enqueue.py
+env PYTHONPATH=triage_evidence "$PYTHON" -P triage_evidence/probe_kernel_waitq_enqueue.py
+env PYTHONPATH="triage_evidence${Z3_PYTHONPATH:+:$Z3_PYTHONPATH}" Z3_LIBRARY_PATH="$Z3_LIBRARY_DIR" "$PYTHON" -P triage_evidence/validate_kernel_waitq_enqueue.py
 ```
 
 Extraction is O(image+source) time/space. Execution/replay and validation are O(image+visits+RAM+effects), with O(image+RAM+journals) space; four fixed-width solver formulas have separate solver cost. Empty-root heap insertion is constant work in these components. No bound on general heap propagation, contention or scheduler latency follows.
@@ -195,3 +195,7 @@ QG5: Held initializer return, raw allocation, explicit loan publication, pre-blo
 QG6: Original bodies/words/constants/specification are recaptured. Fresh producer, independent input/output oracles, complete-memory joins, CPU/effect replay and four bounded scalar proofs pass. Native reachability and authentic transport remain unknown.
 
 QG7: The impact table bounds blocking/event-order, loan lifetime, copyout, allocation, multi-waiter, deadline and source-version opportunities.
+
+## Shared core reached by AES pointer events
+
+The [event-registration report](aes_event_registration_report.md) establishes the AES global-hash route into this same original registration core. It preserves the distinction between port event 0 / urgency 0x10 and nonnull AES pointer events / urgency 0, and adds direct-source mark-wait and mutex-result certificates. Shared code and equal hash expressions do not establish equal event identity, queues, native membership or thread epochs (ER1-ER8).

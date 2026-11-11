@@ -1624,3 +1624,7 @@ The [configuration/command report](aes_configuration_commands_report.md) records
 ## AES configuration sleep and interrupt wakeup
 
 The [trace/wakeup report](aes_trace_wakeup_report.md) maps eight configuration sleep calls to gate+0x200 with event P+0x150 and raw flags 2. The admitted interrupt path clears the wait byte and invokes nominal gate+0x208 with the same event and raw boolean 0; its wrapper forwards through gate+0x30 to virtual +0x1b8. This establishes a source event-address/argument join, with actual gate/workloop ownership, sleep registration, delivery and retry progress still unknown (TW1-TW8).
+
+## AES event hash, registration and result ABI
+
+The [event-registration report](aes_event_registration_report.md) recovers the shared event hash and 24 B queue stride, configuration interruptibility 2 versus carrier 0, registration-core urgency/deadline/leeway 0 and current-thread argument. With raw mutex action 0x10, registration result !=0xffffffff bypasses release/block; configuration overwrites all eight sleep-return values without reading them. Wake maps lower raw zero to 48 and nonzero to 0. Native event/table/mutex epochs and actual wake progress remain unknown (ER1-ER8).

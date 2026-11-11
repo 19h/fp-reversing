@@ -1495,3 +1495,7 @@ The [configuration/command report](aes_configuration_commands_report.md) supplie
 ## AES trace/wakeup context
 
 The [trace/wakeup report](aes_trace_wakeup_report.md) links source allocation geometry, an eight-store literal cursor census, software diagnostic records and the conditional interrupt producer for configuration sleep. Sixty-eight new UNSAT certificates, seven feasible interrupt paths, two SAT premise controls and 16768 independent finite cases qualify these source contracts. Native initialization, writer closure, synchronization, register effects and daemon/kext epochs remain unknown (TW1-TW8).
+
+## AES global event-registration context
+
+The [event-registration report](aes_event_registration_report.md) adds source hash/table identity, different carrier/configuration interruptibility, conditional abort/publication, physical mutex/RMW widths and the no-block registration-return path. Forty-seven new UNSAT checks, seven feasible source paths, three SAT controls and 3777 independent finite cases pass. Native table initialization, lock/thread ownership, matching event membership and scheduler/device progress remain unknown (ER1-ER8).
