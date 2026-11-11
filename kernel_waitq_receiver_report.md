@@ -203,3 +203,6 @@ QG7: The bounded impact table identifies receive initialization, slow scheduling
 
 
 The [block/wake handshake report](aes_block_wake_handshake_report.md) extends the numerical state0x101 frontier with original wake-state and counter bodies over declared private epochs. It establishes the ordinary helper result1 and placement(thread,5) interface. It does not resume the historical notification RAM component or establish native Mach delivery; that component retains its original prefix boundary (BH1-BH8).
+
+
+The [AES runqueue membership report](aes_runqueue_membership_report.md) extends the prior placement frontier through the original bound-context backend and compact priority-ring insertion. It recovers maximum-increase return semantics, append/prepend flags, two occupancy words, classified/total counters, cumulative class increments and 1112/112/200 B record strides. Twenty-four new UNSAT checks, three abstract SAT controls and 4142 private cases pass, including twelve complete selected placement routes. Generic-backend completion, native ownership/scheduling and matched daemon-kext results remain unknown; the broader goal stays active (RQ1-RQ8).

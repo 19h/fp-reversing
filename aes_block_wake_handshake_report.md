@@ -156,3 +156,6 @@ Source recovery/proof construction costs O(B+I+P) time/space for source bytes B,
 - **QG7**: Continuations are bounded and impact-ranked; native scheduling and daemon-facing completion remain unknown.
 
 Evidence: [source and certificates](triage_evidence/aes_block_wake_handshake_checks.json.zst), [generator](triage_evidence/recover_aes_block_wake_handshake.py), [independent interpreter](triage_evidence/audit_aes_block_wake_handshake.py), [publication audit](triage_evidence/verify_aes_block_wake_handshake_publication.py).
+
+
+The [AES runqueue membership report](aes_runqueue_membership_report.md) extends the prior placement frontier through the original bound-context backend and compact priority-ring insertion. It recovers maximum-increase return semantics, append/prepend flags, two occupancy words, classified/total counters, cumulative class increments and 1112/112/200 B record strides. Twenty-four new UNSAT checks, three abstract SAT controls and 4142 private cases pass, including twelve complete selected placement routes. Generic-backend completion, native ownership/scheduling and matched daemon-kext results remain unknown; the broader goal stays active (RQ1-RQ8).
