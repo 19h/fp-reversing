@@ -1493,3 +1493,7 @@ The FPSD1200 wrapper0x100007b28 stages a104-byte payload and an address-encoded 
 ## FPSD1200 original admission prefix
 
 The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) assigns source-backed local roles to operation leaf `0x1004666ec` (record/audit marshalling), nested adapter/entry `0x1004d4268` / `0x1004bd65c`, preflight `0x10052db58`, entitlement helper `0x100414874`, fallback continuation `0x1004de208` and audit-PID join `0x100581dd0`. The original core decodes phase `0x6cf4` and operation `0xad952088`; these labels do not name the full FairPlay algorithm. Roles are supported by original instruction/operand and event replay, fresh IDA span hashes and bounded selector certificates. Arbitrary continuation fragments are not assigned independent C prototypes.
+
+## FPSD1200 PID and FPDI identity path
+
+The [FPSD1200 identity-path report](fpsd1200_identity_report.md) establishes adapter `0x10049c710` and operation-specific dictionary continuations at `0x1005269e8`, `0x10040a7b0`, `0x1004be140`, the client-value call at `0x100581b48`. It separates helper result selection from later address-dependent byte transformations and the known acquisition adapter `0x10043e280`. Original source/fixup and replay evidence supports these local roles; arbitrary continuation fragments are not assigned independent C prototypes, and a local matching result does not establish complete authorization.

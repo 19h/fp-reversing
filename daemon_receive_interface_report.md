@@ -175,3 +175,7 @@ FPSD1200 now has a recovered14-argument application ABI and104-byte protected-ca
 ## FPSD1200 original admission prefix
 
 The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) follows the same original received carrier through protected dispatch into Security callsites. The original 32-byte audit token is copied into first and fallback `SecTaskCreateWithAuditToken` calls; modeled entitlement results select direct PID extraction, Boolean fallback or original error return. All 27 prefixes avoid reading the input OOL payload. Sixteen failures reach original input deallocation/clearing and 36-byte reply construction; eleven other cases stop before PID extraction. This establishes finite local ordering and explicit cleanup calls, without native credentials, endpoint access or transport completion.
+
+## FPSD1200 PID and FPDI identity path
+
+The [FPSD1200 identity-path report](fpsd1200_identity_report.md) preserves the received carrier through 25 original libbsm calls and 250 complete audit-token copies. A separate FPDI entitlement dictionary supplies selected client-identifier/capabilities inputs. The subsequent local record result and process-local buffer transformations precede once/lock and allocation boundaries. No input OOL byte is read in these prefixes and no complete reply is produced; audit bytes and API objects/results remain explicit private fixtures.

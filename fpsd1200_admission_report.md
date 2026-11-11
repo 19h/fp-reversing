@@ -171,3 +171,7 @@ The generator reuses the retained IDA attestation; a fresh live IDA read is sepa
 | Low | Compare the distinct request 1000/1200 and other application wrappers by their own carrier tags and identities; numerical request IDs do not unify endpoint policy. |
 
 This is one completed investigation increment. The full multi-level interface goal remains active and incomplete.
+
+## FPSD1200 PID and FPDI identity path
+
+The [PID/FPDI identity-path report](fpsd1200_identity_report.md) extends the stopped libbsm call through the actual selected cached body, then another SecTask lookup for `com.apple.private.fairplay.FPDI`. Original code copies a dictionary, inspects `client-identifier` and optional `capabilities`, returns a local record result, and uses the earlier process-local buffer/mask. Explicit producer-buffer and once/lock fixtures reach `malloc(44800)` at `0x100419178`; the one-element Array fixture stops at its first element API. All 25 cases remain incomplete application transactions, with no new native credential or successful daemon-kext result.

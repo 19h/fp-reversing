@@ -1664,3 +1664,7 @@ FPSD1200: request64 B, reply212 B, descriptor count2; daemon wrapper14 arguments
 ## FPSD1200 original admission prefix
 
 The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) extends original carrier/control recovery into SecTask and CF callsites. Helper `0x100414874` receives an audit pointer at record+0 and the original `fairplay-client` C-string pointer at +8, returning marker byte at +16; +8 is not a converted-number pointer. The first path accepts its selected Number/String conversion outcomes and falls back to Boolean `com.apple.private.fpsd.client`. Sixteen real original-code failure returns restore adapter scratch and compute delta zero, then decode `0xffff5bbb`; eleven cases stop before audit-PID extraction. API objects/results, PAC and stack probes remain explicit models, and converted-value lifetime is unknown.
+
+## FPSD1200 PID and FPDI identity path
+
+The [FPSD1200 identity-path report](fpsd1200_identity_report.md) extends the original audit/PID ABI into a separate 24-byte observed helper record: destination pointer at +0, copied-token pointer at +8, encoded control at +16 and local result at +20. The caller selects `0x10062d24c` for local word `0x3eb38698`, otherwise `0x10062a78c` under the recorded phase. These are internal record results, not external MIG status. The report records 256-byte UTF-8 conversion, dictionary/Array calls, shared buffer/mask reads, original once callback and exact lock/allocation arguments with their explicit model boundaries.

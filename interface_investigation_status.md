@@ -1311,3 +1311,7 @@ The reference FPSD1200 local ABI now closes across serializer/stub/wrapper/parse
 ## FPSD1200 original admission prefix
 
 Completed the [FPSD1200 admission-prefix increment](fpsd1200_admission_report.md): original protected dispatch and record marshalling, first numeric/text entitlement helper, private Boolean fallback, exact audit-token propagation, original failure returns and zero-delta computation. Independent replay and source/IDA/fixup/SDK checks pass for 27 cases (16 error replies, 11 stops before PID extraction). The full interface goal remains active. Next priorities are the exact audit-PID call/return and subsequent provider/IOKit route, actual runtime Security context and successful output/port/OOL producers; this increment establishes no successful daemon-kext transaction.
+
+## FPSD1200 PID and FPDI identity path
+
+Completed the [FPSD1200 identity-path increment](fpsd1200_identity_report.md): original selected libbsm PID extraction, FPDI dictionary/field interfaces, local result/cleanup, matched process-local buffer dependency and once/lock/allocation boundaries. Independent 25-case replay and fresh IDA/source/fixup/SDK checks pass. The full goal remains active. Next priorities are the original 44800-byte allocation/registry/provider route, capability elements and remaining identity validation, plus actual runtime audit/Security/buffer lifetime and successful IOKit/output provenance.

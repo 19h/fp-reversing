@@ -1409,3 +1409,7 @@ The FPSD1200 increment identifies incoming received-local-name use, response des
 ## FPSD1200 original admission prefix
 
 The [FPSD1200 admission-prefix report](fpsd1200_admission_report.md) preserves the received-local-name field and reply destination through original protected dispatch. It adds no port producer or `mach_msg` emission: 16 modeled API-failure paths produce original nonzero-status 36-byte replies, while 11 other cases stop before PID extraction at `0x100581f2c`. Successful returned port/OOL provenance remains open. Security receives exact copied audit-token bytes under declared fixtures; those copies do not identify a native sender, task-local right or FairPlayIOKit connection.
+
+## FPSD1200 PID and FPDI identity path
+
+The [FPSD1200 identity-path report](fpsd1200_identity_report.md) adds original PID extraction and Security/CF/once/lock/allocation touch points, without a new Mach-port producer or emission site. All 25 cases stop before missing-environment reads or unmodeled imports. The received-local-name/reply destination remain carried from the original MIG prefix; the imported allocation request and matching local helper result do not identify a kext connection, successful reply port/OOL ownership or transport completion.
