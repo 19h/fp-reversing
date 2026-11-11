@@ -1509,3 +1509,7 @@ The [context report](fpsd1200_context_report.md) assigns source-backed fragment 
 ## FPSD1200 constructor, arithmetic and byte-export roles
 
 The [certificate continuation](fpsd1200_certificate_report.md) supplies source/effect evidence for selected flattened fragments: allocation dispatch at0x100346714; descending XOR `0x98` copy0x1003f0e5c; four-byte shift0x10030980c; Montgomery square0x100539ea0/product0x10094593c; complete result export STRB0x1002212a0; certificate retirement0x100582efc/0x1005ada28; task-self load0x10049e0f8 and VM-call boundary0x10049e114. Actual moduli, signature representatives,251 complete products and eight exponent sequences corroborate arithmetic roles. These are selected fragment contracts, not complete function prototypes or native trust/IPC completion. Field semantics of fdpc and the peer extension remain unknown (FV1-FV8).
+
+## FPSD1200 VM and certificate-copy fragment roles
+
+The [VM/output report](fpsd1200_vm_report.md) joins staged address/count loads0x100400bc8/0x100475dd4 to VM deallocation0x10049e114 and allocation0x10049e17c. Original copy stores0x10048d95c and 0x100633d64..0x100633ddc define all 719 DER bytes in descending offset order; count store 0x100543d3c and certificate retirement0x1004a9ac8 follow. The continuation reaches existing helper0x100001f50 and CFMachPortCreate0x100001f8c with shared callback 0x100425f78. These are selected source/data contracts, not a general memcpy prototype or proof of native CF/right creation, publication or IPC completion (VM1-VM8).

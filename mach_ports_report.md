@@ -1425,3 +1425,7 @@ The [context report](fpsd1200_context_report.md) retains request local name+12 a
 ## FPSD1200 task-self import and VM-call boundary
 
 The [certificate continuation](fpsd1200_certificate_report.md) distinguishes request local0x1400, header reply destination0x6400 and explicit task-self data fixture0x6600. Original LDR W0 at0x10049e0f8 consumes imported mach_task_self_ through original bind slot0x1010a39c8. Original call0x10049e114 selects vm_deallocate through bind slot0x1010a00f8, with first three arguments0x6600,0xa5a5a5a5a5a5a5a5,0. The API implementation is unexecuted; actual native message emission remains unknown. Original 128-byte inline output exists, but OOL/name cells remain seeded; no new returned right, native port producer or IOKit connection is established (FV1-FV8).
+
+## FPSD1200 VM task argument and CF port-construction request
+
+The [VM/output continuation](fpsd1200_vm_report.md) separates request-local name0x1400, reply destination0x6400 and explicit task-self fixture 0x6600. Original vm_allocate call0x10049e17c uses target task, address temporary,719-byte extent and flags 1; source copies the own-leaf DER and writes count 719. Both successful private cases then request CFMachPortCreate at 0x100001f8c with callback 0x100425f78, zero 40-byte context and false Boolean. API return is unexecuted: there is no supplied CF object, raw name/right, native emission or completed reply. Staged name P+100 and OOL address P+72 remain their initial seeds; later native and publication contracts remain open (VM1-VM8).

@@ -191,3 +191,7 @@ The [context report](fpsd1200_context_report.md) joins admitted FPSD1200 process
 ## FPSD1200 certificate and local inline result
 
 The [certificate report](fpsd1200_certificate_report.md) joins the incoming CoreFP DER to actual Root/AAA signature arithmetic and source-built representative exponentiation under its leaf public modulus. Original stores at0x1002212a0 define reply[68,196),128 bytes matching the complete big-endian public-exponent result. The staged 104-byte payload, including output OOL/name cells, remains unchanged. The later vm_deallocate call at0x10049e114 is an unexecuted API boundary, not receive/send completion. One first-certificate NULL case returns original 36-byte status0xffff5bd4 and retires the input through record-only MIG cleanup. Native output ownership and completion remain unknown (FV1-FV8).
+
+## FPSD1200 VM output and shared-callback creation edge
+
+The [VM/output report](fpsd1200_vm_report.md) establishes original consumers of staged OOL address/count, deallocation at 0x10049e114, allocation at 0x10049e17c and a complete 719-byte copy of the embedded daemon leaf into a private VM owner. Original count store 0x100543d3c precedes certificate retirement and helper0x100001f50's CFMachPortCreate request at 0x100001f8c. This connects FPSD1200 to the previously recovered shared callback 0x100425f78 with source-defined zero 40-byte context. CF object/name extraction, output-address publication, registration and actual transport remain unresolved. Allocation failure returns original 36-byte status0xffff5bd4 (VM1-VM8).

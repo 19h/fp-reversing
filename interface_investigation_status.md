@@ -1327,3 +1327,7 @@ Completed the [context continuation](fpsd1200_context_report.md): original624-wo
 ## FPSD1200 certificate and inline-output increment
 
 Completed the [certificate continuation](fpsd1200_certificate_report.md): original Root/AAA/own-leaf construction, certificate lifetime, complete public-exponent arithmetic and actual 128-byte inline output. Four independent profiles pass 30103606 original instruction visits, 251 complete arithmetic calls and 832 matching live IDA spans. Later code selects an unexecuted vm_deallocate API with explicit task-self fixture, preserved OOL seed and zero size. Full investigation remains active. Next priorities are output OOL address/count ownership, subsequent VM/status/slot continuation, returned-name producers and actual native receive/send (FV1-FV8).
+
+## FPSD1200 VM certificate output and CF-construction increment
+
+Completed the [VM/output continuation](fpsd1200_vm_report.md): original staged-output consumers, VM deallocation/allocation ABI, complete 719-byte DER copy, staged count production, temporary-certificate retirement and shared-callback CFMachPortCreate boundary. Three independent profiles cover 30274449 original visits, 282 full arithmetic calls and 843 matching live IDA spans. Allocation failure returns original 36-byte status0xffff5bd4; changing the prior address to zero preserves the success instruction sequence. Full goal remains active. Next priorities are CF-object/name extraction, slot/source registration, output-address/name publication, final reply and native ownership/transport evidence (VM1-VM8).
