@@ -122,3 +122,7 @@ The audit checks 252548 original visits, 42868 reads, 11501 writes, 9822 PAC mod
 | Low | Recover exceptional environmental exits. | Stack-canary failure branches are retained source but not executed under the diagnostic canary fixture. |
 
 Quality gates: **QG1** no normative content is required. **QG2** SU1-SU8 state assumptions, dependent results and falsification probes. **QG3** routine roles, record/call ABIs, data/control flow, external controls, environmental context, port consequences and continuation are covered. **QG4** B denotes bytes; limbs are 32 bits; u32/u64 arithmetic and no-borrow encoding are reproducible. **QG5** zero/NULL, cancellation, signed counts, tested aliases, capacity uncertainty and finite/universal/native boundaries are explicit. **QG6** primary binary bytes, original slots, independent parsing/replay and separate integer/word oracles support claims. **QG7** impact-ranked expansion remains bounded. The full investigation remains active.
+
+## CoreFP1201 complete precomputation continuation
+
+The subsequent [reduction/precomputation report](fpsd1201_reduction_report.md) supersedes the stop-after-first-subtraction boundary for thirteen continued profiles. Twelve positive controls complete the arithmetic child and both cursor wrappers; zero stops after 64 subtraction returns. Odd inputs establish the Montgomery pair, while even controls remain separate. The next call is unexecuted at 0x9819c4 -> 0x1142c08.

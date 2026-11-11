@@ -243,3 +243,7 @@ The [CoreFP comparison increment](fpsd1201_comparison_report.md) establishes loc
 ## CoreFP1201 subtraction continuation
 
 The client-side [subtraction continuation](fpsd1201_subtraction_report.md) establishes a further local arithmetic return in eight private caller profiles. No native receive, reply-right identity or daemon/kext pairing follows from this local contract.
+
+## CoreFP1201 complete precomputation continuation
+
+The client-side [complete precomputation return](fpsd1201_reduction_report.md) establishes twelve positive local child/wrapper returns and a later unexecuted consumer. Native receive continuity, reply-right identity and daemon/kext pairing remain unknown.

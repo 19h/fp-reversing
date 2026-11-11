@@ -419,6 +419,7 @@ def main():
     if exists(BASE/'fpsd1201_shift_report.md'):reports.add(BASE/'fpsd1201_shift_report.md')
     if exists(BASE/'fpsd1201_comparison_report.md'):reports.add(BASE/'fpsd1201_comparison_report.md')
     if exists(BASE/'fpsd1201_subtraction_report.md'):reports.add(BASE/'fpsd1201_subtraction_report.md')
+    if exists(BASE/'fpsd1201_reduction_report.md'):reports.add(BASE/'fpsd1201_reduction_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2025,6 +2026,10 @@ def main():
         subtraction_checks=json.loads(read(ROOT/'fpsd1201_subtraction_checks.json'))
         manifest['validation']['fpsd1201_subtraction_increment_checks']=subtraction_checks['verified_counts']
         manifest['validation']['fpsd1201_subtraction_static_scope']=subtraction_checks['scope']
+    if exists(ROOT/'fpsd1201_reduction_checks.json'):
+        reduction_checks=json.loads(read(ROOT/'fpsd1201_reduction_checks.json'))
+        manifest['validation']['fpsd1201_reduction_increment_checks']=reduction_checks['verified_counts']
+        manifest['validation']['fpsd1201_reduction_static_scope']=reduction_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

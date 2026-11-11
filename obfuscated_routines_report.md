@@ -1561,3 +1561,7 @@ The [working-copy/comparison recovery](fpsd1201_comparison_report.md) identifies
 ## CoreFP1201 subtraction continuation
 
 The [subtraction report](fpsd1201_subtraction_report.md) establishes 0x5e8158 as in-place B := B - A, 0x1ec40 as sign(first)*(abs(first)-abs(second)), and 0x443bf4 as sign(second)*(abs(first)+abs(second)) on the retained canonical inputs. It records full compiler intervals, obfuscated control codecs, exact call slots, complete alias returns and word-level proofs; arbitrary-size equivalence and native provenance remain open.
+
+## CoreFP1201 complete precomputation continuation
+
+The [precomputation report](fpsd1201_reduction_report.md) identifies 0x14f8d28 as a Montgomery-context preparer on retained positive one-word odd inputs, 0x9dd7e4 as its square cursor wrapper and 0x9dc6d4 as the square implementation. Complete original returns, independent REDC/modular oracles, explicit even/zero controls and exact cursor emission locations support the bounded roles.

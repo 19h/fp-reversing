@@ -1603,3 +1603,7 @@ The [working-copy/comparison increment](fpsd1201_comparison_report.md) resolves 
 ## CoreFP1201 subtraction continuation
 
 The [subtraction report](fpsd1201_subtraction_report.md) adds exact signed-count arithmetic records, magnitude-leaf input/output roles, complete alias controls and carry/no-borrow identities. It distinguishes source-written radix mutation from the preserved working input and stops after the local return.
+
+## CoreFP1201 complete precomputation continuation
+
+The [reduction report](fpsd1201_reduction_report.md) establishes the odd one-word Montgomery pair roles, literal square recurrence, seed-dependent square frames and zero adjustments from both wrapper layers. The even counterexample and bounded zero loop distinguish numerical preconditions from native admission.

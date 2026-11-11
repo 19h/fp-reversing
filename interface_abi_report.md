@@ -1732,3 +1732,7 @@ The [copy/comparison ABI increment](fpsd1201_comparison_report.md) recovers the 
 ## CoreFP1201 subtraction continuation
 
 The [subtraction increment](fpsd1201_subtraction_report.md) recovers the 24 B signed-subtraction record, 32 B magnitude-difference record and 28 B magnitude-addition prefix. The addition leaf uses +0x08 for output and +0x10 for its second input. Original call slots/modifiers and 197 private outcomes are independently checked.
+
+## CoreFP1201 complete precomputation continuation
+
+The [precomputation increment](fpsd1201_reduction_report.md) resolves the pair as two descriptor pointers and a negative-inverse word on retained odd inputs. It adds the 40 B square record, its shared wrapper/implementation ABI and exact cursor/stack-adjustment emission sites. Native context production and endpoint continuity remain open.

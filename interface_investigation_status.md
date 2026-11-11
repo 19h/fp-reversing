@@ -1375,3 +1375,7 @@ The [CoreFP1201 record increment](fpsd1201_record_report.md) adds24 independentl
 ## CoreFP1201 subtraction continuation
 
 The [CoreFP1201 subtraction increment](fpsd1201_subtraction_report.md) recovers 0x5e8158 as B := B - A and retains both original magnitude dependencies. Independent replay checks 197 profiles and 252548 original visits; eight caller profiles complete subtraction and stop before 0x14f9d78. Source-produced context, complete arithmetic-child/request1201 return, native port ownership and daemon/kext/deeper lineage remain open. The full goal remains active.
+
+## CoreFP1201 complete precomputation continuation
+
+The [CoreFP1201 reduction increment](fpsd1201_reduction_report.md) independently checks thirteen profiles and 1163611 original visits. Twelve positive controls complete precomputation and its cursor wrappers; nine odd controls establish R/R^2 and inverse roles, three even controls remain diagnostic, and zero stops after 64 subtraction returns. The next original dependency is unexecuted at 0x9819c4 -> 0x1142c08. Source-produced context, complete request1201 processing, native rights and daemon/kext/deeper lineage remain open. The full goal remains active.

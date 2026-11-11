@@ -1477,3 +1477,7 @@ The [CoreFP working-copy/comparison increment](fpsd1201_comparison_report.md) re
 ## CoreFP1201 subtraction continuation
 
 The [subtraction continuation](fpsd1201_subtraction_report.md) establishes a local encoded-integer update and its original arithmetic call sites. No selected executed path invokes a Mach API or emits a Mach right. Native endpoint/right identity and daemon/kext pairing remain unknown; existing emission-site evidence is unchanged.
+
+## CoreFP1201 complete precomputation continuation
+
+The [complete precomputation continuation](fpsd1201_reduction_report.md) adds arithmetic outputs and two verified cursor-adjustment channels. These selected paths emit no Mach right and invoke no Mach API. Native endpoint/right identity and daemon/kext pairing remain unknown; established port emission evidence is unchanged.

@@ -187,3 +187,7 @@ The [working-copy/comparison increment](fpsd1201_comparison_report.md) follows t
 ## CoreFP1201 subtraction continuation
 
 The [subtraction increment](fpsd1201_subtraction_report.md) continues eight original caller profiles through 0x5e8158, recovers B := B - A and both magnitude leaves, and stops after return at 0x14f9d78. Complete request1201 payload/endpoint production and native daemon/kext lineage remain unknown.
+
+## CoreFP1201 complete precomputation continuation
+
+The [reduction/precomputation increment](fpsd1201_reduction_report.md) completes the arithmetic child and cursor wrapper in twelve positive one-word controls. Nine odd inputs establish R mod n, R^2 mod n and the negative inverse; even and bounded-zero controls retain separate classifications. The next original dependency is 0x9819c4 -> 0x1142c08.
