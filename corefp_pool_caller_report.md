@@ -1,5 +1,7 @@
 # CoreFP pool caller, address-keyed records and overlap-aware XOR stage
 
+Subsequent complete-path evidence: the [pool-transform report](corefp_pool_transform_report.md) adds seven complete private returns with declared context and nonzero pool retirement. The nonzero calls establish reverse allocation order: `0x1b0168` retires the second result, then `0x1b01e8` retires the first. Earlier NULL controls could not distinguish pointer order. Native initialization and the complete algorithm remain unknown.
+
 Original `0x1af6b8` now supplies two established incoming calls to the [pool allocator](corefp_pool_allocator_report.md): `0x1affb0` requests 1027 B and `0x1b0080` requests 1031 B, both through row `0x1d037d0`. It constructs both operation-`0x2b9b` records in the same stack workspace. Three backed private prefixes obtain two distinct interior pointers from one 5000 B backing allocation and stop before the large transform body. Twelve private paths return completely through length rejection, selector bypass or allocation failure. Two further controls stop at token/raw-holder boundaries.
 
 The preceding byte stage reduces to a fixed 16-byte periodic XOR mask, with source-selected forward/reverse order supporting the retained overlapping-buffer controls. The paired cleanup calls `0x1b0168` and `0x1b01e8` target `0x5c87d4`, a different IA-`0x478b` callee, and complete with NULL arguments in the failure paths. Nonzero cleanup, the larger transform algorithm, selector activation, native caller/holder construction, preparation-root compatibility and daemon/kext pairing remain unknown. The full goal remains active.
@@ -35,8 +37,8 @@ The [producer](triage_evidence/recover_corefp_pool_caller.py), [checks archive](
           -> both nonzero?
                yes -> stop before 0x1b0270 large transform body
                no  -> R reused for cleanup operation 0x88cd
-                   -> 0x1b0168 -> 0x5c87d4, first NULL result
-                   -> 0x1b01e8 -> 0x5c87d4, second NULL result
+                   -> 0x1b0168 -> 0x5c87d4, NULL result
+                   -> 0x1b01e8 -> 0x5c87d4, NULL result
                    -> raw marker 0x45e2a203 -> return
 ```
 
@@ -59,8 +61,8 @@ The parent frame has FP=`0x62017ff0`, SP=`0x62017ad0`, child record R=`0x62017f7
 | First allocation | `0x1aff24`, `0x1aff40`; call `0x1affb0` | Tag `0x2b9b` at R+`0x10`, request 1027 B at R+8; result R+0 |
 | Second allocation | `0x1b001c`, `0x1b0028`; call `0x1b0080` | Same tag, request 1031 B, same result cell |
 | Pair capture | `0x1b008c` | First result retained in X19; second loaded from R+0; both stored at FP-`0xf8` |
-| First cleanup | Call `0x1b0168` | R+0 first pointer, operation `0x88cd` encoded at R+8 |
-| Second cleanup | Call `0x1b01e8` | R+0 second pointer, same cleanup operation |
+| First cleanup | Call `0x1b0168` | R+0 NULL pointer, operation `0x88cd` encoded at R+8 |
+| Second cleanup | Call `0x1b01e8` | R+0 NULL pointer, same cleanup operation |
 
 Allocation uses the u64 key `K_a(R)=(R XOR 0xcf834db9ae8c9498)*0x9e8a2055 mod 2^64`, with the allocator's additive size bias retained. The requests are exactly 1027 and 1031 B; their wider meanings are unknown. Cleanup uses `K_f(R)=(low32(R) XOR 0x309487ae)*0x87cfdb29 mod 2^32`; `load_u32(R+8)-K_f(R)=0x88cd`. Six new universal pre-multiply obligations cover parent entry, both allocation constructors, both cleanup constructors and the cleanup reader. Equality is preserved by the shared respective multipliers; no whole-parent symbolic proof is claimed.
 

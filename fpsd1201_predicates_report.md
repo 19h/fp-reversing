@@ -1,5 +1,7 @@
 # CoreFP1201 initialized workspace, predicate records and control frontiers
 
+Subsequent shared-context evidence: the [pool-transform report](corefp_pool_transform_report.md) establishes original `0x1af6b8` as another consumer of image+`0x1d45f60` and image+`0x1d44440`. A private context fixture permits complete local processing and nonzero pool retirement. Neither report establishes a native initializer or temporal handoff between these consumers.
+
 Later corroboration: the [coherent cold seed/context report](corefp_cold_seed_report.md) reaches both source-generated predicate records from a coherent cold fallback root, recomputing address keys at the new stack placement. No RPC gap or restored parent frame is used. Nine context-prefix bytes are source-defined;119 B retain private stack fill, so the diagnostic zeros used below remain an explicit earlier premise.
 
 Later corroboration: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) establishes a different, coherent cold fallback prefix through the same constructor/atomic region to the first entropy API. Original fallback flags0 bypass request1200 and its status checks, so that prefix needs no PC gap. This does not remove the explicit gap from the experiments below or establish successful primary processing; their frame epochs remain distinct.

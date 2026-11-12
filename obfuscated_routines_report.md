@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [pool-caller report](corefp_pool_caller_report.md) establishes0x1af6b8 as the original caller of allocator0x1bc12c at0x1affb0/0x1b0080, with source requests1027/1031 B. Its overlap-aware XOR prefix has a fixed16 B periodic mask. Paired null cleanup targets0x5c87d4 at0x1b0168/0x1b01e8. Seventeen independent profiles delimit the role; the larger transform and nonzero cleanup remain unknown.
+Current extension: The [pool-transform report](corefp_pool_transform_report.md) follows original `0x1af6b8` through its larger body and both nonzero retirements. Two 256-word workspaces, three context-word reads per block and one seven-round ARX component receive independent checks. Seven complete private returns retire the second allocation before the first; native context initialization and the complete algorithm remain unknown.
+
+Previous extension: the [pool-caller report](corefp_pool_caller_report.md) establishes0x1af6b8 as the original caller of allocator0x1bc12c at0x1affb0/0x1b0080, with source requests1027/1031 B. Its overlap-aware XOR prefix has a fixed16 B periodic mask. Paired null cleanup targets0x5c87d4 at0x1b0168/0x1b01e8. Seventeen independent profiles delimit the role; the larger transform and nonzero cleanup remain unknown.
 
 Previous extension: the [pool-allocator report](corefp_pool_allocator_report.md) identifies0x1bc12c as a selector-gated backing/suballocation routine under operation0x2b9b. Fifteen independent profiles establish malloc0x1bcf5c, list insertion, splitting, reverse fill and interior result pointers. The source-resolved free edge is0x1bd174. Selector activation and incoming callers remain unknown;537 IA0x478b candidates span65 functions and four distinct callee rows.
 
