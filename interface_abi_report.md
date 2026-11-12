@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) establishes four source-produced root records with operation0xc1f7, mode0x114e4318 and scalar0x0484c46a. Descriptor+8 and+0x0c feed distinct deallocation/overwrite extents. Original source stages20 VM bytes, then completes selected failures through `_vm_deallocate` and `_free`; their native effects remain unknown.
+
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) recovers three source encodings for ingress+0/+8/+0x10/+0x14/+0x18, a common decoded root mode0x114e4318 and five scalar words. Original caller0x2e4280 decodes its input tag/scalar using a separate address key, constructs32 B metadata and reaches `_vm_allocate(task, address_out,4096,1)` in five checked prefixes. The VM API remains unexecuted, and whole reachability of the later ingress calls is unproved.
 
 Current extension: the [root-record ingress report](corefp_root_ingress_report.md) maps ingress+0x18/+0x08 pointers to root+0x08/+0x20 and recovers source encodings for root+0x10/+0x14/+0x18. Caller0x5f4584 uses the returned u64 adapter word to adjust SP, then copies the selected u32 result to ingress+0x20. Source writes28 bytes in the40 B root view; neither snapshot size is a native structure-size claim. Twelve complete private failure calls retain independent marker, X0 and stack-delta channels.

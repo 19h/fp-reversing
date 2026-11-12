@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies0x653c70 as the selected descriptor cleanup path: descending buffer overwrite, VM deallocation,32 B descriptor overwrite and free. The byte function is256-periodic and depends on source stack addresses. Six complete original caller executions include four coherent nonzero-mode root calls; independent oracles check16384 buffer bytes and192 metadata bytes.
+
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) classifies three conditional IA0x6073 calls as ingress0x5f4584 and one as sibling0x2233c8, with sixteen literal candidates unresolved. Coherent entry0x2e4280 confirms0x63cf64 as an output-cell reset and0x1ae0a4 as a32 B metadata allocator/initializer before a nested VM boundary. Forty-four new UNSAT obligations, one alignment SAT control and nine independent prefix/return replays support the stated local roles.
 
 Current extension: the [root-record ingress report](corefp_root_ingress_report.md) identifies0x5f4584 as a record-transforming caller of adapter0x8fcfa0, with exact field equations and postcall SP/result forwarding. A complete prefix resolves0x77d398 to0x779ff0; conditional bank theorems resolve0x9d4064 to0x656b80 and0x1174224 to0x59fb30. Shared IA diversity/address-key family alone does not identify a routine. Eleven further0x281b call candidates remain unresolved.

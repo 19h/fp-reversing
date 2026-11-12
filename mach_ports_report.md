@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies `_vm_deallocate` callsite0x654024 through original slot0x1d039d0, IA0x7bce, alongside VM-allocation callsite0x1ca598. Coherent source supplies task fixture0x4201 with VM address/4096 B or0/0 after allocation failure. Six declared deallocation results do not establish native rights, release or a matched daemon/kext exchange.
+
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) identifies CoreFP `_vm_allocate` callsite0x1ca598 and authenticated function slot0x1d04758. Its task argument comes through `_mach_task_self_` pointer slot0x1d14310 and the four-byte load at0x1ca548; declared task-name controls0x4201/0 propagate to the boundary. Five prefixes request4096 B with flags1 and stop before the API. No native right, message, allocation or daemon/kext pairing is established.
 
 Current extension: the [root-record ingress report](corefp_root_ingress_report.md) adds a source record producer and stack/result consumer around the existing lookup/cleanup chain. It establishes no new native port or emission site. Nine frozen unchanged-ID daemon rejection children and14 modeled bootstrap calls retain their earlier scope; source result forwarding does not establish rights translation, successful delivery or a matched kext request.

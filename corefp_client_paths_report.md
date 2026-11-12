@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) connects original caller0x2e4280, declared VM allocation, source metadata and four nonzero-mode ingress/root calls to complete cleanup and return. Six independent runs cover buffer/metadata overwrite, VM failure, deallocation-result controls and a patterned input control. Native admission, allocation lifetime, successful processing and daemon/kext pairing remain unknown.
+
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) resolves three conditional local paths to0x5f4584 and their common nonzero root mode0x114e4318. A coherent original0x2e4280 entry constructs32 B metadata and reaches the unexecuted `_vm_allocate` call at0x1ca598; four early returns and five VM-frontier profiles pass independent replay. Native admission, VM results and subsequent root/daemon/kext continuity remain unknown.
 
 Current extension: the [root-record ingress report](corefp_root_ingress_report.md) executes original0x5f4584 ->0x8fcfa0 ->0x8e81c8 through twelve complete private failure returns. The ingress caller builds the root record, obtains the adapter seed from an original image cell and consumes the returned word as a stack adjustment before copying the raw result to its own+0x20 output. No root record is patched; upstream admission, successful processing and native pairing remain unknown.
