@@ -1,5 +1,7 @@
 # CoreFP selector-gated slot reset and preparation-field retirement
 
+Subsequent allocation evidence: the [pool-allocator report](corefp_pool_allocator_report.md) identifies0x1bc12c as a same-token/selector suballocator. Original insertion0x1bd06c conditionally writes first-slot+0x48 as a holder-list endpoint, with private backed arena evidence. It does not activate the selector or publish backing to the distinct reset-free field+8; native initialization and protected-root compatibility remain unknown.
+
 Subsequent caller evidence: the [reset-caller report](corefp_reset_caller_report.md) establishes original caller0x9a6454 and its authenticated reset call0x9aa74c under entry operation0x84ee. Nineteen independent profiles preserve a source-produced0xf7a5 child record through the ProductVersion reader and reset. An upstream caller to0x9a6454, selector activation and valid preparation-object production remain unknown.
 
 Original CoreFP routine `0x1f530c` implements a selector-gated reset under decoded operation `0xf7a5`. It acquires the same token at image+`0x1d33108` used by the protected root, tests selector image+`0x1d44409` for equality to 1, and walks 88 B slots starting at image+`0x1d32dd0`. Each selected slot can request `_free` of its +8 field. The routine resets the other 80 B, clears the selector at `0x1f5650`, restores the token and returns. Eleven private profiles are independently replayed.

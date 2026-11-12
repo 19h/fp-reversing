@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [reset-caller report](corefp_reset_caller_report.md) establishes two record epochs at FP-0xb8, source-produced operations0x9a6b/0xf7a5, a64 B cursor advance and a24 B ProductVersion tuple. SDK assertions check CF interfaces and scanf u64 destinations; marker0x40 does not certify three conversions. No native Mach ABI or right identity is added.
+Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) establishes the operation0x2b9b record: u64 output at+0, encoded u64 extent at+8 and encoded u32 tag at+0x10. It recovers shared token/selector, holder sentinel+0x30 and reciprocal links+0x18/+0x20. Ten declared malloc requests and five successful private suballocations pass independent layout checks; native caller/ownership and Mach ABI remain unknown.
+
+Previous extension: the [reset-caller report](corefp_reset_caller_report.md) establishes two record epochs at FP-0xb8, source-produced operations0x9a6b/0xf7a5, a64 B cursor advance and a24 B ProductVersion tuple. SDK assertions check CF interfaces and scanf u64 destinations; marker0x40 does not certify three conversions. No native Mach ABI or right identity is added.
 
 Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) establishes operation0xf7a5, an88 B slot stride, a distinct conditional u64 free field at+8 and80 B common reset layout. Source clears selector image+0x1d44409 and restores token0x5d96. Arm64e SDK assertions verify void free(void*); residual X0 has unknown semantic meaning. No Mach ABI or native right is added.
 

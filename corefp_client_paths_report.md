@@ -1,6 +1,8 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [reset-caller report](corefp_reset_caller_report.md) joins original0x9a6454, a ProductVersion reader and source-produced reset record at0x9aa74c. Seventeen full caller returns and two bounded stops distinguish CF failures, tuple-cache reuse, parsing, record reuse and reset cleanup. Native admission, prepared input and daemon/kext pairing remain unknown.
+Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) identifies a local allocation path sharing the reset/root token and selector. Original0x1bc12c can publish a backed list node at preparation field image+0x1d32e18 and return an interior pointer. Fifteen independently replayed profiles delimit that contract; selector activation, incoming callsites and native daemon/kext pairing remain unknown.
+
+Previous extension: the [reset-caller report](corefp_reset_caller_report.md) joins original0x9a6454, a ProductVersion reader and source-produced reset record at0x9aa74c. Seventeen full caller returns and two bounded stops distinguish CF failures, tuple-cache reuse, parsing, record reuse and reset cleanup. Native admission, prepared input and daemon/kext pairing remain unknown.
 
 Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) identifies original0x1f530c as an operation0xf7a5 slot reset. It clears selector image+0x1d44409 and resets the preparation field image+0x1d32e18 under the shared token. Its conditional free reads slot+8, a separate field from preparation+0x48. Set-to-1 and valid-object producers, native callers and daemon/kext pairing remain unknown.
 

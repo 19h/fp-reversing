@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [reset-caller report](corefp_reset_caller_report.md) identifies0x316a98 as a ProductVersion tuple reader/cache and0x1f9be8 as its CF stream/plist helper. Original caller0x9a6454 stages their record, then calls reset0x1f530c at0x9aa74c under the retained null-state branch. Nineteen independent profiles establish the local interfaces; native caller admission and prepared objects remain unknown.
+Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) identifies0x1bc12c as a selector-gated backing/suballocation routine under operation0x2b9b. Fifteen independent profiles establish malloc0x1bcf5c, list insertion, splitting, reverse fill and interior result pointers. The source-resolved free edge is0x1bd174. Selector activation and incoming callers remain unknown;537 IA0x478b candidates span65 functions and four distinct callee rows.
+
+Previous extension: the [reset-caller report](corefp_reset_caller_report.md) identifies0x316a98 as a ProductVersion tuple reader/cache and0x1f9be8 as its CF stream/plist helper. Original caller0x9a6454 stages their record, then calls reset0x1f530c at0x9aa74c under the retained null-state branch. Nineteen independent profiles establish the local interfaces; native caller admission and prepared objects remain unknown.
 
 Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) assigns0x1f530c the source-supported role of selector-gated slot reset for operation0xf7a5. It conditionally frees slot+8, writes80 B common reset state, clears selector at0x1f5650 and restores the shared token. Eleven independent profiles and exhaustive pointer banks support the role; a native caller and valid-object initializer remain unknown.
 

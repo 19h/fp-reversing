@@ -1,5 +1,7 @@
 # CoreFP1201 optional-input routes and signed comparison record
 
+Subsequent allocation evidence: the [pool-allocator report](corefp_pool_allocator_report.md) identifies a conditional source writer of image+0x1d32e18: allocator0x1bc12c inserts backing at that holder endpoint under the same selector. Private empty-holder/backing controls establish list-node semantics here; compatibility with this protected-root preparation consumer, selector activation and native initialization remain unknown.
+
 Subsequent caller/environment evidence: the [reset-caller report](corefp_reset_caller_report.md) establishes a source-continuous incoming reset call0x9aa74c after the SystemVersion ProductVersion reader. Its19 private profiles do not establish a selector-set-to-1 or valid preparation-object producer; the earlier stopped root reads remain unresolved.
 
 Subsequent writer evidence: the [selector-gated reset report](corefp_optional_reset_report.md) identifies0x1f5650 as selector clear and0x1f5728 as the first-slot+0x48 reset writer, exactly image+0x1d32e18. The value becomes0x0176cb4e; it is not established as an initialized object. The conditional free field is slot+8. Selector-set-to-1 and valid preparation-object production remain unknown.
