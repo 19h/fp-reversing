@@ -1,5 +1,7 @@
 # Daemon versioned ingress: source record, adapter and result selection
 
+Subsequent admission evidence: the [frame-admission report](daemon_frame_admission_report.md) recovers the unsigned n < (word XOR 0x8b3dc651) gate, its object-word lineage and the opposite branch's frame+0x4ec remainder writer. The four actual partial paths have n=0 and decoded word28, so they reach the reader without this writer. Eleven source obligations and136 A64 replays support the stated conditional contracts; native admission and the unresolved frame inputs remain unknown.
+
 Subsequent frame-definition evidence: the [frame-word report](daemon_frame_word_report.md) recovers a conditional producer at0x100530748 and a table-resolved less-than route to reader0x10063735c. Twenty A64 controls and ten UNSAT obligations validate that route. It is absent from the four retained partial ingress paths, which remain stopped with unknown F+0x560. Neither a native defect nor a completed IOKit join is established.
 
 The source slice at `0x10084c9b8` constructs a record and calls `0x1004ac814`, which calls the recovered root `0x10049f358`. The record's numeric count tag is `0x73113b31`, rather than the earlier declared count-16 fixture. Caller phase `0x6cf4` produces root operation `0x871a`. Original instructions preserve this chain through the root, allocator boundaries and caller result selection in twelve cases; four further caller cases stop at a copied unspecified frame word. Four short adapter-prefix controls distinguish the actual root edge from a same-discriminator decoy.
