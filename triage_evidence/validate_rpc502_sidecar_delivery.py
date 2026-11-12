@@ -423,6 +423,7 @@ def main():
     if exists(BASE/'fpsd1201_consumer_report.md'):reports.add(BASE/'fpsd1201_consumer_report.md')
     if exists(BASE/'fpsd1201_product_report.md'):reports.add(BASE/'fpsd1201_product_report.md')
     if exists(BASE/'fpsd1201_auxiliary_report.md'):reports.add(BASE/'fpsd1201_auxiliary_report.md')
+    if exists(BASE/'fpsd1201_export_report.md'):reports.add(BASE/'fpsd1201_export_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2045,6 +2046,10 @@ def main():
         auxiliary_checks=json.loads(read(ROOT/'fpsd1201_auxiliary_checks.json'))
         manifest['validation']['fpsd1201_auxiliary_increment_checks']=auxiliary_checks['verified_counts']
         manifest['validation']['fpsd1201_auxiliary_static_scope']=auxiliary_checks['scope']
+    if exists(ROOT/'fpsd1201_export_checks.json'):
+        export_checks=json.loads(read(ROOT/'fpsd1201_export_checks.json'))
+        manifest['validation']['fpsd1201_export_increment_checks']=export_checks['verified_counts']
+        manifest['validation']['fpsd1201_export_static_scope']=export_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

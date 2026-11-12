@@ -1582,3 +1582,5 @@ The [auxiliary/exponentiation report](fpsd1201_auxiliary_report.md) resolves tha
 | 0x57af24 | Encoded signed-index magnitude bit selector, biased result at record+0 | 329 complete oracle checks; negative-index reflection and out-of-range controls |
 | 0x1142154 / 0x1142c08 | Montgomery exponentiation consumer / cursor wrapper on tested canonical odd inputs | 16 complete child/wrapper returns; 14 modular-exponentiation matches, two even controls |
 | 0x32f628 | Next output-related dependency; complete function unknown | Original slot/diversity and incoming record retained; call unexecuted |
+
+The [integer-export report](fpsd1201_export_report.md) resolves original 0x32f628 as fixed-width big-endian magnitude export, with count-based length admission and local status at record+0x18. All 132 calls return; 8179 byte oracles pass. The selected caller completes the local helper independently of that unread status, as two shortened-export controls demonstrate. The source-staged arithmetic/export helper now has complete private returns; native parent and transport roles remain conditional.
