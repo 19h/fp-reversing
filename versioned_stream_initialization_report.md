@@ -12,6 +12,8 @@ pending typed allocation -> declared return
                                                    -> STOP before FP-0xe8 read
 ```
 
+Subsequent continuation: the [stream-word report](versioned_stream_words_report.md) leaves these strict prefixes unchanged and introduces coherent arbitrary frame-byte origins in a separate source model. It resolves three reader words and output-B preparation before the next allocation without selecting missing frame values. Native initialization and complete processing remain unknown.
+
 ## Assumption register
 
 | ID | Assumption and dependent results | Stress test / falsification probe |
