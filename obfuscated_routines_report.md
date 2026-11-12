@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: The [pool-transform report](corefp_pool_transform_report.md) follows original `0x1af6b8` through its larger body and both nonzero retirements. Two 256-word workspaces, three context-word reads per block and one seven-round ARX component receive independent checks. Seven complete private returns retire the second allocation before the first; native context initialization and the complete algorithm remain unknown.
+Current extension: the [workspace report](corefp_workspace_report.md) identifies the two local arrays as encodings of one fixed byte permutation and an affine word expansion. A 36-instruction source lift and six complete private profiles verify all 3072 words under five encoding classes. Whole-transform identity and native admission remain unknown.
+
+Previous extension: The [pool-transform report](corefp_pool_transform_report.md) follows original `0x1af6b8` through its larger body and both nonzero retirements. Two 256-word workspaces, three context-word reads per block and one seven-round ARX component receive independent checks. Seven complete private returns retire the second allocation before the first; native context initialization and the complete algorithm remain unknown.
 
 Previous extension: the [pool-caller report](corefp_pool_caller_report.md) establishes0x1af6b8 as the original caller of allocator0x1bc12c at0x1affb0/0x1b0080, with source requests1027/1031 B. Its overlap-aware XOR prefix has a fixed16 B periodic mask. Paired null cleanup targets0x5c87d4 at0x1b0168/0x1b01e8. Seventeen independent profiles delimit the role; the larger transform and nonzero cleanup remain unknown.
 

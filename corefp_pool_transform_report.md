@@ -1,5 +1,7 @@
 # CoreFP pool-backed transform, shared context and nonzero retirement
 
+Subsequent canonicalization: the [workspace report](corefp_workspace_report.md) reconstructs both arrays from one fixed byte permutation and affine expansion under five source encoding classes. Six new complete profiles separate preparation from message bytes; first-block XOR observations remain finite, and complete transform identity remains unknown.
+
 Original `0x1af6b8` now returns completely through its larger body and both nonzero pool-retirement calls under an explicitly supplied private context. Seven complete controls and one original-context boundary control receive independent whole-source replay. The caller builds two 256-word workspaces, processes 16/32 B inputs, reads three u64 context words per block and retires the second allocation before the first. Both retirements restore the pool boundary and allocation counter; they invoke no native `free`.
 
 The source context pointer is loaded from image+`0x1d45f60`, the same cell identified in the earlier [FPSD predicate report](fpsd1201_predicates_report.md). Its source initializer remains unknown. The original-context control stops before `0x1bafd8` with a zero base. The complete controls instead declare a separate private context buffer as an initial assumption. They establish conditional local behavior, not native initialization, algorithm identity, protected-content success or daemon/kext pairing. The full goal remains active.

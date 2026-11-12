@@ -1,5 +1,7 @@
 # CoreFP pool caller, address-keyed records and overlap-aware XOR stage
 
+Subsequent preparation evidence: the [workspace report](corefp_workspace_report.md) establishes a separate 16 B source at entry record+`0x10`, its fixed stack XOR mask and canonical workspace construction. Native input nomenclature and general chaining semantics remain unknown.
+
 Subsequent complete-path evidence: the [pool-transform report](corefp_pool_transform_report.md) adds seven complete private returns with declared context and nonzero pool retirement. The nonzero calls establish reverse allocation order: `0x1b0168` retires the second result, then `0x1b01e8` retires the first. Earlier NULL controls could not distinguish pointer order. Native initialization and the complete algorithm remain unknown.
 
 Original `0x1af6b8` now supplies two established incoming calls to the [pool allocator](corefp_pool_allocator_report.md): `0x1affb0` requests 1027 B and `0x1b0080` requests 1031 B, both through row `0x1d037d0`. It constructs both operation-`0x2b9b` records in the same stack workspace. Three backed private prefixes obtain two distinct interior pointers from one 5000 B backing allocation and stop before the large transform body. Twelve private paths return completely through length rejection, selector bypass or allocation failure. Two further controls stop at token/raw-holder boundaries.

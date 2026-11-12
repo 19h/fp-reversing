@@ -1,6 +1,8 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: The [pool-transform report](corefp_pool_transform_report.md) checks seven complete local returns and one original-context stop. Both source-produced allocations become workspaces, context words affect output, and nonzero retirement restores free metadata without a native `free`. Private context remains an explicit initial premise; native initialization and pairing remain unknown.
+Current extension: the [workspace report](corefp_workspace_report.md) checks six complete local paths with independent preparation/message storage. Both workspaces reconstruct from fixed canonical data and per-phase encodings; finite 32 B controls preserve the second output block when preparation changes. Native initialization, general input semantics and pairing remain unknown.
+
+Previous extension: The [pool-transform report](corefp_pool_transform_report.md) checks seven complete local returns and one original-context stop. Both source-produced allocations become workspaces, context words affect output, and nonzero retirement restores free metadata without a native `free`. Private context remains an explicit initial premise; native initialization and pairing remain unknown.
 
 Previous extension: the [pool-caller report](corefp_pool_caller_report.md) follows original0x1af6b8 through two allocator calls and paired null cleanup. Requests1027/1031 B reuse one declared5000 B arena on three backed prefixes; twelve selected failure paths return. Its periodic XOR stage and late length gate are independently checked; upstream admission and successful processing remain unknown.
 

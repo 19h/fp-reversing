@@ -1,6 +1,8 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current extension: The [pool-transform report](corefp_pool_transform_report.md) connects a complete private caller path to shared context cells already encountered in the FPSD predicate path. Context-content and offset controls distinguish local data dependencies; nonzero retirement restores pool metadata. Source context initialization, whole-transform identity and cross-level handoffs remain unknown.
+Current extension: the [workspace report](corefp_workspace_report.md) separates preparation bytes from message/context and reduces changing workspace representations to the same canonical substitution. Original-file constants and source-lifted contracts establish the local data flow; native initialization, complete algorithm and cross-level handoffs remain unknown.
+
+Previous extension: The [pool-transform report](corefp_pool_transform_report.md) connects a complete private caller path to shared context cells already encountered in the FPSD predicate path. Context-content and offset controls distinguish local data dependencies; nonzero retirement restores pool metadata. Source context initialization, whole-transform identity and cross-level handoffs remain unknown.
 
 Previous extension: the [pool-caller report](corefp_pool_caller_report.md) connects source-produced allocation records to one backing arena and two interior results, with same-epoch byte/holder checks. It reduces forward/reverse preprocessing to a16 B periodic XOR mask and verifies overlapping buffers. Twelve failure returns and three backed prefixes preserve separate outcomes; the larger algorithm, initialization and cross-level identity remain unknown.
 

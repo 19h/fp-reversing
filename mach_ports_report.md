@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: The [pool-transform report](corefp_pool_transform_report.md) follows private allocation through output and two nonzero pool retirements. Eight retained profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Shared local context cells do not establish native port identity or daemon/kext pairing.
+Current extension: the [workspace report](corefp_workspace_report.md) adds source-proved local constructor/preparation contracts. Six complete private profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Canonical local substitution values add no native port identity or daemon/kext pairing.
+
+Previous extension: The [pool-transform report](corefp_pool_transform_report.md) follows private allocation through output and two nonzero pool retirements. Eight retained profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Shared local context cells do not establish native port identity or daemon/kext pairing.
 
 Previous extension: the [pool-caller report](corefp_pool_caller_report.md) adds original allocation calls0x1affb0/0x1b0080 and paired null cleanup calls0x1b0168/0x1b01e8. Seventeen retained paths invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Source-produced interior pointers remain separate from native rights and daemon/kext pairing.
 

@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: The [pool-transform report](corefp_pool_transform_report.md) establishes a conditional complete local path using a declared private context. Source cells image+`0x1d45f60`/`0x1d44440` supply context base/offset; both operation-`0x88cd` calls retire same-epoch results in reverse allocation order. Full CPU/RAM replay and compact arena/ARX oracles preserve native admission and Mach-ABI limits.
+Current extension: the [workspace report](corefp_workspace_report.md) separates record+`0x10` preparation input from message/context storage and recovers a canonical constructor interface. Arbitrary load-interface/store proofs and five phase bindings reconstruct both arrays; finite controls show first-block XOR effects without establishing a general chaining mode or native ABI.
+
+Previous extension: The [pool-transform report](corefp_pool_transform_report.md) establishes a conditional complete local path using a declared private context. Source cells image+`0x1d45f60`/`0x1d44440` supply context base/offset; both operation-`0x88cd` calls retire same-epoch results in reverse allocation order. Full CPU/RAM replay and compact arena/ARX oracles preserve native admission and Mach-ABI limits.
 
 Previous extension: the [pool-caller report](corefp_pool_caller_report.md) recovers a48 B parent record, source-produced operation0x2b9b child epochs and paired operation0x88cd null cleanup. Both1027/1031 B results can come from one5000 B arena. Eight new key/counter/gate obligations,17 original-byte profiles and full arena oracles pass; no native admission or Mach ABI is added.
 
