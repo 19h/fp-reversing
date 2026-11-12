@@ -1,5 +1,7 @@
 # CoreFP source-produced caller record through the cold constructor
 
+Subsequent state-lifecycle evidence: the [selector-gated reset report](corefp_optional_reset_report.md) identifies a selector-clear writer and preparation-field reset writer under the same token. This closes the reset side of the writer question below; selector-set-to-1, valid preparation-object initialization and the caller-to-root input frontier remain unresolved. No root continuation is patched or resumed by that increment.
+
 Original caller `0x2e4280` now reaches the cold constructor through its own metadata allocation, VM-buffer construction and ingress/root record stores. Five independently replayed configurations retain operation `0xc1f7`, mode `0x114e4318` and decoded scalar `0x0484c46a`. They decode/free the certificate, construct the seed and environmental tuple, complete two predicates and stop before the optional-input read at `0x8eba44`. No root record, source PC or parent frame is patched.
 
 This closes a source-continuity gap between the [VM lifecycle](corefp_vm_lifecycle_report.md) and [earlier cold constructor](corefp_cold_seed_report.md). Certificate allocation/decode/free was already present in all nine earlier zero-mode cold profiles. These runs are not a mode-only causal experiment: caller frames, source-produced objects and address-keyed records also differ. Native admission, successful processing, selector/holder initialization and daemon/kext pairing remain unknown. The full goal remains active.

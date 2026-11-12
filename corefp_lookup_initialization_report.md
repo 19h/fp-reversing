@@ -1,5 +1,7 @@
 # CoreFP cold lookup initialization and lock fallback
 
+Subsequent reset evidence: the [selector-gated reset report](corefp_optional_reset_report.md) identifies a separate operation0xf7a5 routine under token image+0x1d33108. It clears selector image+0x1d44409 after selected88 B slot resets, including the preparation field at+0x48. This is distinct from the lazy lock/cache initialization below. Set-to-1 and valid preparation-object producers remain unknown.
+
 Current continuation: the [coherent cold seed/context report](corefp_cold_seed_report.md) independently replays complete cold callbacks through the fallback constructor and environmental state to the stopped optional-input load. Heap/static and volatile-register controls pass. The coherent path defines only nine context-prefix bytes before that frontier; native initialization and concurrency remain unknown.
 
 Current continuation: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) carries the original cold callbacks through certificate staging and request1200 error cleanup, and independently carries the cold fallback route to the first entropy API. The latter legitimately bypasses request1200 under flags0; one sequential CASAL model does not establish native concurrent ordering or initialization ownership.

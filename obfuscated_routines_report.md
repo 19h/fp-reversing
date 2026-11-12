@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows original caller0x2e4280 through source-produced nonzero-mode records to the cold constructor, two predicates and explicit optional-pointer zero definition0x8ea890. Five independent prefixes check161155 visits; selector0 reaches0x8eb7a4 directly. Certificate processing was already present in earlier zero-mode cold fixtures.
+Current extension: the [selector-gated reset report](corefp_optional_reset_report.md) assigns0x1f530c the source-supported role of selector-gated slot reset for operation0xf7a5. It conditionally frees slot+8, writes80 B common reset state, clears selector at0x1f5650 and restores the shared token. Eleven independent profiles and exhaustive pointer banks support the role; a native caller and valid-object initializer remain unknown.
+
+Previous extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows original caller0x2e4280 through source-produced nonzero-mode records to the cold constructor, two predicates and explicit optional-pointer zero definition0x8ea890. Five independent prefixes check161155 visits; selector0 reaches0x8eb7a4 directly. Certificate processing was already present in earlier zero-mode cold fixtures.
 
 Previous extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies0x653c70 as the selected descriptor cleanup path: descending buffer overwrite, VM deallocation,32 B descriptor overwrite and free. The byte function is256-periodic and depends on source stack addresses. Six complete original caller executions include four coherent nonzero-mode root calls; independent oracles check16384 buffer bytes and192 metadata bytes.
 

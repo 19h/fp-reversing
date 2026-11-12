@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) joins source-produced caller/VM/ingress records to the cold entropy/time ABI and two predicates. The added caller frames shift constructor locations by-576 B. Exact optional-pointer provenance, alternate stack fill and clock-error controls pass independent replay; native readiness remains unknown.
+Current extension: the [selector-gated reset report](corefp_optional_reset_report.md) establishes operation0xf7a5, an88 B slot stride, a distinct conditional u64 free field at+8 and80 B common reset layout. Source clears selector image+0x1d44409 and restores token0x5d96. Arm64e SDK assertions verify void free(void*); residual X0 has unknown semantic meaning. No Mach ABI or native right is added.
+
+Previous extension: the [caller-to-cold report](corefp_caller_cold_report.md) joins source-produced caller/VM/ingress records to the cold entropy/time ABI and two predicates. The added caller frames shift constructor locations by-576 B. Exact optional-pointer provenance, alternate stack fill and clock-error controls pass independent replay; native readiness remains unknown.
 
 Previous extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) establishes four source-produced root records with operation0xc1f7, mode0x114e4318 and scalar0x0484c46a. Descriptor+8 and+0x0c feed distinct deallocation/overwrite extents. Original source stages20 VM bytes, then completes selected failures through `_vm_deallocate` and `_free`; their native effects remain unknown.
 
