@@ -1,5 +1,7 @@
 # CoreFP common word recurrence and paired scan-entry state
 
+Subsequent control evidence: the [word-traversal report](corefp_word_traversal_report.md) proves cyclic predicates, 29-bit bound encodings and selected continue/exit rows. Under explicit remainder, table, backing and normal-flow interfaces, both passes cover indexes 0..N-1 with nonempty head/tail segments for 2 <= N <= 0x1fffffff; the head length is max(1,r). This refines the traversal premises below without establishing native admission, full selector production or hardware PAC acceptance.
+
 All four post-product word bodies implement the same two-stage u64 recurrence. Under the shared word stream, hash seed, index and metadata interfaces below, their different head/tail splits preserve a common final hash seed and the incoming accumulator-bank XOR. This derives the paired scan-entry condition previously recorded as an unexplained observation. Native control production, arbitrary-length address traversal and buffer ownership remain unknown.
 
 The [word-codec report](corefp_word_codec_report.md) supplies the preceding product contract: the first pass hashes raw words while storing their XOR encoding; the second pass recovers the identical raw-word product. This increment reduces the arithmetic after those products. Together they establish a conditional mathematical join across the earlier arithmetic passes; they do not establish arbitrary native admission or the complete transform algorithm.

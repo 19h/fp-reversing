@@ -1,5 +1,7 @@
 # CoreFP entry-record lineage to word controls and buffer bases
 
+Subsequent control evidence: the [word-traversal report](corefp_word_traversal_report.md) proves cyclic predicates, 29-bit bound encodings and selected continue/exit rows. Under explicit remainder, table, backing and normal-flow interfaces, both passes cover indexes 0..N-1 with nonempty head/tail segments for 2 <= N <= 0x1fffffff; the head length is max(1,r). This refines the traversal premises below without establishing native admission, full selector production or hardware PAC acceptance.
+
 Original source connects decoded entry operation `0x7f48` to master W22=`0xf82c`, replacing the unexplained master input in the [word-input report](corefp_word_inputs_report.md). The first and second word-pass buffer bases also come from one cached decoding of entry record+`0x18`. This joins the earlier [pool-caller record contract](corefp_pool_caller_report.md) to both word passes.
 
 The reverse byte prefix preserves the decoded operation register. The forward prefix rewrites it, but its source update has a fixed point at `0x7f48`. Those are distinct proofs. The operation's native producer/admission, buffer ownership/backing, complete dispatch target sets and arbitrary lengths remain unknown. Master equality alone does not identify the operation: the algebraic chain also maps `0x7f49` to `0xf82c`, without establishing native admission for `0x7f49`.
