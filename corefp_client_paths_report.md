@@ -217,3 +217,7 @@ The [explicit parent handoff](fpsd1201_handoff_report.md) follows those terminal
 ## Network-registry environment input
 
 The [network-identity increment](corefp_network_identity_report.md) recovers getter 0x86c0 and its lazy Block 0x8754. The block matches IONetworkController, reads IOMACAddress from each node's IOService-plane parent and caches six bytes. Capacity admission is unsigned low32 >= 6 with status zero; final status describes the last iteration, while bytes describe the last successful read. Twenty-seven profiles and three same-instance repeats are independently checked. Incoming callers, downstream use and native daemon/kext continuity remain unknown.
+
+## Cold lookup initialization and lock fallback
+
+The [cold initialization report](corefp_lookup_initialization_report.md) executes both original once callbacks omitted by warm fixtures. Callback 0x4a21e0 attempts two 200 B lock constructions, clears both cached names and metadata, and continues across tested allocation/init failures. Helper 0x20f37c chooses the first heap lock or static fallback image+0x1d27bf0. Three profiles reach com.apple.fpsd bootstrap preparation at 0x1ce1bc; all stop before lookup execution. Native lock/right behavior and subsequent source-produced metadata remain unknown.

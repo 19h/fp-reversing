@@ -1604,3 +1604,16 @@ The [network-identity report](corefp_network_identity_report.md) establishes the
 | 0x86c0 | Lazy six-byte cache getter with low32 capacity/status admission | 148 B |
 | 0x8754 | IONetworkController enumeration and parent IOMACAddress cache population | 440 B |
 | 0x15d1580 | dispatch_once thunk for predicate image+0x1d443c8 and global Block image+0x1c80028 | 20 B |
+
+## Cold lookup initialization routines
+
+The [cold lookup report](corefp_lookup_initialization_report.md) adds complete source bodies and independently checked private roles. Native object lifetimes and external reachability remain conditional.
+
+| Original routine | Recovered bounded role | Source extent |
+| --- | --- | --- |
+| 0x4a21e0 | Once callback: two lock constructors and cached-name/metadata reset | 1016 B |
+| 0x59e33c | Private address-keyed lock-construction record, conditional pointer publication | 880 B |
+| 0x57a67c | Reset-capable helper; selected cold input clears names/metadata without deallocation calls | 1020 B |
+| 0x20f37c | Once-protected heap/static lock selection and write-lock call | 896 B |
+| 0x59e868 | Once callback updating encoded tokens and invoking a no-op | 600 B |
+| 0x438d40 | Single RET leaf | 4 B |

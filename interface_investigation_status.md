@@ -1405,3 +1405,7 @@ The [CoreFP1201 product increment](fpsd1201_product_report.md) independently rep
 ## Network-registry reader and lazy cache
 
 The [network-identity increment](corefp_network_identity_report.md) independently replays 27 profiles, 3547 original visits, 27 initial CPU frames, 548864 B of initial/final RAM and all 30 getter returns. Three UNSAT obligations and an arm64e ABI compile support the original getter/block contract. Cache bytes track the last successful property; status tracks the last iteration. Native registry observations, incoming getter references, downstream six-byte consumers, earlier selector/holder initialization and daemon/kext/deeper linkage remain open. The full goal remains active.
+
+## Cold lookup initialization and current IDA corroboration
+
+The [cold lookup increment](corefp_lookup_initialization_report.md) independently checks fourteen profiles, 19528 original visits, 28 constructor records, 2088960 B of initial/final RAM and two source/algebra UNSAT identities. It recovers two lock constructions, a static fallback and cache-reset-to-bootstrap flow. Current MCP lists CoreFP, fairplayd and FairPlayIOKit; all 4976 compared CoreFP readback bytes match the original file. Native rights/transactions, downstream network-getter use and optional-input initialization remain unknown. The full goal remains active.

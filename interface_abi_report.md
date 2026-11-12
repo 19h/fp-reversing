@@ -1762,3 +1762,7 @@ The [parent-to-builder handoff](fpsd1201_handoff_report.md) checks original argu
 ## Network-registry getter and external ABI
 
 The [network-identity report](corefp_network_identity_report.md) supplies exact API argument/return and authenticated-stub tables. Getter 0x86c0 consumes output in X0 and capacity in low32 X1, returns boolean X0 and conditionally writes exactly 6 B. At 0x88b8, CFDataGetBytes receives X0=data, X1=range start 0, X2=range length 6 and X3=cache. A fresh arm64e syntax/layout check establishes 16 B CFRange, signed 8 B CFIndex and 4 B Mach/IOKit handle types. These are SDK-assisted source contracts; native API behavior, PAC acceptance and caller ownership remain unknown.
+
+## Cold lookup lock-record ABI
+
+The [cold initialization report](corefp_lookup_initialization_report.md) establishes the selected 16 B constructor record: output-slot pointer +0, raw result +8 and address-keyed control +12, decoded to 0xc1a5. Exact raw statuses and publication partitions are tabulated there. Original allocation size and current arm64e pthread_rwlock_t size are 200 B; the static fallback carries the SDK initializer signature. These are private source/SDK contracts, not a new wire ABI. Both source once predicates, callbacks, lock acquisition and bootstrap argument sites are retained.

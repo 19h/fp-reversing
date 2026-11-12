@@ -1633,3 +1633,7 @@ The [parent re-entry and serialization report](fpsd1201_handoff_report.md) adds 
 ## Lazy network-registry context
 
 The [network-identity report](corefp_network_identity_report.md) establishes a separate environmental dependency: IONetworkController matching, optional IOPrimaryInterface filtering and parent IOMACAddress acquisition into a six-byte cache. Cache at image+0x1d443c0, once predicate at +0x1d443c8 and u32 status at +0x1d25200 have distinct roles. A later iteration failure preserves earlier bytes but rejects copying; cold short-capacity calls still initialize. Native registry topology, property type/extent, getter callers and concurrency remain unknown. This does not resolve the earlier selector or optional-input holder.
+
+## Cold initialization provenance
+
+The [cold lookup report](corefp_lookup_initialization_report.md) replaces an omitted warm-once assumption with original callback execution for fourteen private profiles. Lock slots image+0x1d444a8 and +0x1d47fb8 are published only after zero init status; a missing first heap lock selects static backing +0x1d27bf0. The first callback clears cached names and metadata regardless of the tested constructor outcomes. Fresh live-IDB bytes corroborate source; native concurrency, rights, optional-input holder/selector initialization and cross-layer pairing remain unresolved.

@@ -1507,3 +1507,7 @@ The [declared parent handoff](fpsd1201_handoff_report.md) now carries retained e
 ## Network-registry API handles
 
 The [network-identity report](corefp_network_identity_report.md) adds exact API-level handle directions: 0x8804 passes kIOMainPortDefault and receives a u32 iterator; 0x882c/0x886c receive node handles; 0x8884 receives a parent handle; release calls occur at 0x885c/0x8864/0x88ec. Main-port default is modeled as zero. These fixtures recover no native Mach name, right disposition or IOKitLib message emission. The block performs no FairPlayIOKit user-client call. Established native port-emission evidence remains unchanged.
+
+## Cold cached-name reset to bootstrap boundary
+
+The [cold lookup report](corefp_lookup_initialization_report.md) establishes u32 name clears at 0x57aa3c -> image+0x1d44448 and 0x57aa40 -> +0x1d37838. The selected reset path calls no mach_port_deallocate; clearing scalars does not establish right retirement. Three profiles, including two static-lock fallback cases, reach bootstrap_look_up preparation at 0x1ce1bc with source name com.apple.fpsd and output cell +0x1d44448. They stop before lookup, so no incoming native service right or new message emission is observed.
