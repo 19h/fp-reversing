@@ -2,6 +2,8 @@
 
 The original parent constructs an SP-relative context C, writes prefix `00 66 64 70 63 00 00 00 01`, saves C and two offsets, and advances its selected workspace cursor by 1872 B. A later original gate reloads C and the separate P+0x900 destination before staging the arithmetic/export record. These are independently replayed fragments separated by an explicit unexecuted parent gap. Two receipt-pinned daemon representatives have the same nine-byte prefix. Full field meanings, native context continuity and matched daemon/kext exchange remain unknown.
 
+The subsequent [initialized parent and predicate report](fpsd1201_predicates_report.md) supplies private owner/cursor/key cells from the frozen original caller prefix: cursor 0x9a0, P=SP+0x9c0 and C=P+0x980. Four separate continuations recover local predicate contracts and stop before atomic/global-pointer frontiers. Request1200 and its return checks are still explicitly omitted; this does not close the later gate gap or define the remaining 119 context bytes.
+
 ## Primary evidence and assumption register
 
 The [producer](triage_evidence/recover_fpsd1201_workspace.py), [journals](triage_evidence/fpsd1201_workspace_checks.json), [independent auditor](triage_evidence/audit_fpsd1201_workspace.py), [replay receipt](triage_evidence/fpsd1201_workspace_audit.json) and [publication verifier](triage_evidence/verify_fpsd1201_workspace_publication.py) retain the bounded evidence. Logical JSON links resolve to compressed `.json.zst` artifacts. The existing complete parent capture is sufficient; no new IDA access or IDB edit is required.
