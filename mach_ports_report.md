@@ -1,6 +1,6 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [word-recurrence report](corefp_word_recurrence_report.md) reduces all four post-product bodies to one two-stage u64 recurrence. Under common word/index/metadata interfaces it derives equal scan-entry seeds and preserves the incoming bank XOR; six paired stream oracles reproduce the frozen initializer frames. Validation covers 37 new obligations and 229888 original-byte component cases. Universal native address/control admission and daemon/kext continuity remain unknown. The full goal remains active.
+Current extension: the [word-input report](corefp_word_inputs_report.md) derives all four header indexes/addresses, the common initial hash and recurrence parameters, metadata producers and same-epoch controls. Entry W22=`0xf82c` composes the retained keys/scan control; its upstream producer, admitted bounds/targets and native ownership remain unknown. Validation covers 42 new obligations, 129024 original-byte component cases, 74 complete frames and 24 control epochs. No new Mach endpoint or daemon/kext pairing is established. The full goal remains active.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) adds source-proved local constructor/preparation contracts. Six complete private profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Canonical local substitution values add no native port identity or daemon/kext pairing.
 

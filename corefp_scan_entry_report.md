@@ -8,6 +8,8 @@ The subsequent [word-codec increment](corefp_word_codec_report.md) establishes t
 
 The subsequent [word-recurrence increment](corefp_word_recurrence_report.md) reduces all four post-product bodies to a common two-stage u64 recurrence. It derives preservation of the bank XOR and equality of the final scan-entry seed under explicit common-stream, metadata, index and carrier-lifetime premises. The earlier unresolved arithmetic frontier below is now discharged conditionally by that report; universal production of the premises and native admission remain open.
 
+The subsequent [word-input report](corefp_word_inputs_report.md) derives W11=`0x8568` from first-setup entry W22=`0xf82c`, proves the header address/index and metadata producers, and joins four control-store epochs per caller. The earlier W11 input condition is now reduced to the master W22 and normal-flow premises; their upstream/native admission remains unknown.
+
 ## Evidence and assumption register
 
 The [producer](triage_evidence/recover_corefp_scan_entry.py), [checks archive](triage_evidence/corefp_scan_entry_checks.json.zst), [independent auditor](triage_evidence/audit_corefp_scan_entry.py), [audit archive](triage_evidence/corefp_scan_entry_audit.json.zst) and [publication verifier](triage_evidence/verify_corefp_scan_entry_publication.py) retain five source regions, two tail slices, a register-access census, thirty complete region frames/journals, twelve scan ends, control-flow records and queries. Twelve parent receipts and fifteen frozen dependencies are SHA-256 pinned. The three supplied inputs are unchanged.
@@ -19,7 +21,7 @@ CoreFP arm64e SHA-256 is `8bf6f7a563cc804522cbd7b3f6a063c479cd2abc6e0b2d996f1eac
 | SE1 | Pinned original bodies, parent receipts and dependencies identify this image. Source claims depend on those bindings. | Compare every source instruction, tail slice and census row, dependency hashes and the three original inputs. |
 | SE2 | Existing private caller/context/pool/malloc/PAC/sequential-CASAL fixtures apply. Full replay continuity depends on them. | Reconstruct six initial CPU/RAM states and replay 488136 visits. Native object admission, backing, ownership and synchronization remain unknown. |
 | SE3 | The frame is backed with FP=SP+`0x520`; declared store/load epochs refer to the same owned bytes. Stack joins depend on these interfaces. | Prove source addresses and full store widths; check eighteen field epochs and six control epochs for intervening overlapping writes. Universal native alias/lifetime conditions remain unproved. |
-| SE4 | The first initializer shift normalizes to two. The common u64 initializer requires this premise. | Prove its control expression and the original control writer; retain six original-byte counterexamples outside the premise. Earlier production of W11=`0x8568` remains a separate input condition. |
+| SE4 | The first initializer shift normalizes to two. The common u64 initializer requires this premise. | Prove its control expression and the original control writer; retain six original-byte counterexamples outside the premise. The word-input report derives W11=`0x8568` conditionally from master entry W22=`0xf82c`; upstream master production remains unknown. |
 | SE5 | Both initializers have equal u64 seeds and corresponding incoming words differ by `0xeb3e515b`. The bank join into the scans depends on these premises. | Prove common-mixer preservation and compare all six original entries. Earlier encoded fields alone do not prove preservation through the intervening arithmetic passes. |
 | SE6 | The two scans share the declared preparation bytes, recurrence seed/biases and bounded dispatch contracts; execution stays within the writer-free interval until its end. Downstream carrier equality depends on these premises. | Recheck the frozen scan obligations, tail carrier equations, every register alias and seven branch sites; compare all 130 retained interval branches. Native exceptions or transfers outside the interval do not inherit this preservation result. |
 
@@ -146,7 +148,7 @@ No new incoming/outgoing Mach port, right, descriptor, emission site or daemon/k
 | High | Establish original control/address producers for the paired word recurrence. | Compose the conditional word/seed theorem with source-produced metadata, indexes, targets and same-epoch backing. |
 | High | Join arbitrary raw preparation to canonical first-block inputs and all consumers. | Compose the scan/carrier/phase contracts with original table/backing and same-epoch input-word producers. |
 | High | Establish native selector/context/holder ownership and admission. | Require original initialization, coherent backing and entry reachability. |
-| Medium | Reduce control W11 production and interval confinement. | Replace the remaining control input/target premises with original producer and target-set proofs. |
+| Medium | Recover master W22 production and interval confinement after the conditional W11 producer. | Replace the remaining master input/target premises with original producer and target-set proofs. |
 | Low | Connect local mathematics to daemon/kext transport. | Require actual serializer/consumer and endpoint/right epoch joins. |
 
 - **QG1**: No normative premise is required.

@@ -4,6 +4,8 @@ All four post-product word bodies implement the same two-stage u64 recurrence. U
 
 The [word-codec report](corefp_word_codec_report.md) supplies the preceding product contract: the first pass hashes raw words while storing their XOR encoding; the second pass recovers the identical raw-word product. This increment reduces the arithmetic after those products. Together they establish a conditional mathematical join across the earlier arithmetic passes; they do not establish arbitrary native admission or the complete transform algorithm.
 
+The subsequent [word-input report](corefp_word_inputs_report.md) derives original producers for the common initial hash, recurrence parameters, fold metadata and coherent header indexes. A master entry W22=`0xf82c` composes the retained fixed controls through separate stack epochs. Upstream master/base production, native backing and admitted selector/target sets remain unknown; these conditional producer results refine WR3-WR5 without establishing universal native traversal.
+
 ## Evidence and assumption register
 
 The [producer](triage_evidence/recover_corefp_word_recurrence.py), [checks](triage_evidence/corefp_word_recurrence_checks.json.zst), [independent auditor](triage_evidence/audit_corefp_word_recurrence.py), [audit](triage_evidence/corefp_word_recurrence_audit.json.zst) and [publication verifier](triage_evidence/verify_corefp_word_recurrence_publication.py) retain four source bodies, sixteen normalization cuts, 32 complete component frames/journals, six paired stream joins and 37 new obligations. Sixteen parent receipts and nineteen source dependencies are SHA-256 pinned. CoreFP arm64e SHA-256 is `8bf6f7a563cc804522cbd7b3f6a063c479cd2abc6e0b2d996f1eac1eda6cf28c`. The three original supplied inputs are unchanged. Addresses are preferred-base-zero offsets; B denotes bytes.
@@ -119,7 +121,7 @@ No new incoming/outgoing Mach port, right, descriptor, message emission or daemo
 
 | Impact | Remaining investigation | Completion / falsification condition |
 | --- | --- | --- |
-| High | Derive common initial h, metadata, coherent indexes and normal traversal from original producers. | Replace the remaining stream/body premises with constructor, counter, address and target-set contracts. |
+| High | Complete upstream master/base production and normal traversal after the conditional word-input joins. | Establish admitted lengths/splits, same-epoch backing and selector/target confinement. |
 | High | Compose the full raw preparation and word path with downstream consumers. | Establish same-epoch backing, permitted lengths/splits and exact producer-to-consumer continuity. |
 | High | Establish native selector/context/holder ownership and admission. | Require original initialization and coherent native entry/backing evidence. |
 | Medium | Characterize partial words, zero/one-word inputs and non-retained split controls. | Establish source-specific behavior without extrapolating the nonempty head/tail theorem. |
