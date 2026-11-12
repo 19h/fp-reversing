@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) joins root0x8e81c8, certificate decoding/shift, builder0x8ae0, reply-port cleanup and caller unlock on five complete transport-error paths. It recovers the flags-bit1 dispatch and reaches the local constructor from cold fallback without the previous RPC PC gap. The sequential CASAL effect and entropy stop retain explicit native/concurrency limits.
+
 Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) classifies the complete 35-instruction leaf 0x439734 as an address-keyed signed/unsigned less-than selector. Its 36 B accessed footprint, output at R+0, two compositional proofs and 128 isolated cases are retained. One state-mixing update and both optional-input frontiers are source-replayed; complete output generation remains unknown.
 
 Prior extension: the [token, entropy and seed report](fpsd1201_seed_report.md) classifies the original 0x8eb824 seed loop as the exact 624-word MT19937 seed recurrence, with separate entropy/time callsites and seed-tuple stores. Eight complete expansions check 4992 oracle words and five independent source obligations. Full surrounding generator identity, later key mixing/output and native context remain unresolved.

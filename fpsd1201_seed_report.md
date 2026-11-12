@@ -1,5 +1,7 @@
 # CoreFP1201 token, entropy, MT-compatible seed expansion and time interface
 
+Later corroboration: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) independently reaches the first entropy API from original cold fallback discovery without skipping the request1200/status range. It reuses the declared sequential CASAL semantics and verifies original token restoration, then stops before entropy. The seed experiments below retain their own initial state/gap premises; no native ownership or successful primary RPC follows from the new route.
+
 The subsequent [optional-input and signed-record report](fpsd1201_key_routes_report.md) continues four pinned tuple cases through one mixed-state update and two predicate calls, stopping before the unresolved optional-input word read. It separately tests the upstream selector and preparation-object boundary. Complete mixing/output and native initialization remain unresolved.
 
 The source continuation beyond the previously stopped CASAL restores its token before calling `_arc4random`, fills a 624-word global array with the exact MT19937 seed recurrence, then combines time and two additional random values into a separate four-word tuple. The saved C+0x6f0 pointer starts the tuple/time scratch area. Twelve private cases and an independent replay establish these bounded effects. The earlier omitted request1200/status boundary, later key mixing, remaining context bytes, native initialization and daemon/kext pairing remain unresolved.

@@ -433,6 +433,7 @@ def main():
     if exists(BASE/'corefp_lookup_initialization_report.md'):reports.add(BASE/'corefp_lookup_initialization_report.md')
     if exists(BASE/'corefp_cold_metadata_report.md'):reports.add(BASE/'corefp_cold_metadata_report.md')
     if exists(BASE/'corefp_lookup_release_report.md'):reports.add(BASE/'corefp_lookup_release_report.md')
+    if exists(BASE/'corefp_request1200_failure_report.md'):reports.add(BASE/'corefp_request1200_failure_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2095,6 +2096,10 @@ def main():
         lookup_release=json.loads(read(ROOT/'corefp_lookup_release_checks.json'))
         manifest['validation']['corefp_lookup_release_increment_checks']=lookup_release['verified_counts']
         manifest['validation']['corefp_lookup_release_static_scope']=lookup_release['scope']
+    if exists(ROOT/'corefp_request1200_failure_checks.json'):
+        request1200_failure=json.loads(read(ROOT/'corefp_request1200_failure_checks.json'))
+        manifest['validation']['corefp_request1200_failure_increment_checks']=request1200_failure['verified_counts']
+        manifest['validation']['corefp_request1200_failure_static_scope']=request1200_failure['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

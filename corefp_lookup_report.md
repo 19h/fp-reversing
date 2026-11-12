@@ -1,5 +1,7 @@
 # CoreFP service lookup,cache lifetime and reference-image metadata protocol
 
+Current continuation: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) proves the post-lookup flags-bit1 branch for this source epoch. Primary flags0x0a select request1200; fallback flags0 select the local constructor prefix directly. Five transport-error cases retain the cached primary name while cleaning the reply-port helper and selected lock; native rights and endpoint identity remain unknown.
+
 Original CoreFP routine`0x1cdb24` acquires `com.apple.fpsd`,falling back to `com.apple.fairplayd` only on bootstrap status1102. Successful primary lookup supplies the destination for the header-only request1203. Successful fallback returns the cached name without this metadata query. A protected caller at`0x8e81c8` now reaches this lookup through original instructions under the recorded input preconditions.
 
 The inspected CoreFP and supplied daemon differ at the metadata method ID. CoreFP sends simple request1203,size24,and expects reply1303. The daemon's1203 requires a complex100-byte request and rejects the simple form with-304;its four-word metadata method is1204. A private source-to-source adapter reproduces the rejection and the CoreFP caller's subsequent success-marker publication. This establishes a reference-image protocol difference,not native deployment incompatibility or a successful native transaction.

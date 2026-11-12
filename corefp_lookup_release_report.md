@@ -1,5 +1,7 @@
 # CoreFP caller-managed lookup lock release and failure cleanup
 
+Current continuation: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) supplies successful certificate allocation and original payload staging, then completes five parent returns after nonzero request1200 results. The same selected heap/static lock pointer reaches cleanup; record markers, final X0 and cached-name retention remain separate. A sixth fallback prefix stops before entropy while the caller is still active.
+
 Original protected caller 0x8e81c8 produces the lookup record, completes the cold lookup and then releases the selected lock through cleanup wrapper 0x457838 and unlock helper 0x1be978 on seven tested failure paths. The unlock call is at 0x1becc8. Its pointer equals the earlier write-lock argument at 0x20f6cc, including the static fallback when the first allocation fails. This establishes a source release path outside the local lookup routine; native ownership, synchronization and general re-entry remain unknown.
 
 The caller's record result, final X0 and X1-referenced u64 word are separate observable outputs. In the nonzero-unlock-result fixture, the parent record still contains 0x45e2a20f while final X0 retains 5 and the declared lock ledger remains held. Every tested failure leaves the caller u64 word advanced from zero to 0x100 before lookup. No native API or daemon/kext transaction executes. The full interface investigation remains active.

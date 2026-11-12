@@ -1,5 +1,7 @@
 # CoreFP1201 initialized workspace, predicate records and control frontiers
 
+Later corroboration: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) establishes a different, coherent cold fallback prefix through the same constructor/atomic region to the first entropy API. Original fallback flags0 bypass request1200 and its status checks, so that prefix needs no PC gap. This does not remove the explicit gap from the experiments below or establish successful primary processing; their frame epochs remain distinct.
+
 The original modeled caller prefix supplies the previously missing frame cells: cursor `0x9a0`, owner P=SP+0x9c0 and the address-derived record key. A separate continuation recovers two complete obfuscated predicate leaves and reaches either an atomic instruction or an unresolved global-pointer read. The request1200 call and its return checks are explicitly omitted. This establishes conditional source contracts and improves the workspace geometry; native success, remaining context bytes, actual ports and daemon/kext pairing remain unknown.
 
 The subsequent [token, entropy and seed report](fpsd1201_seed_report.md) resumes the pinned zero-control CASAL frontier through a declared sequential model. Source token restoration precedes entropy and a complete 624-word seed expansion. The saved C+0x6f0 view is used as a 32-byte tuple/time scratch area. Twelve cases retain the request1200 gap and stop before later key mixing; native initialization, complete context-byte generation and pairing remain unknown.

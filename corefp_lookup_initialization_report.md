@@ -1,5 +1,7 @@
 # CoreFP cold lookup initialization and lock fallback
 
+Current continuation: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) carries the original cold callbacks through certificate staging and request1200 error cleanup, and independently carries the cold fallback route to the first entropy API. The latter legitimately bypasses request1200 under flags0; one sequential CASAL model does not establish native concurrent ordering or initialization ownership.
+
 Cold execution of CoreFP lookup 0x1cdb24 invokes original pthread_once callbacks that earlier warm-state fixtures omitted. Callback 0x4a21e0 attempts two 200 B lock constructions and clears both cached service names and metadata. A lock is published only after successful allocation and zero pthread_rwlock_init result. When the first heap lock is absent, source selects a statically initialized fallback at image+0x1d27bf0. Three completed private lock-acquisition models then reach the original bootstrap lookup of `com.apple.fpsd`, including allocation-failure and init-error cases. No native lock, bootstrap operation, Mach right or daemon/kext transaction executes.
 
 ## Evidence and assumptions

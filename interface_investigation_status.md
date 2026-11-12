@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current increment: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) checks six coherent cold-client paths, 129002 source visits, five request1200 error transactions and a fallback prefix reaching the entropy boundary without the earlier RPC PC gap. Two UNSAT properties, original DER/catalog checks, independent replay and live bytes pass. No successful primary reply, native rights/ownership or daemon/kext pairing is established; the full goal remains active.
+
 Current increment: The [CoreFP1201 optional-input and signed-record report](fpsd1201_key_routes_report.md) identifies the exact selector byte at image+0x1d44409, its preparation-holder frontier, one source mixed-state word and the later optional-input/control gate. Eight continuations, 128 isolated leaf cases and five UNSAT obligations pass. The complete leaf at 0x439734 selects signed/unsigned u64 less-than. Native initialization, remaining mixing/context output and daemon/kext pairing remain unresolved; the full goal stays active.
 
 Prior increment: The [CoreFP1201 token, entropy and seed report](fpsd1201_seed_report.md) recovers source token restoration, complete 624-word seed expansion, three entropy callsites and the time/random tuple at C+0x6f0. Twelve cases, 70836 visits, 4992 oracle words and four retained/five independent source obligations pass. The request1200 gap, later key mixing/output, remaining context bytes, native readiness and daemon/kext pairing remain unresolved. The full goal remains active.
