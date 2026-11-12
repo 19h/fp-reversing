@@ -1,6 +1,6 @@
 # Active interface investigation
 
-Current extension: the [output-packing report](corefp_output_packing_report.md) joins the sixteen canonical consumer results to all output stores through a fixed byte permutation, an invertible binary-linear byte map and captured-state XOR vectors. Eight fixed-input domains have simultaneous arbitrary-g transfer proofs; 32768 original-instruction component cases and 620 new/frozen UNSAT obligations pass. General preparation/context admission and native daemon/kext continuity remain unknown. The full goal remains active.
+Current extension: the [late-preparation report](corefp_late_preparation_report.md) proves that sixteen late prepared bytes pass through the inverse output map and emerge as an identity XOR at first-block output. Six fixed-earlier-state domains have joint arbitrary-preparation/canonical-result interface proofs. Earlier preparation phase construction, later-block semantics, native admission and daemon/kext continuity remain unknown. The full goal remains active.
 
 Previous increment: the [workspace report](corefp_workspace_report.md) checks six independent profiles, 488136 original visits and all 3072 workspace words. Thirty-six source instructions lift to store/address contracts, five encoding classes normalize to fixed canonical tables and 28 new/frozen UNSAT obligations pass. Preparation-XOR observations remain finite; whole algorithm, native initialization and daemon/kext pairing remain unknown. The full goal remains active.
 

@@ -448,6 +448,7 @@ def main():
     if exists(BASE/'corefp_workspace_report.md'):reports.add(BASE/'corefp_workspace_report.md')
     if exists(BASE/'corefp_workspace_consumers_report.md'):reports.add(BASE/'corefp_workspace_consumers_report.md')
     if exists(BASE/'corefp_output_packing_report.md'):reports.add(BASE/'corefp_output_packing_report.md')
+    if exists(BASE/'corefp_late_preparation_report.md'):reports.add(BASE/'corefp_late_preparation_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2170,6 +2171,10 @@ def main():
         packing=json.loads(read(ROOT/'corefp_output_packing_checks.json'))
         manifest['validation']['corefp_output_packing_increment_checks']=packing['verified_counts']
         manifest['validation']['corefp_output_packing_static_scope']=packing['scope']
+    if exists(ROOT/'corefp_late_preparation_checks.json'):
+        late=json.loads(read(ROOT/'corefp_late_preparation_checks.json'))
+        manifest['validation']['corefp_late_preparation_increment_checks']=late['verified_counts']
+        manifest['validation']['corefp_late_preparation_static_scope']=late['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

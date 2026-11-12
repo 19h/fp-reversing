@@ -1,5 +1,7 @@
 # CoreFP canonical-byte output packing
 
+Subsequent preparation evidence: the [late-preparation report](corefp_late_preparation_report.md) extends the first-block transfer to arbitrary late prepared bytes under each fixed earlier entry state. It proves inverse-H word encoding and identity preparation XOR at output, with an explicit canonical-result interface cut. Earlier phase construction and whole-caller raw-input admission remain unresolved.
+
 The original region `[0x1bb5a8,0x1bbff4)` maps the previous consumer's sixteen canonical bytes to sixteen message-output bytes by a fixed byte permutation, a common invertible binary-linear byte map and a captured-state XOR vector. All eight retained packing domains share the permutation and linear map. In each domain, the source lift proves the output relation for arbitrary values of all sixteen canonical bytes simultaneously, with every other entry/read interface fixed. This joins the [consumer network](corefp_workspace_consumers_report.md) to the actual private output stores. Native input admission, general preparation semantics and the complete transform remain unknown.
 
 ## Evidence and assumption register

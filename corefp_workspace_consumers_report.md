@@ -1,5 +1,7 @@
 # CoreFP workspace consumers and canonical substitution network
 
+Subsequent preparation evidence: the [late-preparation report](corefp_late_preparation_report.md) extends the first-block transfer to arbitrary late prepared bytes under each fixed earlier entry state. It proves inverse-H word encoding and identity preparation XOR at output, with an explicit canonical-result interface cut. Earlier phase construction and whole-caller raw-input admission remain unresolved.
+
 The straight-line region `[0x1ba0c0,0x1bad9c)` reduces to ten layers of sixteen byte substitutions, with 36 intervening mixed-word nodes. The first nine substitution layers use the first workspace's affine word expansion; the final layer uses the second workspace's byte expansion. The compact network reproduces every workspace read and all sixteen final private destinations in eight blocks across six complete caller profiles. It does not identify the whole transform or its native input contract.
 
 This extends the [workspace constructor report](corefp_workspace_report.md). Under the retained controls, changing preparation bytes changes stored representations but preserves the decoded first-block inputs, all 36 canonical XOR offsets and the final sixteen canonical substitution values. These cross-profile equalities are finite observations. The source contracts instead quantify over the component's register/load interfaces, with explicit frame, shift and encoding premises.
