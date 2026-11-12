@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current extension: the [workspace and pre-helper gate report](fpsd1201_workspace_report.md) supplies original context/candidate/XOR pointer producers, a selected 1872 B cursor increment and nine-byte fdpc prefix. Five successful gate cases derive the later constructor registers and complete records under an explicit unexecuted-gap premise. Two sealed daemon representatives share the prefix; full input/key semantics, native parent continuity and message/right pairing remain unknown.
+
 Two distinct request1200 paths are now resolved locally. The64-byte client uses the name returned by the recovered `com.apple.fpsd` lookup and sends a756-byte embedded FPPineBoard certificate. The56-byte client belongs to a separate constructor that targets `com.apple.adid`,prefers synchronous XPC with a28-byte `data` field,and uses Mach fallback with bootstrap/retry on MACH_SEND_INVALID_DEST. Identical numerical request IDs do not identify the same endpoint or payload ABI.
 
 The main path reaches its larger request even after modeled failure of the metadata query described in the [lookup/protocol report](corefp_lookup_report.md). These are original-byte/static and bounded private-execution findings. Effective native image/port pairing,receiver admission,successful processing and rights lifetime remain unknown. The broad daemon/kext/deeper-interface objective remains active and incomplete.

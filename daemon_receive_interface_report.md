@@ -1,5 +1,7 @@
 # fairplayd receive routing, reply emission, and ownership
 
+Cross-image extension: the [CoreFP workspace report](fpsd1201_workspace_report.md) independently matches nine literal client-produced prefix bytes to two receipt-pinned daemon representatives. This is a bounded data-format correspondence; the remaining client bytes, complete field interpretation, native delivery, right identity and daemon/kext pairing remain unknown. No daemon receive or client API executes in the new fragments.
+
 Subsequent cross-image finding:the [CoreFP lookup/protocol report](corefp_lookup_report.md) recovers a client that resolves `com.apple.fpsd` but emits a simple24-byte request1203. This daemon's1203 stub requires a complex100-byte request and returns-304 for that form;metadata is1204 with a52-byte reply containing76/9/0/42. Private execution of the original demultiplexer and client parser reproduces the local mismatch. Effective native pairing and service-to-handler history remain unverified.
 
 The shared callback at `0x100425f78` routes all five recovered MIG families. RPC502 has a complete local callback-to-demultiplexer-to-stub edge: callback -> continuation `0x10006d214` -> `0x100264b4c` -> demultiplexer `0x100005274` -> stub `0x1000050c8` -> implementation `0x100422d48`. This closes the previous callback-routing gap, conditional on normal arm64e control transfers and the original table contents. It does not prove delivery from a specific live Mach port.

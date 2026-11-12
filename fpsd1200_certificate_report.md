@@ -1,5 +1,7 @@
 # FPSD1200 certificate chain, inline output and task-map cleanup
 
+Cross-image extension: the [CoreFP workspace report](fpsd1201_workspace_report.md) identifies original client stores producing the same nine-byte fdpc prefix as two sealed daemon representatives. Both full 128-byte daemon witnesses are independently decoded from known encoded limbs. Only nine client bytes are defined by those selected fragments; remaining fields, actual message pairing and native endpoint/right history remain unknown.
+
 The original FPSD1200 path consumes the reference CoreFP certificate, constructs embedded Root and FairPlay AAA certificates, and executes public-exponent arithmetic matching their signature relationships. A later exponentiation uses the supplied CoreFP leaf's public modulus and a source-built representative beginning `00 66 64 70 63 00 00 00 01`. Original byte stores at `0x1002212a0` export its complete 128-byte result into the inline reply region. The subsequent continuation constructs the embedded fairplayd leaf and reaches imported `vm_deallocate` at `0x10049e114`. No native message emission, output-port right or completed protected operation is established. [FV1-FV8]
 
 This extends the [seed/environment continuation](fpsd1200_context_report.md). Four new profiles preserve the earlier original admission and identity prefix. The investigation remains active; the recovered output is local data production before an unexecuted VM API, not an observed completed reply.
