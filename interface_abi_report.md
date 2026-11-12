@@ -1770,3 +1770,7 @@ The [cold initialization report](corefp_lookup_initialization_report.md) establi
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata/re-entry report](corefp_cold_metadata_report.md) adds the original cold-prefix-to-request1203-to-reply1303 rejection sequence and explicit task-local envelope inputs. Primary/fallback discovery both write image+0x1d44448. The original client returns -304 before the lookup success marker and cached name/flags; a second call skips discovery/RPC but still calls pthread_rwlock_wrlock. Source send-size 24 B and the pre-call header size word have distinct provenance. No native kernel translation or FairPlayIOKit emission is added.
+
+## Caller-managed lookup lock release
+
+The [caller cleanup ABI report](corefp_lookup_release_report.md) separates a 4 B accessed cleanup-wrapper input from a 12 B accessed unlock record: +0 u64 optional lock pointer, +8 u32 encoded control 0x4cfa. Two source-key identities are UNSAT within their stated domains and an unaligned SAT falsifier prevents an unrestricted codec claim. Parent record marker, final X0 and an early X1-referenced u64 increment are independent outputs. Native protected-parent prototype remains unknown.

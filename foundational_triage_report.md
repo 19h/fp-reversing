@@ -1641,3 +1641,7 @@ The [cold lookup report](corefp_lookup_initialization_report.md) replaces an omi
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata/re-entry increment](corefp_cold_metadata_report.md) retains a coherent initialization-to-rejection-to-cache path with original IDs. Six independent client replays cover two calls each, including primary/fallback failures and retry. The selected-name cell is shared by primary/fallback results. Metadata failure leaves primary flags 0x0a and the acquired-name cache intact; cache reuse still reaches write-lock acquisition. Native lock ownership, endpoint identity and deeper linkage remain unknown.
+
+## Caller-managed lookup lock release
+
+The [caller lock-release report](corefp_lookup_release_report.md) establishes a source-managed acquisition-to-failure-cleanup interval in seven cold parent runs. Cleanup rereads the heap-lock slot, constructs an aligned record and requests release of the acquired pointer. The parent u64 input word advances before lookup and is not restored in tested failures; final X0 retains unlock result separately from the parent record marker. Native concurrency and upstream ABI semantics remain unknown.

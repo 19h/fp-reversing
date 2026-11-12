@@ -1413,3 +1413,7 @@ The [cold lookup increment](corefp_lookup_initialization_report.md) independentl
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata/re-entry increment](corefp_cold_metadata_report.md) independently checks six client profiles, 13345 original client visits, twelve lookup returns and 1044480 B of initial/final RAM. A separate frozen-engine daemon driver freshly reproduces three unchanged-ID rejections; live readback matches 1536 original bytes. Cache/failure retry semantics now include cold initialization, while the second-call lock-success premise and native endpoint/right identity remain explicit. The full goal remains active.
+
+## Caller-managed lookup lock release
+
+The [caller lock-release increment](corefp_lookup_release_report.md) independently checks seven cold parent profiles, 22812 client visits, 14 matching-pointer lock events and 1654784 B of initial/final RAM. It establishes selected caller failure cleanup, two UNSAT identities, one unaligned SAT falsifier and 1792 B of live readback. Native ownership, general re-entry, successful-request cleanup and cross-layer endpoint identity remain open. The full goal remains active.

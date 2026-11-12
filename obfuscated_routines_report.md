@@ -1621,3 +1621,7 @@ The [cold lookup report](corefp_lookup_initialization_report.md) adds complete s
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata/re-entry report](corefp_cold_metadata_report.md) independently joins lookup 0x1cdb24, original once callbacks, builder 0x90c8 and supplied-daemon demux/stub 0x100004b80/0x100004918. The original -304 metadata return is followed by lookup completion and retained name/flags; subsequent cache reuse still calls the write-lock helper. The common selected-name slot can hold primary or fallback service results. These are bounded source/model roles; native endpoint and lock-owner contracts remain unknown.
+
+## Caller-managed lookup lock release
+
+The [caller cleanup increment](corefp_lookup_release_report.md) recovers wrapper 0x457838 (660 B) as source control translation plus heap-lock-slot reread, and helper 0x1be978 (896 B) as aligned-record pointer/fallback selection plus pthread unlock at 0x1becc8. Seven complete cold parent failure paths establish matching acquisition/release pointer arguments. The accessed unlock record is 12 B; retained extra snapshot bytes are not ABI fields. Native ownership remains unknown.

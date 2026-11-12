@@ -158,3 +158,7 @@ The [client-path report](corefp_client_paths_report.md) continues the original p
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata and sequential re-entry increment](corefp_cold_metadata_report.md) replaces the warm-prefix premise for six new client profiles. It independently replays 13345 original client visits and twelve lookup returns, preserving original request/reply IDs 1203/1303. The shared cache cell holds either primary or fallback service results; retained metadata rejection does not force rediscovery. Every second invocation still reaches the write-lock API, so native re-entry remains conditional on unresolved unlock/ownership.
+
+## Caller-managed lookup lock release
+
+The [caller-managed release increment](corefp_lookup_release_report.md) resolves a source unlock outside lookup: parent 0x8e81c8 invokes wrapper 0x457838, which constructs a 12 B accessed unlock record and calls helper 0x1be978. Seven cold failure paths reach pthread_rwlock_unlock at 0x1becc8 with the earlier acquired pointer. The local lookup still contains no unlock; native ownership and other callers remain unestablished.

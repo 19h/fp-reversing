@@ -172,3 +172,7 @@ The selected target prefix has finite fixed work; external API work is excluded.
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata continuation](corefp_cold_metadata_report.md) completes six cold client cases and two lookups per instance. It joins original callbacks to the supplied daemon's unchanged-ID rejection and distinguishes successful-name retention from metadata validity. Failed discovery retries without repeating callbacks. Each second call still requires the explicit successful-lock model; native unlock/ownership remains unknown.
+
+## Caller-managed lookup lock release
+
+The [caller-managed release report](corefp_lookup_release_report.md) now joins the cold acquisition prefix to original caller failure cleanup. Seven complete parent runs pair the write-lock pointer with the later unlock argument, including static fallback. This establishes a release outside local lookup on selected paths; native synchronization and complete successful-request lifecycle remain unknown.

@@ -225,3 +225,7 @@ The [cold initialization report](corefp_lookup_initialization_report.md) execute
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata and re-entry report](corefp_cold_metadata_report.md) now joins original initialization to the unchanged-ID daemon rejection. Three primary-service cases return metadata status -304 yet copy selected name 0x5017 and flags 0x0a; a same-instance second call reuses those values without another metadata RPC. All six cases still reach write-lock acquisition twice. Native re-entry requires the surrounding unlock/owner contract.
+
+## Caller-managed lookup lock release
+
+The [caller lock-release increment](corefp_lookup_release_report.md) completes seven cold parent failure paths. Original caller 0x8e81c8 produces the lookup record and invokes cleanup wrapper 0x457838 at 0x8fc3f0; wrapper 0x457aa0 reaches unlock helper 0x1be978 and pthread_rwlock_unlock at 0x1becc8 with the acquired heap/static pointer. Parent marker, final X0 and the early X1-referenced u64 update are separate outputs. Successful-request cleanup and native ownership remain open.

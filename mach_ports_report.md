@@ -1515,3 +1515,7 @@ The [cold lookup report](corefp_lookup_initialization_report.md) establishes u32
 ## Cold metadata and sequential cache continuation
 
 The [cold metadata/re-entry report](corefp_cold_metadata_report.md) joins bootstrap output at 0x1ce1bc to metadata emission at 0x914c using unchanged request/reply IDs 1203/1303. Both service discoveries write image+0x1d44448; the separate cache cell +0x1d37838 remains zero. Synthetic client names 0x5017/0x5034 and reply name 0x5173 are distinguished from daemon received-envelope names 0x6403/0x1403. Source rejection cleanup at 0x9204 is modeled without native right retirement. Cache reuse produces no second RPC; native port identity and kext emission remain unknown.
+
+## Caller-managed lookup lock release
+
+The [caller lock-release report](corefp_lookup_release_report.md) distinguishes lock cleanup from service-right retirement. Seven cold failure paths request pthread unlock at 0x1becc8 after lookup; none calls mach_port_deallocate or emits the larger request1200. Four primary-service cases retain the known metadata emission at 0x914c; successful discovery leaves the selected-name cache populated. No native Mach right or kext emission is added.
