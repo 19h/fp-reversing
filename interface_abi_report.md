@@ -1,6 +1,6 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [scan-entry report](corefp_scan_entry_report.md) derives the common u64 scan initializer, the original shift-control producer and three earlier stack encoding pairs with XOR difference 0xeb3e515b. Source tail equations and a writer-free interval join equal final-fold carriers to the downstream phase seeds. The earlier arithmetic-pass transfer, arbitrary native control/admission and daemon/kext continuity remain unknown.
+Current extension: the [word-codec report](corefp_word_codec_report.md) proves first-pass u64 XOR storage and two compensated second-pass decoders that recover the same raw-word product. Sixteen store/read epochs, 32 component frames, eleven new UNSAT obligations and 131072 original-byte cases support the local interface. The full per-word recurrence, upstream control production, native admission and daemon/kext continuity remain unknown. The full goal remains active.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) separates record+`0x10` preparation input from message/context storage and recovers a canonical constructor interface. Arbitrary load-interface/store proofs and five phase bindings reconstruct both arrays; finite controls show first-block XOR effects without establishing a general chaining mode or native ABI.
 

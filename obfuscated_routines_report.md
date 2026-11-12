@@ -1,6 +1,6 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [scan-entry report](corefp_scan_entry_report.md) derives the common u64 scan initializer, the original shift-control producer and three earlier stack encoding pairs with XOR difference 0xeb3e515b. Source tail equations and a writer-free interval join equal final-fold carriers to the downstream phase seeds. The earlier arithmetic-pass transfer, arbitrary native control/admission and daemon/kext continuity remain unknown.
+Current extension: the [word-codec report](corefp_word_codec_report.md) proves first-pass u64 XOR storage and two compensated second-pass decoders that recover the same raw-word product. Sixteen store/read epochs, 32 component frames, eleven new UNSAT obligations and 131072 original-byte cases support the local interface. The full per-word recurrence, upstream control production, native admission and daemon/kext continuity remain unknown. The full goal remains active.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) identifies the two local arrays as encodings of one fixed byte permutation and an affine word expansion. A 36-instruction source lift and six complete private profiles verify all 3072 words under five encoding classes. Whole-transform identity and native admission remain unknown.
 

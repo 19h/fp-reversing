@@ -452,6 +452,7 @@ def main():
     if exists(BASE/'corefp_preparation_scans_report.md'):reports.add(BASE/'corefp_preparation_scans_report.md')
     if exists(BASE/'corefp_phase_parameters_report.md'):reports.add(BASE/'corefp_phase_parameters_report.md')
     if exists(BASE/'corefp_scan_entry_report.md'):reports.add(BASE/'corefp_scan_entry_report.md')
+    if exists(BASE/'corefp_word_codec_report.md'):reports.add(BASE/'corefp_word_codec_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2190,6 +2191,10 @@ def main():
         scan_entry=json.loads(read(ROOT/'corefp_scan_entry_checks.json'))
         manifest['validation']['corefp_scan_entry_increment_checks']=scan_entry['verified_counts']
         manifest['validation']['corefp_scan_entry_static_scope']=scan_entry['scope']
+    if exists(ROOT/'corefp_word_codec_checks.json'):
+        word_codec=json.loads(read(ROOT/'corefp_word_codec_checks.json'))
+        manifest['validation']['corefp_word_codec_increment_checks']=word_codec['verified_counts']
+        manifest['validation']['corefp_word_codec_static_scope']=word_codec['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

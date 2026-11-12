@@ -4,6 +4,8 @@ Both scan initializers implement one u64 mixer with three u32 XOR outputs. Their
 
 The downstream phase-mixer seeds have a more direct origin: W5 after the first scan and W12 after the second hold the scans' final folded value before the common bias is added. The common scan recurrence therefore gives equal seeds, regardless of the incoming accumulator triples. A source register census preserves the first carrier across the intervening interval, conditional on normal execution staying within that interval. This discharges the shared-seed part of the [phase-parameter contract](corefp_phase_parameters_report.md) under the existing scan/control premises; it does not establish arbitrary native input admission.
 
+The subsequent [word-codec increment](corefp_word_codec_report.md) establishes the first-pass XOR storage and compensated second-pass recovery of identical raw-word products. It checks sixteen stable word epochs and discharges that local product boundary within the earlier passes. The complete recurrence and the universal equal-seed/bank-XOR join remain unresolved.
+
 ## Evidence and assumption register
 
 The [producer](triage_evidence/recover_corefp_scan_entry.py), [checks archive](triage_evidence/corefp_scan_entry_checks.json.zst), [independent auditor](triage_evidence/audit_corefp_scan_entry.py), [audit archive](triage_evidence/corefp_scan_entry_audit.json.zst) and [publication verifier](triage_evidence/verify_corefp_scan_entry_publication.py) retain five source regions, two tail slices, a register-access census, thirty complete region frames/journals, twelve scan ends, control-flow records and queries. Twelve parent receipts and fifteen frozen dependencies are SHA-256 pinned. The three supplied inputs are unchanged.
