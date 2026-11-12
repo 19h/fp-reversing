@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) establishes four source-produced root records with operation0xc1f7, mode0x114e4318 and scalar0x0484c46a. Descriptor+8 and+0x0c feed distinct deallocation/overwrite extents. Original source stages20 VM bytes, then completes selected failures through `_vm_deallocate` and `_free`; their native effects remain unknown.
+Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) joins source-produced caller/VM/ingress records to the cold entropy/time ABI and two predicates. The added caller frames shift constructor locations by-576 B. Exact optional-pointer provenance, alternate stack fill and clock-error controls pass independent replay; native readiness remains unknown.
+
+Previous extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) establishes four source-produced root records with operation0xc1f7, mode0x114e4318 and scalar0x0484c46a. Descriptor+8 and+0x0c feed distinct deallocation/overwrite extents. Original source stages20 VM bytes, then completes selected failures through `_vm_deallocate` and `_free`; their native effects remain unknown.
 
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) recovers three source encodings for ingress+0/+8/+0x10/+0x14/+0x18, a common decoded root mode0x114e4318 and five scalar words. Original caller0x2e4280 decodes its input tag/scalar using a separate address key, constructs32 B metadata and reaches `_vm_allocate(task, address_out,4096,1)` in five checked prefixes. The VM API remains unexecuted, and whole reachability of the later ingress calls is unproved.
 

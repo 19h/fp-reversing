@@ -1,5 +1,7 @@
 # CoreFP coherent VM-buffer construction, root call and cleanup
 
+Subsequent continuation: the [caller-to-cold report](corefp_caller_cold_report.md) follows this original VM-success caller through the cold constructor with its source-produced nonzero-mode root record. Five independent prefixes decode/free the certificate, construct seed/tuple and complete both predicates, stopping before the optional-input read. No VM/metadata cleanup is reached on that deliberately incomplete continuation.
+
 Original caller `0x2e4280` now runs through declared VM effects to four complete ingress/root/cleanup returns with source-produced mode `0x114e4318`. Two VM-allocation failure controls complete the earlier cleanup route without entering the root. This closes the selected source-continuity gap in the [ingress callers report](corefp_ingress_callers_report.md); no parent frame or root record is patched.
 
 Cleanup routine `0x653c70..0x654104` uses separate descriptor words for the buffer overwrite count and `_vm_deallocate` size. It overwrites buffer bytes in descending address order, calls `_vm_deallocate`, overwrites all 32 metadata bytes, then calls `_free`. The byte pattern is address-derived and nonzero; it is not a zero-fill. The VM-failure route skips buffer overwrite but still calls deallocation with address/size zero. All API effects and backing retention are private models. Native allocation, ownership, right identity, successful protected processing and daemon/kext pairing remain unknown. The full goal remains active.

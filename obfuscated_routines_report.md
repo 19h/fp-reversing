@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies0x653c70 as the selected descriptor cleanup path: descending buffer overwrite, VM deallocation,32 B descriptor overwrite and free. The byte function is256-periodic and depends on source stack addresses. Six complete original caller executions include four coherent nonzero-mode root calls; independent oracles check16384 buffer bytes and192 metadata bytes.
+Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows original caller0x2e4280 through source-produced nonzero-mode records to the cold constructor, two predicates and explicit optional-pointer zero definition0x8ea890. Five independent prefixes check161155 visits; selector0 reaches0x8eb7a4 directly. Certificate processing was already present in earlier zero-mode cold fixtures.
+
+Previous extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies0x653c70 as the selected descriptor cleanup path: descending buffer overwrite, VM deallocation,32 B descriptor overwrite and free. The byte function is256-periodic and depends on source stack addresses. Six complete original caller executions include four coherent nonzero-mode root calls; independent oracles check16384 buffer bytes and192 metadata bytes.
 
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) classifies three conditional IA0x6073 calls as ingress0x5f4584 and one as sibling0x2233c8, with sixteen literal candidates unresolved. Coherent entry0x2e4280 confirms0x63cf64 as an output-cell reset and0x1ae0a4 as a32 B metadata allocator/initializer before a nested VM boundary. Forty-four new UNSAT obligations, one alignment SAT control and nine independent prefix/return replays support the stated local roles.
 

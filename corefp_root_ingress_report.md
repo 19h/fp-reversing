@@ -1,5 +1,7 @@
 # CoreFP root-record ingress, stack adjustment and result propagation
 
+Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows the actual caller-produced mode0x114e4318 and metadata/VM object through the cold constructor. Five independently replayed prefixes reach the same stopped optional-input frontier; no root record, PC or parent frame is patched.
+
 Subsequent coherent entry: the [VM lifecycle report](corefp_vm_lifecycle_report.md) now executes four original upstream calls through this ingress with caller-produced mode `0x114e4318`, the source-created metadata object and its VM backing. Complete selected failure returns and caller cleanup pass independent replay; the earlier zero-mode fixtures below retain their stated scope.
 
 Subsequent evidence: the [ingress callers report](corefp_ingress_callers_report.md) establishes three conditional local producers of this ingress record. Their mode preimage decodes to `0x114e4318`, whereas the twelve complete executions below deliberately use mode zero. The new coherent upstream entry stops earlier at `_vm_allocate`; it does not complete these caller-produced inputs through the root. The fixture results below retain their stated scope.

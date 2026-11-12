@@ -439,6 +439,7 @@ def main():
     if exists(BASE/'corefp_root_ingress_report.md'):reports.add(BASE/'corefp_root_ingress_report.md')
     if exists(BASE/'corefp_ingress_callers_report.md'):reports.add(BASE/'corefp_ingress_callers_report.md')
     if exists(BASE/'corefp_vm_lifecycle_report.md'):reports.add(BASE/'corefp_vm_lifecycle_report.md')
+    if exists(BASE/'corefp_caller_cold_report.md'):reports.add(BASE/'corefp_caller_cold_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2125,6 +2126,10 @@ def main():
         vm_lifecycle=json.loads(read(ROOT/'corefp_vm_lifecycle_checks.json'))
         manifest['validation']['corefp_vm_lifecycle_increment_checks']=vm_lifecycle['verified_counts']
         manifest['validation']['corefp_vm_lifecycle_static_scope']=vm_lifecycle['scope']
+    if exists(ROOT/'corefp_caller_cold_checks.json'):
+        caller_cold=json.loads(read(ROOT/'corefp_caller_cold_checks.json'))
+        manifest['validation']['corefp_caller_cold_increment_checks']=caller_cold['verified_counts']
+        manifest['validation']['corefp_caller_cold_static_scope']=caller_cold['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

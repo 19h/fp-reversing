@@ -1,5 +1,7 @@
 # CoreFP ingress callers, metadata construction and VM boundary
 
+Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) now composes this actual caller with the complete cold constructor prefix. Five profiles preserve source-produced metadata, VM and nonzero-mode root records through seed construction and both predicates, stopping before0x8eba44. Native admission, successful processing and lifetime remain unknown.
+
 Subsequent evidence: the [VM lifecycle report](corefp_vm_lifecycle_report.md) continues this original entry through declared VM results. Four complete nonzero-mode ingress/root calls and two VM-failure controls reach the outer return; source cleanup overwrites the buffer and metadata before deallocation/free calls. This supersedes the VM frontier as the current source-continuity limit, while native lifetime and successful protected processing remain unknown.
 
 Three original local caller paths select ingress routine `0x5f4584`, conditional on their original cached bank roots and dispatch base. Their common mode preimage is `0x2d2a8321`, which decodes to root mode `0x114e4318`. Five scalar preimages decode to five distinct nonzero root words. The earlier [ingress report](corefp_root_ingress_report.md) deliberately selected mode zero; its complete failure executions do not establish the behavior of these caller-produced inputs.

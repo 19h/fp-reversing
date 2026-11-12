@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies `_vm_deallocate` callsite0x654024 through original slot0x1d039d0, IA0x7bce, alongside VM-allocation callsite0x1ca598. Coherent source supplies task fixture0x4201 with VM address/4096 B or0/0 after allocation failure. Six declared deallocation results do not establish native rights, release or a matched daemon/kext exchange.
+Current extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows task fixture0x4201 through source VM allocation and bootstrap calls0x1ce1bc/0x1ce448, with declared primary1102 then fallback0/name0x5034. Five cold prefixes contain no request1200/1203 transaction, daemon child or Mach send/receive call before their stopped optional-input read. No native port transfer or right identity is added.
+
+Previous extension: the [VM lifecycle report](corefp_vm_lifecycle_report.md) identifies `_vm_deallocate` callsite0x654024 through original slot0x1d039d0, IA0x7bce, alongside VM-allocation callsite0x1ca598. Coherent source supplies task fixture0x4201 with VM address/4096 B or0/0 after allocation failure. Six declared deallocation results do not establish native rights, release or a matched daemon/kext exchange.
 
 Current extension: the [ingress callers report](corefp_ingress_callers_report.md) identifies CoreFP `_vm_allocate` callsite0x1ca598 and authenticated function slot0x1d04758. Its task argument comes through `_mach_task_self_` pointer slot0x1d14310 and the four-byte load at0x1ca548; declared task-name controls0x4201/0 propagate to the boundary. Five prefixes request4096 B with flags1 and stop before the API. No native right, message, allocation or daemon/kext pairing is established.
 
