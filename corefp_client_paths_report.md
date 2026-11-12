@@ -191,3 +191,7 @@ The [subtraction increment](fpsd1201_subtraction_report.md) continues eight orig
 ## CoreFP1201 complete precomputation continuation
 
 The [reduction/precomputation increment](fpsd1201_reduction_report.md) completes the arithmetic child and cursor wrapper in twelve positive one-word controls. Nine odd inputs establish R mod n, R^2 mod n and the negative inverse; even and bounded-zero controls retain separate classifications. The next original dependency is 0x9819c4 -> 0x1142c08.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [post-precomputation consumer handoff](fpsd1201_consumer_report.md) advances twelve audited checkpoints through 0x1142c08 and 0x1142154 to the unexecuted call 0x114245c -> 0x74fd0c. Its incoming and outgoing 48 B records connect the prepared pair, modulus and imported input; complete arithmetic and native request1201 delivery remain unknown.

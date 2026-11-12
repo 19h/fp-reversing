@@ -247,3 +247,7 @@ The client-side [subtraction continuation](fpsd1201_subtraction_report.md) estab
 ## CoreFP1201 complete precomputation continuation
 
 The client-side [complete precomputation return](fpsd1201_reduction_report.md) establishes twelve positive local child/wrapper returns and a later unexecuted consumer. Native receive continuity, reply-right identity and daemon/kext pairing remain unknown.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The client-side [consumer handoff](fpsd1201_consumer_report.md) establishes a further local arithmetic-record boundary. Twelve private continuations stop before 0x114245c -> 0x74fd0c. No native receive, reply-right or daemon/kext identity is established by this increment.

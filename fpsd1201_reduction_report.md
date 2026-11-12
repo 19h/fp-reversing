@@ -145,3 +145,7 @@ Principal-call oracles check 468 shifts, 127 raw copies, 1148 comparisons and 32
 | Low | Prove complete bounded reduction/square loops. | Current universal cursor identities and finite whole-call results remain separate evidence classes. |
 
 Quality gates: **QG1** no normative content is required. **QG2** RF1-RF8 state assumptions, dependent results and probes. **QG3** routine roles, data/control flow, record/call ABIs, external/environmental controls, stack channels, port consequences and continuation are covered. **QG4** B denotes bytes; limbs are 32 bits; R=2^32; u32/u64 operations, cursor units and the exponent recurrence are reproducible. **QG5** odd/even/zero distinctions, finite bounds, tested aliases and native/equivalence limits are explicit. **QG6** primary binary bytes, original pointer rows, independent source parsing/replay and separate arithmetic oracles support claims. **QG7** impact-ranked expansion remains bounded. The full investigation remains active.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [consumer handoff continuation](fpsd1201_consumer_report.md) resumes the twelve positive checkpoints through 0x9819c4 -> 0x1142c08 and stops before 0x114245c -> 0x74fd0c. It establishes subsequent records and cursor staging while preserving this report's bounded zero/even classifications and native-evidence limits.

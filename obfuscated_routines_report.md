@@ -1565,3 +1565,7 @@ The [subtraction report](fpsd1201_subtraction_report.md) establishes 0x5e8158 as
 ## CoreFP1201 complete precomputation continuation
 
 The [precomputation report](fpsd1201_reduction_report.md) identifies 0x14f8d28 as a Montgomery-context preparer on retained positive one-word odd inputs, 0x9dd7e4 as its square cursor wrapper and 0x9dc6d4 as the square implementation. Complete original returns, independent REDC/modular oracles, explicit even/zero controls and exact cursor emission locations support the bounded roles.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [consumer handoff report](fpsd1201_consumer_report.md) recovers 0x1142c08 as a cursor wrapper and the executed prefix of 0x1142154 as a record-staging consumer. Twelve audited continuations pass Q.second, modulus, Q, local scratch and imported input to the unexecuted 0x74fd0c dependency. Montgomery-product and exponentiation roles remain hypotheses pending complete receiving arithmetic.

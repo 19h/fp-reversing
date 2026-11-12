@@ -1736,3 +1736,7 @@ The [subtraction increment](fpsd1201_subtraction_report.md) recovers the 24 B si
 ## CoreFP1201 complete precomputation continuation
 
 The [precomputation increment](fpsd1201_reduction_report.md) resolves the pair as two descriptor pointers and a negative-inverse word on retained odd inputs. It adds the 40 B square record, its shared wrapper/implementation ABI and exact cursor/stack-adjustment emission sites. Native context production and endpoint continuity remain open.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [CoreFP1201 consumer handoff](fpsd1201_consumer_report.md) recovers incoming {Q, candidate result, encoded state, auxiliary, input, modulus} and outgoing {Q.second, encoded state, modulus, Q, scratch, input} 48 B prefixes. The original outgoing call is 0x114245c -> 0x74fd0c through slot 0x1d03d18, IA modifier 0xca9b. Receiving arithmetic semantics and complete return remain unknown.

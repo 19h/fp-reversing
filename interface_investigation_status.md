@@ -1379,3 +1379,7 @@ The [CoreFP1201 subtraction increment](fpsd1201_subtraction_report.md) recovers 
 ## CoreFP1201 complete precomputation continuation
 
 The [CoreFP1201 reduction increment](fpsd1201_reduction_report.md) independently checks thirteen profiles and 1163611 original visits. Twelve positive controls complete precomputation and its cursor wrappers; nine odd controls establish R/R^2 and inverse roles, three even controls remain diagnostic, and zero stops after 64 subtraction returns. The next original dependency is unexecuted at 0x9819c4 -> 0x1142c08. Source-produced context, complete request1201 processing, native rights and daemon/kext/deeper lineage remain open. The full goal remains active.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [CoreFP1201 consumer increment](fpsd1201_consumer_report.md) resumes twelve positive precomputation checkpoints and independently checks 3888 new original visits, two record contracts and early cursor restoration. The new frontier is unexecuted 0x114245c -> 0x74fd0c. Prior prefix execution is receipt-pinned rather than rerun. Complete consumer/request1201 return, source-produced context, native rights and daemon/kext/deeper lineage remain open. The full goal remains active.

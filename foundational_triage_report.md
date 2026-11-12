@@ -1607,3 +1607,7 @@ The [subtraction report](fpsd1201_subtraction_report.md) adds exact signed-count
 ## CoreFP1201 complete precomputation continuation
 
 The [reduction report](fpsd1201_reduction_report.md) establishes the odd one-word Montgomery pair roles, literal square recurrence, seed-dependent square frames and zero adjustments from both wrapper layers. The even counterexample and bounded zero loop distinguish numerical preconditions from native admission.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [post-precomputation consumer report](fpsd1201_consumer_report.md) recovers two 48 B record prefixes, exact original dispatch rows, optional auxiliary provenance and the early cursor restoration in 0x1142154. Independent continuation replay checks 3888 original visits from twelve pinned checkpoints; prior prefix instructions are not rerun. Complete consumer semantics and native lineage remain open.

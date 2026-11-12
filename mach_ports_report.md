@@ -1481,3 +1481,7 @@ The [subtraction continuation](fpsd1201_subtraction_report.md) establishes a loc
 ## CoreFP1201 complete precomputation continuation
 
 The [complete precomputation continuation](fpsd1201_reduction_report.md) adds arithmetic outputs and two verified cursor-adjustment channels. These selected paths emit no Mach right and invoke no Mach API. Native endpoint/right identity and daemon/kext pairing remain unknown; established port emission evidence is unchanged.
+
+## CoreFP1201 post-precomputation consumer handoff
+
+The [post-precomputation consumer continuation](fpsd1201_consumer_report.md) adds private process-pointer records and exact authenticated call sites. Its 3888 selected executed instructions invoke no Mach API and emit no Mach right. Actual wrapper adjustment emission remains beyond its boundary; native endpoint/right ownership and daemon/kext pairing remain unknown.
