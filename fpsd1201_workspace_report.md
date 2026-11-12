@@ -4,6 +4,8 @@ The original parent constructs an SP-relative context C, writes prefix `00 66 64
 
 The subsequent [initialized parent and predicate report](fpsd1201_predicates_report.md) supplies private owner/cursor/key cells from the frozen original caller prefix: cursor 0x9a0, P=SP+0x9c0 and C=P+0x980. Four separate continuations recover local predicate contracts and stop before atomic/global-pointer frontiers. Request1200 and its return checks are still explicitly omitted; this does not close the later gate gap or define the remaining 119 context bytes.
 
+The subsequent [token, entropy and seed report](fpsd1201_seed_report.md) resumes the pinned zero-control CASAL frontier through a declared sequential model. Source token restoration precedes entropy and a complete 624-word seed expansion. The saved C+0x6f0 view is used as a 32-byte tuple/time scratch area. Twelve cases retain the request1200 gap and stop before later key mixing; native initialization, complete context-byte generation and pairing remain unknown.
+
 ## Primary evidence and assumption register
 
 The [producer](triage_evidence/recover_fpsd1201_workspace.py), [journals](triage_evidence/fpsd1201_workspace_checks.json), [independent auditor](triage_evidence/audit_fpsd1201_workspace.py), [replay receipt](triage_evidence/fpsd1201_workspace_audit.json) and [publication verifier](triage_evidence/verify_fpsd1201_workspace_publication.py) retain the bounded evidence. Logical JSON links resolve to compressed `.json.zst` artifacts. The existing complete parent capture is sufficient; no new IDA access or IDB edit is required.

@@ -427,6 +427,7 @@ def main():
     if exists(BASE/'fpsd1201_handoff_report.md'):reports.add(BASE/'fpsd1201_handoff_report.md')
     if exists(BASE/'fpsd1201_workspace_report.md'):reports.add(BASE/'fpsd1201_workspace_report.md')
     if exists(BASE/'fpsd1201_predicates_report.md'):reports.add(BASE/'fpsd1201_predicates_report.md')
+    if exists(BASE/'fpsd1201_seed_report.md'):reports.add(BASE/'fpsd1201_seed_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2065,6 +2066,10 @@ def main():
         predicates_checks=json.loads(read(ROOT/'fpsd1201_predicates_checks.json'))
         manifest['validation']['fpsd1201_predicates_increment_checks']=predicates_checks['verified_counts']
         manifest['validation']['fpsd1201_predicates_static_scope']=predicates_checks['scope']
+    if exists(ROOT/'fpsd1201_seed_checks.json'):
+        seed_checks=json.loads(read(ROOT/'fpsd1201_seed_checks.json'))
+        manifest['validation']['fpsd1201_seed_increment_checks']=seed_checks['verified_counts']
+        manifest['validation']['fpsd1201_seed_static_scope']=seed_checks['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

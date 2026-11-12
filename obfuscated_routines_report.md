@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) recovers complete address-keyed predicate leaves at 0x274ed0 and 0x1abbe0, their distinct output fields and unsigned-comparison direction. Two complete source lifts and 256 isolated original-byte cases pass. Four source-initialized parent continuations reach an atomic/read frontier under an explicit skipped request1200/status-check premise; native readiness and IPC pairing remain unknown.
+Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) classifies the original 0x8eb824 seed loop as the exact 624-word MT19937 seed recurrence, with separate entropy/time callsites and seed-tuple stores. Eight complete expansions check 4992 oracle words and five independent source obligations. Full surrounding generator identity, later key mixing/output and native context remain unresolved.
+
+Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) recovers complete address-keyed predicate leaves at 0x274ed0 and 0x1abbe0, their distinct output fields and unsigned-comparison direction. Two complete source lifts and 256 isolated original-byte cases pass. Four source-initialized parent continuations reach an atomic/read frontier under an explicit skipped request1200/status-check premise; native readiness and IPC pairing remain unknown.
 
 Prior extension: the [CoreFP workspace report](fpsd1201_workspace_report.md) resolves selected SP-relative construction at 0x8ea19c, exact prefix stores at 0x8ea1f8/0x8ea200 and pre-helper status/record staging at 0x8f33dc onward. It distinguishes the SP+0x1f0 context pointer from its later byte-selector overwrite. Thirty-five fragment replays and two sealed daemon prefix witnesses pass; full native context continuity, field meanings and daemon/kext pairing remain unknown.
 

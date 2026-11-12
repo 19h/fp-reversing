@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) refreshes the modeled prefix before request1200, then explicitly omits its call and two return checks. The later original-byte continuations reach no imported Mach operation and add no incoming/outgoing native port, right or emission site. The cached name 0x5017 remains a fixture. Atomic/global initialization frontiers do not pair native daemon/kext traffic.
+Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) resolves non-Mach environmental imports at 0x8eb800/0x8eb94c/0x8eb9a4 (_arc4random) and 0x8eb8e0 (_gettimeofday). The twelve bounded continuations add no incoming/outgoing native port, right transfer or Mach emission site. Request1200/status checks remain omitted and native daemon/kext pairing remains unknown.
+
+Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) refreshes the modeled prefix before request1200, then explicitly omits its call and two return checks. The later original-byte continuations reach no imported Mach operation and add no incoming/outgoing native port, right or emission site. The cached name 0x5017 remains a fixture. Atomic/global initialization frontiers do not pair native daemon/kext traffic.
 
 Prior extension: the [CoreFP workspace report](fpsd1201_workspace_report.md) recovers upstream candidate/context pointer producers and a shared nine-byte client/daemon prefix. It executes no API and emits no Mach message or right. The saved pre-helper word, root-helper marker and exporter-local status remain separate channels; endpoint/right history and matched native daemon/kext exchange remain unknown. The later request1201 builder emission remains 0x8e04.
 

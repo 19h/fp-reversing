@@ -2,6 +2,8 @@
 
 The original modeled caller prefix supplies the previously missing frame cells: cursor `0x9a0`, owner P=SP+0x9c0 and the address-derived record key. A separate continuation recovers two complete obfuscated predicate leaves and reaches either an atomic instruction or an unresolved global-pointer read. The request1200 call and its return checks are explicitly omitted. This establishes conditional source contracts and improves the workspace geometry; native success, remaining context bytes, actual ports and daemon/kext pairing remain unknown.
 
+The subsequent [token, entropy and seed report](fpsd1201_seed_report.md) resumes the pinned zero-control CASAL frontier through a declared sequential model. Source token restoration precedes entropy and a complete 624-word seed expansion. The saved C+0x6f0 view is used as a 32-byte tuple/time scratch area. Twelve cases retain the request1200 gap and stop before later key mixing; native initialization, complete context-byte generation and pairing remain unknown.
+
 ## Primary evidence and assumption register
 
 The [producer](triage_evidence/recover_fpsd1201_predicates.py), [checks](triage_evidence/fpsd1201_predicates_checks.json), [independent auditor](triage_evidence/audit_fpsd1201_predicates.py), [receipt](triage_evidence/fpsd1201_predicates_audit.json) and [publication verifier](triage_evidence/verify_fpsd1201_predicates_publication.py) retain the evidence. Logical JSON links resolve to compressed `.json.zst` files. Existing original file bytes and parent capture are sufficient; no new IDA access or IDB edit is required.
