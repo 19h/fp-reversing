@@ -1479,3 +1479,7 @@ The [caller lock-release increment](corefp_lookup_release_report.md) independent
 ## Selector-21 output stream and adapter frontier
 
 The [output-stream report](versioned_output_stream_report.md) checks eight distinct second-object paths and eight counterfactual null returns, 10,064 new visits, 27 UNSAT source queries and 1,280 bank inputs. Independent byte epochs cover all 6,688 read bytes, 3,424 write bytes and 2,304 snapshot bytes. The pending success call is now identified as a private stack adapter with a matching record decoder and inner target. The remaining frontier is the inner routine's output/result/header effects and selector-21 copyback. No native call executes; the full goal remains active.
+
+## Selector-21 inner-entry and error-return progress
+
+The [inner-entry report](versioned_inner_entry_report.md) checks eight strict prefixes and sixteen separate continuations, 18,160 source visits, ten UNSAT equations and 1,280 bank inputs. Independent epochs cover 16,288 read bytes, 14,304 write bytes, eight discarded probe bytes and 3,840 snapshot bytes. One sampled error path now returns through the inner routine and adapter with encoded status and zero delta; the other fixture stops before a typed 104 B allocation. Allocation continuation, environmental-byte writers, auxiliary lifecycle, cleanup/copyback and native pairing remain open. The full goal remains active.

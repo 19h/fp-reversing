@@ -1687,3 +1687,7 @@ The [caller cleanup increment](corefp_lookup_release_report.md) recovers wrapper
 ## Second stream, final adapter and inner decoder
 
 The [output-stream increment](versioned_output_stream_report.md) identifies 0xfffffe000a5a82a4..0xfffffe000a5a8320 as the selected output-stream constructor slice and 0xfffffe000a69ee38..0xfffffe000a69f064 as the complete final-text stack adapter. Five original bank identities select its controller/seed addresses, table base and inner 0xfffffe000a6890dc. The inner prefix decodes the caller's address-keyed record and restores its header; full inner semantics and final preservation remain unknown. These are descriptive roles, not native symbol renames.
+
+## Inner-entry flag gate, state table and error producer
+
+The [inner-entry increment](versioned_inner_entry_report.md) follows 0xfffffe000a6890dc through record/bounds setup and a strict auxiliary frontier. It establishes the first flag-bit gate, sixteen signed relative entries, the modular 8 B extent predicate and the source producer of result C+0x20. Sampled flag-1 error paths return through the stack adapter; flag 0 reaches site.FPAESParameters allocation. The complete routine, flag lifecycle and successful processing semantics remain unknown.

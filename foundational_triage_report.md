@@ -1707,3 +1707,7 @@ The [caller lock-release report](corefp_lookup_release_report.md) establishes a 
 ## Output construction, record representation and stack control
 
 The [output-stream increment](versioned_output_stream_report.md) adds 16 source continuations / 10,064 new visits and 27 UNSAT equations. It establishes the 28 B defined stream prefix, address-derived record key and matching decoder, reverse 32 B input-object overwrite on a null control, and separate private reservation / exported stack-delta channels. The terminal adapter is bounded by the exact text/stub boundary. Actual final header preservation, output writes and native delivery remain unknown.
+
+## Auxiliary-state frontier, guard and relative state table
+
+The [inner-entry increment](versioned_inner_entry_report.md) retains an arbitrary coherent kernel stack guard, a strict undefined 8 B auxiliary read and separately declared environmental-byte fixtures. It verifies 18,160 source visits, ten UNSAT equations and sixteen signed relative-table targets. The flag-1 error paths preserve the header and export zero deltas; other paths and native allocator/global-state initialization remain unknown. An on-disk zero guard or flag is not a universal runtime premise.

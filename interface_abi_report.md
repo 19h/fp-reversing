@@ -1836,3 +1836,7 @@ The [caller cleanup ABI report](corefp_lookup_release_report.md) separates a 4 B
 ## Selector-21 second-stream and stack-delta ABI
 
 The [output-stream contract](versioned_output_stream_report.md) gives H2's exact fields and W+0x60 record, with K=(low32(C) XOR 0x6133a0c8)*0x84d77373 mod 2^32. Mode and marker flow through the matching inner decoder; this pack does not read R+0x10. Call 0xfffffe000a5a8508 passes C and FP-0x68 to adapter 0xfffffe000a69ee38. Its selected inner call targets 0xfffffe000a6890dc; final low16 header difference exports a 16-byte-aligned caller delta independently of record result C+0x20. The actual delta and complete operation remain unknown.
+
+## Selector-21 inner bounds, status producer and allocation class
+
+The [inner-entry contract](versioned_inner_entry_report.md) recovers bounds calls on W+0x4c0/W+0x4000 and A+0x280/A+0x1000, task relay to inner-SP+0x2d8, and the first gate's bit-0 dependence on byte 0xfffffe000ccca078. An 8 B cursor/endpoint test writes 0xce515b53 to input-stream +0x18 and then C+0x20 on the retained flag-1 error paths; their adapter delta is zero. Flag 0 reaches a pending 104 B site.FPAESParameters allocation. These source contracts retain explicit guard, auxiliary-origin and environment premises.

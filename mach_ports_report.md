@@ -1581,3 +1581,7 @@ The [caller lock-release report](corefp_lookup_release_report.md) distinguishes 
 ## Output-stream task field and private return channels
 
 The [output-stream increment](versioned_output_stream_report.md) stores the task from R+0 in the reused private record at C+0x48. That pointer store does not establish a Mach-right transfer. The adapter's caller-cell delta and C+0x20 result are private return channels. Sixteen source-only paths introduce no output-B write, new Mach port, right retirement or IPC emission; native connection/task/right pairing remains unknown.
+
+## Inner task relay and bounded status return
+
+The [inner-entry increment](versioned_inner_entry_report.md) relays the private task operand to inner-SP+0x2d8, then follows two environmental fixtures to a pending allocation or pending output-stream free. Its encoded stream/record status and caller stack delta remain private return channels. No new Mach port, right transfer/retirement, output-B write or IPC emission is established. Native daemon/kext task and connection pairing remains unknown.

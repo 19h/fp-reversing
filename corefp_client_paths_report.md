@@ -291,3 +291,7 @@ The [caller lock-release increment](corefp_lookup_release_report.md) completes s
 ## Selector-21 output stream and private adapter
 
 The [output-stream increment](versioned_output_stream_report.md) follows the eight retained reader cases under distinct-object and null second-return models. It initializes a 32 B wrapper around the existing 512 B output-B span and packs both streams, task and workspace bounds into W+0x60. Source selection resolves adapter 0xfffffe000a69ee38 to inner 0xfffffe000a6890dc. No new output-B byte, native connection/right or completed copyback is established.
+
+## Selector-21 inner-entry environmental paths
+
+The [inner-entry increment](versioned_inner_entry_report.md) carries the selected output-stream path through original probe/bounds source and a strict undefined A+0x270 frontier. Separate stable flag-byte fixtures reach either a pending 104 B FPAESParameters allocation or an encoded input-extent error returning through the adapter with zero delta, then pending output-stream free. Neither path establishes output-B writes, native connection/right pairing or completed copyback.

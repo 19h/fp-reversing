@@ -161,3 +161,7 @@ Run the extractor, verify/compress the receipt with zstd level 22, refresh the m
 - **QG5**: Pass. Source paths, modeled returns, object/data storage, frame phases, header entry/final state, status and stack delta remain distinct.
 - **QG6**: Pass. Original bytes/chains, pinned receipts, arbitrary-input equations, exhaustive tables and independent byte epochs supply scoped provenance.
 - **QG7**: Pass. Remaining inner/output, header, copyback, extraction and native-pairing work is bounded and impact-ranked above.
+
+## Inner-entry continuation and path-specific zero delta
+
+The [inner-entry increment](versioned_inner_entry_report.md) preserves this report's pending-call receipts and lifts the original adapter/probe/inner source separately. It establishes a strict undefined auxiliary read, two environmental-byte fixtures, a pending 104 B allocation, and an extent-error return with status 0xce515b53 and zero delta on eight selected paths. Full-path header preservation, successful output production, remaining cleanup and native interaction remain unknown.
