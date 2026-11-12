@@ -1,5 +1,7 @@
 # CoreFP word-header addresses and recurrence-input producers
 
+Subsequent selector evidence: the [word-selector report](corefp_word_selectors_report.md) derives both complete four-read selector projections, the same decoded buffer base and the u64 divisor cache. Under the stated source, backing, control and epoch premises, Euclidean certificates establish 0 <= r1,r2 < N for nonzero 29-bit N; constant-word controls demonstrate different splits. This refines the external remainder premises below while retaining native admission, backing and hardware PAC limits.
+
 All four word headers recover the same logical index from an encoded u32 counter and form `buffer + 8*index`, modulo 2^64. Original setup code also constructs the initial hash literal, recurrence parameters and fold metadata. A single upstream control, entry W22=`0xf82c`, produces the retained first word key, scan-shift control and both second-pass decoder controls through distinct register/stack epochs. This replaces several [word-recurrence premises](corefp_word_recurrence_report.md) with original source producers, conditional on normal control flow and the remaining master-control/backing interfaces.
 
 The producer of that master W22, native buffer ownership, complete selector/target admission and arbitrary native lengths remain unknown. A header address theorem is not a claim that the addressed eight bytes are backed. The full investigation remains active.

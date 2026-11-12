@@ -1,5 +1,7 @@
 # CoreFP word-loop predicates, splits and authenticated dispatch rows
 
+Subsequent selector evidence: the [word-selector report](corefp_word_selectors_report.md) derives both complete four-read selector projections, the same decoded buffer base and the u64 divisor cache. Under the stated source, backing, control and epoch premises, Euclidean certificates establish 0 <= r1,r2 < N for nonzero 29-bit N; constant-word controls demonstrate different splits. This refines the external remainder premises below while retaining native admission, backing and hardware PAC limits.
+
 Original source reduces the four word-loop decisions to unsigned cyclic interval membership. Under the selected operation and typed count/remainder, backing, table and normal-flow interfaces below, each word pass visits indexes `0..N-1` in order. Its head length is `H=max(1,r)` for selector remainder r; the tail contains `N-H` words. Both segments are nonempty for `2 <= N <= 0x1fffffff` and `0 <= r < N`. The retained head lengths are not universal constants.
 
 This extends the [input-lineage report](corefp_input_lineage_report.md), [word-input report](corefp_word_inputs_report.md) and [common-recurrence report](corefp_word_recurrence_report.md). It supplies conditional control and target-row evidence for their common word stream. Native admission, allocation extent, hardware pointer authentication, concurrency and daemon/kext pairing remain unknown. The full transform algorithm remains unknown.
