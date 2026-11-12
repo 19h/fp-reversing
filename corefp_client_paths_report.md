@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) establishes source adapter0x8fcfa0 around protected root0x8e81c8. The root receives an internal word initialized to external_seed-256; on25 complete private failure paths the root's early increment cancels that bias and the adapter writes external zero. Record marker and residualX0 remain independent. Actual upstream record production, successful primary processing and native pairing remain unknown.
+
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) joins the earlier local seed/predicate contracts to a coherent cold fallback root. Nine independent paths check environmental ABI inputs, complete seed state, first mixing and the stopped optional-input read. The 119 B context suffix retains diagnostic stack fill; successful output/IPC and native pairing remain unknown.
 
 Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) connects original cold callbacks and lookup to successful certificate allocation, DER staging, five request1200 transport-error returns and matching-pointer caller cleanup. A separate cold fallback route bypasses request1200 under original flags and reaches the first entropy API without a PC gap. Successful primary reply handling, native transport/ownership and daemon/kext pairing remain unknown.

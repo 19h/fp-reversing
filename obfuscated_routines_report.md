@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) identifies0x8fcfa0 as an adapter around root0x8e81c8, with source reaching-load proof through slot0x1d05150 in25 private runs. Its u64 input word seeds a biased private stack word; its external result is the low16 child delta multiplied by16. Four literal IA0x41d4 call candidates and four same-diversity targets are enumerated; the other three call targets remain unknown in this increment.
+
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) connects original root 0x8e81c8 to complete seed expansion, one mixed-state update and source-produced calls to predicates0x1abbe0/0x439734, without the earlier RPC PC gap. Their outputs remain separate at record+0x20/+0. The context suffix remains diagnostic fill; all nine paths stop before the optional-input word read.
 
 Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) joins root0x8e81c8, certificate decoding/shift, builder0x8ae0, reply-port cleanup and caller unlock on five complete transport-error paths. It recovers the flags-bit1 dispatch and reaches the local constructor from cold fallback without the previous RPC PC gap. The sequential CASAL effect and entropy stop retain explicit native/concurrency limits.

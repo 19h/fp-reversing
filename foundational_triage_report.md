@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) separates the external caller word from a source-created stack word. Adapter0x8fcfa0 initializes the latter to seed-256; root0x8e81c8 restores it to seed on the selected failure paths, and the adapter writes zero externally. Its general result truncates the delta to16 bits before multiplying by16, so distinct deltas can collide. Native input provenance and the output's broader meaning remain unknown.
+
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) establishes same-epoch cold constructor continuity, exact entropy/clock data flow and a source-defined nine-byte context prefix. The remaining 119 B retain declared stack fill, and a no-write clock-failure model feeds retained scratch bytes into the tuple. These are private source/model observations; native disclosure, fault and daemon/kext linkage are unestablished.
 
 Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) distinguishes the original 760 B decoded container, shifted heap DER and separate 756 B stack copy before free. It connects the cold flags-bit1 branch to request1200 failure cleanup or an uninterrupted fallback constructor prefix, with explicit allocator/transport/CASAL models. Native ownership, successful primary processing and cross-level lineage remain unknown.

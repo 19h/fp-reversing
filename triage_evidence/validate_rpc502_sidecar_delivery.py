@@ -435,6 +435,7 @@ def main():
     if exists(BASE/'corefp_lookup_release_report.md'):reports.add(BASE/'corefp_lookup_release_report.md')
     if exists(BASE/'corefp_request1200_failure_report.md'):reports.add(BASE/'corefp_request1200_failure_report.md')
     if exists(BASE/'corefp_cold_seed_report.md'):reports.add(BASE/'corefp_cold_seed_report.md')
+    if exists(BASE/'corefp_root_adapter_report.md'):reports.add(BASE/'corefp_root_adapter_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2105,6 +2106,10 @@ def main():
         cold_seed=json.loads(read(ROOT/'corefp_cold_seed_checks.json'))
         manifest['validation']['corefp_cold_seed_increment_checks']=cold_seed['verified_counts']
         manifest['validation']['corefp_cold_seed_static_scope']=cold_seed['scope']
+    if exists(ROOT/'corefp_root_adapter_checks.json'):
+        root_adapter=json.loads(read(ROOT/'corefp_root_adapter_checks.json'))
+        manifest['validation']['corefp_root_adapter_increment_checks']=root_adapter['verified_counts']
+        manifest['validation']['corefp_root_adapter_static_scope']=root_adapter['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

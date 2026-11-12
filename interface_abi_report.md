@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) recovers entryX0 passthrough, entryX1 external u64 word, 64 B fixed frame, 16..256 B dynamic padding and an internal u64 child word biased by-256. The postcall eight-byte external store is16*((child_word-seed)mod65536); record+0 and residualX0 remain separate. Twenty-five complete private failures produce external zero. Shared IA diversity0x41d4 occurs on four distinct targets and does not identify a callee.
+
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) recovers same-epoch context C, tuple T=C+0x6f0 and 16 B clock scratch at T+16, alongside three entropy callsites and separate predicate output offsets. Nine complete seed arrays and first mixes are independently checked. Source defines C[0:9];C[9:128] remains initial private fill, and the optional-input load is not executed.
 
 Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) retains the complete source-staged request1200 64 B layout, OOL756 lifetime, reply-port helper selector and distinct parent-record/X0 results. Original catalog rows corroborate daemon IDs[1200,1205) and max reply212 B versus client capacity220 B; the 8 B difference has unknown semantics. The fallback flags0 route bypasses the request.
