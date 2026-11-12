@@ -1637,3 +1637,7 @@ The [network-identity report](corefp_network_identity_report.md) establishes a s
 ## Cold initialization provenance
 
 The [cold lookup report](corefp_lookup_initialization_report.md) replaces an omitted warm-once assumption with original callback execution for fourteen private profiles. Lock slots image+0x1d444a8 and +0x1d47fb8 are published only after zero init status; a missing first heap lock selects static backing +0x1d27bf0. The first callback clears cached names and metadata regardless of the tested constructor outcomes. Fresh live-IDB bytes corroborate source; native concurrency, rights, optional-input holder/selector initialization and cross-layer pairing remain unresolved.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata/re-entry increment](corefp_cold_metadata_report.md) retains a coherent initialization-to-rejection-to-cache path with original IDs. Six independent client replays cover two calls each, including primary/fallback failures and retry. The selected-name cell is shared by primary/fallback results. Metadata failure leaves primary flags 0x0a and the acquired-name cache intact; cache reuse still reaches write-lock acquisition. Native lock ownership, endpoint identity and deeper linkage remain unknown.

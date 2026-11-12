@@ -1617,3 +1617,7 @@ The [cold lookup report](corefp_lookup_initialization_report.md) adds complete s
 | 0x20f37c | Once-protected heap/static lock selection and write-lock call | 896 B |
 | 0x59e868 | Once callback updating encoded tokens and invoking a no-op | 600 B |
 | 0x438d40 | Single RET leaf | 4 B |
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata/re-entry report](corefp_cold_metadata_report.md) independently joins lookup 0x1cdb24, original once callbacks, builder 0x90c8 and supplied-daemon demux/stub 0x100004b80/0x100004918. The original -304 metadata return is followed by lookup completion and retained name/flags; subsequent cache reuse still calls the write-lock helper. The common selected-name slot can hold primary or fallback service results. These are bounded source/model roles; native endpoint and lock-owner contracts remain unknown.

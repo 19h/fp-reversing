@@ -132,10 +132,10 @@ Both engines execute original instruction bytes in isolated private spaces. The 
 The increment passes3100 assertions:11 exhaustive bank identities,20 selected resolutions,two decoded service strings,three SMT obligations,16 lookup/cache cases,one protected caller case,three paired-image cases,six static CoreFP functions and four daemon ranges. Original instruction hashes and dependency hashes are reread;the arm64e32-byte layout and bootstrap/MIG constants compile with exit0. QG1-QG7 pass for the stated increment;the full objective remains active and incomplete. The three supplied original inputs and IDBs are preserved.
 
 ```text
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/recover_corefp_lookup.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_lookup.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/probe_corefp_protocol_pair.py
-/Users/___/Downloads/zut/.venv/bin/python triage_evidence/validate_corefp_lookup_delivery.py
+python triage_evidence/recover_corefp_lookup.py
+python triage_evidence/probe_corefp_lookup.py
+python triage_evidence/probe_corefp_protocol_pair.py
+python triage_evidence/validate_corefp_lookup_delivery.py
 ```
 
 Static recovery/readback is O(B+F+R+V+256K),with image bytes B,fixups F,retained ranges R,source visits V and bank identities K;space O(B+F+R+V). Private source probes retain the30000-hook bound;daemon children have a2000-hook bound and explicit source-range allowlist. Solver complexity is separate,with30 s per-query limits. Sizes are bytes and fixed-width modular arithmetic is explicit. No timing or native scheduling claim is made.
@@ -154,3 +154,7 @@ No source-analysis blocker is asserted. Native ports,rights,PAC,concurrency,comp
 ## Subsequent acquisition-to-request and secondary endpoint recovery
 
 The [client-path report](corefp_client_paths_report.md) continues the original protected caller beyond lookup:the returned name reaches the64-byte request1200 destination,including after modeled metadata failure. Its OOL payload is a756-byte FPPineBoard certificate decoded from an embedded760-byte container and staged on the stack before emission. The separate56-byte request1200 belongs to `com.apple.adid`,with a28-byte XPC payload,Mach fallback,invalid-destination bootstrap/retry and a recovered event handler. This resolves the former endpoint ambiguity within the recorded source/private boundaries. Native pairing,receiver processing and rights lifetime remain open.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata and sequential re-entry increment](corefp_cold_metadata_report.md) replaces the warm-prefix premise for six new client profiles. It independently replays 13345 original client visits and twelve lookup returns, preserving original request/reply IDs 1203/1303. The shared cache cell holds either primary or fallback service results; retained metadata rejection does not force rediscovery. Every second invocation still reaches the write-lock API, so native re-entry remains conditional on unresolved unlock/ownership.

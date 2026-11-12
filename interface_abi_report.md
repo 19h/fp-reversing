@@ -1766,3 +1766,7 @@ The [network-identity report](corefp_network_identity_report.md) supplies exact 
 ## Cold lookup lock-record ABI
 
 The [cold initialization report](corefp_lookup_initialization_report.md) establishes the selected 16 B constructor record: output-slot pointer +0, raw result +8 and address-keyed control +12, decoded to 0xc1a5. Exact raw statuses and publication partitions are tabulated there. Original allocation size and current arm64e pthread_rwlock_t size are 200 B; the static fallback carries the SDK initializer signature. These are private source/SDK contracts, not a new wire ABI. Both source once predicates, callbacks, lock acquisition and bootstrap argument sites are retained.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata/re-entry report](corefp_cold_metadata_report.md) adds the original cold-prefix-to-request1203-to-reply1303 rejection sequence and explicit task-local envelope inputs. Primary/fallback discovery both write image+0x1d44448. The original client returns -304 before the lookup success marker and cached name/flags; a second call skips discovery/RPC but still calls pthread_rwlock_wrlock. Source send-size 24 B and the pre-call header size word have distinct provenance. No native kernel translation or FairPlayIOKit emission is added.

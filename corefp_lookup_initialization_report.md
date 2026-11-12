@@ -168,3 +168,7 @@ The selected target prefix has finite fixed work; external API work is excluded.
 | Low | What changes under repeated/concurrent initialization or registry mutation? | Version-pinned native once/lock behavior and separately retained observations. |
 
 **QG1** passes for factual technical content. **QG2** passes with LI1-LI10 and falsification probes. **QG3** passes for cold lookup initialization, lock/cache data flow and live-reference corroboration; the full investigation remains active. **QG4** passes with explicit byte widths, u32 arithmetic, exact extents, counts and complexity. **QG5** passes with static fallback versus missing heap allocation, record results versus errno, cache clearing versus right retirement, and historical versus current IDA availability separated. **QG6** passes with original byte/fixup hashes, fresh live readback, complete independent journals and primary SDK/compiler evidence. **QG7** passes with the impact-ranked continuation table. This is partial progress toward the cross-layer interface goal.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata continuation](corefp_cold_metadata_report.md) completes six cold client cases and two lookups per instance. It joins original callbacks to the supplied daemon's unchanged-ID rejection and distinguishes successful-name retention from metadata validity. Failed discovery retries without repeating callbacks. Each second call still requires the explicit successful-lock model; native unlock/ownership remains unknown.

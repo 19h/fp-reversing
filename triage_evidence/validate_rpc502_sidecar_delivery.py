@@ -431,6 +431,7 @@ def main():
     if exists(BASE/'fpsd1201_key_routes_report.md'):reports.add(BASE/'fpsd1201_key_routes_report.md')
     if exists(BASE/'corefp_network_identity_report.md'):reports.add(BASE/'corefp_network_identity_report.md')
     if exists(BASE/'corefp_lookup_initialization_report.md'):reports.add(BASE/'corefp_lookup_initialization_report.md')
+    if exists(BASE/'corefp_cold_metadata_report.md'):reports.add(BASE/'corefp_cold_metadata_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2085,6 +2086,10 @@ def main():
         init_checks=json.loads(read(ROOT/'corefp_lookup_initialization_checks.json'))
         manifest['validation']['corefp_lookup_initialization_increment_checks']=init_checks['verified_counts']
         manifest['validation']['corefp_lookup_initialization_static_scope']=init_checks['scope']
+    if exists(ROOT/'corefp_cold_metadata_checks.json'):
+        cold_metadata=json.loads(read(ROOT/'corefp_cold_metadata_checks.json'))
+        manifest['validation']['corefp_cold_metadata_increment_checks']=cold_metadata['verified_counts']
+        manifest['validation']['corefp_cold_metadata_static_scope']=cold_metadata['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

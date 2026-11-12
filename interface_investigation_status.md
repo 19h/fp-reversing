@@ -1409,3 +1409,7 @@ The [network-identity increment](corefp_network_identity_report.md) independentl
 ## Cold lookup initialization and current IDA corroboration
 
 The [cold lookup increment](corefp_lookup_initialization_report.md) independently checks fourteen profiles, 19528 original visits, 28 constructor records, 2088960 B of initial/final RAM and two source/algebra UNSAT identities. It recovers two lock constructions, a static fallback and cache-reset-to-bootstrap flow. Current MCP lists CoreFP, fairplayd and FairPlayIOKit; all 4976 compared CoreFP readback bytes match the original file. Native rights/transactions, downstream network-getter use and optional-input initialization remain unknown. The full goal remains active.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata/re-entry increment](corefp_cold_metadata_report.md) independently checks six client profiles, 13345 original client visits, twelve lookup returns and 1044480 B of initial/final RAM. A separate frozen-engine daemon driver freshly reproduces three unchanged-ID rejections; live readback matches 1536 original bytes. Cache/failure retry semantics now include cold initialization, while the second-call lock-success premise and native endpoint/right identity remain explicit. The full goal remains active.

@@ -221,3 +221,7 @@ The [network-identity increment](corefp_network_identity_report.md) recovers get
 ## Cold lookup initialization and lock fallback
 
 The [cold initialization report](corefp_lookup_initialization_report.md) executes both original once callbacks omitted by warm fixtures. Callback 0x4a21e0 attempts two 200 B lock constructions, clears both cached names and metadata, and continues across tested allocation/init failures. Helper 0x20f37c chooses the first heap lock or static fallback image+0x1d27bf0. Three profiles reach com.apple.fpsd bootstrap preparation at 0x1ce1bc; all stop before lookup execution. Native lock/right behavior and subsequent source-produced metadata remain unknown.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata and re-entry report](corefp_cold_metadata_report.md) now joins original initialization to the unchanged-ID daemon rejection. Three primary-service cases return metadata status -304 yet copy selected name 0x5017 and flags 0x0a; a same-instance second call reuses those values without another metadata RPC. All six cases still reach write-lock acquisition twice. Native re-entry requires the surrounding unlock/owner contract.

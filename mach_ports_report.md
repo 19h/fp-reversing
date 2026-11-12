@@ -1511,3 +1511,7 @@ The [network-identity report](corefp_network_identity_report.md) adds exact API-
 ## Cold cached-name reset to bootstrap boundary
 
 The [cold lookup report](corefp_lookup_initialization_report.md) establishes u32 name clears at 0x57aa3c -> image+0x1d44448 and 0x57aa40 -> +0x1d37838. The selected reset path calls no mach_port_deallocate; clearing scalars does not establish right retirement. Three profiles, including two static-lock fallback cases, reach bootstrap_look_up preparation at 0x1ce1bc with source name com.apple.fpsd and output cell +0x1d44448. They stop before lookup, so no incoming native service right or new message emission is observed.
+
+## Cold metadata and sequential cache continuation
+
+The [cold metadata/re-entry report](corefp_cold_metadata_report.md) joins bootstrap output at 0x1ce1bc to metadata emission at 0x914c using unchanged request/reply IDs 1203/1303. Both service discoveries write image+0x1d44448; the separate cache cell +0x1d37838 remains zero. Synthetic client names 0x5017/0x5034 and reply name 0x5173 are distinguished from daemon received-envelope names 0x6403/0x1403. Source rejection cleanup at 0x9204 is modeled without native right retirement. Cache reuse produces no second RPC; native port identity and kext emission remain unknown.
