@@ -1,5 +1,7 @@
 # CoreFP pool caller, address-keyed records and overlap-aware XOR stage
 
+Subsequent entry-to-word evidence: the [input-lineage report](corefp_input_lineage_report.md) connects decoded operation `0x7f48` to word master `0xf82c` and both word-pass bases to the entry record's biased buffer field. Reverse operation preservation and the forward fixed-point rewrite have separate source contracts. Native entry-record admission and backing remain unknown.
+
 Subsequent preparation evidence: the [workspace report](corefp_workspace_report.md) establishes a separate 16 B source at entry record+`0x10`, its fixed stack XOR mask and canonical workspace construction. Native input nomenclature and general chaining semantics remain unknown.
 
 Subsequent complete-path evidence: the [pool-transform report](corefp_pool_transform_report.md) adds seven complete private returns with declared context and nonzero pool retirement. The nonzero calls establish reverse allocation order: `0x1b0168` retires the second result, then `0x1b01e8` retires the first. Earlier NULL controls could not distinguish pointer order. Native initialization and the complete algorithm remain unknown.

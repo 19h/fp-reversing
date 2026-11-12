@@ -1,6 +1,6 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [word-input report](corefp_word_inputs_report.md) derives all four header indexes/addresses, the common initial hash and recurrence parameters, metadata producers and same-epoch controls. Entry W22=`0xf82c` composes the retained keys/scan control; its upstream producer, admitted bounds/targets and native ownership remain unknown. Validation covers 42 new obligations, 129024 original-byte component cases, 74 complete frames and 24 control epochs. No new Mach endpoint or daemon/kext pairing is established. The full goal remains active.
+Current extension: the [input-lineage report](corefp_input_lineage_report.md) connects decoded entry operation `0x7f48` to word master `0xf82c` and both word-pass bases to one record-derived buffer cache. Source contracts distinguish u64/u32 stack lifetimes, reverse-path preservation and the forward operation fixed point. Matching master values do not uniquely identify entry operations. Native record admission, backing/ownership, dispatch bounds and daemon/kext pairing remain unknown. The full goal remains active.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) checks six complete local paths with independent preparation/message storage. Both workspaces reconstruct from fixed canonical data and per-phase encodings; finite 32 B controls preserve the second output block when preparation changes. Native initialization, general input semantics and pairing remain unknown.
 

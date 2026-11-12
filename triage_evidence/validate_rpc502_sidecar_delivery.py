@@ -455,6 +455,7 @@ def main():
     if exists(BASE/'corefp_word_codec_report.md'):reports.add(BASE/'corefp_word_codec_report.md')
     if exists(BASE/'corefp_word_recurrence_report.md'):reports.add(BASE/'corefp_word_recurrence_report.md')
     if exists(BASE/'corefp_word_inputs_report.md'):reports.add(BASE/'corefp_word_inputs_report.md')
+    if exists(BASE/'corefp_input_lineage_report.md'):reports.add(BASE/'corefp_input_lineage_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2205,6 +2206,10 @@ def main():
         word_inputs=json.loads(read(ROOT/'corefp_word_inputs_checks.json'))
         manifest['validation']['corefp_word_inputs_increment_checks']=word_inputs['verified_counts']
         manifest['validation']['corefp_word_inputs_static_scope']=word_inputs['scope']
+    if exists(ROOT/'corefp_input_lineage_checks.json'):
+        input_lineage=json.loads(read(ROOT/'corefp_input_lineage_checks.json'))
+        manifest['validation']['corefp_input_lineage_increment_checks']=input_lineage['verified_counts']
+        manifest['validation']['corefp_input_lineage_static_scope']=input_lineage['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

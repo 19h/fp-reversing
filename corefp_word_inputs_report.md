@@ -4,6 +4,8 @@ All four word headers recover the same logical index from an encoded u32 counter
 
 The producer of that master W22, native buffer ownership, complete selector/target admission and arbitrary native lengths remain unknown. A header address theorem is not a claim that the addressed eight bytes are backed. The full investigation remains active.
 
+The subsequent [input-lineage report](corefp_input_lineage_report.md) derives this master from decoded entry operation `0x7f48` and both buffer bases from a shared record-derived cache. It checks u64/u32 control replacements and proves the separate forward-operation fixed point. The master origin and base lineage listed as unknown in this increment are therefore reduced to original entry-record and normal-flow premises; native record production/admission and backing remain unknown.
+
 ## Evidence and assumption register
 
 The [producer](triage_evidence/recover_corefp_word_inputs.py), [checks](triage_evidence/corefp_word_inputs_checks.json.zst), [independent auditor](triage_evidence/audit_corefp_word_inputs.py), [audit](triage_evidence/corefp_word_inputs_audit.json.zst) and [publication verifier](triage_evidence/verify_corefp_word_inputs_publication.py) retain eleven source regions, four threshold resets, four counter-update regions, sixteen preservation censuses, 74 complete region frames/journals and six composed interface joins. Eighteen parent receipts and twenty-one source dependencies are SHA-256 pinned. CoreFP arm64e SHA-256 is `8bf6f7a563cc804522cbd7b3f6a063c479cd2abc6e0b2d996f1eac1eda6cf28c`. The three supplied inputs are unchanged. Addresses are preferred-base-zero offsets; B denotes bytes.
@@ -147,7 +149,7 @@ No new incoming/outgoing Mach port, right, descriptor, message emission or daemo
 
 | Impact | Remaining investigation | Completion / falsification condition |
 | --- | --- | --- |
-| High | Recover entry W22 and both buffer-base producers. | Join upstream source controls and SP+`0x468` cache construction to the admitted object/backing domain. |
+| High | Establish original entry-record production/admission after the input-lineage joins. | Join the selected operation and record-derived buffer cache to a coherent native object/backing domain. |
 | High | Reduce head/tail selectors, loop bounds and dispatch target sets. | Prove normal traversal, termination, permitted lengths/splits and confinement of the preservation paths. |
 | High | Compose arbitrary raw preparation and word input with all consumers. | Establish same-epoch backing and the complete original producer/consumer lifecycle. |
 | High | Establish native selector/context/holder ownership and admission. | Require coherent native entry, ownership and backing evidence. |
