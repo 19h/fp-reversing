@@ -1,5 +1,7 @@
 # CoreFP late preparation and first-block output transfer
 
+Subsequent phase evidence: the [preparation-scans report](corefp_preparation_scans_report.md) resolves the forty earlier prepared-byte reads into two bounded split scans with one common state recurrence and equal XOR deltas. It retains the split-dependent scratch residues and their source kills. Complete propagation into phase/workspace parameters and general raw-input admission remain unresolved.
+
 The late preparation window converts sixteen prepared bytes into four big-endian words using exactly the inverse of the previously recovered output byte map. One temporary word has an additional `0xab` XOR, canceled before packing. Across six retained first-block domains, the composed transfer is:
 
 ```text

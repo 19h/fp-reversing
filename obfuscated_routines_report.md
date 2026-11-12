@@ -1,6 +1,6 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [late-preparation report](corefp_late_preparation_report.md) proves that sixteen late prepared bytes pass through the inverse output map and emerge as an identity XOR at first-block output. Six fixed-earlier-state domains have joint arbitrary-preparation/canonical-result interface proofs. Earlier preparation phase construction, later-block semantics, native admission and daemon/kext continuity remain unknown.
+Current extension: the [preparation-scans report](corefp_preparation_scans_report.md) reduces forty earlier preparation reads to two copies of one sixteen-step state transform. Data-dependent splits remain in 1..15; both scans apply equal three-word XOR deltas under shared input/parameter premises. Split-dependent W1/W3 residues are retained and killed before source reads. Full phase propagation, raw-input/native admission and daemon/kext continuity remain unknown.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) identifies the two local arrays as encodings of one fixed byte permutation and an affine word expansion. A 36-instruction source lift and six complete private profiles verify all 3072 words under five encoding classes. Whole-transform identity and native admission remain unknown.
 

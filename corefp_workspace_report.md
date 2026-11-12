@@ -1,5 +1,7 @@
 # CoreFP canonical workspace construction and separate preparation input
 
+Subsequent phase evidence: the [preparation-scans report](corefp_preparation_scans_report.md) resolves the forty earlier prepared-byte reads into two bounded split scans with one common state recurrence and equal XOR deltas. It retains the split-dependent scratch residues and their source kills. Complete propagation into phase/workspace parameters and general raw-input admission remain unresolved.
+
 Subsequent evidence: the [consumer network](corefp_workspace_consumers_report.md) resolves ten substitution layers and 36 canonical XOR offsets; the [output-packing report](corefp_output_packing_report.md) joins its sixteen results to the output stores through a fixed affine byte transfer in eight captured domains. Upstream input/preparation fields and native interface admission remain unresolved.
 
 The two 256-word workspaces in original `0x1af6b8` are different encodings of one fixed byte permutation and a fixed affine word expansion. A compact model reconstructs all 3072 workspace words in six fresh complete caller profiles. A source lift of all 36 constructor instructions proves both store values and addresses over arbitrary register/load-interface inputs. Five retained parameter classes normalize to byte rotations and invertible triangular maps.
