@@ -1,6 +1,8 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) recovers shared-state suballocation and a conditional writer of preparation field image+0x1d32e18. Under an explicit empty-holder fixture, source list insertion publishes backing there before splitting/filling and returning an interior pointer. The selector remains unchanged; native construction, protected-root compatibility and cross-level identity remain unknown.
+Current extension: the [pool-caller report](corefp_pool_caller_report.md) connects source-produced allocation records to one backing arena and two interior results, with same-epoch byte/holder checks. It reduces forward/reverse preprocessing to a16 B periodic XOR mask and verifies overlapping buffers. Twelve failure returns and three backed prefixes preserve separate outcomes; the larger algorithm, initialization and cross-level identity remain unknown.
+
+Previous extension: the [pool-allocator report](corefp_pool_allocator_report.md) recovers shared-state suballocation and a conditional writer of preparation field image+0x1d32e18. Under an explicit empty-holder fixture, source list insertion publishes backing there before splitting/filling and returning an interior pointer. The selector remains unchanged; native construction, protected-root compatibility and cross-level identity remain unknown.
 
 Previous extension: the [reset-caller report](corefp_reset_caller_report.md) adds original caller-to-reset continuity and the SystemVersion ProductVersion interface. Nineteen independently replayed configurations recover the all-nonzero u64 tuple-cache test, direct/copy UTF-8 paths, partial scanf effects and source-generated reset record. No native file/API/IPC executes; cross-level identity remains unknown.
 

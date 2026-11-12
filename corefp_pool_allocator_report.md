@@ -1,5 +1,7 @@
 # CoreFP selector-gated pool allocation and holder-list contract
 
+Subsequent caller evidence: the [pool-caller report](corefp_pool_caller_report.md) establishes0x1affb0 and0x1b0080 as original incoming allocation calls, with source-produced1027/1031 B requests and one backing arena reused for both. Two same-diversity calls instead reach paired null cleanup0x5c87d4. Seventeen profiles check the same-epoch interfaces; incoming native admission, selector activation and nonzero retirement remain unknown.
+
 Original routine `0x1bc12c` is a selector-gated pool allocator under decoded operation `0x2b9b`. It acquires the reset/root token, tests the same selector for exact equality to 1, searches a holder list and can request backing from `malloc` at `0x1bcf5c`. With an explicitly empty private holder and successful declared allocation, its original instructions insert the backing node, split a block, fill bytes and publish an interior pointer through record+0. This establishes a local allocation role and a conditional writer of the preparation field at image+`0x1d32e18`.
 
 The routine does not activate the selector. Native holder construction, incoming caller admission, preparation-object compatibility with the protected root, successful protected processing and daemon/kext pairing remain unknown. The original raw holder profile stops before dereferencing `0x176cb4e3`. The full goal remains active.

@@ -1,6 +1,8 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) identifies a local allocation path sharing the reset/root token and selector. Original0x1bc12c can publish a backed list node at preparation field image+0x1d32e18 and return an interior pointer. Fifteen independently replayed profiles delimit that contract; selector activation, incoming callsites and native daemon/kext pairing remain unknown.
+Current extension: the [pool-caller report](corefp_pool_caller_report.md) follows original0x1af6b8 through two allocator calls and paired null cleanup. Requests1027/1031 B reuse one declared5000 B arena on three backed prefixes; twelve selected failure paths return. Its periodic XOR stage and late length gate are independently checked; upstream admission and successful processing remain unknown.
+
+Previous extension: the [pool-allocator report](corefp_pool_allocator_report.md) identifies a local allocation path sharing the reset/root token and selector. Original0x1bc12c can publish a backed list node at preparation field image+0x1d32e18 and return an interior pointer. Fifteen independently replayed profiles delimit that contract; selector activation, incoming callsites and native daemon/kext pairing remain unknown.
 
 Previous extension: the [reset-caller report](corefp_reset_caller_report.md) joins original0x9a6454, a ProductVersion reader and source-produced reset record at0x9aa74c. Seventeen full caller returns and two bounded stops distinguish CF failures, tuple-cache reuse, parsing, record reuse and reset cleanup. Native admission, prepared input and daemon/kext pairing remain unknown.
 

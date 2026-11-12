@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) recovers local malloc callsite0x1bcf5c and source-resolved free callsite0x1bd174. Fifteen retained profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Holder nodes and interior pointers do not establish native port/right identity, message pairing or daemon/kext linkage.
+Current extension: the [pool-caller report](corefp_pool_caller_report.md) adds original allocation calls0x1affb0/0x1b0080 and paired null cleanup calls0x1b0168/0x1b01e8. Seventeen retained paths invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Source-produced interior pointers remain separate from native rights and daemon/kext pairing.
+
+Previous extension: the [pool-allocator report](corefp_pool_allocator_report.md) recovers local malloc callsite0x1bcf5c and source-resolved free callsite0x1bd174. Fifteen retained profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Holder nodes and interior pointers do not establish native port/right identity, message pairing or daemon/kext linkage.
 
 Previous extension: the [reset-caller report](corefp_reset_caller_report.md) connects an original caller, SystemVersion CF/scanf interface and reset cleanup. Its19 private paths reach no Mach send/receive, name allocation or descriptor transfer. CF/private allocation identities supply no native port or right ownership evidence.
 

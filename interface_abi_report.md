@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [pool-allocator report](corefp_pool_allocator_report.md) establishes the operation0x2b9b record: u64 output at+0, encoded u64 extent at+8 and encoded u32 tag at+0x10. It recovers shared token/selector, holder sentinel+0x30 and reciprocal links+0x18/+0x20. Ten declared malloc requests and five successful private suballocations pass independent layout checks; native caller/ownership and Mach ABI remain unknown.
+Current extension: the [pool-caller report](corefp_pool_caller_report.md) recovers a48 B parent record, source-produced operation0x2b9b child epochs and paired operation0x88cd null cleanup. Both1027/1031 B results can come from one5000 B arena. Eight new key/counter/gate obligations,17 original-byte profiles and full arena oracles pass; no native admission or Mach ABI is added.
+
+Previous extension: the [pool-allocator report](corefp_pool_allocator_report.md) establishes the operation0x2b9b record: u64 output at+0, encoded u64 extent at+8 and encoded u32 tag at+0x10. It recovers shared token/selector, holder sentinel+0x30 and reciprocal links+0x18/+0x20. Ten declared malloc requests and five successful private suballocations pass independent layout checks; native caller/ownership and Mach ABI remain unknown.
 
 Previous extension: the [reset-caller report](corefp_reset_caller_report.md) establishes two record epochs at FP-0xb8, source-produced operations0x9a6b/0xf7a5, a64 B cursor advance and a24 B ProductVersion tuple. SDK assertions check CF interfaces and scanf u64 destinations; marker0x40 does not certify three conversions. No native Mach ABI or right identity is added.
 

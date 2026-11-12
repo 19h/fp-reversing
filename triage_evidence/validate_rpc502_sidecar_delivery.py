@@ -443,6 +443,7 @@ def main():
     if exists(BASE/'corefp_optional_reset_report.md'):reports.add(BASE/'corefp_optional_reset_report.md')
     if exists(BASE/'corefp_reset_caller_report.md'):reports.add(BASE/'corefp_reset_caller_report.md')
     if exists(BASE/'corefp_pool_allocator_report.md'):reports.add(BASE/'corefp_pool_allocator_report.md')
+    if exists(BASE/'corefp_pool_caller_report.md'):reports.add(BASE/'corefp_pool_caller_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2145,6 +2146,10 @@ def main():
         pool_allocator=json.loads(read(ROOT/'corefp_pool_allocator_checks.json'))
         manifest['validation']['corefp_pool_allocator_increment_checks']=pool_allocator['verified_counts']
         manifest['validation']['corefp_pool_allocator_static_scope']=pool_allocator['scope']
+    if exists(ROOT/'corefp_pool_caller_checks.json'):
+        pool_caller=json.loads(read(ROOT/'corefp_pool_caller_checks.json'))
+        manifest['validation']['corefp_pool_caller_increment_checks']=pool_caller['verified_counts']
+        manifest['validation']['corefp_pool_caller_static_scope']=pool_caller['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
