@@ -1,5 +1,7 @@
 # Capability-controlled preparation and selector21 provider ABI
 
+Subsequent source-join evidence: the [post-block dispatch report](daemon_postblock_dispatch_report.md) connects declared zero-object-word paths to the pending selector-21 call. It establishes API buffer F+0x6a8 versus construction view F+0x600, working-mode serialization, generated/count fields and the processed block at API+0x20. The 552 B views retain 44/60 defined bytes and explicit unspecified origins. Native admission, execution and pairing remain unknown; earlier fixtures and counts below retain their original scope.
+
 Subsequent frame-definition evidence: the [frame-word report](daemon_frame_word_report.md) recovers a conditional producer at0x100530748 and a table-resolved less-than route to reader0x10063735c. Twenty A64 controls and ten UNSAT obligations validate that route. It is absent from the four retained partial ingress paths, which remain stopped with unknown F+0x560. Neither a native defect nor a completed IOKit join is established.
 
 Subsequent source-caller evidence: the [versioned-ingress report](daemon_versioned_ingress_report.md) composes record producer0x10084c9b8 with adapter0x1004ac814 and this root. Its numeric count tag is0x73113b31, distinct from the declared count16 fixtures below; phase0x6cf4 produces operation0x871a. Twelve cases return through the adapter and caller encoded-zero selection; four stop on an unspecified frame word. Native upstream admission and the full IOKit join remain unknown. Earlier fixture results retain their original scope.

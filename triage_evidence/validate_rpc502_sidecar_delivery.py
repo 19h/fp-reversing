@@ -465,6 +465,7 @@ def main():
     if exists(BASE/'daemon_frame_admission_report.md'):reports.add(BASE/'daemon_frame_admission_report.md')
     if exists(BASE/'daemon_remainder_preparation_report.md'):reports.add(BASE/'daemon_remainder_preparation_report.md')
     if exists(BASE/'daemon_nested_helper_processing_report.md'):reports.add(BASE/'daemon_nested_helper_processing_report.md')
+    if exists(BASE/'daemon_postblock_dispatch_report.md'):reports.add(BASE/'daemon_postblock_dispatch_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2255,6 +2256,10 @@ def main():
         nested_processing=json.loads(read(ROOT/'daemon_nested_helper_processing_checks.json'))
         manifest['validation']['daemon_nested_helper_processing_increment_checks']=nested_processing['verified_counts']
         manifest['validation']['daemon_nested_helper_processing_static_scope']=nested_processing['scope']
+    if exists(ROOT/'daemon_postblock_dispatch_checks.json'):
+        postblock_dispatch=json.loads(read(ROOT/'daemon_postblock_dispatch_checks.json'))
+        manifest['validation']['daemon_postblock_dispatch_increment_checks']=postblock_dispatch['verified_counts']
+        manifest['validation']['daemon_postblock_dispatch_static_scope']=postblock_dispatch['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,5 +1,7 @@
 # Daemon nested-helper block processing and result contract
 
+Subsequent source-join evidence: the [post-block dispatch report](daemon_postblock_dispatch_report.md) connects declared zero-object-word paths to the pending selector-21 call. It establishes API buffer F+0x6a8 versus construction view F+0x600, working-mode serialization, generated/count fields and the processed block at API+0x20. The 552 B views retain 44/60 defined bytes and explicit unspecified origins. Native admission, execution and pairing remain unknown; earlier fixtures and counts below retain their original scope.
+
 The selected path through internal helper `0x1004234c4` now runs to its return and the caller's status-dependent continuation. It processes a 16 B block at root-frame `F+0x6c8`, reads two additional 16 B operands through record pointers `+0` and `+0x20`, writes status `0x8b3dc651` at record `+0x1c`, and returns to `0x10049d430`. The caller reads that field and selects `0x100383700`. The cryptographic algorithm and native admission remain unknown.
 
 The formerly ambiguous normalized control is a byte count for the first processing loop on this selected path. An all-u32 source proof connects its entry normalization to the loop counter. The retained value is 16. This does not establish other tag paths, arbitrary pointer validity or a public transport length.
