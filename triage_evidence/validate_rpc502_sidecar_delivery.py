@@ -453,6 +453,7 @@ def main():
     if exists(BASE/'corefp_phase_parameters_report.md'):reports.add(BASE/'corefp_phase_parameters_report.md')
     if exists(BASE/'corefp_scan_entry_report.md'):reports.add(BASE/'corefp_scan_entry_report.md')
     if exists(BASE/'corefp_word_codec_report.md'):reports.add(BASE/'corefp_word_codec_report.md')
+    if exists(BASE/'corefp_word_recurrence_report.md'):reports.add(BASE/'corefp_word_recurrence_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2195,6 +2196,10 @@ def main():
         word_codec=json.loads(read(ROOT/'corefp_word_codec_checks.json'))
         manifest['validation']['corefp_word_codec_increment_checks']=word_codec['verified_counts']
         manifest['validation']['corefp_word_codec_static_scope']=word_codec['scope']
+    if exists(ROOT/'corefp_word_recurrence_checks.json'):
+        word_recurrence=json.loads(read(ROOT/'corefp_word_recurrence_checks.json'))
+        manifest['validation']['corefp_word_recurrence_increment_checks']=word_recurrence['verified_counts']
+        manifest['validation']['corefp_word_recurrence_static_scope']=word_recurrence['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,6 +1,6 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [word-codec report](corefp_word_codec_report.md) proves first-pass u64 XOR storage and two compensated second-pass decoders that recover the same raw-word product. Sixteen store/read epochs, 32 component frames, eleven new UNSAT obligations and 131072 original-byte cases support the local interface. The full per-word recurrence, upstream control production, native admission and daemon/kext continuity remain unknown. The full goal remains active.
+Current extension: the [word-recurrence report](corefp_word_recurrence_report.md) reduces all four post-product bodies to one two-stage u64 recurrence. Under common word/index/metadata interfaces it derives equal scan-entry seeds and preserves the incoming bank XOR; six paired stream oracles reproduce the frozen initializer frames. Validation covers 37 new obligations and 229888 original-byte component cases. Universal native address/control admission and daemon/kext continuity remain unknown. The full goal remains active.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) adds source-proved local constructor/preparation contracts. Six complete private profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Canonical local substitution values add no native port identity or daemon/kext pairing.
 

@@ -1,6 +1,8 @@
 # CoreFP paired u64 word storage and compensated hash inputs
 
-The first arithmetic pass stores each retained destination word XORed with `0xcccccccccccccccc`. Both second-pass word decoders recover the same hash input as the first pass: the original word multiplied by `0xabdf5fe3f3ef5db9`, modulo 2^64. Their obfuscated arithmetic introduces different additive biases, canceled by the following multiply-add constants. This establishes a local producer/consumer interface inside the earlier passes. The complete per-word hash recurrence, accumulator-bank preservation and equal scan-initializer seed production remain unknown.
+The first arithmetic pass stores each retained destination word XORed with `0xcccccccccccccccc`. Both second-pass word decoders recover the same hash input as the first pass: the original word multiplied by `0xabdf5fe3f3ef5db9`, modulo 2^64. Their obfuscated arithmetic introduces different additive biases, canceled by the following multiply-add constants. This establishes a local producer/consumer interface inside the earlier passes. The subsequent [word-recurrence report](corefp_word_recurrence_report.md) establishes a common recurrence and conditional paired scan-entry join; original production of its typed inputs and native admission remain unknown.
+
+The subsequent [word-recurrence increment](corefp_word_recurrence_report.md) reduces all four post-product bodies to a common two-stage u64 recurrence. It derives preservation of the bank XOR and equality of the final scan-entry seed under explicit common-stream, metadata, index and carrier-lifetime premises. The earlier unresolved arithmetic frontier below is now discharged conditionally by that report; universal production of the premises and native admission remain open.
 
 ## Evidence and assumption register
 
@@ -96,7 +98,7 @@ No new incoming/outgoing Mach port, right, descriptor, message emission or daemo
 
 | Impact | Remaining investigation | Completion / falsification condition |
 | --- | --- | --- |
-| High | Reduce the arithmetic following each recovered word product. | Derive a common per-word recurrence, including index terms and hash biases, and join bank-XOR preservation and equal initializer seeds. |
+| High | Establish original producers of the recurrence interfaces. | Derive metadata, coherent indexes, address traversal and branch targets for the conditional paired recurrence. |
 | High | Replace fixed codec controls and retained address epochs with producer contracts. | Prove control production, full address traversal, backing and same-epoch input lineage for declared caller domains. |
 | High | Establish native selector/context/holder ownership and admission. | Original initialization and coherent native entry/backing evidence are required. |
 | Medium | Exploit the split reversal as an analysis boundary. | Compare first-head/second-head and first-tail/second-tail recurrence transfers independently; split-count symmetry alone does not prove equality. |

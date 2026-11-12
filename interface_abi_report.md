@@ -1,6 +1,6 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [word-codec report](corefp_word_codec_report.md) proves first-pass u64 XOR storage and two compensated second-pass decoders that recover the same raw-word product. Sixteen store/read epochs, 32 component frames, eleven new UNSAT obligations and 131072 original-byte cases support the local interface. The full per-word recurrence, upstream control production, native admission and daemon/kext continuity remain unknown. The full goal remains active.
+Current extension: the [word-recurrence report](corefp_word_recurrence_report.md) reduces all four post-product bodies to one two-stage u64 recurrence. Under common word/index/metadata interfaces it derives equal scan-entry seeds and preserves the incoming bank XOR; six paired stream oracles reproduce the frozen initializer frames. Validation covers 37 new obligations and 229888 original-byte component cases. Universal native address/control admission and daemon/kext continuity remain unknown. The full goal remains active.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) separates record+`0x10` preparation input from message/context storage and recovers a canonical constructor interface. Arbitrary load-interface/store proofs and five phase bindings reconstruct both arrays; finite controls show first-block XOR effects without establishing a general chaining mode or native ABI.
 

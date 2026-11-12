@@ -6,6 +6,8 @@ The downstream phase-mixer seeds have a more direct origin: W5 after the first s
 
 The subsequent [word-codec increment](corefp_word_codec_report.md) establishes the first-pass XOR storage and compensated second-pass recovery of identical raw-word products. It checks sixteen stable word epochs and discharges that local product boundary within the earlier passes. The complete recurrence and the universal equal-seed/bank-XOR join remain unresolved.
 
+The subsequent [word-recurrence increment](corefp_word_recurrence_report.md) reduces all four post-product bodies to a common two-stage u64 recurrence. It derives preservation of the bank XOR and equality of the final scan-entry seed under explicit common-stream, metadata, index and carrier-lifetime premises. The earlier unresolved arithmetic frontier below is now discharged conditionally by that report; universal production of the premises and native admission remain open.
+
 ## Evidence and assumption register
 
 The [producer](triage_evidence/recover_corefp_scan_entry.py), [checks archive](triage_evidence/corefp_scan_entry_checks.json.zst), [independent auditor](triage_evidence/audit_corefp_scan_entry.py), [audit archive](triage_evidence/corefp_scan_entry_audit.json.zst) and [publication verifier](triage_evidence/verify_corefp_scan_entry_publication.py) retain five source regions, two tail slices, a register-access census, thirty complete region frames/journals, twelve scan ends, control-flow records and queries. Twelve parent receipts and fifteen frozen dependencies are SHA-256 pinned. The three supplied inputs are unchanged.
@@ -141,7 +143,7 @@ No new incoming/outgoing Mach port, right, descriptor, emission site or daemon/k
 
 | Impact | Remaining investigation | Completion / falsification condition |
 | --- | --- | --- |
-| High | Reduce the two earlier arithmetic passes to paired word/seed transfers. | Prove preservation of the encoded bank XOR and equality of their produced u64 seeds over shared typed load interfaces; retained vectors alone are insufficient. |
+| High | Establish original control/address producers for the paired word recurrence. | Compose the conditional word/seed theorem with source-produced metadata, indexes, targets and same-epoch backing. |
 | High | Join arbitrary raw preparation to canonical first-block inputs and all consumers. | Compose the scan/carrier/phase contracts with original table/backing and same-epoch input-word producers. |
 | High | Establish native selector/context/holder ownership and admission. | Require original initialization, coherent backing and entry reachability. |
 | Medium | Reduce control W11 production and interval confinement. | Replace the remaining control input/target premises with original producer and target-set proofs. |
