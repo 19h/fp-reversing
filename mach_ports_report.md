@@ -1585,3 +1585,7 @@ The [output-stream increment](versioned_output_stream_report.md) stores the task
 ## Inner task relay and bounded status return
 
 The [inner-entry increment](versioned_inner_entry_report.md) relays the private task operand to inner-SP+0x2d8, then follows two environmental fixtures to a pending allocation or pending output-stream free. Its encoded stream/record status and caller stack delta remain private return channels. No new Mach port, right transfer/retirement, output-B write or IPC emission is established. Native daemon/kext task and connection pairing remains unknown.
+
+## Parameter object and startup lock word are private interfaces
+
+The [AES-parameter increment](versioned_aes_parameters_report.md) traces a 104 B object, 32 B local constant and private lock-operation record. The arbitrary u64 read from startup cell 0xfffffe000cccda78 is carried as a lock-word origin; it is not an established Mach port or live native IOLock. Sixteen allocation continuations and eight separate lock-origin continuations emit no new Mach message, transfer no task/right and write no output-B byte. Native task/connection/right pairing remains unknown.

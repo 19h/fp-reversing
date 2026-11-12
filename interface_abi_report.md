@@ -1840,3 +1840,7 @@ The [output-stream contract](versioned_output_stream_report.md) gives H2's exact
 ## Selector-21 inner bounds, status producer and allocation class
 
 The [inner-entry contract](versioned_inner_entry_report.md) recovers bounds calls on W+0x4c0/W+0x4000 and A+0x280/A+0x1000, task relay to inner-SP+0x2d8, and the first gate's bit-0 dependence on byte 0xfffffe000ccca078. An 8 B cursor/endpoint test writes 0xce515b53 to input-stream +0x18 and then C+0x20 on the retained flag-1 error paths; their adapter delta is zero. Flag 0 reaches a pending 104 B site.FPAESParameters allocation. These source contracts retain explicit guard, auxiliary-origin and environment premises.
+
+## Selector-21 parameter controls and private lock-record ABI
+
+The [AES-parameter contract](versioned_aes_parameters_report.md) recovers H3 byte controls 1/1, zero at +0x38, u32 fields 0/0x1000/0 at +0x24/+0x28/+0x2c, and original 16 B zero fill at +0x12. It reaches a lock record at K=W+0x160: K+0 carries the startup lock-cell word and K+8 encodes request 0x729 using the matching address key. Pending wrapper 0xfffffe000a5b403c is reached without entering its body. The parameter pointer remains in X28; later preparer/coordinator consumption is unknown.

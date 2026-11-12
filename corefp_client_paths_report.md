@@ -295,3 +295,7 @@ The [output-stream increment](versioned_output_stream_report.md) follows the eig
 ## Selector-21 inner-entry environmental paths
 
 The [inner-entry increment](versioned_inner_entry_report.md) carries the selected output-stream path through original probe/bounds source and a strict undefined A+0x270 frontier. Separate stable flag-byte fixtures reach either a pending 104 B FPAESParameters allocation or an encoded input-extent error returning through the adapter with zero delta, then pending output-stream free. Neither path establishes output-B writes, native connection/right pairing or completed copyback.
+
+## Selector-21 parameter allocation and startup lock interface
+
+The [AES-parameter increment](versioned_aes_parameters_report.md) follows distinct and NULL 104 B allocation returns. Success defines 31 B, builds a 32 B local constant and reaches the startup lock-cell read; a separate arbitrary-word continuation reaches private lock wrapper 0xfffffe000a5b403c with request 0x729 and H3 retained in X28. NULL returns encoded result 0xce515a38 and zero adapter delta before output-stream free. The native daemon/kext pairing and completed copyback remain unknown.

@@ -1691,3 +1691,7 @@ The [output-stream increment](versioned_output_stream_report.md) identifies 0xff
 ## Inner-entry flag gate, state table and error producer
 
 The [inner-entry increment](versioned_inner_entry_report.md) follows 0xfffffe000a6890dc through record/bounds setup and a strict auxiliary frontier. It establishes the first flag-bit gate, sixteen signed relative entries, the modular 8 B extent predicate and the source producer of result C+0x20. Sampled flag-1 error paths return through the stack adapter; flag 0 reaches site.FPAESParameters allocation. The complete routine, flag lifecycle and successful processing semantics remain unknown.
+
+## Reaching parameter construction and matching lock decoder
+
+The [AES-parameter increment](versioned_aes_parameters_report.md) supplies allocation lineage for the previously isolated controls at 0xfffffe000a69d954. Original helper 0xfffffe000a687d64 fills H3+0x12 for 16 B, leaving total defined coverage 31 B. The loop at 0xfffffe000a69da0c constructs a 32 B image-derived local constant. Private wrapper 0xfffffe000a5b403c has a matching address-keyed decoder for the new lock-operation record and retained request 0x729; its body remains outside the composed path. These are source roles without symbol renames or native behavior claims.

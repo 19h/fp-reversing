@@ -1711,3 +1711,7 @@ The [output-stream increment](versioned_output_stream_report.md) adds 16 source 
 ## Auxiliary-state frontier, guard and relative state table
 
 The [inner-entry increment](versioned_inner_entry_report.md) retains an arbitrary coherent kernel stack guard, a strict undefined 8 B auxiliary read and separately declared environmental-byte fixtures. It verifies 18,160 source visits, ten UNSAT equations and sixteen signed relative-table targets. The flag-1 error paths preserve the header and export zero deltas; other paths and native allocator/global-state initialization remain unknown. An on-disk zero guard or flag is not a universal runtime premise.
+
+## Parameter initialization coverage and shared startup globals
+
+The [AES-parameter increment](versioned_aes_parameters_report.md) verifies 18,384 visits, seven UNSAT equations and one 256-input bank identity. Original stores/fill define 31 of 104 B; 73 B remain undefined in the retained source epoch. The source-selected lock cell 0xfffffe000cccda78 and environmental byte 0xfffffe000ccca078 join earlier startup evidence by address, without joining native lifetimes. Separate arbitrary-lock-word propagation preserves the strict read frontier. NULL replaces A+0x270 with zero and returns a different encoded status from the earlier extent error.

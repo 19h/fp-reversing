@@ -1483,3 +1483,7 @@ The [output-stream report](versioned_output_stream_report.md) checks eight disti
 ## Selector-21 inner-entry and error-return progress
 
 The [inner-entry report](versioned_inner_entry_report.md) checks eight strict prefixes and sixteen separate continuations, 18,160 source visits, ten UNSAT equations and 1,280 bank inputs. Independent epochs cover 16,288 read bytes, 14,304 write bytes, eight discarded probe bytes and 3,840 snapshot bytes. One sampled error path now returns through the inner routine and adapter with encoded status and zero delta; the other fixture stops before a typed 104 B allocation. Allocation continuation, environmental-byte writers, auxiliary lifecycle, cleanup/copyback and native pairing remain open. The full goal remains active.
+
+## Selector-21 parameter construction and startup lock frontier
+
+The [AES-parameter report](versioned_aes_parameters_report.md) adds sixteen allocation continuations and eight separate arbitrary-lock-word continuations, 18,384 source visits, seven UNSAT equations and a 256-input bank identity. Independent epochs check 15,304 read bytes, 3,128 write bytes and 6,976 snapshot bytes. Success defines 31 of 104 B and reaches the startup lock-cell interface; NULL returns 0xce515a38 with zero adapter delta before output-stream free. Earlier startup evidence already identifies a zero writer for environmental byte 0xfffffe000ccca078; its complete lifecycle remains open. Lock-wrapper composition, actual parameter consumption, cleanup/copyback and native pairing remain open. The full goal remains active.

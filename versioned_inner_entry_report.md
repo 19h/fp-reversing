@@ -158,3 +158,7 @@ Run the extractor, verify/compress its receipt with zstd level 22, refresh the m
 - **QG5**: Pass. Undefined source bytes, symbolic preservation, environment fixtures, file values, private/native execution and path-specific/all-path header preservation remain distinct.
 - **QG6**: Pass. Original bytes/chains, pinned receipts, source equations, exhaustive tables and independent epochs provide scoped provenance.
 - **QG7**: Pass. Remaining allocation, environmental, state-lifecycle, cleanup, code/data and native-pairing work is bounded and impact-ranked above.
+
+## Allocation continuation and earlier startup context
+
+The [AES-parameter follow-up](versioned_aes_parameters_report.md) continues the pending 104 B allocation under distinct and NULL return premises. Success defines 31 B, builds a local constant and reaches the startup lock-cell interface, with a separate arbitrary-word continuation to the private lock wrapper. NULL returns 0xce515a38 through the same adapter with zero delta before output-stream free. Earlier initializer/startup evidence already records a zero writer of 0xfffffe000ccca078 at 0xfffffe000a607218 and lock-pointer publication to 0xfffffe000cccda78 at 0xfffffe000a607230. Complete flag/lock lifecycles and a native epoch join remain unknown; the preceding flag fixtures remain explicit premises.

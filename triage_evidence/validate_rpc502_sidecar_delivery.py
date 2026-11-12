@@ -473,6 +473,7 @@ def main():
     if exists(BASE/'versioned_stream_words_report.md'):reports.add(BASE/'versioned_stream_words_report.md')
     if exists(BASE/'versioned_output_stream_report.md'):reports.add(BASE/'versioned_output_stream_report.md')
     if exists(BASE/'versioned_inner_entry_report.md'):reports.add(BASE/'versioned_inner_entry_report.md')
+    if exists(BASE/'versioned_aes_parameters_report.md'):reports.add(BASE/'versioned_aes_parameters_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2298,6 +2299,10 @@ def main():
         inner_entry=json.loads(read(ROOT/'versioned_inner_entry_checks.json'))
         manifest['validation']['versioned_inner_entry_increment_checks']=inner_entry['verified_counts']
         manifest['validation']['versioned_inner_entry_static_scope']=inner_entry['scope']
+    if exists(ROOT/'versioned_aes_parameters_checks.json'):
+        aes_parameters=json.loads(read(ROOT/'versioned_aes_parameters_checks.json'))
+        manifest['validation']['versioned_aes_parameters_increment_checks']=aes_parameters['verified_counts']
+        manifest['validation']['versioned_aes_parameters_static_scope']=aes_parameters['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
