@@ -461,6 +461,7 @@ def main():
     if exists(BASE/'daemon_versioned_header_report.md'):reports.add(BASE/'daemon_versioned_header_report.md')
     if exists(BASE/'daemon_versioned_root_report.md'):reports.add(BASE/'daemon_versioned_root_report.md')
     if exists(BASE/'daemon_versioned_ingress_report.md'):reports.add(BASE/'daemon_versioned_ingress_report.md')
+    if exists(BASE/'daemon_frame_word_report.md'):reports.add(BASE/'daemon_frame_word_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2235,6 +2236,10 @@ def main():
         versioned_ingress=json.loads(read(ROOT/'daemon_versioned_ingress_checks.json'))
         manifest['validation']['daemon_versioned_ingress_increment_checks']=versioned_ingress['verified_counts']
         manifest['validation']['daemon_versioned_ingress_static_scope']=versioned_ingress['scope']
+    if exists(ROOT/'daemon_frame_word_checks.json'):
+        frame_word=json.loads(read(ROOT/'daemon_frame_word_checks.json'))
+        manifest['validation']['daemon_frame_word_increment_checks']=frame_word['verified_counts']
+        manifest['validation']['daemon_frame_word_static_scope']=frame_word['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
