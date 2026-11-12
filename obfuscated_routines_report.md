@@ -1573,3 +1573,12 @@ The [consumer handoff report](fpsd1201_consumer_report.md) recovers 0x1142c08 as
 ## CoreFP1201 complete product continuation
 
 The [complete product report](fpsd1201_product_report.md) identifies original 0x74eb08 as Montgomery multiplication on tested canonical odd inputs and 0x74fd0c as its cursor wrapper. Eighty-one independent modular oracles cover selected 32..2048-bit widths and distinct/aliased outputs. Six retained width-mismatched odd counterexamples prevent an unrestricted arithmetic claim. All 96 original implementations/wrappers return; the next unexecuted dependency is 0x59f4e8.
+
+The [auxiliary/exponentiation report](fpsd1201_auxiliary_report.md) resolves that dependency and the subsequent bit selector. Private input/control assumptions and native limits remain explicit.
+
+| Original routine | Established bounded role | Evidence |
+| --- | --- | --- |
+| 0x59f4e8 | Magnitude bit length, biased result at record+4 | 56 complete oracle checks; signed/leading-zero and minimum-count controls |
+| 0x57af24 | Encoded signed-index magnitude bit selector, biased result at record+0 | 329 complete oracle checks; negative-index reflection and out-of-range controls |
+| 0x1142154 / 0x1142c08 | Montgomery exponentiation consumer / cursor wrapper on tested canonical odd inputs | 16 complete child/wrapper returns; 14 modular-exponentiation matches, two even controls |
+| 0x32f628 | Next output-related dependency; complete function unknown | Original slot/diversity and incoming record retained; call unexecuted |

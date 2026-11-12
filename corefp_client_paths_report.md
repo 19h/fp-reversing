@@ -199,3 +199,5 @@ The [post-precomputation consumer handoff](fpsd1201_consumer_report.md) advances
 ## CoreFP1201 complete product continuation
 
 The [complete product continuation](fpsd1201_product_report.md) identifies 0x74eb08 and wrapper 0x74fd0c as Montgomery multiplication on tested canonical inputs. Eighty-one complete arithmetic oracles pass through 2048 bits; six retained width-mismatched odd cases remain explicit counterexamples. Twenty-four nested continuations reach the unexecuted auxiliary call 0x11425bc -> 0x59f4e8. Complete request1201 processing and native delivery remain open.
+
+The [auxiliary continuation](fpsd1201_auxiliary_report.md) resolves 0x59f4e8 as magnitude bit length and 0x57af24 as magnitude bit selection. Sixteen complete private returns through consumer 0x1142154 and wrapper 0x1142c08 establish tested Montgomery exponentiation, with 14 odd-modulus integer-oracle matches and two separate even controls. Eight unbacked descriptors retain pre-read boundaries. The complete cases now stop before 0x981bc8 -> 0x32f628; candidate inline export and native request completion remain unknown.

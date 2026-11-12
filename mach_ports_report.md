@@ -1489,3 +1489,5 @@ The [post-precomputation consumer continuation](fpsd1201_consumer_report.md) add
 ## CoreFP1201 complete product continuation
 
 The [complete product continuation](fpsd1201_product_report.md) verifies private arithmetic descriptors and zero byte stack-adjustment emissions at 0x74ff20. Its executed paths invoke no Mach API and emit no Mach right. Native endpoint/right ownership and daemon/kext pairing remain unknown; established transport emission evidence remains unchanged.
+
+The [auxiliary/exponentiation continuation](fpsd1201_auxiliary_report.md) verifies two private result-word stores (0x59f6fc and 0x57b088), complete integer delivery and 16 zero stack-adjustment stores at 0x1142e18. It executes no Mach API and emits no Mach right. The next call 0x981bc8 -> 0x32f628 is unexecuted; its candidate destination is a process pointer. Native port/right lineage and daemon/kext pairing remain unknown.

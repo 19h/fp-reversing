@@ -1744,3 +1744,5 @@ The [CoreFP1201 consumer handoff](fpsd1201_consumer_report.md) recovers incoming
 ## CoreFP1201 complete product continuation
 
 The [product increment](fpsd1201_product_report.md) confirms the 48 B {a, encoded control, modulus, Q, output, b} record and c at Q+0x10. Implementation 0x74eb08 and wrapper 0x74fd0c complete 96 calls; 81 canonical odd calls match a*b*R^-1 mod n. Exact output aliases, raw-count predicate and zero stack-adjustment emission at 0x74ff20 are verified. The next auxiliary dependency is 0x11425bc -> 0x59f4e8; complete receiving grammar remains unknown.
+
+The [auxiliary ABI continuation](fpsd1201_auxiliary_report.md) resolves that dependency: 0x59f4e8 consumes a 16 B {control,result,descriptor} record, emitting bit length plus 0x4fe66f44 at +4. Bit selector 0x57af24 consumes a 24 B record with result at +0, encoded signed index +4, encoded control +8 and descriptor +0x10, emitting 0xc0a17a28 OR bit at +0. The consumer auxiliary descriptor supplies the tested exponent. Sixteen complete consumer/wrapper returns write zero at 0x1142e18 and reach unexecuted 0x981bc8 -> 0x32f628. Native receiving/export, rights and lifetime remain unknown.

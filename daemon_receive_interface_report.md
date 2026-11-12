@@ -255,3 +255,5 @@ The client-side [consumer handoff](fpsd1201_consumer_report.md) establishes a fu
 ## CoreFP1201 complete product continuation
 
 The client-side [complete product increment](fpsd1201_product_report.md) establishes complete local arithmetic/wrapper returns and a later auxiliary-record boundary. Its canonical results and retained counterexamples remain distinct from native receive, reply-right and daemon/kext identity; those joins remain unknown.
+
+The client-side [auxiliary/exponentiation continuation](fpsd1201_auxiliary_report.md) completes 16 private arithmetic consumer returns, then reaches an unexecuted output dependency at 0x981bc8 -> 0x32f628. Fourteen odd-modulus results match modular exponentiation. Root status, native receive/reply rights, endpoint identity and daemon/kext pairing remain unestablished; a local arithmetic return supplies no native receive join.
