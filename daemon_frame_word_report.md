@@ -1,5 +1,7 @@
 # Daemon frame word: conditional definition and retained ingress frontier
 
+Subsequent composed-source evidence: the [remainder-preparation report](daemon_remainder_preparation_report.md) follows a declared decoded-word0 interior variant through this remainder writer, frame+0x560=12, the equality continuation and nested helper0x1004234c4. The helper record/key and initial target are checked by source proofs and independent A64 replay. The declared word is not established by an admitted upstream producer; original partial fixtures and native pairing remain unresolved.
+
 Subsequent admission evidence: the [frame-admission report](daemon_frame_admission_report.md) recovers the unsigned n < (word XOR 0x8b3dc651) gate, its object-word lineage and the opposite branch's frame+0x4ec remainder writer. The four actual partial paths have n=0 and decoded word28, so they reach the reader without this writer. Eleven source obligations and136 A64 replays support the stated conditional contracts; native admission and the unresolved frame inputs remain unknown.
 
 The source contains a conditional definition for the word read at root-frame F+0x560. With phase0x871a and the original dispatch-table root, `0x1003fd1d8` loads u32[F+0x4ec], dispatches to `0x100530720`, and stores that value at F+0x560. The writer compares it with u32[F+0x3c4]. Its unsigned less-than outcome reaches the previously unresolved reader `0x10063735c` through `0x100523774`. Thus a source-defined producer-to-consumer route exists. Its upstream admission and F+0x4ec producer remain unknown.

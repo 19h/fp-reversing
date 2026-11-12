@@ -463,6 +463,7 @@ def main():
     if exists(BASE/'daemon_versioned_ingress_report.md'):reports.add(BASE/'daemon_versioned_ingress_report.md')
     if exists(BASE/'daemon_frame_word_report.md'):reports.add(BASE/'daemon_frame_word_report.md')
     if exists(BASE/'daemon_frame_admission_report.md'):reports.add(BASE/'daemon_frame_admission_report.md')
+    if exists(BASE/'daemon_remainder_preparation_report.md'):reports.add(BASE/'daemon_remainder_preparation_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2245,6 +2246,10 @@ def main():
         frame_admission=json.loads(read(ROOT/'daemon_frame_admission_checks.json'))
         manifest['validation']['daemon_frame_admission_increment_checks']=frame_admission['verified_counts']
         manifest['validation']['daemon_frame_admission_static_scope']=frame_admission['scope']
+    if exists(ROOT/'daemon_remainder_preparation_checks.json'):
+        remainder_preparation=json.loads(read(ROOT/'daemon_remainder_preparation_checks.json'))
+        manifest['validation']['daemon_remainder_preparation_increment_checks']=remainder_preparation['verified_counts']
+        manifest['validation']['daemon_remainder_preparation_static_scope']=remainder_preparation['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
