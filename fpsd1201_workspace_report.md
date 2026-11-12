@@ -1,5 +1,7 @@
 # CoreFP1201 context producer, pre-helper gate and shared fdpc prefix
 
+Later corroboration: the [coherent cold seed/context report](corefp_cold_seed_report.md) establishes the same nine-byte context prefix from a coherent cold fallback root. Independent source-store coverage and alternate initial stack fills show C[9:128] has no source store before the new optional-input frontier. The zero backing used in earlier workspace experiments remains a diagnostic premise, not a complete initialized native context.
+
 The original parent constructs an SP-relative context C, writes prefix `00 66 64 70 63 00 00 00 01`, saves C and two offsets, and advances its selected workspace cursor by 1872 B. A later original gate reloads C and the separate P+0x900 destination before staging the arithmetic/export record. These are independently replayed fragments separated by an explicit unexecuted parent gap. Two receipt-pinned daemon representatives have the same nine-byte prefix. Full field meanings, native context continuity and matched daemon/kext exchange remain unknown.
 
 The subsequent [initialized parent and predicate report](fpsd1201_predicates_report.md) supplies private owner/cursor/key cells from the frozen original caller prefix: cursor 0x9a0, P=SP+0x9c0 and C=P+0x980. Four separate continuations recover local predicate contracts and stop before atomic/global-pointer frontiers. Request1200 and its return checks are still explicitly omitted; this does not close the later gate gap or define the remaining 119 context bytes.

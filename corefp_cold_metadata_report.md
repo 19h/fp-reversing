@@ -1,5 +1,7 @@
 # CoreFP cold metadata rejection and sequential cache re-entry
 
+Current continuation: the [coherent cold seed/context report](corefp_cold_seed_report.md) follows original fallback flags0 through constructor, entropy/time and two predicates without a metadata/request1200 transaction. The cached fallback name and active lock remain retained at the stopped optional-input frontier. No native message, caller completion or ownership is inferred.
+
 Current continuation: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) follows the original primary flags0x0a after metadata -304 into request1200 and source cleanup after two nonzero modeled transport statuses. Original fallback flags0 bypass that transaction and reach the entropy boundary through a declared sequential CASAL effect. Cached destination retention and reply-port helper cleanup are distinct; no native message is delivered.
 
 The original cold lookup now completes both once callbacks, acquires a modeled service name, emits the original metadata request 1203, consumes the supplied daemon's original rejection reply 1303, and returns its lookup success marker. In three primary-service profiles the metadata client returns -304 while lookup returns name 0x5017 and flags 0x0a. A second invocation in the same private instance returns the retained name/flags without another bootstrap lookup or metadata RPC. Every second invocation still reaches pthread_rwlock_wrlock; native re-entry therefore remains unknown until the surrounding unlock/owner contract is established.

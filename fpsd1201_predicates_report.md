@@ -1,5 +1,7 @@
 # CoreFP1201 initialized workspace, predicate records and control frontiers
 
+Later corroboration: the [coherent cold seed/context report](corefp_cold_seed_report.md) reaches both source-generated predicate records from a coherent cold fallback root, recomputing address keys at the new stack placement. No RPC gap or restored parent frame is used. Nine context-prefix bytes are source-defined;119 B retain private stack fill, so the diagnostic zeros used below remain an explicit earlier premise.
+
 Later corroboration: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) establishes a different, coherent cold fallback prefix through the same constructor/atomic region to the first entropy API. Original fallback flags0 bypass request1200 and its status checks, so that prefix needs no PC gap. This does not remove the explicit gap from the experiments below or establish successful primary processing; their frame epochs remain distinct.
 
 The original modeled caller prefix supplies the previously missing frame cells: cursor `0x9a0`, owner P=SP+0x9c0 and the address-derived record key. A separate continuation recovers two complete obfuscated predicate leaves and reaches either an atomic instruction or an unresolved global-pointer read. The request1200 call and its return checks are explicitly omitted. This establishes conditional source contracts and improves the workspace geometry; native success, remaining context bytes, actual ports and daemon/kext pairing remain unknown.

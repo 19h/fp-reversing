@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) executes no metadata/request1200/request1201 message or port deallocation. Its coherent cold fallback paths retain cached-name fixture 0x5034 and an active declared lock while classifying entropy/time and local record interfaces. No new native incoming/outgoing port, right transfer, completed-call leak or daemon/kext pairing is established.
+
 Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) establishes the original request1200 emission boundary at0x8ba8, destination/reply-name fixtures0x5017/0x5173, send64/capacity220 and OOL756. Nonzero modeled results select reply-port put/deallocation at0x8bdc/0x8c2c, while cached destination remains. Original daemon catalog rows cover IDs[1200,1205); no request1200 is delivered and fallback flags0 emits none.
 
 Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) adds no Mach operation, incoming/outgoing native port, right transfer or emission site. Eight private source continuations classify local state/preparation and predicate ABIs only. Request1200/status checks, later request1201 endpoint lineage and native daemon/kext pairing remain unresolved.

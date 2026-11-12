@@ -1,5 +1,7 @@
 # CoreFP1201 optional-input routes and signed comparison record
 
+Later corroboration: the [coherent cold seed/context report](corefp_cold_seed_report.md) reaches the same optional-input frontier through original cold fallback control flow and source-generated record predicates. The exact new address keys and full seed/mix state are checked independently. This removes the RPC gap for that separate route, while the earlier restored experiments retain their premises and 119 diagnostic context zeros are not claimed as source initialization.
+
 The continuation after the seed tuple performs one source-defined state update, invokes two record predicates, then selects a read from an optional-input pointer that is zero in the retained fixture. A separate selector-byte experiment identifies image+0x1d44409 as an exact equality-to-1 gate into an earlier preparation route. That route needs an object loaded from image+0x1d32e18, whose original backing is 0x176cb4e3. Both experiments stop before the unresolved reads. The complete 35-instruction helper at 0x439734 selects signed or unsigned u64 less-than from an address-keyed record. These are conditional source contracts; native initialization, complete mixing/output and daemon/kext exchange remain unknown.
 
 ## Evidence and assumption register

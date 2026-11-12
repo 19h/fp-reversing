@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) recovers same-epoch context C, tuple T=C+0x6f0 and 16 B clock scratch at T+16, alongside three entropy callsites and separate predicate output offsets. Nine complete seed arrays and first mixes are independently checked. Source defines C[0:9];C[9:128] remains initial private fill, and the optional-input load is not executed.
+
 Current extension: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) retains the complete source-staged request1200 64 B layout, OOL756 lifetime, reply-port helper selector and distinct parent-record/X0 results. Original catalog rows corroborate daemon IDs[1200,1205) and max reply212 B versus client capacity220 B; the 8 B difference has unknown semantics. The fallback flags0 route bypasses the request.
 
 Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) specifies the complete 36 B accessed record at 0x439734: decoded mode chooses signed/unsigned u64 B<A and writes a masked u32 at R+0. The earlier predicate writes R+0x20. Selector-byte and optional-input/holder contracts remain conditional on the private prefix; native object size and wire correspondence are unknown.

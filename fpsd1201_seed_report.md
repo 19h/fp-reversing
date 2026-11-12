@@ -1,5 +1,7 @@
 # CoreFP1201 token, entropy, MT-compatible seed expansion and time interface
 
+Later corroboration: the [coherent cold seed/context report](corefp_cold_seed_report.md) independently reproduces the complete 624-word recurrence, clock/entropy tuple and first mixing update from a coherent cold fallback root. Nine cases compare5616 oracle seed words without an RPC PC gap or frame restoration. Alternate stack/clock-failure controls retain their own premises; complete generator/output and native ownership remain unknown.
+
 Later corroboration: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) independently reaches the first entropy API from original cold fallback discovery without skipping the request1200/status range. It reuses the declared sequential CASAL semantics and verifies original token restoration, then stops before entropy. The seed experiments below retain their own initial state/gap premises; no native ownership or successful primary RPC follows from the new route.
 
 The subsequent [optional-input and signed-record report](fpsd1201_key_routes_report.md) continues four pinned tuple cases through one mixed-state update and two predicate calls, stopping before the unresolved optional-input word read. It separately tests the upstream selector and preparation-object boundary. Complete mixing/output and native initialization remain unresolved.

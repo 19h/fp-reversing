@@ -1,5 +1,7 @@
 # CoreFP cold certificate staging, request1200 failure cleanup and fallback bypass
 
+Current continuation: the [coherent cold seed/context report](corefp_cold_seed_report.md) carries the cold fallback path through three entropy inputs, clock sampling, complete 624-word seed expansion and two predicates to the optional-input frontier, without a PC gap or parent-frame restoration. Source defines nine context bytes;119 B retain the initial private stack fill. No successful primary reply or native transport is established.
+
 Original caller 0x8e81c8 now executes a coherent cold prefix through certificate staging and two different continuations. Primary discovery leaves flags 0x0a and selects request1200 builder 0x8ae0. Fallback discovery leaves flags zero and bypasses that builder, reaching the first entropy API call at 0x8eb800 after one declared sequential CASAL operation and original token restoration. No source PC range, child frame or reply status is patched to obtain either route. These are private source executions with explicit API/PAC/lock models; native transport, rights and ownership remain unknown.
 
 Five primary profiles complete after nonzero modeled request1200 transport results. They retain the cached destination name and release the same heap/static lock pointer acquired before discovery, except that a declared unlock result 5 leaves the model ledger held. The fallback profile stops before entropy while the caller is still active; its held lock is not a completed-call leak result. The full interface investigation remains active.
