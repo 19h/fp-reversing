@@ -12,6 +12,8 @@ declared daemon API words and spans
                                               -> STOP before 47 B allocation
 ```
 
+Subsequent scope extension: the [complete dispatcher-frame analysis](versioned_dispatcher_frame_report.md) finds three direct stores to SP+`0x130` beyond this report's bounded census. None occurs on its retained mode-2 prefixes. An independent symbolic slice preserves the unresolved word and identifies the next pending 32 B stream allocation; it does not continue or initialize these guest fixtures.
+
 ## Assumption register
 
 | ID | Assumption and dependent results | Stress test / falsification probe |

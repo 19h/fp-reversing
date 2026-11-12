@@ -468,6 +468,7 @@ def main():
     if exists(BASE/'daemon_postblock_dispatch_report.md'):reports.add(BASE/'daemon_postblock_dispatch_report.md')
     if exists(BASE/'versioned_core_entry_report.md'):reports.add(BASE/'versioned_core_entry_report.md')
     if exists(BASE/'versioned_core_preparation_report.md'):reports.add(BASE/'versioned_core_preparation_report.md')
+    if exists(BASE/'versioned_dispatcher_frame_report.md'):reports.add(BASE/'versioned_dispatcher_frame_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2273,6 +2274,10 @@ def main():
         versioned_audit=json.loads(read(ROOT/'versioned_core_preparation_audit.json'))
         manifest['validation']['versioned_core_preparation_increment_checks']=versioned_preparation['verified_counts']
         manifest['validation']['versioned_core_preparation_audit_checks']=versioned_audit['verified_counts']
+    if exists(ROOT/'versioned_dispatcher_frame_checks.json'):
+        dispatcher_frame=json.loads(read(ROOT/'versioned_dispatcher_frame_checks.json'))
+        manifest['validation']['versioned_dispatcher_frame_increment_checks']=dispatcher_frame['verified_counts']
+        manifest['validation']['versioned_dispatcher_frame_static_scope']=dispatcher_frame['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
