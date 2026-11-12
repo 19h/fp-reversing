@@ -1,5 +1,7 @@
 # Selector-21 core workspace, record and initial scalar admission
 
+Subsequent payload evidence: the [selector-21 preparation report](versioned_core_preparation_report.md) follows mode 2 through a complete in-place block helper and encoded result, then stops before an undefined caller frame word. Mode 5 reaches an original allocation boundary with an explicit virtual-tail state fixture. Complete outer processing, native ownership and daemon/kext pairing remain unknown.
+
 The original `_UeFdbi` wrapper at `0xfffffe000a5a2bac` marshals all ten provider arguments, requests a 16,384 B aligned workspace and a 4,096 B typed auxiliary allocation, and calls a separate protected entry at `0xfffffe000a5a5470`. Its address-dependent operation encoding normalizes to `0x3da4b356`. The initial entry gate explicitly admits the daemon's modes 2/5 and fixed word `0xb4d3a486`. This closes a static scalar-compatibility gap after the [daemon call-site join](daemon_postblock_dispatch_report.md); successful processing, native admission, Mach-right ownership and daemon/kext pairing remain unknown. [VE1-VE8]
 
 ```text

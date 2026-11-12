@@ -1,5 +1,7 @@
 # Capability-controlled preparation and selector21 provider ABI
 
+Subsequent payload evidence: the [selector-21 preparation report](versioned_core_preparation_report.md) follows mode 2 through a complete in-place block helper and encoded result, then stops before an undefined caller frame word. Mode 5 reaches an original allocation boundary with an explicit virtual-tail state fixture. Complete outer processing, native ownership and daemon/kext pairing remain unknown.
+
 Subsequent kernel-core evidence: the [selector-21 core-entry report](versioned_core_entry_report.md) establishes the original workspace/record contract and initial admission of modes 2/5 with marker 0xb4d3a486. It distinguishes core count copyback, provider status and UserClient structure fields. Successful processing, native admission and daemon/kext pairing remain unknown.
 
 Subsequent source-join evidence: the [post-block dispatch report](daemon_postblock_dispatch_report.md) connects declared zero-object-word paths to the pending selector-21 call. It establishes API buffer F+0x6a8 versus construction view F+0x600, working-mode serialization, generated/count fields and the processed block at API+0x20. The 552 B views retain 44/60 defined bytes and explicit unspecified origins. Native admission, execution and pairing remain unknown; earlier fixtures and counts below retain their original scope.
