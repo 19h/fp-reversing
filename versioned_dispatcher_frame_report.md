@@ -16,6 +16,8 @@ other source blocks: SP+0x134 -> SP+0x130
                      W24    -> SP+0x130 -> W24
 ```
 
+Subsequent continuation: the [stream-initialization report](versioned_stream_initialization_report.md) follows declared allocation returns through object construction, backward scanning and pending cleanup. It preserves this report's unresolved W24 origin and establishes the selected path's next unspecified frame read at `0xfffffe000a5a731c`. No original guest receipt is continued.
+
 ## Assumption register
 
 | ID | Assumption and dependent results | Stress test / falsification probe |

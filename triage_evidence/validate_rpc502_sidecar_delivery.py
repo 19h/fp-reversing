@@ -469,6 +469,7 @@ def main():
     if exists(BASE/'versioned_core_entry_report.md'):reports.add(BASE/'versioned_core_entry_report.md')
     if exists(BASE/'versioned_core_preparation_report.md'):reports.add(BASE/'versioned_core_preparation_report.md')
     if exists(BASE/'versioned_dispatcher_frame_report.md'):reports.add(BASE/'versioned_dispatcher_frame_report.md')
+    if exists(BASE/'versioned_stream_initialization_report.md'):reports.add(BASE/'versioned_stream_initialization_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2278,6 +2279,10 @@ def main():
         dispatcher_frame=json.loads(read(ROOT/'versioned_dispatcher_frame_checks.json'))
         manifest['validation']['versioned_dispatcher_frame_increment_checks']=dispatcher_frame['verified_counts']
         manifest['validation']['versioned_dispatcher_frame_static_scope']=dispatcher_frame['scope']
+    if exists(ROOT/'versioned_stream_initialization_checks.json'):
+        stream_initialization=json.loads(read(ROOT/'versioned_stream_initialization_checks.json'))
+        manifest['validation']['versioned_stream_initialization_increment_checks']=stream_initialization['verified_counts']
+        manifest['validation']['versioned_stream_initialization_static_scope']=stream_initialization['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
