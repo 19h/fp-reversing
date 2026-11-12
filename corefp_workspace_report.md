@@ -1,6 +1,6 @@
 # CoreFP canonical workspace construction and separate preparation input
 
-Subsequent consumer evidence: the [workspace-consumer report](corefp_workspace_consumers_report.md) supplies a source-lifted ten-layer substitution network, 36 canonical XOR offsets and all sixteen private destinations. Eight blocks match an independent interpreter; finite preparation controls preserve canonical values. Prefix/tail and native interface meanings remain unresolved.
+Subsequent evidence: the [consumer network](corefp_workspace_consumers_report.md) resolves ten substitution layers and 36 canonical XOR offsets; the [output-packing report](corefp_output_packing_report.md) joins its sixteen results to the output stores through a fixed affine byte transfer in eight captured domains. Upstream input/preparation fields and native interface admission remain unresolved.
 
 The two 256-word workspaces in original `0x1af6b8` are different encodings of one fixed byte permutation and a fixed affine word expansion. A compact model reconstructs all 3072 workspace words in six fresh complete caller profiles. A source lift of all 36 constructor instructions proves both store values and addresses over arbitrary register/load-interface inputs. Five retained parameter classes normalize to byte rotations and invertible triangular maps.
 

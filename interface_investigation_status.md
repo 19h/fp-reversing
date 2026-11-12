@@ -1,6 +1,6 @@
 # Active interface investigation
 
-Current increment: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown. The full goal remains active.
+Current extension: the [output-packing report](corefp_output_packing_report.md) joins the sixteen canonical consumer results to all output stores through a fixed byte permutation, an invertible binary-linear byte map and captured-state XOR vectors. Eight fixed-input domains have simultaneous arbitrary-g transfer proofs; 32768 original-instruction component cases and 620 new/frozen UNSAT obligations pass. General preparation/context admission and native daemon/kext continuity remain unknown. The full goal remains active.
 
 Previous increment: the [workspace report](corefp_workspace_report.md) checks six independent profiles, 488136 original visits and all 3072 workspace words. Thirty-six source instructions lift to store/address contracts, five encoding classes normalize to fixed canonical tables and 28 new/frozen UNSAT obligations pass. Preparation-XOR observations remain finite; whole algorithm, native initialization and daemon/kext pairing remain unknown. The full goal remains active.
 

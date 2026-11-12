@@ -96,7 +96,7 @@ four encoded u32 component inputs
 
 ## Final private destinations [WC1,WC3-WC5]
 
-The table gives source read IDs/PCs and their locations at `0x1bad9c`. Each location contains the encoded final u32 value; register writes zero-extend to u64. All stack offsets are relative to the unchanged SP. These values have not yet been joined to the later message-output stores.
+The table gives source read IDs/PCs and their locations at `0x1bad9c`. Each location contains the encoded final u32 value; register writes zero-extend to u64. All stack offsets are relative to the unchanged SP. The [output-packing continuation](corefp_output_packing_report.md) now joins these values to all sixteen later output stores, with simultaneous arbitrary-result proofs under each captured non-result input/read premise.
 
 | Read ID | Original load PC | Destination at component end |
 | --- | --- | --- |
@@ -128,7 +128,7 @@ All eight retained blocks have the same 36 canonical XOR offsets. Their little-e
 | First block, six profiles | `8f2dcc03 7c2f1537 16eb16d8 ccdd8dd4` | `30103254cea096d11bd42b7aab598412` |
 | Second block, two 32 B profiles | `1bb95897 e8bb81a3 827f824c 58491940` | `edc841629239fe868524fe64711d0994` |
 
-The preparation ramp/zero/one-byte changes therefore preserve this component's decoded first-block inputs, offsets and outputs, while the preceding report observes changed final message output. This localizes the retained difference outside the canonical consumer component. It does not locate the later XOR store or prove a general preparation/chaining contract. The missing prefix/tail remain explicit work.
+The preparation ramp/zero/one-byte changes therefore preserve this component's decoded first-block inputs, offsets and outputs, while the preceding report observes changed final message output. This localizes the retained difference outside the canonical consumer component. The [output-packing continuation](corefp_output_packing_report.md) locates all later output stores and reduces their transfer to a common affine byte map plus a captured-state bias. A general preparation/chaining contract and the input prefix remain explicit work.
 
 ## Validation and interface limits
 
@@ -142,9 +142,9 @@ No new native API, IPC, Mach port/right, descriptor, daemon/kext pairing or emis
 
 | Impact | Next investigation | Completion / falsification condition |
 | --- | --- | --- |
-| High | Join the component's input prefix and output tail to the record/message/preparation fields. | Produce source-backed field-to-word and final-byte-to-output mappings; prove or reject the general preparation-XOR relation. |
+| High | Join the input prefix and packing-bias producers to record/message/preparation fields. | The output-packing continuation supplies the final-byte-to-output map; field-to-word derivations and the general preparation-XOR relation remain open. |
 | High | Establish source context, selector and holder initialization plus upstream record producers. | Require reaching stores and valid same-epoch backing before native admission or ownership claims. |
-| High | Account for the context/ARX postprocessing and all output stores. | A compact complete caller oracle must cover every stage, rather than treating ten substitutions as whole-algorithm identity. |
+| High | Reduce context/ARX preparation and loop-update fields. | The packing continuation accounts for every local output store; a compact complete caller oracle still requires the upstream computations and loop epochs. |
 | Medium | Classify the canonical nonlinear/linear component more broadly. | Require explicit checked transformations and complete-domain equality; round count or differential uniformity alone is insufficient. |
 | Low | Connect decoded local words to cross-process/kernel messages. | Require an actual producer/consumer handoff and port/right epoch; local equivalence alone supplies no wire meaning. |
 

@@ -1,6 +1,6 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current extension: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown.
+Current extension: the [output-packing report](corefp_output_packing_report.md) joins the sixteen canonical consumer results to all output stores through a fixed byte permutation, an invertible binary-linear byte map and captured-state XOR vectors. Eight fixed-input domains have simultaneous arbitrary-g transfer proofs; 32768 original-instruction component cases and 620 new/frozen UNSAT obligations pass. General preparation/context admission and native daemon/kext continuity remain unknown.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) separates preparation bytes from message/context and reduces changing workspace representations to the same canonical substitution. Original-file constants and source-lifted contracts establish the local data flow; native initialization, complete algorithm and cross-level handoffs remain unknown.
 

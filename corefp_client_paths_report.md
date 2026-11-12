@@ -1,6 +1,6 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown.
+Current extension: the [output-packing report](corefp_output_packing_report.md) joins the sixteen canonical consumer results to all output stores through a fixed byte permutation, an invertible binary-linear byte map and captured-state XOR vectors. Eight fixed-input domains have simultaneous arbitrary-g transfer proofs; 32768 original-instruction component cases and 620 new/frozen UNSAT obligations pass. General preparation/context admission and native daemon/kext continuity remain unknown.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) checks six complete local paths with independent preparation/message storage. Both workspaces reconstruct from fixed canonical data and per-phase encodings; finite 32 B controls preserve the second output block when preparation changes. Native initialization, general input semantics and pairing remain unknown.
 
