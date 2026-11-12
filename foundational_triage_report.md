@@ -1,6 +1,8 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current extension: the [selector-gated reset report](corefp_optional_reset_report.md) identifies a selector-clear and preparation-field reset writer under the protected root token. Eleven independent profiles check3278 visits, all slot effects and2048 pointer-bank inputs. Preparation+0x48 and free+8 are distinct; set-to-1/object producers, native admission, ownership and cross-level pairing remain unknown.
+Current extension: the [reset-caller report](corefp_reset_caller_report.md) adds original caller-to-reset continuity and the SystemVersion ProductVersion interface. Nineteen independently replayed configurations recover the all-nonzero u64 tuple-cache test, direct/copy UTF-8 paths, partial scanf effects and source-generated reset record. No native file/API/IPC executes; cross-level identity remains unknown.
+
+Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) identifies a selector-clear and preparation-field reset writer under the protected root token. Eleven independent profiles check3278 visits, all slot effects and2048 pointer-bank inputs. Preparation+0x48 and free+8 are distinct; set-to-1/object producers, native admission, ownership and cross-level pairing remain unknown.
 
 Previous extension: the [caller-to-cold report](corefp_caller_cold_report.md) establishes coherent upstream data/control flow through the cold constructor. The context suffix retains119 B of initial stack fill; original0x8ea890 supplies the zero optional pointer via the image selector and a directly authenticated branch. Five complete prefixes stop before its read; native initialization and cross-level pairing remain unknown.
 

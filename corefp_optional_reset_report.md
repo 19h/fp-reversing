@@ -1,5 +1,7 @@
 # CoreFP selector-gated slot reset and preparation-field retirement
 
+Subsequent caller evidence: the [reset-caller report](corefp_reset_caller_report.md) establishes original caller0x9a6454 and its authenticated reset call0x9aa74c under entry operation0x84ee. Nineteen independent profiles preserve a source-produced0xf7a5 child record through the ProductVersion reader and reset. An upstream caller to0x9a6454, selector activation and valid preparation-object production remain unknown.
+
 Original CoreFP routine `0x1f530c` implements a selector-gated reset under decoded operation `0xf7a5`. It acquires the same token at image+`0x1d33108` used by the protected root, tests selector image+`0x1d44409` for equality to 1, and walks 88 B slots starting at image+`0x1d32dd0`. Each selected slot can request `_free` of its +8 field. The routine resets the other 80 B, clears the selector at `0x1f5650`, restores the token and returns. Eleven private profiles are independently replayed.
 
 This identifies a selector-clear writer and a reset writer for the root's preparation field at image+`0x1d32e18` (first slot+`0x48`). That field is separate from the free argument at slot+8. The routine does not establish a selector-set-to-1 producer or a valid preparation-object initializer. Native callers, object ownership, successful protected processing and daemon/kext pairing remain unknown. The full investigation remains active.

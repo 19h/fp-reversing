@@ -1,5 +1,7 @@
 # CoreFP1201 optional-input routes and signed comparison record
 
+Subsequent caller/environment evidence: the [reset-caller report](corefp_reset_caller_report.md) establishes a source-continuous incoming reset call0x9aa74c after the SystemVersion ProductVersion reader. Its19 private profiles do not establish a selector-set-to-1 or valid preparation-object producer; the earlier stopped root reads remain unresolved.
+
 Subsequent writer evidence: the [selector-gated reset report](corefp_optional_reset_report.md) identifies0x1f5650 as selector clear and0x1f5728 as the first-slot+0x48 reset writer, exactly image+0x1d32e18. The value becomes0x0176cb4e; it is not established as an initialized object. The conditional free field is slot+8. Selector-set-to-1 and valid preparation-object production remain unknown.
 
 Later corroboration: the [coherent cold seed/context report](corefp_cold_seed_report.md) reaches the same optional-input frontier through original cold fallback control flow and source-generated record predicates. The exact new address keys and full seed/mix state are checked independently. This removes the RPC gap for that separate route, while the earlier restored experiments retain their premises and 119 diagnostic context zeros are not claimed as source initialization.

@@ -1,6 +1,8 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [selector-gated reset report](corefp_optional_reset_report.md) identifies original0x1f530c as an operation0xf7a5 slot reset. It clears selector image+0x1d44409 and resets the preparation field image+0x1d32e18 under the shared token. Its conditional free reads slot+8, a separate field from preparation+0x48. Set-to-1 and valid-object producers, native callers and daemon/kext pairing remain unknown.
+Current extension: the [reset-caller report](corefp_reset_caller_report.md) joins original0x9a6454, a ProductVersion reader and source-produced reset record at0x9aa74c. Seventeen full caller returns and two bounded stops distinguish CF failures, tuple-cache reuse, parsing, record reuse and reset cleanup. Native admission, prepared input and daemon/kext pairing remain unknown.
+
+Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) identifies original0x1f530c as an operation0xf7a5 slot reset. It clears selector image+0x1d44409 and resets the preparation field image+0x1d32e18 under the shared token. Its conditional free reads slot+8, a separate field from preparation+0x48. Set-to-1 and valid-object producers, native callers and daemon/kext pairing remain unknown.
 
 Previous extension: the [caller-to-cold report](corefp_caller_cold_report.md) executes five original upstream caller prefixes through VM construction, source-produced nonzero-mode ingress/root records, certificate decode/free, seed/tuple construction and both predicates. They stop before the optional-input read; the caller-produced object does not populate the119 B context suffix or optional pointer in these configurations.
 

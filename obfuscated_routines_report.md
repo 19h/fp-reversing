@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [selector-gated reset report](corefp_optional_reset_report.md) assigns0x1f530c the source-supported role of selector-gated slot reset for operation0xf7a5. It conditionally frees slot+8, writes80 B common reset state, clears selector at0x1f5650 and restores the shared token. Eleven independent profiles and exhaustive pointer banks support the role; a native caller and valid-object initializer remain unknown.
+Current extension: the [reset-caller report](corefp_reset_caller_report.md) identifies0x316a98 as a ProductVersion tuple reader/cache and0x1f9be8 as its CF stream/plist helper. Original caller0x9a6454 stages their record, then calls reset0x1f530c at0x9aa74c under the retained null-state branch. Nineteen independent profiles establish the local interfaces; native caller admission and prepared objects remain unknown.
+
+Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) assigns0x1f530c the source-supported role of selector-gated slot reset for operation0xf7a5. It conditionally frees slot+8, writes80 B common reset state, clears selector at0x1f5650 and restores the shared token. Eleven independent profiles and exhaustive pointer banks support the role; a native caller and valid-object initializer remain unknown.
 
 Previous extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows original caller0x2e4280 through source-produced nonzero-mode records to the cold constructor, two predicates and explicit optional-pointer zero definition0x8ea890. Five independent prefixes check161155 visits; selector0 reaches0x8eb7a4 directly. Certificate processing was already present in earlier zero-mode cold fixtures.
 

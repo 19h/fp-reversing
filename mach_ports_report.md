@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [selector-gated reset report](corefp_optional_reset_report.md) recovers an internal shared-token/slot cleanup interface. Only the free import is reached in its retained paths; no Mach send/receive, name creation or port transfer is added. Native endpoint/right identity and daemon/kext pairing remain unknown.
+Current extension: the [reset-caller report](corefp_reset_caller_report.md) connects an original caller, SystemVersion CF/scanf interface and reset cleanup. Its19 private paths reach no Mach send/receive, name allocation or descriptor transfer. CF/private allocation identities supply no native port or right ownership evidence.
+
+Previous extension: the [selector-gated reset report](corefp_optional_reset_report.md) recovers an internal shared-token/slot cleanup interface. Only the free import is reached in its retained paths; no Mach send/receive, name creation or port transfer is added. Native endpoint/right identity and daemon/kext pairing remain unknown.
 
 Previous extension: the [caller-to-cold report](corefp_caller_cold_report.md) follows task fixture0x4201 through source VM allocation and bootstrap calls0x1ce1bc/0x1ce448, with declared primary1102 then fallback0/name0x5034. Five cold prefixes contain no request1200/1203 transaction, daemon child or Mach send/receive call before their stopped optional-input read. No native port transfer or right identity is added.
 
