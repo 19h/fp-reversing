@@ -1,6 +1,6 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [preparation-scans report](corefp_preparation_scans_report.md) reduces forty earlier preparation reads to two copies of one sixteen-step state transform. Data-dependent splits remain in 1..15; both scans apply equal three-word XOR deltas under shared input/parameter premises. Split-dependent W1/W3 residues are retained and killed before source reads. Full phase propagation, raw-input/native admission and daemon/kext continuity remain unknown.
+Current extension: the [phase-parameter report](corefp_phase_parameters_report.md) joins the six scan-output words to two common scalar mixers and the original workspace constructor. Equal seeds and bank XOR 0xeb3e515b yield coherent masks/rotations for arbitrary u32 inputs. The five encoding parameters reduce to m/r/Z, with K XOR Q=0xfda4d47e and a derived index bias. Universal upstream production, raw-input/native admission and daemon/kext transport remain unknown.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) separates record+`0x10` preparation input from message/context storage and recovers a canonical constructor interface. Arbitrary load-interface/store proofs and five phase bindings reconstruct both arrays; finite controls show first-block XOR effects without establishing a general chaining mode or native ABI.
 

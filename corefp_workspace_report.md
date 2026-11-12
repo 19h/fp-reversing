@@ -1,5 +1,7 @@
 # CoreFP canonical workspace construction and separate preparation input
 
+Subsequent phase evidence: the [phase-parameter report](corefp_phase_parameters_report.md) derives the shared scalar mixer and a conditional arbitrary-input encoding contract from equal seeds and the bank XOR. Source-produced m/r/Z determine all five workspace parameters. Upstream establishment of those premises and native/cross-level continuity remain unresolved.
+
 Subsequent phase evidence: the [preparation-scans report](corefp_preparation_scans_report.md) resolves the forty earlier prepared-byte reads into two bounded split scans with one common state recurrence and equal XOR deltas. It retains the split-dependent scratch residues and their source kills. Complete propagation into phase/workspace parameters and general raw-input admission remain unresolved.
 
 Subsequent evidence: the [consumer network](corefp_workspace_consumers_report.md) resolves ten substitution layers and 36 canonical XOR offsets; the [output-packing report](corefp_output_packing_report.md) joins its sixteen results to the output stores through a fixed affine byte transfer in eight captured domains. Upstream input/preparation fields and native interface admission remain unresolved.

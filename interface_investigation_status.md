@@ -1,6 +1,6 @@
 # Active interface investigation
 
-Current extension: the [preparation-scans report](corefp_preparation_scans_report.md) reduces forty earlier preparation reads to two copies of one sixteen-step state transform. Data-dependent splits remain in 1..15; both scans apply equal three-word XOR deltas under shared input/parameter premises. Split-dependent W1/W3 residues are retained and killed before source reads. Full phase propagation, raw-input/native admission and daemon/kext continuity remain unknown. The full goal remains active.
+Current extension: the [phase-parameter report](corefp_phase_parameters_report.md) joins the six scan-output words to two common scalar mixers and the original workspace constructor. Equal seeds and bank XOR 0xeb3e515b yield coherent masks/rotations for arbitrary u32 inputs. The five encoding parameters reduce to m/r/Z, with K XOR Q=0xfda4d47e and a derived index bias. Universal upstream production, raw-input/native admission and daemon/kext transport remain unknown. The full goal remains active.
 
 Previous increment: the [workspace report](corefp_workspace_report.md) checks six independent profiles, 488136 original visits and all 3072 workspace words. Thirty-six source instructions lift to store/address contracts, five encoding classes normalize to fixed canonical tables and 28 new/frozen UNSAT obligations pass. Preparation-XOR observations remain finite; whole algorithm, native initialization and daemon/kext pairing remain unknown. The full goal remains active.
 

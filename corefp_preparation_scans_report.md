@@ -1,5 +1,7 @@
 # CoreFP duplicate preparation scans and bounded split dispatch
 
+Subsequent phase evidence: the [phase-parameter report](corefp_phase_parameters_report.md) derives the shared scalar mixer and a conditional arbitrary-input encoding contract from equal seeds and the bank XOR. Source-produced m/r/Z determine all five workspace parameters. Upstream establishment of those premises and native/cross-level continuity remain unresolved.
+
 The forty preparation reads preceding the late output component implement two copies of one sixteen-step u32 state transform. Each scan uses four preparation-indexed reads to select a split in 1..15, then reads all sixteen preparation bytes in order. Its two loop bodies have the same four-state transfer. Under the retained parameter bindings, both scans therefore apply identical three-word XOR deltas to different incoming accumulator vectors.
 
 The split also leaves one scratch residue: W1 after the first scan, W3 after the second. Forced-split tests retain these full-frame differences. Straight-line source overwrites each residue before reading it. This is a conditional source/control-flow result; the complete raw-preparation-to-workspace phase contract, native input admission and whole transform identity remain unknown.
