@@ -1,5 +1,7 @@
 # Daemon callback revisit, byte emission and context transform
 
+Subsequent constructor evidence: the [byte-emitter/frame-return report](daemon_versioned_header_report.md) resolves the private call in six declared selector21 constructor frames. Exact key agreement is R&5==0; the4 B request uses control0xb399, all six checked temporary lifetimes return delta0, and the next source block stores BE32(bytes) XOR0x8b3dc651. This refines the helper/frame frontier while retaining unknown native parent reachability, the full API-buffer join and daemon/kext pairing.
+
 The former unknown read at `0x1003ECB98` is a copy boundary. Retaining arbitrary byte identities permits a further 160,048 original-instruction visits, through two byte-output calls and an address/self-text-bound context transform, to the known rwlock creator at `0x100492644 -> 0x10043A240`. This increment establishes internal contracts and a new arena-resident lock destination. No additional Mach or IOKit emission occurs in this inspected continuation. The full investigation remains active.
 
 Evidence is conditional on the retained reference input state and the logical pointer-authentication abstraction [CR1-CR5]. Four independent A64 replays match 640,192 visits, including 704 copied unknown-byte effects. Thirteen source-local proof pairs are unsatisfiable; 33 isolated context-codec cases, 64 isolated byte-reader cases and 3,008 isolated SIMD instruction cases pass. A further fresh 160,048-visit replay passes in the independent checker. These counts describe verification, not native execution.

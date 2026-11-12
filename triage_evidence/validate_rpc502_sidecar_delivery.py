@@ -458,6 +458,7 @@ def main():
     if exists(BASE/'corefp_input_lineage_report.md'):reports.add(BASE/'corefp_input_lineage_report.md')
     if exists(BASE/'corefp_word_traversal_report.md'):reports.add(BASE/'corefp_word_traversal_report.md')
     if exists(BASE/'corefp_word_selectors_report.md'):reports.add(BASE/'corefp_word_selectors_report.md')
+    if exists(BASE/'daemon_versioned_header_report.md'):reports.add(BASE/'daemon_versioned_header_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2220,6 +2221,10 @@ def main():
         word_selectors=json.loads(read(ROOT/'corefp_word_selectors_checks.json'))
         manifest['validation']['corefp_word_selectors_increment_checks']=word_selectors['verified_counts']
         manifest['validation']['corefp_word_selectors_static_scope']=word_selectors['scope']
+    if exists(ROOT/'daemon_versioned_header_checks.json'):
+        versioned_header=json.loads(read(ROOT/'daemon_versioned_header_checks.json'))
+        manifest['validation']['daemon_versioned_header_increment_checks']=versioned_header['verified_counts']
+        manifest['validation']['daemon_versioned_header_static_scope']=versioned_header['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
