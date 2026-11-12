@@ -1,6 +1,6 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [phase-parameter report](corefp_phase_parameters_report.md) joins the six scan-output words to two common scalar mixers and the original workspace constructor. Equal seeds and bank XOR 0xeb3e515b yield coherent masks/rotations for arbitrary u32 inputs. The five encoding parameters reduce to m/r/Z, with K XOR Q=0xfda4d47e and a derived index bias. Universal upstream production, raw-input/native admission and daemon/kext transport remain unknown.
+Current extension: the [scan-entry report](corefp_scan_entry_report.md) derives the common u64 scan initializer, the original shift-control producer and three earlier stack encoding pairs with XOR difference 0xeb3e515b. Source tail equations and a writer-free interval join equal final-fold carriers to the downstream phase seeds. The earlier arithmetic-pass transfer, arbitrary native control/admission and daemon/kext continuity remain unknown.
 
 Previous extension: the [workspace report](corefp_workspace_report.md) identifies the two local arrays as encodings of one fixed byte permutation and an affine word expansion. A 36-instruction source lift and six complete private profiles verify all 3072 words under five encoding classes. Whole-transform identity and native admission remain unknown.
 

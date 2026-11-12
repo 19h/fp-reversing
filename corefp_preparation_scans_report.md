@@ -1,5 +1,7 @@
 # CoreFP duplicate preparation scans and bounded split dispatch
 
+Subsequent source join: the [scan-entry report](corefp_scan_entry_report.md) derives common u64 initializers and earlier field encodings, and proves the final-fold carrier equations feeding the shared downstream seed under the scan and writer-free-interval premises. Earlier arithmetic-pass pairing and native control/admission remain unresolved.
+
 Subsequent phase evidence: the [phase-parameter report](corefp_phase_parameters_report.md) derives the shared scalar mixer and a conditional arbitrary-input encoding contract from equal seeds and the bank XOR. Source-produced m/r/Z determine all five workspace parameters. Upstream establishment of those premises and native/cross-level continuity remain unresolved.
 
 The forty preparation reads preceding the late output component implement two copies of one sixteen-step u32 state transform. Each scan uses four preparation-indexed reads to select a split in 1..15, then reads all sixteen preparation bytes in order. Its two loop bodies have the same four-state transfer. Under the retained parameter bindings, both scans therefore apply identical three-word XOR deltas to different incoming accumulator vectors.

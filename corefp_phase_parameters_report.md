@@ -1,5 +1,7 @@
 # CoreFP paired scalar mixers and source-produced workspace encodings
 
+Subsequent source join: the [scan-entry report](corefp_scan_entry_report.md) derives common u64 initializers and earlier field encodings, and proves the final-fold carrier equations feeding the shared downstream seed under the scan and writer-free-interval premises. Earlier arithmetic-pass pairing and native control/admission remain unresolved.
+
 The six preparation-scan accumulator outputs feed two copies of the same scalar mixer. With equal mixer seeds and a pairwise bank XOR of `0xeb3e515b`, the original source produces coherent workspace index and word encodings for arbitrary u32 scalar inputs. The previously retained five parameter classes are concrete instances of this conditional source contract.
 
 Five reported workspace parameters reduce to three fields: a seven-bit mask m, a three-bit rotation r and a u32 value Z. Their descriptions require at most `7+3+32=42` bits. This is a representation bound, not a key size, native entropy estimate or proof that every combination is reachable. Establishing the shared seed and bank relation for arbitrary admitted raw inputs remains open.
