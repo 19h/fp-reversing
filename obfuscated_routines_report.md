@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current extension: the [root-record ingress report](corefp_root_ingress_report.md) identifies0x5f4584 as a record-transforming caller of adapter0x8fcfa0, with exact field equations and postcall SP/result forwarding. A complete prefix resolves0x77d398 to0x779ff0; conditional bank theorems resolve0x9d4064 to0x656b80 and0x1174224 to0x59fb30. Shared IA diversity/address-key family alone does not identify a routine. Eleven further0x281b call candidates remain unresolved.
+
 Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) identifies0x8fcfa0 as an adapter around root0x8e81c8, with source reaching-load proof through slot0x1d05150 in25 private runs. Its u64 input word seeds a biased private stack word; its external result is the low16 child delta multiplied by16. Four literal IA0x41d4 call candidates and four same-diversity targets are enumerated; the other three call targets remain unknown in this increment.
 
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) connects original root 0x8e81c8 to complete seed expansion, one mixed-state update and source-produced calls to predicates0x1abbe0/0x439734, without the earlier RPC PC gap. Their outputs remain separate at record+0x20/+0. The context suffix remains diagnostic fill; all nine paths stop before the optional-input word read.

@@ -1,5 +1,7 @@
 # CoreFP caller-managed lookup lock release and failure cleanup
 
+Upstream continuation: the [root-record ingress report](corefp_root_ingress_report.md) reaches the same selected cleanup from original record producer0x5f4584 through adapter0x8fcfa0. Twelve complete private calls forward the root marker into ingress+0x20 after consuming adapter output as an SP adjustment. Unlock result5 remains distinct from the raw record marker and modeled lock ownership.
+
 Caller-context continuation: the [protected-root adapter report](corefp_root_adapter_report.md) establishes that adapter0x8fcfa0 passes its own stack word as rootX1, initialized to the external caller seed minus0x100. Twenty-five complete private failure compositions restore that internal word to the seed, then replace the external word with zero. The direct-root +0x100 observation below concerns the root's immediate parameter; it does not describe the adapter caller's external result. Broader native field semantics remain unknown.
 
 Current continuation: the [cold request1200 failure and fallback report](corefp_request1200_failure_report.md) supplies successful certificate allocation and original payload staging, then completes five parent returns after nonzero request1200 results. The same selected heap/static lock pointer reaches cleanup; record markers, final X0 and cached-name retention remain separate. A sixth fallback prefix stops before entropy while the caller is still active.

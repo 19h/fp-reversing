@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current extension: the [root-record ingress report](corefp_root_ingress_report.md) adds a source record producer and stack/result consumer around the existing lookup/cleanup chain. It establishes no new native port or emission site. Nine frozen unchanged-ID daemon rejection children and14 modeled bootstrap calls retain their earlier scope; source result forwarding does not establish rights translation, successful delivery or a matched kext request.
+
 Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) composes the earlier primary/fallback lookup and cleanup under original adapter0x8fcfa0. It adds no native port or emission site. Twenty-seven modeled bootstrap calls and22 unchanged-ID daemon rejection children retain their existing fixture meanings; the adapter's external u64 output is distinct from port-name slots and record/X0 results. Native rights, successful delivery and daemon/kext pairing remain unknown.
 
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) executes no metadata/request1200/request1201 message or port deallocation. Its coherent cold fallback paths retain cached-name fixture 0x5034 and an active declared lock while classifying entropy/time and local record interfaces. No new native incoming/outgoing port, right transfer, completed-call leak or daemon/kext pairing is established.

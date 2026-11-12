@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current extension: the [root-record ingress report](corefp_root_ingress_report.md) executes original0x5f4584 ->0x8fcfa0 ->0x8e81c8 through twelve complete private failure returns. The ingress caller builds the root record, obtains the adapter seed from an original image cell and consumes the returned word as a stack adjustment before copying the raw result to its own+0x20 output. No root record is patched; upstream admission, successful processing and native pairing remain unknown.
+
 Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) establishes source adapter0x8fcfa0 around protected root0x8e81c8. The root receives an internal word initialized to external_seed-256; on25 complete private failure paths the root's early increment cancels that bias and the adapter writes external zero. Record marker and residualX0 remain independent. Actual upstream record production, successful primary processing and native pairing remain unknown.
 
 Current extension: the [coherent cold seed/context report](corefp_cold_seed_report.md) joins the earlier local seed/predicate contracts to a coherent cold fallback root. Nine independent paths check environmental ABI inputs, complete seed state, first mixing and the stopped optional-input read. The 119 B context suffix retains diagnostic stack fill; successful output/IPC and native pairing remain unknown.
