@@ -466,6 +466,7 @@ def main():
     if exists(BASE/'daemon_remainder_preparation_report.md'):reports.add(BASE/'daemon_remainder_preparation_report.md')
     if exists(BASE/'daemon_nested_helper_processing_report.md'):reports.add(BASE/'daemon_nested_helper_processing_report.md')
     if exists(BASE/'daemon_postblock_dispatch_report.md'):reports.add(BASE/'daemon_postblock_dispatch_report.md')
+    if exists(BASE/'versioned_core_entry_report.md'):reports.add(BASE/'versioned_core_entry_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2260,6 +2261,12 @@ def main():
         postblock_dispatch=json.loads(read(ROOT/'daemon_postblock_dispatch_checks.json'))
         manifest['validation']['daemon_postblock_dispatch_increment_checks']=postblock_dispatch['verified_counts']
         manifest['validation']['daemon_postblock_dispatch_static_scope']=postblock_dispatch['scope']
+    if exists(ROOT/'versioned_core_entry_checks.json'):
+        versioned_core=json.loads(read(ROOT/'versioned_core_entry_checks.json'))
+        versioned_replays=json.loads(read(ROOT/'versioned_core_entry_replays.json'))
+        manifest['validation']['versioned_core_entry_increment_checks']=versioned_core['verified_counts']
+        manifest['validation']['versioned_core_entry_replay_checks']=versioned_replays['verified_counts']
+        manifest['validation']['versioned_core_entry_static_scope']=versioned_core['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,5 +1,7 @@
 # Daemon post-block dispatch and selector-21 buffer join
 
+Subsequent kernel-core evidence: the [selector-21 core-entry report](versioned_core_entry_report.md) establishes the original workspace/record contract and initial admission of modes 2/5 with marker 0xb4d3a486. It distinguishes core count copyback, provider status and UserClient structure fields. Successful processing, native admission and daemon/kext pairing remain unknown.
+
 Four declared interior-state paths now reach the pending `_IOConnectCallStructMethod` at `0x100478a04`. They connect the preceding block transform to selector 21 with 552 B input, the same user input/output pointer, and a 552 B capacity cell. The API buffer is `F+0x6a8`, 168 B after construction view `F+0x600`; the processed block occupies API offset `+0x20`. Local working modes 2 and 5 become request word 0. These joins are source-bound to the retained fixtures; the API call, native admission and daemon/kext pairing remain unexecuted or unknown.
 
 The actual 552 B view has 44 source-defined bytes for mode 2 and 60 for mode 5. The remaining bytes retain explicit unspecified origins. Thus the source address/field join is established without claiming a fully defined packet or an observed transaction.
