@@ -1,6 +1,8 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) establishes selected token reset before entropy, global state [0x1d4551c,0x1d45edc), the complete 624-word seed recurrence and a 32-byte tuple/time scratch view at C+0x6f0. Twelve replays, four retained/five independent obligations and 4992 oracle words pass. Native initialization, synchronization ownership, later output production and daemon/kext pairing remain unknown.
+Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) recovers the selector-byte partition, holder+0x48 object dependency, first state mixing update and encoded optional-input gate. Eight source continuations stop before unresolved reads; 128 leaf cases and five UNSAT obligations pass. No native fault, initialized owner or matched daemon/kext exchange is established.
+
+Prior extension: the [token, entropy and seed report](fpsd1201_seed_report.md) establishes selected token reset before entropy, global state [0x1d4551c,0x1d45edc), the complete 624-word seed recurrence and a 32-byte tuple/time scratch view at C+0x6f0. Twelve replays, four retained/five independent obligations and 4992 oracle words pass. Native initialization, synchronization ownership, later output production and daemon/kext pairing remain unknown.
 
 Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) derives cursor 0x9a0, owner P=SP+0x9c0 and C=P+0x980 from the frozen modeled prefix. Candidate, XOR destination and context occupy adjacent 128-byte spans. Four later continuations stop before CASAL 0x8ea868 or a read through unresolved global backing at 0x8ea3b4. Request1200/status checks remain omitted; 119 context bytes remain diagnostic backing, and native readiness/ownership/pairing remain unknown.
 

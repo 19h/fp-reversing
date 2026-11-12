@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) classifies the original 0x8eb824 seed loop as the exact 624-word MT19937 seed recurrence, with separate entropy/time callsites and seed-tuple stores. Eight complete expansions check 4992 oracle words and five independent source obligations. Full surrounding generator identity, later key mixing/output and native context remain unresolved.
+Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) classifies the complete 35-instruction leaf 0x439734 as an address-keyed signed/unsigned less-than selector. Its 36 B accessed footprint, output at R+0, two compositional proofs and 128 isolated cases are retained. One state-mixing update and both optional-input frontiers are source-replayed; complete output generation remains unknown.
+
+Prior extension: the [token, entropy and seed report](fpsd1201_seed_report.md) classifies the original 0x8eb824 seed loop as the exact 624-word MT19937 seed recurrence, with separate entropy/time callsites and seed-tuple stores. Eight complete expansions check 4992 oracle words and five independent source obligations. Full surrounding generator identity, later key mixing/output and native context remain unresolved.
 
 Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) recovers complete address-keyed predicate leaves at 0x274ed0 and 0x1abbe0, their distinct output fields and unsigned-comparison direction. Two complete source lifts and 256 isolated original-byte cases pass. Four source-initialized parent continuations reach an atomic/read frontier under an explicit skipped request1200/status-check premise; native readiness and IPC pairing remain unknown.
 

@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) resolves non-Mach environmental imports at 0x8eb800/0x8eb94c/0x8eb9a4 (_arc4random) and 0x8eb8e0 (_gettimeofday). The twelve bounded continuations add no incoming/outgoing native port, right transfer or Mach emission site. Request1200/status checks remain omitted and native daemon/kext pairing remains unknown.
+Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) adds no Mach operation, incoming/outgoing native port, right transfer or emission site. Eight private source continuations classify local state/preparation and predicate ABIs only. Request1200/status checks, later request1201 endpoint lineage and native daemon/kext pairing remain unresolved.
+
+Prior extension: the [token, entropy and seed report](fpsd1201_seed_report.md) resolves non-Mach environmental imports at 0x8eb800/0x8eb94c/0x8eb9a4 (_arc4random) and 0x8eb8e0 (_gettimeofday). The twelve bounded continuations add no incoming/outgoing native port, right transfer or Mach emission site. Request1200/status checks remain omitted and native daemon/kext pairing remains unknown.
 
 Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) refreshes the modeled prefix before request1200, then explicitly omits its call and two return checks. The later original-byte continuations reach no imported Mach operation and add no incoming/outgoing native port, right or emission site. The cached name 0x5017 remains a fixture. Atomic/global initialization frontiers do not pair native daemon/kext traffic.
 

@@ -1,5 +1,7 @@
 # CoreFP1201 token, entropy, MT-compatible seed expansion and time interface
 
+The subsequent [optional-input and signed-record report](fpsd1201_key_routes_report.md) continues four pinned tuple cases through one mixed-state update and two predicate calls, stopping before the unresolved optional-input word read. It separately tests the upstream selector and preparation-object boundary. Complete mixing/output and native initialization remain unresolved.
+
 The source continuation beyond the previously stopped CASAL restores its token before calling `_arc4random`, fills a 624-word global array with the exact MT19937 seed recurrence, then combines time and two additional random values into a separate four-word tuple. The saved C+0x6f0 pointer starts the tuple/time scratch area. Twelve private cases and an independent replay establish these bounded effects. The earlier omitted request1200/status boundary, later key mixing, remaining context bytes, native initialization and daemon/kext pairing remain unresolved.
 
 ## Primary evidence and assumption register
@@ -97,7 +99,7 @@ The tuple cases stop before 0x8eb9b4. Subsequent optional-key selection, array m
 
 ## IDA and cross-layer evidence boundary [SE1,SE2,SE7]
 
-The retained live IDA snapshot confirms the original universal hash and full parent hash. Eight bounded indexed-xref queries concern the context-byte, pool pointer, control and their original pointer-table cells. The reported references connect the four global objects to their data-table slots; no code xref to those slots is indexed in that snapshot. Computed references and actual writers remain possible. This result is not a writer census or proof of absence. No function, type, name, byte or analysis flag is edited.
+The retained live IDA snapshot confirms the original universal hash and full parent hash. Eight bounded indexed-xref queries concern selected global state/pool objects and their original pointer-table cells. The subsequent [optional-input report](fpsd1201_key_routes_report.md) identifies the actual selector byte as image+0x1d44409 and distinguishes it from image+0x1d47fb0. The reported references connect the four global objects to their data-table slots; no code xref to those slots is indexed in that snapshot. Computed references and actual writers remain possible. This result is not a writer census or proof of absence. No function, type, name, byte or analysis flag is edited.
 
 The new suffix contains the entropy/time imports above and no imported Mach operation. It adds no native incoming/outgoing port, right transfer or Mach emission site. The earlier source-declared cached name, request1200 gap, later request1201 builder boundary and native daemon/kext pairing retain their previous evidence limits. The new global seed state and scratch tuple are local data-flow facts, not an observed transported payload or native object-ownership contract.
 

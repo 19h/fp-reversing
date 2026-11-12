@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) recovers the local entropy/time ABI and source tuple [random3, usec, low32(seconds), random2] at C+0x6f0, followed by 16 bytes of timeval backing. It checks exact token compare/exchange, 624 u32 seed stores, untouched padding and a caller-saved clobber control. Native API values, ownership, later generator/output and wire pairing remain unresolved.
+Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) specifies the complete 36 B accessed record at 0x439734: decoded mode chooses signed/unsigned u64 B<A and writes a masked u32 at R+0. The earlier predicate writes R+0x20. Selector-byte and optional-input/holder contracts remain conditional on the private prefix; native object size and wire correspondence are unknown.
+
+Prior extension: the [token, entropy and seed report](fpsd1201_seed_report.md) recovers the local entropy/time ABI and source tuple [random3, usec, low32(seconds), random2] at C+0x6f0, followed by 16 bytes of timeval backing. It checks exact token compare/exchange, 624 u32 seed stores, untouched padding and a caller-saved clobber control. Native API values, ownership, later generator/output and wire pairing remain unresolved.
 
 Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) gives complete local record ABIs for 0x274ed0 and 0x1abbe0: address-keyed mode/operands/candidates/mask, equality or unsigned comparison, and one output store at +0x28 or +0x20 respectively. Whole-leaf source proofs and 256 finite cases pass. Source-initialized frame geometry and four continuations remain conditional on the explicit omitted request1200/status boundary; native ABI ownership and wire pairing remain unknown.
 

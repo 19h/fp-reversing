@@ -1,6 +1,8 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [token, entropy and seed report](fpsd1201_seed_report.md) continues the receipt-pinned CASAL frontier through source token restoration, three entropy callsites, a complete 624-word MT-compatible seed expansion and a four-word time/random tuple. Twelve cases and 4992 oracle words pass. The request1200 gap, subsequent key mixing, remaining context bytes and native transport pairing remain unresolved.
+Current extension: the [optional-input and signed-record report](fpsd1201_key_routes_report.md) separates the exact selector byte at image+0x1d44409 from the saved global at image+0x1d47fb0. It traces selector=1 to a preparation-object boundary and the retained fallback to a later optional-input read, checking one mixed-state update and two complete predicates. Native initialization and full output/IPC pairing remain unknown.
+
+Prior extension: the [token, entropy and seed report](fpsd1201_seed_report.md) continues the receipt-pinned CASAL frontier through source token restoration, three entropy callsites, a complete 624-word MT-compatible seed expansion and a four-word time/random tuple. Twelve cases and 4992 oracle words pass. The request1200 gap, subsequent key mixing, remaining context bytes and native transport pairing remain unresolved.
 
 Prior extension: the [initialized parent and predicate report](fpsd1201_predicates_report.md) refreshes 19717 original prefix visits plus six modeled steps, supplies the actual private cursor/owner/key cells and independently replays four conditional continuations. Two complete predicate contracts explain selected table indices and expose atomic/global initialization frontiers. The request1200 call/status checks and the later pre-helper connection remain separate gaps; native parent continuity, full context and transport pairing remain unknown.
 
