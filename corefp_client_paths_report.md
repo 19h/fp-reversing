@@ -1,6 +1,8 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current extension: the [workspace report](corefp_workspace_report.md) checks six complete local paths with independent preparation/message storage. Both workspaces reconstruct from fixed canonical data and per-phase encodings; finite 32 B controls preserve the second output block when preparation changes. Native initialization, general input semantics and pairing remain unknown.
+Current extension: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown.
+
+Previous extension: the [workspace report](corefp_workspace_report.md) checks six complete local paths with independent preparation/message storage. Both workspaces reconstruct from fixed canonical data and per-phase encodings; finite 32 B controls preserve the second output block when preparation changes. Native initialization, general input semantics and pairing remain unknown.
 
 Previous extension: The [pool-transform report](corefp_pool_transform_report.md) checks seven complete local returns and one original-context stop. Both source-produced allocations become workspaces, context words affect output, and nonzero retirement restores free metadata without a native `free`. Private context remains an explicit initial premise; native initialization and pairing remain unknown.
 

@@ -1,6 +1,8 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current extension: the [workspace report](corefp_workspace_report.md) separates record+`0x10` preparation input from message/context storage and recovers a canonical constructor interface. Arbitrary load-interface/store proofs and five phase bindings reconstruct both arrays; finite controls show first-block XOR effects without establishing a general chaining mode or native ABI.
+Current extension: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown.
+
+Previous extension: the [workspace report](corefp_workspace_report.md) separates record+`0x10` preparation input from message/context storage and recovers a canonical constructor interface. Arbitrary load-interface/store proofs and five phase bindings reconstruct both arrays; finite controls show first-block XOR effects without establishing a general chaining mode or native ABI.
 
 Previous extension: The [pool-transform report](corefp_pool_transform_report.md) establishes a conditional complete local path using a declared private context. Source cells image+`0x1d45f60`/`0x1d44440` supply context base/offset; both operation-`0x88cd` calls retire same-epoch results in reverse allocation order. Full CPU/RAM replay and compact arena/ARX oracles preserve native admission and Mach-ABI limits.
 

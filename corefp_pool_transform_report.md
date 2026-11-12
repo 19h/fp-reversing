@@ -1,5 +1,7 @@
 # CoreFP pool-backed transform, shared context and nonzero retirement
 
+Subsequent consumer reduction: the [workspace-consumer report](corefp_workspace_consumers_report.md) establishes the 823-instruction table-consumer component as a canonical substitution network and checks all private destinations. The context/ARX tail and complete native input/output contract remain separate unresolved stages.
+
 Subsequent canonicalization: the [workspace report](corefp_workspace_report.md) reconstructs both arrays from one fixed byte permutation and affine expansion under five source encoding classes. Six new complete profiles separate preparation from message bytes; first-block XOR observations remain finite, and complete transform identity remains unknown.
 
 Original `0x1af6b8` now returns completely through its larger body and both nonzero pool-retirement calls under an explicitly supplied private context. Seven complete controls and one original-context boundary control receive independent whole-source replay. The caller builds two 256-word workspaces, processes 16/32 B inputs, reads three u64 context words per block and retires the second allocation before the first. Both retirements restore the pool boundary and allocation counter; they invoke no native `free`.

@@ -1,6 +1,8 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current extension: the [workspace report](corefp_workspace_report.md) identifies the two local arrays as encodings of one fixed byte permutation and an affine word expansion. A 36-instruction source lift and six complete private profiles verify all 3072 words under five encoding classes. Whole-transform identity and native admission remain unknown.
+Current extension: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown.
+
+Previous extension: the [workspace report](corefp_workspace_report.md) identifies the two local arrays as encodings of one fixed byte permutation and an affine word expansion. A 36-instruction source lift and six complete private profiles verify all 3072 words under five encoding classes. Whole-transform identity and native admission remain unknown.
 
 Previous extension: The [pool-transform report](corefp_pool_transform_report.md) follows original `0x1af6b8` through its larger body and both nonzero retirements. Two 256-word workspaces, three context-word reads per block and one seven-round ARX component receive independent checks. Seven complete private returns retire the second allocation before the first; native context initialization and the complete algorithm remain unknown.
 

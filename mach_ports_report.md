@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current extension: the [workspace report](corefp_workspace_report.md) adds source-proved local constructor/preparation contracts. Six complete private profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Canonical local substitution values add no native port identity or daemon/kext pairing.
+Current extension: the [workspace-consumer report](corefp_workspace_consumers_report.md) reduces 823 original instructions to ten substitution layers and 36 mixed-word nodes. Eight regional blocks match an independent interpreter and canonical oracle; 363 new/frozen UNSAT obligations pass. Canonical offsets and first-block values are invariant in the retained controls. Prefix/tail contracts, native initialization and daemon/kext linkage remain unknown.
+
+Previous extension: the [workspace report](corefp_workspace_report.md) adds source-proved local constructor/preparation contracts. Six complete private profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Canonical local substitution values add no native port identity or daemon/kext pairing.
 
 Previous extension: The [pool-transform report](corefp_pool_transform_report.md) follows private allocation through output and two nonzero pool retirements. Eight retained profiles invoke no Mach send/receive, port allocation, MIG helper or descriptor transfer. Shared local context cells do not establish native port identity or daemon/kext pairing.
 

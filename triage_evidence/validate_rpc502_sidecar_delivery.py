@@ -446,6 +446,7 @@ def main():
     if exists(BASE/'corefp_pool_caller_report.md'):reports.add(BASE/'corefp_pool_caller_report.md')
     if exists(BASE/'corefp_pool_transform_report.md'):reports.add(BASE/'corefp_pool_transform_report.md')
     if exists(BASE/'corefp_workspace_report.md'):reports.add(BASE/'corefp_workspace_report.md')
+    if exists(BASE/'corefp_workspace_consumers_report.md'):reports.add(BASE/'corefp_workspace_consumers_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2160,6 +2161,10 @@ def main():
         workspace=json.loads(read(ROOT/'corefp_workspace_checks.json'))
         manifest['validation']['corefp_workspace_increment_checks']=workspace['verified_counts']
         manifest['validation']['corefp_workspace_static_scope']=workspace['scope']
+    if exists(ROOT/'corefp_workspace_consumers_checks.json'):
+        consumers=json.loads(read(ROOT/'corefp_workspace_consumers_checks.json'))
+        manifest['validation']['corefp_workspace_consumers_increment_checks']=consumers['verified_counts']
+        manifest['validation']['corefp_workspace_consumers_static_scope']=consumers['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
