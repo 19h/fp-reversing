@@ -1594,3 +1594,13 @@ The [auxiliary/exponentiation report](fpsd1201_auxiliary_report.md) resolves tha
 The [integer-export report](fpsd1201_export_report.md) resolves original 0x32f628 as fixed-width big-endian magnitude export, with count-based length admission and local status at record+0x18. All 132 calls return; 8179 byte oracles pass. The selected caller completes the local helper independently of that unread status, as two shortened-export controls demonstrate. The source-staged arithmetic/export helper now has complete private returns; native parent and transport roles remain conditional.
 
 The [parent handoff report](fpsd1201_handoff_report.md) resolves the selected 0x8f3594/0x8f35c8 root-marker dispatch, 0x8f35cc XOR buffer loop, unsigned owner+0x168 gate and 0x8f3838 -> 0x8d40 serializer edge under explicit parent bindings. Request payload comes from the retained +0x880 export, while the loop writes distinct +0x900 bytes. Original pre-import builder execution checks complete payload preservation; native function invocation, endpoint identity and successful transport remain unknown.
+
+## Network-registry routine identities
+
+The [network-identity report](corefp_network_identity_report.md) establishes these additional complete bounded roles from original bytes and independent API-model replay. Native callers and downstream identity use remain unknown.
+
+| Original routine | Recovered role | Complete source extent |
+| --- | --- | --- |
+| 0x86c0 | Lazy six-byte cache getter with low32 capacity/status admission | 148 B |
+| 0x8754 | IONetworkController enumeration and parent IOMACAddress cache population | 440 B |
+| 0x15d1580 | dispatch_once thunk for predicate image+0x1d443c8 and global Block image+0x1c80028 | 20 B |

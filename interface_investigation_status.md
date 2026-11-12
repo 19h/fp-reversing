@@ -1401,3 +1401,7 @@ The [CoreFP1201 consumer increment](fpsd1201_consumer_report.md) resumes twelve 
 ## CoreFP1201 complete product continuation
 
 The [CoreFP1201 product increment](fpsd1201_product_report.md) independently replays 96 profiles and 1684168 new visits. It establishes 81 canonical Montgomery-product results, six retained odd counterexamples and separately classified even controls, complete child/wrapper returns and zero cursor emissions. Twenty-four nested continuations stop before 0x11425bc -> 0x59f4e8. Source-produced context, full consumer/request1201 return, native rights and daemon/kext/deeper lineage remain open. The full goal remains active.
+
+## Network-registry reader and lazy cache
+
+The [network-identity increment](corefp_network_identity_report.md) independently replays 27 profiles, 3547 original visits, 27 initial CPU frames, 548864 B of initial/final RAM and all 30 getter returns. Three UNSAT obligations and an arm64e ABI compile support the original getter/block contract. Cache bytes track the last successful property; status tracks the last iteration. Native registry observations, incoming getter references, downstream six-byte consumers, earlier selector/holder initialization and daemon/kext/deeper linkage remain open. The full goal remains active.
