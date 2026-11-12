@@ -1383,3 +1383,7 @@ The [CoreFP1201 reduction increment](fpsd1201_reduction_report.md) independently
 ## CoreFP1201 post-precomputation consumer handoff
 
 The [CoreFP1201 consumer increment](fpsd1201_consumer_report.md) resumes twelve positive precomputation checkpoints and independently checks 3888 new original visits, two record contracts and early cursor restoration. The new frontier is unexecuted 0x114245c -> 0x74fd0c. Prior prefix execution is receipt-pinned rather than rerun. Complete consumer/request1201 return, source-produced context, native rights and daemon/kext/deeper lineage remain open. The full goal remains active.
+
+## CoreFP1201 complete product continuation
+
+The [CoreFP1201 product increment](fpsd1201_product_report.md) independently replays 96 profiles and 1684168 new visits. It establishes 81 canonical Montgomery-product results, six retained odd counterexamples and separately classified even controls, complete child/wrapper returns and zero cursor emissions. Twenty-four nested continuations stop before 0x11425bc -> 0x59f4e8. Source-produced context, full consumer/request1201 return, native rights and daemon/kext/deeper lineage remain open. The full goal remains active.

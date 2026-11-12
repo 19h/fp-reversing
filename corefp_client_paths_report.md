@@ -195,3 +195,7 @@ The [reduction/precomputation increment](fpsd1201_reduction_report.md) completes
 ## CoreFP1201 post-precomputation consumer handoff
 
 The [post-precomputation consumer handoff](fpsd1201_consumer_report.md) advances twelve audited checkpoints through 0x1142c08 and 0x1142154 to the unexecuted call 0x114245c -> 0x74fd0c. Its incoming and outgoing 48 B records connect the prepared pair, modulus and imported input; complete arithmetic and native request1201 delivery remain unknown.
+
+## CoreFP1201 complete product continuation
+
+The [complete product continuation](fpsd1201_product_report.md) identifies 0x74eb08 and wrapper 0x74fd0c as Montgomery multiplication on tested canonical inputs. Eighty-one complete arithmetic oracles pass through 2048 bits; six retained width-mismatched odd cases remain explicit counterexamples. Twenty-four nested continuations reach the unexecuted auxiliary call 0x11425bc -> 0x59f4e8. Complete request1201 processing and native delivery remain open.

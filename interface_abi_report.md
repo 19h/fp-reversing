@@ -1740,3 +1740,7 @@ The [precomputation increment](fpsd1201_reduction_report.md) resolves the pair a
 ## CoreFP1201 post-precomputation consumer handoff
 
 The [CoreFP1201 consumer handoff](fpsd1201_consumer_report.md) recovers incoming {Q, candidate result, encoded state, auxiliary, input, modulus} and outgoing {Q.second, encoded state, modulus, Q, scratch, input} 48 B prefixes. The original outgoing call is 0x114245c -> 0x74fd0c through slot 0x1d03d18, IA modifier 0xca9b. Receiving arithmetic semantics and complete return remain unknown.
+
+## CoreFP1201 complete product continuation
+
+The [product increment](fpsd1201_product_report.md) confirms the 48 B {a, encoded control, modulus, Q, output, b} record and c at Q+0x10. Implementation 0x74eb08 and wrapper 0x74fd0c complete 96 calls; 81 canonical odd calls match a*b*R^-1 mod n. Exact output aliases, raw-count predicate and zero stack-adjustment emission at 0x74ff20 are verified. The next auxiliary dependency is 0x11425bc -> 0x59f4e8; complete receiving grammar remains unknown.

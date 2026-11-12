@@ -126,3 +126,7 @@ An independent auditor constructs a fresh private CPU, loads original bytes and 
 | Low | Extend mathematical coverage after a complete contract is recovered. | Vary canonical widths, aliases, zero/even admission and environmental epochs only with declared backing and independent oracles. |
 
 Quality gates: **QG1** no normative content is required. **QG2** CF1-CF8 state assumptions, dependencies and falsification probes. **QG3** bounded routine roles, incoming/outgoing records, data/control flow, original dispatch sites, environmental controls, cursor channels and port consequences are covered. **QG4** B denotes bytes; limbs are 32 bits; modular widths, raw cursor units, extent checks and complexity are explicit. **QG5** checkpoint provenance, unbacked auxiliary, tested zero/even scope, unexecuted calls/returns and arithmetic hypotheses are distinguished. **QG6** primary binary bytes, fresh IDA readback, independent reference parsing, prior replay receipt and fresh continuation replay support claims. **QG7** impact-ranked expansion remains bounded. The full investigation remains active.
+
+## CoreFP1201 complete product continuation
+
+The [complete product continuation](fpsd1201_product_report.md) resolves the previously unexecuted 0x74fd0c dependency and implementation 0x74eb08 under tested canonical inputs. It retains six width-mismatched odd counterexamples, verifies complete product/wrapper returns, and advances the outer consumer to unexecuted 0x11425bc -> 0x59f4e8. Full outer consumer and native request1201 processing remain open.

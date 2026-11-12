@@ -251,3 +251,7 @@ The client-side [complete precomputation return](fpsd1201_reduction_report.md) e
 ## CoreFP1201 post-precomputation consumer handoff
 
 The client-side [consumer handoff](fpsd1201_consumer_report.md) establishes a further local arithmetic-record boundary. Twelve private continuations stop before 0x114245c -> 0x74fd0c. No native receive, reply-right or daemon/kext identity is established by this increment.
+
+## CoreFP1201 complete product continuation
+
+The client-side [complete product increment](fpsd1201_product_report.md) establishes complete local arithmetic/wrapper returns and a later auxiliary-record boundary. Its canonical results and retained counterexamples remain distinct from native receive, reply-right and daemon/kext identity; those joins remain unknown.

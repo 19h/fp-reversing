@@ -1569,3 +1569,7 @@ The [precomputation report](fpsd1201_reduction_report.md) identifies 0x14f8d28 a
 ## CoreFP1201 post-precomputation consumer handoff
 
 The [consumer handoff report](fpsd1201_consumer_report.md) recovers 0x1142c08 as a cursor wrapper and the executed prefix of 0x1142154 as a record-staging consumer. Twelve audited continuations pass Q.second, modulus, Q, local scratch and imported input to the unexecuted 0x74fd0c dependency. Montgomery-product and exponentiation roles remain hypotheses pending complete receiving arithmetic.
+
+## CoreFP1201 complete product continuation
+
+The [complete product report](fpsd1201_product_report.md) identifies original 0x74eb08 as Montgomery multiplication on tested canonical odd inputs and 0x74fd0c as its cursor wrapper. Eighty-one independent modular oracles cover selected 32..2048-bit widths and distinct/aliased outputs. Six retained width-mismatched odd counterexamples prevent an unrestricted arithmetic claim. All 96 original implementations/wrappers return; the next unexecuted dependency is 0x59f4e8.

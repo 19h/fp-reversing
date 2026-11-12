@@ -1485,3 +1485,7 @@ The [complete precomputation continuation](fpsd1201_reduction_report.md) adds ar
 ## CoreFP1201 post-precomputation consumer handoff
 
 The [post-precomputation consumer continuation](fpsd1201_consumer_report.md) adds private process-pointer records and exact authenticated call sites. Its 3888 selected executed instructions invoke no Mach API and emit no Mach right. Actual wrapper adjustment emission remains beyond its boundary; native endpoint/right ownership and daemon/kext pairing remain unknown.
+
+## CoreFP1201 complete product continuation
+
+The [complete product continuation](fpsd1201_product_report.md) verifies private arithmetic descriptors and zero byte stack-adjustment emissions at 0x74ff20. Its executed paths invoke no Mach API and emit no Mach right. Native endpoint/right ownership and daemon/kext pairing remain unknown; established transport emission evidence remains unchanged.

@@ -1611,3 +1611,7 @@ The [reduction report](fpsd1201_reduction_report.md) establishes the odd one-wor
 ## CoreFP1201 post-precomputation consumer handoff
 
 The [post-precomputation consumer report](fpsd1201_consumer_report.md) recovers two 48 B record prefixes, exact original dispatch rows, optional auxiliary provenance and the early cursor restoration in 0x1142154. Independent continuation replay checks 3888 original visits from twelve pinned checkpoints; prior prefix instructions are not rerun. Complete consumer semantics and native lineage remain open.
+
+## CoreFP1201 complete product continuation
+
+The [complete Montgomery-product report](fpsd1201_product_report.md) adds 96 independently replayed profiles, 1684168 original visits, whole-descriptor output aliases, source count grammar and exact cursor emissions. Eighty-one canonical odd results pass separate modular oracles; six retained width-mismatched odd results falsify an unrestricted interpretation. Larger snapshot windows include neighboring stack records, so operand stability is checked over count-defined extents. Source-produced context and native lineage remain open.
