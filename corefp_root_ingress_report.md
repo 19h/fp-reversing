@@ -1,5 +1,7 @@
 # CoreFP root-record ingress, stack adjustment and result propagation
 
+Subsequent evidence: the [ingress callers report](corefp_ingress_callers_report.md) establishes three conditional local producers of this ingress record. Their mode preimage decodes to `0x114e4318`, whereas the twelve complete executions below deliberately use mode zero. The new coherent upstream entry stops earlier at `_vm_allocate`; it does not complete these caller-produced inputs through the root. The fixture results below retain their stated scope.
+
 Original routine `0x5f4584..0x5f4908` constructs the record passed to adapter `0x8fcfa0`, which calls protected root `0x8e81c8`. It loads a u64 seed from original image cell `0x1d435b0`, places it at its SP, supplies that word to the adapter, then adds the returned word to SP before reading the root result and copying it to ingress offset `+0x20`. This establishes a source consumer for the adapter output: a stack adjustment in this caller. Its meaning in other callers remains unknown.
 
 Twelve complete private executions traverse the original ingress, adapter, root, lookup and cleanup epilogues. The root record is produced by original instructions rather than patched. Selected failure paths produce adapter output zero, preserve the caller's SP and copy the root's raw marker to ingress `+0x20`, independently of residual X0. Ingress scalar and entry-stack variations are included. Native caller admission, successful processing and daemon/kext pairing remain unknown; the full goal stays active.

@@ -437,6 +437,7 @@ def main():
     if exists(BASE/'corefp_cold_seed_report.md'):reports.add(BASE/'corefp_cold_seed_report.md')
     if exists(BASE/'corefp_root_adapter_report.md'):reports.add(BASE/'corefp_root_adapter_report.md')
     if exists(BASE/'corefp_root_ingress_report.md'):reports.add(BASE/'corefp_root_ingress_report.md')
+    if exists(BASE/'corefp_ingress_callers_report.md'):reports.add(BASE/'corefp_ingress_callers_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2115,6 +2116,10 @@ def main():
         root_ingress=json.loads(read(ROOT/'corefp_root_ingress_checks.json'))
         manifest['validation']['corefp_root_ingress_increment_checks']=root_ingress['verified_counts']
         manifest['validation']['corefp_root_ingress_static_scope']=root_ingress['scope']
+    if exists(ROOT/'corefp_ingress_callers_checks.json'):
+        ingress_callers=json.loads(read(ROOT/'corefp_ingress_callers_checks.json'))
+        manifest['validation']['corefp_ingress_callers_increment_checks']=ingress_callers['verified_counts']
+        manifest['validation']['corefp_ingress_callers_static_scope']=ingress_callers['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

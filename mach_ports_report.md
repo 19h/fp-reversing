@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current extension: the [ingress callers report](corefp_ingress_callers_report.md) identifies CoreFP `_vm_allocate` callsite0x1ca598 and authenticated function slot0x1d04758. Its task argument comes through `_mach_task_self_` pointer slot0x1d14310 and the four-byte load at0x1ca548; declared task-name controls0x4201/0 propagate to the boundary. Five prefixes request4096 B with flags1 and stop before the API. No native right, message, allocation or daemon/kext pairing is established.
+
 Current extension: the [root-record ingress report](corefp_root_ingress_report.md) adds a source record producer and stack/result consumer around the existing lookup/cleanup chain. It establishes no new native port or emission site. Nine frozen unchanged-ID daemon rejection children and14 modeled bootstrap calls retain their earlier scope; source result forwarding does not establish rights translation, successful delivery or a matched kext request.
 
 Current extension: the [protected-root adapter report](corefp_root_adapter_report.md) composes the earlier primary/fallback lookup and cleanup under original adapter0x8fcfa0. It adds no native port or emission site. Twenty-seven modeled bootstrap calls and22 unchanged-ID daemon rejection children retain their existing fixture meanings; the adapter's external u64 output is distinct from port-name slots and record/X0 results. Native rights, successful delivery and daemon/kext pairing remain unknown.
