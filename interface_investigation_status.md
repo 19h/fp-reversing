@@ -1475,3 +1475,7 @@ The [cold metadata/re-entry increment](corefp_cold_metadata_report.md) independe
 ## Caller-managed lookup lock release
 
 The [caller lock-release increment](corefp_lookup_release_report.md) independently checks seven cold parent profiles, 22812 client visits, 14 matching-pointer lock events and 1654784 B of initial/final RAM. It establishes selected caller failure cleanup, two UNSAT identities, one unaligned SAT falsifier and 1792 B of live readback. Native ownership, general re-entry, successful-request cleanup and cross-layer endpoint identity remain open. The full goal remains active.
+
+## Selector-21 output stream and adapter frontier
+
+The [output-stream report](versioned_output_stream_report.md) checks eight distinct second-object paths and eight counterfactual null returns, 10,064 new visits, 27 UNSAT source queries and 1,280 bank inputs. Independent byte epochs cover all 6,688 read bytes, 3,424 write bytes and 2,304 snapshot bytes. The pending success call is now identified as a private stack adapter with a matching record decoder and inner target. The remaining frontier is the inner routine's output/result/header effects and selector-21 copyback. No native call executes; the full goal remains active.

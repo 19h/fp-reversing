@@ -1577,3 +1577,7 @@ The [cold metadata/re-entry report](corefp_cold_metadata_report.md) joins bootst
 ## Caller-managed lookup lock release
 
 The [caller lock-release report](corefp_lookup_release_report.md) distinguishes lock cleanup from service-right retirement. Seven cold failure paths request pthread unlock at 0x1becc8 after lookup; none calls mach_port_deallocate or emits the larger request1200. Four primary-service cases retain the known metadata emission at 0x914c; successful discovery leaves the selected-name cache populated. No native Mach right or kext emission is added.
+
+## Output-stream task field and private return channels
+
+The [output-stream increment](versioned_output_stream_report.md) stores the task from R+0 in the reused private record at C+0x48. That pointer store does not establish a Mach-right transfer. The adapter's caller-cell delta and C+0x20 result are private return channels. Sixteen source-only paths introduce no output-B write, new Mach port, right retirement or IPC emission; native connection/task/right pairing remains unknown.

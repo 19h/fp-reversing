@@ -287,3 +287,7 @@ The [cold metadata and re-entry report](corefp_cold_metadata_report.md) now join
 ## Caller-managed lookup lock release
 
 The [caller lock-release increment](corefp_lookup_release_report.md) completes seven cold parent failure paths. Original caller 0x8e81c8 produces the lookup record and invokes cleanup wrapper 0x457838 at 0x8fc3f0; wrapper 0x457aa0 reaches unlock helper 0x1be978 and pthread_rwlock_unlock at 0x1becc8 with the acquired heap/static pointer. Parent marker, final X0 and the early X1-referenced u64 update are separate outputs. Successful-request cleanup and native ownership remain open.
+
+## Selector-21 output stream and private adapter
+
+The [output-stream increment](versioned_output_stream_report.md) follows the eight retained reader cases under distinct-object and null second-return models. It initializes a 32 B wrapper around the existing 512 B output-B span and packs both streams, task and workspace bounds into W+0x60. Source selection resolves adapter 0xfffffe000a69ee38 to inner 0xfffffe000a6890dc. No new output-B byte, native connection/right or completed copyback is established.

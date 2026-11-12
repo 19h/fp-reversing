@@ -1703,3 +1703,7 @@ The [cold metadata/re-entry increment](corefp_cold_metadata_report.md) retains a
 ## Caller-managed lookup lock release
 
 The [caller lock-release report](corefp_lookup_release_report.md) establishes a source-managed acquisition-to-failure-cleanup interval in seven cold parent runs. Cleanup rereads the heap-lock slot, constructs an aligned record and requests release of the acquired pointer. The parent u64 input word advances before lookup and is not restored in tested failures; final X0 retains unlock result separately from the parent record marker. Native concurrency and upstream ABI semantics remain unknown.
+
+## Output construction, record representation and stack control
+
+The [output-stream increment](versioned_output_stream_report.md) adds 16 source continuations / 10,064 new visits and 27 UNSAT equations. It establishes the 28 B defined stream prefix, address-derived record key and matching decoder, reverse 32 B input-object overwrite on a null control, and separate private reservation / exported stack-delta channels. The terminal adapter is bounded by the exact text/stub boundary. Actual final header preservation, output writes and native delivery remain unknown.

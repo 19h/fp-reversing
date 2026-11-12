@@ -1683,3 +1683,7 @@ The [cold metadata/re-entry report](corefp_cold_metadata_report.md) independentl
 ## Caller-managed lookup lock release
 
 The [caller cleanup increment](corefp_lookup_release_report.md) recovers wrapper 0x457838 (660 B) as source control translation plus heap-lock-slot reread, and helper 0x1be978 (896 B) as aligned-record pointer/fallback selection plus pthread unlock at 0x1becc8. Seven complete cold parent failure paths establish matching acquisition/release pointer arguments. The accessed unlock record is 12 B; retained extra snapshot bytes are not ABI fields. Native ownership remains unknown.
+
+## Second stream, final adapter and inner decoder
+
+The [output-stream increment](versioned_output_stream_report.md) identifies 0xfffffe000a5a82a4..0xfffffe000a5a8320 as the selected output-stream constructor slice and 0xfffffe000a69ee38..0xfffffe000a69f064 as the complete final-text stack adapter. Five original bank identities select its controller/seed addresses, table base and inner 0xfffffe000a6890dc. The inner prefix decodes the caller's address-keyed record and restores its header; full inner semantics and final preservation remain unknown. These are descriptive roles, not native symbol renames.

@@ -1832,3 +1832,7 @@ The [cold metadata/re-entry report](corefp_cold_metadata_report.md) adds the ori
 ## Caller-managed lookup lock release
 
 The [caller cleanup ABI report](corefp_lookup_release_report.md) separates a 4 B accessed cleanup-wrapper input from a 12 B accessed unlock record: +0 u64 optional lock pointer, +8 u32 encoded control 0x4cfa. Two source-key identities are UNSAT within their stated domains and an unaligned SAT falsifier prevents an unrestricted codec claim. Parent record marker, final X0 and an early X1-referenced u64 increment are independent outputs. Native protected-parent prototype remains unknown.
+
+## Selector-21 second-stream and stack-delta ABI
+
+The [output-stream contract](versioned_output_stream_report.md) gives H2's exact fields and W+0x60 record, with K=(low32(C) XOR 0x6133a0c8)*0x84d77373 mod 2^32. Mode and marker flow through the matching inner decoder; this pack does not read R+0x10. Call 0xfffffe000a5a8508 passes C and FP-0x68 to adapter 0xfffffe000a69ee38. Its selected inner call targets 0xfffffe000a6890dc; final low16 header difference exports a 16-byte-aligned caller delta independently of record result C+0x20. The actual delta and complete operation remain unknown.

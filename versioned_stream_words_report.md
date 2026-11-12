@@ -121,3 +121,7 @@ Run the extractor, verify and compress its receipt with zstd level 22, then run 
 - **QG5**: Pass. Strict fixtures, arbitrary origins, canonical/encoded/complement words and pending/native results are distinct.
 - **QG6**: Pass. Original bytes, pinned epochs, source equations, static chains and model premises are traceable.
 - **QG7**: Pass. Further data/control/output and native-ownership work is bounded and impact-ranked above.
+
+## Source continuation through second-stream construction
+
+The [output-stream increment](versioned_output_stream_report.md) preserves this report's original pending-call receipts and separately models distinct-object and null returns. It establishes the new stream's 28 B prefix, the reused record and matching inner decoder, the null-path overwrite/free frontier, and the final-text adapter's private stack contract. Actual final header preservation, output-B writes and native copyback remain unknown.
