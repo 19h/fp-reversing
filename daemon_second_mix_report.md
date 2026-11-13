@@ -1,5 +1,7 @@
 # Daemon second mixing pass and gate reacquisition
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) continues the exact final boundaries here through conditional internal cleanup, gate release, all624 twist updates, tempering and the first encoded private output byte. Its extra8 B neighbor-header snapshot premise and two strict controls are explicit. The earlier cut below remains this report's scope; native output/transport identity remains unknown.
+
 The warm payload-driven initializer completes 623 second-pass updates, forces state word 0 to `0x80000000` and reacquires the same gate released before entropy collection. The second pass has a compact indexed recurrence and one state wrap. The gate's source compare-and-swap replaces `0x5d96` with `0xa94ef`; every other old word selects a self-retry. Both retained executions take success without an additional memory or API premise. Execution stops before `0x100a3881c`, where subsequent readiness/global-state decisions begin. Native synchronization, output use and daemon-kext pairing remain unknown. [SX1-SX5]
 
 ```text

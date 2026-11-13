@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) follows local cleanup, a full624-word twist and the first encoded private byte. Its28 intervals add no incoming/outgoing Mach name, right disposition, emission site or native daemon-kext pairing. The current private output has no established transport identity.
+
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) completes the local 623-update pass and establishes a same-gate reacquisition after state initialization. It adds no Mach port, right disposition or message emission; output use and native daemon-kext pairing remain unknown.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) adds source admission, cold gate release and warm arena-header contracts. It establishes no new port name, right transfer, send/receive site or native daemon-kext pairing. The 60 source intervals remain conditional on separately declared runtime metadata.

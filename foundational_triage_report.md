@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) connects completed payload-dependent initialization to a full twist and first encoded private output. Gate release precedes the twist. Internal metadata restoration depends on one additional8 B snapshot field; strict missing-byte controls remain separate. Output encoding depends on low32(destination address), cached state and source-text bytes; stored-zero attempts do not advance the destination counter. Native ownership, concurrent visibility and transport identity remain unknown.
+
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) establishes a source lifecycle sequence: release the gate before entropy, complete both mixing phases, force word0 and reacquire the same gate. Arbitrary-old-word source proofs distinguish success from self-retry. Native ownership, contention, ordering and output publication remain unknown.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) exposes the runtime-state assumptions behind the earlier cold entropy route: readiness exactly 1 selects an existing-arena path, while other byte values save zero and restore the admission gate before entropy. Two separately retained header epochs demand different in-owner marker addresses. All reads of undefined marker bytes remain unexecuted, and no native epoch join is inferred.

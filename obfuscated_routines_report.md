@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) identifies conditional internal cleanup0x100cb2ef0, payload overwrite0x1009f2984, gate release0x100bde608, twist stores0x100a5e93c/0x100b312a4/0x100a2f634, tempering0x100a7ccc0 and encoded-byte store0x100a0ca74. Full original-source replay and compact equations establish these block roles; whole-function/native transport identity remains unknown.
+
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) identifies indexed mixer 0x100abba18, state-wrap copy 0x1009f04b8, remaining-counter dispatch 0x100a07724, final force 0x100b2a20c and gate CAS 0x100b3a84c. Compact equations and complete replay establish block roles while preserving unknown function/native scope.
 
 Current readiness/arena increment: The [readiness/arena analysis](daemon_readiness_arena_report.md) assigns provisional roles to admission CAS at 0x100a6e5b8, readiness equality at 0x100b74044, descriptor/sentinel routing at 0x100ba7724 and encoded marker demand at 0x100b6a918. Exact source/target mappings and confidence limits are retained; complete routine equivalence and native synchronization remain unknown.

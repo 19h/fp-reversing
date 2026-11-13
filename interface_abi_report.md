@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) maps readiness/runtime-flag admission, one additional8 B snapshot neighbor field,54 B and86 B overwrite spans,624-word in-place twist, index/counter publications and an address/cache/text-dependent byte encoder. Exactly1 of32 output bytes is defined at the cut; native ownership and transport use remain unknown.
+
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) establishes the second indexed state recurrence, private comparison/dispatch contracts, final state-word force and gate CAS value partition. The saved pointer selects the earlier 4 B gate; native synchronization and external transport use remain unknown.
 
 Current readiness/arena increment: The [readiness/arena report](daemon_readiness_arena_report.md) maps a 4 B compare-exchange gate, exact 1 B readiness equality, 8 B descriptor link at D+72, pending 5000 B expansion allocation and encoded marker arithmetic. Fresh-startup and constructor-snapshot header epochs remain separate; native ownership and transaction pairing remain unknown.

@@ -1,5 +1,7 @@
 # Daemon arena split and defined payload-to-seed flow
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) follows the completed warm initializer back through conditional arena bookkeeping:54 payload-byte overwrites, reversal of88 B reservation accounting, header/marker restoration and a separate86 B arena-head overwrite. Marker continuation adds one source-defined8 B neighbor field from the same constructor snapshot; native epoch and ownership remain unknown. It then reaches full twist/tempering and one encoded private byte.
+
 The initialized arena route reserves an 88 B block, returns its 64 B payload at block+24, releases the admission gate and reaches the same entropy/clock sites as the earlier cold route. The payload already has original source provenance: a 156 B descending fill in the parent interval covers every payload byte. Its first retained consumer reads payload+4, updates word 1 of the private 16 B seed record and reaches the next state-mixing iteration. This establishes a local arena-to-seed data dependency. Native ownership, complete generator execution and daemon-kext transaction pairing remain unknown. [AS1-AS5]
 
 ```text

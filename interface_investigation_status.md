@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) adds28 intervals,31424 source visits and eleven nonvacuous source obligations. Both inherited paths reach a full twist, tempering and one private encoded-byte store. An extra8 B constructor-snapshot field is conditional; two strict controls preserve its missing-read boundary. Continue before0x100bf6d40 for retry/refill/output use. Native epochs and daemon-kext pairing remain open; the full goal remains active.
+
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) adds 1252 intervals,181990 source visits and eight nonvacuous source obligations. Both retained second passes finish, force word0 and reacquire the earlier gate. Execution stops before 0x100a3881c; complete output use, coherent native epochs and daemon-kext pairing remain open. The full goal remains active.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) adds 60 intervals, 27216 source visits and eight nonvacuous UNSAT source obligations. It distinguishes cold zero-pointer admission and gate release from the initialized arena path, verifies descriptor/sentinel routing and compares two separately declared header epochs. A coherent caller/snapshot join, complete synchronization lifecycle and native daemon-kext pairing remain open. The full goal remains active.

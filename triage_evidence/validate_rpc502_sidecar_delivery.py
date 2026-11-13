@@ -499,6 +499,7 @@ def main():
     if exists(BASE/'daemon_arena_split_report.md'):reports.add(BASE/'daemon_arena_split_report.md')
     if exists(BASE/'daemon_payload_mix_report.md'):reports.add(BASE/'daemon_payload_mix_report.md')
     if exists(BASE/'daemon_second_mix_report.md'):reports.add(BASE/'daemon_second_mix_report.md')
+    if exists(BASE/'daemon_postseed_output_report.md'):reports.add(BASE/'daemon_postseed_output_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2516,6 +2517,14 @@ def main():
         manifest['validation']['daemon_second_mix_model_checks']=second_audit['model_checks']
         manifest['validation']['daemon_second_mix_static_scope']=second['scope']
         manifest['validation']['daemon_second_mix_source_queries_unsat']=second_audit['source_queries_unsat']
+    if exists(ROOT/'daemon_postseed_output_checks.json'):
+        postseed=json.loads(read(ROOT/'daemon_postseed_output_checks.json'))
+        postseed_audit=json.loads(read(ROOT/'daemon_postseed_output_audit.json'))
+        manifest['validation']['daemon_postseed_output_increment_checks']=postseed['verified_counts']
+        manifest['validation']['daemon_postseed_output_replay_checks']=postseed_audit['independent_totals']
+        manifest['validation']['daemon_postseed_output_model_checks']=postseed_audit['model_checks']
+        manifest['validation']['daemon_postseed_output_static_scope']=postseed['scope']
+        manifest['validation']['daemon_postseed_output_source_queries_unsat']=postseed_audit['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
