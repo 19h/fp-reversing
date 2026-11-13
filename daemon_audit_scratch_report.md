@@ -1,5 +1,7 @@
 # Daemon audit-token scratch component and PID-extraction boundary
 
+Continuation: The [PID-path consumer report](daemon_pidpath_consumer_report.md) follows declared void BSM returns through exact 1,024-byte tail zeroing and a typed reuse of S+0x9b8, then stops before the undefined phase at S+0x9d0. Separate phase/bank/PID premises reach proc_pidpath; original return consumption distinguishes signed returns below 1 and restores the scratch cursor on that branch. The original 84 retained cursor stops and native provenance limits remain unchanged.
+
 The continuation selected by the [notification-failure report](daemon_notification_failure_report.md) reaches an audit-token preparation component. Its saved pointer is locally defined: `0x1007019b0` saves entry X26 into S+`0x9b8`. All 84 retained contexts preserve that definition and stop at `0x1006e6148`, before reading the undefined eight-byte scratch cursor at S+`0x16d0`. The entry X26 value is a declared caller fixture; its native origin remains unknown. [AS1-AS4]
 
 Separate, explicitly declared component entries establish a 1,056 B scratch reservation, a complete u64 pointer-null gate, cursor restoration on null, and a source-first 32 B copy followed by a pending `audit_token_to_au32` call requesting only PID output. These entries do not fill the retained cursor or close the earlier provider gap. [AS2-AS5]

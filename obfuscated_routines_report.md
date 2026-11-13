@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) recovers 0x100761644 as the one-byte zeroing iteration for a fixed 1,024 B tail and 0x100412e1c as an address-keyed comparison/result selector in this caller. Its aligned record compares signed return32 against 1 and emits indices 0x16ff/0x16fc. Key agreement is proved iff SP is even. Continuation fragments are not assigned independent function boundaries or higher-level policy names.
+
 Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) assigns source-local roles to continuation fragments 0x1006cdaf8 (saved-pointer bridge), 0x1006e6114 (1,056 B scratch reservation), 0x10079af48 (null cursor restoration) and 0x100810154 (source-first audit copy/PID-only BSM preparation). Original table slots and IA diversities are checked separately. These fragments are not asserted to be independent functions; native token origin and higher-level policy remain unknown.
 
 Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) classifies 0x100e24d08 and successors as biased-record cleanup: skip encoded nulls, optionally request payload frees, rewrite 16 B accessed headers, then request record frees. The original epilogue restores the saved frame/result before the caller zero gate. Marker meanings and native protected-operation semantics remain unknown.

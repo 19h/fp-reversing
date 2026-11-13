@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) recovers the environmental PID-to-process-path boundary after the separate audit component: a copied 32 B token, zeroed 1,024 B tail and proc_pidpath request. Nonpositive return fixtures restore the 1,056 B cursor reservation and reach 0x100709868; positive fixtures reach 0x1007d04d4. The original retained cursor, new phase input, native path bytes and cross-layer transaction identity remain unknown.
+
 Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) follows the selected 0x1006cdaf8 continuation to an undefined scratch cursor in all 84 retained failure contexts. Separate declared component entries reach a local 32 B audit-token copy and pending PID-only BSM import, or restore the cursor on null. This adds a source-local environmental identity interface; the continuous path to the retained IOKit caller and native daemon-kext pairing remain unknown.
 
 Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) connects retained notification-failure contexts through original helper return to caller target 0x1006cdaf8. It establishes local result handling and conditional record cleanup, not completed provider outputs, native response bytes, notification delivery or a daemon-kext transaction. The missing provider/control/lifetime epoch remains explicit.

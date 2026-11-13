@@ -1,5 +1,7 @@
 # Notification-failure cleanup, encoded record headers and caller result
 
+Further continuation: The [PID-path consumer report](daemon_pidpath_consumer_report.md) analyzes the separate post-audit component through scratch zeroing, a phase frontier, the process-path API boundary and signed return classification. Nonpositive path-return fixtures publish W28=0x74c29dee and restore the 1,056 B reservation before 0x100709868. These component premises do not fill the original retained cursor or close the provider gap.
+
 Continuation: The [audit-token scratch report](daemon_audit_scratch_report.md) extends all 84 retained caller boundaries to 0x1006e6148, preserving eight undefined cursor bytes. It proves that the saved pointer at S+0x9b8 is the earlier entry X26, and separately recovers the 1,056 B reservation, null restoration, source-first 32 B copy and pending PID-only BSM call. The separate provider and cursor premises remain unjoined.
 
 The six nonzero registration/baseline-check routes now continue through the original helper cleanup and return to the original caller consumer. In the retained conditional contexts, each route clears the saved result, reaches helper return value zero and selects caller target `0x1006cdaf8`. Separately declared nonempty-record controls recover four pending `free` sites and exact 16 B header rewrites. These source results do not join the missing provider epoch, establish native notification success, or prove native object ownership. [NF1-NF8]
