@@ -474,6 +474,7 @@ def main():
     if exists(BASE/'versioned_output_stream_report.md'):reports.add(BASE/'versioned_output_stream_report.md')
     if exists(BASE/'versioned_inner_entry_report.md'):reports.add(BASE/'versioned_inner_entry_report.md')
     if exists(BASE/'versioned_aes_parameters_report.md'):reports.add(BASE/'versioned_aes_parameters_report.md')
+    if exists(BASE/'versioned_lock_handoff_report.md'):reports.add(BASE/'versioned_lock_handoff_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2303,6 +2304,10 @@ def main():
         aes_parameters=json.loads(read(ROOT/'versioned_aes_parameters_checks.json'))
         manifest['validation']['versioned_aes_parameters_increment_checks']=aes_parameters['verified_counts']
         manifest['validation']['versioned_aes_parameters_static_scope']=aes_parameters['scope']
+    if exists(ROOT/'versioned_lock_handoff_checks.json'):
+        lock_handoff=json.loads(read(ROOT/'versioned_lock_handoff_checks.json'))
+        manifest['validation']['versioned_lock_handoff_increment_checks']=lock_handoff['verified_counts']
+        manifest['validation']['versioned_lock_handoff_static_scope']=lock_handoff['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

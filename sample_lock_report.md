@@ -150,14 +150,14 @@ Thus the tested preparer failures select caller error paths before acquisition. 
 Independent fresh execution matches all 140 retained cases: 96 lock/caller cases, 20 preparer gates and 24 reconstructed error continuations. They cover 20654 original instruction visits. Checks cover 12288 lock-record bytes, 864 caller-written record bytes, 48 status snapshots and 2080 unchanged carrier bytes. Ten exhaustive banks, four exact primitive bindings, original caller routes, source/compiler hashes, nine SMT queries and four SDK void signatures pass.
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_sample_lock.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_sample_lock.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_sample_lock_return.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_sample_lock.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_sample_lock.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_sample_lock.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_sample_lock.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_sample_lock_return.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/prove_sample_lock.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_sample_lock.py
 ```
 
-These commands regenerate this increment's outputs. Preserve the published files and use a distinct output copy for later work. Source extraction costs O(B+I+256R+chain work); finite replay costs O(C*(B+V+E)) for C cases, B mapped source bytes, V visits and E retained events. Solver/compilation cost is separate. The adapter's bounded decision work gives no upper bound on native lock wait time.
+These commands require the pinned project dependencies and configured Z3 Python/native bindings, and regenerate this increment's outputs. Preserve the published files and use a distinct output copy for later work. Source extraction costs O(B+I+256R+chain work); finite replay costs O(C*(B+V+E)) for C cases, B mapped source bytes, V visits and E retained events. Solver/compilation cost is separate. The adapter's bounded decision work gives no upper bound on native lock wait time.
 
 ## Bounded continuation
 
@@ -185,3 +185,5 @@ These commands regenerate this increment's outputs. Preserve the published files
 [Source identity](triage_evidence/sample_lock_source_identity.json), [baseline preservation](triage_evidence/sample_lock_preservation.json) and [machine-readable quality gates](triage_evidence/sample_lock_quality_gates.json) retain delivery checks. No new incoming/outgoing Mach port or emission site is established by these kernel-internal interfaces.
 
 The selected startup path can populate the cached fallback cell from IOLockAlloc. The allocation family is established for that path. The runtime value supplied to either RW call remains unknown. [Cached lock publication and API types](cached_lock_origin_report.md).
+
+The [selector-21 lock/parameter handoff](versioned_lock_handoff_report.md) supplies a reaching caller-built request 0x729 for the acquisition adapter. Arbitrary explicit/cached words retain strict source frontiers; qualified non-NULL branches select the original primitives. Separate declared ordinary void returns and the original NULL/NULL return reach the actual parameter consumer and stop before _initKernelAESHW. This extends caller/record lineage without establishing native object validity, acquisition or a matching startup lifetime.

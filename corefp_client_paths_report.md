@@ -299,3 +299,5 @@ The [inner-entry increment](versioned_inner_entry_report.md) carries the selecte
 ## Selector-21 parameter allocation and startup lock interface
 
 The [AES-parameter increment](versioned_aes_parameters_report.md) follows distinct and NULL 104 B allocation returns. Success defines 31 B, builds a 32 B local constant and reaches the startup lock-cell read; a separate arbitrary-word continuation reaches private lock wrapper 0xfffffe000a5b403c with request 0x729 and H3 retained in X28. NULL returns encoded result 0xce515a38 and zero adapter delta before output-stream free. The native daemon/kext pairing and completed copyback remain unknown.
+
+The [lock/parameter handoff](versioned_lock_handoff_report.md) continues this exact selector-21 lineage. Explicit non-NULL selects IOLockLock; explicit NULL reads an independent cached word, selecting IORWLockWrite or no primitive. Separate declared void returns and the original no-primitive return reach an operation record carrying H3 and aliased 32 B local input/output. The actual consumer reads H3+0x28 and H3+0x24, then stops before _initKernelAESHW. Native acquisition, hardware effects and final copyback remain unknown.
