@@ -137,3 +137,5 @@ The eight intervals per parent before job extension comprise 342 visits; the thr
 - **QG5**: Pass. Pending calls/declared returns, NULL/non-NULL/valid objects, stale encoded request/operation status, seed/delta, initial/final header restoration and static/native epochs remain distinct.
 - **QG6**: Pass. Pinned originals/parents, source equations, nonvacuous uniqueness, original bindings and independent byte epochs supply scoped provenance.
 - **QG7**: Pass. Remaining hardware, parameter, lock, cleanup/copyback, native pairing and reused-state work is bounded and impact-ranked above.
+
+The subsequent [hardware-admission report](versioned_hardware_admission_report.md) extends the exact no-primitive reaching prefix into the initializer. It retains an arbitrary readiness byte, matching/wait return contracts, actual warm scratch fill and defined-parameter copy demand. Provider absence reaches record status 0xce51ffbe, actual zero adapter delta and a fresh startup-lock read; provider presence stops after publication and before an unknown receiver dereference. Native service readiness, hardware effects and final copyback remain unknown.
