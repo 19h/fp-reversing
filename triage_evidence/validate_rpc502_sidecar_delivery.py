@@ -476,6 +476,7 @@ def main():
     if exists(BASE/'versioned_aes_parameters_report.md'):reports.add(BASE/'versioned_aes_parameters_report.md')
     if exists(BASE/'versioned_lock_handoff_report.md'):reports.add(BASE/'versioned_lock_handoff_report.md')
     if exists(BASE/'versioned_hardware_admission_report.md'):reports.add(BASE/'versioned_hardware_admission_report.md')
+    if exists(BASE/'versioned_error_release_report.md'):reports.add(BASE/'versioned_error_release_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2313,6 +2314,10 @@ def main():
         hardware_admission=json.loads(read(ROOT/'versioned_hardware_admission_checks.json'))
         manifest['validation']['versioned_hardware_admission_increment_checks']=hardware_admission['verified_counts']
         manifest['validation']['versioned_hardware_admission_static_scope']=hardware_admission['scope']
+    if exists(ROOT/'versioned_error_release_checks.json'):
+        error_release=json.loads(read(ROOT/'versioned_error_release_checks.json'))
+        manifest['validation']['versioned_error_release_increment_checks']=error_release['verified_counts']
+        manifest['validation']['versioned_error_release_static_scope']=error_release['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
