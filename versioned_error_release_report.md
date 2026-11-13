@@ -1,5 +1,7 @@
 # Selector-21 provider-absent release, cleanup and outer status
 
+Subsequent extension: the [wrapper-return report](versioned_wrapper_error_return_report.md) continues this report's final dispatcher frontier through the original epilogues, count-512 copyback, two remaining free requests and translated wrapper return 0xffff5a5e. It separately checks the UserClient embedded-status store/count gate and zero method result. The historical scope below still ends before the epilogue; native destruction, transport/copyout and daemon transaction pairing remain unknown.
+
 The provider-absent selector-21 path now reaches the dispatcher epilogue after release routing and three separate declared free returns. The original source requests parameter, output-stream and input-stream free in that order. Its inner operation status `0xce51ffbe` is replaced by the release selector; the outer record and dispatcher instead receive `0xce515a38`. After the declared parameter-free return, source stores the same H3 address into auxiliary A+`0x270`. No subsequent H3 dereference occurs in these retained intervals. These are source data-flow and ordering results; native object destruction, lock ownership, auxiliary-field validity and final UserClient copyback remain unknown. [ER1-ER7]
 
 ```text

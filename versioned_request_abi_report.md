@@ -1,5 +1,7 @@
 # Capability-controlled preparation and selector21 provider ABI
 
+Subsequent source extension: the [wrapper-return report](versioned_wrapper_error_return_report.md) produces provider-absent core return 0xffff5a5e and composes it with a separate original UserClient result suffix. Nonzero W0 is stored at output+0x224; CBNZ skips the count store at +0x220, then method W0 becomes zero. Core count copyback (512 on this path) remains a separate channel. Actual virtual receiver, native transport/copyout, output-buffer identity and daemon observation remain unknown.
+
 Subsequent payload evidence: the [selector-21 preparation report](versioned_core_preparation_report.md) follows mode 2 through a complete in-place block helper and encoded result, then stops before an undefined caller frame word. Mode 5 reaches an original allocation boundary with an explicit virtual-tail state fixture. Complete outer processing, native ownership and daemon/kext pairing remain unknown.
 
 Subsequent kernel-core evidence: the [selector-21 core-entry report](versioned_core_entry_report.md) establishes the original workspace/record contract and initial admission of modes 2/5 with marker 0xb4d3a486. It distinguishes core count copyback, provider status and UserClient structure fields. Successful processing, native admission and daemon/kext pairing remain unknown.

@@ -477,6 +477,7 @@ def main():
     if exists(BASE/'versioned_lock_handoff_report.md'):reports.add(BASE/'versioned_lock_handoff_report.md')
     if exists(BASE/'versioned_hardware_admission_report.md'):reports.add(BASE/'versioned_hardware_admission_report.md')
     if exists(BASE/'versioned_error_release_report.md'):reports.add(BASE/'versioned_error_release_report.md')
+    if exists(BASE/'versioned_wrapper_error_return_report.md'):reports.add(BASE/'versioned_wrapper_error_return_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2318,6 +2319,10 @@ def main():
         error_release=json.loads(read(ROOT/'versioned_error_release_checks.json'))
         manifest['validation']['versioned_error_release_increment_checks']=error_release['verified_counts']
         manifest['validation']['versioned_error_release_static_scope']=error_release['scope']
+    if exists(ROOT/'versioned_wrapper_error_return_checks.json'):
+        wrapper_error_return=json.loads(read(ROOT/'versioned_wrapper_error_return_checks.json'))
+        manifest['validation']['versioned_wrapper_error_return_increment_checks']=wrapper_error_return['verified_counts']
+        manifest['validation']['versioned_wrapper_error_return_static_scope']=wrapper_error_return['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
