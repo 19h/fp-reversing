@@ -510,6 +510,7 @@ def main():
     if exists(BASE/'daemon_state_file_input_report.md'):reports.add(BASE/'daemon_state_file_input_report.md')
     if exists(BASE/'daemon_state_word_routing_report.md'):reports.add(BASE/'daemon_state_word_routing_report.md')
     if exists(BASE/'daemon_state_path_removal_report.md'):reports.add(BASE/'daemon_state_path_removal_report.md')
+    if exists(BASE/'daemon_state_container_construction_report.md'):reports.add(BASE/'daemon_state_container_construction_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2623,6 +2624,16 @@ def main():
         manifest['validation']['daemon_state_path_removal_source_queries_unsat']=removal_audit['source_queries_unsat']
         from verify_daemon_state_path_removal_publication import function_metadata
         manifest['validation']['daemon_state_path_removal_function_metadata']=function_metadata()
+    if exists(ROOT/'daemon_state_container_construction_checks.json'):
+        construction=json.loads(read(ROOT/'daemon_state_container_construction_checks.json'))
+        construction_audit=json.loads(read(ROOT/'daemon_state_container_construction_audit.json'))
+        manifest['validation']['daemon_state_container_construction_increment_checks']=construction['verified_counts']
+        manifest['validation']['daemon_state_container_construction_replay_checks']=construction_audit['independent_totals']
+        manifest['validation']['daemon_state_container_construction_model_checks']=construction_audit['model_checks']
+        manifest['validation']['daemon_state_container_construction_static_scope']=construction['scope']
+        manifest['validation']['daemon_state_container_construction_source_queries_unsat']=construction_audit['source_queries_unsat']
+        from verify_daemon_state_container_construction_publication import function_metadata
+        manifest['validation']['daemon_state_container_construction_function_metadata']=function_metadata()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
