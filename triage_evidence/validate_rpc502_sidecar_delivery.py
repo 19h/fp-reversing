@@ -501,6 +501,7 @@ def main():
     if exists(BASE/'daemon_second_mix_report.md'):reports.add(BASE/'daemon_second_mix_report.md')
     if exists(BASE/'daemon_postseed_output_report.md'):reports.add(BASE/'daemon_postseed_output_report.md')
     if exists(BASE/'daemon_generated_stream_report.md'):reports.add(BASE/'daemon_generated_stream_report.md')
+    if exists(BASE/'daemon_auxiliary_state_report.md'):reports.add(BASE/'daemon_auxiliary_state_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2534,6 +2535,14 @@ def main():
         manifest['validation']['daemon_generated_stream_model_checks']=generated_audit['model_checks']
         manifest['validation']['daemon_generated_stream_static_scope']=generated['scope']
         manifest['validation']['daemon_generated_stream_source_queries_unsat']=generated_audit['source_queries_unsat']
+    if exists(ROOT/'daemon_auxiliary_state_checks.json'):
+        auxiliary=json.loads(read(ROOT/'daemon_auxiliary_state_checks.json'))
+        auxiliary_audit=json.loads(read(ROOT/'daemon_auxiliary_state_audit.json'))
+        manifest['validation']['daemon_auxiliary_state_increment_checks']=auxiliary['verified_counts']
+        manifest['validation']['daemon_auxiliary_state_replay_checks']=auxiliary_audit['independent_totals']
+        manifest['validation']['daemon_auxiliary_state_model_checks']=auxiliary_audit['model_checks']
+        manifest['validation']['daemon_auxiliary_state_static_scope']=auxiliary['scope']
+        manifest['validation']['daemon_auxiliary_state_source_queries_unsat']=auxiliary_audit['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
