@@ -495,6 +495,7 @@ def main():
     if exists(BASE/'daemon_context_lock_use_report.md'):reports.add(BASE/'daemon_context_lock_use_report.md')
     if exists(BASE/'daemon_context_state_publish_report.md'):reports.add(BASE/'daemon_context_state_publish_report.md')
     if exists(BASE/'daemon_clock_record_report.md'):reports.add(BASE/'daemon_clock_record_report.md')
+    if exists(BASE/'daemon_readiness_arena_report.md'):reports.add(BASE/'daemon_readiness_arena_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2479,6 +2480,14 @@ def main():
         manifest['validation']['daemon_clock_record_static_scope']=clock['scope']
         manifest['validation']['daemon_clock_record_source_queries_unsat']=clock_audit['source_queries_unsat']
         manifest['validation']['daemon_clock_record_SDK_compile_exit']=clock_audit['SDK_checks']['exit_code']
+    if exists(ROOT/'daemon_readiness_arena_checks.json'):
+        readiness=json.loads(read(ROOT/'daemon_readiness_arena_checks.json'))
+        readiness_audit=json.loads(read(ROOT/'daemon_readiness_arena_audit.json'))
+        manifest['validation']['daemon_readiness_arena_increment_checks']=readiness['verified_counts']
+        manifest['validation']['daemon_readiness_arena_replay_checks']=readiness_audit['independent_totals']
+        manifest['validation']['daemon_readiness_arena_interface_checks']=readiness_audit['interfaces']['verified_counts']
+        manifest['validation']['daemon_readiness_arena_static_scope']=readiness['scope']
+        manifest['validation']['daemon_readiness_arena_source_queries_unsat']=readiness_audit['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

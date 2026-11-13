@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) adds source admission, cold gate release and warm arena-header contracts. It establishes no new port name, right transfer, send/receive site or native daemon-kext pairing. The 60 source intervals remain conditional on separately declared runtime metadata.
+
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) follows declared gettimeofday and two random returns through a private16-byte record, one state update and two comparison callers. It establishes no additional Mach send/receive, name, right disposition or daemon-kext transaction; the checked path stops before a computed read at address4.
 
 Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) follows local path/network fields, failure resealing and pending arc4random/gettimeofday interfaces. Its checked source establishes no additional Mach send/receive, port emission, right disposition or daemon-kext transaction. The new environmental inputs remain declared returns or pending calls.

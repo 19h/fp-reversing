@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) exposes the runtime-state assumptions behind the earlier cold entropy route: readiness exactly 1 selects an existing-arena path, while other byte values save zero and restore the admission gate before entropy. Two separately retained header epochs demand different in-owner marker addresses. All reads of undefined marker bytes remain unexecuted, and no native epoch join is inferred.
+
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) separates environmental clock/entropy inputs from private comparison control and original zero-pointer provenance. It establishes 19,392 source visits,128 comparison contracts and eight nonvacuous source obligations. Shared material field order with an earlier encoded path is recorded without claiming whole-routine or native-epoch equivalence.
 
 Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) connects a constructed state path and cached network record to explicit raw-context fields, then reaches randomness and clock boundaries. It preserves gaps in two repeated layouts and records an actual raw-to-encoded failure cycle. Source order and local data flow are checked; native ownership, persistence and cross-process delivery remain unknown.

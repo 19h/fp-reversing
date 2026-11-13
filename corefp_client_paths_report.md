@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current readiness/arena increment: The daemon-side [readiness/arena report](daemon_readiness_arena_report.md) establishes admission/readiness partitions and arena metadata demand under explicit source-model premises. It adds no observed CoreFP request, shared native owner, Mach right or paired kext transaction; existing client mappings retain their earlier evidence boundaries.
+
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) recovers local daemon environmental-input packing and shared comparison-leaf callers. Raw-versus-encoded material correspondence remains local source evidence; no new protected-core/daemon/kext transaction or native ownership is established.
 
 Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) establishes local daemon path/network context and nested helper calls through pending randomness/clock interfaces. Repeated sentinel bits and shared helpers do not establish CoreFP descriptor identity, ownership or another protected-core/daemon/kext transaction.

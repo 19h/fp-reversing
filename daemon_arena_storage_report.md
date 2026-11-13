@@ -6,7 +6,7 @@ The post-allocation control word at `0x1010B6CB8` has a source-proven unsigned p
 
 ## Provenance and assumption register
 
-Primary image: `/Users/___/Downloads/zut/fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred image virtual addresses. [Contracts](triage_evidence/daemon_arena_storage_contracts.json) retain six original spans, 33 original fixups and 129 matched current IDA rows. [Profiles](triage_evidence/daemon_arena_storage_profiles.json) retain source visits, reads/writes, explicit allocator summaries, compressed full owner snapshots and masks. [Checks](triage_evidence/daemon_arena_storage_checks.json) reconstruct every retained byte/epoch and publication timeline. [Eleven source proof pairs](triage_evidence/daemon_arena_storage_proofs.json) cover 117 lifted instructions; a separate SAT witness establishes satisfiable storage premises. [Current IDA bytes](triage_evidence/daemon_arena_storage_live_ida.json) are checked against the backing file. No IDB mutation occurs.
+Primary image: `fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred image virtual addresses. [Contracts](triage_evidence/daemon_arena_storage_contracts.json) retain six original spans, 33 original fixups and 129 matched current IDA rows. [Profiles](triage_evidence/daemon_arena_storage_profiles.json) retain source visits, reads/writes, explicit allocator summaries, compressed full owner snapshots and masks. [Checks](triage_evidence/daemon_arena_storage_checks.json) reconstruct every retained byte/epoch and publication timeline. [Eleven source proof pairs](triage_evidence/daemon_arena_storage_proofs.json) cover 117 lifted instructions; a separate SAT witness establishes satisfiable storage premises. [Current IDA bytes](triage_evidence/daemon_arena_storage_live_ida.json) are checked against the backing file. No IDB mutation occurs.
 
 | ID | Assumption / boundary | Dependent results | Stress test / falsification probe |
 | --- | --- | --- | --- |
@@ -138,11 +138,13 @@ The producer/audit costs O(C*(B+V+events+J*K+N)) time and O(largest artifact+V+e
 
 QG1 passes for factual analysis. QG2 passes with AS1-AS12. QG3 passes for this increment; the full interface objective remains active. QG4 passes for exact u32/u64 arithmetic, byte extents and software counts. QG5 passes with allocation summaries, source writes, untouched bytes, publication ordering and native synchronization distinguished. QG6 passes for byte/epoch reconstruction, original fixups, current IDA, source proofs and the SAT witness. QG7 passes with the impact-labeled continuation table. Native allocation outcome, complete strict-state startup, lifetime and downstream transport remain unknown.
 
-Reproduce from `/Users/___/dev/dylex/extracted`, in this order:
+Reproduce from the repository root with the source-discovery configuration and Python dependencies required by the scripts:
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_daemon_arena_storage.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_daemon_arena_storage.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_daemon_arena_storage.py
-PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_daemon_arena_storage.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_daemon_arena_storage.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_daemon_arena_storage.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/prove_daemon_arena_storage.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_daemon_arena_storage.py
 ```
+
+The subsequent [readiness/arena report](daemon_readiness_arena_report.md) joins the startup descriptor writer and later reader by address, proves the conditional marker equation, and compares fresh-startup and pre-constructor header values. The two epochs remain separate: 89976 B and 86620 B offsets reach different pending marker reads. This does not establish native allocator ownership or an uninterrupted startup-to-caller path.

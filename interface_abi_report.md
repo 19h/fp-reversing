@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current readiness/arena increment: The [readiness/arena report](daemon_readiness_arena_report.md) maps a 4 B compare-exchange gate, exact 1 B readiness equality, 8 B descriptor link at D+72, pending 5000 B expansion allocation and encoded marker arithmetic. Fresh-startup and constructor-snapshot header epochs remain separate; native ownership and transaction pairing remain unknown.
+
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) establishes raw words [random3,usec32,low32(seconds),random2], separate12-byte timeval output fields, unknown4-byte padding and ignored clock status on the checked route. Two sequential private record epochs decode unsigned comparisons 623<2 and1>3; native ABI structure identity and transport use remain unknown.
 
 Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) maps the decoded-path pointer at C+0x10, u32 network count at +0x1c, six data bytes at +0x20 and two partially initialized layouts with stride0x40. It records exact free/lock/reseal ordering and the unsigned random-seed and pending timeval interfaces. Native visibility, exclusion and downstream wire use remain unknown.

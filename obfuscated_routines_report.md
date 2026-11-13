@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current readiness/arena increment: The [readiness/arena analysis](daemon_readiness_arena_report.md) assigns provisional roles to admission CAS at 0x100a6e5b8, readiness equality at 0x100b74044, descriptor/sentinel routing at 0x100ba7724 and encoded marker demand at 0x100b6a918. Exact source/target mappings and confidence limits are retained; complete routine equivalence and native synchronization remain unknown.
+
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) identifies raw material packing at0x100b4db58/0x100b4dbac/0x100b4dc00 and the first state update at0x1009c470c. It connects complete comparison leaves0x100427514 and0x100444d6c to new caller records, selecting targets0x100a894b0 and0x100a075e0. The saved-zero pointer demand is retained as an unexecuted boundary.
 
 Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) identifies pointer publication at 0x1004b4580, XOR-0x98 decoding at 0x1004d4ca0, reverse network-data copying at 0x10059ccd4 and failure reference republication at 0x1009a2014. Nested helpers 0x100add594/0x100acd9c4 reach a 624-word seed loop and pending clock call; their complete semantic contract remains open.
