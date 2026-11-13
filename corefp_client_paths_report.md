@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) connects local network-gate state with the previously recovered arena constructor and sealing codec. Matching reference/context representations establish a process-local architectural relationship; native initialization, valid locks and protected-core/daemon/kext transactions remain unestablished.
+
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) closes a conditional source path from the network record to matching fallback lock/unlock argument addresses. The once callback, shared adapters and cache gate are local architectural touchpoints. Address pairing establishes neither native synchronization success nor a common protected-core/daemon/kext transaction.
 
 Current network-record increment: The [network record report](daemon_network_record_report.md) links a conditional six-byte network identity record to the acquisition/once adapter previously seen on IOKit paths. Shared code/control/callback addresses establish local architectural touchpoints; they do not identify a common native task, lock instance, initialized state or daemon-kext transaction.

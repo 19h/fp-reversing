@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) identifies the cached word as an encoded arena-context reference and follows its original decoder/unsealer to raw reference publication. The checked source makes no imported call, Mach send/receive or port-name emission; the raw lock token is a local object field.
+
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) composes local once, write-lock and unlock callsites. It adds no Mach send/receive, port-name production or right disposition. The fallback address and cache pointers are local data; imported implementations remain unexecuted.
 
 Current network-record increment: The [network record report](daemon_network_record_report.md) conditionally connects the original positive-path caller to IOMainPort at 0x1000040d8, with W0=0 and output pointer S-0xb0 in eight cold controls. The API remains pending; no native name, right disposition or message emission is inferred. The static record pointer, cursor, pthread_once control and callback remain process-local channels.

@@ -1,5 +1,7 @@
 # Arena context sealing, global descriptor and lock-creation interfaces
 
+Follow-up: The [context unseal report](daemon_context_unseal_report.md) recovers the matching selected reader at 0x10048192c, the reference-codec relationship and the complete 552-byte inverse in constructor-compatible states. It restores the raw context and lock field before rewriting cell 0x1010c9298. Producer and caller epochs, native ownership and lock validity remain separate.
+
 The arena-lock caller leads to a global descriptor at `G=0x1010C8218`. Its selected successful path creates a lock, allocates960 bytes, initializes twenty48-byte records, then reaches the previously recovered primary/secondary lock-creation pair and workspace-fill call. The arena lock token itself has a representation boundary: a second codec seals552 context bytes and, for the retained seed, moves the token from raw offset+8 to encoded offset+248. These are process-local construction and synchronization interfaces; no additional daemon-level Mach or IOKit call site is reached in the retained paths; imported internals are unexamined.
 
 Thirteen conditional source paths,52 independent A64 replays covering175,372 visits,18 source proof pairs and46 isolated552-byte codec cases pass. Four live IDB raw ranges match640 original bytes; automatic function analysis remains partial. Native allocation/init behavior, the full encoded global-reference codec, consumer reachability and transport use remain unknown. The full investigation remains active.
@@ -195,7 +197,7 @@ At these five frontiers, callback status cell0x1010B6360 still contains0x8B3DC65
 
 ## Candidate descriptor readers and live IDB provenance
 
-Saved `/Users/___/Downloads/fpx/analysis/fp_annotate.py` comments propose pool index0x6BB at two sites. Its original slot0x1010A4F38 decodes to0x12B6848B3; adding bias0xFFFFFFFFD5A43965 givesG=0x1010C8218. This validates the rebase/bias arithmetic. The dynamic index selection remains a candidate premise rather than a complete incoming-state proof [KL12].
+Saved `fp_annotate.py` comments propose pool index0x6BB at two sites. Its original slot0x1010A4F38 decodes to0x12B6848B3; adding bias0xFFFFFFFFD5A43965 givesG=0x1010C8218. This validates the rebase/bias arithmetic. The dynamic index selection remains a candidate premise rather than a complete incoming-state proof [KL12].
 
 | Candidate | Exact conditional field use | Unresolved part |
 |---|---|---|

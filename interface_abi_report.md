@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) connects an eight-byte encoded reference to a 552-byte context and recovers raw lock offset +8 after inverse permutation/byte transformation. The cell changes representation across phases. Source vector/tail proofs, bounded permutation certificates and separate constructor-compatible owner premises qualify the composition.
+
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) establishes a u32 cache control immediately before the ten-byte network-record prefix, a separate u64 cache-pointer cell, an exact zero/nonzero predicate and modulo-2^32 increment. Callback and cleanup joins preserve explicit ABI return premises; the pending cached-pointer +8 load requires an independently established object layout.
 
 Current network-record increment: The [network record report](daemon_network_record_report.md) recovers a 12 B accessed temporary with u32 control at +8 and u64 pointer result at +0, then its reuse as a 16 B acquisition record with a four-byte gap. The global record prefix is u32 length 6 followed by six bytes. Network control decodes for all SP64; acquisition prehash keys agree exactly when (SP & 6)==0.

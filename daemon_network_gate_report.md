@@ -1,5 +1,7 @@
 # Conditional network cache gate and synchronization composition
 
+Follow-up representation recovery: The [context unseal report](daemon_context_unseal_report.md) identifies cell 0x1010c9298 as an arena-context reference that can be encoded or raw. Its selected branch reverses the reference codec and the 552-byte context sealing before publishing the raw address. The network-record substitution controls here remain separate probes; no object-identity or native-epoch join is retroactively inferred.
+
 The previously stopped network-record caller reaches the same fallback write-lock argument and cleanup unlock argument, `0x1010b7478`, under explicit once/import return premises. The caller then tests a 32-bit control immediately before the network record and a separate 64-bit cache-pointer cell. This is a local source composition; native lock validity, successful acquisition, object ownership, concurrent behavior and daemon-kext delivery remain unknown. [NG1-NG4]
 
 The gate selects `0x10048192c` exactly when the control is zero and the cache pointer is nonzero. Otherwise it increments the control modulo `2^32`, calls the shared cleanup adapter, and reaches either another acquisition call or a pointer-field consumer. The former neighbor sentinel is now an explicit control-state premise. The second cached pointer is a distinct cell; substituting the network-record address is a control probe, not evidence that the two objects are interchangeable. [NG3-NG5]

@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) resolves the network-gate cached-pointer frontier as a representation transition shared with arena construction. An encoded-reference/552-byte sealed-context pair is transferred as an explicit separate-epoch premise; source execution restores the producer bytes and raw lock token. No native lifetime or transport join follows.
+
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) makes the previously filled neighbor cell an explicit control premise, distinguishes it from the separate cache pointer and carries callback/controller effects into cleanup. A cached-pointer +8 demand exceeds the established network-record prefix under the deliberate substituted-pointer control; native backing and object identity remain unknown.
 
 Current network-record increment: The [network record report](daemon_network_record_report.md) carries a conditional network identity into a static record, preserves its pointer at S+0x998 and reaches the previously recovered once/acquisition interface. Separate cold, warm and zero-return cases preserve the original root gap, model controller state explicitly and distinguish inner 32 B cursor restoration from the retained 1,056 B reservation. No warm continuation reads the process-path buffer.

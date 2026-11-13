@@ -491,6 +491,7 @@ def main():
     if exists(BASE/'daemon_network_identity_report.md'):reports.add(BASE/'daemon_network_identity_report.md')
     if exists(BASE/'daemon_network_record_report.md'):reports.add(BASE/'daemon_network_record_report.md')
     if exists(BASE/'daemon_network_gate_report.md'):reports.add(BASE/'daemon_network_gate_report.md')
+    if exists(BASE/'daemon_context_unseal_report.md'):reports.add(BASE/'daemon_context_unseal_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2438,6 +2439,15 @@ def main():
         manifest['validation']['daemon_network_gate_static_scope']=gate['scope']
         manifest['validation']['daemon_network_gate_source_queries_unsat']=gate_audit['source_queries_unsat']
         manifest['validation']['daemon_network_gate_SDK_compile_exit']=gate_audit['SDK_checks']['exit_code']
+    if exists(ROOT/'daemon_context_unseal_checks.json'):
+        unseal=json.loads(read(ROOT/'daemon_context_unseal_checks.json'))
+        unseal_audit=json.loads(read(ROOT/'daemon_context_unseal_audit.json'))
+        manifest['validation']['daemon_context_unseal_increment_checks']=unseal['verified_counts']
+        manifest['validation']['daemon_context_unseal_replay_checks']=unseal_audit['independent_totals']
+        manifest['validation']['daemon_context_unseal_interface_checks']=unseal_audit['interfaces']['verified_counts']
+        manifest['validation']['daemon_context_unseal_static_scope']=unseal['scope']
+        manifest['validation']['daemon_context_unseal_source_queries_unsat']=unseal_audit['source_queries_unsat']
+        manifest['validation']['daemon_context_unseal_permutation_certificates']=len(unseal_audit['permutation_certificate'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

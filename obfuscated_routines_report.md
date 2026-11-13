@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) identifies 0x10048192c..0x100481d9c as the selected reference decoder and arena-context unsealer, matching constructor publication at 0x1003c43b4. It restores the raw reference through 0x100481d98. The role is phase-specific and is not an unrelated network-record parser.
+
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) composes acquisition adapter 0x10043e280 with cleanup adapter 0x1004423f8, recovers cache predicate 0x1004f753c, counter update 0x10050feb4 and the zero-return leaf 0x1000056c8. The once callback updates two obfuscation controllers and calls a RET leaf; no lock construction occurs in its checked source path.
 
 Current network-record increment: The [network record report](daemon_network_record_report.md) identifies 0x10044167c as the network length/data-record adapter, with common pointer-store epilogue 0x10020eb48 and publication fragment 0x100268010. The caller uses a memory return at C+0, preserves the pointer, then calls acquisition adapter 0x10043e280. Eight source equations and independent replay qualify the record/control domains.
