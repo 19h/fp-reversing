@@ -1,6 +1,6 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current arena split/payload increment: The [arena split/payload analysis](daemon_arena_split_report.md) identifies descending fill at 0x100be73cc, internal arena metadata commit at 0x100a77d3c..0x100a77e70, payload save at 0x100a8c054 and a first address/text-dependent record decoder at 0x100a0769c..0x100a0770c. Original addresses, alignment premises and incomplete routine/native scope are explicit.
+Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) establishes indexed mixer 0x1009c46dc, nonwrap key mutation 0x100a0769c, wrapped key mutation 0x100a7d924, state wrap 0x100c0bb74 and counter/dispatch 0x100aaefc0. Compact equations and full-state replay establish block roles; complete routine identity and native reachability remain unknown.
 
 Current readiness/arena increment: The [readiness/arena analysis](daemon_readiness_arena_report.md) assigns provisional roles to admission CAS at 0x100a6e5b8, readiness equality at 0x100b74044, descriptor/sentinel routing at 0x100ba7724 and encoded marker demand at 0x100b6a918. Exact source/target mappings and confidence limits are retained; complete routine equivalence and native synchronization remain unknown.
 

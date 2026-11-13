@@ -1,6 +1,6 @@
 # Active interface investigation
 
-Current arena split/payload increment: The [arena split/payload increment](daemon_arena_split_report.md) adds 48 intervals, 68592 source visits and eight nonvacuous source obligations. It establishes inherited descending-fill provenance, internal split layout, warm gate release and one defined payload-to-seed-record update. Complete material generation, coherent caller/controller lifetime and native daemon-kext transaction pairing remain open. The full goal remains active.
+Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) adds 1250 intervals,379704 source visits and eight nonvacuous obligations. It completes the first 624-iteration mixing pass under inherited caller/API premises and stops before 0x100abba18. Complete generator semantics, coherent native lifetime and daemon-kext pairing remain open; the full goal remains active.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) adds 60 intervals, 27216 source visits and eight nonvacuous UNSAT source obligations. It distinguishes cold zero-pointer admission and gate release from the initialized arena path, verifies descriptor/sentinel routing and compares two separately declared header epochs. A coherent caller/snapshot join, complete synchronization lifecycle and native daemon-kext pairing remain open. The full goal remains active.
 

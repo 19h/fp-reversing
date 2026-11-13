@@ -497,6 +497,7 @@ def main():
     if exists(BASE/'daemon_clock_record_report.md'):reports.add(BASE/'daemon_clock_record_report.md')
     if exists(BASE/'daemon_readiness_arena_report.md'):reports.add(BASE/'daemon_readiness_arena_report.md')
     if exists(BASE/'daemon_arena_split_report.md'):reports.add(BASE/'daemon_arena_split_report.md')
+    if exists(BASE/'daemon_payload_mix_report.md'):reports.add(BASE/'daemon_payload_mix_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2497,6 +2498,15 @@ def main():
         manifest['validation']['daemon_arena_split_interface_checks']=split_audit['interfaces']['verified_counts']
         manifest['validation']['daemon_arena_split_static_scope']=split['scope']
         manifest['validation']['daemon_arena_split_source_queries_unsat']=split_audit['source_queries_unsat']
+    if exists(ROOT/'daemon_payload_mix_checks.json'):
+        mixing=json.loads(read(ROOT/'daemon_payload_mix_checks.json'))
+        mixing_audit=json.loads(read(ROOT/'daemon_payload_mix_audit.json'))
+        manifest['validation']['daemon_payload_mix_increment_checks']=mixing['verified_counts']
+        manifest['validation']['daemon_payload_mix_replay_checks']=mixing_audit['independent_totals']
+        manifest['validation']['daemon_payload_mix_model_checks']=mixing_audit['model_checks']
+        manifest['validation']['daemon_payload_mix_control_checks']=mixing_audit['control_checks']
+        manifest['validation']['daemon_payload_mix_static_scope']=mixing['scope']
+        manifest['validation']['daemon_payload_mix_source_queries_unsat']=mixing_audit['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

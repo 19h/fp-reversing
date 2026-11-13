@@ -1,6 +1,6 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current arena split/payload increment: The [arena split/payload report](daemon_arena_split_report.md) establishes an 88 B internal reservation: 24 B metadata and 64 B source-filled payload, with encoded extent and accounting contracts. The first payload word consumer updates private record word1 using address-derived values and overlapping source-text reads. This is a local representation contract; external transport use remains unknown.
+Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) recovers the 624-word state recurrence, four private key mutations, comparison records and final dispatch contract. Twelve payload bytes, the payload address and source-text bytes feed this first pass; external transport use remains unknown.
 
 Current readiness/arena increment: The [readiness/arena report](daemon_readiness_arena_report.md) maps a 4 B compare-exchange gate, exact 1 B readiness equality, 8 B descriptor link at D+72, pending 5000 B expansion allocation and encoded marker arithmetic. Fresh-startup and constructor-snapshot header epochs remain separate; native ownership and transaction pairing remain unknown.
 

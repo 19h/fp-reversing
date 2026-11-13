@@ -1,6 +1,6 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current arena split/payload increment: The [arena split/payload report](daemon_arena_split_report.md) recovers a defined 64 B arena payload and its first private seed-record consumer. It establishes no additional Mach name, right disposition, send/receive emission or native daemon-kext pairing. Source data dependence beyond the next state-mixing iteration remains open.
+Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) establishes a complete local 624-iteration pass and its original control-transfer emission at 0x100aaf008. It adds no Mach port, right transfer or send/receive emission; the next material stage and native daemon-kext pairing remain unknown.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) adds source admission, cold gate release and warm arena-header contracts. It establishes no new port name, right transfer, send/receive site or native daemon-kext pairing. The 60 source intervals remain conditional on separately declared runtime metadata.
 

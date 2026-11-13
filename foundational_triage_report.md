@@ -1,6 +1,6 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current arena split/payload increment: The [arena split/payload increment](daemon_arena_split_report.md) establishes that the warm 64 B payload is source-defined by a preceding 156 B descending fill. Its first retained read updates a private seed word; it is not an undefined-read boundary. Three allocator metadata fields share a snapshot premise, while whole-caller/controller coherence and native ownership remain unestablished.
+Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) establishes complete first-pass data/control flow: three payload words and pointer/text-dependent masks alter a private key record while mixing 624 state words. All key words restore after 156 mutations each, while generator states differ. Caller/controller epoch and native transport use remain unknown.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) exposes the runtime-state assumptions behind the earlier cold entropy route: readiness exactly 1 selects an existing-arena path, while other byte values save zero and restore the admission gate before entropy. Two separately retained header epochs demand different in-owner marker addresses. All reads of undefined marker bytes remain unexecuted, and no native epoch join is inferred.
 
