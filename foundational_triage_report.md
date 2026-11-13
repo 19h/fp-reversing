@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current network-record increment: The [network record report](daemon_network_record_report.md) carries a conditional network identity into a static record, preserves its pointer at S+0x998 and reaches the previously recovered once/acquisition interface. Separate cold, warm and zero-return cases preserve the original root gap, model controller state explicitly and distinguish inner 32 B cursor restoration from the retained 1,056 B reservation. No warm continuation reads the process-path buffer.
+
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) traces en0/en1/en0 selection, mode-dependent IOBuiltin filtering, IOService parent lookup and IOMACAddress extraction. It distinguishes ready-before-data publication, missing-property no-write success and failed-API output definedness. The original eight positive path contexts stop at 0x1005a8cd4 before undefined S+0x858; separate helper controls establish no native caller epoch or hardware identity.
 
 Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) establishes exact zeroing of [R+32,R+1056), later reuse of S+0x9b8 as integer 8 and the undefined phase read at 0x1008310f8. Separate phase/bank/PID premises reach a process-path query. The original signed return consumer restores the scratch cursor on nonpositive results and reaches a distinct positive continuation. Native input provenance and API-output memory remain unknown.

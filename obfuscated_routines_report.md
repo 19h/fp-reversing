@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current network-record increment: The [network record report](daemon_network_record_report.md) identifies 0x10044167c as the network length/data-record adapter, with common pointer-store epilogue 0x10020eb48 and publication fragment 0x100268010. The caller uses a memory return at C+0, preserves the pointer, then calls acquisition adapter 0x10043e280. Eight source equations and independent replay qualify the record/control domains.
+
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) identifies 0x1000040a8 as an optional six-byte network identity cache and 0x10000425c as iterator/filter/parent/MAC-property extraction. Original strings, ten import stubs, sixteen fixup records and 33 direct calls support these local roles. Whole-text direct B/BL and original-fixup censuses preserve the unresolved computed-caller boundary.
 
 Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) recovers 0x100761644 as the one-byte zeroing iteration for a fixed 1,024 B tail and 0x100412e1c as an address-keyed comparison/result selector in this caller. Its aligned record compares signed return32 against 1 and emits indices 0x16ff/0x16fc. Key agreement is proved iff SP is even. Continuation fragments are not assigned independent function boundaries or higher-level policy names.

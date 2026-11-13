@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current network-record increment: The [network record report](daemon_network_record_report.md) links a conditional six-byte network identity record to the acquisition/once adapter previously seen on IOKit paths. Shared code/control/callback addresses establish local architectural touchpoints; they do not identify a common native task, lock instance, initialized state or daemon-kext transaction.
+
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) adds general IOKit registry/network context: en0/en1 matching, built-in filtering and six-byte MAC-property extraction. Its main-port, iterator and parent name channels are separate from CoreFP/FairPlay service discovery. No FairPlayIOKit connection, message identity or native daemon-kext transaction follows from this environmental query.
 
 Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) recovers the environmental PID-to-process-path boundary after the separate audit component: a copied 32 B token, zeroed 1,024 B tail and proc_pidpath request. Nonpositive return fixtures restore the 1,056 B cursor reservation and reach 0x100709868; positive fixtures reach 0x1007d04d4. The original retained cursor, new phase input, native path bytes and cross-layer transaction identity remain unknown.

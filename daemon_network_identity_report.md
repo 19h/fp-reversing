@@ -1,5 +1,7 @@
 # Daemon network-interface identity cache and IOKit port boundaries
 
+Caller continuation: The [network record report](daemon_network_record_report.md) conditionally reaches this helper through three additional initializer-compatible roots, then follows declared warm cache bytes into a static length/data record. Eight cold controls establish IOMainPort output at caller S-0xb0; additional roots/controller state reach the shared acquisition boundary. Original retained stops and native epoch limits remain unchanged.
+
 Routine `0x1000040a8` is a six-byte network-interface identity cache. Its cold source tries BSD names `en0`, `en1`, then `en0`, with different filtering modes. Nested helper `0x10000425c` iterates matching services, examines `IOBuiltin`, gets a parent in the `IOService` plane and requests six bytes from `IOMACAddress`. These names, exact import bindings and original instruction bytes establish the local roles. A zero nested result does not prove a fresh MAC read: the missing-MAC-property path returns zero without writing output. [NI1-NI4]
 
 The eight retained positive process-path cases remain stopped before an undefined S+`0x858` pointer. The network helpers are verified from separate entries; this report establishes no continuous native process-path-to-network join, actual hardware identity or FairPlayIOKit transaction. Cold fallback ordering below is original-source analysis; cache controls stop before the first import, and nested controls execute separately under declared API fixtures. [NI2-NI4]

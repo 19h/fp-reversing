@@ -1,5 +1,7 @@
 # Daemon IOKit acquisition, cleanup and outer return
 
+Related caller: The [network record report](daemon_network_record_report.md) reaches acquisition adapter 0x10043e280 and the same once control/callback tuple from a conditional process-path/network-record context. Its captured pointer is zero and its once call remains pending. The earlier callback/lock fixtures are not composed into these new cases; native initialization and cross-layer identity remain unknown.
+
 The selected daemon entry at `0x1004601D0` reaches the previously established class-matching, service-open and metadata-query sequence through an acquisition adapter. The former unknown SP+0x50 cleanup value is now source-derived: it holds the address `0x1010C8240`, whose contents supply the primary synchronization pointer. Acquisition captures that pointer before its adapter call; common cleanup reads the cell again. Both adapters call `pthread_once` with the same control and callback, then conditionally call `pthread_rwlock_wrlock` or `pthread_rwlock_unlock`. These are source and private-model results; native synchronization, pointer lifetime and concurrent mutation remain unknown. [DS1-DS12]
 
 [Original source contracts](triage_evidence/daemon_iokit_sync_contracts.json), [retained cases](triage_evidence/daemon_iokit_sync_profiles.json), [independent byte and replay checks](triage_evidence/daemon_iokit_sync_checks.json), [source proofs](triage_evidence/daemon_iokit_sync_proofs.json), [live IDB source](triage_evidence/daemon_iokit_sync_live_ida.json), [SDK signature assertions](triage_evidence/daemon_iokit_sync_sdk.c), [preservation](triage_evidence/daemon_iokit_sync_preservation.json) and [scoped gates](triage_evidence/daemon_iokit_sync_quality_gates.json) retain the evidence. The [class-matching report](daemon_iokit_class_report.md) remains the preceding evidence boundary. The full interface objective remains active.
@@ -158,10 +160,10 @@ QG1: factual technical analysis. QG2: DS1-DS12 include dependent results and fal
 Reproduce with the pinned Python environment and existing frozen dependencies:
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_daemon_iokit_sync.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_daemon_iokit_sync.py
-export PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages
-export Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_daemon_iokit_sync.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_daemon_iokit_sync.py
+export PYTHONPATH="triage_evidence:$Z3_PYTHONPATH"
+export Z3_LIBRARY_PATH="$Z3_LIBRARY_DIR"
+"$PYTHON" -P triage_evidence/probe_daemon_iokit_sync.py
+"$PYTHON" -P triage_evidence/recover_daemon_iokit_sync.py
+"$PYTHON" -P triage_evidence/prove_daemon_iokit_sync.py
+"$PYTHON" -P triage_evidence/validate_daemon_iokit_sync.py
 ```
