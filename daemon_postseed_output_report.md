@@ -1,5 +1,7 @@
 # Daemon post-seed cleanup, full twist and first encoded output byte
 
+Current generated-stream increment: The [complete generated-stream report](daemon_generated_stream_report.md) continues these exact first-byte boundaries through31 further accepted bytes, seven repeated full-state refills, two logical returns, a32 B transformed arena copy and private overwrite. It exposes distinct generator/adapter status pointers and stops before malloc(104); the native status channel and transport identity remain unknown. The earlier first-byte cut below remains this report's scope.
+
 The completed warm initializer reaches conditional internal arena cleanup, releases its gate, transforms all 624 state words, selects and tempers word 0, then writes one encoded byte into the caller's private output workspace. This is the first source-established output use on the current payload-dependent route. Cleanup requires one additional 8 B neighbor-header premise from the previously used constructor snapshot; strict controls stop before that missing read. Native caller/constructor epoch identity, output-buffer ownership and daemon-kext transport pairing remain unknown. [PO1-PO6; PO-A1-PO-A10]
 
 ```text

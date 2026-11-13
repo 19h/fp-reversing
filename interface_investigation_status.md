@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) adds226 intervals,190234 source visits and seven nonvacuous source obligations. Both main paths complete32 B, copy transformed bytes into J+0x34 and overwrite private scratch before pending malloc(104) at0x10054b43c. Separate zero-byte/counter controls pass. Native status-channel coherence, ownership and daemon-kext pairing remain open; the full goal remains active.
+
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) adds28 intervals,31424 source visits and eleven nonvacuous source obligations. Both inherited paths reach a full twist, tempering and one private encoded-byte store. An extra8 B constructor-snapshot field is conditional; two strict controls preserve its missing-read boundary. Continue before0x100bf6d40 for retry/refill/output use. Native epochs and daemon-kext pairing remain open; the full goal remains active.
 
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) adds 1252 intervals,181990 source visits and eight nonvacuous source obligations. Both retained second passes finish, force word0 and reacquire the earlier gate. Execution stops before 0x100a3881c; complete output use, coherent native epochs and daemon-kext pairing remain open. The full goal remains active.

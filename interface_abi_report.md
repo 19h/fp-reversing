@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) recovers a48 B accessed equality/unsigned-greater record, counter-zero admission partition, repeated624-word refills and a32 B arena copy. The generator status pointer and adapter status pointer do not alias in retained states; adapter delta is16*low16(input32-expected32). A104 B allocation remains pending.
+
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) maps readiness/runtime-flag admission, one additional8 B snapshot neighbor field,54 B and86 B overwrite spans,624-word in-place twist, index/counter publications and an address/cache/text-dependent byte encoder. Exactly1 of32 output bytes is defined at the cut; native ownership and transport use remain unknown.
 
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) establishes the second indexed state recurrence, private comparison/dispatch contracts, final state-word force and gate CAS value partition. The saved pointer selects the earlier 4 B gate; native synchronization and external transport use remain unknown.

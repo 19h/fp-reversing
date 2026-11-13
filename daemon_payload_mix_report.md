@@ -1,5 +1,7 @@
 # Daemon payload-driven first mixing pass
 
+Current generated-stream increment: The [complete generated-stream report](daemon_generated_stream_report.md), following the second-pass and first-output increments, establishes actual downstream use of this payload-dependent initialization: complete32 B output, repeated full-state refills and a caller arena copy before private overwrite. The explicit status-pointer mismatch and inherited epoch limits remain; native transport pairing is unknown.
+
 The warm arena path reaches a complete 624-iteration state-mixing pass. Three payload words, the payload address and overlapping source-text bytes determine four repeating XOR masks on a private 16 B key record. Every key word undergoes 156 mutations and returns to its initial value; the 2496 B generator state changes. The recovered equations describe the pass compactly, and two source executions retain every intermediate state. The next stage begins at `0x100abba18`; its execution and eventual Mach/IOKit use remain unknown. [PM1-PM5]
 
 ```text

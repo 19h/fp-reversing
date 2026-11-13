@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) identifies word-exhaustion routing0x100bf6d40, refill/equality caller0x100b32e70, equality/unsigned-greater leaf0x10041a5e0, completion status0x100a6d390, adapter low16 delta0x100add7d8, arena byte copy0x100576f28 and private overwrite0x10054b73c. Exact source models preserve unknown whole-function/native scope.
+
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) identifies conditional internal cleanup0x100cb2ef0, payload overwrite0x1009f2984, gate release0x100bde608, twist stores0x100a5e93c/0x100b312a4/0x100a2f634, tempering0x100a7ccc0 and encoded-byte store0x100a0ca74. Full original-source replay and compact equations establish these block roles; whole-function/native transport identity remains unknown.
 
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) identifies indexed mixer 0x100abba18, state-wrap copy 0x1009f04b8, remaining-counter dispatch 0x100a07724, final force 0x100b2a20c and gate CAS 0x100b3a84c. Compact equations and complete replay establish block roles while preserving unknown function/native scope.

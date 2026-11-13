@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) establishes a complete32 B private stream, caller arena copy, private overwrite and pending104 B malloc. It adds no Mach name/right/disposition or emission site. Local pointer transfers and two logical returns do not establish native daemon-kext transport pairing.
+
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) follows local cleanup, a full624-word twist and the first encoded private byte. Its28 intervals add no incoming/outgoing Mach name, right disposition, emission site or native daemon-kext pairing. The current private output has no established transport identity.
 
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) completes the local 623-update pass and establishes a same-gate reacquisition after state initialization. It adds no Mach port, right disposition or message emission; output use and native daemon-kext pairing remain unknown.

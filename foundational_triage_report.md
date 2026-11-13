@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) traces payload-dependent state into a complete32 B private stream, reversible caller arena copy and subsequent scratch overwrite. Every nonzero-counter refill repeats the full624-word transform on the retained route. The new status store and adapter read use different inherited cells, so adapter delta0 does not prove propagation of that new status. Native epochs, exclusion, ownership and transport remain unknown.
+
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) connects completed payload-dependent initialization to a full twist and first encoded private output. Gate release precedes the twist. Internal metadata restoration depends on one additional8 B snapshot field; strict missing-byte controls remain separate. Output encoding depends on low32(destination address), cached state and source-text bytes; stored-zero attempts do not advance the destination counter. Native ownership, concurrent visibility and transport identity remain unknown.
 
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) establishes a source lifecycle sequence: release the gate before entropy, complete both mixing phases, force word0 and reacquire the same gate. Arbitrary-old-word source proofs distinguish success from self-retry. Native ownership, contention, ordering and output publication remain unknown.

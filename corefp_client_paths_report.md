@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current generated-stream increment: The daemon-side [generated-stream report](daemon_generated_stream_report.md) extends local generated-byte provenance through two logical returns and a32 B arena-object copy. Existing status channels do not alias in the retained states. No CoreFP request, cross-process owner identity or paired native kext transaction is established.
+
 Current post-seed output increment: The daemon-side [post-seed output report](daemon_postseed_output_report.md) establishes actual generated-word use in one address-dependent private byte store. Shared PRNG structure does not identify a CoreFP buffer, native owner or paired daemon-kext transaction; later output transport remains open.
 
 Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) recovers completed local initialization state and gate reacquisition. It adds no observed CoreFP request, cross-layer owner identity or paired native kext transaction.
