@@ -118,3 +118,5 @@ Extraction/audit cost is O(parent receipt bytes + cases*(visits+state+effects)) 
 Decoded checks SHA-256: `29145dc0f6a14b9a1676d9c0829d319df9ebe8cd8291194626a2f35ef6da25de`. Decoded audit SHA-256: `82b7ce76a60c37592b1d8393352511f766cf0600abea6d32214e8546391b729f`.
 
 The subsequent [arena split/payload report](daemon_arena_split_report.md) consumes the first 8 B snapshot marker, commits an 88 B reservation, preserves 64 already source-filled payload bytes and restores the gate before entropy. It traces one payload word into the private seed record. The initialized metadata subset remains separate from a continuous caller/native epoch join.
+
+The subsequent [second-pass/gate report](daemon_second_mix_report.md) establishes a later acquisition of the same gate at 0x100b3a84c after the warm arena path releases it, obtains entropy/clock material and completes both state-mixing passes. Source CAS replaces 0x5d96 with 0xa94ef; other old words select self-retry. This is a sequential value/order contract, not native critical-section ownership or concurrency evidence.

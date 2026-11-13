@@ -1,6 +1,6 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
-Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) recovers the 624-word state recurrence, four private key mutations, comparison records and final dispatch contract. Twelve payload bytes, the payload address and source-text bytes feed this first pass; external transport use remains unknown.
+Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) establishes the second indexed state recurrence, private comparison/dispatch contracts, final state-word force and gate CAS value partition. The saved pointer selects the earlier 4 B gate; native synchronization and external transport use remain unknown.
 
 Current readiness/arena increment: The [readiness/arena report](daemon_readiness_arena_report.md) maps a 4 B compare-exchange gate, exact 1 B readiness equality, 8 B descriptor link at D+72, pending 5000 B expansion allocation and encoded marker arithmetic. Fresh-startup and constructor-snapshot header epochs remain separate; native ownership and transaction pairing remain unknown.
 

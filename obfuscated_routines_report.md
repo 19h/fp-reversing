@@ -1,6 +1,6 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
-Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) establishes indexed mixer 0x1009c46dc, nonwrap key mutation 0x100a0769c, wrapped key mutation 0x100a7d924, state wrap 0x100c0bb74 and counter/dispatch 0x100aaefc0. Compact equations and full-state replay establish block roles; complete routine identity and native reachability remain unknown.
+Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) identifies indexed mixer 0x100abba18, state-wrap copy 0x1009f04b8, remaining-counter dispatch 0x100a07724, final force 0x100b2a20c and gate CAS 0x100b3a84c. Compact equations and complete replay establish block roles while preserving unknown function/native scope.
 
 Current readiness/arena increment: The [readiness/arena analysis](daemon_readiness_arena_report.md) assigns provisional roles to admission CAS at 0x100a6e5b8, readiness equality at 0x100b74044, descriptor/sentinel routing at 0x100ba7724 and encoded marker demand at 0x100b6a918. Exact source/target mappings and confidence limits are retained; complete routine equivalence and native synchronization remain unknown.
 

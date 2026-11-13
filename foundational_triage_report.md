@@ -1,6 +1,6 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
-Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) establishes complete first-pass data/control flow: three payload words and pointer/text-dependent masks alter a private key record while mixing 624 state words. All key words restore after 156 mutations each, while generator states differ. Caller/controller epoch and native transport use remain unknown.
+Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) establishes a source lifecycle sequence: release the gate before entropy, complete both mixing phases, force word0 and reacquire the same gate. Arbitrary-old-word source proofs distinguish success from self-retry. Native ownership, contention, ordering and output publication remain unknown.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) exposes the runtime-state assumptions behind the earlier cold entropy route: readiness exactly 1 selects an existing-arena path, while other byte values save zero and restore the admission gate before entropy. Two separately retained header epochs demand different in-owner marker addresses. All reads of undefined marker bytes remain unexecuted, and no native epoch join is inferred.
 

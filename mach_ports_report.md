@@ -1,6 +1,6 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) establishes a complete local 624-iteration pass and its original control-transfer emission at 0x100aaf008. It adds no Mach port, right transfer or send/receive emission; the next material stage and native daemon-kext pairing remain unknown.
+Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) completes the local 623-update pass and establishes a same-gate reacquisition after state initialization. It adds no Mach port, right disposition or message emission; output use and native daemon-kext pairing remain unknown.
 
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) adds source admission, cold gate release and warm arena-header contracts. It establishes no new port name, right transfer, send/receive site or native daemon-kext pairing. The 60 source intervals remain conditional on separately declared runtime metadata.
 

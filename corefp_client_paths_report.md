@@ -1,6 +1,6 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
-Current payload-mixing increment: The [payload-mixing report](daemon_payload_mix_report.md) completes a local first mixing pass and recovers its next-stage transfer. It adds no observed CoreFP request, cross-layer owner identity or paired native kext transaction.
+Current second-pass/gate increment: The [second-pass/gate report](daemon_second_mix_report.md) recovers completed local initialization state and gate reacquisition. It adds no observed CoreFP request, cross-layer owner identity or paired native kext transaction.
 
 Current readiness/arena increment: The daemon-side [readiness/arena report](daemon_readiness_arena_report.md) establishes admission/readiness partitions and arena metadata demand under explicit source-model premises. It adds no observed CoreFP request, shared native owner, Mach right or paired kext transaction; existing client mappings retain their earlier evidence boundaries.
 
