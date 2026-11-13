@@ -143,3 +143,5 @@ PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_daemon_rwlock_lif
 ```
 
 Follow-up: The [state-path object report](daemon_state_path_objects_report.md) composes this creator with a newly recovered caller at0x10006ec54. Its output cell is private SP+0x30 rather than either paired-global destination. A successful200 B lock allocation/init feeds a74 B SIDB pathname object before J+0x118 publication. Initializer failures request free of the74 B object without a retained separate200 B free request; complete native lifetime remains unknown.
+
+The [state-path family continuation](daemon_state_path_family_report.md) recovers nine more per-object rwlocks and the first requested pthread_rwlock_destroy under separate missing-field controls. Source0x1004272f8 reads an object's raw+0 lock pointer, then the pending imported request at0x10031ca0c uses IA0xfe1e. Destruction returns, object frees, complete cleanup order and native lifetime remain unknown.
