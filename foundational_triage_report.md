@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) separates notification API status, the helper saved result and the caller encoded status. All six imported-return routes clear the saved result and share cleanup phase 0x1f8. Original null sentinels and separately declared nonempty records cover optional payload/record cleanup; the provider epoch and native ownership remain unjoined.
+
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) identifies the invalidation namespace behind the four-output helper. Registration proceeds V1, V1.5, V3; baselines reverse that order. Readiness publication ignores the atexit result. Original root prefix, post-provider cut and exit callback remain separate entries, and the installed provider differs from the historical reference.
 
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) separates flag-bit selection, signed two-record key lookup and three argument-dependent notification-token roots. Three pure copies preserve undefined byte origins through cache miss without affecting control in the retained cases. Original token/flag writers, complete cache payloads and the producer-to-IOKit lifetime join remain open.

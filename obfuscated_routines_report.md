@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) classifies 0x100e24d08 and successors as biased-record cleanup: skip encoded nulls, optionally request payload frees, rewrite 16 B accessed headers, then request record frees. The original epilogue restores the saved frame/result before the caller zero gate. Marker meanings and native protected-operation semantics remain unknown.
+
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) classifies 0x100e1fd98 and successors as readiness-gated ADID token registration and baseline checks. It classifies registered callback 0x100df2f60 as two pending notification cancellations and preparation of a third tail call after frame restoration. The callback guard and imports remain unexecuted; complete provider and failure paths remain unknown.
 
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) connects constant leaf 0x100001e0c (full u64 -2) to 0x100e1e5ec, an output-validating environmental cache/check helper. Source paths clear four outputs, compare up to two cache keys, select one of three notify_check token cells or stop before malloc(24). Complete output semantics and a native daemon-kext join remain unknown.

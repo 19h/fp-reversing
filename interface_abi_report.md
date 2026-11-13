@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) recovers two full-u64 biased record-pointer decodes and accessed headers (u64 at +0; u32 at +8/+12), four pending void-free arguments and exact pre-free marker stores. The helper restores its 1,184 B frame and saved registers, returns X0=0 in the retained contexts, and the original caller publishes encoded W28=0x8b3dc651 before selecting 0x1006cdaf8. Complete native record/payload ownership remains unknown.
+
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) binds V1/V1.5/V3 names to token cells 0x1010ca2c0/0x1010ca31c/0x1010ca324. It recovers int32 registration/check/cancellation arguments, six zero-only status gates, exact readiness-byte store 1, normalized atexit callback 0x100df2f60 and a prepared final cancellation tail call. Imported implementations remain unexecuted; return/output fixtures are explicit interval premises.
 
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) receives u64 -2 plus four frame output pointers (8, 4, 8, 4 B), rejects any null pointer with u32 0xffff5037, and clears all four destinations before environment selection. It establishes 40 B cache-key stride, two-record lookup, three notify_check token/result-pointer contracts, pending malloc(24) and a zero-only caller return gate. All imports remain unexecuted.

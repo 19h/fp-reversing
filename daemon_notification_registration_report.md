@@ -1,5 +1,7 @@
 # Daemon ADID notification names, registration gates and exit callback
 
+Failure continuation: The [cleanup and caller-return report](daemon_notification_failure_report.md) extends the former 0x100e24d08 frontier. It recovers two encoded null sentinels, optional payload/record frees, header marker writes, actual frame restoration and zero helper result in retained failure contexts. Registration-to-provider/lifetime continuity, native allocation/notification success and complete response semantics remain unknown.
+
 The daemon's three cached notification-token cells now have source-level registration names: `com.apple.adid.midchangedV1`, `com.apple.adid.midchangedV1.5`, and `com.apple.adid.midchangedV3`. Original registration, baseline-check, readiness-publication and exit-callback sites are recovered. This identifies the namespace behind the [four-output helper's checks](daemon_environment_outputs_report.md). The root prefix, later registration cut and exit callback remain separate entries; native registration, delivery and daemon-kext transaction identity are unknown. [NR1-NR8]
 
 ```text

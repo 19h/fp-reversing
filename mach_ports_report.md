@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) establishes no port/right identity or message emission. Its new external boundaries are pending free sites 0x100e24e28/0x100e24eec/0x100e24fdc/0x100e2507c; source marker writes and internal caller target 0x1006cdaf8 are not IPC emissions. Native notification delivery and daemon-kext pairing remain unknown.
+
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) identifies three polling-token registration sites and exact V1/V1.5/V3 names, three baseline checks and cancellation sites 0x100df3114/0x100df318c plus source-classified tail site 0x100df3228. No native port/right identity or message emission is established. Historical libnotify transport and provider-name evidence remain separate from current runtime pairing.
 
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) establishes notify_check call sites 0x100e1f2d8, 0x100e1f498 and 0x100e1f3e4, using cached u32 token cells and local changed-result pointers. It establishes no port, right operation or message emission: token registrations and native library pairing remain unknown. The separately versioned [libnotify report](notify_ipc_report.md) distinguishes shared-counter checks from fallback RPC; it does not supply a daemon token-to-message join.
