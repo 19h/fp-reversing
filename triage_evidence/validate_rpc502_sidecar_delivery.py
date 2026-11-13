@@ -503,6 +503,7 @@ def main():
     if exists(BASE/'daemon_generated_stream_report.md'):reports.add(BASE/'daemon_generated_stream_report.md')
     if exists(BASE/'daemon_auxiliary_state_report.md'):reports.add(BASE/'daemon_auxiliary_state_report.md')
     if exists(BASE/'daemon_payload_reactivation_report.md'):reports.add(BASE/'daemon_payload_reactivation_report.md')
+    if exists(BASE/'daemon_state_path_objects_report.md'):reports.add(BASE/'daemon_state_path_objects_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2552,6 +2553,14 @@ def main():
         manifest['validation']['daemon_payload_reactivation_model_checks']=reactivation_audit['model_checks']
         manifest['validation']['daemon_payload_reactivation_static_scope']=reactivation['scope']
         manifest['validation']['daemon_payload_reactivation_source_queries_unsat']=reactivation_audit['source_queries_unsat']
+    if exists(ROOT/'daemon_state_path_objects_checks.json'):
+        state_path=json.loads(read(ROOT/'daemon_state_path_objects_checks.json'))
+        state_path_audit=json.loads(read(ROOT/'daemon_state_path_objects_audit.json'))
+        manifest['validation']['daemon_state_path_objects_increment_checks']=state_path['verified_counts']
+        manifest['validation']['daemon_state_path_objects_replay_checks']=state_path_audit['independent_totals']
+        manifest['validation']['daemon_state_path_objects_model_checks']=state_path_audit['model_checks']
+        manifest['validation']['daemon_state_path_objects_static_scope']=state_path['scope']
+        manifest['validation']['daemon_state_path_objects_source_queries_unsat']=state_path_audit['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

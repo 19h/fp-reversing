@@ -133,11 +133,13 @@ No additional Mach endpoint,right transfer,message identifier or emission locati
 
 QG1: factual analysis. QG2: RL1-RL12 include dependencies and falsification probes. QG3: selected paired creator,static fallback and marker producer covered;full objective incomplete. QG4: accessed extents,u16/u32/u64,signed predicates,unknown192 B and compile-only SDK comparison are explicit. QG5: destination/value,first/second result,file/runtime state,publication/native initialization and producer/continuous path are distinguished. QG6: original bytes/fixups,SDK object,IDB,source proofs and finite cases have separate provenance. QG7: impact-labeled bounded continuations. Scoped gates are issued after verification and preservation pass.
 
+Use a Python environment with Unicorn, Capstone and Z3 available; configure its native Z3 library through that environment.
+
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_daemon_rwlock_lifecycle.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_daemon_rwlock_lifecycle.py
-export PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages
-export Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_daemon_rwlock_lifecycle.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_daemon_rwlock_lifecycle.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_daemon_rwlock_lifecycle.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_daemon_rwlock_lifecycle.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/prove_daemon_rwlock_lifecycle.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_daemon_rwlock_lifecycle.py
 ```
+
+Follow-up: The [state-path object report](daemon_state_path_objects_report.md) composes this creator with a newly recovered caller at0x10006ec54. Its output cell is private SP+0x30 rather than either paired-global destination. A successful200 B lock allocation/init feeds a74 B SIDB pathname object before J+0x118 publication. Initializer failures request free of the74 B object without a retained separate200 B free request; complete native lifetime remains unknown.
