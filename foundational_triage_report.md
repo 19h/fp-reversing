@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) separates environmental clock/entropy inputs from private comparison control and original zero-pointer provenance. It establishes 19,392 source visits,128 comparison contracts and eight nonvacuous source obligations. Shared material field order with an earlier encoded path is recorded without claiming whole-routine or native-epoch equivalence.
+
 Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) connects a constructed state path and cached network record to explicit raw-context fields, then reaches randomness and clock boundaries. It preserves gaps in two repeated layouts and records an actual raw-to-encoded failure cycle. Source order and local data flow are checked; native ownership, persistence and cross-process delivery remain unknown.
 
 Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) traces actual raw-field consumers and the local `/var/db/fpsd/SC Info` representation. Failed first-creator profiles retain a nonzero opaque word; the source forwards it as the lock argument under the separate caller premise. This is token flow, with native admission and object validity unknown. Two string locations have distinct provenance; no filesystem operation or new IPC emission is established.

@@ -1,12 +1,14 @@
 # Daemon seed material, state mixing, comparison ABI, and first twist interface
 
+Related caller variant: The [clock-record report](daemon_clock_record_report.md) establishes the same four-word material order at different source sites, with raw words rather than this report's XOR encoding. It connects two comparison leaves to that caller and stops before an address4 read derived from its original saved-zero pointer. This report's separate nonzero arena pointer is not transferred to that variant.
+
 The recovered source combines **three entropy returns, low32 wall-clock seconds, microseconds, and low32 of an arena-interior pointer** into the 624-word global state at `0x1010C784C`. It performs 624 first-pass updates, 623 second-pass updates, and forces word 0 to `0x80000000`. The mutable four-word material returns to its original encoding after the first pass. The whole continuation stops before an input-dependent table read at `0x10035C6F8`; the following update is separately proved statically.
 
 The complete leaf at `0x100427514` selects signed or unsigned u64 less-than from an address-coded private record. Its minimum accessed footprint is 36 bytes; that is not an established C object size or wire layout. No new Mach/IOKit emission or right transfer is established. Downstream generator consumers and their IPC dependencies remain unknown. The full investigation remains active.
 
 ## Provenance and assumption register
 
-Primary image: `/Users/___/Downloads/zut/fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred virtual addresses. [Contracts](triage_evidence/daemon_seed_material_contracts.json) retain 16 source spans, 39 original fixups, four exhaustive byte banks, installed SDK documentation, 551 matching live-IDB rows, and four decoded context summaries. The IDB views cover 419 of the 1,235 new path-pool instruction rows; all pool bytes are checked against the original image, and replay checks every executed instruction byte. The earlier [entropy-return](daemon_entropy_return_report.md) and [context-transfer](daemon_context_transfer_report.md) artifacts remain frozen.
+Primary image: `fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred virtual addresses. [Contracts](triage_evidence/daemon_seed_material_contracts.json) retain 16 source spans, 39 original fixups, four exhaustive byte banks, installed SDK documentation, 551 matching live-IDB rows, and four decoded context summaries. The IDB views cover 419 of the 1,235 new path-pool instruction rows; all pool bytes are checked against the original image, and replay checks every executed instruction byte. The earlier [entropy-return](daemon_entropy_return_report.md) and [context-transfer](daemon_context_transfer_report.md) artifacts remain frozen.
 
 | ID | Assumption or evidence boundary | Dependent result | Stress test / falsification probe |
 | --- | --- | --- | --- |
