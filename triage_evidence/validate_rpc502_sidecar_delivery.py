@@ -480,6 +480,7 @@ def main():
     if exists(BASE/'versioned_wrapper_error_return_report.md'):reports.add(BASE/'versioned_wrapper_error_return_report.md')
     if exists(BASE/'daemon_iokit_result_report.md'):reports.add(BASE/'daemon_iokit_result_report.md')
     if exists(BASE/'daemon_iokit_error_return_report.md'):reports.add(BASE/'daemon_iokit_error_return_report.md')
+    if exists(BASE/'daemon_return_bank_origins_report.md'):reports.add(BASE/'daemon_return_bank_origins_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2337,6 +2338,13 @@ def main():
         manifest['validation']['daemon_iokit_error_return_increment_checks']=iokit_error_return['verified_counts']
         manifest['validation']['daemon_iokit_error_return_replay_checks']=iokit_error_return_audit['independent_totals']
         manifest['validation']['daemon_iokit_error_return_static_scope']=iokit_error_return['scope']
+    if exists(ROOT/'daemon_return_bank_origins_checks.json'):
+        bank_origins=json.loads(read(ROOT/'daemon_return_bank_origins_checks.json'))
+        bank_audit=json.loads(read(ROOT/'daemon_return_bank_origins_audit.json'))
+        manifest['validation']['daemon_return_bank_origins_increment_checks']=bank_origins['verified_counts']
+        manifest['validation']['daemon_return_bank_origins_upstream_replay_checks']=bank_audit['upstream_independent_totals']
+        manifest['validation']['daemon_return_bank_origins_caller_replay_checks']=bank_audit['conditional_caller_independent_totals']
+        manifest['validation']['daemon_return_bank_origins_static_scope']=bank_origins['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

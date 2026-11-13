@@ -1,8 +1,10 @@
 # Shared-core phase and bank initialization
 
+Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) re-executes these existing bank writers in twelve strict initializer paths and verifies preservation to argument-read, audit-import and outer-RETAB boundaries. A separate later caller uses two explicit bank premises; no continuous initializer-to-caller join is claimed.
+
 The original prefix from entry `0x10061A2D0` through setup boundary `0x1004C3634` now establishes the initial writers of ten fields used by the large-frame auxiliary callers. With protected tag `0x6CF4`, source writes the full u64 phase word `F+0x9D0=0x6CF4`, the dispatch table, controller addresses and three bank pairs. Eight strict profiles define all tracked bytes through actual source stores and preserve them until the boundary. The later control-flow connection into the nine emitters remains unproved. [SR1-SR10]
 
-Primary source: `/Users/___/Downloads/zut/fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Evidence: [eight strict entry/setup profiles](triage_evidence/daemon_shared_roots_profiles.json), [writer ledgers and original source](triage_evidence/daemon_shared_roots_source.json), [six local source obligations](triage_evidence/daemon_shared_roots_proofs.json), [fresh replay and field checks](triage_evidence/daemon_shared_roots_checks.json), [preservation](triage_evidence/daemon_shared_roots_delivery.json), [scoped gates](triage_evidence/daemon_shared_roots_quality_gates.json). This increment uses the pinned backing image and retained source/helper evidence; no fresh IDA query or database mutation is performed.
+Primary source: `fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Evidence: [eight strict entry/setup profiles](triage_evidence/daemon_shared_roots_profiles.json), [writer ledgers and original source](triage_evidence/daemon_shared_roots_source.json), [six local source obligations](triage_evidence/daemon_shared_roots_proofs.json), [fresh replay and field checks](triage_evidence/daemon_shared_roots_checks.json), [preservation](triage_evidence/daemon_shared_roots_delivery.json), [scoped gates](triage_evidence/daemon_shared_roots_quality_gates.json). This increment uses the pinned backing image and retained source/helper evidence; no fresh IDA query or database mutation is performed.
 
 ## Architectural position and entry contract
 
@@ -99,10 +101,10 @@ Fresh replay checks 13,056 source visits, including 12,624 daemon instructions a
 Using the preceding reports' pinned interpreter and Z3 environment:
 
 ```sh
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_daemon_shared_roots.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/capture_daemon_shared_roots.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/prove_daemon_shared_roots.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_daemon_shared_roots.py
+python3 -P triage_evidence/probe_daemon_shared_roots.py
+python3 -P triage_evidence/capture_daemon_shared_roots.py
+python3 -P triage_evidence/prove_daemon_shared_roots.py
+python3 -P triage_evidence/validate_daemon_shared_roots.py
 ```
 
 Time is O(source visits + text words + BV/solver resources); space is O(one CPU map, journal/census and expression DAGs). The source-visit limit is20,000 per profile; all eight reach the specified boundary first. Machine fields are little-endian u32/u64. Extents and store/visit counts are exact integers.

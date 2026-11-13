@@ -1,0 +1,11 @@
+{
+  "scope": "Read-only contemporaneous IDA routing context. This is not daemon byte corroboration or proof of the mesh-wide open-database set.",
+  "recorded_daemon_input_sha256": "4c91eccb3c7e2dd39360986544afbf29f5a32dc638c760173cc1676b965be5a7",
+  "requested_target": "4c91eccb",
+  "target_query_text": "[assist:tool-output]\nCannot resolve IDA Assist mesh target: no open IDA Assist database matches '4c91eccb'\n[/assist:tool-output]\n",
+  "default_query_text": "[assist:host]\nThis ran in the database named below.\n[/assist:host]\n[assist:binary-metadata]\n{\n  \"database\": \"appletouch.ko hash=7e772904a0da\"\n}\n[/assist:binary-metadata]\n[assist:tool-output]\n_view:\n columns:\n  key\n  value\n kind: table\n page:\n  returned: 3\n  truncated: F\ncolumns:\n key\n value\ncoverage:\n facts:\n  complete: T\n  pending_refreshes: 0\n  rows: 15\nreturned: 3\nrows#3\n key\tvalue\n imagebase\t0x0\n input_sha256\t9b3e177c50247f0b375002ec5a892fb912c144524bf6280c7014b8709dc7bce3\n procname\tmetapc\ntruncated: F\n[/assist:tool-output]\n[assist:host]\ntarget \"7e772904a0dab0d947dc6c9a2568ba783ff95b2e1f5ae51727836f07419f2ad8\" names this database's own node, so the call ran here and the field was redundant. A target is only needed to reach another IDA Assist database; omit it when the call belongs to the database this conversation is in.\n[/assist:host]\n[assist:binary-metadata]\n{\n  \"database\": \"appletouch.ko\",\n  \"requested_target\": \"7e772904a0dab0d947dc6c9a2568ba783ff95b2e1f5ae51727836f07419f2ad8\",\n  \"resolved\": \"local\",\n  \"short_hash\": \"7e772904a0da\",\n  \"target_redundant\": true\n}\n[/assist:binary-metadata]\n",
+  "query": "SELECT key,value FROM facts WHERE key IN ('input_sha256','imagebase','procname')",
+  "daemon_bytes_read_back": false,
+  "IDB_mutated": false,
+  "unresolved_target_is_not_proof_database_is_closed": true
+}

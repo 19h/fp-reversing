@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) adds no Mach port, right operation or message-emission site. Its two calls are internal comparison leaves; private bank/counter/state stores are not port emissions. Native connection/provider identity, transport and pairing remain unknown.
+
 Current return continuation: The [daemon IOKit error-return report](daemon_iokit_error_return_report.md) follows selected errors through actual root/adapter returns and caller preparation. There are no new external call or SVC instructions, Mach message/port/right operations, or emission sites in these retained instructions. The u64 error marker is a private source store. Complete external response and native port/connection/provider pairing remain unknown; prior port mappings remain bounded by their original evidence.
 
 Current source increment: The [daemon IOKit-result report](daemon_iokit_result_report.md) establishes source-side post-call gates and result consumers, with no new port, right operation or message-emission site. The IOKit and free imports remain unexecuted; explicit return/output premises feed private A64 continuations. Embedded status, protocol count, private cleanup pointers and root result words do not establish native transport completion or endpoint identity. The full goal remains active.

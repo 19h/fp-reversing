@@ -1,5 +1,7 @@
 # Daemon IOKit errors: root return, adapter delta and caller continuation
 
+Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) preserves this report's unknown-bank stop unchanged. A separate experiment declares two initializer-compatible bank values, continues through counter/comparison/state processing and stops before 0x100792b28. It does not prove an uninterrupted initializer-to-caller lifetime join.
+
 Both selected IOKit error controls return through the actual preceding root and stack adapter, preserve their distinct root-result words, and select the same caller error branch. The adapter publishes zero stack delta because the original root has restored its biased temporary seed. The caller writes a fixed u64 marker into its earlier input-A span, joins a common preparation block, and reaches an unspecified u64 bank-root pointer at caller `SP+0x600`. The reaching execution stops before using that pointer to form an address. These are source contracts under the inherited private-context and API/free-return premises; a complete external error response and native daemon-kext delivery remain unknown. [ER1-ER8]
 
 ```text

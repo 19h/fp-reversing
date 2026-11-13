@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) separately establishes initializer bank writes and a conditional post-error caller path through counter/state processing. No new client transaction or native daemon-kext pairing is established; the initializer-to-caller lifetime join remains unproved.
+
 Current return continuation: The [daemon IOKit error-return report](daemon_iokit_error_return_report.md) establishes actual root/adapter returns and caller error recognition for both selected errors. Sixteen independent replays check 8,400 new A64 visits and eleven source equations. The caller writes a private u64 marker before common preparation, then stops before using an unspecified bank root at caller SP+0x600. No new client transaction, native reply or daemon-kext pairing is established.
 
 Current source increment: The [daemon IOKit-result report](daemon_iokit_result_report.md) separates the API return from embedded protocol status. Only API zero reads output+0x224; a nonzero embedded word joins the API-error cleanup path. Selected source controls retire the preceding 32 B object under a separate free-return premise and publish distinct encoded root results. Zero/zero controls forward count and, for extended mode, decode a 16 B returned span. Native transport/copyout and daemon-kext pairing remain unknown.

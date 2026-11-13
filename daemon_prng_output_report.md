@@ -1,5 +1,7 @@
 # PRNG word consumer, buffer, global counters, and comparison-record ABI
 
+Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) independently decodes 0x1010c8258 from original bank/pool/bias bytes and verifies a complete later 624-word in-place state pass plus counter increment in eight conditional post-error cases. It retains two additional bank-cell premises and makes no universal whole-generator or native-entropy claim.
+
 The source's first generated words are consumed by **in-place u32 XOR updates to an arena buffer selected through global pointer cell `0x1010C8278`**. The caller's loop bound is 512 bytes, or 128 words. This increment validates the first two updates, complete 624-word twist passes, tempering, global index/counter writes, and the nonzero-counter path that bypasses fresh entropy initialization.
 
 It also recovers the complete leaf `0x100444D6C`: a 40-byte accessed private record selects u64 equality or unsigned greater-than. Its counter caller compares the generation count with 5119. Under the recovered caller phase, the local counter rule is `C<=5119 ? C+1 : 0`. Combining it with the earlier zero-counter seed guard yields a conditional 5121-output seed epoch; concurrent/other native writers remain unknown.
@@ -8,7 +10,7 @@ No new Mach/IOKit emission is established. The masked buffer's later consumers a
 
 ## Provenance and assumption register
 
-Primary daemon: `/Users/___/Downloads/zut/fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred virtual addresses. [Contracts](triage_evidence/daemon_prng_output_contracts.json) contain 15 source spans, 15 original fixups, an exhaustive 256-input bank, four context summaries and 285 live-IDB row matches. The IDB views cover 231 of 377 path-pool instruction rows; all pool bytes and executed opcode bytes are checked against the original image. Earlier [seed-material](daemon_seed_material_report.md), [entropy/time](daemon_entropy_return_report.md), and [context-transfer](daemon_context_transfer_report.md) artifacts remain frozen.
+Primary daemon: `fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred virtual addresses. [Contracts](triage_evidence/daemon_prng_output_contracts.json) contain 15 source spans, 15 original fixups, an exhaustive 256-input bank, four context summaries and 285 live-IDB row matches. The IDB views cover 231 of 377 path-pool instruction rows; all pool bytes and executed opcode bytes are checked against the original image. Earlier [seed-material](daemon_seed_material_report.md), [entropy/time](daemon_entropy_return_report.md), and [context-transfer](daemon_context_transfer_report.md) artifacts remain frozen.
 
 | ID | Assumption or boundary | Dependent results | Stress test / falsification probe |
 | --- | --- | --- | --- |
