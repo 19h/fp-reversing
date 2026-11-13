@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) establishes u32 context+0x18, u64 context+0x10 and captured u64 context+8 consumers; the latter becomes the exact wrlock argument. Separate ABI return premises preserve low64 Q8..Q15 and vary other SIMD state. Path scanning, a 21-byte encoded output and allocation-failure cleanup are process-local contracts.
+
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) connects an eight-byte encoded reference to a 552-byte context and recovers raw lock offset +8 after inverse permutation/byte transformation. The cell changes representation across phases. Source vector/tail proofs, bounded permutation certificates and separate constructor-compatible owner premises qualify the composition.
 
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) establishes a u32 cache control immediately before the ten-byte network-record prefix, a separate u64 cache-pointer cell, an exact zero/nonzero predicate and modulo-2^32 increment. Callback and cleanup joins preserve explicit ABI return premises; the pending cached-pointer +8 load requires an independently established object layout.

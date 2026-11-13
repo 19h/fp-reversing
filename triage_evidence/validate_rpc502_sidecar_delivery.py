@@ -492,6 +492,7 @@ def main():
     if exists(BASE/'daemon_network_record_report.md'):reports.add(BASE/'daemon_network_record_report.md')
     if exists(BASE/'daemon_network_gate_report.md'):reports.add(BASE/'daemon_network_gate_report.md')
     if exists(BASE/'daemon_context_unseal_report.md'):reports.add(BASE/'daemon_context_unseal_report.md')
+    if exists(BASE/'daemon_context_lock_use_report.md'):reports.add(BASE/'daemon_context_lock_use_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2448,6 +2449,15 @@ def main():
         manifest['validation']['daemon_context_unseal_static_scope']=unseal['scope']
         manifest['validation']['daemon_context_unseal_source_queries_unsat']=unseal_audit['source_queries_unsat']
         manifest['validation']['daemon_context_unseal_permutation_certificates']=len(unseal_audit['permutation_certificate'])
+    if exists(ROOT/'daemon_context_lock_use_checks.json'):
+        lock_use=json.loads(read(ROOT/'daemon_context_lock_use_checks.json'))
+        lock_use_audit=json.loads(read(ROOT/'daemon_context_lock_use_audit.json'))
+        manifest['validation']['daemon_context_lock_use_increment_checks']=lock_use['verified_counts']
+        manifest['validation']['daemon_context_lock_use_replay_checks']=lock_use_audit['independent_totals']
+        manifest['validation']['daemon_context_lock_use_interface_checks']=lock_use_audit['interfaces']['verified_counts']
+        manifest['validation']['daemon_context_lock_use_initializer_checks']=lock_use_audit['initializer_totals']
+        manifest['validation']['daemon_context_lock_use_static_scope']=lock_use['scope']
+        manifest['validation']['daemon_context_lock_use_source_queries_unsat']=lock_use_audit['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

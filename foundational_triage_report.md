@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) traces actual raw-field consumers and the local `/var/db/fpsd/SC Info` representation. Failed first-creator profiles retain a nonzero opaque word; the source forwards it as the lock argument under the separate caller premise. This is token flow, with native admission and object validity unknown. Two string locations have distinct provenance; no filesystem operation or new IPC emission is established.
+
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) resolves the network-gate cached-pointer frontier as a representation transition shared with arena construction. An encoded-reference/552-byte sealed-context pair is transferred as an explicit separate-epoch premise; source execution restores the producer bytes and raw lock token. No native lifetime or transport join follows.
 
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) makes the previously filled neighbor cell an explicit control premise, distinguishes it from the separate cache pointer and carries callback/controller effects into cleanup. A cached-pointer +8 demand exceeds the established network-record prefix under the deliberate substituted-pointer control; native backing and object identity remain unknown.

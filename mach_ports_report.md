@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) follows local cleanup, captured context-word acquisition and two path-allocation boundaries. Pending pthread/malloc calls add no source-established Mach send/receive, port-name emission or right disposition. Native imported internals and daemon-kext pairing remain unknown.
+
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) identifies the cached word as an encoded arena-context reference and follows its original decoder/unsealer to raw reference publication. The checked source makes no imported call, Mach send/receive or port-name emission; the raw lock token is a local object field.
 
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) composes local once, write-lock and unlock callsites. It adds no Mach send/receive, port-name production or right disposition. The fallback address and cache pointers are local data; imported implementations remain unexecuted.

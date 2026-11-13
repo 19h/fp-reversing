@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) connects the daemon's restored arena to a captured lock argument and local state-path representation. It reaches pthread and malloc boundaries without establishing another CoreFP/daemon or daemon/kext transaction. Native path persistence, lock validity and cross-process ownership remain unknown.
+
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) connects local network-gate state with the previously recovered arena constructor and sealing codec. Matching reference/context representations establish a process-local architectural relationship; native initialization, valid locks and protected-core/daemon/kext transactions remain unestablished.
 
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) closes a conditional source path from the network record to matching fallback lock/unlock argument addresses. The once callback, shared adapters and cache gate are local architectural touchpoints. Address pairing establishes neither native synchronization success nor a common protected-core/daemon/kext transaction.

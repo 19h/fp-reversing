@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) connects capture at 0x1005fae24 and adapter call 0x1005fae90 to pending wrlock at 0x100361df4. Original code constructs the state path, scans a distinct initializer-compatible copy, and conditionally encodes bytes at 0x10052e608 before a second allocation. The path-byte transform is XOR 0x98 under the recorded controller.
+
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) identifies 0x10048192c..0x100481d9c as the selected reference decoder and arena-context unsealer, matching constructor publication at 0x1003c43b4. It restores the raw reference through 0x100481d98. The role is phase-specific and is not an unrelated network-record parser.
 
 Current network-gate increment: The [network gate report](daemon_network_gate_report.md) composes acquisition adapter 0x10043e280 with cleanup adapter 0x1004423f8, recovers cache predicate 0x1004f753c, counter update 0x10050feb4 and the zero-return leaf 0x1000056c8. The once callback updates two obfuscation controllers and calls a RET leaf; no lock construction occurs in its checked source path.
