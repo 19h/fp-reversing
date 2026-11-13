@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) identifies all three registration names and token roots, six zero-only registration/baseline gates, atexit-independent readiness publication and the separate cancellation callback. Eighty cases, 896 independent interval lifts and nine source proofs pass. The installed provider fails the historical image pin; native pairing, failure cleanup and the provider-to-registration join remain unknown. The full goal remains active.
+
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) adds 72 cases, 144 independent lifts and 12 source proofs. It connects the separate clock-success caller through its constant leaf to output validation, two-record cache lookup and three notification-check sites. Token registrations, native port/emission identities, complete helper outputs and the retained IOKit caller join remain unknown. The full goal remains active.
 
 Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) establishes an admitted predecessor, 128 B reservation, exact status dispatch, cursor restoration and a conditional gettimeofday ABI. Nine source obligations, 264 component replays and 22 local controls pass. The retained IOKit caller still has eight unknown pointer origins; producer-to-caller continuity and native pairing remain open. The full goal remains active.

@@ -1,5 +1,7 @@
 # ADID notification classes, OTP cache, time and capacity interfaces
 
+Daemon-side comparison: The [daemon notification-registration report](daemon_notification_registration_report.md) recovers the same three original name strings and compatible negative/general token classes in the pinned fairplayd image. This is a comparison with the retained historical evidence below. The installed adid no longer matches this report's provider-image hash; its current addresses, behavior and native daemon pairing are not established by that match.
+
 Original akd client code and an original ADID provider block use the same three notification classes. The client polls a selected token before a cache lookup; a changed flag or failed check can cause another synchronous ADID request. The provider's local block chooses the matching name and reaches `_notify_post` at `0x100219198`. Full-width proofs establish the matching DSID partitions. Successful full-request predecessors into that provider block remain unknown.
 
 The client has two 40-byte cache records and distinct timestamp arithmetic on publication and lookup. Controlled variable-length replies also establish a capacity prerequisite: existing private cached MID/OTP buffers can be reused for larger lengths without an observed resize. Three synthetic witnesses cross their original malloc request extents; two overwrite a live model request pointer and stop before an unowned `_free`. **Native accepted reply lengths, allocator capacity/layout and a native defect remain unknown.**

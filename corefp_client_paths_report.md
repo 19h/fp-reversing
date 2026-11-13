@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) connects the helper token roots with original com.apple.adid.midchangedV1/V1.5/V3 registrations and the historical invalidation namespace. Source names/classes match archived ADID evidence; the current installed provider fails that historical image pin. Native provider/library pairing, complete client outputs and the IOKit transaction join remain unknown.
+
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) supplies a local environmental dependency: clock-success caller, constant -2 leaf, two-record cache lookup and three notification-check sites. It does not establish client response bytes, native notification delivery or a daemon-kext transaction join. Complete helper outputs remain unknown beyond the four initial zero stores.
 
 Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) establishes source-local scratch views and a conditional clock dependency. It does not establish client response bytes, transaction completion or a native daemon-kext pairing; the original caller pointer remains unknown pending a control/lifetime join.

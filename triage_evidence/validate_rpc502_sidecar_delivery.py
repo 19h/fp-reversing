@@ -484,6 +484,7 @@ def main():
     if exists(BASE/'daemon_return_cache_codec_report.md'):reports.add(BASE/'daemon_return_cache_codec_report.md')
     if exists(BASE/'daemon_scratch_pointer_origin_report.md'):reports.add(BASE/'daemon_scratch_pointer_origin_report.md')
     if exists(BASE/'daemon_environment_outputs_report.md'):reports.add(BASE/'daemon_environment_outputs_report.md')
+    if exists(BASE/'daemon_notification_registration_report.md'):reports.add(BASE/'daemon_notification_registration_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2372,6 +2373,14 @@ def main():
         manifest["validation"]["daemon_environment_outputs_static_scope"]=environment["scope"]
         manifest["validation"]["daemon_environment_outputs_source_queries_unsat"]=environment_audit["source_queries_unsat"]
         manifest["validation"]["daemon_environment_outputs_SDK_compile_exit"]=environment_audit["SDK_checks"]["exit_code"]
+    if exists(ROOT/"daemon_notification_registration_checks.json"):
+        notifications=json.loads(read(ROOT/"daemon_notification_registration_checks.json"))
+        notifications_audit=json.loads(read(ROOT/"daemon_notification_registration_audit.json"))
+        manifest["validation"]["daemon_notification_registration_increment_checks"]=notifications["verified_counts"]
+        manifest["validation"]["daemon_notification_registration_replay_checks"]=notifications_audit["independent_totals"]
+        manifest["validation"]["daemon_notification_registration_static_scope"]=notifications["scope"]
+        manifest["validation"]["daemon_notification_registration_source_queries_unsat"]=notifications_audit["source_queries_unsat"]
+        manifest["validation"]["daemon_notification_registration_SDK_compile_exit"]=notifications_audit["SDK_checks"]["exit_code"]
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,5 +1,7 @@
 # Clock-success helper: output validation, cache and libnotify interfaces
 
+Continuation: The [notification-registration report](daemon_notification_registration_report.md) identifies the three cached tokens as V1, V1.5 and V3 invalidation handles, recovers registration/baseline gates and readiness publication, and classifies the separate exit callback. Native token values, message emission and provider-to-helper lifetime continuity remain unknown; the installed provider differs from the historical reference.
+
 The source-selected clock-success branch now connects continuously through a constant-return leaf to internal helper `0x100e1e5ec`. That helper validates four output pointers, clears two u64 and two u32 destinations, and selects cache, clock, notification-check or allocation paths. Three original calls resolve to `notify_check`, using distinct cached token cells. The retained paths stop before every external call. No native clock/notification result, port identity, message emission or daemon-kext pairing is established. [EO1-EO8]
 
 ```text

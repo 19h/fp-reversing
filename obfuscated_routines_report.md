@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) classifies 0x100e1fd98 and successors as readiness-gated ADID token registration and baseline checks. It classifies registered callback 0x100df2f60 as two pending notification cancellations and preparation of a third tail call after frame restoration. The callback guard and imports remain unexecuted; complete provider and failure paths remain unknown.
+
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) connects constant leaf 0x100001e0c (full u64 -2) to 0x100e1e5ec, an output-validating environmental cache/check helper. Source paths clear four outputs, compare up to two cache keys, select one of three notify_check token cells or stop before malloc(24). Complete output semantics and a native daemon-kext join remain unknown.
 
 Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) classifies 0x10066f180 as admission, 0x10070e738 as a 128 B scratch-view reservation, 0x10083039c and its successors as an exact two-value status dispatcher, and 0x10095f530 as cursor restoration. The helper prefix0x1007b2fdc resolves a conditional gettimeofday call. A continuous producer-to-retained-caller path remains unproved.

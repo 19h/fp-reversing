@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) binds V1/V1.5/V3 names to token cells 0x1010ca2c0/0x1010ca31c/0x1010ca324. It recovers int32 registration/check/cancellation arguments, six zero-only status gates, exact readiness-byte store 1, normalized atexit callback 0x100df2f60 and a prepared final cancellation tail call. Imported implementations remain unexecuted; return/output fixtures are explicit interval premises.
+
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) receives u64 -2 plus four frame output pointers (8, 4, 8, 4 B), rejects any null pointer with u32 0xffff5037, and clears all four destinations before environment selection. It establishes 40 B cache-key stride, two-record lookup, three notify_check token/result-pointer contracts, pending malloc(24) and a zero-only caller return gate. All imports remain unexecuted.
 
 Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) publishes R, R+0x30, R+0x40, R+0x5f views from a 128 B cursor reservation. The conditional gettimeofday call takes R+0x30 and NULL; fresh current arm64e SDK checks establish a 16 B timeval ending at R+0x40. Cursor restoration leaves pointer cells intact. Native object lifetime and the retained IOKit caller join remain unknown.

@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) identifies the invalidation namespace behind the four-output helper. Registration proceeds V1, V1.5, V3; baselines reverse that order. Readiness publication ignores the atexit result. Original root prefix, post-provider cut and exit callback remain separate entries, and the installed provider differs from the historical reference.
+
 Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) separates flag-bit selection, signed two-record key lookup and three argument-dependent notification-token roots. Three pure copies preserve undefined byte origins through cache miss without affecting control in the retained cases. Original token/flag writers, complete cache payloads and the producer-to-IOKit lifetime join remain open.
 
 Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) recovers a 1, 024-phase admission class and complete local reserve/status/restore flow. A256-input bank identity resolves gettimeofday at 0x1007b3058. Whole-text direct-SP access accounting finds one writer and three readers of the unresolved pointer cell; computed aliases and SP-epoch continuity remain outside that census.
