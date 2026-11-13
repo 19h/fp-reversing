@@ -1,5 +1,7 @@
 # Conditional network-identity record and shared acquisition boundary
 
+Follow-up: The [network gate report](daemon_network_gate_report.md) continues the pending once call under explicit completion and callback-invocation premises, then separates the adjacent u32 control from a different cached pointer. The neighbor sentinel used here is overwritten by separately declared control fixtures in that continuation; it is not an observed native value.
+
 The positive process-path continuation conditionally calls `0x10044167c`, a network-identity record adapter. Under three additional initializer-compatible pointer-cell premises, its original call at `0x1004418a8` reaches the network cache helper `0x1000040a8`. Separate warm-cache controls copy six bytes into a global length/data record at `0x1010c5764` and publish its address through the caller's temporary record. The caller preserves that address before reusing the temporary for the previously recovered acquisition adapter `0x10043e280`. [NR1-NR4]
 
 The retained eight undefined-root stops remain unchanged. The first continuation needs three new root-cell premises; the later acquisition continuation needs two further bank roots and an explicit zero-valued image-controller premise. The initializer and caller are separate execution epochs. No native process-path-to-network join, identity freshness, actual synchronization or daemon-kext transaction is established. A separate zero-network-return premise restores the additional 32 B cursor reservation and reaches saved continuation `0x100671718`. [NR2-NR5]

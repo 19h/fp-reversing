@@ -490,6 +490,7 @@ def main():
     if exists(BASE/'daemon_pidpath_consumer_report.md'):reports.add(BASE/'daemon_pidpath_consumer_report.md')
     if exists(BASE/'daemon_network_identity_report.md'):reports.add(BASE/'daemon_network_identity_report.md')
     if exists(BASE/'daemon_network_record_report.md'):reports.add(BASE/'daemon_network_record_report.md')
+    if exists(BASE/'daemon_network_gate_report.md'):reports.add(BASE/'daemon_network_gate_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2428,6 +2429,15 @@ def main():
         manifest['validation']['daemon_network_record_static_scope']=network_record['scope']
         manifest['validation']['daemon_network_record_source_queries_unsat']=network_record_audit['source_queries_unsat']
         manifest['validation']['daemon_network_record_SDK_compile_exit']=network_record_audit['SDK_checks']['exit_code']
+    if exists(ROOT/'daemon_network_gate_checks.json'):
+        gate=json.loads(read(ROOT/'daemon_network_gate_checks.json'))
+        gate_audit=json.loads(read(ROOT/'daemon_network_gate_audit.json'))
+        manifest['validation']['daemon_network_gate_increment_checks']=gate['verified_counts']
+        manifest['validation']['daemon_network_gate_replay_checks']=gate_audit['independent_totals']
+        manifest['validation']['daemon_network_gate_interface_checks']=gate_audit['interfaces']['verified_counts']
+        manifest['validation']['daemon_network_gate_static_scope']=gate['scope']
+        manifest['validation']['daemon_network_gate_source_queries_unsat']=gate_audit['source_queries_unsat']
+        manifest['validation']['daemon_network_gate_SDK_compile_exit']=gate_audit['SDK_checks']['exit_code']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

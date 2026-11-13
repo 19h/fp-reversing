@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current network-gate increment: The [network gate report](daemon_network_gate_report.md) composes acquisition adapter 0x10043e280 with cleanup adapter 0x1004423f8, recovers cache predicate 0x1004f753c, counter update 0x10050feb4 and the zero-return leaf 0x1000056c8. The once callback updates two obfuscation controllers and calls a RET leaf; no lock construction occurs in its checked source path.
+
 Current network-record increment: The [network record report](daemon_network_record_report.md) identifies 0x10044167c as the network length/data-record adapter, with common pointer-store epilogue 0x10020eb48 and publication fragment 0x100268010. The caller uses a memory return at C+0, preserves the pointer, then calls acquisition adapter 0x10043e280. Eight source equations and independent replay qualify the record/control domains.
 
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) identifies 0x1000040a8 as an optional six-byte network identity cache and 0x10000425c as iterator/filter/parent/MAC-property extraction. Original strings, ten import stubs, sixteen fixup records and 33 direct calls support these local roles. Whole-text direct B/BL and original-fixup censuses preserve the unresolved computed-caller boundary.

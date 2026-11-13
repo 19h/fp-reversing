@@ -1,5 +1,7 @@
 # Daemon IOKit acquisition, cleanup and outer return
 
+Follow-up: The [network gate report](daemon_network_gate_report.md) composes the shared acquisition and cleanup adapters into a retained network-record caller. Original callback effects, equal fallback argument addresses, cache-control wrap and separate object-layout frontiers are independently checked; native lock validity and ownership remain unknown.
+
 Related caller: The [network record report](daemon_network_record_report.md) reaches acquisition adapter 0x10043e280 and the same once control/callback tuple from a conditional process-path/network-record context. Its captured pointer is zero and its once call remains pending. The earlier callback/lock fixtures are not composed into these new cases; native initialization and cross-layer identity remain unknown.
 
 The selected daemon entry at `0x1004601D0` reaches the previously established class-matching, service-open and metadata-query sequence through an acquisition adapter. The former unknown SP+0x50 cleanup value is now source-derived: it holds the address `0x1010C8240`, whose contents supply the primary synchronization pointer. Acquisition captures that pointer before its adapter call; common cleanup reads the cell again. Both adapters call `pthread_once` with the same control and callback, then conditionally call `pthread_rwlock_wrlock` or `pthread_rwlock_unlock`. These are source and private-model results; native synchronization, pointer lifetime and concurrent mutation remain unknown. [DS1-DS12]

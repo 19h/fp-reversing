@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current network-gate increment: The [network gate report](daemon_network_gate_report.md) composes local once, write-lock and unlock callsites. It adds no Mach send/receive, port-name production or right disposition. The fallback address and cache pointers are local data; imported implementations remain unexecuted.
+
 Current network-record increment: The [network record report](daemon_network_record_report.md) conditionally connects the original positive-path caller to IOMainPort at 0x1000040d8, with W0=0 and output pointer S-0xb0 in eight cold controls. The API remains pending; no native name, right disposition or message emission is inferred. The static record pointer, cursor, pthread_once control and callback remain process-local channels.
 
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) maps IOMainPort outputs at calls 0x1000040d8/0x100004140/0x100004184, matching iterator outputs at 0x1000040fc/0x100004168/0x1000041ac, iterator-service returns at 0x100004288/0x1000042e8 and parent output at 0x100004338. It records nine IOObjectRelease sites. These are API name channels; native rights, dispositions and API-internal Mach message emissions remain unknown.

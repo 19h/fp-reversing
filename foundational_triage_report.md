@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current network-gate increment: The [network gate report](daemon_network_gate_report.md) makes the previously filled neighbor cell an explicit control premise, distinguishes it from the separate cache pointer and carries callback/controller effects into cleanup. A cached-pointer +8 demand exceeds the established network-record prefix under the deliberate substituted-pointer control; native backing and object identity remain unknown.
+
 Current network-record increment: The [network record report](daemon_network_record_report.md) carries a conditional network identity into a static record, preserves its pointer at S+0x998 and reaches the previously recovered once/acquisition interface. Separate cold, warm and zero-return cases preserve the original root gap, model controller state explicitly and distinguish inner 32 B cursor restoration from the retained 1,056 B reservation. No warm continuation reads the process-path buffer.
 
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) traces en0/en1/en0 selection, mode-dependent IOBuiltin filtering, IOService parent lookup and IOMACAddress extraction. It distinguishes ready-before-data publication, missing-property no-write success and failed-API output definedness. The original eight positive path contexts stop at 0x1005a8cd4 before undefined S+0x858; separate helper controls establish no native caller epoch or hardware identity.

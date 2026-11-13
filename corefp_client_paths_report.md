@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current network-gate increment: The [network gate report](daemon_network_gate_report.md) closes a conditional source path from the network record to matching fallback lock/unlock argument addresses. The once callback, shared adapters and cache gate are local architectural touchpoints. Address pairing establishes neither native synchronization success nor a common protected-core/daemon/kext transaction.
+
 Current network-record increment: The [network record report](daemon_network_record_report.md) links a conditional six-byte network identity record to the acquisition/once adapter previously seen on IOKit paths. Shared code/control/callback addresses establish local architectural touchpoints; they do not identify a common native task, lock instance, initialized state or daemon-kext transaction.
 
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) adds general IOKit registry/network context: en0/en1 matching, built-in filtering and six-byte MAC-property extraction. Its main-port, iterator and parent name channels are separate from CoreFP/FairPlay service discovery. No FairPlayIOKit connection, message identity or native daemon-kext transaction follows from this environmental query.

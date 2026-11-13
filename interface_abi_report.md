@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current network-gate increment: The [network gate report](daemon_network_gate_report.md) establishes a u32 cache control immediately before the ten-byte network-record prefix, a separate u64 cache-pointer cell, an exact zero/nonzero predicate and modulo-2^32 increment. Callback and cleanup joins preserve explicit ABI return premises; the pending cached-pointer +8 load requires an independently established object layout.
+
 Current network-record increment: The [network record report](daemon_network_record_report.md) recovers a 12 B accessed temporary with u32 control at +8 and u64 pointer result at +0, then its reuse as a 16 B acquisition record with a four-byte gap. The global record prefix is u32 length 6 followed by six bytes. Network control decodes for all SP64; acquisition prehash keys agree exactly when (SP & 6)==0.
 
 Current network-identity increment: The [network identity report](daemon_network_identity_report.md) establishes four-byte IOKit port/object/iterator/registry names, six-byte identity output and CFRange{0,6} argument placement. Authenticated import stubs use IA diversity 0 with address diversity 1 and the GOT-slot address modifier. Warm returns preserve the full readiness byte; zero nested status does not imply output bytes were written.
