@@ -8,7 +8,7 @@ This extends the [encoded SHA-1 core report](daemon_sha1_core_report.md). Six fr
 
 | Evidence | Verified extent |
 | --- | --- |
-| Original daemon | `/Users/___/Downloads/zut/fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
+| Original daemon | `fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
 | New source | 15 spans / 448 instructions; 383 instructions observed in serializer/decision traces |
 | Current IDB | `fairplayd`, target `6b117c693e3b`; 15 read-only ranges / 1,792 bytes, raw identical |
 | Original target metadata | 15 authenticated fixups and actual branch-cell provenance |
@@ -163,3 +163,7 @@ retained prepared block -> isolated source core -> state value -> isolated seria
 Reproduction uses the pinned Python/Z3 environment from the preceding reports. Run `probe_daemon_digest_output.py`, `recover_daemon_digest_output.py`, `prove_daemon_digest_output.py`, then `validate_daemon_digest_output.py`. The verifier reconstructs proofs, checks nonempty domains, source/fixup/IDB/access records, ordered serializer ledgers, helper ABIs, selector decisions, fresh component replays and retained value matches. Time is O(source bytes + retained visits/effects + new visits/effects + solver resources); space includes compressed artifacts, one decoded/fresh component journal, one private mapping and solver expressions. Solver queries have a30-second limit; no polynomial SMT bound is claimed.
 
 QG1: factual technical scope. QG2: DO1-DO12 with probes and dependent results. QG3: serialization/root-interface increment covered; full objective remains incomplete. QG4: explicit endianness, bytes/words, modulo widths, source versus modeled-branch counts and geometry. QG5: universal local identities, component value composition, unchanged retained stops, phase-specific roots and native publication remain distinct. QG6: original source, current IDB, rebuilt proofs, fresh traces, independent references and exact access-reporting checks support scoped claims. QG7: impact-ranked continuation table provided.
+
+## Related source-local scratch producer
+
+The [scratch-pointer producer continuation](daemon_scratch_pointer_origin_report.md) separately establishes a 128 B reservation with R+0x30, R+0x40, R+0x5f views and a conditional gettimeofday buffer at R+0x30. Similar cursor-base arithmetic does not establish shared object identity, lifetime or control continuity with the digest views in this report.

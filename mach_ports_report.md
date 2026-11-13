@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) adds no port, right operation or message-emission site. Its conditional helper call at 0x1007b3058 resolves to gettimeofday under two initializer-compatible bank roots; that environmental call is classified without execution. Native connection/provider identity and daemon-kext transaction pairing remain unknown.
+
 Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) adds no port, right operation, external call or message-emission site. Generated scratch bytes are consumed locally for loop control before overwrite. Native ownership, response completion and connection/provider pairing remain unknown.
 
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) adds no Mach port, right operation or message-emission site. Its two calls are internal comparison leaves; private bank/counter/state stores are not port emissions. Native connection/provider identity, transport and pairing remain unknown.

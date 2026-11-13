@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) establishes source-local scratch views and a conditional clock dependency. It does not establish client response bytes, transaction completion or a native daemon-kext pairing; the original caller pointer remains unknown pending a control/lifetime join.
+
 Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) generates and reads back two private scratch bytes, then overwrites the pair with a u16 count before an unresolved pointer/count gate. This does not establish client response bytes or a native transaction; the separate initializer/caller lifetime join remains unproved.
 
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) separately establishes initializer bank writes and a conditional post-error caller path through counter/state processing. No new client transaction or native daemon-kext pairing is established; the initializer-to-caller lifetime join remains unproved.

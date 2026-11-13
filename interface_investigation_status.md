@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) establishes an admitted predecessor, 128 B reservation, exact status dispatch, cursor restoration and a conditional gettimeofday ABI. Nine source obligations, 264 component replays and 22 local controls pass. The retained IOKit caller still has eight unknown pointer origins; producer-to-caller continuity and native pairing remain open. The full goal remains active.
+
 Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) adds eight caller paths,40 independent path replays and48 gate/loop controls. Two generated scratch bytes affect loop control before a count overwrite; the next gate retains the original unknown pointer. Initializer continuity, pointer production/ownership and native daemon-kext transaction identity remain open. The full goal remains active.
 
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) adds twelve initializer profiles and eight conditional caller profiles, nine source obligations, 24 upstream and 16 caller independent replays. It verifies comparison record reuse, a full 624-word recurrence and counter increment. The initializer-to-caller join, S+0x878 producer, native endpoint/ownership and daemon-kext pairing remain open. The full goal remains active.

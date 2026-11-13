@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) classifies 0x10066f180 as admission, 0x10070e738 as a 128 B scratch-view reservation, 0x10083039c and its successors as an exact two-value status dispatcher, and 0x10095f530 as cursor restoration. The helper prefix0x1007b2fdc resolves a conditional gettimeofday call. A continuous producer-to-retained-caller path remains unproved.
+
 Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) identifies 0x100792b28..0x100792bc4 as a cache/self-text byte codec and the following source as generated-byte-dependent loop control. It recovers two initializer pointer writers and complete optional-pointer/count gate targets 0x1007b3210/0x100746ab4. The actual caller stops before unknown flags; the successors are source-classified rather than executed from that boundary.
 
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) establishes strict initializer bank writers, the original generation-counter decoder, actual equality and signed/unsigned less-than comparison records, a complete 624-word state pass and counter publication. The actual target 0x100427514 is a comparison leaf despite diversity 0x46a2 also appearing on free imports elsewhere. The separate caller path requires two explicit bank premises and stops before an unknown-pointer LDRSW.

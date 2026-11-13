@@ -482,6 +482,7 @@ def main():
     if exists(BASE/'daemon_iokit_error_return_report.md'):reports.add(BASE/'daemon_iokit_error_return_report.md')
     if exists(BASE/'daemon_return_bank_origins_report.md'):reports.add(BASE/'daemon_return_bank_origins_report.md')
     if exists(BASE/'daemon_return_cache_codec_report.md'):reports.add(BASE/'daemon_return_cache_codec_report.md')
+    if exists(BASE/'daemon_scratch_pointer_origin_report.md'):reports.add(BASE/'daemon_scratch_pointer_origin_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2353,6 +2354,15 @@ def main():
         manifest['validation']['daemon_return_cache_codec_replay_checks']=return_cache_audit['independent_totals']
         manifest['validation']['daemon_return_cache_codec_upstream_replay_checks']=return_cache_audit['upstream_independent_totals']
         manifest['validation']['daemon_return_cache_codec_static_scope']=return_cache['scope']
+    if exists(ROOT/'daemon_scratch_pointer_origin_checks.json'):
+        scratch=json.loads(read(ROOT/'daemon_scratch_pointer_origin_checks.json'))
+        scratch_audit=json.loads(read(ROOT/'daemon_scratch_pointer_origin_audit.json'))
+        manifest['validation']['daemon_scratch_pointer_origin_increment_checks']=scratch['verified_counts']
+        manifest['validation']['daemon_scratch_pointer_origin_replay_checks']=scratch_audit['independent_totals']
+        manifest['validation']['daemon_scratch_pointer_origin_static_scope']=scratch['scope']
+        manifest['validation']['daemon_scratch_pointer_origin_clock_controls']=len(scratch_audit['helper_controls'])
+        manifest['validation']['daemon_scratch_pointer_origin_return_controls']=len(scratch_audit['return_controls'])
+        manifest['validation']['daemon_scratch_pointer_origin_SDK_compile_exit']=scratch_audit['SDK_checks']['exit_code']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

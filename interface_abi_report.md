@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) publishes R, R+0x30, R+0x40, R+0x5f views from a 128 B cursor reservation. The conditional gettimeofday call takes R+0x30 and NULL; fresh current arm64e SDK checks establish a 16 B timeval ending at R+0x40. Cursor restoration leaves pointer cells intact. Native object lifetime and the retained IOKit caller join remain unknown.
+
 Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) recovers the signed-u32 mask/table read, exact u32-wrapped self-text offsets, byte-output/readback contract and complete low16-count/non-null-pointer gate. Scratch-byte and later u16 meanings belong to different source epochs. Two additional cache-root cells are explicit caller premises.
 
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) recovers a complete 36 B accessed-record comparison ABI at 0x100427514, with signed/unsigned less-than selection and one u32 result at record+0x0c. It separately verifies the actual 48 B equality record at 0x10041a5e0 and first overwrite of prior root-error storage. Record meanings depend on source epoch; initializer-to-caller lifetime continuity remains unproved.
