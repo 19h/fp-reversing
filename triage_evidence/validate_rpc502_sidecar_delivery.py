@@ -483,6 +483,7 @@ def main():
     if exists(BASE/'daemon_return_bank_origins_report.md'):reports.add(BASE/'daemon_return_bank_origins_report.md')
     if exists(BASE/'daemon_return_cache_codec_report.md'):reports.add(BASE/'daemon_return_cache_codec_report.md')
     if exists(BASE/'daemon_scratch_pointer_origin_report.md'):reports.add(BASE/'daemon_scratch_pointer_origin_report.md')
+    if exists(BASE/'daemon_environment_outputs_report.md'):reports.add(BASE/'daemon_environment_outputs_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2363,6 +2364,14 @@ def main():
         manifest['validation']['daemon_scratch_pointer_origin_clock_controls']=len(scratch_audit['helper_controls'])
         manifest['validation']['daemon_scratch_pointer_origin_return_controls']=len(scratch_audit['return_controls'])
         manifest['validation']['daemon_scratch_pointer_origin_SDK_compile_exit']=scratch_audit['SDK_checks']['exit_code']
+    if exists(ROOT/"daemon_environment_outputs_checks.json"):
+        environment=json.loads(read(ROOT/"daemon_environment_outputs_checks.json"))
+        environment_audit=json.loads(read(ROOT/"daemon_environment_outputs_audit.json"))
+        manifest["validation"]["daemon_environment_outputs_increment_checks"]=environment["verified_counts"]
+        manifest["validation"]["daemon_environment_outputs_replay_checks"]=environment_audit["independent_totals"]
+        manifest["validation"]["daemon_environment_outputs_static_scope"]=environment["scope"]
+        manifest["validation"]["daemon_environment_outputs_source_queries_unsat"]=environment_audit["source_queries_unsat"]
+        manifest["validation"]["daemon_environment_outputs_SDK_compile_exit"]=environment_audit["SDK_checks"]["exit_code"]
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,5 +1,7 @@
 # Scratch-pointer producer, admission class and cursor restoration
 
+Continuation: The [environment-helper report](daemon_environment_outputs_report.md) follows the separate clock-success cut through its original constant -2 leaf and four-output helper. It recovers null rejection, two-record key lookup and three notification-check call sites; imports remain pending. This does not add an uninterrupted reservation-to-helper or producer-to-retained-IOKit lifetime join.
+
 The original daemon contains a source-local producer for the pointer cell S+`0x4a20` left unknown in the [cache-codec continuation](daemon_return_cache_codec_report.md). The producer reserves 128 B from a frame-relative cursor and publishes several views, including a pointer 64 B into that region. Its admitted predecessor, complete status dispatch and ordinary cursor restoration are recovered. This establishes a conditional component contract; a continuous path from this component to the retained IOKit caller remains unknown. [SP1-SP7]
 
 ```text

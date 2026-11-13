@@ -1,5 +1,7 @@
 # libnotify and notifyd: transport, shared counters and Mach interfaces
 
+Daemon-side continuation: The [four-output helper report](daemon_environment_outputs_report.md) recovers three original daemon notify_check call sites and their cached token cells. Native registrations, notification names and daemon/library build pairing remain unknown. The reference transport recovered below therefore does not establish a daemon call-to-message mapping.
+
 This increment resolves the reference implementation beneath the three ADID invalidation names. The installed `libsystem_notify.dylib` looks up `com.apple.system.notification_center`, registers check tokens with message1012, and maps `apple.shm.notification_center`. Successful shared-counter checks emit no Mach message. The original notifyd image contains the corresponding registration/checkin stubs, a fresh-slot counter initializer, audit/admission interfaces, an active Mach notification sender and a separate Mach-notification MIG subsystem.
 
 The [earlier ADID notification/cache report](adid_notification_report.md) establishes the upstream akd/client and adid/local-post sites and their conditional name match. This increment extends its previously unresolved transport boundary. It does not establish effective native credentials, actual process/cache pairing, complete notifyd admission, successful full provider requests, or a native notification transaction. All addresses below are unslid source addresses. I1-I12 delimit dependent results.

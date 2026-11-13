@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current environment-helper increment: The [four-output helper](daemon_environment_outputs_report.md) connects constant leaf 0x100001e0c (full u64 -2) to 0x100e1e5ec, an output-validating environmental cache/check helper. Source paths clear four outputs, compare up to two cache keys, select one of three notify_check token cells or stop before malloc(24). Complete output semantics and a native daemon-kext join remain unknown.
+
 Current scratch-pointer increment: The [scratch-pointer producer](daemon_scratch_pointer_origin_report.md) classifies 0x10066f180 as admission, 0x10070e738 as a 128 B scratch-view reservation, 0x10083039c and its successors as an exact two-value status dispatcher, and 0x10095f530 as cursor restoration. The helper prefix0x1007b2fdc resolves a conditional gettimeofday call. A continuous producer-to-retained-caller path remains unproved.
 
 Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) identifies 0x100792b28..0x100792bc4 as a cache/self-text byte codec and the following source as generated-byte-dependent loop control. It recovers two initializer pointer writers and complete optional-pointer/count gate targets 0x1007b3210/0x100746ab4. The actual caller stops before unknown flags; the successors are source-classified rather than executed from that boundary.
