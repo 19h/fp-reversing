@@ -507,6 +507,7 @@ def main():
     if exists(BASE/'daemon_state_path_family_report.md'):reports.add(BASE/'daemon_state_path_family_report.md')
     if exists(BASE/'daemon_state_file_admission_report.md'):reports.add(BASE/'daemon_state_file_admission_report.md')
     if exists(BASE/'daemon_state_file_metadata_report.md'):reports.add(BASE/'daemon_state_file_metadata_report.md')
+    if exists(BASE/'daemon_state_file_input_report.md'):reports.add(BASE/'daemon_state_file_input_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2588,6 +2589,17 @@ def main():
         manifest['validation']['daemon_state_file_metadata_model_checks']=metadata_audit['model_checks']
         manifest['validation']['daemon_state_file_metadata_static_scope']=metadata['scope']
         manifest['validation']['daemon_state_file_metadata_source_queries_unsat']=metadata_audit['source_queries_unsat']
+    if exists(ROOT/'daemon_state_file_input_checks.json'):
+        file_input=json.loads(read(ROOT/'daemon_state_file_input_checks.json'))
+        file_input_audit=json.loads(read(ROOT/'daemon_state_file_input_audit.json'))
+        manifest['validation']['daemon_state_file_input_increment_checks']=file_input['verified_counts']
+        manifest['validation']['daemon_state_file_input_replay_checks']=file_input_audit['independent_totals']
+        manifest['validation']['daemon_state_file_input_model_checks']=file_input_audit['model_checks']
+        manifest['validation']['daemon_state_file_input_static_scope']=file_input['scope']
+        manifest['validation']['daemon_state_file_input_source_queries_unsat']=file_input_audit['source_queries_unsat']
+        from verify_daemon_state_file_input_publication import header_controls,function_brackets
+        manifest['validation']['daemon_state_file_input_isolated_header_controls']=header_controls()
+        manifest['validation']['daemon_state_file_input_function_brackets']=function_brackets()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

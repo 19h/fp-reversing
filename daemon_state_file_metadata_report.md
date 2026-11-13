@@ -204,3 +204,5 @@ Archive hashes differ from these decoded-artifact hashes. The publication verifi
 - **QG5**: Pass. Descriptor0, signed boundary controls, unknown metadata/errno, reused record channels and the two allocation frontiers are distinguished. Native effects and uncontinued branches remain explicitly unknown.
 - **QG6**: Pass. Full original-image hash, original opcodes/fixups, independent replay, nine rebuilt nonvacuous queries, SDK source/header hashes/assembly and exact publication receipts provide primary provenance.
 - **QG7**: Pass. The impact-labeled continuation table bounds data-flow, lifetime, ABI and transport opportunities without treating them as established findings.
+
+The [file-input continuation](daemon_state_file_input_report.md) resumes the metadata-sized allocation through read-result routing, selected cleanup, modification-time stores and the first content demand. It identifies stat+48/+56 producers for object+8/+16 and separately proves the first four-byte XOR construction. Native file/allocator effects and daemon-kext pairing remain unknown.
