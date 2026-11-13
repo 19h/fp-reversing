@@ -1,5 +1,7 @@
 # Daemon post-block dispatch and selector-21 buffer join
 
+Subsequent source extension: The [daemon IOKit-result report](daemon_iokit_result_report.md) extends this pending API boundary under separate API-return/output premises. It establishes API versus embedded-status gates, selected cleanup/root-result paths, count forwarding and extended XOR98 copyback. Native API execution, transport/copyout and daemon-kext pairing remain unknown; the original pending-call scope below is preserved.
+
 Subsequent kernel-core evidence: the [selector-21 core-entry report](versioned_core_entry_report.md) establishes the original workspace/record contract and initial admission of modes 2/5 with marker 0xb4d3a486. It distinguishes core count copyback, provider status and UserClient structure fields. Successful processing, native admission and daemon/kext pairing remain unknown.
 
 Four declared interior-state paths now reach the pending `_IOConnectCallStructMethod` at `0x100478a04`. They connect the preceding block transform to selector 21 with 552 B input, the same user input/output pointer, and a 552 B capacity cell. The API buffer is `F+0x6a8`, 168 B after construction view `F+0x600`; the processed block occupies API offset `+0x20`. Local working modes 2 and 5 become request word 0. These joins are source-bound to the retained fixtures; the API call, native admission and daemon/kext pairing remain unexecuted or unknown.

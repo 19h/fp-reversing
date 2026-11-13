@@ -1,5 +1,7 @@
 # Selector-21 wrapper return and UserClient error-result fields
 
+Subsequent source extension: The [daemon IOKit-result report](daemon_iokit_result_report.md) consumes the produced 0xffff5a5e word only as a separately declared output+0x224 compatibility control. With independently declared API status zero, the daemon encodes that field to 0x74c29c0f and reaches source cleanup/root publication. This does not establish native IOKit success, output-buffer identity or a paired daemon-kext transaction.
+
 The retained provider-absent selector-21 path now completes the dispatcher and `_UeFdbi` wrapper in the source model. The wrapper copies count 512 to its caller's mutable count cell, requests auxiliary and workspace frees, translates raw workspace status `0xce515a38` to `0xffff5a5e`, and restores its entry SP and X19-X29. A separate original UserClient suffix, supplied that actual source-produced nonzero return, stores it at output+`0x224`, skips the count store at output+`0x220`, and sets W0 to zero. Native API completion, output-buffer identity and daemon-kext transaction pairing remain unknown. [WR1-WR7]
 
 ```text
