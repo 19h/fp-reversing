@@ -1,5 +1,7 @@
 # Audit PID, process-path buffer and signed result consumer
 
+Further analysis: The [network identity report](daemon_network_identity_report.md) continues all eight positive contexts without adding roots; each stops at 0x1005a8cd4 before reading undefined S+0x858. Separate source entries recover the network identity cache and MAC-property helper, with exact IOKit name-output sites. The initializer-to-caller epoch and native process-path-to-network join remain unknown.
+
 The pending BSM call in the [audit-scratch report](daemon_audit_scratch_report.md) leads to a process-path query. Two explicit nonnull component contexts, continued under declared void BSM returns, execute an exact 1,024-byte zero-fill and stop before an undefined phase word at S+`0x9d0`. Separate phase/bank/PID premises admit `proc_pidpath(pid, R+32, 1024)` at `0x100693890`. Its original return consumer compares the signed 32-bit return with 1 through a recovered address-keyed record. Nonpositive return fixtures restore the 1,056 B cursor reservation and reach `0x100709868`; positive fixtures reach a distinct continuation. [PC1-PC5]
 
 The prior 84 notification-failure contexts remain stopped before the undefined scratch cursor, unchanged. The new contexts use the prior report's separate cursor/token premises. No provider gap, native token origin, cursor bounds, process-path bytes or daemon-kext transaction is established. [PC2-PC4]

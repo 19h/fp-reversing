@@ -488,6 +488,7 @@ def main():
     if exists(BASE/'daemon_notification_failure_report.md'):reports.add(BASE/'daemon_notification_failure_report.md')
     if exists(BASE/'daemon_audit_scratch_report.md'):reports.add(BASE/'daemon_audit_scratch_report.md')
     if exists(BASE/'daemon_pidpath_consumer_report.md'):reports.add(BASE/'daemon_pidpath_consumer_report.md')
+    if exists(BASE/'daemon_network_identity_report.md'):reports.add(BASE/'daemon_network_identity_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2409,6 +2410,14 @@ def main():
         manifest['validation']['daemon_pidpath_consumer_static_scope']=pidpath['scope']
         manifest['validation']['daemon_pidpath_consumer_source_queries_unsat']=pidpath_audit['source_queries_unsat']
         manifest['validation']['daemon_pidpath_consumer_SDK_compile_exit']=pidpath_audit['SDK_checks']['exit_code']
+    if exists(ROOT/'daemon_network_identity_checks.json'):
+        network=json.loads(read(ROOT/'daemon_network_identity_checks.json'))
+        network_audit=json.loads(read(ROOT/'daemon_network_identity_audit.json'))
+        manifest['validation']['daemon_network_identity_increment_checks']=network['verified_counts']
+        manifest['validation']['daemon_network_identity_replay_checks']=network_audit['independent_totals']
+        manifest['validation']['daemon_network_identity_static_scope']=network['scope']
+        manifest['validation']['daemon_network_identity_source_queries_unsat']=network_audit['source_queries_unsat']
+        manifest['validation']['daemon_network_identity_SDK_compile_exit']=network_audit['SDK_checks']['exit_code']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

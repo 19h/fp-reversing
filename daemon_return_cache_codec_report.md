@@ -1,5 +1,7 @@
 # Post-error cache roots, byte generation and optional-pointer gate
 
+Related environmental helper: The [network identity report](daemon_network_identity_report.md) preserves the undefined S+0x858 root on eight retained process-path continuations and analyzes a separate six-byte network identity cache. The initializer-compatible cache-root fact is not promoted to a continuous caller-epoch join; the new IOKit main-port/iterator/parent interfaces retain separate entry premises.
+
 The strict initializer writes the two cache-root pointers missing at the preceding caller boundary. A separate caller continuation, conditional on those two additional cells, consumes the existing mask/table globals, generates two private scratch bytes using cached words and self-text samples, reads each byte back to control the loop, and then reuses the same two bytes for a u16 count. It reaches a pointer/count gate whose input retains eight unknown byte origins. The initializer-to-caller lifetime join and native daemon-kext pairing remain unproved. [RC1-RC8]
 
 ```text

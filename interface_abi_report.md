@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current network-identity increment: The [network identity report](daemon_network_identity_report.md) establishes four-byte IOKit port/object/iterator/registry names, six-byte identity output and CFRange{0,6} argument placement. Authenticated import stubs use IA diversity 0 with address diversity 1 and the GOT-slot address modifier. Warm returns preserve the full readiness byte; zero nested status does not imply output bytes were written.
+
 Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) recovers the int32 PID / pointer / uint32 capacity contract at proc_pidpath call 0x100693890, with a 1,024 B buffer following the copied token. Its 44 B comparison record has 36 B written by the caller and a 4 B helper result, leaving a 4 B gap untouched. Caller/helper key agreement requires even SP; the stated aligned contexts select nonpositive versus positive signed return classes.
 
 Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) recovers a 1,056 B modular cursor reservation, four saved continuation/view cells, source-first copy(source, R, 32) at 0x1008101d0 and audit_token_to_au32 at 0x100810240. X0 carries the 32 B by-value token indirectly; X6 selects the sole PID output, other output pointers including the ninth stack argument are NULL. Current arm64e SDK assembly confirms this call shape. The retained cursor and native token origin remain unknown.

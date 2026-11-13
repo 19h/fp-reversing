@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current network-identity increment: The [network identity report](daemon_network_identity_report.md) maps IOMainPort outputs at calls 0x1000040d8/0x100004140/0x100004184, matching iterator outputs at 0x1000040fc/0x100004168/0x1000041ac, iterator-service returns at 0x100004288/0x1000042e8 and parent output at 0x100004338. It records nine IOObjectRelease sites. These are API name channels; native rights, dispositions and API-internal Mach message emissions remain unknown.
+
 Current PID/process-path increment: The [PID-path consumer report](daemon_pidpath_consumer_report.md) identifies libSystem/_proc_pidpath at 0x100693890 after the audit PID load. The inspected source adds no Mach send/receive, IOKit call, port-right disposition or message-emission location. Imported implementations and their internal transport are unexecuted and unclassified; a PID is not a recovered port identity.
 
 Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) identifies a local 32 B copy and pending libbsm/_audit_token_to_au32 at 0x100810240, requesting only PID output. This component establishes no new Mach port name/right, disposition, send/receive or message-emission location. A copied audit-token value does not identify its native sender or prove a daemon-kext transaction.
