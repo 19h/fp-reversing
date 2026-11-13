@@ -286,3 +286,5 @@ These are decoded-artifact hashes; archive hashes differ. The verifier checks de
 - **QG5**: Pass. Logical zero extents, signed64 return bits, unknown payload/metadata, distinct pointer/status fields, conditional lock effects and symbolic lookahead are separated. Native identities/effects and file-format semantics remain unknown.
 - **QG6**: Pass. Pinned image/opcodes/fixups, independent replay, twelve rebuilt nonvacuous equations, ten separate original-instruction word controls, SDK probes/header hashes/assembly and exact publication receipts provide primary provenance.
 - **QG7**: Pass. The impact-labeled continuation table bounds file-format, cross-layer data flow, lifetime, timestamp and environmental follow-ups.
+
+The [word-routing continuation](daemon_state_word_routing_report.md) follows the first four bytes into two private stores and exact lower/upper comparisons. The middle interval reaches a pending64 B allocation; both outer ranges reach a second pathname lstat request after an explicit borrowed-errno return. Native contents and file-format meaning remain unknown.
