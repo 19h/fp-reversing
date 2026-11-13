@@ -486,6 +486,7 @@ def main():
     if exists(BASE/'daemon_environment_outputs_report.md'):reports.add(BASE/'daemon_environment_outputs_report.md')
     if exists(BASE/'daemon_notification_registration_report.md'):reports.add(BASE/'daemon_notification_registration_report.md')
     if exists(BASE/'daemon_notification_failure_report.md'):reports.add(BASE/'daemon_notification_failure_report.md')
+    if exists(BASE/'daemon_audit_scratch_report.md'):reports.add(BASE/'daemon_audit_scratch_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2390,6 +2391,15 @@ def main():
         manifest["validation"]["daemon_notification_failure_static_scope"]=notification_failure["scope"]
         manifest["validation"]["daemon_notification_failure_source_queries_unsat"]=notification_failure_audit["source_queries_unsat"]
         manifest["validation"]["daemon_notification_failure_SDK_compile_exit"]=notification_failure_audit["SDK_checks"]["exit_code"]
+    if exists(ROOT/'daemon_audit_scratch_checks.json'):
+        audit_scratch=json.loads(read(ROOT/'daemon_audit_scratch_checks.json'))
+        audit_scratch_replay=json.loads(read(ROOT/'daemon_audit_scratch_audit.json'))
+        manifest['validation']['daemon_audit_scratch_increment_checks']=audit_scratch['verified_counts']
+        manifest['validation']['daemon_audit_scratch_replay_checks']=audit_scratch_replay['independent_totals']
+        manifest['validation']['daemon_audit_scratch_static_scope']=audit_scratch['scope']
+        manifest['validation']['daemon_audit_scratch_source_queries_unsat']=audit_scratch_replay['source_queries_unsat']
+        manifest['validation']['daemon_audit_scratch_copy_queries_unsat']=len(audit_scratch_replay['copy_proofs'])
+        manifest['validation']['daemon_audit_scratch_SDK_compile_exit']=audit_scratch_replay['SDK_checks']['exit_code']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

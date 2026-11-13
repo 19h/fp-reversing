@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) identifies a local 32 B copy and pending libbsm/_audit_token_to_au32 at 0x100810240, requesting only PID output. This component establishes no new Mach port name/right, disposition, send/receive or message-emission location. A copied audit-token value does not identify its native sender or prove a daemon-kext transaction.
+
 Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) establishes no port/right identity or message emission. Its new external boundaries are pending free sites 0x100e24e28/0x100e24eec/0x100e24fdc/0x100e2507c; source marker writes and internal caller target 0x1006cdaf8 are not IPC emissions. Native notification delivery and daemon-kext pairing remain unknown.
 
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) identifies three polling-token registration sites and exact V1/V1.5/V3 names, three baseline checks and cancellation sites 0x100df3114/0x100df318c plus source-classified tail site 0x100df3228. No native port/right identity or message emission is established. Historical libnotify transport and provider-name evidence remain separate from current runtime pairing.

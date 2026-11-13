@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) follows the selected 0x1006cdaf8 continuation to an undefined scratch cursor in all 84 retained failure contexts. Separate declared component entries reach a local 32 B audit-token copy and pending PID-only BSM import, or restore the cursor on null. This adds a source-local environmental identity interface; the continuous path to the retained IOKit caller and native daemon-kext pairing remain unknown.
+
 Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) connects retained notification-failure contexts through original helper return to caller target 0x1006cdaf8. It establishes local result handling and conditional record cleanup, not completed provider outputs, native response bytes, notification delivery or a daemon-kext transaction. The missing provider/control/lifetime epoch remains explicit.
 
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) connects the helper token roots with original com.apple.adid.midchangedV1/V1.5/V3 registrations and the historical invalidation namespace. Source names/classes match archived ADID evidence; the current installed provider fails that historical image pin. Native provider/library pairing, complete client outputs and the IOKit transaction join remain unknown.

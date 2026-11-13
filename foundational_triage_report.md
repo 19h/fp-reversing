@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current audit-scratch increment: The [audit-token scratch report](daemon_audit_scratch_report.md) establishes the local saved-pointer writer (entry X26 to S+0x9b8 at 0x1007019b0) and preserves the first missing retained dependency: eight undefined cursor bytes at S+0x16d0. Separate component controls recover reservation/restoration, copied audit bytes and a PID-only BSM boundary. A bounded whole-text census retains 1,648 and 956 direct-SP access candidates respectively; SP-epoch equality and native control/ownership remain unknown.
+
 Current notification-failure increment: The [cleanup and caller-return report](daemon_notification_failure_report.md) separates notification API status, the helper saved result and the caller encoded status. All six imported-return routes clear the saved result and share cleanup phase 0x1f8. Original null sentinels and separately declared nonempty records cover optional payload/record cleanup; the provider epoch and native ownership remain unjoined.
 
 Current notification-registration increment: The [daemon ADID notification lifecycle](daemon_notification_registration_report.md) identifies the invalidation namespace behind the four-output helper. Registration proceeds V1, V1.5, V3; baselines reverse that order. Readiness publication ignores the atexit result. Original root prefix, post-provider cut and exit callback remain separate entries, and the installed provider differs from the historical reference.
