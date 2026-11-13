@@ -481,6 +481,7 @@ def main():
     if exists(BASE/'daemon_iokit_result_report.md'):reports.add(BASE/'daemon_iokit_result_report.md')
     if exists(BASE/'daemon_iokit_error_return_report.md'):reports.add(BASE/'daemon_iokit_error_return_report.md')
     if exists(BASE/'daemon_return_bank_origins_report.md'):reports.add(BASE/'daemon_return_bank_origins_report.md')
+    if exists(BASE/'daemon_return_cache_codec_report.md'):reports.add(BASE/'daemon_return_cache_codec_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2345,6 +2346,13 @@ def main():
         manifest['validation']['daemon_return_bank_origins_upstream_replay_checks']=bank_audit['upstream_independent_totals']
         manifest['validation']['daemon_return_bank_origins_caller_replay_checks']=bank_audit['conditional_caller_independent_totals']
         manifest['validation']['daemon_return_bank_origins_static_scope']=bank_origins['scope']
+    if exists(ROOT/'daemon_return_cache_codec_checks.json'):
+        return_cache=json.loads(read(ROOT/'daemon_return_cache_codec_checks.json'))
+        return_cache_audit=json.loads(read(ROOT/'daemon_return_cache_codec_audit.json'))
+        manifest['validation']['daemon_return_cache_codec_increment_checks']=return_cache['verified_counts']
+        manifest['validation']['daemon_return_cache_codec_replay_checks']=return_cache_audit['independent_totals']
+        manifest['validation']['daemon_return_cache_codec_upstream_replay_checks']=return_cache_audit['upstream_independent_totals']
+        manifest['validation']['daemon_return_cache_codec_static_scope']=return_cache['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

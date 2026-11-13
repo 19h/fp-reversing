@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) generates and reads back two private scratch bytes, then overwrites the pair with a u16 count before an unresolved pointer/count gate. This does not establish client response bytes or a native transaction; the separate initializer/caller lifetime join remains unproved.
+
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) separately establishes initializer bank writes and a conditional post-error caller path through counter/state processing. No new client transaction or native daemon-kext pairing is established; the initializer-to-caller lifetime join remains unproved.
 
 Current return continuation: The [daemon IOKit error-return report](daemon_iokit_error_return_report.md) establishes actual root/adapter returns and caller error recognition for both selected errors. Sixteen independent replays check 8,400 new A64 visits and eleven source equations. The caller writes a private u64 marker before common preparation, then stops before using an unspecified bank root at caller SP+0x600. No new client transaction, native reply or daemon-kext pairing is established.

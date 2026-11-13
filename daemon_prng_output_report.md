@@ -1,5 +1,7 @@
 # PRNG word consumer, buffer, global counters, and comparison-record ABI
 
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) follows the retained post-error state through two cached-table/self-text byte generations and actual nonzero-byte loop readbacks. A later u16 count overwrites their storage; the next pointer remains unknown. Zero-byte local controls cover no-decrement behavior without claiming arbitrary-state termination.
+
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) independently decodes 0x1010c8258 from original bank/pool/bias bytes and verifies a complete later 624-word in-place state pass plus counter increment in eight conditional post-error cases. It retains two additional bank-cell premises and makes no universal whole-generator or native-entropy claim.
 
 The source's first generated words are consumed by **in-place u32 XOR updates to an arena buffer selected through global pointer cell `0x1010C8278`**. The caller's loop bound is 512 bytes, or 128 words. This increment validates the first two updates, complete 624-word twist passes, tempering, global index/counter writes, and the nonzero-counter path that bypasses fresh entropy initialization.

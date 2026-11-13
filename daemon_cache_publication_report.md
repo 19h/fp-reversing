@@ -1,5 +1,7 @@
 # Identity cache population, consumption and the next record input
 
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) recovers another consumer of the borrowed word table and self-text window. Two generated scratch bytes are read to control loop progress, then replaced by a u16 count. This storage reuse supplies no native ownership or transport evidence.
+
 The declared short-path components now connect the original identity digest to a 36-byte cache owner and back into a new SHA-1 context. The source appends 12 nonzero sampled bytes to the canonical 20-byte digest, processes the resulting 32 bytes in two 16-byte groups, and writes cache bytes 0..31. A second table-driven routine consumes those 32 cache bytes. Its 32-byte intermediate passes through an address/table-dependent byte codec; the first 20 recovered bytes equal the original digest XOR0x98 and are copied into the new context. The next input requests 20 bytes at a registry-derived base+0x238. Execution stops before its first byte read: the fixture supplies a scalar registry value, not an owner for that memory. Native caller continuity, actual hardware identity values and driver IPC linkage remain unknown. The full daemon/kext/deeper-interface investigation remains active. [CP1-CP16]
 
 This extends the [digest-completion report](daemon_digest_completion_report.md) and the earlier [identity preparation](daemon_identity_cache_report.md), [hardware-property formatting](daemon_cache36_report.md) and [lookup/clock](daemon_object_clock_report.md) evidence. These are source-level component compositions with declared library outcomes. They do not resume the original unknown-frame frontiers or establish one continuous native execution.
@@ -8,7 +10,7 @@ This extends the [digest-completion report](daemon_digest_completion_report.md) 
 
 | Evidence | Verified extent |
 | --- | --- |
-| Daemon specimen | `/Users/___/Downloads/zut/fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
+| Daemon specimen | `fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
 | Main cohort | 288 reconstructed short-path states, each with two void-ABI outcomes: 576 declared executions |
 | Main source visits | 42,073,344; includes 1,260,288 modeled internal transfers and 4,608 modeled imported calls |
 | Main emulated A64 instructions | 40,808,448 after excluding those modeled transfers/calls |

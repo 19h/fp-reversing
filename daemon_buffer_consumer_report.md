@@ -1,12 +1,14 @@
 # Complete mask loop, shared buffer publication and post-exit interfaces
 
-The selected callback paths now execute **all 128 in-place u32 XOR updates covering 512 bytes**, publish the buffer through global cell `0x1010C8268`, and normalize sixteen words in its first 256 bytes. The publication guard requires a 4-byte-aligned pointer and an empty cache cell under the recovered phase. A separate global u32 at `0x1010C67D4` receives 255. Its semantic role is unknown.
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) gives the published 255 word an explicit mask role in another caller: sign extension and AND 0xffffffffa96e0c84 select cached u32 offset 132. Original initializer writers for both root cells are established in twelve scoped paths. Separate caller premises preserve the unresolved lifetime join.
+
+The selected callback paths now execute **all 128 in-place u32 XOR updates covering 512 bytes**, publish the buffer through global cell `0x1010C8268`, and normalize sixteen words in its first 256 bytes. The publication guard requires a 4-byte-aligned pointer and an empty cache cell under the recovered phase. A separate global u32 at `0x1010C67D4` receives 255. This increment established its publication; the cache-codec continuation above now corroborates mask consumption in a separate caller.
 
 The post-exit continuation reuses the two recovered comparison-record leaves, performs two further complete 624-word state twists, advances the index/counter to 130, updates additional process globals and revisits the callback gate. It stops on an unknown private read at `0x1003ECB98`, F+`0x4A0`; those bytes are not assigned source values. No new Mach/IOKit emission or transport dependency is established. The full investigation remains active.
 
 ## Provenance and assumption register
 
-Primary specimen: `/Users/___/Downloads/zut/fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred virtual addresses. Earlier [PRNG-output](daemon_prng_output_report.md), [seed-material](daemon_seed_material_report.md), and [comparison-record](daemon_context_transfer_report.md) evidence remains frozen. [Contracts](triage_evidence/daemon_buffer_consumer_contracts.json) contain 13 source spans, seven verified original fixups, two exhaustive byte banks and 216 matching live-IDB rows, 210 distinct rows. These IDB rows do not cover every executed instruction.
+Primary specimen: `fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. Addresses are preferred virtual addresses. Earlier [PRNG-output](daemon_prng_output_report.md), [seed-material](daemon_seed_material_report.md), and [comparison-record](daemon_context_transfer_report.md) evidence remains frozen. [Contracts](triage_evidence/daemon_buffer_consumer_contracts.json) contain 13 source spans, seven verified original fixups, two exhaustive byte banks and 216 matching live-IDB rows, 210 distinct rows. These IDB rows do not cover every executed instruction.
 
 | ID | Assumption or boundary | Dependent results | Stress test / falsification probe |
 | --- | --- | --- | --- |
@@ -154,7 +156,7 @@ No new import/API summary is introduced. No native Mach message, IOKit request, 
 | High | Resolve the F+0x4A0 frontier and callback revisit | Recover its earlier writer or retain copy provenance through unknown bytes without using backing bits as definitions |
 | High | Census readers/writers of both buffer-pointer cells | Decode all 24 reference candidates and other indirect aliases; establish native lifecycle and synchronization |
 | High | Connect process-local state to established daemon IPC/IOKit arguments | Actual def-use paths into port/message/user-client fields, not address/name similarity |
-| Medium | Establish the role of u32 255 at0x1010C67D4 | Recover its readers and their masks/bounds; current role is unknown |
+| Medium | Expand reader/lifetime coverage of u32 mask255 at0x1010C67D4 | The cache-codec continuation establishes one mask consumer; recover other readers, bounds and initialization continuity. |
 | Medium | Exercise occupied-cache, misalignment, nonzero initial counter and wrap states | Source-preserving controlled input domains and explicit reachability/ownership premises |
 | Low | Use the normalization rule as a semantic search pattern | Matching source operations and independent equivalence, not constant-only matches |
 

@@ -1,5 +1,7 @@
 # Return-bank origins, generation-counter lifecycle and comparison ABI
 
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) preserves this report's unknown-pointer boundary. A separate path adds two initializer-compatible cache-root cells, executes the original pointer loads and byte-generation/readback loop, and stops at an unknown pointer/count predicate. It does not close the initializer-to-caller lifetime join.
+
 The large-frame initializer writes the two bank roots missing from the selected post-IOKit error fixtures. Its strict source paths preserve those cells through distinct argument-read, audit-import and early-return boundaries. A separate caller continuation, explicitly conditional on those two bank values, resolves the later pointer to generation counter `0x1010c8258`, executes one complete 624-word state-update pass and increments the counter before stopping at another unspecified pointer. It also reuses the old root-record storage for two comparison ABIs. The initializer-to-caller control/lifetime join remains unproved; the previously published unknown-bank stop is preserved. [BR1-BR9]
 
 ```text

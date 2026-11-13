@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) recovers the signed-u32 mask/table read, exact u32-wrapped self-text offsets, byte-output/readback contract and complete low16-count/non-null-pointer gate. Scratch-byte and later u16 meanings belong to different source epochs. Two additional cache-root cells are explicit caller premises.
+
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) recovers a complete 36 B accessed-record comparison ABI at 0x100427514, with signed/unsigned less-than selection and one u32 result at record+0x0c. It separately verifies the actual 48 B equality record at 0x10041a5e0 and first overwrite of prior root-error storage. Record meanings depend on source epoch; initializer-to-caller lifetime continuity remains unproved.
 
 Current return continuation: The [daemon IOKit error-return report](daemon_iokit_error_return_report.md) verifies the actual root record R=caller SP+0x10cb8, separate delta cell Q=SP+0xba18 and temporary seed T=SP-0x50 across eight selected errors. Two original T writers cancel the seed bias; the adapter publishes zero delta, restores its frame and forwards both distinct root words to the caller gate. The error marker precedes a common preparation rejoin. An unspecified u64 bank root stops the retained path before address formation; native ABI delivery remains unknown.

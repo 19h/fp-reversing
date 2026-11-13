@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current cache-codec increment: The [cache-codec continuation](daemon_return_cache_codec_report.md) adds eight caller paths,40 independent path replays and48 gate/loop controls. Two generated scratch bytes affect loop control before a count overwrite; the next gate retains the original unknown pointer. Initializer continuity, pointer production/ownership and native daemon-kext transaction identity remain open. The full goal remains active.
+
 Current bank-origin increment: The [bank-origin continuation](daemon_return_bank_origins_report.md) adds twelve initializer profiles and eight conditional caller profiles, nine source obligations, 24 upstream and 16 caller independent replays. It verifies comparison record reuse, a full 624-word recurrence and counter increment. The initializer-to-caller join, S+0x878 producer, native endpoint/ownership and daemon-kext pairing remain open. The full goal remains active.
 
 Current return continuation: The [daemon IOKit error-return report](daemon_iokit_error_return_report.md) checks eight selected error paths, eleven UNSAT source equations and 16 independent replays / 8,400 new A64 visits. Actual root/adapter returns, temporal seed cancellation and caller recognition now reach the error marker and common preparation. The next frontier is unexecuted 0x1004f650c, using an unspecified u64 bank root loaded from caller SP+0x600. Upstream bank initialization, complete error response, zero/zero helper and native daemon-kext delivery remain open. The full goal remains active.
