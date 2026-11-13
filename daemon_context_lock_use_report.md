@@ -1,5 +1,7 @@
 # Restored arena-context lock argument and state-path encoding
 
+Follow-up: The [context state-publication report](daemon_context_state_publish_report.md) follows the second allocation into raw C+0x10 publication, decoding, count/data copying, additional context layouts and entropy/clock boundaries. The NULL branch frees the encoded temporary under a declared return and reseals context/reference before an undefined caller-pointer stop.
+
 The original continuation after raw-reference publication passes the restored context word at C+8 to `pthread_rwlock_wrlock` at `0x100361df4`. The word is captured at `0x1005fae24` and retained across the acquisition adapter's separate `pthread_once` call. All forty checked continuations pass the exact captured word: thirty allocated-token controls and ten controls containing the opaque word preserved after first-creator failure. This establishes argument flow; native lock validity, admission of the failed-constructor state and successful synchronization remain unknown. [CLU1-CLU4]
 
 The same continuation constructs `/var/db/fpsd/SC Info\0` at S+0x103a6, scans a distinct initializer-compatible copy at S+0x103db, and reaches `malloc(21)` at `0x1006b6fb0`. Under a separate non-NULL allocation return, original source writes a 21-byte XOR-0x98 representation of the constructed string, then reaches a second `malloc(21)` at `0x1004b457c`. A separate NULL return instead reaches the cleanup adapter's once call. No filesystem operation or IPC emission executes in this increment. [CLU1-CLU5]

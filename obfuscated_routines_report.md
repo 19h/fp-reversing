@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) identifies pointer publication at 0x1004b4580, XOR-0x98 decoding at 0x1004d4ca0, reverse network-data copying at 0x10059ccd4 and failure reference republication at 0x1009a2014. Nested helpers 0x100add594/0x100acd9c4 reach a 624-word seed loop and pending clock call; their complete semantic contract remains open.
+
 Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) connects capture at 0x1005fae24 and adapter call 0x1005fae90 to pending wrlock at 0x100361df4. Original code constructs the state path, scans a distinct initializer-compatible copy, and conditionally encodes bytes at 0x10052e608 before a second allocation. The path-byte transform is XOR 0x98 under the recorded controller.
 
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) identifies 0x10048192c..0x100481d9c as the selected reference decoder and arena-context unsealer, matching constructor publication at 0x1003c43b4. It restores the raw reference through 0x100481d98. The role is phase-specific and is not an unrelated network-record parser.

@@ -1,5 +1,7 @@
 # Arena-reference decoder and context unsealing from the network gate
 
+Failure-cycle follow-up: The [context state-publication report](daemon_context_state_publish_report.md) follows the original NULL second-allocation route through complete context resealing and encoded-reference republication at 0x1009a2014. Both concrete failure controls match the earlier constructor codec; source ordering and native exclusion remain distinct.
+
 The selected network-gate branch at `0x10048192c` decodes the arena-context reference stored at `0x1010c9298`, reverses the constructor's 552-byte sealing transform, and publishes the raw context address at `0x100481d98`. This connects the gate to the previously recovered arena constructor and its lock field. The cell is an encoded reference in one phase and a raw address in another; its nonzero value alone does not identify its representation. [CU1-CU4]
 
 Twenty original-source continuations restore every producer context byte and its raw lock field. These combine thirteen preserved constructor outcomes with eight retained caller contexts as a cross-shaped case set, not a Cartesian product. Constructor output, backing, image state and the caller's missing root are explicit premises transferred between separate epochs. Native reachability, shared epoch, ownership, successful synchronization and daemon-kext delivery remain unknown. [CU2-CU5]

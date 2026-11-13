@@ -493,6 +493,7 @@ def main():
     if exists(BASE/'daemon_network_gate_report.md'):reports.add(BASE/'daemon_network_gate_report.md')
     if exists(BASE/'daemon_context_unseal_report.md'):reports.add(BASE/'daemon_context_unseal_report.md')
     if exists(BASE/'daemon_context_lock_use_report.md'):reports.add(BASE/'daemon_context_lock_use_report.md')
+    if exists(BASE/'daemon_context_state_publish_report.md'):reports.add(BASE/'daemon_context_state_publish_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2458,6 +2459,16 @@ def main():
         manifest['validation']['daemon_context_lock_use_initializer_checks']=lock_use_audit['initializer_totals']
         manifest['validation']['daemon_context_lock_use_static_scope']=lock_use['scope']
         manifest['validation']['daemon_context_lock_use_source_queries_unsat']=lock_use_audit['source_queries_unsat']
+    if exists(ROOT/'daemon_context_state_publish_checks.json'):
+        context_state=json.loads(read(ROOT/'daemon_context_state_publish_checks.json'))
+        context_state_audit=json.loads(read(ROOT/'daemon_context_state_publish_audit.json'))
+        manifest['validation']['daemon_context_state_publish_increment_checks']=context_state['verified_counts']
+        manifest['validation']['daemon_context_state_publish_replay_checks']=context_state_audit['independent_totals']
+        manifest['validation']['daemon_context_state_publish_interface_checks']=context_state_audit['interfaces']['verified_counts']
+        manifest['validation']['daemon_context_state_publish_initializer_checks']=context_state_audit['initializer_totals']
+        manifest['validation']['daemon_context_state_publish_static_scope']=context_state['scope']
+        manifest['validation']['daemon_context_state_publish_source_queries_unsat']=context_state_audit['source_queries_unsat']
+        manifest['validation']['daemon_context_state_publish_SDK_compile_exit']=context_state_audit['SDK_checks']['exit_code']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

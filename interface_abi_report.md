@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current context-state increment: The [context state-publication report](daemon_context_state_publish_report.md) maps the decoded-path pointer at C+0x10, u32 network count at +0x1c, six data bytes at +0x20 and two partially initialized layouts with stride0x40. It records exact free/lock/reseal ordering and the unsigned random-seed and pending timeval interfaces. Native visibility, exclusion and downstream wire use remain unknown.
+
 Current restored-context increment: The [context lock-use report](daemon_context_lock_use_report.md) establishes u32 context+0x18, u64 context+0x10 and captured u64 context+8 consumers; the latter becomes the exact wrlock argument. Separate ABI return premises preserve low64 Q8..Q15 and vary other SIMD state. Path scanning, a 21-byte encoded output and allocation-failure cleanup are process-local contracts.
 
 Current context-unseal increment: The [context unseal report](daemon_context_unseal_report.md) connects an eight-byte encoded reference to a 552-byte context and recovers raw lock offset +8 after inverse permutation/byte transformation. The cell changes representation across phases. Source vector/tail proofs, bounded permutation certificates and separate constructor-compatible owner premises qualify the composition.
