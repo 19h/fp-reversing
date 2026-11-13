@@ -1,6 +1,6 @@
 # Daemon complete generated stream, refill control and caller arena copy
 
-Both retained warm paths complete a32 B private generated stream, return through two logical caller continuations, transform/copy all32 B into an existing arena object, overwrite the private scratch bytes and reach a pending104 B allocation. Each new generated word on this route performs another full624-word twist, then selects the next state index. Separate controls establish zero-byte retry and zero-counter admission. The generator's status store and adapter's status read use different inherited pointers; no propagation between those cells is established. Native caller/constructor coherence, object ownership and daemon-kext transport pairing remain unknown. [GS1-GS6; GS-A1-GS-A10]
+Both retained warm paths complete a32 B private generated stream, return through two logical caller continuations, transform/copy all32 B into an existing arena object, overwrite the private scratch bytes and reach a pending104 B allocation. Each new generated word on this route performs another full624-word twist, then selects the next state index. Separate controls establish zero-byte retry and zero-counter admission. The generator's completion-status store and adapter's adjustment read use different inherited pointers. Their distinct roles are established by the subsequent [payload-reactivation report](daemon_payload_reactivation_report.md). Native caller/constructor coherence, object ownership and daemon-kext transport pairing remain unknown. [GS1-GS6; GS-A1-GS-A10]
 
 ```text
 parent: one private output byte, remaining31, shift8
@@ -12,7 +12,7 @@ parent: one private output byte, remaining31, shift8
                   counter!=0 -> full twist624 -> select G[index++]
                                 -> counter++ -> temper -> shift0
   -> remaining0 -> write status through saved pointer
-  -> logical return -> adapter reads different inherited status cell
+  -> logical return -> adapter reads separate inherited adjustment cell
   -> logical return -> copy32 B into arena with byte XOR0x98
   -> overwrite32 B private scratch -> pending malloc(104)
 ```
@@ -80,18 +80,18 @@ Each nonzero refill performs227+396+1 in-place updates of G=`0x1010c784c`,624 u3
 
 These are exact outputs under the two inherited states and destination address. The matching twist dimensions/tempering constants do not justify replacing this refill policy with a conventional generator's extraction schedule or transferring another caller's stream identity. [GS1-GS5]
 
-## Completion status, logical returns and a falsified pointer join
+## Completion status, logical returns and separate adjustment channels
 
 Completion`0x100a6d370` computes its status from W12 and writes through the pointer saved at SP+`0x40`. Actual W12=0 gives the4 B word`0x8b3dc651` at`0x6800070db8`, source store`0x100a6d390`. The subsequent stack-token comparison matches the inherited token, and original epilogues load saved registers and link values. Logical returns are`0x100a6d3c8 -> 0x100add7d8` and`0x100add7f8 -> 0x100605f1c`. These are exact source-model transfers under inherited stack/token definitions; hardware PAC, native stack validity and a native backtrace are not observed. [GS1-GS4; GS-A7]
 
 | Status/data channel | Address or source site | Established value or behavior |
 | --- | --- | --- |
 | Generator status output | `0x6800070db8`, store`0x100a6d390` | `0x8b3dc651` |
-| Adapter status input | `0x6800060010`, load`0x100add7d8` | Inherited`0xab20c257`; unchanged throughout this suffix |
+| Adapter adjustment input | `0x6800060010`, load`0x100add7d8` | Inherited`0xab20c257`; unchanged throughout this suffix |
 | Adapter expected low32 | Restored W21 | `0xab20c257` |
 | Adapter output | `0x680006bcc8`, store`0x100add7e4` | u64 delta0 |
 
-The pointers do not alias. No retained instruction copies the new generator status into the adapter input, and no write overlaps the adapter input. Therefore the adapter's zero output cannot be attributed to the generator's new status store in these retained states. It derives from the inherited input/expected pair. The source equation is delta64=16*zero_extend64(low16(u32(input32-expected32))); zero tests only the16-bit difference. The seven-query set proves the actual store and adapter equations separately. Status meaning and a coherent native status channel remain unknown. This is an explicit limitation of the inherited caller state, rather than an inferred successful return. [GS3-GS4; GS-A7-GS-A8]
+The pointers do not alias. No retained instruction copies the new generator status into the adapter input, and no write overlaps the adapter input. Therefore the adapter's zero output cannot be attributed to the generator's new status store in these retained states. It derives from the inherited input/expected pair. The source equation is delta64=16*zero_extend64(low16(u32(input32-expected32))); zero tests only the16-bit difference. The seven-query set proves the actual store and adapter equations separately. The subsequent [payload-reactivation report](daemon_payload_reactivation_report.md) traces both original writers of the temporary adjustment cell around a complete adapter call. It establishes that this cell and the request completion-status field have separate roles: the temporary is initialized to C-0xb0 and restored to C before the adapter reads it. Thus nonaliasing does not itself establish a caller inconsistency or require a missing status copy. These earlier inherited states still do not establish a native caller epoch or native successful return. [GS3-GS4; GS-A7-GS-A8]
 
 ## Actual arena consumer, scratch lifetime and next allocation
 
@@ -131,7 +131,7 @@ The caller uses two saved authenticated continuations. Independent replay checks
 | GS-A5: Refill phase/key and distinct counter/index cells apply | Equality record, admission/full-twist routing | Decode all records, prove arbitrary-C32 caller composition and full leaf; separate0/max counter controls stop before their targets. |
 | GS-A6: Repeated twist/selection phases match source | Full stream and generator schedule | Compare all8736 new twist writes, all complete boundary arrays, indices1..7 and counter1..8; do not substitute another extraction policy. |
 | GS-A7: Saved stack/token/register fields apply conditionally | Two logical returns and status store | Replay original epilogues and exact loads; native caller validity/PAC remains unknown. |
-| GS-A8: Adapter input channel can be traced independently | Delta0 interpretation | Verify nonaliasing status pointers, no adapter-input write and the low16 equation; status propagation is not established. |
+| GS-A8: Adapter input channel can be traced independently | Delta0 interpretation | Verify distinct completion/adjustment pointers, no inherited adapter-input write and the low16 equation; the later producer trace establishes their separate roles. |
 | GS-A9: Existing J and private owner spans apply |32 B arena copy,44 B field writes and scratch overwrite | Check source-to-destination byte pairs, all read/write extents and order; distinguish J's accessed204 B span from pending104 B allocation. |
 | GS-A10: No concurrent actor mutates the retained sequential state | Observed gate/counter/cache and output lifecycle | Preserve source order and all definitions; native exclusion, visibility, ownership and transport pairing remain unknown. |
 
@@ -146,16 +146,16 @@ All u32 arithmetic is modulo2^32; pointers/header operands are64-bit; byte trans
 | Impact | Next evidence | Architectural purpose and boundary |
 | --- | --- | --- |
 | High | Continue pending104 B allocation and actual field consumers | Establish the next object layout and the generated arena bytes' subsequent use |
-| High | Recover native/producer-consistent status pointer and stack epochs | The retained status pointers do not alias; native status propagation remains unproved |
+| High | Recover native caller and stack epochs | Completion status and adjustment are separate channels; native caller coherence remains unproved |
 | High | Join J+0x34 bytes into concrete Mach/IOKit buffers | Current copy is local data flow; no new transport identity follows |
 | Medium | Extend generation-counter threshold and zero-admission paths | Current C1..7 follows full twists; C0 controls stop before admission |
 | Medium | Census competing state/cache/gate writers | Available gate value during twists does not establish native exclusion or publication |
 | Low | Label refill/equality/arena-copy/overwrite navigation blocks | Preserve exact source addresses and unknown whole-function boundaries |
 
-No new incoming/outgoing Mach port, right disposition, message-emission site, UserClient selector or native daemon-kext exchange is established. Existing [port](mach_ports_report.md) and [ABI](interface_abi_report.md) reports retain those mappings. The result extends local generated-state provenance through a complete32 B caller arena copy and exposes a concrete status-channel mismatch. The full interface goal remains active. [GS1-GS6]
+No new incoming/outgoing Mach port, right disposition, message-emission site, UserClient selector or native daemon-kext exchange is established. Existing [port](mach_ports_report.md) and [ABI](interface_abi_report.md) reports retain those mappings. The result extends local generated-state provenance through a complete32 B caller arena copy and distinguishes completion status from the separate adapter-adjustment channel. The full interface goal remains active. [GS1-GS6]
 
 **QG1** passes: factual source/interface analysis. **QG2** passes: GS-A1-GS-A10 register dependencies and probes. **QG3** passes for the complete-stream/refill/caller increment; the broader interface goal is incomplete. **QG4** passes: exact bit widths, modulo arithmetic, extents, counts and complexity. **QG5** passes: the nonaliasing status channels are explicit; logical returns, local copy, allocated extent and native delivery remain distinct. **QG6** passes after source-pinned replay, original-source equations, preserved-input and publication checks. **QG7** passes: bounded continuation covers allocation/field use, status epochs, transport def-use, counter thresholds and competing writers.
 
 Decoded checks SHA-256:`f926f57e47a7824e6ac4a7e7478c3edcbd8ae901cb251711fddb03b654f3f57a`. Decoded audit SHA-256:`198480d68f27e2e2fc7c74137de448ed5c4e2250b552d2ced18796ceda57cc0e`.
 
-Follow-up: The [auxiliary-state report](daemon_auxiliary_state_report.md) continues the pending malloc(104) with separate NULL/nonnull returns. It establishes93 initialized bytes,11 undefined gaps and pointer publication at J+0x1e0; both allocation paths then admit a separate existing-table record. Execution stops before an undefined8 B table read. The generated J+0x34 bytes remain untouched, and the nonaliasing status-channel limitation persists.
+Follow-up: The [auxiliary-state report](daemon_auxiliary_state_report.md) continues the pending malloc(104) with separate NULL/nonnull returns. It establishes93 initialized bytes,11 undefined gaps and pointer publication at J+0x1e0; both allocation paths then admit a separate existing-table record. Execution stops before an undefined8 B table read. The generated J+0x34 bytes remain untouched, and native epoch coherence remains unknown. The subsequent [payload-reactivation report](daemon_payload_reactivation_report.md) establishes the distinct completion/adjustment roles and transfers the constructor-defined table bytes under an explicit separate-epoch premise.
