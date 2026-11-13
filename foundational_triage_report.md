@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current arena split/payload increment: The [arena split/payload increment](daemon_arena_split_report.md) establishes that the warm 64 B payload is source-defined by a preceding 156 B descending fill. Its first retained read updates a private seed word; it is not an undefined-read boundary. Three allocator metadata fields share a snapshot premise, while whole-caller/controller coherence and native ownership remain unestablished.
+
 Current readiness/arena increment: The [readiness/arena increment](daemon_readiness_arena_report.md) exposes the runtime-state assumptions behind the earlier cold entropy route: readiness exactly 1 selects an existing-arena path, while other byte values save zero and restore the admission gate before entropy. Two separately retained header epochs demand different in-owner marker addresses. All reads of undefined marker bytes remain unexecuted, and no native epoch join is inferred.
 
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) separates environmental clock/entropy inputs from private comparison control and original zero-pointer provenance. It establishes 19,392 source visits,128 comparison contracts and eight nonvacuous source obligations. Shared material field order with an earlier encoded path is recorded without claiming whole-routine or native-epoch equivalence.

@@ -1,5 +1,7 @@
 # CoreFP: FPSD certificate request and ADID XPC/Mach client
 
+Current arena split/payload increment: The [arena split/payload report](daemon_arena_split_report.md) extends the daemon material path through internal reservation, defined payload provenance and a private seed-record update. It adds no observed CoreFP request, cross-layer owner identity or paired native kext transaction.
+
 Current readiness/arena increment: The daemon-side [readiness/arena report](daemon_readiness_arena_report.md) establishes admission/readiness partitions and arena metadata demand under explicit source-model premises. It adds no observed CoreFP request, shared native owner, Mach right or paired kext transaction; existing client mappings retain their earlier evidence boundaries.
 
 Current clock/material increment: The [clock-record report](daemon_clock_record_report.md) recovers local daemon environmental-input packing and shared comparison-leaf callers. Raw-versus-encoded material correspondence remains local source evidence; no new protected-core/daemon/kext transaction or native ownership is established.

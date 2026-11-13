@@ -137,3 +137,5 @@ Extraction and replay use O(parent receipt bytes + cases*(visits+effects)) time 
 Decoded checks SHA-256: `0636a892fbba8b6ab2bd3637b7f6049aa5127ae68b5a32d7081b3786b34e97dd`. Decoded audit SHA-256: `b5b5c334300d8dc73a262435b5ebdc3821bd5520085320818a3a80630e08e264`.
 
 The subsequent [readiness/arena report](daemon_readiness_arena_report.md) bounds the address-4 result to its cold admission partition. Readiness exactly 1 selects an existing-arena route, and separate gate/link/header controls expose missing runtime-state premises. Cold source restores the gate before entropy. Constructor-snapshot readiness and arena metadata are separate evidence epochs; a continuous native constructor-to-caller join remains unknown.
+
+The subsequent [arena split/payload report](daemon_arena_split_report.md) reaches the same material/comparison sites through a warm reservation. Source saves a nonzero 64 B payload pointer, whose bytes come from a prior descending fill. The first payload+4 read updates private record word1 before the next mixing iteration. This is a separate conditional route from the cold saved-zero/address-4 path.
