@@ -200,3 +200,5 @@ These are decoded-artifact hashes; archive hashes differ. The manifest retains s
 - **QG5**: Pass. Synthetic/native content, two private word representations, unsigned wraparound, distinct lstat sites, pending allocation/output and incomplete private-pointer provenance remain distinct.
 - **QG6**: Pass after independent replay, twelve rebuilt equations, source/fixup/dependency checks and exact publication verification. Native observations are not claimed.
 - **QG7**: Pass. The impact-labeled continuation table bounds file-control, allocation, format, provenance, temporal identity and cross-layer follow-ups.
+
+The [SIDB removal and SIDN handoff continuation](daemon_state_path_removal_report.md) resumes four pending lstat states spanning both outer word routes and prior ABI patterns. It proves local return/mode/errno/unlink predicates, retains conditional removal and synchronization requests, distinguishes writes to already-zero fields from ownership retirement, and follows raw status propagation into a new pending SIDN query at the shared lstat call site. The remaining1539 parents and native outcomes remain outside that full-path matrix.

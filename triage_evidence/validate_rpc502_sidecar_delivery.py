@@ -509,6 +509,7 @@ def main():
     if exists(BASE/'daemon_state_file_metadata_report.md'):reports.add(BASE/'daemon_state_file_metadata_report.md')
     if exists(BASE/'daemon_state_file_input_report.md'):reports.add(BASE/'daemon_state_file_input_report.md')
     if exists(BASE/'daemon_state_word_routing_report.md'):reports.add(BASE/'daemon_state_word_routing_report.md')
+    if exists(BASE/'daemon_state_path_removal_report.md'):reports.add(BASE/'daemon_state_path_removal_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2612,6 +2613,16 @@ def main():
         manifest['validation']['daemon_state_word_routing_dispatch_metadata']=word_routing['dispatch_metadata']
         from verify_daemon_state_word_routing_publication import function_metadata
         manifest['validation']['daemon_state_word_routing_function_metadata']=function_metadata()
+    if exists(ROOT/'daemon_state_path_removal_checks.json'):
+        removal=json.loads(read(ROOT/'daemon_state_path_removal_checks.json'))
+        removal_audit=json.loads(read(ROOT/'daemon_state_path_removal_audit.json'))
+        manifest['validation']['daemon_state_path_removal_increment_checks']=removal['verified_counts']
+        manifest['validation']['daemon_state_path_removal_replay_checks']=removal_audit['independent_totals']
+        manifest['validation']['daemon_state_path_removal_model_checks']=removal_audit['model_checks']
+        manifest['validation']['daemon_state_path_removal_static_scope']=removal['scope']
+        manifest['validation']['daemon_state_path_removal_source_queries_unsat']=removal_audit['source_queries_unsat']
+        from verify_daemon_state_path_removal_publication import function_metadata
+        manifest['validation']['daemon_state_path_removal_function_metadata']=function_metadata()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
