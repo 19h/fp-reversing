@@ -1,5 +1,7 @@
 # Daemon selector-21 result gates, copyback and error cleanup
 
+Subsequent return evidence: The [error-return continuation](daemon_iokit_error_return_report.md) resumes the eight selected error boundaries through actual root/adapter returns, zero delta and caller recognition. It adds eleven source equations and 16 independent replays / 8,400 new A64 visits. After a private marker and common preparation, it stops before using an unspecified u64 bank root at caller SP+0x600. The boundaries and zero/zero helper stops recorded below are preserved as this parent increment's scope; complete external response and native delivery remain unknown.
+
 The daemon has two separate zero gates after its pending selector-21 IOKit call. The first tests the API return; only the zero branch reads the embedded u32 status at API-buffer+`0x224`. A nonzero embedded status then joins the API-error cleanup path. Under independently declared API-return/output premises, both selected error paths request free of the same preceding 32 B allocation and publish their distinct encoded statuses in the original root record. With both statuses zero, source instead consumes the output count and reaches a different pending helper. Extended mode also copies 16 returned bytes through XOR `0x98` into a construction-derived span. These are source contracts and private A64 replays; native API success, copyout and daemon-kext transaction pairing remain unknown. [IR1-IR8]
 
 ```text
