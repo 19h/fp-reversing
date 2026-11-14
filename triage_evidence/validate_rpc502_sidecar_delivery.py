@@ -530,6 +530,7 @@ def main():
     if exists(BASE/'daemon_constructor_halves_report.md'):reports.add(BASE/'daemon_constructor_halves_report.md')
     if exists(BASE/'daemon_scalar_serialization_report.md'):reports.add(BASE/'daemon_scalar_serialization_report.md')
     if exists(BASE/'daemon_constructor_extent_report.md'):reports.add(BASE/'daemon_constructor_extent_report.md')
+    if exists(BASE/'daemon_record_spans_report.md'):reports.add(BASE/'daemon_record_spans_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2817,6 +2818,15 @@ def main():
         manifest['validation']['daemon_constructor_extent_source_queries_unsat']=len(extent_audit['source_proofs'])
         manifest['validation']['daemon_constructor_extent_interpretation_controls']=len(extent_audit['interpretation_controls'])
         manifest['validation']['daemon_constructor_extent_new_target_intervals']=extent_audit['new_target_intervals']
+    if exists(ROOT/'daemon_record_spans_checks.json'):
+        record_spans=json.loads(read(ROOT/'daemon_record_spans_checks.json'))
+        spans_audit=json.loads(read(ROOT/'daemon_record_spans_audit.json'))
+        manifest['validation']['daemon_record_spans_increment_checks']=record_spans['verified_counts']
+        manifest['validation']['daemon_record_spans_static_scope']=record_spans['scope']
+        manifest['validation']['daemon_record_spans_independent_checks']=spans_audit['independent_totals']
+        manifest['validation']['daemon_record_spans_source_queries_unsat']=len(spans_audit['source_proofs'])
+        manifest['validation']['daemon_record_spans_interpretation_controls']=len(spans_audit['interpretation_controls'])
+        manifest['validation']['daemon_record_spans_new_target_intervals']=spans_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
