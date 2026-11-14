@@ -532,6 +532,7 @@ def main():
     if exists(BASE/'daemon_constructor_extent_report.md'):reports.add(BASE/'daemon_constructor_extent_report.md')
     if exists(BASE/'daemon_record_spans_report.md'):reports.add(BASE/'daemon_record_spans_report.md')
     if exists(BASE/'daemon_resize_callers_report.md'):reports.add(BASE/'daemon_resize_callers_report.md')
+    if exists(BASE/'daemon_record_selection_report.md'):reports.add(BASE/'daemon_record_selection_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2837,6 +2838,15 @@ def main():
         manifest['validation']['daemon_resize_callers_source_queries_unsat']=len(callers_audit['source_proofs'])
         manifest['validation']['daemon_resize_callers_interpretation_controls']=len(callers_audit['interpretation_controls'])
         manifest['validation']['daemon_resize_callers_new_target_intervals']=callers_audit['new_target_intervals']
+    if exists(ROOT/'daemon_record_selection_checks.json'):
+        record_selection=json.loads(read(ROOT/'daemon_record_selection_checks.json'))
+        selection_audit=json.loads(read(ROOT/'daemon_record_selection_audit.json'))
+        manifest['validation']['daemon_record_selection_increment_checks']=record_selection['verified_counts']
+        manifest['validation']['daemon_record_selection_static_scope']=record_selection['scope']
+        manifest['validation']['daemon_record_selection_independent_checks']=selection_audit['independent_totals']
+        manifest['validation']['daemon_record_selection_source_queries_unsat']=len(selection_audit['source_proofs'])
+        manifest['validation']['daemon_record_selection_interpretation_controls']=len(selection_audit['interpretation_controls'])
+        manifest['validation']['daemon_record_selection_new_target_intervals']=selection_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

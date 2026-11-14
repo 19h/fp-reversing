@@ -130,9 +130,13 @@ No new target interval, guest input, owner/root definition or API-return premise
 | Impact | Bounded continuation | Present limit |
 | --- | --- | --- |
 | High | Join these caller records to the native initializer/caller epoch and actual IPC payload | Private source joins are established; native admission and daemon-kext identity remain unknown. |
-| High | Trace U+0x18 writers and all helper return classes | The default-coordinate selection is proved; initialization, mutation policy and global error semantics remain unknown. |
+| High | Continue alternate storage and mismatch branches after the [record-selection recovery](daemon_record_selection_report.md) | Default initialization copy, retained lifetime and four zero-result gates are now established; earlier frame epoch and global return semantics remain unknown. |
 | Medium | Decode the remaining biased A fields and their caller producers | The complete selected access footprint and byte custody are known; most semantic field names remain unknown. |
 | Medium | Reduce the final decoder re-encoding network component by component | Both concrete occurrences pass; the full universal final encoding remains unproved. |
 | Low | Compare other caller footprints against the 0x3c span | The observed two-byte gap is not a proven padding declaration or unknown native structure extent. |
 
 **QG1**: factual technical analysis. **QG2**: RC-A1-RC-A6 register assumptions, dependencies and falsification probes. **QG3**: caller ABI, coordinate/default selection, target producer and data custody are covered; the larger interface goal remains active. **QG4**: widths, byte units, modular arithmetic, check counts and complexity are explicit. **QG5**: successful-path roles, pre-call lifetimes, generic arithmetic, conditional exports and native unknowns remain distinct. **QG6**: original source, pinned journals, fresh extraction, independent replay, solver receipts and publication checks establish provenance. **QG7**: bounded extensions have impact labels and explicit limits.
+
+## Record-coordinate selection and span gates
+
+The [record-selection follow-up](daemon_record_selection_report.md) proves storage-availability, explicit/default coordinate, nonwrapping-span and end-at-or-below-extent gates for helper0x10045f984 under its stated phases. Four mapped gate rejections return encoded coordinate zero; alternate storage and transformed-halfword mismatch paths retain unknown final results. The default U+0x18 word is copied from an inherited frame cell and remains unchanged on retained successful paths. Sixteen obligations, four controls, 2,848 independent instruction replays, 13 original dispatch routes and 608 exported snapshots qualify this increment. General decoder domains, earlier frame epoch and native daemon-kext transaction pairing remain unknown; the full goal remains active.
