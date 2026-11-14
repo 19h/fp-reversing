@@ -528,6 +528,7 @@ def main():
     if exists(BASE/'daemon_packed_halves_report.md'):reports.add(BASE/'daemon_packed_halves_report.md')
     if exists(BASE/'daemon_halfword_update_report.md'):reports.add(BASE/'daemon_halfword_update_report.md')
     if exists(BASE/'daemon_constructor_halves_report.md'):reports.add(BASE/'daemon_constructor_halves_report.md')
+    if exists(BASE/'daemon_scalar_serialization_report.md'):reports.add(BASE/'daemon_scalar_serialization_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2797,6 +2798,15 @@ def main():
         manifest['validation']['daemon_constructor_halves_source_queries_unsat']=len(constructor_halves_audit['source_proofs'])
         manifest['validation']['daemon_constructor_halves_boundary_controls']=len(constructor_halves_audit['boundary_controls'])
         manifest['validation']['daemon_constructor_halves_new_target_intervals']=constructor_halves_audit['new_target_intervals']
+    if exists(ROOT/'daemon_scalar_serialization_checks.json'):
+        scalar_serialization=json.loads(read(ROOT/'daemon_scalar_serialization_checks.json'))
+        serialization_audit=json.loads(read(ROOT/'daemon_scalar_serialization_audit.json'))
+        manifest['validation']['daemon_scalar_serialization_increment_checks']=scalar_serialization['verified_counts']
+        manifest['validation']['daemon_scalar_serialization_static_scope']=scalar_serialization['scope']
+        manifest['validation']['daemon_scalar_serialization_independent_checks']=serialization_audit['independent_totals']
+        manifest['validation']['daemon_scalar_serialization_source_queries_unsat']=len(serialization_audit['source_proofs'])
+        manifest['validation']['daemon_scalar_serialization_format_controls']=len(serialization_audit['format_controls'])
+        manifest['validation']['daemon_scalar_serialization_new_target_intervals']=serialization_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
