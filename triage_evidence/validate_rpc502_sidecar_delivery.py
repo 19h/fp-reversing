@@ -519,6 +519,7 @@ def main():
     if exists(BASE/'daemon_constructor_buffer_report.md'):reports.add(BASE/'daemon_constructor_buffer_report.md')
     if exists(BASE/'daemon_constructor_descriptor_report.md'):reports.add(BASE/'daemon_constructor_descriptor_report.md')
     if exists(BASE/'daemon_feedback_roots_report.md'):reports.add(BASE/'daemon_feedback_roots_report.md')
+    if exists(BASE/'daemon_feedback_callers_report.md'):reports.add(BASE/'daemon_feedback_callers_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2713,6 +2714,10 @@ def main():
         feedback=json.loads(read(ROOT/'daemon_feedback_roots_checks.json'))
         manifest['validation']['daemon_feedback_roots_increment_checks']=feedback['verified_counts']
         manifest['validation']['daemon_feedback_roots_static_scope']=feedback['scope']
+    if exists(ROOT/'daemon_feedback_callers_checks.json'):
+        callers=json.loads(read(ROOT/'daemon_feedback_callers_checks.json'))
+        manifest['validation']['daemon_feedback_callers_increment_checks']=callers['verified_counts']
+        manifest['validation']['daemon_feedback_callers_static_scope']=callers['scope']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
