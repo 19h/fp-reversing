@@ -513,6 +513,7 @@ def main():
     if exists(BASE/'daemon_state_container_construction_report.md'):reports.add(BASE/'daemon_state_container_construction_report.md')
     if exists(BASE/'daemon_state_allocation_cascade_report.md'):reports.add(BASE/'daemon_state_allocation_cascade_report.md')
     if exists(BASE/'daemon_state_emitter_completion_report.md'):reports.add(BASE/'daemon_state_emitter_completion_report.md')
+    if exists(BASE/'daemon_state_table_mixing_report.md'):reports.add(BASE/'daemon_state_table_mixing_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2657,6 +2658,17 @@ def main():
         manifest['validation']['daemon_state_emitter_completion_source_queries_unsat']=emitter_audit['source_queries_unsat']
         from verify_daemon_state_emitter_completion_publication import function_metadata
         manifest['validation']['daemon_state_emitter_completion_function_metadata']=function_metadata()
+    if exists(ROOT/'daemon_state_table_mixing_checks.json'):
+        mixing=json.loads(read(ROOT/'daemon_state_table_mixing_checks.json'))
+        mixing_audit=json.loads(read(ROOT/'daemon_state_table_mixing_audit.json'))
+        manifest['validation']['daemon_state_table_mixing_increment_checks']=mixing['verified_counts']
+        manifest['validation']['daemon_state_table_mixing_replay_checks']=mixing_audit['independent_totals']
+        manifest['validation']['daemon_state_table_mixing_model_checks']=mixing_audit['model']['verified_counts']
+        manifest['validation']['daemon_state_table_mixing_coverage_checks']=mixing_audit['coverage']['verified_counts']
+        manifest['validation']['daemon_state_table_mixing_static_scope']=mixing['scope']
+        manifest['validation']['daemon_state_table_mixing_source_queries_unsat']=mixing_audit['source_queries_unsat']
+        from verify_daemon_state_table_mixing_publication import function_metadata
+        manifest['validation']['daemon_state_table_mixing_function_metadata']=function_metadata()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
