@@ -526,6 +526,7 @@ def main():
     if exists(BASE/'daemon_append_fields_report.md'):reports.add(BASE/'daemon_append_fields_report.md')
     if exists(BASE/'daemon_packed_words_report.md'):reports.add(BASE/'daemon_packed_words_report.md')
     if exists(BASE/'daemon_packed_halves_report.md'):reports.add(BASE/'daemon_packed_halves_report.md')
+    if exists(BASE/'daemon_halfword_update_report.md'):reports.add(BASE/'daemon_halfword_update_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2776,6 +2777,16 @@ def main():
         manifest['validation']['daemon_packed_halves_source_queries_unsat']=halves_audit['source_queries_unsat']
         manifest['validation']['daemon_packed_halves_format_controls']=len(halves_audit['format_controls'])
         manifest['validation']['daemon_packed_halves_new_target_intervals']=halves_audit['new_target_intervals']
+    if exists(ROOT/'daemon_halfword_update_checks.json'):
+        halfword_update=json.loads(read(ROOT/'daemon_halfword_update_checks.json'))
+        update_audit=json.loads(read(ROOT/'daemon_halfword_update_audit.json'))
+        manifest['validation']['daemon_halfword_update_increment_checks']=halfword_update['verified_counts']
+        manifest['validation']['daemon_halfword_update_static_scope']=halfword_update['scope']
+        manifest['validation']['daemon_halfword_update_independent_checks']=update_audit['independent_totals']
+        manifest['validation']['daemon_halfword_update_source_queries_unsat']=update_audit['source_queries_unsat']
+        manifest['validation']['daemon_halfword_update_ring_normalizations']=len(update_audit['ring_normalizations'])
+        manifest['validation']['daemon_halfword_update_format_controls']=len(update_audit['format_controls'])
+        manifest['validation']['daemon_halfword_update_new_target_intervals']=update_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
