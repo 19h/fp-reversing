@@ -522,6 +522,7 @@ def main():
     if exists(BASE/'daemon_feedback_callers_report.md'):reports.add(BASE/'daemon_feedback_callers_report.md')
     if exists(BASE/'daemon_descriptor_walk_report.md'):reports.add(BASE/'daemon_descriptor_walk_report.md')
     if exists(BASE/'daemon_descriptor_polynomial_report.md'):reports.add(BASE/'daemon_descriptor_polynomial_report.md')
+    if exists(BASE/'daemon_descriptor_growth_report.md'):reports.add(BASE/'daemon_descriptor_growth_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2737,6 +2738,14 @@ def main():
         manifest['validation']['daemon_descriptor_polynomial_admissions']=polynomial_replay['admissions']
         manifest['validation']['daemon_descriptor_polynomial_source_queries_unsat']=polynomial_replay['source_queries_unsat']
         manifest['validation']['daemon_descriptor_polynomial_exact_ring_normalizations']=polynomial_replay['exact_ring_normalizations']
+    if exists(ROOT/'daemon_descriptor_growth_checks.json'):
+        growth=json.loads(read(ROOT/'daemon_descriptor_growth_checks.json'))
+        growth_replay=json.loads(read(ROOT/'daemon_descriptor_growth_replay.json'))
+        manifest['validation']['daemon_descriptor_growth_increment_checks']=growth['verified_counts']
+        manifest['validation']['daemon_descriptor_growth_static_scope']=growth['scope']
+        manifest['validation']['daemon_descriptor_growth_replay_checks']=growth_replay['independent_totals']
+        manifest['validation']['daemon_descriptor_growth_admissions']=growth_replay['admissions']
+        manifest['validation']['daemon_descriptor_growth_source_queries_unsat']=growth_replay['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
