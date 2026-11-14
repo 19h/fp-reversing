@@ -145,10 +145,14 @@ No new Mach name, right disposition, send/receive site or native daemon-kext tra
 
 | Impact | Bounded next evidence | Present limit |
 | --- | --- | --- |
-| High | Recover the generic operand-40 producer and local record-selection contract | The exact store/read and selected offset-57 scalar are established; caller-wide semantics remain unknown. |
+| High | Trace default-coordinate writers and other helper return classes after the [caller-contract recovery](daemon_resize_callers_report.md) | The target-40 producer and explicit/default selector are now established locally; native caller-wide semantics remain unknown. |
 | High | Join the enclosing/appended span layout to daemon-kext payload consumers | Local bytes, endpoints and count updates are established; native schema and transaction identity remain unknown. |
 | High | Establish native initializer/caller and lifetime continuity for the current records | All present owners and API returns are conditional model premises. |
 | Medium | Reduce the later decoder's final re-encoding network with explicit component proofs | Complete concrete replay and universal scalar extraction pass; the final universal re-encoding remains unproved. |
 | Medium | Trace the source tag and remaining prefix fields through their separate mixers | A source tag and four scalar payloads are known; a native version schema or wire-tag interpretation is not established. |
 
 **QG1**: factual technical analysis. **QG2**: RS-A1-RS-A6 enumerate assumptions, dependencies and falsification probes. **QG3**: local span arithmetic, payload values, layout and selected resize context are covered; the full interface goal remains active. **QG4**: widths, byte units, modular equations, counts and complexity are explicit. **QG5**: numeric endpoints, provisional hierarchy, prior admissions, concrete re-encoding and universal unknowns are separated. **QG6**: original bytes, pinned parent journals, fresh extraction, independent selected replay, source queries and publication checks establish provenance. **QG7**: bounded continuation opportunities have impact labels and explicit evidence limits.
+
+## Private resize caller and coordinate follow-up
+
+The [private resize-caller follow-up](daemon_resize_callers_report.md) establishes the later target40 as old-span20 plus new-span20, traces the biased contribution to caller record+0x2c, and proves explicit/default record-coordinate selection. The successful helper result selects offset57 while U+0x18 supplies default offset1; global error semantics remain unknown. Ten consumed caller fields span through offset0x3b, with exact byte custody and a distinct pre-call word lifetime. Sixteen nonvacuous obligations, three SAT controls, 1,450 independent instruction replays and 2,128 state-word checks across 304 exports qualify this increment. No new native transport, port emission or daemon-kext identity is established; the full goal remains active.
