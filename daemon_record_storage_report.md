@@ -1,6 +1,6 @@
 # fairplayd: alternate record storage, cached masking and halfword selection
 
-The flag-mask-4 path of helper `0x10045f984` reads a two-byte field through U+0, unmasks each byte with an address-dependent eight-round transform and tests the decoded big-endian u16 for zero. It rejoins the previously recovered transformed-halfword gate at `0x1003209ac`. Zero selects the saved record coordinate; nonzero enters further processing. The immediate nonzero continuation checks whether the decoded record endpoint plus 20 is strictly below 2^32. Complete subsequent processing, native storage admission and daemon-kext transaction identity remain unknown. [STO1-STO6; STO-A1-STO-A6]
+The flag-mask-4 path of helper `0x10045f984` reads a two-byte field through U+0, unmasks each byte with an address-dependent eight-round transform and tests the decoded big-endian u16 for zero. It rejoins the previously recovered transformed-halfword gate at `0x1003209ac`. Zero selects the saved record coordinate; nonzero enters further processing. The immediate nonzero continuation checks whether the decoded cursor plus 20 is strictly below 2^32. The counted continuation is established in the [walk follow-up](daemon_record_walk_report.md). Native storage admission and daemon-kext transaction identity remain unknown. [STO1-STO6; STO-A1-STO-A6]
 
 This is a static source contract for a path absent from the six retained helper cases. No alternative execution, guest bytes, allocator result, owner definition or native observation was added. Those cases supply the incoming phase, saved-operand producers and dispatch context; they execute the mask-4-clear reader. [STO2-STO5]
 
@@ -21,7 +21,7 @@ U is the retained 48 B object at `0x6600060000`; its model address is not a nati
 | --- | --- | --- |
 | `0x10048e9f4..0x10048ea28` | U+0x28 flag mask 4 clear -> `0x1003cbb0c`; set -> `0x100495c3c` | Inherited universal selector with W6=`0x6ce1` |
 | `0x10049f6e8..0x10049f734` | SP+0x58 and SP+0x60 receive zero-extended u32(o+14); SP+0x50 receives zero-extended u32(o+15) | Incoming W16=`0xbff7`, W23=`u32(o-0x89271580)`; source producer and six retained phases checked |
-| `0x10049f884` | SP+0x6c receives encoded record endpoint `u32(o+20-0x89271580)` in retained cases | Current-interval last writer, not a universal span-20 premise |
+| `0x10049f884` | SP+0x6c receives encoded cursor `u32(o+20-0x89271580)` in retained cases | Current-interval last writer, not a universal span-20 premise |
 | `0x1005321c4` | SP+0xb0 receives `0x1010c8268` | Current-interval last writer of an indirect global-pointer-cell address |
 | `0x100495c44` | Load B from U+0 | Alternative representation base |
 | `0x100495c68` | Load M32 through X7=`0x1010c67d4` | Cached-word index mask |
@@ -32,7 +32,7 @@ U is the retained 48 B object at `0x6600060000`; its model address is not a nati
 
 The saved offsets are formed with u32 arithmetic before zero extension. For arbitrary o, `u32(o+15)` need not equal an unbounded mathematical `o+15`. A source proof or native admission establishing readability and no offset wrap remains necessary for a general buffer interpretation. The earlier span gates alone accept positive spans smaller than 16; they do not independently establish that these two field bytes are readable. [STO2, STO5; STO-A3]
 
-| Retained precursor | Selected offset o | Saved SP+0x58 | Saved SP+0x50 | Decoded endpoint | Alternate path observed |
+| Retained precursor | Selected offset o | Saved SP+0x58 | Saved SP+0x50 | Decoded initial cursor | Alternate path observed |
 | --- | --- | --- | --- | --- | --- |
 | Four constructor-prefix classes | 1 B | 15 B | 16 B | 21 B | No |
 | Two later growth classes | 57 B | 71 B | 72 B | 77 B | No |
@@ -92,8 +92,8 @@ U+0x28 mask4 set
   -> common eight-round masks -> decoded big-endian H16
   -> H16 == 0 ?
        yes -> 0x10048d3d0 -> reload saved coordinate -> caller result store
-       no  -> 0x1004bad90 -> u64(record_end32) + 20 < 2^32 ?
-                 yes -> 0x10063b9bc -> further processing; result unknown
+       no  -> 0x1004bad90 -> u64(cursor32) + 20 < 2^32 ?
+                 yes -> 0x10063b9bc -> counted span walk; see follow-up
                  no  -> 0x1004aa840 -> encoded-zero result store
 ```
 
@@ -101,10 +101,10 @@ U+0x28 mask4 set
 | --- | --- | --- | --- | --- |
 | Common transformed-halfword gate | H=0 on alternate path | `0x83da` | `0x10048d3d0` | `0xd137` |
 | Common transformed-halfword gate | H!=0 on alternate path | `0x3a61` | `0x1004bad90` | `0xd137` |
-| `0x1004bad90..0x1004bade4` | end32<=`0xffffffeb` | `0x1bec` | `0x10063b9bc` | `0xcb9a` |
-| Same interval | end32>=`0xffffffec` | `0x1bc3` | `0x1004aa840` | `0xcb9a` |
+| `0x1004bad90..0x1004bade4` | cursor32<=`0xffffffeb` | `0x1bec` | `0x10063b9bc` | `0xcb9a` |
+| Same interval | cursor32>=`0xffffffec` | `0x1bc3` | `0x1004aa840` | `0xcb9a` |
 
-The immediate mismatch gate assumes the common comparison's incoming W16=`0xffffffec`, W21=`0xffff9684`, W24=`0x89271580`, and W15=`u32(end32-0x89271580)`. Its accepted upper endpoint is 4,294,967,275 B; adding 20 B yields 4,294,967,295 B. Endpoint 4,294,967,276 B fails because adding 20 B reaches 2^32 B. The gate rebuilds W2=`0x76d8ea80` and IA modifier `0xcb9a` before either dispatch. Further processing can change the pending encoded-zero value; no final result is assigned to the continuation. [STO2, STO4-STO5; STO-A2]
+The immediate mismatch gate assumes the common comparison's incoming W16=`0xffffffec`, W21=`0xffff9684`, W24=`0x89271580`, and W15=`u32(cursor32-0x89271580)`. Its accepted upper cursor is 4,294,967,275 B; adding 20 B yields 4,294,967,295 B. Cursor 4,294,967,276 B fails because adding 20 B reaches 2^32 B. The gate rebuilds W2=`0x76d8ea80` and IA modifier `0xcb9a` before either dispatch. The STO5 proof stops before the continuation. Its complete clear-storage counted-walk result is established in the [walk follow-up](daemon_record_walk_report.md). The historical proof variable named storage_record_end32 denotes the decoded cursor in this gate; its arithmetic equation is unchanged. [STO2, STO4-STO5; STO-A2]
 
 ## Assumption register and stress tests
 
@@ -122,7 +122,7 @@ The immediate mismatch gate assumes the common comparison's incoming W16=`0xffff
 | Impact | Next discriminating analysis | Result it would establish |
 | --- | --- | --- |
 | High | Recover writers selecting U+0 and flag mask4, including constructor/caller epochs | Representation admission, ownership, field readability and whether the alternative can occur with U+8 null |
-| High | Continue `0x10063b9bc` and join subsequent coordinate/result custody | Record traversal or selection semantics beyond the first nonzero gate |
+| High | Recover alternative word reader `0x100357e2c` and join subsequent coordinate/result custody | Alternative representation semantics beyond the now recovered clear-storage counted walk |
 | Medium | Join cache-table initialization to this caller and record both u64 reads | Live mask, table size, stability and representation lifetime |
 | Medium | Compare recovered fixed u16 and span fields with a matched kext-side buffer transaction | Daemon-kext schema correspondence; shared globals alone cannot establish this |
 | Low | Partition saved-offset u32 wrap and short-span cases under actual producer admission | Precise valid-input domain of the two-byte reader |
@@ -132,3 +132,8 @@ The immediate mismatch gate assumes the common comparison's incoming W16=`0xffff
 **QG1** passes: factual source/ABI analysis. **QG2** passes: STO-A1-STO-A6 identify premises, dependent claims and falsification probes. **QG3** passes for this increment: alternate byte reader, table interface, decoded comparison, saved-cell custody and immediate mismatch dispatch are covered; the full investigation remains active. **QG4** passes: widths, signed extension, modulo arithmetic, B extents and endpoint calculation are explicit. **QG5** passes: static alternate source and retained clear-path journals are distinguished; mask assumptions, proof cuts, timeouts, overlap counts, offset wrap and unknown continuations are explicit. **QG6** passes: exact binary words, original authenticated fixups, pinned upstream receipts and fresh proof/replay receipts support the claims. **QG7** passes: impact-labeled bounded follow-up is listed.
 
 Run the extractor, auditor and publication verifier with the repository evidence directory on the Python module path and the existing Capstone/Z3 dependencies available. Selected-source and replay work is O(parent receipt bytes + selected journal bytes + 296 source words + 138 replay visits*32 + symbolic DAG) in time and space, excluding solver search. Each byte model has eight rounds and O(1) time/space. Fresh proofs use 30 s/query limits. No native target API, IPC, filesystem operation, allocation/free, hardware PAC or IDB mutation is performed. Existing primary inputs remain byte-identical; no port emission or daemon-kext exchange is newly observed.
+
+
+## Counted record-span walk
+
+The [counted-walk follow-up](daemon_record_walk_report.md) distinguishes cursor o+20 from enclosing endpoint o+p, establishes the initial 20 B minimum and proves the full clear-storage counted-span walk through exact final consumption. General word/halfword reader contracts now cover every offset residue and input bit. The source decrements a 16-bit count and rejects nonpositive, wrapping or out-of-parent advances; it does not recursively validate every nested header. Zero count can accept extra enclosing extent, and earlier positive child spans can be below 20 B. Fifty-eight nonvacuous obligations, ten scalar controls, 1,980 independent replay visits, 54 saved-cell custody checks and 19 original dispatch mappings qualify the increment. Retained cases all have count zero. Alternative word decoding, native representation admission and daemon-kext pairing remain unknown; no new port emission or native exchange is observed, and the full goal remains active.

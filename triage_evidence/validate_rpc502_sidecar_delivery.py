@@ -534,6 +534,7 @@ def main():
     if exists(BASE/'daemon_resize_callers_report.md'):reports.add(BASE/'daemon_resize_callers_report.md')
     if exists(BASE/'daemon_record_selection_report.md'):reports.add(BASE/'daemon_record_selection_report.md')
     if exists(BASE/'daemon_record_storage_report.md'):reports.add(BASE/'daemon_record_storage_report.md')
+    if exists(BASE/'daemon_record_walk_report.md'):reports.add(BASE/'daemon_record_walk_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2858,6 +2859,15 @@ def main():
         manifest['validation']['daemon_record_storage_source_queries_unsat']=len(storage_audit['source_proofs'])
         manifest['validation']['daemon_record_storage_interpretation_controls']=len(storage_audit['interpretation_controls'])
         manifest['validation']['daemon_record_storage_new_target_intervals']=storage_audit['new_target_intervals']
+    if exists(ROOT/'daemon_record_walk_checks.json'):
+        walk=json.loads(read(ROOT/'daemon_record_walk_checks.json'))
+        walk_audit=json.loads(read(ROOT/'daemon_record_walk_audit.json'))
+        manifest['validation']['daemon_record_walk_increment_checks']=walk['verified_counts']
+        manifest['validation']['daemon_record_walk_static_scope']=walk['scope']
+        manifest['validation']['daemon_record_walk_independent_checks']=walk_audit['independent_totals']
+        manifest['validation']['daemon_record_walk_source_queries_unsat']=len(walk_audit['source_proofs'])
+        manifest['validation']['daemon_record_walk_scalar_controls']=len(walk_audit['scalar_controls'])
+        manifest['validation']['daemon_record_walk_new_target_intervals']=walk_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
