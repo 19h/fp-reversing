@@ -516,6 +516,7 @@ def main():
     if exists(BASE/'daemon_state_table_mixing_report.md'):reports.add(BASE/'daemon_state_table_mixing_report.md')
     if exists(BASE/'daemon_table_consumer_report.md'):reports.add(BASE/'daemon_table_consumer_report.md')
     if exists(BASE/'daemon_constructor_gate_report.md'):reports.add(BASE/'daemon_constructor_gate_report.md')
+    if exists(BASE/'daemon_constructor_buffer_report.md'):reports.add(BASE/'daemon_constructor_buffer_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2692,6 +2693,16 @@ def main():
         manifest['validation']['daemon_constructor_gate_static_scope']=constructor_gate['scope']
         manifest['validation']['daemon_constructor_gate_source_queries_unsat']=constructor_gate_audit['source_queries_unsat']
         manifest['validation']['daemon_constructor_gate_root_provenance']=constructor_gate['root_provenance']
+    if exists(ROOT/'daemon_constructor_buffer_checks.json'):
+        constructor_buffer=json.loads(read(ROOT/'daemon_constructor_buffer_checks.json'))
+        constructor_buffer_audit=json.loads(read(ROOT/'daemon_constructor_buffer_audit.json'))
+        manifest['validation']['daemon_constructor_buffer_increment_checks']=constructor_buffer['verified_counts']
+        manifest['validation']['daemon_constructor_buffer_replay_checks']=constructor_buffer_audit['independent_totals']
+        manifest['validation']['daemon_constructor_buffer_model_checks']=constructor_buffer_audit['model']['verified_counts']
+        manifest['validation']['daemon_constructor_buffer_coverage_checks']=constructor_buffer_audit['coverage']['verified_counts']
+        manifest['validation']['daemon_constructor_buffer_static_scope']=constructor_buffer['scope']
+        manifest['validation']['daemon_constructor_buffer_source_queries_unsat']=constructor_buffer_audit['source_queries_unsat']
+        manifest['validation']['daemon_constructor_buffer_root_provenance']=constructor_buffer_audit['foundation']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
