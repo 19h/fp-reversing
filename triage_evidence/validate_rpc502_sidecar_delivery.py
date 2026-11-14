@@ -512,6 +512,7 @@ def main():
     if exists(BASE/'daemon_state_path_removal_report.md'):reports.add(BASE/'daemon_state_path_removal_report.md')
     if exists(BASE/'daemon_state_container_construction_report.md'):reports.add(BASE/'daemon_state_container_construction_report.md')
     if exists(BASE/'daemon_state_allocation_cascade_report.md'):reports.add(BASE/'daemon_state_allocation_cascade_report.md')
+    if exists(BASE/'daemon_state_emitter_completion_report.md'):reports.add(BASE/'daemon_state_emitter_completion_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2645,6 +2646,17 @@ def main():
         manifest['validation']['daemon_state_allocation_cascade_source_queries_unsat']=cascade_audit['source_queries_unsat']
         from verify_daemon_state_allocation_cascade_publication import function_metadata
         manifest['validation']['daemon_state_allocation_cascade_function_metadata']=function_metadata()
+    if exists(ROOT/'daemon_state_emitter_completion_checks.json'):
+        emitter=json.loads(read(ROOT/'daemon_state_emitter_completion_checks.json'))
+        emitter_audit=json.loads(read(ROOT/'daemon_state_emitter_completion_audit.json'))
+        manifest['validation']['daemon_state_emitter_completion_increment_checks']=emitter['verified_counts']
+        manifest['validation']['daemon_state_emitter_completion_replay_checks']=emitter_audit['independent_totals']
+        manifest['validation']['daemon_state_emitter_completion_model_checks']=emitter_audit['model_checks']
+        manifest['validation']['daemon_state_emitter_completion_coverage_checks']=emitter_audit['coverage']['verified_counts']
+        manifest['validation']['daemon_state_emitter_completion_static_scope']=emitter['scope']
+        manifest['validation']['daemon_state_emitter_completion_source_queries_unsat']=emitter_audit['source_queries_unsat']
+        from verify_daemon_state_emitter_completion_publication import function_metadata
+        manifest['validation']['daemon_state_emitter_completion_function_metadata']=function_metadata()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
