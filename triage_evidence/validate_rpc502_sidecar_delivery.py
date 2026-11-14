@@ -523,6 +523,7 @@ def main():
     if exists(BASE/'daemon_descriptor_walk_report.md'):reports.add(BASE/'daemon_descriptor_walk_report.md')
     if exists(BASE/'daemon_descriptor_polynomial_report.md'):reports.add(BASE/'daemon_descriptor_polynomial_report.md')
     if exists(BASE/'daemon_descriptor_growth_report.md'):reports.add(BASE/'daemon_descriptor_growth_report.md')
+    if exists(BASE/'daemon_append_fields_report.md'):reports.add(BASE/'daemon_append_fields_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2746,6 +2747,14 @@ def main():
         manifest['validation']['daemon_descriptor_growth_replay_checks']=growth_replay['independent_totals']
         manifest['validation']['daemon_descriptor_growth_admissions']=growth_replay['admissions']
         manifest['validation']['daemon_descriptor_growth_source_queries_unsat']=growth_replay['source_queries_unsat']
+    if exists(ROOT/'daemon_append_fields_checks.json'):
+        append_fields=json.loads(read(ROOT/'daemon_append_fields_checks.json'))
+        append_audit=json.loads(read(ROOT/'daemon_append_fields_audit.json'))
+        manifest['validation']['daemon_append_fields_increment_checks']=append_fields['verified_counts']
+        manifest['validation']['daemon_append_fields_static_scope']=append_fields['scope']
+        manifest['validation']['daemon_append_fields_independent_checks']=append_audit['independent_totals']
+        manifest['validation']['daemon_append_fields_source_queries_unsat']=append_audit['source_queries_unsat']
+        manifest['validation']['daemon_append_fields_inherited_admissions_rerun']=append_audit['inherited_admissions_rerun']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
