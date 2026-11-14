@@ -1,12 +1,12 @@
 # Constructor descriptor and feedback phase contracts
 
-The initializer's SP+0x2b0 field points to `0x1010b7cc0` in all twelve retained profiles. A separate descriptor at SP+0x9e0 encodes the initializer input counter relative to its frame address. These are source producer candidates for the unresolved success path; a continuous initializer-to-current-caller epoch remains unknown. This increment supplies no new guest bytes and executes no new guest interval. [CD1-CD4; CD-A1-CD-A3]
+The initializer's SP+0x2b0 field points to `0x1010b7cc0` in all twelve retained profiles. A separate descriptor at SP+0x9e0 encodes the initializer's decoded input word relative to its frame address. These are source producer candidates for the unresolved success path; a continuous initializer-to-current-caller epoch remains unknown. This increment supplies no new guest bytes and executes no new guest interval. [CD1-CD4; CD-A1-CD-A3]
 
 The source consumer reverses the descriptor arithmetic. A nearby wrapper computes `new=u64(old*0x2ecd+1)`, reserves 16-256 B of additional stack from its high nibble, and quantizes a returned difference into a multiple of 16. These phase contracts identify dataflow and stack effects. The feedback store's destination and the wrapper's complete operation remain unknown. [CD1-CD3; CD-A3-CD-A5]
 
 ```text
 separate initializer profiles
-  record[0] XOR 1c0b9f7ce10f2255 -> counter c
+  record[0] XOR 1c0b9f7ce10f2255 -> input word c
   b = frame SP + 9e0; aligned frame
     [b+0] / 4 B = low32(b+c) + b5caf0c6
     [b+4] / 4 B = no retained writer
@@ -20,7 +20,7 @@ current success frontier 1008a2704
 
 compatible source phases, without claiming continuous execution:
   root -> cell value -> private SP+bdc8 copy
-  descriptor -> fixed word bias; q-b -> original counter
+  descriptor -> fixed word bias; q-b -> decoded input word
   wrapper old -> old*2ecd+1 -> 16..256 B stack reservation
   nested cell old-d0 -> restoration by +d0
   returned low16 difference -> multiply by 16 -> caller cell
@@ -30,7 +30,7 @@ compatible source phases, without claiming continuous execution:
 | --- | --- |
 | CD1 | Original `fairplayd.arm64e`, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`; [extractor](triage_evidence/recover_daemon_constructor_descriptor.py) retains eight original source regions and the original chained-fixup word. |
 | CD2 | Twelve initializer profiles in [bank-origin checks](triage_evidence/daemon_return_bank_origins_checks.json.zst), and 304 frozen exports from the [constructor-buffer report](daemon_constructor_buffer_report.md). |
-| CD3 | [Contract checks](triage_evidence/daemon_constructor_descriptor_checks.json.zst): 36 source writers, 24 source reads, four distinct frame/counter pairs, eight nonvacuous source equations, one alignment counterexample and all 304 frontier definedness checks. |
+| CD3 | [Contract checks](triage_evidence/daemon_constructor_descriptor_checks.json.zst): 36 source writers, 24 source reads, four distinct pairs of frame and input word, eight nonvacuous source equations, one alignment counterexample and all 304 frontier definedness checks. |
 | CD4 | [Publication verifier](triage_evidence/verify_daemon_constructor_descriptor_publication.py): fresh source/profile/equation reconstruction, source hash/fixup verification, exact manifest delta, input preservation and decoded path checks. |
 
 ## Root pointer and descriptor producer
@@ -74,9 +74,9 @@ The additional reservation is exactly one of 16,32,...,256 B; it preserves SP mo
 
 ## Verification and present boundaries
 
-All twelve profiles match the input-counter read, relocated pool read and three exact writer events, including original source words and visit indices: `12*2=24` reads and `12*3=36` writers. Eight SMT obligations have satisfiable premises and unsatisfiable negated conclusions, using original source lifts with u32/u64 modular arithmetic and a 30 s timeout per query. Two skipped source spans receive explicit register-preservation checks; no skipped span is treated as executed. The aligned simplification has an explicit falsification control outside its premise. [CD1-CD4]
+All twelve profiles match the read of the decoded input word, relocated pool read and three exact writer events, including original source words and visit indices: `12*2=24` reads and `12*3=36` writers. Eight SMT obligations have satisfiable premises and unsatisfiable negated conclusions, using original source lifts with u32/u64 modular arithmetic and a 30 s timeout per query. Two skipped source spans receive explicit register-preservation checks; no skipped span is treated as executed. The aligned simplification has an explicit falsification control outside its premise. [CD1-CD4]
 
-All 152 successful exports retain an undefined SP+0x2b0/8 B and an undefined SP+0x9e0/16 B. All 152 NULL exports retain undefined S+0x30/8 B. These are inherited model definedness boundaries. Neither native invalid access nor a native vulnerability is established. The descriptor's declared counter is not identified with a later caller cursor. Existing 96 B of conditional root premises remain unchanged; this increment adds zero definition bytes. [CD2-CD4; CD-A2-CD-A3]
+All 152 successful exports retain an undefined SP+0x2b0/8 B and an undefined SP+0x9e0/16 B. All 152 NULL exports retain undefined S+0x30/8 B. These are inherited model definedness boundaries. Neither native invalid access nor a native vulnerability is established. The descriptor's declared input word is not identified with a later caller cursor. Existing 96 B of conditional root premises remain unchanged; this increment adds zero definition bytes. [CD2-CD4; CD-A2-CD-A3]
 
 Time is O(source words + profile events + terminal bytes + solver query DAG), excluding solver search complexity; storage is O(largest input receipt + one terminal byte map + query DAG). The solver timeout is a limit, not a complexity bound. All offsets, addresses and allocation/reservation extents are bytes; u32 and u64 arithmetic wraps at 2^32 and 2^64. No target API, IPC, allocation, free, filesystem operation, hardware PAC or IDB mutation executes. Retained primary data suffices; IDA is not accessed. [CD1-CD4]
 
@@ -84,18 +84,20 @@ Time is O(source words + profile events + terminal bytes + solver query DAG), ex
 | --- | --- | --- |
 | CD-A1: Pinned source image, fixups and retained receipts apply | Source locations, pointer decoding and equations | Check original SHA, every retained instruction word, original format-12 slot and decoded target, and frozen parent digests. |
 | CD-A2: Retained profiles and exports have their published conditional scope | Twelve producer examples and 304 definedness checks | Verify exact writer/read widths, addresses, values and visit indices; retain padding and frontier unknowns; do not infer exhaustive native profiles. |
-| CD-A3: Compatible source phases do not establish a continuous epoch | Descriptor consumer and downstream architectural interpretation | Keep actual counter and current initializer/caller join unknown; preserve the unaligned counterexample and satisfiable aligned premise. |
+| CD-A3: Compatible source phases do not establish a continuous epoch | Descriptor consumer and downstream architectural interpretation | Keep actual input word and current initializer/caller join unknown; preserve the unaligned counterexample and satisfiable aligned premise. |
 | CD-A4: Sequential integer phase semantics apply | Modular equations and stack reservation | Lift original instructions; check u32 zero extension and skipped-register preservation; native concurrent mutation and PAC remain unknown. |
 | CD-A5: Destination and operation identity require independent joins | Feedback and transport interpretation | Do not assign the store at 0x100b21374 to the root cell without effective-address provenance; require actual call and buffer custody for cross-layer claims. |
 
 | Impact | Bounded next evidence | Present limit |
 | --- | --- | --- |
-| High | Join initializer frame/counter to the current success caller | Matching producers do not establish the current epoch or justify supplying c=0. |
+| High | Join initializer frame and input word to the current success caller | Matching producers do not establish the current epoch or justify supplying c=0. |
 | High | Resolve the effective address at feedback store 0x100b21374 | The recurrence value is proven; destination/global-cell identity remains unknown. |
 | High | Establish S+0x30 producer and lifetime | The NULL frontier still demands eight undefined model bytes. |
 | High | Join S/U/F and descriptor identities to native Mach/IOKit buffers | This increment establishes no new port, right transfer or external emission. |
-| Medium | Recover the full counter-dependent consumer partition | Arithmetic counter recovery is proven; complete downstream dispatch and operation semantics remain unknown. |
+| Medium | Recover the full consumer partition by decoded input value | Arithmetic input-word recovery is proven; complete downstream dispatch and operation semantics remain unknown. |
 
 **QG1**: factual source and ABI analysis. **QG2**: CD-A1-CD-A5 identify dependencies and falsification probes. **QG3**: this source-contract increment is covered; the full interface goal remains active. **QG4**: widths, modular equations, byte extents, counts and complexity are explicit. **QG5**: alignment, overwritten registers, padding and phase/epoch boundaries are separated. **QG6**: fresh source/profile/fixup/solver and publication verification qualify the pinned primary artifacts. **QG7**: impact-labeled adjacent opportunities and unresolved joins are explicit.
 
 Follow-up: The [feedback-root report](daemon_feedback_roots_report.md) resolves all three source selector destinations over complete u32 domains: controller cells 0x1010b6590/0x1010c4670 and feedback cell 0x1010b7cc0. The last matches the initializer SP+0x2b0 root. It recovers both controller update equations and the feedback destination through 768 partitions with symbolic upper bits and four source proofs. Current caller epoch, contemporaneous-global equality and native Mach/IOKit pairing remain unknown.
+
+Follow-up: The [descriptor-walk report](daemon_descriptor_walk_report.md) identifies a bounded encoded-node traversal with XOR accumulation. The value previously named counter64 in probe configuration serves as the next memory-read address in this consumer. A separate additional 8 B root premise permits four fully replayed prefixes covering all 152 success states; execution still stops before undefined descriptor bytes. Six source proofs establish the null-or-bound exit and both logical edges, with at most 19 readable-node visits in the recovered phase. Current epoch, node ownership and native Mach/IOKit pairing remain unknown.

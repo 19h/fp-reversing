@@ -520,6 +520,7 @@ def main():
     if exists(BASE/'daemon_constructor_descriptor_report.md'):reports.add(BASE/'daemon_constructor_descriptor_report.md')
     if exists(BASE/'daemon_feedback_roots_report.md'):reports.add(BASE/'daemon_feedback_roots_report.md')
     if exists(BASE/'daemon_feedback_callers_report.md'):reports.add(BASE/'daemon_feedback_callers_report.md')
+    if exists(BASE/'daemon_descriptor_walk_report.md'):reports.add(BASE/'daemon_descriptor_walk_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2718,6 +2719,14 @@ def main():
         callers=json.loads(read(ROOT/'daemon_feedback_callers_checks.json'))
         manifest['validation']['daemon_feedback_callers_increment_checks']=callers['verified_counts']
         manifest['validation']['daemon_feedback_callers_static_scope']=callers['scope']
+    if exists(ROOT/'daemon_descriptor_walk_checks.json'):
+        walk=json.loads(read(ROOT/'daemon_descriptor_walk_checks.json'))
+        walk_replay=json.loads(read(ROOT/'daemon_descriptor_walk_replay.json'))
+        manifest['validation']['daemon_descriptor_walk_increment_checks']=walk['verified_counts']
+        manifest['validation']['daemon_descriptor_walk_static_scope']=walk['scope']
+        manifest['validation']['daemon_descriptor_walk_replay_checks']=walk_replay['independent_totals']
+        manifest['validation']['daemon_descriptor_walk_admissions']=walk_replay['admissions']
+        manifest['validation']['daemon_descriptor_walk_source_queries_unsat']=walk_replay['source_queries_unsat']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
