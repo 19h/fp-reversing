@@ -118,3 +118,5 @@ No new Mach name, right disposition, emission site or native daemon-kext transac
 | Medium | Compare other reader phases and bank families | This inverse explicitly depends on the current bank/phase interface. |
 
 **QG1**: factual technical analysis. **QG2**: HU-A1-HU-A5 state dependent results and falsification probes. **QG3**: the scalar read/update/custody increment is covered; the full interface goal remains active. **QG4**: widths, exact source counts, units and complexity are explicit. **QG5**: decoder bounds, writer-format bounds, conditional control flow, prior admissions and native unknowns are separated. **QG6**: primary bytes/fixups, fresh selected replay, composed proofs, ring reductions and publication checks establish provenance. **QG7**: adjacent interfaces and limits have impact labels.
+
+The [constructor halfword follow-up](daemon_constructor_halves_report.md) establishes the earlier zero-scalar route, unsigned q<21 gate, encoded 0->1 update and shared producer/writer format. It checks two fields across 152 successful constructor exports; native field meaning and daemon-kext identity remain unknown.
