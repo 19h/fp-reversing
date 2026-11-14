@@ -525,6 +525,7 @@ def main():
     if exists(BASE/'daemon_descriptor_growth_report.md'):reports.add(BASE/'daemon_descriptor_growth_report.md')
     if exists(BASE/'daemon_append_fields_report.md'):reports.add(BASE/'daemon_append_fields_report.md')
     if exists(BASE/'daemon_packed_words_report.md'):reports.add(BASE/'daemon_packed_words_report.md')
+    if exists(BASE/'daemon_packed_halves_report.md'):reports.add(BASE/'daemon_packed_halves_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2766,6 +2767,15 @@ def main():
         manifest['validation']['daemon_packed_words_ring_normalizations']=len(packed_audit['ring_normalizations'])
         manifest['validation']['daemon_packed_words_format_controls']=len(packed_audit['format_controls'])
         manifest['validation']['daemon_packed_words_new_target_intervals']=packed_audit['new_target_intervals']
+    if exists(ROOT/'daemon_packed_halves_checks.json'):
+        packed_halves=json.loads(read(ROOT/'daemon_packed_halves_checks.json'))
+        halves_audit=json.loads(read(ROOT/'daemon_packed_halves_audit.json'))
+        manifest['validation']['daemon_packed_halves_increment_checks']=packed_halves['verified_counts']
+        manifest['validation']['daemon_packed_halves_static_scope']=packed_halves['scope']
+        manifest['validation']['daemon_packed_halves_independent_checks']=halves_audit['independent_totals']
+        manifest['validation']['daemon_packed_halves_source_queries_unsat']=halves_audit['source_queries_unsat']
+        manifest['validation']['daemon_packed_halves_format_controls']=len(halves_audit['format_controls'])
+        manifest['validation']['daemon_packed_halves_new_target_intervals']=halves_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
