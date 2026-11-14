@@ -514,6 +514,7 @@ def main():
     if exists(BASE/'daemon_state_allocation_cascade_report.md'):reports.add(BASE/'daemon_state_allocation_cascade_report.md')
     if exists(BASE/'daemon_state_emitter_completion_report.md'):reports.add(BASE/'daemon_state_emitter_completion_report.md')
     if exists(BASE/'daemon_state_table_mixing_report.md'):reports.add(BASE/'daemon_state_table_mixing_report.md')
+    if exists(BASE/'daemon_table_consumer_report.md'):reports.add(BASE/'daemon_table_consumer_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2669,6 +2670,17 @@ def main():
         manifest['validation']['daemon_state_table_mixing_source_queries_unsat']=mixing_audit['source_queries_unsat']
         from verify_daemon_state_table_mixing_publication import function_metadata
         manifest['validation']['daemon_state_table_mixing_function_metadata']=function_metadata()
+    if exists(ROOT/'daemon_table_consumer_checks.json'):
+        consumer=json.loads(read(ROOT/'daemon_table_consumer_checks.json'))
+        consumer_audit=json.loads(read(ROOT/'daemon_table_consumer_audit.json'))
+        manifest['validation']['daemon_table_consumer_increment_checks']=consumer['verified_counts']
+        manifest['validation']['daemon_table_consumer_replay_checks']=consumer_audit['independent_totals']
+        manifest['validation']['daemon_table_consumer_model_checks']=consumer_audit['model']['verified_counts']
+        manifest['validation']['daemon_table_consumer_coverage_checks']=consumer_audit['coverage']['verified_counts']
+        manifest['validation']['daemon_table_consumer_static_scope']=consumer['scope']
+        manifest['validation']['daemon_table_consumer_source_queries_unsat']=consumer_audit['source_queries_unsat']
+        from verify_daemon_table_consumer_publication import function_metadata
+        manifest['validation']['daemon_table_consumer_function_metadata']=function_metadata()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
