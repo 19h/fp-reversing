@@ -511,6 +511,7 @@ def main():
     if exists(BASE/'daemon_state_word_routing_report.md'):reports.add(BASE/'daemon_state_word_routing_report.md')
     if exists(BASE/'daemon_state_path_removal_report.md'):reports.add(BASE/'daemon_state_path_removal_report.md')
     if exists(BASE/'daemon_state_container_construction_report.md'):reports.add(BASE/'daemon_state_container_construction_report.md')
+    if exists(BASE/'daemon_state_allocation_cascade_report.md'):reports.add(BASE/'daemon_state_allocation_cascade_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2634,6 +2635,16 @@ def main():
         manifest['validation']['daemon_state_container_construction_source_queries_unsat']=construction_audit['source_queries_unsat']
         from verify_daemon_state_container_construction_publication import function_metadata
         manifest['validation']['daemon_state_container_construction_function_metadata']=function_metadata()
+    if exists(ROOT/'daemon_state_allocation_cascade_checks.json'):
+        cascade=json.loads(read(ROOT/'daemon_state_allocation_cascade_checks.json'))
+        cascade_audit=json.loads(read(ROOT/'daemon_state_allocation_cascade_audit.json'))
+        manifest['validation']['daemon_state_allocation_cascade_increment_checks']=cascade['verified_counts']
+        manifest['validation']['daemon_state_allocation_cascade_replay_checks']=cascade_audit['independent_totals']
+        manifest['validation']['daemon_state_allocation_cascade_model_checks']=cascade_audit['model_checks']
+        manifest['validation']['daemon_state_allocation_cascade_static_scope']=cascade['scope']
+        manifest['validation']['daemon_state_allocation_cascade_source_queries_unsat']=cascade_audit['source_queries_unsat']
+        from verify_daemon_state_allocation_cascade_publication import function_metadata
+        manifest['validation']['daemon_state_allocation_cascade_function_metadata']=function_metadata()
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
