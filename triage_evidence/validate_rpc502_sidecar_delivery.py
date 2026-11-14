@@ -521,6 +521,7 @@ def main():
     if exists(BASE/'daemon_feedback_roots_report.md'):reports.add(BASE/'daemon_feedback_roots_report.md')
     if exists(BASE/'daemon_feedback_callers_report.md'):reports.add(BASE/'daemon_feedback_callers_report.md')
     if exists(BASE/'daemon_descriptor_walk_report.md'):reports.add(BASE/'daemon_descriptor_walk_report.md')
+    if exists(BASE/'daemon_descriptor_polynomial_report.md'):reports.add(BASE/'daemon_descriptor_polynomial_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2727,6 +2728,15 @@ def main():
         manifest['validation']['daemon_descriptor_walk_replay_checks']=walk_replay['independent_totals']
         manifest['validation']['daemon_descriptor_walk_admissions']=walk_replay['admissions']
         manifest['validation']['daemon_descriptor_walk_source_queries_unsat']=walk_replay['source_queries_unsat']
+    if exists(ROOT/'daemon_descriptor_polynomial_checks.json'):
+        polynomial=json.loads(read(ROOT/'daemon_descriptor_polynomial_checks.json'))
+        polynomial_replay=json.loads(read(ROOT/'daemon_descriptor_polynomial_replay.json'))
+        manifest['validation']['daemon_descriptor_polynomial_increment_checks']=polynomial['verified_counts']
+        manifest['validation']['daemon_descriptor_polynomial_static_scope']=polynomial['scope']
+        manifest['validation']['daemon_descriptor_polynomial_replay_checks']=polynomial_replay['independent_totals']
+        manifest['validation']['daemon_descriptor_polynomial_admissions']=polynomial_replay['admissions']
+        manifest['validation']['daemon_descriptor_polynomial_source_queries_unsat']=polynomial_replay['source_queries_unsat']
+        manifest['validation']['daemon_descriptor_polynomial_exact_ring_normalizations']=polynomial_replay['exact_ring_normalizations']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
