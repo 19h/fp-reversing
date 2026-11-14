@@ -529,6 +529,7 @@ def main():
     if exists(BASE/'daemon_halfword_update_report.md'):reports.add(BASE/'daemon_halfword_update_report.md')
     if exists(BASE/'daemon_constructor_halves_report.md'):reports.add(BASE/'daemon_constructor_halves_report.md')
     if exists(BASE/'daemon_scalar_serialization_report.md'):reports.add(BASE/'daemon_scalar_serialization_report.md')
+    if exists(BASE/'daemon_constructor_extent_report.md'):reports.add(BASE/'daemon_constructor_extent_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2807,6 +2808,15 @@ def main():
         manifest['validation']['daemon_scalar_serialization_source_queries_unsat']=len(serialization_audit['source_proofs'])
         manifest['validation']['daemon_scalar_serialization_format_controls']=len(serialization_audit['format_controls'])
         manifest['validation']['daemon_scalar_serialization_new_target_intervals']=serialization_audit['new_target_intervals']
+    if exists(ROOT/'daemon_constructor_extent_checks.json'):
+        constructor_extent=json.loads(read(ROOT/'daemon_constructor_extent_checks.json'))
+        extent_audit=json.loads(read(ROOT/'daemon_constructor_extent_audit.json'))
+        manifest['validation']['daemon_constructor_extent_increment_checks']=constructor_extent['verified_counts']
+        manifest['validation']['daemon_constructor_extent_static_scope']=constructor_extent['scope']
+        manifest['validation']['daemon_constructor_extent_independent_checks']=extent_audit['independent_totals']
+        manifest['validation']['daemon_constructor_extent_source_queries_unsat']=len(extent_audit['source_proofs'])
+        manifest['validation']['daemon_constructor_extent_interpretation_controls']=len(extent_audit['interpretation_controls'])
+        manifest['validation']['daemon_constructor_extent_new_target_intervals']=extent_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
