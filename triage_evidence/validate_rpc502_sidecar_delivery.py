@@ -533,6 +533,7 @@ def main():
     if exists(BASE/'daemon_record_spans_report.md'):reports.add(BASE/'daemon_record_spans_report.md')
     if exists(BASE/'daemon_resize_callers_report.md'):reports.add(BASE/'daemon_resize_callers_report.md')
     if exists(BASE/'daemon_record_selection_report.md'):reports.add(BASE/'daemon_record_selection_report.md')
+    if exists(BASE/'daemon_record_storage_report.md'):reports.add(BASE/'daemon_record_storage_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2847,6 +2848,16 @@ def main():
         manifest['validation']['daemon_record_selection_source_queries_unsat']=len(selection_audit['source_proofs'])
         manifest['validation']['daemon_record_selection_interpretation_controls']=len(selection_audit['interpretation_controls'])
         manifest['validation']['daemon_record_selection_new_target_intervals']=selection_audit['new_target_intervals']
+    if exists(ROOT/'daemon_record_storage_checks.json'):
+        storage=json.loads(read(ROOT/'daemon_record_storage_checks.json'))
+        storage_audit=json.loads(read(ROOT/'daemon_record_storage_audit.json'))
+        manifest['validation']['daemon_record_storage_increment_checks']=storage['verified_counts']
+        manifest['validation']['daemon_record_storage_static_scope']=storage['scope']
+        manifest['validation']['daemon_record_storage_independent_checks']=storage_audit['independent_totals']
+        manifest['validation']['daemon_record_storage_composition_checks']=storage_audit['composition_counts']
+        manifest['validation']['daemon_record_storage_source_queries_unsat']=len(storage_audit['source_proofs'])
+        manifest['validation']['daemon_record_storage_interpretation_controls']=len(storage_audit['interpretation_controls'])
+        manifest['validation']['daemon_record_storage_new_target_intervals']=storage_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
