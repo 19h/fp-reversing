@@ -2123,3 +2123,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. The recovered cleanup ABI preserves raw status through a saved source cell, emits typed/data retirement requests and writes null through the saved parser output.
+
+## Parser caller and command dispatch increment
+
+The private command field has encoded tag0x45e5918e, transformed type0xa129 and four-byte scalar payload. Decoded values0x88594abe and0x73eba01e select distinct bodies; native external selector/message identity remains unknown. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

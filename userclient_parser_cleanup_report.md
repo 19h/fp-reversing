@@ -192,3 +192,7 @@ For k finite valid list nodes, selected destruction takes O(k) source work and O
 - **QG5**: Saved status versus X23 traversal role, cell address versus H, valid pending storage versus all incoming results, normalized metadata versus descriptor identity and emitted requests versus native deallocation are distinct.
 - **QG6**: Dual-image words, original pointers/symbols/descriptors, 31 nonvacuous formulas, six predecessor rechecks, 2,048 bank inputs and four custody controls support bounded claims.
 - **QG7**: Ranked continuation retains incoming-state composition, native ownership/locking, caller continuation, remaining types and cross-layer correlation.
+
+## Parser caller and command dispatch increment
+
+The actual parser caller now has a conditional command-field lookup, protected scalar reader and exact two-value switch. The first command links to the existing hash-input reader; second-body semantics, native storage/ownership and cross-layer correlation remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

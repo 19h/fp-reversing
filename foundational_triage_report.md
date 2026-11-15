@@ -1994,3 +1994,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. Selected parser failure now has exact status preservation, null output and container/list retirement requests; native ownership and all incoming result paths remain open.
+
+## Parser caller and command dispatch increment
+
+The parser caller reads a tagged u32 command through protected node bytes; native external byte identity and transaction correlation remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

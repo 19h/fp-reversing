@@ -197,3 +197,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It establishes selected pending/list/container retirement requests and parser failure output. The valid-node cleanup contract does not establish every incoming allocation or lookup state.
+
+## Parser caller and command dispatch increment
+
+The actual parser caller now has a conditional command-field lookup, protected scalar reader and exact two-value switch. The first command links to the existing hash-input reader; second-body semantics, native storage/ownership and cross-layer correlation remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

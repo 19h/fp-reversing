@@ -1763,3 +1763,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. Selected failure/container/list and valid-pending-node cleanup contracts are established; complete incoming allocation-result paths, native epochs, other types and daemon correlation remain open.
+
+## Parser caller and command dispatch increment
+
+This increment adds44 nonvacuous new source queries over685 selected instruction locations and four predecessor rechecks. Caller cleanup callback0x1a, the second-command body and a successful native daemon/provider exchange remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

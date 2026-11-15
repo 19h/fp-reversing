@@ -578,6 +578,7 @@ def main():
     if exists(BASE/'userclient_record_publication_report.md'):reports.add(BASE/'userclient_record_publication_report.md')
     if exists(BASE/'userclient_record_metadata_report.md'):reports.add(BASE/'userclient_record_metadata_report.md')
     if exists(BASE/'userclient_parser_cleanup_report.md'):reports.add(BASE/'userclient_parser_cleanup_report.md')
+    if exists(BASE/'userclient_command_dispatch_report.md'):reports.add(BASE/'userclient_command_dispatch_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3300,6 +3301,15 @@ def main():
         manifest['validation']['userclient_parser_cleanup_new_source_queries_unsat']=len(parser_cleanup_audit['source_proofs'])
         manifest['validation']['userclient_parser_cleanup_prior_source_queries_rechecked']=len(parser_cleanup_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_parser_cleanup_conditional_parser_cleanup_contract_established']=parser_cleanup['conditional_parser_cleanup_contract_established']
+    if exists(ROOT/'userclient_command_dispatch_checks.json'):
+        command_dispatch=json.loads(read(ROOT/'userclient_command_dispatch_checks.json'))
+        command_dispatch_audit=json.loads(read(ROOT/'userclient_command_dispatch_audit.json'))
+        manifest['validation']['userclient_command_dispatch_increment_checks']=command_dispatch['verified_counts']
+        manifest['validation']['userclient_command_dispatch_static_scope']=command_dispatch['scope']
+        manifest['validation']['userclient_command_dispatch_independent_checks']=command_dispatch_audit['independent_totals']
+        manifest['validation']['userclient_command_dispatch_new_source_queries_unsat']=len(command_dispatch_audit['source_proofs'])
+        manifest['validation']['userclient_command_dispatch_prior_source_queries_rechecked']=len(command_dispatch_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_command_dispatch_conditional_command_dispatch_contract_established']=command_dispatch['conditional_command_dispatch_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

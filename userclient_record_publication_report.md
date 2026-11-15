@@ -216,3 +216,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It recovers the separate selected pending-node and retained-container failure paths. The counterfactual other-status target-selection cut does not by itself supply the cleanup phase/storage premises.
+
+## Parser caller and command dispatch increment
+
+The actual parser caller now has a conditional command-field lookup, protected scalar reader and exact two-value switch. The first command links to the existing hash-input reader; second-body semantics, native storage/ownership and cross-layer correlation remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

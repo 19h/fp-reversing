@@ -1869,3 +1869,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. This increment establishes internal cleanup/status/output channels and no additional Mach right, endpoint, emission site or successful daemon-kext exchange.
+
+## Parser caller and command dispatch increment
+
+The recovered command switch and callback indices are internal control flow; this increment establishes no new Mach port, right or emission site. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.

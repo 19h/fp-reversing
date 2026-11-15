@@ -1974,3 +1974,7 @@ The [metadata follow-up](userclient_record_metadata_report.md) establishes this 
 ## Parser cleanup increment
 
 The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. The failure dispatcher joins a successor-based container destructor and valid pending-node cleanup to null output and saved-status resume, with distinct original typed descriptors.
+
+## Parser caller and command dispatch increment
+
+The selected obfuscated blocks implement caller-specific tag lookup, a type/length-checked scalar reader and a two-value command switch. W23 meaning depends on the control-flow phase. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
