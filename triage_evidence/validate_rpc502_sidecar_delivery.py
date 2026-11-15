@@ -536,6 +536,7 @@ def main():
     if exists(BASE/'daemon_record_storage_report.md'):reports.add(BASE/'daemon_record_storage_report.md')
     if exists(BASE/'daemon_record_walk_report.md'):reports.add(BASE/'daemon_record_walk_report.md')
     if exists(BASE/'daemon_alternate_word_report.md'):reports.add(BASE/'daemon_alternate_word_report.md')
+    if exists(BASE/'daemon_storage_flag_report.md'):reports.add(BASE/'daemon_storage_flag_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2879,6 +2880,15 @@ def main():
         manifest['validation']['daemon_alternate_word_interpretation_controls']=len(alt_audit['interpretation_controls'])
         manifest['validation']['daemon_alternate_word_proof_cut_contexts']=len(alt_audit['proof_cut_contexts_verified'])
         manifest['validation']['daemon_alternate_word_new_target_intervals']=alt_audit['new_target_intervals']
+    if exists(ROOT/'daemon_storage_flag_checks.json'):
+        flag=json.loads(read(ROOT/'daemon_storage_flag_checks.json'))
+        flag_audit=json.loads(read(ROOT/'daemon_storage_flag_audit.json'))
+        manifest['validation']['daemon_storage_flag_increment_checks']=flag['verified_counts']
+        manifest['validation']['daemon_storage_flag_static_scope']=flag['scope']
+        manifest['validation']['daemon_storage_flag_independent_checks']=flag_audit['independent_totals']
+        manifest['validation']['daemon_storage_flag_source_queries_unsat']=len(flag_audit['source_proofs'])
+        manifest['validation']['daemon_storage_flag_scalar_controls']=len(flag_audit['scalar_controls'])
+        manifest['validation']['daemon_storage_flag_new_target_intervals']=flag_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

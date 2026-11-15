@@ -1619,3 +1619,7 @@ The [counted-walk follow-up](daemon_record_walk_report.md) distinguishes cursor 
 ## Alternative word reader and saved context
 
 The [alternative-reader report](daemon_alternate_word_report.md) establishes the U+0 four-byte reader at `0x100357e2c`: four address-dependent cached-word masks, full-width big-endian u32 assembly and the common continuation interface. Its final-byte whitening cancels in assembly. It restores caller X0 from SP+0xa8 and rebuilds the phases needed by the span gates. Forty-five source proofs, four interpretation controls and 330 independent setup/custody replay visits qualify this source contract. Retained calls select the clear route; native alternative admission, cache publication epoch and daemon-kext transaction pairing remain unknown. No new port emission is established.
+
+## Storage-selector production and retained custody
+
+The [storage-selector follow-up](daemon_storage_flag_report.md) traces the private pointer/header/tag decision to outer SP+0x662f and the later U+0x28 reader flag. The 76 retained constructors read context J+0x1c word 6 with tag `0x4e40e176`, produce selector byte 1, and retain it through 606 intervals/1,620,162 visits and 456 phase snapshots. All 608 checked successful U exports have U+0 zero and mask4 clear. Sixteen source proofs, eight scalar controls and 4,916 independent replay visits qualify the increment. The b=0 constructor branch at `0x1008c0750`, native caller/cache epoch and daemon-kext pairing remain unresolved; no new port emission is established.
