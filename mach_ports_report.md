@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current digest-record structure increment: The [structure/epoch report](daemon_digest_record_structure_report.md) recovers local packed spans, indexed fields and tempered byte inputs. Its 316 post-read overwrites concern private owner lifetimes. This establishes no incoming/outgoing Mach port, right disposition or emission site; a native buffer/selector/port/transaction join remains required for daemon-kext pairing.
+
 Current digest-body origins increment: The [writer-lineage report](daemon_digest_body_origins_report.md) resolves the local producers of all 48 retained digest-body bytes across declared owner growth. Its 316 source copy links add no Mach name, right disposition, incoming/outgoing port or message emission site. A separate buffer/selector/owner/transaction join is still required to establish native daemon-kext pairing.
 
 Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) establishes a complete32 B private stream, caller arena copy, private overwrite and pending104 B malloc. It adds no Mach name/right/disposition or emission site. Local pointer transfers and two logical returns do not establish native daemon-kext transport pairing.

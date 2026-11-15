@@ -1,5 +1,7 @@
 # fairplayd: packed scalar words and bit-count producer
 
+Subsequent applications: [the digest-record structure report](daemon_digest_record_structure_report.md) checks this general contract against four more packed fields per context, decoding 48/1/28/1 with bit counts 6/1/5/1. Actual scalar/count source writers, complete producer/store paths and twenty-six count iterations are verified; all fifty shared source proofs and the ring normalization are freshly reconstructed. Native schema and transport identity remain unknown.
+
 The longer word producer at `0x100c29254..0x100c29804` now has a compact, composed source proof. It combines shifted auxiliary bits, a five-bit count field and a decoded unsigned scalar, then applies an XOR representation. Its upstream count loop computes `max(1, bit_length(scalar))`, including count 1 for zero. The three retained fields decode to scalars **76, 20 and 1**. Complete native field names, upstream scalar admission and daemon-kext buffer identity remain unknown. [PW1-PW5; PW-A1-PW-A5]
 
 This resolves the general word-producer reduction left open by the [append-field report](daemon_append_fields_report.md). The separate two-byte producer remains open. No target interval, guest input, owner or API-return premise is added. The 304-member non-NULL scope and six earlier complete producer replays remain pinned prior evidence; they are not rerun or counted as new checks. [PW2-PW4]

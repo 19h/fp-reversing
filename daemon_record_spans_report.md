@@ -1,5 +1,7 @@
 # fairplayd: local record spans, scalar payload and selected resize context
 
+Subsequent span evidence: [the digest-record structure report](daemon_digest_record_structure_report.md) applies the same packed-scalar contract to spans 48 B at offset 77 and 28 B at offset 97, both ending at 125, with count-like scalar 1 at offsets 85/105. This supports a conditional 20 B prefix/child interpretation while preserving unknown native schema and final 8 B payload semantics. Its complete incoming-read epoch scan also documents the old-owner overwrites excluded from the earlier restricted counter.
+
 The first constructor append calculates **4*4+20=36**, adds that span to the old header scalar 20, and supplies 56 as the requested header to the resize interface. The resulting 57 B buffer contains a 36-byte span beginning at offset 21, including four encoded scalar words with values **0, 1, 0, 1** beginning at offset 41. The arithmetic, serialized span, payload placement and allocation increase agree. [RS1-RS5; RS-A1-RS-A5]
 
 The later 77 B buffer retains that span and contains another 20-byte span at offset 57. Its next resize reads the scalar **20 at offset 57**, rather than the enclosing scalar **76 at offset 1**, and requests 97 B using target scalar 40. This resolves the selected record context for that request. The previous extent-minus-one relationship applies to the enclosing offset-1 field; it is not a general interpretation of every span field. [RS2-RS5; RS-A3-RS-A6]

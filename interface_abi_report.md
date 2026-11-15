@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current digest-record structure increment: The [structure/epoch report](daemon_digest_record_structure_report.md) recovers local spans [77,125)/48 B and [97,125)/28 B, a conditional 20 B prefix interpretation, count-like scalar 1 at +85/+105 and an 8 B opaque payload at +117. Packing bit counts 6/5/1 remain distinct from decoded scalar values. Bank indices 3/4 and actual tempering inputs are source-bound; native record types, payload width/type and daemon-kext transaction identity remain unknown.
+
 Current digest-body origins increment: The [writer-lineage report](daemon_digest_body_origins_report.md) establishes the retained 48 B body's source storage contract: eight BE32 words after XOR `0xe4b5bf34`, two BE16 words after XOR `0x534c` and twelve surviving address/cache/text-encoded bytes, all after the existing owner-offset mask normalization. Exact declared allocation/free boundaries and copy epochs are retained. These widths do not establish application field types, a Mach ABI or a daemon-kext buffer join.
 
 Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) recovers a48 B accessed equality/unsigned-greater record, counter-zero admission partition, repeated624-word refills and a32 B arena copy. The generator status pointer and adapter status pointer do not alias in retained states; adapter delta is16*low16(input32-expected32). A104 B allocation remains pending.
