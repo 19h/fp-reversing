@@ -540,6 +540,7 @@ def main():
     if exists(BASE/'daemon_alternative_fill_report.md'):reports.add(BASE/'daemon_alternative_fill_report.md')
     if exists(BASE/'daemon_alternative_header_report.md'):reports.add(BASE/'daemon_alternative_header_report.md')
     if exists(BASE/'daemon_child_operation_report.md'):reports.add(BASE/'daemon_child_operation_report.md')
+    if exists(BASE/'daemon_child_payload_report.md'):reports.add(BASE/'daemon_child_payload_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2922,6 +2923,15 @@ def main():
         manifest['validation']['daemon_child_operation_source_queries_unsat']=len(child_audit['source_proofs'])
         manifest['validation']['daemon_child_operation_scalar_controls']=len(child_audit['scalar_controls'])
         manifest['validation']['daemon_child_operation_new_target_intervals']=child_audit['new_target_intervals']
+    if exists(ROOT/'daemon_child_payload_checks.json'):
+        payload=json.loads(read(ROOT/'daemon_child_payload_checks.json'))
+        payload_audit=json.loads(read(ROOT/'daemon_child_payload_audit.json'))
+        manifest['validation']['daemon_child_payload_increment_checks']=payload['verified_counts']
+        manifest['validation']['daemon_child_payload_static_scope']=payload['scope']
+        manifest['validation']['daemon_child_payload_independent_checks']=payload_audit['independent_totals']
+        manifest['validation']['daemon_child_payload_source_queries_unsat']=len(payload_audit['source_proofs'])
+        manifest['validation']['daemon_child_payload_scalar_controls']=len(payload_audit['scalar_controls'])
+        manifest['validation']['daemon_child_payload_new_target_intervals']=payload_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
