@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) identifies 0x10071062c/0x100710630 as count-pointer formation/publication and 0x100595f84 as the caller of a fixed 24 B snapshot copy into a 64 B container. The copy uses eight post-incrementing byte pairs repeated three times on the retained route. All 912 pointer paths and 76 copies pass checks; the remaining 14 snapshot bytes have unknown application roles.
+
 Current count/data-flow increment: [The count-flow report](daemon_payload_count_flow_report.md) reduces the saved count path to zero_extend(N32)+0x4a2cb691c686c716 and proves the original cursor/word/tail conditions. Count 6 advances the direct reader from index 0 to 4 and copies only indices 4/5 into the scratch prefix. Sixteen source obligations and 666 replayed visits pass; low-count caller admission and native identities remain unknown.
 
 Current payload-scalar increment: [The scalar-mixer report](daemon_payload_scalar_mixers_report.md) proves source bodies 0x100a630cc and 0x100a86930 implement the same affine u32 transform after their shared BE32 reader. Exact triple-XOR/addition, multiply/add and carry-network contracts compose to V=u32(D*0x01ef2eff+0x00833631), with inverse multiplier 0xa46fd0ff. The second retained input has mixed scratch producer history; application names and native joins remain unknown.
