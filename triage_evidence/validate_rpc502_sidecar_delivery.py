@@ -562,6 +562,7 @@ def main():
     if exists(BASE/'daemon_saved_base_statefile_lineage_report.md'):reports.add(BASE/'daemon_saved_base_statefile_lineage_report.md')
     if exists(BASE/'userclient_uidlist_cleanup_report.md'):reports.add(BASE/'userclient_uidlist_cleanup_report.md')
     if exists(BASE/'userclient_hash_table_bootstrap_report.md'):reports.add(BASE/'userclient_hash_table_bootstrap_report.md')
+    if exists(BASE/'userclient_hash_table_initializer_report.md'):reports.add(BASE/'userclient_hash_table_initializer_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3141,6 +3142,15 @@ def main():
         manifest['validation']['userclient_hash_table_bootstrap_new_source_queries_unsat']=len(hash_bootstrap_audit['source_proofs'])
         manifest['validation']['userclient_hash_table_bootstrap_prior_source_queries_rechecked']=len(hash_bootstrap_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_hash_table_bootstrap_conditional_global_hash_table_bootstrap_established']=hash_bootstrap['conditional_global_hash_table_bootstrap_established']
+    if exists(ROOT/'userclient_hash_table_initializer_checks.json'):
+        hash_initializer=json.loads(read(ROOT/'userclient_hash_table_initializer_checks.json'))
+        hash_initializer_audit=json.loads(read(ROOT/'userclient_hash_table_initializer_audit.json'))
+        manifest['validation']['userclient_hash_table_initializer_increment_checks']=hash_initializer['verified_counts']
+        manifest['validation']['userclient_hash_table_initializer_static_scope']=hash_initializer['scope']
+        manifest['validation']['userclient_hash_table_initializer_independent_checks']=hash_initializer_audit['independent_totals']
+        manifest['validation']['userclient_hash_table_initializer_new_source_queries_unsat']=len(hash_initializer_audit['source_proofs'])
+        manifest['validation']['userclient_hash_table_initializer_prior_source_queries_rechecked']=len(hash_initializer_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_hash_table_initializer_conditional_hash_table_initializer_contract_established']=hash_initializer['conditional_hash_table_initializer_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

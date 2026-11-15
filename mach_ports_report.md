@@ -1806,3 +1806,8 @@ The selected cleanup slices add ownership/control-flow context and no newly reco
 ## Shared hash-table bootstrap during teardown
 
 The [shared-table bootstrap report](userclient_hash_table_bootstrap_report.md) recovers the marker-unequal arm's module-global `site.FPHashTable` guard, 16 B allocation request, encoded initializer/header join, exact output-status publication gate and rollback. A still-null holder after failure selects UIDList node free and saved-successor continuation even for an unequal marker. Twelve new source obligations and five predecessor rechecks pass. Full table initialization/processing, node semantics, task references and native pairing remain unknown.
+
+
+## Shared table: backing array and initializer completion
+
+The [initializer report](userclient_hash_table_initializer_report.md) closes the recovered token0xabd constructor path: an encoded count128/size-helper protocol supplies 3072 B to `_IOMallocTypeVarImpl`, followed by 128 entries at a 24 B stride. Raw defaults, 512 B of untouched entry padding, null/success output words and canary/return conditions are source-established. Twenty-one new obligations and three predecessor rechecks pass. Other token domains, table processing, native allocation/lifetimes and daemon-kext pairing remain unknown.
