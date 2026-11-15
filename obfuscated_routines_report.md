@@ -1853,3 +1853,7 @@ The [record-extension increment](daemon_record_extension_report.md) identifies t
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) recovers 0x10084fcc4 as a fixed-phase descending byte-copy loop with an XOR mask selected by the destination offset modulo sixteen. Its zero-index route selects the known optional output/status path. The contextual itgr literal and twenty-byte extent do not establish a complete algorithm or public schema.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) classifies 0x100be0454 as a masked big-endian word serializer, 0x100427b0c as a descriptor wrapper, 0x100411480 as the retained middle-block table transform, and 0x100aaa324 as a twenty-byte two/sixteen/two formatter. State encoding matches the earlier SHA-1 representation; message and transform-algorithm identity remain unknown.

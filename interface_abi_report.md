@@ -2002,3 +2002,7 @@ The [record-extension increment](daemon_record_extension_report.md) follows orig
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) establishes the three bank-field read interfaces, exact input/output byte addresses, positive descending counter contract and original loop/exit dispatch words. Bank setup/current-frame custody, future body admission and native transport remain separate unresolved premises.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) recovers the private wrapper/descriptor interface at 0x100427b0c -> 0x100411480: input S+2, separate sixteen-byte output, pointer-dependent encoded control and a four-byte result copied back to the outer record. The formatter preserves S[0:2] and S[18:20]. These are retained source interfaces; no public IPC selector or native ABI type is established.

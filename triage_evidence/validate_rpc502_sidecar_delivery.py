@@ -544,6 +544,7 @@ def main():
     if exists(BASE/'daemon_child_loop_report.md'):reports.add(BASE/'daemon_child_loop_report.md')
     if exists(BASE/'daemon_record_extension_report.md'):reports.add(BASE/'daemon_record_extension_report.md')
     if exists(BASE/'daemon_record_banks_report.md'):reports.add(BASE/'daemon_record_banks_report.md')
+    if exists(BASE/'daemon_record_input_origin_report.md'):reports.add(BASE/'daemon_record_input_origin_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2960,6 +2961,14 @@ def main():
         manifest['validation']['daemon_record_banks_independent_checks']=banks_audit['independent_totals']
         manifest['validation']['daemon_record_banks_source_queries_unsat']=len(banks_audit['source_proofs'])
         manifest['validation']['daemon_record_banks_finite_controls']=banks_audit['finite_controls']
+    if exists(ROOT/'daemon_record_input_origin_checks.json'):
+        origin=json.loads(read(ROOT/'daemon_record_input_origin_checks.json'))
+        origin_audit=json.loads(read(ROOT/'daemon_record_input_origin_audit.json'))
+        manifest['validation']['daemon_record_input_origin_increment_checks']=origin['verified_counts']
+        manifest['validation']['daemon_record_input_origin_static_scope']=origin['scope']
+        manifest['validation']['daemon_record_input_origin_independent_checks']=origin_audit['independent_totals']
+        manifest['validation']['daemon_record_input_origin_source_queries_unsat']=len(origin_audit['source_proofs'])
+        manifest['validation']['daemon_record_input_origin_alias_controls']=origin_audit['alias_controls']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

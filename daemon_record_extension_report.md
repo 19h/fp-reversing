@@ -133,3 +133,7 @@ Existing reference data suffice for this increment. The IDA instance-discovery a
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) resolves nominal source producers for the three missing bank fields and proves the local descending masked-byte copy. It leaves all twenty-four field bytes undefined in the 608 retained normal exports and reports conditional output predictions without new target intervals or native epoch claims.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) traces K+0xc4b0 back through the formatter at 0x100aaa324 to five-word serialization and a separate middle-sixteen-byte transform. Twenty actual formatter stores survive to the retained stop in both normal classes. The current missing banks and any later native execution remain unresolved.

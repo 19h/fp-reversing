@@ -158,3 +158,7 @@ Existing reference data suffice; IDA is not accessed. No new target interval, na
 | Low | Extend the 104-site literal census to pair/aliased/other-width stores with frame identity | Current census is intentionally single-form and does not prove all-path preservation. |
 
 **QG1**: factual source, ABI and data/control-flow analysis. **QG2**: RB-A1-RB-A6 list dependencies and falsification probes. **QG3**: three bank origins, local masked copy, descending control and retained predictions are covered; the full interface investigation remains active. **QG4**: byte units, widths, modular arithmetic, count/range bounds and complexity are explicit. **QG5**: setup/current-frame compatibility, memory reuse, direct zero-count wrap, conditional predictions and shared completion are distinguished. **QG6**: pinned primary artifacts, original bytes/fixups, independent replay and fresh source proofs establish provenance. **QG7**: impact-labeled adjacent interfaces and unknowns are enumerated.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) establishes the actual producers of the twenty-byte input used here: S[0:2] || T16 || S[18:20]. The formatter stores are observed in retained parent source traces, while the masked-copy result above remains conditional on the still-missing banks and memory admission. No new post-frontier interval executes.

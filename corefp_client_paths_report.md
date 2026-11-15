@@ -457,3 +457,7 @@ The [record-extension increment](daemon_record_extension_report.md) advances the
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) derives a conditional twenty-byte transformation at output offsets 165 through 184 from the retained daemon frontier. The input producer, native caller epoch and mapping to CoreFP or a kext transaction remain unknown.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) supplies source lineage for the retained twenty-byte input: serialized head/tail bytes surround a transformed sixteen-byte middle. It does not identify a CoreFP public operation, a particular source message, or native client/daemon/kext transaction correspondence.

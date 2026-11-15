@@ -1873,3 +1873,7 @@ The [record-extension increment](daemon_record_extension_report.md) establishes 
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) links three nominal setup producers to the masked-byte consumer through original-source contracts and eight frozen setup projections. It independently checks private last-writer bytes and records SP+0x990/+0x998 reuse, including a four-byte-to-eight-byte overwrite; later snapshots do not replace earlier selector definitions.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) distinguishes the serializer frame F from the later constructor frame K, joins the twenty-byte input to its actual producers, and records state-word overwrites before the middle-block helper. The formatter requires a nonalias premise for snapshot composition; a source control demonstrates the overlapping-output exception. Native environmental/caller and transport correspondence remain unknown.

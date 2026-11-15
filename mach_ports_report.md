@@ -1747,3 +1747,7 @@ The [record-extension increment](daemon_record_extension_report.md) establishes 
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) classifies private bank producers and a local masked-byte loop. It establishes no new incoming/outgoing Mach port, right transfer, emission location or daemon-kext transaction; native object/consumer/transport joins remain unknown.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) establishes private serialization, descriptor calls and a preserved twenty-byte buffer. These internal calls establish no new incoming/outgoing Mach port, right transfer, emission location or matched daemon-kext transaction; transport correspondence remains unknown.

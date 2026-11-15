@@ -1645,3 +1645,7 @@ The [record-extension increment](daemon_record_extension_report.md) continues 30
 ## Record-bank follow-up
 
 The [record-bank increment](daemon_record_banks_report.md) identifies nominal producers for SP+0x390/+0x398/+0x3a0 and recovers a descending byte copy with a sixteen-position XOR mask. All 608 retained normal frontiers still lack the bank definitions; a twenty-byte result is conditional on their custody and memory admission. Native caller and daemon-kext pairing remain unknown.
+
+## Record-input provenance follow-up
+
+The [record-input provenance increment](daemon_record_input_origin_report.md) establishes five-word serialization, a descriptor-driven middle-sixteen-byte transform and the exact two/sixteen/two formatter splice. Two retained normal classes supply 10,808 independently replayed source visits and six universal obligations; all 608 prior normal frontier input values agree. The message, transform algorithm, current missing-bank epoch and native daemon-kext pairing remain unknown; the full goal remains active.
