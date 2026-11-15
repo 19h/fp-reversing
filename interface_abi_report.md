@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) establishes conditional continuity of the 8 B absolute alias at outer SP+0x7f38 through SIDB admission, metadata/read controls, prefix routing and SIDN cleanup. All 76 retained constructor parents reload J and publish J+28 at SP+0x71c0. The symbolic composition uses original byte-memory loads/stores; equal endpoint SP, X21 preservation and disjoint API/output effects remain explicit premises.
+
 Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) maps context+28 count4, +32 data6 and +38 tail14 to the fixed 24 B container snapshot. The last 14 bytes have source-established zero initialization and retained raw-success write exclusion; their application type remains unknown. It also attributes SP+0x9b8 to the original X22 store at 0x1004cf268, with a conditional route to SP+0x7f38.
 
 Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) recovers the original SP+0x9b8 to SP+0x7f38 context-base copy and establishes the conditional count-pointer route through 149 stages per normal representative. The 296 byte-cell/PC links include 18 API returns and 18 derived exports. Disjoint conditional entry roots total 116 B per lineage; whole-machine initializer and native transaction continuity remain unproved.

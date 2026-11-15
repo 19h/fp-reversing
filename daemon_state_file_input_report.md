@@ -1,5 +1,7 @@
 # SIDB file input, timestamp publication and first-word codec
 
+Base-lineage continuation: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) verifies the saved outer-frame context pointer through the selected exact-count read, timestamp and synthetic-prefix controls into all 76 retained SIDN constructor parents. The read payload and metadata words remain declared output controls; no native file contents or read effect is inferred.
+
 The SIDB adapter requests a single read into the returned allocation, compares the full 64-bit read return with the metadata size, and frees the buffer on inequality. Equality publishes the private buffer pointer, requests a per-object write lock, and demands two further metadata words. Those words match current-SDK modification-time seconds/nanoseconds and are copied to the SIDB object's+8/+16 fields. After unlock and close requests, the retained continuation stops before reading the first undefined buffer byte. A separate original-source symbolic proof reduces the first four-byte construction to `BE32(buffer[0:4]) XOR 0x6703cce9`. No file content, native filesystem effect, native allocation/retirement or daemon-kext transaction is observed. [SI1-SI6; SI-A1-SI-A8]
 
 ```text

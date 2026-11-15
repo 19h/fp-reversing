@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) joins the original saved-base alias to 76 constructor base reloads/count-pointer stores through retained file-control branches. It distinguishes API return effects, scalar-output resumptions and twelve zero-visit stages. The native filesystem inputs and object lifetime remain unknown; the prior 116 B per later-lineage entry premises remain dependencies.
+
 Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) resolves initialization and write coverage of context+[32,52): 20 B explicitly cleared, first six bytes replaced, final 14 B unchanged in the checked raw-success epochs. Ordered fixture overlays, encoded failure states, network freshness and native lifetime are distinguished. The earlier saved-base route adds 304 checked PC/byte links across 16 cases.
 
 Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) verifies source pointer-byte continuity through the selected constructor, emitter, mixing, descriptor and growth models for both normal payload representatives. Independent ordering, invalidation and export checks retain explicit API and 116 B per-lineage entry premises. The earlier saved context-base copy is source-bound; its full intervening base-pointer route and native owner/transport identity remain unknown.

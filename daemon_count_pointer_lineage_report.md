@@ -1,6 +1,8 @@
 # fairplayd: conditional count-pointer lineage and saved context base
 
-Earlier-base follow-up: [The network-storage report](daemon_context_network_storage_report.md) identifies 0x1004cf268 as the X22 store to SP+0x9b8 and verifies its eight-byte route through 20 stages per pathname-family case to the SP+0x7f38 alias. The larger join through selected state-file branches to the later count-pointer producer remains unknown; PL-A4 below retains that larger gap.
+Earlier-base continuation: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) closes the conditional state-file component route into constructor parents 0 and 17, as part of all 76 retained contexts. Combined with the exact source anchors here and in the storage/origin reports, the earlier saved-base component gap is closed. Whole-machine initializer/control and native ownership remain unknown.
+
+Earlier-base follow-up: [The network-storage report](daemon_context_network_storage_report.md) identifies 0x1004cf268 as the X22 store to SP+0x9b8 and verifies its eight-byte route through 20 stages per pathname-family case to the SP+0x7f38 alias. The state-file follow-up closes that conditional component join; PL-A4 below describes the original increment's scope.
 
 The original count-pointer store at `0x100710630` now has a checked byte lineage to the later pointer read at `0x10083e780` for both retained normal payload representatives. Each lineage crosses 149 stages, including nine derived exports and explicit API/initializer premises. The eight pointer bytes remain unchanged after their original store. This establishes conditional byte provenance through the retained models. Whole-machine initializer/caller continuity and native object/transport identity remain unknown. [PL1-PL5; PL-A1-PL-A5]
 
@@ -82,7 +84,7 @@ Extraction takes O(image bytes+parent bytes+recorded visits+effect bytes+selecte
 | Bounded continuation | Impact | Unresolved evidence |
 | --- | --- | --- |
 | Extend the saved context-base attribution | High | Local writer established in the storage follow-up; caller/context lifetime remains unknown |
-| Complete the earlier base-pointer boundary chain | Medium | Pathname-family to selected SIDB/SIDN constructor parents, including modeled file-control forks |
+| Recover earlier caller/context lifetime | Medium | Conditional pathname-family to SIDB/SIDN base chain established by the state-file follow-up; whole-machine/native admission remains unknown |
 | Establish field validity and remaining snapshot roles | Medium | Network-count admission and producers/consumers of the 14 copied bytes beyond count+six-byte data |
 | Join retained private owners to transport | High | Same native transaction's buffer/selector/Mach right and emission/receive evidence |
 

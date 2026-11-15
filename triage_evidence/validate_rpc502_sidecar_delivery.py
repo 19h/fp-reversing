@@ -559,6 +559,7 @@ def main():
     if exists(BASE/'daemon_count_pointer_origin_report.md'):reports.add(BASE/'daemon_count_pointer_origin_report.md')
     if exists(BASE/'daemon_count_pointer_lineage_report.md'):reports.add(BASE/'daemon_count_pointer_lineage_report.md')
     if exists(BASE/'daemon_context_network_storage_report.md'):reports.add(BASE/'daemon_context_network_storage_report.md')
+    if exists(BASE/'daemon_saved_base_statefile_lineage_report.md'):reports.add(BASE/'daemon_saved_base_statefile_lineage_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3112,6 +3113,14 @@ def main():
         manifest['validation']['daemon_context_network_storage_new_source_queries_unsat']=len(network_storage_audit['source_proofs'])
         manifest['validation']['daemon_context_network_storage_raw_success_network_storage_contract_established']=network_storage['raw_success_network_storage_contract_established']
         manifest['validation']['daemon_context_network_storage_conditional_saved_base_alias_established']=network_storage['conditional_saved_base_alias_established']
+    if exists(ROOT/'daemon_saved_base_statefile_lineage_checks.json'):
+        statefile_base=json.loads(read(ROOT/'daemon_saved_base_statefile_lineage_checks.json'))
+        statefile_base_audit=json.loads(read(ROOT/'daemon_saved_base_statefile_lineage_audit.json'))
+        manifest['validation']['daemon_saved_base_statefile_lineage_increment_checks']=statefile_base['verified_counts']
+        manifest['validation']['daemon_saved_base_statefile_lineage_static_scope']=statefile_base['scope']
+        manifest['validation']['daemon_saved_base_statefile_lineage_independent_checks']=statefile_base_audit['independent_totals']
+        manifest['validation']['daemon_saved_base_statefile_lineage_new_source_queries_unsat']=len(statefile_base_audit['source_proofs'])
+        manifest['validation']['daemon_saved_base_statefile_lineage_conditional_saved_base_to_count_producer_lineage_established']=statefile_base['conditional_saved_base_to_count_producer_lineage_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,8 +1,10 @@
 # fairplayd: count-pointer initialization and container snapshot
 
+Earlier-base continuation: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) closes the conditional state-file route into all 76 first-free base reloads/count-pointer stores. Its source-event anchors match this report's first-free intervals exactly. Native initializer/control and object lifetime remain unknown.
+
 Storage follow-up: [The network-storage report](daemon_context_network_storage_report.md) identifies original zeroing of J+[32,52), six overwritten data bytes and a 14 B tail preserved in checked raw-success controls. This supplies initialization/write-coverage evidence for the snapshot tail; its application meaning and a native constructor/publication/snapshot epoch join remain unknown.
 
-Current lineage extension: [The lineage report](daemon_count_pointer_lineage_report.md) establishes conditional preservation of the eight count-pointer bytes through 149 stages for each normal payload representative, while retaining 116 B of explicit entry roots per lineage. It separately identifies the earlier SP+0x7f38 producer at 0x1005d0f78. Whole-machine initializer continuity, the earlier base-pointer boundary chain and native lifetime remain unknown.
+Current lineage extension: [The lineage report](daemon_count_pointer_lineage_report.md) establishes conditional preservation of the eight count-pointer bytes through 149 stages for each normal payload representative, while retaining 116 B of explicit entry roots per lineage. It separately identifies the earlier SP+0x7f38 producer at 0x1005d0f78. The state-file follow-up closes the conditional earlier base-pointer boundary chain; whole-machine initializer continuity and native lifetime remain unknown.
 
 Original `0x10071062c..0x100710634` initializes the previously inherited count-pointer cell: `X9 = context + 0x1c; [outer_SP+0x71c0] = X9`. The retained constructor reloads that cell and passes it as the source of a 24 B copy into a newly allocated 64 B container at offset 24. This establishes a constructor-side pointer producer and its immediate use. Whole-machine initializer/caller continuity and native daemon-kext transaction identity remain unknown. [CP1-CP5; CP-A1-CP-A5]
 
@@ -80,7 +82,7 @@ CP3 extraction is O(P+V+E+32C) time and O(parent receipts+largest interval+selec
 | Bounded continuation | Impact | Specific unresolved evidence |
 | --- | --- | --- |
 | Establish initializer-to-current-caller control continuity | High | Caller/control lifetime across the inherited 116 B of separate entry premises; the later lineage report closes the conditional pointer-byte route |
-| Trace the earlier saved context-base cell and network-field admission | High | Local saved-base writers established by follow-ups; full earlier base route, count validity and constructor object epoch |
+| Trace the earlier saved context-base cell and network-field admission | High | Conditional earlier base route established by the state-file follow-up; count validity and native constructor object epoch remain unknown |
 | Identify the remaining 14 snapshot bytes | Medium | Explicit zero initialization and retained write exclusion established by the storage follow-up; independent application consumers/types remain unknown |
 | Join private owners to observed transport | High | Same native transaction's buffer, selector, Mach right and emission/receive evidence |
 

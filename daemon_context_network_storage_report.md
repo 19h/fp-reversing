@@ -1,8 +1,10 @@
 # fairplayd: network-data storage, zero tail and saved context-base alias
 
+State-file continuation: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) closes the conditional route from the family-case-0 SP+0x7f38 alias to all 76 retained constructor base reloads/count-pointer stores. It joins this report's earlier saved-base endpoint by exact interval/write identity. The larger whole-machine/native caller and object lifetime remains unknown.
+
 Original constructor stores clear a 20 B context region at +32. Four retained successful path-publication controls subsequently replace its first six bytes with network-record data and leave its final 14 bytes unchanged at zero. Two controls use nonzero data, excluding an inference based only on zero-valued samples. The later 24 B container snapshot copies the preceding four-byte count and the whole 20 B region. This resolves the local initialization and write-coverage roles of the previously unexplained 14 snapshot bytes; their application meaning remains unknown. Constructor/publication/snapshot native epoch continuity is not established. [NS1-NS6; NS-A1-NS-A5]
 
-The earlier saved context-base input also has a local producer: `0x1004cf268` stores X22 at outer SP+0x9b8. In all 16 retained pathname-family cases, those eight bytes survive to the `0x1005d0f74/0x1005d0f78` copy into SP+0x7f38. The full earlier-base-to-count-producer route through the state-file branches remains outside this increment. [NS2-NS4; NS-A4]
+The earlier saved context-base input also has a local producer: `0x1004cf268` stores X22 at outer SP+0x9b8. In all 16 retained pathname-family cases, those eight bytes survive to the `0x1005d0f74/0x1005d0f78` copy into SP+0x7f38. The state-file follow-up subsequently closes the conditional earlier-base-to-count-producer route; whole-machine/native lifetime remains unknown. [NS2-NS4; NS-A4]
 
 | Evidence | Primary provenance and scope |
 | --- | --- |
@@ -52,7 +54,7 @@ The saved-base producer follows the retained return from the pathname-family cal
 | Reload saved base | `0x1005d0f74: ldr x10,[sp,#0x9b8]` | J from the same cell |
 | Publish second stack alias | `0x1005d0f78: str x10,[sp,#0x7f38]` | J to `0x6800068038`, 8 B |
 
-For each of 16 cases, NS4 checks pathname-family intervals 8..27, ending just after the alias store. The 20 stages have 19 links: 18 declared API returns and one direct PC link. Across cases this gives 320 stages, 304 links, 288 API returns and `304 * 8 B = 2,432 B` of boundary comparisons. All 304 declared API memory spans are disjoint from the saved cell. The first stage contains its original store; subsequent stages contain no overlapping source write before the cut. These checks close this local saved-base route. They do not close its intervening route through selected state-file branches to the later count-pointer producer. [NS2-NS4; NS-A4]
+For each of 16 cases, NS4 checks pathname-family intervals 8..27, ending just after the alias store. The 20 stages have 19 links: 18 declared API returns and one direct PC link. Across cases this gives 320 stages, 304 links, 288 API returns and `304 * 8 B = 2,432 B` of boundary comparisons. All 304 declared API memory spans are disjoint from the saved cell. The first stage contains its original store; subsequent stages contain no overlapping source write before the cut. These checks close this local saved-base route. The state-file follow-up closes the selected intervening component route to the later count-pointer producer. [NS2-NS4; NS-A4]
 
 | Validation | Checked scope/result |
 | --- | --- |
@@ -82,7 +84,7 @@ Extraction uses O(parent bytes+selected visits+effect bytes) time and O(parent r
 | Bounded continuation | Impact | Unresolved evidence |
 | --- | --- | --- |
 | Join private owners to native transport | High | Same transaction's buffer, selector, Mach right and emission/receive sites |
-| Complete earlier base-pointer continuity | Medium | State-file branch joins from the new saved-base route to the later count-pointer producer; caller X22 lifetime |
+| Recover whole-machine base-pointer lifetime | Medium | Conditional state-file joins established by the follow-up; caller X22 lifetime remains unknown |
 | Establish remaining field semantics | Medium | Independent native producers/consumers of the 14-byte tail; no semantic type established here |
 | Establish network-field validity | Medium | Native property length/type, cache freshness and count admission beyond these six-index controls |
 
