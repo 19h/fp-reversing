@@ -2107,3 +2107,7 @@ The [shared parser ABI](userclient_container_staging_report.md) retains output a
 ## Record-node construction increment
 
 The [record-node ABI](userclient_record_nodes_report.md) separates cursor64, encoded tag32, type16, encoded length32, outcome and raw status. It specifies the original 32 B typed allocation and nullable exact-L+10 buffer request, then the private writer handoff; actual native identity, external controllability and complete serialization remain unknown.
+
+## Protected record-writer increment
+
+The [record-writer ABI](userclient_record_writer_report.md) maps the protected ten-byte header to BE32(T XOR success), BE16(U XOR0x365e) and BE32(L). For U=0x6685 it establishes exact-L payload copying and reader-formula compatibility under matching keys/storage epochs; native consumer linkage remains unknown.

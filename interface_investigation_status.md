@@ -1747,3 +1747,7 @@ The [FPTTLV staging and parser-entry report](userclient_container_staging_report
 ## Record-node construction increment
 
 The [post-header node increment](userclient_record_nodes_report.md) proves 15 new nonvacuous obligations across 358 selected instructions, with five predecessor rechecks and 768 bank inputs. Typed32 B node construction and exact L+10 buffer allocation are established conditionally; complete nonempty parsing and the full interface goal remain active.
+
+## Protected record-writer increment
+
+The [record-writer increment](userclient_record_writer_report.md) proves 16 new nonvacuous obligations over 260 new and 331 predecessor instruction PCs, with five predecessor rechecks. Header production and selected type0x6685 payload serialization are established conditionally; list publication and the full interface goal remain active.

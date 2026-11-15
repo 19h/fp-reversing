@@ -250,3 +250,7 @@ The [upstream container-staging report](userclient_container_staging_report.md) 
 ## Record-node construction increment
 
 The [upstream record-node constructor](userclient_record_nodes_report.md) supplies original 32 B FPTTLVNode allocation metadata and stores total extent at+0x10 and buffer at+0x18, matching the reader's accessed layout. Full header production, payload copy and list publication are still required to establish runtime producer-consumer identity.
+
+## Protected record-writer increment
+
+The [writer-side construction](userclient_record_writer_report.md) now proves a matching protected ten-byte header and type0x6685 exact-L payload copy using the same address-keyed mask. Writer/reader formula compatibility is established under matching epochs; publication of this node into the live reader list and original field identity remain unknown.

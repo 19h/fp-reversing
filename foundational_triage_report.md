@@ -1978,3 +1978,7 @@ The [input-staging/parser-entry increment](userclient_container_staging_report.m
 ## Record-node construction increment
 
 The [record-node constructor](userclient_record_nodes_report.md) establishes the conditional post-header dispatch, u32 payload-plus-ten guard, original 32 B FPTTLVNode allocation, buffer request and shared writer handoff. Serialization, list publication, metadata production and daemon correlation remain open.
+
+## Protected record-writer increment
+
+The [protected record writer](userclient_record_writer_report.md) establishes all ten header-byte stores and the selected type0x6685 exact-L protected payload copy. Original input metadata/body production, list publication, cursor advancement, cleanup and daemon correlation remain open.

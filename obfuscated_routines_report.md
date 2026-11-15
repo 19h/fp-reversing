@@ -1958,3 +1958,7 @@ The selected `_PRnut72j9` [upstream staging/parser facility](userclient_containe
 ## Record-node construction increment
 
 The [post-header constructor analysis](userclient_record_nodes_report.md) identifies exact special-pair success dispatch, a universal u32 size gate, typed FPTTLVNode allocation, field initialization and shared writer setup inside the pinned dispatcher. The special pair's business meaning and later serialization/linking remain unknown.
+
+## Protected record-writer increment
+
+The [protected writer analysis](userclient_record_writer_report.md) identifies reuse of one four-byte writer at offsets0 and6, two intervening type stores, exact saved-control producers and the type0x6685 reverse-copy loop. It reduces apparent different input/output protection arithmetic to an exact address-mask rebase.

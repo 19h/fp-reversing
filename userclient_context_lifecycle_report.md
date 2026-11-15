@@ -196,3 +196,7 @@ The [input-staging/parser-entry analysis](userclient_container_staging_report.md
 ## Record-node construction increment
 
 The [record-node constructor](userclient_record_nodes_report.md) adds two conditional allocation cuts, result-retention cells, null branches and initialized field widths. Failure-target selection is proved; ownership, reclamation, locking and publication into the reader's live container remain open.
+
+## Protected record-writer increment
+
+The [record-writer follow-up](userclient_record_writer_report.md) populates the selected new buffer with its header and type0x6685 payload under explicit storage/call premises. It reaches a common zero/nonzero-copy continuation; lookup, list publication, allocation/free pairs and locking still require source recovery.

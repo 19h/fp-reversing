@@ -1853,3 +1853,7 @@ The [FPTTLV parser private ABI](userclient_container_staging_report.md) retains 
 ## Record-node construction increment
 
 The [record-node increment](userclient_record_nodes_report.md) adds a conditional in-kext metadata/allocation/writer interface. Its private table indices are not Mach message IDs. It establishes no new port/right, message emission site or daemon-kext transaction.
+
+## Protected record-writer increment
+
+The [record-writer increment](userclient_record_writer_report.md) adds a private protected-memory header/payload contract. Its byte order and dispatcher indices do not establish a Mach-message body, new port/right, emission site or successful daemon-kext transaction.

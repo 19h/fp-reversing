@@ -189,3 +189,7 @@ The [shared input-parser report](userclient_container_staging_report.md) capture
 ## Record-node construction increment
 
 The [nonempty-parser node constructor](userclient_record_nodes_report.md) identifies a separate 32 B FPTTLVNode descriptor, two allocation-result gates and shared writer setup. This conditional node path does not establish identity or ownership relationships with the replacement bootstrap's FPTTLV allocation.
+
+## Protected record-writer increment
+
+The [record-writer analysis](userclient_record_writer_report.md) establishes selected protected header/payload construction in the nonempty parser. This does not establish runtime identity with replacement-bootstrap objects or close their intervening ownership/list epochs.

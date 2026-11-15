@@ -237,3 +237,7 @@ Under the stated valid-storage premises, staging takes O(N) time, requests N B a
 ## Record-node construction increment
 
 The [post-header constructor follow-up](userclient_record_nodes_report.md) closes the selected metadata return, special-pair bypass, payload-plus-ten guard, typed 32 B node initialization and buffer/writer handoff. Complete nonempty parsing, header production, payload copy, list publication and original field identity remain open.
+
+## Protected record-writer increment
+
+The [record-writer increment](userclient_record_writer_report.md) establishes header production and selected type0x6685 payload copying after the post-header cut. It does not yet prove how the original staged envelope supplies the metadata/body pointer, how records enter the container list or how the parser advances its cursor.

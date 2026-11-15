@@ -213,3 +213,7 @@ The [FPTTLV parser entry/return contract](userclient_container_staging_report.md
 ## Record-node construction increment
 
 The [record-node increment](userclient_record_nodes_report.md) establishes an internal metadata-to-allocation-to-writer handoff. It does not identify the retained payload pointer with a task-controlled message field or establish a correlated daemon/provider exchange.
+
+## Protected record-writer increment
+
+The [protected record-writer increment](userclient_record_writer_report.md) closes selected in-kext metadata-to-buffer serialization. Original source-byte provenance, external control, node publication and correlated task/provider exchanges remain separate open requirements.

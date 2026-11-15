@@ -189,3 +189,7 @@ The [upstream staging/parser report](userclient_container_staging_report.md) pro
 ## Record-node construction increment
 
 The [node-construction follow-up](userclient_record_nodes_report.md) establishes the conditional allocation and writer handoff corresponding structurally to the input reader's node layout. Original tag identity, completed payload serialization and decoded termination remain unknown.
+
+## Protected record-writer increment
+
+The [writer-side follow-up](userclient_record_writer_report.md) proves header encoding compatible with the selected reader and an exact-L protected payload copy for type0x6685. Original tag identity, source payload termination and live list/reader linkage remain unknown.

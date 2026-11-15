@@ -198,3 +198,7 @@ The selected constructor requests32+(L+10)=L+42 B across two allocations, exclud
 - **QG5**: Outcome/status/tag, special bypass/ordinary record, successful/null allocation, phase-specific roots, layout/runtime identity and handoff/completed serialization are distinguished.
 - **QG6**: Original words/fixups/symbols/descriptor, 15 nonvacuous formulas, five predecessor rechecks, 768 bank inputs and four custody controls support the stated scope.
 - **QG7**: Ranked continuation preserves producer, writer, copy/link/cursor, failure ownership and daemon-correlation questions.
+
+## Protected record-writer increment
+
+The [writer follow-up](userclient_record_writer_report.md) closes the selected ten-byte header stores and, for transformed type0x6685, the exact-L protected payload copy. It proves saved-control roots, the zero-copy gate, universal loop step and finite coverage. Metadata/body production, other type handlers, actual list publication and cleanup remain open.
