@@ -569,6 +569,7 @@ def main():
     if exists(BASE/'secure_tunnel_table_insertion_report.md'):reports.add(BASE/'secure_tunnel_table_insertion_report.md')
     if exists(BASE/'userclient_uidlist_publication_report.md'):reports.add(BASE/'userclient_uidlist_publication_report.md')
     if exists(BASE/'userclient_uidlist_replacement_report.md'):reports.add(BASE/'userclient_uidlist_replacement_report.md')
+    if exists(BASE/'userclient_replacement_bootstrap_report.md'):reports.add(BASE/'userclient_replacement_bootstrap_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3210,6 +3211,15 @@ def main():
         manifest['validation']['userclient_uidlist_replacement_new_source_queries_unsat']=len(uid_replace_audit['source_proofs'])
         manifest['validation']['userclient_uidlist_replacement_prior_source_queries_rechecked']=len(uid_replace_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_uidlist_replacement_conditional_UIDList_replacement_contract_established']=uid_replace['conditional_UIDList_replacement_contract_established']
+    if exists(ROOT/'userclient_replacement_bootstrap_checks.json'):
+        replacement_bootstrap=json.loads(read(ROOT/'userclient_replacement_bootstrap_checks.json'))
+        replacement_bootstrap_audit=json.loads(read(ROOT/'userclient_replacement_bootstrap_audit.json'))
+        manifest['validation']['userclient_replacement_bootstrap_increment_checks']=replacement_bootstrap['verified_counts']
+        manifest['validation']['userclient_replacement_bootstrap_static_scope']=replacement_bootstrap['scope']
+        manifest['validation']['userclient_replacement_bootstrap_independent_checks']=replacement_bootstrap_audit['independent_totals']
+        manifest['validation']['userclient_replacement_bootstrap_new_source_queries_unsat']=len(replacement_bootstrap_audit['source_proofs'])
+        manifest['validation']['userclient_replacement_bootstrap_prior_source_queries_rechecked']=len(replacement_bootstrap_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_replacement_bootstrap_conditional_replacement_bootstrap_contract_established']=replacement_bootstrap['conditional_replacement_bootstrap_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

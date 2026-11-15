@@ -165,3 +165,5 @@ The [lookup contract](userclient_hash_table_lookup_report.md) joins both cleanup
 ## Shared-table reclamation and payload-free follow-up
 
 The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cleanup to the token0xc28 entry writer and token0x559 backward scan, establishes exact counter/state/key/payload transitions, and recovers the status/nonzero-payload gate for a 120 B `site.FPSecureTunnel` typed-free request. Native allocation identity, ownership, serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.
+
+The [replacement-caller bootstrap report](userclient_replacement_bootstrap_report.md) adds the actual null-holder call site, caller/decoder join, output gate, rollback and independently reloaded holder continuation.

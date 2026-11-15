@@ -180,3 +180,5 @@ No selected call emits a newly identified Mach message or endpoint. The context 
 ## Existing UIDList marker replacement follow-up
 
 [The replacement report](userclient_uidlist_replacement_report.md) establishes the selected nonnull shared-holder path from an existing discriminator match through two old-marker lookup records, prior entry+16 payload capture, tombstone/reclamation requests, conditional 120 B typed payload free and status-gated node+4 replacement. Thirty-four nonvacuous obligations, 18 predecessor obligations, 734 selected instructions and 1792 bank inputs pass. Zero saved payload skips free and reaches the same marker-update join; raw success and found outputs remain separate. Null-holder construction, complete incoming reachability, native ownership/deallocation, serialization and daemon correlation remain unknown. No new Mach-port emission site is established.
+
+The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) establishes how the existing-node caller constructs a missing shared table and returns to processing or the saved-status marker-update gate.

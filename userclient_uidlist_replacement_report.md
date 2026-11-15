@@ -157,3 +157,5 @@ No selected instruction establishes a new incoming endpoint, Mach trap, outgoing
 - **QG5**: Old versus new marker, first versus second outputs, success versus occupied hit, writer versus reclaimer status, request versus native deallocation, and complete bytes versus complete reachability remain distinct. Both zero and nonzero saved-payload joins pass.
 - **QG6**: Original code, pointer chains, descriptor/adapter, 34 nonvacuous obligations, explicit codec congruence certificates, 18 predecessor rechecks and four evidence-comparison controls provide reproducible provenance.
 - **QG7**: Ranked continuation preserves constructor, input identity, epochs, synchronization, ownership and daemon correlation as outstanding requirements.
+
+The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) now closes the selected null-holder constructor and both fallback continuations. The earlier constructor gap is superseded within those stated premises; native reachability and coherence remain unknown.
