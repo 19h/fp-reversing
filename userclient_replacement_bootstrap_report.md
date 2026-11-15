@@ -181,3 +181,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) rec
 ## Shared input-reader increment
 
 The [shared input-reader analysis](userclient_input_reader_report.md) distinguishes encoded payload length at source+0xaa8 from primary status W23 and saved status at SP+0x9ec. It closes the selected hash-input publication path but does not restrict the native saved-status domain or complete holder ownership.
+
+## Container-staging increment
+
+The [shared input-parser report](userclient_container_staging_report.md) captures another16 B `site.FPTTLV` descriptor at0xfffffe000847b620 and its two-field initialization. The common site name does not identify this allocation with the replacement holder/root envelope or establish common native object lifetime.

@@ -188,3 +188,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) dis
 ## Shared input-reader increment
 
 The [hash-input producer](userclient_input_reader_report.md) publishes a decoded allocation through scratch+0x128 and resumes the exact hash gate. Caller-local pointer/length/continuation contracts are established; native lifetime, deallocation, serialization and original context-field identity remain unknown.
+
+## Container-staging increment
+
+The [input-staging/parser-entry analysis](userclient_container_staging_report.md) distinguishes the16 B FPTTLV allocation from both the reader node and UIDList node. It proves empty-container initialization/publication and the later scratch+0x600 reader handoff. Native lifetime, nonempty node creation and cleanup remain unknown.

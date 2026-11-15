@@ -188,3 +188,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) clo
 ## Shared input-reader increment
 
 The [hash-input reader](userclient_input_reader_report.md) identifies a separate node layout with successor+0, extent+0x10 and buffer+0x18, accessed through32 B. This does not identify that node as the16 B UIDList node or establish the original payload business identity.
+
+## Container-staging increment
+
+The [upstream parser container](userclient_container_staging_report.md) is allocated with an original16 B `site.FPTTLV` descriptor and two cleared64-bit fields. Its allocation identity remains separate from this16 B UIDList node and the reader node accessed through32 B. Nonempty construction is the remaining producer boundary.

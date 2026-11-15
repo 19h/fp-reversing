@@ -1970,3 +1970,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) rec
 ## Shared input-reader increment
 
 The [hash-input reader](userclient_input_reader_report.md) closes the selected scratch+0x128 producer: tagged-node search, ten-byte protected-memory header, encoded length, exact-L allocation/copy and the saved hash continuation. Original field identity and payload termination remain unknown.
+
+## Container-staging increment
+
+The [input-staging/parser-entry increment](userclient_container_staging_report.md) proves that three obfuscated size channels recover low32(saved size), followed by an exact-N protected copy and a shared parser output/continuation ABI. Original allocation metadata identifies a16 B `site.FPTTLV` container. Empty parsing is covered completely; nonempty node construction and field identity remain open.

@@ -165,3 +165,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) sep
 ## Shared input-reader increment
 
 The [shared input-reader report](userclient_input_reader_report.md) closes the selected scratch+0x128 input producer used by discriminator hashing. Encoded length and W23 status are separate. It does not establish the original source+0x20 tunnel-marker producer or a successful native insertion transaction.
+
+## Container-staging increment
+
+The [staging/parser-entry increment](userclient_container_staging_report.md) establishes the saved input size and matching protected-memory copy before the discriminator reader. It does not identify the nonempty tag field or original source+0x20 tunnel-marker producer, and it does not establish successful native insertion.

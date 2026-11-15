@@ -181,3 +181,7 @@ For a valid stable input with L bytes preceding NUL, this selected producer take
 ## Shared input-reader increment
 
 The earlier scratch+0x128 producer is now traced in the [shared input-reader report](userclient_input_reader_report.md): a protected tagged-node reader requests and copies exactly L bytes before resuming the hash gate. It adds no terminator in that path. Whether upstream content supplies NUL remains unknown; the prior valid finite NUL-terminated hash-input premise is therefore still required.
+
+## Container-staging increment
+
+The [upstream staging/parser report](userclient_container_staging_report.md) proves exact low32 size recovery and protected input staging before a shared FPTTLV parser, followed by the selected scratch+0x600 reader handoff. The complete nonempty parser and field-level NUL contract remain unknown, so the discriminator traversal retains its valid finite NUL-terminated-input premise.

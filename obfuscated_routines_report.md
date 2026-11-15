@@ -1950,3 +1950,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) red
 ## Shared input-reader increment
 
 Within `_PRnut72j9`, the [shared reader](userclient_input_reader_report.md) performs linked-node tag search, protected-memory header decoding, type/extent gates, `_IOMallocData(L)`, reverse decoded byte copying and publication to scratch+0x128. The selected caller resumes the discriminator hash gate; native business/type identity remains unknown.
+
+## Container-staging increment
+
+The selected `_PRnut72j9` [upstream staging/parser facility](userclient_container_staging_report.md) reconstructs low32 input size, allocates/copies exactly that many protected bytes, retains a caller output/continuation ABI and initializes a16 B `site.FPTTLV` allocation. The empty-input parser path is complete; nonempty record/node construction remains unknown.

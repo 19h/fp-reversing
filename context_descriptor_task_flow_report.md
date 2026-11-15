@@ -205,3 +205,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) add
 ## Shared input-reader increment
 
 The [private input-reader ABI](userclient_input_reader_report.md) establishes nested continuations and pointer/encoded-length outputs within the selected kext phase. It does not establish a new task identity, external Mach endpoint, serialized input identity or daemon-kext transaction correlation.
+
+## Container-staging increment
+
+The [FPTTLV parser entry/return contract](userclient_container_staging_report.md) adds saved input/size staging and internal continuation/output cells. The later reader checks a saved third-argument pointer; its native identity and relation to tasks or external ports remain unknown.

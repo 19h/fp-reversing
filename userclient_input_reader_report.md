@@ -242,3 +242,7 @@ Extraction takes O(B+I+256R) time/space for captured bytes B, decoded instructio
 - **QG5**: Encoded length versus status, two node layouts, protected-memory versus wire format, normal versus retagged addresses, common clear versus null-container resume and zero-size allocator seams remain distinct.
 - **QG6**: Original dual-image words, symbols/fixups, 39 nonvacuous formulas, three predecessor rechecks, 512 bank inputs and four custody controls support the bounded claims.
 - **QG7**: Ranked continuation retains constructor/termination, key/retag, ownership, saved-status/marker and daemon-correlation boundaries.
+
+## Container-staging increment
+
+The [upstream container-staging report](userclient_container_staging_report.md) closes saved pointer/low32-size staging, the matching protected byte transform, shared parser entry/output/continuation cells and original16 B `site.FPTTLV` allocation metadata. It covers the complete empty parser path. Nonempty construction of the matched node and decoded-tag0x172ba3a8 field identity remain open; no termination guarantee is added.

@@ -572,6 +572,7 @@ def main():
     if exists(BASE/'userclient_replacement_bootstrap_report.md'):reports.add(BASE/'userclient_replacement_bootstrap_report.md')
     if exists(BASE/'userclient_discriminator_origin_report.md'):reports.add(BASE/'userclient_discriminator_origin_report.md')
     if exists(BASE/'userclient_input_reader_report.md'):reports.add(BASE/'userclient_input_reader_report.md')
+    if exists(BASE/'userclient_container_staging_report.md'):reports.add(BASE/'userclient_container_staging_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3240,6 +3241,15 @@ def main():
         manifest['validation']['userclient_input_reader_new_source_queries_unsat']=len(input_reader_audit['source_proofs'])
         manifest['validation']['userclient_input_reader_prior_source_queries_rechecked']=len(input_reader_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_input_reader_conditional_input_reader_contract_established']=input_reader['conditional_input_reader_contract_established']
+    if exists(ROOT/'userclient_container_staging_checks.json'):
+        container_staging=json.loads(read(ROOT/'userclient_container_staging_checks.json'))
+        container_staging_audit=json.loads(read(ROOT/'userclient_container_staging_audit.json'))
+        manifest['validation']['userclient_container_staging_increment_checks']=container_staging['verified_counts']
+        manifest['validation']['userclient_container_staging_static_scope']=container_staging['scope']
+        manifest['validation']['userclient_container_staging_independent_checks']=container_staging_audit['independent_totals']
+        manifest['validation']['userclient_container_staging_new_source_queries_unsat']=len(container_staging_audit['source_proofs'])
+        manifest['validation']['userclient_container_staging_prior_source_queries_rechecked']=len(container_staging_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_container_staging_conditional_container_staging_contract_established']=container_staging['conditional_container_staging_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

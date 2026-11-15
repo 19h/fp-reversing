@@ -2099,3 +2099,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) map
 ## Shared input-reader increment
 
 The [input-reader private ABI](userclient_input_reader_report.md) retains pointer-output address at scratch+0x158, encoded-length-output address at+0x160 and outer continuation at+0x298. Primary status remains W23. The protected-memory header and exact-L copy do not establish an external wire layout or termination guarantee.
+
+## Container-staging increment
+
+The [shared parser ABI](userclient_container_staging_report.md) retains output address at scratch+0x188, continuation at+0x5c8, input pointer at+0x618 and encoded extent at source+0xc8c. Its caller supplies address(scratch+0x600) and continuation0xb9 ->0xfffffe000a656c08. Typed descriptor metadata and a protected staging copy do not establish a daemon wire-field identity.

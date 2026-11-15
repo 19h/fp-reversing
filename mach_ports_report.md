@@ -1845,3 +1845,7 @@ The [discriminator-origin report](userclient_discriminator_origin_report.md) ide
 ## Shared input-reader increment
 
 The [shared input reader](userclient_input_reader_report.md) establishes internal output cells and nested continuations, with no new Mach endpoint, right transfer or message emission site. Encoded-tag0x2685a3ce and private table indices are not Mach names or message IDs.
+
+## Container-staging increment
+
+The [FPTTLV parser private ABI](userclient_container_staging_report.md) retains pointer/encoded-size/output-address/continuation inputs. Its private index0xb9 and saved third argument are not established as Mach IDs, ports or tasks. This increment establishes no new endpoint, right transfer or message emission.
