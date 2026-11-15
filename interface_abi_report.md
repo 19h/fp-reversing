@@ -2111,3 +2111,7 @@ The [record-node ABI](userclient_record_nodes_report.md) separates cursor64, enc
 ## Protected record-writer increment
 
 The [record-writer ABI](userclient_record_writer_report.md) maps the protected ten-byte header to BE32(T XOR success), BE16(U XOR0x365e) and BE32(L). For U=0x6685 it establishes exact-L payload copying and reader-formula compatibility under matching keys/storage epochs; native consumer linkage remains unknown.
+
+## Record lookup and publication increment
+
+The [record-publication ABI](userclient_record_publication_report.md) binds arbitrary encoded tag32 to output C+0x628 and continuation0x7b. It distinguishes success, miss and other statuses, captures both retirement-call argument sets, and establishes that publication returns the unchanged cursor to its exact unsigned gate.

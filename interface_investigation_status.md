@@ -1751,3 +1751,7 @@ The [post-header node increment](userclient_record_nodes_report.md) proves 15 ne
 ## Protected record-writer increment
 
 The [record-writer increment](userclient_record_writer_report.md) proves 16 new nonvacuous obligations over 260 new and 331 predecessor instruction PCs, with five predecessor rechecks. Header production and selected type0x6685 payload serialization are established conditionally; list publication and the full interface goal remain active.
+
+## Record lookup and publication increment
+
+The [publication increment](userclient_record_publication_report.md) proves 69 new nonvacuous obligations over 466 selected instructions, with five predecessor rechecks and 768 bank inputs. Two append cases, four replacement positions and eight old-buffer retirement cases are covered. Full parser progress and the wider interface goal remain active.

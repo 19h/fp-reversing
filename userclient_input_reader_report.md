@@ -254,3 +254,7 @@ The [upstream record-node constructor](userclient_record_nodes_report.md) suppli
 ## Protected record-writer increment
 
 The [writer-side construction](userclient_record_writer_report.md) now proves a matching protected ten-byte header and type0x6685 exact-L payload copy using the same address-keyed mask. Writer/reader formula compatibility is established under matching epochs; publication of this node into the live reader list and original field identity remain unknown.
+
+## Record lookup and publication increment
+
+The [publication caller](userclient_record_publication_report.md) reuses the same protected tagged-node search with arbitrary tag T, output C+0x628 and return index0x7b. It establishes conditional list publication of the writer node and selected retirement requests; live consumer epochs, original field identity and native ownership remain open.

@@ -217,3 +217,7 @@ The [record-node increment](userclient_record_nodes_report.md) establishes an in
 ## Protected record-writer increment
 
 The [protected record-writer increment](userclient_record_writer_report.md) closes selected in-kext metadata-to-buffer serialization. Original source-byte provenance, external control, node publication and correlated task/provider exchanges remain separate open requirements.
+
+## Record lookup and publication increment
+
+The [tag lookup/list-publication increment](userclient_record_publication_report.md) adds a caller-specific scratch output and private continuation plus selected allocator-retirement touch points. It does not establish externally controlled input identity, native synchronization or a correlated daemon/provider exchange.

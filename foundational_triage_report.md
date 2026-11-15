@@ -1982,3 +1982,7 @@ The [record-node constructor](userclient_record_nodes_report.md) establishes the
 ## Protected record-writer increment
 
 The [protected record writer](userclient_record_writer_report.md) establishes all ten header-byte stores and the selected type0x6685 exact-L protected payload copy. Original input metadata/body production, list publication, cursor advancement, cleanup and daemon correlation remain open.
+
+## Record lookup and publication increment
+
+The [record-publication increment](userclient_record_publication_report.md) establishes caller-specific tag lookup, append-on-miss, replacement-on-success, old-record retirement requests and return to the parser cursor gate. Original metadata/body production, cursor advancement, native ownership/locking and daemon correlation remain open.

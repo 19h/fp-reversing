@@ -185,3 +185,7 @@ Header construction has 10 byte stores and O(1) selected work. For admitted type
 - **QG5**: Writer output versus original input provenance, normal versus alternate pointers, header versus payload, selected type versus all types, formula compatibility versus live linkage and continuation selection versus publication remain distinct.
 - **QG6**: Original dual-image words/table pointers, 16 nonvacuous formulas, five predecessor rechecks, 260 new/331 predecessor PCs and four custody controls support the bounded claims.
 - **QG7**: Ranked continuation preserves lookup/linking, input/cursor provenance, cleanup, other types and native daemon-correlation questions.
+
+## Record lookup and publication increment
+
+The [post-writer publication increment](userclient_record_publication_report.md) closes selected tag lookup, empty/tail append, four-position replacement, old-record retirement requests and parser-gate return. It proves cursor preservation across these paths; the earlier cursor-advancement producer and full staged-envelope contract remain open.

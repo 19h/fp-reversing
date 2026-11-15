@@ -1962,3 +1962,7 @@ The [post-header constructor analysis](userclient_record_nodes_report.md) identi
 ## Protected record-writer increment
 
 The [protected writer analysis](userclient_record_writer_report.md) identifies reuse of one four-byte writer at offsets0 and6, two intervening type stores, exact saved-control producers and the type0x6685 reverse-copy loop. It reduces apparent different input/output protection arithmetic to an exact address-mask rebase.
+
+## Record lookup and publication increment
+
+The [tag lookup/publication analysis](userclient_record_publication_report.md) establishes the selected append-on-miss/replacement-on-success policy, next/previous and head/tail roles, original data/typed retirement calls and return to the parser gate. Native lifetime, uniqueness and original business tag identity remain unknown.

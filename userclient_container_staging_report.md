@@ -241,3 +241,7 @@ The [post-header constructor follow-up](userclient_record_nodes_report.md) close
 ## Protected record-writer increment
 
 The [record-writer increment](userclient_record_writer_report.md) establishes header production and selected type0x6685 payload copying after the post-header cut. It does not yet prove how the original staged envelope supplies the metadata/body pointer, how records enter the container list or how the parser advances its cursor.
+
+## Record lookup and publication increment
+
+The [record-publication follow-up](userclient_record_publication_report.md) closes the selected list operation after construction/copy and returns to the same parser cursor gate. Complete nonempty parsing still requires the original metadata/body/cursor producers, record bounds, all relevant types and failure cleanup.

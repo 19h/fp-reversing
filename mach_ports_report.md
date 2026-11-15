@@ -1857,3 +1857,7 @@ The [record-node increment](userclient_record_nodes_report.md) adds a conditiona
 ## Protected record-writer increment
 
 The [record-writer increment](userclient_record_writer_report.md) adds a private protected-memory header/payload contract. Its byte order and dispatcher indices do not establish a Mach-message body, new port/right, emission site or successful daemon-kext transaction.
+
+## Record lookup and publication increment
+
+The [record-publication increment](userclient_record_publication_report.md) adds an internal tag lookup/output/continuation ABI and list/retirement interfaces. Its private indices and status values establish no new Mach right, endpoint, message emission or successful daemon-kext transaction.

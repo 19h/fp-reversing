@@ -114,7 +114,7 @@ For nonnull writable J, the initializer at `0xfffffe000a642630` through `0xfffff
 | Node offset | Width | Established constructor action / reader relationship |
 | --- | --- | --- |
 | +0x00 | 8 B | Zero store at `0xfffffe000a6426d8`; reader uses this offset as next pointer |
-| +0x08 | 8 B | Zero store at the same STP; further semantic role unknown |
+| +0x08 | 8 B | Zero store at the same STP; the later [publication proof](userclient_record_publication_report.md) establishes previous-pointer use |
 | +0x10 | 4 B | Store L+10 at `0xfffffe000a64275c`; reader accesses extent at this offset |
 | +0x14 | 4 B | No write by the captured initializer stores; padding/other semantics unknown |
 | +0x18 | 8 B | Buffer result Z stored at `0xfffffe000a6427c8`; reader accesses buffer here |
@@ -202,3 +202,7 @@ The selected constructor requests32+(L+10)=L+42 B across two allocations, exclud
 ## Protected record-writer increment
 
 The [writer follow-up](userclient_record_writer_report.md) closes the selected ten-byte header stores and, for transformed type0x6685, the exact-L protected payload copy. It proves saved-control roots, the zero-copy gate, universal loop step and finite coverage. Metadata/body production, other type handlers, actual list publication and cleanup remain open.
+
+## Record lookup and publication increment
+
+The [publication follow-up](userclient_record_publication_report.md) establishes node+8 as previous and container+0/+8 as head/tail for the selected list stores. Lookup miss appends J; success replaces the returned node and emits old-buffer/node retirement requests. Full input/cursor production and native ownership remain unknown.

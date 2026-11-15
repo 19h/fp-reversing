@@ -193,3 +193,7 @@ The [node-construction follow-up](userclient_record_nodes_report.md) establishes
 ## Protected record-writer increment
 
 The [writer-side follow-up](userclient_record_writer_report.md) proves header encoding compatible with the selected reader and an exact-L protected payload copy for type0x6685. Original tag identity, source payload termination and live list/reader linkage remain unknown.
+
+## Record lookup and publication increment
+
+The [record-publication increment](userclient_record_publication_report.md) connects selected writer output to tag-based append/replacement. Original tag business identity, decoded payload termination, cursor progress and native live-reader/daemon correlation remain separate requirements.

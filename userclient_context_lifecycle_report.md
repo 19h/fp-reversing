@@ -200,3 +200,7 @@ The [record-node constructor](userclient_record_nodes_report.md) adds two condit
 ## Protected record-writer increment
 
 The [record-writer follow-up](userclient_record_writer_report.md) populates the selected new buffer with its header and type0x6685 payload under explicit storage/call premises. It reaches a common zero/nonzero-copy continuation; lookup, list publication, allocation/free pairs and locking still require source recovery.
+
+## Record lookup and publication increment
+
+The [record-publication lifecycle](userclient_record_publication_report.md) establishes selected list rewiring, nullable old-buffer retirement, original IOFreeData/IOFreeTypeImpl requests and saved old-result clearing. Distinct allocation/retirement descriptors share recovered32 B site metadata. Native ownership, callee effects and synchronization remain open.
