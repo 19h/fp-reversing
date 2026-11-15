@@ -189,3 +189,7 @@ The [lookup contract](userclient_hash_table_lookup_report.md) joins both cleanup
 ## Shared-table reclamation and payload-free follow-up
 
 The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cleanup to the token0xc28 entry writer and token0x559 backward scan, establishes exact counter/state/key/payload transitions, and recovers the status/nonzero-payload gate for a 120 B `site.FPSecureTunnel` typed-free request. Native allocation identity, ownership, serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.
+
+## UIDList search and publication follow-up
+
+[The UIDList publication report](userclient_uidlist_publication_report.md) recovers the separate node+0 discriminator and node+4 tunnel marker, exact search/successor gates, typed 16 B allocation and ordered node-fill/context-head stores. Candidate tunnel+0x6c flows into node+4 under the recorded frame/object premises, joining the insertion and cleanup key codecs conditionally. Seventeen new obligations, six predecessor obligations, 232 selected instructions and 512 bank cases pass. Existing-match resource/status completion, discriminator/input identity, native reachability, ownership, serialization and daemon correlation remain unknown; no new Mach endpoint is established.

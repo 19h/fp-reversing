@@ -139,3 +139,7 @@ This local path is reached from the per-UserClient context-cell stop adapter est
 ## Shared hash-table bootstrap during teardown
 
 The [shared-table bootstrap report](userclient_hash_table_bootstrap_report.md) recovers the marker-unequal arm's module-global `site.FPHashTable` guard, 16 B allocation request, encoded initializer/header join, exact output-status publication gate and rollback. A still-null holder after failure selects UIDList node free and saved-successor continuation even for an unequal marker. Twelve new source obligations and five predecessor rechecks pass. Full table initialization/processing, node semantics, task references and native pairing remain unknown.
+
+## UIDList search and publication follow-up
+
+[The UIDList publication report](userclient_uidlist_publication_report.md) recovers the separate node+0 discriminator and node+4 tunnel marker, exact search/successor gates, typed 16 B allocation and ordered node-fill/context-head stores. Candidate tunnel+0x6c flows into node+4 under the recorded frame/object premises, joining the insertion and cleanup key codecs conditionally. Seventeen new obligations, six predecessor obligations, 232 selected instructions and 512 bank cases pass. Existing-match resource/status completion, discriminator/input identity, native reachability, ownership, serialization and daemon correlation remain unknown; no new Mach endpoint is established.

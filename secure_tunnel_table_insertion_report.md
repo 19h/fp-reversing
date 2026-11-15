@@ -149,3 +149,7 @@ Cleanup derives its key from `UIDList node+4 XOR 0x31ae0066`. Consequently the k
 - **QG5**: Candidate success versus match, raw marker versus identity, pointer-save versus token-slot reuse, local counter delta versus global invariant, ordinary versus alternate tag, and conditional lineage versus native ownership are distinguished.
 - **QG6**: Original bytes/fixups, complete selected-source coverage, explicit finite/congruence/extent dependencies, storage-implication obligations and predecessor rechecks provide reproducible provenance. No native execution or new IDA evidence is claimed.
 - **QG7**: Ranked continuation identifies remaining marker origins, reachability, growth, serialization, tracking and daemon correlation without claiming completion.
+
+## UIDList search and publication follow-up
+
+[The UIDList publication report](userclient_uidlist_publication_report.md) recovers the separate node+0 discriminator and node+4 tunnel marker, exact search/successor gates, typed 16 B allocation and ordered node-fill/context-head stores. Candidate tunnel+0x6c flows into node+4 under the recorded frame/object premises, joining the insertion and cleanup key codecs conditionally. Seventeen new obligations, six predecessor obligations, 232 selected instructions and 512 bank cases pass. Existing-match resource/status completion, discriminator/input identity, native reachability, ownership, serialization and daemon correlation remain unknown; no new Mach endpoint is established.
