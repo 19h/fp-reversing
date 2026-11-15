@@ -1954,3 +1954,7 @@ Within `_PRnut72j9`, the [shared reader](userclient_input_reader_report.md) perf
 ## Container-staging increment
 
 The selected `_PRnut72j9` [upstream staging/parser facility](userclient_container_staging_report.md) reconstructs low32 input size, allocates/copies exactly that many protected bytes, retains a caller output/continuation ABI and initializes a16 B `site.FPTTLV` allocation. The empty-input parser path is complete; nonempty record/node construction remains unknown.
+
+## Record-node construction increment
+
+The [post-header constructor analysis](userclient_record_nodes_report.md) identifies exact special-pair success dispatch, a universal u32 size gate, typed FPTTLVNode allocation, field initialization and shared writer setup inside the pinned dispatcher. The special pair's business meaning and later serialization/linking remain unknown.

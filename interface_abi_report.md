@@ -2103,3 +2103,7 @@ The [input-reader private ABI](userclient_input_reader_report.md) retains pointe
 ## Container-staging increment
 
 The [shared parser ABI](userclient_container_staging_report.md) retains output address at scratch+0x188, continuation at+0x5c8, input pointer at+0x618 and encoded extent at source+0xc8c. Its caller supplies address(scratch+0x600) and continuation0xb9 ->0xfffffe000a656c08. Typed descriptor metadata and a protected staging copy do not establish a daemon wire-field identity.
+
+## Record-node construction increment
+
+The [record-node ABI](userclient_record_nodes_report.md) separates cursor64, encoded tag32, type16, encoded length32, outcome and raw status. It specifies the original 32 B typed allocation and nullable exact-L+10 buffer request, then the private writer handoff; actual native identity, external controllability and complete serialization remain unknown.

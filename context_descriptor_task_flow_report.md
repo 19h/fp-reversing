@@ -209,3 +209,7 @@ The [private input-reader ABI](userclient_input_reader_report.md) establishes ne
 ## Container-staging increment
 
 The [FPTTLV parser entry/return contract](userclient_container_staging_report.md) adds saved input/size staging and internal continuation/output cells. The later reader checks a saved third-argument pointer; its native identity and relation to tasks or external ports remain unknown.
+
+## Record-node construction increment
+
+The [record-node increment](userclient_record_nodes_report.md) establishes an internal metadata-to-allocation-to-writer handoff. It does not identify the retained payload pointer with a task-controlled message field or establish a correlated daemon/provider exchange.

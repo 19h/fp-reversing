@@ -246,3 +246,7 @@ Extraction takes O(B+I+256R) time/space for captured bytes B, decoded instructio
 ## Container-staging increment
 
 The [upstream container-staging report](userclient_container_staging_report.md) closes saved pointer/low32-size staging, the matching protected byte transform, shared parser entry/output/continuation cells and original16 B `site.FPTTLV` allocation metadata. It covers the complete empty parser path. Nonempty construction of the matched node and decoded-tag0x172ba3a8 field identity remain open; no termination guarantee is added.
+
+## Record-node construction increment
+
+The [upstream record-node constructor](userclient_record_nodes_report.md) supplies original 32 B FPTTLVNode allocation metadata and stores total extent at+0x10 and buffer at+0x18, matching the reader's accessed layout. Full header production, payload copy and list publication are still required to establish runtime producer-consumer identity.

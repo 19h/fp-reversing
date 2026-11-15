@@ -1974,3 +1974,7 @@ The [hash-input reader](userclient_input_reader_report.md) closes the selected s
 ## Container-staging increment
 
 The [input-staging/parser-entry increment](userclient_container_staging_report.md) proves that three obfuscated size channels recover low32(saved size), followed by an exact-N protected copy and a shared parser output/continuation ABI. Original allocation metadata identifies a16 B `site.FPTTLV` container. Empty parsing is covered completely; nonempty node construction and field identity remain open.
+
+## Record-node construction increment
+
+The [record-node constructor](userclient_record_nodes_report.md) establishes the conditional post-header dispatch, u32 payload-plus-ten guard, original 32 B FPTTLVNode allocation, buffer request and shared writer handoff. Serialization, list publication, metadata production and daemon correlation remain open.

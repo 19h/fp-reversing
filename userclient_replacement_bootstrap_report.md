@@ -185,3 +185,7 @@ The [shared input-reader analysis](userclient_input_reader_report.md) distinguis
 ## Container-staging increment
 
 The [shared input-parser report](userclient_container_staging_report.md) captures another16 B `site.FPTTLV` descriptor at0xfffffe000847b620 and its two-field initialization. The common site name does not identify this allocation with the replacement holder/root envelope or establish common native object lifetime.
+
+## Record-node construction increment
+
+The [nonempty-parser node constructor](userclient_record_nodes_report.md) identifies a separate 32 B FPTTLVNode descriptor, two allocation-result gates and shared writer setup. This conditional node path does not establish identity or ownership relationships with the replacement bootstrap's FPTTLV allocation.

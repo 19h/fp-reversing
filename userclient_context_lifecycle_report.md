@@ -192,3 +192,7 @@ The [hash-input producer](userclient_input_reader_report.md) publishes a decoded
 ## Container-staging increment
 
 The [input-staging/parser-entry analysis](userclient_container_staging_report.md) distinguishes the16 B FPTTLV allocation from both the reader node and UIDList node. It proves empty-container initialization/publication and the later scratch+0x600 reader handoff. Native lifetime, nonempty node creation and cleanup remain unknown.
+
+## Record-node construction increment
+
+The [record-node constructor](userclient_record_nodes_report.md) adds two conditional allocation cuts, result-retention cells, null branches and initialized field widths. Failure-target selection is proved; ownership, reclamation, locking and publication into the reader's live container remain open.

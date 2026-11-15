@@ -1849,3 +1849,7 @@ The [shared input reader](userclient_input_reader_report.md) establishes interna
 ## Container-staging increment
 
 The [FPTTLV parser private ABI](userclient_container_staging_report.md) retains pointer/encoded-size/output-address/continuation inputs. Its private index0xb9 and saved third argument are not established as Mach IDs, ports or tasks. This increment establishes no new endpoint, right transfer or message emission.
+
+## Record-node construction increment
+
+The [record-node increment](userclient_record_nodes_report.md) adds a conditional in-kext metadata/allocation/writer interface. Its private table indices are not Mach message IDs. It establishes no new port/right, message emission site or daemon-kext transaction.

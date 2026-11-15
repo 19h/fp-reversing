@@ -573,6 +573,7 @@ def main():
     if exists(BASE/'userclient_discriminator_origin_report.md'):reports.add(BASE/'userclient_discriminator_origin_report.md')
     if exists(BASE/'userclient_input_reader_report.md'):reports.add(BASE/'userclient_input_reader_report.md')
     if exists(BASE/'userclient_container_staging_report.md'):reports.add(BASE/'userclient_container_staging_report.md')
+    if exists(BASE/'userclient_record_nodes_report.md'):reports.add(BASE/'userclient_record_nodes_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3250,6 +3251,15 @@ def main():
         manifest['validation']['userclient_container_staging_new_source_queries_unsat']=len(container_staging_audit['source_proofs'])
         manifest['validation']['userclient_container_staging_prior_source_queries_rechecked']=len(container_staging_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_container_staging_conditional_container_staging_contract_established']=container_staging['conditional_container_staging_contract_established']
+    if exists(ROOT/'userclient_record_nodes_checks.json'):
+        record_nodes=json.loads(read(ROOT/'userclient_record_nodes_checks.json'))
+        record_nodes_audit=json.loads(read(ROOT/'userclient_record_nodes_audit.json'))
+        manifest['validation']['userclient_record_nodes_increment_checks']=record_nodes['verified_counts']
+        manifest['validation']['userclient_record_nodes_static_scope']=record_nodes['scope']
+        manifest['validation']['userclient_record_nodes_independent_checks']=record_nodes_audit['independent_totals']
+        manifest['validation']['userclient_record_nodes_new_source_queries_unsat']=len(record_nodes_audit['source_proofs'])
+        manifest['validation']['userclient_record_nodes_prior_source_queries_rechecked']=len(record_nodes_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_record_nodes_conditional_record_node_contract_established']=record_nodes['conditional_record_node_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -185,3 +185,7 @@ The earlier scratch+0x128 producer is now traced in the [shared input-reader rep
 ## Container-staging increment
 
 The [upstream staging/parser report](userclient_container_staging_report.md) proves exact low32 size recovery and protected input staging before a shared FPTTLV parser, followed by the selected scratch+0x600 reader handoff. The complete nonempty parser and field-level NUL contract remain unknown, so the discriminator traversal retains its valid finite NUL-terminated-input premise.
+
+## Record-node construction increment
+
+The [node-construction follow-up](userclient_record_nodes_report.md) establishes the conditional allocation and writer handoff corresponding structurally to the input reader's node layout. Original tag identity, completed payload serialization and decoded termination remain unknown.

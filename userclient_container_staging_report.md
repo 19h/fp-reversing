@@ -2,7 +2,7 @@
 
 The upstream path stages a saved input pointer using exactly the low32 size from the saved size argument. The allocation request, reverse-copy count and parser's decoded extent all recover that same u32 value N. The copy writes an address-keyed protected representation. The shared parser receives that staged pointer, an encoded extent, a caller output address and a private continuation. Its original typed-allocation descriptor names `site.FPTTLV`, declares 16 B and precedes two zeroed 64-bit fields.
 
-For empty parser input, the selected path is complete: allocate the container, clear its two fields, skip record parsing, publish the container and resume the saved continuation with raw success. Nonempty record/node construction remains unknown. The [hash-input reader](userclient_input_reader_report.md) later takes its incoming container from scratch+0x600. This increment establishes the staging and private parser interface; it does not establish the original tag's field identity, a termination guarantee, complete parser behavior, native object lifetime or a successful daemon-kext transaction.
+For empty parser input, the selected path is complete: allocate the container, clear its two fields, skip record parsing, publish the container and resume the saved continuation with raw success. Nonempty parsing remains incomplete. The later [record-node increment](userclient_record_nodes_report.md) establishes conditional node/buffer construction from a post-header cut; metadata production, completed serialization and list publication remain open. The [hash-input reader](userclient_input_reader_report.md) later takes its incoming container from scratch+0x600. This increment establishes the staging and private parser interface; it does not establish the original tag's field identity, a termination guarantee, complete parser behavior, native object lifetime or a successful daemon-kext transaction.
 
 ## Primary evidence and validation
 
@@ -233,3 +233,7 @@ Under the stated valid-storage premises, staging takes O(N) time, requests N B a
 - **QG5**: Caller clear versus shared-entry behavior, zero-copy versus copy completion, encoded extent versus raw status, descriptor label versus runtime identity, empty versus nonempty parser coverage and direct versus aliased writes remain distinct.
 - **QG6**: Original dual-image words/fixups/symbols/descriptor, 20 nonvacuous formulas, five predecessor rechecks, 768 bank inputs and four custody comparisons support bounded claims.
 - **QG7**: Ranked continuation preserves nonempty construction, command/field identity, native input/ownership, key/retag and daemon-correlation questions.
+
+## Record-node construction increment
+
+The [post-header constructor follow-up](userclient_record_nodes_report.md) closes the selected metadata return, special-pair bypass, payload-plus-ten guard, typed 32 B node initialization and buffer/writer handoff. Complete nonempty parsing, header production, payload copy, list publication and original field identity remain open.

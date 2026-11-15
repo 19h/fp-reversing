@@ -1743,3 +1743,7 @@ The [shared input-reader increment](userclient_input_reader_report.md) establish
 ## Container-staging increment
 
 The [FPTTLV staging and parser-entry report](userclient_container_staging_report.md) adds20 nonvacuous source obligations and five predecessor rechecks across488 selected instructions. It establishes saved input/size staging, typed container initialization, the complete empty-parser path and first nonempty gates. The nonempty node producer, field identity, termination, ownership and native daemon correlation remain open; the goal remains active.
+
+## Record-node construction increment
+
+The [post-header node increment](userclient_record_nodes_report.md) proves 15 new nonvacuous obligations across 358 selected instructions, with five predecessor rechecks and 768 bank inputs. Typed32 B node construction and exact L+10 buffer allocation are established conditionally; complete nonempty parsing and the full interface goal remain active.

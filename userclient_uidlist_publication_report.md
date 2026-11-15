@@ -192,3 +192,7 @@ The [hash-input reader](userclient_input_reader_report.md) identifies a separate
 ## Container-staging increment
 
 The [upstream parser container](userclient_container_staging_report.md) is allocated with an original16 B `site.FPTTLV` descriptor and two cleared64-bit fields. Its allocation identity remains separate from this16 B UIDList node and the reader node accessed through32 B. Nonempty construction is the remaining producer boundary.
+
+## Record-node construction increment
+
+The separate [FPTTLVNode constructor](userclient_record_nodes_report.md) has original 32 B allocation metadata and a distinct L+10 buffer request. Neither naming nor layout proves identity with a UIDList runtime object; its list publication remains to be traced.
