@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current payload-scalar increment: [The scalar-mixer report](daemon_payload_scalar_mixers_report.md) closes the two remaining internal payload word-mixer contracts and traces context/scratch inputs. It establishes no additional incoming/outgoing Mach port, right disposition or message emission site. Port/selector/buffer/transaction identity still requires a separate native join.
+
 Current digest-record structure increment: The [structure/epoch report](daemon_digest_record_structure_report.md) recovers local packed spans, indexed fields and tempered byte inputs. Its 316 post-read overwrites concern private owner lifetimes. This establishes no incoming/outgoing Mach port, right disposition or emission site; a native buffer/selector/port/transaction join remains required for daemon-kext pairing.
 
 Current digest-body origins increment: The [writer-lineage report](daemon_digest_body_origins_report.md) resolves the local producers of all 48 retained digest-body bytes across declared owner growth. Its 316 source copy links add no Mach name, right disposition, incoming/outgoing port or message emission site. A separate buffer/selector/owner/transaction join is still required to establish native daemon-kext pairing.

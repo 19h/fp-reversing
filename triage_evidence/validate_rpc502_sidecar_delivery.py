@@ -554,6 +554,7 @@ def main():
     if exists(BASE/'daemon_record_digest_report.md'):reports.add(BASE/'daemon_record_digest_report.md')
     if exists(BASE/'daemon_digest_body_origins_report.md'):reports.add(BASE/'daemon_digest_body_origins_report.md')
     if exists(BASE/'daemon_digest_record_structure_report.md'):reports.add(BASE/'daemon_digest_record_structure_report.md')
+    if exists(BASE/'daemon_payload_scalar_mixers_report.md'):reports.add(BASE/'daemon_payload_scalar_mixers_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3066,6 +3067,14 @@ def main():
         manifest['validation']['daemon_digest_record_structure_prior_source_queries_rechecked']=len(record_structure_audit['rechecked_prior_source_proofs'])
         manifest['validation']['daemon_digest_record_structure_retained_layout']=record_structure['cases'][0]['layout']
         manifest['validation']['daemon_digest_record_structure_retained_nested_span_layout_established']=record_structure['retained_nested_span_layout_established']
+    if exists(ROOT/'daemon_payload_scalar_mixers_checks.json'):
+        payload_mixers=json.loads(read(ROOT/'daemon_payload_scalar_mixers_checks.json'))
+        payload_mixers_audit=json.loads(read(ROOT/'daemon_payload_scalar_mixers_audit.json'))
+        manifest['validation']['daemon_payload_scalar_mixers_increment_checks']=payload_mixers['verified_counts']
+        manifest['validation']['daemon_payload_scalar_mixers_static_scope']=payload_mixers['scope']
+        manifest['validation']['daemon_payload_scalar_mixers_independent_checks']=payload_mixers_audit['independent_totals']
+        manifest['validation']['daemon_payload_scalar_mixers_new_source_queries_unsat']=len(payload_mixers_audit['source_proofs'])
+        manifest['validation']['daemon_payload_scalar_mixers_retained_payload_scalar_contract_established']=payload_mixers['retained_payload_scalar_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

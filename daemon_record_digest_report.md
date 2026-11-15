@@ -1,5 +1,7 @@
 # fairplayd: retained record-message SHA-1 and the downstream AES format
 
+Payload-source continuation: [The scalar-mixer report](daemon_payload_scalar_mixers_report.md) identifies the final two BE32 words as equivalent affine transforms of separate reads, including scratch prefix-overwrite history. Their normalized values remain 00833631/69114534. The existing 67-byte message and digest are unchanged; application schema and native daemon-kext pairing remain unknown.
+
 Subsequent structure evidence: [the digest-record report](daemon_digest_record_structure_report.md) decodes the body's local spans as 48 B at offset 77 and 28 B at offset 97, with count-like scalar 1 at offsets 85/105, indexed bank words and four tempered input words per context. Geometric nesting is exact; the 20 B prefix interpretation remains conditional on the established constructor layout. The final 8 B payload, native schema and transport pairing remain unknown.
 
 Subsequent evidence: the [digest-body writer lineage](daemon_digest_body_origins_report.md) resolves the inherited 48 B window's local producers across earlier owner-growth intervals. All bytes now have source writers; eight four-byte and two two-byte codec reductions are established, with twelve surviving address/cache/text-encoded bytes. Upstream scalar meanings and application field names remain unknown. This supersedes only the local inherited-byte producer gap below; native admission and daemon-kext pairing remain unknown.
