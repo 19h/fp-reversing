@@ -1861,3 +1861,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) cl
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) identifies 0x10004e8b8 and 0x100085b08 as descending boundary-staging loops with distinct position-dependent XOR masks. It recovers the wrapper and callee control codecs and records 144 main plus sixteen final word-table reads per retained core. Counts and boundary encodings do not establish complete algorithm identity.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

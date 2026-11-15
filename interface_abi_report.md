@@ -2010,3 +2010,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) re
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) supplies universal record/descriptor re-encoding equations and the condition (D&6)==0 for codec roundtrip. It proves the signed32, eight-byte-stride dispatch address, maps the input/output scratch windows and recovers both sixteen-byte boundary masks. These are private source contracts; no public operation or native descriptor admission is established.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

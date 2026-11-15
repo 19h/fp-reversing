@@ -465,3 +465,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) su
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) recovers the private descriptor re-encoding and exact boundary masks around the retained middle-sixteen-byte core. These source contracts do not identify a CoreFP public operation, complete block algorithm or native client/daemon/kext correspondence.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

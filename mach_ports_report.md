@@ -1755,3 +1755,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) es
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) establishes internal descriptor dispatch, scratch-buffer staging and table-read coordinates. Its phase indices are not established Mach IDs or IOKit selectors. No new incoming/outgoing Mach port, right transfer, emission location or native daemon-kext transaction is established.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

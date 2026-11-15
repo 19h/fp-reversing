@@ -1881,3 +1881,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) di
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) separates outer-record and descriptor-address control masks, positive input counts and modulo-negative output indices, and the two inner sixteen-byte scratch windows. An unchanged encoded word produces a different dispatch index after descriptor relocation. Native object/controller lifetime, admission and transport correspondence remain unknown.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

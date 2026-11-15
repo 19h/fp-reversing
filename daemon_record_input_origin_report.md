@@ -143,3 +143,7 @@ Reproduction uses the established Python/Z3 environment: run `recover_daemon_rec
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) resolves the pointer-dependent control formulas and the exact condition for wrapper/callee roundtrip. It maps both inner sixteen-byte buffers, recovers the input/output XOR masks, and records the core word-table footprint. The complete algorithm and upstream serialized-message lineage remain unknown.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

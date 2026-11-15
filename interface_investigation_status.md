@@ -1653,3 +1653,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) es
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) establishes the private record/descriptor control codecs, the exact alignment condition for roundtrip, signed dispatch geometry, and two sixteen-position boundary XOR masks. Independent replay covers 4580 retained instructions; fifteen solver obligations qualify the source contracts. The core table footprint is recorded, while complete algorithm identity, native caller/controller admission and daemon-kext pairing remain unknown. The full goal remains active.
+
+## Core-lookup follow-up
+
+The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.

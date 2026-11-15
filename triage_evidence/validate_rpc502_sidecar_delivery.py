@@ -546,6 +546,7 @@ def main():
     if exists(BASE/'daemon_record_banks_report.md'):reports.add(BASE/'daemon_record_banks_report.md')
     if exists(BASE/'daemon_record_input_origin_report.md'):reports.add(BASE/'daemon_record_input_origin_report.md')
     if exists(BASE/'daemon_block_staging_report.md'):reports.add(BASE/'daemon_block_staging_report.md')
+    if exists(BASE/'daemon_core_lookup_report.md'):reports.add(BASE/'daemon_core_lookup_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2980,6 +2981,15 @@ def main():
         manifest['validation']['daemon_block_staging_certified_rewrites']=staging_audit['certified_rewrites']
         manifest['validation']['daemon_block_staging_derived_key_equivalence']=staging_audit['derived_key_equivalence']
         manifest['validation']['daemon_block_staging_controls']=staging_audit['controls']
+    if exists(ROOT/'daemon_core_lookup_checks.json'):
+        core_lookup=json.loads(read(ROOT/'daemon_core_lookup_checks.json'))
+        core_lookup_audit=json.loads(read(ROOT/'daemon_core_lookup_audit.json'))
+        manifest['validation']['daemon_core_lookup_increment_checks']=core_lookup['verified_counts']
+        manifest['validation']['daemon_core_lookup_static_scope']=core_lookup['scope']
+        manifest['validation']['daemon_core_lookup_independent_checks']=core_lookup_audit['independent_totals']
+        manifest['validation']['daemon_core_lookup_source_queries_unsat']=len(core_lookup_audit['source_proofs'])
+        manifest['validation']['daemon_core_lookup_identical_retained_context_graphs']=core_lookup_audit['identical_retained_context_graphs']
+        manifest['validation']['daemon_core_lookup_controls']=core_lookup_audit['controls']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
