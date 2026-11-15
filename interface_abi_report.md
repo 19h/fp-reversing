@@ -2006,3 +2006,7 @@ The [record-bank increment](daemon_record_banks_report.md) establishes the three
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) recovers the private wrapper/descriptor interface at 0x100427b0c -> 0x100411480: input S+2, separate sixteen-byte output, pointer-dependent encoded control and a four-byte result copied back to the outer record. The formatter preserves S[0:2] and S[18:20]. These are retained source interfaces; no public IPC selector or native ABI type is established.
+
+## Block-staging follow-up
+
+The [block-staging increment](daemon_block_staging_report.md) supplies universal record/descriptor re-encoding equations and the condition (D&6)==0 for codec roundtrip. It proves the signed32, eight-byte-stride dispatch address, maps the input/output scratch windows and recovers both sixteen-byte boundary masks. These are private source contracts; no public operation or native descriptor admission is established.

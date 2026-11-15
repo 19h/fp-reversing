@@ -461,3 +461,7 @@ The [record-bank increment](daemon_record_banks_report.md) derives a conditional
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) supplies source lineage for the retained twenty-byte input: serialized head/tail bytes surround a transformed sixteen-byte middle. It does not identify a CoreFP public operation, a particular source message, or native client/daemon/kext transaction correspondence.
+
+## Block-staging follow-up
+
+The [block-staging increment](daemon_block_staging_report.md) recovers the private descriptor re-encoding and exact boundary masks around the retained middle-sixteen-byte core. These source contracts do not identify a CoreFP public operation, complete block algorithm or native client/daemon/kext correspondence.

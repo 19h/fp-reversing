@@ -1877,3 +1877,7 @@ The [record-bank increment](daemon_record_banks_report.md) links three nominal s
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) distinguishes the serializer frame F from the later constructor frame K, joins the twenty-byte input to its actual producers, and records state-word overwrites before the middle-block helper. The formatter requires a nonalias premise for snapshot composition; a source control demonstrates the overlapping-output exception. Native environmental/caller and transport correspondence remain unknown.
+
+## Block-staging follow-up
+
+The [block-staging increment](daemon_block_staging_report.md) separates outer-record and descriptor-address control masks, positive input counts and modulo-negative output indices, and the two inner sixteen-byte scratch windows. An unchanged encoded word produces a different dispatch index after descriptor relocation. Native object/controller lifetime, admission and transport correspondence remain unknown.

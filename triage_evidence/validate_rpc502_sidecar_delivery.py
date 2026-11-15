@@ -545,6 +545,7 @@ def main():
     if exists(BASE/'daemon_record_extension_report.md'):reports.add(BASE/'daemon_record_extension_report.md')
     if exists(BASE/'daemon_record_banks_report.md'):reports.add(BASE/'daemon_record_banks_report.md')
     if exists(BASE/'daemon_record_input_origin_report.md'):reports.add(BASE/'daemon_record_input_origin_report.md')
+    if exists(BASE/'daemon_block_staging_report.md'):reports.add(BASE/'daemon_block_staging_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2969,6 +2970,16 @@ def main():
         manifest['validation']['daemon_record_input_origin_independent_checks']=origin_audit['independent_totals']
         manifest['validation']['daemon_record_input_origin_source_queries_unsat']=len(origin_audit['source_proofs'])
         manifest['validation']['daemon_record_input_origin_alias_controls']=origin_audit['alias_controls']
+    if exists(ROOT/'daemon_block_staging_checks.json'):
+        staging=json.loads(read(ROOT/'daemon_block_staging_checks.json'))
+        staging_audit=json.loads(read(ROOT/'daemon_block_staging_audit.json'))
+        manifest['validation']['daemon_block_staging_increment_checks']=staging['verified_counts']
+        manifest['validation']['daemon_block_staging_static_scope']=staging['scope']
+        manifest['validation']['daemon_block_staging_independent_checks']=staging_audit['independent_totals']
+        manifest['validation']['daemon_block_staging_source_queries_unsat']=len(staging_audit['source_proofs'])
+        manifest['validation']['daemon_block_staging_certified_rewrites']=staging_audit['certified_rewrites']
+        manifest['validation']['daemon_block_staging_derived_key_equivalence']=staging_audit['derived_key_equivalence']
+        manifest['validation']['daemon_block_staging_controls']=staging_audit['controls']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

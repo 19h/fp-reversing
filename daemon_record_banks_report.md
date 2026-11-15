@@ -162,3 +162,7 @@ Existing reference data suffice; IDA is not accessed. No new target interval, na
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) establishes the actual producers of the twenty-byte input used here: S[0:2] || T16 || S[18:20]. The formatter stores are observed in retained parent source traces, while the masked-copy result above remains conditional on the still-missing banks and memory admission. No new post-frontier interval executes.
+
+## Block-staging follow-up
+
+The [block-staging increment](daemon_block_staging_report.md) recovers two distinct inner-helper boundary masks around the sixteen-byte core. They are separate from this report's later destination-position mask. The current constructor bank fields remain undefined; no new post-frontier interval or native transport join is admitted.

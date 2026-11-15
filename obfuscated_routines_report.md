@@ -1857,3 +1857,7 @@ The [record-bank increment](daemon_record_banks_report.md) recovers 0x10084fcc4 
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) classifies 0x100be0454 as a masked big-endian word serializer, 0x100427b0c as a descriptor wrapper, 0x100411480 as the retained middle-block table transform, and 0x100aaa324 as a twenty-byte two/sixteen/two formatter. State encoding matches the earlier SHA-1 representation; message and transform-algorithm identity remain unknown.
+
+## Block-staging follow-up
+
+The [block-staging increment](daemon_block_staging_report.md) identifies 0x10004e8b8 and 0x100085b08 as descending boundary-staging loops with distinct position-dependent XOR masks. It recovers the wrapper and callee control codecs and records 144 main plus sixteen final word-table reads per retained core. Counts and boundary encodings do not establish complete algorithm identity.

@@ -1649,3 +1649,7 @@ The [record-bank increment](daemon_record_banks_report.md) identifies nominal pr
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) establishes five-word serialization, a descriptor-driven middle-sixteen-byte transform and the exact two/sixteen/two formatter splice. Two retained normal classes supply 10,808 independently replayed source visits and six universal obligations; all 608 prior normal frontier input values agree. The message, transform algorithm, current missing-bank epoch and native daemon-kext pairing remain unknown; the full goal remains active.
+
+## Block-staging follow-up
+
+The [block-staging increment](daemon_block_staging_report.md) establishes the private record/descriptor control codecs, the exact alignment condition for roundtrip, signed dispatch geometry, and two sixteen-position boundary XOR masks. Independent replay covers 4580 retained instructions; fifteen solver obligations qualify the source contracts. The core table footprint is recorded, while complete algorithm identity, native caller/controller admission and daemon-kext pairing remain unknown. The full goal remains active.
