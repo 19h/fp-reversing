@@ -210,3 +210,7 @@ The [publication follow-up](userclient_record_publication_report.md) establishes
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The formerly conditional S+0xa18/S+0x2a0/S+0xa64 and C+0x280 channels now have selected staged-byte producers, with cursor+10+L committed to F+0xa80. Decoded tag0/type0x6685 selects the existing success bypass; other selected tags proceed to construction.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It composes a valid allocated node with null data result into pending-node typed retirement and container failure. The complete zero-node-result incoming cleanup state remains open.

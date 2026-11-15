@@ -193,3 +193,7 @@ The [post-writer publication increment](userclient_record_publication_report.md)
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected metadata follow-up identifies the staged header and body source consumed by construction/writing and proves its original parser cursor update. Native ownership and complete type/failure coverage remain open.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It establishes selected pending/list/container retirement requests and parser failure output. The valid-node cleanup contract does not establish every incoming allocation or lookup state.

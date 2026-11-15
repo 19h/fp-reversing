@@ -262,3 +262,7 @@ The [publication caller](userclient_record_publication_report.md) reuses the sam
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The producer-side staged header now matches the recovered protected ten-byte record representation and transformed type0x6685 body source. Shared word callbacks differ between tag and length phases; full native reader linkage remains conditional.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It supplies conditional producer-side failure/status/output and retained-list retirement context. Native reader/container identity remains a separate premise.

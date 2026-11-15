@@ -1990,3 +1990,7 @@ The [record-publication increment](userclient_record_publication_report.md) esta
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected type0x6685 path decodes the ten-byte staged header, accepts a bounded payload and advances the cursor by ten plus its length. Decoded tag0 selects the parser-success continuation and permits a remaining outer suffix.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. Selected parser failure now has exact status preservation, null output and container/list retirement requests; native ownership and all incoming result paths remain open.

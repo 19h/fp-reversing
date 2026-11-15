@@ -201,3 +201,7 @@ The [record-publication increment](userclient_record_publication_report.md) conn
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected metadata chain supplies staged-byte tag/type/length provenance and bounded cursor progress. It does not establish the wider original marker producer or tag business meaning.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. Selected failure state is retained across node/container cleanup and restored to the parser caller. Original wider discriminator/input identity remains unestablished.

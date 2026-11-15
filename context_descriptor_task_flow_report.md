@@ -225,3 +225,7 @@ The [tag lookup/list-publication increment](userclient_record_publication_report
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected staged header now has exact tag/type/length provenance, header/body bounds and a committed next cursor. Cross-layer caller identity and native storage epochs remain open.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It connects selected parser failure status/output to retained-container cleanup under explicit caller/storage premises.

@@ -2119,3 +2119,7 @@ The [record-publication ABI](userclient_record_publication_report.md) binds arbi
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The recovered staged ABI contains BE32 tag, transformed BE16 type and BE32 payload length in ten protected bytes. The selected body source and metadata return are bounded by the outer extent; decoded tag0/type0x6685 selects early parser success.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. The recovered cleanup ABI preserves raw status through a saved source cell, emits typed/data retirement requests and writes null through the saved parser output.

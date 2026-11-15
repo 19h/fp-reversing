@@ -212,3 +212,7 @@ For a finite stable list containing k examined nodes with readable headers, repe
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The earlier metadata return now has selected staged-byte provenance: cursor advances by ten plus decoded payload length before node construction/publication. Publication itself still preserves that committed cursor; full native and cross-layer composition remain conditional.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It recovers the separate selected pending-node and retained-container failure paths. The counterfactual other-status target-selection cut does not by itself supply the cleanup phase/storage premises.

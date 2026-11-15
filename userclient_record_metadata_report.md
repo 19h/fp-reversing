@@ -203,3 +203,7 @@ These are private dispatcher selectors, not Mach message IDs or external IOUserC
 - **QG5**: Candidate versus committed cursor, protected storage versus decoded bytes, selected success versus full consumption, pointer bits versus native identity and local progress versus global termination are distinct.
 - **QG6**: Dual-image words, original pointers, 26 nonvacuous formulas, five predecessor rechecks, 25 literal accesses and four custody controls support bounded claims.
 - **QG7**: Ranked continuation retains failure cleanup, cross-layer input provenance, native epochs, other types and zero-tag/suffix semantics.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It follows selected parser failure to retained-container/list retirement requests, null output and raw-status resume. Native callee effects and all incoming state compositions remain open.

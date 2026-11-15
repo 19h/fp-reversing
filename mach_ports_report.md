@@ -1865,3 +1865,7 @@ The [record-publication increment](userclient_record_publication_report.md) adds
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. This increment identifies internal staged-byte and cursor channels. It establishes no additional Mach port, right or emission site and no correlated daemon-kext exchange.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. This increment establishes internal cleanup/status/output channels and no additional Mach right, endpoint, emission site or successful daemon-kext exchange.

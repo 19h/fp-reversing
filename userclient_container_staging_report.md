@@ -249,3 +249,7 @@ The [record-publication follow-up](userclient_record_publication_report.md) clos
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected nonempty continuation now has exact ten-byte header provenance, body bounds, payload pointer and cursor commit. Zero-length payloads consume ten bytes; decoded tag0/type0x6685 can select success before the outer suffix is consumed.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. The selected parser-failure continuation now reaches null output at the saved caller address and restores raw status before resume. Staged-buffer ownership after that resume remains open.

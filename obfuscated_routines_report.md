@@ -1970,3 +1970,7 @@ The [tag lookup/publication analysis](userclient_record_publication_report.md) e
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected shared decoder callbacks bind staged bytes to tag/type/length channels and the parser commits cursor+10+L after body bounds acceptance. Decoded zero tag with type0x6685 selects the parser-success continuation before node construction.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. The failure dispatcher joins a successor-based container destructor and valid pending-node cleanup to null output and saved-status resume, with distinct original typed descriptors.

@@ -1759,3 +1759,7 @@ The [publication increment](userclient_record_publication_report.md) proves 69 n
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. Selected metadata/body/cursor production is now established conditionally from staged bytes. Remaining work includes failure cleanup, other types, native epochs and a successful correlated daemon/provider exchange.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. Selected failure/container/list and valid-pending-node cleanup contracts are established; complete incoming allocation-result paths, native epochs, other types and daemon correlation remain open.

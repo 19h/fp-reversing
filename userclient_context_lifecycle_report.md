@@ -208,3 +208,7 @@ The [record-publication lifecycle](userclient_record_publication_report.md) esta
 ## Staged metadata and cursor increment
 
 The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected staged-input metadata/cursor chain now connects to node construction, writer and publication. Native lifecycle, ownership, synchronization and caller correlation remain open.
+
+## Parser cleanup increment
+
+The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this increment. It establishes selected FPTTLV container/list and valid-pending-node retirement requests. Native allocator effects, descriptor bookkeeping and synchronization remain unknown.
