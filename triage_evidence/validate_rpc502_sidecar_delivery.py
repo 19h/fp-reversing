@@ -548,6 +548,7 @@ def main():
     if exists(BASE/'daemon_block_staging_report.md'):reports.add(BASE/'daemon_block_staging_report.md')
     if exists(BASE/'daemon_core_lookup_report.md'):reports.add(BASE/'daemon_core_lookup_report.md')
     if exists(BASE/'daemon_core_affine_report.md'):reports.add(BASE/'daemon_core_affine_report.md')
+    if exists(BASE/'daemon_core_rounds_report.md'):reports.add(BASE/'daemon_core_rounds_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3002,6 +3003,16 @@ def main():
         manifest['validation']['daemon_core_affine_mixcolumns']=core_affine['mixcolumns']
         manifest['validation']['daemon_core_affine_original_window_mapping']=core_affine['original_window_mapping']
         manifest['validation']['daemon_core_affine_reference_PDF_sha256']=core_affine['reference']['PDF_sha256']
+    if exists(ROOT/'daemon_core_rounds_checks.json'):
+        core_rounds=json.loads(read(ROOT/'daemon_core_rounds_checks.json'))
+        core_rounds_audit=json.loads(read(ROOT/'daemon_core_rounds_audit.json'))
+        manifest['validation']['daemon_core_rounds_increment_checks']=core_rounds['verified_counts']
+        manifest['validation']['daemon_core_rounds_static_scope']=core_rounds['scope']
+        manifest['validation']['daemon_core_rounds_independent_checks']=core_rounds_audit['independent_totals']
+        manifest['validation']['daemon_core_rounds_source_queries_unsat']=len(core_rounds_audit['source_proofs'])
+        manifest['validation']['daemon_core_rounds_offset_vectors']=core_rounds['cases'][0]['offsets9_hex']
+        manifest['validation']['daemon_core_rounds_prefix_schedule']=core_rounds['cases'][0]['AES128_prefix_schedule']
+        manifest['validation']['daemon_core_rounds_terminal_encoded_xor16_hex']=core_rounds['cases'][0]['terminal_encoded_xor16_hex']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

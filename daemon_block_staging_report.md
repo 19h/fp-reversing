@@ -181,3 +181,7 @@ The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable
 ## Core affine-table follow-up
 
 The [affine-table increment](daemon_core_affine_report.md) establishes the initial sixteen byte/index codecs and exact forward AES S-box and encoded MixColumns identities for the four main word tables. Source projections, complete finite domains and explicit rejection witnesses qualify these component contracts. Full round/key semantics and the native daemon-kext transaction join remain unknown.
+
+## Core round-composition follow-up
+
+[The nine-layer composition report](daemon_core_rounds_report.md) proves the source consumer equations for all nine main substitution/ShiftRows/MixColumns layers and all sixteen terminal word indices. The source interleaves layers and terminal/output lookups. Eight recovered offset vectors exactly match an AES-128 expansion subsequence, giving a nine-layer encryption prefix under an explicit core input whitening. Final decoding, full encryption equivalence and native daemon-kext/material correspondence remain unknown; assumptions, source proofs and independent checks are retained there.
