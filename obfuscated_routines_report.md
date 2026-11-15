@@ -1881,3 +1881,7 @@ The [affine-table increment](daemon_core_affine_report.md) establishes the initi
 ## Complete state-format follow-up
 
 [The state-format report](daemon_state_splice_report.md) composes the five encoded words, serializer, recovered AES wrapper and twenty-byte formatter. Decode each word with XOR 0xf4f92df7, serialize big-endian, encrypt decoded bytes 2..17 under the recovered AES-128 key, preserve both two-byte edges, then XOR all 20 bytes with 0x98. Four source queries, fresh epoch/custody checks and 196 complete format controls qualify this conditional 160-bit permutation. Upstream message identity, native admission, the later undefined bank fields and daemon-kext pairing remain open.
+
+## Retained record-message digest follow-up
+
+[The record-digest report](daemon_record_digest_report.md) identifies the retained five words as SHA-1 of an exact 67-byte message: an 11-byte image prefix, a decoded 48-byte window at owner offset 77, and an eight-byte image suffix. The body uses the established record mask indexed by the original owner offset. Fresh source replay checks both compression blocks, every schedule word and round-entry state, byte epochs and downstream AES composition in both contexts. Native admission, the inherited body's upstream semantic origin, later missing bank fields and daemon-kext pairing remain open.

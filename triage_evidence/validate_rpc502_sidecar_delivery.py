@@ -551,6 +551,7 @@ def main():
     if exists(BASE/'daemon_core_rounds_report.md'):reports.add(BASE/'daemon_core_rounds_report.md')
     if exists(BASE/'daemon_core_cipher_report.md'):reports.add(BASE/'daemon_core_cipher_report.md')
     if exists(BASE/'daemon_state_splice_report.md'):reports.add(BASE/'daemon_state_splice_report.md')
+    if exists(BASE/'daemon_record_digest_report.md'):reports.add(BASE/'daemon_record_digest_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3034,6 +3035,16 @@ def main():
         manifest['validation']['daemon_state_splice_source_queries_unsat']=len(state_splice_audit['source_proofs'])
         manifest['validation']['daemon_state_splice_format_contract']=state_splice['format_contract']
         manifest['validation']['daemon_state_splice_host_reference']=state_splice_audit['host_reference']
+    if exists(ROOT/'daemon_record_digest_checks.json'):
+        record_digest=json.loads(read(ROOT/'daemon_record_digest_checks.json'))
+        record_digest_audit=json.loads(read(ROOT/'daemon_record_digest_audit.json'))
+        manifest['validation']['daemon_record_digest_increment_checks']=record_digest['verified_counts']
+        manifest['validation']['daemon_record_digest_static_scope']=record_digest['scope']
+        manifest['validation']['daemon_record_digest_independent_checks']=record_digest_audit['independent_totals']
+        manifest['validation']['daemon_record_digest_source_queries_unsat']=len(record_digest_audit['source_proofs'])
+        manifest['validation']['daemon_record_digest_retained_message67_hex']=record_digest['cases'][0]['message67_hex']
+        manifest['validation']['daemon_record_digest_host_reference']=record_digest_audit['host_reference']
+        manifest['validation']['daemon_record_digest_retained_digest_message_identity_established']=record_digest['retained_digest_message_identity_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

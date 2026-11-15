@@ -8,7 +8,7 @@ This extends the [compression-frame ABI report](daemon_compression_frame_report.
 
 | Evidence | Verified extent |
 | --- | --- |
-| Original daemon | `/Users/___/Downloads/zut/fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
+| Original daemon | `fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
 | Original source | 13 contiguous spans; 1,467 unique instructions; 16 original authenticated fixups |
 | Current IDB | `fairplayd`, target `6b117c693e3b`; ten read-only windows / 5,376 bytes, raw identical |
 | Local source proofs | 44 solver obligations, with original/normalized artifacts; 1,302 lifted instructions |
@@ -152,3 +152,7 @@ core state -> external digest -> cache[36] -> driver IPC: unknown joins
 Reproduction uses the pinned Python/Z3 environment from the preceding reports. Run `probe_daemon_sha1_core.py`, `recover_daemon_sha1_core.py`, `prove_daemon_sha1_core.py`, then `validate_daemon_sha1_core.py`. The source probe records explicit fixtures, original instructions, register/byte-definedness, ordered effects, authenticated-target metadata and round snapshots. The validator reconstructs proofs, reruns all48 complete cases and compares independent semantic/byte ledgers. For a block, the compact model uses O(80) time/space including retained history. Source tooling uses O(total visits/effects + source + solver resources) time; memory includes compressed artifacts, one decoded/fresh journal, one private mapping and solver expressions. Solver queries have a 30-second limit; no polynomial SMT complexity bound is claimed.
 
 QG1: factual technical scope. QG2: SC1-SC12 and falsification probes. QG3: selector2 core increment covered; full objective remains incomplete. QG4: explicit byte/word widths, masks, endianness, modulo arithmetic, modeled dispatch counts and geometry. QG5: local universal proofs, finite complete cores, state writes, native caller continuity and cache/IPC publication remain distinct. QG6: original source/fixups, live IDB, certified proof chain, fresh complete traces, standard reference and host algorithm oracles support scoped claims. QG7: impact-ranked additional evidence table provided.
+
+## Retained record-message digest follow-up
+
+[The record-digest report](daemon_record_digest_report.md) identifies the retained five words as SHA-1 of an exact 67-byte message: an 11-byte image prefix, a decoded 48-byte window at owner offset 77, and an eight-byte image suffix. The body uses the established record mask indexed by the original owner offset. Fresh source replay checks both compression blocks, every schedule word and round-entry state, byte epochs and downstream AES composition in both contexts. Native admission, the inherited body's upstream semantic origin, later missing bank fields and daemon-kext pairing remain open.

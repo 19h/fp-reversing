@@ -1,5 +1,7 @@
 # fairplayd: serialized state, middle-block transform and twenty-byte splice
 
+Current retained-message result: [the record-digest report](daemon_record_digest_report.md) establishes the exact 67-byte SHA-1 message and its downstream format in both retained contexts. Earlier message-unknown statements below describe this report's original evidence stage; native admission and the inherited body's upstream semantic identity remain unknown.
+
 Current result: [the complete state-format composition](daemon_state_splice_report.md) resolves the middle AES transform and its serializer/formatter contract for the retained contexts. Earlier transform-unknown statements below describe this report's original evidence stage; upstream message and native transaction identity remain open.
 
 The twenty-byte input at the record-extension frontier has an exact retained source lineage: a five-word serializer produces S[20], a descriptor-driven table transform consumes S[2:18] and produces T[16], and a formatter writes `S[0:2] || T[0:16] || S[18:20]`. The formatter's twenty stores survive unchanged to the missing-bank frontier. Both retained normal execution classes agree. The transform algorithm, source message, native caller epoch and daemon-kext transaction identity remain unknown. [RI1-RI6; RI-A1-RI-A6]
@@ -153,3 +155,7 @@ The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable
 ## Complete state-format follow-up
 
 [The state-format report](daemon_state_splice_report.md) composes the five encoded words, serializer, recovered AES wrapper and twenty-byte formatter. Decode each word with XOR 0xf4f92df7, serialize big-endian, encrypt decoded bytes 2..17 under the recovered AES-128 key, preserve both two-byte edges, then XOR all 20 bytes with 0x98. Four source queries, fresh epoch/custody checks and 196 complete format controls qualify this conditional 160-bit permutation. Upstream message identity, native admission, the later undefined bank fields and daemon-kext pairing remain open.
+
+## Retained record-message digest follow-up
+
+[The record-digest report](daemon_record_digest_report.md) identifies the retained five words as SHA-1 of an exact 67-byte message: an 11-byte image prefix, a decoded 48-byte window at owner offset 77, and an eight-byte image suffix. The body uses the established record mask indexed by the original owner offset. Fresh source replay checks both compression blocks, every schedule word and round-entry state, byte epochs and downstream AES composition in both contexts. Native admission, the inherited body's upstream semantic origin, later missing bank fields and daemon-kext pairing remain open.

@@ -1,5 +1,7 @@
 # fairplayd: five-word state to the AES middle-block record format
 
+Current retained-message result: [the record-digest report](daemon_record_digest_report.md) establishes the exact 67-byte SHA-1 message and its downstream format in both retained contexts. Earlier message-unknown statements below describe this report's original evidence stage; native admission and the inherited body's upstream semantic identity remain unknown.
+
 The five-word serializer, established AES wrapper and twenty-byte formatter compose into one conditional 160-bit permutation. Decode each source word with XOR `0xf4f92df7`, serialize the five decoded words big-endian, encrypt bytes 2 through 17 with the recovered AES-128 key, preserve the two bytes at each end, then XOR every output byte with `0x98`. Four universal source/composition queries establish the word, byte, address and continuation equations. The state/message origin, native caller epoch and daemon-kext transaction identity remain unknown. [SS1-SS6; SS-A1-SS-A6]
 
 | Evidence | Primary provenance and scope |
@@ -111,3 +113,7 @@ Reproduction in the established Python/Z3/OpenSSL environment runs `recover_daem
 | Medium | Use the exact partial-block layout as a comparison fingerprint | Independently establish related helper equations; matching constants or state size alone does not prove an interface join. |
 
 **QG1**: Factual technical scope. **QG2**: SS-A1 through SS-A6 record assumptions and falsification probes. **QG3**: Complete state/format composition, word epochs, source and destination interfaces, continuation and frontier limits are covered; the full goal remains active. **QG4**: u32/u64 arithmetic, big-endian word order, 20/16/2 B windows, 160/128/32-bit boundaries, counts and complexity are explicit. **QG5**: Word read versus overwritten state epochs, fixed component versus native environment, arbitrary cipher cut versus pinned AES identity, snapshot versus aliased stores and retained versus post-frontier values are distinguished. **QG6**: Original instructions/effects, pinned full cipher/lineage evidence, fresh replay, source obligations and host roundtrips provide provenance. **QG7**: Impact-labelled continuation is bounded above. All gates pass for this increment; upstream message identity, native caller admission and daemon-kext pairing remain unknown.
+
+## Retained record-message digest follow-up
+
+[The record-digest report](daemon_record_digest_report.md) identifies the retained five words as SHA-1 of an exact 67-byte message: an 11-byte image prefix, a decoded 48-byte window at owner offset 77, and an eight-byte image suffix. The body uses the established record mask indexed by the original owner offset. Fresh source replay checks both compression blocks, every schedule word and round-entry state, byte epochs and downstream AES composition in both contexts. Native admission, the inherited body's upstream semantic origin, later missing bank fields and daemon-kext pairing remain open.
