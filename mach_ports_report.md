@@ -1841,3 +1841,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap increment](userclient_replacement_bootstrap_report.md) binds typed allocation, initializer and rollback calls. It establishes no new Mach endpoint, port transfer or emission site.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) identifies a byte-string-derived UIDList equality discriminator. It establishes no Mach-name identity, new endpoint, port transfer or emission site.
+
+## Shared input-reader increment
+
+The [shared input reader](userclient_input_reader_report.md) establishes internal output cells and nested continuations, with no new Mach endpoint, right transfer or message emission site. Encoded-tag0x2685a3ce and private table indices are not Mach names or message IDs.

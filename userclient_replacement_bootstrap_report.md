@@ -177,3 +177,7 @@ Excluding allocator/initializer internals, this selected caller uses O(1) time a
 - **QG7**: Ranked continuation includes input identity, incoming phase, saved-status writers, synchronization, ownership and daemon correlation.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) recovers the selected hash and exact null/empty/zero-result behavior. Its complete bounded literal-base inventory preserves the distinction between the saved-status initial default and unknown native effects through aliases/calls.
+
+## Shared input-reader increment
+
+The [shared input-reader analysis](userclient_input_reader_report.md) distinguishes encoded payload length at source+0xaa8 from primary status W23 and saved status at SP+0x9ec. It closes the selected hash-input publication path but does not restrict the native saved-status domain or complete holder ownership.

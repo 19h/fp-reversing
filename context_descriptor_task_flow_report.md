@@ -201,3 +201,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) adds private typed-memory and continuation interfaces; a successful daemon transaction in the same context/object epoch remains uncorrelated.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) adds input-cell, byte-loop and discriminator-store interfaces. External input identity and a successful correlated daemon transaction remain unknown.
+
+## Shared input-reader increment
+
+The [private input-reader ABI](userclient_input_reader_report.md) establishes nested continuations and pointer/encoded-length outputs within the selected kext phase. It does not establish a new task identity, external Mach endpoint, serialized input identity or daemon-kext transaction correlation.

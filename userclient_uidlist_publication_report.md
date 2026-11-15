@@ -184,3 +184,7 @@ No selected call emits a newly identified Mach message or endpoint. The context 
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) establishes how the existing-node caller constructs a missing shared table and returns to processing or the saved-status marker-update gate.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) closes the selected S+0xc90 hash derivation from the nullable pointer read through C+0x128. Input business identity and its earlier producer remain unknown.
+
+## Shared input-reader increment
+
+The [hash-input reader](userclient_input_reader_report.md) identifies a separate node layout with successor+0, extent+0x10 and buffer+0x18, accessed through32 B. This does not identify that node as the16 B UIDList node or establish the original payload business identity.

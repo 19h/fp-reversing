@@ -184,3 +184,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) follows a missing global table through initialization/publication or rollback/reload, retaining the original context-processing continuation.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) distinguishes node+0 byte-string-derived equality from node+4 marker tracking and documents the unresolved input/marker producer and epoch boundaries.
+
+## Shared input-reader increment
+
+The [hash-input producer](userclient_input_reader_report.md) publishes a decoded allocation through scratch+0x128 and resumes the exact hash gate. Caller-local pointer/length/continuation contracts are established; native lifetime, deallocation, serialization and original context-field identity remain unknown.

@@ -161,3 +161,7 @@ Cleanup derives its key from `UIDList node+4 XOR 0x31ae0066`. Consequently the k
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) extends shared-table construction evidence to the existing-node replacement caller, including its ordinary rollback and independent holder reload.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) separates the recovered node+0 hash from the source+0x20 marker input used for table keys. No literal X4-base write to that marker cell occurs in the pinned container; alias-complete marker origin remains open.
+
+## Shared input-reader increment
+
+The [shared input-reader report](userclient_input_reader_report.md) closes the selected scratch+0x128 input producer used by discriminator hashing. Encoded length and W23 status are separate. It does not establish the original source+0x20 tunnel-marker producer or a successful native insertion transaction.

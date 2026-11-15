@@ -177,3 +177,7 @@ For a valid stable input with L bytes preceding NUL, this selected producer take
 - **QG5**: Null/empty/zero-hash outcomes, 64-bit versus32-bit recurrence, full64 test versus stored32 result, discriminator versus marker and syntactic versus semantic writers remain distinct.
 - **QG6**: Original instructions/fixups, 13 nonvacuous queries, seven predecessor query rechecks, 272 independent integer replays and four custody controls support the bounded claims.
 - **QG7**: Ranked continuation retains input identity/extent, marker generation, alias/SP effects, serialization and daemon correlation as open requirements.
+
+## Shared input-reader increment
+
+The earlier scratch+0x128 producer is now traced in the [shared input-reader report](userclient_input_reader_report.md): a protected tagged-node reader requests and copies exactly L bytes before resuming the hash gate. It adds no terminator in that path. Whether upstream content supplies NUL remains unknown; the prior valid finite NUL-terminated hash-input premise is therefore still required.

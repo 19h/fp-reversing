@@ -1735,3 +1735,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap increment](userclient_replacement_bootstrap_report.md) adds 22 new source obligations, 26 predecessor query rechecks and both fallback routes; native lifecycle and daemon correlation remain open.
 
 The [discriminator-origin increment](userclient_discriminator_origin_report.md) adds 13 new obligations, seven predecessor query rechecks and 272 independent integer replays. Original input/marker producers and native saved-status effects remain open.
+
+## Shared input-reader increment
+
+The [shared input-reader increment](userclient_input_reader_report.md) establishes the selected private output/continuation ABI and exact-L decoded copy into the hash input. It adds 39 nonvacuous source/certificate obligations and three predecessor rechecks. Constructor/key provenance, termination, ownership and successful daemon-kext correlation remain open; the wider goal remains active.

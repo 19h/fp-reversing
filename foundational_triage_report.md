@@ -1966,3 +1966,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) closes the selected null-holder allocation, initialization, publication, rollback and saved processing continuation under explicit source/ABI premises.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) recovers the selected nullable byte-string hash, exact final modulus and zero-result gate, plus a six-cell literal-base inventory with explicit alias/SP limitations.
+
+## Shared input-reader increment
+
+The [hash-input reader](userclient_input_reader_report.md) closes the selected scratch+0x128 producer: tagged-node search, ten-byte protected-memory header, encoded length, exact-L allocation/copy and the saved hash continuation. Original field identity and payload termination remain unknown.

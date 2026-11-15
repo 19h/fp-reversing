@@ -571,6 +571,7 @@ def main():
     if exists(BASE/'userclient_uidlist_replacement_report.md'):reports.add(BASE/'userclient_uidlist_replacement_report.md')
     if exists(BASE/'userclient_replacement_bootstrap_report.md'):reports.add(BASE/'userclient_replacement_bootstrap_report.md')
     if exists(BASE/'userclient_discriminator_origin_report.md'):reports.add(BASE/'userclient_discriminator_origin_report.md')
+    if exists(BASE/'userclient_input_reader_report.md'):reports.add(BASE/'userclient_input_reader_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3230,6 +3231,15 @@ def main():
         manifest['validation']['userclient_discriminator_origin_new_source_queries_unsat']=len(discriminator_origin_audit['source_proofs'])
         manifest['validation']['userclient_discriminator_origin_prior_source_queries_rechecked']=len(discriminator_origin_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_discriminator_origin_conditional_discriminator_contract_established']=discriminator_origin['conditional_discriminator_contract_established']
+    if exists(ROOT/'userclient_input_reader_checks.json'):
+        input_reader=json.loads(read(ROOT/'userclient_input_reader_checks.json'))
+        input_reader_audit=json.loads(read(ROOT/'userclient_input_reader_audit.json'))
+        manifest['validation']['userclient_input_reader_increment_checks']=input_reader['verified_counts']
+        manifest['validation']['userclient_input_reader_static_scope']=input_reader['scope']
+        manifest['validation']['userclient_input_reader_independent_checks']=input_reader_audit['independent_totals']
+        manifest['validation']['userclient_input_reader_new_source_queries_unsat']=len(input_reader_audit['source_proofs'])
+        manifest['validation']['userclient_input_reader_prior_source_queries_rechecked']=len(input_reader_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_input_reader_conditional_input_reader_contract_established']=input_reader['conditional_input_reader_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

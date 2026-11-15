@@ -2095,3 +2095,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) maps the 16 B accessed initializer-record prefix, FPHashTable typed allocation/rollback descriptors and an earlier FPTTLV typed allocation call.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) maps the saved C+0x128 input-cell address, byte traversal, u64 accumulator, u32 discriminator store and exact private branch slots.
+
+## Shared input-reader increment
+
+The [input-reader private ABI](userclient_input_reader_report.md) retains pointer-output address at scratch+0x158, encoded-length-output address at+0x160 and outer continuation at+0x298. Primary status remains W23. The protected-memory header and exact-L copy do not establish an external wire layout or termination guarantee.

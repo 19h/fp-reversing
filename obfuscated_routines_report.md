@@ -1946,3 +1946,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) identifies token0xabd construction, exact initializer-output gating, shared-holder publication and saved continuation behavior in the selected replacement caller.
 
 The [discriminator-origin report](userclient_discriminator_origin_report.md) reduces the selected opaque byte arithmetic to a 5381-seeded unsigned64 33*h+byte recurrence with a final modulo(2^32-1), exact null/empty gates and zero-result rejection.
+
+## Shared input-reader increment
+
+Within `_PRnut72j9`, the [shared reader](userclient_input_reader_report.md) performs linked-node tag search, protected-memory header decoding, type/extent gates, `_IOMallocData(L)`, reverse decoded byte copying and publication to scratch+0x128. The selected caller resumes the discriminator hash gate; native business/type identity remains unknown.
