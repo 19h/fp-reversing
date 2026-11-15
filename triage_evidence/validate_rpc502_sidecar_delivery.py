@@ -576,6 +576,7 @@ def main():
     if exists(BASE/'userclient_record_nodes_report.md'):reports.add(BASE/'userclient_record_nodes_report.md')
     if exists(BASE/'userclient_record_writer_report.md'):reports.add(BASE/'userclient_record_writer_report.md')
     if exists(BASE/'userclient_record_publication_report.md'):reports.add(BASE/'userclient_record_publication_report.md')
+    if exists(BASE/'userclient_record_metadata_report.md'):reports.add(BASE/'userclient_record_metadata_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3280,6 +3281,15 @@ def main():
         manifest['validation']['userclient_record_publication_new_source_queries_unsat']=len(record_publication_audit['source_proofs'])
         manifest['validation']['userclient_record_publication_prior_source_queries_rechecked']=len(record_publication_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_record_publication_conditional_record_publication_contract_established']=record_publication['conditional_record_publication_contract_established']
+    if exists(ROOT/'userclient_record_metadata_checks.json'):
+        record_metadata=json.loads(read(ROOT/'userclient_record_metadata_checks.json'))
+        record_metadata_audit=json.loads(read(ROOT/'userclient_record_metadata_audit.json'))
+        manifest['validation']['userclient_record_metadata_increment_checks']=record_metadata['verified_counts']
+        manifest['validation']['userclient_record_metadata_static_scope']=record_metadata['scope']
+        manifest['validation']['userclient_record_metadata_independent_checks']=record_metadata_audit['independent_totals']
+        manifest['validation']['userclient_record_metadata_new_source_queries_unsat']=len(record_metadata_audit['source_proofs'])
+        manifest['validation']['userclient_record_metadata_prior_source_queries_rechecked']=len(record_metadata_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_record_metadata_conditional_record_metadata_contract_established']=record_metadata['conditional_record_metadata_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

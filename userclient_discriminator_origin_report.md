@@ -197,3 +197,7 @@ The [writer-side follow-up](userclient_record_writer_report.md) proves header en
 ## Record lookup and publication increment
 
 The [record-publication increment](userclient_record_publication_report.md) connects selected writer output to tag-based append/replacement. Original tag business identity, decoded payload termination, cursor progress and native live-reader/daemon correlation remain separate requirements.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected metadata chain supplies staged-byte tag/type/length provenance and bounded cursor progress. It does not establish the wider original marker producer or tag business meaning.

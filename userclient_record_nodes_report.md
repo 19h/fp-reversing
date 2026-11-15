@@ -206,3 +206,7 @@ The [writer follow-up](userclient_record_writer_report.md) closes the selected t
 ## Record lookup and publication increment
 
 The [publication follow-up](userclient_record_publication_report.md) establishes node+8 as previous and container+0/+8 as head/tail for the selected list stores. Lookup miss appends J; success replaces the returned node and emits old-buffer/node retirement requests. Full input/cursor production and native ownership remain unknown.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The formerly conditional S+0xa18/S+0x2a0/S+0xa64 and C+0x280 channels now have selected staged-byte producers, with cursor+10+L committed to F+0xa80. Decoded tag0/type0x6685 selects the existing success bypass; other selected tags proceed to construction.

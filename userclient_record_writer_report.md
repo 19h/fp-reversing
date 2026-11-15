@@ -189,3 +189,7 @@ Header construction has 10 byte stores and O(1) selected work. For admitted type
 ## Record lookup and publication increment
 
 The [post-writer publication increment](userclient_record_publication_report.md) closes selected tag lookup, empty/tail append, four-position replacement, old-record retirement requests and parser-gate return. It proves cursor preservation across these paths; the earlier cursor-advancement producer and full staged-envelope contract remain open.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected metadata follow-up identifies the staged header and body source consumed by construction/writing and proves its original parser cursor update. Native ownership and complete type/failure coverage remain open.

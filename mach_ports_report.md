@@ -1861,3 +1861,7 @@ The [record-writer increment](userclient_record_writer_report.md) adds a private
 ## Record lookup and publication increment
 
 The [record-publication increment](userclient_record_publication_report.md) adds an internal tag lookup/output/continuation ABI and list/retirement interfaces. Its private indices and status values establish no new Mach right, endpoint, message emission or successful daemon-kext transaction.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. This increment identifies internal staged-byte and cursor channels. It establishes no additional Mach port, right or emission site and no correlated daemon-kext exchange.

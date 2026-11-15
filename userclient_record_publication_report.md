@@ -208,3 +208,7 @@ For a finite stable list containing k examined nodes with readable headers, repe
 - **QG5**: Encoded tag versus status, X22/X23 phase roles, arbitrary old boundaries versus sole-node inputs, descriptor metadata versus address identity, emitted requests versus native frees and unchanged cursor versus advancement remain distinct.
 - **QG6**: Original dual-image words/pointers/symbols/descriptors, 69 nonvacuous formulas, five predecessor rechecks, 768 bank inputs and four custody controls support bounded claims.
 - **QG7**: Ranked continuation retains input/cursor provenance, rollback/ownership, other types, traversal invariants and daemon-correlation requirements.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The earlier metadata return now has selected staged-byte provenance: cursor advances by ten plus decoded payload length before node construction/publication. Publication itself still preserves that committed cursor; full native and cross-layer composition remain conditional.

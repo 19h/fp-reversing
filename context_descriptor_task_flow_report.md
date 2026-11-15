@@ -221,3 +221,7 @@ The [protected record-writer increment](userclient_record_writer_report.md) clos
 ## Record lookup and publication increment
 
 The [tag lookup/list-publication increment](userclient_record_publication_report.md) adds a caller-specific scratch output and private continuation plus selected allocator-retirement touch points. It does not establish externally controlled input identity, native synchronization or a correlated daemon/provider exchange.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected staged header now has exact tag/type/length provenance, header/body bounds and a committed next cursor. Cross-layer caller identity and native storage epochs remain open.

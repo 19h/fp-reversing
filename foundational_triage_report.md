@@ -1986,3 +1986,7 @@ The [protected record writer](userclient_record_writer_report.md) establishes al
 ## Record lookup and publication increment
 
 The [record-publication increment](userclient_record_publication_report.md) establishes caller-specific tag lookup, append-on-miss, replacement-on-success, old-record retirement requests and return to the parser cursor gate. Original metadata/body production, cursor advancement, native ownership/locking and daemon correlation remain open.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected type0x6685 path decodes the ten-byte staged header, accepts a bounded payload and advances the cursor by ten plus its length. Decoded tag0 selects the parser-success continuation and permits a remaining outer suffix.

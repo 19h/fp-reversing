@@ -258,3 +258,7 @@ The [writer-side construction](userclient_record_writer_report.md) now proves a 
 ## Record lookup and publication increment
 
 The [publication caller](userclient_record_publication_report.md) reuses the same protected tagged-node search with arbitrary tag T, output C+0x628 and return index0x7b. It establishes conditional list publication of the writer node and selected retirement requests; live consumer epochs, original field identity and native ownership remain open.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The producer-side staged header now matches the recovered protected ten-byte record representation and transformed type0x6685 body source. Shared word callbacks differ between tag and length phases; full native reader linkage remains conditional.

@@ -2115,3 +2115,7 @@ The [record-writer ABI](userclient_record_writer_report.md) maps the protected t
 ## Record lookup and publication increment
 
 The [record-publication ABI](userclient_record_publication_report.md) binds arbitrary encoded tag32 to output C+0x628 and continuation0x7b. It distinguishes success, miss and other statuses, captures both retirement-call argument sets, and establishes that publication returns the unchanged cursor to its exact unsigned gate.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The recovered staged ABI contains BE32 tag, transformed BE16 type and BE32 payload length in ten protected bytes. The selected body source and metadata return are bounded by the outer extent; decoded tag0/type0x6685 selects early parser success.

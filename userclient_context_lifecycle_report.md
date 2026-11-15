@@ -204,3 +204,7 @@ The [record-writer follow-up](userclient_record_writer_report.md) populates the 
 ## Record lookup and publication increment
 
 The [record-publication lifecycle](userclient_record_publication_report.md) establishes selected list rewiring, nullable old-buffer retirement, original IOFreeData/IOFreeTypeImpl requests and saved old-result clearing. Distinct allocation/retirement descriptors share recovered32 B site metadata. Native ownership, callee effects and synchronization remain open.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected staged-input metadata/cursor chain now connects to node construction, writer and publication. Native lifecycle, ownership, synchronization and caller correlation remain open.

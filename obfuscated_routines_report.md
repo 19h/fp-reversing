@@ -1966,3 +1966,7 @@ The [protected writer analysis](userclient_record_writer_report.md) identifies r
 ## Record lookup and publication increment
 
 The [tag lookup/publication analysis](userclient_record_publication_report.md) establishes the selected append-on-miss/replacement-on-success policy, next/previous and head/tail roles, original data/typed retirement calls and return to the parser gate. Native lifetime, uniqueness and original business tag identity remain unknown.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected shared decoder callbacks bind staged bytes to tag/type/length channels and the parser commits cursor+10+L after body bounds acceptance. Decoded zero tag with type0x6685 selects the parser-success continuation before node construction.

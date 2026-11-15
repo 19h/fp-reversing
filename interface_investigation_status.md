@@ -1755,3 +1755,7 @@ The [record-writer increment](userclient_record_writer_report.md) proves 16 new 
 ## Record lookup and publication increment
 
 The [publication increment](userclient_record_publication_report.md) proves 69 new nonvacuous obligations over 466 selected instructions, with five predecessor rechecks and 768 bank inputs. Two append cases, four replacement positions and eight old-buffer retirement cases are covered. Full parser progress and the wider interface goal remain active.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. Selected metadata/body/cursor production is now established conditionally from staged bytes. Remaining work includes failure cleanup, other types, native epochs and a successful correlated daemon/provider exchange.

@@ -245,3 +245,7 @@ The [record-writer increment](userclient_record_writer_report.md) establishes he
 ## Record lookup and publication increment
 
 The [record-publication follow-up](userclient_record_publication_report.md) closes the selected list operation after construction/copy and returns to the same parser cursor gate. Complete nonempty parsing still requires the original metadata/body/cursor producers, record bounds, all relevant types and failure cleanup.
+
+## Staged metadata and cursor increment
+
+The [metadata follow-up](userclient_record_metadata_report.md) establishes this increment. The selected nonempty continuation now has exact ten-byte header provenance, body bounds, payload pointer and cursor commit. Zero-length payloads consume ten bytes; decoded tag0/type0x6685 can select success before the outer suffix is consumed.
