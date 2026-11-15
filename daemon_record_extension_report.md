@@ -129,3 +129,7 @@ Existing reference data suffice for this increment. The IDA instance-discovery a
 | Medium | Follow the current itgr invocation through byte-bank admission and postprocessing | The shared gate and further-work target have no current execution witness. |
 
 **QG1**: factual data/control-flow and ABI analysis. **QG2**: RE-A1-RE-A6 specify dependencies and falsification probes. **QG3**: the allocation/publication increment is covered; the full interface investigation remains active. **QG4**: byte units, widths, modular arithmetic, counts and algorithmic bounds are explicit. **QG5**: NULL cleanup, late initialization, local publication, later writes and incomplete itgr processing are distinguished. **QG6**: source hashes, pinned receipts, independent replay and fresh publication checks establish provenance. **QG7**: impact-labeled adjacent interfaces and unknowns are enumerated.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) resolves nominal source producers for the three missing bank fields and proves the local descending masked-byte copy. It leaves all twenty-four field bytes undefined in the 608 retained normal exports and reports conditional output predictions without new target intervals or native epoch claims.

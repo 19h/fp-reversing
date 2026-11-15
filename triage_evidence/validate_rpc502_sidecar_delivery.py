@@ -543,6 +543,7 @@ def main():
     if exists(BASE/'daemon_child_payload_report.md'):reports.add(BASE/'daemon_child_payload_report.md')
     if exists(BASE/'daemon_child_loop_report.md'):reports.add(BASE/'daemon_child_loop_report.md')
     if exists(BASE/'daemon_record_extension_report.md'):reports.add(BASE/'daemon_record_extension_report.md')
+    if exists(BASE/'daemon_record_banks_report.md'):reports.add(BASE/'daemon_record_banks_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2951,6 +2952,14 @@ def main():
         manifest['validation']['daemon_record_extension_replay_checks']=extension_replay['independent_totals']
         manifest['validation']['daemon_record_extension_admissions']=extension_replay['admissions']
         manifest['validation']['daemon_record_extension_source_queries_unsat']=len(extension_replay['source_proofs'])
+    if exists(ROOT/'daemon_record_banks_checks.json'):
+        banks=json.loads(read(ROOT/'daemon_record_banks_checks.json'))
+        banks_audit=json.loads(read(ROOT/'daemon_record_banks_audit.json'))
+        manifest['validation']['daemon_record_banks_increment_checks']=banks['verified_counts']
+        manifest['validation']['daemon_record_banks_static_scope']=banks['scope']
+        manifest['validation']['daemon_record_banks_independent_checks']=banks_audit['independent_totals']
+        manifest['validation']['daemon_record_banks_source_queries_unsat']=len(banks_audit['source_proofs'])
+        manifest['validation']['daemon_record_banks_finite_controls']=banks_audit['finite_controls']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1998,3 +1998,7 @@ The [child-loop caller contract](daemon_child_loop_report.md) distinguishes opti
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) follows original authenticated malloc/free bindings through five fresh requests (97, 125, 145, 185, 224 B) or NULL at the first request. Exact parent-preserving ABI recipes and complete admissions lead to a local J+0x68 pointer store; later failure paths, native allocator behavior and transaction linkage remain unknown.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) establishes the three bank-field read interfaces, exact input/output byte addresses, positive descending counter contract and original loop/exit dispatch words. Bank setup/current-frame custody, future body admission and native transport remain separate unresolved premises.

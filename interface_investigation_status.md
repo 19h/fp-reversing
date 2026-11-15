@@ -1641,3 +1641,7 @@ The [child-loop follow-up](daemon_child_loop_report.md) establishes exact `vers`
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) continues 304 growth-success parents under two new ABI patterns and NULL-97/fresh-only policies (1,216 exports). The normal model reaches encoded S publication at J+0x68, then stops on the undefined SP+0x390 pointer; native caller/root epochs and daemon-kext transaction identity remain unknown.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) identifies nominal producers for SP+0x390/+0x398/+0x3a0 and recovers a descending byte copy with a sixteen-position XOR mask. All 608 retained normal frontiers still lack the bank definitions; a twenty-byte result is conditional on their custody and memory admission. Native caller and daemon-kext pairing remain unknown.

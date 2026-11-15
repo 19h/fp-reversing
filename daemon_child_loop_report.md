@@ -129,3 +129,7 @@ Extraction uses O(parent bytes + retained events + custody scans) time/space. Se
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) continues the broader growth-success corpus through five declared fresh allocation returns and reaches the local J+0x68 publisher. A later itgr invocation stops before the shared postprocessing gate on an undefined SP+0x390 pointer; it is not an execution witness for the clear-mask further-work route. Native epoch and transport identity remain unknown.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) establishes a separate descending masked-byte loop in the retained itgr context. Its post-store zero-index route selects the same optional output/status block as the earlier vers loop. Direct zero-count entry wraps in this prefix and is excluded from its positive-count theorem; no current execution of the shared completion or further-work route is claimed.

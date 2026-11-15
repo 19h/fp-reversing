@@ -453,3 +453,7 @@ The [child-loop follow-up](daemon_child_loop_report.md) establishes the private 
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) advances the admitted daemon constructor to J+0x68 publication and a later undefined byte-bank pointer at SP+0x390. It supplies no new CoreFP client identity, native caller epoch or matched daemon/kext transaction; the linkage remains unknown.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) derives a conditional twenty-byte transformation at output offsets 165 through 184 from the retained daemon frontier. The input producer, native caller epoch and mapping to CoreFP or a kext transaction remain unknown.

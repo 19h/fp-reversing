@@ -8,7 +8,7 @@ Evidence: [original projections, fixups, field ledgers and consumer loads](triag
 
 | Evidence | Exact scope |
 | --- | --- |
-| Original thin daemon | `/Users/___/Downloads/zut/fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
+| Original thin daemon | `fairplayd.arm64e`; SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e` |
 | Source capture | Two spans, 1535 instructions, 6140 B; bounded source ranges, not complete semantic function coverage |
 | Register projections | 14 fields, 216 projected instruction instances; four fields newly tracked relative to the prior ten-field ledger |
 | Pool metadata | 13 original fixup records, freshly matched to the fixup catalog |
@@ -193,3 +193,7 @@ QG5: Prior ten-field versus new14-field tracking, source projections versus exec
 QG6: Original bytes/fixups, exact projections/consumer loads,768 bank cases,112 frozen field/read checks,12624 opcode instances,28 accepted queries and ten altered controls provide scoped primary provenance. Memory supplies build/evidence-boundary guidance only.
 
 QG7: Bounded high/medium/low continuations retain native loader/owner/phase/authentication, same-frame path and daemon-kext endpoint obligations. No full-goal completion or new native port identity is claimed.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) adds three separately scoped nominal setup mappings: +0x390 to 0x10102fa10, +0x398 to 0x100eebf60 and +0x3a0 to 0x100fd8250. Memory-aware projections and affine decoder suffixes establish their frozen/local source behavior; equality of the setup frame and current constructor frame remains unproved.

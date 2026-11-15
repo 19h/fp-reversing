@@ -1869,3 +1869,7 @@ The [child-loop analysis](daemon_child_loop_report.md) closes the local tag/coun
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) establishes five further copy/overwrite/owner-retirement steps, late S+0x30 zero initialization and encoded-container publication at J+0x68 under explicit new allocation-return premises. The source continues writing after publication and stops at an undefined SP+0x390 byte-bank pointer; native lifetime, completion and concurrent visibility remain unknown.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) links three nominal setup producers to the masked-byte consumer through original-source contracts and eight frozen setup projections. It independently checks private last-writer bytes and records SP+0x990/+0x998 reuse, including a four-byte-to-eight-byte overwrite; later snapshots do not replace earlier selector definitions.

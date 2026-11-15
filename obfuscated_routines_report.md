@@ -1849,3 +1849,7 @@ The [child-loop recovery](daemon_child_loop_report.md) identifies local roles fo
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) identifies the normal extension sequence as descending byte copy, source overwrite of the old extent, pointer/extent replacement and owner retirement. It reaches the actual encoded-container publisher at 0x100901498 and later invokes the itgr-tagged nested routine, but stops before its shared postprocessing gate; higher-level tag semantics remain unknown.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) recovers 0x10084fcc4 as a fixed-phase descending byte-copy loop with an XOR mask selected by the destination offset modulo sixteen. Its zero-index route selects the known optional output/status path. The contextual itgr literal and twenty-byte extent do not establish a complete algorithm or public schema.

@@ -141,3 +141,7 @@ Time is O(source visits + text words + BV/solver resources); space is O(one CPU 
 - QG5: Pass within scope; initialization ownership, later epoch gaps, distinct controller contexts and finite/universal evidence are separated.
 - QG6: Pass; pinned original code/fixups, source ledgers, strict profiles, local SMT and fresh CPU checks provide provenance.
 - QG7: Pass; remaining frame, control and transport joins are impact-labeled.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) recovers three additional nominal bank-field producers from the existing eight setup profiles. Their byte consumer supplies a position-dependent XOR mask; private read custody and reused cells are checked independently. No new roots are inserted into the later constructor states.

@@ -1743,3 +1743,7 @@ The [child-loop/output/status increment](daemon_child_loop_report.md) closes pri
 ## Record-extension follow-up
 
 The [record-extension increment](daemon_record_extension_report.md) establishes a private conditional object-publication path at J+0x68. No new incoming/outgoing Mach port, right transfer, emission site or daemon-kext transaction is established by these malloc/free and internal source transitions; the existing transport evidence boundary remains applicable.
+
+## Record-bank follow-up
+
+The [record-bank increment](daemon_record_banks_report.md) classifies private bank producers and a local masked-byte loop. It establishes no new incoming/outgoing Mach port, right transfer, emission location or daemon-kext transaction; native object/consumer/transport joins remain unknown.
