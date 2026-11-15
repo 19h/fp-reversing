@@ -557,6 +557,7 @@ def main():
     if exists(BASE/'daemon_payload_scalar_mixers_report.md'):reports.add(BASE/'daemon_payload_scalar_mixers_report.md')
     if exists(BASE/'daemon_payload_count_flow_report.md'):reports.add(BASE/'daemon_payload_count_flow_report.md')
     if exists(BASE/'daemon_count_pointer_origin_report.md'):reports.add(BASE/'daemon_count_pointer_origin_report.md')
+    if exists(BASE/'daemon_count_pointer_lineage_report.md'):reports.add(BASE/'daemon_count_pointer_lineage_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3093,6 +3094,14 @@ def main():
         manifest['validation']['daemon_count_pointer_origin_independent_checks']=count_pointer_audit['independent_totals']
         manifest['validation']['daemon_count_pointer_origin_new_source_queries_unsat']=len(count_pointer_audit['source_proofs'])
         manifest['validation']['daemon_count_pointer_origin_retained_pointer_initialization_established']=count_pointer['retained_pointer_initialization_established']
+    if exists(ROOT/'daemon_count_pointer_lineage_checks.json'):
+        pointer_lineage=json.loads(read(ROOT/'daemon_count_pointer_lineage_checks.json'))
+        pointer_lineage_audit=json.loads(read(ROOT/'daemon_count_pointer_lineage_audit.json'))
+        manifest['validation']['daemon_count_pointer_lineage_increment_checks']=pointer_lineage['verified_counts']
+        manifest['validation']['daemon_count_pointer_lineage_static_scope']=pointer_lineage['scope']
+        manifest['validation']['daemon_count_pointer_lineage_independent_checks']=pointer_lineage_audit['independent_totals']
+        manifest['validation']['daemon_count_pointer_lineage_new_source_queries_unsat']=len(pointer_lineage_audit['source_proofs'])
+        manifest['validation']['daemon_count_pointer_lineage_conditional_count_pointer_byte_lineage_established']=pointer_lineage['conditional_count_pointer_byte_lineage_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

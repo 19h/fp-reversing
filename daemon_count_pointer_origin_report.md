@@ -1,6 +1,8 @@
 # fairplayd: count-pointer initialization and container snapshot
 
-Original `0x10071062c..0x100710634` initializes the previously inherited count-pointer cell: `X9 = context + 0x1c; [outer_SP+0x71c0] = X9`. The retained constructor reloads that cell and passes it as the source of a 24 B copy into a newly allocated 64 B container at offset 24. This establishes a constructor-side pointer producer and its immediate use. A complete constructor-to-later-payload-consumer epoch chain and native daemon-kext transaction identity remain unknown. [CP1-CP5; CP-A1-CP-A5]
+Current lineage extension: [The lineage report](daemon_count_pointer_lineage_report.md) establishes conditional preservation of the eight count-pointer bytes through 149 stages for each normal payload representative, while retaining 116 B of explicit entry roots per lineage. It separately identifies the earlier SP+0x7f38 producer at 0x1005d0f78. Whole-machine initializer continuity, the earlier base-pointer boundary chain and native lifetime remain unknown.
+
+Original `0x10071062c..0x100710634` initializes the previously inherited count-pointer cell: `X9 = context + 0x1c; [outer_SP+0x71c0] = X9`. The retained constructor reloads that cell and passes it as the source of a 24 B copy into a newly allocated 64 B container at offset 24. This establishes a constructor-side pointer producer and its immediate use. Whole-machine initializer/caller continuity and native daemon-kext transaction identity remain unknown. [CP1-CP5; CP-A1-CP-A5]
 
 | Evidence | Primary provenance and scope |
 | --- | --- |
@@ -23,9 +25,9 @@ Addresses below are private-model addresses. J=`0x6500115b20` is the retained 55
 | Reload snapshot source | `0x100595f5c` | Same pointer cell to X20 | Constructor-side use after declared malloc success |
 | Invoke internal copy | `0x100595f84` | X0=J+28, X1=S+24, X2=24 | Logical target `0x10046f89c`, modifier `0x34a1` |
 | Copy byte pairs | `0x10046f9e4..0x10046fa24` | J+[28,52) to S+[24,48) | Eight post-incrementing read/store pairs, repeated three times |
-| Later payload pointer read | `0x10083e780` | Same numerical cell/value | Separate retained consumer epoch; complete intervening chain unknown |
+| Later payload pointer read | `0x10083e780` | Same numerical cell/value | Conditional pointer-byte lineage established in the later lineage report; whole-machine join unknown |
 
-The context-base load occurs at visit 29, address formation at visit 111 and pointer store at visit 112 in every retained free-return path. X21 equals J in all 83 frames numbered 30..112. The 81 intervening instructions at visits 30..110 neither define X21/W21 nor issue a call. The pointer store is the only write overlapping its 8 B cell in each interval. This identifies a source producer rather than deriving provenance from an end-state value alone. The earlier producer of `[SP+0x7f38]` remains outside this increment. [CP3-CP4; CP-A3]
+The context-base load occurs at visit 29, address formation at visit 111 and pointer store at visit 112 in every retained free-return path. X21 equals J in all 83 frames numbered 30..112. The 81 intervening instructions at visits 30..110 neither define X21/W21 nor issue a call. The pointer store is the only write overlapping its 8 B cell in each interval. This identifies a source producer rather than deriving provenance from an end-state value alone. The earlier producer of `[SP+0x7f38]` was outside this increment; the subsequent lineage report identifies its local source copy at `0x1005d0f78`. [CP3-CP4; CP-A3]
 
 Each successful allocation interval inherits the pointer bytes from its first free-return parent. Its allocation premise does not invalidate those 8 B, and no source write overlaps the cell. There are 76 checked links, or `76 * 8 B = 608 B` of boundary comparisons. The existing parent models only the first free-return path's allocation continuation; the other 11 paths per context are not treated as independently continued allocations. [CP2-CP4; CP-A2]
 
@@ -75,7 +77,7 @@ CP3 extraction is O(P+V+E+32C) time and O(parent receipts+largest interval+selec
 
 | Bounded continuation | Impact | Specific unresolved evidence |
 | --- | --- | --- |
-| Complete the constructor-to-payload parent-chain join | High | Byte-cell provenance and invalidation across every intervening receipt, including table-mixing epochs |
+| Establish initializer-to-current-caller control continuity | High | Caller/control lifetime across the inherited 116 B of separate entry premises; the later lineage report closes the conditional pointer-byte route |
 | Trace the earlier saved context-base cell and network-field admission | High | Writer of SP+0x7f38, count validity and constructor object epoch |
 | Identify the remaining 14 snapshot bytes | Medium | Independent producers/consumers of J+[38,52); zero fixtures do not supply semantic types |
 | Join private owners to observed transport | High | Same native transaction's buffer, selector, Mach right and emission/receive evidence |

@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) verifies source pointer-byte continuity through the selected constructor, emitter, mixing, descriptor and growth models for both normal payload representatives. Independent ordering, invalidation and export checks retain explicit API and 116 B per-lineage entry premises. The earlier saved context-base copy is source-bound; its full intervening base-pointer route and native owner/transport identity remain unknown.
+
 Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) recovers the constructor-side producer of the saved context+0x1c pointer and its immediate use as a fixed 24 B copy source. The snapshot includes the known count/data fields plus 14 context bytes with unknown roles. Retained constructor coverage is 912 pointer paths and 76 snapshots; complete constructor-to-consumer and native transaction joins remain unknown.
 
 Current count/data-flow increment: [The count-flow report](daemon_payload_count_flow_report.md) establishes the conditional context count/data interface and its layout correspondence to the earlier network-record producer. Source count reconstruction and saved memory/register epochs connect count 6 to a four-byte direct read plus two-byte tail copy. Native context lifetime, other-count admission and daemon-kext transaction identity remain unknown.

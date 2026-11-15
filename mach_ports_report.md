@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) verifies conditional internal pointer-byte provenance through retained constructor/consumer epochs. Its 18 API boundary links concern declared allocator/free returns. This increment establishes no additional incoming/outgoing Mach port, right disposition or message emission site; native buffer/selector/right/transaction identity remains unknown.
+
 Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) adds constructor-side saved-pointer and container-copy provenance. The logical copy call at 0x100595f84 and target 0x10046f89c transfer local bytes. This increment establishes no additional incoming/outgoing Mach port, right disposition or message emission site; the native transaction join remains unknown.
 
 Current count/data-flow increment: [The count-flow report](daemon_payload_count_flow_report.md) traces internal count/data/pointer and scratch-copy interfaces. Dispatch slots 0x10106d458/0x10106d1b8 select local code targets and establish no Mach name, right disposition, incoming/outgoing port or message emission site. Native port/selector/buffer/transaction joins remain open.
