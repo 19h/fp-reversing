@@ -188,3 +188,8 @@ For occupied-key and caller payload reads, the contiguous-array interpretation r
 - **QG5**: Candidate success versus hit, optional flag versus required index, zero capacity, full-table tombstones, counter width, alternate retag, raw status versus authenticated return, and native concurrency are explicitly distinguished.
 - **QG6**: Claims trace to original image bytes, original fixup membership, complete helper/region capture, reconstructed nonvacuous source obligations, independent reference replay and four predecessor queries. No external source or symbol name is fabricated.
 - **QG7**: Ranked continuation identifies update/removal, payload ownership, producers, synchronization and daemon correlation; none is claimed complete here.
+
+
+## Shared-table reclamation and payload-free follow-up
+
+The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cleanup to the token0xc28 entry writer and token0x559 backward scan, establishes exact counter/state/key/payload transitions, and recovers the status/nonzero-payload gate for a 120 B `site.FPSecureTunnel` typed-free request. Native allocation identity, ownership, serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.

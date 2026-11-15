@@ -1941,3 +1941,8 @@ The [initializer report](userclient_hash_table_initializer_report.md) closes the
 ## Shared-table lookup follow-up
 
 The [lookup contract](userclient_hash_table_lookup_report.md) joins both cleanup records to the same token0x541 helper, classifies raw empty/tombstone/occupied states, recovers the masked-key/linear-probe policy and distinguishes candidate success from an occupied-key hit. It establishes the status/flag/index channels and conditional entry+16 read; update/removal, payload ownership, native serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.
+
+
+## Shared-table reclamation and payload-free follow-up
+
+The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cleanup to the token0xc28 entry writer and token0x559 backward scan, establishes exact counter/state/key/payload transitions, and recovers the status/nonzero-payload gate for a 120 B `site.FPSecureTunnel` typed-free request. Native allocation identity, ownership, serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.
