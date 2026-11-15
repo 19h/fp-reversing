@@ -566,6 +566,7 @@ def main():
     if exists(BASE/'userclient_hash_table_lookup_report.md'):reports.add(BASE/'userclient_hash_table_lookup_report.md')
     if exists(BASE/'userclient_hash_table_reclamation_report.md'):reports.add(BASE/'userclient_hash_table_reclamation_report.md')
     if exists(BASE/'secure_tunnel_allocation_report.md'):reports.add(BASE/'secure_tunnel_allocation_report.md')
+    if exists(BASE/'secure_tunnel_table_insertion_report.md'):reports.add(BASE/'secure_tunnel_table_insertion_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3180,6 +3181,15 @@ def main():
         manifest['validation']['secure_tunnel_allocation_independent_checks']=tunnel_audit['independent_totals']
         manifest['validation']['secure_tunnel_allocation_new_source_queries_unsat']=len(tunnel_audit['source_proofs'])
         manifest['validation']['secure_tunnel_allocation_conditional_secure_tunnel_allocation_contract_established']=tunnel['conditional_secure_tunnel_allocation_contract_established']
+    if exists(ROOT/'secure_tunnel_table_insertion_checks.json'):
+        insertion=json.loads(read(ROOT/'secure_tunnel_table_insertion_checks.json'))
+        insertion_audit=json.loads(read(ROOT/'secure_tunnel_table_insertion_audit.json'))
+        manifest['validation']['secure_tunnel_table_insertion_increment_checks']=insertion['verified_counts']
+        manifest['validation']['secure_tunnel_table_insertion_static_scope']=insertion['scope']
+        manifest['validation']['secure_tunnel_table_insertion_independent_checks']=insertion_audit['independent_totals']
+        manifest['validation']['secure_tunnel_table_insertion_new_source_queries_unsat']=len(insertion_audit['source_proofs'])
+        manifest['validation']['secure_tunnel_table_insertion_prior_source_queries_rechecked']=len(insertion_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['secure_tunnel_table_insertion_conditional_tunnel_to_table_insertion_contract_established']=insertion['conditional_tunnel_to_table_insertion_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

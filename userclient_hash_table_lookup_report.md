@@ -193,3 +193,7 @@ For occupied-key and caller payload reads, the contiguous-array interpretation r
 ## Shared-table reclamation and payload-free follow-up
 
 The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cleanup to the token0xc28 entry writer and token0x559 backward scan, establishes exact counter/state/key/payload transitions, and recovers the status/nonzero-payload gate for a 120 B `site.FPSecureTunnel` typed-free request. Native allocation identity, ownership, serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.
+
+## Conditional tunnel-to-table insertion follow-up
+
+[The insertion report](secure_tunnel_table_insertion_report.md) establishes the conditional tunnel-alias transfer to entry+16, the source-marker XOR key, a status-only lookup gate, the exact occupied-entry record and the subsequent raw-marker writeback to tunnel+0x6c. Fifteen nonvacuous source/storage obligations and eight predecessor obligations pass; 388 selected instructions, 354 intervening def-use instructions and 512 bank inputs are checked. Successful lookup may select a candidate or an existing match because this caller omits the found-byte output. Native reachability, allocation identity, ownership, serialization, UIDList producer correspondence and daemon transaction correlation remain unknown. No new Mach-port emission site is established.

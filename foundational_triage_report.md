@@ -1950,3 +1950,7 @@ The [reclamation contract](userclient_hash_table_reclamation_report.md) joins cl
 ## FPSecureTunnel allocation follow-up
 
 [The allocation and initialization report](secure_tunnel_allocation_report.md) binds the original call at 0xfffffe000a65a55c to a 120 B site.FPSecureTunnel descriptor, records its scratch publication and exact local byte layout, and compares the distinct allocation/free descriptors. Ten nonvacuous source obligations, 256 selector replays and 512 bank checks pass. Five object bytes are untouched by these stores. Whole dispatcher reachability, fallback convergence, entry+16 insertion lineage, native object identity/ownership and daemon transaction correlation remain unknown; no new Mach endpoint is established.
+
+## Conditional tunnel-to-table insertion follow-up
+
+[The insertion report](secure_tunnel_table_insertion_report.md) establishes the conditional tunnel-alias transfer to entry+16, the source-marker XOR key, a status-only lookup gate, the exact occupied-entry record and the subsequent raw-marker writeback to tunnel+0x6c. Fifteen nonvacuous source/storage obligations and eight predecessor obligations pass; 388 selected instructions, 354 intervening def-use instructions and 512 bank inputs are checked. Successful lookup may select a candidate or an existing match because this caller omits the found-byte output. Native reachability, allocation identity, ownership, serialization, UIDList producer correspondence and daemon transaction correlation remain unknown. No new Mach-port emission site is established.

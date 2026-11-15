@@ -149,3 +149,7 @@ The matching descriptor names narrow the allocation/free investigation, but a sa
 - **QG5**: Distinct descriptors, matching type versus object identity, initial versus final bytes, five untouched bytes, null continuation, partial fallback path and unproved dispatcher reachability are explicit.
 - **QG6**: Fresh original bytes/fixups/symbols, ten nonvacuous UNSAT obligations, 256 original-instruction selector cases, 512 finite bank checks and three extraction-custody rejection controls provide reproducible evidence. Captured context is distinguished from proved source coverage.
 - **QG7**: Ranked continuation covers insertion, keys, synchronization, fallback, daemon correlation and retained bytes without claiming those results.
+
+## Conditional tunnel-to-table insertion follow-up
+
+[The insertion report](secure_tunnel_table_insertion_report.md) establishes the conditional tunnel-alias transfer to entry+16, the source-marker XOR key, a status-only lookup gate, the exact occupied-entry record and the subsequent raw-marker writeback to tunnel+0x6c. Fifteen nonvacuous source/storage obligations and eight predecessor obligations pass; 388 selected instructions, 354 intervening def-use instructions and 512 bank inputs are checked. Successful lookup may select a candidate or an existing match because this caller omits the found-byte output. Native reachability, allocation identity, ownership, serialization, UIDList producer correspondence and daemon transaction correlation remain unknown. No new Mach-port emission site is established.
