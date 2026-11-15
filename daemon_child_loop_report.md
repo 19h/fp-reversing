@@ -125,3 +125,7 @@ Extraction uses O(parent bytes + retained events + custody scans) time/space. Se
 | Medium | Compose arbitrary-byte packed writing with complete body return and range premises | Per-byte decoder and control envelope are known; arbitrary arrays and native performance are not established. |
 
 **QG1**: factual control/data-flow and ABI analysis. **QG2**: CL-A1-CL-A6 list dependent results and falsification probes. **QG3**: this loop/output/status increment is covered; the full interface investigation remains active. **QG4**: widths, byte units, modular arithmetic, ranking, counts and complexity are explicit. **QG5**: signed tag comparison, unsigned count gate, u32 domain, raw coordinate/status and body-admission limits are distinct. **QG6**: delivery requires fresh verification against pinned primary artifacts. **QG7**: impact-labeled adjacent interfaces and unknowns are enumerated.
+
+## Record-extension follow-up
+
+The [record-extension increment](daemon_record_extension_report.md) continues the broader growth-success corpus through five declared fresh allocation returns and reaches the local J+0x68 publisher. A later itgr invocation stops before the shared postprocessing gate on an undefined SP+0x390 pointer; it is not an execution witness for the clear-mask further-work route. Native epoch and transport identity remain unknown.

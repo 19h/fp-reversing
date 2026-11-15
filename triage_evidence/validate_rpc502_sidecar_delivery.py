@@ -542,6 +542,7 @@ def main():
     if exists(BASE/'daemon_child_operation_report.md'):reports.add(BASE/'daemon_child_operation_report.md')
     if exists(BASE/'daemon_child_payload_report.md'):reports.add(BASE/'daemon_child_payload_report.md')
     if exists(BASE/'daemon_child_loop_report.md'):reports.add(BASE/'daemon_child_loop_report.md')
+    if exists(BASE/'daemon_record_extension_report.md'):reports.add(BASE/'daemon_record_extension_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2942,6 +2943,14 @@ def main():
         manifest['validation']['daemon_child_loop_source_queries_unsat']=len(loop_audit['source_proofs'])
         manifest['validation']['daemon_child_loop_scalar_controls']=len(loop_audit['scalar_controls'])
         manifest['validation']['daemon_child_loop_new_target_intervals']=loop_audit['new_target_intervals']
+    if exists(ROOT/'daemon_record_extension_checks.json'):
+        extension=json.loads(read(ROOT/'daemon_record_extension_checks.json'))
+        extension_replay=json.loads(read(ROOT/'daemon_record_extension_replay.json'))
+        manifest['validation']['daemon_record_extension_increment_checks']=extension['verified_counts']
+        manifest['validation']['daemon_record_extension_static_scope']=extension['scope']
+        manifest['validation']['daemon_record_extension_replay_checks']=extension_replay['independent_totals']
+        manifest['validation']['daemon_record_extension_admissions']=extension_replay['admissions']
+        manifest['validation']['daemon_record_extension_source_queries_unsat']=len(extension_replay['source_proofs'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

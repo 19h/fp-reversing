@@ -130,3 +130,7 @@ The [private resize-caller follow-up](daemon_resize_callers_report.md) establish
 ## Record-coordinate selection and span gates
 
 The [record-selection follow-up](daemon_record_selection_report.md) proves storage-availability, explicit/default coordinate, nonwrapping-span and end-at-or-below-extent gates for helper0x10045f984 under its stated phases. Four mapped gate rejections return encoded coordinate zero; alternate storage and transformed-halfword mismatch paths retain unknown final results. The default U+0x18 word is copied from an inherited frame cell and remains unchanged on retained successful paths. Sixteen obligations, four controls, 2,848 independent instruction replays, 13 original dispatch routes and 608 exported snapshots qualify this increment. General decoder domains, earlier frame epoch and native daemon-kext transaction pairing remain unknown; the full goal remains active.
+
+## Record-extension follow-up
+
+The [record-extension increment](daemon_record_extension_report.md) continues the 304 earlier growth-success exports from the pending 97 B request. With fresh returns at 97, 125, 145, 185 and 224 B, it reaches encoded S publication at J+0x68; NULL-97 instead retires the 77 B buffer and U and clears S+0. These additional return/owner premises do not establish a native constructor epoch.
