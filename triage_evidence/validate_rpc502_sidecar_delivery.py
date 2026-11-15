@@ -537,6 +537,7 @@ def main():
     if exists(BASE/'daemon_record_walk_report.md'):reports.add(BASE/'daemon_record_walk_report.md')
     if exists(BASE/'daemon_alternate_word_report.md'):reports.add(BASE/'daemon_alternate_word_report.md')
     if exists(BASE/'daemon_storage_flag_report.md'):reports.add(BASE/'daemon_storage_flag_report.md')
+    if exists(BASE/'daemon_alternative_fill_report.md'):reports.add(BASE/'daemon_alternative_fill_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2889,6 +2890,16 @@ def main():
         manifest['validation']['daemon_storage_flag_source_queries_unsat']=len(flag_audit['source_proofs'])
         manifest['validation']['daemon_storage_flag_scalar_controls']=len(flag_audit['scalar_controls'])
         manifest['validation']['daemon_storage_flag_new_target_intervals']=flag_audit['new_target_intervals']
+    if exists(ROOT/'daemon_alternative_fill_checks.json'):
+        fill=json.loads(read(ROOT/'daemon_alternative_fill_checks.json'))
+        fill_audit=json.loads(read(ROOT/'daemon_alternative_fill_audit.json'))
+        manifest['validation']['daemon_alternative_fill_increment_checks']=fill['verified_counts']
+        manifest['validation']['daemon_alternative_fill_static_scope']=fill['scope']
+        manifest['validation']['daemon_alternative_fill_independent_checks']=fill_audit['independent_totals']
+        manifest['validation']['daemon_alternative_fill_source_queries_unsat']=len(fill_audit['source_proofs'])
+        manifest['validation']['daemon_alternative_fill_scalar_controls']=len(fill_audit['scalar_controls'])
+        manifest['validation']['daemon_alternative_fill_proof_cut_contexts']=len(fill_audit['proof_cut_contexts_verified'])
+        manifest['validation']['daemon_alternative_fill_new_target_intervals']=fill_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
