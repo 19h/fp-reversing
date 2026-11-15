@@ -1,6 +1,6 @@
 # UIDList discriminator search, tunnel marker and context-head publication
 
-`_PRnut72j9` conditionally allocates a 16 B `site.UIDList` node, fills its u32 discriminator, u32 tunnel marker and u64 successor, then publishes it through the original context head. This distinguishes node+0, used by the producer's list search, from node+4, used by teardown's table-key codec. The marker comes from candidate tunnel+0x6c through source+0xd8c. Combined with the preceding insertion report, this establishes a conditional marker/key correspondence across insertion, per-context tracking and cleanup. Native object identity, complete dispatcher reachability, existing-match resource handling, ownership and serialization remain unknown.
+`_PRnut72j9` conditionally allocates a 16 B `site.UIDList` node, fills its u32 discriminator, u32 tunnel marker and u64 successor, then publishes it through the original context head. This distinguishes node+0, used by the producer's list search, from node+4, used by teardown's table-key codec. The marker comes from candidate tunnel+0x6c through source+0xd8c. Combined with the preceding insertion report, this establishes a conditional marker/key correspondence across insertion, per-context tracking and cleanup. Native object identity, complete dispatcher reachability, complete existing-match resource handling, ownership and serialization remain unknown.
 
 ## Provenance and verification
 
@@ -176,3 +176,7 @@ No selected call emits a newly identified Mach message or endpoint. The context 
 - **QG5**: Discriminator versus marker, two node types, candidate versus actual native tunnel, status-gated update versus unconditional match update, fresh head load versus concurrent linearization, and conditional key correspondence versus lifetime balance remain distinct.
 - **QG6**: Original bytes/fixups/descriptors, full selected-PC proof coverage, finite-bank/address dependencies, explicit ABI cuts and six predecessor rechecks provide reproducible provenance. No new IDA evidence, native execution or deallocation is claimed.
 - **QG7**: Ranked continuation covers existing-match resources, input domains, frame epochs, concurrency, discriminator origin and daemon correlation without declaring the full goal complete.
+
+## Existing UIDList marker replacement follow-up
+
+[The replacement report](userclient_uidlist_replacement_report.md) establishes the selected nonnull shared-holder path from an existing discriminator match through two old-marker lookup records, prior entry+16 payload capture, tombstone/reclamation requests, conditional 120 B typed payload free and status-gated node+4 replacement. Thirty-four nonvacuous obligations, 18 predecessor obligations, 734 selected instructions and 1792 bank inputs pass. Zero saved payload skips free and reaches the same marker-update join; raw success and found outputs remain separate. Null-holder construction, complete incoming reachability, native ownership/deallocation, serialization and daemon correlation remain unknown. No new Mach-port emission site is established.
