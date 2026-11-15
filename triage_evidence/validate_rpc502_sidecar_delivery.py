@@ -550,6 +550,7 @@ def main():
     if exists(BASE/'daemon_core_affine_report.md'):reports.add(BASE/'daemon_core_affine_report.md')
     if exists(BASE/'daemon_core_rounds_report.md'):reports.add(BASE/'daemon_core_rounds_report.md')
     if exists(BASE/'daemon_core_cipher_report.md'):reports.add(BASE/'daemon_core_cipher_report.md')
+    if exists(BASE/'daemon_state_splice_report.md'):reports.add(BASE/'daemon_state_splice_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3024,6 +3025,15 @@ def main():
         manifest['validation']['daemon_core_cipher_contract']=core_cipher['cases'][0]['contract']
         manifest['validation']['daemon_core_cipher_host_reference']=core_cipher_audit['host_reference']
         manifest['validation']['daemon_core_cipher_conditional_core_cipher_established']=core_cipher['conditional_core_cipher_established']
+    if exists(ROOT/'daemon_state_splice_checks.json'):
+        state_splice=json.loads(read(ROOT/'daemon_state_splice_checks.json'))
+        state_splice_audit=json.loads(read(ROOT/'daemon_state_splice_audit.json'))
+        manifest['validation']['daemon_state_splice_increment_checks']=state_splice['verified_counts']
+        manifest['validation']['daemon_state_splice_static_scope']=state_splice['scope']
+        manifest['validation']['daemon_state_splice_independent_checks']=state_splice_audit['independent_totals']
+        manifest['validation']['daemon_state_splice_source_queries_unsat']=len(state_splice_audit['source_proofs'])
+        manifest['validation']['daemon_state_splice_format_contract']=state_splice['format_contract']
+        manifest['validation']['daemon_state_splice_host_reference']=state_splice_audit['host_reference']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

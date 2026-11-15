@@ -137,3 +137,7 @@ The [record-bank increment](daemon_record_banks_report.md) resolves nominal sour
 ## Record-input provenance follow-up
 
 The [record-input provenance increment](daemon_record_input_origin_report.md) traces K+0xc4b0 back through the formatter at 0x100aaa324 to five-word serialization and a separate middle-sixteen-byte transform. Twenty actual formatter stores survive to the retained stop in both normal classes. The current missing banks and any later native execution remain unresolved.
+
+## Complete state-format follow-up
+
+[The state-format report](daemon_state_splice_report.md) composes the five encoded words, serializer, recovered AES wrapper and twenty-byte formatter. Decode each word with XOR 0xf4f92df7, serialize big-endian, encrypt decoded bytes 2..17 under the recovered AES-128 key, preserve both two-byte edges, then XOR all 20 bytes with 0x98. Four source queries, fresh epoch/custody checks and 196 complete format controls qualify this conditional 160-bit permutation. Upstream message identity, native admission, the later undefined bank fields and daemon-kext pairing remain open.

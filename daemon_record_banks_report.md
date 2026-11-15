@@ -166,3 +166,7 @@ The [record-input provenance increment](daemon_record_input_origin_report.md) es
 ## Block-staging follow-up
 
 The [block-staging increment](daemon_block_staging_report.md) recovers two distinct inner-helper boundary masks around the sixteen-byte core. They are separate from this report's later destination-position mask. The current constructor bank fields remain undefined; no new post-frontier interval or native transport join is admitted.
+
+## Complete state-format follow-up
+
+[The state-format report](daemon_state_splice_report.md) composes the five encoded words, serializer, recovered AES wrapper and twenty-byte formatter. Decode each word with XOR 0xf4f92df7, serialize big-endian, encrypt decoded bytes 2..17 under the recovered AES-128 key, preserve both two-byte edges, then XOR all 20 bytes with 0x98. Four source queries, fresh epoch/custody checks and 196 complete format controls qualify this conditional 160-bit permutation. Upstream message identity, native admission, the later undefined bank fields and daemon-kext pairing remain open.

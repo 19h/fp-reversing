@@ -1771,3 +1771,7 @@ The [affine-table increment](daemon_core_affine_report.md) establishes the initi
 ## Complete core cipher follow-up
 
 [The complete cipher report](daemon_core_cipher_report.md) establishes the conditional core as AES-128 encryption with explicit input/output XOR encodings. Composing the established staging gives T=AES128_K(S_serialized[2:18] XOR H) XOR H, with H sixteen 0x98 bytes. It records all final byte lookup/store sites, complete finite decoder checks, 64 source queries and 136 independent block comparisons. Native caller/controller admission, key-object lineage, protocol mode and daemon-kext pairing remain unknown.
+
+## Complete state-format follow-up
+
+[The state-format report](daemon_state_splice_report.md) composes the five encoded words, serializer, recovered AES wrapper and twenty-byte formatter. Decode each word with XOR 0xf4f92df7, serialize big-endian, encrypt decoded bytes 2..17 under the recovered AES-128 key, preserve both two-byte edges, then XOR all 20 bytes with 0x98. Four source queries, fresh epoch/custody checks and 196 complete format controls qualify this conditional 160-bit permutation. Upstream message identity, native admission, the later undefined bank fields and daemon-kext pairing remain open.

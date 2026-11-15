@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current state-format increment: [the state-format report](daemon_state_splice_report.md) establishes a conditional five-u32 to twenty-byte permutation: decoded big-endian state, AES-128 on bytes 2..17, preserved two-byte edges and byte XOR 0x98 on all 20. Four source queries and 196 complete source/host-reference controls pass. The actual state-read epochs and saved output pointer are preserved; missing bank fields, upstream message identity and native daemon-kext joins remain open.
+
 Current complete-cipher increment: [the complete cipher report](daemon_core_cipher_report.md) establishes the retained block as AES-128 with explicit core XORs and the wrapper relation T=AES128_K(S_serialized[2:18] XOR H) XOR H for H=98 repeated 16 times. Sixty-four source queries, complete terminal/decoder domains and 136 independent block comparisons pass. Native caller/key-object/protocol-mode and daemon-kext joins remain open; the full goal remains active.
 
 Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) adds226 intervals,190234 source visits and seven nonvacuous source obligations. Both main paths complete32 B, copy transformed bytes into J+0x34 and overwrite private scratch before pending malloc(104) at0x10054b43c. Separate zero-byte/counter controls pass. Native status-channel coherence, ownership and daemon-kext pairing remain open; the full goal remains active.
@@ -1671,3 +1673,7 @@ The [affine-table increment](daemon_core_affine_report.md) establishes the initi
 ## Complete core cipher follow-up
 
 [The complete cipher report](daemon_core_cipher_report.md) establishes the conditional core as AES-128 encryption with explicit input/output XOR encodings. Composing the established staging gives T=AES128_K(S_serialized[2:18] XOR H) XOR H, with H sixteen 0x98 bytes. It records all final byte lookup/store sites, complete finite decoder checks, 64 source queries and 136 independent block comparisons. Native caller/controller admission, key-object lineage, protocol mode and daemon-kext pairing remain unknown.
+
+## Complete state-format follow-up
+
+[The state-format report](daemon_state_splice_report.md) composes the five encoded words, serializer, recovered AES wrapper and twenty-byte formatter. Decode each word with XOR 0xf4f92df7, serialize big-endian, encrypt decoded bytes 2..17 under the recovered AES-128 key, preserve both two-byte edges, then XOR all 20 bytes with 0x98. Four source queries, fresh epoch/custody checks and 196 complete format controls qualify this conditional 160-bit permutation. Upstream message identity, native admission, the later undefined bank fields and daemon-kext pairing remain open.
