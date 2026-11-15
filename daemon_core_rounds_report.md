@@ -1,5 +1,7 @@
 # fairplayd: nine main AES-prefix layers and the interleaved source schedule
 
+Current result: [the complete conditional cipher contract](daemon_core_cipher_report.md) establishes AES-128 block encryption and the wrapper XOR relation for the retained contexts. The earlier algorithm/final-decoding unknowns below describe this report's original evidence stage; native material lineage and transaction pairing remain unresolved.
+
 The core's four main word tables compose into nine complete forward substitution/ShiftRows/MixColumns layers. Their source consumers implement the required column XORs and byte selections, including a layer interleaved with its predecessor. Eight consecutive recovered offset vectors equal AES-128 expanded keys 1 through 8 from one backderived seed. With an explicit input whitening, the nine layers equal the AES-128 encryption prefix ending immediately before round-9 AddRoundKey. All sixteen terminal word-table indices are also recovered. Terminal table semantics, final decoding, complete encryption equivalence and native daemon-kext pairing remain unknown. [CR1-CR5; CR-A1-CR-A6]
 
 | Evidence | Primary provenance and scope |
@@ -142,3 +144,7 @@ Reproduction uses the established Python/Z3 environment: run `recover_daemon_cor
 | Medium | Avoid false round boundaries in related routines | Data-dependency reconstruction; the observed layer and output-lookup interleaving falsifies contiguous-block assumptions here. |
 
 **QG1**: Factual technical scope. **QG2**: CR-A1 through CR-A6 register dependent results and falsification probes. **QG3**: Nine main layers, all terminal word indices, interleaved control/data order, expansion subsequence and transport limits are covered; the full goal remains active. **QG4**: u8/u32/u64 widths, column-major state order, GF polynomial, byte extents, counts and complexity are explicit. **QG5**: Source order versus semantic layers, raw versus corrected offsets, prefix versus full encryption, predicted final keys versus source evidence and core versus external whitening are distinguished. **QG6**: Pinned original bytes, universal solver queries, independent field/state/schedule checks and the official standard provide provenance. **QG7**: Impact-labelled continuation is bounded above. All gates pass for this increment; final decoding and native interaction lineage remain unknown.
+
+## Complete core cipher follow-up
+
+[The complete cipher report](daemon_core_cipher_report.md) establishes the conditional core as AES-128 encryption with explicit input/output XOR encodings. Composing the established staging gives T=AES128_K(S_serialized[2:18] XOR H) XOR H, with H sixteen 0x98 bytes. It records all final byte lookup/store sites, complete finite decoder checks, 64 source queries and 136 independent block comparisons. Native caller/controller admission, key-object lineage, protocol mode and daemon-kext pairing remain unknown.

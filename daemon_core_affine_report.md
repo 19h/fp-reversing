@@ -1,5 +1,7 @@
 # fairplayd: initial byte codecs and AES S-box/MixColumns table contracts
 
+Current result: [the complete conditional cipher contract](daemon_core_cipher_report.md) establishes AES-128 block encryption and the wrapper XOR relation for the retained contexts. The earlier algorithm/final-decoding unknowns below describe this report's original evidence stage; native material lineage and transaction pairing remain unresolved.
+
 The core's initial sixteen word-table indices are an exact permutation of the sixteen input bytes followed by four invertible affine byte encodings. All four main word tables factor through the forward AES S-box. After explicit word normalizers, they equal the four forward AES MixColumns contributions under one shared word encoding, plus constant biases. Thirty-two universal source projections and complete finite-domain checks establish these contracts for the two retained contexts. Complete round composition, a key schedule, the full primitive and native daemon-kext transaction pairing remain unknown. [CA1-CA6; CA-A1-CA-A6]
 
 | Evidence | Primary provenance and scope |
@@ -157,3 +159,7 @@ Reproduction in the established Python/Z3 environment runs `recover_daemon_core_
 ## Core round-composition follow-up
 
 [The nine-layer composition report](daemon_core_rounds_report.md) proves the source consumer equations for all nine main substitution/ShiftRows/MixColumns layers and all sixteen terminal word indices. The source interleaves layers and terminal/output lookups. Eight recovered offset vectors exactly match an AES-128 expansion subsequence, giving a nine-layer encryption prefix under an explicit core input whitening. Final decoding, full encryption equivalence and native daemon-kext/material correspondence remain unknown; assumptions, source proofs and independent checks are retained there.
+
+## Complete core cipher follow-up
+
+[The complete cipher report](daemon_core_cipher_report.md) establishes the conditional core as AES-128 encryption with explicit input/output XOR encodings. Composing the established staging gives T=AES128_K(S_serialized[2:18] XOR H) XOR H, with H sixteen 0x98 bytes. It records all final byte lookup/store sites, complete finite decoder checks, 64 source queries and 136 independent block comparisons. Native caller/controller admission, key-object lineage, protocol mode and daemon-kext pairing remain unknown.

@@ -549,6 +549,7 @@ def main():
     if exists(BASE/'daemon_core_lookup_report.md'):reports.add(BASE/'daemon_core_lookup_report.md')
     if exists(BASE/'daemon_core_affine_report.md'):reports.add(BASE/'daemon_core_affine_report.md')
     if exists(BASE/'daemon_core_rounds_report.md'):reports.add(BASE/'daemon_core_rounds_report.md')
+    if exists(BASE/'daemon_core_cipher_report.md'):reports.add(BASE/'daemon_core_cipher_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3013,6 +3014,16 @@ def main():
         manifest['validation']['daemon_core_rounds_offset_vectors']=core_rounds['cases'][0]['offsets9_hex']
         manifest['validation']['daemon_core_rounds_prefix_schedule']=core_rounds['cases'][0]['AES128_prefix_schedule']
         manifest['validation']['daemon_core_rounds_terminal_encoded_xor16_hex']=core_rounds['cases'][0]['terminal_encoded_xor16_hex']
+    if exists(ROOT/'daemon_core_cipher_checks.json'):
+        core_cipher=json.loads(read(ROOT/'daemon_core_cipher_checks.json'))
+        core_cipher_audit=json.loads(read(ROOT/'daemon_core_cipher_audit.json'))
+        manifest['validation']['daemon_core_cipher_increment_checks']=core_cipher['verified_counts']
+        manifest['validation']['daemon_core_cipher_static_scope']=core_cipher['scope']
+        manifest['validation']['daemon_core_cipher_independent_checks']=core_cipher_audit['independent_totals']
+        manifest['validation']['daemon_core_cipher_source_queries_unsat']=len(core_cipher_audit['source_proofs'])
+        manifest['validation']['daemon_core_cipher_contract']=core_cipher['cases'][0]['contract']
+        manifest['validation']['daemon_core_cipher_host_reference']=core_cipher_audit['host_reference']
+        manifest['validation']['daemon_core_cipher_conditional_core_cipher_established']=core_cipher['conditional_core_cipher_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

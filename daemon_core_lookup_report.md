@@ -1,5 +1,7 @@
 # fairplayd: executable core lookup graph and fixed control envelope
 
+Current result: [the complete conditional cipher contract](daemon_core_cipher_report.md) establishes AES-128 block encryption and the wrapper XOR relation for the retained contexts. The earlier algorithm/final-decoding unknowns below describe this report's original evidence stage; native material lineage and transaction pairing remain unresolved.
+
 The inner block core has a source-derived, context-specialized 128-bit-to-128-bit model. Its 192 data lookups comprise sixteen byte lookups before the word-table network, 160 word lookups, and sixteen byte lookups after that network. A standalone evaluator computes the resulting sixteen bytes without executing target instructions or invoking a solver. The two retained contexts produce identical typed graphs despite 28 differing context bytes. Fourteen source queries cover 676 address and exit conditions; 156 changed-input source-model runs match the evaluator. The algorithm name, key interpretation, native caller admission and daemon-kext transaction pairing remain unknown. [CL1-CL6; CL-A1-CL-A6]
 
 This establishes a nonlinear fixed-table block transform under the stated contexts. A four-point counterexample rejects an affine map over GF(2), including a fixed XOR mask or a byte permutation followed by such a mask. Neither the count of lookups nor their table geometry identifies a cipher, semantic round count, key size, mode, encryption/decryption direction or universal inverse. [CL3-CL5; CL-A2-CL-A5]
@@ -150,3 +152,7 @@ The [affine-table increment](daemon_core_affine_report.md) establishes the initi
 ## Core round-composition follow-up
 
 [The nine-layer composition report](daemon_core_rounds_report.md) proves the source consumer equations for all nine main substitution/ShiftRows/MixColumns layers and all sixteen terminal word indices. The source interleaves layers and terminal/output lookups. Eight recovered offset vectors exactly match an AES-128 expansion subsequence, giving a nine-layer encryption prefix under an explicit core input whitening. Final decoding, full encryption equivalence and native daemon-kext/material correspondence remain unknown; assumptions, source proofs and independent checks are retained there.
+
+## Complete core cipher follow-up
+
+[The complete cipher report](daemon_core_cipher_report.md) establishes the conditional core as AES-128 encryption with explicit input/output XOR encodings. Composing the established staging gives T=AES128_K(S_serialized[2:18] XOR H) XOR H, with H sixteen 0x98 bytes. It records all final byte lookup/store sites, complete finite decoder checks, 64 source queries and 136 independent block comparisons. Native caller/controller admission, key-object lineage, protocol mode and daemon-kext pairing remain unknown.
