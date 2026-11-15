@@ -561,6 +561,7 @@ def main():
     if exists(BASE/'daemon_context_network_storage_report.md'):reports.add(BASE/'daemon_context_network_storage_report.md')
     if exists(BASE/'daemon_saved_base_statefile_lineage_report.md'):reports.add(BASE/'daemon_saved_base_statefile_lineage_report.md')
     if exists(BASE/'userclient_uidlist_cleanup_report.md'):reports.add(BASE/'userclient_uidlist_cleanup_report.md')
+    if exists(BASE/'userclient_hash_table_bootstrap_report.md'):reports.add(BASE/'userclient_hash_table_bootstrap_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3131,6 +3132,15 @@ def main():
         manifest['validation']['userclient_uidlist_cleanup_new_source_queries_unsat']=len(uidlist_audit['source_proofs'])
         manifest['validation']['userclient_uidlist_cleanup_prior_source_queries_rechecked']=len(uidlist_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_uidlist_cleanup_conditional_UIDList_fast_cleanup_established']=uidlist['conditional_UIDList_fast_cleanup_established']
+    if exists(ROOT/'userclient_hash_table_bootstrap_checks.json'):
+        hash_bootstrap=json.loads(read(ROOT/'userclient_hash_table_bootstrap_checks.json'))
+        hash_bootstrap_audit=json.loads(read(ROOT/'userclient_hash_table_bootstrap_audit.json'))
+        manifest['validation']['userclient_hash_table_bootstrap_increment_checks']=hash_bootstrap['verified_counts']
+        manifest['validation']['userclient_hash_table_bootstrap_static_scope']=hash_bootstrap['scope']
+        manifest['validation']['userclient_hash_table_bootstrap_independent_checks']=hash_bootstrap_audit['independent_totals']
+        manifest['validation']['userclient_hash_table_bootstrap_new_source_queries_unsat']=len(hash_bootstrap_audit['source_proofs'])
+        manifest['validation']['userclient_hash_table_bootstrap_prior_source_queries_rechecked']=len(hash_bootstrap_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_hash_table_bootstrap_conditional_global_hash_table_bootstrap_established']=hash_bootstrap['conditional_global_hash_table_bootstrap_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

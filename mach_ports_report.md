@@ -1801,3 +1801,8 @@ The [affine-table increment](daemon_core_affine_report.md) establishes the initi
 
 The [populated-context cleanup report](userclient_uidlist_cleanup_report.md) recovers the marker-equal 16 B `site.UIDList` arm in `_kratpzs81h`: save node+8, request typed node free, reload successor, then repeat or join the 24 B context free and original cell clear. Five new source obligations and five predecessor-query rechecks pass. Marker-unequal cleanup, node identity/producers, reference lifetime and native daemon-kext pairing remain unknown.
 The selected cleanup slices add ownership/control-flow context and no newly recovered port emission or import site; node+0 remains unknown and is not classified as a Mach name.
+
+
+## Shared hash-table bootstrap during teardown
+
+The [shared-table bootstrap report](userclient_hash_table_bootstrap_report.md) recovers the marker-unequal arm's module-global `site.FPHashTable` guard, 16 B allocation request, encoded initializer/header join, exact output-status publication gate and rollback. A still-null holder after failure selects UIDList node free and saved-successor continuation even for an unequal marker. Twelve new source obligations and five predecessor rechecks pass. Full table initialization/processing, node semantics, task references and native pairing remain unknown.

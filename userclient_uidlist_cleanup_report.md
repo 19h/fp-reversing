@@ -1,6 +1,6 @@
 # Populated UserClient context: UIDList fast cleanup
 
-`_kratpzs81h` at `0xfffffe000a626648` has a populated-context cleanup arm for 16 B nodes whose raw u32 field at +4 equals `0x31ae0066`. It saves the node's u64 +8 successor before requesting `_IOFreeTypeImpl(site.UIDList, node)`, then reloads that saved successor. A nonzero successor repeats the gate; zero joins the previously established 24 B `site.IOUCCtx` cleanup and original context-cell clear. This recovers one populated-list arm. The marker-unequal arm and the first four node bytes remain unknown. [UL1-UL6; UL-A1-UL-A6]
+`_kratpzs81h` at `0xfffffe000a626648` has a populated-context cleanup arm for 16 B nodes whose raw u32 field at +4 equals `0x31ae0066`. It saves the node's u64 +8 successor before requesting `_IOFreeTypeImpl(site.UIDList, node)`, then reloads that saved successor. A nonzero successor repeats the gate; zero joins the previously established 24 B `site.IOUCCtx` cleanup and original context-cell clear. This recovers one populated-list arm. The marker-unequal table-processing path and the first four node bytes remain unknown; its shared-table bootstrap is covered by the linked follow-up. [UL1-UL6; UL-A1-UL-A6]
 
 The type name is original binary evidence. Its `UID` substring does not establish a user identifier, Mach-port name, process identity, entitlement or application-level meaning. The selected source establishes typed-free requests and conditional control flow; native deallocation, task-reference balance and a successful fairplayd-kext transaction remain unknown. [UL3,UL6; UL-A4-UL-A6]
 
@@ -119,7 +119,7 @@ This local path is reached from the per-UserClient context-cell stop adapter est
 
 | Impact | Evidence to recover | Question resolved |
 | --- | --- | --- |
-| High | Marker-unequal target `0xfffffe000a626a3c` and its downstream joins | Remaining populated cleanup and any lower record/resource releases |
+| High | Marker-unequal processing at `0xfffffe000a626dc8` and its downstream joins | Remaining populated cleanup and any lower record/resource releases |
 | High | Producers of context head, node+0/+4/+8 and their allocation descriptors | Node identity, marker production, ownership and whether both branches share a list protocol |
 | High | Task references and framework/provider stop dispatch | Whether the context's task and node lifetime survive every descriptor/teardown use |
 | Medium | Serialization of head/node writers, stop and selector26 | Whether the local saved-successor traversal composes under actual concurrent lifecycle events |
@@ -134,3 +134,8 @@ This local path is reached from the per-UserClient context-cell stop adapter est
 - **QG5**: Partial versus full cleanup, context head versus node successor, raw marker versus application semantics, source request versus native retirement, and original versus normalized pointer words remain distinct. Abstract controls retain the finite-chain and unequal-arm boundaries.
 - **QG6**: Original collection/image hashes, original code/fixups/type strings, exact free symbol, five reconstructed source queries, five predecessor-query rechecks, exhaustive bank cases and altered-evidence controls supply scoped provenance.
 - **QG7**: Ranked continuation identifies the unequal arm, node producers, reference lifetime, concurrency and native pairing without extending the selected-arm conclusion beyond its premises.
+
+
+## Shared hash-table bootstrap during teardown
+
+The [shared-table bootstrap report](userclient_hash_table_bootstrap_report.md) recovers the marker-unequal arm's module-global `site.FPHashTable` guard, 16 B allocation request, encoded initializer/header join, exact output-status publication gate and rollback. A still-null holder after failure selects UIDList node free and saved-successor continuation even for an unequal marker. Twelve new source obligations and five predecessor rechecks pass. Full table initialization/processing, node semantics, task references and native pairing remain unknown.
