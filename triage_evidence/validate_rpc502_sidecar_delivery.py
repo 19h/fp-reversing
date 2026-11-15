@@ -547,6 +547,7 @@ def main():
     if exists(BASE/'daemon_record_input_origin_report.md'):reports.add(BASE/'daemon_record_input_origin_report.md')
     if exists(BASE/'daemon_block_staging_report.md'):reports.add(BASE/'daemon_block_staging_report.md')
     if exists(BASE/'daemon_core_lookup_report.md'):reports.add(BASE/'daemon_core_lookup_report.md')
+    if exists(BASE/'daemon_core_affine_report.md'):reports.add(BASE/'daemon_core_affine_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2990,6 +2991,17 @@ def main():
         manifest['validation']['daemon_core_lookup_source_queries_unsat']=len(core_lookup_audit['source_proofs'])
         manifest['validation']['daemon_core_lookup_identical_retained_context_graphs']=core_lookup_audit['identical_retained_context_graphs']
         manifest['validation']['daemon_core_lookup_controls']=core_lookup_audit['controls']
+    if exists(ROOT/'daemon_core_affine_checks.json'):
+        core_affine=json.loads(read(ROOT/'daemon_core_affine_checks.json'))
+        core_affine_audit=json.loads(read(ROOT/'daemon_core_affine_audit.json'))
+        manifest['validation']['daemon_core_affine_increment_checks']=core_affine['verified_counts']
+        manifest['validation']['daemon_core_affine_static_scope']=core_affine['scope']
+        manifest['validation']['daemon_core_affine_independent_checks']=core_affine_audit['independent_totals']
+        manifest['validation']['daemon_core_affine_source_queries_unsat']=len(core_affine_audit['source_proofs'])
+        manifest['validation']['daemon_core_affine_factor_matches']=core_affine_audit['factor_matches']
+        manifest['validation']['daemon_core_affine_mixcolumns']=core_affine['mixcolumns']
+        manifest['validation']['daemon_core_affine_original_window_mapping']=core_affine['original_window_mapping']
+        manifest['validation']['daemon_core_affine_reference_PDF_sha256']=core_affine['reference']['PDF_sha256']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

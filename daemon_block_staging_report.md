@@ -177,3 +177,7 @@ Reproduction uses the established Python/Z3 environment: run `recover_daemon_blo
 ## Core-lookup follow-up
 
 The [core-lookup increment](daemon_core_lookup_report.md) extracts an executable, context-specialized sixteen-byte transform with 192 data lookups. Universal source queries establish fixed read/write cells, lookup extents and the outgoing logical branch; changed-input source-model runs match the standalone graph evaluator. The primitive identity and native daemon-kext transaction mapping remain unknown.
+
+## Core affine-table follow-up
+
+The [affine-table increment](daemon_core_affine_report.md) establishes the initial sixteen byte/index codecs and exact forward AES S-box and encoded MixColumns identities for the four main word tables. Source projections, complete finite domains and explicit rejection witnesses qualify these component contracts. Full round/key semantics and the native daemon-kext transaction join remain unknown.
