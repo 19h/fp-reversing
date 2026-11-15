@@ -257,3 +257,7 @@ The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this in
 ## Parser caller and command dispatch increment
 
 The actual parser caller now has a conditional command-field lookup, protected scalar reader and exact two-value switch. The first command links to the existing hash-input reader; second-body semantics, native storage/ownership and cross-layer correlation remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
+
+## Caller cleanup and copy-back increment
+
+Outer allocation requests now distinguish the4,096 B context and16,384 B aligned workspace from earlier minimum modeled accessible subranges. The original staged copy has a conditional reverse copy-back and exact-size retirement path. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.

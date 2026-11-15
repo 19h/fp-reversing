@@ -1767,3 +1767,7 @@ The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this in
 ## Parser caller and command dispatch increment
 
 This increment adds44 nonvacuous new source queries over685 selected instruction locations and four predecessor rechecks. Caller cleanup callback0x1a, the second-command body and a successful native daemon/provider exchange remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
+
+## Caller cleanup and copy-back increment
+
+This increment adds44 nonvacuous source queries over690 instruction locations, six predecessor rechecks and3,584 bank cases. Auxiliary production, modifying command bodies, native ownership and successful daemon/provider pairing remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.

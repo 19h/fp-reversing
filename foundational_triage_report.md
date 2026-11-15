@@ -1998,3 +1998,7 @@ The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this in
 ## Parser caller and command dispatch increment
 
 The parser caller reads a tagged u32 command through protected node bytes; native external byte identity and transaction correlation remain open. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
+
+## Caller cleanup and copy-back increment
+
+The caller conditionally decodes staged bytes back into its saved in/out buffer, then requests staged/context/workspace retirement and returns a decoded saved status. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.

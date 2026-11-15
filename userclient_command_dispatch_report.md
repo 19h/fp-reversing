@@ -188,3 +188,7 @@ For k visited finite nodes, conditional lookup takes O(k) source work and O(1) a
 - **QG5**: Command field/tag/value channels, raw status versus phase meaning, nominal storage versus null-result cut, emitted cleanup requests versus native retirement and caller-specific callbacks are distinct.
 - **QG6**: Dual-image words, original table/bank records, 44 nonvacuous source formulas, four predecessor rechecks, 256 bank cases and four custody equality controls support bounded claims.
 - **QG7**: Ranked continuation retains second-body recovery, caller cleanup, native producer/transaction identity, aliasing and remaining-byte semantics.
+
+## Caller cleanup and copy-back increment
+
+The caller cleanup callback0x1a now composes with container/list destruction, optional auxiliary retirement, protected copy-back, outer retirement and a guarded decoded status result. Second-command body semantics remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.

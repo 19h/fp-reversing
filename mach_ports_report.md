@@ -1873,3 +1873,7 @@ The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this in
 ## Parser caller and command dispatch increment
 
 The recovered command switch and callback indices are internal control flow; this increment establishes no new Mach port, right or emission site. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
+
+## Caller cleanup and copy-back increment
+
+This increment establishes internal allocation, copy-back, retirement and return contracts; no new Mach endpoint, right or emission site is established. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.

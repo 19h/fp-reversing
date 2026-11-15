@@ -2127,3 +2127,7 @@ The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this in
 ## Parser caller and command dispatch increment
 
 The private command field has encoded tag0x45e5918e, transformed type0xa129 and four-byte scalar payload. Decoded values0x88594abe and0x73eba01e select distinct bodies; native external selector/message identity remains unknown. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
+
+## Caller cleanup and copy-back increment
+
+On the selected valid-storage path, low32(saved length) controls protected copy-back into original saved X0. Equal-canary ordinary return yields raw_status XOR0x31ae0066. Native external width/status semantics remain unknown. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.

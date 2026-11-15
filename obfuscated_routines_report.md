@@ -1978,3 +1978,7 @@ The [cleanup follow-up](userclient_parser_cleanup_report.md) establishes this in
 ## Parser caller and command dispatch increment
 
 The selected obfuscated blocks implement caller-specific tag lookup, a type/length-checked scalar reader and a two-value command switch. W23 meaning depends on the control-flow phase. See the [command-dispatch report](userclient_command_dispatch_report.md) for the source contracts, status frontiers and assumption register.
+
+## Caller cleanup and copy-back increment
+
+Selected obfuscated blocks now implement caller-specific list destruction, optional auxiliary retirement, finite reverse protected copy-back, outer cleanup and a guarded decoded status return. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
