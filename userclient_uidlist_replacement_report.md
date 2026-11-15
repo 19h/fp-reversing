@@ -159,3 +159,5 @@ No selected instruction establishes a new incoming endpoint, Mach trap, outgoing
 - **QG7**: Ranked continuation preserves constructor, input identity, epochs, synchronization, ownership and daemon correlation as outstanding requirements.
 
 The [replacement bootstrap report](userclient_replacement_bootstrap_report.md) now closes the selected null-holder constructor and both fallback continuations. The earlier constructor gap is superseded within those stated premises; native reachability and coherence remain unknown.
+
+The [discriminator-origin report](userclient_discriminator_origin_report.md) recovers the discriminator algorithm and records one literal SP+0x9ec write with 47 reads. Aliases/callees/SP epochs remain open, so the saved-status native domain is not established.

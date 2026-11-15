@@ -143,3 +143,5 @@ The [shared-table bootstrap report](userclient_hash_table_bootstrap_report.md) r
 ## UIDList search and publication follow-up
 
 [The UIDList publication report](userclient_uidlist_publication_report.md) recovers the separate node+0 discriminator and node+4 tunnel marker, exact search/successor gates, typed 16 B allocation and ordered node-fill/context-head stores. Candidate tunnel+0x6c flows into node+4 under the recorded frame/object premises, joining the insertion and cleanup key codecs conditionally. Seventeen new obligations, six predecessor obligations, 232 selected instructions and 512 bank cases pass. Existing-match resource/status completion, discriminator/input identity, native reachability, ownership, serialization and daemon correlation remain unknown; no new Mach endpoint is established.
+
+The [discriminator-origin report](userclient_discriminator_origin_report.md) establishes how node+0 equality is derived, retaining node+4 as a distinct marker/key channel under the publication/insertion premises.

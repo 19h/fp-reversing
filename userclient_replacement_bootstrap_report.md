@@ -175,3 +175,5 @@ Excluding allocator/initializer internals, this selected caller uses O(1) time a
 - **QG5**: Initial/reloaded holder, original/saved continuation, initialized/replacement status, initial/later saved-status values and type labels remain distinct. Null and nonnull fallback gates are separately checked.
 - **QG6**: Original instructions/fixups, fresh full-byte custody, 22 nonvacuous source obligations, explicit codec/bank certificates, 26 predecessor query rechecks and four evidence-comparison controls support the bounded claims.
 - **QG7**: Ranked continuation includes input identity, incoming phase, saved-status writers, synchronization, ownership and daemon correlation.
+
+The [discriminator-origin report](userclient_discriminator_origin_report.md) recovers the selected hash and exact null/empty/zero-result behavior. Its complete bounded literal-base inventory preserves the distinction between the saved-status initial default and unknown native effects through aliases/calls.

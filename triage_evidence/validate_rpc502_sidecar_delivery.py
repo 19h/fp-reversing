@@ -570,6 +570,7 @@ def main():
     if exists(BASE/'userclient_uidlist_publication_report.md'):reports.add(BASE/'userclient_uidlist_publication_report.md')
     if exists(BASE/'userclient_uidlist_replacement_report.md'):reports.add(BASE/'userclient_uidlist_replacement_report.md')
     if exists(BASE/'userclient_replacement_bootstrap_report.md'):reports.add(BASE/'userclient_replacement_bootstrap_report.md')
+    if exists(BASE/'userclient_discriminator_origin_report.md'):reports.add(BASE/'userclient_discriminator_origin_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3220,6 +3221,15 @@ def main():
         manifest['validation']['userclient_replacement_bootstrap_new_source_queries_unsat']=len(replacement_bootstrap_audit['source_proofs'])
         manifest['validation']['userclient_replacement_bootstrap_prior_source_queries_rechecked']=len(replacement_bootstrap_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_replacement_bootstrap_conditional_replacement_bootstrap_contract_established']=replacement_bootstrap['conditional_replacement_bootstrap_contract_established']
+    if exists(ROOT/'userclient_discriminator_origin_checks.json'):
+        discriminator_origin=json.loads(read(ROOT/'userclient_discriminator_origin_checks.json'))
+        discriminator_origin_audit=json.loads(read(ROOT/'userclient_discriminator_origin_audit.json'))
+        manifest['validation']['userclient_discriminator_origin_increment_checks']=discriminator_origin['verified_counts']
+        manifest['validation']['userclient_discriminator_origin_static_scope']=discriminator_origin['scope']
+        manifest['validation']['userclient_discriminator_origin_independent_checks']=discriminator_origin_audit['independent_totals']
+        manifest['validation']['userclient_discriminator_origin_new_source_queries_unsat']=len(discriminator_origin_audit['source_proofs'])
+        manifest['validation']['userclient_discriminator_origin_prior_source_queries_rechecked']=len(discriminator_origin_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_discriminator_origin_conditional_discriminator_contract_established']=discriminator_origin['conditional_discriminator_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
