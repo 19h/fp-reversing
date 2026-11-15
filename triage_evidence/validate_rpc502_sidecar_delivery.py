@@ -538,6 +538,7 @@ def main():
     if exists(BASE/'daemon_alternate_word_report.md'):reports.add(BASE/'daemon_alternate_word_report.md')
     if exists(BASE/'daemon_storage_flag_report.md'):reports.add(BASE/'daemon_storage_flag_report.md')
     if exists(BASE/'daemon_alternative_fill_report.md'):reports.add(BASE/'daemon_alternative_fill_report.md')
+    if exists(BASE/'daemon_alternative_header_report.md'):reports.add(BASE/'daemon_alternative_header_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2900,6 +2901,17 @@ def main():
         manifest['validation']['daemon_alternative_fill_scalar_controls']=len(fill_audit['scalar_controls'])
         manifest['validation']['daemon_alternative_fill_proof_cut_contexts']=len(fill_audit['proof_cut_contexts_verified'])
         manifest['validation']['daemon_alternative_fill_new_target_intervals']=fill_audit['new_target_intervals']
+    if exists(ROOT/'daemon_alternative_header_checks.json'):
+        header=json.loads(read(ROOT/'daemon_alternative_header_checks.json'))
+        header_audit=json.loads(read(ROOT/'daemon_alternative_header_audit.json'))
+        manifest['validation']['daemon_alternative_header_increment_checks']=header['verified_counts']
+        manifest['validation']['daemon_alternative_header_static_scope']=header['scope']
+        manifest['validation']['daemon_alternative_header_independent_checks']=header_audit['independent_totals']
+        manifest['validation']['daemon_alternative_header_source_queries_unsat']=len(header_audit['source_proofs'])
+        manifest['validation']['daemon_alternative_header_scalar_controls']=len(header_audit['scalar_controls'])
+        manifest['validation']['daemon_alternative_header_proof_cut_contexts']=header_audit['proof_cut_applications']
+        manifest['validation']['daemon_alternative_header_composition']=header_audit['composition']
+        manifest['validation']['daemon_alternative_header_new_target_intervals']=header_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
