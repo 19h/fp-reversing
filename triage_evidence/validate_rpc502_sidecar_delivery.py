@@ -565,6 +565,7 @@ def main():
     if exists(BASE/'userclient_hash_table_initializer_report.md'):reports.add(BASE/'userclient_hash_table_initializer_report.md')
     if exists(BASE/'userclient_hash_table_lookup_report.md'):reports.add(BASE/'userclient_hash_table_lookup_report.md')
     if exists(BASE/'userclient_hash_table_reclamation_report.md'):reports.add(BASE/'userclient_hash_table_reclamation_report.md')
+    if exists(BASE/'secure_tunnel_allocation_report.md'):reports.add(BASE/'secure_tunnel_allocation_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3171,6 +3172,14 @@ def main():
         manifest['validation']['userclient_hash_table_reclamation_new_source_queries_unsat']=len(reclamation_audit['source_proofs'])
         manifest['validation']['userclient_hash_table_reclamation_prior_source_queries_rechecked']=len(reclamation_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_hash_table_reclamation_conditional_hash_table_reclamation_contract_established']=reclamation['conditional_hash_table_reclamation_contract_established']
+    if exists(ROOT/'secure_tunnel_allocation_checks.json'):
+        tunnel=json.loads(read(ROOT/'secure_tunnel_allocation_checks.json'))
+        tunnel_audit=json.loads(read(ROOT/'secure_tunnel_allocation_audit.json'))
+        manifest['validation']['secure_tunnel_allocation_increment_checks']=tunnel['verified_counts']
+        manifest['validation']['secure_tunnel_allocation_static_scope']=tunnel['scope']
+        manifest['validation']['secure_tunnel_allocation_independent_checks']=tunnel_audit['independent_totals']
+        manifest['validation']['secure_tunnel_allocation_new_source_queries_unsat']=len(tunnel_audit['source_proofs'])
+        manifest['validation']['secure_tunnel_allocation_conditional_secure_tunnel_allocation_contract_established']=tunnel['conditional_secure_tunnel_allocation_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -200,3 +200,7 @@ The complete entry writer has no external call. The complete reclaimer calls onl
 - **QG5**: Occupied-to-tombstone versus tombstone-to-empty, local counter deltas versus global invariant, memory status versus return, null entry versus null array, alignment, padding, retag, native ownership and serialization are explicitly distinguished.
 - **QG6**: Claims trace to original bytes/fixups, complete function capture, exact descriptor/name chains, nonvacuous reconstructed obligations, independently checked bank identities/reference replays and four predecessor queries. No external source or native result is fabricated.
 - **QG7**: Ranked continuation covers payload allocation, key/insertion producers, counter invariant, serialized epochs, whole-list composition and daemon correlation; none is claimed complete here.
+
+## FPSecureTunnel allocation follow-up
+
+[The allocation and initialization report](secure_tunnel_allocation_report.md) binds the original call at 0xfffffe000a65a55c to a 120 B site.FPSecureTunnel descriptor, records its scratch publication and exact local byte layout, and compares the distinct allocation/free descriptors. Ten nonvacuous source obligations, 256 selector replays and 512 bank checks pass. Five object bytes are untouched by these stores. Whole dispatcher reachability, fallback convergence, entry+16 insertion lineage, native object identity/ownership and daemon transaction correlation remain unknown; no new Mach endpoint is established.
