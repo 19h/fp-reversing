@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current digest-body origins increment: The [writer-lineage report](daemon_digest_body_origins_report.md) identifies four-byte stores `0x100c70e28/0x100c70e80/0x100c70ed0/0x100c70f18`, two-byte stores `0x100b755ac/0x100b755f8`, surviving byte encoder stores `0x100a0ca74` and the generic byte copy `0x100b5c9b4/0x100b5c9b8` as actual producers/transfers feeding the retained digest body. Eight source equations and complete selected replay establish block-level roles; upstream scalar meanings and whole-function/native identities remain unknown.
+
 Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) identifies word-exhaustion routing0x100bf6d40, refill/equality caller0x100b32e70, equality/unsigned-greater leaf0x10041a5e0, completion status0x100a6d390, adapter low16 delta0x100add7d8, arena byte copy0x100576f28 and private overwrite0x10054b73c. Exact source models preserve unknown whole-function/native scope.
 
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) identifies conditional internal cleanup0x100cb2ef0, payload overwrite0x1009f2984, gate release0x100bde608, twist stores0x100a5e93c/0x100b312a4/0x100a2f634, tempering0x100a7ccc0 and encoded-byte store0x100a0ca74. Full original-source replay and compact equations establish these block roles; whole-function/native transport identity remains unknown.

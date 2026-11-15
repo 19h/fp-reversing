@@ -106,6 +106,8 @@ The equation is proved for every raw u32 word. Source `0x100a7cd18` selects byte
 
 ## Address-dependent output encoding and zero-byte retry
 
+Subsequent evidence: the [digest-body writer-lineage report](daemon_digest_body_origins_report.md) identifies twelve surviving stores from this same source encoder in an earlier retained record-growth sequence. It verifies their exact W9/shift/address/cache/text inputs. This is a new local use-site join; identity of the two native caller epochs and upstream W9 production remain unknown.
+
 The output base saved at SP+`0xa0` is`0x680006c590`. Remaining count32 and shift0 select destination a=output+31=`0x680006c5af`. None of its32 output bytes was defined before this interval. The encoder reads a cached u32 at`0x6500115e34`=`0xa0018891`; two global cells decode a text base`0x100822058` and mask`0xfff0c01200007fff`. All cache pointers, words and globals are inherited definitions, not new fixture bytes. Their native initialization/ownership remains unproved. [PO2-PO4; PO-A2,PO-A8]
 
 Under current phase`0xbc66`, the source byte transform is:

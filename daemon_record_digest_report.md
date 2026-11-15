@@ -1,5 +1,7 @@
 # fairplayd: retained record-message SHA-1 and the downstream AES format
 
+Subsequent evidence: the [digest-body writer lineage](daemon_digest_body_origins_report.md) resolves the inherited 48 B window's local producers across earlier owner-growth intervals. All bytes now have source writers; eight four-byte and two two-byte codec reductions are established, with twelve surviving address/cache/text-encoded bytes. Upstream scalar meanings and application field names remain unknown. This supersedes only the local inherited-byte producer gap below; native admission and daemon-kext pairing remain unknown.
+
 The five words consumed by the [state formatter](daemon_state_splice_report.md) are the SHA-1 digest of an exact 67-byte message in both retained contexts. The source initializes the standard five-word IV, consumes two correctly padded blocks, expands two 80-word schedules and performs two groups of 80 rounds before the established serializer/AES splice. The message is an 11-byte image prefix, a decoded 48-byte owner window and an eight-byte image suffix. This establishes the retained message-to-record computation. Native caller admission, general compression equivalence and daemon-kext transaction identity remain unknown. [RD1-RD6; RD-A1-RD-A6]
 
 | Evidence | Primary provenance and extent |

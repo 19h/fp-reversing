@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current digest-body origins increment: The [writer-lineage report](daemon_digest_body_origins_report.md) resolves the local producers of all 48 retained digest-body bytes across declared owner growth. Its 316 source copy links add no Mach name, right disposition, incoming/outgoing port or message emission site. A separate buffer/selector/owner/transaction join is still required to establish native daemon-kext pairing.
+
 Current generated-stream increment: The [generated-stream report](daemon_generated_stream_report.md) establishes a complete32 B private stream, caller arena copy, private overwrite and pending104 B malloc. It adds no Mach name/right/disposition or emission site. Local pointer transfers and two logical returns do not establish native daemon-kext transport pairing.
 
 Current post-seed output increment: The [post-seed output report](daemon_postseed_output_report.md) follows local cleanup, a full624-word twist and the first encoded private byte. Its28 intervals add no incoming/outgoing Mach name, right disposition, emission site or native daemon-kext pairing. The current private output has no established transport identity.

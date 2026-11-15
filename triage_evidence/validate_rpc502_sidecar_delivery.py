@@ -552,6 +552,7 @@ def main():
     if exists(BASE/'daemon_core_cipher_report.md'):reports.add(BASE/'daemon_core_cipher_report.md')
     if exists(BASE/'daemon_state_splice_report.md'):reports.add(BASE/'daemon_state_splice_report.md')
     if exists(BASE/'daemon_record_digest_report.md'):reports.add(BASE/'daemon_record_digest_report.md')
+    if exists(BASE/'daemon_digest_body_origins_report.md'):reports.add(BASE/'daemon_digest_body_origins_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3045,6 +3046,15 @@ def main():
         manifest['validation']['daemon_record_digest_retained_message67_hex']=record_digest['cases'][0]['message67_hex']
         manifest['validation']['daemon_record_digest_host_reference']=record_digest_audit['host_reference']
         manifest['validation']['daemon_record_digest_retained_digest_message_identity_established']=record_digest['retained_digest_message_identity_established']
+    if exists(ROOT/'daemon_digest_body_origins_checks.json'):
+        body_origins=json.loads(read(ROOT/'daemon_digest_body_origins_checks.json'))
+        body_origins_audit=json.loads(read(ROOT/'daemon_digest_body_origins_audit.json'))
+        manifest['validation']['daemon_digest_body_origins_increment_checks']=body_origins['verified_counts']
+        manifest['validation']['daemon_digest_body_origins_static_scope']=body_origins['scope']
+        manifest['validation']['daemon_digest_body_origins_independent_checks']=body_origins_audit['independent_totals']
+        manifest['validation']['daemon_digest_body_origins_source_queries_unsat']=len(body_origins_audit['source_proofs'])
+        manifest['validation']['daemon_digest_body_origins_epoch_and_phase_controls']=body_origins_audit['epoch_and_phase_controls']
+        manifest['validation']['daemon_digest_body_origins_retained_body_writer_lineage_established']=body_origins['retained_body_writer_lineage_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
