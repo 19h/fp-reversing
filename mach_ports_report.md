@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current count/data-flow increment: [The count-flow report](daemon_payload_count_flow_report.md) traces internal count/data/pointer and scratch-copy interfaces. Dispatch slots 0x10106d458/0x10106d1b8 select local code targets and establish no Mach name, right disposition, incoming/outgoing port or message emission site. Native port/selector/buffer/transaction joins remain open.
+
 Current payload-scalar increment: [The scalar-mixer report](daemon_payload_scalar_mixers_report.md) closes the two remaining internal payload word-mixer contracts and traces context/scratch inputs. It establishes no additional incoming/outgoing Mach port, right disposition or message emission site. Port/selector/buffer/transaction identity still requires a separate native join.
 
 Current digest-record structure increment: The [structure/epoch report](daemon_digest_record_structure_report.md) recovers local packed spans, indexed fields and tempered byte inputs. Its 316 post-read overwrites concern private owner lifetimes. This establishes no incoming/outgoing Mach port, right disposition or emission site; a native buffer/selector/port/transaction join remains required for daemon-kext pairing.

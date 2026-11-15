@@ -1,5 +1,7 @@
 # fairplayd: retained digest-body structure and read-before-overwrite epochs
 
+Count/data continuation: [The count-flow report](daemon_payload_count_flow_report.md) connects the final two payload words to a context count/data interface and exact word/tail copy gates. The retained count is 6 and the consumed pre-mixer bytes contain six context bytes plus two preserved encoded scratch bytes. Native epoch, schema and transport identity remain unknown.
+
 Payload-source continuation: [The scalar-mixer report](daemon_payload_scalar_mixers_report.md) now establishes the two previously opaque mixers as the same bijective affine u32 transform and recovers their separate BE32 input provenance. Scratch prefix replacement explains the second input. The original structure receipt and its limited semantic claims remain preserved; native schema and a combined-value interpretation remain unknown.
 
 The retained 48 B digest body has a recoverable local span layout: a 48 B span starts at owner offset 77, with a 28 B span starting 20 B later at offset 97. Both end at offset 125. Packed fields at offsets 85 and 105 each decode to the count-like value 1. Two adjacent words are additive transforms of indexed private-bank entries 3 and 4; twelve surviving byte stores receive four exactly identified tempered words. The final 8 B pass through two other word mixers whose application meaning remains unknown. This establishes conditional local structure, not a native wire schema or daemon-kext transaction. [DS1-DS6; DS-A1-DS-A6]

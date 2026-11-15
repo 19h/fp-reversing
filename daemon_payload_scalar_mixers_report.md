@@ -1,5 +1,7 @@
 # fairplayd: equivalent payload scalar mixers and scratch byte history
 
+Count-source continuation: [The count-flow report](daemon_payload_count_flow_report.md) now joins the original context+0x1c count read, advanced +0x20 data pointer, saved count and loop gates. Count 6 explains the four-byte direct read plus two-byte scratch-prefix replacement. The earlier scalar-mixer and scratch-history receipts remain unchanged; native constructor epoch and application schema remain unknown.
+
 The two remaining payload mixers implement the same bijective u32 affine transformation. Both consume a shared big-endian four-byte reader's result, then emit `BE32(u32(D * 0x01ef2eff + 0x00833631))` after the established owner-offset normalization. Their retained inputs are 0 and 25,597, producing `00833631` and `69114534` at final-owner offsets 117 and 121. These are two separate four-byte source reads and emissions. A combined application u64 interpretation remains unknown. [PS1-PS6; PS-A1-PS-A4]
 
 The second input's physical bytes have mixed producer history: four encoded scratch bytes `20 a3 63 fd` are written, then two context bytes overwrite their prefix, yielding `00 00 63 fd`. The reader consumes this later state. The six context byte offsets involved, +0x20 through +0x25, coincide with the previously recovered network-data field layout; a native constructor-to-consumer epoch join remains unknown. This is additional local data-flow evidence, with no newly established Mach port, disposition or emission site. [PS2-PS6; PS-A2,PS-A5-PS-A6]

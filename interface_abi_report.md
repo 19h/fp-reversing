@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current count/data-flow increment: [The count-flow report](daemon_payload_count_flow_report.md) recovers a post-incrementing u32 count read at context+0x1c, the resulting data pointer at +0x20, a u64 count bias and exact word/tail gate contracts. Sixteen source obligations cover unsigned reconstruction, pointer publication, logical dispatch and writeback save/restore cases. Modular and N>=4 integer interpretations remain distinct; native admission and transaction identity remain unknown.
+
 Current payload-scalar increment: [The scalar-mixer report](daemon_payload_scalar_mixers_report.md) establishes the shared BE32-reader phase, equivalent affine u32 mixers, inverse and distinct side loads at holder+0x18 and FP-0xe8/-0xe4. Complete caller/store replay joins outputs at owner+117/+121. These are conditional internal contracts; native schema, port/right identity and daemon-kext pairing remain unknown.
 
 Current digest-record structure increment: The [structure/epoch report](daemon_digest_record_structure_report.md) recovers local spans [77,125)/48 B and [97,125)/28 B, a conditional 20 B prefix interpretation, count-like scalar 1 at +85/+105 and an 8 B opaque payload at +117. Packing bit counts 6/5/1 remain distinct from decoded scalar values. Bank indices 3/4 and actual tempering inputs are source-bound; native record types, payload width/type and daemon-kext transaction identity remain unknown.

@@ -1,5 +1,7 @@
 # Cached path, network-record fields and entropy interfaces in the arena context
 
+Consumer continuation: [The count-flow report](daemon_payload_count_flow_report.md) identifies a later count/data consumer with matching context+0x1c/+0x20 layout. Its original count read advances to the data pointer and count 6 selects a direct four-byte word plus a two-byte scratch-prefix copy. This is static layout correspondence; a native constructor-to-consumer object epoch remains unknown.
+
 Follow-up: The [clock-record report](daemon_clock_record_report.md) follows all eight pending clock boundaries through explicit field/return controls, two later random calls and one first-pass state update. It preserves undefined clock output and an original saved-zero pointer that later produces a pending address4 read; native admission remains unknown.
 
 Original source at `0x1004b4580` stores the second allocation return in raw context C+0x10 before testing NULL or filling the allocation. Success decodes `/var/db/fpsd/SC Info\0` into that 21-byte allocation, copies the network-record count into C+0x1c and its six data bytes into C+0x20, then initializes further context fields. The successful route enters two nested helpers and reaches `arc4random`; declared random returns seed a 624-word image state and reach `gettimeofday`. These are local context, representation and environmental-input interfaces. Native synchronization, filesystem use and daemon-kext delivery remain unknown. [CSP1-CSP5]

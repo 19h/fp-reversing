@@ -555,6 +555,7 @@ def main():
     if exists(BASE/'daemon_digest_body_origins_report.md'):reports.add(BASE/'daemon_digest_body_origins_report.md')
     if exists(BASE/'daemon_digest_record_structure_report.md'):reports.add(BASE/'daemon_digest_record_structure_report.md')
     if exists(BASE/'daemon_payload_scalar_mixers_report.md'):reports.add(BASE/'daemon_payload_scalar_mixers_report.md')
+    if exists(BASE/'daemon_payload_count_flow_report.md'):reports.add(BASE/'daemon_payload_count_flow_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3075,6 +3076,14 @@ def main():
         manifest['validation']['daemon_payload_scalar_mixers_independent_checks']=payload_mixers_audit['independent_totals']
         manifest['validation']['daemon_payload_scalar_mixers_new_source_queries_unsat']=len(payload_mixers_audit['source_proofs'])
         manifest['validation']['daemon_payload_scalar_mixers_retained_payload_scalar_contract_established']=payload_mixers['retained_payload_scalar_contract_established']
+    if exists(ROOT/'daemon_payload_count_flow_checks.json'):
+        payload_count=json.loads(read(ROOT/'daemon_payload_count_flow_checks.json'))
+        payload_count_audit=json.loads(read(ROOT/'daemon_payload_count_flow_audit.json'))
+        manifest['validation']['daemon_payload_count_flow_increment_checks']=payload_count['verified_counts']
+        manifest['validation']['daemon_payload_count_flow_static_scope']=payload_count['scope']
+        manifest['validation']['daemon_payload_count_flow_independent_checks']=payload_count_audit['independent_totals']
+        manifest['validation']['daemon_payload_count_flow_new_source_queries_unsat']=len(payload_count_audit['source_proofs'])
+        manifest['validation']['daemon_payload_count_flow_retained_count_data_flow_established']=payload_count['retained_count_data_flow_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
