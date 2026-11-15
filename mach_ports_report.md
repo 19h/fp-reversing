@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) establishes internal field storage and a saved-base alias. Its API links are declared local premises; no additional incoming/outgoing Mach port, right disposition or message-emission site is established. Same-transaction native buffer/selector/right identity remains unknown.
+
 Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) verifies conditional internal pointer-byte provenance through retained constructor/consumer epochs. Its 18 API boundary links concern declared allocator/free returns. This increment establishes no additional incoming/outgoing Mach port, right disposition or message emission site; native buffer/selector/right/transaction identity remains unknown.
 
 Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) adds constructor-side saved-pointer and container-copy provenance. The logical copy call at 0x100595f84 and target 0x10046f89c transfer local bytes. This increment establishes no additional incoming/outgoing Mach port, right disposition or message emission site; the native transaction join remains unknown.

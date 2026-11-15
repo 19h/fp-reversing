@@ -1,5 +1,7 @@
 # fairplayd: conditional count-pointer lineage and saved context base
 
+Earlier-base follow-up: [The network-storage report](daemon_context_network_storage_report.md) identifies 0x1004cf268 as the X22 store to SP+0x9b8 and verifies its eight-byte route through 20 stages per pathname-family case to the SP+0x7f38 alias. The larger join through selected state-file branches to the later count-pointer producer remains unknown; PL-A4 below retains that larger gap.
+
 The original count-pointer store at `0x100710630` now has a checked byte lineage to the later pointer read at `0x10083e780` for both retained normal payload representatives. Each lineage crosses 149 stages, including nine derived exports and explicit API/initializer premises. The eight pointer bytes remain unchanged after their original store. This establishes conditional byte provenance through the retained models. Whole-machine initializer/caller continuity and native object/transport identity remain unknown. [PL1-PL5; PL-A1-PL-A5]
 
 An earlier source producer is also identified: `0x1005d0f74` loads the context pointer from outer SP+0x9b8, and `0x1005d0f78` copies it to SP+0x7f38 in all 16 retained pathname-family cases. The count-pointer producer later reloads the latter cell. The full intervening chain between these earlier base-pointer and later count-pointer stages is outside this increment. [PL2-PL4; PL-A4]
@@ -74,12 +76,12 @@ Extraction takes O(image bytes+parent bytes+recorded visits+effect bytes+selecte
 | PL-A1: The pinned image and recorded source bytes identify the same AArch64 instructions | Source semantics and all model joins | Rehash the image and parents; reconstruct/re-solve both obligations and replay selected opcodes/frames. |
 | PL-A2: Declared API effects, fixtures, owner extents and separate entry premises apply only to their stated models | Conditional pointer lineage | Introduce an overlapping invalidation or mismatching incoming byte and require audit failure; native API memory effects require separate observation. |
 | PL-A3: Coverage links select the actual representative parent, and no original interval/export is skipped | Both 149-stage routes and composed producer contract | Independently assemble selector order, verify parent/class membership, check every PC transition and byte predecessor; reject a missing repeated mixing batch even if endpoint PCs match. |
-| PL-A4: The earlier saved-base publication is a local source producer, without an audited full chain to the later base reload | Earlier SP+0x7f38 attribution only | Trace SP+0x9b8's writer and every intervening state-file parent boundary before asserting that larger base-pointer chain. |
+| PL-A4: The earlier saved-base publication is a local source producer, without an audited full chain to the later base reload | Earlier SP+0x7f38 attribution only | The storage follow-up establishes SP+0x9b8's local writer; trace every intervening state-file parent boundary and caller lifetime before asserting the larger base-pointer chain. |
 | PL-A5: Byte preservation across conditional roots does not prove whole-machine initializer continuity or native object ownership | Scope of all cross-stage interpretations | Inspect the initializer/caller control and lifetime joins separately; equal cell bytes and disjoint roots alone do not prove them. |
 
 | Bounded continuation | Impact | Unresolved evidence |
 | --- | --- | --- |
-| Trace the saved context-base input at SP+0x9b8 | High | Its original writer and caller/context lifetime |
+| Extend the saved context-base attribution | High | Local writer established in the storage follow-up; caller/context lifetime remains unknown |
 | Complete the earlier base-pointer boundary chain | Medium | Pathname-family to selected SIDB/SIDN constructor parents, including modeled file-control forks |
 | Establish field validity and remaining snapshot roles | Medium | Network-count admission and producers/consumers of the 14 copied bytes beyond count+six-byte data |
 | Join retained private owners to transport | High | Same native transaction's buffer/selector/Mach right and emission/receive evidence |

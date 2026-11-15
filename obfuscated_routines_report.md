@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) identifies 0x10032197c/0x100321980 as a 20 B context clear and 0x1004cf268 as the earlier saved context-base store. Three nonvacuous source obligations, 110 selected instruction replays, two nonzero network controls and ordered-overlay audits support the local roles. General field capacity, the 14-byte tail's application meaning and native continuity remain unknown.
+
 Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) identifies 0x1005d0f74/0x1005d0f78 as a saved context-base copy, rather than a context-field transform. Two source/composition obligations and 34 fully replayed selected instructions accompany the conditional count-pointer provenance route to both normal consumers. Three direct SP+0x7f38 store-pattern candidates remain distinct from runtime writer attribution.
 
 Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) identifies 0x10071062c/0x100710630 as count-pointer formation/publication and 0x100595f84 as the caller of a fixed 24 B snapshot copy into a 64 B container. The copy uses eight post-incrementing byte pairs repeated three times on the retained route. All 912 pointer paths and 76 copies pass checks; the remaining 14 snapshot bytes have unknown application roles.

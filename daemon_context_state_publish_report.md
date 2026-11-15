@@ -1,5 +1,7 @@
 # Cached path, network-record fields and entropy interfaces in the arena context
 
+Storage follow-up: [The network-storage report](daemon_context_network_storage_report.md) verifies the explicit 20 B constructor clear and all six indexed data stores in four raw-success controls. The 14 B tail remains zero under ordered last-overlay-wins fixtures; earlier encoded overlays are historical, and NULL-allocation resealing is a separate final representation. Two nonzero data controls distinguish copy semantics from zero-only examples.
+
 Consumer continuation: [The count-flow report](daemon_payload_count_flow_report.md) identifies a later count/data consumer with matching context+0x1c/+0x20 layout. Its original count read advances to the data pointer and count 6 selects a direct four-byte word plus a two-byte scratch-prefix copy. This is static layout correspondence; a native constructor-to-consumer object epoch remains unknown.
 
 Follow-up: The [clock-record report](daemon_clock_record_report.md) follows all eight pending clock boundaries through explicit field/return controls, two later random calls and one first-pass state update. It preserves undefined clock output and an original saved-zero pointer that later produces a pending address4 read; native admission remains unknown.

@@ -558,6 +558,7 @@ def main():
     if exists(BASE/'daemon_payload_count_flow_report.md'):reports.add(BASE/'daemon_payload_count_flow_report.md')
     if exists(BASE/'daemon_count_pointer_origin_report.md'):reports.add(BASE/'daemon_count_pointer_origin_report.md')
     if exists(BASE/'daemon_count_pointer_lineage_report.md'):reports.add(BASE/'daemon_count_pointer_lineage_report.md')
+    if exists(BASE/'daemon_context_network_storage_report.md'):reports.add(BASE/'daemon_context_network_storage_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3102,6 +3103,15 @@ def main():
         manifest['validation']['daemon_count_pointer_lineage_independent_checks']=pointer_lineage_audit['independent_totals']
         manifest['validation']['daemon_count_pointer_lineage_new_source_queries_unsat']=len(pointer_lineage_audit['source_proofs'])
         manifest['validation']['daemon_count_pointer_lineage_conditional_count_pointer_byte_lineage_established']=pointer_lineage['conditional_count_pointer_byte_lineage_established']
+    if exists(ROOT/'daemon_context_network_storage_checks.json'):
+        network_storage=json.loads(read(ROOT/'daemon_context_network_storage_checks.json'))
+        network_storage_audit=json.loads(read(ROOT/'daemon_context_network_storage_audit.json'))
+        manifest['validation']['daemon_context_network_storage_increment_checks']=network_storage['verified_counts']
+        manifest['validation']['daemon_context_network_storage_static_scope']=network_storage['scope']
+        manifest['validation']['daemon_context_network_storage_independent_checks']=network_storage_audit['independent_totals']
+        manifest['validation']['daemon_context_network_storage_new_source_queries_unsat']=len(network_storage_audit['source_proofs'])
+        manifest['validation']['daemon_context_network_storage_raw_success_network_storage_contract_established']=network_storage['raw_success_network_storage_contract_established']
+        manifest['validation']['daemon_context_network_storage_conditional_saved_base_alias_established']=network_storage['conditional_saved_base_alias_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

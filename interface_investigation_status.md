@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) establishes an explicit 20 B constructor clear, a six-byte network-data overwrite and a 14 B zero tail in four checked raw-success controls, including two nonzero controls. It also identifies the SP+0x9b8 saved-base writer and verifies its route to SP+0x7f38 across 320 pathname-family stages. Full earlier-base/native epoch continuity and transport identity remain unknown; the goal remains active.
+
 Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) closes the conditional eight-byte route from the original count-pointer store to both normal payload consumers through 298 selected stages and 296 boundary links. Each lineage retains 116 B of explicit disjoint entry roots. It also identifies the earlier saved context-base publication in 16 pathname-family cases. Whole-machine initializer continuity, the earlier base-pointer boundary chain and native transport identity remain unknown; the goal remains active.
 
 Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) identifies the original count-pointer store before malloc(64), its saved-context-base input and the subsequent fixed 24 B container snapshot. All 912 retained free-return paths and 76 snapshot copies pass independent checks; eleven source obligations pass. The complete later consumer epoch chain and native transport identity remain unknown; the goal remains active.

@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) maps context+28 count4, +32 data6 and +38 tail14 to the fixed 24 B container snapshot. The last 14 bytes have source-established zero initialization and retained raw-success write exclusion; their application type remains unknown. It also attributes SP+0x9b8 to the original X22 store at 0x1004cf268, with a conditional route to SP+0x7f38.
+
 Current count-pointer lineage increment: [The lineage report](daemon_count_pointer_lineage_report.md) recovers the original SP+0x9b8 to SP+0x7f38 context-base copy and establishes the conditional count-pointer route through 149 stages per normal representative. The 296 byte-cell/PC links include 18 API returns and 18 derived exports. Disjoint conditional entry roots total 116 B per lineage; whole-machine initializer and native transaction continuity remain unproved.
 
 Current count-pointer origin increment: [The pointer-origin report](daemon_count_pointer_origin_report.md) establishes the original 8 B store of context+0x1c at outer SP+0x71c0, followed by a reload and internal copy call with X0=context+28, X1=container+24 and X2=24. Eleven universal source obligations cover pointer addressing and byte-copy writeback. These internal contracts retain separate constructor/consumer epochs and no established native transaction join.
