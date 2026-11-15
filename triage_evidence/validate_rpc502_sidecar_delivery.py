@@ -535,6 +535,7 @@ def main():
     if exists(BASE/'daemon_record_selection_report.md'):reports.add(BASE/'daemon_record_selection_report.md')
     if exists(BASE/'daemon_record_storage_report.md'):reports.add(BASE/'daemon_record_storage_report.md')
     if exists(BASE/'daemon_record_walk_report.md'):reports.add(BASE/'daemon_record_walk_report.md')
+    if exists(BASE/'daemon_alternate_word_report.md'):reports.add(BASE/'daemon_alternate_word_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -2868,6 +2869,16 @@ def main():
         manifest['validation']['daemon_record_walk_source_queries_unsat']=len(walk_audit['source_proofs'])
         manifest['validation']['daemon_record_walk_scalar_controls']=len(walk_audit['scalar_controls'])
         manifest['validation']['daemon_record_walk_new_target_intervals']=walk_audit['new_target_intervals']
+    if exists(ROOT/'daemon_alternate_word_checks.json'):
+        alt=json.loads(read(ROOT/'daemon_alternate_word_checks.json'))
+        alt_audit=json.loads(read(ROOT/'daemon_alternate_word_audit.json'))
+        manifest['validation']['daemon_alternate_word_increment_checks']=alt['verified_counts']
+        manifest['validation']['daemon_alternate_word_static_scope']=alt['scope']
+        manifest['validation']['daemon_alternate_word_independent_checks']=alt_audit['independent_totals']
+        manifest['validation']['daemon_alternate_word_source_queries_unsat']=len(alt_audit['source_proofs'])
+        manifest['validation']['daemon_alternate_word_interpretation_controls']=len(alt_audit['interpretation_controls'])
+        manifest['validation']['daemon_alternate_word_proof_cut_contexts']=len(alt_audit['proof_cut_contexts_verified'])
+        manifest['validation']['daemon_alternate_word_new_target_intervals']=alt_audit['new_target_intervals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
