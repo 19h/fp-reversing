@@ -154,3 +154,8 @@ The [shared-table bootstrap report](userclient_hash_table_bootstrap_report.md) r
 ## Shared table: backing array and initializer completion
 
 The [initializer report](userclient_hash_table_initializer_report.md) closes the recovered token0xabd constructor path: an encoded count128/size-helper protocol supplies 3072 B to `_IOMallocTypeVarImpl`, followed by 128 entries at a 24 B stride. Raw defaults, 512 B of untouched entry padding, null/success output words and canary/return conditions are source-established. Twenty-one new obligations and three predecessor rechecks pass. Other token domains, table processing, native allocation/lifetimes and daemon-kext pairing remain unknown.
+
+
+## Shared-table lookup follow-up
+
+The [lookup contract](userclient_hash_table_lookup_report.md) joins both cleanup records to the same token0x541 helper, classifies raw empty/tombstone/occupied states, recovers the masked-key/linear-probe policy and distinguishes candidate success from an occupied-key hit. It establishes the status/flag/index channels and conditional entry+16 read; update/removal, payload ownership, native serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.

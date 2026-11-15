@@ -165,3 +165,8 @@ The selected outgoing calls are private size calculation, variable allocation an
 - **QG5**: Requested bytes versus allocator footprint, encoded sentinel versus byte count, default stores versus padding, raw retag effect versus valid contiguous layout, output word versus ordinary return, and recovered protocol versus arbitrary tokens remain distinct.
 - **QG6**: Original function bytes, chained metadata, exact symbols, 21 reconstructed source queries with explicit composition/codec certificates, three predecessor rechecks, 1792 bank cases, full array replay and four evidence rejections supply scoped provenance.
 - **QG7**: Ranked continuation identifies table processing/schema, ownership/lifetime, other protocol callers and native correspondence without treating this constructor contract as a complete teardown or daemon transaction.
+
+
+## Shared-table lookup follow-up
+
+The [lookup contract](userclient_hash_table_lookup_report.md) joins both cleanup records to the same token0x541 helper, classifies raw empty/tombstone/occupied states, recovers the masked-key/linear-probe policy and distinguishes candidate success from an occupied-key hit. It establishes the status/flag/index channels and conditional entry+16 read; update/removal, payload ownership, native serialization and daemon-kext pairing remain unknown. No new Mach-port emission site is established.

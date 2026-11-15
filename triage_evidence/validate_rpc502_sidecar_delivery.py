@@ -563,6 +563,7 @@ def main():
     if exists(BASE/'userclient_uidlist_cleanup_report.md'):reports.add(BASE/'userclient_uidlist_cleanup_report.md')
     if exists(BASE/'userclient_hash_table_bootstrap_report.md'):reports.add(BASE/'userclient_hash_table_bootstrap_report.md')
     if exists(BASE/'userclient_hash_table_initializer_report.md'):reports.add(BASE/'userclient_hash_table_initializer_report.md')
+    if exists(BASE/'userclient_hash_table_lookup_report.md'):reports.add(BASE/'userclient_hash_table_lookup_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3151,6 +3152,15 @@ def main():
         manifest['validation']['userclient_hash_table_initializer_new_source_queries_unsat']=len(hash_initializer_audit['source_proofs'])
         manifest['validation']['userclient_hash_table_initializer_prior_source_queries_rechecked']=len(hash_initializer_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_hash_table_initializer_conditional_hash_table_initializer_contract_established']=hash_initializer['conditional_hash_table_initializer_contract_established']
+    if exists(ROOT/'userclient_hash_table_lookup_checks.json'):
+        hash_lookup=json.loads(read(ROOT/'userclient_hash_table_lookup_checks.json'))
+        hash_lookup_audit=json.loads(read(ROOT/'userclient_hash_table_lookup_audit.json'))
+        manifest['validation']['userclient_hash_table_lookup_increment_checks']=hash_lookup['verified_counts']
+        manifest['validation']['userclient_hash_table_lookup_static_scope']=hash_lookup['scope']
+        manifest['validation']['userclient_hash_table_lookup_independent_checks']=hash_lookup_audit['independent_totals']
+        manifest['validation']['userclient_hash_table_lookup_new_source_queries_unsat']=len(hash_lookup_audit['source_proofs'])
+        manifest['validation']['userclient_hash_table_lookup_prior_source_queries_rechecked']=len(hash_lookup_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_hash_table_lookup_conditional_hash_table_lookup_contract_established']=hash_lookup['conditional_hash_table_lookup_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
