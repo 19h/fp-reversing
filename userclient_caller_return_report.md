@@ -203,3 +203,8 @@ For k finite parsed nodes and N staged bytes, selected cleanup/copy-back takes O
 - **QG5**: Staged/auxiliary/caller buffers, earlier modeled subranges/outer request sizes, descriptor metadata/site identity, raw/decoded status, phase/ownership and emitted requests/native effects remain distinct.
 - **QG6**: Dual-image words, original pointers/symbols/descriptors, 44 nonvacuous source formulas, six predecessor rechecks, 3,584 bank cases, 76 structural instructions and four custody equality controls support bounded claims.
 - **QG7**: Ranked continuation retains cross-layer in/out identity, modifying commands, auxiliary producer, native ownership/locking, count-width validation and remaining incoming paths.
+
+
+## Selector26 transfer boundary
+
+The recovered guarded raw-status decode and original size codec are rechecked and composed with the surrounding provider/handler. The provider preserves normal core X0 while requesting copy-out before cleanup/status propagation; the handler publishes12 descriptor bytes only on low32 success. Actual transfer and all controller incoming paths remain unproved. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

@@ -2002,3 +2002,8 @@ The parser caller reads a tagged u32 command through protected node bytes; nativ
 ## Caller cleanup and copy-back increment
 
 The caller conditionally decodes staged bytes back into its saved in/out buffer, then requests staged/context/workspace retirement and returns a decoded saved status. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+The task-aware selector26 adapter composes the recovered core return with unconditional post-return copy-out requests, exact descriptor lifecycle paths and handler output gating. Copy counts remain arbitrary; emitted copy requests do not establish successful byte transfer or native daemon pairing. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

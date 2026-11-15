@@ -580,6 +580,7 @@ def main():
     if exists(BASE/'userclient_parser_cleanup_report.md'):reports.add(BASE/'userclient_parser_cleanup_report.md')
     if exists(BASE/'userclient_command_dispatch_report.md'):reports.add(BASE/'userclient_command_dispatch_report.md')
     if exists(BASE/'userclient_caller_return_report.md'):reports.add(BASE/'userclient_caller_return_report.md')
+    if exists(BASE/'userclient_transfer_boundary_report.md'):reports.add(BASE/'userclient_transfer_boundary_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3320,6 +3321,15 @@ def main():
         manifest['validation']['userclient_caller_return_new_source_queries_unsat']=len(caller_return_audit['source_proofs'])
         manifest['validation']['userclient_caller_return_prior_source_queries_rechecked']=len(caller_return_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_caller_return_conditional_caller_return_contract_established']=caller_return['conditional_caller_return_contract_established']
+    if exists(ROOT/'userclient_transfer_boundary_checks.json'):
+        transfer_boundary=json.loads(read(ROOT/'userclient_transfer_boundary_checks.json'))
+        transfer_boundary_audit=json.loads(read(ROOT/'userclient_transfer_boundary_audit.json'))
+        manifest['validation']['userclient_transfer_boundary_increment_checks']=transfer_boundary['verified_counts']
+        manifest['validation']['userclient_transfer_boundary_static_scope']=transfer_boundary['scope']
+        manifest['validation']['userclient_transfer_boundary_independent_checks']=transfer_boundary_audit['independent_totals']
+        manifest['validation']['userclient_transfer_boundary_new_source_queries_unsat']=len(transfer_boundary_audit['source_proofs'])
+        manifest['validation']['userclient_transfer_boundary_prior_source_queries_rechecked']=len(transfer_boundary_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_transfer_boundary_conditional_transfer_boundary_established']=transfer_boundary['conditional_transfer_boundary_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

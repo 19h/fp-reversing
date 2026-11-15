@@ -1877,3 +1877,8 @@ The recovered command switch and callback indices are internal control flow; thi
 ## Caller cleanup and copy-back increment
 
 This increment establishes internal allocation, copy-back, retirement and return contracts; no new Mach endpoint, right or emission site is established. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+The selector26 adapter increment establishes task-aware memory-descriptor calls and copy/status ordering. It establishes no additional Mach right or emission site. The provider requests copy-out before status propagation even on a nonzero core return; actual memory transfer and the daemon message/selector transaction remain separate evidence obligations. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

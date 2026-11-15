@@ -1982,3 +1982,8 @@ The selected obfuscated blocks implement caller-specific tag lookup, a type/leng
 ## Caller cleanup and copy-back increment
 
 Selected obfuscated blocks now implement caller-specific list destruction, optional auxiliary retirement, finite reverse protected copy-back, outer cleanup and a guarded decoded status return. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+uej58Beal is source-proved as the task-aware selector26 copy/lifecycle adapter. It preserves the normal PRnut72j9 result across copy-out, completes/releases descriptors by the exact accepted/failing preparation path, and returns0xffff5bd4 on four local early failures. Short copy counts do not alter its selected return; native data-transfer effects remain unknown. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

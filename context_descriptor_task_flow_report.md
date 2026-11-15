@@ -237,3 +237,8 @@ The actual parser caller now has a conditional command-field lookup, protected s
 ## Caller cleanup and copy-back increment
 
 Caller cleanup callback0x1a, distinct staged/auxiliary buffers, finite protected copy-back and outer allocation/retirement/status contracts are now established conditionally. Native identity, aliases, callee effects and cross-layer transaction correlation remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+The surrounding selector26 handler/provider contract now has full bounded instruction coverage on normal authenticated paths: task/state argument custody, low32 descriptor extents, preserved incoming64-bit core length lane, copy request order and lifecycle/status gates. Native task references, mapping results, descriptor identity and concurrent mutation remain unknown. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

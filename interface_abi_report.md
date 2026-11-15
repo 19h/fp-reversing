@@ -2131,3 +2131,8 @@ The private command field has encoded tag0x45e5918e, transformed type0xa129 and 
 ## Caller cleanup and copy-back increment
 
 On the selected valid-storage path, low32(saved length) controls protected copy-back into original saved X0. Equal-canary ordinary return yields raw_status XOR0x31ae0066. Native external width/status semantics remain unknown. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+The complete handler/provider instruction audit distinguishes provider incoming X2 from its low32 transfer extent, preserves normal core X0 through post-return copy-out and descriptor cleanup, and proves handler publication of exactly12 bytes on low32 success. Separate and exactly aliased descriptors are covered. Local adapter failures and a decoded core status can share0xffff5bd4; status alone does not locate the failure or establish byte transfer. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

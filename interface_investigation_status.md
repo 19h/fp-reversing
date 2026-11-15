@@ -1771,3 +1771,8 @@ This increment adds44 nonvacuous new source queries over685 selected instruction
 ## Caller cleanup and copy-back increment
 
 This increment adds44 nonvacuous source queries over690 instruction locations, six predecessor rechecks and3,584 bank cases. Auxiliary production, modifying command bodies, native ownership and successful daemon/provider pairing remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+Selector26 transfer-boundary increment:191 function instructions,189 normally modeled locations,23 new nonvacuous UNSAT queries and two predecessor rechecks establish conditional argument/status custody, five provider paths and four handler alias/status cases. Native transfer counts, descriptor/PAC effects, command-modified bytes and daemon transaction identity remain open. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).

@@ -192,3 +192,8 @@ For k visited finite nodes, conditional lookup takes O(k) source work and O(1) a
 ## Caller cleanup and copy-back increment
 
 The caller cleanup callback0x1a now composes with container/list destruction, optional auxiliary retirement, protected copy-back, outer retirement and a guarded decoded status result. Second-command body semantics remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+## Selector26 transfer boundary
+
+The unsupported-command raw value0xce515bb7 decodes arithmetically to0xffff5bd1 under the selected guarded cleanup theorem. The surrounding adapter preserves that normal return while requesting copy-out before the handler status gate; no native command reachability or successful transfer is inferred. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
