@@ -1882,3 +1882,8 @@ This increment establishes internal allocation, copy-back, retirement and return
 ## Selector26 transfer boundary
 
 The selector26 adapter increment establishes task-aware memory-descriptor calls and copy/status ordering. It establishes no additional Mach right or emission site. The provider requests copy-out before status propagation even on a nonzero core return; actual memory transfer and the daemon message/selector transaction remain separate evidence obligations. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
+
+
+## Second-command query records
+
+The second command reuses private version/capability helpers and emits conditional scalar-record construction requests. Its callbacks,table indices and allocation calls establish no additional Mach endpoint,right or message emission. Native transaction identity and external byte delivery remain separate obligations. [Evidence and exact boundaries](userclient_query_records_report.md).

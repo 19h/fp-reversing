@@ -2136,3 +2136,8 @@ On the selected valid-storage path, low32(saved length) controls protected copy-
 ## Selector26 transfer boundary
 
 The complete handler/provider instruction audit distinguishes provider incoming X2 from its low32 transfer extent, preserves normal core X0 through post-return copy-out and descriptor cleanup, and proves handler publication of exactly12 bytes on low32 success. Separate and exactly aliased descriptors are covered. Local adapter failures and a decoded core status can share0xffff5bd4; status alone does not locate the failure or establish byte transfer. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
+
+
+## Second-command query records
+
+A private second-command record at workspace+0x968 is distinct from the outer16 B UserClient descriptor. Version/capability helpers reuse its result+4 channel,followed by three constructor packets with saved callback/state fields. The first node allocation is32 B and data request14 B. The final successful callback forwards container and auxiliary output-cell aliases; actual serialization/publication and native transfer remain open. [Evidence and exact boundaries](userclient_query_records_report.md).

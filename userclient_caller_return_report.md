@@ -208,3 +208,8 @@ For k finite parsed nodes and N staged bytes, selected cleanup/copy-back takes O
 ## Selector26 transfer boundary
 
 The recovered guarded raw-status decode and original size codec are rechecked and composed with the surrounding provider/handler. The provider preserves normal core X0 while requesting copy-out before cleanup/status propagation; the handler publishes12 descriptor bytes only on low32 success. Actual transfer and all controller incoming paths remain unproved. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
+
+
+## Second-command query records
+
+The query-command third-success handoff forwards the original container cell,C+0x3c0 auxiliary pointer cell and S+0xbe4 extent cell to0xfffffe000a65f3ec. This connects the auxiliary interface location to a producer candidate; the subsequent production and bytes are not established. The independent staged-buffer copy-back contract is unchanged. [Evidence and exact boundaries](userclient_query_records_report.md).

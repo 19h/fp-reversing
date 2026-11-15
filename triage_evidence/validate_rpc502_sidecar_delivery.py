@@ -581,6 +581,7 @@ def main():
     if exists(BASE/'userclient_command_dispatch_report.md'):reports.add(BASE/'userclient_command_dispatch_report.md')
     if exists(BASE/'userclient_caller_return_report.md'):reports.add(BASE/'userclient_caller_return_report.md')
     if exists(BASE/'userclient_transfer_boundary_report.md'):reports.add(BASE/'userclient_transfer_boundary_report.md')
+    if exists(BASE/'userclient_query_records_report.md'):reports.add(BASE/'userclient_query_records_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3330,6 +3331,15 @@ def main():
         manifest['validation']['userclient_transfer_boundary_new_source_queries_unsat']=len(transfer_boundary_audit['source_proofs'])
         manifest['validation']['userclient_transfer_boundary_prior_source_queries_rechecked']=len(transfer_boundary_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_transfer_boundary_conditional_transfer_boundary_established']=transfer_boundary['conditional_transfer_boundary_established']
+    if exists(ROOT/'userclient_query_records_checks.json'):
+        query_records=json.loads(read(ROOT/'userclient_query_records_checks.json'))
+        query_records_audit=json.loads(read(ROOT/'userclient_query_records_audit.json'))
+        manifest['validation']['userclient_query_records_increment_checks']=query_records['verified_counts']
+        manifest['validation']['userclient_query_records_static_scope']=query_records['scope']
+        manifest['validation']['userclient_query_records_independent_checks']=query_records_audit['independent_totals']
+        manifest['validation']['userclient_query_records_new_source_queries_unsat']=len(query_records_audit['source_proofs'])
+        manifest['validation']['userclient_query_records_prior_source_queries_rechecked']=len(query_records_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_query_records_conditional_query_record_request_contract_established']=query_records['conditional_query_record_request_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

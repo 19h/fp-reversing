@@ -1776,3 +1776,8 @@ This increment adds44 nonvacuous source queries over690 instruction locations, s
 ## Selector26 transfer boundary
 
 Selector26 transfer-boundary increment:191 function instructions,189 normally modeled locations,23 new nonvacuous UNSAT queries and two predecessor rechecks establish conditional argument/status custody, five provider paths and four handler alias/status cases. Native transfer counts, descriptor/PAC effects, command-modified bytes and daemon transaction identity remain open. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
+
+
+## Second-command query records
+
+Second-command query-record increment:539 selected locations,31 new nonvacuous source proofs,five predecessor rechecks and1280 bank cases establish private helper-record reuse,three request packets/status continuations and first node/data allocation plus writer-entry ABI. The third-success handoff supplies container/auxiliary output aliases; the writer,list publication and producer remain open. [Evidence and exact boundaries](userclient_query_records_report.md).

@@ -141,3 +141,8 @@ The adapter and handler each contain a bounded number of instructions/calls: loc
 - **QG5**: Requests/actual bytes, provider64/core-low32 widths, descriptor/payload writes, local/core error origins and PAC/model boundaries remain distinct.
 - **QG6**: Dual-image words, original fixups/symbols,23 nonvacuous source formulas, two predecessor rechecks and the SAT mutation control support the stated scope.
 - **QG7**: Ranked continuation includes native transfer counts, modifying commands, ambiguous status provenance, auxiliary allocation, task/descriptor lifetime and packet concurrency.
+
+
+## Second-command query records
+
+The second-command private query/helper record and three scalar-record construction requests are now partially recovered below the preserved provider transfer/status boundary. Their normalized scalar controls match pinned version/capabilities plus unknown0x99ab; complete serialization and native byte transfer remain unproved. [Evidence and exact boundaries](userclient_query_records_report.md).

@@ -2007,3 +2007,8 @@ The caller conditionally decodes staged bytes back into its saved in/out buffer,
 ## Selector26 transfer boundary
 
 The task-aware selector26 adapter composes the recovered core return with unconditional post-return copy-out requests, exact descriptor lifecycle paths and handler output gating. Copy counts remain arbitrary; emitted copy requests do not establish successful byte transfer or native daemon pairing. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
+
+
+## Second-command query records
+
+The second decoded command prepares three conditional record-construction requests with XOR-normalized scalar controls matching version0x4c0b0000,capabilities0x1f8 and unknown0x99ab. The first selected constructor requests32 B typed node/14 B data storage and reaches a protected writer. Complete serialization, publication, auxiliary production and native pairing remain open. [Evidence and exact boundaries](userclient_query_records_report.md).

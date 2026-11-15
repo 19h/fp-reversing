@@ -1,6 +1,6 @@
 # User-client parser caller and scalar command dispatch
 
-The parser's actual caller searches its returned container for encoded tag `0x45e5918e`, reads a protected ten-byte record header, requires transformed type `0xa129` and a four-byte payload, then selects between two command values. The unmasked big-endian scalar values are `0x88594abe` and `0x73eba01e`. The first enters the previously recovered hash-input reader; the second enters a distinct body whose subsequent purpose remains unknown. Other scalar values set raw status `0xce515bb7` and enter common cleanup. These are conditional static contracts for the pinned image, not evidence of a successful native daemon transaction.
+The parser's actual caller searches its returned container for encoded tag `0x45e5918e`, reads a protected ten-byte record header, requires transformed type `0xa129` and a four-byte payload, then selects between two command values. The unmasked big-endian scalar values are `0x88594abe` and `0x73eba01e`. The first enters the previously recovered hash-input reader; the second enters a distinct body whose query/record request phase is now partially recovered in [the query-record report](userclient_query_records_report.md); complete command behavior remains unknown. Other scalar values set raw status `0xce515bb7` and enter common cleanup. These are conditional static contracts for the pinned image, not evidence of a successful native daemon transaction.
 
 ## Evidence and claim register
 
@@ -94,7 +94,7 @@ parser SUCCESS, H nonnull
 
 The first command loads Q from F+0x738, retains H at C+0x4b0, clears C+0x128 and initializes S+0xaa8 to encoded zero. Q!=0 selects private index0x8c4 and `0xfffffe000a63dd80`; Q=0 selects0x8ed and common cleanup with raw status `0xce515bbf`. The [input-reader report](userclient_input_reader_report.md) independently establishes that next reader's requested tag `0x2685a3ce`, copied payload output, encoded-length output and hash-gate continuation. The command-field tag, command scalar and subsequent hash-input tag are distinct channels. No semantic command name is assigned from these values alone.
 
-The second command begins at `0xfffffe000a63ad64`. Its selected initial instructions set W21=PHASE, W23=0x9dc and copy H from C+0x600 to C+0x3a8. W23=0x9dc is recorded as an entry-phase value; native success/error meaning and subsequent body effects remain unknown.
+The second command begins at `0xfffffe000a63ad64`. Its selected initial instructions set W21=PHASE, W23=0x9dc and copy H from C+0x600 to C+0x3a8. W23=0x9dc is recorded as an entry-phase value. The later [query-record increment](userclient_query_records_report.md) establishes conditional helper calls, construction packets and continuations; native success/error meaning and complete command effects remain unknown.
 
 | Condition / phase | Raw status at established frontier | Frontier / consequence |
 | --- | --- | --- |
@@ -197,3 +197,8 @@ The caller cleanup callback0x1a now composes with container/list destruction, op
 ## Selector26 transfer boundary
 
 The unsupported-command raw value0xce515bb7 decodes arithmetically to0xffff5bd1 under the selected guarded cleanup theorem. The surrounding adapter preserves that normal return while requesting copy-out before the handler status gate; no native command reachability or successful transfer is inferred. [Evidence and exact boundaries](userclient_transfer_boundary_report.md).
+
+
+## Second-command query records
+
+The second command now has source-proved version/capability helper calls,three conditional scalar-record request packets and exact callback status gates. Its first selected constructor requests a32 B typed node and14 B data buffer before entering a protected writer. Complete command/writer/publication semantics remain open. [Evidence and exact boundaries](userclient_query_records_report.md).

@@ -135,3 +135,8 @@ This table describes source-level composition after successful discovery/open an
 ## Capability preparation and selector21 contract
 
 Source consumers refine four local capability-bit roles:bit3 gates16-byte preparation,with bits5/6/1 participating in conditional working-mode selection. These values are not yet equated with wire fields. The accompanying selector21 contract proves complete provider/core argument shuffling and a mutable output count,correcting the supplied C fixed512 statement. Bits7/8,application-level meanings and native pairing remain unresolved. [Evidence and exact boundaries](versioned_request_abi_report.md).
+
+
+## Second-command query records
+
+Broader callers of the same version adapter and capability leaf occur inside the second selector26 core command. They reuse one workspace record,with the capability result replacing the version result word; later construction requests use literal controls matching those constants. Controller side effects remain relevant,and complete wire serialization/native pairing are not inferred. [Evidence and exact boundaries](userclient_query_records_report.md).
