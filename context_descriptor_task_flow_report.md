@@ -164,3 +164,8 @@ A u32 scratch-write control also changes the low half of a previously saved task
 ## Resolved core stack-delta ABI
 
 The three private calls now resolve to one adapter. Its actual return domain is aligned0..0xffff0 B,which excludes the earlier unrestricted negative-delta cancellation control for this route. Zero delta is equivalent to final header low16 equality with the captured seed. Entry restoration is established;the remaining inner preservation and complete CFG remain unproved. [Evidence and exact boundaries](core_stack_delta_abi_report.md).
+
+
+## Populated context: marker-equal node teardown
+
+The [populated-context cleanup report](userclient_uidlist_cleanup_report.md) recovers the marker-equal 16 B `site.UIDList` arm in `_kratpzs81h`: save node+8, request typed node free, reload successor, then repeat or join the 24 B context free and original cell clear. Five new source obligations and five predecessor-query rechecks pass. Marker-unequal cleanup, node identity/producers, reference lifetime and native daemon-kext pairing remain unknown.

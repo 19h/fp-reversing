@@ -244,6 +244,11 @@ source-preserved selector record, and hashed SDK declarations supply provenance.
 QG7: bounded continuation questions above have impact labels.
 
 ```sh
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_iokit_connection_lifecycle.py
-PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_iokit_connection_lifecycle.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_iokit_connection_lifecycle.py
+PYTHONPATH=triage_evidence python3 -P triage_evidence/validate_iokit_connection_lifecycle.py
 ```
+
+
+## Populated context: marker-equal node teardown
+
+The [populated-context cleanup report](userclient_uidlist_cleanup_report.md) recovers the marker-equal 16 B `site.UIDList` arm in `_kratpzs81h`: save node+8, request typed node free, reload successor, then repeat or join the 24 B context free and original cell clear. Five new source obligations and five predecessor-query rechecks pass. Marker-unequal cleanup, node identity/producers, reference lifetime and native daemon-kext pairing remain unknown.

@@ -1921,3 +1921,8 @@ The [affine-table increment](daemon_core_affine_report.md) establishes the initi
 ## Retained record-message digest follow-up
 
 [The record-digest report](daemon_record_digest_report.md) identifies the retained five words as SHA-1 of an exact 67-byte message: an 11-byte image prefix, a decoded 48-byte window at owner offset 77, and an eight-byte image suffix. The body uses the established record mask indexed by the original owner offset. Fresh source replay checks both compression blocks, every schedule word and round-entry state, byte epochs and downstream AES composition in both contexts. Native admission, the inherited body's upstream semantic origin, later missing bank fields and daemon-kext pairing remain open.
+
+
+## Populated context: marker-equal node teardown
+
+The [populated-context cleanup report](userclient_uidlist_cleanup_report.md) recovers the marker-equal 16 B `site.UIDList` arm in `_kratpzs81h`: save node+8, request typed node free, reload successor, then repeat or join the 24 B context free and original cell clear. Five new source obligations and five predecessor-query rechecks pass. Marker-unequal cleanup, node identity/producers, reference lifetime and native daemon-kext pairing remain unknown.

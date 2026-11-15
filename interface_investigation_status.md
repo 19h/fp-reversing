@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current populated-context increment: The [populated-context cleanup report](userclient_uidlist_cleanup_report.md) recovers the marker-equal 16 B `site.UIDList` arm in `_kratpzs81h`: save node+8, request typed node free, reload successor, then repeat or join the 24 B context free and original cell clear. Five new source obligations and five predecessor-query rechecks pass. Marker-unequal cleanup, node identity/producers, reference lifetime and native daemon-kext pairing remain unknown. The full goal remains active.
+
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) closes the conditional earlier context-base route through all 76 retained SIDB/SIDN constructor contexts. Independent ancestry, byte invalidation and PC checks cover 481 distinct stages and 2,228 route links. These originate from one pathname-family source and four synthetic prefix/ABI selections. Native caller/object/transport continuity remains unknown; the goal remains active.
 
 Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) establishes an explicit 20 B constructor clear, a six-byte network-data overwrite and a 14 B zero tail in four checked raw-success controls, including two nonzero controls. It also identifies the SP+0x9b8 saved-base writer and verifies its route to SP+0x7f38 across 320 pathname-family stages. Full earlier-base/native epoch continuity and transport identity remain unknown; the goal remains active.

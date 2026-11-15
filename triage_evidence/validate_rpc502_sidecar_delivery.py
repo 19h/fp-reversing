@@ -560,6 +560,7 @@ def main():
     if exists(BASE/'daemon_count_pointer_lineage_report.md'):reports.add(BASE/'daemon_count_pointer_lineage_report.md')
     if exists(BASE/'daemon_context_network_storage_report.md'):reports.add(BASE/'daemon_context_network_storage_report.md')
     if exists(BASE/'daemon_saved_base_statefile_lineage_report.md'):reports.add(BASE/'daemon_saved_base_statefile_lineage_report.md')
+    if exists(BASE/'userclient_uidlist_cleanup_report.md'):reports.add(BASE/'userclient_uidlist_cleanup_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3121,6 +3122,15 @@ def main():
         manifest['validation']['daemon_saved_base_statefile_lineage_independent_checks']=statefile_base_audit['independent_totals']
         manifest['validation']['daemon_saved_base_statefile_lineage_new_source_queries_unsat']=len(statefile_base_audit['source_proofs'])
         manifest['validation']['daemon_saved_base_statefile_lineage_conditional_saved_base_to_count_producer_lineage_established']=statefile_base['conditional_saved_base_to_count_producer_lineage_established']
+    if exists(ROOT/'userclient_uidlist_cleanup_checks.json'):
+        uidlist=json.loads(read(ROOT/'userclient_uidlist_cleanup_checks.json'))
+        uidlist_audit=json.loads(read(ROOT/'userclient_uidlist_cleanup_audit.json'))
+        manifest['validation']['userclient_uidlist_cleanup_increment_checks']=uidlist['verified_counts']
+        manifest['validation']['userclient_uidlist_cleanup_static_scope']=uidlist['scope']
+        manifest['validation']['userclient_uidlist_cleanup_independent_checks']=uidlist_audit['independent_totals']
+        manifest['validation']['userclient_uidlist_cleanup_new_source_queries_unsat']=len(uidlist_audit['source_proofs'])
+        manifest['validation']['userclient_uidlist_cleanup_prior_source_queries_rechecked']=len(uidlist_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_uidlist_cleanup_conditional_UIDList_fast_cleanup_established']=uidlist['conditional_UIDList_fast_cleanup_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
