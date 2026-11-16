@@ -200,3 +200,6 @@ The actual parser caller now has a conditional command-field lookup, protected s
 ## Caller cleanup and copy-back increment
 
 Caller cleanup callback0x1a, distinct staged/auxiliary buffers, finite protected copy-back and outer allocation/retirement/status contracts are now established conditionally. Native identity, aliases, callee effects and cross-layer transaction correlation remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establishes selected14/32 B zone-address formation, conditional null-result propagation through the size/data allocators, typed result/frame custody, all-flags typed fallback allocation/free heap-size congruence, data/lower retirement null guards and the small-size query request ABI. Native outcome existence, valid initialized zones, allocation identity/ownership, query-helper effects, PAC, synchronization and daemon-visible transaction behavior remain unknown; no additional Mach endpoint is established.

@@ -1905,3 +1905,6 @@ The [query publication contract](userclient_query_publication_report.md) now est
 
 
 The [query failure and lower allocation contract](userclient_query_failure_report.md) establishes conditional saved error0xce515bb2, optional-data/typed-node cleanup requests and delivery through all three saved callbacks. The pending-node context cell remains unchanged across the selected cleanup return. The lower typed allocator masks adapter0x8004 to three bits before adding its own flags; selected zone/heap/size arguments are recovered. Native allocator outcomes, ownership/free effects, indirect saved-status aliases, public error status and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
+
+
+The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establishes selected14/32 B zone-address formation, conditional null-result propagation through the size/data allocators, typed result/frame custody, all-flags typed fallback allocation/free heap-size congruence, data/lower retirement null guards and the small-size query request ABI. Native outcome existence, valid initialized zones, allocation identity/ownership, query-helper effects, PAC, synchronization and daemon-visible transaction behavior remain unknown; no additional Mach endpoint is established.

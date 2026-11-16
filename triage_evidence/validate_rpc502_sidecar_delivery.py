@@ -588,6 +588,7 @@ def main():
     if exists(BASE/'userclient_query_writer_report.md'):reports.add(BASE/'userclient_query_writer_report.md')
     if exists(BASE/'userclient_query_publication_report.md'):reports.add(BASE/'userclient_query_publication_report.md')
     if exists(BASE/'userclient_query_failure_report.md'):reports.add(BASE/'userclient_query_failure_report.md')
+    if exists(BASE/'kernel_allocator_boundary_report.md'):reports.add(BASE/'kernel_allocator_boundary_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3401,6 +3402,15 @@ def main():
         manifest['validation']['userclient_query_failure_new_source_queries_unsat']=len(query_failure_audit['source_proofs'])
         manifest['validation']['userclient_query_failure_prior_source_queries_rechecked']=len(query_failure_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_query_failure_conditional_query_failure_contract_established']=query_failure['conditional_query_failure_contract_established']
+    if exists(ROOT/'kernel_allocator_boundary_checks.json'):
+        allocator_boundary=json.loads(read(ROOT/'kernel_allocator_boundary_checks.json'))
+        allocator_boundary_audit=json.loads(read(ROOT/'kernel_allocator_boundary_audit.json'))
+        manifest['validation']['kernel_allocator_boundary_increment_checks']=allocator_boundary['verified_counts']
+        manifest['validation']['kernel_allocator_boundary_static_scope']=allocator_boundary['scope']
+        manifest['validation']['kernel_allocator_boundary_independent_checks']=allocator_boundary_audit['independent_totals']
+        manifest['validation']['kernel_allocator_boundary_new_source_queries_unsat']=len(allocator_boundary_audit['source_proofs'])
+        manifest['validation']['kernel_allocator_boundary_prior_source_queries_rechecked']=len(allocator_boundary_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_allocator_boundary_conditional_kernel_allocator_boundary_contract_established']=allocator_boundary['conditional_kernel_allocator_boundary_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

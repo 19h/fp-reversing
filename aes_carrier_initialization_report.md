@@ -122,3 +122,6 @@ QG7: The impact-labelled continuation table identifies the remaining architectur
 ## Separate hardware-provider allocation geometry
 
 The [trace/wakeup report](aes_trace_wakeup_report.md) reuses this report's separately versioned raw-4/Z_ZERO provenance for a different allocation: the AppleS8000AESAccelerator class and type view both specify 2560 B. That exactly covers its software ring and cursor. It does not change the carrier's 144 B contract or establish native zeroed memory, derived-field preservation or provider lifetime (TW1-TW5).
+
+
+The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establishes selected14/32 B zone-address formation, conditional null-result propagation through the size/data allocators, typed result/frame custody, all-flags typed fallback allocation/free heap-size congruence, data/lower retirement null guards and the small-size query request ABI. Native outcome existence, valid initialized zones, allocation identity/ownership, query-helper effects, PAC, synchronization and daemon-visible transaction behavior remain unknown; no additional Mach endpoint is established.

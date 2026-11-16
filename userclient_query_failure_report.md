@@ -125,3 +125,6 @@ Extraction requires O(B+I+256R) time/space for consumed image bytes B, instructi
 - **QG5**: Literal inventory versus indirect aliases, source capture versus modeled blocks, return cuts versus native allocation, context-cell retention versus ownership, and internal error versus public status remain distinct.
 - **QG6**: Original images, original pointer metadata, exact source PCs, 30 reconstructed source obligations, five predecessor rechecks, 768 bank cases and a changed-literal SAT control support the stated scope.
 - **QG7**: Ranked continuation preserves native allocator outcomes, transaction pairing, descriptor identity, synchronization, indirect frame aliases and public error handling as unresolved evidence frontiers.
+
+
+The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establishes selected14/32 B zone-address formation, conditional null-result propagation through the size/data allocators, typed result/frame custody, all-flags typed fallback allocation/free heap-size congruence, data/lower retirement null guards and the small-size query request ABI. Native outcome existence, valid initialized zones, allocation identity/ownership, query-helper effects, PAC, synchronization and daemon-visible transaction behavior remain unknown; no additional Mach endpoint is established.
