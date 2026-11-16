@@ -1,6 +1,6 @@
 # Auxiliary extent gate and reverse byte transcode
 
-The second-command auxiliary callback at `0xfffffe000a65fea8` admits copying only when its success flag is one and the auxiliary extent equals the low32 bits of the original argument. The admitted saved-mode branch loads separate auxiliary and staging pointers. Its byte step decrements the cursor, reads an auxiliary byte and writes the same decoded value under the staging buffer's address-dependent mask. The next cursor is zero on the cleanup edge. The original argument producers establish mode=N XOR 0x7c233caf and counter=N, where N=low32(argument64). Under the stated custody, memory and pointer premises, zero length bypasses copying and positive length yields exactly N reverse steps. Complete serializer-to-callback reachability remains unknown.
+The second-command auxiliary callback at `0xfffffe000a65fea8` admits copying only when its success flag is one and the auxiliary extent equals the low32 bits of the original argument. The admitted saved-mode branch loads separate auxiliary and staging pointers. Its byte step decrements the cursor, reads an auxiliary byte and writes the same decoded value under the staging buffer's address-dependent mask. The next cursor is zero on the cleanup edge. The original argument producers establish mode=N XOR 0x7c233caf and counter=N, where N=low32(argument64). Under the stated custody, memory and pointer premises, zero length bypasses copying and positive length yields exactly N reverse steps. The linked [emission report](userclient_serializer_emission_report.md) now establishes conditional emission-to-callback flow; complete native reachability remains unknown.
 
 ## Evidence and claim register
 
@@ -153,3 +153,6 @@ Each captured gate/byte step takes O(1) work and O(1) state. Conditional repetit
 
 
 The [serializer extent contract](userclient_serializer_extent_report.md) now establishes checked node-extent accumulation, strict 16 B padded sizing, the original allocator ABI and encoded extent custody. Under the stated successful-publication cut, the original consumer admits copying only when the request length equals that padded allocation extent. Node/padding emission, container stability across passes and native transaction pairing remain unknown; no additional Mach port endpoint is established.
+
+
+The [serializer emission contract](userclient_serializer_emission_report.md) now closes conditional finite stable-list emission: decoded node-byte concatenation, terminal tag0/type50db/big-endian padding length, exact zero payload, and output pointer/extent publication with flag1/raw SUCCESS. The terminal shape normalizes to the recovered parser type0x6685. Original metadata-node construction, native list/storage validity and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

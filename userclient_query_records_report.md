@@ -1,6 +1,6 @@
 # Second-command query records and constructor ABI
 
-The command selected by decoded scalar `0x73eba01e` calls the recovered version adapter and capability leaf using one workspace record, then prepares three conditional scalar-record construction requests. Their control words normalize by XOR with `0x31ae0066` to `0x4c0b0000`, `0x1f8` and `0x99ab`. The first two values match the pinned getter metadata; the meaning of0x99ab remains unknown. The selected constructor requests a32 B FPTTLVNode and14 B data storage, initializes links/extent and reaches a protected writer. Complete serialization, list publication, auxiliary-result production and native daemon pairing remain unknown.
+The command selected by decoded scalar `0x73eba01e` calls the recovered version adapter and capability leaf using one workspace record, then prepares three conditional scalar-record construction requests. Their control words normalize by XOR with `0x31ae0066` to `0x4c0b0000`, `0x1f8` and `0x99ab`. The first two values match the pinned getter metadata; the meaning of0x99ab remains unknown. The selected constructor requests a32 B FPTTLVNode and14 B data storage, initializes links/extent and reaches a protected writer. Complete metadata-record serialization, node-list publication and native daemon pairing remain unknown. The linked [emission report](userclient_serializer_emission_report.md) establishes conditional auxiliary-result production for an admitted stable list.
 
 ## Evidence and claim register
 
@@ -152,3 +152,6 @@ The captured command/request control work is bounded O(1) local work and O(1) pr
 
 
 The [serializer extent contract](userclient_serializer_extent_report.md) now establishes checked node-extent accumulation, strict 16 B padded sizing, the original allocator ABI and encoded extent custody. Under the stated successful-publication cut, the original consumer admits copying only when the request length equals that padded allocation extent. Node/padding emission, container stability across passes and native transaction pairing remain unknown; no additional Mach port endpoint is established.
+
+
+The [serializer emission contract](userclient_serializer_emission_report.md) now closes conditional finite stable-list emission: decoded node-byte concatenation, terminal tag0/type50db/big-endian padding length, exact zero payload, and output pointer/extent publication with flag1/raw SUCCESS. The terminal shape normalizes to the recovered parser type0x6685. Original metadata-node construction, native list/storage validity and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

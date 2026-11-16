@@ -1,6 +1,6 @@
 # Auxiliary serializer extent and allocation contract
 
-The auxiliary producer sums node extents with an exact unsigned 32-bit overflow gate. For final node-byte sum L, it derives padding P=16-((L+10) AND 15) and requests M=L+10+P bytes from `_IOMallocData`. Thus M is the first multiple of 16 strictly greater than L+10. The source accepts exactly L<=0xffffffe5, giving 16<=M<=0xfffffff0. The selected copy setup encodes that same M for the downstream consumer; a source-composed successful callback admits copying only when low32(original argument64)=M. Node-byte emission, complete publication reachability and native daemon pairing remain unknown.
+The auxiliary producer sums node extents with an exact unsigned 32-bit overflow gate. For final node-byte sum L, it derives padding P=16-((L+10) AND 15) and requests M=L+10+P bytes from `_IOMallocData`. Thus M is the first multiple of 16 strictly greater than L+10. The source accepts exactly L<=0xffffffe5, giving 16<=M<=0xfffffff0. The selected copy setup encodes that same M for the downstream consumer; a source-composed successful callback admits copying only when low32(original argument64)=M. The linked [emission report](userclient_serializer_emission_report.md) now establishes conditional node-byte emission and output publication; native allocation/list validity and daemon pairing remain unknown.
 
 ## Evidence and claim register
 
@@ -172,3 +172,6 @@ Each captured gate, allocation request and node step has O(1) local work/state, 
 - **QG5**: Null container versus empty list, raw status versus flag, strict versus ordinary rounding, encoded extent versus allocation bytes, isolated zero counter versus this producer's positive M, and congruence cut versus complete execution remain distinct.
 - **QG6**: Dual-image capture, 15 original branch pointers, allocator symbol/authentication metadata, 15 nonvacuous source formulas, three prior rechecks, 256 bank cases, 16 residue profiles, 2,040 proof instances and the SAT control support the bounded contract.
 - **QG7**: Ranked continuation covers emission/publication, container snapshot context, metadata records, transaction pairing, environment and bounded shared-format candidates.
+
+
+The [serializer emission contract](userclient_serializer_emission_report.md) now closes conditional finite stable-list emission: decoded node-byte concatenation, terminal tag0/type50db/big-endian padding length, exact zero payload, and output pointer/extent publication with flag1/raw SUCCESS. The terminal shape normalizes to the recovered parser type0x6685. Original metadata-node construction, native list/storage validity and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
