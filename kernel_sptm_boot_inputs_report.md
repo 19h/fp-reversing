@@ -191,3 +191,8 @@ The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) trac
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) advances environmental input provenance through original tree-global publication, readers, CPU enumeration and bootstrap-thread setup. The actual boot/firmware caller chain, option parser, lower receiver and matched daemon transaction remain outside the established private composition.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution increment](kernel_boot_option_execution_report.md) replaces modeled option outputs with original parser/converter execution before source-produced topology and bootstrap-thread binding. Native boot argument provenance, later field producers, lower receiver effects and a matched daemon transaction remain unknown.

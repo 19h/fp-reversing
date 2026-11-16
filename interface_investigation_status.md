@@ -1883,3 +1883,8 @@ The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) adds
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) adds 20 nonvacuous source proofs, four prior rechecks, eleven private components, 7728 independent checks and four altered-store rejections. Original tree APIs supply 2880 matched call/return contracts; seven cases continue to original thread construction. Boot-option parsing, actual firmware/startup, lower effects and daemon pairing remain open; the full goal remains active.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution increment](kernel_boot_option_execution_report.md) adds 26 nonvacuous source proofs, four prior rechecks, thirteen private components, 9194 independent checks and four altered-source rejections. It checks 293 original option API calls/returns and 2526 original tree calls/returns; eight cases reach original thread construction. Actual boot provenance/startup, native authentication/lower effects and daemon pairing remain open; full goal remains active.

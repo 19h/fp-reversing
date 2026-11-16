@@ -2243,3 +2243,8 @@ The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) reco
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) establishes the original initializer, lookup/property/iterator/subtree and recursive named-scan ABIs on private serialized fixtures. It distinguishes 0xffffffff lookup/property misses with preserved outputs from zero-status iterator exhaustion with a null output, and records all 40 iterator-state bytes and the shared scan cursor.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution report](kernel_boot_option_execution_report.md) establishes scanner/converter/flag/callback register contracts, opposite scanner-versus-converter success polarity, exact-name matching, numeric widths, presence-only behavior and three-byte preservation. Original option outputs now compose with original serialized-tree readers and thread construction; callback authentication remains logical.

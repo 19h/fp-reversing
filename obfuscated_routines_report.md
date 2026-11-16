@@ -2094,3 +2094,8 @@ The [CPU topology handoff report](kernel_cpu_topology_handoff_report.md) adds so
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree API report](kernel_secure_dt_execution_report.md) captures the original tree-global initializer and recursive subtree helper with names unknown, and identifies exact _strcmp from target nlist. It corroborates the source-supported reader/scan roles through original execution, independent contracts and altered-store controls without assigning invented original names.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution report](kernel_boot_option_execution_report.md) corroborates roles for the unnamed scanner, numeric decoder, delimiter callback and width-dependent flag writer, and identifies exact _strlen from target nlist. It retains role descriptions where original names are unknown and separates logical PAC/authenticated calls from native behavior.

@@ -151,3 +151,8 @@ No new incoming/outgoing Mach port, right or message-emission location is establ
 | Medium | Identify consumers and synchronization of the shared named-scan cursor | Establish state ownership and permitted traversal lifetimes beyond these selected calls |
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: DT-A1-DT-A7 record dependencies and falsification probes. **QG3** Pass for this increment: original API roles, geometry, inputs/outputs, cursor/state/control/data flow, topology/thread composition and Mach boundaries reported; full goal remains active. **QG4** Pass: widths, byte extents, modular arithmetic, complexity and reproducible artifacts explicit. **QG5** Pass: API miss versus iterator exhaustion, output preservation versus mutation, recursive PC/SP pairing, exact names versus roles, explicit epochs versus original returns and private versus native effects distinguished. **QG6** Pass: pinned primary bytes/metadata, reconstructed proofs, independent decoder/call/byte checks, replay and controls; coverage/native limits explicit. **QG7** Pass: bounded impact-ranked continuation above. `full_goal_complete=false`. [DT1-DT7]
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution increment](kernel_boot_option_execution_report.md) replaces the remaining declared option-output returns with original scanning/conversion before original tree readers and topology/thread setup. It establishes selected name/duplicate/radix/width/presence contracts and records all 129 logical authenticated callback calls. Authentic boot inputs, explicit startup cuts and lower/native effects remain conditional.

@@ -2114,3 +2114,8 @@ The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) conn
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) replaces modeled lookup/property/iterator/named-node outputs with original source execution before CPU enumeration and thread setup. Independent decoding and 2880 API entry/return contracts establish data-pointer/length ownership, recursive state and cursor effects; authentic firmware, native startup and daemon pairing remain unknown.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution increment](kernel_boot_option_execution_report.md) advances boot-environment data flow through original scanning, conversion, tree readers, CPU enumeration and thread setup. Independent grammar/call/record/byte checks replace declared option returns for selected inputs, with native input provenance, caller continuity and lower effects remaining unknown.

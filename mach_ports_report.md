@@ -1989,3 +1989,8 @@ The [source-produced CPU topology handoff](kernel_cpu_topology_handoff_report.md
 ## Original serialized-tree execution follow-up
 
 The [original serialized-tree API increment](kernel_secure_dt_execution_report.md) establishes no new Mach right, endpoint or emission location. It resolves original boot-environment reader/status/state contracts while retaining unknown daemon influence and lower receiver behavior; selector0e remains distinct from a Mach port name.
+
+
+## Original boot-option execution follow-up
+
+The [original boot-option execution increment](kernel_boot_option_execution_report.md) establishes no new Mach right, endpoint or message-emission site. It replaces environmental option-output returns with original parsing before topology/thread setup while retaining unknown daemon influence, native startup and lower receiver effects.

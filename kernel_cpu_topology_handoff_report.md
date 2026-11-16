@@ -162,3 +162,8 @@ No new incoming/outgoing Mach right, endpoint or message-emission site is establ
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) replaces the declared lookup/property/iterator/named-node outputs with original routines on serialized private fixtures. It recovers finer miss/exhaustion statuses and output/state mutation, a real initializer publication and recursive cursor effects. Boot-option outputs, the explicit initializer-to-main and later CPU-caller epochs, native effects and daemon pairing remain conditional.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution increment](kernel_boot_option_execution_report.md) supplies original parser-produced cpus/cpumask/power/thread-mode values to original enumeration and its post-helper. The independent option map is used only for verification and is not injected into execution. Original tree readers and eight full thread copies compose; actual startup/receiver effects remain unknown.

@@ -167,3 +167,8 @@ The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) foll
 ## Original serialized-tree execution follow-up
 
 The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) establishes original base/extent/end/initialized publication and original tree readers before topology/thread setup. Its initializer-to-main composition uses an explicit complete-RAM call frame; the actual initializer caller and copied-header/tree provenance remain open.
+
+
+## Original boot-option execution follow-up
+
+The [boot-option execution increment](kernel_boot_option_execution_report.md) executes the original scanner on bounded private buffers at bootargs+0x6c, including original conversion helpers and callback bodies. Actual command-line producer/capacity and the copied-header/tree/bootargs caller chain remain open; explicit initializer/main and later CPU-caller frames are retained.
