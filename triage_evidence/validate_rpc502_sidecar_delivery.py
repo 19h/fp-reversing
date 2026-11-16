@@ -586,6 +586,7 @@ def main():
     if exists(BASE/'userclient_serializer_extent_report.md'):reports.add(BASE/'userclient_serializer_extent_report.md')
     if exists(BASE/'userclient_serializer_emission_report.md'):reports.add(BASE/'userclient_serializer_emission_report.md')
     if exists(BASE/'userclient_query_writer_report.md'):reports.add(BASE/'userclient_query_writer_report.md')
+    if exists(BASE/'userclient_query_publication_report.md'):reports.add(BASE/'userclient_query_publication_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3380,6 +3381,16 @@ def main():
         manifest['validation']['userclient_query_writer_new_source_queries_unsat']=len(query_writer_audit['source_proofs'])
         manifest['validation']['userclient_query_writer_prior_source_queries_rechecked']=len(query_writer_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_query_writer_conditional_query_writer_contract_established']=query_writer['conditional_query_writer_contract_established']
+    if exists(ROOT/'userclient_query_publication_checks.json'):
+        query_publication=json.loads(read(ROOT/'userclient_query_publication_checks.json'))
+        query_publication_audit=json.loads(read(ROOT/'userclient_query_publication_audit.json'))
+        manifest['validation']['userclient_query_publication_increment_checks']=query_publication['verified_counts']
+        manifest['validation']['userclient_query_publication_static_scope']=query_publication['scope']
+        manifest['validation']['userclient_query_publication_independent_checks']=query_publication_audit['independent_totals']
+        manifest['validation']['userclient_query_publication_new_source_queries_unsat']=len(query_publication_audit['source_proofs'])
+        manifest['validation']['userclient_query_publication_prior_source_queries_rechecked']=len(query_publication_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_query_publication_new_composition_queries_unsat']=len(query_publication_audit['composition_proofs'])
+        manifest['validation']['userclient_query_publication_conditional_query_publication_contract_established']=query_publication['conditional_query_publication_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

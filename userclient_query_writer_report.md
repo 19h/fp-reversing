@@ -1,6 +1,6 @@
 # Query scalar records: protected bytes and publication request
 
-The three second-command constructor requests conditionally produce exact 14 B records. After removing the address-dependent storage mask, their fields are a big-endian tag, type bytes `97 77`, big-endian payload length4, and a big-endian scalar. The scalar values are `0x4c0b0000`, `0x1f8` and `0x99ab`. The raw type normalizes to `0xa129` under the recovered parser rule. Each completed writer requests the shared list lookup using the original tag control and W8 callback index0x6c (separate W0 control0x19). Actual insertion/replacement, resulting order and native daemon transaction identity remain unknown.
+The three second-command constructor requests conditionally produce exact 14 B records. After removing the address-dependent storage mask, their fields are a big-endian tag, type bytes `97 77`, big-endian payload length4, and a big-endian scalar. The scalar values are `0x4c0b0000`, `0x1f8` and `0x99ab`. The raw type normalizes to `0xa129` under the recovered parser rule. Each completed writer requests the shared list lookup using the original tag control and W8 callback index0x6c (separate W0 control0x19). The linked publication increment establishes conditional insertion/replacement and saved return; actual native list contents/order and daemon transaction identity remain unknown.
 
 ## Evidence and claim register
 
@@ -162,3 +162,6 @@ The selected writer performs14 byte stores per record:4 tag+2 type+4 length+4 sc
 - **QG5**: Private versus decoded tags/types, helper results versus literal controls, shared writer versus selected channel, pending node versus surviving list, and static versus native evidence remain distinct.
 - **QG6**: Dual-image capture, eleven original pointers,29 nonvacuous formulas, six prior rechecks, fresh predecessor extraction,1,280 bank cases,24 profiles and the mutation counterexample support the bounded claims.
 - **QG7**: Ranked continuation preserves lookup/publication, resulting list state, ownership/synchronization, native pairing, unresolved private ABI and semantic context.
+
+
+The [query publication contract](userclient_query_publication_report.md) now establishes conditional first-match replacement or miss append, exact list links, original old-data/typed retirement requests and raw-success return through the saved constructor/request callbacks. The output-slot producer identifies &C+0x50 under a stable frame-slot premise. Separate finite-list lemmas show that three successful distinct-tag14 B constructions retain42 B of records and, for accepted sizing/copy, imply M=N>=64 B. Actual native list contents/order, allocation/free effects, synchronization, full failure cleanup and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

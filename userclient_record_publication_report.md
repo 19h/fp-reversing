@@ -224,3 +224,6 @@ The actual parser caller now has a conditional command-field lookup, protected s
 ## Caller cleanup and copy-back increment
 
 Caller cleanup callback0x1a, distinct staged/auxiliary buffers, finite protected copy-back and outer allocation/retirement/status contracts are now established conditionally. Native identity, aliases, callee effects and cross-layer transaction correlation remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+The [query publication contract](userclient_query_publication_report.md) now establishes conditional first-match replacement or miss append, exact list links, original old-data/typed retirement requests and raw-success return through the saved constructor/request callbacks. The output-slot producer identifies &C+0x50 under a stable frame-slot premise. Separate finite-list lemmas show that three successful distinct-tag14 B constructions retain42 B of records and, for accepted sizing/copy, imply M=N>=64 B. Actual native list contents/order, allocation/free effects, synchronization, full failure cleanup and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

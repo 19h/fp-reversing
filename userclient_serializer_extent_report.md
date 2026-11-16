@@ -175,3 +175,6 @@ Each captured gate, allocation request and node step has O(1) local work/state, 
 
 
 The [serializer emission contract](userclient_serializer_emission_report.md) now closes conditional finite stable-list emission: decoded node-byte concatenation, terminal tag0/type50db/big-endian padding length, exact zero payload, and output pointer/extent publication with flag1/raw SUCCESS. The terminal shape normalizes to the recovered parser type0x6685. Original metadata-node construction, native list/storage validity and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
+
+
+The [query publication contract](userclient_query_publication_report.md) now establishes conditional first-match replacement or miss append, exact list links, original old-data/typed retirement requests and raw-success return through the saved constructor/request callbacks. The output-slot producer identifies &C+0x50 under a stable frame-slot premise. Separate finite-list lemmas show that three successful distinct-tag14 B constructions retain42 B of records and, for accepted sizing/copy, imply M=N>=64 B. Actual native list contents/order, allocation/free effects, synchronization, full failure cleanup and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

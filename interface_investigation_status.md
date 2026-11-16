@@ -1793,3 +1793,6 @@ The [serializer emission contract](userclient_serializer_emission_report.md) now
 
 
 The [query writer contract](userclient_query_writer_report.md) now establishes the three conditional14 B records: exact big-endian tags, raw type97 77 (parser-normalized0xa129), length4 and big-endian scalars0x4c0b0000/0x1f8/0x99ab. Each writer reaches the shared list lookup with W8 callback index0x6c (separate W0 control0x19) and retained pending-node/constructor-return state. This resolves the earlier query-byte frontier; actual query list publication/order, resulting serializer extent and native daemon pairing remain unknown. No additional Mach endpoint is established.
+
+
+The [query publication contract](userclient_query_publication_report.md) now establishes conditional first-match replacement or miss append, exact list links, original old-data/typed retirement requests and raw-success return through the saved constructor/request callbacks. The output-slot producer identifies &C+0x50 under a stable frame-slot premise. Separate finite-list lemmas show that three successful distinct-tag14 B constructions retain42 B of records and, for accepted sizing/copy, imply M=N>=64 B. Actual native list contents/order, allocation/free effects, synchronization, full failure cleanup and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
