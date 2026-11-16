@@ -185,3 +185,8 @@ The [bootstrap state-composition report](kernel_bootstrap_state_composition_repo
 ## Startup registry and mach_ipc registration follow-up
 
 The [startup registry ABI increment](kernel_startup_registry_abi_report.md) captures all 3519 original initialization records and 115 distinct kernel callback bodies, their authenticated pointer metadata, phase names and 22 tree/boot-option tunable descriptors. Original main now continues through timebase/trace, complete sorting, its first actual tunable callback/return and cursor publication. Three private runs establish absent/property/option precedence; entry 123 registers the previously analyzed MIG hash initializer at phase 14 (`mach_ipc`), rank zero, argument zero. Phase-14 execution, remaining callback effects, native startup/PAC lifetime and a matched FairPlay/Mach transaction remain unknown; the full goal remains active.
+
+
+## Continuous tunable batch and formatter boundary follow-up
+
+The [tunable batch execution report](kernel_tunable_batch_execution_report.md) preserves the preceding first-callback state and establishes 368 continuous original callback returns: all 237 compact boot-option descriptors, all 22 tree/option descriptors, 87 per-CPU pointer adjustments and 17 SFI registrations. Original Mach-O UUID lookup enters `_uuid_unparse_upper` and stops before `_snprintf`, with all 16 variadic slots checked. Three private cases pass 14 new source proofs, 14 registry rechecks, 16127 semantic checks and fresh replay; two altered-source controls are rejected. SFI handler invocation, formatter output, phase-14 MIG execution, native startup and a matched FairPlay/Mach transaction remain unknown; the full goal remains active.
