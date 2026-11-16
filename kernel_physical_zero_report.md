@@ -143,3 +143,8 @@ Capture and audit JSON are compressed with `zstd --ultra -22 -q -T1`, roundtrip 
 No additional incoming/outgoing Mach endpoint, right disposition, message ID or emission site is established. All new edges are internal kernel calls or declared private mapping boundaries. Native daemon/kext buffer-selector-right-transaction identity, complete boot/refill, lifetime and ownership remain unknown. The research goal remains active. [PZ6]
 
 **QG1**: No normative premise is required. **QG2**: Six explicit assumptions carry falsification probes and claim dependencies. **QG3**: Routine roles, data/control flow, environmental interfaces and Mach-scope implications are recorded. **QG4**: Byte lengths, page/object strides, widths, masks, modulo arithmetic, exact counts and algorithmic bounds are explicit; source SMT search is limited to30 s/query. **QG5**: Ready-path preservation and an explicit selected refill zero call coexist; native allocation-to-zero identity remains an open claim, not a contradiction. **QG6**: Claims cite pinned original bytes, exact nlist records and reproducible receipts. **QG7**: Continuation is bounded and impact-ranked. All seven gates pass within this declared scope.
+
+
+## pmap and SPTM transport evidence
+
+The lower mapping gateway independently identifies the reserved temporary range [0xfffffecfffd00000,0xfffffecfffe00000) through original CPUWINDOWS diagnostics. Its kernel-context admission rejects this1048576 B interval. This connects the temporary-window environment to the deeper pmap/SPTM boundary while leaving actual physical aliases, mapping effects and ownership unknown. See the [mapping transport report](kernel_mapping_transport_report.md).

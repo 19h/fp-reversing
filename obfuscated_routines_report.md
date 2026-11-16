@@ -2059,3 +2059,8 @@ The [boot-input producer study](kernel_zone_boot_inputs_report.md) identifies th
 ## Permanent storage and initialization prerequisites
 
 The [permanent-storage report](kernel_permanent_storage_report.md) recovers the unnamed routine0xfffffe000bd71a20 as a ready-page allocator through original32/64 B consumer calls, metadata/accounting operations and signed-page-index returns. Two authenticated setup records target complete seven-instruction callbacks that set flag0x100 and extent1. Original names vm.permanent/vm.permanent.percpu identify their fixed constructor requests; exact function symbols remain unknown. Fourteen source queries and21 private components pass173 semantic checks and fresh replay. Native backing/zero initialization, refill and daemon pairing remain unknown.
+
+
+## pmap and SPTM transport evidence
+
+Original diagnostics identify the refill mapping gateway0xfffffe000be5b2e8 as pmap_enter_options-style code. Eleven complete intervals/2120 words include its descriptor/backend/category helpers and three SPTM wrappers; _sptm_retype is an exact symbol, while mapping selector2 has no exact nlist name. The two opaque transport words are retained at all six PCs.22 nonvacuous source queries,70 components/338 semantic checks and fresh replay pass; native translation effects remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).

@@ -605,6 +605,7 @@ def main():
     if exists(BASE/'kernel_permanent_storage_report.md'):reports.add(BASE/'kernel_permanent_storage_report.md')
     if exists(BASE/'kernel_physical_zero_report.md'):reports.add(BASE/'kernel_physical_zero_report.md')
     if exists(BASE/'kernel_refill_publication_report.md'):reports.add(BASE/'kernel_refill_publication_report.md')
+    if exists(BASE/'kernel_mapping_transport_report.md'):reports.add(BASE/'kernel_mapping_transport_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3586,6 +3587,16 @@ def main():
         manifest['validation']['kernel_refill_publication_prior_source_queries_rechecked']=len(refill_publication_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_refill_publication_rechecked_separation_lemmas_unsat']=len(refill_publication_audit['rechecked_separation_lemmas'])
         manifest['validation']['kernel_refill_publication_conditional_kernel_refill_publication_contract_established']=refill_publication['conditional_kernel_refill_publication_contract_established']
+    if exists(ROOT/'kernel_mapping_transport_checks.json'):
+        mapping_transport=json.loads(read(ROOT/'kernel_mapping_transport_checks.json'))
+        mapping_transport_audit=json.loads(read(ROOT/'kernel_mapping_transport_audit.json'))
+        manifest['validation']['kernel_mapping_transport_increment_checks']=mapping_transport['verified_counts']
+        manifest['validation']['kernel_mapping_transport_static_scope']=mapping_transport['scope']
+        manifest['validation']['kernel_mapping_transport_independent_checks']=mapping_transport_audit['independent_totals']
+        manifest['validation']['kernel_mapping_transport_independent_replay_checks']=mapping_transport_audit['independent_replay_totals']
+        manifest['validation']['kernel_mapping_transport_new_source_queries_unsat']=len(mapping_transport_audit['source_proofs'])
+        manifest['validation']['kernel_mapping_transport_prior_source_queries_rechecked']=len(mapping_transport_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_mapping_transport_conditional_kernel_mapping_transport_contract_established']=mapping_transport['conditional_kernel_mapping_transport_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

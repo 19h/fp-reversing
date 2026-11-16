@@ -2208,3 +2208,8 @@ The [boot-input ABI study](kernel_zone_boot_inputs_report.md) records exact u64 
 ## Permanent storage and initialization prerequisites
 
 The [permanent-storage ABI](kernel_permanent_storage_report.md) establishes X0=zone, X1=request bytes, X2=alignment mask for original0xfffffe000bd71a20: statistics pass(32,7), caches pass(64,63). It recovers16 B metadata records, u16/u32/u64 counters, signed32 page-index return construction and fixed setup record/function-pointer ABI. The cache initializer preserves current/spare counts at+4/+6, so their zero state remains conditional on backing initialization. Native refill/backing/ownership and a new Mach-message ABI are unestablished.
+
+
+## pmap and SPTM transport evidence
+
+The selected pmap backend sends X0=u64[context+8], X1=VA, X2=descriptor and W3=0 to wrapper0xfffffe000c620bb8, which sets X16=2. Its runtime selection byte chooses exact raw-word PCs0xfffffe000c620bd8/0xfffffe000c620be0. Source admission, descriptor construction and per-CPU request/result copies are proved conditionally; the opaque transport return ABI and native translation effects remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).

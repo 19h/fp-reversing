@@ -2079,3 +2079,8 @@ The [boot-input producer study](kernel_zone_boot_inputs_report.md) recovers memo
 ## Permanent storage and initialization prerequisites
 
 The [permanent-storage report](kernel_permanent_storage_report.md) replaces opaque32/64 B storage returns with original allocator execution inside creator/cache calls. It recovers alignment-mask arithmetic, encoded page queues, counters, signed-index returns and fixed setup-record ABI. Ready-page allocation preserves nonzero backing; cache u16 counts at+4/+6 also preserve their backing bytes. Thus native zero origin remains a prerequisite, rather than a recovered effect of those routines. Exact producer-to-consumer state transfers are declared new-call epochs. Native refill, ownership, initialization and daemon transaction identity remain unknown.
+
+
+## pmap and SPTM transport evidence
+
+The lower mapping path now has original admission, descriptor, per-CPU epoch/result and SPTM transport contracts. Context bounds and geometry are runtime inputs whose on-disk context is zero-filled. The selected backend calls selector2 with context root, VA, descriptor and zero; unsigned raw status below2 enables two result copies. Private components retain explicit validation/result/system-register models; native ownership, transport effects and full gateway execution remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).

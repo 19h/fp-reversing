@@ -1848,3 +1848,8 @@ The [boot-input producer increment](kernel_zone_boot_inputs_report.md) establish
 ## Permanent storage and initialization prerequisites
 
 The [permanent-storage increment](kernel_permanent_storage_report.md) establishes the32/64 B allocator ABI, both fixed setup-record/callback pairs and three source creator/cache storage joins. Fourteen source queries, two separation lemmas,21 components/173 semantic checks and independent replay of2044 visits pass; three altered stores are rejected. The deliberately nonzero backing exposes a remaining initialization premise: statistics and cache-count bytes are not cleared by these ready paths. Full refill/bootstrap, native ownership/exclusion and matched daemon/kext transactions remain open; the full goal is active.
+
+
+## pmap and SPTM transport evidence
+
+The lower mapping increment identifies the pmap_enter_options-style gateway and a deeper SPTM request boundary. It adds22 source queries,70 components/338 semantic checks,18 descriptor-value links and independent replay of4422 visits; three altered source words are rejected. Both transport-selection branches are located and stopped before their opaque words. Native translation, live context/result production and matched daemon/kext transactions remain unknown; the full goal remains active. See the [mapping transport report](kernel_mapping_transport_report.md).
