@@ -620,6 +620,7 @@ def main():
     if exists(BASE/'kernel_tunable_batch_execution_report.md'):reports.add(BASE/'kernel_tunable_batch_execution_report.md')
     if exists(BASE/'kernel_uuid_formatter_execution_report.md'):reports.add(BASE/'kernel_uuid_formatter_execution_report.md')
     if exists(BASE/'kernel_timeout_execution_report.md'):reports.add(BASE/'kernel_timeout_execution_report.md')
+    if exists(BASE/'kernel_lock_bootstrap_execution_report.md'):reports.add(BASE/'kernel_lock_bootstrap_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3750,6 +3751,15 @@ def main():
         manifest['validation']['kernel_timeout_execution_source_queries_unsat']=len(timeout_audit['source_proofs'])
         manifest['validation']['kernel_timeout_execution_retained_source_queries_rebuilt']=len(timeout_audit['retained_source_proofs_rebuilt'])
         manifest['validation']['kernel_timeout_execution_conditional_kernel_timeout_execution_contract_established']=timeout['conditional_kernel_timeout_execution_contract_established']
+    if exists(ROOT/'kernel_lock_bootstrap_execution_checks.json'):
+        lock=json.loads(read(ROOT/'kernel_lock_bootstrap_execution_checks.json'))
+        lock_audit=json.loads(read(ROOT/'kernel_lock_bootstrap_execution_audit.json'))
+        manifest['validation']['kernel_lock_bootstrap_execution_increment_checks']=lock['verified_counts']
+        manifest['validation']['kernel_lock_bootstrap_execution_static_scope']=lock['scope']
+        manifest['validation']['kernel_lock_bootstrap_execution_independent_checks']=lock_audit['independent_totals']
+        manifest['validation']['kernel_lock_bootstrap_execution_independent_replay_checks']=lock_audit['independent_replay_totals']
+        manifest['validation']['kernel_lock_bootstrap_execution_source_queries_unsat']=len(lock_audit['source_proofs'])
+        manifest['validation']['kernel_lock_bootstrap_execution_conditional_kernel_lock_bootstrap_execution_contract_established']=lock_audit['conditional_kernel_lock_bootstrap_execution_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

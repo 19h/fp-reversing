@@ -209,3 +209,8 @@ Startup BLRAA, stack-probe BLRAA and helper BL calls are function transfers. Non
 | Medium | Trace the temporary max_wfe_us value and source provenance | Establish whether another caller/version consumes it; this callback's remaining body has no publication |
 
 **QG1**: Factual technical analysis; no normative content required. **QG2**: TO-A1-TO-A7 state dependencies and falsification probes. **QG3**: Registrations, shared routine identity, ABI, external inputs, arithmetic, helper custody, continuous state and Mach limits covered; the full goal remains active. **QG4**: Exact extents, widths, modular arithmetic, count/complexity and dimensional inference stated. **QG5**: Default/override units, wrapped/saturated products, early/fallback cache tests, intermediate/final aliases and private/native execution distinguished. **QG6**: Original bytes, independent formulas, nonvacuous source queries, fresh replay and controls retained. **QG7**: Impact-ranked continuation included. Gates apply to this finite increment; native startup and a matched FairPlay transaction remain unknown.
+
+
+## Phase-three lock bootstrap follow-up
+
+The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) preserves the default phase-two entry result and extends original execution through all 627 lock callbacks, reaching 1029 total callback returns and the original main call to the next timeout/wait-queue initializer. The earlier phase-three stop in this report describes its historical increment. The next direct helper, later startup, native scheduling and matched FairPlay transactions remain unexecuted or unknown.

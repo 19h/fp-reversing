@@ -1921,3 +1921,8 @@ The [UUID formatter execution report](kernel_uuid_formatter_execution_report.md)
 ## Phase-two timeout execution follow-up
 
 The [timeout execution report](kernel_timeout_execution_report.md) continues original main through all ten phase-two callbacks, reaching 402 actual callback returns after preserved phase-one/UUID state. It recovers nine timeout descriptors, the shared initializer diagnostic identity, root/chosen/boot precedence, cached scaling, modular multiplication and final saturation, plus selected lock-timeout preparation. Six private cases, twelve new source obligations, sixteen formatter rechecks, full helper/tree/parser/copy contracts, independent replay and two changed-source controls bound this result. The next call is the first phase-three lock initializer and remains unexecuted. Native startup, phase-14 MIG execution and matched FairPlay/Mach custody remain unknown; earlier boundaries describe their original increments and the full goal remains active.
+
+
+## Phase-three lock bootstrap follow-up
+
+The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) extends the earlier phase-three entry boundary through all 627 callbacks and the original dispatcher return. Two cases, five source queries, 2750 static checks, independent per-callback formulas, complete replay and two rejected mutations establish the finite continuation. Original main now stops before BL 0xfffffe000c639e3c to 0xfffffe000bd64ea4. Earlier boundaries describe their historical increments; later startup, native execution and matched FairPlay/Mach custody remain unknown, and the full goal remains active.
