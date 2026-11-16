@@ -2162,3 +2162,5 @@ The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.m
 ## Post-lock timer bootstrap follow-up
 
 The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) adds exact-width timeout conversion/copy layouts, preserved padding, list/lock/callback publication and boot-option control. Default/zero paths return to main; the nonzero logging path stops at MRS X8, DAIF at 0xfffffe000c48faf4 without inventing the register value. Native scheduling and matched FairPlay IPC remain unknown.
+
+The [early logging contract report](kernel_early_logging_contract_report.md) proves the complete phase-below-19 join state, checks all-phase boundary cases, recovers synchronization names and maps formatter/callback/newline storage. Initialized newline/capacity values expose an intervening timestamp-formatting prerequisite. Source cuts do not advance the retained continuous trace.

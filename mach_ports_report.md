@@ -2037,3 +2037,5 @@ The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.m
 ## Post-lock timer bootstrap follow-up
 
 The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) follows the original nonzero-option logging path to its DAIF input frontier. No console output, Mach-right emission, new message ID or daemon/provider pairing is established. Default/zero timer initialization returns before CPU setup; later phase-14 MIG startup remains unexecuted.
+
+The [early logging contract report](kernel_early_logging_contract_report.md) identifies conditional character-storage/call sites and later logging-counter banks. These are not established Mach-port emitters. No new port right, message ID or matched daemon/provider/FairPlayIOKit transaction is claimed; continuous bootstrap remains before its DAIF read.

@@ -1931,3 +1931,5 @@ The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.m
 ## Post-lock timer bootstrap follow-up
 
 The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) continues beyond all 1029 callback returns. Default and explicit-zero timer cases return at 0xfffffe000c639e40 before CPU initialization; longterm=1 reaches the original logging DAIF frontier, with an early-phase source proof that its selector is independent of DAIF. Five source queries, four exact reciprocal bounds, independent formulas/replay, prefix preservation and two source controls support this finite increment. Earlier boundaries are historical and the full goal remains active.
+
+The [early logging contract report](kernel_early_logging_contract_report.md) adds five nonvacuous source queries, 96 independently executed source-cut cases and two rejected NOP controls. The full join preserves all general registers except X8/X9/X24, sets exact flags and leaves RAM unchanged. Timestamp formatting and a later gated logwakeup DAIF read remain explicit prerequisites. Continuous startup is unchanged; the full goal remains active.

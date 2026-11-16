@@ -2291,3 +2291,5 @@ The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.m
 ## Post-lock timer bootstrap follow-up
 
 The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) extends original execution through the timer initializer for default/zero options, establishing the packed timeout-record transformations, callback/context publication and exact reciprocal bounds. A nonzero longterm option reaches original logging and stops before an unestablished DAIF read; native timing and matched FairPlay transactions remain unknown.
+
+The [early logging contract report](kernel_early_logging_contract_report.md) establishes a complete early-phase GPR/SP/PC/NZCV/memory join without supplying DAIF, plus the format/varargs callback ABI and newline-byte return. Exact ticket-lock and logwakeup symbols, initialized ring metadata and counter-bank pointers delimit the remaining continuous-execution prerequisites.

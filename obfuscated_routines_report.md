@@ -2142,3 +2142,5 @@ The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.m
 ## Post-lock timer bootstrap follow-up
 
 The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) corroborates the unnamed timer initializer from its longterm key, original diagnostic, conversion instructions and callback record. It also captures the original printf/logging closure, bank-pointer/counter custody and ticket-lock source. Recovered roles do not supply missing original symbol names or native execution evidence.
+
+The [early logging contract report](kernel_early_logging_contract_report.md) distinguishes original nlist _lck_ticket_lock, _lck_ticket_unlock and _logwakeup from unnamed formatter/core/character-callback roles. Five source proofs and 96 CPU source-cut cases qualify the state join and local ABI; the original logging trace remains at its DAIF frontier.
