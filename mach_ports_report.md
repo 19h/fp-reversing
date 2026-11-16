@@ -1974,3 +1974,8 @@ The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) traces the sourc
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff](kernel_boot_header_handoff_report.md) locates selector15 emission boundaries at0xfffffe000c65c0ac/0xfffffe000c65c0b4 and four authenticated early callback slots. These establish no additional Mach endpoint, right transfer or Mach message-emission site; the lower transport words remain opaque and unexecuted.
+
+
+## Boot CPU/thread context boundary
+
+The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) recovers CPU-record publication, original bootstrap-thread stores, TPIDR/CONTEXTIDR interfaces and CPU-initializer branch/tail contracts. It adds no Mach endpoint, transferred right or message-emission site. CPU addresses, ordinals and system-register values are not port names; a matched daemon/kext/kernel transaction remains unknown.

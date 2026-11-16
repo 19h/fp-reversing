@@ -176,3 +176,8 @@ The recovered interfaces are internal boot, pmap and SPTM contracts. Their recor
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff](kernel_boot_header_handoff_report.md) advances the outer boot path to the original collection LC_UNIXTHREAD entry and resolves the missing root producer through the later856 B header copy. Its source header+0x1d8 equals embedded record+0x38, while the following pointer publication supplies the copied device structure. Snapshot equality across selector15 remains a preservation assumption; native callback/receiver effects and ownership remain unknown.
+
+
+## CPU identity and initialization-order follow-up
+
+The [boot CPU identity report](kernel_boot_cpu_identity_report.md) locates original boot CPU/cluster pointer publication and main continuation thread construction. Source binds the bootstrap thread to fixed CPU-data, installs thread registers, and distinguishes bootstrap versus non-bootstrap initialization by CPU-data pointer identity. Nineteen source contracts and independently checked private paths narrow prior thread fixtures, without proving complete topology enumeration, native startup continuity or opaque receiver behavior.

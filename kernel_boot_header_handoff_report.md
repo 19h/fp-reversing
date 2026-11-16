@@ -152,3 +152,8 @@ These are boot/pmap/lower-transport contracts. They establish no additional inco
 | High | Pair daemon/user-client/provider traffic with these kernel effects in one observed transaction | Actual cross-layer payload/right/status/epoch correlation |
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: BH-A1-BH-A7 register dependencies and falsification probes. **QG3** Pass for this increment: routine roles, original entry/callback/copy ABI, root/device data flow, environmental/control context and lower/Mach boundaries covered; full investigation remains active. **QG4** Pass: exact widths, units, offsets, extents, arithmetic and algorithmic bounds stated. **QG5** Pass: direct-store versus bulk-copy discovery, X1 versus X2 fields, source snapshots versus native ownership, original linking versus modeled callbacks and opaque returns separated. **QG6** Pass: pinned primary target metadata/bytes, SDK schema hashes, reconstructed proofs, independent byte oracles/replay and controls; native gaps explicit. **QG7** Pass: impact-ranked bounded continuation above. `full_goal_complete=false`. [BH1-BH7]
+
+
+## Original thread/CPU producer follow-up
+
+The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) extends source recovery beyond the header-copy cut. It identifies the CPU-record pointer producer, copied-bootargs CPU-map arithmetic, original1472 B thread-template copy, fixed CPU-data binding and system-register setter. Four private complete-RAM caller epochs reach original CPU-initializer branches; the intervening main/callback interval remains explicitly unexecuted. This does not upgrade the earlier header/root chain to native startup continuity.

@@ -2228,3 +2228,8 @@ The [SPTM boot-input ABI](kernel_sptm_boot_inputs_report.md) records header magi
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff ABI](kernel_boot_header_handoff_report.md) ties entry X1/X2 to separate1152/856 B original copies, identifies header+0x1d8 as the physical-root input and resolves four authenticated early callback slots. Early tree bounds use X1; pmap count/device fields use copied X2. Opaque selector15 return/mutation and native ownership remain unknown.
+
+
+## Boot CPU and thread ABI
+
+The [boot CPU identity report](kernel_boot_cpu_identity_report.md) separates logical ordinal, device-tree reg and signed lower-block offset. Original1472 B template copy and thread+0x1b8/+0x1c0 stores supply the bootstrap binding; the13-word setter updates TPIDR_EL1, CPU current-thread pointer, low48 TPIDR_EL0, TPIDRRO_EL0 and CONTEXTIDR_EL1. The CPU initializer selects its direct SPTM call by fixed CPU-data pointer identity, with an independent magic fast path. Complete startup and native helper effects remain unknown.

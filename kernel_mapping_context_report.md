@@ -188,3 +188,8 @@ The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) replaces this re
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff](kernel_boot_header_handoff_report.md) replaces the separately seeded root/device structure in its new chains with two original memcpy calls and source pointer publication. Header+0x1d8 copies to0xfffffe0007e6d838; the same copied header at0xfffffe0007e6d660 supplies the original context/pool count and raw device fields. Native root ownership and opaque return effects remain unknown.
+
+
+## Bootstrap field producer and fixture scope
+
+The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) recovers original thread+0x1b8 production as a zero-extended16-bit ordinal and proves that ASR64(field,16)=0 while that field remains unchanged. The general block formula and earlier private fixtures that encoded block-offset bits remain valid within their original scope. Fixed bootstrap CPU-data pointer identity skips the direct SPTM initializer in its CPU caller; later invocation/order and thread mutations remain unknown.

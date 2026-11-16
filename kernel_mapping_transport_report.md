@@ -149,3 +149,8 @@ The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) recovers the pub
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff](kernel_boot_header_handoff_report.md) identifies the original cold-entry selector15 boundary and copies entry X2 into the kernel header whose+0x1d8 supplies the physical root used by later mapping requests. This establishes source origin and private composition, while native lower-transport receiver/return effects and matched daemon transactions remain open.
+
+
+## Source bootstrap block-index follow-up
+
+The [boot CPU identity report](kernel_boot_cpu_identity_report.md) recovers an actual bootstrap-thread field producer. Its zero-extended16-bit thread+0x1b8 value selects zero offset under the previously established signed ASR16 block formula, conditional on no intervening field mutation. Ordinal, device-tree reg and block offset remain separate quantities. This source-specific result does not establish native receiver effects, later thread/block allocation or a daemon-originated mapping transaction.

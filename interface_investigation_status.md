@@ -1868,3 +1868,8 @@ The [SPTM boot-input increment](kernel_sptm_boot_inputs_report.md) adds35 source
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff increment](kernel_boot_header_handoff_report.md) adds19 source proofs, three prior rechecks,61 components/321 semantic checks,41 exact state joins and fresh replay of99340 visits; four source controls are rejected. It resolves the missing root producer as the original856 B header copy and publishes the same copied header as device input. Actual bootloader inputs, code-patching callbacks, native opaque effects and daemon pairing remain open; the full goal remains active.
+
+
+## Boot CPU identity and thread producer follow-up
+
+The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) publishes19 nonvacuous source proofs,21 private components/954 semantic checks, four altered-source rejections and fresh replay of2804 visits/3608576 mapped bytes. It resolves the original bootstrap-thread binding and conditional zero ASR16 lower-block offset, while distinguishing the fixed-address boot branch from logical ordinal zero. Complete topology/startup, actual helper/receiver effects and daemon pairing remain open; the full goal remains active.

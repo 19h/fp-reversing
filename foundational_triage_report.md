@@ -2099,3 +2099,8 @@ The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) establishes a ma
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff](kernel_boot_header_handoff_report.md) establishes the collection entry, original early list/callback ABI and original bulk copies. The856 B header copy at0xfffffe000c639ad0 supplies the physical-root global and device-input structure; selector15 and callback effects retain explicit native boundaries.
+
+
+## CPU topology and initial thread context
+
+The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) adds the original969-word topology enumerator,25 environmental strings, property-to-record fields, boot CPU/cluster pointer stores and the source bootstrap-thread producer. Nineteen local proofs,21 private components/954 semantic checks and fresh replay of2804 visits distinguish original instructions from modeled SecureDT outputs, logical system/PAC effects and explicit caller epochs. Native tree admission, intervening startup callbacks and daemon control remain open.

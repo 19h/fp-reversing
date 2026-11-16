@@ -2079,3 +2079,8 @@ The [SPTM boot-input study](kernel_sptm_boot_inputs_report.md) recovers the vers
 ## Collection entry and copied-header follow-up
 
 The [boot-header handoff](kernel_boot_header_handoff_report.md) recovers the original collection-entry dispatch, early device-tree/list/callback initializer and post-transport header-copy roles. Exact nlist aliases identify only the reused _memcpy/_memmove body among the new routines; callback and continuation symbol names remain unknown. Original bulk copying supplies the pmap root/device input.
+
+
+## Boot CPU and thread routine roles
+
+The [boot CPU identity report](kernel_boot_cpu_identity_report.md) assigns source-supported roles to original topology enumerator0xfffffe000be83068, scalar-property helper0xfffffe000be83f8c, thread-register setter0xfffffe000bc9c7f0 and CPU-initialization caller0xfffffe000be780f8. Exact original nlist names remain unknown. Full source intervals, direct calls, property strings, data/fixups, local proofs and selected instruction witnesses support the roles; native execution is not inferred.
