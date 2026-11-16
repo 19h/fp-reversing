@@ -41,7 +41,7 @@ Artifacts: [extractor](triage_evidence/recover_kernel_boot_cpu_identity.py), [pr
 
 ## Original routines and CPU-record producer
 
-All intervals are half-open; each source word is4 B. Ten captured functions contain2459 words/9836 B, four identical to prior captures. The capture includes119 direct BL sites,25 exact strings,10 logical data blocks and three original pointer fixups. Three undecoded words in the captured lower wrapper remain raw bytes and are never executed. [BC1]
+All intervals are half-open; each source word is4 B. Ten captured functions contain2459 words/9836 B, four identical to prior captures. The capture includes119 direct BL sites,25 exact strings,10 logical data blocks and three original pointer fixups. Three undecoded words remain raw bytes and are never executed: one in the captured main continuation and two in the lower wrapper. [BC1]
 
 | Original interval | Words | Source-supported role / execution boundary |
 | --- | ---: | --- |
@@ -54,7 +54,7 @@ All intervals are half-open; each source word is4 B. Ten captured functions cont
 | 0xfffffe000be734f0..0xfffffe000be73684 | 101 | Previously recovered SPTM CPU initializer; local field-to-block proof, private caller leaf here |
 | 0xfffffe000be79c6c..0xfffffe000be7a094 | 266 | Cache/topology-related helper; captured, explicit no-RAM private return |
 | 0xfffffe000be95490..0xfffffe000be957d4 | 209 | CPU context configuration helper; captured, explicit no-RAM private return |
-| 0xfffffe000c620ec4..0xfffffe000c620f00 | 15 | Lower wrapper called with record `reg`; captured with three undecoded words, unexecuted |
+| 0xfffffe000c620ec4..0xfffffe000c620f00 | 15 | Lower wrapper called with record `reg`; captured with two undecoded words, unexecuted |
 
 The original pointer fixup at0xfffffe0007ef8c08 targets CPU-record array0xfffffe0007ef8260;0xfffffe0007ef8c10 targets cluster array0xfffffe0007ef8ae0. CPU records use136 B/0x88 strides and cluster records88 B/0x58 strides. CPU count/max ordinal live at0xfffffe0007ef8bec/+4; cluster count/max index at+8/+12. The CPU record's u32+0 is the admitted ordinal, u32+4 receives the low32 bits of mandatory `reg`, and u32+8 is the cluster index. The physical-processor interpretation of `reg` is a role inference from its property name, byte decomposition and lower wrapper use; no native MPIDR value is observed. [BC1,BC2]
 
@@ -154,3 +154,8 @@ No new incoming/outgoing Mach right, endpoint or message-emission site is establ
 | High | Pair daemon/user-client/provider traffic with a measured kernel transaction | Cross-layer payload/right/status correlation beyond boot prerequisites |
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: BC-A1-BC-A7 give dependencies and falsification probes. **QG3** Pass for this increment: routine roles, environmental inputs, CPU/thread ABI, data/control flow, lower/Mach boundaries and reporting covered; full investigation remains active. **QG4** Pass: exact widths, byte units, offsets, arithmetic, algorithmic bounds and reproduction artifacts stated. **QG5** Pass: ordinal versus `reg` versus block offset, previous fixtures versus actual producer, synthesized global versus hardware MIDR, complete RAM versus native continuity and length-dependent comparison distinguished. **QG6** Pass: pinned primary target bytes/metadata, reconstructed source proofs, independent byte formulas/fresh replay and controls; native gaps explicit. **QG7** Pass: bounded impact-ranked continuation above. `full_goal_complete=false`. [BC1-BC7]
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) replaces the previously injected boot-record selection with original enumeration and uninterrupted returns through the intervening configuration helper into thread construction. It adds admission/cluster formulas, length-bounded state comparisons and complete nonstack checkpoint checks. The opaque-word location wording above is corrected without changing any prior source capture or receipt.

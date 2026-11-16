@@ -2084,3 +2084,8 @@ The [boot-header handoff](kernel_boot_header_handoff_report.md) recovers the ori
 ## Boot CPU and thread routine roles
 
 The [boot CPU identity report](kernel_boot_cpu_identity_report.md) assigns source-supported roles to original topology enumerator0xfffffe000be83068, scalar-property helper0xfffffe000be83f8c, thread-register setter0xfffffe000bc9c7f0 and CPU-initialization caller0xfffffe000be780f8. Exact original nlist names remain unknown. Full source intervals, direct calls, property strings, data/fixups, local proofs and selected instruction witnesses support the roles; native execution is not inferred.
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff report](kernel_cpu_topology_handoff_report.md) adds source-supported roles for the topology enumerator and post-enumeration configuration helper, with exact target aliases for _strncmp, _SecureDTLookupEntry and _SecureDTIterateEntries. It retains unknown original names for parser/property/node helpers and separates one opaque word in main from two in the selector0e wrapper.

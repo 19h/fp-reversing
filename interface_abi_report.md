@@ -2233,3 +2233,8 @@ The [boot-header handoff ABI](kernel_boot_header_handoff_report.md) ties entry X
 ## Boot CPU and thread ABI
 
 The [boot CPU identity report](kernel_boot_cpu_identity_report.md) separates logical ordinal, device-tree reg and signed lower-block offset. Original1472 B template copy and thread+0x1b8/+0x1c0 stores supply the bootstrap binding; the13-word setter updates TPIDR_EL1, CPU current-thread pointer, low48 TPIDR_EL0, TPIDRRO_EL0 and CONTEXTIDR_EL1. The CPU initializer selects its direct SPTM call by fixed CPU-data pointer identity, with an independent magic fast path. Complete startup and native helper effects remain unknown.
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) recovers length-bounded state comparison, mask/admission and reserved-slot rules, CPU/cluster field and counter updates, plus the intervening siq_realtime_thread_mode parser ABI. Original enumeration returns directly through that helper into the 1472 B thread copy and register setter. Environmental parsing/iteration and native system effects remain explicit contract boundaries.

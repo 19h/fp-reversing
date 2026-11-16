@@ -1979,3 +1979,8 @@ The [boot-header handoff](kernel_boot_header_handoff_report.md) locates selector
 ## Boot CPU/thread context boundary
 
 The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) recovers CPU-record publication, original bootstrap-thread stores, TPIDR/CONTEXTIDR interfaces and CPU-initializer branch/tail contracts. It adds no Mach endpoint, transferred right or message-emission site. CPU addresses, ordinals and system-register values are not port names; a matched daemon/kext/kernel transaction remains unknown.
+
+
+## Source-produced topology handoff follow-up
+
+The [source-produced CPU topology handoff](kernel_cpu_topology_handoff_report.md) establishes no additional Mach port, right or message site. The enumerator passes zero-extended reg32 to the lower selector0e wrapper; its flag-selected opaque emission locations are distinguished from the earlier and later helper calls. Propagation through those unexecuted effects and any daemon-originated transaction remain unknown.

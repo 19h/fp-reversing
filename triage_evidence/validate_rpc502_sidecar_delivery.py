@@ -610,6 +610,7 @@ def main():
     if exists(BASE/'kernel_sptm_boot_inputs_report.md'):reports.add(BASE/'kernel_sptm_boot_inputs_report.md')
     if exists(BASE/'kernel_boot_header_handoff_report.md'):reports.add(BASE/'kernel_boot_header_handoff_report.md')
     if exists(BASE/'kernel_boot_cpu_identity_report.md'):reports.add(BASE/'kernel_boot_cpu_identity_report.md')
+    if exists(BASE/'kernel_cpu_topology_handoff_report.md'):reports.add(BASE/'kernel_cpu_topology_handoff_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3640,6 +3641,16 @@ def main():
         manifest['validation']['kernel_boot_cpu_identity_independent_replay_checks']=boot_cpu_identity_audit['independent_replay_totals']
         manifest['validation']['kernel_boot_cpu_identity_new_source_queries_unsat']=len(boot_cpu_identity_audit['source_proofs'])
         manifest['validation']['kernel_boot_cpu_identity_conditional_kernel_boot_cpu_identity_contract_established']=boot_cpu_identity['conditional_kernel_boot_cpu_identity_contract_established']
+    if exists(ROOT/'kernel_cpu_topology_handoff_checks.json'):
+        cpu_topology_handoff=json.loads(read(ROOT/'kernel_cpu_topology_handoff_checks.json'))
+        cpu_topology_handoff_audit=json.loads(read(ROOT/'kernel_cpu_topology_handoff_audit.json'))
+        manifest['validation']['kernel_cpu_topology_handoff_increment_checks']=cpu_topology_handoff['verified_counts']
+        manifest['validation']['kernel_cpu_topology_handoff_static_scope']=cpu_topology_handoff['scope']
+        manifest['validation']['kernel_cpu_topology_handoff_independent_checks']=cpu_topology_handoff_audit['independent_totals']
+        manifest['validation']['kernel_cpu_topology_handoff_independent_replay_checks']=cpu_topology_handoff_audit['independent_replay_totals']
+        manifest['validation']['kernel_cpu_topology_handoff_new_source_queries_unsat']=len(cpu_topology_handoff_audit['source_proofs'])
+        manifest['validation']['kernel_cpu_topology_handoff_prior_source_queries_rechecked']=len(cpu_topology_handoff_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_cpu_topology_handoff_conditional_kernel_cpu_topology_handoff_contract_established']=cpu_topology_handoff['conditional_kernel_cpu_topology_handoff_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -157,3 +157,8 @@ These are boot/pmap/lower-transport contracts. They establish no additional inco
 ## Original thread/CPU producer follow-up
 
 The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) extends source recovery beyond the header-copy cut. It identifies the CPU-record pointer producer, copied-bootargs CPU-map arithmetic, original1472 B thread-template copy, fixed CPU-data binding and system-register setter. Four private complete-RAM caller epochs reach original CPU-initializer branches; the intervening main/callback interval remains explicitly unexecuted. This does not upgrade the earlier header/root chain to native startup continuity.
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) follows the bootargs/tree boundary into declared parser/lookup/iterator outputs consumed by original enumeration. Original source now publishes the selected CPU record and returns through a configuration helper into thread setup; authentic serialized tree processing and native startup composition remain unknown.

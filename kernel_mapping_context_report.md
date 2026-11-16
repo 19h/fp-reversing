@@ -193,3 +193,8 @@ The [boot-header handoff](kernel_boot_header_handoff_report.md) replaces the sep
 ## Bootstrap field producer and fixture scope
 
 The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) recovers original thread+0x1b8 production as a zero-extended16-bit ordinal and proves that ASR64(field,16)=0 while that field remains unchanged. The general block formula and earlier private fixtures that encoded block-offset bits remain valid within their original scope. Fixed bootstrap CPU-data pointer identity skips the direct SPTM initializer in its CPU caller; later invocation/order and thread mutations remain unknown.
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) establishes the source topology producer feeding the bootstrap thread and conditional zero ASR16 block offset. Original main returns remain continuous through enumeration, the configuration helper and thread setup; the subsequent CPU initializer still uses an explicit complete-RAM caller epoch, with native cache/context effects unestablished.

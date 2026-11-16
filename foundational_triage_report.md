@@ -2104,3 +2104,8 @@ The [boot-header handoff](kernel_boot_header_handoff_report.md) establishes the 
 ## CPU topology and initial thread context
 
 The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) adds the original969-word topology enumerator,25 environmental strings, property-to-record fields, boot CPU/cluster pointer stores and the source bootstrap-thread producer. Nineteen local proofs,21 private components/954 semantic checks and fresh replay of2804 visits distinguish original instructions from modeled SecureDT outputs, logical system/PAC effects and explicit caller epochs. Native tree admission, intervening startup callbacks and daemon control remain open.
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) connects the original topology producer to main and bootstrap-thread setup without injecting a boot pointer between those operations. It distinguishes encounter-order ordinals, physical affinity spans, creation-time cluster counters and merged types. A later explicit CPU-caller epoch, authentic tree/parser behavior and native lower-facility effects remain unresolved.

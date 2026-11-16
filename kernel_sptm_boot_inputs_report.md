@@ -181,3 +181,8 @@ The [boot-header handoff](kernel_boot_header_handoff_report.md) advances the out
 ## CPU identity and initialization-order follow-up
 
 The [boot CPU identity report](kernel_boot_cpu_identity_report.md) locates original boot CPU/cluster pointer publication and main continuation thread construction. Source binds the bootstrap thread to fixed CPU-data, installs thread registers, and distinguishes bootstrap versus non-bootstrap initialization by CPU-data pointer identity. Nineteen source contracts and independently checked private paths narrow prior thread fixtures, without proving complete topology enumeration, native startup continuity or opaque receiver behavior.
+
+
+## Source-produced topology handoff follow-up
+
+The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) traces source-produced boot selection through original main and thread construction before the later CPU-initializer epoch. It recovers mask/reservation, affinity prefixes, type bookkeeping and the post-enumeration parser/system-register gate. Receiver effects, actual boot environment and a matched daemon/kext/kernel transaction remain unknown.
