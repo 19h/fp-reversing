@@ -2070,3 +2070,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) establishes the origin
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer study](kernel_zone_boot_inputs_report.md) recovers memory-prefix alignment/override publications, the ARM/SPTM _sane_size writer, and logical CPU descriptor/count/maximum production. The source high-word threshold composes through an exact65-bit condition. Two structure reads at+0x478 remain distinct raw words with unknown field names. Original cpus/cpumask and device-tree state/running strings establish environmental touch points; native control and active CPU count remain unknown. Nine source queries, one composition query,23 private cuts and96 semantic checks pass with independent replay. A continuous native producer-to-policy epoch and daemon pairing remain open.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) replaces opaque32/64 B storage returns with original allocator execution inside creator/cache calls. It recovers alignment-mask arithmetic, encoded page queues, counters, signed-index returns and fixed setup-record ABI. Ready-page allocation preserves nonzero backing; cache u16 counts at+4/+6 also preserve their backing bytes. Thus native zero origin remains a prerequisite, rather than a recovered effect of those routines. Exact producer-to-consumer state transfers are declared new-call epochs. Native refill, ownership, initialization and daemon transaction identity remain unknown.

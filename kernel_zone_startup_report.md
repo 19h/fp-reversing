@@ -172,3 +172,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) establishes that the o
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer study](kernel_zone_boot_inputs_report.md) supplies original memory-prefix/sane-size and logical CPU maximum producer contracts for the earlier capacity policy. It distinguishes raw modular arithmetic and numbering bounds from native physical units and active CPU count. Nine source queries, one composition query and23 private source cuts pass with independent replay; actual ARM/topology completion, initialized allocation backing, ownership and matched fairplayd/provider transactions remain unknown. No additional Mach endpoint or emission is established.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) recovers the ready-page routine behind(context,32,7) and(context,64,0x3f), with X2 established as an alignment mask. Actual creator/cache storage calls execute in three private publication/cache pairs; typed magazines and locks retain explicit models. The source allocator preserves nonzero payload and cache initialization preserves u16 counts at+4/+6. Earlier empty-cache results therefore retain their declared zero-storage premise; native refill/zero origin, complete startup, ownership and matched daemon transactions remain open.

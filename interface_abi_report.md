@@ -2199,3 +2199,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) establishes the origin
 ## Memory and logical CPU producer evidence
 
 The [boot-input ABI study](kernel_zone_boot_inputs_report.md) records exact u64 memory-prefix offsets/publications, distinct structure words at+0x478, strict unsigned modular sane-size admission, the136 B logical CPU descriptor stride, adjacent u32 count/maximum stores and exported _ml_get_max_cpu_number. The policy consumes maximum+1 modulo2^32 and the high u32 of _sane_size. Raw field identity, native physical units/control, active CPU count and a continuous producer-to-consumer epoch remain unestablished; no additional Mach message ABI is inferred.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage ABI](kernel_permanent_storage_report.md) establishes X0=zone, X1=request bytes, X2=alignment mask for original0xfffffe000bd71a20: statistics pass(32,7), caches pass(64,63). It recovers16 B metadata records, u16/u32/u64 counters, signed32 page-index return construction and fixed setup record/function-pointer ABI. The cache initializer preserves current/spare counts at+4/+6, so their zero state remains conditional on backing initialization. Native refill/backing/ownership and a new Mach-message ABI are unestablished.

@@ -2050,3 +2050,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) establishes the origin
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer study](kernel_zone_boot_inputs_report.md) identifies the ARM/SPTM memory initializer by original diagnostics and the topology initializer by boot keys, device-tree strings and descriptor stores. Exact original symbols name _sane_size, _max_mem, _mem_size and _ml_get_max_cpu_number. The strict unsigned sane-size writer and CPU index/count/maximum setter are recovered; a numbering bound does not establish active CPU count. Nine source queries, one composition query, two separation lemmas and23 private source cuts pass96 semantic checks and independent replay. Complete native initialization, input control and daemon transaction identity remain unknown.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) recovers the unnamed routine0xfffffe000bd71a20 as a ready-page allocator through original32/64 B consumer calls, metadata/accounting operations and signed-page-index returns. Two authenticated setup records target complete seven-instruction callbacks that set flag0x100 and extent1. Original names vm.permanent/vm.permanent.percpu identify their fixed constructor requests; exact function symbols remain unknown. Fourteen source queries and21 private components pass173 semantic checks and fresh replay. Native backing/zero initialization, refill and daemon pairing remain unknown.

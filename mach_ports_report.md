@@ -1945,3 +1945,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) establishes the origin
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer study](kernel_zone_boot_inputs_report.md) qualifies the memory and logical CPU inputs to kernel zone startup. _sane_size publication and the maximum logical CPU number are foundational environment contracts; they establish no new process-local Mach name, receive/send right, right transfer, endpoint or message-emission location. Existing IPC constructor specifications remain distinct from native endpoint identity. Native initialization and matched daemon/kext transactions remain unknown.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) refines backing prerequisites for recovered IPC-zone caches. It identifies original32/64 B storage requests, encoded metadata/return ABI and fixed setup records; ready allocation and cache control stores do not establish zero-initialized statistics/counts. These internal storage contracts establish no new process-local Mach name, receive/send right, transfer, endpoint or message-emission location. Native backing and matched daemon/provider transactions remain unknown.

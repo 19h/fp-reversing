@@ -172,3 +172,8 @@ These producers refine the kernel startup environment supporting recovered IPC-z
 ## Quality gates
 
 **QG1** passes: factual source analysis requires no normative content. **QG2** passes: BI-A1-BI-A6 declare dependencies and falsification probes. **QG3** passes for this increment: memory/CPU producer contracts, environmental touch points and Mach-interface boundaries are covered; the full investigation remains active. **QG4** passes: byte extents, raw units, modular widths, unsigned gates,65-bit composition and complexity are explicit. **QG5** passes: U1/U2 identity, signed descriptor alternative, backward-address arithmetic, zero-count wrap and independent epochs are separated. **QG6** passes: original bytes/nlist, fresh extraction/proofs, independent semantic checks/replay and mutation controls provide provenance. **QG7** passes: bounded impact-ranked continuation is recorded. `full_goal_complete=false`.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) advances the raw backing frontier with original32/64 B allocator calls, fixed setup records and source creator/cache joins. It does not join ARM/topology producers to these consumers in one native epoch. Ready-page and cache-count preservation demonstrate an additional zero-initialization prerequisite; original refill, complete startup, native ownership and daemon transaction pairing remain unknown.

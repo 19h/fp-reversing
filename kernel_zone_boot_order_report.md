@@ -187,3 +187,8 @@ This increment refines the startup environment needed by recovered kernel alloca
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer study](kernel_zone_boot_inputs_report.md) supersedes the producer frontier above: the located _sane_size store is0xfffffe000be752c4 inside the ARM/SPTM initializer0xfffffe000be7400c, rather than the VM helper0xfffffe000c637698. It establishes V=M-((A-B) mod2^64) only under the strict unsigned M>delta gate. The CPU input is the exact _ml_get_max_cpu_number storage, maintained by a logical index/count/maximum setter. Native call-chain order, intervening writes, physical units and active CPU count remain unknown; the preceding private boot-order evidence is unchanged.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) recovers fixed slot1/2 constructor request/setup ABI and the actual ready-page allocator used by magazine-zone statistics and IPC cache storage. Three source creator/cache pairs retain explicit new-call state transfers; they do not replace the registered callback models in the continuous boot-order cases above. Nonzero backing/count preservation leaves native initialization and actual refill unresolved. No native callback completion, ownership or matched daemon transaction is newly established.

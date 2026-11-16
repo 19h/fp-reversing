@@ -178,3 +178,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) refines the feature wo
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer study](kernel_zone_boot_inputs_report.md) refines both policy input premises: the ARM/SPTM writer publishes strictly positive _sane_size under an unsigned modular subtraction gate; the exported _ml_get_max_cpu_number reads the same maximum-number word consumed by count=max+1. The65-bit threshold composition is proved conditionally in one value epoch. Neither active CPU count nor continuous native producer-to-policy initialization is established. Existing raw backing/ownership, authentication, exclusion and transaction-pairing limits remain.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage report](kernel_permanent_storage_report.md) supersedes the opaque32/64 B storage-return frontier for selected ready-page creator/cache components. The actual allocator uses its third argument as an alignment mask, updates metadata/accounting and returns a signed page-index-derived pointer. Fixed slot1/2 setup records and complete callbacks are recovered, without claiming full fixed-slot construction. Source-ready allocation preserves payload bytes, and cache counts at+4/+6 retain nonzero inputs; this confirms why the preceding zero-storage models are necessary premises for their empty-cache result. Native refill/zero origin, ownership and complete bootstrap remain open.

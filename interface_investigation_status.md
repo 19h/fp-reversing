@@ -1839,3 +1839,8 @@ The [boot-order report](kernel_zone_boot_order_report.md) establishes the origin
 ## Memory and logical CPU producer evidence
 
 The [boot-input producer increment](kernel_zone_boot_inputs_report.md) establishes the ARM/SPTM _sane_size writer and the logical CPU maximum setter/exported getter behind both capacity inputs. It preserves modular subtraction, distinct+0x478 sources, same-epoch assumptions and the distinction between numbering bound and active CPU count. Four complete intervals/2710 instructions are captured; selected proofs cover52 PCs,23 private cuts execute73 PCs, and96 semantic checks plus independent replay pass. The full interface goal remains active: no continuous native producer-to-policy execution, actual backing/ownership or matched daemon/provider transaction is established.
+
+
+## Permanent storage and initialization prerequisites
+
+The [permanent-storage increment](kernel_permanent_storage_report.md) establishes the32/64 B allocator ABI, both fixed setup-record/callback pairs and three source creator/cache storage joins. Fourteen source queries, two separation lemmas,21 components/173 semantic checks and independent replay of2044 visits pass; three altered stores are rejected. The deliberately nonzero backing exposes a remaining initialization premise: statistics and cache-count bytes are not cleared by these ready paths. Full refill/bootstrap, native ownership/exclusion and matched daemon/kext transactions remain open; the full goal is active.
