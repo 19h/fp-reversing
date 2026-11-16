@@ -2218,3 +2218,8 @@ The selected pmap backend sends X0=u64[context+8], X1=VA, X2=descriptor and W3=0
 ## Context and CPU initialization follow-up
 
 The [mapping context ABI](kernel_mapping_context_report.md) recovers original root-pair/context/geometry stores and a24 B physical/virtual range-record layout. CPU initialization stores low16 of an opaque identifier, uses zero-extended low32 shifted15 for a shared-region address, and passes full64 to selector0x32 before storing its raw pointer return. The original context produces descriptor0x0460000000400403. Native transport returns, pointer ownership and complete transaction identity remain unknown.
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input ABI](kernel_sptm_boot_inputs_report.md) records header magic0xd00f000000000000, embedded record offset0x1a0,31 exact-width fields and unsigned version gates through12. For version>=7, record+0xa8 bit6 supplies transport byte0xfffffe0007f8c7c8. Original pool code publishes the CPU shared base and reserves524288 B without clearing that region, then tail-calls CPU initialization with the thread word's low16. Native input ownership, identifier admission and receiver effects remain unknown.

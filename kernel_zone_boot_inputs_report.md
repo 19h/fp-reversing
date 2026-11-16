@@ -182,3 +182,8 @@ The [permanent-storage report](kernel_permanent_storage_report.md) advances the 
 ## Context and CPU initialization follow-up
 
 The [mapping context report](kernel_mapping_context_report.md) extends the captured ARM initializer with its original boot-root conversion/publication cut and original call to the complete pmap context initializer. The call rounds its declared SP+0x30 input to32 MiB before passing X0. Actual geometry/bounds/root stores and CPU result-pointer publication replace selected downstream fixtures in byte-exact declared call epochs. Full ARM/topology initialization, native range ownership and a continuous boot-to-consumer epoch remain open.
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) extends the environment frontier with the original versioned converter-state publisher and actual pool/shared/CPU initialization inside the pmap context call. It retains exact memory-budget arithmetic with both u32 truncations and0x6830d6e5 multiply/shift stages. The original topology pointer is a fixed chained target; descriptor contents and native CPU admission still require producer evidence. Boot root has no writer candidate in the bounded locator, which does not establish absence of a native writer.

@@ -2089,3 +2089,8 @@ The lower mapping path now has original admission, descriptor, per-CPU epoch/res
 ## Context and CPU initialization follow-up
 
 The [mapping context report](kernel_mapping_context_report.md) recovers the original context/root/geometry and CPU result-pointer publications. Seven five-component private chains transfer exact predecessor state through original converters and initialization stores into admission/backend consumers. Original geometry yields descriptor0x0460000000400403; the earlier0x0420000000400403 value remains specific to its declared fixture. Boot-root/table ownership, opaque SPTM returns, complete gateway/native effects and daemon transaction pairing remain unknown.
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) establishes a magic-tagged embedded record that publishes converter inputs and a version>=7 flag from record+0xa8 bit6. Original pool/shared/CPU initialization now executes inside the complete context call. A524288 B shared region is reserved and preserved by these source bodies while pool/bitmap regions are cleared. Topology-pointer provenance is an original chained fixup; native descriptor contents, boot root/table ownership and transaction correlation remain unknown.

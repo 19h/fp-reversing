@@ -1964,3 +1964,8 @@ The mapping transport increment recovers an internal pmap/SPTM interface, includ
 ## Context and CPU initialization follow-up
 
 The [mapping context report](kernel_mapping_context_report.md) locates additional SPTM selectors0x13/0x32 and their flag-dependent opaque-word PCs. These are internal initialization contracts, with raw CPU pointer publication rather than Mach right transfer. They establish no additional incoming/outgoing receive/send right, endpoint or Mach message-emission site. Native daemon/provider transaction correlation remains unknown.
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) traces the source of converter pointers and the runtime SPTM transport-selection byte, including its version-dependent preservation. It also recovers original shared-storage reservation and nested CPU pointer publication. These internal boot/pmap ABIs establish no additional incoming/outgoing Mach right, receive/send endpoint, transfer or Mach message-emission site. Native daemon/provider transaction correlation remains unknown.

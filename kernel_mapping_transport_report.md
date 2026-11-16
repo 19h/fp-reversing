@@ -139,3 +139,8 @@ Extraction is O(K+I+S) time/space in pinned collection bytes K, captured words/b
 ## Context and CPU initialization follow-up
 
 The [mapping context report](kernel_mapping_context_report.md) recovers the original context initializer and CPU result-pointer store. The actual geometry field+0x30 is0x0060000000000000, producing descriptor0x0460000000400403 in the selected protection3 path; this report's0x0420000000400403 remains valid for its original declared geometry. Source-initialized context byte+0x76=1 bypasses the optional type3 bitmap branch, and file-zero CPU epoch0 advances to1 in the follow-up chains. The CPU result-pointer slot is written from selector0x32's raw return after selector0x13 provides an identifier; native receiver-side pointer/record production remains unknown. Seven private producer-to-consumer chains transfer exact state, while fresh call registers/stack, validation and opaque-return models remain explicit.
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) recovers the publisher of transport-selection byte0xfffffe0007f8c7c8: for version>=7 it is bit6 of embedded record+0xa8. Earlier versions preserve that byte, including a declared downgrade case. The header caller checks magic0xd00f000000000000 and passes header+0x1a0. Original converter and nested pool/CPU initialization now consume the source-published state. Receiver-side transport semantics, translation and native ownership remain unknown.

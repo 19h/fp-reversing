@@ -2069,3 +2069,8 @@ Original diagnostics identify the refill mapping gateway0xfffffe000be5b2e8 as pm
 ## Context and CPU initialization follow-up
 
 Original diagnostics and source stores identify a complete pmap context initializer at0xfffffe000be608f4 and a CPU initializer at0xfffffe000be734f0. Two additional SPTM wrappers set X16=0x13/0x32; their exact names and native receiver behavior remain unknown. The CPU initializer stores the latter wrapper's full raw return in the backend result-pointer slot. Fifteen complete captures,23 source queries,42 components/216 semantic checks and fresh replay pass. See the [mapping context report](kernel_mapping_context_report.md).
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input study](kernel_sptm_boot_inputs_report.md) recovers the versioned publisher0xfffffe000c662920, its magic-check caller and the original pool/shared initializer0xfffffe000be71258. The publisher's last-function boundary is independently closed over121 words/two returns. Original pool code restores its frame and tail-calls CPU initialization, replacing the earlier context leaf model. Exact _SecureDTLookupEntry and pmap-pv-* strings supply additional role evidence; other names and native receiver behavior remain unknown.

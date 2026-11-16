@@ -1858,3 +1858,8 @@ The lower mapping increment identifies the pmap_enter_options-style gateway and 
 ## Context and CPU initialization follow-up
 
 The [mapping context increment](kernel_mapping_context_report.md) advances original initialization provenance: root pair, complete context initializer, actual geometry and CPU pointer stores now compose across32 exact declared state joins.23 new nonvacuous queries,42 components/216 semantic checks and independent replay of19585 source visits pass; three source-store controls are rejected. Receiver-side SPTM returns, native backing/ownership and matched daemon/kext transactions remain open. The full goal remains active.
+
+
+## SPTM boot record and nested initialization follow-up
+
+The [SPTM boot-input increment](kernel_sptm_boot_inputs_report.md) adds35 source queries, six prior rechecks,73 components/387 semantic checks,34 exact state joins and fresh replay of45709 visits; four source controls are rejected. It replaces the modeled context leaf with original pool/shared initialization and a continuous original CPU tail call, and recovers the converter/transport-flag publisher. Native boot record/root/table provenance, SPTM effects, complete gateway and daemon pairing remain open; full goal remains active.
