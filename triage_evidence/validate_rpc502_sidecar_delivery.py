@@ -589,6 +589,7 @@ def main():
     if exists(BASE/'userclient_query_publication_report.md'):reports.add(BASE/'userclient_query_publication_report.md')
     if exists(BASE/'userclient_query_failure_report.md'):reports.add(BASE/'userclient_query_failure_report.md')
     if exists(BASE/'kernel_allocator_boundary_report.md'):reports.add(BASE/'kernel_allocator_boundary_report.md')
+    if exists(BASE/'kernel_retirement_query_report.md'):reports.add(BASE/'kernel_retirement_query_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3411,6 +3412,16 @@ def main():
         manifest['validation']['kernel_allocator_boundary_new_source_queries_unsat']=len(allocator_boundary_audit['source_proofs'])
         manifest['validation']['kernel_allocator_boundary_prior_source_queries_rechecked']=len(allocator_boundary_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_allocator_boundary_conditional_kernel_allocator_boundary_contract_established']=allocator_boundary['conditional_kernel_allocator_boundary_contract_established']
+    if exists(ROOT/'kernel_retirement_query_checks.json'):
+        retirement_query=json.loads(read(ROOT/'kernel_retirement_query_checks.json'))
+        retirement_query_audit=json.loads(read(ROOT/'kernel_retirement_query_audit.json'))
+        manifest['validation']['kernel_retirement_query_increment_checks']=retirement_query['verified_counts']
+        manifest['validation']['kernel_retirement_query_static_scope']=retirement_query['scope']
+        manifest['validation']['kernel_retirement_query_independent_checks']=retirement_query_audit['independent_totals']
+        manifest['validation']['kernel_retirement_query_new_source_queries_unsat']=len(retirement_query_audit['source_proofs'])
+        manifest['validation']['kernel_retirement_query_new_composition_queries_unsat']=len(retirement_query_audit['composition_proofs'])
+        manifest['validation']['kernel_retirement_query_prior_source_queries_rechecked']=len(retirement_query_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_retirement_query_conditional_kernel_retirement_query_contract_established']=retirement_query['conditional_kernel_retirement_query_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

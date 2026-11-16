@@ -66,3 +66,6 @@ The selected populated-cache handoff adds E to the retirement-byte field and pub
 - **QG5** distinguishes requested and element extents, null and nonnull returns, and selected metadata epochs.
 - **QG6** links original instructions and symbols to 11 UNSAT results, 80 scalar extent checks and five altered-capture rejections.
 - **QG7** ranks unresolved geometry, lifetime, refill and coverage boundaries.
+
+
+The [retirement metadata query](kernel_retirement_query_report.md) establishes conditional8 B range admission, the10-bit zone classification and u16 extent output, both large-layout index encodings, explicit destructive u16 offset reads, optional output effects and the14/32 B caller extent/recovered-base request. Complete query register/store inventory and separate composition formulas support the modular caller join. Native metadata initialization/coherence, allocation identity/ownership, actual clear/retirement, synchronization and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

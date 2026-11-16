@@ -128,3 +128,6 @@ Extraction requires O(B+I+256R) time/space for consumed image bytes B, instructi
 
 
 The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establishes selected14/32 B zone-address formation, conditional null-result propagation through the size/data allocators, typed result/frame custody, all-flags typed fallback allocation/free heap-size congruence, data/lower retirement null guards and the small-size query request ABI. Native outcome existence, valid initialized zones, allocation identity/ownership, query-helper effects, PAC, synchronization and daemon-visible transaction behavior remain unknown; no additional Mach endpoint is established.
+
+
+The [retirement metadata query](kernel_retirement_query_report.md) establishes conditional8 B range admission, the10-bit zone classification and u16 extent output, both large-layout index encodings, explicit destructive u16 offset reads, optional output effects and the14/32 B caller extent/recovered-base request. Complete query register/store inventory and separate composition formulas support the modular caller join. Native metadata initialization/coherence, allocation identity/ownership, actual clear/retirement, synchronization and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

@@ -152,3 +152,6 @@ Extraction requires O(B+I+S) time/space for image bytes B, decoded instructions 
 - **QG5**: Address formation versus membership, matching metadata versus native identity, helper return cuts versus outcome existence, saved LR restoration versus PAC, and inferred query role versus helper semantics remain distinct.
 - **QG6**: Eight original function captures,131 selected modeled instructions,19 nonvacuous obligations, seven predecessor rechecks,272 linked-edge checks and a source-register mutation counterexample support the bounded claims.
 - **QG7**: Ranked continuation preserves backend outcomes, metadata validation, native lifetime/locking, daemon transactions, environment preparation and signed-frame evidence as open frontiers.
+
+
+The [retirement metadata query](kernel_retirement_query_report.md) establishes conditional8 B range admission, the10-bit zone classification and u16 extent output, both large-layout index encodings, explicit destructive u16 offset reads, optional output effects and the14/32 B caller extent/recovered-base request. Complete query register/store inventory and separate composition formulas support the modular caller join. Native metadata initialization/coherence, allocation identity/ownership, actual clear/retirement, synchronization and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
