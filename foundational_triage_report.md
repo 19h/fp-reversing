@@ -2157,3 +2157,8 @@ The [timeout execution report](kernel_timeout_execution_report.md) continues ori
 ## Phase-three lock bootstrap follow-up
 
 The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) records boot-option control through lcks, attribute masks, group-ID bitmap/table custody, lock tags/counts, phase gating and aliases. Both private cases preserve preceding startup state and return from all 1029 callbacks; the next boundary is main BL 0xfffffe000c639e3c to unexecuted helper 0xfffffe000bd64ea4. Native initialization, concurrency and matched FairPlay IPC remain unknown.
+
+
+## Post-lock timer bootstrap follow-up
+
+The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) adds exact-width timeout conversion/copy layouts, preserved padding, list/lock/callback publication and boot-option control. Default/zero paths return to main; the nonzero logging path stops at MRS X8, DAIF at 0xfffffe000c48faf4 without inventing the register value. Native scheduling and matched FairPlay IPC remain unknown.

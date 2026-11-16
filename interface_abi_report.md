@@ -2286,3 +2286,8 @@ The [timeout execution report](kernel_timeout_execution_report.md) continues ori
 ## Phase-three lock bootstrap follow-up
 
 The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) establishes all 627 original lock-phase callbacks, 291 group IDs, descriptor/attribute layouts and the reserved ID-0 table slot. Two continuous cases return from 1029 callbacks and stop before original main calls the next timeout/wait-queue helper. This is private lower-kernel initialization evidence; native scheduling and a matched FairPlay ABI transaction remain unknown.
+
+
+## Post-lock timer bootstrap follow-up
+
+The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) extends original execution through the timer initializer for default/zero options, establishing the packed timeout-record transformations, callback/context publication and exact reciprocal bounds. A nonzero longterm option reaches original logging and stops before an unestablished DAIF read; native timing and matched FairPlay transactions remain unknown.

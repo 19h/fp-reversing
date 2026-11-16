@@ -1926,3 +1926,8 @@ The [timeout execution report](kernel_timeout_execution_report.md) continues ori
 ## Phase-three lock bootstrap follow-up
 
 The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) extends the earlier phase-three entry boundary through all 627 callbacks and the original dispatcher return. Two cases, five source queries, 2750 static checks, independent per-callback formulas, complete replay and two rejected mutations establish the finite continuation. Original main now stops before BL 0xfffffe000c639e3c to 0xfffffe000bd64ea4. Earlier boundaries describe their historical increments; later startup, native execution and matched FairPlay/Mach custody remain unknown, and the full goal remains active.
+
+
+## Post-lock timer bootstrap follow-up
+
+The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) continues beyond all 1029 callback returns. Default and explicit-zero timer cases return at 0xfffffe000c639e40 before CPU initialization; longterm=1 reaches the original logging DAIF frontier, with an early-phase source proof that its selector is independent of DAIF. Five source queries, four exact reciprocal bounds, independent formulas/replay, prefix preservation and two source controls support this finite increment. Earlier boundaries are historical and the full goal remains active.

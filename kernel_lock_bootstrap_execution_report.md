@@ -107,3 +107,8 @@ The new boundary is a direct main call, not a later registry callback. Original 
 | Low | Compare group-name inventory across pinned versions | Separate stable layout families from build-specific names/counts |
 
 **QG1**: Factual technical analysis; no normative content required. **QG2**: LK-A1-LK-A7 list dependencies and falsification probes. **QG3**: Finite phase-three source, descriptors, control/data flow, boot input, ABI and Mach limits covered; full goal remains active. **QG4**: Exact byte extents, widths, modular arithmetic, counts and complexity are explicit. Source, journal and RAM construction are linear; interval sorting is O(N log N); SMT search is separate. **QG5**: Static/live table entries, reserved IDs, phase gate, aliases, observed branches and native lifetime distinguished. **QG6**: Original bytes, independent source queries/formulas, fresh replay, prefix comparison and controls retained. **QG7**: Impact-ranked continuation included. Gates apply to this increment; native startup and matched FairPlay IPC remain unknown.
+
+
+## Post-lock timer bootstrap follow-up
+
+The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) preserves this report's default final checkpoint and executes the next timer helper for default/zero options. The nonzero option instead reaches an original logging DAIF frontier. The next CPU initializer, native timing, later Mach startup and a matched FairPlay transaction remain unexecuted or unknown; this report's earlier stop describes its original increment.

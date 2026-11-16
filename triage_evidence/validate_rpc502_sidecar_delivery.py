@@ -621,6 +621,7 @@ def main():
     if exists(BASE/'kernel_uuid_formatter_execution_report.md'):reports.add(BASE/'kernel_uuid_formatter_execution_report.md')
     if exists(BASE/'kernel_timeout_execution_report.md'):reports.add(BASE/'kernel_timeout_execution_report.md')
     if exists(BASE/'kernel_lock_bootstrap_execution_report.md'):reports.add(BASE/'kernel_lock_bootstrap_execution_report.md')
+    if exists(BASE/'kernel_longterm_bootstrap_execution_report.md'):reports.add(BASE/'kernel_longterm_bootstrap_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3760,6 +3761,16 @@ def main():
         manifest['validation']['kernel_lock_bootstrap_execution_independent_replay_checks']=lock_audit['independent_replay_totals']
         manifest['validation']['kernel_lock_bootstrap_execution_source_queries_unsat']=len(lock_audit['source_proofs'])
         manifest['validation']['kernel_lock_bootstrap_execution_conditional_kernel_lock_bootstrap_execution_contract_established']=lock_audit['conditional_kernel_lock_bootstrap_execution_contract_established']
+    if exists(ROOT/'kernel_longterm_bootstrap_execution_checks.json'):
+        longterm=json.loads(read(ROOT/'kernel_longterm_bootstrap_execution_checks.json'))
+        longterm_audit=json.loads(read(ROOT/'kernel_longterm_bootstrap_execution_audit.json'))
+        manifest['validation']['kernel_longterm_bootstrap_execution_increment_checks']=longterm['verified_counts']
+        manifest['validation']['kernel_longterm_bootstrap_execution_static_scope']=longterm['scope']
+        manifest['validation']['kernel_longterm_bootstrap_execution_independent_checks']=longterm_audit['independent_totals']
+        manifest['validation']['kernel_longterm_bootstrap_execution_independent_replay_checks']=longterm_audit['independent_replay_totals']
+        manifest['validation']['kernel_longterm_bootstrap_execution_source_queries_unsat']=len(longterm_audit['source_proofs'])
+        manifest['validation']['kernel_longterm_bootstrap_execution_integer_reciprocal_bounds']=len(longterm_audit['integer_reciprocal_bounds']['bounds'])
+        manifest['validation']['kernel_longterm_bootstrap_execution_conditional_kernel_longterm_bootstrap_execution_contract_established']=longterm_audit['conditional_kernel_longterm_bootstrap_execution_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

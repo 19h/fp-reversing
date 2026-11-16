@@ -2137,3 +2137,8 @@ The [timeout execution report](kernel_timeout_execution_report.md) continues ori
 ## Phase-three lock bootstrap follow-up
 
 The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) assigns source-supported roles to 11 unnamed callback families and captures the group constructor, compact-ID allocator, RW initializer and next unexecuted helper. Original compact_id.c diagnostics, descriptor names/fixups, tags, counts, independent formulas, five source queries and two rejected mutations support the recovered roles. Exact original symbol names remain unknown.
+
+
+## Post-lock timer bootstrap follow-up
+
+The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) corroborates the unnamed timer initializer from its longterm key, original diagnostic, conversion instructions and callback record. It also captures the original printf/logging closure, bank-pointer/counter custody and ticket-lock source. Recovered roles do not supply missing original symbol names or native execution evidence.

@@ -2032,3 +2032,8 @@ The [timeout execution report](kernel_timeout_execution_report.md) continues ori
 ## Phase-three lock bootstrap follow-up
 
 The [phase-three lock bootstrap report](kernel_lock_bootstrap_execution_report.md) completes the 627 original lock callbacks and returns to main before the next direct helper. This increment adds no established incoming/outgoing Mach right, message ID or emission site. Phase-14 MIG startup and a matched fairplayd/user-client/provider/kernel exchange remain unexecuted or unknown.
+
+
+## Post-lock timer bootstrap follow-up
+
+The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_report.md) follows the original nonzero-option logging path to its DAIF input frontier. No console output, Mach-right emission, new message ID or daemon/provider pairing is established. Default/zero timer initialization returns before CPU setup; later phase-14 MIG startup remains unexecuted.
