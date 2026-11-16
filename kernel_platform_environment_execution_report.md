@@ -171,3 +171,8 @@ No new incoming/outgoing Mach port, right or Mach-message emission PC is establi
 | Low | Compare this recovered contract with a separately identified build | Separate stable fields from build-specific layout and initialization behavior |
 
 **QG1**: Factual technical analysis; no normative content required. **QG2**: PE-A1-PE-A7 list dependencies and falsification probes. **QG3**: Actual platform return, clock/cache/identity/diagnostic fields, timer and later parser continuation covered for this increment; full goal remains active. **QG4**: Exact widths, extents, hashes, arithmetic domain and algorithmic costs stated; physical units remain unestablished. **QG5**: Cached/missing anchor, no admitted CPU, partial copies, predicate widths, timer domain and native boundaries separated. **QG6**: Original bytes, literals/nlist, source queries, independent contracts and replay retained. **QG7**: Bounded impact-ranked continuation included. All gates pass for this increment; native startup, later enumeration and matched daemon/kernel effects remain unknown.
+
+
+## Initialized-data and continuous thread-handoff follow-up
+
+The [bootstrap state-composition report](kernel_bootstrap_state_composition_report.md) preserves the prior zero-page fixture and establishes its pre-store null-destination boundary. A separately declared original initialized topology page permits continuous main/platform/timer/enumeration/post-helper/thread-copy/setter execution, without a call-frame epoch or later state repair. The paired input/register comparison, original pointer fixups, post-helper default 2, selected CPU ordinal, logical register custody and remaining selector0e/native/Mach boundaries are explicit.

@@ -1896,3 +1896,8 @@ The boot-environment publication increment establishes the actual main-to-publis
 ## Original platform-return follow-up
 
 The complete original mode-0 platform path now returns into actual main and reaches the CPU-enumeration call site continuously in eight private cases. Nine components pass 30 new source proofs, 19 prior rechecks, 3254 independent semantic checks and fresh replay; six altered-source controls are rejected. The full goal remains active. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.
+
+
+## Initialized-data and continuous thread-handoff follow-up
+
+The [bootstrap state-composition report](kernel_bootstrap_state_composition_report.md) preserves the prior zero-page fixture and establishes its pre-store null-destination boundary. A separately declared original initialized topology page permits continuous main/platform/timer/enumeration/post-helper/thread-copy/setter execution, without a call-frame epoch or later state repair. The paired input/register comparison, original pointer fixups, post-helper default 2, selected CPU ordinal, logical register custody and remaining selector0e/native/Mach boundaries are explicit.

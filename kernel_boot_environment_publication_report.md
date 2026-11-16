@@ -153,3 +153,8 @@ No new incoming/outgoing Mach port, port right or Mach-message emission PC is es
 ## Original platform-return follow-up
 
 The later-helper cut is now replaced in a separate continuous experiment: original range/cache, CPU-clock, identity/chosen and diagnostic bodies return into actual main, followed by original timer and four parser calls. The earlier registration/PAC/native premises remain explicit; enumeration is the new stop boundary. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.
+
+
+## Initialized-data and continuous thread-handoff follow-up
+
+The [bootstrap state-composition report](kernel_bootstrap_state_composition_report.md) preserves the prior zero-page fixture and establishes its pre-store null-destination boundary. A separately declared original initialized topology page permits continuous main/platform/timer/enumeration/post-helper/thread-copy/setter execution, without a call-frame epoch or later state repair. The paired input/register comparison, original pointer fixups, post-helper default 2, selected CPU ordinal, logical register custody and remaining selector0e/native/Mach boundaries are explicit.

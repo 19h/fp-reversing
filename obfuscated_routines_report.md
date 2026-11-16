@@ -2107,3 +2107,8 @@ Routine 0xfffffe000c5e6620 is corroborated as a guarded boot-environment publish
 ## Original platform-return follow-up
 
 Six additional routines have corroborated clock, range-anchor cache, diagnostic/cpu-factor, timer-event and ACTLR-continuation roles. Exact original names remain unknown. Original clock, diagnostic and timer bodies execute all captured PCs in the selected cases, without a complete-path claim. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.
+
+
+## Initialized-data and continuous thread-handoff follow-up
+
+The [bootstrap state-composition report](kernel_bootstrap_state_composition_report.md) preserves the prior zero-page fixture and establishes its pre-store null-destination boundary. A separately declared original initialized topology page permits continuous main/platform/timer/enumeration/post-helper/thread-copy/setter execution, without a call-frame epoch or later state repair. The paired input/register comparison, original pointer fixups, post-helper default 2, selected CPU ordinal, logical register custody and remaining selector0e/native/Mach boundaries are explicit.

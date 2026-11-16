@@ -615,6 +615,7 @@ def main():
     if exists(BASE/'kernel_boot_option_execution_report.md'):reports.add(BASE/'kernel_boot_option_execution_report.md')
     if exists(BASE/'kernel_boot_environment_publication_report.md'):reports.add(BASE/'kernel_boot_environment_publication_report.md')
     if exists(BASE/'kernel_platform_environment_execution_report.md'):reports.add(BASE/'kernel_platform_environment_execution_report.md')
+    if exists(BASE/'kernel_bootstrap_state_composition_report.md'):reports.add(BASE/'kernel_bootstrap_state_composition_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3695,6 +3696,16 @@ def main():
         manifest['validation']['kernel_platform_environment_execution_new_source_queries_unsat']=len(platform_audit['source_proofs'])
         manifest['validation']['kernel_platform_environment_execution_prior_source_queries_rechecked']=len(platform_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_platform_environment_execution_conditional_kernel_platform_environment_execution_contract_established']=platform['conditional_kernel_platform_environment_execution_contract_established']
+    if exists(ROOT/'kernel_bootstrap_state_composition_checks.json'):
+        composition=json.loads(read(ROOT/'kernel_bootstrap_state_composition_checks.json'))
+        composition_audit=json.loads(read(ROOT/'kernel_bootstrap_state_composition_audit.json'))
+        manifest['validation']['kernel_bootstrap_state_composition_increment_checks']=composition['verified_counts']
+        manifest['validation']['kernel_bootstrap_state_composition_static_scope']=composition['scope']
+        manifest['validation']['kernel_bootstrap_state_composition_independent_checks']=composition_audit['independent_totals']
+        manifest['validation']['kernel_bootstrap_state_composition_independent_replay_checks']=composition_audit['independent_replay_totals']
+        manifest['validation']['kernel_bootstrap_state_composition_source_composition_queries_unsat']=len(composition_audit['source_proofs'])
+        manifest['validation']['kernel_bootstrap_state_composition_retained_source_queries_rebuilt']=len(composition_audit['retained_source_proofs_rebuilt'])
+        manifest['validation']['kernel_bootstrap_state_composition_conditional_kernel_bootstrap_state_composition_contract_established']=composition['conditional_kernel_bootstrap_state_composition_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
