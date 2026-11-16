@@ -594,6 +594,7 @@ def main():
     if exists(BASE/'kernel_retirement_diagnostics_report.md'):reports.add(BASE/'kernel_retirement_diagnostics_report.md')
     if exists(BASE/'kernel_zone_retirement_report.md'):reports.add(BASE/'kernel_zone_retirement_report.md')
     if exists(BASE/'kernel_retirement_magazines_report.md'):reports.add(BASE/'kernel_retirement_magazines_report.md')
+    if exists(BASE/'kernel_zone_bitmap_release_report.md'):reports.add(BASE/'kernel_zone_bitmap_release_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3465,6 +3466,16 @@ def main():
         manifest['validation']['kernel_retirement_magazines_separation_lemmas_unsat']=len(retirement_magazines_audit['separation_lemmas'])
         manifest['validation']['kernel_retirement_magazines_prior_source_queries_rechecked']=len(retirement_magazines_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_retirement_magazines_conditional_kernel_retirement_magazines_contract_established']=retirement_magazines['conditional_kernel_retirement_magazines_contract_established']
+    if exists(ROOT/'kernel_zone_bitmap_release_checks.json'):
+        bitmap_release=json.loads(read(ROOT/'kernel_zone_bitmap_release_checks.json'))
+        bitmap_release_audit=json.loads(read(ROOT/'kernel_zone_bitmap_release_audit.json'))
+        manifest['validation']['kernel_zone_bitmap_release_increment_checks']=bitmap_release['verified_counts']
+        manifest['validation']['kernel_zone_bitmap_release_static_scope']=bitmap_release['scope']
+        manifest['validation']['kernel_zone_bitmap_release_independent_checks']=bitmap_release_audit['independent_totals']
+        manifest['validation']['kernel_zone_bitmap_release_new_source_queries_unsat']=len(bitmap_release_audit['source_proofs'])
+        manifest['validation']['kernel_zone_bitmap_release_new_composition_queries_unsat']=len(bitmap_release_audit['composition_proofs'])
+        manifest['validation']['kernel_zone_bitmap_release_rechecked_separation_lemmas_unsat']=len(bitmap_release_audit['rechecked_separation_lemmas'])
+        manifest['validation']['kernel_zone_bitmap_release_conditional_kernel_zone_bitmap_release_contract_established']=bitmap_release['conditional_kernel_zone_bitmap_release_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -147,3 +147,5 @@ Extraction takes O(B+I+S) time/space for original image bytes, instructions and 
 - **QG7**: Ranked continuation covers helper/deeper effects, transaction identity, thread context, diagnostics and the bounded multiplier interpretation.
 
 The [both-full magazine helper](kernel_retirement_magazines_report.md) returns the incoming cache or zero under the ordinary ABI. Every modeled nonzero normal return passes a producer-count reset; linked original-byte components then publish one pointer through C+6/C+0x10. Allocation instead consumes C+4/C+8. Whole-CFG, instruction and list/state evidence retain explicit native synchronization, external-memory-effect, reclamation and transaction-identity limits; no additional Mach endpoint is established.
+
+The [deeper bitmap/metadata release](kernel_zone_bitmap_release_report.md) establishes both free-bit layouts, count-store/underflow order, encoded metadata queue transitions and the original unlock/thread-nesting handoff. Sixteen source proofs and 66 private components retain explicit native exclusion, external-effect, physical-reclamation and daemon-epoch limits; no additional Mach endpoint is established.

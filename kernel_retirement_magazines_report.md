@@ -158,3 +158,5 @@ Recovery costs O(input bytes+I+S) time/space for instructions I and symbols S. T
 - **QG5**: Source-store provenance versus current RAM, normal returns versus termination, new-call fixtures versus exact held continuation, sequential atomics versus native synchronization, and popped versus raw header clearing remain distinct.
 - **QG6**: Original bytes, predecessor matches, source formulas, whole-CFG states, changed-source controls and original-byte components with independent list/state oracles provide reproducible provenance.
 - **QG7**: Ranked continuation covers deeper release, external effects, transaction identity, marker producers, raw storage and larger inventory domains.
+
+The [deeper bitmap/metadata release](kernel_zone_bitmap_release_report.md) establishes both free-bit layouts, count-store/underflow order, encoded metadata queue transitions and the original unlock/thread-nesting handoff. Sixteen source proofs and 66 private components retain explicit native exclusion, external-effect, physical-reclamation and daemon-epoch limits; no additional Mach endpoint is established.
