@@ -591,6 +591,7 @@ def main():
     if exists(BASE/'kernel_allocator_boundary_report.md'):reports.add(BASE/'kernel_allocator_boundary_report.md')
     if exists(BASE/'kernel_retirement_query_report.md'):reports.add(BASE/'kernel_retirement_query_report.md')
     if exists(BASE/'kernel_retirement_dispatch_report.md'):reports.add(BASE/'kernel_retirement_dispatch_report.md')
+    if exists(BASE/'kernel_retirement_diagnostics_report.md'):reports.add(BASE/'kernel_retirement_diagnostics_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3432,6 +3433,15 @@ def main():
         manifest['validation']['kernel_retirement_dispatch_new_source_queries_unsat']=len(retirement_dispatch_audit['source_proofs'])
         manifest['validation']['kernel_retirement_dispatch_prior_source_queries_rechecked']=len(retirement_dispatch_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_retirement_dispatch_conditional_kernel_retirement_dispatch_contract_established']=retirement_dispatch['conditional_kernel_retirement_dispatch_contract_established']
+    if exists(ROOT/'kernel_retirement_diagnostics_checks.json'):
+        retirement_diagnostics=json.loads(read(ROOT/'kernel_retirement_diagnostics_checks.json'))
+        retirement_diagnostics_audit=json.loads(read(ROOT/'kernel_retirement_diagnostics_audit.json'))
+        manifest['validation']['kernel_retirement_diagnostics_increment_checks']=retirement_diagnostics['verified_counts']
+        manifest['validation']['kernel_retirement_diagnostics_static_scope']=retirement_diagnostics['scope']
+        manifest['validation']['kernel_retirement_diagnostics_independent_checks']=retirement_diagnostics_audit['independent_totals']
+        manifest['validation']['kernel_retirement_diagnostics_new_source_queries_unsat']=len(retirement_diagnostics_audit['source_proofs'])
+        manifest['validation']['kernel_retirement_diagnostics_prior_source_queries_rechecked']=len(retirement_diagnostics_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_retirement_diagnostics_conditional_kernel_retirement_diagnostics_contract_established']=retirement_diagnostics['conditional_kernel_retirement_diagnostics_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
