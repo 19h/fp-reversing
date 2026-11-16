@@ -1888,3 +1888,7 @@ The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) 
 ## Original boot-option execution follow-up
 
 The [boot-option execution increment](kernel_boot_option_execution_report.md) adds 26 nonvacuous source proofs, four prior rechecks, thirteen private components, 9194 independent checks and four altered-source rejections. It checks 293 original option API calls/returns and 2526 original tree calls/returns; eight cases reach original thread construction. Actual boot provenance/startup, native authentication/lower effects and daemon pairing remain open; full goal remains active.
+
+## Boot-environment publication follow-up
+
+The boot-environment publication increment establishes the actual main-to-publisher edge, saved bootargs producer, mode/context distinction, inline tree setup and four later option-parser ABIs. Nine private components pass 19 nonvacuous source proofs, 97 semantic checks and fresh replay; four source controls are rejected. The full interface goal remains active. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

@@ -172,3 +172,7 @@ The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) 
 ## Original boot-option execution follow-up
 
 The [boot-option execution increment](kernel_boot_option_execution_report.md) executes the original scanner on bounded private buffers at bootargs+0x6c, including original conversion helpers and callback bodies. Actual command-line producer/capacity and the copied-header/tree/bootargs caller chain remain open; explicit initializer/main and later CPU-caller frames are retained.
+
+## Boot-environment publication follow-up
+
+The copied bootargs now have a corroborated downstream producer chain: actual main call 0xfffffe000c639b98 passes 0xfffffe0007e6d1e0 to the guarded publisher, whose PC 0xfffffe000c5e6690 stores the parser-global pointer. A new private prefix executes both original copies through this publication and the inline tree bounds, stopping before later helpers. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

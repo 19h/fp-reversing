@@ -2119,3 +2119,7 @@ The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) 
 ## Original boot-option execution follow-up
 
 The [boot-option execution increment](kernel_boot_option_execution_report.md) advances boot-environment data flow through original scanning, conversion, tree readers, CPU enumeration and thread setup. Independent grammar/call/record/byte checks replace declared option returns for selected inputs, with native input provenance, caller continuity and lower effects remaining unknown.
+
+## Boot-environment publication follow-up
+
+The missing bootargs-global producer is the original store at 0xfffffe000c5e6690, reached by actual main after both original input copies. Tree publication is inline, guarded and preceded by a carry check; first-call state publication occurs before that check. Native startup and later helpers remain outside coverage. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

@@ -2248,3 +2248,7 @@ The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) 
 ## Original boot-option execution follow-up
 
 The [boot-option execution report](kernel_boot_option_execution_report.md) establishes scanner/converter/flag/callback register contracts, opposite scanner-versus-converter success polarity, exact-name matching, numeric widths, presence-only behavior and three-byte preservation. Original option outputs now compose with original serialized-tree readers and thread construction; callback authentication remains logical.
+
+## Boot-environment publication follow-up
+
+The guarded boot-environment publisher at 0xfffffe000c5e6620 receives the copied bootargs from actual main call 0xfffffe000c639b98 and stores their pointer at 0xfffffe0007f8b6e8. Initialized nonzero-mode calls instead forward a context and retain that saved pointer; original inline tree bounds and later parser-call ABIs are corroborated. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

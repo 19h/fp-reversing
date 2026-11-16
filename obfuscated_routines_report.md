@@ -2099,3 +2099,7 @@ The [serialized-tree API report](kernel_secure_dt_execution_report.md) captures 
 ## Original boot-option execution follow-up
 
 The [boot-option execution report](kernel_boot_option_execution_report.md) corroborates roles for the unnamed scanner, numeric decoder, delimiter callback and width-dependent flag writer, and identifies exact _strlen from target nlist. It retains role descriptions where original names are unknown and separates logical PAC/authenticated calls from native behavior.
+
+## Boot-environment publication follow-up
+
+Routine 0xfffffe000c5e6620 is corroborated as a guarded boot-environment publisher with a mode-dependent context tail. Its first-call pointer/tree/video fields and exact _strlcpy literal transfer are recovered; the original name remains unknown. The separate tree initializer has no direct B/BL caller in the three scanned kernel executable segments. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

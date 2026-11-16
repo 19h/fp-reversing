@@ -1994,3 +1994,7 @@ The [original serialized-tree API increment](kernel_secure_dt_execution_report.m
 ## Original boot-option execution follow-up
 
 The [original boot-option execution increment](kernel_boot_option_execution_report.md) establishes no new Mach right, endpoint or message-emission site. It replaces environmental option-output returns with original parsing before topology/thread setup while retaining unknown daemon influence, native startup and lower receiver effects.
+
+## Boot-environment publication follow-up
+
+Boot-environment publication adds no Mach port, right or message-emission PC. Its four census matches are ordinary kernel B/BL edges. Boot-option contents and initialization modes remain environmental inputs; direct daemon control is unknown. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

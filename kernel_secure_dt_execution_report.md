@@ -156,3 +156,7 @@ No new incoming/outgoing Mach port, right or message-emission location is establ
 ## Original boot-option execution follow-up
 
 The [boot-option execution increment](kernel_boot_option_execution_report.md) replaces the remaining declared option-output returns with original scanning/conversion before original tree readers and topology/thread setup. It establishes selected name/duplicate/radix/width/presence contracts and records all 129 logical authenticated callback calls. Authentic boot inputs, explicit startup cuts and lower/native effects remain conditional.
+
+## Boot-environment publication follow-up
+
+Actual boot callers publish tree globals inline at the early initializer and guarded environment publisher. The new bounded census finds no direct B/BL call to 0xfffffe000c6622b8 in three kernel executable segments. The original initializer execution in this report remains an explicit fixture epoch; it is not evidence of a native caller to that separate initializer. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.

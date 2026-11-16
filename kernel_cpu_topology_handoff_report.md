@@ -167,3 +167,7 @@ The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) 
 ## Original boot-option execution follow-up
 
 The [boot-option execution increment](kernel_boot_option_execution_report.md) supplies original parser-produced cpus/cpumask/power/thread-mode values to original enumeration and its post-helper. The independent option map is used only for verification and is not injected into execution. Original tree readers and eight full thread copies compose; actual startup/receiver effects remain unknown.
+
+## Boot-environment publication follow-up
+
+The environmental bootargs-global producer and actual earlier main caller are now corroborated, including original input copies and inline tree-global publication. Later initialized mode-1 calls pass either the fixed CPU context or null and retain the first bootargs pointer. Intervening helper execution and uninterrupted composition into enumeration remain open. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
