@@ -601,6 +601,7 @@ def main():
     if exists(BASE/'kernel_magazine_bulk_return_report.md'):reports.add(BASE/'kernel_magazine_bulk_return_report.md')
     if exists(BASE/'kernel_magazine_bootstrap_report.md'):reports.add(BASE/'kernel_magazine_bootstrap_report.md')
     if exists(BASE/'kernel_zone_boot_order_report.md'):reports.add(BASE/'kernel_zone_boot_order_report.md')
+    if exists(BASE/'kernel_zone_boot_inputs_report.md'):reports.add(BASE/'kernel_zone_boot_inputs_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3540,6 +3541,17 @@ def main():
         manifest['validation']['kernel_zone_boot_order_prior_source_queries_rechecked']=len(zone_boot_order_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_zone_boot_order_rechecked_separation_lemmas_unsat']=len(zone_boot_order_audit['rechecked_separation_lemmas'])
         manifest['validation']['kernel_zone_boot_order_conditional_kernel_zone_boot_order_contract_established']=zone_boot_order['conditional_kernel_zone_boot_order_contract_established']
+    if exists(ROOT/'kernel_zone_boot_inputs_checks.json'):
+        boot_inputs=json.loads(read(ROOT/'kernel_zone_boot_inputs_checks.json'))
+        boot_inputs_audit=json.loads(read(ROOT/'kernel_zone_boot_inputs_audit.json'))
+        manifest['validation']['kernel_zone_boot_inputs_increment_checks']=boot_inputs['verified_counts']
+        manifest['validation']['kernel_zone_boot_inputs_static_scope']=boot_inputs['scope']
+        manifest['validation']['kernel_zone_boot_inputs_independent_checks']=boot_inputs_audit['independent_totals']
+        manifest['validation']['kernel_zone_boot_inputs_independent_replay_checks']=boot_inputs_audit['independent_replay_totals']
+        manifest['validation']['kernel_zone_boot_inputs_new_source_queries_unsat']=len(boot_inputs_audit['source_proofs'])
+        manifest['validation']['kernel_zone_boot_inputs_new_composition_queries_unsat']=len(boot_inputs_audit['composition_proofs'])
+        manifest['validation']['kernel_zone_boot_inputs_rechecked_separation_lemmas_unsat']=len(boot_inputs_audit['rechecked_separation_lemmas'])
+        manifest['validation']['kernel_zone_boot_inputs_conditional_kernel_zone_boot_inputs_contract_established']=boot_inputs['conditional_kernel_zone_boot_inputs_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

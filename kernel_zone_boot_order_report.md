@@ -182,3 +182,8 @@ This increment refines the startup environment needed by recovered kernel alloca
 ## Quality gates
 
 **QG1** passes: factual source/ABI analysis requires no normative content. **QG2** passes: BO-A1-BO-A6 declare dependent claims and falsification probes. **QG3** passes for this increment: caller order, shared input alias, complete policy tail, registration ordering and boundaries are covered; the full investigation remains active. **QG4** passes: widths, raw units, byte extents, modular arithmetic, limits and complexity are explicit. **QG5** passes: strict rank order, equal-key ambiguity, native/helper effects, private callbacks, zero-count wrap and the error-callee edge are separated. **QG6** passes: original bytes, nlist/fixups, reconstructed source certificates, independent semantic/replay checks and changed-source controls provide provenance. **QG7** passes: bounded, impact-ranked continuation is recorded. `full_goal_complete=false`.
+
+
+## Memory and logical CPU producer evidence
+
+The [boot-input producer study](kernel_zone_boot_inputs_report.md) supersedes the producer frontier above: the located _sane_size store is0xfffffe000be752c4 inside the ARM/SPTM initializer0xfffffe000be7400c, rather than the VM helper0xfffffe000c637698. It establishes V=M-((A-B) mod2^64) only under the strict unsigned M>delta gate. The CPU input is the exact _ml_get_max_cpu_number storage, maintained by a logical index/count/maximum setter. Native call-chain order, intervening writes, physical units and active CPU count remain unknown; the preceding private boot-order evidence is unchanged.

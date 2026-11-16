@@ -2045,3 +2045,8 @@ The [magazine-bootstrap report](kernel_magazine_bootstrap_report.md) recovers th
 ## Capacity-policy caller and ordered zone startup
 
 The [boot-order report](kernel_zone_boot_order_report.md) establishes the original caller's complete policy -> phase6 -> phase7 sequence and the unique magazine phase7/rank0 registration before selected IPC-zone rank3 entries. The policy feature word is the high u32 of the original nlist-defined `_sane_size` u64. Five continuous private caller/policy/dispatcher/observer components cover descriptor writes,689 metadata updates and two initialized callback objects, with70 semantic checks and fresh replay of74,637 visits. Registered callback bodies remain explicit no-RAM return models; native zone creation, storage/ownership, authentication, exclusion and daemon transaction identity remain unknown. No additional Mach endpoint, right or message emission is established; the full goal remains active.
+
+
+## Memory and logical CPU producer evidence
+
+The [boot-input producer study](kernel_zone_boot_inputs_report.md) identifies the ARM/SPTM memory initializer by original diagnostics and the topology initializer by boot keys, device-tree strings and descriptor stores. Exact original symbols name _sane_size, _max_mem, _mem_size and _ml_get_max_cpu_number. The strict unsigned sane-size writer and CPU index/count/maximum setter are recovered; a numbering bound does not establish active CPU count. Nine source queries, one composition query, two separation lemmas and23 private source cuts pass96 semantic checks and independent replay. Complete native initialization, input control and daemon transaction identity remain unknown.

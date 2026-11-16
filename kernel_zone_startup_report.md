@@ -167,3 +167,8 @@ The [magazine-bootstrap report](kernel_magazine_bootstrap_report.md) recovers th
 ## Magazine-before-IPC source order
 
 The [boot-order report](kernel_zone_boot_order_report.md) establishes that the original caller completes its capacity policy before dispatching phase6 and phase7. The unique magazine phase7/rank0 callback sorts before the `ipc kmsgs`, `ipc ports` and `ipc port sets` rank3 specifications. The three rank3 entries retain unspecified universal tie order. Source ordering is therefore established under the table/cursor/return premises; the new continuous caller components model callback bodies and do not execute this report's constructors/caches in that stack. Phase6 and intervening rank1/rank2 effects, native storage/ownership and daemon transaction identity remain unknown.
+
+
+## Memory and logical CPU producer evidence
+
+The [boot-input producer study](kernel_zone_boot_inputs_report.md) supplies original memory-prefix/sane-size and logical CPU maximum producer contracts for the earlier capacity policy. It distinguishes raw modular arithmetic and numbering bounds from native physical units and active CPU count. Nine source queries, one composition query and23 private source cuts pass with independent replay; actual ARM/topology completion, initialized allocation backing, ownership and matched fairplayd/provider transactions remain unknown. No additional Mach endpoint or emission is established.

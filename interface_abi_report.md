@@ -2194,3 +2194,8 @@ The [magazine-bootstrap report](kernel_magazine_bootstrap_report.md) recovers th
 ## Capacity-policy caller and ordered zone startup
 
 The [boot-order report](kernel_zone_boot_order_report.md) establishes the original caller's complete policy -> phase6 -> phase7 sequence and the unique magazine phase7/rank0 registration before selected IPC-zone rank3 entries. The policy feature word is the high u32 of the original nlist-defined `_sane_size` u64. Five continuous private caller/policy/dispatcher/observer components cover descriptor writes,689 metadata updates and two initialized callback objects, with70 semantic checks and fresh replay of74,637 visits. Registered callback bodies remain explicit no-RAM return models; native zone creation, storage/ownership, authentication, exclusion and daemon transaction identity remain unknown. No additional Mach endpoint, right or message emission is established; the full goal remains active.
+
+
+## Memory and logical CPU producer evidence
+
+The [boot-input ABI study](kernel_zone_boot_inputs_report.md) records exact u64 memory-prefix offsets/publications, distinct structure words at+0x478, strict unsigned modular sane-size admission, the136 B logical CPU descriptor stride, adjacent u32 count/maximum stores and exported _ml_get_max_cpu_number. The policy consumes maximum+1 modulo2^32 and the high u32 of _sane_size. Raw field identity, native physical units/control, active CPU count and a continuous producer-to-consumer epoch remain unestablished; no additional Mach message ABI is inferred.
