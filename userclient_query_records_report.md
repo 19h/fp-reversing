@@ -149,3 +149,6 @@ The captured command/request control work is bounded O(1) local work and O(1) pr
 - **QG5**: Helper result/control side effects, private controls/wire fields, packet setup/publication, isolated blocks/admitted paths, allocation requests/native lifetimes and alias handoff/producer remain distinct.
 - **QG6**: Dual-image capture, original pointers/descriptors,539 selected locations,31 nonvacuous source formulas, five prior rechecks,1,280 bank cases and the SAT control support the stated boundaries.
 - **QG7**: Ranked continuation preserves writer/list publication, auxiliary producer, complete callback reachability, native transfer correlation, unknown metadata meaning and environmental context.
+
+
+The [serializer extent contract](userclient_serializer_extent_report.md) now establishes checked node-extent accumulation, strict 16 B padded sizing, the original allocator ABI and encoded extent custody. Under the stated successful-publication cut, the original consumer admits copying only when the request length equals that padded allocation extent. Node/padding emission, container stability across passes and native transaction pairing remain unknown; no additional Mach port endpoint is established.

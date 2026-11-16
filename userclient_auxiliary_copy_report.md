@@ -150,3 +150,6 @@ Each captured gate/byte step takes O(1) work and O(1) state. Conditional repetit
 - **QG5**: Conditional publication, private flag/mode, extent equality, positive step counter, native effects and whole-loop reachability remain distinct.
 - **QG6**: Dual-image capture, eight original pointers, 12 nonvacuous source formulas, one predecessor recheck, 698 instruction instances, 763 structural instances and the SAT control support the stated contracts.
 - **QG7**: Ranked continuation includes saved-state custody, serialization, record publication, transaction correlation, pointer environment and bounded mask-family candidates.
+
+
+The [serializer extent contract](userclient_serializer_extent_report.md) now establishes checked node-extent accumulation, strict 16 B padded sizing, the original allocator ABI and encoded extent custody. Under the stated successful-publication cut, the original consumer admits copying only when the request length equals that padded allocation extent. Node/padding emission, container stability across passes and native transaction pairing remain unknown; no additional Mach port endpoint is established.

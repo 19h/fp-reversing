@@ -583,6 +583,7 @@ def main():
     if exists(BASE/'userclient_transfer_boundary_report.md'):reports.add(BASE/'userclient_transfer_boundary_report.md')
     if exists(BASE/'userclient_query_records_report.md'):reports.add(BASE/'userclient_query_records_report.md')
     if exists(BASE/'userclient_auxiliary_copy_report.md'):reports.add(BASE/'userclient_auxiliary_copy_report.md')
+    if exists(BASE/'userclient_serializer_extent_report.md'):reports.add(BASE/'userclient_serializer_extent_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3350,6 +3351,15 @@ def main():
         manifest['validation']['userclient_auxiliary_copy_new_source_queries_unsat']=len(auxiliary_copy_audit['source_proofs'])
         manifest['validation']['userclient_auxiliary_copy_prior_source_queries_rechecked']=len(auxiliary_copy_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_auxiliary_copy_conditional_auxiliary_copy_contract_established']=auxiliary_copy['conditional_auxiliary_copy_contract_established']
+    if exists(ROOT/'userclient_serializer_extent_checks.json'):
+        serializer_extent=json.loads(read(ROOT/'userclient_serializer_extent_checks.json'))
+        serializer_extent_audit=json.loads(read(ROOT/'userclient_serializer_extent_audit.json'))
+        manifest['validation']['userclient_serializer_extent_increment_checks']=serializer_extent['verified_counts']
+        manifest['validation']['userclient_serializer_extent_static_scope']=serializer_extent['scope']
+        manifest['validation']['userclient_serializer_extent_independent_checks']=serializer_extent_audit['independent_totals']
+        manifest['validation']['userclient_serializer_extent_new_source_queries_unsat']=len(serializer_extent_audit['source_proofs'])
+        manifest['validation']['userclient_serializer_extent_prior_source_queries_rechecked']=len(serializer_extent_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_serializer_extent_conditional_serializer_extent_contract_established']=serializer_extent['conditional_serializer_extent_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
