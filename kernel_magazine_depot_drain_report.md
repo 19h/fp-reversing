@@ -163,3 +163,7 @@ No additional Mach port endpoint, transmitted right or message emission is estab
 - **QG5**: Full versus empty ordering, original control versus retention, observed u16 versus general u32 domains, raw bounds, captured versus executed bodies and leaf fixture limits are explicit.
 - **QG6**: Pinned source bytes, exact prior matches, fresh formulas, independent whole-state checks and two changed-source controls provide provenance.
 - **QG7**: Impact-ranked continuation identifies bounded opportunities and remaining interfaces; full-goal completion is not claimed.
+
+## Bulk-return continuation
+
+The [bulk-return report](kernel_magazine_bulk_return_report.md) establishes original slot clearing, object validation, free-bit/count/encoded-queue transitions, observer/wake request and original-count completion accounting. Forty-four private components pass364 independent checks;21 source queries and two separation lemmas pass. Four direct/prefill components consume exact original-fill-produced slots under explicit ownership handoffs and new-call epochs; the one-slot prefill changes capacity in a separate epoch. This supersedes the preceding full-bulk execution frontier while preserving native storage/ownership, authentication, exclusion, wake delivery and daemon transaction identity as unknown. No additional Mach endpoint, right or message emission is established. The full interface goal remains active.

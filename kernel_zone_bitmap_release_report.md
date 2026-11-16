@@ -172,3 +172,7 @@ Reproduction uses the relative extractor, audit and verifier entrypoints with `P
 - **QG7**: Impact-ranked continuation covers observers, reclamation, native synchronization, scheduling, transaction identity and arithmetic-domain expansion.
 
 The [paired zone observer/event protocol](kernel_zone_observer_event_report.md) establishes bit4 arm/clear stores, observer controls1/0 with post-callback next reloads, the shared Z+0x20 wait/wake hash and registration/unlock/block/reacquire request order. Seventeen source proofs and 65 private components retain explicit native callback, authentication, synchronization, scheduling, reclamation and daemon-epoch limits; no additional Mach endpoint is established.
+
+## Bulk-return continuation
+
+The [bulk-return report](kernel_magazine_bulk_return_report.md) establishes original slot clearing, object validation, free-bit/count/encoded-queue transitions, observer/wake request and original-count completion accounting. Forty-four private components pass364 independent checks;21 source queries and two separation lemmas pass. Four direct/prefill components consume exact original-fill-produced slots under explicit ownership handoffs and new-call epochs; the one-slot prefill changes capacity in a separate epoch. This supersedes the preceding full-bulk execution frontier while preserving native storage/ownership, authentication, exclusion, wake delivery and daemon transaction identity as unknown. No additional Mach endpoint, right or message emission is established. The full interface goal remains active.

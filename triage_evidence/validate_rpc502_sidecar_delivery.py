@@ -598,6 +598,7 @@ def main():
     if exists(BASE/'kernel_zone_observer_event_report.md'):reports.add(BASE/'kernel_zone_observer_event_report.md')
     if exists(BASE/'kernel_zone_prefill_callers_report.md'):reports.add(BASE/'kernel_zone_prefill_callers_report.md')
     if exists(BASE/'kernel_magazine_depot_drain_report.md'):reports.add(BASE/'kernel_magazine_depot_drain_report.md')
+    if exists(BASE/'kernel_magazine_bulk_return_report.md'):reports.add(BASE/'kernel_magazine_bulk_return_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3507,6 +3508,15 @@ def main():
         manifest['validation']['kernel_magazine_depot_drain_new_source_queries_unsat']=len(depot_drain_audit['source_proofs'])
         manifest['validation']['kernel_magazine_depot_drain_new_composition_queries_unsat']=len(depot_drain_audit['composition_proofs'])
         manifest['validation']['kernel_magazine_depot_drain_conditional_kernel_magazine_depot_drain_contract_established']=depot_drain['conditional_kernel_magazine_depot_drain_contract_established']
+    if exists(ROOT/'kernel_magazine_bulk_return_checks.json'):
+        bulk_return=json.loads(read(ROOT/'kernel_magazine_bulk_return_checks.json'))
+        bulk_return_audit=json.loads(read(ROOT/'kernel_magazine_bulk_return_audit.json'))
+        manifest['validation']['kernel_magazine_bulk_return_increment_checks']=bulk_return['verified_counts']
+        manifest['validation']['kernel_magazine_bulk_return_static_scope']=bulk_return['scope']
+        manifest['validation']['kernel_magazine_bulk_return_independent_checks']=bulk_return_audit['independent_totals']
+        manifest['validation']['kernel_magazine_bulk_return_new_source_queries_unsat']=len(bulk_return_audit['source_proofs'])
+        manifest['validation']['kernel_magazine_bulk_return_rechecked_separation_lemmas_unsat']=len(bulk_return_audit['rechecked_separation_lemmas'])
+        manifest['validation']['kernel_magazine_bulk_return_conditional_kernel_magazine_bulk_return_contract_established']=bulk_return['conditional_kernel_magazine_bulk_return_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
