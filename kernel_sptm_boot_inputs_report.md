@@ -186,3 +186,8 @@ The [boot CPU identity report](kernel_boot_cpu_identity_report.md) locates origi
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) traces source-produced boot selection through original main and thread construction before the later CPU-initializer epoch. It recovers mask/reservation, affinity prefixes, type bookkeeping and the post-enumeration parser/system-register gate. Receiver effects, actual boot environment and a matched daemon/kext/kernel transaction remain unknown.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) advances environmental input provenance through original tree-global publication, readers, CPU enumeration and bootstrap-thread setup. The actual boot/firmware caller chain, option parser, lower receiver and matched daemon transaction remain outside the established private composition.

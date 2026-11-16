@@ -2109,3 +2109,8 @@ The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) adds the o
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) connects the original topology producer to main and bootstrap-thread setup without injecting a boot pointer between those operations. It distinguishes encounter-order ordinals, physical affinity spans, creation-time cluster counters and merged types. A later explicit CPU-caller epoch, authentic tree/parser behavior and native lower-facility effects remain unresolved.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) replaces modeled lookup/property/iterator/named-node outputs with original source execution before CPU enumeration and thread setup. Independent decoding and 2880 API entry/return contracts establish data-pointer/length ownership, recursive state and cursor effects; authentic firmware, native startup and daemon pairing remain unknown.

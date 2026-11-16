@@ -1878,3 +1878,8 @@ The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) publishes1
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) adds 24 nonvacuous source queries, four prior rechecks, 23 private components and 4218 independent semantic checks; five altered-source controls are rejected. Thirteen original enumeration returns and twelve post-helper returns connect source-produced topology to original thread construction. Authentic environmental implementations, the remaining main interval, native lower effects and daemon pairing remain open; the full goal remains active.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) adds 20 nonvacuous source proofs, four prior rechecks, eleven private components, 7728 independent checks and four altered-store rejections. Original tree APIs supply 2880 matched call/return contracts; seven cases continue to original thread construction. Boot-option parsing, actual firmware/startup, lower effects and daemon pairing remain open; the full goal remains active.

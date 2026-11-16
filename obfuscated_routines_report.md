@@ -2089,3 +2089,8 @@ The [boot CPU identity report](kernel_boot_cpu_identity_report.md) assigns sourc
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff report](kernel_cpu_topology_handoff_report.md) adds source-supported roles for the topology enumerator and post-enumeration configuration helper, with exact target aliases for _strncmp, _SecureDTLookupEntry and _SecureDTIterateEntries. It retains unknown original names for parser/property/node helpers and separates one opaque word in main from two in the selector0e wrapper.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree API report](kernel_secure_dt_execution_report.md) captures the original tree-global initializer and recursive subtree helper with names unknown, and identifies exact _strcmp from target nlist. It corroborates the source-supported reader/scan roles through original execution, independent contracts and altered-store controls without assigning invented original names.

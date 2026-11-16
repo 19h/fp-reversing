@@ -1984,3 +1984,8 @@ The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) recovers C
 ## Source-produced topology handoff follow-up
 
 The [source-produced CPU topology handoff](kernel_cpu_topology_handoff_report.md) establishes no additional Mach port, right or message site. The enumerator passes zero-extended reg32 to the lower selector0e wrapper; its flag-selected opaque emission locations are distinguished from the earlier and later helper calls. Propagation through those unexecuted effects and any daemon-originated transaction remain unknown.
+
+
+## Original serialized-tree execution follow-up
+
+The [original serialized-tree API increment](kernel_secure_dt_execution_report.md) establishes no new Mach right, endpoint or emission location. It resolves original boot-environment reader/status/state contracts while retaining unknown daemon influence and lower receiver behavior; selector0e remains distinct from a Mach port name.

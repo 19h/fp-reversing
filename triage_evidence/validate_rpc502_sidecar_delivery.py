@@ -611,6 +611,7 @@ def main():
     if exists(BASE/'kernel_boot_header_handoff_report.md'):reports.add(BASE/'kernel_boot_header_handoff_report.md')
     if exists(BASE/'kernel_boot_cpu_identity_report.md'):reports.add(BASE/'kernel_boot_cpu_identity_report.md')
     if exists(BASE/'kernel_cpu_topology_handoff_report.md'):reports.add(BASE/'kernel_cpu_topology_handoff_report.md')
+    if exists(BASE/'kernel_secure_dt_execution_report.md'):reports.add(BASE/'kernel_secure_dt_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3651,6 +3652,16 @@ def main():
         manifest['validation']['kernel_cpu_topology_handoff_new_source_queries_unsat']=len(cpu_topology_handoff_audit['source_proofs'])
         manifest['validation']['kernel_cpu_topology_handoff_prior_source_queries_rechecked']=len(cpu_topology_handoff_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_cpu_topology_handoff_conditional_kernel_cpu_topology_handoff_contract_established']=cpu_topology_handoff['conditional_kernel_cpu_topology_handoff_contract_established']
+    if exists(ROOT/'kernel_secure_dt_execution_checks.json'):
+        secure_dt_execution=json.loads(read(ROOT/'kernel_secure_dt_execution_checks.json'))
+        secure_dt_execution_audit=json.loads(read(ROOT/'kernel_secure_dt_execution_audit.json'))
+        manifest['validation']['kernel_secure_dt_execution_increment_checks']=secure_dt_execution['verified_counts']
+        manifest['validation']['kernel_secure_dt_execution_static_scope']=secure_dt_execution['scope']
+        manifest['validation']['kernel_secure_dt_execution_independent_checks']=secure_dt_execution_audit['independent_totals']
+        manifest['validation']['kernel_secure_dt_execution_independent_replay_checks']=secure_dt_execution_audit['independent_replay_totals']
+        manifest['validation']['kernel_secure_dt_execution_new_source_queries_unsat']=len(secure_dt_execution_audit['source_proofs'])
+        manifest['validation']['kernel_secure_dt_execution_prior_source_queries_rechecked']=len(secure_dt_execution_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_secure_dt_execution_conditional_kernel_secure_dt_execution_contract_established']=secure_dt_execution['conditional_kernel_secure_dt_execution_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

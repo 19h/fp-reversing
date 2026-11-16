@@ -198,3 +198,8 @@ The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) recovers o
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) establishes the source topology producer feeding the bootstrap thread and conditional zero ASR16 block offset. Original main returns remain continuous through enumeration, the configuration helper and thread setup; the subsequent CPU initializer still uses an explicit complete-RAM caller epoch, with native cache/context effects unestablished.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) composes original environmental readers with source-produced boot identity and thread binding. Original boot selection is retained through the configuration helper and template copy; actual startup continuity, cache/context effects and native lower-block lifetime remain unestablished.

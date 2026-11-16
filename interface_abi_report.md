@@ -2238,3 +2238,8 @@ The [boot CPU identity report](kernel_boot_cpu_identity_report.md) separates log
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) recovers length-bounded state comparison, mask/admission and reserved-slot rules, CPU/cluster field and counter updates, plus the intervening siq_realtime_thread_mode parser ABI. Original enumeration returns directly through that helper into the 1472 B thread copy and register setter. Environmental parsing/iteration and native system effects remain explicit contract boundaries.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) establishes the original initializer, lookup/property/iterator/subtree and recursive named-scan ABIs on private serialized fixtures. It distinguishes 0xffffffff lookup/property misses with preserved outputs from zero-status iterator exhaustion with a null output, and records all 40 iterator-state bytes and the shared scan cursor.

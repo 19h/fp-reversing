@@ -157,3 +157,8 @@ No new incoming/outgoing Mach right, endpoint or message-emission site is establ
 | High | Pair a real daemon/user-client/provider transaction with kernel traffic | Cross-layer payload/right/status/epoch correlation beyond boot prerequisites |
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: TH-A1-TH-A7 register dependencies and falsification probes. **QG3** Pass for this increment: original routine roles, environmental/API ABI, topology/control flow, source-produced thread handoff, lower/Mach boundaries and reporting covered; full investigation remains active. **QG4** Pass: widths, byte units, exact arithmetic, extents, complexity and reproducible artifacts stated. **QG5** Pass: running prefixes versus literal identity, affinity spans versus counts, creation counters versus merged type, original return checkpoints versus later call epoch, source versus native execution and opaque-word locations distinguished. **QG6** Pass: pinned primary target bytes/metadata, reconstructed proofs, independent records/bytes, fresh replay and controls; coverage/native limits explicit. **QG7** Pass: bounded impact-ranked continuation above. `full_goal_complete=false`. [TH1-TH7]
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) replaces the declared lookup/property/iterator/named-node outputs with original routines on serialized private fixtures. It recovers finer miss/exhaustion statuses and output/state mutation, a real initializer publication and recursive cursor effects. Boot-option outputs, the explicit initializer-to-main and later CPU-caller epochs, native effects and daemon pairing remain conditional.

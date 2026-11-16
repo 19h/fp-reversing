@@ -162,3 +162,8 @@ The [boot CPU identity increment](kernel_boot_cpu_identity_report.md) extends so
 ## Source-produced topology handoff follow-up
 
 The [CPU topology handoff increment](kernel_cpu_topology_handoff_report.md) follows the bootargs/tree boundary into declared parser/lookup/iterator outputs consumed by original enumeration. Original source now publishes the selected CPU record and returns through a configuration helper into thread setup; authentic serialized tree processing and native startup composition remain unknown.
+
+
+## Original serialized-tree execution follow-up
+
+The [serialized-tree execution increment](kernel_secure_dt_execution_report.md) establishes original base/extent/end/initialized publication and original tree readers before topology/thread setup. Its initializer-to-main composition uses an explicit complete-RAM call frame; the actual initializer caller and copied-header/tree provenance remain open.
