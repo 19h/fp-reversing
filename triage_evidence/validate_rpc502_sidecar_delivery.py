@@ -596,6 +596,7 @@ def main():
     if exists(BASE/'kernel_retirement_magazines_report.md'):reports.add(BASE/'kernel_retirement_magazines_report.md')
     if exists(BASE/'kernel_zone_bitmap_release_report.md'):reports.add(BASE/'kernel_zone_bitmap_release_report.md')
     if exists(BASE/'kernel_zone_observer_event_report.md'):reports.add(BASE/'kernel_zone_observer_event_report.md')
+    if exists(BASE/'kernel_zone_prefill_callers_report.md'):reports.add(BASE/'kernel_zone_prefill_callers_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3488,6 +3489,14 @@ def main():
         manifest['validation']['kernel_zone_observer_event_prior_queries_unsat']=len(zone_observer_audit['rechecked_prior_proofs'])
         manifest['validation']['kernel_zone_observer_event_rechecked_separation_lemmas_unsat']=len(zone_observer_audit['rechecked_separation_lemmas'])
         manifest['validation']['kernel_zone_observer_event_conditional_kernel_zone_observer_event_contract_established']=zone_observer['conditional_kernel_zone_observer_event_contract_established']
+    if exists(ROOT/'kernel_zone_prefill_callers_checks.json'):
+        zone_prefill=json.loads(read(ROOT/'kernel_zone_prefill_callers_checks.json'))
+        zone_prefill_audit=json.loads(read(ROOT/'kernel_zone_prefill_callers_audit.json'))
+        manifest['validation']['kernel_zone_prefill_callers_increment_checks']=zone_prefill['verified_counts']
+        manifest['validation']['kernel_zone_prefill_callers_static_scope']=zone_prefill['scope']
+        manifest['validation']['kernel_zone_prefill_callers_independent_checks']=zone_prefill_audit['independent_totals']
+        manifest['validation']['kernel_zone_prefill_callers_new_source_queries_unsat']=len(zone_prefill_audit['source_proofs'])
+        manifest['validation']['kernel_zone_prefill_callers_conditional_kernel_zone_prefill_callers_contract_established']=zone_prefill['conditional_kernel_zone_prefill_callers_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

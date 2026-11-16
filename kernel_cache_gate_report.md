@@ -173,12 +173,11 @@ A raw `#0x380` mention at `0xfffffe000bd65024` is unrelated to the gate: its bas
 ## Reproduction, independent checks and quality gates
 
 ```sh
-cd /Users/___/dev/dylex/extracted
-export PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages
-export Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_kernel_cache_gate.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_kernel_cache_gate.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kernel_cache_gate.py
+export PYTHONPATH=triage_evidence
+export Z3_LIBRARY_PATH="<installed-z3-library-directory>"
+python3 -P triage_evidence/recover_kernel_cache_gate.py
+python3 -P triage_evidence/probe_kernel_cache_gate.py
+python3 -P triage_evidence/validate_kernel_cache_gate.py
 ```
 
 Independent replay imports no probe executor. It checks 7898 original visits, 1689 reads / 10447 bytes, 719 writes / 4627 bytes, nine declared process/step/enqueue models, 98 gate/policy/allocation frames, 12 allocation frames, 20 final boundaries, 640 SIMD registers, 20 system-register values, 5184 final global bytes and 20971520 final RAM bytes. All 20 components have independent full-zone/gate/statistics/cache oracles. Three source-produced gate/quota joins include two complete 256-byte zero-check coverage checks and one held fallback. Thirty-six policy lock-helper entries execute original code; joined allocators also execute their actual lock helper calls. Three bounded scalar queries return `unsat`.
@@ -186,3 +185,5 @@ Independent replay imports no probe executor. It checks 7898 original visits, 16
 Recovery/recapture costs O(image + instruction words + bounded windows + captured source) time and O(image + windows + source) space. CPU/effect validation costs O(image + visits + RAM + effects) time and O(image + one RAM map + journals) space. Exact solver domains/queries are retained; no solver-complexity bound is asserted.
 
 QG1: no normative conclusion required. QG2: CG1-CG8 record assumptions, dependencies and falsification probes. QG3: new anonymous routines, gate/counter/quota/process/lock interfaces, source-memory joins and Mach-emission boundary covered for this increment; full investigation remains active. QG4: page counters, byte extents, integer widths, score scaling, ticket bytes and modulo arithmetic are explicit; callback/sample time units remain unknown. QG5: initial sentinel versus pressure gate, gate versus failure, active quota versus bound, current versus filtered sample, process pointer versus Mach right and prefix versus returned call remain distinct. QG6: original bytes/fixups/symbols/metadata, exact transfer plans, independent state oracles and CPU/effect replay provide verified local provenance. QG7: bounded extensions and impact labels are recorded above. Scoped gates pass; native complete FairPlay continuity remains unknown.
+
+The [zone prefill and incoming-call study](kernel_zone_prefill_callers_report.md) establishes two counted list partitions, a source Boolean return and the continuous prefill-to-wait-arm early-return join. It locates three direct prefill calls and two direct wait-arm calls across all 15,490,987 scanned aligned executable words, and recovers the smaller caller's acquire/refill/wait-arm/unlock context. Nine local source proofs and 66 private components pass 708 independent checks; native provider effects, synchronization, scheduler admission, physical reclamation and daemon transaction identity remain unknown. Existing acquire and block-wrapper evidence is reused; no additional Mach endpoint is established. The full goal remains active.

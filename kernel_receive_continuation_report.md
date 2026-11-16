@@ -155,11 +155,10 @@ Fresh replay checks13137 original instruction visits,3457 reads /22209 bytes,259
 Four scalar counterexample queries are UNSAT: the signed callback branch tree equals the accepted wait/status partition; invocation enable depends only on state bit7; context equality bypasses both reload frontiers; and wait result0 preserves receive status. The last query assumes wait_result32=0; other domains are the recorded complete fixed-width scalar spaces. None proves native reachability, valid stacks, hardware PAC, scheduling or user delivery.
 
 ```sh
-cd /Users/___/dev/dylex/extracted
 
-env PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_kernel_receive_continuation.py
-env PYTHONPATH=triage_evidence /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_kernel_receive_continuation.py
-env PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kernel_receive_continuation.py
+env PYTHONPATH=triage_evidence python3 -P triage_evidence/recover_kernel_receive_continuation.py
+env PYTHONPATH=triage_evidence python3 -P triage_evidence/probe_kernel_receive_continuation.py
+env PYTHONPATH=triage_evidence Z3_LIBRARY_PATH="<installed-z3-library-directory>" python3 -P triage_evidence/validate_kernel_receive_continuation.py
 ```
 
 Extraction is O(image+source) time/space. Execution/replay and validation are O(image+visits+RAM+effects), with O(image+RAM+journals) space; four fixed-width solver formulas have separate solver cost. No bound on scheduler selection, contention, context-switch duration or receive latency follows.
@@ -189,3 +188,5 @@ QG5: Source RAM joins, reconstructed fragment registers, controlled status probe
 QG6: Complete original bodies/symbols and role words are recaptured. Fresh producer, independent semantic oracles, full-memory joins, CPU/effect replay and four bounded scalar proofs pass. No native scheduler, authentication, key programming or transport claim follows.
 
 QG7: The impact table bounds scheduling, receive-results, saved-stack/context, timer/cancellation, cleanup, NULL-continuation and source-nomenclature opportunities.
+
+The [zone prefill and incoming-call study](kernel_zone_prefill_callers_report.md) establishes two counted list partitions, a source Boolean return and the continuous prefill-to-wait-arm early-return join. It locates three direct prefill calls and two direct wait-arm calls across all 15,490,987 scanned aligned executable words, and recovers the smaller caller's acquire/refill/wait-arm/unlock context. Nine local source proofs and 66 private components pass 708 independent checks; native provider effects, synchronization, scheduler admission, physical reclamation and daemon transaction identity remain unknown. Existing acquire and block-wrapper evidence is reused; no additional Mach endpoint is established. The full goal remains active.
