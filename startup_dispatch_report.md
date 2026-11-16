@@ -127,3 +127,8 @@ Extraction is O(B+I+R+P) source time/space for collection bytes B, instructions 
 **QG6**: Original bytes, compiler/section metadata, chain membership, diagnostic/string pointers, SMT and independent byte interpretation provide primary provenance.
 
 **QG7**: The continuation table bounds native boot, ownership, phase-helper, PAC and daemon/kext evidence gaps.
+
+
+## Capacity caller and selected phase7 dependency
+
+The [boot-order report](kernel_zone_boot_order_report.md) captures the original capacity-policy caller and establishes policy -> dispatch6 -> dispatch7 on normal return. It identifies a unique magazine phase7/rank0 record before all selected IPC-zone rank3 records, preserving equal-rank ambiguity. The original dispatcher and phase-observer bodies execute with the complete policy in one private stack;149 registered callbacks per case remain explicit no-RAM return models. Source ordering now has a concrete caller/registration join; native callback effects, cursor protection, backing and cross-layer pairing remain unknown.

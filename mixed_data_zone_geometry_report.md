@@ -67,3 +67,8 @@ With element extent equal to the requested 48 B, the allocation wrapper skips it
 - **QG7** ranks runtime, lifecycle, refill and neighboring-view gaps.
 
 The [retirement dispatch guard](kernel_retirement_dispatch_report.md) independently establishes a 132,480 B zone interval and query-derived index < 690. The value 690 is the consumer's guard threshold, not an observed initialized zone count or the 22-entry size-table length. The initialized family/bias epoch and class-flag values remain separate premises.
+
+
+## Position within phase7
+
+The [boot-order report](kernel_zone_boot_order_report.md) places this original MixedData builder at phase7/rank2: after the unique magazine rank0 and two rank1 entries, before selected IPC-zone rank3 entries. It rechecks original sorting/fixups and executes the complete capacity policy and dispatcher/observer with registered callback bodies modeled. This source-order refinement does not fix a native dynamic-zone identifier or accounting epoch; actual intervening allocator effects and native view/bias state remain unknown.

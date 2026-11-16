@@ -162,3 +162,8 @@ The [per-CPU magazine drain](kernel_magazine_depot_drain_report.md) now identifi
 ## Capacity and magazine-view production
 
 The [magazine-bootstrap report](kernel_magazine_bootstrap_report.md) recovers the original8-slot file default, conditional10/14-slot policy and `zc_mag_size` presence-test ABI. Original dynamic zone creation publishes the `zcc_magazine_zone` view with requested extent16+8*K bytes; original cache initialization consumes that exact view/capacity in new-call components. Twenty-three source queries, two separation lemmas,47 components,220 independent checks and fresh replay of9370 visits pass. Earlier16-slot/144 B fixtures remain controlled inputs, not the recovered default. Native boot order, raw allocation/ownership, authentication, synchronization and daemon transaction identity remain unknown. No additional Mach endpoint/right/message emission is established; the full goal remains active.
+
+
+## Magazine-before-IPC source order
+
+The [boot-order report](kernel_zone_boot_order_report.md) establishes that the original caller completes its capacity policy before dispatching phase6 and phase7. The unique magazine phase7/rank0 callback sorts before the `ipc kmsgs`, `ipc ports` and `ipc port sets` rank3 specifications. The three rank3 entries retain unspecified universal tie order. Source ordering is therefore established under the table/cursor/return premises; the new continuous caller components model callback bodies and do not execute this report's constructors/caches in that stack. Phase6 and intervening rank1/rank2 effects, native storage/ownership and daemon transaction identity remain unknown.

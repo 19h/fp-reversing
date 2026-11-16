@@ -168,3 +168,8 @@ No additional Mach port endpoint, transmitted right or message emission is estab
 - **QG5**: File default versus controlled16, presence versus numeric assignment, partial source cuts, direct-range endpoint and new-call/storage models are explicit.
 - **QG6**: Pinned bytes, predecessor matches, queries, fresh replay, semantic state checks and altered-source controls provide provenance.
 - **QG7**: Impact-ranked continuation identifies bounded remaining interfaces; native boot/allocation identity and full-goal completion are not asserted.
+
+
+## Original caller and strict registration order
+
+The [boot-order report](kernel_zone_boot_order_report.md) refines the feature word at0xfffffe000cb29cb4 to the high u32 of the exact nlist-defined `_sane_size` u64 at0xfffffe000cb29cb0. For one unchanged input word V, F!=0 iff unsigned V>=2^32. The complete policy now executes through descriptors,689 metadata updates and both128 B callback-object initializations before returning to its original caller. That caller requests phase6 and phase7 in order; the magazine bootstrap is unique phase7/rank0, while selected IPC-zone entries are rank3. The new continuous caller tests model all registered callback bodies, so they do not replace this report's original publisher/cache components with a continuous zone-creation execution. Native helper effects, units/value stability, allocation/ownership and transaction pairing remain unknown.
