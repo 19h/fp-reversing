@@ -619,6 +619,7 @@ def main():
     if exists(BASE/'kernel_startup_registry_abi_report.md'):reports.add(BASE/'kernel_startup_registry_abi_report.md')
     if exists(BASE/'kernel_tunable_batch_execution_report.md'):reports.add(BASE/'kernel_tunable_batch_execution_report.md')
     if exists(BASE/'kernel_uuid_formatter_execution_report.md'):reports.add(BASE/'kernel_uuid_formatter_execution_report.md')
+    if exists(BASE/'kernel_timeout_execution_report.md'):reports.add(BASE/'kernel_timeout_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3739,6 +3740,16 @@ def main():
         manifest['validation']['kernel_uuid_formatter_execution_source_queries_unsat']=len(uuid_formatter_audit['source_proofs'])
         manifest['validation']['kernel_uuid_formatter_execution_retained_source_queries_rebuilt']=len(uuid_formatter_audit['retained_source_proofs_rebuilt'])
         manifest['validation']['kernel_uuid_formatter_execution_conditional_kernel_uuid_formatter_execution_contract_established']=uuid_formatter['conditional_kernel_uuid_formatter_execution_contract_established']
+    if exists(ROOT/'kernel_timeout_execution_checks.json'):
+        timeout=json.loads(read(ROOT/'kernel_timeout_execution_checks.json'))
+        timeout_audit=json.loads(read(ROOT/'kernel_timeout_execution_audit.json'))
+        manifest['validation']['kernel_timeout_execution_increment_checks']=timeout['verified_counts']
+        manifest['validation']['kernel_timeout_execution_static_scope']=timeout['scope']
+        manifest['validation']['kernel_timeout_execution_independent_checks']=timeout_audit['independent_totals']
+        manifest['validation']['kernel_timeout_execution_independent_replay_checks']=timeout_audit['independent_replay_totals']
+        manifest['validation']['kernel_timeout_execution_source_queries_unsat']=len(timeout_audit['source_proofs'])
+        manifest['validation']['kernel_timeout_execution_retained_source_queries_rebuilt']=len(timeout_audit['retained_source_proofs_rebuilt'])
+        manifest['validation']['kernel_timeout_execution_conditional_kernel_timeout_execution_contract_established']=timeout['conditional_kernel_timeout_execution_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
