@@ -1,5 +1,7 @@
 # Physical zeroing below permanent storage
 
+Subsequent evidence: The [refill-publication report](kernel_refill_publication_report.md) joins a selected original zeroing/list/mapping-request/metadata cut to original statistics/cache consumers under explicit private alias and new-call premises. The per-CPU bit0x40 yields one16 KiB logical capacity across N physical pages. Native mapping effects, ownership and whole-refill execution remain unknown.
+
 The original permanent-storage refill contains an explicit physical-page zeroing request: at `0xfffffe000bd72c40` it calls `0xfffffe000be7b5b8` with X0=zero_extend(PFN32)<<14 and W1=16384 B. The complete 255-instruction callee selects a direct alias or a per-CPU temporary window, then invokes original `_bzero`/`_memset` or generates a full-page `DC ZVA` loop. This establishes a concrete zeroing producer candidate below the [ready-page allocator](kernel_permanent_storage_report.md). It does not establish that a particular native statistics/cache allocation receives those exact physical bytes. [PZ1-PZ6]
 
 ```text

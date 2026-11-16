@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) identifies0xfffffe000bdc12cc as page-list consumption,0xfffffe000bdc15a8 as lower mapping-request construction,0xfffffe000bd73b5c as permanent metadata publication and0xfffffe000bd01454 as accounting. Eighteen new source obligations and15 independently replayed components qualify these roles; native mapping effects remain unknown.
+
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) identifies0xfffffe000be7b5b8 as a physical-range clear wrapper called by the original permanent refill at0xfffffe000bd72c40. Original nlist identifies its `_pmap_cache_attributes`, `_bzero` and `_memset` callees. Ten source obligations,80 private components and independent replay qualify the role; native aliases and allocation-to-zero identity remain unknown.
 
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) connects 0x1004cf268, 0x1005d0f74/0x1005d0f78, 0x1008337c4 and 0x10071062c/0x100710630 as a conditional saved-context/count-pointer component. Fresh replay checks 230 selected visits, with a six-instruction memory composition and a one-bit overwrite negative control. This establishes data provenance without assigning native caller ownership.

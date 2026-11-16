@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) links original zeroing, LIFO page-list consumption, lower PA/VA requests, accounting and ready metadata in one selected source cut. Exact private outputs feed original statistics/cache consumers. Constructor bit24/zone0x40 distinguishes one16 KiB logical capacity from N physical per-CPU pages. Native ownership, full refill and transport continuity remain unknown.
+
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) recovers selected refill PFN conversion, direct/window alias selection, low8 attribute dispatch,16 KiB chunking, temporary nesting and deferred-call boundaries. The inline source covers256 logical64 B blocks. Native mapping ownership, hardware cache configuration, complete refill and daemon transaction identity remain unknown.
 
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) joins the original saved-base alias to 76 constructor base reloads/count-pointer stores through retained file-control branches. It distinguishes API return effects, scalar-output resumptions and twelve zero-visit stages. The native filesystem inputs and object lifetime remain unknown; the prior 116 B per later-lineage entry premises remain dependencies.

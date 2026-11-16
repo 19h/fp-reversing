@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) establishes internal page-list/lower-mapping requests and declared storage-consumer epochs. The18 earlier-zero/later-mapping request links add no incoming/outgoing Mach endpoint, right disposition, message ID or emission site; native buffer/selector/right/transaction identity remains unknown.
+
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) adds internal refill/cache/mapping/clear-call boundaries. Its28 direct wrapper branches establish no additional incoming/outgoing Mach endpoint, right disposition, message ID or emission site. Native daemon-kext buffer/selector/right/transaction identity remains unknown.
 
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) establishes internal pointer continuity across declared file/API control boundaries. It adds no incoming/outgoing Mach port, right disposition or emission site. Same-native-transaction buffer/selector/right identity remains unknown.

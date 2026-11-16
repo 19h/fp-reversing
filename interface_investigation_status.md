@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) closes the selected private zero-request-to-ready-storage and statistics/cache consumer join. Eighteen new source queries,15 components,129 semantic checks and37461-visit independent replay pass. Native PA/VA effects, earlier acquisition/admission, full fixed-zone creation and daemon transaction identity remain unknown. The goal remains active.
+
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) establishes an explicit16384 B zero request in the permanent refill and the complete source zero wrapper. Ten source queries,80 private components,425 semantic checks and independent16254-visit replay pass. The native PFN-to-permanent-return join remains unknown; the next discriminating edge is refill mapping/metadata insertion. The goal remains active.
 
 Current initializer increment: The [initializer report](userclient_hash_table_initializer_report.md) closes the recovered token0xabd constructor path: an encoded count128/size-helper protocol supplies 3072 B to `_IOMallocTypeVarImpl`, followed by 128 entries at a 24 B stride. Raw defaults, 512 B of untouched entry padding, null/success output words and canary/return conditions are source-established. Twenty-one new obligations and three predecessor rechecks pass. Other token domains, table processing, native allocation/lifetimes and daemon-kext pairing remain unknown. The goal remains active.
