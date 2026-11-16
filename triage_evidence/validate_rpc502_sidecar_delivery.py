@@ -597,6 +597,7 @@ def main():
     if exists(BASE/'kernel_zone_bitmap_release_report.md'):reports.add(BASE/'kernel_zone_bitmap_release_report.md')
     if exists(BASE/'kernel_zone_observer_event_report.md'):reports.add(BASE/'kernel_zone_observer_event_report.md')
     if exists(BASE/'kernel_zone_prefill_callers_report.md'):reports.add(BASE/'kernel_zone_prefill_callers_report.md')
+    if exists(BASE/'kernel_magazine_depot_drain_report.md'):reports.add(BASE/'kernel_magazine_depot_drain_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3497,6 +3498,15 @@ def main():
         manifest['validation']['kernel_zone_prefill_callers_independent_checks']=zone_prefill_audit['independent_totals']
         manifest['validation']['kernel_zone_prefill_callers_new_source_queries_unsat']=len(zone_prefill_audit['source_proofs'])
         manifest['validation']['kernel_zone_prefill_callers_conditional_kernel_zone_prefill_callers_contract_established']=zone_prefill['conditional_kernel_zone_prefill_callers_contract_established']
+    if exists(ROOT/'kernel_magazine_depot_drain_checks.json'):
+        depot_drain=json.loads(read(ROOT/'kernel_magazine_depot_drain_checks.json'))
+        depot_drain_audit=json.loads(read(ROOT/'kernel_magazine_depot_drain_audit.json'))
+        manifest['validation']['kernel_magazine_depot_drain_increment_checks']=depot_drain['verified_counts']
+        manifest['validation']['kernel_magazine_depot_drain_static_scope']=depot_drain['scope']
+        manifest['validation']['kernel_magazine_depot_drain_independent_checks']=depot_drain_audit['independent_totals']
+        manifest['validation']['kernel_magazine_depot_drain_new_source_queries_unsat']=len(depot_drain_audit['source_proofs'])
+        manifest['validation']['kernel_magazine_depot_drain_new_composition_queries_unsat']=len(depot_drain_audit['composition_proofs'])
+        manifest['validation']['kernel_magazine_depot_drain_conditional_kernel_magazine_depot_drain_contract_established']=depot_drain['conditional_kernel_magazine_depot_drain_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
