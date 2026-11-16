@@ -618,6 +618,7 @@ def main():
     if exists(BASE/'kernel_bootstrap_state_composition_report.md'):reports.add(BASE/'kernel_bootstrap_state_composition_report.md')
     if exists(BASE/'kernel_startup_registry_abi_report.md'):reports.add(BASE/'kernel_startup_registry_abi_report.md')
     if exists(BASE/'kernel_tunable_batch_execution_report.md'):reports.add(BASE/'kernel_tunable_batch_execution_report.md')
+    if exists(BASE/'kernel_uuid_formatter_execution_report.md'):reports.add(BASE/'kernel_uuid_formatter_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3728,6 +3729,16 @@ def main():
         manifest['validation']['kernel_tunable_batch_execution_source_queries_unsat']=len(batch_audit['source_proofs'])
         manifest['validation']['kernel_tunable_batch_execution_retained_source_queries_rebuilt']=len(batch_audit['retained_source_proofs_rebuilt'])
         manifest['validation']['kernel_tunable_batch_execution_conditional_kernel_tunable_batch_execution_contract_established']=batch['conditional_kernel_tunable_batch_execution_contract_established']
+    if exists(ROOT/'kernel_uuid_formatter_execution_checks.json'):
+        uuid_formatter=json.loads(read(ROOT/'kernel_uuid_formatter_execution_checks.json'))
+        uuid_formatter_audit=json.loads(read(ROOT/'kernel_uuid_formatter_execution_audit.json'))
+        manifest['validation']['kernel_uuid_formatter_execution_increment_checks']=uuid_formatter['verified_counts']
+        manifest['validation']['kernel_uuid_formatter_execution_static_scope']=uuid_formatter['scope']
+        manifest['validation']['kernel_uuid_formatter_execution_independent_checks']=uuid_formatter_audit['independent_totals']
+        manifest['validation']['kernel_uuid_formatter_execution_independent_replay_checks']=uuid_formatter_audit['independent_replay_totals']
+        manifest['validation']['kernel_uuid_formatter_execution_source_queries_unsat']=len(uuid_formatter_audit['source_proofs'])
+        manifest['validation']['kernel_uuid_formatter_execution_retained_source_queries_rebuilt']=len(uuid_formatter_audit['retained_source_proofs_rebuilt'])
+        manifest['validation']['kernel_uuid_formatter_execution_conditional_kernel_uuid_formatter_execution_contract_established']=uuid_formatter['conditional_kernel_uuid_formatter_execution_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
