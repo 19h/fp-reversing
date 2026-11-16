@@ -2123,3 +2123,7 @@ The [boot-option execution increment](kernel_boot_option_execution_report.md) ad
 ## Boot-environment publication follow-up
 
 The missing bootargs-global producer is the original store at 0xfffffe000c5e6690, reached by actual main after both original input copies. Tree publication is inline, guarded and preceded by a carry check; first-call state publication occurs before that check. Native startup and later helpers remain outside coverage. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+Original serialized-tree values now populate the range cache, clock block, identity/firmware fields, diagnostic mask and cpu-factor before actual main continuation. Native units, earlier boot admission, hardware effects and matched daemon/kernel execution remain unknown. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

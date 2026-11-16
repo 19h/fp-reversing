@@ -2103,3 +2103,7 @@ The [boot-option execution report](kernel_boot_option_execution_report.md) corro
 ## Boot-environment publication follow-up
 
 Routine 0xfffffe000c5e6620 is corroborated as a guarded boot-environment publisher with a mode-dependent context tail. Its first-call pointer/tree/video fields and exact _strlcpy literal transfer are recovered; the original name remains unknown. The separate tree initializer has no direct B/BL caller in the three scanned kernel executable segments. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+Six additional routines have corroborated clock, range-anchor cache, diagnostic/cpu-factor, timer-event and ACTLR-continuation roles. Exact original names remain unknown. Original clock, diagnostic and timer bodies execute all captured PCs in the selected cases, without a complete-path claim. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

@@ -1998,3 +1998,7 @@ The [original boot-option execution increment](kernel_boot_option_execution_repo
 ## Boot-environment publication follow-up
 
 Boot-environment publication adds no Mach port, right or message-emission PC. Its four census matches are ordinary kernel B/BL edges. Boot-option contents and initialization modes remain environmental inputs; direct daemon control is unknown. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+The platform-return increment establishes internal kernel call/return and environment-derived data contracts. It adds no incoming/outgoing Mach port, right or Mach-message emission PC. Direct daemon influence over these boot inputs remains unknown. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

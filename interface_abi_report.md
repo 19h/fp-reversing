@@ -2252,3 +2252,7 @@ The [boot-option execution report](kernel_boot_option_execution_report.md) estab
 ## Boot-environment publication follow-up
 
 The guarded boot-environment publisher at 0xfffffe000c5e6620 receives the copied bootargs from actual main call 0xfffffe000c639b98 and stores their pointer at 0xfffffe0007f8b6e8. Initialized nonzero-mode calls instead forward a context and retain that saved pointer; original inline tree bounds and later parser-call ABIs are corroborated. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+Original main now executes the platform clock/cache/identity/diagnostic tail and returns to its actual call site, then reaches the pre-enumeration boundary through original timer and option-parser bodies. Field/copy widths and bounded timer arithmetic are independently corroborated. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

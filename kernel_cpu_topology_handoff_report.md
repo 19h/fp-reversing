@@ -171,3 +171,7 @@ The [boot-option execution increment](kernel_boot_option_execution_report.md) su
 ## Boot-environment publication follow-up
 
 The environmental bootargs-global producer and actual earlier main caller are now corroborated, including original input copies and inline tree-global publication. Later initialized mode-1 calls pass either the fixed CPU context or null and retain the first bootargs pointer. Intervening helper execution and uninterrupted composition into enumeration remain open. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+Original main now reaches the enumeration call boundary through full platform return and pre-enumeration timer/parser setup. The new platform state and this report topology/thread cases remain separate evidence histories until an exact state-transfer/continuation join is executed and checked. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

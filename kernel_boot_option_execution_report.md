@@ -161,3 +161,7 @@ No new incoming/outgoing Mach port, right or message-emission location is establ
 ## Boot-environment publication follow-up
 
 The previously open bootargs-global producer is now recovered: main passes its original 1152 B copy to 0xfffffe000c5e6620, and PC 0xfffffe000c5e6690 writes global 0xfffffe0007f8b6e8. Local later main parser-call ABIs consume that pointer plus 0x6c. This new prefix and the existing parser/topology cases retain their separate call-frame boundaries. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+A new original main/platform experiment reaches this report enumeration call site without the earlier generic-initializer-to-main epoch. It executes real clock/cache/identity/diagnostic helpers, the timer calculation and four preceding parser calls. The state histories are not yet claimed joined through enumeration/thread setup. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

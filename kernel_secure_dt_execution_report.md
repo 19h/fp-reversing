@@ -160,3 +160,7 @@ The [boot-option execution increment](kernel_boot_option_execution_report.md) re
 ## Boot-environment publication follow-up
 
 Actual boot callers publish tree globals inline at the early initializer and guarded environment publisher. The new bounded census finds no direct B/BL call to 0xfffffe000c6622b8 in three kernel executable segments. The original initializer execution in this report remains an explicit fixture epoch; it is not evidence of a native caller to that separate initializer. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+Original tree APIs now serve actual platform clock/cache/identity/chosen and diagnostic consumers after inline tree publication, with no separate generic initializer call. Per-call contracts validate the decoded serialized bytes and outputs throughout the continuous main/platform experiment. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

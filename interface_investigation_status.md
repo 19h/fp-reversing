@@ -1892,3 +1892,7 @@ The [boot-option execution increment](kernel_boot_option_execution_report.md) ad
 ## Boot-environment publication follow-up
 
 The boot-environment publication increment establishes the actual main-to-publisher edge, saved bootargs producer, mode/context distinction, inline tree setup and four later option-parser ABIs. Nine private components pass 19 nonvacuous source proofs, 97 semantic checks and fresh replay; four source controls are rejected. The full interface goal remains active. See the [boot-environment publication report](kernel_boot_environment_publication_report.md) for source PCs, assumptions, scoped validation and remaining boundaries.
+
+## Original platform-return follow-up
+
+The complete original mode-0 platform path now returns into actual main and reaches the CPU-enumeration call site continuously in eight private cases. Nine components pass 30 new source proofs, 19 prior rechecks, 3254 independent semantic checks and fresh replay; six altered-source controls are rejected. The full goal remains active. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.

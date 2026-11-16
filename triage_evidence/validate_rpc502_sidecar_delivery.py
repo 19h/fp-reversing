@@ -614,6 +614,7 @@ def main():
     if exists(BASE/'kernel_secure_dt_execution_report.md'):reports.add(BASE/'kernel_secure_dt_execution_report.md')
     if exists(BASE/'kernel_boot_option_execution_report.md'):reports.add(BASE/'kernel_boot_option_execution_report.md')
     if exists(BASE/'kernel_boot_environment_publication_report.md'):reports.add(BASE/'kernel_boot_environment_publication_report.md')
+    if exists(BASE/'kernel_platform_environment_execution_report.md'):reports.add(BASE/'kernel_platform_environment_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3684,6 +3685,16 @@ def main():
         manifest['validation']['kernel_boot_environment_publication_new_source_queries_unsat']=len(environment_audit['source_proofs'])
         manifest['validation']['kernel_boot_environment_publication_branch_census']=environment_audit['independent_branch_census']
         manifest['validation']['kernel_boot_environment_publication_conditional_kernel_boot_environment_publication_contract_established']=environment['conditional_kernel_boot_environment_publication_contract_established']
+    if exists(ROOT/'kernel_platform_environment_execution_checks.json'):
+        platform=json.loads(read(ROOT/'kernel_platform_environment_execution_checks.json'))
+        platform_audit=json.loads(read(ROOT/'kernel_platform_environment_execution_audit.json'))
+        manifest['validation']['kernel_platform_environment_execution_increment_checks']=platform['verified_counts']
+        manifest['validation']['kernel_platform_environment_execution_static_scope']=platform['scope']
+        manifest['validation']['kernel_platform_environment_execution_independent_checks']=platform_audit['independent_totals']
+        manifest['validation']['kernel_platform_environment_execution_independent_replay_checks']=platform_audit['independent_replay_totals']
+        manifest['validation']['kernel_platform_environment_execution_new_source_queries_unsat']=len(platform_audit['source_proofs'])
+        manifest['validation']['kernel_platform_environment_execution_prior_source_queries_rechecked']=len(platform_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_platform_environment_execution_conditional_kernel_platform_environment_execution_contract_established']=platform['conditional_kernel_platform_environment_execution_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -149,3 +149,7 @@ No new incoming/outgoing Mach port, port right or Mach-message emission PC is es
 | Low | Compare equivalent publisher contracts in another identified build | Separate stable ABI from build-specific layout; no equivalence assumed |
 
 **QG1**: Factual source/interface analysis; no normative content required. **QG2**: EP-A1-EP-A7 list dependencies and falsification probes. **QG3**: Producer, callers, modes, widths, tree-global stores, later consumers and IPC limits covered for this increment; full goal remains active. **QG4**: Reproducible hashes, exact widths, byte extents, algorithms and complexity stated. **QG5**: Pointer/context roles, full64 saved mode versus low32 predicate, partial publication, static consumers and private/native boundaries separated. **QG6**: Original image bytes, exact symbols, independent decoding, source queries and replay retained. **QG7**: Impact-ranked continuation bounded above. All gates pass for this increment; authentic startup, later helpers and matched daemon/kernel execution remain unknown.
+
+## Original platform-return follow-up
+
+The later-helper cut is now replaced in a separate continuous experiment: original range/cache, CPU-clock, identity/chosen and diagnostic bodies return into actual main, followed by original timer and four parser calls. The earlier registration/PAC/native premises remain explicit; enumeration is the new stop boundary. See the [platform environment execution report](kernel_platform_environment_execution_report.md) for source intervals, contracts, assumptions and remaining boundaries.
