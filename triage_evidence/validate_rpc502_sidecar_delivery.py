@@ -624,6 +624,7 @@ def main():
     if exists(BASE/'kernel_longterm_bootstrap_execution_report.md'):reports.add(BASE/'kernel_longterm_bootstrap_execution_report.md')
     if exists(BASE/'kernel_early_logging_contract_report.md'):reports.add(BASE/'kernel_early_logging_contract_report.md')
     if exists(BASE/'kernel_early_logging_execution_report.md'):reports.add(BASE/'kernel_early_logging_execution_report.md')
+    if exists(BASE/'kernel_collection_header_publication_report.md'):reports.add(BASE/'kernel_collection_header_publication_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3786,6 +3787,13 @@ def main():
         manifest['validation']['kernel_early_logging_execution_static_scope']=logging_execution['scope']
         manifest['validation']['kernel_early_logging_execution_independent_checks']=logging_execution_audit['independent_totals']
         manifest['validation']['kernel_early_logging_execution_independent_replay_checks']=logging_execution_audit['independent_replay_totals']
+    if exists(ROOT/'kernel_collection_header_publication_checks.json'):
+        collection_header=json.loads(read(ROOT/'kernel_collection_header_publication_checks.json'))
+        collection_header_audit=json.loads(read(ROOT/'kernel_collection_header_publication_audit.json'))
+        manifest['validation']['kernel_collection_header_publication_increment_checks']=collection_header['verified_counts']
+        manifest['validation']['kernel_collection_header_publication_static_scope']=collection_header['scope']
+        manifest['validation']['kernel_collection_header_publication_independent_checks']=collection_header_audit['independent_totals']
+        manifest['validation']['kernel_collection_header_publication_independent_replay_checks']=collection_header_audit['independent_replay_totals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

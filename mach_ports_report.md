@@ -2041,3 +2041,5 @@ The [post-lock timer bootstrap report](kernel_longterm_bootstrap_execution_repor
 The [early logging contract report](kernel_early_logging_contract_report.md) identifies conditional character-storage/call sites and later logging-counter banks. These are not established Mach-port emitters. No new port right, message ID or matched daemon/provider/FairPlayIOKit transaction is claimed; continuous bootstrap remains before its DAIF read.
 
 The [continuous early logging report](kernel_early_logging_execution_report.md) confirms 47 original ring-byte writes, authenticated callback custody and post-format counter publication. These storage/call events do not establish a Mach-right or native console emission. The logger stops before its configuration-object dereference; matched FairPlay IPC remains unknown.
+
+The [collection-header publication report](kernel_collection_header_publication_report.md) establishes header/slide/minimum-address stores and their boot caller. These events establish no new incoming or outgoing Mach right, message ID or port-emission site. Native daemon/provider/kernel correspondence remains unknown.
