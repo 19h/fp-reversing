@@ -592,6 +592,7 @@ def main():
     if exists(BASE/'kernel_retirement_query_report.md'):reports.add(BASE/'kernel_retirement_query_report.md')
     if exists(BASE/'kernel_retirement_dispatch_report.md'):reports.add(BASE/'kernel_retirement_dispatch_report.md')
     if exists(BASE/'kernel_retirement_diagnostics_report.md'):reports.add(BASE/'kernel_retirement_diagnostics_report.md')
+    if exists(BASE/'kernel_zone_retirement_report.md'):reports.add(BASE/'kernel_zone_retirement_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3442,6 +3443,16 @@ def main():
         manifest['validation']['kernel_retirement_diagnostics_new_source_queries_unsat']=len(retirement_diagnostics_audit['source_proofs'])
         manifest['validation']['kernel_retirement_diagnostics_prior_source_queries_rechecked']=len(retirement_diagnostics_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_retirement_diagnostics_conditional_kernel_retirement_diagnostics_contract_established']=retirement_diagnostics['conditional_kernel_retirement_diagnostics_contract_established']
+    if exists(ROOT/'kernel_zone_retirement_checks.json'):
+        zone_retirement=json.loads(read(ROOT/'kernel_zone_retirement_checks.json'))
+        zone_retirement_audit=json.loads(read(ROOT/'kernel_zone_retirement_audit.json'))
+        manifest['validation']['kernel_zone_retirement_increment_checks']=zone_retirement['verified_counts']
+        manifest['validation']['kernel_zone_retirement_static_scope']=zone_retirement['scope']
+        manifest['validation']['kernel_zone_retirement_independent_checks']=zone_retirement_audit['independent_totals']
+        manifest['validation']['kernel_zone_retirement_new_source_queries_unsat']=len(zone_retirement_audit['source_proofs'])
+        manifest['validation']['kernel_zone_retirement_new_composition_queries_unsat']=len(zone_retirement_audit['composition_proofs'])
+        manifest['validation']['kernel_zone_retirement_prior_source_queries_rechecked']=len(zone_retirement_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_zone_retirement_conditional_kernel_zone_retirement_contract_established']=zone_retirement['conditional_kernel_zone_retirement_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
