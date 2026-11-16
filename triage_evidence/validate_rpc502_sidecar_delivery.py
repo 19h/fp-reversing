@@ -623,6 +623,7 @@ def main():
     if exists(BASE/'kernel_lock_bootstrap_execution_report.md'):reports.add(BASE/'kernel_lock_bootstrap_execution_report.md')
     if exists(BASE/'kernel_longterm_bootstrap_execution_report.md'):reports.add(BASE/'kernel_longterm_bootstrap_execution_report.md')
     if exists(BASE/'kernel_early_logging_contract_report.md'):reports.add(BASE/'kernel_early_logging_contract_report.md')
+    if exists(BASE/'kernel_early_logging_execution_report.md'):reports.add(BASE/'kernel_early_logging_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3778,6 +3779,13 @@ def main():
         manifest['validation']['kernel_early_logging_contract_increment_checks']=early_logging['verified_counts']
         manifest['validation']['kernel_early_logging_contract_static_scope']=early_logging['scope']
         manifest['validation']['kernel_early_logging_contract_independent_checks']=early_logging_audit['independent_totals']
+    if exists(ROOT/'kernel_early_logging_execution_checks.json'):
+        logging_execution=json.loads(read(ROOT/'kernel_early_logging_execution_checks.json'))
+        logging_execution_audit=json.loads(read(ROOT/'kernel_early_logging_execution_audit.json'))
+        manifest['validation']['kernel_early_logging_execution_increment_checks']=logging_execution['verified_counts']
+        manifest['validation']['kernel_early_logging_execution_static_scope']=logging_execution['scope']
+        manifest['validation']['kernel_early_logging_execution_independent_checks']=logging_execution_audit['independent_totals']
+        manifest['validation']['kernel_early_logging_execution_independent_replay_checks']=logging_execution_audit['independent_replay_totals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
