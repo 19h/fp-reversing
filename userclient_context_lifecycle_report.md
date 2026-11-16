@@ -220,3 +220,6 @@ The actual parser caller now has a conditional command-field lookup, protected s
 ## Caller cleanup and copy-back increment
 
 Caller cleanup callback0x1a, distinct staged/auxiliary buffers, finite protected copy-back and outer allocation/retirement/status contracts are now established conditionally. Native identity, aliases, callee effects and cross-layer transaction correlation remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+
+The [query failure and lower allocation contract](userclient_query_failure_report.md) establishes conditional saved error0xce515bb2, optional-data/typed-node cleanup requests and delivery through all three saved callbacks. The pending-node context cell remains unchanged across the selected cleanup return. The lower typed allocator masks adapter0x8004 to three bits before adding its own flags; selected zone/heap/size arguments are recovered. Native allocator outcomes, ownership/free effects, indirect saved-status aliases, public error status and daemon transaction pairing remain unknown; no additional Mach endpoint is established.

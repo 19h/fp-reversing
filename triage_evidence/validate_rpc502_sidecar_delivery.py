@@ -587,6 +587,7 @@ def main():
     if exists(BASE/'userclient_serializer_emission_report.md'):reports.add(BASE/'userclient_serializer_emission_report.md')
     if exists(BASE/'userclient_query_writer_report.md'):reports.add(BASE/'userclient_query_writer_report.md')
     if exists(BASE/'userclient_query_publication_report.md'):reports.add(BASE/'userclient_query_publication_report.md')
+    if exists(BASE/'userclient_query_failure_report.md'):reports.add(BASE/'userclient_query_failure_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3391,6 +3392,15 @@ def main():
         manifest['validation']['userclient_query_publication_prior_source_queries_rechecked']=len(query_publication_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_query_publication_new_composition_queries_unsat']=len(query_publication_audit['composition_proofs'])
         manifest['validation']['userclient_query_publication_conditional_query_publication_contract_established']=query_publication['conditional_query_publication_contract_established']
+    if exists(ROOT/'userclient_query_failure_checks.json'):
+        query_failure=json.loads(read(ROOT/'userclient_query_failure_checks.json'))
+        query_failure_audit=json.loads(read(ROOT/'userclient_query_failure_audit.json'))
+        manifest['validation']['userclient_query_failure_increment_checks']=query_failure['verified_counts']
+        manifest['validation']['userclient_query_failure_static_scope']=query_failure['scope']
+        manifest['validation']['userclient_query_failure_independent_checks']=query_failure_audit['independent_totals']
+        manifest['validation']['userclient_query_failure_new_source_queries_unsat']=len(query_failure_audit['source_proofs'])
+        manifest['validation']['userclient_query_failure_prior_source_queries_rechecked']=len(query_failure_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_query_failure_conditional_query_failure_contract_established']=query_failure['conditional_query_failure_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -220,3 +220,6 @@ Extraction takes O(B+I+256R) time/space for consumed image bytes B, instructions
 - **QG5**: Source producer versus stable-slot premise, local search versus finite-list termination, descriptor correspondence versus identity, effects cuts versus native calls, and internal copy gate versus provider status remain distinct.
 - **QG6**: Dual-image capture,27 original pointers,75 nonvacuous source formulas, four separate composition formulas,12 predecessor rechecks,1,024 bank cases and the mutation counterexample support the stated bounds.
 - **QG7**: Ranked continuation preserves native transaction pairing, actual list context, failure cleanup, ownership/synchronization, output-slot aliases and unresolved semantics.
+
+
+The [query failure and lower allocation contract](userclient_query_failure_report.md) establishes conditional saved error0xce515bb2, optional-data/typed-node cleanup requests and delivery through all three saved callbacks. The pending-node context cell remains unchanged across the selected cleanup return. The lower typed allocator masks adapter0x8004 to three bits before adding its own flags; selected zone/heap/size arguments are recovered. Native allocator outcomes, ownership/free effects, indirect saved-status aliases, public error status and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
