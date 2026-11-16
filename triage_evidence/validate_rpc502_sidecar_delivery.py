@@ -599,6 +599,7 @@ def main():
     if exists(BASE/'kernel_zone_prefill_callers_report.md'):reports.add(BASE/'kernel_zone_prefill_callers_report.md')
     if exists(BASE/'kernel_magazine_depot_drain_report.md'):reports.add(BASE/'kernel_magazine_depot_drain_report.md')
     if exists(BASE/'kernel_magazine_bulk_return_report.md'):reports.add(BASE/'kernel_magazine_bulk_return_report.md')
+    if exists(BASE/'kernel_magazine_bootstrap_report.md'):reports.add(BASE/'kernel_magazine_bootstrap_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3517,6 +3518,16 @@ def main():
         manifest['validation']['kernel_magazine_bulk_return_new_source_queries_unsat']=len(bulk_return_audit['source_proofs'])
         manifest['validation']['kernel_magazine_bulk_return_rechecked_separation_lemmas_unsat']=len(bulk_return_audit['rechecked_separation_lemmas'])
         manifest['validation']['kernel_magazine_bulk_return_conditional_kernel_magazine_bulk_return_contract_established']=bulk_return['conditional_kernel_magazine_bulk_return_contract_established']
+    if exists(ROOT/'kernel_magazine_bootstrap_checks.json'):
+        magazine_bootstrap=json.loads(read(ROOT/'kernel_magazine_bootstrap_checks.json'))
+        magazine_bootstrap_audit=json.loads(read(ROOT/'kernel_magazine_bootstrap_audit.json'))
+        manifest['validation']['kernel_magazine_bootstrap_increment_checks']=magazine_bootstrap['verified_counts']
+        manifest['validation']['kernel_magazine_bootstrap_static_scope']=magazine_bootstrap['scope']
+        manifest['validation']['kernel_magazine_bootstrap_independent_checks']=magazine_bootstrap_audit['independent_totals']
+        manifest['validation']['kernel_magazine_bootstrap_independent_replay_checks']=magazine_bootstrap_audit['independent_replay_totals']
+        manifest['validation']['kernel_magazine_bootstrap_new_source_queries_unsat']=len(magazine_bootstrap_audit['source_proofs'])
+        manifest['validation']['kernel_magazine_bootstrap_rechecked_separation_lemmas_unsat']=len(magazine_bootstrap_audit['rechecked_separation_lemmas'])
+        manifest['validation']['kernel_magazine_bootstrap_conditional_kernel_magazine_bootstrap_contract_established']=magazine_bootstrap['conditional_kernel_magazine_bootstrap_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

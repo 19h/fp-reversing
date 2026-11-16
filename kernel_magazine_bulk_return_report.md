@@ -143,3 +143,7 @@ The full interface investigation remains active.
 - **QG5**: Source versus native behavior, partial diagnostics, capacity epochs, unexecuted tag PC and leaf models are explicit.
 - **QG6**: Pinned bytes, exact previous matches, fresh source queries, independent replay/oracles and mutation controls provide provenance.
 - **QG7**: Impact-ranked continuation identifies bounded remaining interfaces; native identity and whole-goal completion are not asserted.
+
+## Capacity and magazine-view production
+
+The [magazine-bootstrap report](kernel_magazine_bootstrap_report.md) recovers the original8-slot file default, conditional10/14-slot policy and `zc_mag_size` presence-test ABI. Original dynamic zone creation publishes the `zcc_magazine_zone` view with requested extent16+8*K bytes; original cache initialization consumes that exact view/capacity in new-call components. Twenty-three source queries, two separation lemmas,47 components,220 independent checks and fresh replay of9370 visits pass. Earlier16-slot/144 B fixtures remain controlled inputs, not the recovered default. Native boot order, raw allocation/ownership, authentication, synchronization and daemon transaction identity remain unknown. No additional Mach endpoint/right/message emission is established; the full goal remains active.
