@@ -169,3 +169,8 @@ Original tree APIs now serve actual platform clock/cache/identity/chosen and dia
 ## Initialized-data and continuous thread-handoff follow-up
 
 The [bootstrap state-composition report](kernel_bootstrap_state_composition_report.md) preserves the prior zero-page fixture and establishes its pre-store null-destination boundary. A separately declared original initialized topology page permits continuous main/platform/timer/enumeration/post-helper/thread-copy/setter execution, without a call-frame epoch or later state repair. The paired input/register comparison, original pointer fixups, post-helper default 2, selected CPU ordinal, logical register custody and remaining selector0e/native/Mach boundaries are explicit.
+
+
+## Startup registry and mach_ipc registration follow-up
+
+The [startup registry ABI increment](kernel_startup_registry_abi_report.md) captures all 3519 original initialization records and 115 distinct kernel callback bodies, their authenticated pointer metadata, phase names and 22 tree/boot-option tunable descriptors. Original main now continues through timebase/trace, complete sorting, its first actual tunable callback/return and cursor publication. Three private runs establish absent/property/option precedence; entry 123 registers the previously analyzed MIG hash initializer at phase 14 (`mach_ipc`), rank zero, argument zero. Phase-14 execution, remaining callback effects, native startup/PAC lifetime and a matched FairPlay/Mach transaction remain unknown; the full goal remains active.

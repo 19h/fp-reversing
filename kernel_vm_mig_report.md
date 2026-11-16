@@ -35,12 +35,11 @@ Evidence: [original tables/functions and hash model](triage_evidence/kernel_vm_m
 [fresh independent replay](triage_evidence/kernel_vm_mig_checks.json),
 and [reconstructed SDK/layout probe](triage_evidence/kernel_vm_mig_sdk.c).
 
-From `/Users/___/dev/dylex/extracted`, apply this prefix in order:
+From the repository root, use a Python environment with Capstone, Unicorn and
+Z3 installed and its Z3 shared library configured. Apply this prefix in order:
 
 ```text
-env PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages \
- Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime \
- /Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/<script>
+env PYTHONPATH=triage_evidence python3 -P triage_evidence/<script>
 
 recover_kernel_vm_mig.py
 probe_kernel_vm_mig.py
@@ -277,3 +276,8 @@ QG7: Pass; impact-labeled continuations cover input representation, reply emissi
 
 Publication evidence: [preservation](triage_evidence/kernel_vm_mig_delivery.json)
 and [quality gates](triage_evidence/kernel_vm_mig_quality_gates.json).
+
+
+## Startup registry and mach_ipc registration follow-up
+
+The [startup registry ABI increment](kernel_startup_registry_abi_report.md) captures all 3519 original initialization records and 115 distinct kernel callback bodies, their authenticated pointer metadata, phase names and 22 tree/boot-option tunable descriptors. Original main now continues through timebase/trace, complete sorting, its first actual tunable callback/return and cursor publication. Three private runs establish absent/property/option precedence; entry 123 registers the previously analyzed MIG hash initializer at phase 14 (`mach_ipc`), rank zero, argument zero. Phase-14 execution, remaining callback effects, native startup/PAC lifetime and a matched FairPlay/Mach transaction remain unknown; the full goal remains active.
