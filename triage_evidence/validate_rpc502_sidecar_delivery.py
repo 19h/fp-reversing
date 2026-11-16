@@ -608,6 +608,7 @@ def main():
     if exists(BASE/'kernel_mapping_transport_report.md'):reports.add(BASE/'kernel_mapping_transport_report.md')
     if exists(BASE/'kernel_mapping_context_report.md'):reports.add(BASE/'kernel_mapping_context_report.md')
     if exists(BASE/'kernel_sptm_boot_inputs_report.md'):reports.add(BASE/'kernel_sptm_boot_inputs_report.md')
+    if exists(BASE/'kernel_boot_header_handoff_report.md'):reports.add(BASE/'kernel_boot_header_handoff_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3619,6 +3620,16 @@ def main():
         manifest['validation']['kernel_sptm_boot_inputs_new_source_queries_unsat']=len(sptm_boot_inputs_audit['source_proofs'])
         manifest['validation']['kernel_sptm_boot_inputs_prior_source_queries_rechecked']=len(sptm_boot_inputs_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_sptm_boot_inputs_conditional_kernel_sptm_boot_inputs_contract_established']=sptm_boot_inputs['conditional_kernel_sptm_boot_inputs_contract_established']
+    if exists(ROOT/'kernel_boot_header_handoff_checks.json'):
+        boot_header_handoff=json.loads(read(ROOT/'kernel_boot_header_handoff_checks.json'))
+        boot_header_handoff_audit=json.loads(read(ROOT/'kernel_boot_header_handoff_audit.json'))
+        manifest['validation']['kernel_boot_header_handoff_increment_checks']=boot_header_handoff['verified_counts']
+        manifest['validation']['kernel_boot_header_handoff_static_scope']=boot_header_handoff['scope']
+        manifest['validation']['kernel_boot_header_handoff_independent_checks']=boot_header_handoff_audit['independent_totals']
+        manifest['validation']['kernel_boot_header_handoff_independent_replay_checks']=boot_header_handoff_audit['independent_replay_totals']
+        manifest['validation']['kernel_boot_header_handoff_new_source_queries_unsat']=len(boot_header_handoff_audit['source_proofs'])
+        manifest['validation']['kernel_boot_header_handoff_prior_source_queries_rechecked']=len(boot_header_handoff_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_boot_header_handoff_conditional_kernel_boot_header_handoff_contract_established']=boot_header_handoff['conditional_kernel_boot_header_handoff_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

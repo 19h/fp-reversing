@@ -1863,3 +1863,8 @@ The [mapping context increment](kernel_mapping_context_report.md) advances origi
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input increment](kernel_sptm_boot_inputs_report.md) adds35 source queries, six prior rechecks,73 components/387 semantic checks,34 exact state joins and fresh replay of45709 visits; four source controls are rejected. It replaces the modeled context leaf with original pool/shared initialization and a continuous original CPU tail call, and recovers the converter/transport-flag publisher. Native boot record/root/table provenance, SPTM effects, complete gateway and daemon pairing remain open; full goal remains active.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff increment](kernel_boot_header_handoff_report.md) adds19 source proofs, three prior rechecks,61 components/321 semantic checks,41 exact state joins and fresh replay of99340 visits; four source controls are rejected. It resolves the missing root producer as the original856 B header copy and publishes the same copied header as device input. Actual bootloader inputs, code-patching callbacks, native opaque effects and daemon pairing remain open; the full goal remains active.

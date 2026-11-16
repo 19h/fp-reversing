@@ -2074,3 +2074,8 @@ Original diagnostics and source stores identify a complete pmap context initiali
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input study](kernel_sptm_boot_inputs_report.md) recovers the versioned publisher0xfffffe000c662920, its magic-check caller and the original pool/shared initializer0xfffffe000be71258. The publisher's last-function boundary is independently closed over121 words/two returns. Original pool code restores its frame and tail-calls CPU initialization, replacing the earlier context leaf model. Exact _SecureDTLookupEntry and pmap-pv-* strings supply additional role evidence; other names and native receiver behavior remain unknown.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) recovers the original collection-entry dispatch, early device-tree/list/callback initializer and post-transport header-copy roles. Exact nlist aliases identify only the reused _memcpy/_memmove body among the new routines; callback and continuation symbol names remain unknown. Original bulk copying supplies the pmap root/device input.

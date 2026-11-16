@@ -1969,3 +1969,8 @@ The [mapping context report](kernel_mapping_context_report.md) locates additiona
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) traces the source of converter pointers and the runtime SPTM transport-selection byte, including its version-dependent preservation. It also recovers original shared-storage reservation and nested CPU pointer publication. These internal boot/pmap ABIs establish no additional incoming/outgoing Mach right, receive/send endpoint, transfer or Mach message-emission site. Native daemon/provider transaction correlation remains unknown.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) locates selector15 emission boundaries at0xfffffe000c65c0ac/0xfffffe000c65c0b4 and four authenticated early callback slots. These establish no additional Mach endpoint, right transfer or Mach message-emission site; the lower transport words remain opaque and unexecuted.

@@ -144,3 +144,8 @@ The [mapping context report](kernel_mapping_context_report.md) recovers the orig
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) recovers the publisher of transport-selection byte0xfffffe0007f8c7c8: for version>=7 it is bit6 of embedded record+0xa8. Earlier versions preserve that byte, including a declared downgrade case. The header caller checks magic0xd00f000000000000 and passes header+0x1a0. Original converter and nested pool/CPU initialization now consume the source-published state. Receiver-side transport semantics, translation and native ownership remain unknown.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) identifies the original cold-entry selector15 boundary and copies entry X2 into the kernel header whose+0x1d8 supplies the physical root used by later mapping requests. This establishes source origin and private composition, while native lower-transport receiver/return effects and matched daemon transactions remain open.

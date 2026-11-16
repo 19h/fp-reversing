@@ -187,3 +187,8 @@ The [mapping context report](kernel_mapping_context_report.md) extends the captu
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) extends the environment frontier with the original versioned converter-state publisher and actual pool/shared/CPU initialization inside the pmap context call. It retains exact memory-budget arithmetic with both u32 truncations and0x6830d6e5 multiply/shift stages. The original topology pointer is a fixed chained target; descriptor contents and native CPU admission still require producer evidence. Boot root has no writer candidate in the bounded locator, which does not establish absence of a native writer.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) resolves a bulk writer omitted by the earlier bounded direct-store scan: original memcpy at0xfffffe000c639ad0 copies856 B from entry X2 to0xfffffe0007e6d660, including the root global0xfffffe0007e6d838 at+0x1d8. The original following store publishes this copied header as device input. Earlier negative direct-store results remain bounded; runtime root/table ownership is unproved.

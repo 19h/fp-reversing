@@ -2094,3 +2094,8 @@ The [mapping context report](kernel_mapping_context_report.md) recovers the orig
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) establishes a magic-tagged embedded record that publishes converter inputs and a version>=7 flag from record+0xa8 bit6. Original pool/shared/CPU initialization now executes inside the complete context call. A524288 B shared region is reserved and preserved by these source bodies while pool/bitmap regions are cleared. Topology-pointer provenance is an original chained fixup; native descriptor contents, boot root/table ownership and transaction correlation remain unknown.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) establishes the collection entry, original early list/callback ABI and original bulk copies. The856 B header copy at0xfffffe000c639ad0 supplies the physical-root global and device-input structure; selector15 and callback effects retain explicit native boundaries.

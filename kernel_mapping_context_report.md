@@ -183,3 +183,8 @@ This advances the deeper pmap/SPTM prerequisite behind the previously recovered 
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input report](kernel_sptm_boot_inputs_report.md) replaces this report's modeled0xfffffe000be71258 leaf with original pool/shared allocation, original device-tree helper execution and a restored-frame CPU tail call. CPU initialization returns to0xfffffe000be609bc inside the context initializer before its bitmap allocation. The new versioned publisher supplies converter globals and transport byte; the topology pointer is an original chained fixup. This report's separate CPU component remains a conditional earlier model; the follow-up establishes actual nested source order and shared-base production. Native boot inputs/backing and opaque return semantics remain unknown.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) replaces the separately seeded root/device structure in its new chains with two original memcpy calls and source pointer publication. Header+0x1d8 copies to0xfffffe0007e6d838; the same copied header at0xfffffe0007e6d660 supplies the original context/pool count and raw device fields. Native root ownership and opaque return effects remain unknown.

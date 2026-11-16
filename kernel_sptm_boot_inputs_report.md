@@ -171,3 +171,8 @@ The recovered interfaces are internal boot, pmap and SPTM contracts. Their recor
 | High | Pair daemon/user-client/provider traffic with kernel effects in one observed transaction | Actual cross-layer payload, rights, status, ownership and epoch correlation |
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: SB-A1-SB-A7 identify assumptions/dependencies and falsification probes. **QG3** Pass for this increment: routine roles, versioned ABI, original nested data/control flow, environmental producers and lower/Mach interface boundaries covered; full investigation remains active. **QG4** Pass: exact widths, offsets, byte extents, modular/carry arithmetic, units and algorithmic costs explicit. **QG5** Pass: prior modeled versus new original nested order, final-function boundary, fixed pointer versus runtime contents, absent/downgrade fields and reserved/cleared extents separated. **QG6** Pass: pinned primary bytes/metadata/strings, reconstructed proofs, independent byte oracles/replay and controls; native origin/ownership/receiver gaps explicit. **QG7** Pass: impact-ranked bounded continuation above. `full_goal_complete=false`. [SB1-SB7]
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff](kernel_boot_header_handoff_report.md) advances the outer boot path to the original collection LC_UNIXTHREAD entry and resolves the missing root producer through the later856 B header copy. Its source header+0x1d8 equals embedded record+0x38, while the following pointer publication supplies the copied device structure. Snapshot equality across selector15 remains a preservation assumption; native callback/receiver effects and ownership remain unknown.

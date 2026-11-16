@@ -2223,3 +2223,8 @@ The [mapping context ABI](kernel_mapping_context_report.md) recovers original ro
 ## SPTM boot record and nested initialization follow-up
 
 The [SPTM boot-input ABI](kernel_sptm_boot_inputs_report.md) records header magic0xd00f000000000000, embedded record offset0x1a0,31 exact-width fields and unsigned version gates through12. For version>=7, record+0xa8 bit6 supplies transport byte0xfffffe0007f8c7c8. Original pool code publishes the CPU shared base and reserves524288 B without clearing that region, then tail-calls CPU initialization with the thread word's low16. Native input ownership, identifier admission and receiver effects remain unknown.
+
+
+## Collection entry and copied-header follow-up
+
+The [boot-header handoff ABI](kernel_boot_header_handoff_report.md) ties entry X1/X2 to separate1152/856 B original copies, identifies header+0x1d8 as the physical-root input and resolves four authenticated early callback slots. Early tree bounds use X1; pmap count/device fields use copied X2. Opaque selector15 return/mutation and native ownership remain unknown.
