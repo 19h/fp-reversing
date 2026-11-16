@@ -2045,3 +2045,5 @@ The [continuous early logging report](kernel_early_logging_execution_report.md) 
 The [collection-header publication report](kernel_collection_header_publication_report.md) establishes header/slide/minimum-address stores and their boot caller. These events establish no new incoming or outgoing Mach right, message ID or port-emission site. Native daemon/provider/kernel correspondence remains unknown.
 
 The [module-pointer signing report](kernel_initializer_pointer_signing_report.md) checks module table stores and FairPlay class-wrapper source. These establish no new Mach-right transfer, message ID or port-emission site. Signing a callback pointer does not establish callback invocation or matched daemon/provider/kernel transport.
+
+The [boot-fixup projection report](kernel_boot_fixup_projection_report.md) checks relocation/PAC source contracts and corrects a page-projection defect in a separate analysis view. It adds no established incoming/outgoing Mach right, message ID or port-emission site. The current logging case maps none of the affected pages; matched native FairPlay transport remains unknown.
