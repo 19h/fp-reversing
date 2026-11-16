@@ -2213,3 +2213,8 @@ The [permanent-storage ABI](kernel_permanent_storage_report.md) establishes X0=z
 ## pmap and SPTM transport evidence
 
 The selected pmap backend sends X0=u64[context+8], X1=VA, X2=descriptor and W3=0 to wrapper0xfffffe000c620bb8, which sets X16=2. Its runtime selection byte chooses exact raw-word PCs0xfffffe000c620bd8/0xfffffe000c620be0. Source admission, descriptor construction and per-CPU request/result copies are proved conditionally; the opaque transport return ABI and native translation effects remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).
+
+
+## Context and CPU initialization follow-up
+
+The [mapping context ABI](kernel_mapping_context_report.md) recovers original root-pair/context/geometry stores and a24 B physical/virtual range-record layout. CPU initialization stores low16 of an opaque identifier, uses zero-extended low32 shifted15 for a shared-region address, and passes full64 to selector0x32 before storing its raw pointer return. The original context produces descriptor0x0460000000400403. Native transport returns, pointer ownership and complete transaction identity remain unknown.

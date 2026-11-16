@@ -177,3 +177,8 @@ These producers refine the kernel startup environment supporting recovered IPC-z
 ## Permanent storage and initialization prerequisites
 
 The [permanent-storage report](kernel_permanent_storage_report.md) advances the raw backing frontier with original32/64 B allocator calls, fixed setup records and source creator/cache joins. It does not join ARM/topology producers to these consumers in one native epoch. Ready-page and cache-count preservation demonstrate an additional zero-initialization prerequisite; original refill, complete startup, native ownership and daemon transaction pairing remain unknown.
+
+
+## Context and CPU initialization follow-up
+
+The [mapping context report](kernel_mapping_context_report.md) extends the captured ARM initializer with its original boot-root conversion/publication cut and original call to the complete pmap context initializer. The call rounds its declared SP+0x30 input to32 MiB before passing X0. Actual geometry/bounds/root stores and CPU result-pointer publication replace selected downstream fixtures in byte-exact declared call epochs. Full ARM/topology initialization, native range ownership and a continuous boot-to-consumer epoch remain open.

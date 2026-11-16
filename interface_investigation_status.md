@@ -1853,3 +1853,8 @@ The [permanent-storage increment](kernel_permanent_storage_report.md) establishe
 ## pmap and SPTM transport evidence
 
 The lower mapping increment identifies the pmap_enter_options-style gateway and a deeper SPTM request boundary. It adds22 source queries,70 components/338 semantic checks,18 descriptor-value links and independent replay of4422 visits; three altered source words are rejected. Both transport-selection branches are located and stopped before their opaque words. Native translation, live context/result production and matched daemon/kext transactions remain unknown; the full goal remains active. See the [mapping transport report](kernel_mapping_transport_report.md).
+
+
+## Context and CPU initialization follow-up
+
+The [mapping context increment](kernel_mapping_context_report.md) advances original initialization provenance: root pair, complete context initializer, actual geometry and CPU pointer stores now compose across32 exact declared state joins.23 new nonvacuous queries,42 components/216 semantic checks and independent replay of19585 source visits pass; three source-store controls are rejected. Receiver-side SPTM returns, native backing/ownership and matched daemon/kext transactions remain open. The full goal remains active.

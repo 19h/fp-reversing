@@ -2084,3 +2084,8 @@ The [permanent-storage report](kernel_permanent_storage_report.md) replaces opaq
 ## pmap and SPTM transport evidence
 
 The lower mapping path now has original admission, descriptor, per-CPU epoch/result and SPTM transport contracts. Context bounds and geometry are runtime inputs whose on-disk context is zero-filled. The selected backend calls selector2 with context root, VA, descriptor and zero; unsigned raw status below2 enables two result copies. Private components retain explicit validation/result/system-register models; native ownership, transport effects and full gateway execution remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).
+
+
+## Context and CPU initialization follow-up
+
+The [mapping context report](kernel_mapping_context_report.md) recovers the original context/root/geometry and CPU result-pointer publications. Seven five-component private chains transfer exact predecessor state through original converters and initialization stores into admission/backend consumers. Original geometry yields descriptor0x0460000000400403; the earlier0x0420000000400403 value remains specific to its declared fixture. Boot-root/table ownership, opaque SPTM returns, complete gateway/native effects and daemon transaction pairing remain unknown.

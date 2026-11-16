@@ -1959,3 +1959,8 @@ The [permanent-storage report](kernel_permanent_storage_report.md) refines backi
 ## pmap and SPTM transport evidence
 
 The mapping transport increment recovers an internal pmap/SPTM interface, including selector2 transport-word locations0xfffffe000c620bd8 and0xfffffe000c620be0. X16 selectors1/2/3 and per-CPU result records are not Mach port names or message IDs. This establishes no new receive/send right, right transfer, endpoint or Mach message-emission location. Native translation and daemon/provider transaction pairing remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).
+
+
+## Context and CPU initialization follow-up
+
+The [mapping context report](kernel_mapping_context_report.md) locates additional SPTM selectors0x13/0x32 and their flag-dependent opaque-word PCs. These are internal initialization contracts, with raw CPU pointer publication rather than Mach right transfer. They establish no additional incoming/outgoing receive/send right, endpoint or Mach message-emission site. Native daemon/provider transaction correlation remains unknown.

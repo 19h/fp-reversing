@@ -606,6 +606,7 @@ def main():
     if exists(BASE/'kernel_physical_zero_report.md'):reports.add(BASE/'kernel_physical_zero_report.md')
     if exists(BASE/'kernel_refill_publication_report.md'):reports.add(BASE/'kernel_refill_publication_report.md')
     if exists(BASE/'kernel_mapping_transport_report.md'):reports.add(BASE/'kernel_mapping_transport_report.md')
+    if exists(BASE/'kernel_mapping_context_report.md'):reports.add(BASE/'kernel_mapping_context_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3597,6 +3598,16 @@ def main():
         manifest['validation']['kernel_mapping_transport_new_source_queries_unsat']=len(mapping_transport_audit['source_proofs'])
         manifest['validation']['kernel_mapping_transport_prior_source_queries_rechecked']=len(mapping_transport_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_mapping_transport_conditional_kernel_mapping_transport_contract_established']=mapping_transport['conditional_kernel_mapping_transport_contract_established']
+    if exists(ROOT/'kernel_mapping_context_checks.json'):
+        mapping_context=json.loads(read(ROOT/'kernel_mapping_context_checks.json'))
+        mapping_context_audit=json.loads(read(ROOT/'kernel_mapping_context_audit.json'))
+        manifest['validation']['kernel_mapping_context_increment_checks']=mapping_context['verified_counts']
+        manifest['validation']['kernel_mapping_context_static_scope']=mapping_context['scope']
+        manifest['validation']['kernel_mapping_context_independent_checks']=mapping_context_audit['independent_totals']
+        manifest['validation']['kernel_mapping_context_independent_replay_checks']=mapping_context_audit['independent_replay_totals']
+        manifest['validation']['kernel_mapping_context_new_source_queries_unsat']=len(mapping_context_audit['source_proofs'])
+        manifest['validation']['kernel_mapping_context_prior_source_queries_rechecked']=len(mapping_context_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_mapping_context_conditional_kernel_mapping_context_contract_established']=mapping_context['conditional_kernel_mapping_context_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -2064,3 +2064,8 @@ The [permanent-storage report](kernel_permanent_storage_report.md) recovers the 
 ## pmap and SPTM transport evidence
 
 Original diagnostics identify the refill mapping gateway0xfffffe000be5b2e8 as pmap_enter_options-style code. Eleven complete intervals/2120 words include its descriptor/backend/category helpers and three SPTM wrappers; _sptm_retype is an exact symbol, while mapping selector2 has no exact nlist name. The two opaque transport words are retained at all six PCs.22 nonvacuous source queries,70 components/338 semantic checks and fresh replay pass; native translation effects remain unknown. See the [mapping transport report](kernel_mapping_transport_report.md).
+
+
+## Context and CPU initialization follow-up
+
+Original diagnostics and source stores identify a complete pmap context initializer at0xfffffe000be608f4 and a CPU initializer at0xfffffe000be734f0. Two additional SPTM wrappers set X16=0x13/0x32; their exact names and native receiver behavior remain unknown. The CPU initializer stores the latter wrapper's full raw return in the backend result-pointer slot. Fifteen complete captures,23 source queries,42 components/216 semantic checks and fresh replay pass. See the [mapping context report](kernel_mapping_context_report.md).
