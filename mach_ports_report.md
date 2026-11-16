@@ -2043,3 +2043,5 @@ The [early logging contract report](kernel_early_logging_contract_report.md) ide
 The [continuous early logging report](kernel_early_logging_execution_report.md) confirms 47 original ring-byte writes, authenticated callback custody and post-format counter publication. These storage/call events do not establish a Mach-right or native console emission. The logger stops before its configuration-object dereference; matched FairPlay IPC remains unknown.
 
 The [collection-header publication report](kernel_collection_header_publication_report.md) establishes header/slide/minimum-address stores and their boot caller. These events establish no new incoming or outgoing Mach right, message ID or port-emission site. Native daemon/provider/kernel correspondence remains unknown.
+
+The [module-pointer signing report](kernel_initializer_pointer_signing_report.md) checks module table stores and FairPlay class-wrapper source. These establish no new Mach-right transfer, message ID or port-emission site. Signing a callback pointer does not establish callback invocation or matched daemon/provider/kernel transport.

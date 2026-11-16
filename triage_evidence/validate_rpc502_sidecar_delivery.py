@@ -625,6 +625,7 @@ def main():
     if exists(BASE/'kernel_early_logging_contract_report.md'):reports.add(BASE/'kernel_early_logging_contract_report.md')
     if exists(BASE/'kernel_early_logging_execution_report.md'):reports.add(BASE/'kernel_early_logging_execution_report.md')
     if exists(BASE/'kernel_collection_header_publication_report.md'):reports.add(BASE/'kernel_collection_header_publication_report.md')
+    if exists(BASE/'kernel_initializer_pointer_signing_report.md'):reports.add(BASE/'kernel_initializer_pointer_signing_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3794,6 +3795,13 @@ def main():
         manifest['validation']['kernel_collection_header_publication_static_scope']=collection_header['scope']
         manifest['validation']['kernel_collection_header_publication_independent_checks']=collection_header_audit['independent_totals']
         manifest['validation']['kernel_collection_header_publication_independent_replay_checks']=collection_header_audit['independent_replay_totals']
+    if exists(ROOT/'kernel_initializer_pointer_signing_checks.json'):
+        initializer_signing=json.loads(read(ROOT/'kernel_initializer_pointer_signing_checks.json'))
+        initializer_signing_audit=json.loads(read(ROOT/'kernel_initializer_pointer_signing_audit.json'))
+        manifest['validation']['kernel_initializer_pointer_signing_increment_checks']=initializer_signing['verified_counts']
+        manifest['validation']['kernel_initializer_pointer_signing_static_scope']=initializer_signing['scope']
+        manifest['validation']['kernel_initializer_pointer_signing_independent_checks']=initializer_signing_audit['independent_totals']
+        manifest['validation']['kernel_initializer_pointer_signing_independent_replay_checks']=initializer_signing_audit['independent_replay_totals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
