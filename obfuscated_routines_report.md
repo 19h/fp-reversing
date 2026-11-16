@@ -2016,3 +2016,5 @@ The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establi
 
 
 The [retirement metadata query](kernel_retirement_query_report.md) establishes conditional8 B range admission, the10-bit zone classification and u16 extent output, both large-layout index encodings, explicit destructive u16 offset reads, optional output effects and the14/32 B caller extent/recovered-base request. Complete query register/store inventory and separate composition formulas support the modular caller join. Native metadata initialization/coherence, allocation identity/ownership, actual clear/retirement, synchronization and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
+
+The [small retirement dispatch](kernel_retirement_dispatch_report.md) assigns a bounded kernel role to the original unnamed routine at 0xfffffe000bcfed8c: zone/heap-class checks, bzero request, accounting fallback and zone tail. All 73 words have instruction-derived coverage; the exact original nlist names only the clear target, _bzero / ___bzero. The two error targets and native allocator behavior remain unresolved.

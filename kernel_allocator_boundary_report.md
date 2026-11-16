@@ -155,3 +155,5 @@ Extraction requires O(B+I+S) time/space for image bytes B, decoded instructions 
 
 
 The [retirement metadata query](kernel_retirement_query_report.md) establishes conditional8 B range admission, the10-bit zone classification and u16 extent output, both large-layout index encodings, explicit destructive u16 offset reads, optional output effects and the14/32 B caller extent/recovered-base request. Complete query register/store inventory and separate composition formulas support the modular caller join. Native metadata initialization/coherence, allocation identity/ownership, actual clear/retirement, synchronization and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
+
+The [downstream small retirement dispatch](kernel_retirement_dispatch_report.md) extends the normal 14/32 B boundaries through exact zone geometry, heap-class gates and the bzero call request. The 14 B data heap requires class equality; the 32 B ordinary typed heap also accepts zone class 1. The element extent, rather than the request size, reaches the clear/tail; actual deallocation and native metadata identity remain unknown.

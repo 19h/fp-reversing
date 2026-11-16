@@ -65,3 +65,5 @@ With element extent equal to the requested 48 B, the allocation wrapper skips it
 - **QG5** distinguishes file and post-startup flags, requested and element extents, and source-derived and live zone identities.
 - **QG6** links original bytes, three view fixups, one startup entry, ten UNSAT checks and five rejected alterations.
 - **QG7** ranks runtime, lifecycle, refill and neighboring-view gaps.
+
+The [retirement dispatch guard](kernel_retirement_dispatch_report.md) independently establishes a 132,480 B zone interval and query-derived index < 690. The value 690 is the consumer's guard threshold, not an observed initialized zone count or the 22-entry size-table length. The initialized family/bias epoch and class-flag values remain separate premises.

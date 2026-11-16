@@ -590,6 +590,7 @@ def main():
     if exists(BASE/'userclient_query_failure_report.md'):reports.add(BASE/'userclient_query_failure_report.md')
     if exists(BASE/'kernel_allocator_boundary_report.md'):reports.add(BASE/'kernel_allocator_boundary_report.md')
     if exists(BASE/'kernel_retirement_query_report.md'):reports.add(BASE/'kernel_retirement_query_report.md')
+    if exists(BASE/'kernel_retirement_dispatch_report.md'):reports.add(BASE/'kernel_retirement_dispatch_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3422,6 +3423,15 @@ def main():
         manifest['validation']['kernel_retirement_query_new_composition_queries_unsat']=len(retirement_query_audit['composition_proofs'])
         manifest['validation']['kernel_retirement_query_prior_source_queries_rechecked']=len(retirement_query_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_retirement_query_conditional_kernel_retirement_query_contract_established']=retirement_query['conditional_kernel_retirement_query_contract_established']
+    if exists(ROOT/'kernel_retirement_dispatch_checks.json'):
+        retirement_dispatch=json.loads(read(ROOT/'kernel_retirement_dispatch_checks.json'))
+        retirement_dispatch_audit=json.loads(read(ROOT/'kernel_retirement_dispatch_audit.json'))
+        manifest['validation']['kernel_retirement_dispatch_increment_checks']=retirement_dispatch['verified_counts']
+        manifest['validation']['kernel_retirement_dispatch_static_scope']=retirement_dispatch['scope']
+        manifest['validation']['kernel_retirement_dispatch_independent_checks']=retirement_dispatch_audit['independent_totals']
+        manifest['validation']['kernel_retirement_dispatch_new_source_queries_unsat']=len(retirement_dispatch_audit['source_proofs'])
+        manifest['validation']['kernel_retirement_dispatch_prior_source_queries_rechecked']=len(retirement_dispatch_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_retirement_dispatch_conditional_kernel_retirement_dispatch_contract_established']=retirement_dispatch['conditional_kernel_retirement_dispatch_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
