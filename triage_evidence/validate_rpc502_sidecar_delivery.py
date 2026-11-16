@@ -593,6 +593,7 @@ def main():
     if exists(BASE/'kernel_retirement_dispatch_report.md'):reports.add(BASE/'kernel_retirement_dispatch_report.md')
     if exists(BASE/'kernel_retirement_diagnostics_report.md'):reports.add(BASE/'kernel_retirement_diagnostics_report.md')
     if exists(BASE/'kernel_zone_retirement_report.md'):reports.add(BASE/'kernel_zone_retirement_report.md')
+    if exists(BASE/'kernel_retirement_magazines_report.md'):reports.add(BASE/'kernel_retirement_magazines_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3453,6 +3454,17 @@ def main():
         manifest['validation']['kernel_zone_retirement_new_composition_queries_unsat']=len(zone_retirement_audit['composition_proofs'])
         manifest['validation']['kernel_zone_retirement_prior_source_queries_rechecked']=len(zone_retirement_audit['rechecked_prior_source_proofs'])
         manifest['validation']['kernel_zone_retirement_conditional_kernel_zone_retirement_contract_established']=zone_retirement['conditional_kernel_zone_retirement_contract_established']
+    if exists(ROOT/'kernel_retirement_magazines_checks.json'):
+        retirement_magazines=json.loads(read(ROOT/'kernel_retirement_magazines_checks.json'))
+        retirement_magazines_audit=json.loads(read(ROOT/'kernel_retirement_magazines_audit.json'))
+        manifest['validation']['kernel_retirement_magazines_increment_checks']=retirement_magazines['verified_counts']
+        manifest['validation']['kernel_retirement_magazines_static_scope']=retirement_magazines['scope']
+        manifest['validation']['kernel_retirement_magazines_independent_checks']=retirement_magazines_audit['independent_totals']
+        manifest['validation']['kernel_retirement_magazines_new_source_queries_unsat']=len(retirement_magazines_audit['source_proofs'])
+        manifest['validation']['kernel_retirement_magazines_new_composition_queries_unsat']=len(retirement_magazines_audit['composition_proofs'])
+        manifest['validation']['kernel_retirement_magazines_separation_lemmas_unsat']=len(retirement_magazines_audit['separation_lemmas'])
+        manifest['validation']['kernel_retirement_magazines_prior_source_queries_rechecked']=len(retirement_magazines_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['kernel_retirement_magazines_conditional_kernel_retirement_magazines_contract_established']=retirement_magazines['conditional_kernel_retirement_magazines_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

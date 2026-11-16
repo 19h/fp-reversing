@@ -46,8 +46,8 @@ Inventory/page/control-state overlays occur after this exact transfer. Every ove
 
 | Object/offset | Recovered role on selected paths |
 |---|---|
-| Cache `+0x04` / `+0x06`, u16 | Current/spare element counts |
-| Cache `+0x08` / `+0x10` | Current/spare slot-array pointers; magazine header is 16 bytes before slot array |
+| Cache `+0x04` / `+0x06`, u16 | Allocation-consumer / retirement-producer element counts |
+| Cache `+0x08` / `+0x10` | Allocation-consumer / retirement-producer slot-array pointers; magazine header is 16 bytes before slot array |
 | Cache `+0x18` / `+0x1c`, u32 | Local full/empty magazine counts |
 | Cache `+0x20` | Head of concatenated local full-prefix/empty-suffix list |
 | Cache `+0x28` | Address of the link after the last local full magazine; head-cell address when full count is zero |
@@ -158,13 +158,13 @@ This advances a deeper facility used by the existing [original kmsg construction
 
 ## Reproduction, independent validation and quality gates
 
+Historical producer entrypoints are listed below without analyst-machine paths. They predate logical JSON-to-Zstandard migration: materialize their logical JSON inputs in an isolated reproduction copy, then run from that copy's root with Capstone, Unicorn and Z3 available to Python. These historical commands are not claimed as newly executed checks; the new magazine audit reads compressed logical artifacts directly.
+
 ```sh
-cd /Users/___/dev/dylex/extracted
-export PYTHONPATH=triage_evidence:/opt/homebrew/Cellar/z3/5.3.1/lib/python3.15/site-packages
-export Z3_LIBRARY_PATH=/tmp/rpc502-parser-z3-runtime
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/recover_kernel_zone_refill.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/probe_kernel_zone_refill.py
-/Users/___/Downloads/zut/.venv/bin/python -P triage_evidence/validate_kernel_zone_refill.py
+export PYTHONPATH=triage_evidence
+python3 -P triage_evidence/recover_kernel_zone_refill.py
+python3 -P triage_evidence/probe_kernel_zone_refill.py
+python3 -P triage_evidence/validate_kernel_zone_refill.py
 ```
 
 Static capture adds three complete routines / 779 instructions to the retained 16 functions. Independent replay imports no probe executor and verifies 4273 original instruction visits, 1363 reads / 9138 bytes, 583 writes / 3951 bytes, ten lock-call models, 105 refill/fill/selection frames, 30 allocation frames, 12 final boundaries, 384 SIMD registers, 12 system-register values, 2932 final global bytes and 12582912 final RAM bytes. Independent oracles cover all zone/cache/statistics bytes, 127 explicit patch before images, 33 selector returns, three page states, ten full zero checks, the genuine spill case, local shortcut and original-file phase gate. Three bounded scalar queries return `unsat`.
@@ -172,3 +172,5 @@ Static capture adds three complete routines / 779 instructions to the retained 1
 Recovery costs O(image + captured source) time/space. CPU/effect validation costs O(image + visits + RAM + effects) time and O(image + one RAM map + journals) space. Independent circular selection costs O(filled_slots * 64) time and O(filled_slots) space for the selected one-word mode. Solver expressions/domains are retained; no solver-complexity bound is asserted.
 
 QG1: no normative conclusion required. QG2: ZR1-ZR8 record dependent assumptions and falsification probes. QG3: new routine roles, exact held-state continuation, magazine/page ABI and Mach-emission boundary covered for this increment; full interface investigation remains active. QG4: extents, offsets and strides are bytes; counters, masks and index widths are explicit and reproducible. QG5: local shortcut versus spill, quota versus bound, partition versus tail, supplied arena versus created storage and held fallback versus return are distinguished. QG6: original KC bytes, complete bodies, exact producer transfers, independent state oracles and full CPU/effect replay provide verified local provenance. QG7: bounded extensions and impact labels are recorded above. Scoped gates pass; native full FairPlay continuity remains unknown.
+
+The [both-full magazine helper](kernel_retirement_magazines_report.md) returns the incoming cache or zero under the ordinary ABI. Every modeled nonzero normal return passes a producer-count reset; linked original-byte components then publish one pointer through C+6/C+0x10. Allocation instead consumes C+4/C+8. Whole-CFG, instruction and list/state evidence retain explicit native synchronization, external-memory-effect, reclamation and transaction-identity limits; no additional Mach endpoint is established.
