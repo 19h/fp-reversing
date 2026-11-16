@@ -2047,3 +2047,5 @@ The [collection-header publication report](kernel_collection_header_publication_
 The [module-pointer signing report](kernel_initializer_pointer_signing_report.md) checks module table stores and FairPlay class-wrapper source. These establish no new Mach-right transfer, message ID or port-emission site. Signing a callback pointer does not establish callback invocation or matched daemon/provider/kernel transport.
 
 The [boot-fixup projection report](kernel_boot_fixup_projection_report.md) checks relocation/PAC source contracts and corrects a page-projection defect in a separate analysis view. It adds no established incoming/outgoing Mach right, message ID or port-emission site. The current logging case maps none of the affected pages; matched native FairPlay transport remains unknown.
+
+The [full boot initializer report](kernel_boot_initializer_execution_report.md) establishes source-produced collection/global state under logical PAC. It establishes no new incoming/outgoing Mach right, message ID, transport status or port-emission site. The returned private boot call remains separate from the existing startup case and matched native FairPlay transport.

@@ -1,5 +1,7 @@
 # Boot fixup contracts and page-boundary correction
 
+Subsequent evidence: the [full boot initializer report](kernel_boot_initializer_execution_report.md) executes all 1036413 fixup stores and returns through bank/range/slide publication in a raw-image private case. The projection-only and unexecuted-boot statements below describe this earlier increment; its artifacts remain frozen. Native boot and the continuous startup handoff remain unknown.
+
 Original boot code consumes chained fixups before publishing its collection-header bank. Source relations and an independent decoder now corroborate all 1036413 fixups in the pinned collection. This exposed eight pointers crossing a 4096 B page boundary: the retained logical-page reader produces 4100 B for their first pages and leaves the encoded upper halves in their next pages. A separate corrected reader reproduces the complete independently projected image, changing exactly 16 pages. All 29 retained signing cases replay with identical source journals/registers/private RAM/PAC events; only one mapped-page digest changes. The current continuous logging case maps none of the affected pages. Full boot and native PAC remain unexecuted. [BP-A1-BP-A7]
 
 ```text
