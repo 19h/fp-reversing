@@ -157,3 +157,5 @@ Evidence: [source and certificates](triage_evidence/aes_event_wake_selection_che
 
 
 The [AES block/wake handshake report](aes_block_wake_handshake_report.md) establishes the ordinary wake-state return split, complementary post-switch bit clearing, global/paired counter contracts, raw callback codes 1/2 and placement-to-queue ABI. Thirty-four new UNSAT checks, four abstract SAT controls and 227 private cases pass. Actual queue insertion, context switching, concurrent epochs and daemon-kext completion remain unknown (BH1-BH8).
+
+The [paired zone observer/event protocol](kernel_zone_observer_event_report.md) establishes bit4 arm/clear stores, observer controls1/0 with post-callback next reloads, the shared Z+0x20 wait/wake hash and registration/unlock/block/reacquire request order. Seventeen source proofs and 65 private components retain explicit native callback, authentication, synchronization, scheduling, reclamation and daemon-epoch limits; no additional Mach endpoint is established.

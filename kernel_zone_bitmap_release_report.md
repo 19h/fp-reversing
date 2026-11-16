@@ -170,3 +170,5 @@ Reproduction uses the relative extractor, audit and verifier entrypoints with `P
 - **QG5**: Bookkeeping versus physical reclamation, old versus new count, partial diagnostic stores, signed index interpretation, conditional authentication and source versus native concurrency are explicit.
 - **QG6**: Original pinned bytes, prior body matches, reconstructed canonical formulas, independent whole-state checks and two altered-source controls provide provenance.
 - **QG7**: Impact-ranked continuation covers observers, reclamation, native synchronization, scheduling, transaction identity and arithmetic-domain expansion.
+
+The [paired zone observer/event protocol](kernel_zone_observer_event_report.md) establishes bit4 arm/clear stores, observer controls1/0 with post-callback next reloads, the shared Z+0x20 wait/wake hash and registration/unlock/block/reacquire request order. Seventeen source proofs and 65 private components retain explicit native callback, authentication, synchronization, scheduling, reclamation and daemon-epoch limits; no additional Mach endpoint is established.

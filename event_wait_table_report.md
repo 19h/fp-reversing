@@ -130,3 +130,5 @@ The [startup-dispatch report](startup_dispatch_report.md) establishes unsigned p
 
 
 The [AES hashed-event selection report](aes_event_wake_selection_report.md) establishes the low27 conservative OR filter, exact u64 event/identity matching, FIFO removal, limit-aware summary refresh and immediate/deferred scheduler call interfaces. Twenty new UNSAT checks, three abstract SAT controls, 1152 complete private wake compositions and 64 limited-selection compositions pass. Native locking, table/thread epochs, scheduler effects and matched daemon-kext transactions remain unknown (WS1-WS7).
+
+The [paired zone observer/event protocol](kernel_zone_observer_event_report.md) establishes bit4 arm/clear stores, observer controls1/0 with post-callback next reloads, the shared Z+0x20 wait/wake hash and registration/unlock/block/reacquire request order. Seventeen source proofs and 65 private components retain explicit native callback, authentication, synchronization, scheduling, reclamation and daemon-epoch limits; no additional Mach endpoint is established.

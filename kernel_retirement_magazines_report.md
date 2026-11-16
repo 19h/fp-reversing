@@ -160,3 +160,5 @@ Recovery costs O(input bytes+I+S) time/space for instructions I and symbols S. T
 - **QG7**: Ranked continuation covers deeper release, external effects, transaction identity, marker producers, raw storage and larger inventory domains.
 
 The [deeper bitmap/metadata release](kernel_zone_bitmap_release_report.md) establishes both free-bit layouts, count-store/underflow order, encoded metadata queue transitions and the original unlock/thread-nesting handoff. Sixteen source proofs and 66 private components retain explicit native exclusion, external-effect, physical-reclamation and daemon-epoch limits; no additional Mach endpoint is established.
+
+The [paired zone observer/event protocol](kernel_zone_observer_event_report.md) establishes bit4 arm/clear stores, observer controls1/0 with post-callback next reloads, the shared Z+0x20 wait/wake hash and registration/unlock/block/reacquire request order. Seventeen source proofs and 65 private components retain explicit native callback, authentication, synchronization, scheduling, reclamation and daemon-epoch limits; no additional Mach endpoint is established.
