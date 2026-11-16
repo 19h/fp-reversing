@@ -146,3 +146,6 @@ The adapter and handler each contain a bounded number of instructions/calls: loc
 ## Second-command query records
 
 The second-command private query/helper record and three scalar-record construction requests are now partially recovered below the preserved provider transfer/status boundary. Their normalized scalar controls match pinned version/capabilities plus unknown0x99ab; complete serialization and native byte transfer remain unproved. [Evidence and exact boundaries](userclient_query_records_report.md).
+
+
+The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.

@@ -213,3 +213,6 @@ The recovered guarded raw-status decode and original size codec are rechecked an
 ## Second-command query records
 
 The query-command third-success handoff forwards the original container cell,C+0x3c0 auxiliary pointer cell and S+0xbe4 extent cell to0xfffffe000a65f3ec. This connects the auxiliary interface location to a producer candidate; the subsequent production and bytes are not established. The independent staged-buffer copy-back contract is unchanged. [Evidence and exact boundaries](userclient_query_records_report.md).
+
+
+The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.

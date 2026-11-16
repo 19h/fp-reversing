@@ -202,3 +202,6 @@ The unsupported-command raw value0xce515bb7 decodes arithmetically to0xffff5bd1 
 ## Second-command query records
 
 The second command now has source-proved version/capability helper calls,three conditional scalar-record request packets and exact callback status gates. Its first selected constructor requests a32 B typed node and14 B data buffer before entering a protected writer. Complete command/writer/publication semantics remain open. [Evidence and exact boundaries](userclient_query_records_report.md).
+
+
+The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.

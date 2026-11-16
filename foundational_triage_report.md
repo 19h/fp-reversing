@@ -2012,3 +2012,6 @@ The task-aware selector26 adapter composes the recovered core return with uncond
 ## Second-command query records
 
 The second decoded command prepares three conditional record-construction requests with XOR-normalized scalar controls matching version0x4c0b0000,capabilities0x1f8 and unknown0x99ab. The first selected constructor requests32 B typed node/14 B data storage and reaches a protected writer. Complete serialization, publication, auxiliary production and native pairing remain open. [Evidence and exact boundaries](userclient_query_records_report.md).
+
+
+The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.

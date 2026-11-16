@@ -1781,3 +1781,6 @@ Selector26 transfer-boundary increment:191 function instructions,189 normally mo
 ## Second-command query records
 
 Second-command query-record increment:539 selected locations,31 new nonvacuous source proofs,five predecessor rechecks and1280 bank cases establish private helper-record reuse,three request packets/status continuations and first node/data allocation plus writer-entry ABI. The third-success handoff supplies container/auxiliary output aliases; the writer,list publication and producer remain open. [Evidence and exact boundaries](userclient_query_records_report.md).
+
+
+The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.

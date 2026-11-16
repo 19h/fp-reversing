@@ -2141,3 +2141,6 @@ The complete handler/provider instruction audit distinguishes provider incoming 
 ## Second-command query records
 
 A private second-command record at workspace+0x968 is distinct from the outer16 B UserClient descriptor. Version/capability helpers reuse its result+4 channel,followed by three constructor packets with saved callback/state fields. The first node allocation is32 B and data request14 B. The final successful callback forwards container and auxiliary output-cell aliases; actual serialization/publication and native transfer remain open. [Evidence and exact boundaries](userclient_query_records_report.md).
+
+
+The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.

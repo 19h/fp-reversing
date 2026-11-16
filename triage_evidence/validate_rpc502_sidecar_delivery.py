@@ -582,6 +582,7 @@ def main():
     if exists(BASE/'userclient_caller_return_report.md'):reports.add(BASE/'userclient_caller_return_report.md')
     if exists(BASE/'userclient_transfer_boundary_report.md'):reports.add(BASE/'userclient_transfer_boundary_report.md')
     if exists(BASE/'userclient_query_records_report.md'):reports.add(BASE/'userclient_query_records_report.md')
+    if exists(BASE/'userclient_auxiliary_copy_report.md'):reports.add(BASE/'userclient_auxiliary_copy_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3340,6 +3341,15 @@ def main():
         manifest['validation']['userclient_query_records_new_source_queries_unsat']=len(query_records_audit['source_proofs'])
         manifest['validation']['userclient_query_records_prior_source_queries_rechecked']=len(query_records_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_query_records_conditional_query_record_request_contract_established']=query_records['conditional_query_record_request_contract_established']
+    if exists(ROOT/'userclient_auxiliary_copy_checks.json'):
+        auxiliary_copy=json.loads(read(ROOT/'userclient_auxiliary_copy_checks.json'))
+        auxiliary_copy_audit=json.loads(read(ROOT/'userclient_auxiliary_copy_audit.json'))
+        manifest['validation']['userclient_auxiliary_copy_increment_checks']=auxiliary_copy['verified_counts']
+        manifest['validation']['userclient_auxiliary_copy_static_scope']=auxiliary_copy['scope']
+        manifest['validation']['userclient_auxiliary_copy_independent_checks']=auxiliary_copy_audit['independent_totals']
+        manifest['validation']['userclient_auxiliary_copy_new_source_queries_unsat']=len(auxiliary_copy_audit['source_proofs'])
+        manifest['validation']['userclient_auxiliary_copy_prior_source_queries_rechecked']=len(auxiliary_copy_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_auxiliary_copy_conditional_auxiliary_copy_contract_established']=auxiliary_copy['conditional_auxiliary_copy_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
