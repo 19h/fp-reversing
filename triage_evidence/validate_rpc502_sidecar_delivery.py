@@ -585,6 +585,7 @@ def main():
     if exists(BASE/'userclient_auxiliary_copy_report.md'):reports.add(BASE/'userclient_auxiliary_copy_report.md')
     if exists(BASE/'userclient_serializer_extent_report.md'):reports.add(BASE/'userclient_serializer_extent_report.md')
     if exists(BASE/'userclient_serializer_emission_report.md'):reports.add(BASE/'userclient_serializer_emission_report.md')
+    if exists(BASE/'userclient_query_writer_report.md'):reports.add(BASE/'userclient_query_writer_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3370,6 +3371,15 @@ def main():
         manifest['validation']['userclient_serializer_emission_new_source_queries_unsat']=len(serializer_emission_audit['source_proofs'])
         manifest['validation']['userclient_serializer_emission_prior_source_queries_rechecked']=len(serializer_emission_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_serializer_emission_conditional_serializer_emission_contract_established']=serializer_emission['conditional_serializer_emission_contract_established']
+    if exists(ROOT/'userclient_query_writer_checks.json'):
+        query_writer=json.loads(read(ROOT/'userclient_query_writer_checks.json'))
+        query_writer_audit=json.loads(read(ROOT/'userclient_query_writer_audit.json'))
+        manifest['validation']['userclient_query_writer_increment_checks']=query_writer['verified_counts']
+        manifest['validation']['userclient_query_writer_static_scope']=query_writer['scope']
+        manifest['validation']['userclient_query_writer_independent_checks']=query_writer_audit['independent_totals']
+        manifest['validation']['userclient_query_writer_new_source_queries_unsat']=len(query_writer_audit['source_proofs'])
+        manifest['validation']['userclient_query_writer_prior_source_queries_rechecked']=len(query_writer_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_query_writer_conditional_query_writer_contract_established']=query_writer['conditional_query_writer_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

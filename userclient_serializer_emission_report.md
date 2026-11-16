@@ -1,6 +1,6 @@
 # Auxiliary serializer bytes and publication
 
-Under a finite stable-list and valid-storage contract, the auxiliary producer concatenates each node's decoded bytes in list order, then appends a terminal record: four zero tag bytes, type bytes 50 db, big-endian payload length P, and P zero bytes. The complete output has M=L+10+P bytes, where L is the node-byte sum and P is the previously proved 1-16 B padding count. The producer writes the buffer under the auxiliary address mask, publishes its pointer and M XOR SUCCESS, sets flag1/raw SUCCESS and selects the saved callback. Its terminal header matches the recovered parser's normalized zero-tag/type 0x6685 shape. Original metadata-node construction and native transaction pairing remain unknown.
+Under a finite stable-list and valid-storage contract, the auxiliary producer concatenates each node's decoded bytes in list order, then appends a terminal record: four zero tag bytes, type bytes 50 db, big-endian payload length P, and P zero bytes. The complete output has M=L+10+P bytes, where L is the node-byte sum and P is the previously proved 1-16 B padding count. The producer writes the buffer under the auxiliary address mask, publishes its pointer and M XOR SUCCESS, sets flag1/raw SUCCESS and selects the saved callback. Its terminal header matches the recovered parser's normalized zero-tag/type 0x6685 shape. The linked query-writer increment establishes three scalar-node byte strings; their list publication and native transaction pairing remain unknown.
 
 ## Evidence and claim register
 
@@ -164,3 +164,6 @@ For k finite stable nodes with total L bytes, the selected emission performs L n
 - **QG5**: Source-defined plain bytes versus writer meaning, successful padding domain versus P=0 bypass, temporary registers versus output roots, parser shape versus complete acceptance, and conditional path versus native execution remain distinct.
 - **QG6**: Dual-image capture, 12 original pointers,17 nonvacuous source formulas, six prior rechecks, 16 terminal profiles, 136 zero steps, all 8 base residues, dependency-checked normalization and the mutation SAT control support the bounded contract.
 - **QG7**: Ranked continuation preserves writer/list semantics, snapshot context, native transaction pairing, environment, preceding-record acceptance and bounded shared-format candidates.
+
+
+The [query writer contract](userclient_query_writer_report.md) now establishes the three conditional14 B records: exact big-endian tags, raw type97 77 (parser-normalized0xa129), length4 and big-endian scalars0x4c0b0000/0x1f8/0x99ab. Each writer reaches the shared list lookup with W8 callback index0x6c (separate W0 control0x19) and retained pending-node/constructor-return state. This resolves the earlier query-byte frontier; actual query list publication/order, resulting serializer extent and native daemon pairing remain unknown. No additional Mach endpoint is established.
