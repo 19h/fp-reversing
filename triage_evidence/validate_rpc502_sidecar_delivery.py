@@ -603,6 +603,7 @@ def main():
     if exists(BASE/'kernel_zone_boot_order_report.md'):reports.add(BASE/'kernel_zone_boot_order_report.md')
     if exists(BASE/'kernel_zone_boot_inputs_report.md'):reports.add(BASE/'kernel_zone_boot_inputs_report.md')
     if exists(BASE/'kernel_permanent_storage_report.md'):reports.add(BASE/'kernel_permanent_storage_report.md')
+    if exists(BASE/'kernel_physical_zero_report.md'):reports.add(BASE/'kernel_physical_zero_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3563,6 +3564,16 @@ def main():
         manifest['validation']['kernel_permanent_storage_new_source_queries_unsat']=len(permanent_storage_audit['source_proofs'])
         manifest['validation']['kernel_permanent_storage_rechecked_separation_lemmas_unsat']=len(permanent_storage_audit['rechecked_separation_lemmas'])
         manifest['validation']['kernel_permanent_storage_conditional_kernel_permanent_storage_contract_established']=permanent_storage['conditional_kernel_permanent_storage_contract_established']
+    if exists(ROOT/'kernel_physical_zero_checks.json'):
+        physical_zero=json.loads(read(ROOT/'kernel_physical_zero_checks.json'))
+        physical_zero_audit=json.loads(read(ROOT/'kernel_physical_zero_audit.json'))
+        manifest['validation']['kernel_physical_zero_increment_checks']=physical_zero['verified_counts']
+        manifest['validation']['kernel_physical_zero_static_scope']=physical_zero['scope']
+        manifest['validation']['kernel_physical_zero_independent_checks']=physical_zero_audit['independent_totals']
+        manifest['validation']['kernel_physical_zero_independent_replay_checks']=physical_zero_audit['independent_replay_totals']
+        manifest['validation']['kernel_physical_zero_new_source_queries_unsat']=len(physical_zero_audit['source_proofs'])
+        manifest['validation']['kernel_physical_zero_rechecked_separation_lemmas_unsat']=len(physical_zero_audit['rechecked_separation_lemmas'])
+        manifest['validation']['kernel_physical_zero_conditional_kernel_physical_zero_contract_established']=physical_zero['conditional_kernel_physical_zero_contract_established']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

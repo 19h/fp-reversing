@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) recovers selected refill PFN conversion, direct/window alias selection, low8 attribute dispatch,16 KiB chunking, temporary nesting and deferred-call boundaries. The inline source covers256 logical64 B blocks. Native mapping ownership, hardware cache configuration, complete refill and daemon transaction identity remain unknown.
+
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) joins the original saved-base alias to 76 constructor base reloads/count-pointer stores through retained file-control branches. It distinguishes API return effects, scalar-output resumptions and twelve zero-visit stages. The native filesystem inputs and object lifetime remain unknown; the prior 116 B per later-lineage entry premises remain dependencies.
 
 Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) resolves initialization and write coverage of context+[32,52): 20 B explicitly cleared, first six bytes replaced, final 14 B unchanged in the checked raw-success epochs. Ordered fixture overlays, encoded failure states, network freshness and native lifetime are distinguished. The earlier saved-base route adds 304 checked PC/byte links across 16 cases.

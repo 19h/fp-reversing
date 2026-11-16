@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) identifies0xfffffe000be7b5b8 as a physical-range clear wrapper called by the original permanent refill at0xfffffe000bd72c40. Original nlist identifies its `_pmap_cache_attributes`, `_bzero` and `_memset` callees. Ten source obligations,80 private components and independent replay qualify the role; native aliases and allocation-to-zero identity remain unknown.
+
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) connects 0x1004cf268, 0x1005d0f74/0x1005d0f78, 0x1008337c4 and 0x10071062c/0x100710630 as a conditional saved-context/count-pointer component. Fresh replay checks 230 selected visits, with a six-instruction memory composition and a one-bit overwrite negative control. This establishes data provenance without assigning native caller ownership.
 
 Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) identifies 0x10032197c/0x100321980 as a 20 B context clear and 0x1004cf268 as the earlier saved context-base store. Three nonvacuous source obligations, 110 selected instruction replays, two nonzero network controls and ordered-overlay audits support the local roles. General field capacity, the 14-byte tail's application meaning and native continuity remain unknown.

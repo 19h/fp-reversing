@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) maps X0=physical byte address/X1=length, PFN32<<14 requests, unsigned half-open direct bounds, per-CPU window indices0..3, unsigned minimum chunking and exact original bzero/memset arguments. Attributes select the inline16384 B path only for low8 in{2,6,11,18,22}. Native physical alias and complete refill contracts remain unknown.
+
 Current saved-base increment: [The state-file base-lineage report](daemon_saved_base_statefile_lineage_report.md) establishes conditional continuity of the 8 B absolute alias at outer SP+0x7f38 through SIDB admission, metadata/read controls, prefix routing and SIDN cleanup. All 76 retained constructor parents reload J and publish J+28 at SP+0x71c0. The symbolic composition uses original byte-memory loads/stores; equal endpoint SP, X21 preservation and disjoint API/output effects remain explicit premises.
 
 Current network-storage increment: [The storage report](daemon_context_network_storage_report.md) maps context+28 count4, +32 data6 and +38 tail14 to the fixed 24 B container snapshot. The last 14 bytes have source-established zero initialization and retained raw-success write exclusion; their application type remains unknown. It also attributes SP+0x9b8 to the original X22 store at 0x1004cf268, with a conditional route to SP+0x7f38.

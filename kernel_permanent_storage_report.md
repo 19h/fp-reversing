@@ -1,5 +1,7 @@
 # Permanent storage behind zone statistics and per-CPU caches
 
+Subsequent evidence: The [physical-zero report](kernel_physical_zero_report.md) establishes an explicit selected refill zero request and the complete zero-wrapper source contract, with private byte/replay checks. The ready-path preservation results below remain valid; native allocation-to-zero identity is still unknown.
+
 The original routine at0xfffffe000bd71a20 supplies the32 B statistics and64 B cache requests previously represented by opaque storage-return models. Its ready-page path rounds a request, selects a16 B metadata record, updates cursor/usage/free-space/per-CPU counters, optionally moves the page between encoded queues, and constructs the return from a signed32-bit page index. It does not clear the returned payload on that path. The cache initializer also leaves the current/spare u16 magazine counts unchanged. Consequently zero-filled backing remains an explicit prerequisite, rather than a property established by either of these routines. No native uninitialized-memory defect or usable initialized cache is asserted. [PS1-PS6]
 
 ```text
