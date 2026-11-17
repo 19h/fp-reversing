@@ -164,3 +164,8 @@ Production uses O(B+I+256R+C*(B+V+E)) time/retained space for image bytes B, cap
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) establishes another concrete source-level entry into the common parser at `0xfffffe000a636338`: C+0x718=M, C+0x18=retained original I and S+0xc8=N XOR SUCCESS, after a complete selected 128-byte FPMessage initialization. The target is pending in that increment. This joins the entry interface without importing the earlier parser case as a completed parse in the new allocation/input epoch.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) executes the later FPMessage caller's actual entry context instead of importing this report's earlier allocation/output epoch. The new output destination is M, caller discriminator is `0xfbb3f478`, and a distinct 16-byte container is requested. The prefix reaches a pending first input read; independent completion cuts recover the M+0 pointer publication and new mode-specific return routing. Complete second parsing remains unknown.

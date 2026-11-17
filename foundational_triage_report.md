@@ -2216,3 +2216,8 @@ The [message-attribute report](userclient_message_attributes_report.md) composes
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) composes complete preceding attribute state into a separate 128-byte message and the earlier common parser interface. It proves 32-byte workspace zeroing for every alignment, the exact 123-byte message layout, a constant sixteen-byte XOR transform, distinct mode flags and allocation-NULL publication. The five unwritten attribute bytes are skipped; five separate message bytes remain unwritten. Original input I is staged as pointer/encoded extent only, with no new content/readability/nonaliasing or native packet-epoch claim.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) establishes a new parser/output epoch: C+0x170=M, retained I/encoded N, a distinct second FPTTLV allocation and caller tag `0xfbb3f478`. The actual nonnull prefix stops before the first input-content read; NULL allocation reaches the caller failure continuation. Independent completion cuts establish M+0 as a parser-result pointer and consume mode byte+0x60. Stable input bytes, complete parsing, native ownership/PAC and transport pairing remain explicit unknowns.

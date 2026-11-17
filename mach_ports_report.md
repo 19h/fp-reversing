@@ -2091,3 +2091,8 @@ The [message-attribute report](userclient_message_attributes_report.md) adds no 
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) establishes private API/callback emissions and common-parser re-entry, with no new incoming/outgoing Mach port, right disposition or Mach-message emission. Located sites are local zero-fill `0xfffffe000a657648`, typed allocation `0xfffffe000a657758`, attribute initialization `0xfffffe000a65793c` and parser handoff `0xfffffe000a656c04`. The retained input pointer/extent does not establish a daemon packet layer or matched native transaction.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) adds the local typed-allocation emitter `0xfffffe000a636404` and private result/status/flag transfers at `0xfffffe000a6366a8`, `0xfffffe000a66117c`, `0xfffffe000a6611e0`. It establishes no new incoming/outgoing Mach endpoint, right disposition or Mach-message emitter. The current input pointer has no established native packet-layer or transaction identity.

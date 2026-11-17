@@ -202,3 +202,8 @@ The selected initializer and exactly32-byte zero-fill take O(1) time/space with 
 - **QG5**: Pass. Five skipped attribute bytes and five unwritten message bytes remain distinct; generic helper paths, arbitrary attributes, I's content/epoch, native allocation/PAC and complete parsing remain explicit unknowns.
 - **QG6**: Pass. Original words/fixups/descriptors/constants, source queries, prior rechecks and satisfiable mutation controls provide primary provenance.
 - **QG7**: Pass. Impact-ranked continuation covers parser epoch, input/transport identity, field consumers, ownership, unwritten-byte observation and deeper allocation metadata.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) continues this report's successful handoff through the second FPTTLV allocation and pending input read at I+6, and follows allocation NULL to the new caller failure target. Separate completion-interface cuts establish the M+0 pointer store and M+0x60 branch consumer. This later increment preserves the distinction between actual entry composition and unbridged completion cuts; complete parsing and input lifetime remain unknown.

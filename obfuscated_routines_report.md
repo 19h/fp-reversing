@@ -2196,3 +2196,8 @@ The [message-attribute report](userclient_message_attributes_report.md) assigns 
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) identifies selected `_PRnut72j9` message-construction blocks and the attribute-to-message initializer at `0xfffffe000a653874`. The descending cached16 loop reduces to XOR mask `e43a4ec1536f29ded6b30e155e083e20`; two other 32-byte fields copy byte-for-byte. The source-built modes determine message word+0x14, and a private callback bridges to the common FPTTLV parser. These are exact conditional roles, without native secret/algorithm naming, whole-function semantics or native epoch inference.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) distinguishes the common parser's new FPMessage allocation/caller epoch from its earlier use. Entry `0xfffffe000a636338` stages M as the output cell. Caller tag `0xfbb3f478` selects `0xfffffe000a661144`; the independent success cut tests M+0x60 and dispatches to `0xfffffe000a6611e4` or `0xfffffe000a663c9c`. These are recovered local roles; downstream mode semantics and full second parsing remain unknown.

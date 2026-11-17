@@ -169,3 +169,8 @@ The [message-attribute report](userclient_message_attributes_report.md) recovers
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) extends the compatible tunnel-payload/attribute chain to a separate 128-byte site.FPMessage. Its selected initializer copies the two attribute32 fields, transforms cached16 by a fixed mask and hands M plus staged input metadata to the common parser. This remains a conditional source chain; the same native tunnel/table/attribute/message epoch, ownership and daemon transport are not established.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) extends the conditional payload/attribute/message chain into a distinct second FPTTLV allocation and input-header frontier. It also proves separate completion-interface relations for message pointer publication and a mode-byte consumer. This does not join a native tunnel/table/input-buffer epoch or complete the second parse.

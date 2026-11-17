@@ -65,6 +65,7 @@ def main():
     if exists(BASE/'userclient_schema_lookup_result_report.md'):reports.add(BASE/'userclient_schema_lookup_result_report.md')
     if exists(BASE/'userclient_message_attributes_report.md'):reports.add(BASE/'userclient_message_attributes_report.md')
     if exists(BASE/'userclient_message_initialization_report.md'):reports.add(BASE/'userclient_message_initialization_report.md')
+    if exists(BASE/'userclient_message_parser_report.md'):reports.add(BASE/'userclient_message_parser_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4007,6 +4008,16 @@ def main():
         manifest['validation']['userclient_message_initialization_new_source_queries_unsat']=len(message_audit['source_proofs'])
         manifest['validation']['userclient_message_initialization_prior_source_queries_unsat']=len(message_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_message_initialization_negative_source_controls']=len(message_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_message_parser_checks.json'):
+        parser=json.loads(read(ROOT/'userclient_message_parser_checks.json'))
+        parser_audit=json.loads(read(ROOT/'userclient_message_parser_audit.json'))
+        assert parser_audit['all_checks_pass'] and parser['verified_counts']==parser_audit['verified_counts']
+        manifest['validation']['userclient_message_parser_increment_checks']=parser['verified_counts']
+        manifest['validation']['userclient_message_parser_static_scope']=parser['scope']
+        manifest['validation']['userclient_message_parser_independent_checks']=parser_audit['independent_totals']
+        manifest['validation']['userclient_message_parser_new_source_queries_unsat']=len(parser_audit['source_proofs'])
+        manifest['validation']['userclient_message_parser_prior_source_queries_unsat']=len(parser_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_message_parser_negative_source_controls']=len(parser_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

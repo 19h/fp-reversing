@@ -2345,3 +2345,8 @@ The [message-attribute report](userclient_message_attributes_report.md) establis
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) locates the local zero-fill call at `0xfffffe000a657648`, 128-byte site.FPMessage allocation at `0xfffffe000a657758`, private attribute initializer at `0xfffffe000a65793c` and common-parser handoff at `0xfffffe000a656c04`. All eight zero-fill alignments have source-proved stores/register preservation and a nonstandard X0 return. The message consumes 107 defined attribute bytes, writes 123 bytes and carries M/I/encoded-N into the exact earlier parser interface. Native admission, input contents/epoch, arbitrary-attribute paths and full parsing remain unknown.
+
+
+## FPMessage parser epoch follow-up
+
+The [message-parser report](userclient_message_parser_report.md) establishes the second typed allocation emitted at `0xfffffe000a636404`, new output alias C+0x170=M and caller-qualified completion dispatch. The independent publication cut stores H2 at M+0; raw SUCCESS selects the message+0x60 test. The actual prefix reaches the pending input read at I+6, while allocation NULL reaches `0xfffffe000a6650a4`. Complete parsing and native input custody remain unknown.
