@@ -283,3 +283,7 @@ The [failure-fallback report](userclient_failure_fallback_report.md) supplies an
 ## Staged fallback allocation outcomes
 
 The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.
+
+## Subsequent actual fallback metadata composition
+
+The [actual fallback-metadata report](userclient_fallback_metadata_report.md) follows the actual non-NULL fallback-container outcome through all ten protected header bytes and the selected type0x6685 path. The 14 B predecessor admits body lengths 0..4; zero tag publishes the existing initialized empty container and reaches its saved caller, while nonzero tag enters record construction. Native epochs/effects and the outer return remain unresolved.

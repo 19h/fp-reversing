@@ -124,3 +124,7 @@ Restoration takes O(N) time and O(1) auxiliary algorithm state; N=14 here. The f
 - **QG5**: Pass. Native effects, buffer epochs, observed bytes, tag identity limits and whole-return limits remain distinct.
 - **QG6**: Pass. Original words, pointers, stores, bank identity and rebuilt solver/mutation receipts supply primary provenance.
 - **QG7**: Pass. Continuations address remaining parsing, cleanup/return, native lifetimes/writability, transport and wider domains.
+
+## Subsequent actual fallback metadata composition
+
+The [actual fallback-metadata report](userclient_fallback_metadata_report.md) advances the non-NULL tag-store cut through the remaining six header bytes, exact body bounds and the selected type0x6685 metadata path. Zero tag publishes the initialized empty container to the saved caller; nonzero tag enters record construction. It certifies both actual predecessor modes and source-written byte custody. This report's NULL restoration boundary retains its earlier scope.

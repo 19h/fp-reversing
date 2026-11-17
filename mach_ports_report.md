@@ -2109,3 +2109,7 @@ The [failure-fallback report](userclient_failure_fallback_report.md) locates loc
 ## Staged fallback allocation outcomes
 
 The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.
+
+## Actual fallback header and private publication
+
+The [actual fallback-metadata report](userclient_fallback_metadata_report.md) establishes private header/type dispatch and the output-cell STR at 0xfffffe000a660ad0, followed by saved caller 0xfffffe000a656c08. These blocks add no imported/native call, Mach-message emitter, incoming/outgoing port, right disposition or IOKit selector. The recovered selected wire type 0x50db has no newly established native daemon/kext transaction identity.

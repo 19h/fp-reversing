@@ -230,3 +230,7 @@ The [query writer contract](userclient_query_writer_report.md) now establishes t
 ## Staged fallback allocation outcomes
 
 The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.
+
+## Subsequent actual fallback metadata composition
+
+The [actual fallback-metadata report](userclient_fallback_metadata_report.md) now composes these conditional header roles with the actual non-NULL protected fallback predecessor. It certifies the complete live-state interface for both modes, keeps the newly decoded length distinct from earlier abstract fields, and follows selected zero-tag success through the real output-cell publication and saved caller. Other handlers, node construction, native continuity and outer return remain unknown.
