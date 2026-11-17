@@ -225,3 +225,8 @@ The [serializer emission contract](userclient_serializer_emission_report.md) now
 
 
 The [query writer contract](userclient_query_writer_report.md) now establishes the three conditional14 B records: exact big-endian tags, raw type97 77 (parser-normalized0xa129), length4 and big-endian scalars0x4c0b0000/0x1f8/0x99ab. Each writer reaches the shared list lookup with W8 callback index0x6c (separate W0 control0x19) and retained pending-node/constructor-return state. This resolves the earlier query-byte frontier; actual query list publication/order, resulting serializer extent and native daemon pairing remain unknown. No additional Mach endpoint is established.
+
+
+## Staged fallback allocation outcomes
+
+The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.

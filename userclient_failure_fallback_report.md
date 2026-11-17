@@ -153,3 +153,8 @@ For the fixed one-node cleanup, selected source work/auxiliary space are O(1), e
 - **QG5**: Pass. Actual source composition, new allocation epoch, ordinary returns and the qualified EOR cut have distinct scopes.
 - **QG6**: Pass. Original source, descriptors, symbols, prefix stores, banks, solver receipts and source mutations supply primary provenance.
 - **QG7**: Pass. Continuation covers nonempty fallback parsing, compiler return, deeper admission, native lifetime/transport and wider error/extent cases.
+
+
+## Staged fallback allocation outcomes
+
+The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.

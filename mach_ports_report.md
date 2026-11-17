@@ -2104,3 +2104,8 @@ The [message-failure report](userclient_message_failure_report.md) adds two loca
 ## Subsequent failure fallback evidence
 
 The [failure-fallback report](userclient_failure_fallback_report.md) locates local `_IOFreeData`, `_IOFreeTypeImpl`, `_IOMallocData`, `_IOFreeAligned` and `_IOMallocTypeImpl` requests on the actual failure continuation. It adds no incoming/outgoing Mach port, right disposition or Mach-message emitter. The retained original-input pointer and new protected staging buffer have no newly established daemon field or matched native transaction identity.
+
+
+## Staged fallback allocation outcomes
+
+The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.

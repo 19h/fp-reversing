@@ -2209,3 +2209,8 @@ The [message-failure report](userclient_message_failure_report.md) assigns the s
 ## Subsequent failure fallback evidence
 
 The [failure-fallback report](userclient_failure_fallback_report.md) assigns the selected `_PRnut72j9` blocks a failure-to-staging role: retire the original one-node container, test the saved raw error, allocate the original outer extent, protect the input into that new buffer, and enter the staged parser. NULL buffer allocation instead selects context/aligned-workspace release requests. This is an actual caller-epoch join to earlier conditional staging contracts; it establishes neither whole-function behavior nor a cryptographic protocol role.
+
+
+## Staged fallback allocation outcomes
+
+The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.

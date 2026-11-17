@@ -2229,3 +2229,8 @@ The [message-failure report](userclient_message_failure_report.md) composes the 
 ## Subsequent failure fallback evidence
 
 The [failure-fallback report](userclient_failure_fallback_report.md) connects the actual second-parser allocation failure to original-container retirement and protected input staging. It reconstructs eleven saved cells per predecessor, refines the saved error from original setup, and tracks a new allocation epoch that permits reuse of retired object addresses. The selected non-NULL path copies all 14 bytes under explicit stable-input and normal-pointer premises; NULL instead requests context/workspace retirement. Native lifetime, compiler-cookie/RETAB admission and full fallback parsing remain unknown.
+
+
+## Staged fallback allocation outcomes
+
+The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.

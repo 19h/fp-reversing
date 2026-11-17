@@ -278,3 +278,8 @@ The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establish
 ## Subsequent failure fallback evidence
 
 The [failure-fallback report](userclient_failure_fallback_report.md) supplies an actual incoming join from the second-parser allocation-NULL failure, after message/attribute and original-container cleanup, to this report's staging allocator and shared parser. The selected 14-byte non-NULL buffer is protected and passed through the same caller ABI in a new invocation. A NULL staging result reaches context/aligned-workspace retirement requests. Earlier all-size local contracts retain their scope; whole native parsing and authenticated return remain unknown.
+
+
+## Staged fallback allocation outcomes
+
+The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.
