@@ -232,3 +232,5 @@ The actual parser caller now has a conditional command-field lookup, protected s
 ## Caller cleanup and copy-back increment
 
 Caller cleanup callback0x1a, distinct staged/auxiliary buffers, finite protected copy-back and outer allocation/retirement/status contracts are now established conditionally. Native identity, aliases, callee effects and cross-layer transaction correlation remain open. See the [caller-return report](userclient_caller_return_report.md) for original requests, proofs, scope and assumption probes.
+
+Both retained fallback modes now join their decoded metadata and body observations to this constructor for the first nonzero-tag type-0x6685 record in the fixed 14 B extent. [First-record allocation and return cases](userclient_nonzero_tag_record_report.md).

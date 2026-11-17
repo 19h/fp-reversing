@@ -216,3 +216,5 @@ Caller cleanup callback0x1a, distinct staged/auxiliary buffers, finite protected
 
 
 The [query writer contract](userclient_query_writer_report.md) now establishes the three conditional14 B records: exact big-endian tags, raw type97 77 (parser-normalized0xa129), length4 and big-endian scalars0x4c0b0000/0x1f8/0x99ab. Each writer reaches the shared list lookup with W8 callback index0x6c (separate W0 control0x19) and retained pending-node/constructor-return state. This resolves the earlier query-byte frontier; actual query list publication/order, resulting serializer extent and native daemon pairing remain unknown. No additional Mach endpoint is established.
+
+The retained protected fallback now supplies the actual source state and original byte observations for the first nonzero-tag type-0x6685 record, including every body length 0–4. [Complete first-record writer join](userclient_nonzero_tag_record_report.md).

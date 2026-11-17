@@ -120,3 +120,5 @@ Extraction is O(B+I+C*W) time/space for image bytes B, decoded words I, prefixes
 - **QG5**: Pass. Forwarded state/private context, source/native return, copy request/bytes, payload/descriptor output and retained/selected prefix populations remain distinct.
 - **QG6**: Pass. Original source/pointer/store provenance, rebuilt queries, retained proofs and mutation controls provide primary evidence.
 - **QG7**: Pass. Continuations address matched transport, construction, state lifecycle and separate completion channels with bounded impact labels.
+
+The forwarded state at UserClient+0xe8 is the `site.IOUCCtx` pointer cell. Start zeros it before construction and ignores the constructor's ordinary returned status. The earlier lifecycle work distinguishes this object from private core context C and leaves native null allocation and transaction reachability unknown. [Context lifecycle](userclient_context_lifecycle_report.md). The corresponding nonzero-tag core route now reaches first-record publication and its cursor gate. [Nonzero-tag continuation](userclient_nonzero_tag_record_report.md).

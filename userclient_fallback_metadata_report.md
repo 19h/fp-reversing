@@ -146,3 +146,5 @@ Header decoding and this selected continuation take O(1) time and auxiliary spac
 ## Subsequent actual caller composition
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) continues the saved caller beyond this report's historical boundary. Empty T yields command-tag MISS 0xce515bda; cleanup restores all 14 preceding original-input observations, including the unconsumed suffix, and reaches T/B/C/S retirement requests under explicit ordinary-return/storage premises. Native release effects, the workspace return, guard/epilogue and external result remain unknown.
+
+The selected first nonzero-tag record now has an end-to-end source join from the protected input through serialization and the empty-container append to the original cursor gate. Lengths 0–3 leave a suffix, and length 4 exhausts the selected 14 B extent. [Continuation evidence](userclient_nonzero_tag_record_report.md).

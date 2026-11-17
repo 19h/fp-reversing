@@ -2253,3 +2253,5 @@ The [zero-tag return report](userclient_zero_tag_return_report.md) joins both ac
 ## Conditional selector26 caller completion
 
 The [zero-tag provider report](userclient_zero_tag_provider_report.md) binds the original direct core call and saved argument roots to copy-out, descriptor cleanup and the handler nonzero branch. Under the retained core theorem and ordinary authenticated return/storage premises, local 0xffff5bbc survives to handler RETAB; copy-out is still requested, while the handler skips its output descriptor stores. The caller state lane is nullable and distinct from private core context C. Native transfer bytes and matched transport remain unknown.
+
+The selected nonzero-tag fallback constructs and serializes the first record from the retained 14 B protected input. Ordinary nonnull allocation returns lead to an empty-list append and the exact cursor split. The outer publication cell is still zero at this boundary. [First-record evidence](userclient_nonzero_tag_record_report.md).

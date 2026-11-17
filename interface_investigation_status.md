@@ -2006,3 +2006,5 @@ The [zero-tag return report](userclient_zero_tag_return_report.md) continues the
 ## Conditional zero-tag caller completion
 
 The [zero-tag provider report](userclient_zero_tag_provider_report.md) adds 20 source UNSAT obligations, 67 retained-proof rechecks, six nullable-state SAT admissions, one former-model null-exclusion check and two source mutation controls. Original journals reconstruct 90 argument cells/720 B; six of 30 prefixes have extent14. The direct caller, copy requests, cleanup, nonzero output branch and source frame interface are established conditionally. Native transfer, authenticated return, public status naming and matched daemon transaction remain unknown. Investigation remains active.
+
+The nonzero-tag type-0x6685 source join now reaches first-record serialization, empty-list publication and the cursor gate for all five body lengths in the retained 14 B extent. Native allocator and pointer-authentication effects, parser completion and matched daemon transport remain unknown. [Evidence and checks](userclient_nonzero_tag_record_report.md).

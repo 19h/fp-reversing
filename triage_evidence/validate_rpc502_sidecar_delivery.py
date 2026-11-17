@@ -73,6 +73,7 @@ def main():
     if exists(BASE/'userclient_zero_tag_unwind_report.md'):reports.add(BASE/'userclient_zero_tag_unwind_report.md')
     if exists(BASE/'userclient_zero_tag_return_report.md'):reports.add(BASE/'userclient_zero_tag_return_report.md')
     if exists(BASE/'userclient_zero_tag_provider_report.md'):reports.add(BASE/'userclient_zero_tag_provider_report.md')
+    if exists(BASE/'userclient_nonzero_tag_record_report.md'):reports.add(BASE/'userclient_nonzero_tag_record_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4097,6 +4098,19 @@ def main():
         manifest['validation']['userclient_zero_tag_provider_new_source_queries_unsat']=len(zero_provider_audit['source_proofs'])
         manifest['validation']['userclient_zero_tag_provider_prior_queries_unsat']=len(zero_provider_audit['rechecked_prior_proofs'])
         manifest['validation']['userclient_zero_tag_provider_negative_source_controls']=len(zero_provider_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_nonzero_tag_record_checks.json'):
+        record = json.loads(read(ROOT/'userclient_nonzero_tag_record_checks.json'))
+        audit = json.loads(read(ROOT/'userclient_nonzero_tag_record_audit.json'))
+        assert audit['all_checks_pass'] and record['verified_counts'] == audit['verified_counts']
+        prefix = 'userclient_nonzero_tag_record_'
+        manifest['validation'].update({
+            prefix+'increment_checks': record['verified_counts'],
+            prefix+'static_scope': record['scope'],
+            prefix+'independent_checks': audit['independent_totals'],
+            prefix+'new_source_queries_unsat': len(audit['source_proofs']),
+            prefix+'prior_queries_unsat': len(audit['rechecked_prior_proofs']),
+            prefix+'negative_source_controls': len(audit['negative_source_controls']),
+        })
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
