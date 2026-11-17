@@ -78,6 +78,7 @@ def main():
     if exists(BASE/'userclient_populated_command_lookup_report.md'):reports.add(BASE/'userclient_populated_command_lookup_report.md')
     if exists(BASE/'userclient_populated_cleanup_report.md'):reports.add(BASE/'userclient_populated_cleanup_report.md')
     if exists(BASE/'iokit_sync_error_reply_report.md'):reports.add(BASE/'iokit_sync_error_reply_report.md')
+    if exists(BASE/'daemon_selector26_return_report.md'):reports.add(BASE/'daemon_selector26_return_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4170,6 +4171,25 @@ def main():
             'scope': sync_reply['scope'], 'source_queries': len(sync_reply['proofs']),
             'kernel_reply_size_bytes': sync_reply['kernel_reply_size_bytes'],
             'user_reply_size_bytes': sync_reply['user_reply_size_bytes'],
+        }
+    if exists(ROOT/'daemon_selector26_return_audit.json'):
+        returned = json.loads(read(ROOT/'daemon_selector26_return_audit.json'))
+        assert not returned['native_exchange_observed'] and not returned['full_goal_complete']
+        assert returned['generator_sha256'] == sha(ROOT/'audit_daemon_selector26_return.py')
+        for name, digest in returned['dependencies'].items():
+            assert sha(ROOT/name) == digest
+        assert returned['statuses'] == {
+            'miss': {'api': '0xffff5bbc', 'encoded': '0x74c29ded'},
+            'match': {'api': '0xffff5a87', 'encoded': '0x74c29cd6'},
+        }
+        assert len(returned['proofs']) == 12
+        assert all(row['result'] == 'unsat' and row['premises_nonvacuous']
+                   for row in returned['proofs'])
+        manifest['validation']['daemon_selector26_return'] = {
+            'scope': returned['scope'],
+            'source_queries': len(returned['proofs']),
+            'resolved_fixups': len(returned['fixups']['records']),
+            'profiles': len(returned['profiles']),
         }
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
