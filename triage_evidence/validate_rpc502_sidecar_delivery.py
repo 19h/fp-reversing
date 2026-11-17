@@ -53,6 +53,7 @@ def main():
     if exists(BASE/'userclient_entry_execution_report.md'):reports.add(BASE/'userclient_entry_execution_report.md')
     if exists(BASE/'userclient_fpttlv_entry_report.md'):reports.add(BASE/'userclient_fpttlv_entry_report.md')
     if exists(BASE/'userclient_early_header_report.md'):reports.add(BASE/'userclient_early_header_report.md')
+    if exists(BASE/'userclient_early_node_report.md'):reports.add(BASE/'userclient_early_node_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3877,6 +3878,15 @@ def main():
         manifest['validation']['userclient_early_header_independent_checks']=early_header_audit['independent_totals']
         manifest['validation']['userclient_early_header_new_source_queries_unsat']=len(early_header_audit['source_proofs'])
         manifest['validation']['userclient_early_header_negative_source_controls']=len(early_header_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_early_node_checks.json'):
+        early_node=json.loads(read(ROOT/'userclient_early_node_checks.json'))
+        early_node_audit=json.loads(read(ROOT/'userclient_early_node_audit.json'))
+        assert early_node_audit['all_checks_pass'] and early_node['verified_counts']==early_node_audit['verified_counts']
+        manifest['validation']['userclient_early_node_increment_checks']=early_node['verified_counts']
+        manifest['validation']['userclient_early_node_static_scope']=early_node['scope']
+        manifest['validation']['userclient_early_node_independent_checks']=early_node_audit['independent_totals']
+        manifest['validation']['userclient_early_node_new_source_queries_unsat']=len(early_node_audit['source_proofs'])
+        manifest['validation']['userclient_early_node_negative_source_controls']=len(early_node_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
