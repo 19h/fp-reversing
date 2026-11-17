@@ -57,6 +57,7 @@ def main():
     if exists(BASE/'userclient_early_data_report.md'):reports.add(BASE/'userclient_early_data_report.md')
     if exists(BASE/'userclient_early_writer_report.md'):reports.add(BASE/'userclient_early_writer_report.md')
     if exists(BASE/'userclient_early_payload_report.md'):reports.add(BASE/'userclient_early_payload_report.md')
+    if exists(BASE/'userclient_early_publication_report.md'):reports.add(BASE/'userclient_early_publication_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3919,6 +3920,16 @@ def main():
         manifest['validation']['userclient_early_payload_new_source_queries_unsat']=len(early_payload_audit['source_proofs'])
         manifest['validation']['userclient_early_payload_prior_header_queries_unsat']=len(early_payload_audit['rechecked_prior_header_proofs'])
         manifest['validation']['userclient_early_payload_negative_source_controls']=len(early_payload_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_early_publication_checks.json'):
+        early_publication=json.loads(read(ROOT/'userclient_early_publication_checks.json'))
+        early_publication_audit=json.loads(read(ROOT/'userclient_early_publication_audit.json'))
+        assert early_publication_audit['all_checks_pass'] and early_publication['verified_counts']==early_publication_audit['verified_counts']
+        manifest['validation']['userclient_early_publication_increment_checks']=early_publication['verified_counts']
+        manifest['validation']['userclient_early_publication_static_scope']=early_publication['scope']
+        manifest['validation']['userclient_early_publication_independent_checks']=early_publication_audit['independent_totals']
+        manifest['validation']['userclient_early_publication_new_source_queries_unsat']=len(early_publication_audit['source_proofs'])
+        manifest['validation']['userclient_early_publication_prior_payload_queries_unsat']=len(early_publication_audit['rechecked_prior_payload_proofs'])
+        manifest['validation']['userclient_early_publication_negative_source_controls']=len(early_publication_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
