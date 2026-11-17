@@ -2386,3 +2386,5 @@ The [zero-tag provider report](userclient_zero_tag_provider_report.md) establish
 The type-0x6685 fallback route requests a typed 32 B node and a data buffer of 10–14 B. The same decoded metadata and protected observations reach the writer, empty-list lookup and head/tail update. Null allocation results select a common cleanup entry with raw W23=0xce515bb2. [First-record ABI](userclient_nonzero_tag_record_report.md).
 
 The populated fallback parser now has a source-checked caller handoff, including the command lookup registers and the separate three-request retirement ABI for a short suffix. [First-record completion](userclient_nonzero_tag_completion_report.md).
+
+For the exhausted 14 B singleton, the command lookup returns either the parser's node and raw success or null and raw miss. The matched node's transformed type sends the caller to cleanup before any scalar read. Both handoffs save a raw status at the same kernel-local cleanup store. [Populated command lookup](userclient_populated_command_lookup_report.md)

@@ -66,3 +66,5 @@ These singleton continuations take O(1) time and O(1) auxiliary space, excluding
 - **QG5** passed. Parser output, raw status, allocator request arguments and modeled lifetimes have separate checks.
 - **QG6** passed. Source bytes, pointer records, journals and solver receipts support the scoped claims.
 - **QG7** passed. The remaining caller, allocator and native cross-layer joins are ranked by impact.
+
+The populated path is now composed through both lookup outcomes and the caller's common cleanup handoff. [Populated command lookup](userclient_populated_command_lookup_report.md)

@@ -75,6 +75,7 @@ def main():
     if exists(BASE/'userclient_zero_tag_provider_report.md'):reports.add(BASE/'userclient_zero_tag_provider_report.md')
     if exists(BASE/'userclient_nonzero_tag_record_report.md'):reports.add(BASE/'userclient_nonzero_tag_record_report.md')
     if exists(BASE/'userclient_nonzero_tag_completion_report.md'):reports.add(BASE/'userclient_nonzero_tag_completion_report.md')
+    if exists(BASE/'userclient_populated_command_lookup_report.md'):reports.add(BASE/'userclient_populated_command_lookup_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4120,6 +4121,15 @@ def main():
             'profiles': len(completion['profiles']),
             'source_queries': len(completion['source_proofs']),
             'negative_controls': len(completion['negative_source_controls']),
+        }
+    if exists(ROOT/'userclient_populated_command_lookup_audit.json'):
+        lookup = json.loads(read(ROOT/'userclient_populated_command_lookup_audit.json'))
+        assert lookup['all_checks_pass'] and not lookup['full_goal_complete']
+        manifest['validation']['userclient_populated_command_lookup'] = {
+            'scope': lookup['scope'],
+            'profiles': len(lookup['profiles']),
+            'source_queries': len(lookup['source_proofs']),
+            'negative_controls': 1,
         }
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
