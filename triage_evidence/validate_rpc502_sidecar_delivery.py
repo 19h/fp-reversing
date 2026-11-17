@@ -67,6 +67,7 @@ def main():
     if exists(BASE/'userclient_message_initialization_report.md'):reports.add(BASE/'userclient_message_initialization_report.md')
     if exists(BASE/'userclient_message_parser_report.md'):reports.add(BASE/'userclient_message_parser_report.md')
     if exists(BASE/'userclient_message_failure_report.md'):reports.add(BASE/'userclient_message_failure_report.md')
+    if exists(BASE/'userclient_failure_fallback_report.md'):reports.add(BASE/'userclient_failure_fallback_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4029,6 +4030,18 @@ def main():
         manifest['validation']['userclient_message_failure_new_source_queries_unsat']=len(failure_audit['source_proofs'])
         manifest['validation']['userclient_message_failure_prior_source_queries_unsat']=len(failure_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_message_failure_negative_source_controls']=len(failure_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_failure_fallback_checks.json'):
+        fallback=json.loads(read(ROOT/'userclient_failure_fallback_checks.json'))
+        fallback_audit=json.loads(read(ROOT/'userclient_failure_fallback_audit.json'))
+        assert fallback_audit['all_checks_pass'] and fallback['verified_counts']==fallback_audit['verified_counts']
+        manifest['validation']['userclient_failure_fallback_increment_checks']=fallback['verified_counts']
+        manifest['validation']['userclient_failure_fallback_static_scope']=fallback['scope']
+        manifest['validation']['userclient_failure_fallback_independent_checks']=fallback_audit['independent_totals']
+        manifest['validation']['userclient_failure_fallback_new_source_queries_unsat']=len(fallback_audit['source_proofs'])
+        manifest['validation']['userclient_failure_fallback_prior_source_queries_unsat']=len(fallback_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_failure_fallback_negative_source_controls']=len(fallback_audit['negative_source_controls'])
+        manifest['validation']['userclient_failure_fallback_prefix_and_qualified_cut_queries_unsat']=len(fallback_audit['prefix_and_qualified_cut_proofs'])
+        manifest['validation']['userclient_failure_fallback_retired_address_reuse_SAT_checks']=len(fallback_audit['retired_address_reuse_checks'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

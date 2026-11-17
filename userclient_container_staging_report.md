@@ -274,3 +274,7 @@ Outer allocation requests now distinguish the4,096 B context and16,384 B aligned
 
 
 The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) supplies an actual incoming join from the second-parser allocation-NULL failure, after message/attribute and original-container cleanup, to this report's staging allocator and shared parser. The selected 14-byte non-NULL buffer is protected and passed through the same caller ABI in a new invocation. A NULL staging result reaches context/aligned-workspace retirement requests. Earlier all-size local contracts retain their scope; whole native parsing and authenticated return remain unknown.

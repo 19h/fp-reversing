@@ -187,3 +187,7 @@ The new interfaces are argument saving, allocation requests, unsigned ordering, 
 ## Quality gates
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: UE-A1-UE-A7 register dependencies and falsification probes. **QG3** Pass for this increment: original routine entry, CPU/data/control contracts, environmental assumptions and Mach/interface limits covered; the full goal remains active. **QG4** Pass: u32/u64 channels, byte extents, exact offsets, modular arithmetic, counts and complexity bounds are reproducible. **QG5** Pass: numeric order versus initialization, NULL versus non-NULL paths, earlier versus later FPTTLV allocations, private unknown bytes versus native defects and captured versus executed words are distinguished. **QG6** Pass: pinned original/normalized bytes, original metadata/pointers/symbols, fresh obligations, independent replay and source controls support the claims; native gaps remain explicit. **QG7** Pass: impact-ranked bounded continuation above. `full_goal_complete=false`.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) locates later cleanup of the original entry allocations: typed context retirement at `0xfffffe000a666260`, using a descriptor matching the 4096 B allocation descriptor, followed by `_IOFreeAligned` at `0xfffffe000a6662b0` with the original 16384 B workspace extent. These requests occur after the selected message-parser failure and a NULL fallback-buffer result. Native retirement, compiler guard/frame restoration and RETAB remain unknown.

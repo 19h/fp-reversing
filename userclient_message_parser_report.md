@@ -135,3 +135,7 @@ The selected prefix and fixed completion cuts take O(1) work and space. Evidence
 ## Subsequent message-allocation failure evidence
 
 The [message-failure report](userclient_message_failure_report.md) continues this report's actual allocation-NULL failure frontier through the message and attribute retirement requests, the zero output publication and preservation of raw status `0xce515bb2` at the pending original-container cleanup. All 126 new proof partitions, fourteen retained checks and three source mutation controls pass. The successful-completion cuts above remain unbridged to a complete second parse.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) follows this report's actual allocation-NULL branch beyond message/attribute cleanup. It establishes original-container retirement followed by exact-size protected staging and a new staged-parser allocation request, or context/workspace release requests if staging allocation is NULL. The new invocation uses its own buffer/output/continuation epoch; it does not complete this report's failed second parse.

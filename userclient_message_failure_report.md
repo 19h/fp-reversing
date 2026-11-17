@@ -123,3 +123,7 @@ The source prefix and fixed empty-child unwind take O(1) work/space. Evidence co
 - **QG5**: Pass. Descriptor compatibility, requested retirement, modeled return, native effects and remaining original-container cleanup have distinct scopes. Input bytes and successful parsing remain unknown.
 - **QG6**: Pass. Original source/fixups/descriptors, prefix stores, exhaustive banks, solver receipts and copied-source controls supply primary provenance.
 - **QG7**: Pass. Impact-ranked continuation covers remaining cleanup/return, successful parser custody, deeper allocator admission, aliases and native transport pairing.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) continues this report's pending original-container cleanup through record/node/container retirement and the next exact-size allocation. The failure then either requests context/workspace retirement on NULL or protects the original 14-byte input into a new buffer and requests a staged-parser allocation on non-NULL. Raw status, local phase constants and the separate return-decoding cut retain distinct scopes; the original failure does not immediately establish an outer return.

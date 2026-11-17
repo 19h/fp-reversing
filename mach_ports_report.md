@@ -2100,3 +2100,7 @@ The [message-parser report](userclient_message_parser_report.md) adds the local 
 ## Subsequent message-allocation failure evidence
 
 The [message-failure report](userclient_message_failure_report.md) adds two located local `_IOFreeTypeImpl` emissions at `0xfffffe000a660a20` and `0xfffffe000a656b24`, plus private cleanup callbacks and a zero factory output. It establishes no new incoming/outgoing Mach port, right disposition or Mach-message emitter. The preserved raw error has no newly established native daemon/transport transaction identity.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) locates local `_IOFreeData`, `_IOFreeTypeImpl`, `_IOMallocData`, `_IOFreeAligned` and `_IOMallocTypeImpl` requests on the actual failure continuation. It adds no incoming/outgoing Mach port, right disposition or Mach-message emitter. The retained original-input pointer and new protected staging buffer have no newly established daemon field or matched native transaction identity.

@@ -2225,3 +2225,7 @@ The [message-parser report](userclient_message_parser_report.md) establishes a n
 ## Subsequent message-allocation failure evidence
 
 The [message-failure report](userclient_message_failure_report.md) composes the actual allocation-NULL branch through two typed-retirement requests under explicit ordinary-return premises. Both owning cells and the message output clear; raw error `0xce515bb2` survives two saves/restores and reaches the pending original-container cleanup. Every later source dereference excludes the retired message/attribute extents. Remaining opaque aliases, native lifetime/PAC, full dispatcher return and transport pairing remain unknown.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) connects the actual second-parser allocation failure to original-container retirement and protected input staging. It reconstructs eleven saved cells per predecessor, refines the saved error from original setup, and tracks a new allocation epoch that permits reuse of retired object addresses. The selected non-NULL path copies all 14 bytes under explicit stable-input and normal-pointer premises; NULL instead requests context/workspace retirement. Native lifetime, compiler-cookie/RETAB admission and full fallback parsing remain unknown.

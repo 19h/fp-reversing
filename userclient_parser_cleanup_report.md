@@ -214,3 +214,7 @@ The [retirement metadata query](kernel_retirement_query_report.md) establishes c
 ## Subsequent message-allocation failure evidence
 
 The [message-failure report](userclient_message_failure_report.md) composes a distinct later failure epoch: allocation NULL in the second parser leaves both message child pointers zero, so the shared destructor returns through each child callback without deeper container/node retirement. The message and attribute typed-retirement requests then precede a pending cleanup of the original H/J/Z container. That remaining original-container cleanup is not executed in the new increment.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) composes the shared list destructor with the actual original H/J/Z state following message construction failure. The retained successor is zero; the source requests data retirement of the 14 B protected record, typed retirement of the 32 B node and typed retirement of the 16 B container, then clears C+0x418 and resumes the fallback allocator. Ordinary returns are premises; native free effects and broader list/error paths remain unknown.

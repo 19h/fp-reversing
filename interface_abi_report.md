@@ -2354,3 +2354,7 @@ The [message-parser report](userclient_message_parser_report.md) establishes the
 ## Subsequent message-allocation failure evidence
 
 The [message-failure report](userclient_message_failure_report.md) follows the actual second-parser allocation-NULL state through typed retirement of the 128-byte FPMessage and 112-byte FPMessageAttr. Exact `_IOFreeTypeImpl` requests are emitted at `0xfffffe000a660a20` and `0xfffffe000a656b24`, with separate retirement descriptors matching their allocation descriptors. Under ordinary-return premises, the owning cells and message output are cleared and raw error `0xce515bb2` reaches the pending original-container cleanup. Native retirement and the outer operation return remain unknown.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) composes original record/node/container retirement with a new `_IOMallocData(14)` request at `0xfffffe000a641cf8`. NULL requests typed retirement of the 4096 B context at `0xfffffe000a666260` and `_IOFreeAligned(S,16384)` at `0xfffffe000a6662b0`. Non-NULL produces a 14-byte protected input copy and requests another 16 B `site.FPTTLV` allocation at `0xfffffe000a642098`, with caller output C+0x600 and continuation `0xfffffe000a656c08`. Native callee effects, complete fallback parsing and authenticated outer return remain unknown.

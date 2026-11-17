@@ -2205,3 +2205,7 @@ The [message-parser report](userclient_message_parser_report.md) distinguishes t
 ## Subsequent message-allocation failure evidence
 
 The [message-failure report](userclient_message_failure_report.md) assigns the selected `_PRnut72j9` blocks a conditional failure-unwind role: save/restore the parser error, visit the two NULL message children through the shared destructor, request typed message and attribute retirement, clear the corresponding owning cells and output, and request cleanup of the earlier parsed container. Callback cells distinguish repeated generic-wrapper/destructor epochs. This identifies local source behavior without establishing whole-function or native retirement semantics.
+
+## Subsequent failure fallback evidence
+
+The [failure-fallback report](userclient_failure_fallback_report.md) assigns the selected `_PRnut72j9` blocks a failure-to-staging role: retire the original one-node container, test the saved raw error, allocate the original outer extent, protect the input into that new buffer, and enter the staged parser. NULL buffer allocation instead selects context/aligned-workspace release requests. This is an actual caller-epoch join to earlier conditional staging contracts; it establishes neither whole-function behavior nor a cryptographic protocol role.
