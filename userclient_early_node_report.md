@@ -1,5 +1,7 @@
 # Earlier FPTTLVNode return and data allocation interface
 
+Subsequent original-entry evidence: The [early data-return report](userclient_early_data_report.md) preserves 60 predecessor prefixes through a fifth register-only return. NULL data requests typed-node retirement; non-NULL data requests the shared writer and stops before its undefined C+0x768 input. The setup consumes five retained pointer roots and seven metadata cells: 18 of 64 required bytes are source-defined and 46 remain unknown in the private model. Nine source proofs, 118782 independently interpreted visits and two rejected mutations pass. Five call-return stores are located, without inventing their missing current epochs. No data bytes are written; native allocator effects, complete serialization and matched daemon/kext identity remain unknown. Earlier boundaries below retain their historical scopes.
+
 The original `_PRnut72j9` prefix now continues through a declared return from its earlier 32 B `site.FPTTLVNode` request. Source code retains that result, zeroes its first 16 B, stores a u32 total extent at node+0x10 and requests `L+10` B from `_IOMallocData`. The lower typed-allocation wrapper masks incoming flags with 0x7; its caller's 0x8004 value does not, by itself, establish a native non-NULL guarantee. A synthetic NULL result stops before an unbacked load in the private model. Native failure reachability, allocator memory effects and whole-operation completion are unknown. [EN1-EN8]
 
 ## Evidence and claim mapping

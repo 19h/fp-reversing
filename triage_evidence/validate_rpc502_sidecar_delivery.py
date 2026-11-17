@@ -54,6 +54,7 @@ def main():
     if exists(BASE/'userclient_fpttlv_entry_report.md'):reports.add(BASE/'userclient_fpttlv_entry_report.md')
     if exists(BASE/'userclient_early_header_report.md'):reports.add(BASE/'userclient_early_header_report.md')
     if exists(BASE/'userclient_early_node_report.md'):reports.add(BASE/'userclient_early_node_report.md')
+    if exists(BASE/'userclient_early_data_report.md'):reports.add(BASE/'userclient_early_data_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3887,6 +3888,15 @@ def main():
         manifest['validation']['userclient_early_node_independent_checks']=early_node_audit['independent_totals']
         manifest['validation']['userclient_early_node_new_source_queries_unsat']=len(early_node_audit['source_proofs'])
         manifest['validation']['userclient_early_node_negative_source_controls']=len(early_node_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_early_data_checks.json'):
+        early_data=json.loads(read(ROOT/'userclient_early_data_checks.json'))
+        early_data_audit=json.loads(read(ROOT/'userclient_early_data_audit.json'))
+        assert early_data_audit['all_checks_pass'] and early_data['verified_counts']==early_data_audit['verified_counts']
+        manifest['validation']['userclient_early_data_increment_checks']=early_data['verified_counts']
+        manifest['validation']['userclient_early_data_static_scope']=early_data['scope']
+        manifest['validation']['userclient_early_data_independent_checks']=early_data_audit['independent_totals']
+        manifest['validation']['userclient_early_data_new_source_queries_unsat']=len(early_data_audit['source_proofs'])
+        manifest['validation']['userclient_early_data_negative_source_controls']=len(early_data_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
