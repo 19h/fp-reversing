@@ -62,6 +62,7 @@ def main():
     if exists(BASE/'userclient_schema_search_report.md'):reports.add(BASE/'userclient_schema_search_report.md')
     if exists(BASE/'userclient_schema_scalar_report.md'):reports.add(BASE/'userclient_schema_scalar_report.md')
     if exists(BASE/'userclient_schema_registry_report.md'):reports.add(BASE/'userclient_schema_registry_report.md')
+    if exists(BASE/'userclient_schema_lookup_result_report.md'):reports.add(BASE/'userclient_schema_lookup_result_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3974,6 +3975,16 @@ def main():
         manifest['validation']['userclient_schema_registry_new_source_queries_unsat']=len(schema_registry_audit['source_proofs'])
         manifest['validation']['userclient_schema_registry_prior_source_queries_unsat']=len(schema_registry_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_schema_registry_negative_source_controls']=len(schema_registry_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_schema_lookup_result_checks.json'):
+        lookup_result=json.loads(read(ROOT/'userclient_schema_lookup_result_checks.json'))
+        lookup_result_audit=json.loads(read(ROOT/'userclient_schema_lookup_result_audit.json'))
+        assert lookup_result_audit['all_checks_pass'] and lookup_result['verified_counts']==lookup_result_audit['verified_counts']
+        manifest['validation']['userclient_schema_lookup_result_increment_checks']=lookup_result['verified_counts']
+        manifest['validation']['userclient_schema_lookup_result_static_scope']=lookup_result['scope']
+        manifest['validation']['userclient_schema_lookup_result_independent_checks']=lookup_result_audit['independent_totals']
+        manifest['validation']['userclient_schema_lookup_result_new_source_queries_unsat']=len(lookup_result_audit['source_proofs'])
+        manifest['validation']['userclient_schema_lookup_result_prior_source_queries_unsat']=len(lookup_result_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_schema_lookup_result_negative_source_controls']=len(lookup_result_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
