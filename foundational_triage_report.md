@@ -2212,3 +2212,7 @@ The [original early-main signing case](kernel_main_pointer_signing_report.md) re
 ## Message-attribute consumer follow-up
 
 The [message-attribute report](userclient_message_attributes_report.md) composes actual schema lookup state through a 112-byte constructor and payload-dependent copies, checking all 107 written bytes, five unwritten bytes, 64 random requests and the allocation-NULL error path. Eleven additional roots per prefix have original-store custody; a ninth unknown private word at S+0xd0c stays symbolic and is restored unchanged. Every new source store is confined to admitted caller cells or the separate attribute extent under explicit ownership/storage premises. Native initialization, provider effects, producer/consumer epochs and transport remain unknown.
+
+## FPMessage initialization follow-up
+
+The [FPMessage initialization report](userclient_message_initialization_report.md) composes complete preceding attribute state into a separate 128-byte message and the earlier common parser interface. It proves 32-byte workspace zeroing for every alignment, the exact 123-byte message layout, a constant sixteen-byte XOR transform, distinct mode flags and allocation-NULL publication. The five unwritten attribute bytes are skipped; five separate message bytes remain unwritten. Original input I is staged as pointer/encoded extent only, with no new content/readability/nonaliasing or native packet-epoch claim.

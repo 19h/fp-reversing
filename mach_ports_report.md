@@ -2087,3 +2087,7 @@ The [original early-main signing case](kernel_main_pointer_signing_report.md) ad
 ## Message-attribute consumer follow-up
 
 The [message-attribute report](userclient_message_attributes_report.md) adds no incoming/outgoing Mach port, right disposition or Mach-message emission. Its located emissions are typed allocation at `0xfffffe000a652ecc`, kernel-random requests at `0xfffffe000a652fbc`/`0xfffffe000a65305c`, private callbacks and pending continuations. Kernel provider callbacks and the four-byte request are source-level ABI evidence; no provider/native transport or daemon/kext transaction identity is inferred.
+
+## FPMessage initialization follow-up
+
+The [FPMessage initialization report](userclient_message_initialization_report.md) establishes private API/callback emissions and common-parser re-entry, with no new incoming/outgoing Mach port, right disposition or Mach-message emission. Located sites are local zero-fill `0xfffffe000a657648`, typed allocation `0xfffffe000a657758`, attribute initialization `0xfffffe000a65793c` and parser handoff `0xfffffe000a656c04`. The retained input pointer/extent does not establish a daemon packet layer or matched native transaction.

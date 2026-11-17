@@ -2341,3 +2341,7 @@ The [original early-main signing case](kernel_main_pointer_signing_report.md) re
 ## Message-attribute consumer follow-up
 
 The [message-attribute report](userclient_message_attributes_report.md) establishes the caller-specific site.FPMessageAttr descriptor at `0xfffffe000847b1e0` (112 bytes), typed-allocation request at `0xfffffe000a652ecc`, and two 32-call kernel `_random` loops emitted at `0xfffffe000a652fbc` and `0xfffffe000a65305c`. Separate original-kernel cuts establish provider callback slots, a four-byte output request and the 31-bit mask. Exact byte overlays, mode input P+4, allocation-NULL publication at S+0xab8 and the pending `0xfffffe000a6575b0` interface are reported with explicit external-return/storage premises. Native provider effects, object identity and full operation remain unknown.
+
+## FPMessage initialization follow-up
+
+The [FPMessage initialization report](userclient_message_initialization_report.md) locates the local zero-fill call at `0xfffffe000a657648`, 128-byte site.FPMessage allocation at `0xfffffe000a657758`, private attribute initializer at `0xfffffe000a65793c` and common-parser handoff at `0xfffffe000a656c04`. All eight zero-fill alignments have source-proved stores/register preservation and a nonstandard X0 return. The message consumes 107 defined attribute bytes, writes 123 bytes and carries M/I/encoded-N into the exact earlier parser interface. Native admission, input contents/epoch, arbitrary-attribute paths and full parsing remain unknown.

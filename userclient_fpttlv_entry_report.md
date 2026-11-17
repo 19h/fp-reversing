@@ -160,3 +160,7 @@ Production uses O(B+I+256R+C*(B+V+E)) time/retained space for image bytes B, cap
 ## Quality gates
 
 **QG1** Pass: factual technical analysis. **QG2** Pass: FE-A1-FE-A7 register dependencies and falsification probes. **QG3** Pass for this increment: routine purpose, original-entry control/data flow, lower ABI cuts, environmental limits and Mach-interface consequences covered; the full goal remains active. **QG4** Pass: u32/u64 arithmetic, byte widths/extents, exact counts and complexity are reproducible. **QG5** Pass: earlier/later object epochs, raw status versus reused W23, empty/short cleanup aliases, selected versus executed reads and private unknown bytes versus native behavior are distinguished. **QG6** Pass: pinned original/normalized source, chained pointers/descriptors/symbols, fresh proofs, independent replay and controls support the claims. **QG7** Pass: impact-ranked continuation above. `full_goal_complete=false`.
+
+## FPMessage initialization follow-up
+
+The [FPMessage initialization report](userclient_message_initialization_report.md) establishes another concrete source-level entry into the common parser at `0xfffffe000a636338`: C+0x718=M, C+0x18=retained original I and S+0xc8=N XOR SUCCESS, after a complete selected 128-byte FPMessage initialization. The target is pending in that increment. This joins the entry interface without importing the earlier parser case as a completed parse in the new allocation/input epoch.

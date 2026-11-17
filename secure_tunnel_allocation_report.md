@@ -165,3 +165,7 @@ The matching descriptor names narrow the allocation/free investigation, but a sa
 ## Message-attribute consumer follow-up
 
 The [message-attribute report](userclient_message_attributes_report.md) recovers a later raw-table-payload consumer with compatible cached16 (+8..0x17) and cached32 (+0x18..0x37) ranges. Its P+4 mode byte belongs to the six-byte header range, distinct from FPSecureTunnel+0x68. It constructs a separate 112-byte attribute object and copies or retains fields by mode. This is a conditional layout comparison; the same native allocation/holder/key epoch and payload type remain unknown.
+
+## FPMessage initialization follow-up
+
+The [FPMessage initialization report](userclient_message_initialization_report.md) extends the compatible tunnel-payload/attribute chain to a separate 128-byte site.FPMessage. Its selected initializer copies the two attribute32 fields, transforms cached16 by a fixed mask and hands M plus staged input metadata to the common parser. This remains a conditional source chain; the same native tunnel/table/attribute/message epoch, ownership and daemon transport are not established.
