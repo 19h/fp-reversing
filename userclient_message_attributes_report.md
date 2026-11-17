@@ -170,3 +170,7 @@ No new incoming/outgoing Mach port, right disposition or Mach-message emission l
 ## FPMessage initialization follow-up
 
 The [FPMessage initialization report](userclient_message_initialization_report.md) executes the formerly pending `0xfffffe000a6575b0` branch through a 128-byte message allocation, source-proved local zero-fill, complete selected attribute consumption and common-parser re-entry at `0xfffffe000a636338`. All 107 defined attribute bytes are read and preserved; the five unwritten attribute bytes are skipped. The cached16 field receives a fixed XOR transform in the message, which has five separate unwritten bytes. Native input/message epochs, ownership, authentication and transport remain unknown.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) establishes the downstream attribute retirement request at `0xfffffe000a656b24`, its matching 112-byte typed descriptor and the clear of owning cell C+0x1b0 at `0xfffffe000a656b58` after an assumed ordinary return. F+0x678 supplies that owning-cell address in the actual constructor epoch. Native free effects and complete operation unwind remain unknown.

@@ -210,3 +210,7 @@ The [kernel allocator boundary](kernel_allocator_boundary_report.md) now establi
 
 
 The [retirement metadata query](kernel_retirement_query_report.md) establishes conditional8 B range admission, the10-bit zone classification and u16 extent output, both large-layout index encodings, explicit destructive u16 offset reads, optional output effects and the14/32 B caller extent/recovered-base request. Complete query register/store inventory and separate composition formulas support the modular caller join. Native metadata initialization/coherence, allocation identity/ownership, actual clear/retirement, synchronization and daemon transaction pairing remain unknown; no additional Mach endpoint is established.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) composes a distinct later failure epoch: allocation NULL in the second parser leaves both message child pointers zero, so the shared destructor returns through each child callback without deeper container/node retirement. The message and attribute typed-retirement requests then precede a pending cleanup of the original H/J/Z container. That remaining original-container cleanup is not executed in the new increment.

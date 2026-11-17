@@ -2221,3 +2221,7 @@ The [FPMessage initialization report](userclient_message_initialization_report.m
 ## FPMessage parser epoch follow-up
 
 The [message-parser report](userclient_message_parser_report.md) establishes a new parser/output epoch: C+0x170=M, retained I/encoded N, a distinct second FPTTLV allocation and caller tag `0xfbb3f478`. The actual nonnull prefix stops before the first input-content read; NULL allocation reaches the caller failure continuation. Independent completion cuts establish M+0 as a parser-result pointer and consume mode byte+0x60. Stable input bytes, complete parsing, native ownership/PAC and transport pairing remain explicit unknowns.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) composes the actual allocation-NULL branch through two typed-retirement requests under explicit ordinary-return premises. Both owning cells and the message output clear; raw error `0xce515bb2` survives two saves/restores and reaches the pending original-container cleanup. Every later source dereference excludes the retired message/attribute extents. Remaining opaque aliases, native lifetime/PAC, full dispatcher return and transport pairing remain unknown.

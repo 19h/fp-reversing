@@ -2096,3 +2096,7 @@ The [FPMessage initialization report](userclient_message_initialization_report.m
 ## FPMessage parser epoch follow-up
 
 The [message-parser report](userclient_message_parser_report.md) adds the local typed-allocation emitter `0xfffffe000a636404` and private result/status/flag transfers at `0xfffffe000a6366a8`, `0xfffffe000a66117c`, `0xfffffe000a6611e0`. It establishes no new incoming/outgoing Mach endpoint, right disposition or Mach-message emitter. The current input pointer has no established native packet-layer or transaction identity.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) adds two located local `_IOFreeTypeImpl` emissions at `0xfffffe000a660a20` and `0xfffffe000a656b24`, plus private cleanup callbacks and a zero factory output. It establishes no new incoming/outgoing Mach port, right disposition or Mach-message emitter. The preserved raw error has no newly established native daemon/transport transaction identity.

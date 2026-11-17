@@ -2350,3 +2350,7 @@ The [FPMessage initialization report](userclient_message_initialization_report.m
 ## FPMessage parser epoch follow-up
 
 The [message-parser report](userclient_message_parser_report.md) establishes the second typed allocation emitted at `0xfffffe000a636404`, new output alias C+0x170=M and caller-qualified completion dispatch. The independent publication cut stores H2 at M+0; raw SUCCESS selects the message+0x60 test. The actual prefix reaches the pending input read at I+6, while allocation NULL reaches `0xfffffe000a6650a4`. Complete parsing and native input custody remain unknown.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) follows the actual second-parser allocation-NULL state through typed retirement of the 128-byte FPMessage and 112-byte FPMessageAttr. Exact `_IOFreeTypeImpl` requests are emitted at `0xfffffe000a660a20` and `0xfffffe000a656b24`, with separate retirement descriptors matching their allocation descriptors. Under ordinary-return premises, the owning cells and message output are cleared and raw error `0xce515bb2` reaches the pending original-container cleanup. Native retirement and the outer operation return remain unknown.

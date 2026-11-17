@@ -66,6 +66,7 @@ def main():
     if exists(BASE/'userclient_message_attributes_report.md'):reports.add(BASE/'userclient_message_attributes_report.md')
     if exists(BASE/'userclient_message_initialization_report.md'):reports.add(BASE/'userclient_message_initialization_report.md')
     if exists(BASE/'userclient_message_parser_report.md'):reports.add(BASE/'userclient_message_parser_report.md')
+    if exists(BASE/'userclient_message_failure_report.md'):reports.add(BASE/'userclient_message_failure_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4018,6 +4019,16 @@ def main():
         manifest['validation']['userclient_message_parser_new_source_queries_unsat']=len(parser_audit['source_proofs'])
         manifest['validation']['userclient_message_parser_prior_source_queries_unsat']=len(parser_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_message_parser_negative_source_controls']=len(parser_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_message_failure_checks.json'):
+        failure=json.loads(read(ROOT/'userclient_message_failure_checks.json'))
+        failure_audit=json.loads(read(ROOT/'userclient_message_failure_audit.json'))
+        assert failure_audit['all_checks_pass'] and failure['verified_counts']==failure_audit['verified_counts']
+        manifest['validation']['userclient_message_failure_increment_checks']=failure['verified_counts']
+        manifest['validation']['userclient_message_failure_static_scope']=failure['scope']
+        manifest['validation']['userclient_message_failure_independent_checks']=failure_audit['independent_totals']
+        manifest['validation']['userclient_message_failure_new_source_queries_unsat']=len(failure_audit['source_proofs'])
+        manifest['validation']['userclient_message_failure_prior_source_queries_unsat']=len(failure_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_message_failure_negative_source_controls']=len(failure_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

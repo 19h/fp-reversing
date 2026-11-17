@@ -131,3 +131,7 @@ The selected prefix and fixed completion cuts take O(1) work and space. Evidence
 - **QG5**: Pass. Actual entry prefixes, independent completion cuts, native allocation/PAC, I's content/lifetime and transport identity have explicit distinct scopes. Complete parsing remains unknown.
 - **QG6**: Pass. Original words, descriptor/fixup records, exhaustive banks, solver receipts and source controls provide primary provenance.
 - **QG7**: Pass. Impact-ranked continuation covers input custody, parsing completion, failure cleanup, mode consumers, pointer ownership and native transport pairing.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) continues this report's actual allocation-NULL failure frontier through the message and attribute retirement requests, the zero output publication and preservation of raw status `0xce515bb2` at the pending original-container cleanup. All 126 new proof partitions, fourteen retained checks and three source mutation controls pass. The successful-completion cuts above remain unbridged to a complete second parse.

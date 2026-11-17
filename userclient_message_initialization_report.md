@@ -207,3 +207,7 @@ The selected initializer and exactly32-byte zero-fill take O(1) time/space with 
 ## FPMessage parser epoch follow-up
 
 The [message-parser report](userclient_message_parser_report.md) continues this report's successful handoff through the second FPTTLV allocation and pending input read at I+6, and follows allocation NULL to the new caller failure target. Separate completion-interface cuts establish the M+0 pointer store and M+0x60 branch consumer. This later increment preserves the distinction between actual entry composition and unbridged completion cuts; complete parsing and input lifetime remain unknown.
+
+## Subsequent message-allocation failure evidence
+
+The [message-failure report](userclient_message_failure_report.md) continues the actual second-parser allocation-NULL branch through retirement requests for this source-built message and attribute. Their owning cells and output clear under ordinary-return premises while the raw parser error survives to the next original-container cleanup request. This is the empty-child failure case; successful parsing and nonzero-child destruction remain separate frontiers.
