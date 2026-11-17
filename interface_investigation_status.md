@@ -2022,3 +2022,5 @@ Both fairplayd selector 26 call sites now have original import, argument and res
 The two selected caller fragments now have source-checked record layouts, return loads and a shared status gate. Both error words reach the same continuation and are preserved at SP+0xe8. The descriptor caller's inherited bank cells and the next consumer of the saved result remain open. [Daemon selector 26 callers](daemon_selector26_callers_report.md)
 
 The selector 26 error continuation first branches on a saved pointer and its first field. Three conditional retirements resolve to the original allocator import. The audited fragments preserve the saved status without consuming it. [Daemon selector 26 cleanup](daemon_selector26_cleanup_report.md)
+
+With W28=`0x8934` and a null second cleanup cell, the selector 26 continuation reloads SP+0xe8 B at `0x100092578` and writes it to record+8 B at `0x1000acc50`. The phase origin, record receiver and any external publication remain open. [Daemon selector 26 error record](daemon_selector26_status_publication_report.md)
