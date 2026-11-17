@@ -152,3 +152,8 @@ The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establish
 
 
 The [serializer extent contract](userclient_serializer_extent_report.md) now establishes checked node-extent accumulation, strict 16 B padded sizing, the original allocator ABI and encoded extent custody. Under the stated successful-publication cut, the original consumer admits copying only when the request length equals that padded allocation extent. Node/padding emission, container stability across passes and native transaction pairing remain unknown; no additional Mach port endpoint is established.
+
+
+## Actual zero-tag core result boundary
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) establishes the selected actual fallback path's conditional local X0=0x00000000ffff5bbc at its RETAB boundary, following complete restoration and retirement requests. It does not join a native provider invocation or public completion to that input path. The next custody requirement is the exact surrounding caller/input relation and its handling of this nonzero result; native authentication/return, copy-out effects and public error interpretation remain unknown.

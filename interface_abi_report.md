@@ -2372,3 +2372,8 @@ The [actual fallback-metadata report](userclient_fallback_metadata_report.md) es
 ## Actual zero-tag command miss and retirement ABI
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) establishes the actual saved caller's request W9=0x45e5918e, X22=T and X10=C+0x1f8. Empty search returns raw MISS 0xce515bda and zero output; cleanup retains that private status and restores all 14 original observations. Exact source retirement requests are typed T16 at 0xfffffe000a6605c4, data B14 at 0xfffffe000a666188, typed C4096 at 0xfffffe000a666260 and aligned S16384 at 0xfffffe000a6662b0. Native release effects, workspace return, guard/epilogue and external status remain unknown.
+
+
+## Actual zero-tag local return ABI
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) establishes original FP=F+0x10e0, 17 saved cells, source stack-probe reads and conditional return custody after the actual cleanup. Under the fourth ordinary-return/frame-preservation and additional frame/guard separation premises, equal canaries yield zero-extended local result 0xffff5bbc, restore X19-X29 and D8-D11 low64 plus signed-link/SP custody, and reach RETAB at 0xfffffe000a6662f8. Unequal canaries request ___stack_chk_fail through 0xfffffe000a66692c/0xfffffe000a69f2a0. Native PAC/return and public error naming remain unknown.

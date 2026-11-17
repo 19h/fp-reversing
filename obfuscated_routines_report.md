@@ -2223,3 +2223,8 @@ The [actual fallback-metadata report](userclient_fallback_metadata_report.md) qu
 ## Actual zero-tag caller, miss and restoration roles
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins the actual caller at 0xfffffe000a656c08 to command-tag lookup at 0xfffffe000a662ab4, empty-head MISS, destructor callback index 0x1a and cleanup. Original LDRB/XOR/STRB at 0xfffffe000a6660d4/0xfffffe000a6660f0/0xfffffe000a6660f4 restores the full 14 B earlier observations, including unconsumed suffix bytes. Typed/data/aligned retirement requests follow. These are finite source-block roles; native callee effects, IDB naming, whole-function semantics, zero-tag protocol meaning and external return remain unknown.
+
+
+## Actual zero-tag frame and return role
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) corroborates the controller's original frame/probe/save and guard/result epilogue around the actual fallback path. EOR W0,W26,W23 at 0xfffffe000a6662cc decodes raw MISS into local 0xffff5bbc under equal canaries; source restores the incoming saved state before RETAB. The unequal branch reaches the original stack-check failure veneer. Opaque/refined FP, the additional guard-range separation premise and native PAC/public status boundaries remain explicit; no new IDB naming or whole-function semantics is inferred.

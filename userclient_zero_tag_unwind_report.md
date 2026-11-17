@@ -127,3 +127,8 @@ For selected extent n=14, runtime restoration takes O(n) time and O(1) auxiliary
 - **QG5**: Pass. Private success/miss, consumed/restored lengths, initial ranges/retired epochs and native/public boundaries remain distinct.
 - **QG6**: Pass. Original bytes/pointers/descriptors/stores and independently rebuilt source, projection, solver and mutation receipts supply primary provenance.
 - **QG7**: Pass. Continuations address outer return, node construction, matched daemon transport, failure cleanup and extent/type generalization.
+
+
+## Subsequent actual local-return composition
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) continues this report's pending workspace request through the fourth ordinary return, original frame/save custody, both canary outcomes and RETAB/failure-request boundaries. Equal canaries yield local zero-extended result 0xffff5bbc with saved register/SP restoration. The new guard read requires explicit frame/guard-range separation beyond the earlier ownership ranges. Native release/authentication/return and public status remain unknown.

@@ -71,6 +71,7 @@ def main():
     if exists(BASE/'userclient_fallback_parser_report.md'):reports.add(BASE/'userclient_fallback_parser_report.md')
     if exists(BASE/'userclient_fallback_metadata_report.md'):reports.add(BASE/'userclient_fallback_metadata_report.md')
     if exists(BASE/'userclient_zero_tag_unwind_report.md'):reports.add(BASE/'userclient_zero_tag_unwind_report.md')
+    if exists(BASE/'userclient_zero_tag_return_report.md'):reports.add(BASE/'userclient_zero_tag_return_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4075,6 +4076,16 @@ def main():
         manifest['validation']['userclient_zero_tag_unwind_new_source_queries_unsat']=len(zero_tag_audit['source_proofs'])
         manifest['validation']['userclient_zero_tag_unwind_prior_source_queries_unsat']=len(zero_tag_audit['rechecked_prior_source_proofs'])
         manifest['validation']['userclient_zero_tag_unwind_negative_source_controls']=len(zero_tag_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_zero_tag_return_checks.json'):
+        zero_return=json.loads(read(ROOT/'userclient_zero_tag_return_checks.json'))
+        zero_return_audit=json.loads(read(ROOT/'userclient_zero_tag_return_audit.json'))
+        assert zero_return_audit['all_checks_pass'] and zero_return['verified_counts']==zero_return_audit['verified_counts']
+        manifest['validation']['userclient_zero_tag_return_increment_checks']=zero_return['verified_counts']
+        manifest['validation']['userclient_zero_tag_return_static_scope']=zero_return['scope']
+        manifest['validation']['userclient_zero_tag_return_independent_checks']=zero_return_audit['independent_totals']
+        manifest['validation']['userclient_zero_tag_return_new_source_queries_unsat']=len(zero_return_audit['source_proofs'])
+        manifest['validation']['userclient_zero_tag_return_prior_queries_unsat']=len(zero_return_audit['rechecked_prior_proofs'])
+        manifest['validation']['userclient_zero_tag_return_negative_source_controls']=len(zero_return_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

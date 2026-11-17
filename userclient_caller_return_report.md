@@ -224,3 +224,8 @@ The [serializer extent contract](userclient_serializer_extent_report.md) now est
 ## Actual zero-tag miss-to-cleanup composition
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins the actual zero-tag parser completion and empty command search to this cleanup role. Raw MISS 0xce515bda, callback index 0x1a, empty typed-container retirement and complete 14 B restoration are certified against both actual predecessor modes; source then requests B/C/S retirement. The expanded entry interface and retired-owner access checks preserve explicit native-return/storage limits. Workspace callee effects and the actual guard/outer-return composition remain unknown.
+
+
+## Actual zero-tag frame and canary composition
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) joins the actual fallback predecessor to the original prologue, read-only stack probe, 17 saved cells, conditional local result and RETAB boundary. It reconstructs every saved cell in all 30 retained prefixes and certifies intervening source-store separation. The old ownership model omits the kernel guard range; the new report explicitly adds frame/guard separation and records omission counterexamples. Native guard equality, releases, PAC/return and external status remain unknown.

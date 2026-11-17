@@ -1996,3 +1996,8 @@ The [original early-main signing report](kernel_main_pointer_signing_report.md) 
 ## Actual zero-tag unwind follow-up
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) follows both actual fallback modes from private empty-container publication through command-tag MISS, 14 B restoration and T/B/C/S retirement requests. It adds 18 source, 136 projection, two domain and one alias obligations; rechecks 105 predecessor obligations, admits five lengths in each mode and rejects three source mutations. Native retirement, workspace return, compiler guard/epilogue, other parser paths and matched daemon/kext transport remain open. Earlier boundaries are historical; the full goal remains active.
+
+
+## Actual zero-tag guard and RETAB follow-up
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) continues the actual workspace-release frontier through conditional local result and frame restoration, or the original guard-failure request. It reconstructs 510 original saved cells / 4080 B across 30 prefixes and classifies 859 parent stores plus 35 continued stores. Two SAT omission checks expose the need for explicit frame/guard-global separation beyond the old ownership model. Native releases/guard/PAC/return, public result, other parser paths and matched daemon transport remain open; the full goal remains active.

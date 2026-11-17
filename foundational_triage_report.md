@@ -2243,3 +2243,8 @@ The [actual fallback-metadata report](userclient_fallback_metadata_report.md) jo
 ## Actual zero-tag caller and storage unwind
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins private fallback SUCCESS to an empty command-tag lookup MISS, full 14 B original-observation restoration and four retirement request boundaries. Both actual predecessor modes certify 17 register views, 31 saved cells and all protected bytes. Restoration includes any unconsumed suffix. Three ordinary-return premises govern T/B/C retirement; workspace release, native effects, the compiler guard, outer return and matched transport remain unknown.
+
+
+## Actual zero-tag frame and local return
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) joins both actual fallback modes to the original frame/probe/save invariant, fourth ordinary retirement return, both canary outcomes and RETAB boundary. Equal canaries yield local X0=0x00000000ffff5bbc and original register/SP restoration. The earlier ownership model omits the kernel guard range: frame/guard separation is therefore an explicit additional condition, checked in all 30 original prefix frames and exposed by two old-model SAT counterexamples. Native authentication/return, releases, public status and matched transport remain unknown.

@@ -2118,3 +2118,8 @@ The [actual fallback-metadata report](userclient_fallback_metadata_report.md) es
 ## Actual zero-tag cleanup touch points
 
 The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) reaches memory-management call boundaries at 0xfffffe000a6605c4 (_IOFreeTypeImpl), 0xfffffe000a666188 (_IOFreeData), 0xfffffe000a666260 (_IOFreeTypeImpl) and 0xfffffe000a6662b0 (_IOFreeAligned). They add actual-path custody for existing imported sites, with no new Mach-message emitter, incoming/outgoing port, right disposition, IOKit selector or matched daemon transaction. Source retirement requests do not establish native release effects or external status.
+
+
+## Actual zero-tag compiler support interfaces
+
+The [zero-tag return report](userclient_zero_tag_return_report.md) composes the original stack-probe helper and guard/epilogue source around the actual fallback cleanup. It reaches either RETAB at 0xfffffe000a6662f8 or the ___stack_chk_fail request through BL 0xfffffe000a66692c and veneer BRAA 0xfffffe000a69f2a0. These are compiler-support and local-return touch points; they establish no new incoming/outgoing Mach port, message emitter, right disposition, IOKit selector or native daemon/kext transaction. Guard-range separation and native return limits are explicit.
