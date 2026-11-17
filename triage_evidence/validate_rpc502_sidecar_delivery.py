@@ -58,6 +58,7 @@ def main():
     if exists(BASE/'userclient_early_writer_report.md'):reports.add(BASE/'userclient_early_writer_report.md')
     if exists(BASE/'userclient_early_payload_report.md'):reports.add(BASE/'userclient_early_payload_report.md')
     if exists(BASE/'userclient_early_publication_report.md'):reports.add(BASE/'userclient_early_publication_report.md')
+    if exists(BASE/'userclient_early_schema_report.md'):reports.add(BASE/'userclient_early_schema_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3930,6 +3931,16 @@ def main():
         manifest['validation']['userclient_early_publication_new_source_queries_unsat']=len(early_publication_audit['source_proofs'])
         manifest['validation']['userclient_early_publication_prior_payload_queries_unsat']=len(early_publication_audit['rechecked_prior_payload_proofs'])
         manifest['validation']['userclient_early_publication_negative_source_controls']=len(early_publication_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_early_schema_checks.json'):
+        early_schema=json.loads(read(ROOT/'userclient_early_schema_checks.json'))
+        early_schema_audit=json.loads(read(ROOT/'userclient_early_schema_audit.json'))
+        assert early_schema_audit['all_checks_pass'] and early_schema['verified_counts']==early_schema_audit['verified_counts']
+        manifest['validation']['userclient_early_schema_increment_checks']=early_schema['verified_counts']
+        manifest['validation']['userclient_early_schema_static_scope']=early_schema['scope']
+        manifest['validation']['userclient_early_schema_independent_checks']=early_schema_audit['independent_totals']
+        manifest['validation']['userclient_early_schema_new_source_queries_unsat']=len(early_schema_audit['source_proofs'])
+        manifest['validation']['userclient_early_schema_prior_publication_queries_unsat']=len(early_schema_audit['rechecked_prior_publication_proofs'])
+        manifest['validation']['userclient_early_schema_negative_source_controls']=len(early_schema_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
