@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current scheduler bootstrap increment: The [scheduler bootstrap report](kernel_scheduler_bootstrap_execution_report.md) assigns source-supported roles to 13 added bodies covering CPU-class partitioning, processor-set and queue construction, processor initialization, callout setup and ownership checks. One exact symbol is recovered: _lck_spin_assert at 0xfffffe000be7c458. Ten source queries, two continuous input cases and two rejected store controls bound the role claims.
+
 Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) establishes source-derived roles for six additional original bodies: cache discovery, mode-dispatched context setup, context-register tail, owner locking, DAIF restoration and masked register installation. Exact original symbols remain unknown where absent. Continuous original execution adds 10125 visits without a new leaf-result model.
 
 Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) identifies0xfffffe000bdc12cc as page-list consumption,0xfffffe000bdc15a8 as lower mapping-request construction,0xfffffe000bd73b5c as permanent metadata publication and0xfffffe000bd01454 as accounting. Eighteen new source obligations and15 independently replayed components qualify these roles; native mapping effects remain unknown.

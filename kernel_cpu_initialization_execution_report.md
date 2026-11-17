@@ -1,5 +1,7 @@
 # Continuous early-main CPU, cache and context initialization
 
+Current scheduler bootstrap increment: The [scheduler bootstrap report](kernel_scheduler_bootstrap_execution_report.md) executes the next original-main call. The exact class-0 predecessor prefix is retained and reaches the scheduler diagnostic for missing cluster-type. A separate E-type input, declared before main, produces CPU class 1, processor-set type 0 and returns at 0xfffffe000c639e48. This does not convert the earlier class-0 profile into a native-admitted topology.
+
 The original early-main CPU call now executes cache discovery, mode-0 context-record initialization and the register-installation tail before returning to main at `0xfffffe000c639e44`. The private case adds 10125 source visits to the exact 821831-visit published prefix, for 831956 visits. No new leaf-result model is introduced. Five initial architectural-register values and one banked CCSIDR value are explicitly declared; their native values are unknown. The two inherited API models, logical PAC semantics, startup fixtures and source-proved early logging joins remain premises. Native CPU/cache behavior, FairPlay class invocation and matched daemon/kext IPC remain unestablished. [CI-A1-CI-A7]
 
 ```text

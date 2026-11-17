@@ -1,5 +1,7 @@
 # FairPlayIOKit: foundational architecture, data flow, and external control
 
+Current scheduler bootstrap increment: The [scheduler bootstrap report](kernel_scheduler_bootstrap_execution_report.md) preserves the exact 831956-visit predecessor prefix for the missing-property diagnostic case and separately reruns original main with an explicitly declared E-type tree. Independent replay covers 1674616 visits across both cases; whole queue formulas check 14416 B in the returning case. No scheduler leaf-result model or midexecution CPU-record repair is added.
+
 Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) connects original main to CPU/cache/context initialization and its return under five declared register inputs and one CCSIDR bank. Independent formulas, full 831956-visit replay and three rejected source controls distinguish conditional private execution from native CPU/cache behavior. The exact 821831-visit predecessor prefix is preserved.
 
 Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) links original zeroing, LIFO page-list consumption, lower PA/VA requests, accounting and ready metadata in one selected source cut. Exact private outputs feed original statistics/cache consumers. Constructor bit24/zone0x40 distinguishes one16 KiB logical capacity from N physical per-CPU pages. Native ownership, full refill and transport continuity remain unknown.

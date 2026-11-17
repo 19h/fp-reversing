@@ -631,6 +631,7 @@ def main():
     if exists(BASE/'kernel_boot_logging_handoff_report.md'):reports.add(BASE/'kernel_boot_logging_handoff_report.md')
     if exists(BASE/'kernel_main_pointer_signing_report.md'):reports.add(BASE/'kernel_main_pointer_signing_report.md')
     if exists(BASE/'kernel_cpu_initialization_execution_report.md'):reports.add(BASE/'kernel_cpu_initialization_execution_report.md')
+    if exists(BASE/'kernel_scheduler_bootstrap_execution_report.md'):reports.add(BASE/'kernel_scheduler_bootstrap_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3842,6 +3843,13 @@ def main():
         manifest['validation']['kernel_cpu_initialization_execution_static_scope']=cpu_execution['scope']
         manifest['validation']['kernel_cpu_initialization_execution_independent_checks']=cpu_execution_audit['independent_totals']
         manifest['validation']['kernel_cpu_initialization_execution_independent_replay_checks']=cpu_execution_audit['independent_replay_totals']
+    if exists(ROOT/'kernel_scheduler_bootstrap_execution_checks.json'):
+        scheduler_execution=json.loads(read(ROOT/'kernel_scheduler_bootstrap_execution_checks.json'))
+        scheduler_execution_audit=json.loads(read(ROOT/'kernel_scheduler_bootstrap_execution_audit.json'))
+        manifest['validation']['kernel_scheduler_bootstrap_execution_increment_checks']=scheduler_execution['verified_counts']
+        manifest['validation']['kernel_scheduler_bootstrap_execution_static_scope']=scheduler_execution['scope']
+        manifest['validation']['kernel_scheduler_bootstrap_execution_independent_checks']=scheduler_execution_audit['independent_totals']
+        manifest['validation']['kernel_scheduler_bootstrap_execution_independent_replay_checks']=scheduler_execution_audit['independent_replay_totals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

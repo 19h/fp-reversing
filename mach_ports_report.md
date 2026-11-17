@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Current scheduler bootstrap increment: The [scheduler bootstrap report](kernel_scheduler_bootstrap_execution_report.md) adds internal processor-set, root-node, callout and lock interfaces. It establishes no incoming/outgoing Mach port, transferred right, message ID or emission site. Installed callout targets are not invoked in this interval; no matched daemon/kext transaction follows from processor publication.
+
 Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) advances original main to the scheduler-initializer call after CPU setup. It establishes architectural-register and in-kernel lock/data interfaces; no Mach port, right-transfer descriptor, message ID, port-emission site or matched daemon/kext transaction is newly established.
 
 Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) establishes internal page-list/lower-mapping requests and declared storage-consumer epochs. The18 earlier-zero/later-mapping request links add no incoming/outgoing Mach endpoint, right disposition, message ID or emission site; native buffer/selector/right/transaction identity remains unknown.
