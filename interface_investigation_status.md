@@ -2024,3 +2024,5 @@ The two selected caller fragments now have source-checked record layouts, return
 The selector 26 error continuation first branches on a saved pointer and its first field. Three conditional retirements resolve to the original allocator import. The audited fragments preserve the saved status without consuming it. [Daemon selector 26 cleanup](daemon_selector26_cleanup_report.md)
 
 With W28=`0x8934` and a null second cleanup cell, the selector 26 continuation reloads SP+0xe8 B at `0x100092578` and writes it to record+8 B at `0x1000acc50`. The phase origin, record receiver and any external publication remain open. [Daemon selector 26 error record](daemon_selector26_status_publication_report.md)
+
+The phase and record now have source-checked producers from the selected caller at `0x1001f5178`, with a result comparison at `0x1001f51a4`. The containing routine stores W28 and the result pointer before allocating the object in the second cleanup cell. Its bank saves resolve the later conditional `_free`. The constructor-to-selector join and native message remain open. [Daemon selector 26 record origins](daemon_selector26_record_origin_report.md)
