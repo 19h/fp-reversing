@@ -2083,3 +2083,7 @@ The [full boot initializer report](kernel_boot_initializer_execution_report.md) 
 The [boot-state logging handoff](kernel_boot_logging_handoff_report.md) records 94 original character-callback/ring-store effects and a nonzero timer return. These establish no new incoming/outgoing Mach right, message ID or port-emission site. Native console delivery, module-registry population and matched daemon/provider/kext transport remain unknown.
 
 The [original early-main signing case](kernel_main_pointer_signing_report.md) adds actual main-to-walker frame custody and all six FairPlay module-table signing stores. These establish no new incoming/outgoing Mach right, message ID or port-emission site. Module initializer invocation, OSMetaClass runtime state and matched native daemon/provider/kext transport remain unknown.
+
+## Message-attribute consumer follow-up
+
+The [message-attribute report](userclient_message_attributes_report.md) adds no incoming/outgoing Mach port, right disposition or Mach-message emission. Its located emissions are typed allocation at `0xfffffe000a652ecc`, kernel-random requests at `0xfffffe000a652fbc`/`0xfffffe000a65305c`, private callbacks and pending continuations. Kernel provider callbacks and the four-byte request are source-level ABI evidence; no provider/native transport or daemon/kext transaction identity is inferred.

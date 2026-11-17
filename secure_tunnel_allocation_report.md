@@ -161,3 +161,7 @@ The matching descriptor names narrow the allocation/free investigation, but a sa
 ## Existing UIDList marker replacement follow-up
 
 [The replacement report](userclient_uidlist_replacement_report.md) establishes the selected nonnull shared-holder path from an existing discriminator match through two old-marker lookup records, prior entry+16 payload capture, tombstone/reclamation requests, conditional 120 B typed payload free and status-gated node+4 replacement. Thirty-four nonvacuous obligations, 18 predecessor obligations, 734 selected instructions and 1792 bank inputs pass. Zero saved payload skips free and reaches the same marker-update join; raw success and found outputs remain separate. Null-holder construction, complete incoming reachability, native ownership/deallocation, serialization and daemon correlation remain unknown. No new Mach-port emission site is established.
+
+## Message-attribute consumer follow-up
+
+The [message-attribute report](userclient_message_attributes_report.md) recovers a later raw-table-payload consumer with compatible cached16 (+8..0x17) and cached32 (+0x18..0x37) ranges. Its P+4 mode byte belongs to the six-byte header range, distinct from FPSecureTunnel+0x68. It constructs a separate 112-byte attribute object and copies or retains fields by mode. This is a conditional layout comparison; the same native allocation/holder/key epoch and payload type remain unknown.

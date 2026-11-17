@@ -166,3 +166,7 @@ No new incoming/outgoing Mach port, right disposition, message or emission site 
 - **QG5**: Pass. Helper status, found byte, raw payload and published caller error remain separate; native PAC, table admission and whole-operation completion remain unknown.
 - **QG6**: Pass. Original bytes, fixups, prefix stores, source queries, inherited formulas and rejected mutations provide primary provenance.
 - **QG7**: Pass. Impact-ranked continuation identifies concrete payload, lifecycle, table-producer and transport joins.
+
+## Message-attribute consumer follow-up
+
+The [message-attribute report](userclient_message_attributes_report.md) executes the formerly pending non-NULL payload branch from `0xfffffe000a636958`. It establishes the 112-byte FPMessageAttr constructor, kernel-random requests, mode-dependent cached-field overlays, allocation-NULL publication and the next pending target `0xfffffe000a6575b0`. The earlier four lookup profiles retain their original scopes; native table/payload identity, authentication and transport remain unknown.

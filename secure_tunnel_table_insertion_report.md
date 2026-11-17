@@ -169,3 +169,7 @@ The [shared input-reader report](userclient_input_reader_report.md) closes the s
 ## Container-staging increment
 
 The [staging/parser-entry increment](userclient_container_staging_report.md) establishes the saved input size and matching protected-memory copy before the discriminator reader. It does not identify the nonempty tag field or original source+0x20 tunnel-marker producer, and it does not establish successful native insertion.
+
+## Message-attribute consumer follow-up
+
+The [message-attribute report](userclient_message_attributes_report.md) follows the schema caller after its actual occupied-key hit and raw entry+16 payload copy. It dereferences that payload for cached16, cached32, header and a +4 mode byte while constructing a separate attribute. This complements the insertion-side entry+16 tunnel alias contract; no same-native-holder/key/epoch or ownership join is established.
