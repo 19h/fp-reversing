@@ -2018,3 +2018,5 @@ The exhausted singleton now has both conditional selector 26 handler results, si
 Both selector 26 error results now have source-checked MIG 2965 fields and a conditional public IOKit wrapper return. The installed cache differs from the retained framework capture, and a matched native fairplayd exchange remains open. [Synchronous error-reply ABI](iokit_sync_error_reply_report.md)
 
 Both fairplayd selector 26 call sites now have original import, argument and result-store evidence. The first selected phase publishes nonzero status directly. The second passes the short reply's unchanged shape, copies 14 B within the same buffer, then publishes status. Native correlation and the downstream record consumers remain open. [Daemon selector 26 returns](daemon_selector26_return_report.md)
+
+The two selected caller fragments now have source-checked record layouts, return loads and a shared status gate. Both error words reach the same continuation and are preserved at SP+0xe8. The descriptor caller's inherited bank cells and the next consumer of the saved result remain open. [Daemon selector 26 callers](daemon_selector26_callers_report.md)

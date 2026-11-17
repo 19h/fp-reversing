@@ -79,6 +79,7 @@ def main():
     if exists(BASE/'userclient_populated_cleanup_report.md'):reports.add(BASE/'userclient_populated_cleanup_report.md')
     if exists(BASE/'iokit_sync_error_reply_report.md'):reports.add(BASE/'iokit_sync_error_reply_report.md')
     if exists(BASE/'daemon_selector26_return_report.md'):reports.add(BASE/'daemon_selector26_return_report.md')
+    if exists(BASE/'daemon_selector26_callers_report.md'):reports.add(BASE/'daemon_selector26_callers_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4190,6 +4191,19 @@ def main():
             'source_queries': len(returned['proofs']),
             'resolved_fixups': len(returned['fixups']['records']),
             'profiles': len(returned['profiles']),
+        }
+    if exists(ROOT/'daemon_selector26_callers_audit.json'):
+        callers = json.loads(read(ROOT/'daemon_selector26_callers_audit.json'))
+        assert not callers['native_exchange_observed'] and not callers['full_goal_complete']
+        assert callers['generator_sha256'] == sha(ROOT/'audit_daemon_selector26_callers.py')
+        for name, digest in callers['dependencies'].items():
+            assert sha(ROOT/name) == digest
+        assert len(callers['proofs']) == len(callers['profiles']) == 6
+        assert all(row['result'] == 'unsat' and row['premises_nonvacuous']
+                   for row in callers['proofs'])
+        manifest['validation']['daemon_selector26_callers'] = {
+            'scope': callers['scope'], 'source_queries': len(callers['proofs']),
+            'resolved_fixups': len(callers['fixups']['records']), 'profiles': len(callers['profiles']),
         }
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
