@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) closes the selected original CPU call and tail return to main at 0xfffffe000c639e44: cache discovery, ten context records, eight original helper returns and 21 context-register writes. Full 831956-visit independent replay and three controls pass with no new API model. Native register values, poisoned CPU-field producers, scheduler continuation and matched FairPlay IPC remain open; the goal remains active.
+
 Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) closes the selected private zero-request-to-ready-storage and statistics/cache consumer join. Eighteen new source queries,15 components,129 semantic checks and37461-visit independent replay pass. Native PA/VA effects, earlier acquisition/admission, full fixed-zone creation and daemon transaction identity remain unknown. The goal remains active.
 
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) establishes an explicit16384 B zero request in the permanent refill and the complete source zero wrapper. Ten source queries,80 private components,425 semantic checks and independent16254-visit replay pass. The native PFN-to-permanent-return join remains unknown; the next discriminating edge is refill mapping/metadata insertion. The goal remains active.

@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) establishes source-derived roles for six additional original bodies: cache discovery, mode-dispatched context setup, context-register tail, owner locking, DAIF restoration and masked register installation. Exact original symbols remain unknown where absent. Continuous original execution adds 10125 visits without a new leaf-result model.
+
 Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) identifies0xfffffe000bdc12cc as page-list consumption,0xfffffe000bdc15a8 as lower mapping-request construction,0xfffffe000bd73b5c as permanent metadata publication and0xfffffe000bd01454 as accounting. Eighteen new source obligations and15 independently replayed components qualify these roles; native mapping effects remain unknown.
 
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) identifies0xfffffe000be7b5b8 as a physical-range clear wrapper called by the original permanent refill at0xfffffe000bd72c40. Original nlist identifies its `_pmap_cache_attributes`, `_bzero` and `_memset` callees. Ten source obligations,80 private components and independent replay qualify the role; native aliases and allocation-to-zero identity remain unknown.

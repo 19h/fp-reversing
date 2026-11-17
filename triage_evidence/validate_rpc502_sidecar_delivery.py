@@ -630,6 +630,7 @@ def main():
     if exists(BASE/'kernel_boot_initializer_execution_report.md'):reports.add(BASE/'kernel_boot_initializer_execution_report.md')
     if exists(BASE/'kernel_boot_logging_handoff_report.md'):reports.add(BASE/'kernel_boot_logging_handoff_report.md')
     if exists(BASE/'kernel_main_pointer_signing_report.md'):reports.add(BASE/'kernel_main_pointer_signing_report.md')
+    if exists(BASE/'kernel_cpu_initialization_execution_report.md'):reports.add(BASE/'kernel_cpu_initialization_execution_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3834,6 +3835,13 @@ def main():
         manifest['validation']['kernel_main_pointer_signing_static_scope']=main_signing['scope']
         manifest['validation']['kernel_main_pointer_signing_independent_checks']=main_signing_audit['independent_totals']
         manifest['validation']['kernel_main_pointer_signing_independent_replay_checks']=main_signing_audit['independent_replay_totals']
+    if exists(ROOT/'kernel_cpu_initialization_execution_checks.json'):
+        cpu_execution=json.loads(read(ROOT/'kernel_cpu_initialization_execution_checks.json'))
+        cpu_execution_audit=json.loads(read(ROOT/'kernel_cpu_initialization_execution_audit.json'))
+        manifest['validation']['kernel_cpu_initialization_execution_increment_checks']=cpu_execution['verified_counts']
+        manifest['validation']['kernel_cpu_initialization_execution_static_scope']=cpu_execution['scope']
+        manifest['validation']['kernel_cpu_initialization_execution_independent_checks']=cpu_execution_audit['independent_totals']
+        manifest['validation']['kernel_cpu_initialization_execution_independent_replay_checks']=cpu_execution_audit['independent_replay_totals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

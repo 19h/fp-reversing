@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) extends original main through cache discovery, ten 144 B context records and the original register-install tail. It maps the actual five-register tail ABI, banked CCSIDR reads and all 21 context-register writes; two final register values retain inherited poison. Declared architectural inputs and logical MSRs do not attest native hardware values or daemon/kext IPC.
+
 Current refill-publication increment: The [refill-publication report](kernel_refill_publication_report.md) recovers the page-list consumer ABI, exact lower PA/VA request with eight register arguments plus a stack byte, metadata insertion arguments, positive-head encoding and per-CPU logical capacity. Original statistics/cache allocations consume source-produced ready state under explicit alias/epoch premises. Native mapping success and ownership remain unknown.
 
 Current physical-zero increment: The [physical-zero report](kernel_physical_zero_report.md) maps X0=physical byte address/X1=length, PFN32<<14 requests, unsigned half-open direct bounds, per-CPU window indices0..3, unsigned minimum chunking and exact original bzero/memset arguments. Attributes select the inline16384 B path only for low8 in{2,6,11,18,22}. Native physical alias and complete refill contracts remain unknown.

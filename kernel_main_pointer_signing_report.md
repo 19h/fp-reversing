@@ -1,5 +1,7 @@
 # Original early-main module-pointer signing and return
 
+Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) now executes the CPU initializer at this report's final boundary and returns before the scheduler-initializer BL. It preserves this complete 821831-visit prefix, all reads/writes and all 1058 prior page digests at the former frontier, with only five explicit initial system-register keys added.
+
 The original main now calls the collection/fileset walker with the boot-produced root header, executes all 1845 segment-signer calls and 6362 nonzero pointer stores, and returns on its existing stack. This replaces one inherited no-RAM return model. Main then reaches the same nonzero timer return as the [boot-state logging handoff](kernel_boot_logging_handoff_report.md). The private case contains 821831 journal visits: 515187 preserved visits plus 306644 inserted walker/signer visits. Logical PAC, two other return models, declared startup fixtures and the two proved logging joins remain explicit premises. Module initializer invocation, native signing and matched FairPlay IPC remain unknown. [MP-A1-MP-A7]
 
 ```text

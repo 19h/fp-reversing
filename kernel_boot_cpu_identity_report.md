@@ -1,5 +1,7 @@
 # Boot CPU identity, bootstrap thread production and register interfaces
 
+Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) now executes the bootstrap CPU initializer continuously from original main, including the actual cache/configuration bodies and context tail. This supersedes the selected private helper-result assumptions for that one declared-profile execution; native register values, alternate paths and matched daemon/kext continuity remain unknown.
+
 Original source distinguishes three CPU-related values: the admitted logical ordinal, the device-tree `reg` value, and the signed offset encoded in thread+0x1b8 for lower SPTM state. The bootstrap producer copies a 1472 B thread template and writes only a zero-extended 16-bit ordinal into that 64-bit thread field. Its signed shift by 16 therefore yields zero. A separate original CPU initializer recognizes the bootstrap CPU-data address and skips its direct SPTM CPU-initialization call. These are source contracts with selected private instruction witnesses; complete startup continuity, hardware state, actual device-tree contents and a matched daemon/kext/kernel transaction remain unknown. [BC1-BC7]
 
 ```text
