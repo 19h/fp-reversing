@@ -2020,3 +2020,5 @@ Both selector 26 error results now have source-checked MIG 2965 fields and a con
 Both fairplayd selector 26 call sites now have original import, argument and result-store evidence. The first selected phase publishes nonzero status directly. The second passes the short reply's unchanged shape, copies 14 B within the same buffer, then publishes status. Native correlation and the downstream record consumers remain open. [Daemon selector 26 returns](daemon_selector26_return_report.md)
 
 The two selected caller fragments now have source-checked record layouts, return loads and a shared status gate. Both error words reach the same continuation and are preserved at SP+0xe8. The descriptor caller's inherited bank cells and the next consumer of the saved result remain open. [Daemon selector 26 callers](daemon_selector26_callers_report.md)
+
+The selector 26 error continuation first branches on a saved pointer and its first field. Three conditional retirements resolve to the original allocator import. The audited fragments preserve the saved status without consuming it. [Daemon selector 26 cleanup](daemon_selector26_cleanup_report.md)
