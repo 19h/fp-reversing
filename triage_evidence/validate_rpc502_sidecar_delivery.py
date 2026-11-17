@@ -76,6 +76,7 @@ def main():
     if exists(BASE/'userclient_nonzero_tag_record_report.md'):reports.add(BASE/'userclient_nonzero_tag_record_report.md')
     if exists(BASE/'userclient_nonzero_tag_completion_report.md'):reports.add(BASE/'userclient_nonzero_tag_completion_report.md')
     if exists(BASE/'userclient_populated_command_lookup_report.md'):reports.add(BASE/'userclient_populated_command_lookup_report.md')
+    if exists(BASE/'userclient_populated_cleanup_report.md'):reports.add(BASE/'userclient_populated_cleanup_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4129,6 +4130,27 @@ def main():
             'scope': lookup['scope'],
             'profiles': len(lookup['profiles']),
             'source_queries': len(lookup['source_proofs']),
+            'negative_controls': 1,
+        }
+    if exists(ROOT/'userclient_populated_cleanup_audit.json'):
+        cleanup = json.loads(read(ROOT/'userclient_populated_cleanup_audit.json'))
+        assert cleanup['all_checks_pass'] and not cleanup['native_execution_observed']
+        assert not cleanup['full_goal_complete']
+        assert cleanup['generator_sha256'] == sha(ROOT/'audit_userclient_populated_cleanup.py')
+        for name, digest in cleanup['dependencies'].items():
+            assert sha(ROOT/name) == digest
+        assert {name: row['caller_forwarding']['handler_X0']
+                for name, row in cleanup['profiles'].items()} == {
+                    'miss': '0xffff5bbc', 'match': '0xffff5a87',
+                }
+        assert len(cleanup['source_proofs']) == 12
+        assert all(row['result'] == 'unsat' and row['premises_nonvacuous']
+                   for row in cleanup['source_proofs'])
+        assert cleanup['negative_control']['result'] == 'sat'
+        manifest['validation']['userclient_populated_cleanup'] = {
+            'scope': cleanup['scope'],
+            'profiles': len(cleanup['profiles']),
+            'source_queries': len(cleanup['source_proofs']),
             'negative_controls': 1,
         }
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

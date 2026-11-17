@@ -2012,3 +2012,5 @@ The nonzero-tag type-0x6685 source join now reaches first-record serialization, 
 The fixed 14 B nonzero-tag fallback now reaches the command lookup request on exhausted input and the caller failure branch after short-suffix cleanup. Lookup completion and a matched native daemon transfer remain open. [First-record completion](userclient_nonzero_tag_completion_report.md).
 
 The exhausted singleton now has a source-composed lookup result and caller cleanup handoff for both tag outcomes. The native IOKit return and daemon reply correlation remain open. [Populated command lookup](userclient_populated_command_lookup_report.md)
+
+The exhausted singleton now has both conditional selector 26 handler results, six retirement interfaces and the complete core copy-back contract. The generic IOKit-to-Mach status translation and corresponding fairplayd transaction remain open. [Populated cleanup and selector 26 return](userclient_populated_cleanup_report.md)

@@ -4,6 +4,8 @@ In the pinned FairPlayIOKit image, the exhausted 14 B fallback record can satisf
 
 This increment starts at the [exhausted parser handoff](userclient_nonzero_tag_completion_report.md) and follows the actual singleton through the [command dispatcher](userclient_command_dispatch_report.md). All transfers here are within the kernel image. The native external-method return, Mach reply and originating daemon transaction remain unknown.
 
+The next report follows both saved statuses through the destructor, copy-back and conditional selector 26 handler return. [Populated cleanup and selector 26 return](userclient_populated_cleanup_report.md)
+
 ## Lookup and caller contracts
 
 C is the private context, F the frame, S the workspace, T the returned list, J its only node and Z the node's record buffer. PCs omit the common `0xfffffe0000000000` prefix. The initial search reads the four protected tag bytes at Z+0 through Z+3. The branch at `a63d67c` distinguishes equality from inequality with the requested encoded tag.

@@ -2388,3 +2388,5 @@ The type-0x6685 fallback route requests a typed 32 B node and a data buffer of 1
 The populated fallback parser now has a source-checked caller handoff, including the command lookup registers and the separate three-request retirement ABI for a short suffix. [First-record completion](userclient_nonzero_tag_completion_report.md).
 
 For the exhausted 14 B singleton, the command lookup returns either the parser's node and raw success or null and raw miss. The matched node's transformed type sends the caller to cleanup before any scalar read. Both handoffs save a raw status at the same kernel-local cleanup store. [Populated command lookup](userclient_populated_command_lookup_report.md)
+
+Both populated outcomes request retirement of the same record buffer, node and container, restore the 14 B staging input and request the remaining releases. On nominal returns with equal canaries, the source model carries `0xffff5bbc` for a miss or `0xffff5a87` for a match followed by type rejection through the provider and selector 26 handler. The provider requests copy-out in both cases. [Populated cleanup and selector 26 return](userclient_populated_cleanup_report.md)
