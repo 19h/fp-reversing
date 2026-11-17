@@ -77,6 +77,7 @@ def main():
     if exists(BASE/'userclient_nonzero_tag_completion_report.md'):reports.add(BASE/'userclient_nonzero_tag_completion_report.md')
     if exists(BASE/'userclient_populated_command_lookup_report.md'):reports.add(BASE/'userclient_populated_command_lookup_report.md')
     if exists(BASE/'userclient_populated_cleanup_report.md'):reports.add(BASE/'userclient_populated_cleanup_report.md')
+    if exists(BASE/'iokit_sync_error_reply_report.md'):reports.add(BASE/'iokit_sync_error_reply_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4152,6 +4153,23 @@ def main():
             'profiles': len(cleanup['profiles']),
             'source_queries': len(cleanup['source_proofs']),
             'negative_controls': 1,
+        }
+    if exists(ROOT/'iokit_sync_error_reply_audit.json'):
+        sync_reply = json.loads(read(ROOT/'iokit_sync_error_reply_audit.json'))
+        assert sync_reply['all_checks_pass'] and not sync_reply['native_exchange_observed']
+        assert not sync_reply['full_goal_complete']
+        assert sync_reply['generator_sha256'] == sha(ROOT/'audit_iokit_sync_error_reply.py')
+        for name, digest in sync_reply['dependencies'].items():
+            assert sha(ROOT/name) == digest
+        assert sync_reply['statuses'] == {'miss': '0xffff5bbc', 'match': '0xffff5a87'}
+        assert (sync_reply['kernel_request_id'], sync_reply['reply_id']) == (2865, 2965)
+        assert (sync_reply['kernel_reply_size_bytes'], sync_reply['user_reply_size_bytes']) == (44, 36)
+        assert len(sync_reply['proofs']) == 6
+        assert all(row['result'] == 'unsat' and row['premises_nonvacuous'] for row in sync_reply['proofs'])
+        manifest['validation']['iokit_sync_error_reply'] = {
+            'scope': sync_reply['scope'], 'source_queries': len(sync_reply['proofs']),
+            'kernel_reply_size_bytes': sync_reply['kernel_reply_size_bytes'],
+            'user_reply_size_bytes': sync_reply['user_reply_size_bytes'],
         }
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))

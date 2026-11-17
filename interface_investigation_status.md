@@ -2013,4 +2013,6 @@ The fixed 14 B nonzero-tag fallback now reaches the command lookup request on ex
 
 The exhausted singleton now has a source-composed lookup result and caller cleanup handoff for both tag outcomes. The native IOKit return and daemon reply correlation remain open. [Populated command lookup](userclient_populated_command_lookup_report.md)
 
-The exhausted singleton now has both conditional selector 26 handler results, six retirement interfaces and the complete core copy-back contract. The generic IOKit-to-Mach status translation and corresponding fairplayd transaction remain open. [Populated cleanup and selector 26 return](userclient_populated_cleanup_report.md)
+The exhausted singleton now has both conditional selector 26 handler results, six retirement interfaces and the complete core copy-back contract. The corresponding native fairplayd transaction remains open. [Populated cleanup and selector 26 return](userclient_populated_cleanup_report.md)
+
+Both selector 26 error results now have source-checked MIG 2965 fields and a conditional public IOKit wrapper return. The installed cache differs from the retained framework capture, and a matched native fairplayd exchange remains open. [Synchronous error-reply ABI](iokit_sync_error_reply_report.md)
