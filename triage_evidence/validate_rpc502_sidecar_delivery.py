@@ -50,6 +50,7 @@ def main():
     assert json.loads(read(ROOT/'rpc502_sidecar_quality_gates.json'))==quality
     reports={BASE/r['path'] for r in old['files'] if '/' not in r['path'] and r['path'].endswith('.md')}
     reports.add(BASE/'rpc502_sidecar_report.md')
+    if exists(BASE/'userclient_entry_execution_report.md'):reports.add(BASE/'userclient_entry_execution_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3850,6 +3851,14 @@ def main():
         manifest['validation']['kernel_scheduler_bootstrap_execution_static_scope']=scheduler_execution['scope']
         manifest['validation']['kernel_scheduler_bootstrap_execution_independent_checks']=scheduler_execution_audit['independent_totals']
         manifest['validation']['kernel_scheduler_bootstrap_execution_independent_replay_checks']=scheduler_execution_audit['independent_replay_totals']
+    if exists(ROOT/'userclient_entry_execution_checks.json'):
+        userclient_entry=json.loads(read(ROOT/'userclient_entry_execution_checks.json'))
+        userclient_entry_audit=json.loads(read(ROOT/'userclient_entry_execution_audit.json'))
+        manifest['validation']['userclient_entry_execution_increment_checks']=userclient_entry['verified_counts']
+        manifest['validation']['userclient_entry_execution_static_scope']=userclient_entry['scope']
+        manifest['validation']['userclient_entry_execution_independent_checks']=userclient_entry_audit['independent_totals']
+        manifest['validation']['userclient_entry_execution_new_source_queries_unsat']=len(userclient_entry_audit['source_proofs'])
+        manifest['validation']['userclient_entry_execution_negative_source_controls']=len(userclient_entry_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

@@ -1,5 +1,7 @@
 # Daemon, UserClient, protected core, and MIG contracts
 
+Current core-entry increment: The [entry-execution report](userclient_entry_execution_report.md) establishes the original three-argument save, 4336 B frame, two allocation requests, actual unsigned order-helper calls and NULL/non-NULL input selection. Forty-eight continuous private cases reach typed free or the earlier 16 B FPTTLV allocation without reading input bytes. Native admission, allocator effects and complete dispatcher processing remain unknown.
+
 Current scheduler bootstrap increment: The [scheduler bootstrap report](kernel_scheduler_bootstrap_execution_report.md) establishes the original main-to-scheduler ABI, CPU-type admission, processor-set/root-node publication, bootstrap processor fields and four callout/context pairs. Missing cluster-type reaches the original diagnostic; an explicit pre-main E-type tree yields CPU type 1 and processor-set type 0. Native input admission and hardware PAC remain unknown.
 
 Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) extends original main through cache discovery, ten 144 B context records and the original register-install tail. It maps the actual five-register tail ABI, banked CCSIDR reads and all 21 context-register writes; two final register values retain inherited poison. Declared architectural inputs and logical MSRs do not attest native hardware values or daemon/kext IPC.

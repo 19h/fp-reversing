@@ -1,5 +1,7 @@
 # FairPlayIOKit: obfuscated routine roles and supporting evidence
 
+Current core-entry increment: The [entry-execution report](userclient_entry_execution_report.md) executes the original _PRnut72j9 prefix and the exact helper at 0xfffffe000a687ecc. Independent integer replay covers 45396 visits; six source obligations and two rejected store-removal controls pass. The helper checks unsigned address order and does not initialize storage; its exact original symbol remains unknown.
+
 Current scheduler bootstrap increment: The [scheduler bootstrap report](kernel_scheduler_bootstrap_execution_report.md) assigns source-supported roles to 13 added bodies covering CPU-class partitioning, processor-set and queue construction, processor initialization, callout setup and ownership checks. One exact symbol is recovered: _lck_spin_assert at 0xfffffe000be7c458. Ten source queries, two continuous input cases and two rejected store controls bound the role claims.
 
 Current continuous CPU increment: The [continuous CPU report](kernel_cpu_initialization_execution_report.md) establishes source-derived roles for six additional original bodies: cache discovery, mode-dispatched context setup, context-register tail, owner locking, DAIF restoration and masked register installation. Exact original symbols remain unknown where absent. Continuous original execution adds 10125 visits without a new leaf-result model.
