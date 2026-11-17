@@ -56,6 +56,7 @@ def main():
     if exists(BASE/'userclient_early_node_report.md'):reports.add(BASE/'userclient_early_node_report.md')
     if exists(BASE/'userclient_early_data_report.md'):reports.add(BASE/'userclient_early_data_report.md')
     if exists(BASE/'userclient_early_writer_report.md'):reports.add(BASE/'userclient_early_writer_report.md')
+    if exists(BASE/'userclient_early_payload_report.md'):reports.add(BASE/'userclient_early_payload_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3908,6 +3909,16 @@ def main():
         manifest['validation']['userclient_early_writer_new_source_queries_unsat']=len(early_writer_audit['source_proofs'])
         manifest['validation']['userclient_early_writer_prior_reader_queries_unsat']=len(early_writer_audit['rechecked_prior_reader_proofs'])
         manifest['validation']['userclient_early_writer_negative_source_controls']=len(early_writer_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_early_payload_checks.json'):
+        early_payload=json.loads(read(ROOT/'userclient_early_payload_checks.json'))
+        early_payload_audit=json.loads(read(ROOT/'userclient_early_payload_audit.json'))
+        assert early_payload_audit['all_checks_pass'] and early_payload['verified_counts']==early_payload_audit['verified_counts']
+        manifest['validation']['userclient_early_payload_increment_checks']=early_payload['verified_counts']
+        manifest['validation']['userclient_early_payload_static_scope']=early_payload['scope']
+        manifest['validation']['userclient_early_payload_independent_checks']=early_payload_audit['independent_totals']
+        manifest['validation']['userclient_early_payload_new_source_queries_unsat']=len(early_payload_audit['source_proofs'])
+        manifest['validation']['userclient_early_payload_prior_header_queries_unsat']=len(early_payload_audit['rechecked_prior_header_proofs'])
+        manifest['validation']['userclient_early_payload_negative_source_controls']=len(early_payload_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
