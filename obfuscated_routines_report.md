@@ -2218,3 +2218,8 @@ The [fallback-parser report](userclient_fallback_parser_report.md) composes the 
 ## Actual fallback header and private publication
 
 The [actual fallback-metadata report](userclient_fallback_metadata_report.md) qualifies 0xfffffe000a63930c as the protected BE16/transformed-type reader, reuses 0xfffffe000a637138 for the separate length field at offset 6, and reduces 0xfffffe000a6390b4 to the exact 10+u32(length)<=14 body gate. The first two type gates separate 0xa129, selected 0x6685 and remaining handlers. The selected metadata/cursor path reaches either ordinary construction or zero-tag empty-container publication at 0xfffffe000a660ad0. These are source-block roles; IDB names, whole-function semantics, protocol sentinel meaning and native continuity remain unknown.
+
+
+## Actual zero-tag caller, miss and restoration roles
+
+The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins the actual caller at 0xfffffe000a656c08 to command-tag lookup at 0xfffffe000a662ab4, empty-head MISS, destructor callback index 0x1a and cleanup. Original LDRB/XOR/STRB at 0xfffffe000a6660d4/0xfffffe000a6660f0/0xfffffe000a6660f4 restores the full 14 B earlier observations, including unconsumed suffix bytes. Typed/data/aligned retirement requests follow. These are finite source-block roles; native callee effects, IDB naming, whole-function semantics, zero-tag protocol meaning and external return remain unknown.

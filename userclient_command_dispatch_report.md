@@ -211,3 +211,8 @@ The second command now has source-proved version/capability helper calls,three c
 
 
 The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establishes the conditional publication stores, exact extent/success callback gate, saved-mode split and reverse byte-transcode step between auxiliary and staging masks. Original argument producers establish counter=N and mode=N XOR0x7c233caf, supporting conditional N-byte composition; complete serializer reachability and native transaction pairing remain unknown. This increment establishes no additional Mach port endpoint.
+
+
+## Actual zero-tag fallback predecessor
+
+The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) certifies the command lookup against both actual retained fallback modes. D=0/U=0x6685/L2<=4 produces empty T; request tag 0x45e5918e then returns raw MISS 0xce515bda and zero result without entering node/scalar decoding or command execution. It continues through restoration/retirement request boundaries. This joins an actual predecessor to the earlier conditional role; native transaction identity and outer status remain unknown.

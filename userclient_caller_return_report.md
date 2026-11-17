@@ -219,3 +219,8 @@ The [auxiliary copy contract](userclient_auxiliary_copy_report.md) now establish
 
 
 The [serializer extent contract](userclient_serializer_extent_report.md) now establishes checked node-extent accumulation, strict 16 B padded sizing, the original allocator ABI and encoded extent custody. Under the stated successful-publication cut, the original consumer admits copying only when the request length equals that padded allocation extent. Node/padding emission, container stability across passes and native transaction pairing remain unknown; no additional Mach port endpoint is established.
+
+
+## Actual zero-tag miss-to-cleanup composition
+
+The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins the actual zero-tag parser completion and empty command search to this cleanup role. Raw MISS 0xce515bda, callback index 0x1a, empty typed-container retirement and complete 14 B restoration are certified against both actual predecessor modes; source then requests B/C/S retirement. The expanded entry interface and retired-owner access checks preserve explicit native-return/storage limits. Workspace callee effects and the actual guard/outer-return composition remain unknown.

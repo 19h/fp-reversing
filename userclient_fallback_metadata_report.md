@@ -141,3 +141,8 @@ Header decoding and this selected continuation take O(1) time and auxiliary spac
 - **QG5**: Pass. Earlier/new field domains, empty-container output, suffix behavior, handler boundaries and native limits are separated.
 - **QG6**: Pass. Original words/pointers/stores and independently rebuilt projection, solver and mutation receipts supply primary provenance.
 - **QG7**: Pass. Continuations address construction, saved-caller/suffix handling, rejection cleanup, wider types/extents and matched transport.
+
+
+## Subsequent actual caller composition
+
+The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) continues the saved caller beyond this report's historical boundary. Empty T yields command-tag MISS 0xce515bda; cleanup restores all 14 preceding original-input observations, including the unconsumed suffix, and reaches T/B/C/S retirement requests under explicit ordinary-return/storage premises. Native release effects, the workspace return, guard/epilogue and external result remain unknown.

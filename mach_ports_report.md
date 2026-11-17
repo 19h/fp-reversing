@@ -2113,3 +2113,8 @@ The [fallback-parser report](userclient_fallback_parser_report.md) composes the 
 ## Actual fallback header and private publication
 
 The [actual fallback-metadata report](userclient_fallback_metadata_report.md) establishes private header/type dispatch and the output-cell STR at 0xfffffe000a660ad0, followed by saved caller 0xfffffe000a656c08. These blocks add no imported/native call, Mach-message emitter, incoming/outgoing port, right disposition or IOKit selector. The recovered selected wire type 0x50db has no newly established native daemon/kext transaction identity.
+
+
+## Actual zero-tag cleanup touch points
+
+The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) reaches memory-management call boundaries at 0xfffffe000a6605c4 (_IOFreeTypeImpl), 0xfffffe000a666188 (_IOFreeData), 0xfffffe000a666260 (_IOFreeTypeImpl) and 0xfffffe000a6662b0 (_IOFreeAligned). They add actual-path custody for existing imported sites, with no new Mach-message emitter, incoming/outgoing port, right disposition, IOKit selector or matched daemon transaction. Source retirement requests do not establish native release effects or external status.

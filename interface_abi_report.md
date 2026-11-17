@@ -2367,3 +2367,8 @@ The [fallback-parser report](userclient_fallback_parser_report.md) composes the 
 ## Actual fallback header and private publication
 
 The [actual fallback-metadata report](userclient_fallback_metadata_report.md) establishes D=BE32(I[0..3]), U=BE16(I[4..5]) XOR 0x365e and L2=BE32(I[6..9]) from the source-written protected buffer. The 14 B/cursor-zero body condition is exactly L2<=4; wire 0x50db selects U=0x6685. That path publishes B+10 at C+0x280, commits cursor 10+L2 and copies tag/type/length metadata. Zero tag writes the initialized empty T through C+0x188=C+0x600 at 0xfffffe000a660ad0, then selects saved caller 0xfffffe000a656c08. This private publication is separate from native ABI admission, protocol identity and the unresolved outer return.
+
+
+## Actual zero-tag command miss and retirement ABI
+
+The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) establishes the actual saved caller's request W9=0x45e5918e, X22=T and X10=C+0x1f8. Empty search returns raw MISS 0xce515bda and zero output; cleanup retains that private status and restores all 14 original observations. Exact source retirement requests are typed T16 at 0xfffffe000a6605c4, data B14 at 0xfffffe000a666188, typed C4096 at 0xfffffe000a666260 and aligned S16384 at 0xfffffe000a6662b0. Native release effects, workspace return, guard/epilogue and external status remain unknown.
