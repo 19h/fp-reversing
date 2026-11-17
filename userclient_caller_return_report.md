@@ -229,3 +229,8 @@ The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins the act
 ## Actual zero-tag frame and canary composition
 
 The [zero-tag return report](userclient_zero_tag_return_report.md) joins the actual fallback predecessor to the original prologue, read-only stack probe, 17 saved cells, conditional local result and RETAB boundary. It reconstructs every saved cell in all 30 retained prefixes and certifies intervening source-store separation. The old ownership model omits the kernel guard range; the new report explicitly adds frame/guard separation and records omission counterexamples. Native guard equality, releases, PAC/return and external status remain unknown.
+
+
+## Actual direct caller and nonzero completion
+
+The [zero-tag provider report](userclient_zero_tag_provider_report.md) now connects the retained zero-tag local result to the original direct provider call and nominal handler route. It proves source argument/frame custody and conditional copy-out/cleanup/status propagation. The handler skips descriptor stores after this nonzero result. Ordinary authenticated returns and surviving outer frames are explicit additional premises; native transfer bytes and daemon pairing remain unknown.

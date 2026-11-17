@@ -2248,3 +2248,8 @@ The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins private
 ## Actual zero-tag frame and local return
 
 The [zero-tag return report](userclient_zero_tag_return_report.md) joins both actual fallback modes to the original frame/probe/save invariant, fourth ordinary retirement return, both canary outcomes and RETAB boundary. Equal canaries yield local X0=0x00000000ffff5bbc and original register/SP restoration. The earlier ownership model omits the kernel guard range: frame/guard separation is therefore an explicit additional condition, checked in all 30 original prefix frames and exposed by two old-model SAT counterexamples. Native authentication/return, releases, public status and matched transport remain unknown.
+
+
+## Conditional selector26 caller completion
+
+The [zero-tag provider report](userclient_zero_tag_provider_report.md) binds the original direct core call and saved argument roots to copy-out, descriptor cleanup and the handler nonzero branch. Under the retained core theorem and ordinary authenticated return/storage premises, local 0xffff5bbc survives to handler RETAB; copy-out is still requested, while the handler skips its output descriptor stores. The caller state lane is nullable and distinct from private core context C. Native transfer bytes and matched transport remain unknown.

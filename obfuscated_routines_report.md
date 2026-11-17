@@ -2228,3 +2228,8 @@ The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) joins the act
 ## Actual zero-tag frame and return role
 
 The [zero-tag return report](userclient_zero_tag_return_report.md) corroborates the controller's original frame/probe/save and guard/result epilogue around the actual fallback path. EOR W0,W26,W23 at 0xfffffe000a6662cc decodes raw MISS into local 0xffff5bbc under equal canaries; source restores the incoming saved state before RETAB. The unequal branch reaches the original stack-check failure veneer. Opaque/refined FP, the additional guard-range separation premise and native PAC/public status boundaries remain explicit; no new IDB naming or whole-function semantics is inferred.
+
+
+## Original zero-tag outer caller binding
+
+The [zero-tag provider report](userclient_zero_tag_provider_report.md) binds provider a505198, direct core call a5052fc -> a635208, nominal return a505300 and handler a504034. Conditional core result 0xffff5bbc survives copy-out/cleanup and selects logging rather than the handler descriptor stores. The by-value state from UserClient+0xe8 maps to core X2/F+0x738 and may be zero in the adapter model; it is distinct from allocated private context C. Source interfaces do not establish native business semantics.

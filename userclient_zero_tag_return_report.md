@@ -116,7 +116,7 @@ The new prologue/probe/exit components take O(1) source time and space for this 
 
 | Impact | Specific next interface / falsification target |
 | --- | --- |
-| High | Join this exact core input/caller identity to the surrounding provider/handler and establish how the nonzero local result affects copy-out, descriptor publication and external completion. |
+| High | The [caller report](userclient_zero_tag_provider_report.md) establishes conditional source caller completion. Next identify matched daemon/copy-in/state epochs and an actual authenticated return before assigning native external completion. |
 | High | Follow actual nonzero-tag construction at `a642454` through node/body allocation and append; retain decoded D/U/L2 and source-byte custody. |
 | High | Identify a matched daemon producer/transaction for the recovered protected header and 0x50db wire type; a coincident scalar does not establish transport. |
 | Medium | Compose oversized-body failure `a662440` through the same guard/restore boundary and compare status/lifetime channels. |

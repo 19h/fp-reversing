@@ -2001,3 +2001,8 @@ The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) follows both 
 ## Actual zero-tag guard and RETAB follow-up
 
 The [zero-tag return report](userclient_zero_tag_return_report.md) continues the actual workspace-release frontier through conditional local result and frame restoration, or the original guard-failure request. It reconstructs 510 original saved cells / 4080 B across 30 prefixes and classifies 859 parent stores plus 35 continued stores. Two SAT omission checks expose the need for explicit frame/guard-global separation beyond the old ownership model. Native releases/guard/PAC/return, public result, other parser paths and matched daemon transport remain open; the full goal remains active.
+
+
+## Conditional zero-tag caller completion
+
+The [zero-tag provider report](userclient_zero_tag_provider_report.md) adds 20 source UNSAT obligations, 67 retained-proof rechecks, six nullable-state SAT admissions, one former-model null-exclusion check and two source mutation controls. Original journals reconstruct 90 argument cells/720 B; six of 30 prefixes have extent14. The direct caller, copy requests, cleanup, nonzero output branch and source frame interface are established conditionally. Native transfer, authenticated return, public status naming and matched daemon transaction remain unknown. Investigation remains active.

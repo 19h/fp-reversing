@@ -2123,3 +2123,8 @@ The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) reaches memor
 ## Actual zero-tag compiler support interfaces
 
 The [zero-tag return report](userclient_zero_tag_return_report.md) composes the original stack-probe helper and guard/epilogue source around the actual fallback cleanup. It reaches either RETAB at 0xfffffe000a6662f8 or the ___stack_chk_fail request through BL 0xfffffe000a66692c and veneer BRAA 0xfffffe000a69f2a0. These are compiler-support and local-return touch points; they establish no new incoming/outgoing Mach port, message emitter, right disposition, IOKit selector or native daemon/kext transaction. Guard-range separation and native return limits are explicit.
+
+
+## Zero-tag caller completion remains kernel-local
+
+The [zero-tag provider report](userclient_zero_tag_provider_report.md) establishes the direct kernel provider/core call and conditional nonzero caller completion. Copy-out is requested before descriptor cleanup; the handler logs and skips descriptor publication. These sites are ordinary kernel-local calls, not evidence of additional Mach endpoint creation, rights transfer or message emission. A matched daemon transaction remains unknown.

@@ -2377,3 +2377,8 @@ The [zero-tag unwind report](userclient_zero_tag_unwind_report.md) establishes t
 ## Actual zero-tag local return ABI
 
 The [zero-tag return report](userclient_zero_tag_return_report.md) establishes original FP=F+0x10e0, 17 saved cells, source stack-probe reads and conditional return custody after the actual cleanup. Under the fourth ordinary-return/frame-preservation and additional frame/guard separation premises, equal canaries yield zero-extended local result 0xffff5bbc, restore X19-X29 and D8-D11 low64 plus signed-link/SP custody, and reach RETAB at 0xfffffe000a6662f8. Unequal canaries request ___stack_chk_fail through 0xfffffe000a66692c/0xfffffe000a69f2a0. Native PAC/return and public error naming remain unknown.
+
+
+## Zero-tag caller ABI and nullable state
+
+The [zero-tag provider report](userclient_zero_tag_provider_report.md) establishes core-call (K,extent64,P), original prologue custody, nominal selector26 vtable binding and adjacent 4336/80/64 B core/provider/handler frames. The handler zero-extends its u32 packet extent. A retained-theorem return of 0xffff5bbc does not suppress copy-out or cleanup; it selects logging and skips the handler descriptor stores. The old adapter nonnull-state restriction is removed only for the forwarded by-value lane; native acceptance and authentication remain unknown.
