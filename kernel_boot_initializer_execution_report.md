@@ -1,5 +1,7 @@
 # Full private boot initializer and collection-state publication
 
+Subsequent evidence: the [boot-state logging handoff](kernel_boot_logging_handoff_report.md) transfers the eight published words into a separately declared main case, preserves the poisoned regression and reaches the nonzero timer return. The boot evidence below is unchanged; registration remains modeled in that later case, and continuous cold-entry/native admission remains unknown.
+
 The original boot initializer now returns in a complete raw-image private CPU case after 43400376 source visits. It performs all 1036413 fixup stores, publishes the primary collection-header bank, visits 362 child images, applies 511000 zero-slide metadata stores, publishes four root range words and stores the boot slide. Independent replay matches every streamed instruction/read/write/fixup/PAC receipt, all final GPRs/SP/NZCV, private RAM and all 4967 mapped image pages. The final image equals the corrected fixup projection plus eight declared global words. Hardware PAC, native boot and composition into the existing continuous startup case remain unknown. [BE-A1-BE-A7]
 
 ```text

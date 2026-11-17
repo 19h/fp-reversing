@@ -1,5 +1,7 @@
 # Continuous early logging to the configuration-object boundary
 
+Subsequent evidence: the [boot-state logging handoff](kernel_boot_logging_handoff_report.md) preserves this frozen poisoned case and introduces a separate boot-word precedence case. That later case reaches both logging returns and the nonzero timer return; the historical boundary and receipts below remain unchanged.
+
 The retained nonzero `longterm` startup now crosses the unknown-DAIF boundary through one explicit, universally proved state transition, then executes original lock acquisition, timestamp formatting, diagnostic formatting, 47 authenticated callback edges, ring-byte stores, unlock and `_logwakeup` return. It stops before the four-byte configuration-object read at `0xfffffe000c48fc98`. The pointer is the inherited fixture sentinel `0xa5a5a5a5a5a5a5a5`; no executed source writer supplied a configuration object. The outer logger and `_printf` have not returned. Native console emission, timer completion and matched FairPlay IPC remain unknown. [LE-A1-LE-A7]
 
 ```text

@@ -628,6 +628,7 @@ def main():
     if exists(BASE/'kernel_initializer_pointer_signing_report.md'):reports.add(BASE/'kernel_initializer_pointer_signing_report.md')
     if exists(BASE/'kernel_boot_fixup_projection_report.md'):reports.add(BASE/'kernel_boot_fixup_projection_report.md')
     if exists(BASE/'kernel_boot_initializer_execution_report.md'):reports.add(BASE/'kernel_boot_initializer_execution_report.md')
+    if exists(BASE/'kernel_boot_logging_handoff_report.md'):reports.add(BASE/'kernel_boot_logging_handoff_report.md')
     links=0
     unavailable_external=[]
     for path in sorted(reports):
@@ -3818,6 +3819,13 @@ def main():
         manifest['validation']['kernel_boot_initializer_execution_static_scope']=boot_execution['scope']
         manifest['validation']['kernel_boot_initializer_execution_independent_checks']=boot_execution_audit['independent_totals']
         manifest['validation']['kernel_boot_initializer_execution_independent_replay_checks']=boot_execution_audit['independent_replay_totals']
+    if exists(ROOT/'kernel_boot_logging_handoff_checks.json'):
+        boot_handoff=json.loads(read(ROOT/'kernel_boot_logging_handoff_checks.json'))
+        boot_handoff_audit=json.loads(read(ROOT/'kernel_boot_logging_handoff_audit.json'))
+        manifest['validation']['kernel_boot_logging_handoff_increment_checks']=boot_handoff['verified_counts']
+        manifest['validation']['kernel_boot_logging_handoff_static_scope']=boot_handoff['scope']
+        manifest['validation']['kernel_boot_logging_handoff_independent_checks']=boot_handoff_audit['independent_totals']
+        manifest['validation']['kernel_boot_logging_handoff_independent_replay_checks']=boot_handoff_audit['independent_replay_totals']
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
