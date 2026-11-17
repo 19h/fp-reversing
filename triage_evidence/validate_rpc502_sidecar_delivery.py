@@ -61,6 +61,7 @@ def main():
     if exists(BASE/'userclient_early_schema_report.md'):reports.add(BASE/'userclient_early_schema_report.md')
     if exists(BASE/'userclient_schema_search_report.md'):reports.add(BASE/'userclient_schema_search_report.md')
     if exists(BASE/'userclient_schema_scalar_report.md'):reports.add(BASE/'userclient_schema_scalar_report.md')
+    if exists(BASE/'userclient_schema_registry_report.md'):reports.add(BASE/'userclient_schema_registry_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -3963,6 +3964,16 @@ def main():
         manifest['validation']['userclient_schema_scalar_new_source_queries_unsat']=len(schema_scalar_audit['source_proofs'])
         manifest['validation']['userclient_schema_scalar_prior_search_queries_unsat']=len(schema_scalar_audit['rechecked_prior_search_proofs'])
         manifest['validation']['userclient_schema_scalar_negative_source_controls']=len(schema_scalar_audit['negative_source_controls'])
+    if exists(ROOT/'userclient_schema_registry_checks.json'):
+        schema_registry=json.loads(read(ROOT/'userclient_schema_registry_checks.json'))
+        schema_registry_audit=json.loads(read(ROOT/'userclient_schema_registry_audit.json'))
+        assert schema_registry_audit['all_checks_pass'] and schema_registry['verified_counts']==schema_registry_audit['verified_counts']
+        manifest['validation']['userclient_schema_registry_increment_checks']=schema_registry['verified_counts']
+        manifest['validation']['userclient_schema_registry_static_scope']=schema_registry['scope']
+        manifest['validation']['userclient_schema_registry_independent_checks']=schema_registry_audit['independent_totals']
+        manifest['validation']['userclient_schema_registry_new_source_queries_unsat']=len(schema_registry_audit['source_proofs'])
+        manifest['validation']['userclient_schema_registry_prior_source_queries_unsat']=len(schema_registry_audit['rechecked_prior_source_proofs'])
+        manifest['validation']['userclient_schema_registry_negative_source_controls']=len(schema_registry_audit['negative_source_controls'])
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:
