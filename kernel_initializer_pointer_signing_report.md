@@ -1,5 +1,7 @@
 # Collection traversal, module-pointer signing and FairPlay class lineage
 
+Subsequent evidence: the [original early-main signing case](kernel_main_pointer_signing_report.md) executes this walker/signer from main with the boot-produced header and existing stack, including all six FairPlay table stores. It reaches the later timer return after 821831 visits. The separate cases and receipts below remain unchanged; actual module initializer invocation and native signatures remain unknown.
+
 The helper previously retained as an early-registration no-RAM leaf walks collection and fileset segment commands and re-signs nonzero module initializer/terminator pointers. It does not call those pointers. In the pinned collection, a separate logical-PAC CPU case returns after 1845 segment-helper calls and 6362 pointer stores, including all six FairPlayIOKit entries. Original FairPlay initializer bodies separately corroborate three metaclass constructor ABIs and authenticated vtable stores. Native signatures, initializer invocation and integration into the retained continuous startup remain unknown. [IP-A1-IP-A7]
 
 ```text

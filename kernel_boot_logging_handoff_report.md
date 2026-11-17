@@ -1,5 +1,7 @@
 # Boot-state logging handoff and nonzero timer return
 
+Subsequent evidence: the [original early-main signing case](kernel_main_pointer_signing_report.md) preserves this frozen modeled regression and replaces its walker return model with 306644 original helper visits, 1845 signer calls and 6362 pointer stores. The projected instruction/read/write streams and complete final private state match this case; two other models and native lifecycle/transport limits remain.
+
 Eight words from the returned private boot initializer now reach a separately declared main/startup case. The original logger reads the real root header instead of the retained poison value, the original outer printf returns, a console wrapper invokes logging again, and the nonzero timer initializer returns to main at `0xfffffe000c639e40`, before its CPU-initializer BL. The case executes 515187 source visits, emits two 47 B messages into private ring storage and produces thresholds of 24000 and 2400 ticks. This is conditional image-state composition: the inherited registration and selector returns remain models, six address-range words remain poisoned, and no continuous cold entry or native FairPlay transaction is established. [BH-A1-BH-A7]
 
 ```text
