@@ -2130,3 +2130,5 @@ The [zero-tag return report](userclient_zero_tag_return_report.md) composes the 
 The [zero-tag provider report](userclient_zero_tag_provider_report.md) establishes the direct kernel provider/core call and conditional nonzero caller completion. Copy-out is requested before descriptor cleanup; the handler logs and skips descriptor publication. These sites are ordinary kernel-local calls, not evidence of additional Mach endpoint creation, rights transfer or message emission. A matched daemon transaction remains unknown.
 
 First-record construction, allocator requests and the private lookup/publication callback add kernel-local interfaces. Further port emissions and native daemon transaction identity remain unknown. [First-record boundaries](userclient_nonzero_tag_record_report.md).
+
+The recovered first-record completion transfers are kernel-local, including the command lookup request and allocator calls. The daemon transport join remains open. [First-record completion](userclient_nonzero_tag_completion_report.md).

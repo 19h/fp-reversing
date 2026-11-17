@@ -74,6 +74,7 @@ def main():
     if exists(BASE/'userclient_zero_tag_return_report.md'):reports.add(BASE/'userclient_zero_tag_return_report.md')
     if exists(BASE/'userclient_zero_tag_provider_report.md'):reports.add(BASE/'userclient_zero_tag_provider_report.md')
     if exists(BASE/'userclient_nonzero_tag_record_report.md'):reports.add(BASE/'userclient_nonzero_tag_record_report.md')
+    if exists(BASE/'userclient_nonzero_tag_completion_report.md'):reports.add(BASE/'userclient_nonzero_tag_completion_report.md')
     if exists(BASE/'kernel_membership_removal_report.md'):reports.add(BASE/'kernel_membership_removal_report.md')
     if exists(BASE/'kernel_iokit_open_report.md'):reports.add(BASE/'kernel_iokit_open_report.md')
     if exists(BASE/'iokit_connection_lifecycle_report.md'):reports.add(BASE/'iokit_connection_lifecycle_report.md')
@@ -4111,6 +4112,15 @@ def main():
             prefix+'prior_queries_unsat': len(audit['rechecked_prior_proofs']),
             prefix+'negative_source_controls': len(audit['negative_source_controls']),
         })
+    if exists(ROOT/'userclient_nonzero_tag_completion_audit.json'):
+        completion = json.loads(read(ROOT/'userclient_nonzero_tag_completion_audit.json'))
+        assert completion['all_checks_pass'] and not completion['full_goal_complete']
+        manifest['validation']['userclient_nonzero_tag_completion'] = {
+            'scope': completion['scope'],
+            'profiles': len(completion['profiles']),
+            'source_queries': len(completion['source_proofs']),
+            'negative_controls': len(completion['negative_source_controls']),
+        }
     (ROOT/'interface_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     check=json.loads(read(ROOT/'interface_manifest.json'))
     for row in check['files']:

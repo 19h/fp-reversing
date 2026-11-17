@@ -2235,3 +2235,5 @@ The [zero-tag return report](userclient_zero_tag_return_report.md) corroborates 
 The [zero-tag provider report](userclient_zero_tag_provider_report.md) binds provider a505198, direct core call a5052fc -> a635208, nominal return a505300 and handler a504034. Conditional core result 0xffff5bbc survives copy-out/cleanup and selects logging rather than the handler descriptor stores. The by-value state from UserClient+0xe8 maps to core X2/F+0x738 and may be zero in the adapter model; it is distinct from allocated private context C. Source interfaces do not establish native business semantics.
 
 The selected nonzero-tag type-0x6685 route in `_PRnut72j9` performs typed node allocation, exact record serialization and first-node publication, then dispatches on the committed cursor. [Source contract](userclient_nonzero_tag_record_report.md).
+
+The selected continuation in `_PRnut72j9` publishes the populated container at cursor exhaustion or requests its retirement when the remaining header is short. [First-record completion](userclient_nonzero_tag_completion_report.md).

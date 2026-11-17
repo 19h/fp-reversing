@@ -84,3 +84,5 @@ For a body length L2 in the admitted range, serialization takes O(10 + L2) time 
 - **QG5** passed. L and L2, the inner list update and outer publication, and the source and native boundaries are tracked separately.
 - **QG6** passed. The pinned images, pointer records, prefix journals and reproduced solver obligations support the stated results.
 - **QG7** passed. The continuation ranks parser completion, rollback, native transport and type coverage.
+
+The cursor split is now composed with populated-container publication, the command lookup request and short-suffix retirement. [First-record completion](userclient_nonzero_tag_completion_report.md).
