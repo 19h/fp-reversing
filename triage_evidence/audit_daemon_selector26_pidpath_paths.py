@@ -165,7 +165,7 @@ def check_positive(state, route, fixture_path, abi):
     assert number(frame.get(x5, 8)) == x3
     print('path positive', count, 'aggregate', aggregate_size, 'method', hex(method),
           'connection fixture', hex(connection), 'public size', x3, 'edges', len(edges), flush=True)
-    return edges
+    return edges, aggregate_size
 
 
 def main():
@@ -189,8 +189,9 @@ def main():
             del frame.stores[stores:]
             for name, value in flags.items():
                 setattr(frame, name, value)
-            edges.extend(check_positive(state, routes[0], b'/' + b'fixture/fairplayd',
-                                        DIRECT if fixture == 0x98 else DESCRIPTOR))
+            positive_edges, _ = check_positive(state, routes[0], b'/' + b'fixture/fairplayd',
+                                               DIRECT if fixture == 0x98 else DESCRIPTOR)
+            edges.extend(positive_edges)
             slots.update(slot for _, slot, _ in edges)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     print(len(slots), 'original fixup words')
