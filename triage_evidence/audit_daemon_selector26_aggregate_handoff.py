@@ -49,7 +49,7 @@ def check_handoff(fixture, data, profiles, equal):
     frame.seed('x30', CALL + 4)
     # Model the authenticated return address as the logical link at entry.
     assert next(CS.disasm(IMAGE.read(CALLEE, 4), CALLEE)).mnemonic == 'pacibsp'
-    frame.step(CALLEE + 4, 0x100457e58)
+    frame.step(CALLEE + 4, 0x100457e5c)
     frame.step(0x100457e5c, 0x100457ea4)
     callee_edges, calls = [], []
     assert walk(frame, 0x100457ea4, callee_edges, calls, stop=TABLE_LOAD) == TABLE_LOAD

@@ -2086,3 +2086,5 @@ The modeled 112 B and 96 B buffers contain transformed segments for each retaine
 After the aggregate is built, the caller places its pointer in two fields of the stack record passed to the private routine at `0x100457e28`. Both fields are read, and the callee saves and null-tests the pointer before a table lookup keyed by retained state. [Daemon selector 26 aggregate pointer handoff](daemon_selector26_aggregate_handoff_report.md)
 
 The callee reloads the saved pointer at `0x1004a55e4` and reads the first 16 B of the aggregate in a fixed order across eight replay cases. Each byte feeds a lookup in a 256 B constant window. The later outputs and native exchange remain open. [Daemon selector 26 first aggregate reads](daemon_selector26_aggregate_reads_report.md)
+
+The same private routine rewrites the aggregate in place in 16 B blocks, including the trailing region, then writes a 4 B result at record+0x1c B. The caller compares the result and selects `0x100640d30` in eight modeled cases. The rewritten buffer's downstream consumer and native exchange remain open. [Daemon selector 26 aggregate writeback and return](daemon_selector26_aggregate_writeback_report.md)
