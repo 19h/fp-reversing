@@ -99,7 +99,8 @@ def check_return(fixture, data, profiles, equal):
     for at, width in ((base, 14), (CHILD, extent)):
         assert not any(p < at + width and at < p + n for _, p, n in frame.loads[load_start:])
         assert not any(p < at + width and at < p + n for _, p, n, _ in frame.stores[store_start:])
-    return {slot for _, slot, _ in slots} | {row[3] for row in fragments} | {NEXT_SLOT, table_slot}
+    fixups = {slot for _, slot, _ in slots} | {row[3] for row in fragments} | {NEXT_SLOT, table_slot}
+    return frame, original_owner, fixups
 
 
 def main():
@@ -109,8 +110,9 @@ def main():
     data = [row for row in sections() if row['segment'] == '__DATA']
     slots = set()
     for equal in (False, True):
-        first = check_return(0x98, data, profiles, equal)
-        assert check_return(0x99, data, profiles, equal) == first
+        _, _, first = check_return(0x98, data, profiles, equal)
+        _, _, second = check_return(0x99, data, profiles, equal)
+        assert second == first
         slots.update(first)
     assert len(verify_original_fixups(slots)['records']) == len(slots) == 9
     print('2 classes, 2 comparison outcomes, 4 new child reloads, 9 chained fixups')
