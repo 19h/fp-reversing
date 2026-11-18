@@ -68,7 +68,7 @@ def check_handoff(fixture, data, profiles, equal):
         solver = z3.Solver()
         solver.add(relation)
         assert solver.check() == z3.sat
-    return edges + callee_edges
+    return frame, edges + callee_edges
 
 
 def main():
@@ -78,8 +78,9 @@ def main():
     data = [row for row in sections() if row['segment'] == '__DATA']
     slots = set()
     for equal in (False, True):
-        first = check_handoff(0x98, data, profiles, equal)
-        assert check_handoff(0x99, data, profiles, equal) == first
+        _, first = check_handoff(0x98, data, profiles, equal)
+        _, second = check_handoff(0x99, data, profiles, equal)
+        assert second == first
         slots.update(slot for _, slot, _ in first)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     print(f'4 replay cases, 60 handoff edges, {len(slots)} chained fixups')
