@@ -1,6 +1,6 @@
 # fairplayd class matching and the selector 26 control word
 
-Two source-backed predecessors write the 32-bit control word inherited by the selector 26 caller. In the selected entry states, `0` accompanies a match for `com_apple_driver_FairPlayIOKit`, and `1` accompanies a match for `AvpFairPlayDriver`. Both enter the same service matching, iteration and type-0 open fragment. After a successful open, the caller reads the value written by the corresponding predecessor. The prior byte proof associates those values with the descriptor and direct structure helper paths, respectively. [Open handoff](daemon_selector26_open_report.md) [Selector 26 dispatch byte](daemon_selector26_constructor_join_report.md)
+Two source-backed predecessors write the 32-bit control word inherited by the selector 26 caller. In the selected entry states, `0` accompanies a match for `com_apple_driver_FairPlayIOKit`, and `1` accompanies a match for `AvpFairPlayDriver`. Both enter the same service matching, iteration and type-0 open fragment. After a successful open, the caller reads the value written by the corresponding predecessor. The prior byte proof associates those values with the descriptor and direct structure helper paths, respectively. [VMM query and initial class selection](daemon_selector26_class_gate_report.md) [Open handoff](daemon_selector26_open_report.md) [Selector 26 dispatch byte](daemon_selector26_constructor_join_report.md)
 
 Addresses are unslid in the original arm64e image, SHA-256 `4ffe3ea1dbd27c5026b448ffe06e8489b02cd9064500bcc67792d4ac36ffb63e`. F is the shared SP and R is FP−0x78 B. [Audit generator](triage_evidence/audit_daemon_selector26_match_entry.py) [Compressed evidence](triage_evidence/daemon_selector26_match_entry_audit.json.zst)
 
@@ -24,14 +24,14 @@ The class source pointers come from original rebases at `0x1010b5f58` and `0x101
 
 ## Cross-layer evidence
 
-The annotated RAX request 2881 contains `IOProviderClass = com_apple_driver_FairPlayIOKit`. The iterator then returns a service right, and request 2862 receives reply 2962 with a null connection and `0xe00002c2`. These messages establish the class criterion and failed open in that run. The exact daemon call-site correlation remains unknown. The supplied kext contains the FairPlayIOKit class metadata. The independent ADID analysis has call sites for both class names, with separately recovered caller predicates. The predicate at the upstream entry of these fairplayd fragments, the native provider identity on each path and a successful matched native 2865/2965 exchange remain unknown. [RAX trace](zut_trace_report.md) [Kext metaclass association](daemon_iokit_class_report.md) [ADID class paths](adid_iokit_report.md)
+The annotated RAX request 2881 contains `IOProviderClass = com_apple_driver_FairPlayIOKit`. The iterator then returns a service right, and request 2862 receives reply 2962 with a null connection and `0xe00002c2`. These messages establish the class criterion and failed open in that run. The exact daemon call-site correlation remains unknown. The supplied kext contains the FairPlayIOKit class metadata. The independent ADID analysis has call sites for both class names, with separately recovered caller predicates. The native provider identity on each path and a successful matched native 2865/2965 exchange remain unknown. [RAX trace](zut_trace_report.md) [Kext metaclass association](daemon_iokit_class_report.md) [ADID class paths](adid_iokit_report.md)
 
 ## Assumption register and checks
 
 | ID | Premise and dependent result | Falsification probe |
 | --- | --- | --- |
 | A1 | Original bytes and fixups identify logical call and branch targets. Read-only tables and file-initial class pointer cells retain their values. | Check original chained words, all five 256-case bank rules and every emitted string byte. Hardware PAC remains unknown. |
-| A2 | Entry W8, F+0x6c B and the incoming context have the stated values. The incoming banks at F+0x60/+0x58 B and F+0x40/+0x38 B match their fixture pairs. | Find the reaching definitions of those values. The F+0x28/+0x30 B iterator bank pair now comes from source stores on both profiles. |
+| A2 | Entry W8, F+0x6c B and the incoming context have the stated values. The incoming banks at F+0x60/+0x58 B and F+0x40/+0x38 B match their fixture pairs. | Compare the incoming slots against the recovered prologue stores and the F+0x28/+0x30 B iterator bank pair against the source stores on both profiles. [VMM query and initial class selection](daemon_selector26_class_gate_report.md) |
 | A3 | F, FP and C enable disjoint storage for the live scalar, string and ABI output cells. IOKit calls return normally with the declared opaque results and preserve callee-saved state. | Check live-slot widths, clear volatile registers and test each prefix with main-port failure, null dictionary and nonnull dictionary. |
 | A4 | The earlier aligned-record and constructor premises apply to the handoff. | Compare the measured word at the caller load with the established low-byte theorem. Correlate the class request, successful open, connection and method exchange in one native capture. |
 
@@ -39,5 +39,5 @@ The audit checks six profiles, 82 original instruction spans, 26 original chaine
 
 | Impact | Remaining evidence |
 | --- | --- |
-| High | Recover the upstream decision that selects the two entry blocks and the original definitions of the remaining bank slots. |
+| High | Extend the now-recovered initial class decision through the later continuations and resolve native service identity. [VMM query and initial class selection](daemon_selector26_class_gate_report.md) |
 | High | Establish which native service and UserClient each matching dictionary resolves to, then correlate a successful open and method transaction. |
