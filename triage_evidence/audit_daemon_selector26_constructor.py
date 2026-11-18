@@ -35,9 +35,11 @@ def normal_malloc_return(frame, call, size, result):
     return {'pc': hex(call), 'size_bytes': size}
 
 
-def constructor_globals(first, second):
+def constructor_frame(first, second, *, frame_type=OriginFrame, registers=None,
+                      locations=(ALLOCATED, NODE, BUFFER)):
+    allocated, node, buffer = locations
     incoming = z3.BitVec('incoming_sp_e0', 64)
-    f = OriginFrame(x0=RECORD, x29=FP)
+    f = frame_type(x0=RECORD, x29=FP, **(registers or {}))
     f.put(RECORD + 16, 8, CONTEXT)
     f.put(RECORD + 4, 4, (PHASE - ((RECORD ^ 0xf9d49974) * 0xda51a827)) & 0xffffffff)
     f.put(SP + 0xe0, 8, incoming)
@@ -45,7 +47,7 @@ def constructor_globals(first, second):
     f.put(GLOBAL_TWO, 8, second)
     assert f.step(0x100411130, 0x10041132c) == 0x10005be70
     assert f.step(0x10005be70, 0x10005bf24) == 'libSystem/_malloc'
-    allocations = [normal_malloc_return(f, 0x10005bf20, 16, ALLOCATED)]
+    allocations = [normal_malloc_return(f, 0x10005bf20, 16, allocated)]
     assert tuple(number(f.get(SP + offset, 8)) for offset in (0x70, 0x68)) == THIRD
 
     f.step(0x10005bf24, 0x10005bfb0)
@@ -67,23 +69,28 @@ def constructor_globals(first, second):
     assert number(f.read('w10')) == 4
     assert f.step(0x10008c974, 0x10008c994) == 0x10001bc34
     assert f.step(0x10001bc34, 0x10001bca0) == 'libSystem/_malloc'
-    allocations.append(normal_malloc_return(f, 0x10001bc9c, 32, NODE))
+    allocations.append(normal_malloc_return(f, 0x10001bc9c, 32, node))
     assert f.step(0x10001bca0, 0x10001bcd8) == 0x100015a3c
     assert f.step(0x100015a3c, 0x100015af8) == 'libSystem/_malloc'
-    allocations.append(normal_malloc_return(f, 0x100015af4, 14, BUFFER))
+    allocations.append(normal_malloc_return(f, 0x100015af4, 14, buffer))
     assert f.step(0x100015af8, 0x100015b28) == 0x10005c5f4
-    assert number(f.read('x22')) == NODE
+    assert number(f.read('x22')) == node
     assert number(f.get(RECORD + 16, 8)) == CONTEXT
     assert number(f.get(SP + 0x90, 8)) == RECORD
     assert number(f.get(SP + 0x124, 4)) == PHASE
     assert number(f.get(FP - 0xc0, 8)) == 0
-    assert number(f.get(FP - 0xb8, 8)) == number(f.get(SP + 0x40, 8)) == ALLOCATED
+    assert number(f.get(FP - 0xb8, 8)) == number(f.get(SP + 0x40, 8)) == allocated
     assert not any(BUFFER <= address < BUFFER + 14 for _, address, _, _ in f.stores)
-    assert [(pc, address - NODE, width, number(value)) for pc, address, width, value in f.stores
-            if NODE <= address < NODE + 32] == [
+    assert [(pc, address - node, width, number(value)) for pc, address, width, value in f.stores
+            if node <= address < node + 32] == [
         (0x100015a48, 0, 8, 0), (0x100015a48, 8, 8, 0),
-        (0x100015aa8, 16, 4, 14), (0x100015b00, 24, 8, BUFFER),
+        (0x100015aa8, 16, 4, 14), (0x100015b00, 24, 8, buffer),
     ]
+    return f, allocations, incoming
+
+
+def constructor_globals(first, second):
+    f, allocations, incoming = constructor_frame(first, second)
     proof = solve('arbitrary_incoming_cell_preserved_through_buffer_publication',
                   [], f.get(SP + 0xe0, 8) != incoming)
     assert proof['result'] == 'unsat'
