@@ -37,3 +37,5 @@ The generator checks 1,280 bank inputs across five rules, five frame profiles an
 | --- | --- |
 | High | Identify the reaching writes for F+0x4c B and the inherited bank pointers. Establish the ordinary matching dictionary and call-site lineage. |
 | High | Correlate a successful native open with its connection right and a selector 26 transaction. |
+
+The [class-matching entry report](daemon_selector26_match_entry_report.md) identifies two reaching writes to F+0x4c B and sources the iterator's F+0x28/+0x30 B bank pair. The two paths match different service classes before the shared open fragment.
