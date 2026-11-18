@@ -106,7 +106,8 @@ def check_pidpath(fixture, data, profiles, equal, seed, pid, constant):
     print(hex(fixture), equal, 'PID', pid, 'routes', [(hex(slot), hex(target)) for slot, target in routes],
           flush=True)
     fixups = {at for _, at, width in frame.loads[use_start:] if width == 8 and at in FIXUPS}
-    return fixups, routes
+    frame.seed('w8', index)
+    return fixups, routes, (frame, record, child, child_size, result)
 
 
 def main():
@@ -120,7 +121,7 @@ def main():
     routes = []
     for equal in (False, True):
         for fixture, seed, pid in ((0x98, 0, 11747), (0x99, 17, 501)):
-            selected, row = check_pidpath(fixture, data, profiles, equal, seed, pid, constant)
+            selected, row, _ = check_pidpath(fixture, data, profiles, equal, seed, pid, constant)
             slots.update(selected)
             routes.append(row)
     assert all(row == routes[0] for row in routes)
