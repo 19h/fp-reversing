@@ -26,7 +26,7 @@ Both nonnull allocations lead to the `0x100a2146c` call to `0x100444dfc` via `0x
 | `0x100444fcc` into X19, followed by a byte load at X19+0x48 B at `0x100444ff4` | `0x1010c6808` | 101 B allocation, published at `0x1003b43c4`. |
 | `0x100444ff0` into X20 | `0x1010c8260` | 58 B allocation, published at `0x1003b42d4`. |
 
-Both pointer cells are in zero-fill storage. The initialized buffers come from the previously recovered startup path. The postprocessing replay stops at this call with both allocations live. The earlier Arcade analysis identifies the same helper and initialized buffers. The downstream values, further IOKit calls and successful native method exchange remain unknown. [Initializer and shared helper](arcade_subscription_report.md) [RAX trace interval](zut_trace_report.md)
+Both pointer cells are in zero-fill storage. The initialized buffers come from the previously recovered startup path. This replay stops at the call with both allocations live. The follow-on audit traces the caller's consumption of the helper output and the release path after a subsequent allocation failure. Successful native method exchange remains unknown. [Initializer and shared helper](arcade_subscription_report.md) [RAX trace interval](zut_trace_report.md) [Shared-helper consumers](daemon_selector26_helper_consumers_report.md)
 
 ## Assumption register and verification
 
