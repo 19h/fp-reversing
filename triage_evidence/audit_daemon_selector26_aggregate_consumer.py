@@ -101,7 +101,7 @@ def check_consumer(fixture, data, profiles, equal, seed, constant):
         (0x100942a64, first_child), (0x100942a64, aggregate_child)]
     print(hex(fixture), equal, seed, 'source bytes', capacity, 'child size', allocations[aggregate_child],
           'further buffer size', allocations[final_buffer], 'authenticated edges', len(edges), flush=True)
-    return {slot for _, slot, _ in edges}
+    return {slot for _, slot, _ in edges}, frame, final_buffer, allocations[final_buffer]
 
 
 def main():
@@ -114,7 +114,8 @@ def main():
     slots = set()
     for equal in (False, True):
         for fixture, seed in ((0x98, 0), (0x99, 17)):
-            slots.update(check_consumer(fixture, data, profiles, equal, seed, constant))
+            checked, _, _, _ = check_consumer(fixture, data, profiles, equal, seed, constant)
+            slots.update(checked)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     print(len(slots), 'original fixup words')
 
