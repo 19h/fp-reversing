@@ -28,7 +28,7 @@ The prologue derives the remaining inherited bank pairs from four original pool 
 
 ## Trace correspondence and remaining interfaces
 
-The annotated RAX log records matching request 2881 for `com_apple_driver_FairPlayIOKit` and type-0 open reply 2962 with a null connection and `0xe00002c2`. Its `sysctl` lines do not decode the returned u32 or attribute the call to `0x10043df88`. The matching string is consistent with the recovered primary path. The live byte values, call-site attribution and successful native method exchange remain unknown. The independently analyzed ADID provider uses the same sysctl name and has evidence for an Avp stage followed by a primary stage. Here the recovered decision determines the first lookup, and a second lookup in the same daemon invocation remains unknown. [RAX trace](zut_trace_report.md) [ADID extended caller](adid_iokit_caller_report.md)
+The annotated RAX log records matching request 2881 for `com_apple_driver_FairPlayIOKit` and type-0 open reply 2962 with a null connection and `0xe00002c2`. Its `sysctl` lines do not decode the returned u32 or attribute the call to `0x10043df88`. The matching string is consistent with the recovered primary path. The live byte values, call-site attribution and successful native method exchange remain unknown. The independently analyzed ADID provider uses the same sysctl name and has evidence for an Avp stage followed by a primary stage. A same-frame replay now shows the daemon's Avp-to-primary continuation for the bounded outcomes in the fallback report. [Class fallback](daemon_selector26_class_retry_report.md) [RAX trace](zut_trace_report.md) [ADID extended caller](adid_iokit_caller_report.md)
 
 ## Assumption register and verification
 
@@ -43,6 +43,6 @@ The audit checks four modeled query outcomes through both helper routes and the 
 
 | Impact | Evidence frontier |
 | --- | --- |
-| High | Follow the selected Avp and primary continuations after matching failure or method return to establish whether either can enter the other lookup in the same invocation. |
+| High | Follow the bit-clear constructor return after either lookup. The release paths and saved Avp-to-primary continuation have been recovered. [Class fallback](daemon_selector26_class_retry_report.md) |
 | High | Correlate the actual sysctl result, matching dictionary, service identity and successful IOKit connection and method exchange on one matched system. |
 | Medium | Attribute other writers of both context-state bytes and the VMM cache, including teardown or initialization on concurrent routes. |

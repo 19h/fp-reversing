@@ -54,7 +54,7 @@ def api_return(frame, value, register):
 
 def branch(frame, pc, load_pc, register, expected):
     landmark(pc, 'braa', f'{register}, x17')
-    _, slot, width = next(load for load in frame.loads if load[0] == load_pc)
+    _, slot, width = next(load for load in reversed(frame.loads) if load[0] == load_pc)
     assert width == 8 and number(frame.read(register)) == FIXUPS[slot]['target'] == expected
     modifier = number(frame.read('x17'))
     assert FIXUPS[slot]['annotation'] == f'(div=0x{modifier:04X} ad=0 key=IA)'
@@ -82,7 +82,9 @@ def class_call(frame, entry):
     assert FIXUPS[MATCH_SLOT]['annotation'] == '(div=0x083B ad=0 key=IA)'
     assert FIXUPS[MATCH_SLOT]['target'] == 'IOKit/_IOServiceMatching'
     arg = number(frame.read('x0'))
-    assert arg == (RECORD - 31 if entry == LEGACY else SP + 0x97)
+    sp = number(frame.read('sp'))
+    record = number(frame.read('x29')) - 0x78
+    assert arg == (record - 31 if entry == LEGACY else sp + 0x97)
     class_bytes = bytes(number(frame.get(arg + offset, 1)) for offset in range(size))
     assert class_bytes == expected
     selected_cell, pointer = CLASS_DATA[entry]
