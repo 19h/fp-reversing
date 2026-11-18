@@ -96,7 +96,7 @@ def check_writeback(fixture, data, profiles, equal, outputs, seed, constant):
     assert walk(frame, CALL + 4, [], [], stop=NEXT) == NEXT
     assert number(frame.read('w5')) == result
     slot, target = authenticated_edge(frame, next(CS.disasm(IMAGE.read(NEXT, 4), NEXT)))
-    return (result, slot, target, store_sites), aggregate_after
+    return (result, slot, target, store_sites), aggregate_after, frame
 
 
 def main():
@@ -111,10 +111,10 @@ def main():
         for fixture in (0x98, 0x99):
             results = [check_writeback(fixture, data, profiles, equal, (0, 0), seed, constant)
                        for seed in (0, 17)]
-            (first_result, first_aggregate), (second_result, second_aggregate) = results
+            (first_result, first_aggregate, _), (second_result, second_aggregate, _) = results
             assert first_result == second_result
             assert first_aggregate != second_aggregate
-            for (result, slot, target, sites), _ in results:
+            for (result, slot, target, sites), _, _ in results:
                 slots.add(slot)
                 print(hex(fixture), equal, hex(result), hex(slot), hex(target),
                       ' '.join(map(hex, sites)), flush=True)
