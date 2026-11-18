@@ -86,7 +86,7 @@ def check_aggregate(fixture, data, profiles, equal):
     assert not any(at < BUFFER + capacity and BUFFER < at + n for _, at, n in frame.loads[first_load:])
     assert not any(at < BUFFER + capacity and BUFFER < at + n for _, at, n, _ in frame.stores[first_store:])
     buffers_equal(frame, snapshot)
-    return edges
+    return frame, edges
 
 
 def main():
@@ -96,8 +96,9 @@ def main():
     data = [row for row in sections() if row['segment'] == '__DATA']
     slots = set()
     for equal in (False, True):
-        first = check_aggregate(0x98, data, profiles, equal)
-        assert check_aggregate(0x99, data, profiles, equal) == first
+        _, first = check_aggregate(0x98, data, profiles, equal)
+        _, second = check_aggregate(0x99, data, profiles, equal)
+        assert second == first
         slots.update(slot for _, slot, _ in first)
         print(f'equal={equal} edges={len(first)}', flush=True)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
