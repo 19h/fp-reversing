@@ -2034,3 +2034,5 @@ The `0x8934` constructor now has a source-checked 14-byte fill, first-node publi
 The selected constructor reads the first four bytes of the first buffer, then links the second node after the first and updates the owner tail. The effects resolve with the SP+0xf8 B word symbolic. Its producer and the selector 26 transport join remain open. [Daemon selector 26 readback](daemon_selector26_readback_report.md)
 
 The first four buffer bytes now have a source-checked local decode and comparison. The three constructor profiles select the same authenticated continuation and return to a pending 32 B node allocation after the second insertion. Loop exit and the selector 26 transport join remain open. [Daemon selector 26 readback decode](daemon_selector26_decode_report.md)
+
+A source-checked predecessor now writes a 10 B span header and preserves the same pointer into either selector 26 argument record. The origin of the incoming pointer, the coupling between header length and total extent, and the native transport join remain open. [Daemon selector 26 header writer](daemon_selector26_header_report.md)
