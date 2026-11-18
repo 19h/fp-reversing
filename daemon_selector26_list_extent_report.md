@@ -31,6 +31,8 @@ On ordinary nonnull allocator return, let B be the returned allocation pointer. 
 
 For first-node extent `n > 0` B, the positive branch supplies X12=S, X13=`u64(n)-1`, X14=`B+n-1` and X15=`(S+n-1)<<3` to `0x100090998`, with register arithmetic modulo `2^64`. This fixes the starting source and destination offsets for a nonempty list. The byte recurrence, final header placement and nonempty-list handoff into the selector 26 records remain open for this route. An independent component already has a verified reverse transfer with the same field offsets. [Separate list flattener](daemon_list_output_report.md)
 
+The follow-up proves the byte recurrence and trailer placement, then verifies the handoff to both selector 26 caller records. [List serialization](daemon_selector26_list_transfer_report.md)
+
 The two-node fixture with 14 B per node supplies T=28 B, P=10 B and N=48 B. It reaches the positive-node setup with first index 13 and destination B+13 B. The one-node zero-length fixture supplies T=0 B, P=6 B and N=16 B, then takes the nonempty zero-length skip. These cases supersede the earlier independently seeded combination of positive T and an empty list head for this producer. [Earlier input model](daemon_selector26_padding_report.md)
 
 ## Assumption register
