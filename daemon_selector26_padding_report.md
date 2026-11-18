@@ -6,7 +6,7 @@ The source is the original arm64e Mach-O with SHA-256 `4ffe3ea1dbd27c5026b448ffe
 
 ## Extent and allocation
 
-Let `T` be the incoming unsigned 32-bit byte count in W8 at `0x1000ee4e8). The original source yields the following under incoming W10=`0x6246`.
+Let `T` be the incoming unsigned 32-bit byte count in W8 at `0x1000ee4e8`. The original source yields the following under incoming W10=`0x6246`.
 
 ```text
 P = 16 - ((T + 10) & 15)      padding in bytes, 1 <= P <= 16
@@ -52,6 +52,8 @@ Let B be the modeled fresh nonnull allocation result. The header writer advances
 The common dispatch loads its control byte through the pointer from SP+0x90 B. With the established caller frame and zero bias, the `0x2c` fixture reaches the direct structure helper via `0x1000f2204` and puts B at record+0 B. The `0x2d` fixture reaches the descriptor helper via `0x100111754` and puts B at record+24 B. Both encode `N` from SP+0x130 B. The minimum allocation of 16 B is reachable in both fixtures. The 14 B descriptor example in the independent caller audit established a local record codec and falls outside the admitted sizes of this producer. [Caller record codecs](daemon_selector26_callers_report.md) [IOKit sites and return channels](daemon_selector26_return_report.md)
 
 The earlier node constructor reaches its own 14 B allocations at a different call site. The independently audited list flattener uses the same padding equation and places its header after the copied list bytes. This route places the header at the allocation base. The lineage of `T` and any link to either earlier component remain unknown. The retained RAX trace reaches IOKit open 2862/2962 and records status `0xe00002c2` with a null connection. Native selector 26 message 2865, its payload and its connection and reply rights remain unobserved. [Node constructor](daemon_selector26_node_report.md) [List flattener](daemon_list_output_report.md) [Trace coverage](zut_trace_report.md)
+
+The later list-extent audit derives `T` from the preceding traversal. Under that producer's premises, an empty head yields `T=0` and reaches this header-first route. Nonempty lists use a separate continuation. [List extent and dispatch](daemon_selector26_list_extent_report.md)
 
 ## Assumption register
 
