@@ -55,3 +55,5 @@ The selected constructor visits 0, 1, 2, 3 and 4 existing nodes in successive in
 | Medium | Compare the constructor's encoded node bytes to the serializer's source-address mask. |
 
 QG1–QG7 cover factual scope, source assumptions, complete selected frame joins, exact widths and bounds, the two dispatch outcomes, original provenance and unresolved external interfaces.
+
+The [IOKit open handoff](daemon_selector26_open_report.md) traces a successful type-0 open to the caller with incoming W24=`0x3941` and identifies the connection output at context+4 B.
