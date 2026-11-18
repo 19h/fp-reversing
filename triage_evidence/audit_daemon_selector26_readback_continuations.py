@@ -39,8 +39,10 @@ MISMATCH = (
 EQUAL_READS = READ_SITES + (0x1006a0e44, 0x1006a0ff0) + READ_SITES + READ_SITES
 
 
-def walk(frame, pc, edges, calls, *, limit=5000):
+def walk(frame, pc, edges, calls, *, limit=5000, stop=None):
     for _ in range(limit):
+        if pc == stop:
+            return pc
         insn = next(CS.disasm(IMAGE.read(pc, 4), pc))
         if insn.mnemonic in ('blraa', 'braa'):
             slot, target = authenticated_edge(frame, insn)

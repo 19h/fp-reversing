@@ -79,7 +79,7 @@ def check_retirement(fixture, data, profiles, equal):
     assert not any(at < original_child + 14 and original_child < at + size
                    for _, at, size, _ in frame.stores[first_store:])
     assert edges[-1] == (0x100643c5c, 0x10109ff30, FREE)
-    return edges
+    return frame, edges
 
 
 def main():
@@ -89,8 +89,9 @@ def main():
     data = [row for row in sections() if row['segment'] == '__DATA']
     slots = set()
     for equal in (False, True):
-        first = check_retirement(0x98, data, profiles, equal)
-        assert check_retirement(0x99, data, profiles, equal) == first
+        _, first = check_retirement(0x98, data, profiles, equal)
+        _, second = check_retirement(0x99, data, profiles, equal)
+        assert second == first
         slots.update(slot for _, slot, _ in first)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     print(f'4 cases, 175 mismatch and 114 equality edges, {len(slots)} chained fixups, first free at 0x100643c5c')
