@@ -123,7 +123,7 @@ def check_followon(fixture, data, profiles, equal, seed, constant):
     assert number(frame.get(caller_sp - 8, 8)) == CALL + 4
     print(hex(fixture), equal, seed, 'bytes transferred', extent, 'cleanup calls', free_count,
           'authenticated edges', len(edges), flush=True)
-    return {slot for _, slot, _ in edges}
+    return {slot for _, slot, _ in edges}, frame, argument, destination, allocations[destination]
 
 
 def main():
@@ -136,7 +136,8 @@ def main():
     slots = set()
     for equal in (False, True):
         for fixture, seed in ((0x98, 0), (0x99, 17)):
-            slots.update(check_followon(fixture, data, profiles, equal, seed, constant))
+            checked, _, _, _, _ = check_followon(fixture, data, profiles, equal, seed, constant)
+            slots.update(checked)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     print(len(slots), 'original fixup words')
 
