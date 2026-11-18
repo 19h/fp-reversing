@@ -2030,3 +2030,5 @@ The phase and record now have source-checked producers from the selected caller 
 For phase `0x8934`, the normal allocator path creates a 16 B object, a 32 B node and a 14 B buffer. The node stores the extent and buffer pointer. The caller record, phase and first allocation are still live when control reaches `0x10005c5f4`. The buffer writer and selector 26 argument join remain open. [Daemon selector 26 caller constructor](daemon_selector26_constructor_report.md)
 
 The `0x8934` constructor now has a source-checked 14-byte fill, first-node publication into the 16 B object, and readback of the first buffer pointer after a second 14-byte fill. The reaching definition of SP+0xf8 B and the join to a selector 26 argument remain open. [Daemon selector 26 node handoff](daemon_selector26_node_report.md)
+
+The selected constructor reads the first four bytes of the first buffer, then links the second node after the first and updates the owner tail. The effects resolve with the SP+0xf8 B word symbolic. Its producer and the selector 26 transport join remain open. [Daemon selector 26 readback](daemon_selector26_readback_report.md)

@@ -146,7 +146,7 @@ def fill(frame, node, buffer):
                    for pc, offset, width in writes]
 
 
-def profile(words, locations):
+def node_frame(words, locations):
     owner, first_node, first_buffer, second_node, second_buffer = locations
     regions = sorted(zip(locations, (16, 32, 14, 32, 14)))
     assert all(left + extent <= right for (left, extent), (right, _) in zip(regions, regions[1:]))
@@ -201,7 +201,7 @@ def profile(words, locations):
     assert (pending.mnemonic, pending.op_str) == ('ldr', 'x16, [sp, #0xf8]')
     missing = [offset for offset in range(8) if SP + 0xf8 + offset not in f.ram]
     assert missing
-    return {
+    observations = {
         'inputs': {'global_words': list(map(hex, words)), 'allocations': list(map(hex, locations))},
         'first_fill': writes, 'fill_edges': fill_edges, 'insert_edges': insert_edges + later_edges,
         'second_allocation_calls': second_allocations, 'second_allocation_edges': first_refill + second_refill,
@@ -219,14 +219,18 @@ def profile(words, locations):
                     'bytes_hex': raw.hex(), 'missing_byte_offsets': missing},
     }
 
+    return f, observations
+
+
+PROFILES = (
+    ((0x12345678, 0x98765432), (0xa000, 0x20000, 0x21000, 0x22000, 0x23000)),
+    ((0xffffffff, 0), (0xb010, 0x24a30, 0x26b40, 0x28c50, 0x2ad60)),
+    ((0, 0xffffffff), (0xc020, 0x49070, 0x4a080, 0x4b090, 0x4c0a0)),
+)
+
 
 def report():
-    cases = (
-        ((0x12345678, 0x98765432), (0xa000, 0x20000, 0x21000, 0x22000, 0x23000)),
-        ((0xffffffff, 0), (0xb010, 0x24a30, 0x26b40, 0x28c50, 0x2ad60)),
-        ((0, 0xffffffff), (0xc020, 0x49070, 0x4a080, 0x4b090, 0x4c0a0)),
-    )
-    profiles = [profile(words, locations) for words, locations in cases]
+    profiles = [node_frame(words, locations)[1] for words, locations in PROFILES]
     observations = {key: value for key, value in profiles[0].items() if key != 'inputs'}
     assert all({key: row[key] for key in observations} == observations for row in profiles)
     return {'daemon_sha256': sha(SOURCE), 'generator_sha256': sha(Path(__file__)),
