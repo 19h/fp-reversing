@@ -39,8 +39,8 @@ MISMATCH = (
 EQUAL_READS = READ_SITES + (0x1006a0e44, 0x1006a0ff0) + READ_SITES + READ_SITES
 
 
-def walk(frame, pc, edges, calls):
-    for _ in range(5000):
+def walk(frame, pc, edges, calls, *, limit=5000):
+    for _ in range(limit):
         insn = next(CS.disasm(IMAGE.read(pc, 4), pc))
         if insn.mnemonic in ('blraa', 'braa'):
             slot, target = authenticated_edge(frame, insn)
@@ -60,6 +60,12 @@ def walk(frame, pc, edges, calls):
         elif insn.mnemonic == 'sxth':
             dst, src = (insn.reg_name(op.reg) for op in insn.operands)
             frame.write(dst, z3.SignExt(16, z3.Extract(15, 0, frame.read(src))))
+        elif insn.mnemonic == 'ldrsh':
+            dst, mem = insn.operands
+            register = insn.reg_name(dst.reg)
+            frame.pc = pc
+            halfword = frame.load(frame.address(insn, mem), 2)
+            frame.write(register, z3.SignExt(frame.width(register) - 16, halfword))
         else:
             assert insn.mnemonic not in ('ret', 'retab', 'b', 'blr', 'bl')
             assert not insn.mnemonic.startswith(('b.', 'cb', 'tb'))

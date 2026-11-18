@@ -58,7 +58,7 @@ def check_writes(fixture, data, profiles, equal):
             (tail_source + offset, 1) for offset in range(15, -1, -1)
         ]
         assert [slot for pc, slot, _ in edges if pc == 0x100646ce8] == [0x10104ad98] * 15 + [0x10109dc30]
-    return edges
+    return frame, edges
 
 
 def main():
@@ -68,8 +68,9 @@ def main():
     data = [row for row in sections() if row['segment'] == '__DATA']
     slots = set()
     for equal in (False, True):
-        first = check_writes(0x98, data, profiles, equal)
-        assert check_writes(0x99, data, profiles, equal) == first
+        _, first = check_writes(0x98, data, profiles, equal)
+        _, second = check_writes(0x99, data, profiles, equal)
+        assert second == first
         slots.update(slot for _, slot, _ in first)
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     print(f'4 cases, complete 14 B and 26 B writes, owner links, {len(slots)} chained fixups')
