@@ -58,3 +58,5 @@ With m nodes and T payload bytes, the two traversals, trailer and padding take O
 | Medium | Compare the producer-side encoding with the verified XOR mask and determine the relationship to the separate list flattener. |
 
 QG1–QG7 cover the source premises, exact data widths, complete conditional allocation layout, both record mappings, boundary cases, original provenance and open interface evidence.
+
+The constructor follow-up recovers the five-node handoff and the producer of the adjusted dispatch byte. [Constructor and dispatch-byte origins](daemon_selector26_constructor_join_report.md)
