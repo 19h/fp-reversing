@@ -71,3 +71,5 @@ PYTHONDONTWRITEBYTECODE=1 python3 triage_evidence/audit_live_fairplay_request_re
 ```
 
 Quality gates QG1-QG7 were applied to this static increment. The report registers five conditional assumptions, identifies early consumption and the verified error path, gives widths and range arithmetic, distinguishes independent owners and transport branches, cites original-image evidence, and records the bounded native and success-path gaps. [Audit script](triage_evidence/audit_live_fairplay_request_release.py) [Compressed receipt](triage_evidence/live_fairplay_request_release_audit.json.zst)
+
+The archived daemon worker audit links the original pointer to stack-based pathname construction and makes a separate accounting of the worker release calls before the reported error. The callback remains the verified request deallocation frontier for that error branch. [Filename custody](rpc502_filename_custody_report.md)
