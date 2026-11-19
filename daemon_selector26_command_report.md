@@ -2,6 +2,8 @@
 
 All four pinned `fairplayd` selector 26 fixtures encode command `0x88594abe`. On a successful command-node lookup, the installed FairPlayIOKit dispatcher selects the copying-reader route when the saved provider is nonnull. Its next requested key, `0x172ba3a8`, is already present as a 19 B span in each reconstructed daemon aggregate. The separate archived 96 B `adid` selector 26 fixture carries command `0x73eba01e` and selects the other installed branch. [Request framing and custody](daemon_selector26_request_bytes_report.md) [Archived adid selector 26 fixture](adid_iokit_report.md)
 
+The complete first-parser continuation publishes both fields in its initial container. The zero-tag trailer retires that container before the pending fallback allocation. Later command-node custody remains open. [Installed aggregate publication and retirement](live_fairplay_selector26_parse_report.md)
+
 ## Daemon writer and method input
 
 The prior four cases cover the two caller classes and both upstream comparison histories. All four final aggregate digests, inline digests, record structures and other parent receipt fields reproduce. In each case, the command node occupies aggregate offsets 0–13 B. It consists of BE32 tag `0x744b91e8`, BE16 type `0x9777`, BE32 length 4 B and BE32 command scalar `0x88594abe`. The last store to each byte is the reverse-copy `STRB` at `0x1009166b8`. Original words identify a source byte read at `0x10091667c`, the XOR at `0x1009166a8` and the destination write. The inspected boundary establishes the final value, with its earlier producer beyond this copy still unknown. [Daemon replay and writer source](triage_evidence/daemon_selector26_command_audit.json.zst)
