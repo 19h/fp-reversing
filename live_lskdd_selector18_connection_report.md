@@ -38,6 +38,8 @@ The Mach mapping follows the installed framework and kernel sources for those ar
 
 High impact for the connection producer and consumer join. Medium impact for understanding the first-use matching branch and temporary string lifetime. Native invocation frequency and connection reuse remain unknown.
 
+The method return audit follows the outer IOKit status and embedded provider status into the daemon context. [Selector 18 reply handling](live_lskdd_selector18_reply_report.md)
+
 ## Reproduction and verification
 
 Set `LSKDD_IMAGE` to the unmodified fat executable. Run the auditor with Python, Capstone, Unicorn and Apple `dyld_info`.

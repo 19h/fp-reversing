@@ -33,7 +33,7 @@ CALLS = (
 )
 
 
-def replay(image, fixups, connection):
+def replay(image, fixups, connection, method_reply=None):
     cpu = Uc(UC_ARCH_ARM64, UC_MODE_ARM)
     cpu.ctl_set_cpu_model(arm64_const.UC_CPU_ARM64_MAX)
     cpu.mem_map(0x100000000, 0xf00000)
@@ -120,8 +120,10 @@ def replay(image, fixups, connection):
             assert cpu.mem_read(result['service_class_pointer'], len(SERVICE_CLASS)) == bytes(len(SERVICE_CLASS))
             result['method_input_size_bytes'] = args[3]
             result['method_initial_capacity_bytes'] = number(args[5], 8)
-            cpu.emu_stop()
-            return
+            if method_reply is None:
+                cpu.emu_stop()
+                return
+            return_value = method_reply(cpu, args)
         register('x0', return_value)
         register('pc', address + 4)
 
