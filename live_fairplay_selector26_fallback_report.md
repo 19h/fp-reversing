@@ -39,7 +39,7 @@ The parser reads all B offsets except N-1 once and commits F+0xa80 to N. For N=2
 | Copy and pointer publication | `0xfffffe000a67f27c`, `0xfffffe000a67f2a8` | Write 19 individual bytes at output offsets 18 through 0. Store the resulting pointer at C+0x128. |
 | Reader resume | `0xfffffe000a6a42ac` | Chained slot `0xfffffe000848a358` binds resume index `0x133` to `0xfffffe000a698254`, IA discriminator `0x3aa3`. W23=`0x31ae0066`. |
 
-In all eight reader cases the search reads the four tag bytes of each node. Only the tail's type, length and body are read after that match. The 19 stores reproduce staging offsets 242 through 260 B for the 272 B aggregate or 258 through 276 B for the 288 B aggregate. The final byte is already zero in each of the four source spans. The reader adds no byte. The 19 B output has SHA-256 `fac56b6d1af48433a996527e78971bfff515e5e1766d1085bcc6911365391a4a` in every case. Its consumption and eventual result remain unknown for these aggregates. [Reader contract and output cells](userclient_input_reader_report.md)
+In all eight reader cases the search reads the four tag bytes of each node. Only the tail's type, length and body are read after that match. The 19 stores reproduce staging offsets 242 through 260 B for the 272 B aggregate or 258 through 276 B for the 288 B aggregate. The final byte is already zero in each of the four source spans. The reader adds no byte. The 19 B output has SHA-256 `fac56b6d1af48433a996527e78971bfff515e5e1766d1085bcc6911365391a4a` in every case. The continuation computes the discriminator from those bytes and then copies the middle span for message setup. [Reader contract and output cells](userclient_input_reader_report.md) [Discriminator and second span](live_fairplay_selector26_consumer_report.md)
 
 A null full-extent allocation takes `0xfffffe000a6a734c` without rereading I or writing C+0x600. It requests `_IOFreeTypeImpl` at `0xfffffe000a6a73f0` with descriptor `0xfffffe0008492500` and the 4096 B context C. Under an ordinary modeled return, it then requests `_IOFreeAligned(S,16384)` at `0xfffffe000a6a7440`, IA discriminator `0x84ff`. The replay stops at that call with W23=`0x31ae0066`. The external return and IOKit status remain unknown.
 
@@ -67,7 +67,7 @@ The Mach transport evidence remains request 2865 on the existing connection righ
 
 | Impact | Evidence still open |
 | --- | --- |
-| High | Trace consumption of the published 19 B, the deeper calls it feeds and selector 26 reply construction. |
+| High | Trace nested-span consumption after message setup and selector 26 reply construction. |
 | High | Correlate one daemon request, provider task copy, core entry and Mach reply in a native observation. |
 | Medium | Identify alternate parser or reader exits when a later modeled allocator returns null. |
 

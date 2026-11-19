@@ -2,6 +2,8 @@
 
 The installed initializer consumes the 112 B attribute from the schema lookup path and produces a separate 128 B `site.FPMessage`. It reads all 107 defined attribute bytes, skips the five unwritten positions, and writes 123 message bytes. Both attribute modes reach the same parser entry with the original input pointer and encoded extent. A null message allocation instead publishes `0xce515bb2` and transfers to cleanup. [Attribute producer](live_fairplay_message_attributes_report.md) [Auditor](triage_evidence/audit_live_fairplay_message_initialization.py) [Replay receipt](triage_evidence/live_fairplay_message_initialization_audit.json.zst)
 
+The reconstructed selector 26 aggregates reach the same FPMessage allocation with a second-reader pointer, an extent of 208 B or 224 B, and output address C+0x210. That caller continues toward a separate FPMessageAttr allocation. [Selector 26 discriminator and message handoff](live_fairplay_selector26_consumer_report.md)
+
 ```text
 constructed FPMessageAttr -> save input pointer and encoded extent
                              -> clear 32 B of separate workspace
