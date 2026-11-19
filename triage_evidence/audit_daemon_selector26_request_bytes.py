@@ -139,7 +139,7 @@ def write_coverage(frame, base, blob):
             'last_writer_runs': runs}
 
 
-def selector_requests(packets, packet_rows):
+def selector_requests(packets, packet_rows, observe_case=None):
     saved = json.loads(subprocess.check_output(['zstd', '-dc', str(REPLAY)]))
     assert sha(SOURCE.read_bytes()) == DAEMON_SHA == saved['daemon_sha256']
     profiles = {row['class']: row for row in saved['profiles'] if row['outcome']['frontier'] == hex(FRONTIER)}
@@ -188,6 +188,8 @@ def selector_requests(packets, packet_rows):
                 'predicted_request_user_bytes': 84 + (len(outer) + 3) // 4 * 4,
                 'packet_comparison': packet_comparison,
             })
+            if observe_case is not None:
+                observe_case(frame, blob, cases[-1])
     assert len(verify_original_fixups(slots)['records']) == len(slots)
     return cases, len(slots)
 
