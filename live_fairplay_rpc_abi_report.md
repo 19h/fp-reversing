@@ -31,7 +31,7 @@ The receiving service name and the outgoing reply destination are separate daemo
 | OOL extent / repeated extent | 0x30 / 0x3c | 0x28 / 0x34 | 4 B each |
 | Three scalar arguments | 0x40 / 0x48 / 0x50 | 0x38 / 0x40 / 0x48 | 8 B each |
 
-The internal OOL field holds a copy object. The daemon field holds a mapped user address. The daemon checks one OOL descriptor and equality of the two extents, then passes the address, extent and three scalar arguments to its application. The table gives compatible field positions. Current VM conversion and delivery remain separate obligations.
+The internal OOL field holds a copy object. The daemon field holds a mapped user address. The daemon checks one OOL descriptor and equality of the two extents, then passes the address, extent and three scalar arguments to its application. The installed VM audit traces the copy object through the kernel's body converter and mapped address publication. Delivery of a matched native request remains unknown. [Installed RPC 502 filename buffer](live_fairplay_request_ool_report.md)
 
 | Successful reply field | Daemon user offset | Internal offset | Width |
 | --- | --- | --- | ---: |
