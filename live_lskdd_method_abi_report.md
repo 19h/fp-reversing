@@ -1,6 +1,6 @@
 # Installed lskdd selector 18 and 19 call boundaries
 
-The follow-up audit resolves selector 19's authenticated import under the recovered frame contract and identifies matching buffer and output-count producers for both selectors. [Selector 19 binding and frame](live_lskdd_selector19_binding_report.md)
+The follow-up audit resolves selector 19's authenticated import under the recovered frame contract and identifies matching buffer and output-count producers for both selectors. [Selector 19 binding and frame](live_lskdd_selector19_binding_report.md) [Selector 18 table sources and conditional imports](live_lskdd_selector18_binding_report.md)
 
 The running `lskdd` FairPlayIOKit attachment and the installed arm64e executable are corroborated on build `26C5035r`. The executable has two candidate structure-method call blocks. Their local argument assignments match the current FairPlayIOKit table for selectors 18 and 19, including the full fixed input size. The reaching authenticated call targets, the specific providers behind the loaded connection names and native transactions remain unknown. [Registry and installed-slice identification](live_fairplay_additional_clients_report.md) [Current FairPlayIOKit method table](live_kext_selector26_report.md)
 
