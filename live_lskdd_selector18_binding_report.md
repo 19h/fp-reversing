@@ -1,6 +1,6 @@
 # lskdd selector 18 table sources
 
-The installed arm64e image supplies a candidate frame that resolves both calls in the selector 18 block. Its method call at `0x100584cc8` selects `IOKit/_IOConnectCallStructMethod` when the table root and byte banks below reach that block. The initializer-to-block transfer remains unknown. [Earlier method ABI audit](live_lskdd_method_abi_report.md) [Related selector 19 frame](live_lskdd_selector19_binding_report.md)
+The installed arm64e image supplies a candidate frame that resolves both calls in the selector 18 block. Its method call at `0x100584cc8` selects `IOKit/_IOConnectCallStructMethod` when the table root and byte banks below reach that block. The initial audit left the initializer-to-block transfer open. A subsequent offline replay reaches the method through the alternate successor of the connection lookup. [Connection provenance](live_lskdd_selector18_connection_report.md) [Earlier method ABI audit](live_lskdd_method_abi_report.md) [Related selector 19 frame](live_lskdd_selector19_binding_report.md)
 
 | Role | Original pointer producer | Frame store | Selector 18 use |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ The table root in X28 is `0x100e2ce30` on the inspected small-frame route. For e
 
 The frame reserves 6,640 B below the register save. It sets two buffer pointers 3,096 B apart and initializes the output count to 3,096 B. With initial table index `0x6a8e`, the entry dispatch reaches two one-byte clearing loops. The first clears 3,096 B at X20 and the second clears 3,096 B at X21. Both finish at the branch on context +0x28 B. For a null value, the tested path writes status at context +0x30 B and unwinds the original frame. For a nonnull value, the tested path writes the object pointer at input +0 B, installs the two method banks and enters `0x100654a48`.
 
-At `0x100654a48` the continuation uses X15 for a byte read. The inspected predecessor initializes X15 to zero, so that modeled route stops at the load at `0x100654a5c`. The preparatory bank stores at `0x100654a94` and the selector 18 call are established by their original instructions and table equations. A continuous trace through those sites still requires the reaching X15 and dispatch state for a compatible route.
+At `0x100654a48` the continuation uses X15 for a byte read. The inspected predecessor initializes X15 to zero, so that modeled route stops at the load at `0x100654a5c`. The preparatory bank stores at `0x100654a94` and the selector 18 call are established by their original instructions and table equations. The subsequent audit supplies the reaching X15 and dispatch state for the matching-service route. [Connection provenance](live_lskdd_selector18_connection_report.md)
 
 ## Reproduction
 
