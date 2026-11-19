@@ -65,7 +65,7 @@ For a span of B bytes and R linked nodes, parsing costs O(B+R) time and O(B+R) o
 
 | Impact | Open interface |
 | --- | --- |
-| High | Follow the helper's state and return into the kext's reply construction. |
+| High | Continue from the post-helper `FPTTLV` allocation into reply construction. The subsequent audit closes the helper's local status and return. [Private helper return](live_fairplay_selector26_helper_report.md) |
 | High | Correlate daemon request bytes, kernel staging, core execution and a native reply. |
 | Medium | Identify the native reaching definition of S+0xd0c and the helper's +0x38 argument origin. |
 
