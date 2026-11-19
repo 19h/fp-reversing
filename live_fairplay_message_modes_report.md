@@ -4,6 +4,8 @@ Both continuations from `FPMessage+0x60` load the just-published container from 
 
 ## Shared record identifiers
 
+The selector 26 successor audit follows its copied aggregates through the zero-mode continuation. After the first miss, four subsequent queries return matching nodes and the caller reaches a private helper. [Selector 26 nested records and found-key dispatch](live_fairplay_selector26_nested_report.md)
+
 The kext reads the first four stored bytes of the sole second-pass node's record on each query and decodes its tag. The recovered fixture tag is `0xfa834112`. Its successor is null. Every selected query returns `0xce515bda` and a zero matched-node output. The three queried keys agree across the kext and pinned daemon after undoing each component's key encoding. Kext W9 uses XOR `0x31ae0066`. Daemon W9 uses XOR `0x8b3dc651`.
 
 | Decoded tag | Installed kext transfer and encoded W9 | Pinned daemon transfer and encoded W9 | Daemon role |

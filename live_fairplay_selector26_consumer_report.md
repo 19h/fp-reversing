@@ -70,7 +70,7 @@ The new calls are private kernel transfers and allocator requests. The known ext
 
 | Impact | Open interface |
 | --- | --- |
-| High | Follow the copied body through the selected message-attribute continuation to the nested parser and reply construction. |
+| High | Follow the private helper into reply construction. The successor audit establishes attribute formation and four-node publication. [Nested parser and dispatch](live_fairplay_selector26_nested_report.md) |
 | High | Correlate a native daemon request, task copy, core execution and Mach reply. |
 | Medium | Establish the native reaching definition and later uses of S+0xd0c for the selected call path. |
 
