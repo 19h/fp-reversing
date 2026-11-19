@@ -54,7 +54,7 @@ F is the retained frame base, C the private context, S the workspace, H the 16-b
 | `0xfffffe000a660b4c` | Store raw SUCCESS at S+0xc94 after exhaustion. |
 | `0xfffffe000a660b68`-`0xfffffe000a660b70` | Load H from C+0xb0, load the output alias from C+0x170 and store H through it, producing C+0x418=H. |
 
-The action comparisons test `0x48695623`, `0xfbb3f478` and `0x1830b7ce`. The first two equality branches are false for the source-produced value; the third inequality branch is false, selecting `0xfffffe000a660bd8`. This value is private source state; the proof does not identify it as a public user-client selector, Mach message identifier or externally selectable operation.
+The action comparisons test `0x89f25623`, `0xfbb3f478` and `0x1830b7ce`. The first two equality branches are false for the source-produced value; the third inequality branch is false, selecting `0xfffffe000a660bd8`. The value is private source state. [Installed action comparison](live_fairplay_early_schema_report.md)
 
 The action status block's terminal BRAA at `0xfffffe000a660c24`, modifier `0x64d8`, selects `0xfffffe000a6366e0` exactly when status32=SUCCESS; every other status selects `0xfffffe000a641c1c`. A separate all-status32 obligation proves this selection. Error cleanup beyond that edge remains unknown. The successful selected path retains H rather than immediately retiring it.
 
