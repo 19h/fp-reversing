@@ -154,7 +154,7 @@ class ScalarReplay(SearchReplay):
                     record_loads=[dict(pc=hex(shifted(pc)), offset_bytes=offset) for pc, offset in loads])
 
 
-def replay_cases(image, checks, prior, search_spans, scalar_spans):
+def scalar_cases(image, checks, prior, search_spans, scalar_spans, replay_type=ScalarReplay):
     installed = receipt('live_fairplay_schema_search_audit', INSTALLED_SEARCH)
     search = receipt('userclient_schema_search_audit', SEARCH_AUDIT)
     payload = receipt('userclient_early_payload_audit', WRITER_AUDITS['early_payload'])
@@ -172,7 +172,6 @@ def replay_cases(image, checks, prior, search_spans, scalar_spans):
     payloads = {row['predecessor_case_index']: row for row in payload['partial_state_evaluations']}
     historical = {row['predecessor_case_index']: row for row in prior['partial_state_evaluations']}
     installed_match, = (row for row in installed['cases'] if row['found'])
-    cases = []
     fixtures = (('adid_field', witness_index), ('u32_nonzero', 5), ('u64', 7),
                 ('span_zero', 1), ('span_nonzero', 3))
     for name, index in fixtures:
@@ -184,7 +183,7 @@ def replay_cases(image, checks, prior, search_spans, scalar_spans):
         else:
             raw = witness_raw[:4] + bytes.fromhex(row['input']['input_fixture_hex'])[4:]
             protected = witness_bytes[:4] + bytes.fromhex(payloads[index]['protected_record_hex'])[4:]
-        replay = replay_derived_prefix(ScalarReplay, image, row, state, raw, checks)
+        replay = replay_derived_prefix(replay_type, image, row, state, raw, checks)
         lookup = replay.search(state, search_spans, protected, witness=True)
         if name == 'adid_field':
             lookup['stores'] = [list(store) for store in lookup['stores']]
@@ -195,9 +194,13 @@ def replay_cases(image, checks, prior, search_spans, scalar_spans):
         assert result['raw_status32'] == reference['raw_status32'] and result['final_target'] == hex(shifted(end))
         value = reference['decoded_output32'] if name == 'adid_field' else reference['output32']
         assert (result['output32'] if result['output32'] is not None else 0) == value
-        cases.append(dict(fixture=name, case_index=index, result=result,
-                          protected_record_sha256=lookup['protected_input_sha256']))
-    return cases
+        case = dict(fixture=name, case_index=index, result=result,
+                    protected_record_sha256=lookup['protected_input_sha256'])
+        yield case, replay
+
+
+def replay_cases(image, checks, prior, search_spans, scalar_spans):
+    return [case for case, _ in scalar_cases(image, checks, prior, search_spans, scalar_spans)]
 
 
 def audit(path):
