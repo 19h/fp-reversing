@@ -71,3 +71,5 @@ The selected installed prefix and the fixed completion cut have O(1) runtime and
 | Medium | Identify where a corresponding daemon transaction acquires and releases the matching kernel-visible byte range. |
 
 QG1 factual scope, QG2 assumptions and falsification probes, QG3 both allocation outcomes and independent completion, QG4 widths and reproducibility, QG5 evidence boundaries, QG6 pinned provenance, and QG7 impact-ranked open interfaces pass for this increment.
+
+The subsequent continuous replay reaches the publication and mode-selection code from the pending input load for both retained 14 B scalar fixtures. It compares the parser-produced registers and outputs with the independent cut documented here. [Second parser completion](live_fairplay_message_parse_completion_report.md)

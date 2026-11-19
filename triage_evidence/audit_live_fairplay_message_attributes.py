@@ -229,9 +229,9 @@ class AttributeReplay(LookupReplay):
 
     def load(self, address, width, discarded=False):
         value = super().load(address, width, discarded)
-        if self.attribute_reads is not None and self.payload <= address < self.payload + 56:
-            assert not discarded and address + width <= self.payload + 56
-            self.attribute_reads.append((self.pc, address-self.payload, width, value))
+        if self.attribute_reads is not None and self.attribute_payload <= address < self.attribute_payload + 56:
+            assert not discarded and address + width <= self.attribute_payload + 56
+            self.attribute_reads.append((self.pc, address-self.attribute_payload, width, value))
         return value
 
     def external_return(self, word, pc, frame, target, modifier, result, index):
@@ -251,7 +251,7 @@ class AttributeReplay(LookupReplay):
         F = self.sp
         S, C, H, J, Z = (int(cut['result'], 16) for cut in self.cuts)
         assert self.pc == READY
-        self.payload = P = self.value(C+0x440, 8)
+        self.attribute_payload = P = self.value(C+0x440, 8)
         inputs = {}
         for cell in archive['attribute_additional_source_cells']:
             assert cell['root'] == 'F'

@@ -106,9 +106,10 @@ def verify_parser(image, checks, allocate):
 
 class ParserReplay(MessageReplay):
     parser_reads = None
+    allow_input_reads = False
 
     def load(self, address, width, discarded=False):
-        if self.parser_reads is not None:
+        if self.parser_reads is not None and not self.allow_input_reads:
             assert address+width <= self.input_address or self.input_address+self.input_extent <= address
         value = super().load(address, width, discarded)
         if self.parser_reads is not None:
