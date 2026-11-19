@@ -26,7 +26,7 @@ The zero-tag trailer commits the cursor to 272 B or 288 B. The parser reads all 
 | After the third pair | `0xfffffe000a6a1754` | `_IOFreeTypeImpl` with descriptor `0xfffffe0008492880` and the 16 B container |
 | Pending endpoint | `0xfffffe000a682e88` | `_IOMallocData` with X0 equal to the full original staging extent and discriminator `0xca0c` |
 
-With ordinary register-only retirement returns, the cleanup clears C+0x418 B and reaches the pending request with W23 zero. The emulator checks that there is no access to a retired object after its modeled return. Staging bytes are unchanged through the pending request. The reader dispatch checked previously is conditional on a matching command node in the later caller's container. The provenance of that later container from this fallback allocation remains unknown. [Installed command gate](daemon_selector26_command_report.md)
+With ordinary register-only retirement returns, the cleanup clears C+0x418 B and reaches the pending request with W23 zero. The emulator checks that there is no access to a retired object after its modeled return. Staging bytes are unchanged through the pending request. A subsequent replay follows this boundary through a fresh container, its command node and the copying reader's output. [Fallback and reader continuation](live_fairplay_selector26_fallback_report.md)
 
 The source-checked transport still uses request 2865 on the existing connection right and a distinct reply right for 2965. The supplied RAX trace ends at failed open 2862/2962. Its last returned connection is null. The new observations concern the core's private staging, parsing and memory-management interfaces. [Mach request and reply boundaries](live_iokit_mach_transport_report.md) [Supplied trace](zut_trace_report.md)
 
@@ -50,7 +50,7 @@ Parsing visits O(B) bytes for the observed B-byte framing. The linked lookups ca
 
 | Impact | Open evidence |
 | --- | --- |
-| High | Fallback buffer contents and the next parser and command lookup for these same aggregate bytes. |
+| High | Downstream consumption of the copying reader's 19 B output for these aggregates. |
 | High | A native transaction joining descriptor, provider copy and reply. |
 | Medium | Controller and frame-placement dependence of the observed publication and retirement. |
 

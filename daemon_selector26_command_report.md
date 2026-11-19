@@ -2,7 +2,7 @@
 
 All four pinned `fairplayd` selector 26 fixtures encode command `0x88594abe`. On a successful command-node lookup, the installed FairPlayIOKit dispatcher selects the copying-reader route when the saved provider is nonnull. Its next requested key, `0x172ba3a8`, is already present as a 19 B span in each reconstructed daemon aggregate. The separate archived 96 B `adid` selector 26 fixture carries command `0x73eba01e` and selects the other installed branch. [Request framing and custody](daemon_selector26_request_bytes_report.md) [Archived adid selector 26 fixture](adid_iokit_report.md)
 
-The complete first-parser continuation publishes both fields in its initial container. The zero-tag trailer retires that container before the pending fallback allocation. Later command-node custody remains open. [Installed aggregate publication and retirement](live_fairplay_selector26_parse_report.md)
+The first parser publishes both fields in its initial container, then retires it on the zero-tag trailer. A subsequent continuous replay traces the fallback container to this command switch and verifies the 19 B reader output from the reconstructed daemon bytes. [First parser and retirement](live_fairplay_selector26_parse_report.md) [Fallback and reader output](live_fairplay_selector26_fallback_report.md)
 
 ## Daemon writer and method input
 
@@ -47,8 +47,7 @@ The daemon stage uses the existing pinned loader and modeled call results. The i
 
 | Impact | Open evidence |
 | --- | --- |
-| High | Continuous installed staging-to-command-parser custody for one complete selector 26 aggregate. |
-| High | Copying-reader consumption and hash input for the matched 19 B span. |
+| High | Downstream consumption of the verified 19 B reader output for the four daemon aggregates. |
 | Medium | Dependence of the earlier command producer on daemon state beyond the four retained cases. |
 
 QG1–QG3 cover the factual scope, conditional interfaces and continuation decisions. QG4–QG5 cover field widths, six replay cases, and the saved-provider and unsupported-status paths. QG6–QG7 cover original image words, original slot fixups, proof rechecks and the bounded open evidence above.
