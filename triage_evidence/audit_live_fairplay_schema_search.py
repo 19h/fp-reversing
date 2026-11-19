@@ -167,6 +167,24 @@ class SearchReplay(SchemaReplay):
                     stores=actual, logical_edges=edges, final_target=hex(self.pc))
 
 
+def replay_derived_prefix(replay_type, image, row, state, raw, checks):
+    state = deepcopy(state)
+    row = dict(row, input=dict(state['input']))
+    row['input'].update(input_fixture_hex=raw.hex(), wire_tag32=RAW_KEY)
+    tag_cell, = (cell for cell in state['source_defined_cells'] if (cell['root'], cell['offset']) == ('S', '0x1d0'))
+    tag_cell['reconstructed_bytes_hex'] = ENCODED_KEY.to_bytes(4, 'little').hex()
+    state['input'] = row['input']
+    shared = checks['publication_source']
+    schema_spans = checks['schema_source']['spans'] + [
+        span for span in shared['spans'] if span['label'] == 'search_entry'
+    ]
+    replay = replay_type(image, row)
+    replay.replay()
+    replay.publication(state, shared)
+    replay.schema(state, schema_spans)
+    return replay
+
+
 def replay_cases(image, checks, prior, spans):
     data = receipt('userclient_early_data_checks', DATA_CHECKS['early_data'])
     payload = receipt('userclient_early_payload_audit', WRITER_AUDITS['early_payload'])
@@ -195,19 +213,12 @@ def replay_cases(image, checks, prior, spans):
     certificate = prior['ADID_field_certificate']
     index = certificate['source_predecessor_case_index']
     assert index in {case['case_index'] for case in cases}
-    state = deepcopy(states[index])
-    row = dict(data['cases'][index], input=dict(state['input']))
+    state = states[index]
+    row = data['cases'][index]
     raw = bytes.fromhex(certificate['raw_record_hex'])
     assert len(raw) == row['input']['wire_length32'] + 10 == row['input']['declared_size64'] == 14
     assert raw.hex() == checks['adid_evidence']['packets'][0]['field_record_hex']
-    row['input'].update(input_fixture_hex=raw.hex(), wire_tag32=RAW_KEY)
-    tag_cell, = (cell for cell in state['source_defined_cells'] if (cell['root'], cell['offset']) == ('S', '0x1d0'))
-    tag_cell['reconstructed_bytes_hex'] = ENCODED_KEY.to_bytes(4, 'little').hex()
-    state['input'] = row['input']
-    replay = SearchReplay(image, row)
-    replay.replay()
-    replay.publication(state, shared)
-    replay.schema(state, schema_spans)
+    replay = replay_derived_prefix(SearchReplay, image, row, state, raw, checks)
     protected = bytes.fromhex(certificate['protected_record_hex'])
     cases.append(replay.search(state, spans, protected, witness=True))
     return cases
