@@ -2134,3 +2134,5 @@ The [zero-tag provider report](userclient_zero_tag_provider_report.md) establish
 First-record construction, allocator requests and the private lookup/publication callback add kernel-local interfaces. Further port emissions and native daemon transaction identity remain unknown. [First-record boundaries](userclient_nonzero_tag_record_report.md).
 
 The recovered first-record completion transfers are kernel-local, including the command lookup request and allocator calls. The daemon transport join remains open. [First-record completion](userclient_nonzero_tag_completion_report.md).
+
+[Live FairPlay service rights](fairplay_live_service_rights_report.md) records seven successful bootstrap lookups against active system-job names for the running fairplayd and adid PIDs. All returned numbers were send names in the audit task, with two reference-counted repeat lookups and complete release. The live job snapshots reproduce the slot-17 and slot-31 declarations. The audit task's direct host-slot queries returned no right. The launcher display, historical RAX names, audit-task rights and daemon-task receive or IOKit names refer to separate observations.
