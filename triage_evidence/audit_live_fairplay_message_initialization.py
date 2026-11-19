@@ -312,33 +312,39 @@ class MessageReplay(AttributeReplay):
                     stores=stores, edges=edges)
 
 
+def initialization_cases(image, checks, source, outcomes=(True, False), replay_type=MessageReplay):
+    attributes = receipt('userclient_message_attributes_checks', ATTRIBUTE_CHECKS)
+    installed = receipt('live_fairplay_message_attributes_audit', INSTALLED_ATTRIBUTE)
+    assert checks['attribute_source'] == attributes['source']
+    assert installed['identity'] == list(IDENTITIES[1]) and installed['historical_checks_sha256'] == ATTRIBUTE_CHECKS
+    _, allowed, roots, mask = source
+    allocate, random = image.named('_IOMallocTypeImpl'), image.named('_random')
+    a_layout, a_allowed, banks = verify_attribute_source(image, attributes, allocate, random)
+    historical = {r['predecessor_case_index']: r for r in checks['predecessor_states']}
+    expected = {(r['fixture'], r['result']['profile']): r for r in installed['cases']}
+    for success in outcomes:
+        for case, replay in attribute_cases(image, attributes, a_layout, a_allowed, banks,
+                                            modes=('mode_zero', 'mode_nonzero'), replay_type=replay_type):
+            name, index, attribute = case['fixture'], case['case_index'], case['result']
+            assert json.loads(json.dumps(case)) == expected[(name, attribute['profile'])]
+            observed = replay.initialize(allowed, roots, historical[index], mask, allocate, success, attribute)
+            yield dict(fixture=name, case_index=index, result=observed), replay
+
+
 def audit(path):
     build = command('sw_vers', '-buildVersion').strip().decode()
     assert build == '26C5035r' and sysctl('kern.uuid').lower() == IDENTITIES[1][1]
     image = Collection(path, IDENTITIES[1])
     checks = receipt('userclient_message_initialization_checks', CHECKS)
     prior = receipt('userclient_message_initialization_audit', AUDIT)
-    attributes = receipt('userclient_message_attributes_checks', ATTRIBUTE_CHECKS)
-    installed = receipt('live_fairplay_message_attributes_audit', INSTALLED_ATTRIBUTE)
-    assert checks['attribute_source'] == attributes['source']
     assert prior['checks_sha256'] == CHECKS
     assert checks['kernel_collection_sha256'] == prior['kernel_collection_sha256'] == IDENTITIES[0][0]
-    assert installed['identity'] == list(IDENTITIES[1]) and installed['historical_checks_sha256'] == ATTRIBUTE_CHECKS
-    allocate, random = image.named('_IOMallocTypeImpl'), image.named('_random')
-    layout, allowed, roots, mask = verify_source(image, checks, allocate)
-    a_layout, a_allowed, banks = verify_attribute_source(image, attributes, allocate, random)
-    historical = {r['predecessor_case_index']: r for r in checks['predecessor_states']}
-    expected = {(r['fixture'], r['result']['profile']): r for r in installed['cases']}
+    source = verify_source(image, checks, image.named('_IOMallocTypeImpl'))
     cases, alignments = [], None
-    for success in (True, False):
-        for case, replay in attribute_cases(image, attributes, a_layout, a_allowed, banks,
-                                            modes=('mode_zero', 'mode_nonzero'), replay_type=MessageReplay):
-            name, index, attribute = case['fixture'], case['case_index'], case['result']
-            assert json.loads(json.dumps(case)) == expected[(name, attribute['profile'])]
-            if alignments is None:
-                alignments = replay.check_alignments()
-            observed = replay.initialize(allowed, roots, historical[index], mask, allocate, success, attribute)
-            cases.append(dict(fixture=name, case_index=index, result=observed))
+    for case, replay in initialization_cases(image, checks, source):
+        if alignments is None:
+            alignments = replay.check_alignments()
+        cases.append(case)
     assert len(cases) == 8 and len(prior['source_proofs']) == 425
     # Recheck the all-alignment and all-extent contracts. The eight concrete
     # message cases independently exercise the installed constructor.
@@ -346,7 +352,7 @@ def audit(path):
     assert len(proofs) == 45
     with ThreadPoolExecutor(max_workers=4) as workers:
         results = list(workers.map(partial(replay_proof, timeout_seconds=PROOF_TIMEOUT_SECONDS), proofs))
-    return dict(build=build, identity=IDENTITIES[1], layout=layout, cases=cases, alignment_controls=alignments,
+    return dict(build=build, identity=IDENTITIES[1], layout=source[0], cases=cases, alignment_controls=alignments,
                 source_proofs=results, historical_checks_sha256=CHECKS, historical_audit_sha256=AUDIT,
                 installed_attribute_audit_sha256=INSTALLED_ATTRIBUTE, native_allocator_observed=False,
                 native_PAC_verified=False, native_transaction_observed=False)
