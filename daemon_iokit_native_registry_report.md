@@ -57,3 +57,5 @@ Set `PINNED_DAEMON` to the extracted arm64e input whose SHA-256 is `4ffe3ea1dbd2
 | Low | Determine whether the alternative provider appears under other host configurations. |
 
 QG1–QG3 cover the factual snapshot, explicit premises, process correlation and file comparison. QG4–QG5 cover widths, file range geometry, alternate class absence within the inspected plane and the two distinct kernel/kext identities. QG6–QG7 cover the primary runtime outputs, source references, replayable audit and bounded remaining questions.
+
+A subsequent snapshot finds two more clients attached to the same service. It identifies the running `lskdd` and `fairplaydeviceidentityd` slices, their active launchd endpoints, and candidate driver call sites. [Additional native clients](live_fairplay_additional_clients_report.md)
