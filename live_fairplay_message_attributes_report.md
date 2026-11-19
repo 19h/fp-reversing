@@ -10,9 +10,11 @@ occupied lookup -> payload P -> typed FPMessageAttr request
   `-- allocated A
        |-- _random x32 -> A+08
        |-- _random x32 -> A+28
-       `-- copy cached16 and header
-            |-- P+04 == 0 -> replace first generated field with cached32
-            `-- P+04 != 0 -> retain generated field and set flag
+       `-- copy cached16 -> read mode at P+04
+            |-- zero    -> replace first generated field with cached32 --+
+            `-- nonzero -> retain generated field and set flag ---------+
+                                                                       |
+                                                             copy header -> continue
 ```
 
 ## Installed caller contract
