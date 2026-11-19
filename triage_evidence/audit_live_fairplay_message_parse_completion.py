@@ -156,7 +156,7 @@ class RecordReplay(ParserReplay):
                     input_hex=self.payload.hex(), flag=flag, target=hex(target))
 
 
-def audit(path):
+def audit(path, replay_type=RecordReplay, observe_case=None):
     build = command('sw_vers', '-buildVersion').strip().decode()
     assert build == '26C5035r' and sysctl('kern.uuid').lower() == IDENTITIES[1][1]
     image = Collection(path, IDENTITIES[1])
@@ -181,7 +181,7 @@ def audit(path):
     cases, baseline = [], {}
     init_source = verify_source(image, init, allocate)
     for patterned in (False, True):
-        for case, replay in initialization_cases(image, init, init_source, (True,), RecordReplay):
+        for case, replay in initialization_cases(image, init, init_source, (True,), replay_type):
             fixture, mode = case['fixture'], case['result']['profile']
             parent = parents[(fixture, mode)]
             start = replay.reenter(parser_words, literals, allocate, True)
@@ -205,7 +205,10 @@ def audit(path):
                 assert projection == baseline[(fixture, mode)]
             else:
                 baseline[(fixture, mode)] = projection
-            cases.append(dict(fixture=fixture, mode=mode, patterned_scratch=patterned, result=result))
+            row = dict(fixture=fixture, mode=mode, patterned_scratch=patterned, result=result)
+            cases.append(row)
+            if observe_case is not None:
+                observe_case(row, replay)
     assert len(cases) == 8 and len(parents) == 4
     proofs = []
     for name, digest in WRITER_AUDITS.items():

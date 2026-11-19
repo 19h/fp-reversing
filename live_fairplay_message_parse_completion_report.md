@@ -56,3 +56,5 @@ The checked path parses one fixed-width scalar record and appends to an empty co
 | Medium | Trace null node and record-buffer returns on the second invocation and track their callback status and cleanup. |
 
 QG1 factual scope, QG2 assumptions and probes, QG3 both fixture modes from input load to completion, QG4 byte widths and exact counts, QG5 continuity and native evidence boundaries, QG6 pinned provenance, and QG7 impact-ranked open interfaces pass for this increment.
+
+The subsequent continuation audit traces both reported mode targets through record lookup, mode-specific miss status, the retirement sequence and the fallback allocation request. It also verifies the matching decoded identifiers in the pinned daemon. [Mode lookups and retirement](live_fairplay_message_modes_report.md)
