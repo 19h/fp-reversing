@@ -51,6 +51,8 @@ The daemon produces a 384 B complex reply on application status 0, or a 36 B sim
 
 Both current clients have 624 B compiler extents. Of 156 positionally compared A64 words, eight differ. Six are BL encodings with shared destinations. The other two select the request-ID constant and compare the expected reply ID. The accepted complex reply has two type-1 OOL descriptors, null internal remote field, and matching descriptor and repeated extents. The clients copy the two fixed records to the X6/X7 destinations, then publish the two OOL address/count pairs through four stack arguments. The RPC 700 geometry is a client requirement. Its actual producer remains unknown.
 
+After the accepted reply, the constructor uses the first OOL copy object to obtain a kernel VA and retains that address and its descriptor extent for normal close. The second object has a separate discard path. [Current mapping and retirement](live_fairplay_reply_mapping_report.md)
+
 ## Assumptions and reproducibility
 
 | Assumption | Dependent result | Falsification probe |
