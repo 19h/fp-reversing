@@ -212,13 +212,13 @@ def read_descriptor(image, address, name, signature, size):
                 flags_u32=0x64, size_bytes=size, pointers=pointers)
 
 
-def replay_proof(proof):
+def replay_proof(proof, timeout_seconds=45):
     query = proof['query'].encode()
-    result = subprocess.run(['z3', '-in', '-T:45'], input=query, capture_output=True,
-                            timeout=50, check=True).stdout.strip()
-    assert result == b'unsat' and proof['result'] == 'unsat'
-    return dict(name=proof.get('name') or proof['label'],
-                query_sha256=hashlib.sha256(query).hexdigest(), result='unsat')
+    name = proof.get('name') or proof['label']
+    result = subprocess.run(['z3', '-in', f'-T:{timeout_seconds}'], input=query, capture_output=True,
+                            timeout=timeout_seconds + 5, check=True).stdout.strip()
+    assert result == b'unsat' and proof['result'] == 'unsat', (name, result)
+    return dict(name=name, query_sha256=hashlib.sha256(query).hexdigest(), result='unsat')
 
 
 def audit(collection):
