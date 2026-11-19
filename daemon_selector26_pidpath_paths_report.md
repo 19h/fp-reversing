@@ -27,7 +27,7 @@ Results 0 and −1 enter `0x10065f430`, store the private marker `0x74c29dee`, a
 | A2 | The modeled process query supplies either a NUL-terminated 18 B string or a nonpositive result with no write. `_strnlen` is modeled as returning the length of that string. | Compare the path result, stored bytes and `_strnlen` return from a runtime request. |
 | A3 | Allocator/free returns follow the modeled call ABI. Authenticated calls and returns use logical chained targets and saved links. | Compare stack guards, resolved calls and release order with measurements on the matching image. |
 
-The audit replays two return classes in each of four retained upstream states and verifies 98 chained fixup words against the pinned image. Journal checks take O(J) time and space for J recorded events, excluding instruction interpretation and fixup parsing. The audit verifies the transfer into the path child and the later IOKit arguments. The byte-level composition of the final aggregate is still open. [Replay audit](triage_evidence/audit_daemon_selector26_pidpath_paths.py)
+The audit replays two return classes in each of four retained upstream states and verifies 98 chained fixup words against the pinned image. Journal checks take O(J) time and space for J recorded events, excluding instruction interpretation and fixup parsing. The audit verifies the transfer into the path child and the later IOKit arguments. The follow-up checks complete aggregate write coverage and parses its outer and inner records at the method call. [Replay audit](triage_evidence/audit_daemon_selector26_pidpath_paths.py) [Final aggregate contents](daemon_selector26_request_bytes_report.md)
 
 ```sh
 uv run --no-project --python 3.14 --with z3-solver --with capstone --with unicorn \
