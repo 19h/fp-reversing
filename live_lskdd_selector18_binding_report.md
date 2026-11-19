@@ -31,7 +31,7 @@ The audit checks 39 instruction sites, 13 fixups and all 512 byte inputs across 
 
 ## Cross-layer boundary
 
-The loaded connection word at `0x100584c9c` is read through the pointer at SP+0x40. The predecessor stores this pointer at `0x100654a4c` after loading an indexed rebase through the image pool. The original method table maps selector 18 to `GetDecryptionVault` for a FairPlayIOKit connection. With the initial capacity and ordinary inline transfer, the projected request and full success reply are 3,180 B and 3,148 B. Their Mach IDs are 2865 and 2965. The framework emits at `0x184ebe090` with the connection as COPY_SEND destination and the local reply port as MAKE_SEND_ONCE. The native connection name and transaction remain unknown. [Current method map](live_kext_selector26_report.md) [Mach transport](live_iokit_mach_transport_report.md)
+The loaded connection word at `0x100584c9c` is read through the pointer at SP+0x40. The predecessor stores this pointer at `0x100654a4c` after loading an indexed rebase through the image pool. The original method table maps selector 18 to `ProcessEncryptedData` for a FairPlayIOKit connection. With the initial capacity and ordinary inline transfer, the projected request and full success reply are 3,180 B and 3,148 B. Their Mach IDs are 2865 and 2965. The framework emits at `0x184ebe090` with the connection as COPY_SEND destination and the local reply port as MAKE_SEND_ONCE. The native connection name and transaction remain unknown. [Current method map](live_kext_selector26_report.md) [Mach transport](live_iokit_mach_transport_report.md)
 
 | ID | Assumption and dependent result | Falsification check |
 | --- | --- | --- |
