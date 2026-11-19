@@ -381,33 +381,40 @@ class AttributeReplay(LookupReplay):
                     attribute_writes=len(attribute_stores), stores=stores, edges=edges)
 
 
+def attribute_cases(image, checks, layout, allowed, banks, modes=MODES, replay_type=AttributeReplay):
+    lookup = receipt('userclient_schema_lookup_result_checks', LOOKUP_CHECKS)
+    previous = receipt('live_fairplay_schema_lookup_result_audit', INSTALLED_LOOKUP)
+    assert checks['lookup_result_source'] == lookup['source']
+    assert previous['identity'] == list(IDENTITIES[1]) and previous['historical_checks_sha256'] == LOOKUP_CHECKS
+    assert checks['kernel_collection_sha256'] == IDENTITIES[0][0]
+    allocate, random = image.named('_IOMallocTypeImpl'), image.named('_random')
+    verify_result_source(image, lookup)
+    predecessors = {row['predecessor_case_index']: row for row in checks['predecessor_states']}
+    references = {c['fixture']: c for c in previous['cases'] if c['result']['profile'] == 'hit_nonnull'}
+    for case_no, (found, replay) in enumerate(lookup_cases(
+        image, lookup, profiles=('hit_nonnull',)*len(modes), replay_type=replay_type
+    )):
+        name, index = found['fixture'], found['case_index']
+        assert json.loads(json.dumps(found)) == references[name]
+        group = case_no // len(references)
+        profile = tuple(modes)[group]
+        result = replay.attribute(allowed, predecessors[index], banks, profile,
+                                  int(layout['descriptor']['address'], 16), allocate, random,
+                                  seed=index + 11*group)
+        yield dict(fixture=name, case_index=index, result=result), replay
+
+
 def audit(path):
     build = command('sw_vers', '-buildVersion').strip().decode()
     assert build == '26C5035r' and sysctl('kern.uuid').lower() == IDENTITIES[1][1]
     image = Collection(path, IDENTITIES[1])
     checks = receipt('userclient_message_attributes_checks', CHECKS)
     prior = receipt('userclient_message_attributes_audit', AUDIT)
-    lookup = receipt('userclient_schema_lookup_result_checks', LOOKUP_CHECKS)
-    previous = receipt('live_fairplay_schema_lookup_result_audit', INSTALLED_LOOKUP)
-    assert checks['lookup_result_source'] == lookup['source'] and prior['checks_sha256'] == CHECKS
-    assert previous['identity'] == list(IDENTITIES[1]) and previous['historical_checks_sha256'] == LOOKUP_CHECKS
-    assert checks['kernel_collection_sha256'] == prior['kernel_collection_sha256'] == IDENTITIES[0][0]
+    assert prior['checks_sha256'] == CHECKS and prior['kernel_collection_sha256'] == IDENTITIES[0][0]
     allocate, random = image.named('_IOMallocTypeImpl'), image.named('_random')
     layout, allowed, banks = verify_attribute_source(image, checks, allocate, random)
     provider = verify_random(image, checks['kernel_random_function'])
-    verify_result_source(image, lookup)
-    predecessors = {row['predecessor_case_index']: row for row in checks['predecessor_states']}
-    references = {c['fixture']: c for c in previous['cases'] if c['result']['profile'] == 'hit_nonnull'}
-    cases = []
-    for found, replay in lookup_cases(image, lookup, profiles=('hit_nonnull',)*len(MODES),
-                                      replay_type=AttributeReplay):
-        name, index = found['fixture'], found['case_index']
-        assert json.loads(json.dumps(found)) == references[name]
-        profile = list(MODES)[len(cases)//len(references)]
-        result = replay.attribute(allowed, predecessors[index], banks, profile,
-                                  int(layout['descriptor']['address'], 16), allocate, random,
-                                  seed=index + 11*(len(cases)//len(references)))
-        cases.append(dict(fixture=name, case_index=index, result=result))
+    cases = [data for data, _ in attribute_cases(image, checks, layout, allowed, banks)]
     proofs = prior['source_proofs']
     assert len(cases) == 6 and len(proofs) == 199
     with ThreadPoolExecutor(max_workers=4) as workers:
