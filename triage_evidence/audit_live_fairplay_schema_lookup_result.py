@@ -307,23 +307,17 @@ class LookupReplay(RegistryReplay):
                     authenticated_return_assumed=True)
 
 
-def audit(path):
-    build = command('sw_vers', '-buildVersion').strip().decode()
-    assert build == '26C5035r' and sysctl('kern.uuid').lower() == IDENTITIES[1][1]
-    image = Collection(path, IDENTITIES[1])
-    checks = receipt('userclient_schema_lookup_result_checks', CHECKS)
-    prior = receipt('userclient_schema_lookup_result_audit', AUDIT)
+def lookup_cases(image, checks, profiles=STATUSES, replay_type=LookupReplay):
     installed = receipt('live_fairplay_schema_registry_audit', INSTALLED_REGISTRY)
     registry = receipt('userclient_schema_registry_checks', REGISTRY_CHECKS)
     scalar = receipt('userclient_schema_scalar_checks', SCALAR_CHECKS)
     preceding = receipt('userclient_schema_scalar_audit', SCALAR_AUDIT)
     search = receipt('userclient_schema_search_checks', SEARCH_CHECKS)
     assert checks['registry_source'] == registry['source']
-    assert checks['kernel_collection_sha256'] == prior['kernel_collection_sha256'] == IDENTITIES[0][0]
-    assert prior['checks_sha256'] == CHECKS and installed['historical_checks_sha256'] == REGISTRY_CHECKS
+    assert checks['kernel_collection_sha256'] == IDENTITIES[0][0]
+    assert installed['historical_checks_sha256'] == REGISTRY_CHECKS
     assert installed['identity'] == list(IDENTITIES[1])
 
-    layout = verify_result_source(image, checks)
     allocate = image.named('_IOMallocTypeImpl')
     _, registry_words = verify_code(image, registry['source'], registry['registry_allocation_adapter'], allocate)
     _, bases = verify_banks(image, registry, allocate)
@@ -334,9 +328,8 @@ def audit(path):
     allowed.update(shifted(word['pc']) for word in error_span['instructions'])
     predecessors = {case['predecessor_case_index']: case for case in checks['predecessor_states']}
     expected = {case['fixture']: case for case in installed['cases'] if case['registry']['path'] == 'lookup'}
-    cases = []
-    for profile in STATUSES:
-        for case, replay in scalar_cases(image, scalar, preceding, search_spans, scalar_spans, LookupReplay):
+    for profile in profiles:
+        for case, replay in scalar_cases(image, scalar, preceding, search_spans, scalar_spans, replay_type):
             name, index, result = case['fixture'], case['case_index'], case['result']
             if name not in expected:
                 break
@@ -349,7 +342,18 @@ def audit(path):
             if entries:
                 assert json.loads(json.dumps(request)) == expected[name]['registry']
             observed = replay.consume(allowed, result, profile, capacity, entries, payload, archived)
-            cases.append(dict(fixture=name, case_index=index, result=observed))
+            yield dict(fixture=name, case_index=index, result=observed), replay
+
+
+def audit(path):
+    build = command('sw_vers', '-buildVersion').strip().decode()
+    assert build == '26C5035r' and sysctl('kern.uuid').lower() == IDENTITIES[1][1]
+    image = Collection(path, IDENTITIES[1])
+    checks = receipt('userclient_schema_lookup_result_checks', CHECKS)
+    prior = receipt('userclient_schema_lookup_result_audit', AUDIT)
+    assert prior['kernel_collection_sha256'] == IDENTITIES[0][0] and prior['checks_sha256'] == CHECKS
+    layout = verify_result_source(image, checks)
+    cases = [case for case, _ in lookup_cases(image, checks)]
     assert len(cases) == 8
     proofs = prior['source_proofs']
     assert len(proofs) == 298
