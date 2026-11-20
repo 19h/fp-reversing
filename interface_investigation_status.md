@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The ordinary ADID synchronous transport now has an installed-image map from the client dictionary and libdispatch reply waiter through the provider callback and reply-right transfer to the Mach send and receive sites. All five matching reply IDs in the archived RAX trace belong to bootstrap, leaving native ADID delivery and transaction-linked FairPlayIOKit activity open. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md)
+
 The [ADID send-once notification report](adid_send_once_notification_report.md) traces release of a live reply right through Mach trap -18 and the installed kernel's ID 71 emitter. The daemon recognizes a delivered ID 71 as `MIG_SERVER_DIED`. Private first-send and retry replays reach the same outer error. Native queueing, delivery and transaction-linked FairPlayIOKit activity remain unknown.
 
 The [ADID legacy receive report](adid_legacy_mach_receive_report.md) joins launchd send-right lookup 5/207 and XPC listener check-in 3/805 to the installed source path for a delivered legacy message 1200. Libxpc dispatches it to the Mach notification handler, which destroys a user-space sender's message before building a reply. The remaining joins are native request delivery, reply-right retirement and its sender-visible result, and transaction-linked FairPlayIOKit activity.

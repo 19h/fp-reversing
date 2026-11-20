@@ -1,5 +1,7 @@
 # Direct FairPlay daemon to CoreADI IPC
 
+The ordinary synchronous transport is traced through the client special reply port, the provider dictionary context, and the Mach emission and receive boundaries. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md)
+
 The arm64e code selected by the running `fairplayd` process creates an XPC client for `com.apple.adid` and contains a synchronous request/reply path on that connection. The request and reply each use an XPC dictionary field named `data`. The installed `adid` listener and peer adapter have matching service and field names. A separate notification path runs in the opposite direction. Process identities were observed on macOS build `26C5035r`. The paths and the correspondence between endpoints are established statically. A native exchange and its Mach port names remain unknown. [Live slice identification method](fairplay_live_slice_identity_report.md)
 
 ```text

@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+The ordinary ADID synchronous exchange uses a channel send right for the request and a thread special reply receive port for the response. Libdispatch emits both messages at `0x1855b487c` and receives the reply at `0x1855b0d50`. The provider moves the request-derived send-once right through the reply dictionary. Native names and delivery remain unknown. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md)
+
 The [ADID send-once notification report](adid_send_once_notification_report.md) locates the kernel notification emitter at `0xfffffe000bd111b0`, identifies its send-once destination as the original reply port object, and checks the sender's ID 71 parser. Native endpoint state and delivery remain unknown.
 
 The [ADID legacy receive report](adid_legacy_mach_receive_report.md) identifies the separately acquired service send and receive rights, the per-attempt send-once reply right, the sender emission at `0x100de9fac`, and receiver disposal at `0x184bc697c`. The installed libxpc listener source provides no application reply 1300 on this route. Native numeric names remain unknown.
