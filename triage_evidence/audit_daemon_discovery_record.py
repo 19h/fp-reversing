@@ -56,8 +56,9 @@ def source():
     return {'bit_vector_checks': 15, 'spans': list(SPANS.values())}
 
 
-def replay(field):
-    probe = CleanupProbe()
+def replay(field, *, probe=None, lock=LOCK):
+    if probe is None:
+        probe = CleanupProbe()
     probe.run_cleanup(OWNER, False)
     assert probe.u.reg_read(ar.UC_ARM64_REG_PC) == NULL_STOP
     assert probe.reg(9) == 0x25e9 and probe.reg(19) == 0xabf8
@@ -83,7 +84,7 @@ def replay(field):
     probe.u.emu_start(0x1006171b0, 0x1006171b8, count=3)
     assert probe.memory_word(FRAME + 0x5900) == STATE + 0x100
     probe.setreg(28, LOCK_OWNER)
-    probe.put(LOCK_OWNER + 8, 8, LOCK)
+    probe.put(LOCK_OWNER + 8, 8, lock)
     probe.u.emu_start(0x100606554, 0x1006065dc, count=40)
     assert probe.memory_word(FRAME + 0x1888) == LOCK_OWNER + 8
     probe.put(FRAME + 0x968, 8, LEFT)
@@ -93,7 +94,7 @@ def replay(field):
     probe.u.emu_start(ENTRY, CALL, count=1200)
     assert probe.u.reg_read(ar.UC_ARM64_REG_PC) == CALL
     assert probe.reg(0) == REQUEST and probe.reg(8) == ADAPTER and probe.reg(17) == 0x6aa4
-    assert probe.memory_word(REQUEST) == LOCK
+    assert probe.memory_word(REQUEST) == lock
     assert probe.reg(27) == 0x2e80
     edges = probe.branch_slots[first + 1:]
     assert edges[0]['target'] == ('0x1005b1320' if field else '0x1004cfca0')
@@ -101,7 +102,7 @@ def replay(field):
     assert not probe.output_accesses
     return {'field': hex(field), 'producer_edge': producer, 'continuation_edges': edges,
             'endpoint': hex(CALL), 'prepared_record': {
-                'address': hex(REQUEST), 'word_at_0': hex(LOCK),
+                'address': hex(REQUEST), 'word_at_0': hex(lock),
                 'word_at_8': hex(probe.memory_word(REQUEST + 8, 4)),
                 'phase_w27': hex(probe.reg(27))}}
 

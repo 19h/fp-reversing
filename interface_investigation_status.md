@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery lock and cache report](daemon_discovery_relock_report.md) follows the first unlock into a fallback write-lock request and the same control and cache cells used by the earlier network-record gate. It resolves the cache-qualified route and the decrement and conditional unlock route. Native lock identity, the output consumer, and driver linkage remain unknown.
+
 The [discovery record report](daemon_discovery_record_report.md) identifies the producer of S+0x6fb8 B as a record initializer. Its zero and nonzero field controls converge at the same conditional unlock adapter call. Native lock identity and any linkage to the emitter bytes or an IOKit request remain unknown.
 
 The [discovery cleanup report](daemon_discovery_cleanup_report.md) traces the marker consumer to a conditional free request or a later owner-state load. It locates four literal byte readers and one byte writer through S+0x1ba0 B. The output pointer’s first actual reader and linkage to the archived FairPlayIOKit open remain unknown.
