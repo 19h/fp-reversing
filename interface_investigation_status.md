@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [archived IOKit reply import report](archived_iokit_reply_import_report.md) joins the four host replies on `0x1603` to the guest's `0x507` replies and compares the locally assembled IOKit-main reply. The candidate normal import preserves the null connection and inline application result. All five guest trailers are 8 B, and the historical host audit bytes and exact kernel failure site remain unknown.
+
 The [archived IOKit task translation report](archived_iokit_task_translation_report.md) connects task-self `0x203` to request 2862 and the candidate bridge's host self-task send reference. It verifies the descriptor rewrite, kernel task comparison, accepted-task context and bridge memory-mirror boundary. The historical host descriptor and initializer outcome remain unknown.
 
 The [archived IOKit port retirement report](archived_iokit_open_retirement_report.md) joins the failed 2862/2962 open exchange to the next two guest releases and adjacent host ID 65 receives. It verifies the distinct namespace mappings and traces the candidate bridge registration, host emission and receive paths. The historical notification bodies and bridge process identity remain unknown.
