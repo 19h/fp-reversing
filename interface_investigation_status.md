@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed Mach port description query converts a task-local IOKit connection name into a class and registry entry ID. Two simultaneous native IOSurface controls each matched a different provider child. A production FairPlay join still needs a valid observation of the daemon's namespace and live connection. [IOKit port descriptions](live_iokit_port_description_report.md)
+
 The installed Mach trap entry can record task-local destination and reply names for an ordinary IOKit call. Its exit reports the transport result. Correlating both records with the 2865 MIG markers can link the names to generic method dispatch. Registry-client attribution, selector and IOKit result remain open. [Installed Mach trap trace](live_mach_trap_trace_report.md)
 
 Installed MIG tracing builds its event IDs from Sandbox filter indices. The registered index for IOKit method request 2865 is 117, giving dispatch markers 0xff0001d5 and 0xff0001d6 after registration. The markers omit the selector and reply result. Runtime trace collection remains open. [Installed MIG trace IDs](live_iokit_mig_trace_report.md)
