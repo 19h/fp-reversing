@@ -55,3 +55,5 @@ uv run --no-project --with unicorn==2.1.4 --with capstone python \
 | A4. Supplied return data exercises both predicates for the recorded W21. Applies to the destination table. | Capture the original child status, X1 cell and adjusted-SP marker at the return boundary. The observed W21 determines the indices. |
 
 High impact for interface attribution. The resolved preparatory call is a local copy and the recursive return carries two separate values. Medium impact for continued route recovery. The marker producer, upstream W9 definition, selector 19 connection provenance, and native pipe and port identity remain unknown.
+
+A follow-up identifies a fixed-frame writer for the marker slot and traces additional consumers. The word at the adjusted runtime address still needs a reaching definition. [Marker and frame staging](live_lskdd_recursive_marker_report.md)
