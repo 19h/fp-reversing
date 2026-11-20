@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery cache sealing report](daemon_discovery_cache_codec_report.md) identifies the cache-qualified branch as a 552 B in-place context sealer. It matches all retained constructor bytes and publishes the encoded reference before the control decrement and fallback unlock. The cleanup reaches a load from S+0x17a0 B. Four literal stores are candidate producers, and native transport attribution remains unknown.
+
 The [discovery lock and cache report](daemon_discovery_relock_report.md) follows the first unlock into a fallback write-lock request and the same control and cache cells used by the earlier network-record gate. It resolves the cache-qualified route and the decrement and conditional unlock route. Native lock identity, the output consumer, and driver linkage remain unknown.
 
 The [discovery record report](daemon_discovery_record_report.md) identifies the producer of S+0x6fb8 B as a record initializer. Its zero and nonzero field controls converge at the same conditional unlock adapter call. Native lock identity and any linkage to the emitter bytes or an IOKit request remain unknown.
