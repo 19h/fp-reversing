@@ -1,6 +1,6 @@
 # fairplaydeviceidentityd DeviceIdentity completion and outputs
 
-The installed arm64e daemon adapts the asynchronous DeviceIdentity certificate API to a synchronous local call at `0x100001130`. The completion receives a `SecKeyRef`, an `NSArray`, and an `NSError`. It publishes the key and a certificate array when the array count is exactly two. The direct scheduled caller passes five null output pointers and consumes the returned status. Two protected call sites can reach the same wrapper through an authenticated dispatch-table entry and supply all five output addresses. Their native reachability and the provider's transport are unknown. [Startup and activity entry](live_fpdi_startup_report.md)
+The installed arm64e daemon adapts the asynchronous DeviceIdentity certificate API to a synchronous local call at `0x100001130`. The completion receives a `SecKeyRef`, an `NSArray`, and an `NSError`. It publishes the key and a certificate array when the array count is exactly two. The direct scheduled caller passes five null output pointers and consumes the returned status. Two protected call sites can reach the same wrapper through an authenticated dispatch-table entry and supply all five output addresses. Their native reachability is unknown. The provider can request issuance from the named mobile activation service. [DeviceIdentity activation RPC](live_deviceidentity_activation_report.md) [Startup and activity entry](live_fpdi_startup_report.md)
 
 ## Issue, wait and publish
 
