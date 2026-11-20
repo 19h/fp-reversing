@@ -47,7 +47,7 @@ Both sends select import slot `0x1010b1568` and use IA discriminator `0x57e4`. A
 | Emit XPC reply | adid `0x1000aa9fc` then `0x1000aaa70` | Sets reply `data`, then calls `xpc_dictionary_send_reply` using the request-derived reply object. |
 | Publish invalidation | adid `0x100219198` | `notify_post(name)` uses the libnotify route to the broker. |
 
-The actual task-local port names, right dispositions and kernel objects at the direct XPC emissions remain unknown. The app sites above are boundaries at which the daemons request emission. The existing libxpc transport study identifies lower-level Mach send and reply-context code for its reference image. An image and request join is needed to make it specific to these calls. A literal search for the service name, invalidation names and adjacent `vmtohostmsg` in the supplied `annotated-strace-rax-user.txt` returned zero matches. The log shows Mach trap calls with process-local numbers. It supplies no named service join for this edge. [Server startup](adid_startup_report.md) [Server adapter](adid_receiver_report.md) [Reference XPC reply transport](xpc_reply_transport_report.md)
+Installed images establish the ordinary request and reply dispositions, the libdispatch Mach emission sites and the current kernel reply binding. Native task-local names, kernel object identity and delivery remain unknown. The archived replies with the ordinary reply ID pair with bootstrap requests. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md) [Kernel special reply path](live_adid_xpc_special_reply_kernel_report.md)
 
 ## Notification path
 

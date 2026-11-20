@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+Trap -50 allocates the user thread's special reply port with a combined send and receive name in its task namespace and binds the object at thread +0x450. The Mach2 synchronous wait verifies that binding before linking to the channel destination. [Kernel special reply path](live_adid_xpc_special_reply_kernel_report.md)
+
 The ordinary ADID synchronous exchange uses a channel send right for the request and a thread special reply receive port for the response. Libdispatch emits both messages at `0x1855b487c` and receives the reply at `0x1855b0d50`. The provider moves the request-derived send-once right through the reply dictionary. Native names and delivery remain unknown. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md)
 
 The [ADID send-once notification report](adid_send_once_notification_report.md) locates the kernel notification emitter at `0xfffffe000bd111b0`, identifies its send-once destination as the original reply port object, and checks the sender's ID 71 parser. Native endpoint state and delivery remain unknown.

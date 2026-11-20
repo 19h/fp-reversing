@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed kernel path for the ordinary ADID synchronous exchange now joins trap -50, the current task receive name, thread +0x450 and the optional channel destination link before the receive queue. FairPlayIOKit kernel RPC uses a separate reply-space binding at thread +0x3f0. Native delivery remains open. [Kernel special reply path](live_adid_xpc_special_reply_kernel_report.md)
+
 The ordinary ADID synchronous transport now has an installed-image map from the client dictionary and libdispatch reply waiter through the provider callback and reply-right transfer to the Mach send and receive sites. All five matching reply IDs in the archived RAX trace belong to bootstrap, leaving native ADID delivery and transaction-linked FairPlayIOKit activity open. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md)
 
 The [ADID send-once notification report](adid_send_once_notification_report.md) traces release of a live reply right through Mach trap -18 and the installed kernel's ID 71 emitter. The daemon recognizes a delivered ID 71 as `MIG_SERVER_DIED`. Private first-send and retry replays reach the same outer error. Native queueing, delivery and transaction-linked FairPlayIOKit activity remain unknown.
