@@ -34,6 +34,8 @@ Both sites clear X1 through X4. The logger reads the current thread ID from thre
 
 ## Diagnostic reach
 
+The installed Mach trap entry and exit records can add task-local request header names and transport status when correlated on the same thread. [Installed Mach trap trace](live_mach_trap_trace_report.md)
+
 The host's `ktrace decode` accepted all 18 checked IDs, including both phases for the eight selected requests and the initial-index pair. It labels `0xff000115` as `MSG_mach_notify_port_destroyed`, even though the installed producer can emit that value for service close after Sandbox registration. It leaves the index-117 method markers unnamed. The read-only `ktrace info` query returned exit status 1 with an `EREMOTE` diagnostic. Session state and actual emitted records are unknown. The report retains a reproducible code map and no native trace capture.
 
 A correlated method marker establishes arrival at a generic IOKit MIG stub on the selected thread. Attributing that arrival to FairPlay selector 26 requires the corresponding connection object or namespace identity and the selector. A matched reply is needed to establish delivery and operation status. The earlier RAX capture contains a failed open and zero printed method requests. The prior daemon registry observations supply creator and attachment IDs for a different observation. [Archived open and Mach request counts](archived_iokit_open_retirement_report.md) [Native client creator attribution](live_iokit_open_owner_report.md)
