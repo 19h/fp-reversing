@@ -40,7 +40,7 @@ The five-argument initializer at `0xfffffe000c5b2194` calls `IOService::init` at
 | `com.apple.private.ProvInfoIOKitUserClient.access` | `0xfffffe000a5452b8` |
 | `com.apple.private.FairPlayIOKitUserClient.Virtual.access` | `0xfffffe000a5452cc` |
 
-The override compares returned objects to the `kOSBooleanTrue` singleton. Its accepted paths clear client +240 B, then store 1 there if the returned Virtual access object equals that singleton. A later call at `0xfffffe000a54545c` uses the base IOUserClient initializer. If the task is nonnull and the base result nonzero, the override clears client +216 B, stores the task at +224 B, clears a byte at +244 B and returns 1. These stores are separate from the generic constructor's final client publication. The field's consumers and the actual entitlements or intermediate result words of the historical bridge process remain unknown.
+The override compares returned objects to the `kOSBooleanTrue` singleton. Its accepted paths clear client +240 B, then store 1 there if the returned Virtual access object equals that singleton. A later call at `0xfffffe000a54545c` uses the base IOUserClient initializer. If the task is nonnull and the base result nonzero, the override clears client +216 B, stores the task at +224 B, clears a byte at +244 B and returns 1. These stores are separate from the generic constructor's final client publication. The startup adapter consumes the mode before returning from the provider call. The historical bridge process's entitlement objects and intermediate statuses remain unknown. [Open attachment and owner registration](live_iokit_open_owner_report.md)
 
 ## Assumptions and verification
 
