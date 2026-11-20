@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed FairPlayIOKit client inherits a null-returning provider getter. The separate IOKit connection-to-service request 2817 therefore yields status-only reply 2917 on the admitted FairPlay path. The pinned daemon and archived trace supply no direct binding or observed exchange. [Connection-to-provider audit](live_iokit_connection_service_report.md)
+
 The installed kernel has a named executable-offset getter and a shared spawn/exec writer that publishes the selected Mach-O slice offset alongside the vnode. The Arcade upcall transports it to fairplayd. Four retained daemon profiles record which fields reach the CoreFP send boundary. [Arcade executable-offset data flow](live_arcade_executable_offset_report.md)
 
 The Arcade subscription reply audit identifies the executable file offset in request 61471 and follows reply 61571 through kernel validation. The launch handler returns, retries endpoint acquisition or calls task termination according to the status and decision. Native delivery and task outcome remain unknown. [Arcade subscription outcome](live_arcade_subscription_outcome_report.md)

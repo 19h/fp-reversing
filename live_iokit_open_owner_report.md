@@ -2,6 +2,8 @@
 
 On build `26C5035r`, the inherited type-zero open route attaches and starts the FairPlay user client before the kernel writes its `IOUserClientCreator` registry label. The label uses the process handling the request. The open implementation then registers the owning task before returning the client object for connection-port export. This ordering bounds what the observed `adid` and `fairplayd` child entries establish. [Open status and initializer](live_fairplay_iokit_open_report.md) [Connection publication](live_fairplay_connection_report.md)
 
+The [connection-to-provider audit](live_iokit_connection_service_report.md) traces the separate getter request. The FairPlay client inherits a null-returning method, so the installed route returns a status-only reply without exporting the attached provider.
+
 ## Attach and start
 
 | Operation | Installed call site and binding | Continuation |
