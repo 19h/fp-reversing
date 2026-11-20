@@ -59,3 +59,5 @@ The audit checks every byte input to each of five table equations. Each equation
 High impact for resolving selector 19's two otherwise ambiguous callees. High impact for the newly identified buffer and capacity writes on the selected frame contracts. Medium impact for separating the imported callee from the specific provider and method instance on a running system.
 
 The subsequent large-frame replay identifies an OS transaction acquisition helper. It records an initializer write of `0x45b9` to SP+0x5b94 and establishes a distinct early state from the candidate selector 19 predecessor's `0x45a7`. [Large-frame transaction acquisition](live_lskdd_large_frame_transaction_report.md)
+
+The large-frame wrapper and recursive caller exchange a stack adjustment and a separate child status. The two tested wrapper entries returned without visiting the selector 19 predecessor. [Large-frame caller and recursive context](live_lskdd_large_frame_caller_report.md)

@@ -46,3 +46,5 @@ The auditor uses Unicorn, Capstone, and Apple `dyld_info`. For image bytes N, fi
 | T4. Native selector 19 uses the earlier class binding only if the argument carries that connection. | Correlate the reaching W0 producer, the IOKit object and the ordinary native emission. |
 
 High impact for identifying the previously unnamed transaction helper and its shared state. Medium impact for distinguishing the early frame state from the later selector 19 predecessor contract.
+
+A subsequent caller audit resolves the wrapper that enters the large frame and the recursive block that supplies a child context. [Large-frame caller and recursive context](live_lskdd_large_frame_caller_report.md)
