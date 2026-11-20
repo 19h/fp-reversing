@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery status output report](daemon_class_marker_output_report.md) traces the marker stored at S+0x804 B into a 4 B write at Q+0x10 B and the outer return. Six offline profiles distinguish the primary open failure, class skip and lock or redispatch failures. The higher-level consumer of the record field and its native correlation with the archived open remain unknown.
+
 The [discovery redispatch report](daemon_class_redispatch_report.md) identifies the copy of the saved context and marker. Only the nonnull, marker-unequal replay reacquires the cached lock and reaches a second primary class matching call. The other three controls store the replacement marker. Native reaching values and a second Mach exchange remain unknown.
 
 The [discovery status report](daemon_class_status_route_report.md) locates the `0xb306` outer phase producer and traces its post-cleanup dispatch. For a nonmatching discovery marker, a zero saved flag redispatches to the class gate and a nonzero flag copies the marker to another frame slot. The uninterrupted outer entry, a second lookup and archived caller attribution remain unknown.
