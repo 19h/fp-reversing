@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery record report](daemon_discovery_record_report.md) identifies the producer of S+0x6fb8 B as a record initializer. Its zero and nonzero field controls converge at the same conditional unlock adapter call. Native lock identity and any linkage to the emitter bytes or an IOKit request remain unknown.
+
 The [discovery cleanup report](daemon_discovery_cleanup_report.md) traces the marker consumer to a conditional free request or a later owner-state load. It locates four literal byte readers and one byte writer through S+0x1ba0 B. The output pointer’s first actual reader and linkage to the archived FairPlayIOKit open remain unknown.
 
 The [discovery owner report](daemon_discovery_owner_report.md) finds the emitter output pointer saved at S+0x1ba0 B and resolves the post-emitter dispatch on the encoded owner and a separate comparison word. The nonnull, unequal profile calls a private helper and forwards its result through the marker consumer. All four bounded replays preserve the emitted bytes. A continuous path to the flag reader or a Mach or IOKit request remains unknown.
