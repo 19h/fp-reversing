@@ -1,5 +1,7 @@
 # fairplayd network registry-property Mach transport
 
+The property lookup follow-up resolves direct, user-service and translated-process compatibility precedence before serialization. [Installed registry compatibility](live_iokit_matching_compatibility_report.md)
+
 The network identity helper at `0x10000425c` issues three direct calls to `IORegistryEntryCreateCFProperty`. Installed IOKit can issue three different Mach RPCs for this API. The binary route selected by the on-disk flag values uses `2889/2989` and can copy serialized bytes directly into the framework’s 2,048 B stack buffer. The archive contains zero headers for any of the three routes. Native invocation, selected runtime route and linkage to a FairPlayIOKit method remain unknown. [Network helper](daemon_network_identity_report.md) [Registry parent](live_iokit_registry_parent_report.md) [Compressed evidence](triage_evidence/live_iokit_registry_property_audit.json.zst)
 
 ## Daemon call sites

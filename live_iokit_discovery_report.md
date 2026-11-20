@@ -25,7 +25,7 @@ The installed serialization-flags cell `0x1eb1ee3f8` starts with bit 0 set. The 
 | Wrapper flag and serialized extent N | Emission | Request characteristics and iterator output |
 | --- | --- | --- |
 | Bit 0 set, N <= 4,095 B | 2881 at `0x184ebd3dc` | Inline bytes begin at +36 B. A u32 at +32 B gives N. The packed request is `36 B + round_up(N, 4 B)`. Reply writes iterator at `0x184ebd4b0`. |
-| Bit 0 clear, N <= 511 B | 2804 at `0x184f5e230` | Legacy inline form. Reply 2904 writes iterator at `0x184f5e304`. |
+| Bit 0 clear, N <= 511 B | 2804 at `0x184f5e230` | Legacy inline form. The framework success decoder writes an iterator at `0x184f5e304`. The installed kernel returns `kIOReturnUnsupported` in the status-only `2904` reply. [Installed registry compatibility](live_iokit_matching_compatibility_report.md) |
 | N above the selected inline limit | 2857 at `0x184f60898` | Complex 56 B request with one out-of-line region. Complex 52 B reply 2957 writes operation status and iterator at `0x184f6096c` and `0x184f60970`. |
 
 The archived matching request gives N = 64 B, so its length is `36 B + 64 B = 100 B`. Its inline data contains `IOProviderClass = com_apple_driver_FairPlayIOKit`. The normal inline matching path is O(N) for copying the serialized bytes. Parsing the fixed-size discovery reply and publishing its port name are O(1) in time and auxiliary storage.
