@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery client-state gate report](daemon_discovery_client_gate_report.md) matches the earlier 32 B client-object initializer to three field reads after scratch cleanup. Null and status-mismatch paths share a saved continuation, and a distinct alternate route reaches a pending 16 B allocation. Live object and transport provenance remain unknown.
+
 The [discovery pointer cleanup report](daemon_discovery_pointer_cleanup_report.md) resolves the nonzero pointer path to a pending free and both paths to the same 2,032 B scratch rewind. Detached source checks identify a 164 B allocation candidate and a compatible saved continuation. Both live reaching definitions remain unknown.
 
 The [discovery cache sealing report](daemon_discovery_cache_codec_report.md) identifies the cache-qualified branch as a 552 B in-place context sealer. It matches all retained constructor bytes and publishes the encoded reference before the control decrement and fallback unlock. The cleanup reaches a load from S+0x17a0 B. Four literal stores are candidate producers, and native transport attribution remains unknown.
