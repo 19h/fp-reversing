@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [archived IOKit task translation report](archived_iokit_task_translation_report.md) connects task-self `0x203` to request 2862 and the candidate bridge's host self-task send reference. It verifies the descriptor rewrite, kernel task comparison, accepted-task context and bridge memory-mirror boundary. The historical host descriptor and initializer outcome remain unknown.
+
 The [archived IOKit port retirement report](archived_iokit_open_retirement_report.md) joins the failed 2862/2962 open exchange to the next two guest releases and adjacent host ID 65 receives. It verifies the distinct namespace mappings and traces the candidate bridge registration, host emission and receive paths. The historical notification bodies and bridge process identity remain unknown.
 
 The [actual fallback-metadata report](userclient_fallback_metadata_report.md) composes the remaining protected header bytes, exact 0..4 B body bound and selected type0x6685 metadata. Zero tag publishes the initialized empty container to the actual saved caller, with suffix consumption explicitly bounded; nonzero tag reaches ordinary construction. Both retained predecessor modes certify the finite live-state interface. Other handlers, cleanup/construction, native epochs/PAC/transport and the outer return remain unknown; the full investigation remains active.

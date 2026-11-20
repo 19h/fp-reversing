@@ -16,7 +16,7 @@ Six guest message headers and their descriptors were decoded from the trace's he
 | Connection output | Null | Unknown in this exchange | Reply 2962 has a 52 B body and declares one descriptor. The guest descriptor name at +28 B is zero. |
 | Notification receive name | No guest delivery recorded | `0x1c03` | Lines 1744 and 1746 each record ID 65, 36 B, zero descriptors. |
 
-Request 2862 has an 80 B body. The destination uses `COPY_SEND` and the reply uses `MAKE_SEND_ONCE`. The OOL properties descriptor has zero address and extent and the connection type at +64 B is zero. The guest's reply contains the application result at +48 B. The Mach transport returns zero at line 1742 with trap PC `0x180547c20`. The guest and bridge observations establish the shape of the failed open. The historical provider return site remains unknown. [Current open path and two status channels](live_fairplay_iokit_open_report.md)
+Request 2862 has an 80 B body. The destination uses `COPY_SEND` and the reply uses `MAKE_SEND_ONCE`. The OOL properties descriptor has zero address and extent and the connection type at +64 B is zero. The guest's reply contains the application result at +48 B. The Mach transport returns zero at line 1742 with trap PC `0x180547c20`. The guest and bridge observations establish the shape of the failed open. The historical provider return site remains unknown. [Current open path and two status channels](live_fairplay_iokit_open_report.md) [Candidate owning-task translation](archived_iokit_task_translation_report.md)
 
 ```text
 1742  guest Mach trap returns success after complex reply 2962
