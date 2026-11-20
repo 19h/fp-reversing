@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed FairPlay user client inherits a null-returning direct-trap lookup. The Mach trap returns 0xe00002f0 when an ordinary admitted connection reaches that lookup. The three attached daemon slices instead bind the structure-method API, whose installed transport uses Mach 2865/2965. Native method delivery remains open. [Direct IOKit trap boundary](live_fairplay_direct_trap_report.md)
+
 The installed XPC receiver derives both the incoming dictionary token and the cached connection credential from the Mach audit trailer. A native anonymous control matched both tokens to independent kernel queries in both directions and confirmed that creating a reply preserves the original request's credential. The installed `adid` adapter reads that per-request credential. Native `fairplayd` application delivery remains unobserved. [Live XPC peer audit tokens](live_xpc_peer_tokens_report.md)
 
 The installed kernel audit binds Mach trap `-44`, task-info messages `3405/3505`, and BSD call `170` to task-token production and PID-version validation. Same-image and different-image exec controls retain the numeric PID and invalidate the preceding token for both code-signing status and CDHash. The original daemon peer transactions remain unobserved. [Live audit-token generation](live_audit_token_generation_report.md)
