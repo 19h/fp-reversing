@@ -33,7 +33,7 @@ The second interval followed the local displacement wrapper from `0x100de7958` t
 | `0x100de79c8` | `0x75 / 0xf57a` |
 | `0x100de1430` via the call at `0x100de7a8c` | `0xe7 / 0x19ad` |
 
-The nearby linear predecessor at `0x100de7744` cannot supply the fixture's W19 value through its straight-line path. It masks W24 with `0xa6c41f37` before setting W19 to W24 plus `0xc`. The necessary W24 value `0x19` requires the cleared bit `0x08`. The two other table routes into `0x100de7878` still require reaching-definition evidence. This gives a concrete constraint on any attempt to join the intervals.
+The nearby linear predecessor at `0x100de7744` cannot supply the fixture's W19 value through its straight-line path. It masks W24 with `0xa6c41f37` before setting W19 to W24 plus `0xc`. The necessary W24 value `0x19` requires the cleared bit `0x08`. A follow-up derives the distinct state carried by the early slot 2 branch. The other branch sites still require reaching-definition evidence. [Early continuation selector](daemon_rpc502_predecessor_report.md) This gives a concrete constraint on any attempt to join the intervals.
 
 ## Assumption register and verification
 
