@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The current kernel's `posix_spawn` and shared `execve` implementation set `AST_ARCADE` on the new thread after the same task checks. The return-to-user path clears that bit before calling the Arcade handoff. Native invocation and transaction correlation remain unknown. [Process-launch Arcade AST](live_arcade_ast_report.md)
+
 The current boot fileset retains the kernel proper's Arcade handoff over host slot 31. The installed daemon matches all 27 retained receiver and registration ranges. The report follows the one-way 41471 registration request, the 51471 endpoint transfer and the 61471 subscription call through separate port references. Native delivery remains unknown. [Current Arcade registration report](live_arcade_registration_report.md)
 
 The archived host-special slot 1 probe now has a source-backed attribution to libdispatch's task-voucher setup. The installed status-4 path reuses the original host name, and all five archived check-ins carry guest voucher `0xd03`. The pinned bridge clears voucher fields on export, while the historical host headers remain unknown. [Archived check-in voucher report](archived_checkin_voucher_report.md)
