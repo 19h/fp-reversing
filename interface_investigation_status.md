@@ -1,5 +1,7 @@
 # Active interface investigation
 
+A live log from the verifier's issuing thread identifies the missing-entitlement branch for ordinary FairPlayIOKit open. Installed bytes connect the driver's lookup through IOKit to the registered AMFI callback. The corresponding historical RAX branch remains unknown. [Native open admission](live_fairplay_open_admission_report.md)
+
 A native verifier recorded the five Mach request/reply pairs for FairPlayIOKit discovery and open. Open returned transport status zero, a null connection and application result `0xe00002c2`. All ten messages match the archived daemon exchange after masking task-local names. [Native IOKit message headers](live_iokit_mach_headers_report.md)
 
 The installed kernel publishes a receive right on the ordinary MIG construction path. A native verifier used one such reply queue during IOKit main-port acquisition, FairPlayIOKit class matching and iterator advancement. The sequence advanced by two, one and one respectively. [Kernel IOKit reply queue](live_iokit_reply_queue_report.md)

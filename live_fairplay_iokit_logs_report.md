@@ -1,5 +1,7 @@
 # FairPlayIOKit open and method diagnostics
 
+A later live stream captured the missing-entitlement diagnostic during a standalone verifier's open. Its driver UUID, return offset and thread ID match the installed site and the verifier's calling thread. [Native open admission](live_fairplay_open_admission_report.md)
+
 Three log sites in the installed FairPlayIOKit driver cover two initializer failures and a provider error returned from selector 26. The selected native log window contains 96 retained events, including 80 attributed to the PID on the live `lskdd` client attachment and 16 to the PID on the `adid` attachment. None names the driver image or matches those three diagnostics. The log query supplies no open request, method call or reply that can be paired with a native client. [Client-class and registry audit](live_fairplay_client_class_report.md) [Earlier native XPC observation](fairplay_native_xpc_observation_report.md)
 
 ## Emission sites on the installed build
