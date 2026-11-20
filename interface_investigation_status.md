@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The archived discovery and open exchanges use one guest reply name across five operations and four request destinations. Installed IOKit obtains its reply name from the issuing thread's MIG cache. A native verifier confirmed independent cached receive rights and their explicit retirement across two simultaneous threads. [IOKit MIG reply-port cache](live_iokit_mig_reply_port_report.md)
+
 Three driver log sites identify specific open-initializer and selector 26 failures. A fixed native window retained events for the live adid and lskdd attachment PIDs, with zero driver diagnostics and no paired native transaction. [FairPlay IOKit diagnostic coverage](live_fairplay_iokit_logs_report.md)
 
 The installed VMM sysctl reads a property on the IODeviceTree defaults node and normalizes it to a four-byte result. The live named and numeric reads agree at zero. The archived primary lookup is observed while the historical query value remains unknown. [FairPlay VMM context](live_fairplay_vmm_context_report.md)

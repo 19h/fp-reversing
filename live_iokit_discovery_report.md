@@ -60,3 +60,5 @@ High impact for separating the host, main, iterator, service and reply names and
 The kernel follow-up resolves the iterator right in reply 2981, the service right in 2902, and the current FairPlayIOKit registry entry returned by an ordinary verifier. [Kernel IOKit matching](live_iokit_matching_report.md)
 
 The main-port audit traces the boot-time publication, host getter and version reply to their installed kernel sites and records the verifier task’s send user references. [IOKit main-port publication](live_iokit_main_port_report.md)
+
+The reply-port audit traces the installed thread-local cache and retirement paths, and follows guest reply name `0x507` across all five archived discovery and open exchanges. [IOKit MIG reply port](live_iokit_mig_reply_port_report.md)
