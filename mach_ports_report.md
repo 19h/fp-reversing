@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+The archived slot 1 lookup returns a Mach-successful MIG error. The installed libdispatch fallback retains the ordinary host name for task-voucher creation. Five subsequent launchd requests carry guest voucher `0xd03`, distinct from their destination and reply names. Historical host voucher fields remain unknown. [Archived check-in voucher report](archived_checkin_voucher_report.md)
+
 The current cache has one chain pointer to the host-special getter. Its three verified veneer callers ask for slots 2, 2 and 1. The slot 34 publisher and RPC 700 receiver remain unknown. [RPC 700 dependency scan](live_rpc700_dependency_scan_report.md)
 
 Trap -50 allocates the user thread's special reply port with a combined send and receive name in its task namespace and binds the object at thread +0x450. The Mach2 synchronous wait verifies that binding before linking to the channel destination. [Kernel special reply path](live_adid_xpc_special_reply_kernel_report.md)

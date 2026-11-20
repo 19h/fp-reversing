@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The archived host-special slot 1 probe now has a source-backed attribution to libdispatch's task-voucher setup. The installed status-4 path reuses the original host name, and all five archived check-ins carry guest voucher `0xd03`. The pinned bridge clears voucher fields on export, while the historical host headers remain unknown. [Archived check-in voucher report](archived_checkin_voucher_report.md)
+
 The managed-app RPC 700 search now covers the static shared-cache dependency closure of all four installed executable slices. Zero conventional ID 700 tables pass across 15,890 sections. The current cache host-special getter callers select slots 2, 2 and 1, leaving the slot 34 publisher and receiver open. [RPC 700 dependency scan](live_rpc700_dependency_scan_report.md)
 
 The installed kernel path for the ordinary ADID synchronous exchange now joins trap -50, the current task receive name, thread +0x450 and the optional channel destination link before the receive queue. FairPlayIOKit kernel RPC uses a separate reply-space binding at thread +0x3f0. Native delivery remains open. [Kernel special reply path](live_adid_xpc_special_reply_kernel_report.md)
