@@ -86,6 +86,8 @@ The bytes and numeric handles in these controls are synthetic premises. No nativ
 
 ## Mach-name flow and exact API-call locations
 
+The [installed registry-parent transport audit](live_iokit_registry_parent_report.md) resolves the API-internal sends for the parent iterator and its first entry. It also traces the only archived iterator pair to FairPlayIOKit class discovery.
+
 | Name channel | Original call sites | Machine channel / output | Subsequent local use |
 | --- | --- | --- | --- |
 | IOKit main port | `0x1000040d8`, `0x100004140`, `0x100004184` | `IOMainPort(0,&name32)`; H+0, H+12, H+12 | Four-byte name passed as W0 to matching helpers |
@@ -104,7 +106,7 @@ The bytes and numeric handles in these controls are synthetic premises. No nativ
 
 The current SDK makes `mach_port_t`, `io_object_t`, `io_iterator_t` and `io_registry_entry_t` four-byte names. It documents matching dictionaries as consumed by `IOServiceGetMatchingServices`, returned iterator/service/parent handles as caller-release objects, and created property containers as requiring `CFRelease`. Those are API contracts; this report verifies local call sites, not native right retirement. No `mach_port_deallocate` call for the main-port outputs appears in these helpers. [NI2-NI4]
 
-These are API output and consumption locations. No direct Mach send/receive instruction or message routine appears in the two complete helpers; API-internal emission sites, destination identities, receive rights and dispositions are unknown. The interfaces concern general IOKit registry/network state. No FairPlayIOKit provider match, user-client connection or daemon-kext message is established by this helper. [NI2-NI4]
+These are API output and consumption locations. The two helpers invoke IOKit through imports. The installed registry-parent transport audit supplies its API-internal emission sites, dispositions and right roles. Native destination identities and receive names remain unknown. The interfaces concern general IOKit registry/network state. No FairPlayIOKit provider match, user-client connection or daemon-kext message is established by this helper. [NI2-NI4]
 
 ## Original stub and caller accounting
 
