@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery comparison flag report](daemon_class_marker_predicate_report.md) identifies a source producer for the pointer at S+0xc28 B. The consumer writes the W9 inequality flag to S+0x202f B and uses the status in a second dispatch. Eight split replays cover both outcomes of the companion comparison. Continuous native reach and IPC result attribution remain unknown.
+
 The [enclosing-frame discovery report](daemon_class_marker_frame_report.md) follows P+0x28 B into S+0xf48 B and through a saved continuation pointer to the comparison at `0x1005cfbf4`. At the tested phase, three recovered markers reach the unequal continuation with a second load of the status into W9. A fourth control reaches the equal arm. Native attribution and the link to a client reply remain unknown.
 
 The [discovery status caller report](daemon_class_marker_caller_report.md) recovers the call from the parent at `0x10046fc5c` and follows the returned status from Q+0x10 B through W23 to P+0x28 B. It verifies the copy and no-copy continuations through the same free request and ordinary return.
