@@ -1,5 +1,7 @@
 # Current IOKit Mach request and reply boundaries
 
+The installed kernel can emit trace markers around the MIG stub call using the Sandbox index assigned to request 2865. The two markers bracket the generic method stub and precede reply queueing. [Installed MIG trace IDs](live_iokit_mig_trace_report.md)
+
 The installed FairPlay client exposes its method selector table through the legacy external-method path below. The separate direct IOKit trap resolves to inherited lookup methods that return a null descriptor on this class. [Direct IOKit trap boundary](live_fairplay_direct_trap_report.md)
 
 The installed arm64e dyld cache has UUID `8b1e17c6-72d6-3017-91a4-916022e3612e`, also returned by the dyld runtime query in the analysis process. Its IOKit image has UUID `82be1de5-91c4-3152-b63b-81db4c5e7992`, and its libsystem_kernel image has UUID `780a6c1f-be02-34cc-84dd-00e05f61c89b`. That identifies the framework bytes inspected here. The current `fairplayd` task's mapped cache UUID and numeric Mach port names remain unknown. [Live registry observation](daemon_iokit_native_registry_report.md)

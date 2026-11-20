@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Installed MIG tracing builds its event IDs from Sandbox filter indices. The registered index for IOKit method request 2865 is 117, giving dispatch markers 0xff0001d5 and 0xff0001d6 after registration. The markers omit the selector and reply result. Runtime trace collection remains open. [Installed MIG trace IDs](live_iokit_mig_trace_report.md)
+
 The installed FairPlay user client inherits a null-returning direct-trap lookup. The Mach trap returns 0xe00002f0 when an ordinary admitted connection reaches that lookup. The three attached daemon slices instead bind the structure-method API, whose installed transport uses Mach 2865/2965. Native method delivery remains open. [Direct IOKit trap boundary](live_fairplay_direct_trap_report.md)
 
 The installed XPC receiver derives both the incoming dictionary token and the cached connection credential from the Mach audit trailer. A native anonymous control matched both tokens to independent kernel queries in both directions and confirmed that creating a reply preserves the original request's credential. The installed `adid` adapter reads that per-request credential. Native `fairplayd` application delivery remains unobserved. [Live XPC peer audit tokens](live_xpc_peer_tokens_report.md)
