@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed VMM sysctl reads a property on the IODeviceTree defaults node and normalizes it to a four-byte result. The live named and numeric reads agree at zero. The archived primary lookup is observed while the historical query value remains unknown. [FairPlay VMM context](live_fairplay_vmm_context_report.md)
+
 The inherited FairPlay open constructor takes its client class name from the provider property, resolves the registered metaclass and allocates a 248 B user-client object. Read-only class counts bracketed three visible attachments of that class. [FairPlay user-client class](live_fairplay_client_class_report.md)
 
 The boot fileset supplies the FairPlayIOKit personality and the live IOService registry places its instance under IOResources. The installed matcher evaluates the IOKit resource, and the alternate Avp bundle declares a VirtIO provider absent from this registry snapshot. [FairPlayIOKit service personality](live_fairplay_service_personality_report.md)

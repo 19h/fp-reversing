@@ -46,3 +46,5 @@ The audit checks four modeled query outcomes through both helper routes and the 
 | High | Follow the bit-clear constructor return after either lookup. The release paths and saved Avp-to-primary continuation have been recovered. [Class fallback](daemon_selector26_class_retry_report.md) |
 | High | Correlate the actual sysctl result, matching dictionary, service identity and successful IOKit connection and method exchange on one matched system. |
 | Medium | Attribute other writers of both context-state bytes and the VMM cache, including teardown or initialization on concurrent routes. |
+
+The installed VMM context audit identifies the kernel query handler, verifies its live four-byte result and bounds the attribution of the historical sysctl calls. [FairPlay VMM context](live_fairplay_vmm_context_report.md)
