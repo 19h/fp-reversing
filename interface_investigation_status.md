@@ -1,5 +1,7 @@
 # Active interface investigation
 
+Live `adid`, `fairplayd` and `lskdd` registry creators each export the ordinary FairPlayIOKit access entitlement as true. Their DER exports match the measured executable slices' signed slots byte for byte, and the XML dictionaries match their signed counterparts. The original open-time entitlement objects and native method delivery remain unknown. [Live client entitlement provenance](live_fairplay_client_entitlements_report.md)
+
 A live log from the verifier's issuing thread identifies the missing-entitlement branch for ordinary FairPlayIOKit open. Installed bytes connect the driver's lookup through IOKit to the registered AMFI callback. The corresponding historical RAX branch remains unknown. [Native open admission](live_fairplay_open_admission_report.md)
 
 A native verifier recorded the five Mach request/reply pairs for FairPlayIOKit discovery and open. Open returned transport status zero, a null connection and application result `0xe00002c2`. All ten messages match the archived daemon exchange after masking task-local names. [Native IOKit message headers](live_iokit_mach_headers_report.md)

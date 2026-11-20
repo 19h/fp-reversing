@@ -2,6 +2,8 @@
 
 A public type-zero `IOServiceOpen` call from a standalone verifier reached the FairPlayIOKit initializer's missing-entitlement branch. The driver logged the diagnostic on the verifier's calling thread between two markers around the open. The public call returned `0xe00002c2` and a null connection. All three pre-open Security framework queries on the verifier's own task returned no value and no error. This identifies the native verifier's rejection site. The historical RAX daemon exchange has the same application result, while its specific kernel branch remains unknown. [Native Mach headers](live_iokit_mach_headers_report.md) [Archived open](live_fairplay_iokit_open_report.md)
 
+The kernel's live entitlement exports for the attached `adid`, `fairplayd` and `lskdd` processes contain the ordinary FairPlayIOKit access key with Boolean value true. The separate snapshot binds their exports to the signed slots in the loaded executable slices. [Live client entitlement provenance](live_fairplay_client_entitlements_report.md)
+
 ## From the owning task to AMFI
 
 Installed sites are unslid. The auditor pins kernel UUID `90195379-954d-3ca3-baac-327341f14211` and boot collection SHA-256 `0389ee48091668ef1f3f5bb9f85e1b020e442451f9321df695ba48e49cc64126`. The live kext list confirms FairPlayIOKit UUID `316464f8-eade-30ca-938e-2f430b1ed5bc` and AppleMobileFileIntegrity (AMFI) UUID `7f801ed8-bced-3049-a63e-8db71f0ba765`. [Installed open routing](live_fairplay_iokit_open_report.md) [Apple XNU entitlement lookup](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/iokit/Kernel/IOUserClient.cpp#L1482-L1511)

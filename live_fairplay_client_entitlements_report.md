@@ -1,0 +1,40 @@
+# Live entitlement provenance for FairPlayIOKit clients
+
+On macOS build `26C5035r`, the kernel exported `com.apple.private.FairPlayIOKitUserClient.access = true` as a Boolean for the three processes named as creators of live FairPlayIOKit user-client entries. The live DER blobs exactly matched the signed entitlement slots in the processes' loaded `arm64e` executable slices. The XML exports decoded to the same complete dictionaries as the corresponding signed XML. This observation adds current process entitlement evidence to the previously recovered FairPlayIOKit-to-AMFI lookup. [Native open entitlement lookup](live_fairplay_open_admission_report.md) [Audit receipt](triage_evidence/live_fairplay_client_entitlements_audit.json.zst)
+
+## Registry and process identity
+
+The 2026-11-20 sample used kernel UUID `90195379-954d-3ca3-baac-327341f14211`, dyld cache UUID `8b1e17c6-72d6-3017-91a4-916022e3612e` and FairPlayIOKit service entry `0x1000002fb`. The audit bracketed the reads with the same registry creator rows, process start fields, executable names and code-signing identities. Each live offset and 20 B CDHash matched the same installed fat-binary slice. The `codesign` command also reported the corresponding CDHash for that architecture. [Creator and owner publication](live_iokit_open_owner_report.md) [Earlier live slice identification](fairplay_live_slice_identity_report.md)
+
+| Creator | PID | User-client entry | Slice offset (B) | Loaded CodeDirectory hash |
+| --- | ---: | --- | ---: | --- |
+| `adid` | 910 | `0x10000130b` | `0x38c000` | `c4d7fe39264e1fa72202e0d10c19d2014668f0c0` |
+| `fairplayd` | 3903 | `0x100001702` | `0x340000` | `3e40588fde6998b2782a2f48bed6e2473f851dfa` |
+| `lskdd` | 88947 | `0x10026cc8c` | `0x124000` | `889f3cbb6ca7cf137820822e65589b0ead73d4e0` |
+
+All three reported `CS_OPS_STATUS` value `0x26015b11`, with `CS_VALID`, `CS_ENTITLEMENTS_VALIDATED`, `CS_PLATFORM_BINARY` and `CS_SIGNED` set. `CS_OPS_VALIDATION_CATEGORY` returned `1` (`PLATFORM`). The non-root observer had a different effective UID from each daemon. Its own status was `0x22000201` with category `10` (`NONE`). Its two entitlement queries returned success and left the sentinel-filled 8 B buffers untouched. The three daemon queries each produced a length response and then a populated blob. [XNU code-signing flags and categories](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/osfmk/kern/cs_blobs.h#L33-L153) [XNU query authorization](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/bsd/kern/kern_proc.c#L3387-L3443)
+
+## Entitlement export and signed bytes
+
+`csops` takes a PID, operation, output pointer and byte count. For operations `7` (XML) and `16` (DER), each 8 B daemon probe returned `-1` with `errno = 34` (`ERANGE`) and a header of zero followed by the required size as a big-endian 32-bit integer. Reissuing the call with exactly that many bytes succeeded. The returned blob starts with big-endian magic `0xfade7171` for XML or `0xfade7172` for DER, followed by the same total byte count, including the 8 B header. XNU source routes XML through the process code-signing blob's entitlement object and AMFI's XML export. The DER path queries the code-signing blob and can fall back to AMFI's transmuted representation. Byte equality establishes the content of these exports. The live DER producer branch is unknown. [XNU operations](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/bsd/sys/codesign.h#L36-L69) [Buffer ABI](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/bsd/kern/kern_proc.c#L3339-L3364) [Export routing](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/bsd/kern/kern_proc.c#L3519-L3643)
+
+For each executable, the first 20 B of SHA-256 over CodeDirectory slot `0` matched the live CDHash. The audit read each 32 B special-slot hash at CodeDirectory-relative offset `hashOffset - slot_index * 32 B`. SHA-256 over the complete embedded XML blob (slot `5`) and DER blob (slot `7`) matched those hashes. This verifies that both entitlement blobs are bound to the CodeDirectory identified by the running process. [XNU signature format and CodeDirectory fields](https://github.com/apple-oss-distributions/xnu/blob/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea/osfmk/kern/cs_blobs.h#L77-L210)
+
+| Creator | Live XML (B) | Signed XML (B) | Equal decoded XML keys and values | Live and signed DER (B) | DER bytes equal |
+| --- | ---: | ---: | ---: | ---: | --- |
+| `adid` | 304 | 328 | 2 keys | 105 | Yes |
+| `fairplayd` | 712 | 770 | 10 keys | 405 | Yes |
+| `lskdd` | 1,771 | 1,928 | 21 keys | 1,173 | Yes |
+
+Each live XML blob includes one terminal NUL and each signed XML blob contains zero NUL bytes. Lengths and hashes include the header and the terminal NUL where present. Dictionary comparison excludes that terminator and normalizes both parsed dictionaries to binary plists. In all three dictionaries, the ordinary FairPlayIOKit access key is present and true, while `com.apple.private.ProvInfoIOKitUserClient.access` and `com.apple.private.FairPlayIOKitUserClient.Virtual.access` are absent. The registry entries have no `IOUserClientEntitlements` property, even though the creating processes' kernel-exported dictionaries contain the ordinary key. The registry property and the client process entitlement are separate data sources. [Registry owner evidence](live_iokit_open_owner_report.md) [Installed task-to-AMFI lookup](live_fairplay_open_admission_report.md)
+
+## Assumptions and scope
+
+| Assumption and dependent result | Falsification probe |
+| --- | --- |
+| The creator PID denotes the same process throughout sampling. The entitlement result is attributed to its registry entry. | Compare creator PID and entry IDs before and after. Re-read process start fields, executable, signing flags, validation category, CDHash and slice offset. This is a bracketed snapshot with coarse start-field resolution. |
+| The on-disk selected slice corresponds to the live code-signing identity. Its slots supply the signed comparison data. | Require the installed slice offset, the kernel and `codesign` CDHashes, a recomputed CodeDirectory hash and both recomputed entitlement special-slot hashes to agree. |
+| The successful blob response is present and complete. The observed dictionary and DER bytes describe that result. | Check the 8 B length-probe response, reissue with the exact size, validate the returned magic and length and compare against the signed slots. Run the same probes on the observer's own process as the empty-output control. |
+| The attachment, signature and export describe the sampled processes. Attribution to the original opens would require transaction evidence. | Correlate a native Apple-client open request and reply with the issuing task and initializer result. The original open-time AMFI object, native method delivery, and the historical RAX admission branch remain unknown. |
+
+High impact for current creator, executable and entitlement attribution. Medium impact for choosing a native observation target with an existing attachment. The live probes read metadata and do not invoke FairPlayIOKit methods. The receipt retains lengths, hashes, key presence and the three targeted values. Run `python3 -B triage_evidence/audit_live_fairplay_client_entitlements.py` on the pinned build with the repository's Python dependencies. For total executable bytes B and exported entitlement bytes E, local parsing and hashing take O(B + E) time. With fixed client count, sequential file reads and the receipt take O(Bmax + Emax) working space, where Bmax and Emax are the largest executable and paired export sizes. These bounds exclude operating-system queries and the independent `codesign` commands. [Auditor](triage_evidence/audit_live_fairplay_client_entitlements.py) [Compressed receipt](triage_evidence/live_fairplay_client_entitlements_audit.json.zst)
