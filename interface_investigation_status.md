@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The boot-time MIG table maps Arcade registration request 51471 to the kernel registration stub. The generic Mach send worker uses the request’s reply right to submit status message 51571 to the daemon queue. Native delivery remains unknown. [Arcade registration dispatch and status reply](live_arcade_registration_reply_report.md)
+
 The current kernel's `posix_spawn` and shared `execve` implementation set `AST_ARCADE` on the new thread after the same task checks. The return-to-user path clears that bit before calling the Arcade handoff. Native invocation and transaction correlation remain unknown. [Process-launch Arcade AST](live_arcade_ast_report.md)
 
 The current boot fileset retains the kernel proper's Arcade handoff over host slot 31. The installed daemon matches all 27 retained receiver and registration ranges. The report follows the one-way 41471 registration request, the 51471 endpoint transfer and the 61471 subscription call through separate port references. Native delivery remains unknown. [Current Arcade registration report](live_arcade_registration_report.md)
