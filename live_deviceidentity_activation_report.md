@@ -35,7 +35,7 @@ The service constant at `0x1e1738988` resolves through a cached `CFString` to `c
 
 The arm64e `mobileactivationd` slice names `MobileActivationMacOSDaemon` as conforming to `MobileActivationMacOSProtocol`. Its connection delegate at `0x100018228` sets the exported interface at `0x10001827c`, exports the daemon object at `0x100018288`, assigns the peer's XPC queue at `0x1000182a8` and resumes the accepted peer at `0x1000182b8`.
 
-The public method implementation at `0x100020da4` checks caller support at `0x100020f9c` and the SPI entitlement at `0x100020fc8`. Requests for the listed device identifier or manifest OIDs take a further device-identifiers entitlement check at `0x100021094`. The admitted branch calls the internal certificate method at `0x100021240`; its Objective-C implementation starts at `0x10001c024`. The internal issuance and onward transport remain to be joined.
+The public method implementation at `0x100020da4` checks caller support at `0x100020f9c` and the SPI entitlement at `0x100020fc8`. Requests for the listed device identifier or manifest OIDs take a further device-identifiers entitlement check at `0x100021094`. The admitted branch calls the internal certificate method at `0x100021240`. Its Objective-C implementation starts at `0x10001c024` and dispatches the issuance worker. [Server issuance and network transport](live_mobileactivation_certificate_report.md)
 
 | Return layer | Incoming data and location |
 | --- | --- |

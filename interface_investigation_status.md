@@ -1,6 +1,8 @@
 # Active interface investigation
 
-The [DeviceIdentity activation report](live_deviceidentity_activation_report.md) matches the framework’s certificate issuance request to the privileged mobileactivationd Mach service, its exported method and its reply block. The libxpc wire message, live port names and downstream server transport remain unknown.
+The [mobileactivationd certificate report](live_mobileactivation_certificate_report.md) traces server-side issuance through the XML request, NSURLSession task start, response trust branch and XPC completion. A conditional server-side public-key lookup reaches the AppleKeyStore user client. Native invocation and any link from this request to FairPlayIOKit remain unknown.
+
+The [DeviceIdentity activation report](live_deviceidentity_activation_report.md) matches the framework’s certificate issuance request to the privileged mobileactivationd Mach service, its exported method and its reply block. The libxpc wire message and live port names remain unknown.
 
 The [FPDI DeviceIdentity caller report](live_fpdi_deviceidentity_callers_report.md) identifies two protected call sites that pass five result addresses, and resolves their table lookup under explicit reaching-state assumptions. It locates matching initialization and consumer blocks. A continuous same-frame route and linkage to a Mach or IOKit request remain unknown.
 
