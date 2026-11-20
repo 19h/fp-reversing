@@ -35,3 +35,5 @@ These four local branch forms use IA discriminator `0xcb78` and require the inpu
 | A write to S+0xa130 B reaches `0x10080b528` in the same frame. This is necessary for that stored-pointer path. | Identify the reaching writer and compare its index and live X20 with the fresh-open call arguments. |
 
 High impact for distinguishing the open's output pointer from the later method destination load. Medium impact for identifying a possible stored-pointer source at S+0xa130 B. The incoming X20 value, full native route and Mach port names remain unknown. [Compressed instruction and fixup receipt](triage_evidence/live_lskdd_selector19_open_output_audit.json.zst)
+
+A follow-up establishes the reaching X20 on the route from selector 19 output-buffer preparation. The additional producer supplies the required index without changing the post-open route. [Selector 19 open copyout](live_lskdd_selector19_open_copyout_report.md)
