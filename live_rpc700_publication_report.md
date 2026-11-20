@@ -1,5 +1,7 @@
 # RPC 700 host-slot publication and live receiver candidates
 
+The follow-on dependency scan extends the executable-side search to 801 declared shared-cache images. It resolves the three closest ID 700 table candidates and refreshes the current cache host-special getter and setter reference counts. [RPC 700 dependency scan](live_rpc700_dependency_scan_report.md)
+
 On macOS build `26C5035r`, FairPlayIOKit's alternate constructor route still selects host slot 34 for RPC 700. The installed kernel's slot setter accepts a variable index from Mach request 413. A scan of the current fileset found seven direct transfers to the three setter entries, including four with fixed slots 1, 2, 3 and 10. The installed SDK labels slot 34 `HOST_MANAGEDAPPDISTD_PORT`. Both managed-app jobs were running with all four declared XPC endpoints active, and launchd printed no host-slot association for them. The slot's live object, publisher and RPC 700 receiver remain unknown. [Constructor mode selection](live_fairplay_constructor_mode_report.md) [Current host getter and lookup limits](live_host_special_lookup_report.md)
 
 The boot fileset SHA-256 is `0389ee48091668ef1f3f5bb9f85e1b020e442451f9321df695ba48e49cc64126`. Its embedded kernel UUID `90195379-954d-3ca3-baac-327341f14211` matches the running kernel, and its FairPlayIOKit UUID is `316464f8-eade-30ca-938e-2f430b1ed5bc`. All source addresses in this report are unslid.

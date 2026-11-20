@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+The current cache has one chain pointer to the host-special getter. Its three verified veneer callers ask for slots 2, 2 and 1. The slot 34 publisher and RPC 700 receiver remain unknown. [RPC 700 dependency scan](live_rpc700_dependency_scan_report.md)
+
 Trap -50 allocates the user thread's special reply port with a combined send and receive name in its task namespace and binds the object at thread +0x450. The Mach2 synchronous wait verifies that binding before linking to the channel destination. [Kernel special reply path](live_adid_xpc_special_reply_kernel_report.md)
 
 The ordinary ADID synchronous exchange uses a channel send right for the request and a thread special reply receive port for the response. Libdispatch emits both messages at `0x1855b487c` and receives the reply at `0x1855b0d50`. The provider moves the request-derived send-once right through the reply dictionary. Native names and delivery remain unknown. [Ordinary ADID synchronous Mach transport](live_adid_xpc_sync_transport_report.md)
