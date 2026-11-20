@@ -1,5 +1,7 @@
 # fairplayd legacy Mach transport to com.apple.adid
 
+The [send-once follow-up](adid_send_once_notification_report.md) follows the selected receiver disposal through Mach trap -18 to conditional kernel notification ID 71. The sender interprets a delivered notification as `MIG_SERVER_DIED` (-308), and both private sender profiles return outer status `0xffff5028`.
+
 The installed provider receive path is now resolved statically. A delivered 1200 reaches the libxpc notification demultiplexer, which destroys the ordinary user-space request without emitting 1300. Native pairing and the sender-visible outcome remain unknown. [ADID listener follow-up](adid_legacy_mach_receive_report.md)
 
 The destination of the `fairplayd` Mach 1200/1300 wrapper is the cached `com.apple.adid` send name on the recovered XPC-error path. The daemon calls the wrapper at `0x100e23104` and emits through `mach_msg` at `0x100de9fac`. If the first attempt returns `MACH_SEND_INVALID_DEST`, the daemon calls `bootstrap_look_up("com.apple.adid")` at `0x100e2320c` and retries at `0x100e232dc` with the returned name. Both transports use the same source-produced 20 B buffer on this path. The installed provider declares that service and has a verified XPC listener. A native receiver for the legacy Mach envelope remains unknown. [Previous transport census](daemon_iokit_retirement_report.md) [Installed XPC pairing](live_fairplay_adid_ipc_report.md)

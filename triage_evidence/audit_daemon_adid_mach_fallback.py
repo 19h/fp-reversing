@@ -120,11 +120,13 @@ class Fallback(Replay):
                               repeated_extent_bytes=repeated, ndr_hex=ndr.hex(), status=hex(status),
                               payload_sha256=sha256(bytes.fromhex(data['bytes_hex'])).hexdigest()))
         if status == 0:
-            # This reply exists only in the emulator. The application bytes are opaque.
-            response = struct.pack('<7IQII8sI', 0x80001200, 56, 0, REPLY_NAME, 0, 1300, 1,
-                                   RESPONSE_DATA, 0x01000100, 4, NDR_BYTES, 4)
-            self.fixture(ptr, response)
+            self.fixture(ptr, self.reply_bytes())
         return status
+
+    def reply_bytes(self):
+        # This reply exists only in the emulator. The application bytes are opaque.
+        return struct.pack('<7IQII8sI', 0x80001200, 56, 0, REPLY_NAME, 0, 1300, 1,
+                           RESPONSE_DATA, 0x01000100, 4, NDR_BYTES, 4)
 
     def wrapper_import(self, pc, insn):
         stub, name = WRAPPER_IMPORTS[pc]

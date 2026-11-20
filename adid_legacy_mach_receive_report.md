@@ -1,5 +1,7 @@
 # ADID listener disposition of legacy Mach message 1200
 
+The [send-once follow-up](adid_send_once_notification_report.md) identifies the conditional kernel notification path and the daemon's `MIG_SERVER_DIED` status after ID 71. It records the reply port's constructor, emission and queue sites, and conditions on the live port state.
+
 On macOS build `26C5035r`, the installed `com.apple.adid` XPC listener registers libxpc's `_xpc_connection_mach_event` as its Mach-channel callback. A delivered request with ID 1200 enters libxpc's Mach notification demultiplexer before XPC decoding. For an ordinary user-space sender with a nonzero audit-trailer PID, libxpc destroys the received message before assembling a reply. The provider's XPC request adapter is outside this path. A native delivery of the legacy request and the sender's resulting wakeup or return status remain unknown. [Read-only audit](triage_evidence/audit_adid_legacy_mach_receive.py) [Original-byte receipt](triage_evidence/adid_legacy_mach_receive_audit.json.zst)
 
 ```text

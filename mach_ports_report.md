@@ -1,6 +1,8 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
-The [ADID legacy receive report](adid_legacy_mach_receive_report.md) identifies the separately acquired service send and receive rights, the per-attempt send-once reply right, the sender emission at `0x100de9fac`, and receiver disposal at `0x184bc697c`. The installed libxpc listener source provides no application reply 1300 on this route. Numeric names and any kernel notification on the reply port remain unknown.
+The [ADID send-once notification report](adid_send_once_notification_report.md) locates the kernel notification emitter at `0xfffffe000bd111b0`, identifies its send-once destination as the original reply port object, and checks the sender's ID 71 parser. Native endpoint state and delivery remain unknown.
+
+The [ADID legacy receive report](adid_legacy_mach_receive_report.md) identifies the separately acquired service send and receive rights, the per-attempt send-once reply right, the sender emission at `0x100de9fac`, and receiver disposal at `0x184bc697c`. The installed libxpc listener source provides no application reply 1300 on this route. Native numeric names remain unknown.
 
 Subsequent lookup-result evidence: The [schema lookup-result report](userclient_schema_lookup_result_report.md) composes the actual token541 packet with the shared helper, saved-register frame and this caller's status/found/payload consumers. Helper SUCCESS permits payload copy before the outer found-bit test. First occupied-match, empty-candidate and NULL-array profiles distinguish a non-NULL payload frontier from three raw error publications. Table contents and authenticated return remain explicit premises; native table/PAC/transport identity and whole-operation completion remain unknown. Earlier boundaries below retain their historical scopes.
 
