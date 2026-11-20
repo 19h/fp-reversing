@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery status caller report](daemon_class_marker_caller_report.md) recovers the call from the parent at `0x10046fc5c` and follows the returned status from Q+0x10 B through W23 to P+0x28 B. It verifies the copy and no-copy continuations through the same free request and ordinary return. Native attribution and the next consumer of P+0x28 B remain unknown.
+
 The [discovery status output report](daemon_class_marker_output_report.md) traces the marker stored at S+0x804 B into a 4 B write at Q+0x10 B and the outer return. Six offline profiles distinguish the primary open failure, class skip and lock or redispatch failures. The higher-level consumer of the record field and its native correlation with the archived open remain unknown.
 
 The [discovery redispatch report](daemon_class_redispatch_report.md) identifies the copy of the saved context and marker. Only the nonnull, marker-unequal replay reacquires the cached lock and reaches a second primary class matching call. The other three controls store the replacement marker. Native reaching values and a second Mach exchange remain unknown.
