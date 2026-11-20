@@ -35,6 +35,8 @@ The Mach layouts are derived from installed instructions, and native verificatio
 
 The installed `adid` slice matches the serving process's CodeDirectory and retains the authenticated call instructions at `0x100169100` and `0x1001691c8` identified by the prior receiver audit as the Security task creation and lookup sites. The return-pointer test at `0x1001691cc` precedes the computed branch at `0x1001691f0`. The kernel export is now evidence that the key is absent from the running `fairplayd`'s inputs to a native Security lookup. The actual value returned inside `adid` for a `fairplayd` peer, a native request or reply, and its linkage to a FairPlayIOKit transaction remain unknown. [Receiver lookup and classifier](adid_receiver_report.md) [Modeled CoreADI round trip](fairplay_adid_otp_roundtrip_report.md)
 
+The installed receive path and the native anonymous control establish how the Mach audit token reaches the per-request dictionary getter. In the control, that token matches the same kernel task query used here and survives creation of the corresponding reply. An original `adid` transaction remains necessary to bind a specific token to its entitlement decision. [Live XPC peer audit tokens](live_xpc_peer_tokens_report.md)
+
 ## Assumption register
 
 | Assumption and dependent result | Falsification probe |

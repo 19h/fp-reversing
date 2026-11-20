@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed XPC receiver derives both the incoming dictionary token and the cached connection credential from the Mach audit trailer. A native anonymous control matched both tokens to independent kernel queries in both directions and confirmed that creating a reply preserves the original request's credential. The installed `adid` adapter reads that per-request credential. Native `fairplayd` application delivery remains unobserved. [Live XPC peer audit tokens](live_xpc_peer_tokens_report.md)
+
 The installed kernel audit binds Mach trap `-44`, task-info messages `3405/3505`, and BSD call `170` to task-token production and PID-version validation. Same-image and different-image exec controls retain the numeric PID and invalidate the preceding token for both code-signing status and CDHash. The original daemon peer transactions remain unobserved. [Live audit-token generation](live_audit_token_generation_report.md)
 
 The running `akd` process from the earlier native ADID peer logs returns `adi-client` as `CFString` when Security.framework consumes its kernel-issued task audit token. The running `fairplayd` omits the key in both kernel exports. Installed bytes connect the Security lookup to DER operation 16 and locate the observer's task-name and token-query emission sites. A native `fairplayd` peer lookup and an associated FairPlayIOKit transaction remain unknown. [Live ADID peer entitlement](live_adid_peer_entitlement_report.md)
