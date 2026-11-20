@@ -26,3 +26,5 @@ After open succeeds, the separate status path sets W22 to `0x98a` on the recover
 | The acquisition flag is zero and the relevant IOKit calls succeed. This qualifies the proposed fresh open and its copyout. | Correlate the open output with the connection name passed to the method and the destination in the ordinary Mach exchange. |
 
 High impact for establishing the static alias between the copyout and the method destination. Medium impact for identifying the two buffer clears and the shared control-flow blocks. Native copyout values and the caller path into buffer preparation remain unverified. [Compressed instruction and fixup receipt](triage_evidence/live_lskdd_selector19_open_copyout_audit.json.zst)
+
+The current IOKit decoder writes the caller output on an accepted complex reply, including when that reply carries a provider error. Transport and routine errors leave the cell untouched. [IOKit open reply validation and copyout](live_iokit_open_reply_copyout_report.md)

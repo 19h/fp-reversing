@@ -63,3 +63,5 @@ QG1–QG3 cover factual call sites, conditions, three request emission sites and
 | High | Join a passive current `fairplayd` method observation to the registry entry, actual connection and reply names, and a selector 26 result. |
 | High | Establish the current provider's successful descriptor and data path below the outer method. |
 | Medium | Observe the current queue versus direct handoff choice and the connection and reply right lifetime. |
+
+The open reply decoder audit resolves the name copyout, application versus routine status, and reply-port helper calls. [IOKit open reply validation and copyout](live_iokit_open_reply_copyout_report.md)
