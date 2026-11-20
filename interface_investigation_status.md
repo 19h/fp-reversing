@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The supplied daemon and both installed ARM slices have no direct IOKit interest-registration binding. All printed guest Mach headers and bridge records in the archived run show no interest traffic before exit after the failed open. The installed kernel maps registration requests 2850 and 2869 to distinct dispatch marker pairs. [fairplayd interest-registration evidence](daemon_iokit_interest_link_report.md)
+
 An IOKit interest registration on an individual registry entry delivered Mach event 53 for two native IOSurface controls. The descriptor preserved the client registry ID across close. Releasing the registration after receipt prevented callback dispatch. FairPlay-specific registration and delivery remain unknown. [IOKit termination notifications](live_iokit_interest_notification_report.md)
 
 The installed Mach port description query converts a task-local IOKit connection name into a class and registry entry ID. Two simultaneous native IOSurface controls each matched a different provider child. A production FairPlay join still needs a valid observation of the daemon's namespace and live connection. [IOKit port descriptions](live_iokit_port_description_report.md)

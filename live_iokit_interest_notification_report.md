@@ -1,5 +1,7 @@
 # IOKit user-client termination notifications
 
+The daemon follow-up checks archived wire records, both installed ARM import tables and the installed trace markers for requests 2850 and 2869. Native FairPlay-specific registration is unknown. [Daemon interest-registration evidence](daemon_iokit_interest_link_report.md)
+
 On macOS build `26C5035r`, an interest registration on an individual IOKit user-client registry entry can deliver a termination event that identifies the entry. Two native controls opened fresh `IOSurfaceRoot` connections and observed Mach message 53 after close. The descriptor in each event resolved to the same 64-bit registry entry ID found through its connection before close. Whether `fairplayd` registers for this event, and whether a particular FairPlay user client emits one, remain unknown. [Connection-to-registry join](live_iokit_port_description_report.md) [FairPlay connection retirement](live_fairplay_connection_retirement_report.md)
 
 ## Registration and delivery
