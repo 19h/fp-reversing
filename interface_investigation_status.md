@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [class-selection caller report](daemon_selector26_class_caller_report.md) resolves `0x100636dfc` to the class routine, derives phase `0xe8d` from the caller record, and follows its return word through the original branch. Three offline paths cover primary lookup, Avp-to-primary fallback and a context-based skip. The upstream native frame and archived open attribution remain unknown.
+
 The [post-registration environment report](daemon_registration_environment_report.md) resolves the first source-attributed entropy and clock calls, the 624-word seed and refill paths, and their two pending reads. The archived syscall record cannot attribute either route to the FairPlayIOKit open.
 
 The [post-registration state gate report](daemon_registration_state_gate_report.md) recovers the two missing startup lookup pointers, the generation-counter comparison, and the ensuing local CAS or table-update routes. Seven private cases identify the successors at `0x10008a6a0` and `0x10000c2cc`. A join to the archived FairPlayIOKit open remains unknown.
