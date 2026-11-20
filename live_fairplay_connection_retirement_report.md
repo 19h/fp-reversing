@@ -1,6 +1,6 @@
 # FairPlayIOKit connection retirement on macOS 26C5035r
 
-The installed kernel registers a no-senders callback for the type-`0x27` IOKit connection exported by the open RPC. The callback rechecks the port's send-right count and make-send generation, then removes the eligible IOMachPort association before dispatching the FairPlay user client's `clientDied`. Explicit close enters `clientClose` directly on its selected branch. Both can reach the same termination request. No native FairPlay retirement was observed. [Connection publication and close](live_fairplay_connection_report.md)
+The installed kernel registers a no-senders callback for the type-`0x27` IOKit connection exported by the open RPC. The callback rechecks the port's send-right count and make-send generation, then removes the eligible IOMachPort association before dispatching the FairPlay user client's `clientDied`. Explicit close enters `clientClose` directly on its selected branch. Both can reach the same termination request. Task teardown can also call the death handler after removing the last registered task owner. Native FairPlay retirement remains unverified. [Task owner teardown](live_iokit_task_owner_teardown_report.md) [Connection publication and close](live_fairplay_connection_report.md)
 
 ```text
 Last kernel send right released
