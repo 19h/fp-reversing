@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [archived IOKit port retirement report](archived_iokit_open_retirement_report.md) joins the failed 2862/2962 open exchange to the next two guest releases and adjacent host ID 65 receives. It verifies the distinct namespace mappings and traces the candidate bridge registration, host emission and receive paths. The historical notification bodies and bridge process identity remain unknown.
+
 The [actual fallback-metadata report](userclient_fallback_metadata_report.md) composes the remaining protected header bytes, exact 0..4 B body bound and selected type0x6685 metadata. Zero tag publishes the initialized empty container to the actual saved caller, with suffix consumption explicitly bounded; nonzero tag reaches ordinary construction. Both retained predecessor modes certify the finite live-state interface. Other handlers, cleanup/construction, native epochs/PAC/transport and the outer return remain unknown; the full investigation remains active.
 
 The [fallback-parser report](userclient_fallback_parser_report.md) composes the actual protected buffer through staged-allocation outcomes. NULL restores all 14 source-observed input bytes before a new buffer-release request; non-NULL initializes the new container and decodes its first BE32 tag from protected offsets 0..3. Ordinary-return, surviving-buffer and writable-input premises remain explicit; complete parsing, native effects and authenticated outer return remain unknown.
