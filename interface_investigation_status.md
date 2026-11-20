@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The boot fileset supplies the FairPlayIOKit personality and the live IOService registry places its instance under IOResources. The installed matcher evaluates the IOKit resource, and the alternate Avp bundle declares a VirtIO provider absent from this registry snapshot. [FairPlayIOKit service personality](live_fairplay_service_personality_report.md)
+
 The installed kernel publishes the IOKit main port in host-special slot 3. Replies 305 and 2977 supply the main send right and the compiled server version. A native verifier observed two user references under one name after two ordinary acquisitions. [IOKit main-port publication](live_iokit_main_port_report.md)
 
 The installed matching and property handlers derive their compatibility branch from translated x86-64 process state and the IOServiceCompatibility metaclass instance count. The legacy matching request 2804 returns unsupported. [Installed registry compatibility](live_iokit_matching_compatibility_report.md)
