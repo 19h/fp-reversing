@@ -52,3 +52,5 @@ Both are children of the discovered service `0x1000002fb`. The earlier `lskdd` a
 | The final return preserves the same client pointer from construction through owner registration and export. This qualifies the selected static route. | Pair the owner record, final output pointer and reply descriptor on a successful native transaction. |
 
 High impact for distinguishing registry attribution from Mach right ownership, and for linking the admitted task and provider initialization to later connection publication. Medium impact for explaining the locking metadata and two-way owner index. The audit rechecks 50 installed instruction words, six authenticated client slots, the 48 B typed allocation, six literals and the two live registry-to-signature associations. [Auditor](triage_evidence/audit_live_iokit_open_owner.py) [Compressed receipt](triage_evidence/live_iokit_open_owner_audit.json.zst)
+
+The preceding class-selection audit follows the provider property and metaclass lookup through allocation, before this report’s attachment and owner-registration stages. [FairPlay user-client class](live_fairplay_client_class_report.md)

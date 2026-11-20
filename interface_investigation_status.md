@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The inherited FairPlay open constructor takes its client class name from the provider property, resolves the registered metaclass and allocates a 248 B user-client object. Read-only class counts bracketed three visible attachments of that class. [FairPlay user-client class](live_fairplay_client_class_report.md)
+
 The boot fileset supplies the FairPlayIOKit personality and the live IOService registry places its instance under IOResources. The installed matcher evaluates the IOKit resource, and the alternate Avp bundle declares a VirtIO provider absent from this registry snapshot. [FairPlayIOKit service personality](live_fairplay_service_personality_report.md)
 
 The installed kernel publishes the IOKit main port in host-special slot 3. Replies 305 and 2977 supply the main send right and the compiled server version. A native verifier observed two user references under one name after two ordinary acquisitions. [IOKit main-port publication](live_iokit_main_port_report.md)
