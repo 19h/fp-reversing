@@ -2296,3 +2296,5 @@ The lskdd selector 19 open-output audit distinguishes the authenticated fresh-ac
 The lskdd selector 19 copyout audit finds the same connection-cell address at the fresh open and method destination under the recovered frame state. Two output-buffer clears supply the preceding transfers. Native invocation and port values remain unverified. [Selector 19 open copyout](live_lskdd_selector19_open_copyout_report.md)
 
 The IOKit open reply audit joins the complex 2962 descriptor to the caller connection store and distinguishes provider failure from transport and routine failure. It also resolves the reply-name retention and deallocation paths. [IOKit open reply validation and copyout](live_iokit_open_reply_copyout_report.md)
+
+The IOKit discovery audit connects main-port acquisition, the once-only version probe, matching and iteration to their Mach emission and reply-copyout sites. The archived wire records establish the guest names and matching dictionary length. Native name and service identity remain unknown. [IOKit discovery and rights](live_iokit_discovery_report.md)

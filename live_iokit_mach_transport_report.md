@@ -65,3 +65,5 @@ QG1–QG3 cover factual call sites, conditions, three request emission sites and
 | Medium | Observe the current queue versus direct handoff choice and the connection and reply right lifetime. |
 
 The open reply decoder audit resolves the name copyout, application versus routine status, and reply-port helper calls. [IOKit open reply validation and copyout](live_iokit_open_reply_copyout_report.md)
+
+The discovery audit locates the host main-port, server-version, matching and iteration calls that precede the open. It maps three reply send descriptors and the once-only version's influence on matching format. [IOKit discovery and rights](live_iokit_discovery_report.md)
