@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The Arcade subscription reply audit identifies the executable file offset in request 61471 and follows reply 61571 through kernel validation. The launch handler returns, retries endpoint acquisition or calls task termination according to the status and decision. Native delivery and task outcome remain unknown. [Arcade subscription outcome](live_arcade_subscription_outcome_report.md)
+
 The boot-time MIG table maps Arcade registration request 51471 to the kernel registration stub. The generic Mach send worker uses the request’s reply right to submit status message 51571 to the daemon queue. Native delivery remains unknown. [Arcade registration dispatch and status reply](live_arcade_registration_reply_report.md)
 
 The current kernel's `posix_spawn` and shared `execve` implementation set `AST_ARCADE` on the new thread after the same task checks. The return-to-user path clears that bit before calling the Arcade handoff. Native invocation and transaction correlation remain unknown. [Process-launch Arcade AST](live_arcade_ast_report.md)
