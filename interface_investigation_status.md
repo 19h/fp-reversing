@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [FPDI DeviceIdentity completion report](live_fpdi_deviceidentity_completion_report.md) resolves the callback signature, semaphore handoff, status values and five optional outputs. The direct prefetch caller passes no output pointers. An authenticated table entry targets the same wrapper, and its incoming selector and provider-side transport remain unknown.
+
 The [FPDI startup report](live_fpdi_startup_report.md) joins the installed launch configuration and named sandbox to the daemon entry, listener setup and scheduled DeviceIdentity certificate path. The profile explicitly admits the FairPlayIOKit class. Runtime port names and the matching driver request remain unknown.
 
 The [FPDI allocation report](live_fpdi_allocation_report.md) resolves the selector 26 predecessor and XPC worker helper to a shared arena allocator, with conditional scheduling and VM mapping calls. The reaching arena state and native results remain unknown.

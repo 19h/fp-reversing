@@ -43,7 +43,7 @@ The launchd activity uses maintenance priority, requires network connectivity an
 | `0x10000248c` | Calls `0x100000d40` with mode 0 and a 4 B state output. The helper checks `BAAScheduledPrefetchAbsoluteTime` and the current time before dispatching further work. |
 | `0x100002548` | Unregisters the activity when mode 0 returns zero and writes state 2. |
 
-The due-work branch at `0x100000dfc` enters `0x100000e44`. That routine calls `0x100001130` with its first mode argument set to 1 and can call it again with 0. The latter function checks `DeviceIdentityIsSupported` at `0x10000117c`, prepares a queue and completion block, issues `DeviceIdentityIssueClientCertificateWithCompletion` at `0x1000013dc`, and waits on a semaphore at `0x1000013e8`. The wait uses all ones in X1. The certificate provider's subsequent IPC and any linkage to the selector 26 candidate are unknown.
+The due-work branch at `0x100000dfc` enters `0x100000e44`. That routine calls `0x100001130` with its first mode argument set to 1 and can call it again with 0. The latter function checks `DeviceIdentityIsSupported` at `0x10000117c`, prepares a queue and completion block, issues `DeviceIdentityIssueClientCertificateWithCompletion` at `0x1000013dc`, and waits on a semaphore at `0x1000013e8`. The wait uses all ones in X1. The certificate provider's subsequent IPC and any linkage to the selector 26 candidate are unknown. [Completion and output ABI](live_fpdi_deviceidentity_completion_report.md)
 
 ## Assumption register
 
