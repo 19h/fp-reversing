@@ -17,7 +17,7 @@ The auditor enumerates all 469,313 possible starts of a 256 B window in the 469,
 
 ## Predecessor and continuation
 
-Under assumption F1, the producer at `0x1000748fc` saves the table at FP−200 B, writes its X7 input to SP+56 B, and calls `0x10020b5f0` with X0=16 B. The ordinary nonnull path makes a second call to the same helper with X0=32 B and reuses the same ordered byte tables for a third call to that helper. The third result is stored at offset 24 B in the object returned by the second call. This object reaches `0x100017b8c` in X7, where the code loads that pointer. The third call's X0 is a computed word. Its meaning and the helper's implementation are outside this result. [Other caller of the helper](live_fpdi_xpc_report.md)
+Under assumption F1, the producer at `0x1000748fc` saves the table at FP−200 B, writes its X7 input to SP+56 B, and calls `0x10020b5f0` with X0=16 B. The ordinary nonnull path makes a second call to the same helper with X0=32 B and reuses the same ordered byte tables for a third call to that helper. The third result is stored at offset 24 B in the object returned by the second call. This object reaches `0x100017b8c` in X7, where the code loads that pointer. The third call's X0 is a computed word. The subsequent audit resolves the helper to the daemon's shared arena allocator. [Allocation audit](live_fpdi_allocation_report.md)
 
 | Original branch PC | Selected PC | Condition or data transfer |
 | --- | --- | --- |

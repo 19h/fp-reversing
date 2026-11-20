@@ -27,7 +27,7 @@ The worker loads a pool base of `0x1005e7c40` and computes the function table ba
 | `0x1001f5108` | Local byte fill at `0x10020bc88` | X0=SP+0x2f8, W1=0, X2=32 B. Clears the span from SP+0x2f8 through SP+0x317 |
 | `0x1001f51bc` | Local helper at `0x1001fb0ac` | X0=FP-0x98. Higher-level role unknown |
 | `0x1001f5228` | `xpc_dictionary_get_audit_token` | X0=event, X1=SP+0x2f8. Reads audit metadata before the following size-taking calls |
-| `0x1001f5288` | Local helper at `0x10020b5f0` | X0=128 B. The result check selects `0x100096130` if null or `0x100015bf4` if nonnull |
+| `0x1001f5288` | Shared arena allocation wrapper at `0x10020b5f0` ([audit](live_fpdi_allocation_report.md)) | X0=128 B. The result check selects `0x100096130` if null or `0x100015bf4` if nonnull |
 | `0x10001b120` | Same size-taking helper | Reached through the first nonnull route. X0=112 B. The result selects `0x1000968d0` if null or `0x100071970` if nonnull |
 | `0x1000719b4`, `0x1000719c0`, `0x1000719c8` | Nonnull result initializer | Writes at result offsets +0, +4, +0x48, +0x4c and +0x50 |
 
