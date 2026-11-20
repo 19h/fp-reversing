@@ -2276,3 +2276,5 @@ The installed selector 18 return audit confirms the kernel's separate W0 result 
 The lskdd large-frame initializer calls a write-locked OS transaction helper. Two offline cases trace creation or refresh of the transaction and increment a separate counter before unlocking. Both return through the same initializer epilogue. The reaching selector 19 connection remains unknown. [lskdd transaction acquisition](live_lskdd_large_frame_transaction_report.md)
 
 The lskdd large-frame caller audit identifies a recursive entry through a wrapper that exchanges a stack adjustment through X1 and a separate status through the child context. Two wrapper-entry cases return without visiting selector 19. [lskdd large-frame caller](live_lskdd_large_frame_caller_report.md)
+
+The lskdd recursive parent audit finds static writers for both child state words, resolves the preparatory call to a 32 B copy, and verifies the return branch over child status and a word read from the adjusted stack. Continuous reaching definitions and the selector 19 native connection remain open. [lskdd recursive parent state](live_lskdd_recursive_parent_state_report.md)

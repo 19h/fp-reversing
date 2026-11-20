@@ -33,7 +33,7 @@ Let S be the parent SP in the call block and C be `X29 - 0xe8`, passed in X0. Fo
 | `0x1008d5964`–`0x1008d596c` | X1 result | Reads the published 64-bit value and adds it to SP. This consumer identifies the result as a stack adjustment in bytes. |
 | `0x1008d5970`–`0x1008d597c` | C+0x2c B | Reads the child status and compares it with `0x2ee02eab`. |
 
-The mask, addition and subtraction at `0x1008d583c`–`0x1008d5844` compute XOR with the low 32 bits of the immediate in X12. The resulting residue agrees with the decoder in the initializer. This identifies the sources of the recursive entry's decoded words. The upstream producers of S+0x9574 B and S+0x3b8c B remain unknown.
+The mask, addition and subtraction at `0x1008d583c`–`0x1008d5844` compute XOR with the low 32 bits of the immediate in X12. The resulting residue agrees with the decoder in the initializer. This identifies the sources of the recursive entry's decoded words. A follow-up identifies static writers for S+0x9574 B and S+0x3b8c B and resolves the return dispatch. Their continuous route to the call remains open. [Recursive parent state and return](live_lskdd_recursive_parent_state_report.md)
 
 ## Offline verification
 
