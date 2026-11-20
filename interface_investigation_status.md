@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [daemon IOKit call-site capture](daemon_iokit_callsite_capture_report.md) joins a fresh, stock emulated discovery and open to six original daemon call instructions. It identifies the `IOMainPort` producer, the open at `0x100478bb0`, and both subsequent releases. The open returned a null connection and application status `0xe00002c2`. The historical caller, exact provider failure branch and successful method transport remain unknown.
+
 The [discovery client-state gate report](daemon_discovery_client_gate_report.md) matches the earlier 32 B client-object initializer to three field reads after scratch cleanup. Null and status-mismatch paths share a saved continuation, and a distinct alternate route reaches a pending 16 B allocation. Live object and transport provenance remain unknown.
 
 The [discovery pointer cleanup report](daemon_discovery_pointer_cleanup_report.md) resolves the nonzero pointer path to a pending free and both paths to the same 2,032 B scratch rewind. Detached source checks identify a 164 B allocation candidate and a compatible saved continuation. Both live reaching definitions remain unknown.
