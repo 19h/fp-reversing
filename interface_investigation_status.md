@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery emitter report](daemon_discovery_emitter_report.md) resolves the unequal arm to the private byte emitter and follows its 16 B output, completion word and zero stack adjustment. It also identifies the reader of S+0x202f B and its two conditional continuations. The continuous path into that reader and IPC linkage remain unknown.
+
 The [discovery comparison flag report](daemon_class_marker_predicate_report.md) identifies a source producer for the pointer at S+0xc28 B. The consumer writes the W9 inequality flag to S+0x202f B and uses the status in a second dispatch. Eight split replays cover both outcomes of the companion comparison. Continuous native reach and IPC result attribution remain unknown.
 
 The [enclosing-frame discovery report](daemon_class_marker_frame_report.md) follows P+0x28 B into S+0xf48 B and through a saved continuation pointer to the comparison at `0x1005cfbf4`. At the tested phase, three recovered markers reach the unequal continuation with a second load of the status into W9. A fourth control reaches the equal arm. Native attribution and the link to a client reply remain unknown.
