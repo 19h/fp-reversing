@@ -16,6 +16,8 @@ The addresses below are unslid. The auditor checks cache UUID `8b1e17c6-72d6-301
 
 The discovery stubs and extended open call the reply-name getter before assembling the Mach header. In the open stub, `0x184ebdc20` gets the local name, `0x184ebdc30` stores the service and reply names together at message +8 B, and `0x184ebdc6c` emits 2862. Header bits `0x80001513` request COPY_SEND (19) for the service and MAKE_SEND_ONCE (21) for the reply. Each send uses the thread's receive right to make a send-once right for that exchange. The connection name returned in a successful open resides in the reply's descriptor. [IOKit discovery](live_iokit_discovery_report.md) [Open transport and copyout](live_iokit_open_reply_copyout_report.md) [Mach dispositions](triage_evidence/xnu_osfmk_mach_message.h)
 
+The kernel-side follow-up resolves receive-right publication for the constructor and measures the cached queue's sequence number across a native FairPlayIOKit discovery. [Kernel reply queue](live_iokit_reply_queue_report.md)
+
 In the open stub, selected send-side transport failures call `_mig_put_reply_port` at `0x184ebdca0`. Other nonzero transport returns call `_mig_dealloc_reply_port` at `0x184ebdcf0`. The archived open exchange completed its transport with status zero and decoded a null connection and provider result `0xe00002c2`. On the installed decoder the equivalent provider failure follows complex reply copyout, with the cached reply name eligible for later reuse. [Open transport and copyout](live_iokit_open_reply_copyout_report.md)
 
 ## Archived request and reply census

@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed kernel publishes a receive right on the ordinary MIG construction path. A native verifier used one such reply queue during IOKit main-port acquisition, FairPlayIOKit class matching and iterator advancement. The sequence advanced by two, one and one respectively. [Kernel IOKit reply queue](live_iokit_reply_queue_report.md)
+
 The archived discovery and open exchanges use one guest reply name across five operations and four request destinations. Installed IOKit obtains its reply name from the issuing thread's MIG cache. A native verifier confirmed independent cached receive rights and their explicit retirement across two simultaneous threads. [IOKit MIG reply-port cache](live_iokit_mig_reply_port_report.md)
 
 Three driver log sites identify specific open-initializer and selector 26 failures. A fixed native window retained events for the live adid and lskdd attachment PIDs, with zero driver diagnostics and no paired native transaction. [FairPlay IOKit diagnostic coverage](live_fairplay_iokit_logs_report.md)
