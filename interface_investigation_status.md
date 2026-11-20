@@ -1,6 +1,8 @@
 # Active interface investigation
 
-The [discovery status caller report](daemon_class_marker_caller_report.md) recovers the call from the parent at `0x10046fc5c` and follows the returned status from Q+0x10 B through W23 to P+0x28 B. It verifies the copy and no-copy continuations through the same free request and ordinary return. Native attribution and the next consumer of P+0x28 B remain unknown.
+The [enclosing-frame discovery report](daemon_class_marker_frame_report.md) follows P+0x28 B into S+0xf48 B and through a saved continuation pointer to the comparison at `0x1005cfbf4`. At the tested phase, three recovered markers reach the unequal continuation with a second load of the status into W9. A fourth control reaches the equal arm. Native attribution and the link to a client reply remain unknown.
+
+The [discovery status caller report](daemon_class_marker_caller_report.md) recovers the call from the parent at `0x10046fc5c` and follows the returned status from Q+0x10 B through W23 to P+0x28 B. It verifies the copy and no-copy continuations through the same free request and ordinary return.
 
 The [discovery status output report](daemon_class_marker_output_report.md) traces the marker stored at S+0x804 B into a 4 B write at Q+0x10 B and the outer return. Six offline profiles distinguish the primary open failure, class skip and lock or redispatch failures. The higher-level consumer of the record field and its native correlation with the archived open remain unknown.
 

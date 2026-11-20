@@ -28,10 +28,11 @@ PHASE_MASK = 0xffffffff
 
 
 class CallerProbe(GateProbe):
-    def __init__(self, marker, tail_control):
+    def __init__(self, marker, tail_control, parent=PARENT):
         super().__init__()
         self.marker = marker
         self.tail_control = tail_control
+        self.parent = parent
         self.clobber = 0
         self.branch_slots = []
         self.child_record = None
@@ -45,10 +46,10 @@ class CallerProbe(GateProbe):
         self.u.mem_write(address, (value & mask).to_bytes(width, 'little'))
 
     def write_hook(self, u, access, address, size, value, user):
-        if PARENT <= address < PARENT + 0x40:
+        if self.parent <= address < self.parent + 0x40:
             pc = u.reg_read(ar.UC_ARM64_REG_PC)
-            self.parent_stores.append({'pc': hex(pc), 'offset_bytes': address - PARENT,
-                                       'size_bytes': size, 'value': hex(value & PHASE_MASK)})
+            self.parent_stores.append({'pc': hex(pc), 'offset_bytes': address - self.parent,
+                                       'size_bytes': size, 'value': hex(value & ((1 << (size * 8)) - 1))})
         if RESULT_BUFFER <= address < RESULT_BUFFER + 16:
             assert u.reg_read(ar.UC_ARM64_REG_PC) == COPY_START + 0xc and size == 1
             self.copy_offsets.append(address - RESULT_BUFFER)
@@ -103,6 +104,8 @@ class CallerProbe(GateProbe):
         if pc in (TAIL_DISPATCH, COPY_START, PARENT_STORE):
             assert self.reg(23) == self.marker
             self.checkpoints.append({'kind': 'tail', 'site': hex(pc), 'status_w23': hex(self.reg(23))})
+        if pc == PARENT_STORE:
+            assert self.reg(8) == self.parent
         if pc == HALT:
             assert u.reg_read(ar.UC_ARM64_REG_SP) == SP
             self.stop('boundary', pc=hex(pc))
