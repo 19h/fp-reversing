@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [post-registration environment report](daemon_registration_environment_report.md) resolves the first source-attributed entropy and clock calls, the 624-word seed and refill paths, and their two pending reads. The archived syscall record cannot attribute either route to the FairPlayIOKit open.
+
 The [post-registration state gate report](daemon_registration_state_gate_report.md) recovers the two missing startup lookup pointers, the generation-counter comparison, and the ensuing local CAS or table-update routes. Seven private cases identify the successors at `0x10008a6a0` and `0x10000c2cc`. A join to the archived FairPlayIOKit open remains unknown.
 
 The [registration continuation report](daemon_registration_continuation_report.md) follows the startup status gate to a later predecessor after successful service registration. A modeled final check-in failure instead releases the earlier fpsd CF object. Correlation with the archived FairPlayIOKit open remains unknown.
