@@ -38,7 +38,7 @@ If the record supplies a 16 B extent and the connection names a FairPlayIOKit cl
 
 ## Candidate caller record
 
-An address-taken block at `0x1000503c4` prepares a record at FP−128 B and passes its address in X0 to an authenticated call at `0x1000504a0`. It writes the encoded dispatch word and extent at record +0 B and +8 B, and pairs the pointer from SP+56 B with X21 at +16 B and +24 B. The return continuation loads the result from +4 B at `0x1000504a8`. Its call modifier `0x132e` is consistent with the adapter's authenticated function slot. Its reaching X26 table and bank definitions remain unknown.
+An address-taken block at `0x1000503c4` prepares a record at FP−128 B and passes its address in X0 to an authenticated call at `0x1000504a0`. It writes the encoded dispatch word and extent at record +0 B and +8 B, and pairs the pointer from SP+56 B with X21 at +16 B and +24 B. The return continuation loads the result from +4 B at `0x1000504a8`. Its call modifier `0x132e` is consistent with the adapter's authenticated function slot. A subsequent audit identified the unique ordered pair of file-backed tables compatible with this call at the recovered table base and its candidate producer. The complete reaching path remains unknown. [Caller audit](live_fpdi_selector26_caller_report.md)
 
 For an 8 B-aligned record the original caller arithmetic produces the same address-derived K as the callee. The decoded dispatch input would be the block's incoming W20 plus `0x202`, modulo `2^32`. The decoded extent would be W28 plus `((W20 << 4) XOR 0x6ec5b6ca)` plus `0x85785c8b`, modulo `2^32`. This identifies the upstream definitions needed to establish a particular dispatch and extent. The instructions in this block alone do not determine those inputs.
 

@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [FPDI selector 26 caller report](live_fpdi_selector26_caller_report.md) identifies the two stack-table producers and checks the uniquely compatible ordered pair for the candidate call. It traces conditional predecessor and result branches in the installed image. The complete same-frame route, IOKit connection origin and native request remain unknown.
+
 The [RAX selector 26 memory report](rax_iokit_selector26_memory_report.md) joins the recovered inline method ABI to the bridge's explicit out-of-line address fixups. The embedded pointer survives a projected request and names memory in the host task retained at open. Host backing and payload copy-back into the guest remain unknown.
 
 The [archived IOKit reply import report](archived_iokit_reply_import_report.md) joins the four host replies on `0x1603` to the guest's `0x507` replies and compares the locally assembled IOKit-main reply. The candidate normal import preserves the null connection and inline application result. All five guest trailers are 8 B, and the historical host audit bytes and exact kernel failure site remain unknown.
