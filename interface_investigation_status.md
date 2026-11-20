@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [successful inline metadata reply report](live_iokit_metadata_reply_report.md) traces a four-byte selector 22 or 23 result directly into the kernel reply buffer, through 64 B to 56 B header packing and through the framework's validation and daemon copy. It records the exact 2965 fields and count writeback. Native enqueue, right translation and paired delivery remain unknown.
+
 The [current FairPlayIOKit metadata report](live_fairplay_metadata_report.md) recaptures the first two method candidates after the observed daemon's open. In the runtime-matched collection, ordinary base-provider selector 22 returns `0x4c0b0000` and selector 23 returns `0x1f8`. Both publish four data bytes through the same synchronous method path. Live caller, connection and reply correlation remain unknown.
 
 The [daemon IOKit call-site capture](daemon_iokit_callsite_capture_report.md) joins a fresh, stock emulated discovery and open to six original daemon call instructions. It identifies the `IOMainPort` producer, the open at `0x100478bb0`, and both subsequent releases. The open returned a null connection and application status `0xe00002c2`. The historical caller, exact provider failure branch and successful method transport remain unknown.
