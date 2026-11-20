@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [registration continuation report](daemon_registration_continuation_report.md) follows the startup status gate to a later predecessor after successful service registration. A modeled final check-in failure instead releases the earlier fpsd CF object. Correlation with the archived FairPlayIOKit open remains unknown.
+
 The [mobileactivationd certificate report](live_mobileactivation_certificate_report.md) traces server-side issuance through the XML request, NSURLSession task start, response trust branch and XPC completion. A conditional server-side public-key lookup reaches the AppleKeyStore user client. Native invocation and any link from this request to FairPlayIOKit remain unknown.
 
 The [DeviceIdentity activation report](live_deviceidentity_activation_report.md) matches the framework’s certificate issuance request to the privileged mobileactivationd Mach service, its exported method and its reply block. The libxpc wire message and live port names remain unknown.
