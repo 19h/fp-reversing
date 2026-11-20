@@ -1,5 +1,7 @@
 # Active interface investigation
 
+An IOKit interest registration on an individual registry entry delivered Mach event 53 for two native IOSurface controls. The descriptor preserved the client registry ID across close. Releasing the registration after receipt prevented callback dispatch. FairPlay-specific registration and delivery remain unknown. [IOKit termination notifications](live_iokit_interest_notification_report.md)
+
 The installed Mach port description query converts a task-local IOKit connection name into a class and registry entry ID. Two simultaneous native IOSurface controls each matched a different provider child. A production FairPlay join still needs a valid observation of the daemon's namespace and live connection. [IOKit port descriptions](live_iokit_port_description_report.md)
 
 The installed Mach trap entry can record task-local destination and reply names for an ordinary IOKit call. Its exit reports the transport result. Correlating both records with the 2865 MIG markers can link the names to generic method dispatch. Registry-client attribution, selector and IOKit result remain open. [Installed Mach trap trace](live_mach_trap_trace_report.md)

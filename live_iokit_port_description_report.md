@@ -1,5 +1,7 @@
 # IOKit connection names and registry entry IDs
 
+The registry ID also joins the original connection to the service descriptor received in an IOKit termination notification. Native verification covered two IOSurface controls. [Termination notification registration and delivery](live_iokit_interest_notification_report.md)
+
 On build `26C5035r`, `mach_port_kobject_description` returns the class and 64-bit registry entry ID for an IOKit user-client connection described in an authorized task namespace. A native verifier opened two simultaneous `IOSurfaceRoot` connections in its own task and matched each description to a different child of the provider. This establishes how to join a recorded Mach destination name to an IOKit client object when a valid namespace observation is available. The production `fairplayd` port-to-client join remains unknown. [Mach trap trace names](live_mach_trap_trace_report.md) [FairPlay registry creator attribution](live_iokit_open_owner_report.md)
 
 ## Request, type translation and reply
