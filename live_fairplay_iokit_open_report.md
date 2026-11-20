@@ -15,6 +15,8 @@ The supplied file was rehashed and both headers and their descriptors were decod
 
 The live cache's `IOServiceOpen` export at `0x184ebdb74` calls its extended stub at `0x184ebdba4`. The stub obtains the reply name at `0x184ebdc20`, writes the service send name and local reply name at `0x184ebdc30` and enters Mach transport at `0x184ebdc6c`. The installed cache addresses describe the current system. The trace gives only the historical guest trap PC and message record, so its exact daemon call site remains unknown. [Current Mach transport](live_iokit_mach_transport_report.md)
 
+A standalone native verifier captured 2862/2962 at the same installed call site. Its public open returned `0xe00002c2` and a null connection. The native and archived open messages match outside the defined port-name fields. [Native message capture](live_iokit_mach_headers_report.md)
+
 The next two successful guest deallocations release references to the service and iterator names. Each is adjacent to a host ID 65 receive. The candidate bridge shows how host name retirement could produce this sequence. The notification bodies and receive-map state remain unknown. [Archived IOKit port retirement](archived_iokit_open_retirement_report.md)
 
 ## Current kernel routing and open results

@@ -30,7 +30,7 @@ The verifier retired its existing cached name and obtained a fresh receive right
 | `IOIteratorNext` returns a service | 4 | 1 | 2802/2902 |
 | Release service, iterator and main send rights | 4 | 0 | None |
 
-Each sample reports queue limit 5, one receive user reference, type `0x20000`, zero queued messages, zero send-once rights and no send rights. The cached name remains the same through all six samples. After retirement the verifier's lookup returned `KERN_INVALID_NAME` (15). The native counter supplies counts on the verifier's queue. The pair IDs come from the installed stubs and agree with the RAX archive. Production `fairplayd` queue state, the live internal label selected for the verifier, and native FairPlayIOKit open and method delivery remain unknown. [Installed discovery stubs and archived pairs](live_iokit_discovery_report.md) [Registry matching and service identity](live_iokit_matching_report.md)
+Each sample reports queue limit 5, one receive user reference, type `0x20000`, zero queued messages, zero send-once rights and no send rights. The cached name remains the same through all six samples. After retirement the verifier's lookup returned `KERN_INVALID_NAME` (15). The counter supplies counts on the verifier's queue. A separate native capture confirmed the pair IDs and recorded an ordinary open returning a null connection. Production `fairplayd` queue state, the live internal label selected for the verifier and successful native method delivery remain unknown. [Native message capture](live_iokit_mach_headers_report.md) [Registry matching and service identity](live_iokit_matching_report.md)
 
 ## Assumption register and verification
 
