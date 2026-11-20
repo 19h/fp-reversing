@@ -58,3 +58,5 @@ These entries describe the recovered acquisition routes. Native namespace names,
 High impact for separating the host, main, iterator, service and reply names and attributing their transfers to concrete sites. Medium impact for explaining the matching-format branch and release lifetime. The auditor rechecks four archived wire records and their trap tuples against the original trace digest, verifies 71 instruction sites, ten data literals and seven original slide-chain bindings, and records the bytes in the compressed receipt. [Auditor](triage_evidence/audit_live_iokit_discovery.py) [Compressed audit receipt](triage_evidence/live_iokit_discovery_audit.json.zst)
 
 The kernel follow-up resolves the iterator right in reply 2981, the service right in 2902, and the current FairPlayIOKit registry entry returned by an ordinary verifier. [Kernel IOKit matching](live_iokit_matching_report.md)
+
+The main-port audit traces the boot-time publication, host getter and version reply to their installed kernel sites and records the verifier task’s send user references. [IOKit main-port publication](live_iokit_main_port_report.md)

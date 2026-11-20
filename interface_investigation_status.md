@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The installed kernel publishes the IOKit main port in host-special slot 3. Replies 305 and 2977 supply the main send right and the compiled server version. A native verifier observed two user references under one name after two ordinary acquisitions. [IOKit main-port publication](live_iokit_main_port_report.md)
+
 The installed matching and property handlers derive their compatibility branch from translated x86-64 process state and the IOServiceCompatibility metaclass instance count. The legacy matching request 2804 returns unsupported. [Installed registry compatibility](live_iokit_matching_compatibility_report.md)
 
 The three direct registry-property calls in the network helper use the generic registry-object transport. Installed IOKit selects among 2805/2905, 2879/2979 and 2889/2989, with a 2,048 B copyout buffer on the last route. The archive has no headers for any of the three pairs. [Registry-property transport](live_iokit_registry_property_report.md)
