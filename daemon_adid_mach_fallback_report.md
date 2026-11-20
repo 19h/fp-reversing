@@ -1,5 +1,7 @@
 # fairplayd legacy Mach transport to com.apple.adid
 
+The installed provider receive path is now resolved statically. A delivered 1200 reaches the libxpc notification demultiplexer, which destroys the ordinary user-space request without emitting 1300. Native pairing and the sender-visible outcome remain unknown. [ADID listener follow-up](adid_legacy_mach_receive_report.md)
+
 The destination of the `fairplayd` Mach 1200/1300 wrapper is the cached `com.apple.adid` send name on the recovered XPC-error path. The daemon calls the wrapper at `0x100e23104` and emits through `mach_msg` at `0x100de9fac`. If the first attempt returns `MACH_SEND_INVALID_DEST`, the daemon calls `bootstrap_look_up("com.apple.adid")` at `0x100e2320c` and retries at `0x100e232dc` with the returned name. Both transports use the same source-produced 20 B buffer on this path. The installed provider declares that service and has a verified XPC listener. A native receiver for the legacy Mach envelope remains unknown. [Previous transport census](daemon_iokit_retirement_report.md) [Installed XPC pairing](live_fairplay_adid_ipc_report.md)
 
 ```text
@@ -58,7 +60,7 @@ All four failure profiles free the original buffer at `0x100e24fdc` and its 24 B
 
 On `0x10000003`, the wrapper requests `mig_put_reply_port` at `0x100de9fe0`. On `0x10000004`, it requests `mig_dealloc_reply_port` at `0x100dea044`. Both receive the local reply name, independently of the cached service name. All numeric names in the replay are fixture values. The current path also has a weak `voucher_mach_msg_set` call site at `0x100de9f84`. Its active behavior was outside the modeled case.
 
-CoreFP independently uses a 56 B request 1200 to `com.apple.adid`, using the same outer OOL envelope with a different inner request and a different cache. The 64 B request 1200 to `com.apple.fpsd` has a distinct certificate payload and reply shape. The request ID alone cannot identify either destination. The active FairPlayIOKit connection uses a separate type-`0x27) IOKit ABI. [CoreFP client comparison](corefp_client_paths_report.md) [IOKit connection ABI](live_fairplay_connection_report.md)
+CoreFP independently uses a 56 B request 1200 to `com.apple.adid`, using the same outer OOL envelope with a different inner request and a different cache. The 64 B request 1200 to `com.apple.fpsd` has a distinct certificate payload and reply shape. The request ID alone cannot identify either destination. The active FairPlayIOKit connection uses a separate type-`0x27` IOKit ABI. [CoreFP client comparison](corefp_client_paths_report.md) [IOKit connection ABI](live_fairplay_connection_report.md)
 
 ## Provider and evidence boundaries
 
