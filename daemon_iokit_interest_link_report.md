@@ -1,5 +1,7 @@
 # fairplayd and IOKit interest registration
 
+The dynamic-dispatch follow-up resolves one ambiguous `0x19ad` call to the local RPC 502 environment helper and identifies a second conditional edge to that helper. The two genuine symbol lookups in that cluster target CoreKE exports. [RPC 502 authenticated call targets](daemon_rpc502_dynamic_dispatch_report.md)
+
 The archived `fairplayd` image and both installed ARM slices contain IOKit open and method bindings. Their import tables, chained binds and literal bytes provide no direct evidence of a call to register per-client interest. The supplied RAX capture reaches a failed FairPlayIOKit open and contains neither registration requests nor a Mach event 53. A native `fairplayd` registration on its FairPlayIOKit child remains unknown. The installed kernel does expose two identifiable dispatch marker pairs for such an investigation. [Native IOSurface delivery control](live_iokit_interest_notification_report.md) [Existing FairPlay registry attribution](daemon_iokit_native_registry_report.md)
 
 ## Daemon import and name evidence

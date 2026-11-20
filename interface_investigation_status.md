@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The fairplayd RPC 502 environment wrapper's authenticated call at `0x100de8540` resolves to local helper `0x100de1430`. Three private worker replays recover its caller-frame output and distinguish the two genuine CoreKE symbol lookups. The second candidate edge to the same helper is conditional on the live bank roots. [RPC 502 authenticated call targets](daemon_rpc502_dynamic_dispatch_report.md)
+
 The supplied daemon and both installed ARM slices have no direct IOKit interest-registration binding. All printed guest Mach headers and bridge records in the archived run show no interest traffic before exit after the failed open. The installed kernel maps registration requests 2850 and 2869 to distinct dispatch marker pairs. [fairplayd interest-registration evidence](daemon_iokit_interest_link_report.md)
 
 An IOKit interest registration on an individual registry entry delivered Mach event 53 for two native IOSurface controls. The descriptor preserved the client registry ID across close. Releasing the registration after receipt prevented callback dispatch. FairPlay-specific registration and delivery remain unknown. [IOKit termination notifications](live_iokit_interest_notification_report.md)
