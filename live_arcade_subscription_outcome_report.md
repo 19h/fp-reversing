@@ -11,6 +11,8 @@ process record -> executable offset -> kernel client -> 61471 -> fairplayd
 
 ## Executable offset and subscription transport
 
+The [installed executable-offset audit](live_arcade_executable_offset_report.md) identifies the named getter, the process writer and the observed CoreFP XPC boundary.
+
 | Transition | Original evidence | Data |
 | --- | --- | --- |
 | Select the process | `0xfffffe000bd29c28` calls the current-thread-related accessor. `0xfffffe000bd29c2c` loads the process pointer from accessor result +`0x18`. A fallback supplies a kernel-global pointer when that slot is null. | X27 is the base used for path preparation and the executable-offset load. |
