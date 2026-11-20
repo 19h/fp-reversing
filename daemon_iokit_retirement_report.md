@@ -1,5 +1,7 @@
 # fairplayd connection close and Mach name release
 
+The subsequent [legacy ADID transport audit](daemon_adid_mach_fallback_report.md) resolves the destination of the 1200/1300 wrapper at `0x100de9fac` on the recovered XPC-error route. It reloads the `com.apple.adid` cache and refreshes it through bootstrap lookup after an invalid destination.
+
 The pinned arm64e daemon has no direct `IOServiceClose` or `io_service_close` binding. The captured FairPlayIOKit open returns a null connection, followed by release of its service and iterator. The direct `mach_port_deallocate` call confirmed in daemon code releases the peer name received by the arcade registration handler. Whether native `fairplayd` closes a successfully opened FairPlayIOKit connection explicitly, or releases it through another lifetime path, remains unknown. [Discovery call-site capture](daemon_iokit_callsite_capture_report.md) [Arcade port ownership](created_port_report.md)
 
 ```text

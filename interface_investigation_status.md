@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [ADID Mach fallback report](daemon_adid_mach_fallback_report.md) joins fairplayd's direct 1200/1300 transport to the cached `com.apple.adid` destination. It verifies the invalid-destination lookup, reuse of the original 20 B XPC payload, reply-name handling and pointer/count writeback. Native legacy reception and the downstream FairPlayIOKit transaction remain unknown.
+
 The [daemon connection retirement report](daemon_iokit_retirement_report.md) checks explicit close bindings, classifies the five candidate direct deallocation sites, and accounts for 32 deallocation traps. The confirmed daemon call releases an arcade peer, and the captured IOKit releases concern the service and iterator. It also identifies a direct Mach 1200/1300 wrapper with an unresolved destination. Native retirement after successful open remains unknown.
 
 The [successful inline metadata reply report](live_iokit_metadata_reply_report.md) traces a four-byte selector 22 or 23 result directly into the kernel reply buffer, through 64 B to 56 B header packing and through the framework's validation and daemon copy. It records the exact 2965 fields and count writeback. Native enqueue, right translation and paired delivery remain unknown.
