@@ -1,6 +1,8 @@
 # Active interface investigation
 
-The [cached lock release report](daemon_class_lock_release_report.md) follows seven returning discovery paths through a second cache read and conditional unlock. The failed-open paths release service and iterator names before the unlock request. The null-cache path skips both pthread primitives. Cleanup restores the saved discovery marker before dispatching on an unresolved outer phase. Native lock and archived open attribution remain unknown.
+The [discovery status report](daemon_class_status_route_report.md) locates the `0xb306` outer phase producer and traces its post-cleanup dispatch. For a nonmatching discovery marker, a zero saved flag redispatches to the class gate and a nonzero flag copies the marker to another frame slot. The uninterrupted outer entry, a second lookup and archived caller attribution remain unknown.
+
+The [cached lock release report](daemon_class_lock_release_report.md) follows seven returning discovery paths through a second cache read and conditional unlock. The failed-open paths release service and iterator names before the unlock request. The null-cache path skips both pthread primitives. Cleanup restores the saved discovery marker before dispatching on the saved outer phase. Native lock and archived open attribution remain unknown.
 
 The [cached write-lock gate report](daemon_class_lock_gate_report.md) identifies the two helpers before FairPlayIOKit discovery. A one-time initializer allocates storage, initializes a read-write lock and publishes its pointer. A null cache bypasses class selection. A nonnull cache requests a write lock and publishes the expected private marker independently of the lock return. Two modeled nonnull cases enter the class routine at `0x1004382b4`. The continuous upstream state and archived open attribution remain unknown.
 
