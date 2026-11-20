@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [post-registration state gate report](daemon_registration_state_gate_report.md) recovers the two missing startup lookup pointers, the generation-counter comparison, and the ensuing local CAS or table-update routes. Seven private cases identify the successors at `0x10008a6a0` and `0x10000c2cc`. A join to the archived FairPlayIOKit open remains unknown.
+
 The [registration continuation report](daemon_registration_continuation_report.md) follows the startup status gate to a later predecessor after successful service registration. A modeled final check-in failure instead releases the earlier fpsd CF object. Correlation with the archived FairPlayIOKit open remains unknown.
 
 The [mobileactivationd certificate report](live_mobileactivation_certificate_report.md) traces server-side issuance through the XML request, NSURLSession task start, response trust branch and XPC completion. A conditional server-side public-key lookup reaches the AppleKeyStore user client. Native invocation and any link from this request to FairPlayIOKit remain unknown.
