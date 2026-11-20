@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery cleanup report](daemon_discovery_cleanup_report.md) traces the marker consumer to a conditional free request or a later owner-state load. It locates four literal byte readers and one byte writer through S+0x1ba0 B. The output pointer’s first actual reader and linkage to the archived FairPlayIOKit open remain unknown.
+
 The [discovery owner report](daemon_discovery_owner_report.md) finds the emitter output pointer saved at S+0x1ba0 B and resolves the post-emitter dispatch on the encoded owner and a separate comparison word. The nonnull, unequal profile calls a private helper and forwards its result through the marker consumer. All four bounded replays preserve the emitted bytes. A continuous path to the flag reader or a Mach or IOKit request remains unknown.
 
 The [discovery emitter report](daemon_discovery_emitter_report.md) resolves the unequal arm to the private byte emitter and follows its 16 B output, completion word and zero stack adjustment. It also identifies the reader of S+0x202f B and its two conditional continuations. The continuous path into that reader and IPC linkage remain unknown.
