@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The running `akd` process from the earlier native ADID peer logs returns `adi-client` as `CFString` when Security.framework consumes its kernel-issued task audit token. The running `fairplayd` omits the key in both kernel exports. Installed bytes connect the Security lookup to DER operation 16 and locate the observer's task-name and token-query emission sites. A native `fairplayd` peer lookup and an associated FairPlayIOKit transaction remain unknown. [Live ADID peer entitlement](live_adid_peer_entitlement_report.md)
+
 Live `adid`, `fairplayd` and `lskdd` registry creators each export the ordinary FairPlayIOKit access entitlement as true. Their DER exports match the measured executable slices' signed slots byte for byte, and the XML dictionaries match their signed counterparts. The original open-time entitlement objects and native method delivery remain unknown. [Live client entitlement provenance](live_fairplay_client_entitlements_report.md)
 
 A live log from the verifier's issuing thread identifies the missing-entitlement branch for ordinary FairPlayIOKit open. Installed bytes connect the driver's lookup through IOKit to the registered AMFI callback. The corresponding historical RAX branch remains unknown. [Native open admission](live_fairplay_open_admission_report.md)

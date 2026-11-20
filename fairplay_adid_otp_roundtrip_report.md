@@ -2,6 +2,8 @@
 
 The exact 20 B request recovered from `fairplayd` produces two different four-byte replies in the installed `adid` image under two explicit peer models. A NULL `adi-client` lookup produces `ffff4ff2` before the provider reads any request bytes. The archived `akd` peer model allows command dispatch and produces `ffff4ffb`. In both cases the client propagates the provider's exact bytes to its original caller as W0 and leaves all four output cells zero. The installed `fairplayd` arm64e signature omits the `adi-client` declaration. Its effective runtime entitlement result and the native exchange remain unknown. [Request serializer](daemon_adid_request_origin_report.md) [Client reply reader](daemon_adid_reply_fields_report.md)
 
+A later native snapshot found `adi-client` absent from the running `fairplayd`'s kernel-exported XML and DER. The `akd` process named in the archived native ADID peer logs returned the expected string through a genuine task-audit-token Security lookup. The receiver's effective lookup for a native `fairplayd` peer remains unobserved. [Live ADID peer entitlement](live_adid_peer_entitlement_report.md)
+
 ```text
 fairplayd: source-built data -> pending synchronous XPC send
                                      |
