@@ -1,5 +1,7 @@
 # fairplayd network registry-parent Mach transport
 
+The subsequent [registry-property transport audit](live_iokit_registry_property_report.md) follows the two property keys through the installed Mach requests, byte delivery and Core Foundation object lifetime.
+
 The pinned `fairplayd` has one direct call to its `IORegistryEntryGetParentEntry` import stub. The input is an interface object obtained through BSD-name matching. The returned parent becomes the destination object for the `IOMACAddress` property lookup. Installed IOKit implements parent lookup as `2814/2914` to obtain a parent iterator, then `2802/2902` to fetch its first entry. The sole archived `2802/2902` pair instead belongs to the earlier FairPlayIOKit class match. Native invocation of the network parent path remains unknown. [Daemon network identity](daemon_network_identity_report.md) [Archived FairPlayIOKit discovery](zut_trace_report.md)
 
 ```text

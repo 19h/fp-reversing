@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The three direct registry-property calls in the network helper use the generic registry-object transport. Installed IOKit selects among 2805/2905, 2879/2979 and 2889/2989, with a 2,048 B copyout buffer on the last route. The archive has no headers for any of the three pairs. [Registry-property transport](live_iokit_registry_property_report.md)
+
 The pinned daemon’s direct registry-parent import is called by the network identity helper. Its installed transport uses 2814/2914 for the parent iterator and 2802/2902 for its first entry. The archived iterator pair instead consumes the FairPlayIOKit class-match reply. [Registry-parent transport](live_iokit_registry_parent_report.md)
 
 The installed FairPlayIOKit client inherits a null-returning provider getter. The separate IOKit connection-to-service request 2817 therefore yields status-only reply 2917 on the admitted FairPlay path. The pinned daemon and archived trace supply no direct binding or observed exchange. [Connection-to-provider audit](live_iokit_connection_service_report.md)
