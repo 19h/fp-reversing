@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery redispatch report](daemon_class_redispatch_report.md) identifies the copy of the saved context and marker. Only the nonnull, marker-unequal replay reacquires the cached lock and reaches a second primary class matching call. The other three controls store the replacement marker. Native reaching values and a second Mach exchange remain unknown.
+
 The [discovery status report](daemon_class_status_route_report.md) locates the `0xb306` outer phase producer and traces its post-cleanup dispatch. For a nonmatching discovery marker, a zero saved flag redispatches to the class gate and a nonzero flag copies the marker to another frame slot. The uninterrupted outer entry, a second lookup and archived caller attribution remain unknown.
 
 The [cached lock release report](daemon_class_lock_release_report.md) follows seven returning discovery paths through a second cache read and conditional unlock. The failed-open paths release service and iterator names before the unlock request. The null-cache path skips both pthread primitives. Cleanup restores the saved discovery marker before dispatching on the saved outer phase. Native lock and archived open attribution remain unknown.

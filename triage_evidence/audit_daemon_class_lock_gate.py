@@ -117,7 +117,7 @@ class GateProbe(Probe):
             self.reads.clear()
 
     def run_case(self, name, allocation, init_result=0, lock_result=0, clobber=0,
-                 marker=0, context=HEAP):
+                 marker=0, context=HEAP, boundary_sp=SP):
         self.allocation, self.init_result, self.lock_result = allocation, init_result, lock_result
         self.clobber = clobber
         self.stop_reason = None
@@ -144,7 +144,7 @@ class GateProbe(Probe):
             self.setreg(register, value)
         self.u.emu_start(0x100639894, 0, count=20000)
         assert self.stop_reason == 'source_boundary'
-        assert self.u.reg_read(ar.UC_ARM64_REG_SP) == SP
+        assert self.u.reg_read(ar.UC_ARM64_REG_SP) == boundary_sp
         return {'case': name, 'initial_once_and_cache': list(map(hex, initial)),
                 'final_once_and_cache': [hex(self.memory_word(addr)) for addr in (ONCE, CACHE)],
                 'reaching_marker': hex(marker), 'reaching_context': hex(context),
