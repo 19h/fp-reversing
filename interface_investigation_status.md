@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [cached write-lock gate report](daemon_class_lock_gate_report.md) identifies the two helpers before FairPlayIOKit discovery. A one-time initializer allocates storage, initializes a read-write lock and publishes its pointer. A null cache bypasses class selection. A nonnull cache requests a write lock and publishes the expected private marker independently of the lock return. Two modeled nonnull cases enter the class routine at `0x1004382b4`. The continuous upstream state, matching unlock and archived open attribution remain unknown.
+
 The [class-selection caller report](daemon_selector26_class_caller_report.md) resolves `0x100636dfc` to the class routine, derives phase `0xe8d` from the caller record, and follows its return word through the original branch. Three offline paths cover primary lookup, Avp-to-primary fallback and a context-based skip. The upstream native frame and archived open attribution remain unknown.
 
 The [post-registration environment report](daemon_registration_environment_report.md) resolves the first source-attributed entropy and clock calls, the 624-word seed and refill paths, and their two pending reads. The archived syscall record cannot attribute either route to the FairPlayIOKit open.
