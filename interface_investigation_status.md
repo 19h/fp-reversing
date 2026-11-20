@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [current FairPlayIOKit metadata report](live_fairplay_metadata_report.md) recaptures the first two method candidates after the observed daemon's open. In the runtime-matched collection, ordinary base-provider selector 22 returns `0x4c0b0000` and selector 23 returns `0x1f8`. Both publish four data bytes through the same synchronous method path. Live caller, connection and reply correlation remain unknown.
+
 The [daemon IOKit call-site capture](daemon_iokit_callsite_capture_report.md) joins a fresh, stock emulated discovery and open to six original daemon call instructions. It identifies the `IOMainPort` producer, the open at `0x100478bb0`, and both subsequent releases. The open returned a null connection and application status `0xe00002c2`. The historical caller, exact provider failure branch and successful method transport remain unknown.
 
 The [discovery client-state gate report](daemon_discovery_client_gate_report.md) matches the earlier 32 B client-object initializer to three field reads after scratch cleanup. Null and status-mismatch paths share a saved continuation, and a distinct alternate route reaches a pending 16 B allocation. Live object and transport provenance remain unknown.
