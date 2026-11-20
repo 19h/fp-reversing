@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The RPC 502 outer wrapper constructs a stack displacement cell and forwards the carrier to its inner wrapper. Two bounded offline intervals verify the original dispatch pointer stores and the local target at `0x100de7a8c`. The transition between the intervals depends on supplied continuation state. [RPC 502 wrapper frame](daemon_rpc502_wrapper_frame_report.md)
+
 The fairplayd RPC 502 environment wrapper's authenticated call at `0x100de8540` resolves to local helper `0x100de1430`. Three private worker replays recover its caller-frame output and distinguish the two genuine CoreKE symbol lookups. The second candidate edge to the same helper is conditional on the live bank roots. [RPC 502 authenticated call targets](daemon_rpc502_dynamic_dispatch_report.md)
 
 The supplied daemon and both installed ARM slices have no direct IOKit interest-registration binding. All printed guest Mach headers and bridge records in the archived run show no interest traffic before exit after the failed open. The installed kernel maps registration requests 2850 and 2869 to distinct dispatch marker pairs. [fairplayd interest-registration evidence](daemon_iokit_interest_link_report.md)
