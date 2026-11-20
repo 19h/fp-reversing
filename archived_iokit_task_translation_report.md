@@ -36,6 +36,8 @@ The separately audited kernel build `26C5035r` converts the task at unslid `0xff
 
 Selecting the guest task object arms the candidate bridge's memory mirror before acquiring the host right. The pre-send hook reserves guest address ranges in the host where possible and establishes a host-region baseline when needed. Before dispatching a host receive, the mirror checks the VM stamp and may adopt newly seen readable, shared host regions outside the backing frame arena at the same guest address. A guest overlap blocks that adoption. The source documents that host library mappings can also meet the selection criteria. This behavior is generic to exporting a task right. Request 2862 lies outside the bridge's separate IOKit memory-fixup list and its OOL properties contain zero bytes. The trace has zero candidate mirror mapping or mirror-error diagnostics, which leaves the historical mirror state and host VM effects unknown. [Mirror lifecycle](https://github.com/19h/rax/blob/4748a6ae8bd285369fe1413787b35587832f4dd3/src/user/darwin/bridge/mirror.rs#L1-L108) [Per-routine memory fixups](https://github.com/19h/rax/blob/4748a6ae8bd285369fe1413787b35587832f4dd3/src/user/darwin/bridge/kernel.rs#L16-L53)
 
+The subsequent selector 26 analysis follows the projected task into the ordinary method and distinguishes the embedded FairPlay range from the bridge's explicit IOKit buffer fixups. [Selector 26 memory](rax_iokit_selector26_memory_report.md)
+
 ## Assumptions and verification
 
 | ID | Dependent result | Falsification probe | Impact |

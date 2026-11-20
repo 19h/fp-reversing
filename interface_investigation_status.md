@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [RAX selector 26 memory report](rax_iokit_selector26_memory_report.md) joins the recovered inline method ABI to the bridge's explicit out-of-line address fixups. The embedded pointer survives a projected request and names memory in the host task retained at open. Host backing and payload copy-back into the guest remain unknown.
+
 The [archived IOKit reply import report](archived_iokit_reply_import_report.md) joins the four host replies on `0x1603` to the guest's `0x507` replies and compares the locally assembled IOKit-main reply. The candidate normal import preserves the null connection and inline application result. All five guest trailers are 8 B, and the historical host audit bytes and exact kernel failure site remain unknown.
 
 The [archived IOKit task translation report](archived_iokit_task_translation_report.md) connects task-self `0x203` to request 2862 and the candidate bridge's host self-task send reference. It verifies the descriptor rewrite, kernel task comparison, accepted-task context and bridge memory-mirror boundary. The historical host descriptor and initializer outcome remain unknown.
