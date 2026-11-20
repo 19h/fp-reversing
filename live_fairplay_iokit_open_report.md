@@ -61,3 +61,5 @@ QG1 covers factual interpretation. QG2 lists premises and probes. QG3 covers the
 PYTHONDONTWRITEBYTECODE=1 python3 triage_evidence/audit_live_fairplay_iokit_open.py \
   "$CURRENT_COLLECTION" "$RAX_TRACE"
 ```
+
+The installed diagnostic audit identifies the two initializer failure log sites and compares them with the retained native event window. [FairPlay IOKit diagnostic coverage](live_fairplay_iokit_logs_report.md)
