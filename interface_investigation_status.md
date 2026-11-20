@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery pointer cleanup report](daemon_discovery_pointer_cleanup_report.md) resolves the nonzero pointer path to a pending free and both paths to the same 2,032 B scratch rewind. Detached source checks identify a 164 B allocation candidate and a compatible saved continuation. Both live reaching definitions remain unknown.
+
 The [discovery cache sealing report](daemon_discovery_cache_codec_report.md) identifies the cache-qualified branch as a 552 B in-place context sealer. It matches all retained constructor bytes and publishes the encoded reference before the control decrement and fallback unlock. The cleanup reaches a load from S+0x17a0 B. Four literal stores are candidate producers, and native transport attribution remains unknown.
 
 The [discovery lock and cache report](daemon_discovery_relock_report.md) follows the first unlock into a fallback write-lock request and the same control and cache cells used by the earlier network-record gate. It resolves the cache-qualified route and the decrement and conditional unlock route. Native lock identity, the output consumer, and driver linkage remain unknown.
