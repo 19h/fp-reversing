@@ -2,6 +2,8 @@
 
 The installed `fairplaydeviceidentityd` listener hands each peer to a second event handler on the captured queue. That handler forwards dictionaries and logged non-disconnection XPC errors to a protected worker, where the worker reads an audit token from the event. Disjoint blocks in the same dispatch table resolve to the dictionary `data` reader, associated reply creation, `data` and `status` writers, and a send on the captured peer. The worker's entry ABI and these local call contracts are established from original bytes. The opcode inside the data payload and a continuous request-to-IOKit-to-reply route remain unknown. [Running process and attachment](live_fairplay_additional_clients_report.md)
 
+The [startup audit](live_fpdi_startup_report.md) verifies the preceding sandbox initialization and a separately scheduled DeviceIdentity callback.
+
 ## Peer and event handling
 
 The earlier live snapshot identified the launchd job `com.apple.fairplaydeviceidentityd`, active named endpoint, and a FairPlayIOKit user client attributed to the same running process. The code below is scoped to the matching installed arm64e image, UUID `0a404c50-4901-312f-9e36-04565d30f305`, SHA-256 `f73ababfd9265e1bdacde11467d5a3701cec634c49ce3a65f5769cf5ccd843f0`. All PCs are preferred virtual addresses.

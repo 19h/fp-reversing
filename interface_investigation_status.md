@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [FPDI startup report](live_fpdi_startup_report.md) joins the installed launch configuration and named sandbox to the daemon entry, listener setup and scheduled DeviceIdentity certificate path. The profile explicitly admits the FairPlayIOKit class. Runtime port names and the matching driver request remain unknown.
+
 The [FPDI allocation report](live_fpdi_allocation_report.md) resolves the selector 26 predecessor and XPC worker helper to a shared arena allocator, with conditional scheduling and VM mapping calls. The reaching arena state and native results remain unknown.
 
 The [FPDI selector 26 caller report](live_fpdi_selector26_caller_report.md) identifies the two stack-table producers and checks the uniquely compatible ordered pair for the candidate call. It traces conditional predecessor and result branches in the installed image. The complete same-frame route, IOKit connection origin and native request remain unknown.
