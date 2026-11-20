@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [discovery owner report](daemon_discovery_owner_report.md) finds the emitter output pointer saved at S+0x1ba0 B and resolves the post-emitter dispatch on the encoded owner and a separate comparison word. The nonnull, unequal profile calls a private helper and forwards its result through the marker consumer. All four bounded replays preserve the emitted bytes. A continuous path to the flag reader or a Mach or IOKit request remains unknown.
+
 The [discovery emitter report](daemon_discovery_emitter_report.md) resolves the unequal arm to the private byte emitter and follows its 16 B output, completion word and zero stack adjustment. It also identifies the reader of S+0x202f B and its two conditional continuations. The continuous path into that reader and IPC linkage remain unknown.
 
 The [discovery comparison flag report](daemon_class_marker_predicate_report.md) identifies a source producer for the pointer at S+0xc28 B. The consumer writes the W9 inequality flag to S+0x202f B and uses the status in a second dispatch. Eight split replays cover both outcomes of the companion comparison. Continuous native reach and IPC result attribution remain unknown.
