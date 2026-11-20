@@ -61,3 +61,5 @@ High impact for resolving selector 19's two otherwise ambiguous callees. High im
 The subsequent large-frame replay identifies an OS transaction acquisition helper. It records an initializer write of `0x45b9` to SP+0x5b94 and establishes a distinct early state from the candidate selector 19 predecessor's `0x45a7`. [Large-frame transaction acquisition](live_lskdd_large_frame_transaction_report.md)
 
 The large-frame wrapper and recursive caller exchange a stack adjustment and a separate child status. The two tested wrapper entries returned without visiting the selector 19 predecessor. [Large-frame caller and recursive context](live_lskdd_large_frame_caller_report.md)
+
+The return-dispatch audit identifies a unique compatible entry state under the original fixups and traces the first use of the returned length field and the nonzero IOKit status. [Selector 19 reply handling](live_lskdd_selector19_reply_report.md)
