@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The [daemon connection retirement report](daemon_iokit_retirement_report.md) checks explicit close bindings, classifies the five candidate direct deallocation sites, and accounts for 32 deallocation traps. The confirmed daemon call releases an arcade peer, and the captured IOKit releases concern the service and iterator. It also identifies a direct Mach 1200/1300 wrapper with an unresolved destination. Native retirement after successful open remains unknown.
+
 The [successful inline metadata reply report](live_iokit_metadata_reply_report.md) traces a four-byte selector 22 or 23 result directly into the kernel reply buffer, through 64 B to 56 B header packing and through the framework's validation and daemon copy. It records the exact 2965 fields and count writeback. Native enqueue, right translation and paired delivery remain unknown.
 
 The [current FairPlayIOKit metadata report](live_fairplay_metadata_report.md) recaptures the first two method candidates after the observed daemon's open. In the runtime-matched collection, ordinary base-provider selector 22 returns `0x4c0b0000` and selector 23 returns `0x1f8`. Both publish four data bytes through the same synchronous method path. Live caller, connection and reply correlation remain unknown.
