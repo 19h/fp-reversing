@@ -1,5 +1,7 @@
 # FairPlayIOKit: Mach ports, message directions, and emission sites
 
+The installed kernel proper sends Arcade 41471 via host slot 31 at `0xfffffe000bd29b5c`. FairPlay's 51471 registration goes to the transferred kernel object. The kernel then uses the daemon-supplied anonymous endpoint for 61471 at `0xfffffe000bdda33c`. [Current Arcade registration report](live_arcade_registration_report.md)
+
 The archived slot 1 lookup returns a Mach-successful MIG error. The installed libdispatch fallback retains the ordinary host name for task-voucher creation. Five subsequent launchd requests carry guest voucher `0xd03`, distinct from their destination and reply names. Historical host voucher fields remain unknown. [Archived check-in voucher report](archived_checkin_voucher_report.md)
 
 The current cache has one chain pointer to the host-special getter. Its three verified veneer callers ask for slots 2, 2 and 1. The slot 34 publisher and RPC 700 receiver remain unknown. [RPC 700 dependency scan](live_rpc700_dependency_scan_report.md)
