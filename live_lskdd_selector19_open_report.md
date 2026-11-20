@@ -35,3 +35,5 @@ The target writes zero to `[X19 + X9]` and increments X9. It starts at X9 = 0 an
 | Open receives a valid inherited output pointer, and its success populates that pointer. | Trace X20 to its reaching definition and compare the open's X3 with `0x100e82af8` and the later load at selector 19. |
 
 High impact for the flag's success semantics, the service-acquisition ABI and the complete local clearing detour. Medium impact for the service and iterator release order. The fresh-open output address, native port names and native invocation remain unverified. [Instruction and fixup receipt](triage_evidence/live_lskdd_selector19_open_audit.json.zst)
+
+The follow-up identifies the authenticated entry slot for the acquisition block and rules out two proposed ways for the known frame route to reach it. The incoming X20 remains unresolved. [Open output pointer](live_lskdd_selector19_open_output_report.md)
