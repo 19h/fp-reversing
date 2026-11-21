@@ -20,7 +20,7 @@ The early selector has exactly one W19 solution for each equality outcome becaus
 
 Neither case carries W19 = `0x25`. With the audited base T, both later addresses lie outside the pinned daemon image. This bounds the slot 2 explanation for the prior replay. It is a static result about original image address formation. The native contents of those effective addresses and any native execution are unknown.
 
-The previous report identified two additional table entries for `0x100de7878`. Slot `0x4d` uses modifier `0x36b3`, and slot `0xb4` uses `0xf57a`. The earlier report evaluated the immediately preceding straight-line block. Other sites selecting either entry still require independent analysis. This is a medium-impact constraint on attributing an RPC 502 continuation to the already observed environment-helper path. The mapped context writer also narrows the lineage of the pointer supplied in the earlier private continuation. Its observed custody across the intervening SP change remains open.
+The previous report identified two additional table entries for `0x100de7878`. Slot `0x4d` uses modifier `0x36b3`, and slot `0xb4` uses `0xf57a`. The later census checks branches using all three modifiers and identifies the remaining candidate routes. The mapped context writer narrows the lineage of the pointer supplied in the earlier private continuation. Its observed custody across the intervening SP change remains open. [Continuation predecessor census](daemon_rpc502_branch_selectors_report.md)
 
 ## Assumption register
 

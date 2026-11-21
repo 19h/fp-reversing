@@ -1,5 +1,7 @@
 # Active interface investigation
 
+The RPC 502 predecessor census checks 23 branch sites against three original continuation-table entries. Under the recorded frame and register premises, 19 branches cannot carry the replay's W19 state into the continuation. Four branches still need reaching register and frame evidence. A second original bank-pair writer lies on one of the excluded direct routes. [Continuation predecessor census](daemon_rpc502_branch_selectors_report.md)
+
 The early RPC 502 branch at `0x100de6c30` can select the previously modeled continuation through slot 2. Its selector requires one of two W19 values, both distinct from the state used by the earlier private replay. An original store also provides a context-pointer lineage candidate. [Early continuation selector](daemon_rpc502_predecessor_report.md)
 
 The RPC 502 outer wrapper constructs a stack displacement cell and forwards the carrier to its inner wrapper. Two bounded offline intervals verify the original dispatch pointer stores and the local target at `0x100de7a8c`. The transition between the intervals depends on supplied continuation state. [RPC 502 wrapper frame](daemon_rpc502_wrapper_frame_report.md)
